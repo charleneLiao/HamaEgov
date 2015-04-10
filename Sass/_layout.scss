@@ -1,0 +1,72 @@
+//排版框架
+
+body{ //基本設定
+	font-size: .9em; //預設大小，應與font-size-m同大
+	font-family: $base-font-style;
+	color: $body-font-color;
+
+	&.font-size-l{ //大字
+		font-size: $body-font-size-l;
+	}
+
+	&.font-size-m{ //中字
+		font-size: $body-font-size-m;
+	}
+
+	&.font-size-s{ //小字
+		font-size: $body-font-size-s;
+	}
+
+	> form{ //背景圖放置區塊，一定要加底色不然手機版會破
+
+	}
+
+	a{ //連結整體設定
+		color: $link-color;
+		text-decoration: none;
+
+		&:link{
+			color: $link-color;
+		}
+
+		&:visited{
+			color: $visited-color;
+		}
+		
+		&:hover{
+			color: $hover-color;
+		}
+
+		&:active{
+			color: $active-color;
+		}
+	}
+
+	input[type="submit"],input[type="reset"],input[type="button"]{ //submit、button整體設定
+		@extend %btn;
+	}
+
+	input[type="text"],input[type="email"],input[type="number"],input[type="password"],input[type="search"],input[type="number"],select{ //select、text整體設定
+		@extend %text;
+
+		option{ //option整體設定
+
+		}
+	}
+
+	input[type="radio"]{ //radio整體設定
+		
+	}
+
+	label{
+		cursor: pointer;
+	}
+}
+
+@include at-breakpoint(phone){ //phone
+
+}
+
+@include at-breakpoint(pad){ //pad
+
+}
