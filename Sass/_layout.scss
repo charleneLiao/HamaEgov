@@ -1,7 +1,7 @@
 //排版框架
 
 body{ //基本設定
-	font-size: .9em; //預設大小，應與font-size-m同大
+	font-size: $body-font-size-m; //預設大小，應與font-size-m同大
 	font-family: $base-font-style;
 	color: $body-font-color;
 
@@ -17,11 +17,11 @@ body{ //基本設定
 		font-size: $body-font-size-s;
 	}
 
-	> form{ //背景圖放置區塊，一定要加底色不然手機版會破
+	> form{
 
 	}
 
-	a{ //連結整體設定
+	a{ //連結設定
 		color: $link-color;
 		text-decoration: none;
 
@@ -42,24 +42,212 @@ body{ //基本設定
 		}
 	}
 
-	input[type="submit"],input[type="reset"],input[type="button"]{ //submit、button整體設定
-		@extend %btn;
+	input{
+
+		&[type="submit"],
+		&[type="reset"],
+		&[type="button"] {
+			@extend %btn;
+		}
+
+		&[type="text"],
+		&[type="email"],
+		&[type="number"],
+		&[type="password"],
+		&[type="search"],
+		&[type="number"] {
+			@extend %text;
+		}
+
+		&[type="radio"] {
+			
+		}
 	}
 
-	input[type="text"],input[type="email"],input[type="number"],input[type="password"],input[type="search"],input[type="number"],select{ //select、text整體設定
+	select {
 		@extend %text;
 
-		option{ //option整體設定
+		option {
 
 		}
 	}
 
-	input[type="radio"]{ //radio整體設定
-		
+	label {
+		cursor: pointer;
+	}
+}
+
+.mobile { //mobile 行動載具
+
+	> .container {
+
+		> .inner {
+
+		}
 	}
 
-	label{
-		cursor: pointer;
+	@import 'module_mobile_nav'; //nav 選單
+}
+
+.fixed { //fixed 浮動佈局
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	@import 'module_fixed_user-tool'; //user-tools 使用者登入、編輯工具
+
+	@import 'module_fixed_share-gotop'; //share-gotop 分享與移至最頂
+}
+
+.wrapper { //wrapper 固定佈局
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	.header { //header 首頁資訊
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.info { //info 資訊欄
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			@import 'module_header_logo'; //LOGO放置區塊
+			
+			.msg-tool { //msg-tool 資訊與工具
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+
+				@import 'module_header_link'; //link 連結區塊
+
+				@import 'module_header_font-level'; //font-level 字級調整
+
+				@import 'module_header_lang'; //lang 語言選擇
+
+				@import 'module_header_hot-key-word'; //hot-key-word 熱門關鍵字
+				
+				.search{ //search 搜尋
+
+					> .container {
+
+						> .inner {
+
+						}
+					}
+
+					@import 'module_header_search_normal'; //normal 一般搜尋
+
+					@import 'module_header_search_advanced'; //advanced 進階搜尋
+				}
+			}
+		}
+
+		@import 'module_header_nav'; //nav 選單
+	}
+
+	.content { //content 主要內容
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.group {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		.aside {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		.section {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+	.footer { //footer 頁尾資訊
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		@import 'module_footer_nav'; //nav 選單
+
+		.info { //info 資訊欄
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			@import 'module_footer_logo'; //logo LOGO放置區塊
+			
+			.msg-tool { //msg-tool 資訊與工具
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+
+				@import 'module_footer_link'; //link 連結區塊
+
+				@import 'module_footer_visit-count'; //visit-count 瀏覽人次
+
+				@import 'module_footer_address'; //address 客戶自訂的聯絡區塊
+
+				@import 'module_footer_icon'; //icon 各種標章
+			}
+		}
 	}
 }
 
@@ -69,4 +257,8 @@ body{ //基本設定
 
 @include at-breakpoint(pad){ //pad
 
+}
+
+@include at-breakpoint(pc){ //pc
+	
 }

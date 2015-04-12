@@ -1,0 +1,25 @@
+//icon 各種標章
+
+.icon {
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	
+}
+
+@include at-breakpoint(phone) { //phone
+
+}
+
+@include at-breakpoint(pad) { //pad
+
+}
+
+@include at-breakpoint(pc) { //pc
+
+}

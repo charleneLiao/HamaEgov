@@ -11,19 +11,29 @@
 		<!-- title -->
 		<title>共通平台 v2.0</title>
 
-		<!-- link -->
-		<link rel="stylesheet" media="screen" href="Css/overall.css"> <!-- 基礎版型與框架 -->
-		<link rel="stylesheet" media="screen" href="Css/index.css"> <!-- 首頁 -->
-		<link rel="stylesheet" media="screen" href="Css/page.css"> <!-- 內頁 -->
-		<!--[if lt IE 9]><link rel="stylesheet" media="screen" href="Css/odd_ie.css"><![endif]--> <!-- 針對IE8以下 -->
-		<link rel="stylesheet" media="print" href="Css/print.css"> <!-- 列印 -->
+		<!-- 基礎版型與框架 -->
+		<link rel="stylesheet" media="screen" href="Css/overall.css">
+		<!-- 載入全域模組 -->
+		<link rel="stylesheet" media="screen" href="Css/global.css">
+		<!-- 載入頁面模組 -->
+		<link rel="stylesheet" media="screen" href="Css/page.css">
+		<!-- 針對列印 -->
+		<link rel="stylesheet" media="print" href="Css/print.css">
+		<!-- 針對IE8以下 -->
+		<!--[if lt IE 9]><link rel="stylesheet" media="screen" href="Css/odd_ie.css"><![endif]-->
 
-		<!-- script -->
-		<script data-main="Scripts/main" src="Scripts/require.js"></script> <!-- require 調用所有 js -->
-		<!--[if lt IE 9]><script src="Scripts/odd_ie.js"></script><![endif]--> <!-- 針對IE8以下 -->
+		<!-- require 調用所有 js -->
+		<script data-main="Scripts/main" src="Scripts/require.js"></script>
+		<!-- 針對IE8以下 -->
+		<!--[if lt IE 9]><script src="Scripts/odd_ie.js"></script><![endif]-->
+
+		<script>
+			$(function(){
+
+			});
+		</script>
 	</head>
 	<body>
-		<a class="man" href="#">123</a>
 		<form action="#" method="POST">
 
 			<!-- mobile 行動載具-->
@@ -207,8 +217,8 @@
 						</div>
 						<!-- user-tools 結束 -->
 
-						<!-- share_gotop 分享與移至最頂 -->
-						<div class="share_gotop" data-type="module">
+						<!-- share-gotop 分享與移至最頂 -->
+						<div class="share-gotop" data-type="module">
 							<div class="container">
 								<div class="inner">
 									<ul data-child="4">
@@ -220,7 +230,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- share_gotop 結束 -->
+						<!-- share-gotop 結束 -->
 
 					</div>
 				</div>

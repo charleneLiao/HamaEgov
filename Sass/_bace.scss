@@ -1,7 +1,5 @@
-//共用底模組
+//sass基礎設定
 
-//宣告語系
-@charset 'UTF-8';
+@charset 'UTF-8'; //宣告語系
 
-//變數
-@import 'variable';
+@import 'bace_variable'; //變數與擴展功能

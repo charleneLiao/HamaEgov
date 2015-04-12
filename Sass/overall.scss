@@ -1,15 +1,11 @@
-//共用底模組
-@import 'bace';
+//基礎版型與框架
 
-//css 重置
-@import 'normalize';
+@import 'normalize'; //css 重置
 
-//格線
-@import 'grid';
+@import 'bace'; //共用底模組
 
-//排版框架
-@import 'layout';
+@import 'bace_grid'; //格線系統
 
-//css 雪碧圖
-@import 'sprites';
+@import 'bace_sprites'; //雪碧圖
 
+@import 'layout'; //排版框架
