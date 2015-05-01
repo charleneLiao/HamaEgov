@@ -3,9 +3,9 @@
 $min_set_length: 1;
 $max_set_length: 10;
 
-@for $i from $min_set_length through $max_set_length{ //自動算子group的寬度
+@for $i from $min_set_length through $max_set_length { //自動算子group的寬度
 
-	.group[data-child="#{$i}"]{
+	.group[data-child="#{$i}"] {
 
 		> .container{
 
@@ -24,7 +24,7 @@ $max_set_length: 10;
 	}
 }
 
-@include at-breakpoint(phone){ //phone
+@include at-breakpoint(phone) { //phone
 
 	@for $i from $min_set_length through $max_set_length{ //自動算子group的寬度
 
@@ -44,7 +44,7 @@ $max_set_length: 10;
 	}
 }
 
-@include at-breakpoint(pad){ //pad
+@include at-breakpoint(pad) { //pad
 
 	@for $i from $min_set_length through $max_set_length{ //自動算子group的寬度
 

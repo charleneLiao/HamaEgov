@@ -251,14 +251,14 @@ body{ //基本設定
 	}
 }
 
-@include at-breakpoint(phone){ //phone
+@include at-breakpoint(phone) { //phone
 
 }
 
-@include at-breakpoint(pad){ //pad
+@include at-breakpoint(pad) { //pad
 
 }
 
-@include at-breakpoint(pc){ //pc
+@include at-breakpoint(pc) { //pc
 	
 }

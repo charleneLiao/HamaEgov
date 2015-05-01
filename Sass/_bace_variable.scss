@@ -103,6 +103,28 @@ $btn-border: $border; //按鈕線框
 
 
 
+//RWD 核心================================================================
+
+$breakpoints: (
+  pc: '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
+  pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
+  phone: '(max-width: #{$phone-width})'
+);
+
+@mixin at-breakpoint($name){
+
+	@if map-has-key($breakpoints, $name){
+		@media #{map-get($breakpoints, $name)} {
+			@content;
+		}
+	}@else{
+		@warn 'Couldn\'t find a breakpoint named #{$name}.';
+	}
+}
+
+
+
+
 //extend 方法================================================================
 
 %clear{ //清除浮動的方法，用於偽類
@@ -127,12 +149,15 @@ $btn-border: $border; //按鈕線框
 
 
 
+
+
 //extend 排版================================================================
 
 %center{ //齊中寬度
 	width: $pc-width;
 	margin: 0 auto;
 }
+
 
 
 
@@ -220,28 +245,6 @@ $btn-border: $border; //按鈕線框
 
 
 
-//RWD 核心================================================================
-
-$breakpoints: (
-  pc: '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
-  pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-  phone: '(max-width: #{$phone-width})'
-);
-
-@mixin at-breakpoint($name){
-
-	@if map-has-key($breakpoints, $name){
-		@media #{map-get($breakpoints, $name)} {
-			@content;
-		}
-	}@else{
-		@warn 'Couldn\'t find a breakpoint named #{$name}.';
-	}
-}
-
-
-
-
 //mixin 樣式集================================================================
 
 @mixin bgToPic($img_src, $picsize: true){ //依圖改變大小並置中，$img_src為圖片檔名，$picsize為false就不匯出寬高，$size調整大小比例
@@ -260,24 +263,6 @@ $breakpoints: (
 @mixin icon($img_name){ //取雪碧圖icon
 	@extend %icon;
 	@extend .icon-#{$img_name};
-}
-
-@mixin before-icon($img_name){ //前icon
-
-	&:before{
-		@extend %icon;
-		@extend .icon-#{$img_name};
-		margin-right: $interval-m;
-	}
-}
-
-@mixin after-icon($img_name){ //後icon
-
-	&:after{
-		@extend %icon;
-		@extend .icon-#{$img_name};
-		margin-left: $interval-m;
-	}
 }
 
 @mixin icon-btn($img_name){ //只有icon圖片的按鈕
