@@ -1,5 +1,7 @@
 //變數與擴展功能
 
+//基本變數設定================================================================
+
 //灰階
 $white: #ffffff;
 $light: #f1f1f1; //淺
@@ -23,29 +25,12 @@ $title-color-hover: darken($title-color, 10);
 $span-color: #9f2139 !default; //文章附註
 $span-color-hover: darken($span-color, 10);
 
-//透明度
-$opacity-l: .4;
-$opacity-m: .5;
-$opacity-h: .8;
-
-//字高
-$line-height-s: 1.2;
-$line-height-m: 1.6;
-$line-height-l: 2;
-$line-height-xl: 2.4;
-
 //文字大小
 $font-size-xs: .8em;
 $font-size-s: .9em;
 $font-size-m: 1em; 
 $font-size-l: 1.1em;
 $font-size-xl: 1.4em;
-
-//間隔設定
-$interval-s: 3px;
-$interval-m: 6px;
-$interval-l: 10px;
-$interval-xl: 20px;
 
 //文字樣式
 $base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
@@ -54,16 +39,35 @@ $base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-se
 $font-weight-n: 400;
 $font-weight-b: 700;
 
-//圖片檔名
-// $header-logo-src: 'header_logo.png'; 
-// $footer-logo-src: 'footer_logo.png';
-// $left-src: 'left216.png';
-// $right-src: 'right216.png';
+//字高
+$line-height-xs: 1;
+$line-height-s: 1.2;
+$line-height-m: 1.6;
+$line-height-l: 2;
+$line-height-xl: 2.4;
+
+//透明度
+$opacity-l: .4;
+$opacity-m: .5;
+$opacity-h: .8;
+
+//間隔設定
+$interval-xs: 3px;
+$interval-s: 6px;
+$interval-m: 10px;
+$interval-l: 20px;
+$interval-xl: 30px;
 
 //RWD寬度
 $pc-width: 970px;
 $pad-width: 768px;
 $phone-width: 480px;
+
+
+//圖片檔名
+// $header-logo-src: 'header_logo.png'; 
+// $footer-logo-src: 'footer_logo.png';
+
 
 
 //基本樣式設定================================================================
@@ -78,14 +82,17 @@ $body-font-size-s: $font-size-xl !default;
 $content: '\200B'; //空偽類的字元
 
 //預設陰影
-$box-shadow: 0 0 6px $deep-gray;
-$text-shadow: 0 0 6px $deep;
+$box-shadow: 0 0 $interval-s $deep-gray;
+$text-shadow: 0 0 $interval-s $deep;
 
 //預設線條
-$border: 1px solid $light-gray;
+$border-style: solid;
+$border-width: 1px;
+$border-color: $light-gray;
+$border: $border-width $border-style $border-color;
 
-//預設線條
-$border-radius: 4px;
+//預設圓角
+$border-radius: $interval-xs;
 
 //連結顏色
 $link-color: $deep !default; //連結顏色
@@ -97,30 +104,8 @@ $active-color: $deep !default; //點擊連結顏色
 $btn-bg-color: $deep-gray; //按鈕背景色
 $btn-hover-bg-color: $deep; //按鈕滑入顏色
 $btn-text-color: $white; //按鈕文字顏色
-$btn-padding: $interval-m $interval-xl; //按鈕內邊距，決定按鈕大小
+$btn-padding: $interval-s $interval-l; //按鈕內邊距，決定按鈕大小
 $btn-border: $border; //按鈕線框
-
-
-
-
-//RWD 核心================================================================
-
-$breakpoints: (
-  pc: '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
-  pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-  phone: '(max-width: #{$phone-width})'
-);
-
-@mixin at-breakpoint($name){
-
-	@if map-has-key($breakpoints, $name){
-		@media #{map-get($breakpoints, $name)} {
-			@content;
-		}
-	}@else{
-		@warn 'Couldn\'t find a breakpoint named #{$name}.';
-	}
-}
 
 
 
@@ -158,57 +143,18 @@ $breakpoints: (
 	margin: 0 auto;
 }
 
-
-
-
-//extend 模組================================================================
+%flex-1{
+	display: flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	flex: 1 0 auto;
+}
 
 %title{ //模組title
 	padding: $interval-l 0;
 	margin-bottom: $interval-l;
 	font-size: $font-size-l;
 	color: $main-color;
-}
-
-%text{ //輸入框樣式
-	padding: $interval-s;
-	border: $border;
-	vertical-align: middle;
-}
-
-%icon{ //偽類行內
-	content: $content;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-%btn{ //按鈕樣式
-	display: inline-block;
-	padding: $btn-padding;
-	border: $btn-border;
-	border-radius: $border-radius;
-	line-height: 1;
-	vertical-align: middle;
-	color: $btn-text-color;
-	cursor: pointer;
-	font-size: $font-size-s;
-	background-color: $btn-bg-color;
-
-	&:link{
-		color: $btn-text-color;
-	}
-
-	&:visited{
-		color: $btn-text-color;
-	}
-
-	&:hover{
-		background-color: $btn-hover-bg-color;
-	}
-
-	&:active{
-		color: $btn-text-color;
-	}
 }
 
 %table{ //表單樣式
@@ -242,12 +188,53 @@ $breakpoints: (
 	}
 }
 
+%text{ //輸入框樣式
+	padding: $interval-s;
+	border: $border;
+	vertical-align: middle;
+}
+
+%btn{ //按鈕樣式
+	display: inline-block;
+	padding: $btn-padding;
+	border: $btn-border;
+	border-radius: $border-radius;
+	line-height: 1;
+	vertical-align: middle;
+	color: $btn-text-color;
+	cursor: pointer;
+	font-size: $font-size-s;
+	background-color: $btn-bg-color;
+
+	&:link{
+		color: $btn-text-color;
+	}
+
+	&:visited{
+		color: $btn-text-color;
+	}
+
+	&:hover{
+		background-color: $btn-hover-bg-color;
+	}
+
+	&:active{
+		color: $btn-text-color;
+	}
+}
+
+%icon{ //偽類行內
+	content: $content;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 
 
 
 //mixin 樣式集================================================================
 
-@mixin bgToPic($img_src, $picsize: true){ //依圖改變大小並置中，$img_src為圖片檔名，$picsize為false就不匯出寬高，$size調整大小比例
+@mixin bgToPic($img_src, $size: true){ //依圖改變大小並置中，$img_src為圖片檔名(含副檔名)，$size為false就不匯出寬高
 
 	@if( $picsize != false ){
 		width: image-width($img_src);
@@ -257,32 +244,29 @@ $breakpoints: (
 	background-image: image-url($img_src);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain; //IE9+
 }
 
-@mixin icon($img_name){ //取雪碧圖icon
+@mixin icon($img_name, $size: true){ //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高
+
+	@if( str-index($img_name, '.png') ){ //如果有副檔名就拿掉
+		$img_name: str-slice($img_name, 1, str-index($img_name, '.png') - 1);
+	}
+
 	@extend %icon;
 	@extend .icon-#{$img_name};
+
+	@if( $size == false ){
+		width: auto;
+		height: auto;
+	}
 }
 
-@mixin icon-btn($img_name){ //只有icon圖片的按鈕
+@mixin icon-btn($img_name, $size: true){ //只有icon圖片的按鈕
 	display: inline-block;
 	@extend %hide-text;
 
 	&:before{
-		@extend %icon;
-		@extend .icon-#{$img_name};
 		display: block;
+		@include icon($img_name, $size);
 	}
-}
-
-
-
-//extend 實例擴充================================================================
-
-%flex-1{
-	display: flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	flex: 1 0 auto;
 }

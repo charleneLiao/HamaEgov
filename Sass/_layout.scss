@@ -18,7 +18,11 @@ body{ //基本設定
 	}
 
 	> form{
-
+		
+		&:before{
+			content: $content;
+			@include icon('map');
+		}
 	}
 
 	a{ //連結設定

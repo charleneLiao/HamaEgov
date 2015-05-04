@@ -2,47 +2,57 @@
 <html lang="zh-TW" data-js="no" data-admin="no">
 	<head>
 
-		<!-- meta -->
+	<!-- Meta 各種資訊 -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Meta 結束 -->
 
-		<!-- title -->
+	<!-- Title 網站標題 -->
 		<title>共通平台 v2.0</title>
+	<!-- Titlw 結束 -->
 
-		<!-- 基礎版型與框架 -->
-		<link rel="stylesheet" media="screen" href="Css/overall.css">
-		<!-- 載入全域模組 -->
-		<link rel="stylesheet" media="screen" href="Css/global.css">
-		<!-- 載入頁面模組 -->
-		<link rel="stylesheet" media="screen" href="Css/page.css">
-		<!-- 針對列印 -->
-		<link rel="stylesheet" media="print" href="Css/print.css">
-		<!-- 針對IE8以下 -->
-		<!--[if lt IE 9]><link rel="stylesheet" media="screen" href="Css/odd_ie.css"><![endif]-->
+	<!-- Icon 小圖示 -->
+		<link href="favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- for ios 設備 -->
+	<!-- Icon 結束 -->
 
-		<!-- require 調用所有 js -->
-		<script data-main="Scripts/main" src="Scripts/require.js"></script>
-		<!-- 針對IE8以下 -->
-		<!--[if lt IE 9]><script src="Scripts/odd_ie.js"></script><![endif]-->
+	<!-- Css 樣式表 -->
+		<link rel="stylesheet" media="screen" href="Css/overall.css"> <!-- 基礎版型與框架 -->
+		<link rel="stylesheet" media="screen" href="Css/global.css"> <!-- 載入全域模組 -->
+		<link rel="stylesheet" media="screen" href="Css/page.css"> <!-- 載入頁面模組 -->
+		<link rel="stylesheet" media="print" href="Css/print.css"> <!-- 針對列印 -->
+		<!--[if lt IE 9]><link rel="stylesheet" media="screen" href="Css/odd_ie.css"><![endif]--> <!-- 針對IE8以下 -->
+	<!-- Css 結束 -->
+
+	<!-- Script -->
+		<script src="Scripts/jquery-1.11.2.min.js"></script> <!-- 引入 jquery -->
+		<script src="Scripts/oka_base.js"></script> <!-- 引入 oka_bace 通用底層 -->
+		<script src="Scripts/oka_function.js"></script> <!-- 引入 oka_function 物件函式 -->
+		<script src="Scripts/main.js"></script>
+		<!--[if lt IE 9]><script src="Scripts/odd_ie.js"></script><![endif]--> <!-- 針對IE8以下 -->
 
 		<script>
-			$(function(){
+			//臨時新增涵式
+
+			$(function() {
 
 			});
 		</script>
+	<!-- Script 結束 -->
+
 	</head>
 	<body>
 		<form action="#" method="POST">
 
-			<!-- mobile 行動載具-->
-			<div class="mobile" data-type="layout">
+		<!-- mobile 行動載具-->
+			<div class="mobile">
 				<div class="container">
 					<div class="inner">
 
-						<!-- nav 選單 -->
-						<div class="nav" data-type="module">
+					<!-- nav 選單 -->
+						<div class="nav">
 							<div class="container">
 								<div class="inner">
 									<ul data-child="6">
@@ -189,20 +199,20 @@
 								</div>
 							</div>
 						</div>
-						<!-- nav 結束 -->
+					<!-- nav 結束 -->
 						
 					</div>
 				</div>
 			</div>
-			<!-- mobile 結束 -->
+		<!-- mobile 結束 -->
 
-			<!-- fixed 浮動佈局 -->
-			<div class="fixed" data-type="layout">
+		<!-- fixed 浮動佈局 -->
+			<div class="fixed">
 				<div class="container">
 					<div class="inner">
 
-						<!-- user-tools 使用者登入、編輯工具 -->
-						<div class="user-tool" data-type="module">
+					<!-- user-tools 使用者登入、編輯工具 -->
+						<div class="user-tool">
 							<div class="container">
 								<div class="inner">
 									<ul data-child="6">
@@ -215,10 +225,10 @@
 								</div>
 							</div>
 						</div>
-						<!-- user-tools 結束 -->
+					<!-- user-tools 結束 -->
 
-						<!-- share-gotop 分享與移至最頂 -->
-						<div class="share-gotop" data-type="module">
+					<!-- share-gotop 分享與移至最頂 -->
+						<div class="share-gotop">
 							<div class="container">
 								<div class="inner">
 									<ul data-child="4">
@@ -230,39 +240,40 @@
 								</div>
 							</div>
 						</div>
-						<!-- share-gotop 結束 -->
+					<!-- share-gotop 結束 -->
 
 					</div>
 				</div>
 			</div>
+		<!-- fixed 結束 -->
 
-			<!-- wrapper 固定佈局 -->
-			<div class="wrapper" data-type="layout">
+		<!-- wrapper 固定佈局 -->
+			<div class="wrapper">
 				<div class="container">
 					<div class="inner">
 
-						<!-- header 首頁資訊 -->
-						<div class="header" data-type="layout">
+					<!-- header 首頁資訊 -->
+						<div class="header">
 							<div class="container">
 								<div class="inner">
 
-									<!-- accesskey 導盲磚 -->
-									<div class="accesskey" data-type="module">
+								<!-- accesskey 導盲磚 -->
+									<div class="accesskey">
 										<div class="container">
 											<div class="inner">
 												<span><a href="#" accesskey="U" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a></span>
 											</div>
 										</div>
 									</div>
-									<!-- accesskey 結束 -->
+								<!-- accesskey 結束 -->
 
-									<!-- info 資訊欄 -->
-									<div class="info" data-type="layout">
+								<!-- info 資訊欄 -->
+									<div class="info">
 										<div class="container">
 											<div class="inner">
 
-												<!-- logo LOGO放置區塊-->
-												<div class="logo" data-type="module">
+											<!-- logo LOGO放置區塊-->
+												<div class="logo">
 													<div class="container">
 														<div class="inner">
 															<a href="#">
@@ -272,15 +283,15 @@
 														</div>
 													</div>
 												</div>
-												<!-- logo 結束 -->
+											<!-- logo 結束 -->
 
-												<!-- msg-tool 資訊與工具 -->
-												<div class="msg-tool" data-type="layout">
+											<!-- msg-tool 資訊與工具 -->
+												<div class="msg-tool">
 													<div class="container">
 														<div class="inner">
 
-															<!-- link 連結區塊 -->
-															<div class="link" data-type="module">
+														<!-- link 連結區塊 -->
+															<div class="link">
 																<div class="container">
 																	<div class="inner">
 																		<ul data-child="3">
@@ -291,10 +302,10 @@
 																	</div>
 																</div>
 															</div>
-															<!-- link 結束 -->
+														<!-- link 結束 -->
 
-															<!-- font-level 字級調整 -->
-															<div class="font-level" data-type="module">
+														<!-- font-level 字級調整 -->
+															<div class="font-level">
 																<div class="container">
 																	<div class="inner">
 																		<span class="caption">字級</span>
@@ -306,10 +317,10 @@
 																	</div>
 																</div>
 															</div>
-															<!-- font-level 結束 -->
+														<!-- font-level 結束 -->
 
-															<!-- lang 語言選擇 -->
-															<div class="lang" data-type="module">
+														<!-- lang 語言選擇 -->
+															<div class="lang">
 																<div class="container">
 																	<div class="inner">
 																		<span class="caption">語言</span>
@@ -322,10 +333,10 @@
 																	</div>
 																</div>
 															</div>
-															<!-- lang 結束 -->
+														<!-- lang 結束 -->
 
-															<!-- hot-key-word 熱門關鍵字 -->
-															<div class="hot-key-word" data-type="module">
+														<!-- hot-key-word 熱門關鍵字 -->
+															<div class="hot-key-word">
 																<div class="container">
 																	<div class="inner">
 																		<span class="caption">熱門搜尋</span>
@@ -337,15 +348,15 @@
 																	</div>
 																</div>
 															</div>
-															<!-- hot-key-word 結束 -->
+														<!-- hot-key-word 結束 -->
 
-															<!-- search 搜尋 -->
-															<div class="search" data-type="layout">
+														<!-- search 搜尋 -->
+															<div class="search">
 																<div class="container">
 																	<div class="inner">
 
-																		<!-- normal 一般搜尋 -->
-																		<div class="normal" data-type="module">
+																	<!-- normal 一般搜尋 -->
+																		<div class="normal">
 																			<div class="container">
 																				<div class="inner">
 																					<input type="text" placeholder="請輸入關鍵字">
@@ -353,35 +364,35 @@
 																				</div>
 																			</div>
 																		</div>
-																		<!-- normal 結束 -->
+																	<!-- normal 結束 -->
 
-																		<!-- advanced 進階搜尋 -->
-																		<div class="advanced" data-type="module">
+																	<!-- advanced 進階搜尋 -->
+																		<div class="advanced">
 																			<div class="container">
 																				<div class="inner">
 																					<span><a href="#">進階搜尋</a></span>
 																				</div>
 																			</div>
 																		</div>
-																		<!-- advanced 結束 -->
+																	<!-- advanced 結束 -->
 
 																	</div>
 																</div>
 															</div>
-															<!-- search 結束 -->
+														<!-- search 結束 -->
 
 														</div>
 													</div>
 												</div>
-												<!-- msg-tool 結束 -->
+											<!-- msg-tool 結束 -->
 
 											</div>
 										</div>
 									</div>
-									<!-- info 結束 -->
+								<!-- info 結束 -->
 
-									<!-- nav 選單 -->
-									<div class="nav" data-type="module">
+								<!-- nav 選單 -->
+									<div class="nav">
 										<div class="container">
 											<div class="inner">
 												<ul data-child="6">
@@ -527,54 +538,54 @@
 											</div>
 										</div>
 									</div>
-									<!-- nav 結束 -->
+								<!-- nav 結束 -->
 
 								</div>
 							</div>
 						</div>
-						<!-- header 結束 -->
+					<!-- header 結束 -->
 
-						<!-- content 主要內容 -->
-						<div class="content" data-type="layout">
+					<!-- content 主要內容 -->
+						<div class="content">
 							<div class="container">
 								<div class="inner">
 
-									<!-- accesskey 導盲磚 -->
-									<div class="accesskey" data-type="module">
+								<!-- accesskey 導盲磚 -->
+									<div class="accesskey">
 										<div class="container">
 											<div class="inner">
 												<span><a href="#" accesskey="U" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span>
 											</div>
 										</div>
 									</div>
-									<!-- accesskey 結束 -->
+								<!-- accesskey 結束 -->
 
-									<!-- 此段只是範例，請連同此標註忽略 -->
-									<div class="group" data-type="layout" data-index="1" data-child="2"><!-- 群組 群組順序1 有2個盒子 -->
+								<!-- 此段只是範例，請連同此標註忽略 -->
+									<div class="group" data-index="1" data-tabtype="0" data-child="0"> <!-- 群組 群組順序1 有2個盒子 -->
 										<div class="container">
 											<div class="inner">
 												群組1
 											</div>
 										</div>
 									</div>
-									<div class="group" data-type="layout" data-index="2" data-child="3"><!-- 群組 群組順序1 有3個盒子 -->
+									<div class="group" data-index="2" data-tabtype="1" data-child="3"> <!-- 群組 群組順序1 有3個盒子 -->
 										<div class="container">
 											<div class="inner">
-												<div class="group" data-type="layout"><!-- 群組 群組順序1 有0個盒子 -->
+												<div class="group" data-index="1" data-tabtype="0" data-child="0"> <!-- 群組 群組順序1 有0個盒子 -->
 													<div class="container">
 														<div class="inner">
 															群組2-1
 														</div>
 													</div>
 												</div>
-												<div class="group group-index-2" data-type="layout"><!-- 群組 群組順序2 有0個盒子 -->
+												<div class="group" data-index="2" data-tabtype="0" data-child="0"> <!-- 群組 群組順序2 有0個盒子 -->
 													<div class="container">
 														<div class="inner">
 															群組2-2
 														</div>
 													</div>
 												</div>
-												<div class="group group-index-3" data-type="layout"><!-- 群組 群組順序3 有0個盒子 -->
+												<div class="group" data-index="3" data-tabtype="0" data-child="0"> <!-- 群組 群組順序3 有0個盒子 -->
 													<div class="container">
 														<div class="inner">
 															群組2-3
@@ -588,25 +599,25 @@
 								</div>
 							</div>
 						</div>
-						<!-- content 結束 -->
+					<!-- content 結束 -->
 
-						<!-- footer 頁尾資訊 -->
-						<div class="footer" data-type="layout">
+					<!-- footer 頁尾資訊 -->
+						<div class="footer">
 							<div class="container">
 								<div class="inner">
 
-									<!-- accesskey 導盲磚 -->
-									<div class="accesskey" data-type="module">
+								<!-- accesskey 導盲磚 -->
+									<div class="accesskey">
 										<div class="container">
 											<div class="inner">
 												<span><a href="#" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span>
 											</div>
 										</div>
 									</div>
-									<!-- accesskey 結束 -->
+								<!-- accesskey 結束 -->
 
-									<!-- nav 選單 -->
-									<div class="nav" data-type="module">
+								<!-- nav 選單 -->
+									<div class="nav">
 										<div class="container">
 											<div class="inner">
 												<ul data-child="6">
@@ -753,30 +764,30 @@
 											</div>
 										</div>
 									</div>
-									<!-- nav 結束 -->
+								<!-- nav 結束 -->
 
-									<!-- info 資訊欄 -->
+								<!-- info 資訊欄 -->
 									<div class="info">
 										<div class="container">
 											<div class="inner">
 
-												<!-- logo LOGO放置區塊 -->
-												<div class="logo" data-type="module">
+											<!-- logo LOGO放置區塊 -->
+												<div class="logo">
 													<div class="container">
 														<div class="inner">
 															<span>Site</span>
 														</div>
 													</div>
 												</div>
-												<!-- logo 結束 -->
+											<!-- logo 結束 -->
 
-												<!-- msg-tool 資訊與工具 -->
-												<div class="msg-tool" data-type="layout">
+											<!-- msg-tool 資訊與工具 -->
+												<div class="msg-tool">
 													<div class="container">
 														<div class="inner">
 
-															<!-- link 連結區塊 -->
-															<div class="link" data-type="module">
+														<!-- link 連結區塊 -->
+															<div class="link">
 																<div class="container">
 																	<div class="inner">
 																		<ul data-child="4">
@@ -788,10 +799,10 @@
 																	</div>
 																</div>
 															</div>
-															<!-- link 結束 -->
+														<!-- link 結束 -->
 
-															<!-- visit-count 瀏覽人次 -->
-															<div class="visit-count" data-type="module">
+														<!-- visit-count 瀏覽人次 -->
+															<div class="visit-count">
 																<div class="container">
 																	<div class="inner">
 																		<span class="caption">瀏覽人次</span>
@@ -799,20 +810,20 @@
 																	</div>
 																</div>
 															</div>
-															<!-- visit-count 結束 -->
+														<!-- visit-count 結束 -->
 
-															<!-- address 客戶自訂的聯絡區塊 -->
-															<div class="address" data-type="module">
+														<!-- address 客戶自訂的聯絡區塊 -->
+															<div class="address">
 																<div class="container">
 																	<div class="inner">
 
 																	</div>
 																</div>
 															</div>
-															<!-- address 結束 -->
+														<!-- address 結束 -->
 
-															<!-- icon 各種標章 -->
-															<div class="icon" data-type="module">
+														<!-- icon 各種標章 -->
+															<div class="icon">
 																<div class="container">
 																	<div class="inner">
 																		<ul data-child="3">
@@ -823,27 +834,27 @@
 																	</div>
 																</div>
 															</div>
-															<!-- icon 結束 -->
+														<!-- icon 結束 -->
 															
 														</div>
 													</div>
 												</div>
-												<!-- msg-tool 結束 -->
+											<!-- msg-tool 結束 -->
 
 											</div>
 										</div>
 									</div>
-									<!-- footer info 結束 -->
+								<!-- footer info 結束 -->
 
 								</div>
 							</div>
 						</div>
-						<!-- footer 結束 -->
+					<!-- footer 結束 -->
 
 					</div>
 				</div>
 			</div>
-			<!-- wrapper 結束 -->
+		<!-- wrapper 結束 -->
 
 		</form>
 	</body>

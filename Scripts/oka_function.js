@@ -1,0 +1,1 @@
+// oka_function 物件函式

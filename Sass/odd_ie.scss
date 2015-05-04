@@ -3,5 +3,5 @@
 @import 'bace'; //sass基礎設定
 
 body {
-	min-width: 1010px;
+	min-width: $pc-width;
 }
