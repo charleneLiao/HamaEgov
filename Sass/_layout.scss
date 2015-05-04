@@ -93,7 +93,7 @@ body{ //基本設定
 	@import 'module_mobile_nav'; //nav 選單
 }
 
-.fixed { //fixed 浮動佈局
+.extend { //extend 額外資訊
 
 	> .container {
 
@@ -102,7 +102,7 @@ body{ //基本設定
 		}
 	}
 
-	@import 'module_fixed_user-tool'; //user-tools 使用者登入、編輯工具
+	@import 'module_fixed_user-tool'; //user-tool 使用者工具
 
 	@import 'module_fixed_share-gotop'; //share-gotop 分享與移至最頂
 }
@@ -116,7 +116,7 @@ body{ //基本設定
 		}
 	}
 
-	.header { //header 首頁資訊
+	> .container > .inner > .header { //header 頁首資訊
 
 		> .container {
 
@@ -172,7 +172,7 @@ body{ //基本設定
 		@import 'module_header_nav'; //nav 選單
 	}
 
-	.content { //content 主要內容
+	> .container > .inner > .content { //content 主要內容
 
 		> .container {
 
@@ -191,7 +191,7 @@ body{ //基本設定
 			}
 		}
 
-		.aside {
+		.aside { //內頁側邊
 
 			> .container {
 
@@ -201,18 +201,84 @@ body{ //基本設定
 			}
 		}
 
-		.section {
+		.section { //內頁內容區塊
 
 			> .container {
 
 				> .inner {
 
 				}
+			}
+
+			> .container > .inner > .header{ //header 頁首資訊
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+
+				@import 'module_content_sitemap'; //sitemap 網站地圖
+
+				.info{ //info 資訊欄
+
+					> .container {
+
+						> .inner {
+
+						}
+					}
+
+					.msg-tool{ //msg-tool 資訊與工具
+
+						> .container {
+
+							> .inner {
+
+							}
+						}
+
+						@import 'module_content_title'; //title 標題列
+
+						@import 'module_content_user-tool'; //user-tool 使用者工具
+					}
+
+					@import 'module_content_detail'; //detail 細節資訊
+				}
+			}
+
+			> .container > .inner > .content{ //content 主要內容
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+
+				.article{ //article 文章內容
+
+				}
+			}
+
+			> .container > .inner > .footer{ //footer 頁尾資訊
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+
+				@import 'module_content_page-tool'; //page-tool 跳頁導航列
+
+				@import 'module_content_back-tool'; //back-tool 回主頁/回上頁導航列
 			}
 		}
 	}
 
-	.footer { //footer 頁尾資訊
+	> .container > .inner > .footer { //footer 頁尾資訊
 
 		> .container {
 
