@@ -234,11 +234,41 @@ $btn-border: $border; //按鈕線框
 
 //mixin 樣式集================================================================
 
-@mixin bgToPic($img_src, $size: true){ //依圖改變大小並置中，$img_src為圖片檔名(含副檔名)，$size為false就不匯出寬高
+@mixin bgToPic($img_src, $size: true, $height: null){ //依圖改變大小並置中，$img_src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 
-	@if( $picsize != false ){
+	@if( $size == true ){ //如果是 true 就匯出大小
 		width: image-width($img_src);
 		height: image-height($img_src);
+
+	}@else if( $size == false ){ //如果是 false 就不匯出大小
+		
+	}@else{ //如果是數字就會出指定大小
+
+		@if( $height != null ){ //如果有 $height 就給高
+			
+			@if( unitless($height) ){ //沒單位就是倍數
+				height: image-height($img_src) * $height;
+
+			}@else{ //有單位就直接使用
+				height: $height;
+			}
+
+		}@else{ //如果沒 $height ，高度就是 $size
+			
+			@if( unitless($size) ){ //沒單位就是倍數
+				height: image-height($img_src) * $size;
+
+			}@else{ //有單位就直接使用
+				height: $size;
+			}
+		}
+
+		@if( unitless($size) ){ //沒單位就是倍數
+			width: image-width($img_src) * $size;
+
+		}@else{ //有單位就直接使用
+			width: $size;
+		}
 	}
 
 	background-image: image-url($img_src);
@@ -246,27 +276,34 @@ $btn-border: $border; //按鈕線框
 	background-position: center;
 }
 
-@mixin icon($img_name, $size: true){ //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高
+@mixin icon($img_name, $size: true, $height: null){ //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
 
 	@if( str-index($img_name, '.png') ){ //如果有副檔名就拿掉
 		$img_name: str-slice($img_name, 1, str-index($img_name, '.png') - 1);
 	}
 
 	@extend %icon;
-	@extend .icon-#{$img_name};
 
-	@if( $size == false ){
-		width: auto;
-		height: auto;
+	@if( $size == true ){ //如果是 true 就匯出大小並使用sprites圖片
+		@extend .icon-#{$img_name};
+		width: image-width('icon/#{$img_name}.png');
+		height: image-height('icon/#{$img_name}.png');
+
+	}@else if( $size == false ){ //如果是 false 就不匯出大小並使用單獨圖片
+		background-image: image-url('icon/#{$img_name}.png');
+
+	}@else{ //如果是數字就會出指定倍數大小並使用單獨圖片
+
+		@include bgToPic('icon/#{$img_name}.png', $size, $height);
 	}
 }
 
-@mixin icon-btn($img_name, $size: true){ //只有icon圖片的按鈕
+@mixin icon-btn($img_name, $size: true, $height: null){ //只有icon圖片的按鈕
 	display: inline-block;
 	@extend %hide-text;
 
 	&:before{
 		display: block;
-		@include icon($img_name, $size);
+		@include icon($img_name, $size, $height);
 	}
 }

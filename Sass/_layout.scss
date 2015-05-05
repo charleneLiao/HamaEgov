@@ -21,7 +21,7 @@ body {
 		
 		&:before {
 			content: $content;
-			@include icon('map');
+			@include icon('map.png', 1);
 		}
 	}
 

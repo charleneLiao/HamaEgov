@@ -15,7 +15,7 @@ $breakpoints: (
 			@content;
 		}
 	}@else{
-		@warn 'Couldn\'t find a breakpoint named #{$name}.';
+		@warn '找不到名為 #{$name} 的斷點設置。';
 	}
 }
 
