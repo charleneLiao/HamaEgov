@@ -1,0 +1,105 @@
+//關於================================================================
+
+1.此文件用以說明共通平台特性與規則，供開發人員參閱
+
+
+
+
+//文件結構================================================================
+
+html
+
+- head
+
+- body
+
+  -form
+
+    - mobile //mobile 行動載具
+      - nav (module) //nav 選單
+
+    - extend //extend 額外資訊
+      - user-tool (module) //user-tool 使用者工具
+      - share_gotop (module) //share-gotop 分享與移至最頂
+
+    - wrapper //wrapper 固定佈局
+
+      - header //header 頁首資訊
+        - accesskey (module) //accesskey 導盲磚
+        - info //info 資訊欄
+          - logo (module) //logo 標誌放置區塊
+          - msg-tool //msg-tool 資訊與工具
+            - link (module) //link 連結區塊
+            - font-level (module) //font-level 字級調整
+            - lang (module) //lang 語言選擇
+            - hot-key-word (module) //hot-key-word 熱門關鍵字
+            - search //search 搜尋
+              - normal (module) //normal 一般搜尋
+              - advanced (module) //advanced 進階搜尋
+        - nav (module) //nav 選單
+
+      - content //content 主要內容
+        - accesskey (module) //accesskey 導盲磚
+        - group
+          - album (module)
+          - calendar (module)
+          - cp (module)
+          - sub-epaper (module)
+          - link (module)
+          - msg (module)
+          - rss (module)
+          - tabs (module)
+          - video (module)
+          - vote (module)
+          - weather (module)
+
+        - aside //aside 內頁側邊
+          - sec-nav (module)
+
+        - section //section 內頁內容區塊
+
+          - header //header 頁首資訊
+            - sitemap (module) //sitemap 網站地圖
+            - info //info 資訊欄
+              - msg-tool //msg-tool 資訊與工具
+                - title (module) //title 標題列
+                - user-tool (module) //user-tool 使用者工具
+              - detail (module) //detail 詳細資訊
+
+          - content //content 主要內容
+            - article //article 文章內容
+
+          - footer //footer 頁尾資訊
+            - page-tool (module) //page-tool 頁次導航列
+            - jump-tool (module) //jump-tool 跳轉導航列
+
+      - footer //footer 頁尾資訊
+        - accesskey (module) //accesskey 導盲磚
+        - nav (module) //nav 選單
+        - info //info 資訊欄
+          - logo (module) //logo 標誌放置區塊
+          - msg-tool //msg-tool 資訊與工具
+            - link (module) //link 連結區塊
+            - visit-count (module) //visit-count 瀏覽人次
+            - address (module) //address 客戶自訂的聯絡區塊
+            - icon (module) //icon 各種標章
+
+
+
+
+//標題設定================================================================
+
+h1 內頁標題
+h2 LOGO
+h3 模組標頭
+h4
+h5
+h6
+
+
+
+
+//caption規範說明================================================================
+
+1. caption是模組的標題，可做文字標題、模組偽類圖示放置區塊，非必要時也可隱藏
+2. 除標題模組、logo模組、導盲磚模組、客戶自訂模組外，應盡可能在模組內放置caption

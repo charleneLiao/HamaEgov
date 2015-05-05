@@ -1,47 +1,47 @@
 //排版框架
 
-body{ //基本設定
+body {
 	font-size: $body-font-size-m; //預設大小，應與font-size-m同大
 	font-family: $base-font-style;
 	color: $body-font-color;
 
-	&.font-size-l{ //大字
+	&.font-size-l { //大字
 		font-size: $body-font-size-l;
 	}
 
-	&.font-size-m{ //中字
+	&.font-size-m { //中字
 		font-size: $body-font-size-m;
 	}
 
-	&.font-size-s{ //小字
+	&.font-size-s { //小字
 		font-size: $body-font-size-s;
 	}
 
-	> form{
+	> form {
 		
-		&:before{
+		&:before {
 			content: $content;
 			@include icon('map');
 		}
 	}
 
-	a{ //連結設定
+	a {
 		color: $link-color;
 		text-decoration: none;
 
-		&:link{
+		&:link {
 			color: $link-color;
 		}
 
-		&:visited{
+		&:visited {
 			color: $visited-color;
 		}
 		
-		&:hover{
+		&:hover {
 			color: $hover-color;
 		}
 
-		&:active{
+		&:active {
 			color: $active-color;
 		}
 	}
@@ -102,9 +102,9 @@ body{ //基本設定
 		}
 	}
 
-	@import 'module_fixed_user-tool'; //user-tool 使用者工具
+	@import 'module_extend_user-tool'; //user-tool 使用者工具
 
-	@import 'module_fixed_share-gotop'; //share-gotop 分享與移至最頂
+	@import 'module_extend_share-gotop'; //share-gotop 分享與移至最頂
 }
 
 .wrapper { //wrapper 固定佈局
@@ -134,7 +134,7 @@ body{ //基本設定
 				}
 			}
 
-			@import 'module_header_logo'; //LOGO放置區塊
+			@import 'module_header_logo'; //logo 標誌放置區塊
 			
 			.msg-tool { //msg-tool 資訊與工具
 
@@ -191,7 +191,7 @@ body{ //基本設定
 			}
 		}
 
-		.aside { //內頁側邊
+		.aside { //aside 內頁側邊
 
 			> .container {
 
@@ -201,7 +201,7 @@ body{ //基本設定
 			}
 		}
 
-		.section { //內頁內容區塊
+		.section { //section 內頁內容區塊
 
 			> .container {
 
@@ -244,7 +244,7 @@ body{ //基本設定
 						@import 'module_content_user-tool'; //user-tool 使用者工具
 					}
 
-					@import 'module_content_detail'; //detail 細節資訊
+					@import 'module_content_detail'; //detail 詳細資訊
 				}
 			}
 
@@ -259,6 +259,12 @@ body{ //基本設定
 
 				.article{ //article 文章內容
 
+					> .container {
+
+						> .inner {
+
+						}
+					}
 				}
 			}
 
@@ -271,9 +277,9 @@ body{ //基本設定
 					}
 				}
 
-				@import 'module_content_page-tool'; //page-tool 跳頁導航列
+				@import 'module_content_page-tool'; //page-tool 頁次導航列
 
-				@import 'module_content_back-tool'; //back-tool 回主頁/回上頁導航列
+				@import 'module_content_jump-tool'; //jump-tool 跳轉導航列
 			}
 		}
 	}
@@ -298,7 +304,7 @@ body{ //基本設定
 				}
 			}
 
-			@import 'module_footer_logo'; //logo LOGO放置區塊
+			@import 'module_footer_logo'; //logo 標誌放置區塊
 			
 			.msg-tool { //msg-tool 資訊與工具
 

@@ -24,6 +24,14 @@
 		<link rel="stylesheet" media="screen" href="Css/page.css"> <!-- 載入頁面模組 -->
 		<link rel="stylesheet" media="print" href="Css/print.css"> <!-- 針對列印 -->
 		<!--[if lt IE 9]><link rel="stylesheet" media="screen" href="Css/odd_ie.css"><![endif]--> <!-- 針對IE8以下 -->
+
+		<style>
+			/*臨時新增樣式*/
+
+			.group{
+				display: none;
+			}
+		</style>
 	<!-- Css 結束 -->
 
 	<!-- Script -->
@@ -55,6 +63,7 @@
 						<div class="nav">
 							<div class="container">
 								<div class="inner">
+									<h3 class="caption"><span>選單</span></h3>
 									<ul data-child="6">
 										<li data-index="1">
 											<span><a href="#">nav1</a></span>
@@ -195,7 +204,6 @@
 											</div>
 										</li>
 									</ul>
-
 								</div>
 							</div>
 						</div>
@@ -206,7 +214,7 @@
 			</div>
 		<!-- mobile 結束 -->
 
-		<!-- fixed 浮動佈局 -->
+		<!-- extend 額外資訊 -->
 			<div class="extend">
 				<div class="container">
 					<div class="inner">
@@ -215,6 +223,7 @@
 						<div class="user-tool">
 							<div class="container">
 								<div class="inner">
+									<h3 class="caption"><span>工具</span></h3>
 									<ul data-child="6">
 										<li class="login" data-index="1"><span><a href="#">登入</a></span></li>
 										<li class="nav-edit" data-index="2"><span><a href="#">選單編輯</a></span></li>
@@ -231,8 +240,9 @@
 						<div class="share-gotop">
 							<div class="container">
 								<div class="inner">
+									<h3 class="caption"><span>分享</span></h3>
 									<ul data-child="4">
-										<li class="to-top" data-index="1"><span><a href="#">Go To Top</a></span></li>
+										<li class="to-top" data-index="1"><span><a href="#">回到最頂</a></span></li>
 										<li class="facebook" data-index="2"><span><a href="http://www.facebook.com/share.php?u=網址" target="_blank">Facebook</a></span></li>
 										<li class="google" data-index="3"><span><a href="http://twitter.com/home?status=這裡塞入主題+-+網址" target="_blank">Google+</a></span></li>
 										<li class="twitter" data-index="4"><span><a href="https://plus.google.com/share?url=網址" target="_blank">Twitter</a></span></li>
@@ -245,7 +255,7 @@
 					</div>
 				</div>
 			</div>
-		<!-- fixed 結束 -->
+		<!-- extend 結束 -->
 
 		<!-- wrapper 固定佈局 -->
 			<div class="wrapper">
@@ -272,14 +282,13 @@
 										<div class="container">
 											<div class="inner">
 
-											<!-- logo LOGO放置區塊-->
+											<!-- logo 標誌放置區塊 -->
 												<div class="logo">
 													<div class="container">
 														<div class="inner">
-															<a href="#">
-																<h1><span>Site name</span></h1>
-																<img src="#" alt="">
-															</a>
+															<h2>
+																<span><a href="#">Site name</a></span>
+															</h2>
 														</div>
 													</div>
 												</div>
@@ -294,6 +303,7 @@
 															<div class="link">
 																<div class="container">
 																	<div class="inner">
+																		<h3 class="caption"><span>連結</span></h3>
 																		<ul data-child="3">
 																			<li data-index="1"><span><a href="#">網站導覽</a></span></li>
 																			<li data-index="2"><span><a href="#">網站導覽</a></span></li>
@@ -308,7 +318,7 @@
 															<div class="font-level">
 																<div class="container">
 																	<div class="inner">
-																		<span class="caption">字級</span>
+																		<h3 class="caption"><span>字級</span></h3>
 																		<ul data-child="3">
 																			<li data-index="1" data-font-size="s"><span><a href="#">小</a></span></li>
 																			<li data-index="2" data-font-size="m"><span><a href="#">中</a></span></li>
@@ -323,8 +333,8 @@
 															<div class="lang">
 																<div class="container">
 																	<div class="inner">
-																		<span class="caption">語言</span>
-																		<ul data-child="4">
+																		<h3 class="caption"><span>語言</span></h3>
+  																		<ul data-child="4">
 																			<li data-index="1" data-lang="en"><span><a href="#">En</a></span></li>
 																			<li data-index="2" data-lang="jp"><span><a href="#">Jp</a></span></li>
 																			<li data-index="3" data-lang="zh-cn"><span><a href="#">Cn</a></span></li>
@@ -339,7 +349,7 @@
 															<div class="hot-key-word">
 																<div class="container">
 																	<div class="inner">
-																		<span class="caption">熱門搜尋</span>
+																		<h3 class="caption"><span>熱門搜尋</span></h3>
 																		<ul data-child="3">
 																			<li data-index="1"><span><a href="#">關鍵字</a></span></li>
 																			<li data-index="2"><span><a href="#">關鍵字</a></span></li>
@@ -359,8 +369,11 @@
 																		<div class="normal">
 																			<div class="container">
 																				<div class="inner">
-																					<input type="text" placeholder="請輸入關鍵字">
-																					<span><a href="#">搜尋</a></span>
+																					<h3 class="caption"><span>一般搜尋</span></h3>
+																					<ul data-child="2">
+																						<li data-index="1"><span><input type="text" placeholder="請輸入關鍵字"></span></li>
+																						<li data-index="2"><span><a href="#">搜尋</a></span></li>
+																					</ul>
 																				</div>
 																			</div>
 																		</div>
@@ -370,7 +383,10 @@
 																		<div class="advanced">
 																			<div class="container">
 																				<div class="inner">
-																					<span><a href="#">進階搜尋</a></span>
+																					<h3 class="caption"><span>進階搜尋</span></h3>
+																					<ul data-child="1">
+																						<li data-index="1"><span><a href="#">搜尋</a></span></li>
+																					</ul>
 																				</div>
 																			</div>
 																		</div>
@@ -395,6 +411,7 @@
 									<div class="nav">
 										<div class="container">
 											<div class="inner">
+												<h3 class="caption"><span>選單</span></h3>
 												<ul data-child="6">
 													<li data-index="1">
 														<span><a href="#">nav1</a></span>
@@ -560,7 +577,7 @@
 									</div>
 								<!-- accesskey 結束 -->
 
-								<!-- 此段只是範例，請連同此標註忽略 -->
+								<!-- group sample 此段只是範例，請連同此標註忽略 -->
 									<div class="group" data-index="1" data-tabtype="0" data-child="0"> <!-- 群組 群組順序1 有2個盒子 -->
 										<div class="container">
 											<div class="inner">
@@ -595,6 +612,168 @@
 											</div>
 										</div>
 									</div>
+								<!-- group sample 結束 -->
+
+								<!-- section 內頁內容區塊 -->
+									<div class="section">
+										<div class="container">
+											<div class="inner">
+
+											<!-- header 首頁資訊 -->
+												<div class="header">
+													<div class="container">
+														<div class="inner">
+
+														<!-- sitemap 網站地圖 -->
+															<div class="sitemap">
+																<div class="container">
+																	<div class="inner">
+																		<h3 class="caption"><span>網站地圖</span></h3>
+																		<ul data-child="3">
+																			<li data-index="1"><span><a href="#">首頁</a></span></li>
+																			<li data-index="2"><span><a href="#">階層二</a></span></li>
+																			<li data-index="3"><span><a href="#">階層三</a></span></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														<!-- sitemap 結束 -->
+
+														<!-- info 資訊欄 -->
+															<div class="sitemap">
+																<div class="container">
+																	<div class="inner">
+
+																	<!-- msg-tool 資訊與工具 -->
+																		<div class="msg-tool">
+																			<div class="container">
+																				<div class="inner">
+
+																				<!-- title 標題列 -->
+																					<div class="title">
+																						<div class="container">
+																							<div class="inner">
+																								<h1>
+																									<span><a href="#">標題</a></span>
+																								</h1>
+																							</div>
+																						</div>
+																					</div>
+																				<!-- title 結束 -->
+
+																				<!-- user-tool 使用者工具 -->
+																					<div class="user-tool">
+																						<div class="container">
+																							<div class="inner">
+																								<h3 class="caption"><span>工具</span></h3>
+																								<ul data-child="1">
+																									<li class="print" data-index="1"><span><a href="#">列印</a></span></li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				<!-- user-tool 結束 -->
+																					
+																				</div>
+																			</div>
+																		</div>
+																	<!-- msg-tool 結束 -->
+
+																	<!-- detail 詳細資訊 -->
+																		<div class="msg-tool">
+																			<div class="container">
+																				<div class="inner">
+																					<h3 class="caption"><span>詳細資訊</span></h3>
+																					<ul data-child="3">
+																						<li data-index="1"><span><a href="#">資料來源：網路事業部</a></span></li>
+																						<li data-index="2"><span><a href="#">發表時間：2012/02/30</a></span></li>
+																						<li data-index="3"><span><a href="#">發文者：李傲中</a></span></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	<!-- detail 結束 -->
+
+																	</div>
+																</div>
+															</div>
+														<!-- info 結束 -->
+
+														</div>
+													</div>
+												</div>
+											<!-- header 結束 -->
+
+											<!-- footer 頁尾資訊 -->
+												<div class="footer">
+													<div class="container">
+														<div class="inner">
+
+														<!-- page-tool 頁次導航列 -->
+															<div class="page-tool">
+																<div class="container">
+																	<div class="inner">
+																		<h3 class="caption"><span>頁次導航列</span></h3>
+																		<ul class="sibling-tool prev" data-child="2">
+																			<li data-index="1"><a href="#"><span>最前頁</span></a></li>
+																			<li data-index="2"><a href="#"><span>上一頁</span></a></li>
+																		</ul>
+																		<ul class="page-ctrl" data-child="3">
+																			<li data-index="1">
+																				<span>第</span>
+																				<span class="input">
+																					<select>
+																						<option selected>3</option>
+																					</select>
+																				</span>
+																				<span>頁</span>
+																			</li>
+																			<li data-index="2">
+																				<span>每頁顯示</span>
+																				<span class="input">
+																					<input type="number" min="1" max="999" value="20">
+																				</span>
+																				<span>筆</span>
+																			</li>
+																			<li data-index="3">
+																				<span>共</span>
+																				<span class="count">275</span>
+																				<span>筆</span>
+																			</li>
+																		</ul>
+																		<ul class="sibling-tool next" data-child="2">
+																			<li data-index="1"><a href="#"><span>下一頁</span></a></li>
+																			<li data-index="2"><a href="#"><span>最後頁</span></a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														<!-- page-tool 結束 -->
+
+														<!-- jump-tool 跳轉導航列 -->
+															<div class="back-tool">
+																<div class="container">
+																	<div class="inner">
+																		<h3 class="caption"><span>跳轉導航列</span></h3>
+																		<ul data-child="3">
+																			<li class="back" data-index="1"><span><a href="#">回上一頁</a></span></li>
+																			<li class="to-top" data-index="2"><span><a href="#">回最上面</a></span></li>
+																			<li class="home" data-index="3"><span><a href="#">HOME</a></span></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														<!-- jump-tool 結束 -->
+
+														</div>
+													</div>
+												</div>
+											<!-- footer 結束 -->
+
+											</div>
+										</div>
+									</div>
+								<!-- section 結束 -->
 
 								</div>
 							</div>
@@ -620,6 +799,7 @@
 									<div class="nav">
 										<div class="container">
 											<div class="inner">
+												<h3 class="caption"><span>選單</span></h3>
 												<ul data-child="6">
 													<li data-index="1">
 														<span><a href="#">nav1</a></span>
@@ -771,11 +951,13 @@
 										<div class="container">
 											<div class="inner">
 
-											<!-- logo LOGO放置區塊 -->
+											<!-- logo 標誌放置區塊 -->
 												<div class="logo">
 													<div class="container">
 														<div class="inner">
-															<span>Site</span>
+															<h2>
+																<span><a href="#">Site name</a></span>
+															</h2>
 														</div>
 													</div>
 												</div>
@@ -790,6 +972,7 @@
 															<div class="link">
 																<div class="container">
 																	<div class="inner">
+																		<h3 class="caption"><span>連結</span></h3>
 																		<ul data-child="4">
 																			<li data-index="1"><span><a href="#">底部連結</a></span></li>
 																			<li data-index="2"><span><a href="#">底部連結</a></span></li>
@@ -805,8 +988,8 @@
 															<div class="visit-count">
 																<div class="container">
 																	<div class="inner">
-																		<span class="caption">瀏覽人次</span>
-																		<span class="count">800</span>
+																		<h3 class="caption"><span>瀏覽人次</span></h3>
+																		<div class="count"><span>3200</span></div>
 																	</div>
 																</div>
 															</div>
@@ -816,7 +999,7 @@
 															<div class="address">
 																<div class="container">
 																	<div class="inner">
-
+																		
 																	</div>
 																</div>
 															</div>
@@ -826,6 +1009,7 @@
 															<div class="icon">
 																<div class="container">
 																	<div class="inner">
+																		<h3 class="caption"><span>標章</span></h3>
 																		<ul data-child="3">
 																			<li data-index="1" class="wcag"><span><a href="#"><img src="#" alt="無障礙 A+"></a></span></li>
 																			<li data-index="2" class="egov"><span><a href="#"><img src="#" alt="E政府"></a></span></li>
