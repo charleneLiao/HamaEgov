@@ -25,6 +25,9 @@ $title-color-hover: darken($title-color, 10);
 $span-color: #9f2139 !default; //文章附註
 $span-color-hover: darken($span-color, 10);
 
+//文字樣式
+$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
+
 //文字大小
 $font-size-xs: .8em;
 $font-size-s: .9em;
@@ -32,14 +35,11 @@ $font-size-m: 1em;
 $font-size-l: 1.1em;
 $font-size-xl: 1.4em;
 
-//文字樣式
-$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
-
 //文字厚度
 $font-weight-n: 400;
 $font-weight-b: 700;
 
-//字高
+//文字行高
 $line-height-xs: 1;
 $line-height-s: 1.2;
 $line-height-m: 1.6;
@@ -47,9 +47,11 @@ $line-height-l: 2;
 $line-height-xl: 2.4;
 
 //透明度
-$opacity-l: .4;
+$opacity-sl: .3;
+$opacity-l: .5;
 $opacity-m: .5;
 $opacity-h: .8;
+$opacity-sh: .9;
 
 //間隔設定
 $interval-xs: 3px;

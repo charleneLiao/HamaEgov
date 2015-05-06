@@ -1,4 +1,4 @@
-//RWD與格線系統
+//RWD與格線
 
 //RWD 核心================================================================
 
@@ -8,14 +8,10 @@ $breakpoints: (
   phone: '(max-width: #{$phone-width})'
 );
 
-@mixin at-breakpoint($name){
+@mixin at-breakpoint($name) {
 
-	@if map-has-key($breakpoints, $name){
-		@media #{map-get($breakpoints, $name)} {
-			@content;
-		}
-	}@else{
-		@warn '找不到名為 #{$name} 的斷點設置。';
+	@media #{map-get($breakpoints, $name)} {
+		@content;
 	}
 }
 

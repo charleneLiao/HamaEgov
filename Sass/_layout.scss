@@ -20,8 +20,7 @@ body {
 	> form {
 		
 		&:before {
-			content: $content;
-			@include icon('map.png', 1);
+			@include icon('map.png');
 		}
 	}
 
