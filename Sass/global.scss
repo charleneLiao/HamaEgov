@@ -1,62 +1,37 @@
-//載入全域模組
+//基礎版型與框架
 
 @import 'bace'; //共用底模組
 
-/*
-//頁首、選單、頁尾
-@import 'layout';
+@import 'normalize'; //css 正常化
 
-//行動版
-@import 'mobile_menu';
+@import 'bace_grid'; //RWD與格線
 
-//隨解析度關閉
-@import 'close';
+@import 'bace_layout'; //排版框架
 
-//主要選單
-@import 'menu';
+@import 'global_nav'; //選單
 
-//圖片輪播模組
-@import 'slider';
+@import 'global_user-tool'; //使用者工具
 
-//圖片跑馬燈模組
-@import 'banner_slider'; 
+@import 'global_anchor'; //錨點
 
-//管理者編輯按鈕
-@import 'wwwedit';
+@import 'global_share'; //分享
 
-//訊息發布模組
-@import 'module_message';
+@import 'global_accesskey'; //導盲磚
 
-//相簿模組
-@import 'module_album';
+@import 'global_logo'; //商標
 
-//連結模組
-@import 'module_link';
+@import 'global_link'; //連結區塊
 
-//投票模組
-@import 'module_vote';
+@import 'global_font-level'; //字級調整
 
-//RSS模組
-@import 'module_rss';
+@import 'global_lang'; //語言選擇
 
-//天氣概況模組
-@import 'module_weather';
+@import 'global_hot-key-word'; //熱門關鍵字
 
-//行事曆模組
-@import 'module_calendar';
+@import 'global_search'; //搜尋
 
-//電子報模組
-@import 'module_epaper';
+@import 'global_visit-count'; //瀏覽人次
 
-//影音模組
-@import 'module_video';
+@import 'global_address'; //客戶自訂的聯絡區塊
 
-//使用者自訂模組
-@import 'module_diy';
-
-//分頁/分割模組
-@import 'module_tabs';
-
-//按鈕模組
-@import 'module_btns';
-*/
+@import 'global_icon'; //各種標章

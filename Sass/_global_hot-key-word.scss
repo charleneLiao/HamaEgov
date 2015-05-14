@@ -1,6 +1,6 @@
-//nav 選單
+//熱門關鍵字
 
-.nav {
+.hot-key-word {
 
 	> .container {
 
@@ -9,7 +9,6 @@
 		}
 	}
 
-	
 }
 
 @include at-breakpoint(phone) { //phone

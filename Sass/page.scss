@@ -2,65 +2,14 @@
 
 @import 'bace'; //sass基礎設定
 
-/*
+@import 'page_sitemap'; //網站地圖
 
-//共用底模組
-@import 'bace';
+@import 'page_node-name'; //節點名稱
 
-//內頁次選單
-@import 'second_menu';
+@import 'page_user-tool'; //使用者工具
 
-//內頁框架
-@import 'page_layout';
+@import 'page_detail'; //詳細資訊
 
-//覆蓋首頁樣式
-@import 'page_replace';
+@import 'page_page-tool'; //頁次導航列
 
-//網站導覽
-@import 'page_sitemap';
-
-//內頁新聞列表模組
-@import 'page_news_list';
-
-//內頁相簿模組
-@import 'page_photo';
-
-//內頁影音模組
-@import 'page_view';
-
-//內頁投票模組
-@import 'page_vote';
-
-//內頁報名模組
-@import 'page_active';
-
-//內頁意見信箱模組
-@import 'page_opinion';
-
-//內頁電子報模組
-@import 'page_epaper';
-
-//內頁討論區模組
-@import 'page_publish';
-
-//內頁連結模組
-@import 'page_links';
-
-//內頁日曆模組
-@import 'page_calendar';
-
-//內頁問卷模組
-@import 'page_qa';
-
-//內頁訂閱模組
-@import 'page_rss';
-
-//雙語詞彙模組
-@import 'page_glossary';
-
-//內頁按鈕模組
-@import 'page_btns';
-
-//內頁文章發佈編輯器
-@import 'page_message';
-*/
+@import 'page_jump-tool'; //跳轉導航列

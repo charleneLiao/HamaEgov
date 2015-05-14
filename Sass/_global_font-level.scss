@@ -1,6 +1,6 @@
-//accesskey 導盲磚
+//字級調整
 
-.accesskey {
+.font-level {
 
 	> .container {
 
@@ -9,12 +9,7 @@
 		}
 	}
 
-	span{
-
-		a{
-			
-		}
-	}
+	
 }
 
 @include at-breakpoint(phone) { //phone

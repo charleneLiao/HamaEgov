@@ -3,62 +3,62 @@
 //基本變數設定================================================================
 
 //灰階
-$white: #ffffff;
-$light: #f1f1f1; //淺
+$very-light: #ffffff; //非常淺
+$light: #f1f1f1; //淺色
 $light-gray: #d2d2d2; //淺灰
-$gray: #cecece; //灰
+$gray: #cecece; //灰色
 $deep-gray: #999999; //深灰
-$deep: #3c3c3c; //深
-$black: #1a1a1a; //
+$deep: #3c3c3c; //深色
+$very-deep: #1a1a1a; //非常深
 
 //版面顏色
 $main-color: #ed1c80 !default; //主色
 $main-color-hover: darken($main-color, 10);
-$sec-color: #16a185 !default; //搭配色
+$sec-color: #16a185 !default; //第二搭配色
 $sec-color-hover: darken($sec-color, 10);
-$third-color: #f4865e !default; //第三色
+$third-color: #f4865e !default; //第三搭配色
 $third-color-hover: darken($third-color, 10);
 
 //文字顏色
-$title-color: #8b45ae !default; //文章標題
+$title-color: #8b45ae !default; //標題色
 $title-color-hover: darken($title-color, 10);
-$span-color: #9f2139 !default; //文章附註
+$span-color: #9f2139 !default; //附註色
 $span-color-hover: darken($span-color, 10);
 
 //文字樣式
 $base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
 
 //文字大小
-$font-size-xs: .8em;
-$font-size-s: .9em;
-$font-size-m: 1em; 
-$font-size-l: 1.1em;
-$font-size-xl: 1.4em;
+$font-size-xs: .8em; //extra smail
+$font-size-s: .9em; //small
+$font-size-m: 1em; //medium
+$font-size-l: 1.1em; //large
+$font-size-xl: 1.4em; //extra large
 
 //文字厚度
-$font-weight-n: 400;
-$font-weight-b: 700;
+$font-weight-n: 400; //normal
+$font-weight-b: 700; //bold
 
 //文字行高
-$line-height-xs: 1;
-$line-height-s: 1.2;
-$line-height-m: 1.6;
-$line-height-l: 2;
-$line-height-xl: 2.4;
+$line-height-xs: 1; //extra smail
+$line-height-s: 1.2; //small
+$line-height-m: 1.6; //medium
+$line-height-l: 2; //large
+$line-height-xl: 2.4; //extra large
 
 //透明度
-$opacity-sl: .3;
-$opacity-l: .5;
-$opacity-m: .5;
-$opacity-h: .8;
-$opacity-sh: .9;
+$opacity-vl: .3; //very low
+$opacity-l: .5; //low
+$opacity-m: .5; //medium
+$opacity-h: .8; //high
+$opacity-vh: .9; //very high
 
 //間隔設定
-$interval-xs: 3px;
-$interval-s: 6px;
-$interval-m: 10px;
-$interval-l: 20px;
-$interval-xl: 30px;
+$interval-xs: 3px; //extra smail
+$interval-s: 6px; //small
+$interval-m: 10px; //medium
+$interval-l: 20px; //large
+$interval-xl: 30px; //extra large
 
 //RWD寬度
 $pc-width: 970px;
@@ -77,9 +77,9 @@ $phone-width: 480px;
 
 //全頁文字
 $body-font-color: $deep !default; //網站文字顏色
-$body-font-size-l: $font-size-m !default;
-$body-font-size-m: $font-size-s !default;
-$body-font-size-s: $font-size-xs !default;
+$body-font-size-s: $font-size-xs !default; //small
+$body-font-size-m: $font-size-s !default; //medium
+$body-font-size-l: $font-size-m !default; //large
 
 //預設空文字
 $content: '\200B'; //空偽類的字元
@@ -106,7 +106,7 @@ $active-color: $deep !default; //點擊連結顏色
 //按鈕樣式
 $btn-bg-color: $deep-gray; //按鈕背景色
 $btn-hover-bg-color: $deep; //按鈕滑入顏色
-$btn-text-color: $white; //按鈕文字顏色
+$btn-text-color: $very-light; //按鈕文字顏色
 $btn-padding: $interval-s $interval-l; //按鈕內邊距，決定按鈕大小
 $btn-border: $border; //按鈕線框
 
@@ -116,50 +116,50 @@ $btn-border: $border; //按鈕線框
 
 //extend 排版樣式設定================================================================
 
-%center{ //齊中寬度
+%center { //齊中寬度
 	width: $pc-width;
 	margin: 0 auto;
 }
 
-%title{ //模組title
+%title { //模組title
 	padding: $interval-l 0;
 	margin-bottom: $interval-l;
 	font-size: $font-size-l;
 	color: $main-color;
 }
 
-%table{ //表單樣式
+%table { //表單樣式
 
 	tr{
 
-		&:nth-child(2n){
+		&:nth-child(2n) {
 			background-color: $light;
 		}
 
-		th,td{ //th,td共同設定
+		th,td { //th,td共同設定
 			padding: $interval-l;
 			
-			a{
+			a {
 				color: inherit;
 
-				&:hover{
+				&:hover {
 					color: $hover-color;
 				}
 			}
 		}
 
-		th{ //標題設定
+		th { //標題設定
 			font-size: $font-size-l;
 			color: $title-color;
 		}
 
-		td{
+		td {
 			line-height: $line-height-m;
 		}
 	}
 }
 
-%btn{ //按鈕樣式
+%btn { //按鈕樣式
 	display: inline-block;
 	padding: $btn-padding;
 	border: $btn-border;
@@ -171,24 +171,24 @@ $btn-border: $border; //按鈕線框
 	font-size: $font-size-s;
 	background-color: $btn-bg-color;
 
-	&:link{
+	&:link {
 		color: $btn-text-color;
 	}
 
-	&:visited{
+	&:visited {
 		color: $btn-text-color;
 	}
 
-	&:hover{
+	&:hover {
 		background-color: $btn-hover-bg-color;
 	}
 
-	&:active{
+	&:active {
 		color: $btn-text-color;
 	}
 }
 
-%text{ //輸入框樣式
+%text { //輸入框樣式
 	padding: $interval-s;
 	border: $border;
 	vertical-align: middle;

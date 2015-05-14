@@ -19,9 +19,6 @@ body {
 
 	> form {
 		
-		&:before {
-			@include icon('map.png');
-		}
 	}
 
 	a {
@@ -88,8 +85,6 @@ body {
 
 		}
 	}
-
-	@import 'module_mobile_nav'; //nav 選單
 }
 
 .extend { //extend 額外資訊
@@ -100,10 +95,6 @@ body {
 
 		}
 	}
-
-	@import 'module_extend_user-tool'; //user-tool 使用者工具
-
-	@import 'module_extend_share-gotop'; //share-gotop 分享與移至最頂
 }
 
 .wrapper { //wrapper 固定佈局
@@ -132,8 +123,6 @@ body {
 
 				}
 			}
-
-			@import 'module_header_logo'; //logo 標誌放置區塊
 			
 			.msg-tool { //msg-tool 資訊與工具
 
@@ -143,32 +132,8 @@ body {
 
 					}
 				}
-
-				@import 'module_header_link'; //link 連結區塊
-
-				@import 'module_header_font-level'; //font-level 字級調整
-
-				@import 'module_header_lang'; //lang 語言選擇
-
-				@import 'module_header_hot-key-word'; //hot-key-word 熱門關鍵字
-				
-				.search{ //search 搜尋
-
-					> .container {
-
-						> .inner {
-
-						}
-					}
-
-					@import 'module_header_search_normal'; //normal 一般搜尋
-
-					@import 'module_header_search_advanced'; //advanced 進階搜尋
-				}
 			}
 		}
-
-		@import 'module_header_nav'; //nav 選單
 	}
 
 	> .container > .inner > .content { //content 主要內容
@@ -218,8 +183,6 @@ body {
 					}
 				}
 
-				@import 'module_content_sitemap'; //sitemap 網站地圖
-
 				.info{ //info 資訊欄
 
 					> .container {
@@ -237,13 +200,7 @@ body {
 
 							}
 						}
-
-						@import 'module_content_title'; //title 標題列
-
-						@import 'module_content_user-tool'; //user-tool 使用者工具
 					}
-
-					@import 'module_content_detail'; //detail 詳細資訊
 				}
 			}
 
@@ -264,6 +221,36 @@ body {
 
 						}
 					}
+
+					> .container > .inner > .header{ //header 頁首資訊
+
+						> .container {
+
+							> .inner {
+
+							}
+						}
+					}
+
+					> .container > .inner > .content{ //content 主要內容
+
+						> .container {
+
+							> .inner {
+
+							}
+						}
+					}
+
+					> .container > .inner > .footer{ //footer 頁尾資訊
+
+						> .container {
+
+							> .inner {
+
+							}
+						}
+					}
 				}
 			}
 
@@ -275,10 +262,6 @@ body {
 
 					}
 				}
-
-				@import 'module_content_page-tool'; //page-tool 頁次導航列
-
-				@import 'module_content_jump-tool'; //jump-tool 跳轉導航列
 			}
 		}
 	}
@@ -292,8 +275,6 @@ body {
 			}
 		}
 
-		@import 'module_footer_nav'; //nav 選單
-
 		.info { //info 資訊欄
 
 			> .container {
@@ -302,8 +283,6 @@ body {
 
 				}
 			}
-
-			@import 'module_footer_logo'; //logo 標誌放置區塊
 			
 			.msg-tool { //msg-tool 資訊與工具
 
@@ -313,14 +292,6 @@ body {
 
 					}
 				}
-
-				@import 'module_footer_link'; //link 連結區塊
-
-				@import 'module_footer_visit-count'; //visit-count 瀏覽人次
-
-				@import 'module_footer_address'; //address 客戶自訂的聯絡區塊
-
-				@import 'module_footer_icon'; //icon 各種標章
 			}
 		}
 	}

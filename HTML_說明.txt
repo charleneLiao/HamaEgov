@@ -1,11 +1,11 @@
-//關於================================================================
+//關於 ==================================================================
 
 1.此文件用以說明共通平台特性與規則，供開發人員參閱
 
 
 
 
-//文件結構================================================================
+//文件結構 ==============================================================
 
 html
 
@@ -15,91 +15,99 @@ html
 
   -form
 
-    - mobile //mobile 行動載具
-      - nav (module) //nav 選單
+    - mobile //行動載具
 
-    - extend //extend 額外資訊
-      - user-tool (module) //user-tool 使用者工具
-      - share_gotop (module) //share-gotop 分享與移至最頂
+    - extend //額外資訊
 
-    - wrapper //wrapper 固定佈局
+    - wrapper //固定佈局
 
-      - header //header 頁首資訊
-        - accesskey (module) //accesskey 導盲磚
-        - info //info 資訊欄
-          - logo (module) //logo 標誌放置區塊
-          - msg-tool //msg-tool 資訊與工具
-            - link (module) //link 連結區塊
-            - font-level (module) //font-level 字級調整
-            - lang (module) //lang 語言選擇
-            - hot-key-word (module) //hot-key-word 熱門關鍵字
-            - search //search 搜尋
-              - normal (module) //normal 一般搜尋
-              - advanced (module) //advanced 進階搜尋
-        - nav (module) //nav 選單
+      - header //頁首資訊
 
-      - content //content 主要內容
-        - accesskey (module) //accesskey 導盲磚
-        - group
-          - album (module)
-          - calendar (module)
-          - cp (module)
-          - sub-epaper (module)
-          - link (module)
-          - msg (module)
-          - rss (module)
-          - tabs (module)
-          - video (module)
-          - vote (module)
-          - weather (module)
+      - content //主要內容
 
-        - aside //aside 內頁側邊
-          - sec-nav (module)
+        - aside //內頁側邊
 
-        - section //section 內頁內容區塊
+        - section //內頁內容區塊
 
-          - header //header 頁首資訊
-            - sitemap (module) //sitemap 網站地圖
-            - info //info 資訊欄
-              - msg-tool //msg-tool 資訊與工具
-                - title (module) //title 標題列
-                - user-tool (module) //user-tool 使用者工具
-              - detail (module) //detail 詳細資訊
+          - header //頁首資訊
 
-          - content //content 主要內容
-            - article //article 文章內容
+          - content //主要內容
 
-          - footer //footer 頁尾資訊
-            - page-tool (module) //page-tool 頁次導航列
-            - jump-tool (module) //jump-tool 跳轉導航列
+            - article //文章內容
 
-      - footer //footer 頁尾資訊
-        - accesskey (module) //accesskey 導盲磚
-        - nav (module) //nav 選單
-        - info //info 資訊欄
-          - logo (module) //logo 標誌放置區塊
-          - msg-tool //msg-tool 資訊與工具
-            - link (module) //link 連結區塊
-            - visit-count (module) //visit-count 瀏覽人次
-            - address (module) //address 客戶自訂的聯絡區塊
-            - icon (module) //icon 各種標章
+          - footer //頁尾資訊
+
+      - footer //頁尾資訊
 
 
 
 
-//標題設定================================================================
+//全域模組 (global) ==============================================================
+
+nav // 選單
+user-tool //使用者工具
+anchor //錨點
+share //分享
+accesskey //導盲磚
+logo //商標
+link //連結區塊
+font-level //字級調整
+lang //語言選擇
+hot-key-word //熱門關鍵字
+search //搜尋
+visit-count //瀏覽人次
+address //客戶自訂的聯絡區塊
+icon //各種標章
+
+
+album
+calendar
+cp
+sub-epaper
+link
+msg
+rss
+tabs
+video
+vote
+weather
+
+
+
+
+//內頁模組 (page) ==============================================================
+
+sitemap //網站地圖
+node-name //節點名稱
+user-tool //使用者工具
+detail //詳細資訊
+page-tool //頁次導航列
+jump-tool //跳轉導航列
+
+
+
+
+//類別模組 (style) ==============================================================
+
+
+
+
+
+
+//標題設定 ==============================================================
 
 h1 內頁標題
 h2 LOGO
-h3 模組標頭
-h4
+h3 第二層節點標題
+h4 模組標題
 h5
 h6
 
 
 
 
-//caption規範說明================================================================
+//模組 HTML 規範 ===========================================================
 
-1. caption是模組的標題，可做文字標題、模組偽類圖示放置區塊，非必要時也可隱藏
-2. 除標題模組、logo模組、導盲磚模組、客戶自訂模組外，應盡可能在模組內放置caption
+1. .header 為文字標題容器，.inner內格式為 h3 > span > 標題文字
+2. .content 為模組內容，如為 ul > li 列表，需匯出 index、child
+3. .footer 為模組附加資訊，如 左右箭頭、更多按鈕等等
