@@ -1,0 +1,25 @@
+//商標
+
+.logo {
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	
+}
+
+@include at-breakpoint(phone) { //phone
+
+}
+
+@include at-breakpoint(pad) { //pad
+
+}
+
+@include at-breakpoint(pc) { //pc
+
+}

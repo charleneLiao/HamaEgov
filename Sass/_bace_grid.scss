@@ -1,26 +1,6 @@
-//RWD與格線
+//格線================================================================
 
-//RWD 核心================================================================
-
-$breakpoints: (
-  pc: '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
-  pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-  phone: '(max-width: #{$phone-width})'
-);
-
-@mixin at-breakpoint($name) {
-
-	@media #{map-get($breakpoints, $name)} {
-		@content;
-	}
-}
-
-
-
-
-//格線系統================================================================
-
-$min_set_length: 1; //最少的child數量
+$min_set_length: 2; //最少的child數量
 $max_set_length: 10; //最多的child數量
 
 @for $i from $min_set_length through $max_set_length { //算分割
@@ -86,7 +66,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 
 	.tabs{
-		margin: $interval-l $interval-l $interval-xl;
+		
 	}
 }
 
@@ -123,11 +103,14 @@ $layout_main_interval: $interval-l; //主層間隔
 	[data-tabtype="0"] { //模組
 
 		> .container {
-			margin: 0;
 
 			> .inner {
 
 			}
+		}
+
+		+ [data-tabtype="0"] {
+			margin-top: $interval-xl;
 		}
 	}
 
@@ -142,6 +125,14 @@ $layout_main_interval: $interval-l; //主層間隔
 
 		.tabs{
 			margin: 0 0 $interval-xl;
+		}
+
+		+ [data-tabtype="2"] {
+			margin-top: $interval-xl;
+		}
+
+		> .container >.inner > [data-tabtype="0"] + [data-tabtype="0"] {
+			margin-top: 0;
 		}
 	}
 }

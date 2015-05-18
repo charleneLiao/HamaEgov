@@ -1,28 +1,28 @@
 //變數與樣式
 
-//基本變數設定================================================================
+//變數================================================================
 
 //灰階
 $very-light: #ffffff; //非常淺
-$light: #f1f1f1; //淺色
-$light-gray: #d2d2d2; //淺灰
-$gray: #cecece; //灰色
-$deep-gray: #999999; //深灰
-$deep: #3c3c3c; //深色
+$light: #f5f5f5; //淺色
+$light-gray: #e0e0e0; //淺灰
+$gray: #898989; //灰色
+$deep-gray: #646464; //深灰
+$deep: #343434; //深色
 $very-deep: #1a1a1a; //非常深
 
 //版面顏色
-$main-color: #ed1c80 !default; //主色
+$main-color: #f59534 !default; //主色
 $main-color-hover: darken($main-color, 10);
-$sec-color: #16a185 !default; //第二搭配色
+$sec-color: #0595d6 !default; //第二搭配色
 $sec-color-hover: darken($sec-color, 10);
-$third-color: #f4865e !default; //第三搭配色
+$third-color: #fff !default; //第三搭配色
 $third-color-hover: darken($third-color, 10);
 
 //文字顏色
-$title-color: #8b45ae !default; //標題色
+$title-color: #ea5741 !default; //標題色
 $title-color-hover: darken($title-color, 10);
-$span-color: #9f2139 !default; //附註色
+$span-color: #a1c765 !default; //附註色
 $span-color-hover: darken($span-color, 10);
 
 //文字樣式
@@ -42,9 +42,16 @@ $font-weight-b: 700; //bold
 //文字行高
 $line-height-xs: 1; //extra smail
 $line-height-s: 1.2; //small
-$line-height-m: 1.6; //medium
+$line-height-m: 1.4; //medium
 $line-height-l: 2; //large
 $line-height-xl: 2.4; //extra large
+
+//文字間格
+$letter-spacing-xs: 1px; //extra smail
+$letter-spacing-s: 2px; //small
+$letter-spacing-m: 3px; //medium
+$letter-spacing-l: 4px; //large
+$letter-spacing-xl: 5px; //extra large
 
 //透明度
 $opacity-vl: .3; //very low
@@ -61,19 +68,16 @@ $interval-l: 20px; //large
 $interval-xl: 30px; //extra large
 
 //RWD寬度
-$pc-width: 970px;
+$pc-width: 1010px;
 $pad-width: 768px;
-$phone-width: 480px;
+$phone-width: 660px;
 
+//基本動畫速度
+$transition: 300ms;
 
 //圖片檔名
-// $header-logo-src: 'header_logo.png'; 
-// $footer-logo-src: 'footer_logo.png';
-
-
-
-
-//基本樣式設定================================================================
+$header-logo-src: 'header_logo.png'; 
+$footer-logo-src: 'footer_logo.png';
 
 //全頁文字
 $body-font-color: $deep !default; //網站文字顏色
@@ -85,8 +89,8 @@ $body-font-size-l: $font-size-m !default; //large
 $content: '\200B'; //空偽類的字元
 
 //預設陰影
-$box-shadow: 0 0 $interval-s $deep-gray;
-$text-shadow: 0 0 $interval-s $deep;
+$box-shadow: 0 0 $interval-m $light-gray;
+$text-shadow: 0 0 $interval-m $deep-gray;
 
 //預設線條
 $border-style: solid;
@@ -95,29 +99,29 @@ $border-color: $light-gray;
 $border: $border-width $border-style $border-color;
 
 //預設圓角
-$border-radius: $interval-xs;
+$border-radius: $interval-s;
 
 //連結顏色
 $link-color: $deep !default; //連結顏色
 $visited-color: $deep !default; //造訪過連結顏色
-$hover-color: $sec-color !default; //指標移入連結顏色，不可與任何底色重疊 
+$hover-color: $main-color !default; //指標移入連結顏色，不可與任何底色重疊 
 $active-color: $deep !default; //點擊連結顏色
 
 //按鈕樣式
-$btn-bg-color: $deep-gray; //按鈕背景色
-$btn-hover-bg-color: $deep; //按鈕滑入顏色
+$btn-bg-color: $gray; //按鈕背景色
+$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
 $btn-text-color: $very-light; //按鈕文字顏色
-$btn-padding: $interval-s $interval-l; //按鈕內邊距，決定按鈕大小
-$btn-border: $border; //按鈕線框
+$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
+$btn-border: 0; //按鈕線框
 
 
 
 
 
-//extend 排版樣式設定================================================================
+//樣式================================================================
 
 %center { //齊中寬度
-	width: $pc-width;
+	max-width: $pc-width;
 	margin: 0 auto;
 }
 
@@ -126,37 +130,6 @@ $btn-border: $border; //按鈕線框
 	margin-bottom: $interval-l;
 	font-size: $font-size-l;
 	color: $main-color;
-}
-
-%table { //表單樣式
-
-	tr{
-
-		&:nth-child(2n) {
-			background-color: $light;
-		}
-
-		th,td { //th,td共同設定
-			padding: $interval-l;
-			
-			a {
-				color: inherit;
-
-				&:hover {
-					color: $hover-color;
-				}
-			}
-		}
-
-		th { //標題設定
-			font-size: $font-size-l;
-			color: $title-color;
-		}
-
-		td {
-			line-height: $line-height-m;
-		}
-	}
 }
 
 %btn { //按鈕樣式
@@ -170,6 +143,7 @@ $btn-border: $border; //按鈕線框
 	cursor: pointer;
 	font-size: $font-size-s;
 	background-color: $btn-bg-color;
+	transition: $transition;
 
 	&:link {
 		color: $btn-text-color;
@@ -192,4 +166,40 @@ $btn-border: $border; //按鈕線框
 	padding: $interval-s;
 	border: $border;
 	vertical-align: middle;
+}
+
+%model_header {
+
+	> .container {
+
+		> .inner {
+			margin-bottom: $interval-m;
+			border-bottom: $border;
+			border-color: $very-light;
+		}
+	}
+	
+	h3 {
+		position: relative;
+		padding-bottom: $interval-s;
+		border-bottom: $border;
+		border-color: $gray;
+
+		&:before {
+			margin-right: $interval-s;
+			vertical-align: $interval-l;
+		}
+
+		span {
+			font-size: $font-size-xl;
+			font-weight: $font-weight-b;
+			vertical-align: -3px;
+		}
+	}
+}
+
+%model_footer {
+	position: absolute;
+	top: 15px;
+	right: $interval-xl;
 }

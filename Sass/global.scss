@@ -1,12 +1,6 @@
-//基礎版型與框架
+//全域模組
 
-@import 'bace'; //共用底模組
-
-@import 'normalize'; //css 正常化
-
-@import 'bace_grid'; //RWD與格線
-
-@import 'bace_layout'; //排版框架
+@import 'bace'; //sass基礎設定
 
 @import 'global_nav'; //選單
 
