@@ -89,7 +89,10 @@ jump-tool //跳轉導航列
 
 //類別模組 (style) ==============================================================
 
-
+list-straight //直式列表
+list-horizontal //橫式列表
+list-icon //橫式列表
+list-link //橫式列表
 
 
 
@@ -111,3 +114,16 @@ h6
 1. .header 為文字標題容器，.inner內格式為 h3 > span > 標題文字
 2. .content 為模組內容，如為 ul > li 列表，需匯出 index、child
 3. .footer 為模組附加資訊，如 左右箭頭、更多按鈕等等
+
+
+
+
+//data- HTML5自訂屬性列表 ===========================================================
+
+1. data-js 判斷是否開啟 js ，屬性為 'false' & 'true'，用於 body
+2. data-admin 判斷是為管理員，屬性為 'false' & 'true'，用於 body
+3. data-oddIE 判斷是為舊版IE，屬性為 'false' & 'true'，用於 body
+4. data-type 模組型態，屬性為數字，'0'為模組、'1'為分割、'2'為頁籤、'3'為單欄，用於 .group
+5. data-index 模組順序，屬性為數字，如'1'代表父層的第一個子節點，用於 .group
+6. data-child 模組子節點數量，屬性為數字，如'1'代表擁有1個子節點，用於 .group
+7. data-navWidth 次選單寬度，僅用在nav上，屬性為數字，如'2'代表子選單為第一層選單的200%的寬度

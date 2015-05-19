@@ -5,7 +5,7 @@ $max_set_length: 10; //最多的child數量
 
 @for $i from $min_set_length through $max_set_length { //算分割
 
-	[data-tabtype="1"][data-child="#{$i}"] {
+	[data-type="1"][data-child="#{$i}"] {
 
 		> .container{
 
@@ -20,7 +20,7 @@ $max_set_length: 10; //最多的child數量
 	}
 }
 
-[data-tabtype="1"] {
+[data-type="1"] {
 
 	> .container{
 
@@ -35,7 +35,7 @@ $max_set_length: 10; //最多的child數量
 
 $layout_main_interval: $interval-l; //主層間隔
 
-[data-tabtype="0"] { //模組
+[data-type="0"] { //模組
 
 	> .container {
 		margin: 0 $layout_main_interval;
@@ -46,7 +46,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-[data-tabtype="1"] { //分割
+[data-type="1"] { //分割
 
 	> .container {
 
@@ -56,7 +56,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-[data-tabtype="2"] { //頁籤
+[data-type="2"] { //頁籤
 
 	> .container {
 
@@ -70,7 +70,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-[data-tabtype="3"] { //單欄
+[data-type="3"] { //單欄
 
 	> .container {
 
@@ -86,7 +86,7 @@ $layout_main_interval: $interval-l; //主層間隔
 
 	@for $i from $min_set_length through $max_set_length{ //算分割
 
-		[data-tabtype="1"][data-child="#{$i}"]{
+		[data-type="1"][data-child="#{$i}"]{
 
 			> .container{
 
@@ -100,7 +100,7 @@ $layout_main_interval: $interval-l; //主層間隔
 		}
 	}
 
-	[data-tabtype="0"] { //模組
+	[data-type="0"] { //模組
 
 		> .container {
 
@@ -109,12 +109,12 @@ $layout_main_interval: $interval-l; //主層間隔
 			}
 		}
 
-		+ [data-tabtype="0"] {
+		+ [data-type="0"] {
 			margin-top: $interval-xl;
 		}
 	}
 
-	[data-tabtype="2"] { //頁籤
+	[data-type="2"] { //頁籤
 
 		> .container {
 
@@ -127,11 +127,11 @@ $layout_main_interval: $interval-l; //主層間隔
 			margin: 0 0 $interval-xl;
 		}
 
-		+ [data-tabtype="2"] {
+		+ [data-type="2"] {
 			margin-top: $interval-xl;
 		}
 
-		> .container >.inner > [data-tabtype="0"] + [data-tabtype="0"] {
+		> .container >.inner > [data-type="0"] + [data-type="0"] {
 			margin-top: 0;
 		}
 	}
@@ -141,7 +141,7 @@ $layout_main_interval: $interval-l; //主層間隔
 
 	@for $i from $min_set_length through $max_set_length{ //算分割
 
-		[data-tabtype="1"][data-child="#{$i}"]{
+		[data-type="1"][data-child="#{$i}"]{
 
 			> .container{
 
