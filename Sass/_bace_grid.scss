@@ -7,11 +7,11 @@ $max_set_length: 10; //最多的child數量
 
 	[data-type="1"][data-child="#{$i}"] {
 
-		> .container{
+		> .container {
 
-			> .inner{
+			> .inner {
 
-				> .group{
+				> .group {
 					float: left;
 					width: 100% / $i;
 				}
@@ -22,11 +22,11 @@ $max_set_length: 10; //最多的child數量
 
 [data-type="1"] {
 
-	> .container{
+	> .container {
 
-		> .inner{
+		> .inner {
 	
-			&:after{
+			&:after {
 				@extend %clear;
 			}
 		}
@@ -65,7 +65,7 @@ $layout_main_interval: $interval-l; //主層間隔
 		}
 	}
 
-	.tabs{
+	.tabs {
 		
 	}
 }
@@ -84,15 +84,15 @@ $layout_main_interval: $interval-l; //主層間隔
 
 @include at-breakpoint(phone) { //phone
 
-	@for $i from $min_set_length through $max_set_length{ //算分割
+	@for $i from $min_set_length through $max_set_length { //算分割
 
-		[data-type="1"][data-child="#{$i}"]{
+		[data-type="1"][data-child="#{$i}"] {
 
-			> .container{
+			> .container {
 
-				> .inner{
+				> .inner {
 
-					> .group{
+					> .group {
 						width: 100%;
 					}
 				}
@@ -123,38 +123,30 @@ $layout_main_interval: $interval-l; //主層間隔
 			}
 		}
 
-		.tabs{
-			margin: 0 0 $interval-xl;
-		}
-
-		+ [data-type="2"] {
-			margin-top: $interval-xl;
-		}
-
-		> .container >.inner > [data-type="0"] + [data-type="0"] {
-			margin-top: 0;
+		.tabs {
+			
 		}
 	}
 }
 
 @include at-breakpoint(pad) { //pad
 
-	@for $i from $min_set_length through $max_set_length{ //算分割
+	@for $i from $min_set_length through $max_set_length { //算分割
 
-		[data-type="1"][data-child="#{$i}"]{
+		[data-type="1"][data-child="#{$i}"] {
 
-			> .container{
+			> .container {
 
-				> .inner{
+				> .inner {
 
-					> .group{
+					> .group {
 						width: 50%;
 
-						&:nth-child(odd){
+						&:nth-of-type(odd) {
 							clear: left;
 						}
 
-						.group{
+						.group {
 							width: 100%;
 						}
 					}
