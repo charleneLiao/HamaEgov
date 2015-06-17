@@ -1,88 +1,310 @@
 //關於 ==================================================================
 
-1.此文件用以說明共通平台特性與規則，供開發人員參閱
+01. 此文件用以說明共通平台特性與規則，供開發人員參閱
+02. 
+
+
+
+//文件結構 HTML 概述 ==============================================================
+
+01. 此平台 HTML 是由三種 '群組' 堆疊而成，分別為特化內容 '模組群組(模組)' 、 排版容器 '排版群組(群組)' 及模組化一般群組的 '排版模組群組(模組群組)'
+02. '模組群組' 呈現特定內容，如 'RSS模組' 或 '天氣模組' 等等
+03. '排版群組' 主要功能是作為容器，裝載 '排版群組' 或 '模組群組' ，以達到排版所需
+04. '排版模組群組' 可將多個 '模組群組' 組成一個 '模組群組' ，將內部的 '模組群組' 以清單方式排列 ( ul>li>'模組群組' )
+05. '框架性 排版群組' 為框架基礎，是特別的 '排版群組' ，有唯一 class 名稱，不可拖曳、不可變動。 具體成員有 .mobile 、 .extend 、 .wrapper 、 .aside 、 .section 、 .article 六項
+06. '框架性 排版群組' 的 .header 、 .content 、 .footer 均為 '排版群組' 的一種 ，有別於一般 '模組群組' 內的同名區塊
+07. '模組群組' 的 .header 、 .content 與 .footer 僅作為一般內容使用，詳見 '//模組群組 HTML 規範'
+08. 以下為框架結構：
+
+    html
+
+    - head
+
+    - body
+
+      - form
+
+        - .mobile //行動載具
+
+        - .extend //額外資訊
+
+        - .wrapper //固定佈局
+
+          - .header //頁首資訊
+
+          - .content //主要內容
+
+            - .aside //內頁側邊
+
+            - .section //內頁內容區塊
+
+              - .header //頁首資訊
+
+              - .content //主要內容
+
+                - .article //文章內容
+
+              - .footer //頁尾資訊
+
+          - .footer //頁尾資訊
+
+09. 
+
+
+
+//自訂屬性 HTML 規範 ===========================================================
+
+01. data-*參數定義該節點的狀態或呈現更多資訊，以下為列表：
+    01-02. data-function     啟用的 function 名稱，用於 '群組'，屬性為字串
+    01-05. *data-type        模組型態，用於 '群組'，屬性為數字 '0' 至 '3'，'0'為模組、'1'為分割、'2'為頁籤、'3'為單欄、'4'為清單
+    01-06. *data-index       模組順序，用於 '群組'，屬性為數字，如'1'代表父層的第一個子節點，特殊模組如頁籤、導盲無此屬性
+    01-07. *data-childLength 模組子節點數量，用於 '群組'，屬性為數字，如'1'代表擁有1個子節點，寬度預設為並排
+    01-08. data-aLineLength  模組一行內的 '群組' 並排數量，用於 '群組'，屬性為數字，如'3'代表一行有三個 '群組' 並排，會覆蓋 data-index 的排序規則
+    01-10. data-theme        產生不一樣的輪播內容樣式，於特定 function 被啟用才有作用，屬性為數字 '0' 至 '10' ，'0' 為全部開啟模式
+    01-11. data-autoAction   判斷是否自動輪播，於輪播類 function 被啟用才有作用，屬性為布林值 'false' & 'true'
+    01-12. data-delayTime    輪播間隔時間，屬性為數字，當 autoSlider 屬性為 'true' 才有作用，以毫秒計算
+    01-13. data-animateSpeed 輪播動畫速度，屬性為數字，以毫秒計算
+    01-01. data-js           判斷是否開啟 js ，僅用於 'body'，屬性為布林值 'false' & 'true'
+    01-03. data-admin        判斷是為管理員，僅用於 'body'，屬性為布林值 'false' & 'true'
+    01-04. data-oddIE        判斷是為舊版IE，僅用於 'body'，屬性為布林值 'false' & 'true'
+    01-09. data-navWidth     次選單寬度，僅用於 '.nav' 上，屬性為數字，如'2'代表子選單為第一層選單的 200% 的寬度
+
+02. 規範屬性順序為：
+    02-01. id
+    02-02. class
+    02-02. href
+    02-02. action
+    02-02. method
+    02-02. value
+    01-01. data-js
+    01-02. data-function
+    01-03. data-admin
+    01-04. data-oddIE
+    02-03. data-index
+    02-04. data-type
+    02-05. data-childLength
+    02-06. data-aLineLength
+    02-07. data-function
+    02-08. data-theme
+    02-09. data-autoAction
+    02-10. data-delayTime
+    02-11. data-animateSpeed
+    01-09. data-navWidth
+    01-09. data-lang    
 
 
 
 
-//文件結構 ==============================================================
+//標題序列 HTML 規範 ==============================================================
 
-html
+01. h1 內頁標題
+02. h2 LOGO
+03. h3 內頁節點標題，'排版模組群組' 標題
+04. h4 模組標題
+05. h5 
+06. h6
 
-- head
 
-- body
 
-  -form
 
-    - mobile //行動載具
+//排版群組 HTML 規範 ===========================================================
 
-    - extend //額外資訊
+01. '排版群組' 簡稱 '群組' ，僅作為容器存在
+02. 無排列規範，依版面需求調整
+03. 
 
-    - wrapper //固定佈局
 
-      - header //頁首資訊
 
-      - content //主要內容
 
-        - aside //內頁側邊
+//模組群組 HTML 規範 ===========================================================
 
-        - section //內頁內容區塊
+01. '模組群組' 簡稱 '模組' ，依意義而有不同內容，作為主要的內容呈現區塊
+02. .header  為模組標題容器{可選}，詳見 '模組標題 HTML 規範' 章節
+03. .content 為模組內容容器，詳見 '模組內容 HTML 規範' 章節
+04. .footer  為模組附加資訊容器{可選}，詳見 '模組附加資訊 HTML 規範' 章節
+05. '組件' 為基本的 HTML 區塊，所有模組都應用 '組件' 拼出內容，以具有規律、多層為原則：
 
-          - header //頁首資訊
+    05-01 表單類:
+        05-01-01. '表單主題區塊'    div.form>
+        05-01-02. '表單區塊'        fieldset>
+        05-01-03. '表單標題組件'    legend>a{可選}>span>{標題文字}
+        05-01-04. '輸入框組件'      span.button>input[type='button']
+                                    span.checkbox>input[type='checkbox']
+                                    span.color>input[type='color']
+                                    span.date>input[type='date']
+                                    span.datetime>input[type='datetime']
+                                    span.datetime_local>input[type='datetime-local']
+                                    span.email>input[type='email']
+                                    span.file>input[type='file']
+                                    span.hidden>input[type='hidden']
+                                    span.input_image>input[type='image']
+                                    span.month>input[type='month']
+                                    span.number>input[type='number']
+                                    span.input>input[type='password']
+                                    span.radio>input[type='radio']
+                                    span.range>input[type='range']
+                                    span.reset>input[type='reset']
+                                    span.search>input[type='search']
+                                    span.submit>input[type='submit']
+                                    span.tel>input[type='tel']
+                                    span.text>input[type='text']
+                                    span.time>input[type='time']
+                                    span.url>input[type='url']
+                                    span.week>input[type='week']
+        05-01-05. '標籤組件'        span.label>label{可選}
+        05-01-06. '選擇框組件'      span.checkbox>(span.label>label)+(input[type='checkbox'])
+                                    span.checkbox>(span.label>label)+(input[type='radio'])
+        05-01-07. '文字輸入框組件'  div.textarea>textarea
+                                    span.textarea>textarea
+        05-01-08. '選擇框組件'      div.select>select>option>{文字}
+                                    span.select>select>option>{文字}
+        05-01-09.
 
-          - content //主要內容
+    05-02 表格類:
+        05-02-01. '表格主題區塊'    div.table>
+        05-02-02. '表格區塊'        table>
+        05-02-03. '表格標題區塊'    thead>
+        05-02-03. '表格內容區塊'    thead>
+        05-02-03. '表格附加資訊區塊'tfoot>
+        05-02-04. '表格內容組件'    tr>td>span>a{可選}
+                                    tr>th>span>a{可選}
+        05-02-05. 
 
-            - article //文章內容
+    05-03 清單類:
+        05-03-01. '清單主題區塊'    div.list>
+                                    div.list>
+        05-03-02. '清單區塊'        ul>li>
+                                    ol>li>
+        05-03-03. '清單內容組件'    span>a{可選}
+        05-03-04. 
 
-          - footer //頁尾資訊
+    05-04 文字類:
+        05-04-01. '內文主題區塊'    div.essay>
+                                    a.essay>
+        05-04-02. '內文區塊'        div.paragraph>
+                                    a.paragraph>
+        05-04-03. '標題組件'        div.caption>span>a{可選}>{標題文字}
+        05-04-04. '標題組件'        h1>span>a{可選}
+                                    h2>span>a{可選}
+                                    h3>span>a{可選}
+                                    h4>span>a{可選}
+                                    h5>span>a{可選}
+                                    h6>span>a{可選}
+        05-04-05. '段落文字組件'    p>span>a{可選}>{文字}
+        05-04-06. '簡單文字組件'    span>a{可選}>{文字}
+        05-04-07. 
 
-      - footer //頁尾資訊
+    05-05 圖片類:
+        05-05-01. '圖片主題區塊'    div.figure>
+                                    a.figure>
+        05-05-02. '圖片區塊'        div.images>
+                                    a.images>
+        05-05-03. '標題組件'        div.figcaption>span>a{可選}>{標題文字}
+        05-05-04. '複數圖片組件'    div.image>span>a{可選}>img
+        05-05-05. '簡單圖片組件'    span>a{可選}>img
+        05-05-06.
+
+    05-06 標題類:
+        05-06-01. '標題主題區塊'    div.heading>
+        05-06-02. '標題區塊'        div.caption>
+        05-06-03. '標題組件'        span>a{可選}>{標題文字}
+        05-06-04. 
+
+    05-07 區塊類:
+        05-07-01. '區塊'            div.division>
+                                    a.division>
+        05-07-02.
+
+    05-08 應用:
+        05-06-01. '圖片附註文字'    div.figure>(div.figcaption>span>a{可選}>{標題文字})+(div.images>(div.image>span>a{可選}>img)+(p>span>a{可選}>img))
+        05-06-02. '文章附註圖片'    div.essay>(div.caption>span>a{可選}>{標題文字})+(div.images>(div.image>span>a{可選}>img)+(div.image>span>a{可選}>img))+(p>span>a{可選}>img)
+        05-06-03
+
+06. 使用圖片時，圖片來源必須加入 span 行內背景中，寫成 '<span style="background-images: url('Images/sample.png');">...'
+07. 
+
+
+
+
+// .header 模組標題 HTML 規範 ===========================================================
+
+01. .header 放置模組標題，必須為文字
+02. 若模組本身就是標題，如 '標題名稱模組(.hgroup)' 或 '文章標題模組(.title)' 等，應省略 .header
+02. 使用 '標題組件' 時，模組標題應使用 h4
+03. 特定模組標題並非 h4 標籤， '標題名稱模組(.hgroup)' 及 '排版模組群組' 標題為 h3 、 '商標模組(.logo)' 標題為 h2
+04. .header 為可選，非必要可省略
+05. '框架性 排版群組' 的 .header 非模組標題，詳見 '//文件結構 HTML 概述'
+06. 
+
+
+
+
+// .content 模組內容 HTML 規範 ===========================================================
+
+01. .content 裝載主要的模組內容
+02. 若模組本身就是標題，如 '標題名稱模組(.hgroup)' 或 '文章標題模組(.title)' 等，.content 應裝載 '標題組件' 並省略 .header
+03. '框架性 排版群組' 的 .content 非模組內容，詳見 '//文件結構 HTML 概述'
+20. 
+
+
+
+
+// .footer 模組附加資訊 HTML 規範 ===========================================================
+
+01. .footer 放置附加資訊如按鈕、說明文字
+02. 按鈕類附加資訊，格式為 '清單組件'，若需 class 名稱則加在 li 上
+03. 按鈕類附加資訊，基本按鈕 class 可用 '.prev(上)' 、 '.next(下)' 、 '.first(第一)' 、 '.last(最後)' 與 '.more(更多)' ，被啟用的狀態可用 '.is_active(啟動)'
+04. 文字類附加資訊，格式為 '內文組件'
+04. .footer 為可選，非必要可省略
+05. '框架性 排版群組' 的 .footer 非模組附加資訊，詳見 '//文件結構 HTML 概述'
+06.
+
+
+
+
+//排版模組群組 HTML 規範 ===========================================================
+
+01. 
 
 
 
 
 //全域模組 (global) ==============================================================
 
-nav // 選單
-user-tool //使用者工具
-anchor //錨點
-share //分享
-accesskey //導盲磚
-logo //商標
-link //連結區塊
-font-level //字級調整
-lang //語言選擇
-hot-key-word //熱門關鍵字
-search //搜尋
-visit-count //瀏覽人次
-address //客戶自訂的聯絡區塊
-icon //各種標章
+.nav // 選單
+.user-tool //使用者工具
+.anchor //錨點
+.share //分享
+.accesskey //導盲磚
+.logo //商標
+.link //連結區塊
+.font-level //字級調整
+.lang //語言選擇
+.hot-key-word //熱門關鍵字
+.search //搜尋
+.visit-count //瀏覽人次
+.address //客戶自訂的聯絡區塊
+.icon //各種標章
+.sitemap //網站地圖
+.hgroup //頁面標題
+.user-tool //使用者工具
+.title //內文標題
+.detail //詳細資訊
+.page-tool //頁次導航列
+.jump-tool //跳轉導航列
 
 
-album
-calendar
-cp
-sub-epaper
-link
-msg
-rss
-tabs
-video
-vote
-weather
-
-
-
-
-//內頁模組 (page) ==============================================================
-
-sitemap //網站地圖
-node-name //節點名稱
-user-tool //使用者工具
-detail //詳細資訊
-page-tool //頁次導航列
-jump-tool //跳轉導航列
+.album
+.calendar
+.cp
+.sub-epaper
+.link
+.msg
+.rss
+.tabs
+.video
+.vote
+.weather
 
 
 
@@ -93,37 +315,3 @@ list-straight //直式列表
 list-horizontal //橫式列表
 list-icon //橫式列表
 list-link //橫式列表
-
-
-
-
-//標題設定 ==============================================================
-
-h1 內頁標題
-h2 LOGO
-h3 第二層節點標題
-h4 模組標題
-h5
-h6
-
-
-
-
-//模組 HTML 規範 ===========================================================
-
-1. .header 為文字標題容器，.inner內格式為 h3 > span > 標題文字
-2. .content 為模組內容，如為 ul > li 列表，需匯出 index、child
-3. .footer 為模組附加資訊，如 左右箭頭、更多按鈕等等
-
-
-
-
-//data- HTML5自訂屬性列表 ===========================================================
-
-1. data-js 判斷是否開啟 js ，屬性為 'false' & 'true'，用於 body
-2. data-admin 判斷是為管理員，屬性為 'false' & 'true'，用於 body
-3. data-oddIE 判斷是為舊版IE，屬性為 'false' & 'true'，用於 body
-4. data-type 模組型態，屬性為數字，'0'為模組、'1'為分割、'2'為頁籤、'3'為單欄，用於 .group
-5. data-index 模組順序，屬性為數字，如'1'代表父層的第一個子節點，用於 .group
-6. data-child 模組子節點數量，屬性為數字，如'1'代表擁有1個子節點，用於 .group
-7. data-navWidth 次選單寬度，僅用在nav上，屬性為數字，如'2'代表子選單為第一層選單的200%的寬度
