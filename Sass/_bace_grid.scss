@@ -1,18 +1,28 @@
-//格線================================================================
+//排版框架
 
-$min_set_length: 2; //最少的child數量
-$max_set_length: 10; //最多的child數量
+/*
+type 0 模組
+type 1 分割
+type 2 頁籤
+type 3 單攔
+type 4 清單
+*/
 
-@for $i from $min_set_length through $max_set_length { //算分割
+$min_childLength: 2; //最少的child數量
+$max_childLength: 10; //最多的child數量
 
-	[data-type="1"][data-child="#{$i}"] {
+$min_aLineLength: 2; //最少的單行數量
+$max_aLineLength: 10; //最多的單行數量
 
-		> .container {
+@for $i from $min_childLength through $max_childLength { //算分割
 
-			> .inner {
+	[data-type="1"][data-childLength="#{$i}"] {
 
-				> .group {
-					float: left;
+		> .container{
+
+			> .inner{
+
+				> [data-index]{
 					width: 100% / $i;
 				}
 			}
@@ -20,14 +30,17 @@ $max_set_length: 10; //最多的child數量
 	}
 }
 
-[data-type="1"] {
+@for $i from $min_aLineLength through $max_aLineLength { //算分割
 
-	> .container {
+	[data-type="1"][data-aLineLength="#{$i}"] {
 
-		> .inner {
-	
-			&:after {
-				@extend %clear;
+		> .container{
+
+			> .inner{
+
+				> [data-index]{
+					width: 100% / $i;
+				}
 			}
 		}
 	}
@@ -52,6 +65,13 @@ $layout_main_interval: $interval-l; //主層間隔
 
 		> .inner {
 
+			> [data-index] {
+				float: left
+			}
+	
+			&:after{
+				@extend %clear;
+			}
 		}
 	}
 }
@@ -65,8 +85,8 @@ $layout_main_interval: $interval-l; //主層間隔
 		}
 	}
 
-	.tabs {
-		
+	.tabs{
+		margin: $interval-l $interval-l $interval-xl;
 	}
 }
 
@@ -80,19 +100,58 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
+[data-type="4"] { //清單
+
+	> .container {
+		margin: 0 $layout_main_interval;
+
+		> .inner {
+
+		}
+	}
+
+	[data-type="0"] { //模組
+
+		> .container {
+			margin: 0;
+
+			> .inner {
+
+			}
+		}
+	}
+}
+
+
 
 
 @include at-breakpoint(phone) { //phone
 
-	@for $i from $min_set_length through $max_set_length { //算分割
+	@for $i from $min_childLength through $max_childLength { //算分割
 
-		[data-type="1"][data-child="#{$i}"] {
+		[data-type="1"][data-childLength="#{$i}"] {
 
-			> .container {
+			> .container{
 
-				> .inner {
+				> .inner{
 
-					> .group {
+					> [data-index]{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	@for $i from $min_aLineLength through $max_aLineLength { //算分割
+
+		[data-type="1"][data-aLineLength="#{$i}"] {
+
+			> .container{
+
+				> .inner{
+
+					> [data-index]{
 						width: 100%;
 					}
 				}
@@ -103,14 +162,11 @@ $layout_main_interval: $interval-l; //主層間隔
 	[data-type="0"] { //模組
 
 		> .container {
+			margin: 0;
 
 			> .inner {
 
 			}
-		}
-
-		+ [data-type="0"] {
-			margin-top: $interval-xl;
 		}
 	}
 
@@ -123,30 +179,54 @@ $layout_main_interval: $interval-l; //主層間隔
 			}
 		}
 
-		.tabs {
-			
+		.tabs{
+			margin-bottom: $interval-xl;
 		}
 	}
 }
 
 @include at-breakpoint(pad) { //pad
 
-	@for $i from $min_set_length through $max_set_length { //算分割
+	@for $i from $min_childLength through $max_childLength { //算分割
 
-		[data-type="1"][data-child="#{$i}"] {
+		[data-type="1"][data-childLength="#{$i}"] {
 
-			> .container {
+			> .container{
 
-				> .inner {
+				> .inner{
 
-					> .group {
+					> [data-index]{
 						width: 50%;
 
-						&:nth-of-type(odd) {
+						&:nth-of-type(odd){
 							clear: left;
 						}
 
-						.group {
+						[data-index]{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@for $i from $min_aLineLength through $max_aLineLength { //算分割
+
+		[data-type="1"][data-aLineLength="#{$i}"] {
+
+			> .container{
+
+				> .inner{
+
+					> [data-index]{
+						width: 50%;
+
+						&:nth-of-type(odd){
+							clear: left;
+						}
+
+						[data-index]{
 							width: 100%;
 						}
 					}
