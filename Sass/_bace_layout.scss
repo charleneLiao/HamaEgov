@@ -77,7 +77,7 @@ body {
 	}
 }
 
-.mobile { //mobile 行動載具
+#root { //拖曳根結點
 
 	> .container {
 
@@ -87,7 +87,51 @@ body {
 	}
 }
 
-.extend { //extend 額外資訊
+#mobile { //行動載具
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	.list-group-nav { //選單列表
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		> .container > .inner > .header {
+
+			h3 {
+
+				span {
+
+				}
+			}
+		}
+
+		> .container > .inner > .content {
+			
+			> ul {
+
+				> li {
+
+				}
+			}
+		}
+
+		> .container > .inner > .footer {
+			
+		}
+	}
+}
+
+#extend { //額外資訊
 
 	> .container {
 
@@ -97,7 +141,17 @@ body {
 	}
 }
 
-.wrapper { //wrapper 固定佈局
+#wrapper { //固定佈局
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+}
+
+#header { //頁首資訊
 
 	> .container {
 
@@ -106,7 +160,7 @@ body {
 		}
 	}
 
-	> .container > .inner > .header { //header 頁首資訊
+	.group-info { //資訊群組
 
 		> .container {
 
@@ -114,29 +168,19 @@ body {
 
 			}
 		}
-
-		.info { //info 資訊欄
+		
+		.group-msg-tool { //資訊與工具群組
 
 			> .container {
 
 				> .inner {
 
-				}
-			}
-			
-			.msg-tool { //msg-tool 資訊與工具
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
 
-	> .container > .inner > .content { //content 主要內容
+	.list-group-nav { //選單列表
 
 		> .container {
 
@@ -145,108 +189,162 @@ body {
 			}
 		}
 
-		.group {
+		> .container > .inner > .header {
 
-			> .container {
+			h3 {
 
-				> .inner {
+				span {
+					
+				}
+			}
+		}
+
+		> .container > .inner > .content {
+			
+			> ul {
+
+				> li {
 
 				}
 			}
 		}
 
-		.aside { //aside 內頁側欄區塊
+		> .container > .inner > .footer {
+			
+		}
+	}
+}
 
-			> .container {
+#content { //主要內容
 
-				> .inner {
+	> .container {
 
-				}
+		> .inner {
+
+		}
+	}
+}
+
+#index { //首頁內容區塊
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	.tab-group-sample { //頁籤範例
+
+		> .container {
+
+			> .inner {
+
 			}
 		}
+	}
+}
 
-		.section { //section 內頁內容區塊
+#aside { //內頁側欄區塊
 
-			> .container {
+	> .container {
 
-				> .inner {
+		> .inner {
 
-				}
-			}
+		}
+	}
+}
 
-			> .container > .inner > .header{ //header 頁首資訊
+#section { //內頁內容區塊
 
-				> .container {
+	> .container {
 
-					> .inner {
+		> .inner {
 
-					}
-				}
-			}
+		}
+	}
 
-			> .container > .inner > .content{ //content 主要內容
+	> .container > .inner > .header{ //頁首資訊
 
-				> .container {
+		> .container {
 
-					> .inner {
+			> .inner {
 
-					}
-				}
-
-				.article{ //article 文章內容
-
-					> .container {
-
-						> .inner {
-
-						}
-					}
-
-					> .container > .inner > .header{ //header 頁首資訊
-
-						> .container {
-
-							> .inner {
-
-							}
-						}
-					}
-
-					> .container > .inner > .content{ //content 主要內容
-
-						> .container {
-
-							> .inner {
-
-							}
-						}
-					}
-
-					> .container > .inner > .footer{ //footer 頁尾資訊
-
-						> .container {
-
-							> .inner {
-
-							}
-						}
-					}
-				}
-			}
-
-			> .container > .inner > .footer{ //footer 頁尾資訊
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
 			}
 		}
 	}
 
-	> .container > .inner > .footer { //footer 頁尾資訊
+	> .container > .inner > .content{ //主要內容
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+	> .container > .inner > .footer{ //頁尾資訊
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+}
+
+#article{ //文章
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	> .container > .inner > .header{ //頁首資訊
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+	> .container > .inner > .content{ //主要內容
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+	> .container > .inner > .footer{ //頁尾資訊
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+}
+
+#footer { //頁尾資訊
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	.list-group-nav { //選單列表
 
 		> .container {
 
@@ -255,22 +353,46 @@ body {
 			}
 		}
 
-		.info { //info 資訊欄
+		> .container > .inner > .header {
+
+			h3 {
+
+				span {
+					
+				}
+			}
+		}
+
+		> .container > .inner > .content {
+			
+			> ul {
+
+				> li {
+
+				}
+			}
+		}
+
+		> .container > .inner > .footer {
+			
+		}
+	}
+
+	.group-info { //資訊群組
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+		
+		.group-msg-tool { //資訊與工具群組
 
 			> .container {
 
 				> .inner {
 
-				}
-			}
-			
-			.msg-tool { //msg-tool 資訊與工具
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}

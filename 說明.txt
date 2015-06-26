@@ -14,7 +14,7 @@
 	02. '模組群組'呈現特定內容，如'RSS模組'或'天氣模組'等等
 	03. '排版群組'作為排版容器，裝載其他'群組'以達到排版所需
 	04. '排版模組群組'可將多個'群組'組成一個'模組群組'，具有'.header'與'.content'區塊，以清單方式排列內部'群組'( ul>li>'群組')
-	05. '框架性 排版群組'為框架基礎，具有 id 屬性，不可拖曳、不可變動。 具體成員有'.mobile'、'.extend'、'.wrapper'、'.aside'、'.section'、'.article'六項
+	05. '框架性 排版群組'為框架基礎，具有 id 屬性，不可拖曳、不可變動。 具體成員有'#root'、'#mobile'、'#extend'、'#wrapper'、'#header'、'#content'、'#footer'、'#index'、'#aside'、'#section'、'#article' 等十一項
 	06. '框架性 排版群組'的'.header'、'.content'、'.footer'均為'排版群組'的一種 ，有別於一般'模組群組'內的同名區塊
 	07. '模組群組'的'.header'、'.content'與'.footer'僅作為一般內容使用，詳見'//模組群組 HTML 規範'
 	08. 以下為框架結構：
@@ -27,25 +27,27 @@
 
 			- form
 
-				- #mobile //行動載具
+				- #root //拖曳根節點
 
-				- #extend //額外資訊
+					- #mobile //行動載具
 
-				- #wrapper //固定佈局
+					- #extend //額外資訊
 
-					- #header //頁首資訊
+					- #wrapper //固定佈局
 
-					- #content //主要內容
+						- #header //頁首資訊
 
-						- #index //首頁內容區塊
+						- #content //主要內容
 
-						- #aside //內頁側邊
+							- #index //首頁內容區塊
 
-						- #section //內頁內容區塊
+							- #aside //內頁側邊
 
-								- #article //文章內容
+							- #section //內頁內容區塊
 
-					- #footer //頁尾資訊
+									- #article //文章內容
+
+						- #footer //頁尾資訊
 
 	09. 
 
