@@ -1,0 +1,35 @@
+//模組
+
+@import 'bace'; //sass 基礎設定
+
+/* 
+請注意！本 scss 所做設定皆全域可見。
+本 sass 僅做模組樣式的引入，請避免在此直接寫入樣式。
+若需要對全域樣式設定，請撰寫在 bace_layout.scss。
+*/
+
+@import 'module_simple-text'; //簡單文字
+
+@import 'module_simple-pic'; //簡單圖片
+
+@import 'module_text-list'; //文字列表
+
+@import 'module_pic-list'; //圖片列表
+
+@import 'module_multiple-text-list'; //多重文字列表
+
+@import 'module_table-area'; //表格區塊
+
+@import 'module_form-area'; //表單區塊
+
+@import 'module_essay-area'; //文章區塊
+
+@import 'module_figure-area'; //圖片區塊
+
+@import 'module_vedio-area'; //影音區塊
+
+@import 'module_iframe-area'; //嵌入區塊
+
+@import 'module_editor-area'; //編輯器區塊
+
+@import 'module_customize-area'; //客製區塊

@@ -1,0 +1,116 @@
+//簡單圖片
+
+//預設================================================================
+
+	.simple-pic {
+
+		&.default {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//標誌================================================================
+
+	.simple-pic {
+
+		&.logo {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}

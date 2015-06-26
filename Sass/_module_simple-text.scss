@@ -1,0 +1,290 @@
+//簡單文字
+
+//預設================================================================
+
+	.simple-text {
+
+		&.default {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//導盲磚================================================================
+
+	.simple-text {
+
+		&.accesskey {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//頁面標題================================================================
+
+	.simple-text {
+
+		&.hgroup {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//文章標題================================================================
+
+	.simple-text {
+
+		&.title {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//瀏覽人次================================================================
+
+	.simple-text {
+
+		&.visit-count {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}

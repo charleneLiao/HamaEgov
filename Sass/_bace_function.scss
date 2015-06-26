@@ -2,131 +2,214 @@
 
 //extend 方法================================================================
 
-%clear { //偽類清除浮動的方法
-	content: $content;
-	display: block;
-	height: 0;
-	clear: both;
-}
+	%clear { //偽類清除浮動的方法
+		content: $content;
+		display: block;
+		height: 0;
+		clear: both;
+	}
 
-%hide-text { //隱藏文字的方法
-	text-indent: -9999px;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-}
+	%hide-text { //隱藏文字的方法
+		text-indent: -9999px;
+		font: 0/0 a;
+		text-shadow: none;
+		color: transparent;
+	}
 
-%ellipsis { //超過範圍文字變成'...'的方法
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
+	%ellipsis { //超過範圍文字變成'...'的方法
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 
-%flex-1 { //維持整夜頁高度的方法
-	display: flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	flex: 1 0 auto;
-}
+	%flex-1 { //維持整夜頁高度的方法
+		display: flex;
+		flex-direction: column;
+		-ms-flex-direction: column;
+		flex: 1 0 auto;
+	}
 
-%icon { //偽類作為行內icon的方法
-	content: $content;
-	display: inline-block;
-	vertical-align: middle;
-}
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
 
 
+//樣式================================================================
+
+	%center { //齊中寬度
+		max-width: $pc-width;
+		margin: 0 auto;
+	}
+
+	%title { //模組title
+		padding: $interval-l 0;
+		margin-bottom: $interval-l;
+		font-size: $font-size-l;
+		color: $main-color;
+	}
+
+	%btn { //按鈕樣式
+		display: inline-block;
+		padding: $btn-padding;
+		border: $btn-border;
+		border-radius: $border-radius;
+		line-height: 1;
+		vertical-align: middle;
+		color: $btn-text-color;
+		cursor: pointer;
+		font-size: $font-size-s;
+		background-color: $btn-bg-color;
+		transition: $transition;
+
+		&:link {
+			color: $btn-text-color;
+		}
+
+		&:visited {
+			color: $btn-text-color;
+		}
+
+		&:hover {
+			background-color: $btn-hover-bg-color;
+		}
+
+		&:active {
+			color: $btn-text-color;
+		}
+	}
+
+	%text { //輸入框樣式
+		padding: $interval-s;
+		border: $border;
+		vertical-align: middle;
+	}
+
+	%model_header {
+
+		> .container {
+
+			> .inner {
+				margin-bottom: $interval-m;
+				border-bottom: $border;
+				border-color: $very-light;
+			}
+		}
+		
+		h3 {
+			position: relative;
+			padding-bottom: $interval-s;
+			border-bottom: $border;
+			border-color: $gray;
+
+			&:before {
+				margin-right: $interval-s;
+				vertical-align: $interval-l;
+			}
+
+			span {
+				font-size: $font-size-xl;
+				font-weight: $font-weight-b;
+				vertical-align: -3px;
+			}
+		}
+	}
+
+	%model_footer {
+		position: absolute;
+		top: 15px;
+		right: $interval-xl;
+	}
 
 
 //mixin 方法================================================================
 
-@mixin bgToPic($img_src, $size: true, $height: null) { //依圖改變大小並置中，$img_src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+	@mixin bgToPic($img_src, $size: true, $height: null) { //依圖改變大小並置中，$img_src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 
-	@if( $size == true ) { //如果是 true 就匯出大小
-		width: image-width($img_src);
-		height: image-height($img_src);
+		@if( $size == true ) { //如果是 true 就匯出大小
+			width: image-width($img_src);
+			height: image-height($img_src);
 
-	}@else if( $size == false ) { //如果是 false 就不匯出大小
-		
-	}@else { //如果是數字就會出指定大小
-
-		@if( $height != null ) { //如果有 $height 就給高
+		}@else if( $size == false ) { //如果是 false 就不匯出大小
 			
-			@if( unitless($height) ) { //沒單位就是倍數
-				height: round(image-height($img_src) * $height);
+		}@else { //如果是數字就會出指定大小
 
-			}@else{ //有單位就直接使用
-				height: $height;
+			@if( $height != null ) { //如果有 $height 就給高
+				
+				@if( unitless($height) ) { //沒單位就是倍數
+					height: round(image-height($img_src) * $height);
+
+				}@else{ //有單位就直接使用
+					height: $height;
+				}
+
+			}@else{ //如果沒 $height ，高度就是 $size
+				
+				@if( unitless($size) ) { //沒單位就是倍數
+					height: round(image-height($img_src) * $size);
+
+				}@else{ //有單位就直接使用
+					height: $size;
+				}
 			}
 
-		}@else{ //如果沒 $height ，高度就是 $size
-			
 			@if( unitless($size) ) { //沒單位就是倍數
-				height: round(image-height($img_src) * $size);
+				width: round(image-width($img_src) * $size);
 
 			}@else{ //有單位就直接使用
-				height: $size;
+				width: $size;
 			}
 		}
 
-		@if( unitless($size) ) { //沒單位就是倍數
-			width: round(image-width($img_src) * $size);
+		background-image: image-url($img_src);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
-		}@else{ //有單位就直接使用
-			width: $size;
+	@mixin icon($img_name, $size: true, $height: null) { //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+
+		@if( str-index($img_name, '.png') ) { //如果有副檔名就拿掉
+			$img_name: str-slice($img_name, 1, str-index($img_name, '.png') - 1);
+		}
+
+		@extend %icon;
+
+		@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
+			@extend .icon-#{$img_name};
+			width: image-width('icon/#{$img_name}.png');
+			height: image-height('icon/#{$img_name}.png');
+
+		}@else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
+			background-image: image-url('icon/#{$img_name}.png');
+
+		}@else{ //如果是數字就會出指定倍數大小並使用單獨圖片
+			@include bgToPic('icon/#{$img_name}.png', $size, $height);
 		}
 	}
 
-	background-image: image-url($img_src);
-	background-repeat: no-repeat;
-	background-position: center;
-}
+	@mixin icon-btn($img_name, $size: true, $height: null) { //只有icon圖片的按鈕，隱含佔用了 :before
+		display: inline-block;
+		@extend %hide-text;
 
-@mixin icon($img_name, $size: true, $height: null) { //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
-
-	@if( str-index($img_name, '.png') ) { //如果有副檔名就拿掉
-		$img_name: str-slice($img_name, 1, str-index($img_name, '.png') - 1);
+		&:before{
+			@include icon($img_name, $size, $height);
+			display: block !important;
+		}
 	}
-
-	@extend %icon;
-
-	@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
-		@extend .icon-#{$img_name};
-		width: image-width('icon/#{$img_name}.png');
-		height: image-height('icon/#{$img_name}.png');
-
-	}@else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
-		background-image: image-url('icon/#{$img_name}.png');
-
-	}@else{ //如果是數字就會出指定倍數大小並使用單獨圖片
-		@include bgToPic('icon/#{$img_name}.png', $size, $height);
-	}
-}
-
-@mixin icon-btn($img_name, $size: true, $height: null) { //只有icon圖片的按鈕，隱含佔用了 :before
-	display: inline-block;
-	@extend %hide-text;
-
-	&:before{
-		@include icon($img_name, $size, $height);
-		display: block !important;
-	}
-}
-
-
 
 
 //RWD 核心================================================================
 
-$breakpoints: (
-	pc: '(min-width: #{$pad-width + 1})',
-	pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-	phone: '(max-width: #{$phone-width})'
-);
+	$breakpoints: (
+		pc: '(min-width: #{$pad-width + 1})',
+		pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
+		phone: '(max-width: #{$phone-width})'
+	);
 
-@mixin at-breakpoint($name) {
+	@mixin at-breakpoint($name) {
 
-	@media #{map-get($breakpoints, $name)} {
-		@content;
+		@media #{map-get($breakpoints, $name)} {
+			@content;
+		}
 	}
-}

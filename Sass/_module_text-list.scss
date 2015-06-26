@@ -1,0 +1,754 @@
+//文字列表
+
+//預設================================================================
+
+	.text-list {
+
+		&.default {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//選單================================================================
+
+	.text-list {
+
+		&.nav {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//使用者工具================================================================
+
+	.text-list {
+
+		&.user-tool {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//分享================================================================
+
+	.text-list {
+
+		&.share {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//錨點================================================================
+
+	.text-list {
+
+		&.anchor {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//連結================================================================
+
+	.text-list {
+
+		&.link {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//字級調整================================================================
+
+	.text-list {
+
+		&.font-level {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//語言選擇================================================================
+
+	.text-list {
+
+		&.lang {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//熱門關鍵字================================================================
+
+	.text-list {
+
+		&.hot-key-word {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//頁籤================================================================
+
+	.text-list {
+
+		&.tab {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//網站地圖================================================================
+
+	.text-list {
+
+		&.sitemap {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//詳細資訊================================================================
+
+	.text-list {
+
+		&.detail {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//跳轉導航列================================================================
+
+	.text-list {
+
+		&.jump-tool {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}

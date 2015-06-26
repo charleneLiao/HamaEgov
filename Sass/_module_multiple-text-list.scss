@@ -1,0 +1,174 @@
+//多重文字列表
+
+//預設================================================================
+
+	.multiple-text-list {
+
+		&.default {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//頁次導航列================================================================
+
+	.multiple-text-list {
+
+		&.page-select {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
+
+
+//頁次導航列================================================================
+
+	.multiple-text-list {
+
+		&.page-click {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}

@@ -1,17 +1,12 @@
-//內頁模組
+//內頁覆蓋
 
 @import 'bace'; //sass基礎設定
 
-@import 'page_sitemap'; //網站地圖
+/*
+請注意！本 scss 所做設定皆只有內頁可見。
+若需要覆蓋主要樣式設定，請直接撰寫在以下區塊。
+*/
 
-@import 'page_hgroup'; //內頁標題
-
-@import 'page_user-tool'; //使用者工具
-
-@import 'page_detail'; //詳細資訊
-
-@import 'page_title'; //文章標題
-
-@import 'page_page-tool'; //頁次導航列
-
-@import 'page_jump-tool'; //跳轉導航列
+body {
+	
+}

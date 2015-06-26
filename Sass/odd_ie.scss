@@ -1,6 +1,11 @@
-//舊IE
+//舊版 IE
 
 @import 'bace'; //sass基礎設定
+
+/*
+請注意！本 scss 所做設定皆只有 IE8 以下的版本可見。
+若需要對舊版 Internet Explorer 做單獨樣式設定，請直接寫在以下區塊。
+*/
 
 body {
 	min-width: $pc-width;

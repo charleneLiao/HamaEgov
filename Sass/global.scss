@@ -1,31 +1,15 @@
-//全域模組
+//全域
 
-@import 'bace'; //sass基礎設定
+@import 'bace'; //共用底模組
 
-@import 'global_nav'; //選單
+/* 
+請注意！本 scss 所做設定皆全域可見。
+本 sass 僅做基礎框架、格線的引入，請避免在此直接寫入樣式。
+若需要對全域樣式設定，請撰寫在 bace_layout.scss。
+*/
 
-@import 'global_user-tool'; //使用者工具
+@import 'normalize'; //正常化 css
 
-@import 'global_anchor'; //錨點
+@import 'bace_grid'; //格線
 
-@import 'global_share'; //分享
-
-@import 'global_accesskey'; //導盲磚
-
-@import 'global_logo'; //商標
-
-@import 'global_link'; //連結區塊
-
-@import 'global_font-level'; //字級調整
-
-@import 'global_lang'; //語言選擇
-
-@import 'global_hot-key-word'; //熱門關鍵字
-
-@import 'global_search'; //搜尋
-
-@import 'global_visit-count'; //瀏覽人次
-
-@import 'global_address'; //客戶自訂的聯絡區塊
-
-@import 'global_icon'; //各種標章
+@import 'bace_layout'; //框架

@@ -1,205 +1,132 @@
-//變數與樣式
+//變數
 
-//變數================================================================
-
-//灰階
-$very-light: #ffffff; //非常淺
-$light: #f5f5f5; //淺色
-$light-gray: #e0e0e0; //淺灰
-$gray: #898989; //灰色
-$deep-gray: #646464; //深灰
-$deep: #343434; //深色
-$very-deep: #1a1a1a; //非常深
-
-//版面顏色
-$main-color: #f59534 !default; //主色
-$main-color-hover: darken($main-color, 10);
-$sec-color: #0595d6 !default; //第二搭配色
-$sec-color-hover: darken($sec-color, 10);
-$third-color: #fff !default; //第三搭配色
-$third-color-hover: darken($third-color, 10);
-
-//文字顏色
-$title-color: #ea5741 !default; //標題色
-$title-color-hover: darken($title-color, 10);
-$span-color: #a1c765 !default; //附註色
-$span-color-hover: darken($span-color, 10);
-
-//文字樣式
-$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
-
-//文字大小
-$font-size-xs: .8em; //extra smail
-$font-size-s: .9em; //small
-$font-size-m: 1em; //medium
-$font-size-l: 1.1em; //large
-$font-size-xl: 1.4em; //extra large
-
-//文字厚度
-$font-weight-n: 400; //normal
-$font-weight-b: 700; //bold
-
-//文字行高
-$line-height-xs: 1; //extra smail
-$line-height-s: 1.2; //small
-$line-height-m: 1.4; //medium
-$line-height-l: 2; //large
-$line-height-xl: 2.4; //extra large
-
-//文字間格
-$letter-spacing-xs: 1px; //extra smail
-$letter-spacing-s: 2px; //small
-$letter-spacing-m: 3px; //medium
-$letter-spacing-l: 4px; //large
-$letter-spacing-xl: 5px; //extra large
-
-//透明度
-$opacity-vl: .3; //very low
-$opacity-l: .5; //low
-$opacity-m: .5; //medium
-$opacity-h: .8; //high
-$opacity-vh: .9; //very high
-
-//間隔設定
-$interval-xs: 3px; //extra smail
-$interval-s: 6px; //small
-$interval-m: 10px; //medium
-$interval-l: 20px; //large
-$interval-xl: 30px; //extra large
-
-//RWD寬度
-$pc-width: 1010px;
-$pad-width: 768px;
-$phone-width: 660px;
-
-//基本動畫速度
-$transition: 300ms;
-
-//圖片檔名
-$header-logo-src: 'header_logo.png'; 
-$footer-logo-src: 'footer_logo.png';
-
-//全頁文字
-$body-font-color: $deep !default; //網站文字顏色
-$body-font-size-s: $font-size-xs !default; //small
-$body-font-size-m: $font-size-s !default; //medium
-$body-font-size-l: $font-size-m !default; //large
-
-//預設空文字
-$content: '\200B'; //空偽類的字元
-
-//預設陰影
-$box-shadow: 0 0 $interval-m $light-gray;
-$text-shadow: 0 0 $interval-m $deep-gray;
-
-//預設線條
-$border-style: solid;
-$border-width: 1px;
-$border-color: $light-gray;
-$border: $border-width $border-style $border-color;
-
-//預設圓角
-$border-radius: $interval-s;
-
-//連結顏色
-$link-color: $deep !default; //連結顏色
-$visited-color: $deep !default; //造訪過連結顏色
-$hover-color: $main-color !default; //指標移入連結顏色，不可與任何底色重疊 
-$active-color: $deep !default; //點擊連結顏色
-
-//按鈕樣式
-$btn-bg-color: $gray; //按鈕背景色
-$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
-$btn-text-color: $very-light; //按鈕文字顏色
-$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
-$btn-border: 0; //按鈕線框
+//灰階================================================================
+	$very-light: #ffffff; //非常淺
+	$light: #f5f5f5; //淺色
+	$light-gray: #e0e0e0; //淺灰
+	$gray: #898989; //灰色
+	$deep-gray: #646464; //深灰
+	$deep: #343434; //深色
+	$very-deep: #1a1a1a; //非常深
 
 
+//版面顏色================================================================
+	$main-color: #f59534 !default; //主色
+	$main-color-hover: darken($main-color, 10);
+	$sec-color: #0595d6 !default; //第二搭配色
+	$sec-color-hover: darken($sec-color, 10);
+	$third-color: #fff !default; //第三搭配色
+	$third-color-hover: darken($third-color, 10);
 
 
+//文字顏色================================================================
+	$title-color: #ea5741 !default; //標題色
+	$title-color-hover: darken($title-color, 10);
+	$span-color: #a1c765 !default; //附註色
+	$span-color-hover: darken($span-color, 10);
 
-//樣式================================================================
 
-%center { //齊中寬度
-	max-width: $pc-width;
-	margin: 0 auto;
-}
+//文字樣式================================================================
+	$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
 
-%title { //模組title
-	padding: $interval-l 0;
-	margin-bottom: $interval-l;
-	font-size: $font-size-l;
-	color: $main-color;
-}
 
-%btn { //按鈕樣式
-	display: inline-block;
-	padding: $btn-padding;
-	border: $btn-border;
-	border-radius: $border-radius;
-	line-height: 1;
-	vertical-align: middle;
-	color: $btn-text-color;
-	cursor: pointer;
-	font-size: $font-size-s;
-	background-color: $btn-bg-color;
-	transition: $transition;
+//文字大小================================================================
+	$font-size-xs: .8em; //extra smail
+	$font-size-s: .9em; //small
+	$font-size-m: 1em; //medium
+	$font-size-l: 1.1em; //large
+	$font-size-xl: 1.4em; //extra large
 
-	&:link {
-		color: $btn-text-color;
-	}
 
-	&:visited {
-		color: $btn-text-color;
-	}
+//文字厚度================================================================
+	$font-weight-n: 400; //normal
+	$font-weight-b: 700; //bold
 
-	&:hover {
-		background-color: $btn-hover-bg-color;
-	}
 
-	&:active {
-		color: $btn-text-color;
-	}
-}
+//文字行高================================================================
+	$line-height-xs: 1; //extra smail
+	$line-height-s: 1.2; //small
+	$line-height-m: 1.4; //medium
+	$line-height-l: 2; //large
+	$line-height-xl: 2.4; //extra large
 
-%text { //輸入框樣式
-	padding: $interval-s;
-	border: $border;
-	vertical-align: middle;
-}
 
-%model_header {
+//文字間格================================================================
+	$letter-spacing-xs: 1px; //extra smail
+	$letter-spacing-s: 2px; //small
+	$letter-spacing-m: 3px; //medium
+	$letter-spacing-l: 4px; //large
+	$letter-spacing-xl: 5px; //extra large
 
-	> .container {
 
-		> .inner {
-			margin-bottom: $interval-m;
-			border-bottom: $border;
-			border-color: $very-light;
-		}
-	}
-	
-	h3 {
-		position: relative;
-		padding-bottom: $interval-s;
-		border-bottom: $border;
-		border-color: $gray;
+//透明度================================================================
+	$opacity-vl: .3; //very low
+	$opacity-l: .5; //low
+	$opacity-m: .5; //medium
+	$opacity-h: .8; //high
+	$opacity-vh: .9; //very high
 
-		&:before {
-			margin-right: $interval-s;
-			vertical-align: $interval-l;
-		}
 
-		span {
-			font-size: $font-size-xl;
-			font-weight: $font-weight-b;
-			vertical-align: -3px;
-		}
-	}
-}
+//間隔設定================================================================
+	$interval-xs: 3px; //extra smail
+	$interval-s: 6px; //small
+	$interval-m: 10px; //medium
+	$interval-l: 20px; //large
+	$interval-xl: 30px; //extra large
 
-%model_footer {
-	position: absolute;
-	top: 15px;
-	right: $interval-xl;
-}
+
+//RWD寬度================================================================
+	$pc-width: 1010px;
+	$pad-width: 768px;
+	$phone-width: 660px;
+
+
+//基本動畫速度================================================================
+	$transition: 300ms;
+
+
+//圖片檔名================================================================
+	$header-logo-src: 'header_logo.png'; 
+	$footer-logo-src: 'footer_logo.png';
+
+
+//全頁文字================================================================
+	$body-font-color: $deep !default; //網站文字顏色
+	$body-font-size-s: $font-size-xs !default; //small
+	$body-font-size-m: $font-size-s !default; //medium
+	$body-font-size-l: $font-size-m !default; //large
+
+
+//預設空文字================================================================
+	$content: '\200B'; //空偽類的字元
+
+
+//預設陰影================================================================
+	$box-shadow: 0 0 $interval-m $light-gray;
+	$text-shadow: 0 0 $interval-m $deep-gray;
+
+
+//預設線條================================================================
+	$border-style: solid;
+	$border-width: 1px;
+	$border-color: $light-gray;
+	$border: $border-width $border-style $border-color;
+
+
+//預設圓角================================================================
+	$border-radius: $interval-s;
+
+
+//連結顏色================================================================
+	$link-color: $deep !default; //連結顏色
+	$visited-color: $deep !default; //造訪過連結顏色
+	$hover-color: $main-color !default; //指標移入連結顏色，不可與任何底色重疊 
+	$active-color: $deep !default; //點擊連結顏色
+
+
+//按鈕樣式================================================================
+	$btn-bg-color: $gray; //按鈕背景色
+	$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
+	$btn-text-color: $very-light; //按鈕文字顏色
+	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
+	$btn-border: 0; //按鈕線框
