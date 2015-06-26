@@ -1,0 +1,58 @@
+//表格區塊
+
+//預設================================================================
+
+	.table-area {
+
+		&.default {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			.header {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.content {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+	@include at-breakpoint(phone) {
+
+	}
+
+	@include at-breakpoint(pad) {
+
+	}
+
+	@include at-breakpoint(pc) {
+
+	}
