@@ -1,8 +1,8 @@
-//編輯器區塊
+//圖片列表
 
 //預設================================================================
 
-	.editor-area {
+	.list-text {
 
 		&.default {
 
@@ -58,69 +58,11 @@
 	}
 
 
-//文章編輯================================================================
+//各種標章================================================================
 
-	.editor-area {
+	.list-text {
 
-		&.editor {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-
-			.header {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-		}
-	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
-
-
-//聯絡資訊編輯================================================================
-
-	.editor-area {
-
-		&.address {
+		&.icon {
 
 			> .container {
 

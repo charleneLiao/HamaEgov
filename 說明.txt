@@ -261,17 +261,17 @@
 	02. 以下為結構樣式列表：
 		02-01. .simple-text			簡單文字
 		02-02. .simple-pic			簡單圖片
-		02-03. .text-list			文字列表
-		02-04. .pic-list			圖片列表
-		02-05. .multiple-text-list	多重文字列表
-		02-07. .table-area			表格區塊
-		02-08. .form-area			表單區塊
-		02-09. .essay-area			文章區塊
-		02-10. .figure-area			圖片區塊
-		02-11. .vedio-area			影音區塊
-		02-12. .iframe-area			嵌入區塊
-		02-13. .editor-area			編輯器區塊
-		02-14. .customize-area		客製區塊
+		02-03. .list-text			文字列表
+		02-04. .list-pic			圖片列表
+		02-05. .list-multiple		多重列表
+		02-07. .area-table			表格區塊
+		02-08. .area-form			表單區塊
+		02-09. .area-essay			文章區塊
+		02-10. .area-figure			圖片區塊
+		02-11. .area-vedio			影音區塊
+		02-12. .area-iframe			嵌入區塊
+		02-13. .area-editor			編輯器區塊
+		02-14. .area-customize		客製區塊
 		02-15. 
 
 	03. 屬於 .simple-text 的結構樣式列表：
@@ -285,7 +285,7 @@
 		04-01. .logo				標誌
 		04-02. 
 
-	05. 屬於 .text-list 的結構樣式列表：
+	05. 屬於 .list-text 的結構樣式列表：
 		05-01. .nav					選單
 		05-02. .user-tool			使用者工具
 		05-03. .share				分享
@@ -300,40 +300,40 @@
 		05-12. .jump-tool			跳轉導航列
 		05-13. 
 
-	06. 屬於 .pic-list 的結構樣式列表：
+	06. 屬於 .list-pic 的結構樣式列表：
 		06-01. .icon				各種標章
 		06-02. 
 
-	07. 屬於 .multiple-text-list 的結構樣式列表：
+	07. 屬於 .list-multiple 的結構樣式列表：
 		07-01. .page-select			頁次導航列
 		07-02. .page-click			頁次導航列
 		07-03. 
 
-	08. 屬於 .table-area 的結構樣式列表：
+	08. 屬於 .area-table 的結構樣式列表：
 		15-01.
 
-	09. 屬於 .form-area 的結構樣式列表：
+	09. 屬於 .area-form 的結構樣式列表：
 		09-01. .search				搜尋
 		09-02. 
 
-	10. 屬於 .essay-area 的結構樣式列表：
+	10. 屬於 .area-essay 的結構樣式列表：
 		15-01.
 
-	11. 屬於 .figure-area 的結構樣式列表：
+	11. 屬於 .area-figure 的結構樣式列表：
 		15-01.
 
-	12. 屬於 .vedio-area 的結構樣式列表：
+	12. 屬於 .area-vedio 的結構樣式列表：
 		15-01.
 
-	13. 屬於 .iframe-area 的結構樣式列表：
+	13. 屬於 .area-iframe 的結構樣式列表：
 		15-01.
 
-	14. 屬於 .editor-area 的結構樣式列表：
+	14. 屬於 .area-editor 的結構樣式列表：
 		08-01. .editor				文章編輯
 		08-02. .address				聯絡資訊編輯
 		08-03. 
 
-	15. 屬於 .customize-area 的結構樣式列表：
+	15. 屬於 .area-customize 的結構樣式列表：
 		15-01.
 
 
