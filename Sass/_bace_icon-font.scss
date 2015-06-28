@@ -1,0 +1,32 @@
+//文字圖示
+
+$font-icon-googleMaterial: true; //是否google google Material icons文字圖示
+
+/* 
+請注意！本 scss 所做設定皆全域可見。
+本 sass 引入 雲端字型，用以作為簡易圖示。
+google google Material icons 說明請參考 http://google.github.io/material-design-icons/
+google google Material icons 圖示清單列表請參考 https://www.google.com/design/icons/
+*/
+
+@if( $font-icon-googleMaterial ) { //如果要使用就引入
+
+	@import url(https://fonts.googleapis.com/icon?family=Material+Icons); //引入 google Material icons 雲端字型
+
+	.material-icons {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		-webkit-font-smoothing: antialiased; //Support for all WebKit browsers
+		text-rendering: optimizeLegibility; //Support for Safari and Chrome
+		-moz-osx-font-smoothing: grayscale; //Support for Firefox
+		font-feature-settings: 'liga'; //Support for IE
+	}
+}

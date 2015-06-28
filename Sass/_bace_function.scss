@@ -93,7 +93,7 @@
 			> .inner {
 				margin-bottom: $interval-m;
 				border-bottom: $border;
-				border-color: $very-light;
+				border-color: $white;
 			}
 		}
 		
@@ -167,7 +167,7 @@
 		background-position: center;
 	}
 
-	@mixin icon($img_name, $size: true, $height: null) { //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+	@mixin icon-pic($img_name: 'pic-check.png', $size: true, $height: null) { //取雪碧圖icon，$img_name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
 
 		@if( str-index($img_name, '.png') ) { //如果有副檔名就拿掉
 			$img_name: str-slice($img_name, 1, str-index($img_name, '.png') - 1);
@@ -195,6 +195,16 @@
 		&:before{
 			@include icon($img_name, $size, $height);
 			display: block !important;
+		}
+	}
+
+	@mixin icon-font($font: 'spellcheck') { //文字圖示，列表請參閱 https://www.google.com/design/icons/
+
+		@if( $font-icon-googleMaterial ) {
+			@extend .material-icons;
+			content: $font;
+			font-size: $icon-font-size;
+			color: $icon-font-color;
 		}
 	}
 
