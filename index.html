@@ -54,10 +54,27 @@
 		<form action="#" method="POST">
 
 		<!-- root 拖曳根節點 -->
-			<div id="root" class="root" data-type="1" data-childLength="3"><div class="container"><div class="inner">
+			<div class="root" id="root" data-type="1" data-child="3"><div class="container"><div class="inner">
 
 				<!-- mobile 行動載具-->
-					<div id="mobile" class="mobile" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+					<div id="mobile" class="mobile" data-type="3" data-child="2"><div class="container"><div class="inner">
+
+					<!-- header 頁首資訊 -->
+						<div class="header" data-index="1" data-type="3" data-child="2"><div class="container"><div class="inner">
+
+						<!-- single-btn 單獨按鈕 -->
+							<div class="simple-text single-btn" data-type="0"><div class="container"><div class="inner">
+								<div class="content"><div class="container"><div class="inner">
+									<span><a href="#mobile"></a></span>
+								</div></div></div>
+							</div></div></div>
+						<!-- single-btn 結束 -->
+
+						</div></div></div>
+					<!-- header 結束 -->
+
+					<!-- content 主要內容 -->
+						<div class="content" data-index="2" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 					<!-- list-group-nav 選單列表 -->
 						<div class="list-group-nav" data-index="1" data-type="4"><div class="container"><div class="inner">
@@ -65,7 +82,7 @@
 								<h3><span>選單</span></h3>
 							</div></div></div>
 							<div class="content"><div class="container"><div class="inner">
-								<ul data-index="1" data-childLength="6">
+								<ul data-index="1" data-child="6">
 									<li data-index="1">
 
 									<!-- nav 選單 -->
@@ -74,7 +91,7 @@
 												<h4><span><a href="#">項目1</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="16" data-navWidth="4">
+												<ul data-index="1" data-child="16" data-navWidth="4">
 													<li data-index="1"><span><a href="#">連結1</a></span></li>
 													<li data-index="2"><span><a href="#">連結2</a></span></li>
 													<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -105,7 +122,7 @@
 												<h4><span><a href="#">項目2</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="12" data-navWidth="3">
+												<ul data-index="1" data-child="12" data-navWidth="3">
 													<li data-index="1"><span><a href="#">連結1</a></span></li>
 													<li data-index="2"><span><a href="#">連結2</a></span></li>
 													<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -132,7 +149,7 @@
 												<h4><span><a href="#">項目3</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="8" data-navWidth="1">
+												<ul data-index="1" data-child="8" data-navWidth="1">
 													<li data-index="1"><span><a href="#">連結1</a></span></li>
 													<li data-index="2"><span><a href="#">連結2</a></span></li>
 													<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -166,7 +183,7 @@
 												<h4><span><a href="#">項目5</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="14" data-navWidth="5">
+												<ul data-index="1" data-child="14" data-navWidth="5">
 													<li data-index="1"><span><a href="#">連結1</a></span></li>
 													<li data-index="2"><span><a href="#">連結2</a></span></li>
 													<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -195,7 +212,7 @@
 												<h4><span><a href="#">項目6</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="16" data-navWidth="6">
+												<ul data-index="1" data-child="16" data-navWidth="6">
 													<li data-index="1"><span><a href="#">連結1</a></span></li>
 													<li data-index="2"><span><a href="#">連結2</a></span></li>
 													<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -223,11 +240,14 @@
 						</div></div></div>
 					<!-- list-group-nav 結束 -->
 
+						</div></div></div>
+					<!-- content 結束 -->
+
 					</div></div></div>
 				<!-- mobile 結束 -->
 
 				<!-- extend 額外資訊 -->
-					<div id="extend" class="extend" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+					<div class="extend" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 					<!-- user-tool 使用者工具 -->
 						<div class="list-text user-tool" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -235,7 +255,7 @@
 								<h4><span>使用者工具</span></h4>
 							</div></div></div>
 							<div class="content"><div class="container"><div class="inner">
-								<ul data-index="1" data-childLength="6">
+								<ul data-index="1" data-child="6">
 									<li class="login" data-index="1"><span><a href="#">登入</a></span></li>
 									<li class="nav-edit" data-index="2"><span><a href="#">選單編輯</a></span></li>
 									<li class="index-edit" data-index="3"><span><a href="#">首頁編輯</a></span></li>
@@ -252,10 +272,10 @@
 								<h4><span>分享</span></h4>
 							</div></div></div>
 							<div class="content"><div class="container"><div class="inner">
-								<ul data-index="1" data-childLength="5">
+								<ul data-index="1" data-child="5">
 									<li class="facebook" data-index="1"><span><a target="_blank" href="http://www.facebook.com/share.php?u=網址" target="_blank">Facebook</a></span></li>
-									<li class="google" data-index="2"><span><a target="_blank" href="http://twitter.com/home?status=主題-網址" target="_blank">Google+</a></span></li>
-									<li class="twitter" data-index="3"><span><a target="_blank" href="https://plus.google.com/share?url=網址" target="_blank">Twitter</a></span></li>
+									<li class="google" data-index="2"><span><a target="_blank" href="https://plus.google.com/share?url=網址" target="_blank">Google+</a></span></li>
+									<li class="twitter" data-index="3"><span><a target="_blank" href="http://twitter.com/home?status=主題-網址" target="_blank">Twitter</a></span></li>
 									<li class="line" data-index="4"><span><a target="_blank" href="http://line.naver.jp/R/msg/text/?主題-網址">Line</a></span></li>
 									<li class="email" data-index="5"><span><a target="_blank" href="mailto:?subject=主題&body=網址">E-mail</a></span></li>
 								</ul>
@@ -269,7 +289,7 @@
 								<h4><span>錨點</span></h4>
 							</div></div></div>
 							<div class="content"><div class="container"><div class="inner">
-								<ul data-index="1" data-childLength="1">
+								<ul data-index="1" data-child="1">
 									<li data-index="1"><span><a href="#">Top</a></span></li>
 								</ul>
 							</div></div></div>
@@ -280,10 +300,10 @@
 				<!-- extend 結束 -->
 
 				<!-- wrapper 固定佈局 -->
-					<div id="wrapper" class="wrapper" data-type="3" data-childLength="3"><div class="container"><div class="inner">
+					<div class="wrapper" id="wrapper" data-type="3" data-child="3"><div class="container"><div class="inner">
 
 					<!-- header 頁首資訊 -->
-						<div id="header" class="header" data-index="1" data-type="3" data-childLength="2"><div class="container"><div class="inner">
+						<div class="header" id="header" data-index="1" data-type="3" data-child="2"><div class="container"><div class="inner">
 
 						<!-- accesskey 導盲磚 -->
 							<div class="simple-text accesskey" data-type="0"><div class="container"><div class="inner">
@@ -294,7 +314,7 @@
 						<!-- accesskey 結束 -->
 
 						<!-- group-info 資訊群組 -->
-							<div class="group-info" data-index="1" data-type="1" data-childLength="2"><div class="container"><div class="inner">
+							<div class="group-info" data-index="1" data-type="1" data-child="2"><div class="container"><div class="inner">
 
 							<!-- logo 標誌 -->
 								<div class="simple-pic logo" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -308,7 +328,7 @@
 							<!-- logo 結束 -->
 
 							<!-- group-msg-tool 資訊與工具群組 -->
-								<div class="group-msg-tool" data-index="2" data-type="3" data-childLength="5"><div class="container"><div class="inner">
+								<div class="group-msg-tool" data-index="2" data-type="3" data-child="5"><div class="container"><div class="inner">
 
 								<!-- link 連結 -->
 									<div class="list-text link" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -316,7 +336,7 @@
 											<h4><span>連結</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul daua-index="1" data-childLength="3">
+											<ul daua-index="1" data-child="3">
 												<li data-index="1"><span><a href="#">網站導覽</a></span></li>
 												<li data-index="2"><span><a href="#">網站導覽</a></span></li>
 												<li data-index="3"><span><a href="#">網站導覽</a></span></li>
@@ -331,7 +351,7 @@
 											<h4><span>字級</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="3">
+											<ul data-index="1" data-child="3">
 												<li class="small" data-index="1"><span><a href="#">小</a></span></li>
 												<li class="medium" data-index="2"><span><a href="#">中</a></span></li>
 												<li class="large" data-index="3"><span><a href="#">大</a></span></li>
@@ -346,7 +366,7 @@
 											<h4><span>語言</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="4">
+											<ul data-index="1" data-child="4">
 												<li class="en" data-index="1"><span><a href="#">英文</a></span></li>
 												<li class="jp" data-index="2"><span><a href="#">日文</a></span></li>
 												<li class="zh-cn" data-index="3"><span><a href="#">簡中</a></span></li>
@@ -362,7 +382,7 @@
 											<h4><span>熱門搜尋</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="3">
+											<ul data-index="1" data-child="3">
 												<li data-index="1"><span><a href="#">關鍵字</a></span></li>
 												<li data-index="2"><span><a href="#">關鍵字</a></span></li>
 												<li data-index="3"><span><a href="#">關鍵字</a></span></li>
@@ -388,7 +408,7 @@
 											</div>
 										</div></div></div>
 										<div class="footer"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="1">
+											<ul data-index="1" data-child="1">
 												<li data-index="1"><span><a href="#">進階搜尋</a></span></li>
 											</ul>
 										</div></div></div>
@@ -407,7 +427,7 @@
 									<h3><span>選單</span></h3>
 								</div></div></div>
 								<div class="content"><div class="container"><div class="inner">
-									<ul data-index="1" data-childLength="6">
+									<ul data-index="1" data-child="6">
 										<li data-index="1">
 
 										<!-- nav 選單 -->
@@ -416,7 +436,7 @@
 													<h4><span><a href="#">項目1</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="16" data-navWidth="4">
+													<ul data-index="1" data-child="16" data-navWidth="4">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -447,7 +467,7 @@
 													<h4><span><a href="#">項目2</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="12" data-navWidth="3">
+													<ul data-index="1" data-child="12" data-navWidth="3">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -474,7 +494,7 @@
 													<h4><span><a href="#">項目3</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="8" data-navWidth="1">
+													<ul data-index="1" data-child="8" data-navWidth="1">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -508,7 +528,7 @@
 													<h4><span><a href="#">項目5</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="14" data-navWidth="5">
+													<ul data-index="1" data-child="14" data-navWidth="5">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -537,7 +557,7 @@
 													<h4><span><a href="#">項目6</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="16" data-navWidth="6">
+													<ul data-index="1" data-child="16" data-navWidth="6">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -569,10 +589,10 @@
 					<!-- header 結束 -->
 
 					<!-- content 主要內容 -->
-						<div id="content" class="content" data-index="2" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+						<div class="content" id="content" data-index="2" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 						<!-- index 首頁內容區塊 -->
-							<div id="index" class="index" data-index="1" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+							<div class="index" id="index" data-index="1" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 							<!-- accesskey 導盲磚 -->
 								<div class="simple-text accesskey" data-type="0"><div class="container"><div class="inner">
@@ -583,12 +603,12 @@
 							<!-- accesskey 結束 -->
 
 							<!-- tab-group-sample 頁籤範例 -->
-								<div class="tab-group-sample" data-index="1" data-type="2" data-childLength="2"><div class="container"><div class="inner">
+								<div class="tab-group-sample" data-index="1" data-type="2" data-child="2"><div class="container"><div class="inner">
 
 								<!-- tab 頁籤 -->
 									<div class="list-text tab" data-type="0"><div class="container"><div class="inner">
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="2">
+											<ul data-index="1" data-child="2">
 												<li data-index="1"><span><a href="#tab-link-1">頁籤1</a></span></li>
 												<li data-index="2"><span><a href="#tab-link-2">頁籤2</a></span></li>
 											</ul>
@@ -597,13 +617,13 @@
 								<!-- tab 結束 -->
 
 								<!-- tab-linked 頁籤連結 -->
-									<div id="tab-link-1" class="tab-test" data-index="1" data-type="3"><div class="container"><div class="inner">
+									<div class="tab-test" id="tab-link-1" data-index="1" data-type="3"><div class="container"><div class="inner">
 										1
 									</div></div></div>
 								<!-- tab-linked 結束 -->
 
 								<!-- tab-linked 頁籤連結 -->
-									<div id="tab-link-2" class="tab-test" data-index="2" data-type="3"><div class="container"><div class="inner">
+									<div class="tab-test" id="tab-link-2" data-index="2" data-type="3"><div class="container"><div class="inner">
 										2
 									</div></div></div>
 								<!-- tab-linked 結束 -->
@@ -618,13 +638,13 @@
 					<!-- content 結束 -->
 
 					<!-- content 主要內容 -->
-						<div id="content" class="content" data-index="2" data-type="1" data-childLength="3"><div class="container"><div class="inner">
+						<div class="content" id="content" data-index="2" data-type="1" data-child="3"><div class="container"><div class="inner">
 
 						<!-- aside 內頁側欄區塊 -->
-							<div id="aside" class="aside" data-index="1" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+							<div class="aside" id="aside" data-index="1" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 							<!-- content 主要內容 -->
-								<div class="content" data-index="2" data-type="3" data-childLength="0"><div class="container"><div class="inner">
+								<div class="content" data-index="2" data-type="3" data-child="0"><div class="container"><div class="inner">
 
 									<!-- accesskey 導盲磚 -->
 										<div class="simple-text accesskey" data-type="0"><div class="container"><div class="inner">
@@ -640,7 +660,7 @@
 												<h4><span><a href="#">次選單</a></span></h4>
 											</div></div></div>
 											<div class="content"><div class="container"><div class="inner">
-												<ul data-index="1" data-childLength="1" data-navWidth="2">
+												<ul data-index="1" data-child="1" data-navWidth="2">
 													<li><span><a href="#">連結1</a></span></li>
 													<li><span><a href="#">連結2</a></span></li>
 													<li><span><a href="#">連結3</a></span></li>
@@ -665,7 +685,7 @@
 						<!-- aside 結束 -->
 
 						<!-- section 內頁內容區塊 -->
-							<div id="section" class="section" data-index="2" data-type="3" data-childLength="3"><div class="container"><div class="inner">
+							<div class="section" id="section" data-index="2" data-type="3" data-child="3"><div class="container"><div class="inner">
 
 							<!-- accesskey 導盲磚 -->
 								<div class="simple-text accesskey" data-type="0"><div class="container"><div class="inner">
@@ -676,7 +696,7 @@
 							<!-- accesskey 結束 -->
 
 							<!-- header 頁首資訊 -->
-								<div class="header" data-index="1" data-type="3" data-childLength="2"><div class="container"><div class="inner">
+								<div class="header" data-index="1" data-type="3" data-child="2"><div class="container"><div class="inner">
 
 								<!-- sitemap 網站地圖 -->
 									<div class="list-text sitemap" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -684,7 +704,7 @@
 											<h4><span>網站地圖</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="3">
+											<ul data-index="1" data-child="3">
 												<li data-index="1"><span><a href="#">首頁</a></span></li>
 												<li data-index="2"><span><a href="#">階層二</a></span></li>
 												<li data-index="3"><span><a href="#">階層三</a></span></li>
@@ -705,7 +725,7 @@
 							<!-- header 結束 -->
 
 							<!-- content 主要內容 -->
-								<div class="content" data-index="2" data-type="3" data-childLength="0"><div class="container"><div class="inner">
+								<div class="content" data-index="2" data-type="3" data-child="0"><div class="container"><div class="inner">
 
 								<!-- user-tool 使用者工具 -->
 									<div class="list-text user-tool" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -713,7 +733,7 @@
 											<h4><span>工具</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="1">
+											<ul data-index="1" data-child="1">
 												<li class="print" data-index="1"><span><a href="#">列印</a></span></li>
 											</ul>
 										</div></div></div>
@@ -721,10 +741,10 @@
 								<!-- user-tool 結束 -->
 
 								<!-- article 文章 -->
-									<div class="article" data-index="2" data-type="3" data-childLength="3"><div class="container"><div class="inner">
+									<div class="article" data-index="2" data-type="3" data-child="3"><div class="container"><div class="inner">
 
 									<!-- header 頁首資訊 -->
-										<div class="header" data-index="1" data-type="3" data-childLength="2"><div class="container"><div class="inner">
+										<div class="header" data-index="1" data-type="3" data-child="2"><div class="container"><div class="inner">
 
 										<!--title 文章標題 -->
 											<div class="simple-text title" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -740,7 +760,7 @@
 													<h4><span>詳細資訊</span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="3">
+													<ul data-index="1" data-child="3">
 														<li data-index="1"><span>資料來源：網路事業部</span></li>
 														<li data-index="2"><span>發表時間：2012/02/30</span></li>
 														<li data-index="3"><span>發文者：李傲中</span></li>
@@ -753,7 +773,7 @@
 									<!-- header 結束 -->
 
 									<!-- content 主要內容 -->
-										<div class="content" data-index="2" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+										<div class="content" data-index="2" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 										<!-- editor 文章編輯 -->
 											<div class="area-editor editor" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -770,7 +790,7 @@
 									<!-- content 結束 -->
 
 									<!-- footer 頁尾資訊 -->
-										<div class="footer" data-index="3" data-type="3" data-childLength="1"><div class="container"><div class="inner">
+										<div class="footer" data-index="3" data-type="3" data-child="1"><div class="container"><div class="inner">
 
 										<!-- icon 各種標章 -->
 											<div class="list-text icon" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -778,7 +798,7 @@
 													<h4><span>標章</span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="1">
+													<ul data-index="1" data-child="1">
 														<li data-index="1" class="qrcode"><span style="background-image: url('Images/qrcode.gif');"><a href="#"><img src="Images/qrcode.gif" alt="QRCode"></a></span></li>
 													</ul>
 												</div></div></div>
@@ -795,7 +815,7 @@
 							<!-- content 結束 -->
 
 							<!-- footer 頁尾資訊 -->
-								<div class="footer" data-index="3" data-type="3" data-childLength="3"><div class="container"><div class="inner">
+								<div class="footer" data-index="3" data-type="3" data-child="3"><div class="container"><div class="inner">
 
 								<!-- page-select 頁次導航列 -->
 									<div class="list-multiple page-select" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -803,15 +823,15 @@
 											<h4><span>頁次導航列</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="2">
+											<ul data-index="1" data-child="2">
 												<li class="first" data-index="1"><span><a href="#">最前頁</a></span></li>
 												<li class="prev" data-index="2"><span><a href="#">上一頁</a></span></li>
 											</ul>
-											<ul data-index="2" data-childLength="2">
+											<ul data-index="2" data-child="2">
 												<li class="next" data-index="1"><span><a href="#">下一頁</a></span></li>
 												<li class="last" data-index="2"><span><a href="#">最後頁</a></span></li>
 											</ul>
-											<ul data-index="3" data-childLength="3">
+											<ul data-index="3" data-child="3">
 												<li data-index="1">
 													<span class="select">
 														<select>
@@ -838,15 +858,15 @@
 											<h4><span>頁次導航列</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="2">
+											<ul data-index="1" data-child="2">
 												<li class="first" data-index="1"><span><a href="#">最前頁</a></span></li>
 												<li class="prev" data-index="2"><span><a href="#">上一頁</a></span></li>
 											</ul>
-											<ul data-index="2" data-childLength="2">
+											<ul data-index="2" data-child="2">
 												<li class="next" data-index="1"><span><a href="#">下一頁</a></span></li>
 												<li class="last" data-index="2"><span><a href="#">最後頁</a></span></li>
 											</ul>
-											<ul data-index="3" data-childLength="10">
+											<ul data-index="3" data-child="10">
 												<li data-index="1"><span><a href="#">1</a></span></li>
 												<li data-index="2"><span><a href="#">2</a></span></li>
 												<li data-index="3" class="is_active"><span><a href="#">3</a></span></li>
@@ -868,7 +888,7 @@
 											<h4><span>跳轉導航列</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="3">
+											<ul data-index="1" data-child="3">
 												<li class="back" data-index="1"><span><a href="#">回上一頁</a></span></li>
 												<li class="to-top" data-index="2"><span><a href="#">回最上面</a></span></li>
 												<li class="home" data-index="3"><span><a href="#">HOME</a></span></li>
@@ -887,7 +907,7 @@
 					<!-- content 結束 -->
 
 					<!-- footer 頁尾資訊 -->
-						<div id="footer" class="footer" data-index="3" data-type="3" data-childLength="2"><div class="container"><div class="inner">
+						<div class="footer" id="footer" data-index="3" data-type="3" data-child="2"><div class="container"><div class="inner">
 
 						<!-- accesskey 導盲磚 -->
 							<div class="simple-text accesskey" data-type="0"><div class="container"><div class="inner">
@@ -903,7 +923,7 @@
 									<h3><span>選單</span></h3>
 								</div></div></div>
 								<div class="content"><div class="container"><div class="inner">
-									<ul data-index="1" data-childLength="6">
+									<ul data-index="1" data-child="6">
 										<li data-index="1">
 
 										<!-- nav 選單 -->
@@ -912,7 +932,7 @@
 													<h4><span><a href="#">項目1</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="16" data-navWidth="4">
+													<ul data-index="1" data-child="16" data-navWidth="4">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -943,7 +963,7 @@
 													<h4><span><a href="#">項目2</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="12" data-navWidth="3">
+													<ul data-index="1" data-child="12" data-navWidth="3">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -970,7 +990,7 @@
 													<h4><span><a href="#">項目3</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="8" data-navWidth="1">
+													<ul data-index="1" data-child="8" data-navWidth="1">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -1004,7 +1024,7 @@
 													<h4><span><a href="#">項目5</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="14" data-navWidth="5">
+													<ul data-index="1" data-child="14" data-navWidth="5">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -1033,7 +1053,7 @@
 													<h4><span><a href="#">項目6</a></span></h4>
 												</div></div></div>
 												<div class="content"><div class="container"><div class="inner">
-													<ul data-index="1" data-childLength="16" data-navWidth="6">
+													<ul data-index="1" data-child="16" data-navWidth="6">
 														<li data-index="1"><span><a href="#">連結1</a></span></li>
 														<li data-index="2"><span><a href="#">連結2</a></span></li>
 														<li data-index="3"><span><a href="#">連結3</a></span></li>
@@ -1062,7 +1082,7 @@
 						<!-- list-group-nav 結束 -->
 
 						<!-- group-info 資訊群組 -->
-							<div class="group-info" data-index="2" data-type="1" data-childLength="3"><div class="container"><div class="inner">
+							<div class="group-info" data-index="2" data-type="1" data-child="3"><div class="container"><div class="inner">
 
 							<!-- logo 標誌 -->
 								<div class="simple-pic logo" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -1081,7 +1101,7 @@
 										<h4><span>標章</span></h4>
 									</div></div></div>
 									<div class="content"><div class="container"><div class="inner">
-										<ul data-index="1" data-childLength="3">
+										<ul data-index="1" data-child="3">
 											<li data-index="1" class="wcag"><span style="background-image: url('Images/aplus.jpg');"><a href="#"><img src="Images/aplus.jpg" alt="無障礙 A+"></a></span></li>
 											<li data-index="2" class="egov"><span style="background-image: url('Images/egov.png');"><a href="#"><img src="Images/egov.png" alt="E政府"></a></span></li>
 											<li data-index="3" class="qrcode"><span style="background-image: url('Images/qrcode.gif');"><a href="#"><img src="Images/qrcode.gif" alt="QRCode"></a></span></li>
@@ -1091,7 +1111,7 @@
 							<!-- icon 結束 -->
 
 							<!-- group-msg-tool 資訊與工具群組 -->
-								<div class="group-msg-tool" data-index="3" data-type="3" data-childLength="3"><div class="container"><div class="inner">
+								<div class="group-msg-tool" data-index="3" data-type="3" data-child="3"><div class="container"><div class="inner">
 
 								<!-- link 連結 -->
 									<div class="list-text link" data-index="1" data-type="0"><div class="container"><div class="inner">
@@ -1099,7 +1119,7 @@
 											<h4><span>連結</span></h4>
 										</div></div></div>
 										<div class="content"><div class="container"><div class="inner">
-											<ul data-index="1" data-childLength="4">
+											<ul data-index="1" data-child="4">
 												<li data-index="1"><span><a href="#">底部連結</a></span></li>
 												<li data-index="2"><span><a href="#">底部連結</a></span></li>
 												<li data-index="3"><span><a href="#">底部連結</a></span></li>

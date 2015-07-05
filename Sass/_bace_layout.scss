@@ -18,8 +18,8 @@ body {
 	}
 
 	&:before {
-		// @include icon-font();
-		@include icon-pic();
+		// @include icon-pic();
+		// @include icon-font('build');
 	}
 
 	> form {

@@ -8,15 +8,15 @@ type 3 單攔
 type 4 清單
 */
 
-$min_childLength: 2; //最少的child數量
-$max_childLength: 10; //最多的child數量
+$min_child: 2; //最少的child數量
+$max_child: 10; //最多的child數量
 
 $min_aLineLength: 2; //最少的單行數量
 $max_aLineLength: 10; //最多的單行數量
 
-@for $i from $min_childLength through $max_childLength { //算分割
+@for $i from $min_child through $max_child { //算分割
 
-	[data-type="1"][data-childLength="#{$i}"] {
+	[data-type="1"][data-child="#{$i}"] {
 
 		> .container{
 
@@ -124,9 +124,9 @@ $layout_main_interval: $interval-l; //主層間隔
 
 @include at-breakpoint(phone) {
 
-	@for $i from $min_childLength through $max_childLength { //算分割
+	@for $i from $min_child through $max_child { //算分割
 
-		[data-type="1"][data-childLength="#{$i}"] {
+		[data-type="1"][data-child="#{$i}"] {
 
 			> .container{
 
@@ -184,9 +184,9 @@ $layout_main_interval: $interval-l; //主層間隔
 
 @include at-breakpoint(pad) {
 
-	@for $i from $min_childLength through $max_childLength { //算分割
+	@for $i from $min_child through $max_child { //算分割
 
-		[data-type="1"][data-childLength="#{$i}"] {
+		[data-type="1"][data-child="#{$i}"] {
 
 			> .container{
 

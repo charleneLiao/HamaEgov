@@ -57,19 +57,19 @@
 	01. 'data-*'參數定義該節點的狀態或呈現更多資訊
 	01. 以下為'data-*'參數列表：
 		01-02. data-function		用於'群組'，啟用的 function 名稱，屬性為字串
-		01-02. data-functionDate	用於'群組'，賦予啟用 function 各項參數，以 json 方式匯入
+		01-02. data-functionData	用於'群組'，賦予啟用 function 各項參數，以 json 方式匯入
 		01-05. *data-type			用於'群組'，模組型態，屬性為數字，'0'為'模組'、'1'為'分割'、'2'為'頁籤'、'3'為'單欄'、'4'為'模組群組'
 		01-06. *data-index			用於'群組'，模組順序，屬性為數字，如'1'代表父層的第一個子節點，特殊模組如頁籤、導盲無此屬性
-		01-07. *data-childLength	用於'群組'，模組子節點數量，屬性為數字，如'1'代表擁有1個子節點，寬度預設為並排
+		01-07. *data-child			用於'群組'，模組子節點數量，屬性為數字，如'1'代表擁有1個子節點，寬度預設為並排
 		01-08. data-aLineLength		用於'群組'，模組一行內的'群組'並排數量，屬性為數字，如'3'代表一行有三個'群組'並排，會覆蓋 data-index 的排序規則
-		01-01. data-js				用於'body'，判斷是否開啟 js ，屬性為布林值'false'&'true'
-		01-03. data-admin			用於'body'，判斷是為管理員，屬性為布林值'false'&'true'
-		01-04. data-oddIE			用於'body'，判斷是為舊版IE，屬性為布林值'false'&'true'
+		01-01. data-js				用於'#root'，判斷是否開啟 js ，屬性為布林值'false'&'true'
+		01-03. data-admin			用於'#root'，判斷是為管理員，屬性為布林值'false'&'true'
+		01-04. data-oddIE			用於'#root'，判斷是為舊版IE，屬性為布林值'false'&'true'
 		01-09. data-navWidth		用於'.nav'，判斷次選單寬度，屬性為數字，如'2'代表子選單為第一層選單的 200% 的寬度
 
 	02. 規範屬性順序為：
-		02-01. id
 		02-02. class
+		02-01. id
 		02-02. href
 		02-02. action
 		02-02. method
@@ -80,7 +80,7 @@
 		01-04. data-oddIE
 		02-03. data-index
 		02-04. data-type
-		02-05. data-childLength
+		02-05. data-child
 		02-06. data-aLineLength
 		02-07. data-function
 		02-08. data-theme
@@ -88,7 +88,7 @@
 		02-10. data-delayTime
 		02-11. data-animateSpeed
 		01-09. data-navWidth
-		01-09. data-lang	
+		01-09. data-lang
 
 
 //標題序列 HTML 規範 ==============================================================
@@ -279,7 +279,8 @@
 		03-02. .hgroup				頁面標題
 		03-03. .title				文章標題
 		03-04. .visit-count			瀏覽人次
-		03-05. 
+		03-06. .simple-btn			簡單按鈕
+		03-06. 
 
 	04. 屬於 .simple-pic 的結構樣式列表：
 		04-01. .logo				標誌
