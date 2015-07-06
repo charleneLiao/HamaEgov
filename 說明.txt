@@ -268,7 +268,8 @@
 		02-08. .area-form			表單區塊
 		02-09. .area-essay			文章區塊
 		02-10. .area-figure			圖片區塊
-		02-11. .area-vedio			影音區塊
+		02-11. .area-vedio			影訊區塊
+		02-11. .area-audio			音訊區塊
 		02-12. .area-iframe			嵌入區塊
 		02-13. .area-editor			編輯器區塊
 		02-14. .area-customize		客製區塊
@@ -324,6 +325,9 @@
 		15-01.
 
 	12. 屬於 .area-vedio 的結構樣式列表：
+		15-01.
+
+	12. 屬於 .area-audio 的結構樣式列表：
 		15-01.
 
 	13. 屬於 .area-iframe 的結構樣式列表：

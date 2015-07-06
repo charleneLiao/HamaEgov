@@ -1,6 +1,6 @@
-//客製區塊
+ //排版模組群組
 
-.area-customize {
+[data-type="4"] {
 
 //預設================================================================
 
@@ -13,7 +13,7 @@
 			}
 		}
 
-		.header {
+		> .container > .inner > .header {
 
 			> .container {
 
@@ -23,7 +23,7 @@
 			}
 		}
 
-		.content {
+		> .container > .inner > .content {
 
 			> .container {
 
@@ -31,9 +31,16 @@
 
 				}
 			}
+
+			> .container > .inner > ul {
+
+				> li {
+					
+				}
+			}
 		}
 
-		.footer {
+		> .container > .inner > .footer {
 
 			> .container {
 

@@ -1,10 +1,19 @@
 //編輯器區塊
 
+.area-editor {
+
 //預設================================================================
 
-	.area-editor {
+	&.default {
 
-		&.default {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -12,57 +21,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //文章編輯================================================================
 
-	.area-editor {
+	&.editor {
 
-		&.editor {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -70,57 +64,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //聯絡資訊編輯================================================================
 
-	.area-editor {
+	&.address {
 
-		&.address {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -128,47 +107,26 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
 				}
 			}
+		}
 
-			.content {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
+}

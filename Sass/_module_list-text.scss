@@ -1,10 +1,19 @@
 //文字列表
 
+.list-text {
+
 //預設================================================================
 
-	.list-text {
+	&.default {
 
-		&.default {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -12,57 +21,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //選單================================================================
 
-	.list-text {
+	&.nav {
 
-		&.nav {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -70,57 +64,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //使用者工具================================================================
 
-	.list-text {
+	&.user-tool {
 
-		&.user-tool {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -128,57 +107,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //分享================================================================
 
-	.list-text {
+	&.share {
 
-		&.share {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -186,57 +150,9 @@
 
 				}
 			}
-
-			.header {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
-
-
-//錨點================================================================
-
-	.list-text {
-
-		&.anchor {
+		.content {
 
 			> .container {
 
@@ -244,57 +160,32 @@
 
 				}
 			}
+		}
 
-			.header {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
 	}
 
 
 //連結================================================================
 
-	.list-text {
+	&.link {
 
-		&.link {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -302,57 +193,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //字級調整================================================================
 
-	.list-text {
+	&.font-level {
 
-		&.font-level {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -360,57 +236,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //語言選擇================================================================
 
-	.list-text {
+	&.lang {
 
-		&.lang {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -418,57 +279,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //熱門關鍵字================================================================
 
-	.list-text {
+	&.hot-key-word {
 
-		&.hot-key-word {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -476,57 +322,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //頁籤================================================================
 
-	.list-text {
+	&.tab {
 
-		&.tab {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -534,57 +365,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //網站地圖================================================================
 
-	.list-text {
+	&.sitemap {
 
-		&.sitemap {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -592,57 +408,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //詳細資訊================================================================
 
-	.list-text {
+	&.detail {
 
-		&.detail {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -650,57 +451,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //跳轉導航列================================================================
 
-	.list-text {
+	&.jump-tool {
 
-		&.jump-tool {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -708,47 +494,26 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
 				}
 			}
+		}
 
-			.content {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
+}

@@ -17,6 +17,8 @@
 	$sec-color-hover: darken($sec-color, 10);
 	$third-color: #fff !default; //第三搭配色
 	$third-color-hover: darken($third-color, 10);
+	$fourth-color: #fff !default; //第四搭配色
+	$fourth-color-hover: darken($fourth-color, 10);
 
 
 //文字顏色================================================================
@@ -26,16 +28,28 @@
 	$span-color-hover: darken($span-color, 10);
 
 
+//模組顏色===============================================================
+	$color-map: (
+		facebook: #3c5998,
+		google: #cb3726,
+		twitter: #6aaed0,
+		line: #4bc700,
+		email: #666666
+	);
+
+	$color-list: #fff #fff;
+
+
 //文字樣式================================================================
 	$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
 
 
 //文字大小================================================================
-	$font-size-xs: .8em; //extra smail
-	$font-size-s: .9em; //small
-	$font-size-m: 1em; //medium
-	$font-size-l: 1.1em; //large
-	$font-size-xl: 1.4em; //extra large
+	$font-size-xs: .8em;
+	$font-size-s: .9em;
+	$font-size-m: 1em;
+	$font-size-l: 1.1em;
+	$font-size-xl: 1.4em;
 
 
 //文字圖示================================================================
@@ -44,40 +58,40 @@
 
 
 //文字厚度================================================================
-	$font-weight-n: 400; //normal
-	$font-weight-b: 700; //bold
+	$font-weight-n: 400;
+	$font-weight-b: 700;
 
 
 //文字行高================================================================
-	$line-height-xs: 1; //extra smail
-	$line-height-s: 1.2; //small
-	$line-height-m: 1.4; //medium
-	$line-height-l: 2; //large
-	$line-height-xl: 2.4; //extra large
+	$line-height-xs: 1;
+	$line-height-s: 1.2;
+	$line-height-m: 1.4;
+	$line-height-l: 2;
+	$line-height-xl: 2.4;
 
 
 //文字間格================================================================
-	$letter-spacing-xs: 1px; //extra smail
-	$letter-spacing-s: 2px; //small
-	$letter-spacing-m: 3px; //medium
-	$letter-spacing-l: 4px; //large
-	$letter-spacing-xl: 5px; //extra large
+	$letter-spacing-xs: 1px;
+	$letter-spacing-s: 2px;
+	$letter-spacing-m: 3px;
+	$letter-spacing-l: 4px;
+	$letter-spacing-xl: 5px;
 
 
 //透明度================================================================
-	$opacity-vl: .3; //very low
-	$opacity-l: .5; //low
-	$opacity-m: .5; //medium
-	$opacity-h: .8; //high
-	$opacity-vh: .9; //very high
+	$opacity-vl: .3;
+	$opacity-l: .5;
+	$opacity-m: .5;
+	$opacity-h: .8;
+	$opacity-vh: .9;
 
 
 //間隔設定================================================================
-	$interval-xs: 3px; //extra smail
-	$interval-s: 6px; //small
-	$interval-m: 10px; //medium
-	$interval-l: 20px; //large
-	$interval-xl: 30px; //extra large
+	$interval-xs: 3px;
+	$interval-s: 6px;
+	$interval-m: 10px;
+	$interval-l: 20px;
+	$interval-xl: 30px;
 
 
 //RWD寬度================================================================
@@ -135,3 +149,9 @@
 	$btn-text-color: $white; //按鈕文字顏色
 	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
 	$btn-border: 0; //按鈕線框
+
+
+//輸入框樣式================================================================
+	$input-padding: $interval-m;
+	$input-border: transparent;
+	$input-bg-color: transparent;

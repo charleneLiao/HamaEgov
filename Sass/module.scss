@@ -8,6 +8,8 @@
 若需要對全域樣式設定，請撰寫在 bace_layout.scss。
 */
 
+@import 'module_list_group'; //排版模組群組
+
 @import 'module_simple-text'; //簡單文字
 
 @import 'module_simple-pic'; //簡單圖片
@@ -26,7 +28,9 @@
 
 @import 'module_area-figure'; //圖片區塊
 
-@import 'module_area-vedio'; //影音區塊
+@import 'module_area-vedio'; //影訊區塊
+
+@import 'module_area-audio'; //音訊區塊
 
 @import 'module_area-iframe'; //嵌入區塊
 

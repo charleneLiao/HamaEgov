@@ -1,10 +1,19 @@
 //文章區塊
 
+.area-essay {
+
 //預設================================================================
 
-	.area-essay {
+	&.default {
 
-		&.default {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -12,47 +21,26 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
 				}
 			}
+		}
 
-			.content {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
+}

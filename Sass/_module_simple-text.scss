@@ -1,10 +1,19 @@
 //簡單文字
 
-//預設================================================================
+.simple-text {
 
-	.simple-text {
+//單獨按鈕================================================================
 
-		&.default {
+	&.single-btn {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -12,57 +21,85 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
 				}
 			}
+		}
 
-			.content {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
 
-	@include at-breakpoint(phone) {
 
-	}
+//預設================================================================
 
-	@include at-breakpoint(pad) {
+	&.default {
 
-	}
+		> .container {
 
-	@include at-breakpoint(pc) {
+			> .inner {
 
+			}
+		}
+
+		.header {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		.content {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		.footer {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
 	}
 
 
 //導盲磚================================================================
 
-	.simple-text {
+	&.accesskey {
 
-		&.accesskey {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -70,57 +107,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //頁面標題================================================================
 
-	.simple-text {
+	&.hgroup {
 
-		&.hgroup {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -128,57 +150,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //文章標題================================================================
 
-	.simple-text {
+	&.title {
 
-		&.title {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -186,57 +193,9 @@
 
 				}
 			}
-
-			.header {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
-
-
-//瀏覽人次================================================================
-
-	.simple-text {
-
-		&.visit-count {
+		.content {
 
 			> .container {
 
@@ -244,47 +203,16 @@
 
 				}
 			}
+		}
 
-			.header {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
+}

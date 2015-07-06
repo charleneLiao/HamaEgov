@@ -1,10 +1,19 @@
 //簡單圖片
 
+.simple-pic {
+
 //預設================================================================
 
-	.simple-pic {
+	&.default {
 
-		&.default {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -12,57 +21,42 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.content {
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
-	}
 
-	@include at-breakpoint(phone) {
+		.footer {
 
-	}
+			> .container {
 
-	@include at-breakpoint(pad) {
+				> .inner {
 
-	}
-
-	@include at-breakpoint(pc) {
-
+				}
+			}
+		}
 	}
 
 
 //標誌================================================================
 
-	.simple-pic {
+	&.logo {
 
-		&.logo {
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.header {
 
 			> .container {
 
@@ -70,47 +64,26 @@
 
 				}
 			}
+		}
 
-			.header {
+		.content {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
 				}
 			}
+		}
 
-			.content {
+		.footer {
 
-				> .container {
+			> .container {
 
-					> .inner {
+				> .inner {
 
-					}
-				}
-			}
-
-			.footer {
-
-				> .container {
-
-					> .inner {
-
-					}
 				}
 			}
 		}
 	}
-
-	@include at-breakpoint(phone) {
-
-	}
-
-	@include at-breakpoint(pad) {
-
-	}
-
-	@include at-breakpoint(pc) {
-
-	}
+}

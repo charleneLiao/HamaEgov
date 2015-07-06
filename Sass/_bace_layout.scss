@@ -1,25 +1,25 @@
 //框架
 
 body {
-	font-size: $body-font-size-m; //預設大小，應與font-size-m同大
+	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
 	font-family: $base-font-style;
 	color: $body-font-color;
 
-	&.font-size-l { //大字
+	&.font-size-large { //大字
 		font-size: $body-font-size-l;
 	}
 
-	&.font-size-m { //中字
+	&.font-size-medium { //中字
 		font-size: $body-font-size-m;
 	}
 
-	&.font-size-s { //小字
+	&.font-size-small { //小字
 		font-size: $body-font-size-s;
 	}
 
 	&:before {
 		// @include icon-pic();
-		// @include icon-font('build');
+		// @include icon-font();
 	}
 
 	> form {
@@ -61,7 +61,7 @@ body {
 		&[type="password"],
 		&[type="search"],
 		&[type="number"] {
-			@extend %text;
+			@extend %input;
 		}
 
 		&[type="radio"] {
@@ -70,7 +70,7 @@ body {
 	}
 
 	select {
-		@extend %text;
+		@extend %input;
 
 		option {
 

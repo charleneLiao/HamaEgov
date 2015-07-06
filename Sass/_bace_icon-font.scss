@@ -11,7 +11,12 @@ google google Material icons 圖示清單列表請參考 https://www.google.com/
 
 @if( $font-icon-googleMaterial ) { //如果要使用就引入
 
-	@import url(https://fonts.googleapis.com/icon?family=Material+Icons); //引入 google Material icons 雲端字型
+	@font-face {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+	}
 
 	.material-icons {
 		font-family: 'Material Icons';
