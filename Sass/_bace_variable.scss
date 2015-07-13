@@ -30,11 +30,11 @@
 
 //模組顏色===============================================================
 	$color-map: (
-		facebook: #3c5998,
-		google: #cb3726,
-		twitter: #6aaed0,
-		line: #4bc700,
-		email: #666666
+		'facebook': #3c5998,
+		'google': #cb3726,
+		'twitter': #6aaed0,
+		'line': #4bc700,
+		'email': #666666
 	);
 
 	$color-list: #fff #fff;
@@ -104,11 +104,6 @@
 	$transition: 300ms;
 
 
-//圖片檔名================================================================
-	$header-logo-src: 'header_logo.png'; 
-	$footer-logo-src: 'footer_logo.png';
-
-
 //全頁文字================================================================
 	$body-font-color: $deep !default; //網站文字顏色
 	$body-font-size-s: $font-size-xs !default; //small
@@ -155,3 +150,66 @@
 	$input-padding: $interval-m;
 	$input-border: transparent;
 	$input-bg-color: transparent;
+
+
+//Sass 特殊字元================================================================
+	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串
+
+
+//瀏覽器媒體================================================================
+
+	$media: (
+		'pc': '(min-width: #{$pad-width + 1})',
+		'mobile': '(max-width: #{$pad-width})',
+		'pad': '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
+		'phone': '(max-width: #{$phone-width})',
+
+		'ip4-4s': 'only screen and (device-aspect-ratio: 2/3) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait)',
+		'ip5-5s': 'only screen and (device-aspect-ratio: 40/71)  and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait)',
+		'ip6': 'only screen and (device-aspect-ratio: 667/375) and (-webkit-min-device-pixel-ratio : 2) and (orientation : portrait)',
+		'ip6+': 'only screen and (device-aspect-ratio: 16/9) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait)',
+
+		'ad2.3+': 'screen and (min-width:0' + $backslash + '0)',
+
+		'ie6-7': 'screen' + $backslash + '9',
+		'ie6-7-8': $backslash + '0screen' + $backslash +',screen' + $backslash + '9',
+		'ie8': $backslash +'0screen',
+		'ie8-9-10': 'screen' + $backslash + '0',
+		'ie9-10': 'screen and (min-resolution: +72dpi)',
+		'ie9-10+': 'screen and (min-width:0' + $backslash + '0)',
+		'ie10+': 'screen and (-ms-high-contrast: active), (-ms-high-contrast: none)',
+
+		'gc22+': $backslash + $backslash + '0 screen',
+		'gc29+': 'all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)',
+
+		'sa4': 'screen and (min-width:0' + $backslash + '0)',
+		'sa7+': $backslash + $backslash + '0 screen',
+
+		'fx1+': $backslash + '0 all',
+		'fx3.6+': 'screen and (-moz-images-in-menus:0)',
+		'fx4+': 'screen and (min--moz-device-pixel-ratio:0)',
+		'fx8+': 'all and (-moz-images-in-menus:0) and (min-resolution: .001dpcm)',
+		'fx29+': 'all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)',
+
+		'op7': 'all and (min-width: 0px)',
+		'op12': 'all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)',
+		'op16+': 'all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)'
+	);
+
+
+//連覽器支持================================================================
+
+	$supports: (
+		'gc28+': '(-webkit-appearance:none)',
+
+		'fx16+': '(-moz-appearance:meterbar)',
+		'fx22+': '(-moz-appearance:meterbar) and (display:flex)',
+		'fx24+': '(-moz-appearance:meterbar) and (cursor:zoom-in)',
+		'fx25+': '(-moz-appearance:meterbar) and (background-attachment:local)',
+		'fx26+': '(-moz-appearance:meterbar) and (image-orientation:90deg)',
+		'fx27+': '(-moz-appearance:meterbar) and (all:initial)',
+		'fx28+': '(-moz-appearance:meterbar) and (list-style-type:japanese-formal)',
+		'fx30+': '(-moz-appearance:meterbar) and (background-blend-mode:difference,normal)',
+
+		'op14+': '(-webkit-appearance:none)'
+	);

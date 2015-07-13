@@ -32,6 +32,5 @@ $(function(){
 
 	window.old_ie = odd_ie;
 
-	$('#root').attr('data-oddIe', odd_ie); //回傳結果給拖曳根節點，是否為舊 ie
-	$('#root').attr('data-js', true); //回傳結果給拖曳根節點，是否有開啟 js
+	$('body').attr('data-js', true); //回傳結果給拖曳根節點，是否有開啟 js
 });

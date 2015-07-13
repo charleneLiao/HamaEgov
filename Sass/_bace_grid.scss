@@ -122,7 +122,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-@include at-breakpoint(phone) {
+@include at('phone') {
 
 	@for $i from $min_child through $max_child { //算分割
 
@@ -182,7 +182,7 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-@include at-breakpoint(pad) {
+@include at('pad') {
 
 	@for $i from $min_child through $max_child { //算分割
 
@@ -233,6 +233,6 @@ $layout_main_interval: $interval-l; //主層間隔
 	}
 }
 
-@include at-breakpoint(pc) {
+@include at('pc') {
 	
 }
