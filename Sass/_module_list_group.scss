@@ -1,4 +1,4 @@
- //排版模組群組
+//排版模組群組
 
 [data-type="4"] {
 
@@ -19,6 +19,69 @@
 
 				> .inner {
 
+				}
+			}
+
+			h3 {
+
+				span {
+					
+				}
+			}
+		}
+
+		> .container > .inner > .content {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			> .container > .inner > ul {
+
+				> li {
+					
+				}
+			}
+		}
+
+		> .container > .inner > .footer {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+//選單列表================================================================
+
+	&.list-group-nav {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		> .container > .inner > .header {
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+
+			h3 {
+
+				span {
+					
 				}
 			}
 		}

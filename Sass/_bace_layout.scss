@@ -1,6 +1,6 @@
 //框架
 
-body {
+.root {
 	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
 	font-family: $base-font-style;
 	color: $body-font-color;
@@ -20,10 +20,6 @@ body {
 	&:before {
 		// @include icon-pic();
 		// @include icon-font();
-	}
-
-	> form {
-		
 	}
 
 	a {
@@ -80,19 +76,6 @@ body {
 	label {
 		cursor: pointer;
 	}
-}
-
-#root { //拖曳根結點
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-}
-
-#mobile { //行動載具
 
 	> .container {
 
@@ -101,7 +84,62 @@ body {
 		}
 	}
 
-	.list-group-nav { //選單列表
+
+//根節點================================================================
+
+	#root {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//行動載具================================================================
+
+	#mobile {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//額外資訊================================================================
+
+	#extend {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//固定佈局================================================================
+
+	#wrapper {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//頁首資訊================================================================
+
+	#header {
 
 		> .container {
 
@@ -110,129 +148,7 @@ body {
 			}
 		}
 
-		> .container > .inner > .header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-
-			h3 {
-
-				span {
-
-				}
-			}
-		}
-
-		> .container > .inner > .content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-			> ul {
-
-				> li {
-
-				}
-			}
-		}
-
-		> .container > .inner > .footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-		}
-	}
-}
-
-#extend { //額外資訊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-}
-
-#wrapper { //固定佈局
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-}
-
-#header { //頁首資訊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
-	.group-info { //資訊群組
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-		
-		.group-msg-tool { //資訊與工具群組
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-	.list-group-nav { //選單列表
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		> .container > .inner > .header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-
-			h3 {
-
-				span {
-					
-				}
-			}
-		}
-
-		> .container > .inner > .content {
+		.group-info { //資訊群組
 
 			> .container {
 
@@ -241,15 +157,209 @@ body {
 				}
 			}
 			
-			> ul {
+			.group-msg-tool { //資訊與工具群組
 
-				> li {
+				> .container {
+
+					> .inner {
+
+					}
+				}
+			}
+		}
+	}
+
+
+//主要內容================================================================
+
+	#content {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//模組區塊================================================================
+
+	#module-area {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.tab-group-sample { //頁籤範例
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+
+//內頁區塊================================================================
+
+	#page-area {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+	}
+
+
+//內頁側欄區塊================================================================
+
+	#aside {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		> .container > .inner > .header{ //頁首資訊
+
+			> .container {
+
+				> .inner {
 
 				}
 			}
 		}
 
-		> .container > .inner > .footer {
+		> .container > .inner > .content{ //主要內容
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		> .container > .inner > .footer{ //頁尾資訊
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+
+//內頁內容區塊================================================================
+
+	#section {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		> .container > .inner > .header{ //頁首資訊
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		> .container > .inner > .content{ //主要內容
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		> .container > .inner > .footer{ //頁尾資訊
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+
+//文章================================================================
+
+	#article{
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		> .container > .inner > .header{ //頁首資訊
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		> .container > .inner > .content{ //主要內容
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+
+		> .container > .inner > .footer{ //頁尾資訊
+
+			> .container {
+
+				> .inner {
+
+				}
+			}
+		}
+	}
+
+
+//頁尾資訊================================================================
+
+	#footer {
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.group-info { //資訊群組
 
 			> .container {
 
@@ -258,223 +368,15 @@ body {
 				}
 			}
 			
-		}
-	}
-}
+			.group-msg-tool { //資訊與工具群組
 
-#content { //主要內容
+				> .container {
 
-	> .container {
+					> .inner {
 
-		> .inner {
-
-		}
-	}
-}
-
-#index { //首頁內容區塊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
-	.tab-group-sample { //頁籤範例
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-}
-
-#aside { //內頁側欄區塊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-}
-
-#section { //內頁內容區塊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
-	> .container > .inner > .header{ //頁首資訊
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-
-	> .container > .inner > .content{ //主要內容
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-
-	> .container > .inner > .footer{ //頁尾資訊
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-}
-
-#article{ //文章
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
-	> .container > .inner > .header{ //頁首資訊
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-
-	> .container > .inner > .content{ //主要內容
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-
-	> .container > .inner > .footer{ //頁尾資訊
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-	}
-}
-
-#footer { //頁尾資訊
-
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
-	.list-group-nav { //選單列表
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		> .container > .inner > .header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-
-			h3 {
-
-				span {
-					
-				}
-			}
-		}
-
-		> .container > .inner > .content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-			> ul {
-
-				> li {
-
-				}
-			}
-		}
-
-		> .container > .inner > .footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-		}
-	}
-
-	.group-info { //資訊群組
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-		
-		.group-msg-tool { //資訊與工具群組
-
-			> .container {
-
-				> .inner {
-
+					}
 				}
 			}
 		}
 	}
-}
-
-@include at-breakpoint(phone) {
-
-}
-
-@include at-breakpoint(pad) {
-
-}
-
-@include at-breakpoint(pc) {
-	
 }

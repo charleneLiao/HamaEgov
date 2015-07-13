@@ -1,6 +1,6 @@
 //樣式、方法與涵式
 
-//extend 方法================================================================
+//樣式================================================================
 
 	%clear { //偽類清除浮動的方法
 		content: $content;
@@ -46,10 +46,6 @@
 		font-weight: $font-weight-n;
 		transition: 0;
 	}
-
-
-
-//樣式================================================================
 
 	%center { //齊中寬度
 		max-width: $pc-width;
@@ -113,7 +109,7 @@
 	}
 
 
-// 涵式================================================================
+//涵式================================================================
 
 	@mixin re-ellipsis() { //reset %ellipsis 的方法
 		overflow: visible;
@@ -206,17 +202,34 @@
 	}
 
 
-//RWD 核心================================================================
+//引入 ================================================================
 
-	$breakpoints: (
-		pc: '(min-width: #{$pad-width + 1})',
-		pad: '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-		phone: '(max-width: #{$phone-width})'
-	);
+	@mixin at( $key, $obj: 'media' ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
 
-	@mixin at-breakpoint($name) {
+		@if( $obj == 'media' ) {
 
-		@media #{map-get($breakpoints, $name)} {
+			@media #{map-get( $media, $key )} {
+				@content;
+			}
+
+		}@else if( $obj == 'supports' ) {
+
+			@supports #{map-get( $supports, $key )} {
+				@content;
+			}
+		}
+	}
+
+	@mixin data-js( $boolean: true ){ //在 有/無 js下的樣式表現
+
+		[data-js="#{ $boolean }"] & {
+			@content;
+		}
+	}
+
+	@mixin data-admin( $boolean: true ){ //在 是/否 管理員登入的樣式表現
+
+		[data-admin="#{ $boolean }"] & {
 			@content;
 		}
 	}
