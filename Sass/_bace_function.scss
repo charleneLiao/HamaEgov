@@ -117,7 +117,7 @@
 		white-space: normal;
 	}
 
-	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+	@mixin bg-to-pic( $img-src, $size: true, $height: null ) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 
 		@if( $size == true ) { //如果是 true 就匯出大小
 			width: image-width($img-src);
@@ -130,7 +130,7 @@
 
 			@if( $height != null ) { //如果有 $height 就給高
 				
-				@if( unitless($height) ) { //沒單位就是倍數
+				@if( unitless( $height ) ) { //沒單位就是倍數
 					height: round(image-height($img-src) * $height);
 
 				}@else{ //有單位就直接使用
@@ -160,24 +160,37 @@
 		background-position: center;
 	}
 
-	@mixin icon-pic($img-name, $size: true, $height: null) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+	@mixin icon-pic( $img-name, $size: true, $height: null ) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
 
 		@if( str-index($img-name, '.png') ) { //如果有副檔名就拿掉
 			$img-name: str-slice($img-name, 1, str-index($img-name, '.png') - 1);
 		}
 
-		@extend %icon;
+		@if( $icon-pic ) {
 
-		@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
-			@extend .icon-#{$img-name};
-			width: image-width('icon/#{$img-name}.png');
-			height: image-height('icon/#{$img-name}.png');
+			@extend %icon;
 
-		}@else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
-			background-image: image-url('icon/#{$img-name}.png');
+			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
+				@extend .icon-pic-#{$img-name};
+				width: image-width('icon-pic/#{$img-name}.png');
+				height: image-height('icon-pic/#{$img-name}.png');
 
-		}@else{ //如果是數字就會出指定倍數大小並使用單獨圖片
-			@include bgToPic('icon/#{$img-name}.png', $size, $height);
+			}@else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
+				background-image: image-url('icon-pic/#{$img-name}.png');
+
+			}@else{ //如果是數字就會出指定倍數大小並使用單獨圖片
+				@include bgToPic('icon-pic/#{$img-name}.png', $size, $height);
+			}
+		}
+	}
+
+	@mixin icon-font( $font ) { //文字圖示，列表請參閱 https://icomoon.io/
+
+		@if( $icon-font ) {
+			@extend .icon-font;
+			@extend .icon-font-#{ $font };
+			font-size: $icon-font-size;
+			color: $icon-font-color;
 		}
 	}
 
@@ -191,20 +204,14 @@
 		}
 	}
 
-	@mixin icon-font($font: 'spellcheck') { //文字圖示，列表請參閱 https://www.google.com/design/icons/
-
-		@if( $font-icon-googleMaterial ) {
-			@extend .material-icons;
-			content: $font;
-			font-size: $icon-font-size;
-			color: $icon-font-color;
-		}
-	}
-
 
 //引入 ================================================================
 
 	@mixin at( $key, $obj: 'media' ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
+
+		@if ( ( $rwd == false ) and ( $key == 'mobile' or $key == 'pad' or $key == 'phone' ) ) {
+			$obj: null;
+		}
 
 		@if( $obj == 'media' ) {
 

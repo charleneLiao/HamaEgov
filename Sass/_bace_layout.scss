@@ -5,6 +5,10 @@
 	font-family: $base-font-style;
 	color: $body-font-color;
 
+	@include at('ie6-7-8') {
+		min-width: $pc-width;
+	}
+
 	&.font-size-large { //大字
 		font-size: $body-font-size-l;
 	}
@@ -18,8 +22,8 @@
 	}
 
 	&:before {
-		// @include icon-pic();
-		// @include icon-font();
+		// @include icon-pic('file-type-odt');
+		@include icon-font('IE');
 	}
 
 	a {

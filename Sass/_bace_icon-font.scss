@@ -1,37 +1,45 @@
 //文字圖示
 
-$font-icon-googleMaterial: false; //是否啟用 google Material icons文字圖示
-
 /* 
 請注意！本 scss 所做設定皆全域可見。
-本 sass 引入 雲端字型，用以作為簡易圖示。
-google google Material icons 說明請參考 http://google.github.io/material-design-icons/
-google google Material icons 圖示清單列表請參考 https://www.google.com/design/icons/
+本 sass 引入 icomoon 圖示字型，用以作為文字圖示。
+
+詳細資訊請參閱 https://icomoon.io/，教學請參閱 http://www.minwt.com/html/12931.html
+
+1 將 icon 包下載回來後，將包裡的 fonts 複製到 /Images/icon-font
+2 修改 style.css 裡的項目，步驟如下：
+	2.1 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
+	2.2 將 :before 全數刪除
+	2.3 將 .icon- 取代成 .icon-font-
+	2.4 將修改的內容複製至 /Sass/_bace_sys-icon-font.scss
 */
 
-@if( $font-icon-googleMaterial ) { //如果要使用就引入
+@if( $icon-font ) {
 
 	@font-face {
-		font-family: 'Material Icons';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
-	}
-
-	.material-icons {
-		font-family: 'Material Icons';
+		font-family: 'icomoon';
+		src:url('/Images/icon-font/icomoon.eot?59oic8');
+		src:url('/Images/icon-font/icomoon.eot?#iefix59oic8') format('embedded-opentype'),
+			url('/Images/icon-font/icomoon.ttf?59oic8') format('truetype'),
+			url('/Images/icon-font/icomoon.woff?59oic8') format('woff'),
+			url('/Images/icon-font/icomoon.svg?59oic8#icomoon') format('svg');
 		font-weight: normal;
 		font-style: normal;
-		display: inline-block;
-		width: 1em;
-		height: 1em;
-		line-height: 1;
+	}
+
+	.icon-font {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
 		text-transform: none;
-		letter-spacing: normal;
-		word-wrap: normal;
-		-webkit-font-smoothing: antialiased; //Support for all WebKit browsers
-		text-rendering: optimizeLegibility; //Support for Safari and Chrome
-		-moz-osx-font-smoothing: grayscale; //Support for Firefox
-		font-feature-settings: 'liga'; //Support for IE
+		line-height: 1;
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 }
+
+@import 'bace_sys-icon-font'; //文字圖示 style
