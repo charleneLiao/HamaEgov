@@ -1,17 +1,17 @@
 //文字圖示
 
 /* 
-請注意！本 scss 所做設定皆全域可見。
-本 sass 引入 icomoon 圖示字型，用以作為文字圖示。
+	請注意！本 scss 所做設定皆全域可見。
+	本 sass 引入 icomoon 圖示字型，用以作為文字圖示。
 
-詳細資訊請參閱 https://icomoon.io/，教學請參閱 http://www.minwt.com/html/12931.html
+	詳細資訊請參閱 https://icomoon.io/，教學請參閱 http://www.minwt.com/html/12931.html
 
-1 將 icon 包下載回來後，將包裡的 fonts 複製到 /Images/icon-font
-2 修改 style.css 裡的項目，步驟如下：
-	2.1 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
-	2.2 將 :before 全數刪除
-	2.3 將 .icon- 取代成 .icon-font-
-	2.4 將修改的內容複製至 /Sass/_bace_sys-icon-font.scss
+	1 將 icon 包下載回來後，將包裡的 fonts 複製到 /Images/icon-font
+	2 修改 style.css 裡的項目，步驟如下：
+		2.1 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
+		2.2 將 :before 全數刪除
+		2.3 將 .icon- 取代成 .icon-font-
+		2.4 將修改的內容複製至 /Sass/_bace_sys-icon-font.scss
 */
 
 @if( $icon-font ) {

@@ -91,7 +91,7 @@
 
 //根節點================================================================
 
-	#root {
+	&#root {
 
 		> .container {
 
@@ -151,26 +151,6 @@
 
 			}
 		}
-
-		.group-info { //資訊群組
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-			.group-msg-tool { //資訊與工具群組
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
-			}
-		}
 	}
 
 
@@ -195,16 +175,6 @@
 
 			> .inner {
 
-			}
-		}
-
-		.tab-group-sample { //頁籤範例
-
-			> .container {
-
-				> .inner {
-
-				}
 			}
 		}
 	}
@@ -360,26 +330,6 @@
 
 			> .inner {
 
-			}
-		}
-
-		.group-info { //資訊群組
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-			
-			.group-msg-tool { //資訊與工具群組
-
-				> .container {
-
-					> .inner {
-
-					}
-				}
 			}
 		}
 	}
