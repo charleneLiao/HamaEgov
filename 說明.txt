@@ -143,8 +143,8 @@
 										span.url>input[type='url']
 										span.week>input[type='week']
 			05-01-05. '標籤組件'		span.label>label{可選}
-			05-01-06. '選擇框組件'		span.checkbox>(span.label>label)+(input[type='checkbox'])
-										span.checkbox>(span.label>label)+(input[type='radio'])
+			05-01-06. '選擇框組件'		span.checkbox>(input[type='checkbox'])+(span.label>label)
+										span.checkbox>(input[type='radio'])+(span.label>label)
 			05-01-07. '文字輸入框組件'  div.textarea>textarea
 										span.textarea>textarea
 			05-01-08. '選擇框組件'		div.select>select>option>{文字}
