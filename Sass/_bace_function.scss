@@ -208,12 +208,12 @@
 		}
 	}
 
-	@mixin icon-btn( $img-name, $size: true, $height: null ) { //只有icon圖片的按鈕，隱含佔用了 :before
+	@mixin icon-pic-btn( $img-name, $size: true, $height: null ) { //只有icon圖片的按鈕，隱含佔用了 :before
 		@extend %hide-text;
 		display: inline-block;
 
 		&:before{
-			@include icon( $img-name, $size, $height );
+			@include icon-pic( $img-name, $size, $height );
 			display: block !important;
 		}
 	}
@@ -250,14 +250,14 @@
 		}
 	}
 
-	@mixin data-js( $boolean: true ){ //在 有/無 js下的樣式表現
+	@mixin data-js( $boolean: true ) { //在 有/無 js下的樣式表現
 
 		[data-js="#{ $boolean }"] & {
 			@content;
 		}
 	}
 
-	@mixin data-admin( $boolean: true ){ //在 是/否 管理員登入的樣式表現
+	@mixin data-admin( $boolean: true ) { //在 是/否 管理員登入的樣式表現
 
 		[data-admin="#{ $boolean }"] & {
 			@content;
