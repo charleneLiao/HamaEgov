@@ -1,12 +1,12 @@
 //內頁覆蓋
 
-@import 'bace'; //sass基礎設定
+@import 'base'; //sass基礎設定
 
 /*
 	請注意！本 scss 所做設定皆只有內頁可見。
 	若需要覆蓋主要樣式設定，請直接撰寫在以下區塊。
 */
 
-body {
+.#{$side-type} {
 
 }

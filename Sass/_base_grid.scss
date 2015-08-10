@@ -1,0 +1,169 @@
+//排版框架
+
+/*
+	type 0 模組
+	type 1 分割
+	type 2 頁籤
+	type 3 單攔
+	type 4 清單
+*/
+
+$min_child: 1; //最少的child數量
+$max_child: 10; //最多的child數量
+
+$min_aLineLength: 2; //最少的單行數量
+$max_aLineLength: 10; //最多的單行數量
+
+@for $i from $min_child through $max_child { //算自然分割
+
+	[data-type="1"][data-child="#{$i}"] {
+
+		> .container{
+
+			> .inner{
+
+				> [data-index] {
+					width: 100% / $i;
+
+					@include at('pad') {
+						width: 50%;
+
+						&:nth-of-type(odd){
+							clear: left;
+						}
+
+						[data-index] {
+							width: 100%;
+						}
+					}
+
+					@include at('phone') {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@for $i from $min_aLineLength through $max_aLineLength { //算設定分割
+
+	[data-type="1"][data-aLineLength="#{$i}"] {
+
+		> .container{
+
+			> .inner{
+
+				> [data-index] {
+					width: 100% / $i;
+
+					&:nth-of-type(#{$i}n+1) {
+						clear: left;
+					}
+
+					@include at('pad') {
+						width: 50%;
+
+						&:nth-of-type(#{$i}n+1) {
+							clear: none;
+						}
+
+						&:nth-of-type(odd){
+							clear: left;
+						}
+
+						[data-index] {
+							width: 100%;
+						}
+					}
+
+					@include at('phone') {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+$layout_main_interval: $interval-l; //主層間隔
+
+[data-type="0"] { //模組
+
+	> .container {
+		margin: 0 $layout_main_interval;
+
+		@include data-js('phone') {
+			margin: 0;
+		}
+
+		> .inner {
+
+		}
+	}
+}
+
+[data-type="1"] { //分割
+
+	> .container {
+
+		> .inner {
+
+			> [data-index] {
+				float: left
+			}
+	
+			&:after{
+				@extend %clear;
+			}
+		}
+	}
+}
+
+[data-type="2"] { //頁籤
+
+	> .container {
+
+		> .inner {
+
+			> [data-index] {
+
+				> .container {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+[data-type="3"] { //單欄
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+}
+
+[data-type="4"] { //清單
+
+	> .container {
+		margin: 0 $layout_main_interval;
+
+		> .inner {
+
+		}
+	}
+
+	[data-type="0"] { //模組
+
+		> .container {
+			margin: 0;
+
+			> .inner {
+
+			}
+		}
+	}
+}

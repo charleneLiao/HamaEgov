@@ -1,6 +1,6 @@
 //全域
 
-@import 'bace'; //共用底模組
+@import 'base'; //共用底模組
 
 /* 
 	請注意！本 scss 所做設定皆全域可見。
@@ -10,12 +10,6 @@
 
 @import 'normalize'; //正常化 css
 
-@import 'bace_grid'; //格線
+@import 'base_grid'; //格線
 
-@import 'bace_layout'; //框架
-
-@import 'group'; //群組
-
-@import 'group_tab'; //頁籤群組
-
-@import 'group_list'; //清單群組
+@import 'base_layout'; //框架

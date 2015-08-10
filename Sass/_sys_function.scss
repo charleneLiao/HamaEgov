@@ -1,0 +1,12 @@
+//Sass 基本 function 擴充================================================================
+	@function lighter( $color, $int: 10) {
+		@return lighten( $color, $int );
+	}
+
+	@function deeper( $color, $int: 10) {
+		@return darken( $color, $int );
+	}
+
+
+//Sass 特殊字元"\"================================================================
+	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串

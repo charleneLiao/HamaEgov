@@ -1,0 +1,262 @@
+//方法與涵式
+
+//extend 方法================================================================
+
+	%clear { //偽類清除浮動的方法
+		content: $content;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	%hide-text { //隱藏文字的方法
+		text-indent: -9999px;
+		font: 0/0 a;
+		text-shadow: none;
+		color: transparent;
+	}
+
+	%ellipsis { //超過範圍文字變成'...'的方法
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 _bace_icon-pic
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%icon-font { //偽類作為行內icon-font的方法，請參閱 _bace_icon-font
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	%flex-1 { //維持整夜頁高度的方法
+		display: flex;
+		flex-direction: column;
+		-ms-flex-direction: column;
+		flex: 1 0 auto;
+	}
+
+	%reset {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		list-style: none;
+		background-color: transparent;
+		font-size: $font-size-m;
+		font-weight: $font-weight-n;
+		transition: 0;
+	}
+
+	%center { //齊中寬度
+		max-width: $pc-width;
+		margin: 0 auto;
+	}
+
+	%title { //模組title
+		padding: $interval-l 0;
+		margin-bottom: $interval-l;
+		font-size: $font-size-l;
+		color: $main-color;
+	}
+
+	%btn { //按鈕樣式
+		display: inline-block;
+		padding: $btn-padding;
+		border: $btn-border;
+		border-radius: $border-radius;
+		line-height: 1;
+		vertical-align: middle;
+		color: $btn-text-color;
+		cursor: pointer;
+		font-size: $font-size-s;
+		background-color: $btn-bg-color;
+		transition: $transition;
+
+		&:link {
+			color: $btn-text-color;
+		}
+
+		&:visited {
+			color: $btn-text-color;
+		}
+
+		&:hover {
+			background-color: $btn-hover-bg-color;
+		}
+
+		&:active {
+			color: $btn-text-color;
+		}
+	}
+
+	%input { //輸入框樣式
+		padding: $input-padding;
+		border: $input-border;
+		background-color: $input-bg-color;
+		vertical-align: middle;
+	}
+
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%span-bg {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+//@mixin 涵式================================================================
+
+	@mixin re-ellipsis() { //reset %ellipsis 的方法
+		overflow: visible;
+		text-overflow: clip;
+		white-space: normal;
+	}
+
+	@mixin bg-to-pic( $img-src, $size: true, $height: null ) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+
+		@if( $size == true ) { //如果是 true 就匯出大小
+			width: image-width( $img-src );
+			height: image-height( $img-src );
+
+		} @else if( $size == false ) { //如果是 false 就不匯出大小
+			
+		} @else { //如果是數字就會出指定大小
+			background-size: contain;
+
+			@if( $height != null ) { //如果有 $height 就給高
+				
+				@if( unitless( $height ) ) { //沒單位就是倍數
+					height: round( image-height( $img-src ) * $height);
+
+				} @else { //有單位就直接使用
+					height: $height;
+				}
+
+			} @else { //如果沒 $height ，高度就是 $size
+				
+				@if( unitless($size) ) { //沒單位就是倍數
+					height: round( image-height( $img-src ) * $size);
+
+				} @else { //有單位就直接使用
+					height: $size;
+				}
+			}
+
+			@if( unitless($size) ) { //沒單位就是倍數
+				width: round( image-width( $img-src ) * $size);
+
+			} @else { //有單位就直接使用
+				width: $size;
+			}
+		}
+
+		background-image: image-url( $img-src );
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@mixin icon-pic( $img-name, $size: true, $height: null ) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+
+		@if( str-index( $img-name, '.png') ) { //如果有副檔名就拿掉
+			$img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
+		}
+
+		@if( $icon-pic ) {
+
+			@extend %icon-pic;
+
+			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
+				@extend .icon-pic-#{ $img-name };
+				width: image-width('icon-pic/#{$img-name}.png');
+				height: image-height('icon-pic/#{$img-name}.png');
+
+			} @else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
+				background-image: image-url('icon-pic/#{$img-name}.png');
+
+			} @else { //如果是數字就會出指定倍數大小並使用單獨圖片
+				@include bgToPic('icon-pic/#{$img-name}.png', $size, $height);
+			}
+		}
+	}
+
+	@mixin icon-font( $font ) { //文字圖示，列表請參閱 https://icomoon.io/
+
+		@if( $icon-font ) {
+			@extend %icon-font;
+			@extend .icon-font-#{ $font };
+			font-size: $icon-font-size;
+			color: $icon-font-color;
+		}
+	}
+
+	@mixin icon-pic-btn( $img-name, $size: true, $height: null ) { //只有icon圖片的按鈕，隱含佔用了 :before
+		@extend %hide-text;
+		display: inline-block;
+
+		&:before{
+			@include icon-pic( $img-name, $size, $height );
+			display: block !important;
+		}
+	}
+
+	@mixin at( $key, $obj: 'media' ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
+
+		@if( ( $rwd == false ) and ( $key == 'mobile' or $key == 'pad' or $key == 'phone' ) ) {
+			$obj: null;
+		}
+
+		@if( $key == 'no-js' ) {
+			
+			[data-js="false"] & {
+				@content;
+			}
+			
+		} @else {
+
+			@if( $obj == 'media' ) {
+
+				@media #{map-get( $media, $key )} {
+					@content;
+				}
+
+			} @else if( $obj == 'supports' ) {
+
+				@supports #{map-get( $supports, $key )} {
+					@content;
+				}
+			}
+		}
+	}
+
+	@mixin data-js( $boolean: true ) { //在 有/無 js下的樣式表現
+
+		[data-js="#{ $boolean }"] & {
+			@content;
+		}
+	}
+
+	@mixin data-admin( $boolean: true ) { //在 是/否 管理員登入的樣式表現
+
+		[data-admin="#{ $boolean }"] & {
+			@content;
+		}
+	}
