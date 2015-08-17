@@ -2,216 +2,68 @@
 
 .simple-text {
 
-//單獨按鈕================================================================
-
-	&.single-btn {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
 //預設================================================================
 
 	&.default {
 
-		> .container {
+		> .inner {
 
-			> .inner {
-
-			}
 		}
 
 		.header {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
 			}
 		}
 
 		.content {
 
-			> .container {
+			> .inner {
+				
+			}
 
-				> .inner {
+			span {
 
-				}
+			}
+
+			a {
+
 			}
 		}
 
 		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//導盲磚================================================================
-
-	&.accesskey {
-
-		> .container {
 
 			> .inner {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//頁面標題================================================================
-
-	&.hgroup {
-
-		> .container {
-
-			> .inner {
+			ul {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//文章標題================================================================
-
-	&.title {
-
-		> .container {
-
-			> .inner {
+			li {
 
 			}
-		}
 
-		.header {
+			span {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
-		}
 
-		.content {
+			a {
 
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
 			}
 		}
 	}

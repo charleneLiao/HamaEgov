@@ -6,110 +6,62 @@ div {
 
 	&.default {
 
-		> .container {
+		> .inner {
+
+		}
+
+		> .inner > .header {
 
 			> .inner {
 
 			}
-		}
-
-		> .container > .inner > .header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
 
 			h3 {
 
-				span {
+			}
+
+			span {
 					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+				> ul {
+
+					> li {
+						
+					}
 				}
 			}
 		}
 
-		> .container > .inner > .content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-
-			> .container > .inner > ul {
-
-				> li {
-					
-				}
-			}
-		}
-
-		> .container > .inner > .footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-//選單列表================================================================
-
-	&.group-list-nav {
-
-		> .container {
+		> .inner > .footer {
 
 			> .inner {
 
 			}
-		}
 
-		> .container > .inner > .header {
+			ul {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
 
-			h3 {
+			li {
 
-				span {
-					
-				}
-			}
-		}
-
-		> .container > .inner > .content {
-
-			> .container {
-
-				> .inner {
-
-				}
 			}
 
-			> .container > .inner > ul {
+			span {
 
-				> li {
-					
-				}
 			}
-		}
 
-		> .container > .inner > .footer {
+			a {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
 		}
 	}

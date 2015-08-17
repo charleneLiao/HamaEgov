@@ -6,40 +6,84 @@
 
 	&.default {
 
-		> .container {
+		> .inner {
 
-			> .inner {
-
-			}
 		}
 
 		.header {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
 			}
 		}
 
 		.content {
 
-			> .container {
+			> .inner {
+				
+			}
 
-				> .inner {
+			thead {
 
-				}
+			}
+
+			tbody {
+
+			}
+
+			tfoot {
+
+			}
+
+			tr {
+
+			}
+
+			th {
+
+			}
+
+			td {
+
+			}
+
+			span {
+
 			}
 		}
 
 		.footer {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}

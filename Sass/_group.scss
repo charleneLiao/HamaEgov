@@ -1,81 +1,61 @@
 //群組
 
-div {
+[data-type] {
 
 //預設================================================================
 
 	&.default {
 
-		> .container {
+		> .inner {
+
+		}
+
+		> .inner > .header {
 
 			> .inner {
 
 			}
-		}
-	}
 
+			h3 {
 
-//資訊群組================================================================
+			}
 
-	&.group-info {
+			span {
+					
+			}
 
-		> .container {
-
-			> .inner {
+			a {
 
 			}
 		}
 
-		#header & {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		#footer & {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//資訊群組================================================================
-
-	&.group-msg-tool {
-
-		> .container {
+		> .inner > .content {
 
 			> .inner {
 
 			}
 		}
 
-		#header & {
+		> .inner > .footer {
 
-			> .container {
+			> .inner {
 
-				> .inner {
-
-				}
 			}
-		}
 
-		#footer & {
+			ul {
 
-			> .container {
+			}
 
-				> .inner {
+			li {
 
-				}
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}

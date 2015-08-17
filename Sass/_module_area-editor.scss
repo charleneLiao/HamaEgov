@@ -6,126 +6,56 @@
 
 	&.default {
 
-		> .container {
+		> .inner {
 
-			> .inner {
-
-			}
 		}
 
 		.header {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
 			}
 		}
 
 		.content {
 
-			> .container {
-
-				> .inner {
-
-				}
+			> .inner {
+				
 			}
 		}
 
 		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//文章編輯================================================================
-
-	&.editor {
-
-		> .container {
 
 			> .inner {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//聯絡資訊編輯================================================================
-
-	&.address {
-
-		> .container {
-
-			> .inner {
+			ul {
 
 			}
-		}
 
-		.header {
+			li {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
-		}
 
-		.content {
+			span {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
-		}
 
-		.footer {
+			a {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
 		}
 	}

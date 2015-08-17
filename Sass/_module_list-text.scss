@@ -6,513 +6,56 @@
 
 	&.default {
 
-		> .container {
+		> .inner {
 
-			> .inner {
-
-			}
 		}
 
 		.header {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
 			}
 		}
 
 		.content {
 
-			> .container {
-
-				> .inner {
-
-				}
+			> .inner {
+				
 			}
 		}
 
 		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//選單================================================================
-
-	&.nav {
-
-		> .container {
 
 			> .inner {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//使用者工具================================================================
-
-	&.user-tool {
-
-		> .container {
-
-			> .inner {
+			ul {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//分享================================================================
-
-	&.share {
-
-		> .container {
-
-			> .inner {
+			li {
 
 			}
-		}
 
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//連結================================================================
-
-	&.link {
-
-		> .container {
-
-			> .inner {
+			span {
 
 			}
-		}
 
-		.header {
+			a {
 
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//字級調整================================================================
-
-	&.font-level {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//語言選擇================================================================
-
-	&.lang {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//熱門關鍵字================================================================
-
-	&.hot-key-word {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//頁籤================================================================
-
-	&.tab {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//網站地圖================================================================
-
-	&.sitemap {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//詳細資訊================================================================
-
-	&.detail {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//跳轉導航列================================================================
-
-	&.jump-tool {
-
-		> .container {
-
-			> .inner {
-
-			}
-		}
-
-		.header {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.content {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-
-		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
 			}
 		}
 	}

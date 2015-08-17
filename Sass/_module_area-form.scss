@@ -6,83 +6,56 @@
 
 	&.default {
 
-		> .container {
+		> .inner {
 
-			> .inner {
-
-			}
 		}
 
 		.header {
 
-			> .container {
+			> .inner {
 
-				> .inner {
+			}
 
-				}
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
 			}
 		}
 
 		.content {
 
-			> .container {
-
-				> .inner {
-
-				}
+			> .inner {
+				
 			}
 		}
 
 		.footer {
-
-			> .container {
-
-				> .inner {
-
-				}
-			}
-		}
-	}
-
-
-//搜尋================================================================
-
-	&.search {
-
-		> .container {
 
 			> .inner {
 
 			}
-		}
 
-		.header {
+			ul {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
-		}
 
-		.content {
+			li {
 
-			> .container {
-
-				> .inner {
-
-				}
 			}
-		}
 
-		.footer {
+			span {
 
-			> .container {
+			}
 
-				> .inner {
+			a {
 
-				}
 			}
 		}
 	}
