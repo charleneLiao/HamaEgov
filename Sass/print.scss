@@ -1,12 +1,8 @@
 //列印
 
-@import 'base'; //sass基礎設定
+@import 'sys-base'; //sass 基礎設定
 
 /* 
 	請注意！本 scss 所做設定皆只有列印可見。
 	需在列印時顯示的樣式，請直接撰寫在以下區塊。
 */
-
-.#{$side-type} {
-
-}

@@ -1,9 +1,35 @@
 //框架
 
-.#{$side-type} {
+.sys-root {
 	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
 	font-family: $base-font-style;
 	color: $body-font-color;
+
+	> .inner {
+
+		> .header {
+
+			h3 {
+
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		> .content {
+
+		}
+
+		> .footer {
+
+		}
+	}
 
 	@include at('ie6-7-8') {
 		min-width: $pc-width;
@@ -81,23 +107,12 @@
 		cursor: pointer;
 	}
 
-	> .container {
-
-		> .inner {
-
-		}
-	}
-
 
 //根節點================================================================
 
 	&.root {
 
 		> .container {
-
-			> .inner {
-
-			}
 		}
 	}
 
