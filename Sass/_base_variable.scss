@@ -88,8 +88,8 @@
 
 
 //文字圖示================================================================
-	$icon-font-size: 24px; //文字圖示大小
-	$icon-font-color: $main-color; //文字圖示顏色
+	$icon-font-size: inherit; //文字圖示大小
+	$icon-font-color: inherit; //文字圖示顏色
 
 
 //文字厚度================================================================
@@ -182,7 +182,7 @@
 
 
 //輸入框樣式================================================================
-	$input-padding: $interval-m;
+	$input-padding: $interval-xs $interval-s;
 	$input-border: transparent;
 	$input-bg-color: transparent;
 

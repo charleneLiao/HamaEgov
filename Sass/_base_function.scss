@@ -62,15 +62,49 @@
 	}
 
 	%center { //齊中寬度
-		max-width: $pc-width;
 		margin: 0 auto;
+
+		@if( $rwd ) {
+			max-width: $pc-width;
+		}@else {
+			width: $pc-width;
+		}
 	}
 
-	%title { //模組title
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%span-bg {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	%model { //模組
+		margin: $interval-l 0;
+	}
+
+	%model-title { //模組title
 		padding: $interval-l 0;
 		margin-bottom: $interval-l;
 		font-size: $font-size-l;
 		color: $main-color;
+	}
+
+	%page { //內頁
+
+	}
+
+	%page-title { //內頁title
+		padding: $interval-m 0;
+		margin-top: 0;
+		margin-bottom: $interval-m;
+		font-size: $font-size-l;
+		text-indent: 0;
+		color: $title-color;
 	}
 
 	%btn { //按鈕樣式
@@ -110,16 +144,46 @@
 		vertical-align: middle;
 	}
 
-	%icon { //偽類作為行內icon的方法
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
+	%article{ //內文文章樣式
+		padding: $interval-l;
+		display: block;
+		line-height: $line-height-m;
+		background-color: $light;
 	}
 
-	%span-bg {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+	%list{ //橫條選單樣式
+		display: block;
+		padding: $interval-s $interval-m;
+		background-color: $light;
+		line-height: $line-height-m;
+
+		&:hover {
+			background-color: $minor-color;
+			color: $white;
+		}
+	}
+
+	%table{ //表單樣式
+
+		tr{
+
+			&:nth-child(2n),&.question_tr + tr,&.css_title + tr{
+				background-color: $light;
+			}
+
+			th,td{ //th,td共同設定
+				padding: $interval-m;
+			}
+
+			th{ //標題設定
+				font-size: $font-size-l;
+				color: $title-color;
+			}
+
+			td{
+				line-height: $line-height-m;
+			}
+		}
 	}
 
 
@@ -185,14 +249,11 @@
 			@extend %icon-pic;
 
 			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
-				@extend .icon-pic-#{ $img-name };
+				@extend .icon-pic-#{ $img-name } !optional;
 				width: image-width('icon-pic/#{$img-name}.png');
 				height: image-height('icon-pic/#{$img-name}.png');
 
-			} @else if( $size == false ) { //如果是 false 就不匯出大小並使用單獨圖片
-				background-image: image-url('icon-pic/#{$img-name}.png');
-
-			} @else { //如果是數字就會出指定倍數大小並使用單獨圖片
+			} @else {
 				@include bgToPic('icon-pic/#{$img-name}.png', $size, $height);
 			}
 		}
@@ -202,7 +263,7 @@
 
 		@if( $icon-font ) {
 			@extend %icon-font;
-			@extend .icon-font-#{ $font };
+			@extend .icon-font-#{ $font } !optional;
 			font-size: $icon-font-size;
 			color: $icon-font-color;
 		}
@@ -249,14 +310,14 @@
 
 	@mixin data-js( $boolean: true ) { //在 有/無 js下的樣式表現
 
-		[data-js="#{ $boolean }"] & {
+		[data-js="#{$boolean}"] & {
 			@content;
 		}
 	}
 
 	@mixin data-admin( $boolean: true ) { //在 是/否 管理員登入的樣式表現
 
-		[data-admin="#{ $boolean }"] & {
+		[data-admin="#{$boolean}"] & {
 			@content;
 		}
 	}
