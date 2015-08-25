@@ -1,10 +1,10 @@
 //Sass 基本 function 擴充================================================================
-	@function lighter( $color, $int: 10) {
-		@return lighten( $color, $int );
+	@function lighter( $color, $int: 1, $base: 10) {
+		@return lighten( $color, $int * $base );
 	}
 
-	@function deeper( $color, $int: 10) {
-		@return darken( $color, $int );
+	@function deeper( $color, $int: 1, $base: 10) {
+		@return darken( $color, $int * $base );
 	}
 
 
