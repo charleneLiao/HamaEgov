@@ -145,7 +145,7 @@
 										span.url>input[type='url']
 										span.week>input[type='week']
 			05-01-05. '標籤組件'		span.label>label{可選}
-			05-01-06. '選擇框組件'		span.checkbox>(input[type='checkbox'])+(span.label>label)
+			05-01-06. '勾選框組件'		span.checkbox>(input[type='checkbox'])+(span.label>label)
 										span.checkbox>(input[type='radio'])+(span.label>label)
 			05-01-07. '文字輸入框組件'  div.textarea>textarea
 										span.textarea>textarea
@@ -157,7 +157,7 @@
 			05-02-01. '表格主題區塊'	div.table>
 			05-02-02. '表格區塊'		table>
 			05-02-03. '表格標題區塊'	thead>
-			05-02-03. '表格內容區塊'	thead>
+			05-02-03. '表格內容區塊'	tbody>
 			05-02-03. '表格附加資訊區塊'tfoot>
 			05-02-04. '表格內容組件'	tr>td>span>a{可選}
 										tr>th>span>a{可選}
@@ -165,14 +165,14 @@
 
 		05-03 清單類:
 			05-03-01. '清單主題區塊'	div.list>
-										div.list>
+										a.list>
 			05-03-02. '清單區塊'		ul>li>
 										ol>li>
 			05-03-03. '清單內容組件'	span>a{可選}
 			05-03-04. 
 
 		05-04 文字類:
-			05-04-01. '內文主題區塊'	div.>
+			05-04-01. '內文主題區塊'	div.essay>
 										a.essay>
 			05-04-02. '內文區塊'		div.paragraph>
 										a.paragraph>
@@ -199,7 +199,9 @@
 
 		05-06 標題類:
 			05-06-01. '標題主題區塊'	div.heading>
+										a.heading>
 			05-06-02. '標題區塊'		div.caption>
+										a.caption>
 			05-06-03. '標題組件'		span>a{可選}>{標題文字}
 			05-06-04. 
 
@@ -209,7 +211,7 @@
 			05-07-02. 
 
 		05-08 文字標籤類:
-			05-08-01. '附註'			strong
+			05-08-01. '附註'			i.mark>a{可選}>{標題文字}
 			05-08-02. 
 
 		05-08 應用:
@@ -272,7 +274,7 @@
 		02-11. .area-vedio			影訊區塊
 		02-11. .area-audio			音訊區塊
 		02-12. .area-iframe			嵌入區塊
-		02-13. .area-editor			編輯器區塊
+		02-13. .area-editor			編輯區塊
 		02-14. .area-customize		客製區塊
 		02-15. 
 

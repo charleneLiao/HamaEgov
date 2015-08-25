@@ -8,8 +8,8 @@
 	若需要對全域樣式設定，請撰寫在 bace_layout.scss。
 */
 
-@import 'normalize'; //正常化 css
+@import 'sys_normalize'; //正常化 css
 
-@import 'base_grid'; //格線
+@import 'sys_grid'; //格線
 
 @import 'base_layout'; //框架
