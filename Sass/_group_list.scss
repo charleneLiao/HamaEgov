@@ -1,4 +1,4 @@
-//清單群組
+//列表群組
 
 [data-type="4"] {
 
@@ -62,6 +62,192 @@
 
 			a {
 
+			}
+		}
+	}
+
+//選單列表================================================================
+
+	&.group-list-nav {
+
+		.base-mobile & {
+
+			> .inner {
+				margin: 0;
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+							
+						}
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-header & {
+			background-color: $light;
+
+			> .inner {
+				@extend %center;
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					> ul {
+						$li_default_length: 6; // li的預設數量
+						$li_max_length: 10; // li的最大數量
+
+						@extend %reset;
+
+						> li {
+							position: relative;
+							width: 100% / $li_default_length;
+							float: left;
+
+							+ li {
+
+								&:before {
+									content: $content;
+									display: block;
+									position: absolute;
+									top: $interval-s;
+									bottom: $interval-s;
+									left: 0;
+									width: 1px;
+									background-color: $light-gray;
+								}
+							}
+						}
+
+						@for $i from $li_default_length through $li_max_length { //group list的child
+
+							&[data-child="#{$i}"] {
+
+								> li {
+									width: 100% / $i; //均分li
+								}
+
+								@for $j from 2 through $li_max_length { //li的index，要把多出來的選單推回去
+
+									> [data-index="#{$j}"] { //li
+
+										@for $k from 1 through $li_max_length { //ul的寬度
+
+											[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
+
+												$ul_width: min($k, $i); //ul的寬度 > li的最大數量的話，ul的寬度 = li的最大數量
+												$all_width: $j - 1 + $ul_width;
+
+												@if( $all_width > $i ) { //如果ul選單大於li寬度
+													left: 100% * ( $i - $all_width ); //就推回來
+												}
+											}
+										}
+									}
+								}
+							}							
+						}
+
+						&:after {
+							@extend %clear;
+						}
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

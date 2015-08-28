@@ -4,6 +4,7 @@
 	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
 	font-family: $base-font-style;
 	color: $body-font-color;
+	position: relative;
 
 	> .inner {
 
@@ -41,11 +42,6 @@
 
 	&.font-size-small { //小字
 		font-size: $body-font-size-s;
-	}
-
-	&:before {
-		// @include icon-pic('file-type-odt');
-		@include icon-font('error');
 	}
 
 	a {
@@ -103,21 +99,45 @@
 		cursor: pointer;
 	}
 
-
 //行動載具================================================================
 
 	.base-mobile {
 
+		&.is-open {
+			right: 0;
+		}
+
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 100%;
+		height: 100vh;
+		transition: $transition;
+
+		@include at('pad') {
+			max-width: 350px;
+		}
+
+		@include at('phone') {
+			max-width: 280px;
+		}
+
+		@include at('mobile') {
+			display: block;
+		}
+
 		> .inner {
 
 			> .header {
+				display: none;
 
 				> .inner {
 					
 				}
 
 				h3 {
-
+					
 				}
 
 				span {
@@ -140,15 +160,19 @@
 			}
 		}
 	}
-
 
 //額外資訊================================================================
 
 	.base-extend {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
 
 		> .inner {
 
 			> .header {
+				display: none;
 
 				> .inner {
 					
@@ -178,13 +202,13 @@
 			}
 		}
 	}
-
 
 //固定佈局================================================================
 
 	.base-wrapper {
 
 		> .inner {
+			margin: 0;
 
 			> .header {
 
@@ -217,10 +241,10 @@
 		}
 	}
 
-
 //頁首資訊================================================================
 
 	.base-header {
+		background-color: $main-color;
 
 		> .inner {
 
@@ -254,13 +278,13 @@
 			}
 		}
 	}
-
 
 //主要內容================================================================
 
 	.base-content {
 
 		> .inner {
+			@extend %center;
 
 			> .header {
 
@@ -292,13 +316,14 @@
 			}
 		}
 	}
-
 
 //頁尾資訊================================================================
 
 	.base-footer {
+		background-color: $main-color;
 
 		> .inner {
+			@extend %center;
 
 			> .header {
 
@@ -330,11 +355,11 @@
 			}
 		}
 	}
-
 
 //模組區塊================================================================
 
 	.base-module-area {
+		display: none;
 
 		> .inner {
 
@@ -368,13 +393,17 @@
 			}
 		}
 	}
-
 
 //內頁區塊================================================================
 
 	.base-page-area {
+		margin: $interval-l 0;
 
 		> .inner {
+
+			&:after {
+				@extend %clear;
+			}
 
 			> .header {
 
@@ -406,11 +435,12 @@
 			}
 		}
 	}
-
 
 //內頁側欄區塊================================================================
 
 	.base-aside {
+		width: 250px;
+		float: left;
 
 		> .inner {
 
@@ -444,11 +474,12 @@
 			}
 		}
 	}
-
 
 //內頁內容區塊================================================================
 
 	.base-section {
+		overflow: hidden;
+		position: relative;
 
 		> .inner {
 
@@ -483,12 +514,13 @@
 		}
 	}
 
-
 //文章================================================================
 
 	.base-article{
+		background-color: $light;
 
 		> .inner {
+			padding: $interval-m;
 
 			> .header {
 

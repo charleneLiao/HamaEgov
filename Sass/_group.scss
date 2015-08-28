@@ -59,4 +59,318 @@
 			}
 		}
 	}
+
+//資訊群組================================================================
+
+	&.group-info {
+
+		.base-mobile & {
+
+			> .inner {
+
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow-y: auto;
+					background-color: $light;
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-header & {
+			background-color: $main-color;
+			@extend %center;
+
+			> .inner {
+
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					&:after {
+						@extend %clear;
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//資訊與工具群組================================================================
+
+	&.group-msg-tool {
+
+		.base-header & {
+			position: relative;
+
+			> .inner {
+
+			}
+
+			> .inner > .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁頁首================================================================
+
+	&.group-page-header {
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+				border-bottom: $border;
+				margin-bottom: $interval-m;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁主要內容================================================================
+
+	&.group-page-content {
+		position: relative;
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
 }

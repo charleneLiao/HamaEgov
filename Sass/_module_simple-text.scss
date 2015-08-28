@@ -67,4 +67,333 @@
 			}
 		}
 	}
+
+//手機版按鈕================================================================
+
+	&.single-btn {
+
+		.base-mobile.is-open & {
+
+			.content {
+
+				a {
+					
+					&:before {
+						@include icon-font('close');
+						color: $white;
+					}
+
+					&:after {
+						content: $content;
+					}
+				}
+			}
+		}
+
+		.base-mobile & {
+			position: absolute;
+			left: 100%;
+
+			> .inner {
+
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+					line-height: 40px;
+					font-size: $font-size-xl;
+					
+					&:before {
+						@include icon-font('menu');
+						font-size: $font-size-xl;
+					}
+
+					&:after {
+						position: fixed;
+						top: 0;
+						right: 0;
+						width: 100vw;
+						height: 100vh;
+						background-color: rgba($deep, $opacity-m);
+						z-index: -1;
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//導盲磚================================================================
+
+	&.accesskey {
+
+		> .inner {
+			margin: 0;
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			height: 0;
+
+			> .inner {
+				
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁面標題================================================================
+
+	&.heading {
+		overflow: hidden;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			h3 {
+				@extend %reset;
+				font-size: $font-size-xl;
+				font-weight: $font-weight-n;
+				color: $title-color;
+				padding: $interval-s 0;
+
+				&:before {
+					@include icon-font('stars');
+					margin-right: $interval-xs;
+				}
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁面標題================================================================
+
+	&.title {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			h1 {
+				@extend %reset;
+				font-size: $font-size-l;
+				padding-bottom: $interval-s;
+				border-bottom: $interval-xs double $light-gray;
+				margin-bottom: $interval-s;
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
 }

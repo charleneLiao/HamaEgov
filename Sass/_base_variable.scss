@@ -1,6 +1,7 @@
 //變數
 
 //設定================================================================
+	$debug: false; // true 或 false，是否除錯模式
 	$rwd: true; // true 或 false，是否開啟 rwd
 	$icon-pic: true; // true 或 false，是否開啟雪碧圖示
 	$icon-font: true; // true 或 false，是否開啟文字圖示
@@ -17,8 +18,8 @@
 
 
 //主要版面顏色================================================================
-	$main-color: #f59534 !default; //主色
-	$minor-color: #0595d6 !default; //次色
+	$main-color: #08c !default; //主色
+	$minor-color: #0ca !default; //次色
 
 
 //其他版面顏色================================================================
@@ -28,8 +29,8 @@
 
 
 //文字顏色================================================================
-	$title-color: $main-color !default; //標題色
-	$span-color: $minor-color !default; //附註色
+	$title-color: #c02 !default; //標題色
+	$span-color: #ca0 !default; //附註色
 
 
 //範例陣列===============================================================
@@ -45,11 +46,11 @@
 
 //分享圖片 & 顏色物件===============================================================
 	$share-map: (
-		'facebook': ( 'pic': 'share-facebook.png', 'color': #3c5998 ),
-		'google': ( 'pic': 'share-google.png', 'color': #cb3726 ),
-		'twitter': ( 'pic': 'share-twitter.png', 'color': #6aaed0 ),
-		'line': ( 'pic': 'share-line.png', 'color': #4bc700 ),
-		'email': ( 'pic': 'share-email.png', 'color': #666666 )
+		'facebook': ( 'pic': 'share-w-facebook.png', 'color': #3c5998 ),
+		'google': ( 'pic': 'share-w-google.png', 'color': #cb3726 ),
+		'twitter': ( 'pic': 'share-w-twitter.png', 'color': #6aaed0 ),
+		'line': ( 'pic': 'share-w-line.png', 'color': #4bc700 ),
+		'email': ( 'pic': 'share-w-email.png', 'color': #666666 )
 	);
 
 
@@ -182,8 +183,8 @@
 
 
 //輸入框樣式================================================================
-	$input-padding: $interval-xs $interval-s;
-	$input-border: transparent;
+	$input-padding: $interval-s $interval-m;
+	$input-border: $border;
 	$input-bg-color: transparent;
 
 

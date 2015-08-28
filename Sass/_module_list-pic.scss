@@ -79,4 +79,94 @@
 			}
 		}
 	}
+
+//各種標章================================================================
+
+	&.icon {
+
+		.base-article & {
+
+			> .inner {
+
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				padding-top: $interval-m;
+				border-top: $border;
+				margin-top: $interval-l;
+
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+					text-align: right;
+				}
+
+				li {
+					display: inline-block;
+
+					&.qrcode {
+
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+				}
+
+				img {
+					display: block;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
 }

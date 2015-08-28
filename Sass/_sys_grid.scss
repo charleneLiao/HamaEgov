@@ -24,7 +24,7 @@ $max_aLineLength: 10; //最多的單行數量
 
 				> .inner {
 
-					> [data-index] {
+					> [data-index][data-type] {
 						width: 100% / $i;
 
 						@include at('pad') {
@@ -34,7 +34,7 @@ $max_aLineLength: 10; //最多的單行數量
 								clear: left;
 							}
 
-							[data-index] {
+							[data-index][data-type] {
 								width: 100%;
 							}
 						}
@@ -59,7 +59,7 @@ $max_aLineLength: 10; //最多的單行數量
 
 				> .inner {
 
-					> [data-index] {
+					> [data-index][data-type] {
 						width: 100% / $i;
 
 						&:nth-of-type(#{$i}n+1) {
@@ -92,7 +92,7 @@ $max_aLineLength: 10; //最多的單行數量
 	}
 }
 
-$layout_main_interval: $interval-l; //主層間隔
+$layout_main_interval: $interval-m; //主層間隔
 
 [data-type="0"] { //模組
 
@@ -113,7 +113,7 @@ $layout_main_interval: $interval-l; //主層間隔
 
 			> .inner {
 
-				> [data-index] {
+				> [data-index][data-type] {
 					float: left
 				}
 
@@ -133,7 +133,7 @@ $layout_main_interval: $interval-l; //主層間隔
 
 			> .inner {
 
-				> [data-index] {
+				> [data-index][data-type] {
 
 					> .container {
 						margin: 0;
@@ -157,7 +157,7 @@ $layout_main_interval: $interval-l; //主層間隔
 		margin: 0 $layout_main_interval;
 	}
 
-	[data-type="0"] { //模組
+	[data-index][data-type] { //模組
 
 		> .inner {
 			margin: 0;

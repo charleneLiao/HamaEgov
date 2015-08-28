@@ -37,7 +37,7 @@
 		text-transform: none;
 		line-height: 1;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: baseline;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -111,7 +111,7 @@
 		display: inline-block;
 		padding: $btn-padding;
 		border: $btn-border;
-		border-radius: $border-radius;
+		box-sizing: border-box;
 		line-height: 1;
 		vertical-align: middle;
 		color: $btn-text-color;
@@ -142,6 +142,7 @@
 		border: $input-border;
 		background-color: $input-bg-color;
 		vertical-align: middle;
+		box-sizing: border-box;
 	}
 
 	%article{ //內文文章樣式
@@ -245,11 +246,16 @@
 		}
 
 		@if( $icon-pic ) {
-
 			@extend %icon-pic;
 
 			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
-				@extend .icon-pic-#{ $img-name } !optional;
+
+				@if( $debug ) {
+					@extend .icon-pic-#{ $img-name };
+				}@else {
+					@extend .icon-pic-#{ $img-name } !optional;
+				}
+				
 				width: image-width('icon-pic/#{$img-name}.png');
 				height: image-height('icon-pic/#{$img-name}.png');
 
@@ -263,7 +269,13 @@
 
 		@if( $icon-font ) {
 			@extend %icon-font;
-			@extend .icon-font-#{ $font } !optional;
+
+			@if( $debug ) {
+				@extend .icon-font-#{ $font };
+			}@else {
+				@extend .icon-font-#{ $font } !optional;
+			}
+
 			font-size: $icon-font-size;
 			color: $icon-font-color;
 		}

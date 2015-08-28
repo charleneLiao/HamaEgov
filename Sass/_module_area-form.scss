@@ -59,4 +59,258 @@
 			}
 		}
 	}
+
+//搜尋================================================================
+
+	&.search {
+
+		.base-mobile & {
+			border-bottom: $border;
+			padding: $interval-m;
+
+			> .inner {
+				margin: 0;
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.fieldset {
+					position: relative;
+
+					span {
+						$icon-width: 60px;
+
+						display: block;
+
+						&.text {
+							display: block;
+							padding-right: $icon-width;
+
+							input {
+								display: block;
+								width: 100%;
+								background-color: $white;
+							}
+						}
+
+						&.submit {
+
+							a {
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								width: $icon-width;
+								background-color: $gray;
+								@extend %hide-text;
+								@include bg-to-pic('icon-pic/icon-w-search.png' ,false)
+							}
+						}
+					}
+				}
+
+				.list {
+					display: none;
+					
+					ul {
+						@extend %reset;
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+					@extend %reset;
+					margin-top: $interval-m;
+				}
+
+				li {
+					@extend %btn;
+					display: block;
+					text-align: center;
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-header & {
+			position: absolute;
+			top: 36px;
+			right: 0;
+
+			&.is-open {
+
+				.content {
+
+					.list {
+						display: block;
+					}
+				}
+			}
+
+			> .inner {
+				margin: 0;
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				display: inline-block;
+
+				> .inner {
+					
+				}
+
+				.fieldset {
+					position: relative;
+					width: 180px;
+
+					span {
+						$icon-width: 40px;
+
+						display: block;
+
+						&.text {
+							display: block;
+							padding-right: $icon-width;
+
+							input {
+								display: block;
+								width: 100%;
+								background-color: $white;
+							}
+						}
+
+						&.submit {
+
+							a {
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								width: $icon-width;
+								background-color: $gray;
+								@extend %hide-text;
+								@include bg-to-pic('icon-pic/icon-w-search.png' ,false)
+							}
+						}
+					}
+				}
+
+				.list {
+					display: none;
+					
+					ul {
+						@extend %reset;
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+
+			.footer {
+				display: inline-block;
+				padding-left: $interval-s;
+
+				> .inner {
+
+				}
+
+				ul {
+					@extend %reset;
+					display: inline;
+				}
+
+				li {
+					display: inline;
+				}
+
+				span {
+					color: $white;
+				}
+
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
 }
