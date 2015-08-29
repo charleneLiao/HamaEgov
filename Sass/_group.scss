@@ -129,10 +129,72 @@
 
 		.base-header & {
 			background-color: $main-color;
-			@extend %center;
 
 			> .inner {
+				@extend %center;
+			}
 
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					&:after {
+						@extend %clear;
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-footer & {
+			background-color: $light;
+
+			> .inner {
+				@extend %center;
+				padding: $interval-l 0;
+				border-top: $border;
 			}
 
 			> .inner > .header {
@@ -196,6 +258,63 @@
 
 		.base-header & {
 			position: relative;
+
+			> .inner {
+
+			}
+
+			> .inner > .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-footer & {
+			overflow: hidden;
 
 			> .inner {
 
@@ -319,6 +438,64 @@
 
 	&.group-page-content {
 		position: relative;
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁頁尾================================================================
+
+	&.group-page-footer {
 
 		> .inner {
 

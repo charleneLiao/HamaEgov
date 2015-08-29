@@ -136,6 +136,8 @@
 
 		.base-header & {
 			background-color: $light;
+			position: relative;
+			z-index: 1;
 
 			> .inner {
 				@extend %center;
@@ -217,7 +219,95 @@
 										}
 									}
 								}
-							}							
+							}
+						}
+
+						&:after {
+							@extend %clear;
+						}
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-footer.is-close & {
+			display: none;
+		}
+
+		.base-footer & {
+			background-color: $light;
+			padding: $interval-l 0;
+
+			> .inner {
+				@extend %center;
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					> ul {
+						$li_default_length: 6; // li的預設數量
+						$li_max_length: 10; // li的最大數量
+
+						@extend %reset;
+
+						> li {
+							width: 100% / $li_default_length;
+							float: left;
+						}
+
+						@for $i from $li_default_length through $li_max_length { //group list的child
+
+							&[data-child="#{$i}"] {
+
+								> li {
+									width: 100% / $i; //均分li
+								}
+							}
 						}
 
 						&:after {

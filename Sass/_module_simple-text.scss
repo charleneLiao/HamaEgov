@@ -68,7 +68,7 @@
 		}
 	}
 
-//手機版按鈕================================================================
+//單獨按鈕================================================================
 
 	&.single-btn {
 
@@ -173,6 +173,100 @@
 				}
 			}
 		}
+
+		.base-footer.is-close & {
+
+			.content {
+
+				a {
+
+					&:before {
+						@include icon-font('keyboard_arrow_up');
+					}
+
+					&:after {
+						content: '展開選單';
+					}
+				}
+			}
+		}
+
+		.base-footer & {
+			border-bottom: $interval-xs solid $gray;
+
+			> .inner {
+
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				@extend %center;
+
+				> .inner {
+					text-align: right;
+				}
+
+				span {
+					display: inline-block;
+				}
+
+				a {
+					display: block;
+					@extend %btn;
+
+					&:before {
+						@include icon-font('keyboard_arrow_down');
+						margin-right: $interval-xs;
+					}
+
+					&:after {
+						content: '收合選單';
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
 	}
 
 //導盲磚================================================================
@@ -211,11 +305,11 @@
 			}
 
 			span {
-
+				color: $light-gray;
 			}
 
 			a {
-
+				color: inherit;
 			}
 		}
 
@@ -323,7 +417,7 @@
 		}
 	}
 
-//頁面標題================================================================
+//文章標題================================================================
 
 	&.title {
 
@@ -360,12 +454,88 @@
 				@extend %reset;
 				font-size: $font-size-l;
 				padding-bottom: $interval-s;
-				border-bottom: $interval-xs double $light-gray;
+				border-bottom-color: $border-color;
+				border-bottom-width: $interval-xs;
+				border-bottom-style: double;
 				margin-bottom: $interval-s;
 			}
 
 			span {
 				
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//瀏覽人次================================================================
+
+	&.visit-count {
+		margin: $interval-m 0;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: inline;
+
+			> .inner {
+				display: inline;
+			}
+
+			h4 {
+				@extend %reset;
+				display: inline;
+
+				&:after {
+					content: ' : ';
+				}
+			}
+
+			span {
+				color: inherit;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.content {
+			display: inline;
+
+			> .inner {
+				display: inline;
+			}
+
+			span {
+
 			}
 
 			a {

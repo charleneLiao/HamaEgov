@@ -170,7 +170,7 @@
 //連結顏色================================================================
 	$link-color: inherit !default; //連結顏色
 	$visited-color: inherit !default; //造訪過連結顏色
-	$hover-color: lighter($minor-color) !default; //指標移入連結顏色，不可與任何底色重疊 
+	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊 
 	$active-color: inherit !default; //點擊連結顏色
 
 
