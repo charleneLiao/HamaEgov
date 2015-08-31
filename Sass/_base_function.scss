@@ -94,17 +94,24 @@
 		color: $main-color;
 	}
 
-	%page { //內頁
-
+	%page { //內頁模組
+		margin: $interval-l 0;
 	}
 
 	%page-title { //內頁title
-		padding: $interval-m 0;
-		margin-top: 0;
-		margin-bottom: $interval-m;
+		@extend %reset;
 		font-size: $font-size-l;
-		text-indent: 0;
-		color: $title-color;
+		padding-bottom: $interval-m;
+		border-bottom: $border;
+		margin-bottom: $interval-m;
+
+		span {
+			color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
 	}
 
 	%btn { //按鈕樣式
@@ -146,21 +153,22 @@
 	}
 
 	%article{ //內文文章樣式
-		padding: $interval-l;
-		display: block;
-		line-height: $line-height-m;
+		padding: $interval-m;
 		background-color: $light;
 	}
 
-	%list{ //橫條選單樣式
+	%list {
 		display: block;
-		padding: $interval-s $interval-m;
+		padding: $interval-s;
 		background-color: $light;
-		line-height: $line-height-m;
+		transition: $transition;
+	}
+
+	%list-hover {
 
 		&:hover {
-			background-color: $minor-color;
-			color: $white;
+			color: $black;
+			background-color: $light-gray;
 		}
 	}
 

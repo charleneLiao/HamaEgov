@@ -258,4 +258,111 @@
 			}
 		}
 	}
+
+//檔案下載圖片列表================================================================
+
+	&.download-pic {
+		@extend %page;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %page-title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				$li_length: 5;
+
+				width: 100% / $li_length;
+				float: left;
+			}
+
+			span {
+				position: relative;
+				display: block;
+				margin: $interval-xs;
+				border: $interval-xs solid $light;
+				height: 100px;
+				background-position: center;
+				background-size: cover;
+			}
+
+			a {
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($black, $opacity-m);
+				transition: $transition;
+
+				&:hover {
+					opacity: 0;
+				}
+
+				@include at('mobile') {
+					background-color: transparent;
+				}
+			}
+
+			img {
+				display: none;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
 }

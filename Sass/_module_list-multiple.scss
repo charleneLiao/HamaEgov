@@ -79,9 +79,9 @@
 //頁次導航列================================================================
 
 	&.page-select {
+		@extend %page;
 		padding-top: $interval-s;
 		border-top: $border;
-		margin: $interval-xl 0;
 
 		> .inner {
 
@@ -251,9 +251,9 @@
 //頁次導航列================================================================
 
 	&.page-click {
+		@extend %page;
 		padding-top: $interval-m;
 		border-top: $border;
-		margin: $interval-xl 0;
 
 		> .inner {
 			

@@ -340,5 +340,141 @@
 				}
 			}
 		}
+
+		.base-section & {
+			@extend %page;
+
+			> .inner {
+
+			}
+
+			> .inner > .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .inner > .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+
+							+ li {
+								margin-top: $interval-s;
+							}
+						}
+					}
+				}
+			}
+
+			> .inner > .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//檔案下載類型群組================================================================
+
+	&.group-list-download-type {
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+
+			> .inner {
+
+			}
+
+			h3 {
+				@extend %page-title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+				> ul {
+					@extend %reset;
+
+					> li {
+						
+						+ li {
+							margin-top: $interval-s;
+						}
+					}
+				}
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
 	}
 }

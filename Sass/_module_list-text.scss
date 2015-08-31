@@ -238,6 +238,7 @@
 					margin: $interval-s;
 					text-align: center;
 					font-size: $font-size-l;
+					transition: $transition;
 
 					&:hover {
 						background-color: $minor-color;
@@ -313,6 +314,7 @@
 					display: block;
 					padding: $interval-s;
 					text-align: center;
+					transition: $transition;
 
 					&:hover {
 						background-color: $minor-color;
@@ -416,7 +418,7 @@
 
 				a {
 					display: block;
-					padding: $interval-m;
+					padding: $interval-s $interval-m;
 
 					&:before {
 						@include icon-font('keyboard_arrow_right');
@@ -532,6 +534,83 @@
 				}
 			}
 		}
+
+		.base-section & {
+
+			> .inner {
+				
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %reset;
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %list;
+					@extend %list-hover;
+				}
+			}
+
+			.content {
+
+
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+					padding-left: $interval-l;
+				}
+
+				li {
+					margin-top: $interval-s;
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %list;
+					@extend %list-hover;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+		}
 	}
 
 //使用者工具================================================================
@@ -628,7 +707,7 @@
 			right: 0;
 
 			> .inner {
-				margin: 0;
+
 			}
 
 			.header {
@@ -805,6 +884,7 @@
 				a {
 					@extend %hide-text;
 					display: block !important;
+					transition: $transition;
 				}
 			}
 
@@ -1444,6 +1524,233 @@
 
 			a {
 				@extend %btn;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//檔案下載文字列表================================================================
+
+	&.download-text {
+		@extend %page;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %page-title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+				+ li {
+					margin-top: $interval-s;
+				}
+
+				@each $key, $map in $file-type-map {
+					$pic: map-get($map, 'pic');
+					$color: map-get($map, 'color');
+
+					&.#{$key} {
+
+						a {
+							border-left-color: $color;
+
+							&:before {
+								@include icon-pic($pic);
+							}
+						}
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
+				border-left-width: $interval-xs;
+				border-left-style: solid;
+
+				&:before {
+					margin-right: $interval-xs;
+				}
+
+				&:hover {
+					border-left-width: $interval-m;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//檔案下載類型列表================================================================
+
+	&.file-download-type {
+		@extend %list;
+		border-left-width: $interval-xs;
+		border-left-style: solid;
+		border-left-color: $gray;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: inline-block;
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %reset;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			display: inline-block;
+			margin-left: $interval-m;
+
+			> .inner {
+
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+				display: inline-block;
+
+				+ li {
+
+					&:before {
+						content: ' | ';
+						color: $gray;
+					}
+				}
+
+				@each $key, $map in $file-type-map {
+					$pic: map-get($map, 'pic');
+					$color: map-get($map, 'color');
+
+					&.#{$key} {
+
+						a {
+
+							&:before {
+								@include icon-pic($pic);
+							}
+
+							&:hover {
+								border-color: $color;
+							}
+						}
+					}
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+				padding: $interval-xs $interval-s;
+				border-width: $border-width;
+				border-style: $border-style;
+				border-color: transparent;
+				transition: $transition;
+
+				&:before {
+					margin-right: $interval-xs;
+				}
+
+				&:hover {
+					border-left-width: $interval-s;
+					background-color: $white;
+					color: $deep;
+				}
 			}
 		}
 

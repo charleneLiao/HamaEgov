@@ -125,7 +125,7 @@
 								right: 0;
 								bottom: 0;
 								width: $icon-width;
-								background-color: $gray;
+								background-color: $btn-bg-color;
 								@extend %hide-text;
 								@include bg-to-pic('icon-pic/icon-w-search.png' ,false)
 							}
@@ -256,9 +256,14 @@
 								right: 0;
 								bottom: 0;
 								width: $icon-width;
-								background-color: $gray;
+								background-color: $btn-bg-color;
+								transition: $transition;
 								@extend %hide-text;
-								@include bg-to-pic('icon-pic/icon-w-search.png' ,false)
+								@include bg-to-pic('icon-pic/icon-w-search.png' ,false);
+
+								&:hover {
+									background-color: $btn-hover-bg-color;
+								}
 							}
 						}
 					}

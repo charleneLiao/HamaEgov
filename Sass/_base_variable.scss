@@ -1,5 +1,9 @@
 //變數
 
+//特殊字元"\"================================================================
+	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串
+
+
 //設定================================================================
 	$debug: false; // true 或 false，是否除錯模式
 	$rwd: true; // true 或 false，是否開啟 rwd
@@ -56,23 +60,23 @@
 
 //檔案類型圖片 & 顏色物件===============================================================
 	$file-type-map: (
-		'doc': ( 'pic': 'file-type-doc.png', 'color': transparent ),
-		'docx': ( 'pic': 'file-type-docx.png', 'color': transparent ),
-		'exl': ( 'pic': 'file-type-exl.png', 'color': transparent ),
-		'link': ( 'pic': 'file-type-link.png', 'color': transparent ),
-		'odf': ( 'pic': 'file-type-odf.png', 'color': transparent ),
-		'odp': ( 'pic': 'file-type-odp.png', 'color': transparent ),
-		'ods': ( 'pic': 'file-type-ods.png', 'color': transparent ),
-		'odt': ( 'pic': 'file-type-odt.png', 'color': transparent ),
-		'other': ( 'pic': 'file-type-other.png', 'color': transparent ),
-		'pdf': ( 'pic': 'file-type-pdf.png', 'color': transparent ),
-		'ppt': ( 'pic': 'file-type-ppt.png', 'color': transparent ),
-		'pptx': ( 'pic': 'file-type-pptx.png', 'color': transparent ),
-		'rar': ( 'pic': 'file-type-rar.png', 'color': transparent ),
-		'txt': ( 'pic': 'file-type-txt.png', 'color': transparent ),
-		'xls': ( 'pic': 'file-type-xls.png', 'color': transparent ),
-		'xlsx': ( 'pic': 'file-type-xlsx.png', 'color': transparent ),
-		'zip': ( 'pic': 'file-type-zip.png', 'color': transparent )
+		'doc': ( 'pic': 'file-type-doc.png', 'color': #0000ff ),
+		'docx': ( 'pic': 'file-type-docx.png', 'color': #0000ff ),
+		'exl': ( 'pic': 'file-type-exl.png', 'color': #f76c34 ),
+		'link': ( 'pic': 'file-type-link.png', 'color': #85aa5c ),
+		'odf': ( 'pic': 'file-type-odf.png', 'color': #2f5c7f ),
+		'odp': ( 'pic': 'file-type-odp.png', 'color': #f28900 ),
+		'ods': ( 'pic': 'file-type-ods.png', 'color': #a5b900 ),
+		'odt': ( 'pic': 'file-type-odt.png', 'color': #2f5c7f ),
+		'other': ( 'pic': 'file-type-other.png', 'color': #5e9fb6 ),
+		'pdf': ( 'pic': 'file-type-pdf.png', 'color': #f50104 ),
+		'ppt': ( 'pic': 'file-type-ppt.png', 'color': #cc0101 ),
+		'pptx': ( 'pic': 'file-type-pptx.png', 'color': #cc0101 ),
+		'rar': ( 'pic': 'file-type-rar.png', 'color': #065594 ),
+		'txt': ( 'pic': 'file-type-txt.png', 'color': #bababa ),
+		'xls': ( 'pic': 'file-type-xls.png', 'color': #16ab16 ),
+		'xlsx': ( 'pic': 'file-type-xlsx.png', 'color': #16ab16 ),
+		'zip': ( 'pic': 'file-type-zip.png', 'color': #b5851a )
 	);
 
 
@@ -137,7 +141,7 @@
 
 
 //基本動畫速度================================================================
-	$transition: 300ms;
+	$transition: 200ms;
 
 
 //全頁文字================================================================
