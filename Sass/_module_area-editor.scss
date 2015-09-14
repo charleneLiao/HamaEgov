@@ -63,6 +63,15 @@
 //文章編輯================================================================
 
 	&.area-editor {
+		@extend %page;
+
+		&.no-bg {
+
+			.content {
+				padding: 0;
+				background-color: transparent;
+			}
+		}
 
 		> .inner {
 
@@ -88,6 +97,7 @@
 		}
 
 		.content {
+			@extend %article;
 
 			> .inner {
 				

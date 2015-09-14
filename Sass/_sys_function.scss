@@ -13,7 +13,6 @@
 
 		@if( lightness($bg_color) > lightness($standard_color) ){
 			@return $text_dark;
-			
 		}@else{
 			@return $text_light;
 		}

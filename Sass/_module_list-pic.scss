@@ -83,6 +83,7 @@
 //各種標章================================================================
 
 	&.icon {
+		@extend %page;
 
 		.base-article & {
 
@@ -111,7 +112,6 @@
 			}
 
 			.content {
-				margin-top: $interval-xl;
 
 				> .inner {
 					
@@ -309,13 +309,12 @@
 			}
 
 			span {
+				@extend %center-bg;
 				position: relative;
 				display: block;
 				margin: $interval-xs;
 				border: $interval-xs solid $light;
 				height: 100px;
-				background-position: center;
-				background-size: cover;
 			}
 
 			a {
@@ -354,6 +353,267 @@
 
 			li {
 
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片列表================================================================
+
+	&.page-list-pic {
+		@extend %page;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				$li_length: 5;
+
+				width: 100% / $li_length;
+				float: left;
+			}
+
+			span {
+				@extend %center-bg;
+				position: relative;
+				display: block;
+				margin: $interval-xs;
+				border: $interval-xs solid $light;
+				height: 100px;
+			}
+
+			a {
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($black, $opacity-m);
+				transition: $transition;
+
+				&:hover {
+					opacity: 0;
+				}
+
+				@include at('mobile') {
+					background-color: transparent;
+				}
+			}
+
+			img {
+				display: none;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//輪播圖片列表================================================================
+
+	&.marqee-pic {
+		$btn-width: 36px;
+		$max-li-length: 20; //設定 li 的最大數量
+		$show-li-length: 5; //設定一次要秀的數量
+
+		@extend %page;
+		position: relative;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			margin: 0 $btn-width + $interval-xs;
+
+			@include at('no-js') {
+				margin: 0;
+			}
+
+			> .inner {
+				overflow: hidden;
+			}
+
+			ul {
+				@extend %reset;
+				overflow: hidden;
+				width: $max_li_length / $show_li_length * 100%;
+
+				@include at('no-js') {
+					width: 100%;
+				}
+
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				width: 100% / $show_li_length / ( $max_li_length / $show_li_length );
+				float: left;
+
+				@include at('no-js') {
+					width: 100% / $show_li_length;
+
+					&:nth-child(#{$show_li_length}n+1) {
+						clear: left;
+					}
+				}
+			}
+
+			span {
+				display: block;
+				margin: $interval-xs;
+			}
+
+			a {
+				display: block;
+				padding: $interval-xs;
+				background-color: $white;
+				box-shadow: 0 0 $interval-xs $gray;
+
+				@include at('ie6-7-8') {
+					border: $border;
+				}
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+				&.more {
+					display: none;
+				}
+
+				&.next, &.prev {
+
+					@include at('no-js') {
+						display: none;
+					}
+
+					a {
+						@extend %hide-text;
+						position: absolute;
+						top: 0px;
+						display: block;
+						width: $btn-width;
+						height: 100%;
+					}
+				}
+
+				&.prev {
+
+					a {
+						left: $layout_main_interval;
+						@include bg-to-pic('icon-pic/away-b-left.png', false);
+					}
+				}
+
+				&.next {
+
+					a {
+						right: $layout_main_interval;
+						@include bg-to-pic('icon-pic/away-b-right.png', false);
+					}
+				}
 			}
 
 			span {

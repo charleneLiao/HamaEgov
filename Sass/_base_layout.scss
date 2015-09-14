@@ -65,6 +65,13 @@
 		}
 	}
 
+	i {
+
+		&.mark {
+			font-style: normal;
+		}
+	}
+
 	input{
 
 		&[type="submit"],
@@ -517,8 +524,6 @@
 		@extend %page;
 
 		> .inner {
-			@extend %article;
-			margin: 0 $interval-m;
 
 			> .header {
 
@@ -539,6 +544,9 @@
 
 				> .inner {
 					
+					[data-index][data-type] {
+						@extend %part;
+					}
 				}
 			}
 

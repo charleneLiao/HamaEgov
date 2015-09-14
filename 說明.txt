@@ -119,7 +119,7 @@
 
 		05-01 表單類:
 			05-01-01. '表單主題區塊'	div.form>
-			05-01-02. '表單區塊'		fieldset>
+			05-01-02. '表單區塊'		.fieldset>
 			05-01-03. '表單標題組件'	legend>a{可選}>span>{標題文字}
 			05-01-04. '輸入框組件'		span.button>input[type='button']
 										span.checkbox>input[type='checkbox']

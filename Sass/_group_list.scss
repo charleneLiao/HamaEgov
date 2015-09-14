@@ -383,6 +383,21 @@
 						}
 					}
 				}
+
+				.nav {
+					margin: 0;
+
+					.header {
+						display: block;
+					}
+
+					.content {
+
+						ul {
+							padding-left: $interval-xl;
+						}
+					}
+				}
 			}
 
 			> .inner > .footer {
@@ -449,6 +464,165 @@
 						+ li {
 							margin-top: $interval-s;
 						}
+					}
+				}
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//選單列表================================================================
+
+	&.group-list-page-list {
+		@extend %page;
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+				> ul {
+					@extend %reset;
+
+					> li {
+
+						+ li {
+							margin-top: $interval-s;
+						}
+					}
+				}
+			}
+
+			.nav {
+				margin: 0;
+
+				.header {
+					display: block;
+				}
+
+				.content {
+
+					ul {
+						padding-left: $interval-xl;
+					}
+				}
+			}
+		}
+
+		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+	}
+
+//相簿列表================================================================
+
+	&.group-list-album {
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+				> ul {
+					@extend %reset;
+
+					> li {
+						$li_length: 4;
+
+						width: 100% / $li_length;
+						float: left;
+					}
+
+					&:after {
+						@extend %clear;
 					}
 				}
 			}

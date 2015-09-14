@@ -42,13 +42,6 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 
-	%flex-1 { //維持整夜頁高度的方法
-		display: flex;
-		flex-direction: column;
-		-ms-flex-direction: column;
-		flex: 1 0 auto;
-	}
-
 	%reset {
 		margin: 0;
 		padding: 0;
@@ -77,24 +70,33 @@
 		vertical-align: middle;
 	}
 
-	%span-bg {
+	%center-bg {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	%model { //模組
+	%module { //模組
 		margin: $interval-l 0;
 	}
 
-	%model-title { //模組title
-		padding: $interval-l 0;
-		margin-bottom: $interval-l;
+	%module-title { //模組title
+		@extend %reset;
 		font-size: $font-size-l;
-		color: $main-color;
+		padding-bottom: $interval-m;
+		border-bottom: $border;
+		margin-bottom: $interval-m;
+
+		span {
+			color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
 	}
 
-	%page { //內頁模組
+	%page { //內頁
 		margin: $interval-l 0;
 	}
 
@@ -112,6 +114,10 @@
 		a {
 			color: inherit;
 		}
+	}
+
+	%part { //元件
+		margin: 0 0 $interval-m;
 	}
 
 	%btn { //按鈕樣式
@@ -153,7 +159,7 @@
 	}
 
 	%article{ //內文文章樣式
-		padding: $interval-m;
+		padding: $interval-m $interval-l;
 		background-color: $light;
 	}
 
