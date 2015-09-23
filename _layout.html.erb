@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-TW">
+	<head>
+
+	<!-- Meta 各種資訊 -->
+		<%= render :partial => '/Set/head-meta' %>
+	<!-- Meta 結束 -->
+		
+	<!-- Title 網站標題 -->
+		<%= render :partial => '/Set/head-title' %>
+	<!-- Title 結束 -->
+
+	<!-- Icon 小圖示 -->
+		<%= render :partial => '/Set/head-icon' %>
+	<!-- Icon 結束 -->
+
+	<!-- Css 樣式表 -->
+		<%= render :partial => '/Set/head-style' %>
+	<!-- Css 結束 -->
+
+	<!-- Script -->
+		<%= render :partial => '/Set/head-script' %>
+	<!-- Script 結束 -->
+
+	</head>
+	<body><form action="#" method="POST">
+		
+	<!-- sys-root 拖曳根節點 -->
+		<div class="sys-root" data-js="true" data-admin="false" data-type="3" data-child="3"><div class="inner">
+			<div class="header"><div class="inner">
+			</div></div>
+			<div class="content"><div class="inner">
+
+			<!-- base-mobile 行動載具-->
+				<%= render :partial => '/Base/base-mobile', :locals => { :index => 1 } %>
+			<!-- base-mobile 結束 -->
+
+			<!-- base-extend 額外資訊 -->
+				<%= render :partial => '/Base/base-extend', :locals => { :index => 2 } %>
+			<!-- base-extend 結束 -->
+
+			<!-- base-wrapper 固定佈局 -->
+				<%= render :partial => '/Base/base-wrapper', :locals => { :index => 3, :area => 'page' } %>
+			<!-- base-wrapper 結束 -->
+
+			</div></div>
+		</div></div>
+	<!-- sys-root 結束 -->
+
+	<%= livereload_js %>
+	</form></body>
+</html>

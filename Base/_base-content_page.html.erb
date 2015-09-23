@@ -1,0 +1,15 @@
+<div class="base-content" data-index="<%= index %>" data-type="3" data-child="2"><div class="inner">
+	<div class="header"><div class="inner">
+	</div></div>
+	<div class="content"><div class="inner">
+
+	<!-- base-module-area 模組區塊 -->
+		<%= render :partial => '/Base/base-module-area_page', :locals => { :index => 1 } %>
+	<!-- base-module-area 結束 -->
+
+	<!-- base-page-area 內頁區塊 -->
+		<%= render :partial => '/Base/base-page-area', :locals => { :index => 2 } %>
+	<!-- base-page-area 結束 -->
+
+	</div></div>
+</div></div>

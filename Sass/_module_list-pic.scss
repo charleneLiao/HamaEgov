@@ -124,6 +124,7 @@
 
 				li {
 					display: inline-block;
+					vertical-align: top;
 
 					&.qrcode {
 
@@ -313,7 +314,7 @@
 				position: relative;
 				display: block;
 				margin: $interval-xs;
-				border: $interval-xs solid $light;
+				border: $interval-xs solid $light-gray;
 				height: 100px;
 			}
 
@@ -420,7 +421,7 @@
 				position: relative;
 				display: block;
 				margin: $interval-xs;
-				border: $interval-xs solid $light;
+				border: $interval-xs solid $light-gray;
 				height: 100px;
 			}
 
@@ -546,24 +547,35 @@
 			}
 
 			span {
+				@extend %center-bg;
+				position: relative;
 				display: block;
 				margin: $interval-xs;
+				border: $interval-xs solid $light-gray;
+				height: 80px;
 			}
 
 			a {
+				position: absolute;
 				display: block;
-				padding: $interval-xs;
-				background-color: $white;
-				box-shadow: 0 0 $interval-xs $gray;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($black, $opacity-m);
+				transition: $transition;
 
-				@include at('ie6-7-8') {
-					border: $border;
+				&:hover {
+					opacity: 0;
+				}
+
+				@include at('mobile') {
+					background-color: transparent;
 				}
 			}
 
 			img {
-				display: block;
-				width: 100%;
+				display: none;
 			}
 		}
 

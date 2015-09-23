@@ -1,0 +1,30 @@
+<%
+	@min_li = 1 #最少的li數量
+	@max_li = 10 #最多的li數量
+%>
+
+<% @li_length = rand( @max_li - @min_li ) + @min_li %>
+
+<div class="group-list-nav" data-index="<%= index %>" data-type="<%= type %>" data-child="<%= @li_length %>"><div class="inner">
+	<div class="header"><div class="inner">
+		<h3><span>選單</span></h3>
+	</div></div>
+	<div class="content"><div class="inner">
+
+		<% if ( @li_length > 0 ) %>
+			<ul data-index="1" data-child="<%= @li_length %>">
+
+				<% @li_length.times do |i| %>
+					<li data-index="<%= i + 1 %>">
+
+					<!-- nav 選單 -->
+						<%= render :partial => '/Module/list-text_nav' ,:locals => { :index => i + 1 } %>
+					<!-- nav 結束 -->
+
+					</li>
+				<% end %>
+
+			</ul>
+		<% end %>
+	</div></div>
+</div></div>
