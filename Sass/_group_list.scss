@@ -191,9 +191,114 @@
 									background-color: $light-gray;
 								}
 							}
+
+							> [data-index][data-type] {
+								margin: 0;
+								padding: 0;
+								position: relative;
+
+								&:hover {
+
+									> .inner > .header {
+
+										a {
+											background-color: $minor-color;
+											color: $white;
+										}
+									}
+
+									> .inner > .content {
+										display: block;
+									}
+								}
+
+								> .inner {
+									
+								}
+
+								> .inner > .header {
+
+									> .inner {
+
+									}
+
+									h3 {
+										@extend %reset;
+									}
+
+									h4 {
+										@extend %reset;
+									}
+
+									span {
+										display: block;
+									}
+
+									a {
+										@extend %ellipsis;
+										display: block;
+										padding: $interval-s;
+										margin: $interval-s;
+										text-align: center;
+										font-size: $font-size-l;
+										transition: $transition;
+
+										&:hover {
+											background-color: $minor-color;
+											color: $white;
+										}
+									}
+								}
+
+								> .inner > .content {
+									display: none;
+									position: absolute;
+									top: 100%;
+									width: 100%;
+									left: 0;
+
+									> .inner {
+										padding: $interval-xs;
+										background-color: $light;
+										border: $border;
+									}
+								}
+							}
+
+							@for $i from 1 through $li_max_length { //ul的寬度
+
+								&[data-width="#{$i}"] { //li的寬度< li的最大數量
+
+									> [data-index][data-type] {
+
+										> .inner > .content {
+											width: 100% * $i;
+										}
+									}
+								}
+							}
+
+							@for $i from 1 through $li_max_length { //ul的寬度
+
+								&[data-width="#{$i}"] { //li的寬度< li的最大數量
+
+									> .nav {
+
+										> .inner > .content {
+
+											ul {
+
+												li {
+													width: 100% / $i;
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 
-						@for $i from $li_default_length through $li_max_length { //group list的child
+						@for $i from $li_default_length through $li_max_length { //group的child
 
 							&[data-child="#{$i}"] {
 
@@ -201,19 +306,64 @@
 									width: 100% / $i; //均分li
 								}
 
-								@for $j from 2 through $li_max_length { //li的index，要把多出來的選單推回去
+								@for $j from 2 through $li_max_length { //li的index
 
-									> [data-index="#{$j}"] { //li
+									> [data-index="#{$j}"] { //li的順序
 
-										@for $k from 1 through $li_max_length { //ul的寬度
+										@for $k from 1 through $li_max_length { //li的寬度
 
-											[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
+											&[data-width="#{$k}"] { //li的寬度< li的最大數量
 
-												$ul_width: min($k, $i); //ul的寬度 > li的最大數量的話，ul的寬度 = li的最大數量
-												$all_width: $j - 1 + $ul_width;
+												$li_width: min($k, $i); //li的寬度 > group的child，li的寬度 = group的child
+												$all_width: $j - 1 + $li_width;
 
-												@if( $all_width > $i ) { //如果ul選單大於li寬度
-													left: 100% * ( $i - $all_width ); //就推回來
+												> [data-index][data-type] {
+
+													> .inner {
+														
+													}
+
+													> .inner > .content {
+
+														@if( $all_width > $i ) {  //如果li數量大於li寬度
+															left: 100% * ( $i - $all_width ); //就推回來
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						@for $i from 1 through $li_default_length { //group的child
+
+							&[data-child="#{$i}"] {
+
+								@for $j from 2 through $li_max_length { //li的index
+
+									> [data-index="#{$j}"] { //li的順序
+
+										@for $k from 1 through $li_max_length { //li的寬度
+
+											&[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
+
+												$li_width: min($k, $li_default_length); //li的寬度 > group的child，li的寬度 = group的child
+												$all_width: $j - 1 + $li_width;
+
+												> [data-index][data-type] {
+
+													> .inner {
+
+													}
+
+													> .inner > .content {
+
+														@if( $all_width > $li_default_length ) { //如果li數量大於li寬度
+															left: 100% * ( $li_default_length - $all_width ); //就推回來
+														}
+													}
 												}
 											}
 										}

@@ -193,25 +193,6 @@
 		}
 
 		.base-header & {
-			position: relative;
-
-			&:hover {
-
-				.header {
-
-					a {
-						background-color: $minor-color;
-						color: $white;
-					}
-				}
-
-				.content {
-
-					ul {
-						display: block;
-					}
-				}
-			}
 
 			> .inner {
 
@@ -224,74 +205,26 @@
 				}
 
 				h4 {
-					@extend %reset;
+
 				}
 
 				span {
-					display: block;
+
 				}
 
 				a {
-					@extend %ellipsis;
-					display: block;
-					padding: $interval-s;
-					margin: $interval-s;
-					text-align: center;
-					font-size: $font-size-l;
-					transition: $transition;
 
-					&:hover {
-						background-color: $minor-color;
-						color: $white;
-					}
 				}
 			}
 
 			.content {
 
 				> .inner {
-					
+
 				}
 
 				ul {
-					$ul_default_width: 1; //ul的預設寬度
-					$ul_max_width: 10; //ul的最大寬度
-
 					@extend %reset;
-					display: none;
-					position: absolute;
-					width: 100% * $ul_default_width;
-					padding: $interval-xs;
-					top: 100%;
-					left: 0;
-					background-color: $light;
-					box-sizing: border-box;
-					border: $border;
-
-					@for $i from 1 through $ul_max_width { //ul的寬度
-
-						&[data-width="#{$i}"] { //設多少就是幾倍
-							width: 100% * $i;
-
-							> li {
-								width: 100% / $i;
-
-								$select: ' ';
-
-								@for $j from 1 through $i {
-
-									$select: #{$select' + li'}
-								}
-
-								&#{$select} {
-
-									span {
-										border-top: $border;
-									}
-								}
-							}
-						}
-					}
 
 					&:after {
 						@extend %clear;
@@ -1298,6 +1231,7 @@
 
 	&.sitemap {
 		float: right;
+		max-width: 50%;
 
 		> .inner {
 
