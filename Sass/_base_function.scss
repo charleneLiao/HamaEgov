@@ -305,6 +305,13 @@
 		}
 	}
 
+	@mixin rwd( $max, $min: 0 ) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
+
+		@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
+			@content;
+		}
+	}
+
 	@mixin at( $key, $obj: 'media' ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
 
 		@if( ( $rwd == false ) and ( $key == 'mobile' or $key == 'pad' or $key == 'phone' ) ) {
