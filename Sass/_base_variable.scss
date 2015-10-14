@@ -1,9 +1,5 @@
 //變數
 
-//特殊字元"\"================================================================
-	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串
-
-
 //設定================================================================
 	$debug: false; // true 或 false，是否除錯模式
 	$rwd: true; // true 或 false，是否開啟 rwd
@@ -35,6 +31,122 @@
 //文字顏色================================================================
 	$title-color: #c02 !default; //標題色
 	$span-color: #ca0 !default; //附註色
+
+
+//文字樣式================================================================
+	$base-font-style: Arial, '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
+
+
+//文字大小================================================================
+	$font-size-xs: .8em;
+	$font-size-s: .9em;
+	$font-size-m: 1em;
+	$font-size-l: 1.1em;
+	$font-size-xl: 1.4em;
+
+
+//文字厚度================================================================
+	$font-weight-n: 400;
+	$font-weight-b: 700;
+
+
+//文字行高================================================================
+	$line-height-xs: 1;
+	$line-height-s: 1.2;
+	$line-height-m: 1.4;
+	$line-height-l: 2;
+	$line-height-xl: 2.4;
+
+
+//文字間格================================================================
+	$letter-spacing-xs: 1px;
+	$letter-spacing-s: 2px;
+	$letter-spacing-m: 3px;
+	$letter-spacing-l: 4px;
+	$letter-spacing-xl: 5px;
+
+
+//透明度================================================================
+	$opacity-vl: .3;
+	$opacity-l: .5;
+	$opacity-m: .5;
+	$opacity-h: .8;
+	$opacity-vh: .9;
+
+
+//間隔設定================================================================
+	$interval-xs: 3px;
+	$interval-s: 6px;
+	$interval-m: 10px;
+	$interval-l: 20px;
+	$interval-xl: 30px;
+
+
+//基本動畫速度================================================================
+	$transition: 200ms;
+
+
+//RWD寬度================================================================
+	$pc-width: 1010px;
+	$pad-width: 768px;
+	$phone-width: 660px;
+
+
+//預設空文字================================================================
+	$content: '\200B'; //空偽類的字元
+
+
+//預設陰影================================================================
+	$box-shadow: 0 0 $interval-m $light-gray;
+	$text-shadow: 0 0 $interval-m $deep-gray;
+
+
+//文字圖示================================================================
+	$icon-font-size: inherit; //文字圖示大小
+	$icon-font-color: inherit; //文字圖示顏色
+
+
+//全頁文字================================================================
+	$body-font-color: $deep !default; //網站文字顏色
+	$body-font-size-s: $font-size-xs !default; //small
+	$body-font-size-m: $font-size-s !default; //medium
+	$body-font-size-l: $font-size-m !default; //large
+
+
+//預設線條================================================================
+	$border-style: solid;
+	$border-width: 1px;
+	$border-color: $light-gray;
+	$border: $border-width $border-style $border-color;
+
+
+//預設圓角================================================================
+	$border-radius: $interval-s;
+
+
+//連結顏色================================================================
+	$link-color: inherit !default; //連結顏色
+	$visited-color: inherit !default; //造訪過連結顏色
+	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊 
+	$active-color: inherit !default; //點擊連結顏色
+
+
+//按鈕樣式================================================================
+	$btn-bg-color: $gray; //按鈕背景色
+	$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
+	$btn-text-color: $white; //按鈕文字顏色
+	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
+	$btn-border: 0; //按鈕線框
+
+
+//輸入框樣式================================================================
+	$input-padding: $interval-s $interval-m;
+	$input-border: $border;
+	$input-bg-color: transparent;
+
+
+//特殊字元"\"================================================================
+	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串
 
 
 //範例陣列===============================================================
@@ -78,118 +190,6 @@
 		'xlsx': ( 'pic': 'file-type-xlsx.png', 'color': #16ab16 ),
 		'zip': ( 'pic': 'file-type-zip.png', 'color': #b5851a )
 	);
-
-
-//文字樣式================================================================
-	$base-font-style: Arial, '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
-
-
-//文字大小================================================================
-	$font-size-xs: .8em;
-	$font-size-s: .9em;
-	$font-size-m: 1em;
-	$font-size-l: 1.1em;
-	$font-size-xl: 1.4em;
-
-
-//文字圖示================================================================
-	$icon-font-size: inherit; //文字圖示大小
-	$icon-font-color: inherit; //文字圖示顏色
-
-
-//文字厚度================================================================
-	$font-weight-n: 400;
-	$font-weight-b: 700;
-
-
-//文字行高================================================================
-	$line-height-xs: 1;
-	$line-height-s: 1.2;
-	$line-height-m: 1.4;
-	$line-height-l: 2;
-	$line-height-xl: 2.4;
-
-
-//文字間格================================================================
-	$letter-spacing-xs: 1px;
-	$letter-spacing-s: 2px;
-	$letter-spacing-m: 3px;
-	$letter-spacing-l: 4px;
-	$letter-spacing-xl: 5px;
-
-
-//透明度================================================================
-	$opacity-vl: .3;
-	$opacity-l: .5;
-	$opacity-m: .5;
-	$opacity-h: .8;
-	$opacity-vh: .9;
-
-
-//間隔設定================================================================
-	$interval-xs: 3px;
-	$interval-s: 6px;
-	$interval-m: 10px;
-	$interval-l: 20px;
-	$interval-xl: 30px;
-
-
-//RWD寬度================================================================
-	$pc-width: 1010px;
-	$pad-width: 768px;
-	$phone-width: 660px;
-
-
-//基本動畫速度================================================================
-	$transition: 200ms;
-
-
-//全頁文字================================================================
-	$body-font-color: $deep !default; //網站文字顏色
-	$body-font-size-s: $font-size-xs !default; //small
-	$body-font-size-m: $font-size-s !default; //medium
-	$body-font-size-l: $font-size-m !default; //large
-
-
-//預設空文字================================================================
-	$content: '\200B'; //空偽類的字元
-
-
-//預設陰影================================================================
-	$box-shadow: 0 0 $interval-m $light-gray;
-	$text-shadow: 0 0 $interval-m $deep-gray;
-
-
-//預設線條================================================================
-	$border-style: solid;
-	$border-width: 1px;
-	$border-color: $light-gray;
-	$border: $border-width $border-style $border-color;
-
-
-//預設圓角================================================================
-	$border-radius: $interval-s;
-
-
-//連結顏色================================================================
-	$link-color: inherit !default; //連結顏色
-	$visited-color: inherit !default; //造訪過連結顏色
-	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊 
-	$active-color: inherit !default; //點擊連結顏色
-
-
-//按鈕樣式================================================================
-	$btn-bg-color: $gray; //按鈕背景色
-	$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
-	$btn-text-color: $white; //按鈕文字顏色
-	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
-	$btn-border: 0; //按鈕線框
-
-
-//輸入框樣式================================================================
-	$input-padding: $interval-s $interval-m;
-	$input-border: $border;
-	$input-bg-color: transparent;
 
 
 //瀏覽器媒體================================================================

@@ -2,6 +2,18 @@
 
 //extend 方法================================================================
 
+	%reset {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		list-style: none;
+		background-color: transparent;
+		font-size: $font-size-m;
+		font-weight: $font-weight-n;
+		transition: 0;
+	}
+
 	%clear { //偽類清除浮動的方法
 		content: $content;
 		display: block;
@@ -10,7 +22,6 @@
 	}
 
 	%hide-text { //隱藏文字的方法
-		text-indent: -9999px;
 		font: 0/0 a;
 		text-shadow: none;
 		color: transparent;
@@ -20,6 +31,24 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+	}
+
+	%cover-bg {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	%contain-bg {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 _bace_icon-pic
@@ -42,18 +71,6 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 
-	%reset {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		border-radius: 0;
-		list-style: none;
-		background-color: transparent;
-		font-size: $font-size-m;
-		font-weight: $font-weight-n;
-		transition: 0;
-	}
-
 	%center { //齊中寬度
 		margin: 0 auto;
 
@@ -62,18 +79,6 @@
 		}@else {
 			width: $pc-width;
 		}
-	}
-
-	%icon { //偽類作為行內icon的方法
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	%center-bg {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	%module { //模組
@@ -153,9 +158,11 @@
 	%input { //輸入框樣式
 		padding: $input-padding;
 		border: $input-border;
+		box-sizing: border-box;
 		background-color: $input-bg-color;
 		vertical-align: middle;
 		box-sizing: border-box;
+		outline: none;
 	}
 
 	%article{ //內文文章樣式
@@ -163,7 +170,7 @@
 		background-color: $light;
 	}
 
-	%list {
+	%list { //列表樣式
 		display: block;
 		padding: $interval-s;
 		background-color: $light;
@@ -178,25 +185,37 @@
 		}
 	}
 
-	%table{ //表單樣式
+	%table { //表單樣式
 
-		tr{
+		tr {
 
-			&:nth-child(2n),&.question_tr + tr,&.css_title + tr{
+			&:nth-child(2n) {
 				background-color: $light;
 			}
 
-			th,td{ //th,td共同設定
+			& th, & td { //th, td共同設定
 				padding: $interval-m;
+				line-height: $line-height-m;
 			}
 
-			th{ //標題設定
+			th { //標題設定
 				font-size: $font-size-l;
 				color: $title-color;
 			}
 
-			td{
-				line-height: $line-height-m;
+			td {
+
+			}
+		}
+	}
+
+	%table-hover { //表單樣式
+
+		tr{
+
+			&:hover {
+				background-color: $minor-color;
+				color: $white;
 			}
 		}
 	}
