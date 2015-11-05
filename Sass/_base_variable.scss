@@ -18,7 +18,7 @@
 
 
 //主要版面顏色================================================================
-	$main-color: #08c !default; //主色
+	$major-color: #08c !default; //主色
 	$minor-color: #0ca !default; //次色
 
 
@@ -87,9 +87,9 @@
 
 
 //RWD寬度================================================================
-	$pc-width: 1010px;
-	$pad-width: 768px;
-	$phone-width: 660px;
+	$pc-width: 1010px !default; //pc寬度
+	$pad-width: 768px !default; //pad寬度
+	$phone-width: 560px !default; //phone寬度
 
 
 //預設空文字================================================================
@@ -121,7 +121,7 @@
 
 
 //預設圓角================================================================
-	$border-radius: $interval-s;
+	$border-radius: $interval-xs;
 
 
 //連結顏色================================================================
@@ -195,10 +195,11 @@
 //瀏覽器媒體================================================================
 
 	$media: (
-		'pc': '(min-width: #{$pad-width + 1})',
-		'mobile': '(max-width: #{$pad-width})',
+		'pc': '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
 		'pad': '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
 		'phone': '(max-width: #{$phone-width})',
+		'center': '(max-width: #{$pc-width})',
+		'mobile': '(max-width: #{$pad-width})',
 
 		'ip4-4s': 'only screen and (device-aspect-ratio: 2/3) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait)',
 		'ip5-5s': 'only screen and (device-aspect-ratio: 40/71)  and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait)',

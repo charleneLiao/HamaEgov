@@ -247,7 +247,6 @@
 					display: block;
 					padding: $interval-s;
 					text-align: center;
-					transition: $transition;
 
 					&:hover {
 						background-color: $minor-color;
@@ -283,7 +282,7 @@
 		.base-aside & {
 
 			> .inner {
-				background-color: $main-color;
+				background-color: $major-color;
 			}
 
 			.header {
@@ -403,7 +402,6 @@
 					padding-bottom: $interval-s;
 					border-bottom: $border;
 					font-size: $font-size-l;
-					text-align: center;
 				}
 
 				span {
@@ -428,15 +426,20 @@
 
 				li {
 					margin: $interval-xs 0;
-					text-indent: .5em;
 				}
 
 				span {
-
+					display: block;
 				}
 
 				a {
+					display: block;
+					padding: $interval-xs;
 
+					&:hover {
+						background-color: $gray;
+						color: $white;
+					}
 				}
 			}
 
@@ -813,7 +816,6 @@
 				a {
 					@extend %hide-text;
 					display: block !important;
-					transition: $transition;
 				}
 			}
 

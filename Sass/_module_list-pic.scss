@@ -84,6 +84,7 @@
 
 	&.icon {
 		@extend %page;
+		margin-top: 0;
 
 		.base-article & {
 
@@ -608,6 +609,11 @@
 						display: block;
 						width: $btn-width;
 						height: 100%;
+						transition: $transition;
+
+						&:hover {
+							background-color: $light;
+						}
 					}
 				}
 
@@ -623,6 +629,140 @@
 
 					a {
 						right: $layout_main_interval;
+						@include bg-to-pic('icon-pic/away-b-right.png', false);
+					}
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//圖片區塊列表================================================================
+
+	&.pic-block {
+		@extend %page;
+
+		> .inner {
+			position: relative;
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+
+				+ li {
+					display: none;
+				}
+			}
+
+			span {
+				display: block;
+				background-image: none !important;
+			}
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+				&.more {
+					display: none;
+				}
+
+				&.next, &.prev {
+
+					@include at('no-js') {
+						display: none;
+					}
+
+					a {
+						$btn-width: 45px;
+
+						@extend %hide-text;
+						position: absolute;
+						top: 20%;
+						bottom: 20%;
+						display: block;
+						width: $btn-width;
+						transition: $transition;
+						background-color: $light;
+						background-color: rgba($light, $opacity-h);
+
+						&:hover {
+							background-color: $light-gray;
+							background-color: rgba($light-gray, $opacity-h);
+						}
+					}
+				}
+
+				&.prev {
+
+					a {
+						left: 0;
+						@include bg-to-pic('icon-pic/away-b-left.png', false);
+					}
+				}
+
+				&.next {
+
+					a {
+						right: 0;
 						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
 				}
