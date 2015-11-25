@@ -115,6 +115,7 @@
 //行動載具================================================================
 
 	.base-mobile {
+		z-index: 2;
 
 		&.is-open {
 			right: 0;
@@ -369,6 +370,7 @@
 //模組區塊================================================================
 
 	.base-module-area {
+		@extend %is-module-area;
 
 		> .inner {
 
@@ -448,6 +450,7 @@
 //內頁側欄區塊================================================================
 
 	.base-aside {
+		@extend %is-module-area;
 		width: 230px;
 		float: left;
 
@@ -491,6 +494,7 @@
 		position: relative;
 
 		> .inner {
+			margin: $interval-m;
 
 			> .header {
 
@@ -549,9 +553,9 @@
 
 				> .inner {
 					
-					[data-index][data-type] {
-						@extend %part;
-					}
+					// [data-index][data-type] {
+					// 	@extend %part;
+					// }
 				}
 			}
 

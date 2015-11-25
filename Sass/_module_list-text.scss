@@ -346,7 +346,7 @@
 
 				a {
 					display: block;
-					padding: $interval-s $interval-m;
+					padding: $interval-m;
 
 					&:before {
 						@include icon-font('keyboard_arrow_right');
@@ -387,7 +387,7 @@
 		.base-footer & {
 
 			> .inner {
-				padding: 0 $interval-m;
+				padding: 0 $interval-s;
 			}
 
 			.header {
@@ -399,6 +399,7 @@
 
 				h4 {
 					@extend %reset;
+					@extend %ellipsis;
 					padding-bottom: $interval-s;
 					border-bottom: $border;
 					font-size: $font-size-l;
@@ -437,7 +438,7 @@
 					padding: $interval-xs;
 
 					&:hover {
-						background-color: $gray;
+						background-color: $minor-color;
 						color: $white;
 					}
 				}
@@ -637,6 +638,7 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			margin: 0;
 
 			> .inner {
 
@@ -1095,6 +1097,7 @@
 
 						a {
 							border-color: $minor-color;
+							background-color: $minor-color;
 						}
 					}
 				}
@@ -1140,7 +1143,7 @@
 	&.hot-key-word {
 		position: absolute;
 		top: 43px;
-		right: 255px;
+		right: 315px;
 
 		> .inner {
 			margin: 0;
@@ -1322,7 +1325,7 @@
 //詳細資訊================================================================
 
 	&.detail {
-		@extend %page;
+		margin: 0 !important;
 
 		> .inner {
 
@@ -1483,10 +1486,9 @@
 		}
 	}
 
-//檔案下載文字列表================================================================
+//檔案下載================================================================
 
-	&.download-text {
-		@extend %page;
+	&.file-download {
 
 		> .inner {
 
@@ -1588,9 +1590,9 @@
 		}
 	}
 
-//檔案下載類型列表================================================================
+//多重檔案下載================================================================
 
-	&.file-download-type {
+	&.file-download-multiple {
 		@extend %list;
 		border-left-width: $interval-xs;
 		border-left-style: solid;
@@ -1712,8 +1714,7 @@
 
 //列表按鈕================================================================
 
-	&.page-list-btn {
-		@extend %page;
+	&.btn {
 
 		&.right {
 
@@ -1831,7 +1832,6 @@
 //內頁文字列表================================================================
 
 	&.page-list-text {
-		@extend %page;
 
 		> .inner {
 
@@ -1896,6 +1896,219 @@
 
 			li {
 
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//錨點================================================================
+
+	&.anchor {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('explore');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$li_max_length: 10; // li的最大數量
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+				border: $border;
+
+				&:after {
+					@extend %clear;
+				}
+
+				@for $i from 2 through $li_max_length { //ul的child
+
+					&[data-child="#{$i}"] {
+
+						> li {
+							width: 100% / $i; //均分li
+							float: left;
+						}
+					}
+				}
+			}
+
+			li {
+				position: relative;
+
+				+ li {
+
+					&:before {
+						content: $content;
+						display: block;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						width: 1px;
+						background-color: $border-color;
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %ellipsis;
+				display: block;
+				padding: $interval-s;
+				text-align: center;
+
+				&:hover {
+					background-color: $minor-color;
+					color: $white;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//輪播================================================================
+
+	&.slider {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('message');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+				+ li {
+					display: none;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %ellipsis;
+				@extend %list;
+				@extend %list-hover;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
 			}
 
 			span {

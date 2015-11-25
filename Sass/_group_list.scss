@@ -195,6 +195,9 @@
 							> [data-index][data-type] {
 								margin: 0;
 								padding: 0;
+								top: 0;
+								left: auto;
+								right: auto;
 								position: relative;
 
 								&:hover {
@@ -217,17 +220,46 @@
 								}
 
 								> .inner > .header {
+									display: block;
 
 									> .inner {
 
 									}
 
+									h2 {
+										@extend %reset;
+
+										&:before {
+											display: none;
+										}
+
+										&:after {
+											display: none;
+										}
+									}
+
 									h3 {
 										@extend %reset;
+
+										&:before {
+											display: none;
+										}
+
+										&:after {
+											display: none;
+										}
 									}
 
 									h4 {
 										@extend %reset;
+
+										&:before {
+											display: none;
+										}
+
+										&:after {
+											display: none;
+										}
 									}
 
 									span {
@@ -241,7 +273,6 @@
 										margin: $interval-s;
 										text-align: center;
 										font-size: $font-size-l;
-										transition: $transition;
 
 										&:hover {
 											background-color: $minor-color;
@@ -262,6 +293,10 @@
 										background-color: $light;
 										border: $border;
 									}
+								}
+
+								> .inner > .footer {
+									display: none;
 								}
 							}
 
@@ -575,9 +610,9 @@
 		}
 	}
 
-//檔案下載類型群組================================================================
+//多重檔案下載群組================================================================
 
-	&.group-list-download-type {
+	&.group-list-file-download-multiple {
 
 		> .inner {
 
@@ -646,7 +681,6 @@
 //選單列表================================================================
 
 	&.group-list-page-list {
-		@extend %page;
 
 		> .inner {
 

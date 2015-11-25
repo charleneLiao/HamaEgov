@@ -83,7 +83,6 @@
 //各種標章================================================================
 
 	&.icon {
-		@extend %page;
 		margin-top: 0;
 
 		.base-article & {
@@ -264,7 +263,6 @@
 //檔案下載圖片列表================================================================
 
 	&.download-pic {
-		@extend %page;
 
 		> .inner {
 
@@ -367,10 +365,9 @@
 		}
 	}
 
-//內頁圖片列表================================================================
+//展開圖片列表================================================================
 
-	&.page-list-pic {
-		@extend %page;
+	&.extend {
 
 		> .inner {
 
@@ -476,13 +473,10 @@
 
 //輪播圖片列表================================================================
 
-	&.marqee-pic {
+	&.marqee {
 		$btn-width: 36px;
 		$max-li-length: 20; //設定 li 的最大數量
 		$show-li-length: 5; //設定一次要秀的數量
-
-		@extend %page;
-		position: relative;
 
 		> .inner {
 
@@ -592,10 +586,6 @@
 
 			li {
 
-				&.more {
-					display: none;
-				}
-
 				&.next, &.prev {
 
 					@include at('no-js') {
@@ -632,6 +622,10 @@
 						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
 				}
+
+				&.more {
+					display: none;
+				}
 			}
 
 			span {
@@ -646,8 +640,7 @@
 
 //圖片區塊列表================================================================
 
-	&.pic-block {
-		@extend %page;
+	&.block {
 
 		> .inner {
 			position: relative;
@@ -721,9 +714,137 @@
 
 			li {
 
+				&.next, &.prev {
+
+					@include at('no-js') {
+						display: none;
+					}
+
+					a {
+						$btn-width: 45px;
+
+						@extend %hide-text;
+						position: absolute;
+						top: 20%;
+						bottom: 20%;
+						display: block;
+						width: $btn-width;
+						transition: $transition;
+						background-color: $light;
+						background-color: rgba($light, $opacity-h);
+
+						&:hover {
+							background-color: $light-gray;
+							background-color: rgba($light-gray, $opacity-h);
+						}
+					}
+				}
+
+				&.prev {
+
+					a {
+						left: 0;
+						@include bg-to-pic('icon-pic/away-b-left.png', false);
+					}
+				}
+
+				&.next {
+
+					a {
+						right: 0;
+						@include bg-to-pic('icon-pic/away-b-right.png', false);
+					}
+				}
+
 				&.more {
 					display: none;
 				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//輪播================================================================
+
+	&.slider {
+
+		> .inner {
+			background-color: $light;
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				display: none;
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+
+				+ li {
+					display: none;
+				}
+			}
+
+			span {
+				display: block;
+				background-image: none !important;
+			}
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
 
 				&.next, &.prev {
 
@@ -765,6 +886,10 @@
 						right: 0;
 						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
+				}
+
+				&.more {
+					display: none;
 				}
 			}
 

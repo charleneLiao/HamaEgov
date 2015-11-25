@@ -2,8 +2,11 @@
 
 //extend 方法================================================================
 
-	%reset {
+	%reset-outer { //清除外部
 		margin: 0;
+	}
+
+	%reset-inner { //清除內部
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -12,6 +15,11 @@
 		font-size: $font-size-m;
 		font-weight: $font-weight-n;
 		transition: 0;
+	}
+
+	%reset { //清除全部
+		@extend %reset-outer;
+		@extend %reset-inner;
 	}
 
 	%clear { //偽類清除浮動的方法
@@ -23,7 +31,7 @@
 
 	%hide-text { //隱藏文字的方法
 		font: 0/0 a;
-		text-shadow: none;
+		text-shadow: 0 0 0;
 		color: transparent;
 	}
 
@@ -83,6 +91,11 @@
 
 	%module { //模組
 		margin: $interval-l 0;
+
+		> .inner {
+			position: relative;
+			margin: $interval-s;
+		}
 	}
 
 	%module-title { //模組title
@@ -91,6 +104,14 @@
 		padding-bottom: $interval-m;
 		border-bottom: $border;
 		margin-bottom: $interval-m;
+
+		&:before {
+			margin-right: $interval-xs;
+		}
+
+		&:after {
+			margin-left: $interval-xs;
+		}
 
 		span {
 			color: inherit;
@@ -101,8 +122,27 @@
 		}
 	}
 
+	%is-module-area {
+
+		[data-index][data-type="0"] {
+			@extend %module;
+		}
+
+		[data-index][data-type="4"] {
+			@extend %module;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+		}
+	}
+
 	%page { //內頁
 		margin: $interval-l 0;
+
+		> .inner {
+			position: relative;
+		}
 	}
 
 	%page-title { //內頁title
@@ -121,9 +161,24 @@
 		}
 	}
 
-	%part { //元件
-		margin: 0 0 $interval-m;
+	%is-page-area {
+
+		[data-index][data-type="0"] {
+			@extend %page;
+		}
+
+		[data-index][data-type="4"] {
+			@extend %page;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+		}
 	}
+
+	// %part { //元件
+	// 	margin: 0 0 $interval-m;
+	// }
 
 	%btn { //按鈕樣式
 		display: inline-block;
@@ -155,6 +210,13 @@
 		}
 	}
 
+	%btn-xs { //小按鈕
+		@extend %btn;
+
+		padding: $btn-padding-xs;
+		font-size: $font-size-s;
+	}
+
 	%input { //輸入框樣式
 		padding: $input-padding;
 		border: $input-border;
@@ -175,6 +237,32 @@
 		padding: $interval-s;
 		background-color: $light;
 		transition: $transition;
+	}
+
+	%footer-btns {
+		position: absolute;
+		top: $interval-xs;
+		right: 0;
+
+		> .inner {
+
+		}
+
+		ul {
+			@extend %reset;
+		}
+
+		li {
+			display: inline-block;
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			@extend %btn-xs;
+		}
 	}
 
 	%list-hover {
@@ -219,7 +307,6 @@
 			}
 		}
 	}
-
 
 //@mixin 涵式================================================================
 

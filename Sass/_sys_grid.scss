@@ -4,7 +4,7 @@
 	type 0 模組
 	type 1 分割
 	type 2 頁籤
-	type 3 單攔
+	type 3 單欄
 	type 4 清單
 */
 
@@ -13,6 +13,10 @@ $max_child: 10; //最多的child數量
 
 $min_aLineLength: 2; //最少的單行數量
 $max_aLineLength: 10; //最多的單行數量
+
+[data-index][data-type] {
+	min-height: 1px;
+}
 
 @for $i from $min_child through $max_child { //算自然分割
 
@@ -92,16 +96,16 @@ $max_aLineLength: 10; //最多的單行數量
 	}
 }
 
-$layout_main_interval: $interval-m; //主層間隔
+$layout_main_interval: $interval-s; //主層間隔
 
 [data-type="0"] { //模組
 
 	> .inner {
 		margin: 0 $layout_main_interval;
 
-		@include data-js('phone') {
-			margin: 0;
-		}
+		// @include at('phone') {
+		// 	margin: 0;
+		// }
 	}
 }
 

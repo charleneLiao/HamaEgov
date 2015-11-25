@@ -1,1 +1,35 @@
-<h1>首頁</h1>
+<div data-index="1" data-type="3" data-child="3"><div class="inner">
+	<div class="header"><div class="inner">
+	</div></div>
+	<div class="content"><div class="inner">
+
+	</div></div>
+</div></div>
+
+<div data-index="2" data-type="3" data-child="3"><div class="inner">
+	<div class="header"><div class="inner">
+	</div></div>
+	<div class="content"><div class="inner">
+
+	<!-- slider 輪播 -->
+		<%= render :partial => '/Module/list-pic_slider', :locals => { :index => 1 } %>
+	<!-- slider 結束 -->
+
+	<!-- anchor 錨點 -->
+		<%= render :partial => '/Module/list-text_anchor', :locals => { :index => 2 } %>
+	<!-- anchor 結束 -->
+
+	<!-- slider 輪播 -->
+		<%= render :partial => '/Module/list-text_slider', :locals => { :index => 3 } %>
+	<!-- slider 結束 -->
+
+	</div></div>
+</div></div>
+
+<div data-index="3" data-type="3" data-child="3"><div class="inner">
+	<div class="header"><div class="inner">
+	</div></div>
+	<div class="content"><div class="inner">
+
+	</div></div>
+</div></div>

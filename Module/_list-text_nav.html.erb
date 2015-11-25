@@ -13,17 +13,17 @@
 	<div class="header"><div class="inner">
 		<h4><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></h4>
 	</div></div>
-	<div class="content"><div class="inner">
+	
+	<% if ( li_length > 0 ) %>
+		<div class="content"><div class="inner">
 
-		<% if ( li_length > 0 ) %>
+				<ul data-index="1" data-child="<%= li_length %>">
 
-			<ul data-index="1" data-child="<%= li_length %>">
+					<% li_length.times do |i| %>
+						<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+					<% end %>
 
-				<% li_length.times do |i| %>
-					<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
-				<% end %>
-
-			</ul>
-		<% end %>
-	</div></div>
+				</ul>
+		</div></div>
+	<% end %>
 </div></div>

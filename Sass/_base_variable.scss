@@ -1,7 +1,7 @@
 //變數
 
 //設定================================================================
-	$debug: false; // true 或 false，是否除錯模式
+	$debug: true; // true 或 false，是否開啟除錯模式
 	$rwd: true; // true 或 false，是否開啟 rwd
 	$icon-pic: true; // true 或 false，是否開啟雪碧圖示
 	$icon-font: true; // true 或 false，是否開啟文字圖示
@@ -136,6 +136,7 @@
 	$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
 	$btn-text-color: $white; //按鈕文字顏色
 	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
+	$btn-padding-xs: $interval-xs $interval-s; //按鈕內邊距，決定按鈕大小
 	$btn-border: 0; //按鈕線框
 
 

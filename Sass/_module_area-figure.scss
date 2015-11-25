@@ -62,8 +62,8 @@
 
 //相簿圖片================================================================
 
-	&.album-figure {
-		margin: $interval-xs;
+	&.album {
+		margin: $interval-xs !important;
 		overflow: hidden;
 
 		&:hover {
