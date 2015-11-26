@@ -1,0 +1,38 @@
+<%
+	min_li = 1 #最少的li數量
+	max_li = 5 #最多的li數量
+%>
+
+<%
+	li_length = rand( max_li + 1 - min_li ) + min_li
+%>
+
+
+<% if ( li_length > 0 ) %>
+	<div class="group-list message" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
+		<div class="header"><div class="inner">
+			<h3><span><a>訊息</a></span></h3>
+		</div></div>
+		<div class="content"><div class="inner">
+			<ul data-index="1" data-child="<%= li_length %>">
+
+				<% li_length.times do |i| %>
+					<li data-index="<%= i + 1 %>">
+
+					<!-- message 消息 -->
+						<%= render :partial => '/Module/area-essay_message', :locals => { :index => 1 } %>
+					<!-- message 結束 -->
+
+					</li>
+				<% end %>
+
+			</ul>
+		</div></div>
+		<div class="footer"><div class="inner">
+			<ul data-index="1" data-child="3">
+				<li class="rss" data-index="1"><span><a href="#">RSS</a></span></li>
+				<li class="more" data-index="2"><span><a href="#">更多</a></span></li>
+			</ul>
+		</div></div>
+	</div></div>
+<% end %>

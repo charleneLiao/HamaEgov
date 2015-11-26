@@ -7,6 +7,7 @@
 
 <% 
 	li_length = rand( max_li + 1 - min_li ) + min_li
+	random = rand( li_length )
 %>
 
 <div class="list-text nav" data-index="<%= index %>" data-type="0"><div class="inner">
@@ -16,14 +17,17 @@
 	
 	<% if ( li_length > 0 ) %>
 		<div class="content"><div class="inner">
+			<ul data-index="1" data-child="<%= li_length %>">
 
-				<ul data-index="1" data-child="<%= li_length %>">
-
-					<% li_length.times do |i| %>
+				<% li_length.times do |i| %>
+					<% if( i == random ) %>
+						<li data-index="<%= i + 1 %>" class="is-active"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+					<% else %>
 						<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 					<% end %>
+				<% end %>
 
-				</ul>
+			</ul>
 		</div></div>
 	<% end %>
 </div></div>
