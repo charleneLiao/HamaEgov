@@ -874,7 +874,8 @@
 //連結================================================================
 
 	&.link {
-		@extend %a-line-length;
+		@include default-length-hide-more(2);
+		@include set-length-hide-more();
 		margin-top: 0;
 
 		> .inner {
@@ -905,7 +906,6 @@
 		}
 
 		.content {
-			$length: 2; //數量
 
 			> .inner {
 				
@@ -913,15 +913,10 @@
 
 			ul {
 				@extend %reset;
-
-				&:after {
-					@extend %clear;
-				}
 			}
 
 			li {
-				float: left;
-				width: 100% / $length;
+
 			}
 
 			span {

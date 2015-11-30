@@ -36,10 +36,18 @@
 			<%= render :partial => '/Module/area-form_vote', :locals => { :index => 4 } %>
 		<!-- vote 結束 -->
 
+		<!-- weather 天氣 -->
+			<%= render :partial => '/Module/simple-text_weather', :locals => { :index => 5 } %>
+		<!-- weather 結束 -->
+
+		<!-- epaper 電子報 -->
+			<%= render :partial => '/Module/area-form_epaper', :locals => { :index => 6 } %>
+		<!-- epaper 結束 -->
+
 		</div></div>
 	</div></div>
 
-	<div data-index="2" data-type="3" data-child="5"><div class="inner">
+	<div data-index="2" data-type="3" data-child="7"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
@@ -53,20 +61,24 @@
 		<!-- slider 結束 -->
 
 		<!-- tab 頁籤 -->
-			<%= render :partial => '/Module/group-tab_tab', :locals => { :index => 3 } %>
+			<%= render :partial => '/Module/group-tab_tab', :locals => { :index => 3, :inner => 'area-essay_message' } %>
 		<!-- tab 結束 -->
 
-		<!-- classical-slider 古典輪播 -->
-			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 4, :inner => 'area-essay_message' } %>
-		<!-- classical-slider 結束 -->
-
 		<!-- message 消息 -->
-			<%= render :partial => '/Module/area-essay_message', :locals => { :index => 5 } %>
+			<%= render :partial => '/Module/area-essay_message', :locals => { :index => 4 } %>
 		<!-- message 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 5, :inner => 'area-essay_message' } %>
+		<!-- classical-slider 結束 -->
 
 		<!-- message 訊息 -->
 			<%= render :partial => '/Module/group-list_message', :locals => { :index => 6 } %>
 		<!-- message 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 7, :inner => 'group-list_message' } %>
+		<!-- classical-slider 結束 -->
 
 		</div></div>
 	</div></div>

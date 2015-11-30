@@ -192,7 +192,7 @@
 		}
 
 		.base-footer & {
-			border-bottom: $interval-xs solid $gray;
+			border-bottom: $interval-xs solid $deep-gray;
 
 			> .inner {
 
@@ -536,6 +536,88 @@
 			a {
 
 			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//天氣================================================================
+
+	&.weather {
+
+		> .inner {
+
+		}
+
+		.header {
+
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('wb_sunny');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+
+			> .inner {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
+			}
+		}
+
+		.mark {
+			display: inline-block;
+			padding: $interval-xs $interval-s;
+			margin-right: $interval-s;
+			background-color: $title-color;
+			color: $white;
+			font-size: $font-size-s;
 		}
 
 		.footer {

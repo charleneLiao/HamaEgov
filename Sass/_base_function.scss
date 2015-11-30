@@ -2,37 +2,6 @@
 
 //extend 方法================================================================
 
-	%a-line-length {
-		$min_aLineLength: 1; //最少的單行數量
-		$max_aLineLength: 10; //最多的單行數量
-
-		@for $i from $min_aLineLength through $max_aLineLength { //算設定分割
-
-			&[data-aLineLength="#{$i}"] {
-
-				> .inner{
-
-					> .content {
-
-						> .inner {
-
-							> ul {
-
-								> li {
-									width: 100% / $i;
-								}
-							}
-
-							> [data-index][data-type] {
-								width: 100% / $i;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	%reset-outer { //清除外部
 		margin: 0;
 	}
@@ -474,6 +443,186 @@
 		&:before{
 			@include icon-pic( $img-name, $size, $height );
 			display: block !important;
+		}
+	}
+
+	@mixin default-min-length( $default-length, $max-length: $max_child ) { //設定預設的最小單行數量，$default-length 為預設的數量，$max-length 為最大的分割數量，只能用於 [data-type="4"]
+
+		> .inner > .content > .inner {
+
+			> ul {
+
+				&:after {
+					@extend %clear;
+				}
+
+				> li {
+					width: 100% / $default-length;
+					float: left;
+				}
+
+				@for $i from $default-length through $max-length { //group list的child
+
+					&[data-child="#{$i}"] {
+
+						> li {
+							width: 100% / $i; //均分li
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@mixin default-length( $length ) { //設定預設的單行數量，$length 為預設的數量
+
+		> .inner > .content > .inner {
+
+			&:after {
+				@extend %clear;
+			}
+
+			> ul {
+
+				&:after {
+					@extend %clear;
+				}
+
+				> li {
+					width: 100% / $length;
+					float: left;
+				}
+			}
+
+			> [data-index][data-type] {
+				width: 100% / $length;
+				float: left;
+			}
+		}
+	}
+
+	@mixin default-length-hide-more( $length ) { //設定預設的單行數量，並且隱藏超過的，$length 為預設的數量
+		@include default-length( $length );
+
+		> .inner > .content > .inner {
+
+			> ul {
+
+				> li {
+
+					&:nth-child(n+#{$length + 1}) {
+						display: none;
+					}
+
+					$li: ' ';
+
+					@for $i from 1 through $length {
+
+						$li: $li + '+ li '; 
+					}
+
+					&#{$li}{
+						display: none;
+					}
+				}
+			}
+
+			> [data-index][data-type] {
+
+				&:nth-child(n+#{$length + 1}) {
+					display: none;
+				}
+
+				$div: ' ';
+
+				@for $i from 1 through $length {
+
+					$div: $div + '+ [data-index][data-type] '; 
+				}
+
+				&#{$div}{
+					display: none;
+				}
+			}
+		}
+	}
+
+	@mixin set-length( $max-length: $max_aLineLength ) { //手動設定單行數量，$max-length 為 data-aLineLength 的最大數量
+
+		@for $i from 1 through $max-length { //算設定分割
+
+			&[data-aLineLength="#{$i}"] > .inner > .content > .inner {
+
+				&:after {
+					@extend %clear;
+				}
+
+				> ul {
+
+					&:after {
+						@extend %clear;
+					}
+
+					> li {
+						width: 100% / $i;
+						display: block;
+					}
+				}
+
+				> [data-index][data-type] {
+					width: 100% / $i;
+				}
+			}
+		}
+	}
+
+	@mixin set-length-hide-more( $max-length: $max_aLineLength ) { //手動設定單行數量，並且隱藏超過的，$max-length 為 data-aLineLength 的最大數量
+		@include set-length( $max-length );
+
+		@for $i from 1 through $max-length { //算設定分割
+
+			&[data-aLineLength="#{$i}"] > .inner > .content > .inner {
+
+				> ul {
+
+					> li {
+						display: block;
+
+						&:nth-child(n+#{$i + 1}) {
+							display: none;
+						}
+
+						$li: ' ';
+
+						@for $j from 1 through $i {
+
+							$li: $li + '+ li '; 
+						}
+
+						&#{$li}{
+							display: none;
+						}
+					}
+				}
+
+				> [data-index][data-type] {
+
+					&:nth-child(n+#{$i + 1}) {
+						display: none;
+					}
+
+					$li: ' ';
+
+					@for $j from 1 through $i {
+
+						$li: $li + '+ li '; 
+					}
+
+					&#{$li}{
+						display: none;
+					}
+				}
+			}
 		}
 	}
 

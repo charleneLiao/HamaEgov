@@ -8,11 +8,9 @@
 	type 4 清單
 */
 
-$min_child: 1; //最少的child數量
-$max_child: 10; //最多的child數量
+@import 'sys_variable'; //系統變數
 
-$min_aLineLength: 2; //最少的單行數量
-$max_aLineLength: 10; //最多的單行數量
+@import 'base_variable'; //變數
 
 [data-index][data-type] {
 	min-height: 1px;

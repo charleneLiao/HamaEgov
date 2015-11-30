@@ -113,7 +113,6 @@
 							input {
 								display: block;
 								width: 100%;
-								background-color: $white;
 							}
 						}
 
@@ -236,7 +235,7 @@
 					position: relative;
 
 					span {
-						$icon-width: 40px;
+						$icon-width: 36px;
 
 						display: block;
 
@@ -247,7 +246,6 @@
 							input {
 								display: block;
 								width: 100%;
-								background-color: $white;
 							}
 						}
 
@@ -277,7 +275,6 @@
 					
 					ul {
 						@extend %reset;
-
 					}
 
 					li {
@@ -489,11 +486,11 @@
 				}
 			}
 
-			.fieldset {
+			.form {
 
 			}
 
-			.legend {
+			.fieldset {
 				margin-top: $interval-s;
 				padding: $interval-m;
 				background-color: $light;
@@ -678,39 +675,42 @@
 					display: block;
 				}
 
-				.is-this-week {
+				.event { //有事件
+					text-decoration: underline;
+				}
+
+				.this-week { //這週
 					background-color: $white;
 				}
 
-				.is-prev-mounth {
+				.prev-mounth { //上個月的日期
 					color: $gray;
 				}
 
-				.is-next-mounth {
+				.next-mounth { //下個月的日期
 					color: $gray;
 				}
 
-				.is-weekend {
+				.weekend { //假日
+					color: $title-color;
 
+					&.prev-mounth, &.next-mounth {
+						color: mix( $deep-gray, $title-color );
+					}
 				}
 
-				.is-today {
+				.today { //今天
 					background-color: $major-color;
 					color: $white;
-
-					&.is-active {
-						color: inherit;
-					}
 
 					&:hover {
 						background-color: deeper($major-color);
 					}
 				}
 
-				.is-active {
+				.is-active { //被選擇
 					border: $border;
 					border-color: $minor-color;
-					color: $minor-color;
 				}
 			}
 
@@ -751,6 +751,97 @@
 
 		.footer {
 			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//電子報================================================================
+
+	&.epaper {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('email');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+
+			}
+
+			.fieldset{
+
+				span {
+					display: block;
+
+					&.text {
+
+					}
+
+					&.submit {
+						display: block;
+						margin-top: $interval-s;
+						text-align: right;
+
+						a {
+							@extend %btn;
+						}
+					}
+				}
+
+				input {
+
+					&[type="text"] {
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.footer {
 
 			> .inner {
 

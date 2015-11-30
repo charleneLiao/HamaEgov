@@ -135,6 +135,10 @@
 		}
 
 		.base-header & {
+			$li_default_length: 6;
+			$li_max_length: 10;
+
+			@include default-min-length($li_default_length, $li_max_length);
 			background-color: $light;
 			position: relative;
 			z-index: 1;
@@ -167,15 +171,10 @@
 					> .inner {
 
 						> ul {
-							$li_default_length: 6; // li的預設數量
-							$li_max_length: 10; // li的最大數量
-
 							@extend %reset;
 
 							> li {
 								position: relative;
-								width: 100% / $li_default_length;
-								float: left;
 
 								+ li {
 
@@ -186,12 +185,12 @@
 										top: $interval-s;
 										bottom: $interval-s;
 										left: 0;
-										width: 1px;
-										background-color: $light-gray;
+										width: $border-width;
+										background-color: $border-color;
 									}
 								}
 
-								> [data-index][data-type] {
+								[data-index][data-type] {
 									margin: 0;
 									padding: 0;
 									top: 0;
@@ -221,7 +220,7 @@
 										margin: 0;
 										padding: 0;
 
-										.header {
+										> .header {
 											display: block;
 
 											> .inner {
@@ -284,7 +283,7 @@
 											}
 										}
 
-										.content {
+										> .content {
 											display: none;
 											position: absolute;
 											top: 100%;
@@ -293,15 +292,15 @@
 
 											> .inner {
 												padding: $interval-xs;
-												background-color: $light;
+												background-color: $white;
 												border: $border;
+												box-shadow: $box-shadow;
 											}
 										}
 
-										.footer {
+										> .footer {
 											display: none;
 										}
-
 									}
 								}
 
@@ -341,10 +340,6 @@
 							@for $i from $li_default_length through $li_max_length { //group的child
 
 								&[data-child="#{$i}"] {
-
-									> li {
-										width: 100% / $i; //均分li
-									}
 
 									@for $j from 2 through $li_max_length { //li的index
 
@@ -411,10 +406,6 @@
 									}
 								}
 							}
-
-							&:after {
-								@extend %clear;
-							}
 						}
 					}
 				}
@@ -449,7 +440,8 @@
 		}
 
 		.base-footer & {
-			background-color: $light-gray;
+			@include default-min-length(6);
+			background-color: $light;
 			padding: $interval-l 0;
 
 			> .inner {
@@ -480,14 +472,9 @@
 					> .inner {
 
 						> ul {
-							$li_default_length: 6; // li的預設數量
-							$li_max_length: 10; // li的最大數量
-
 							@extend %reset;
 
 							> li {
-								width: 100% / $li_default_length;
-								float: left;
 
 								> [data-index][data-type] {
 									margin: 0;
@@ -568,20 +555,6 @@
 										}	
 									}
 								}
-							}
-
-							@for $i from $li_default_length through $li_max_length { //group list的child
-
-								&[data-child="#{$i}"] {
-
-									> li {
-										width: 100% / $i; //均分li
-									}
-								}
-							}
-
-							&:after {
-								@extend %clear;
 							}
 						}
 					}
@@ -850,6 +823,8 @@
 	&.album {
 
 		.base-module-area & {
+			@include default-length-hide-more(2);
+			@include set-length-hide-more();
 
 			> .inner {
 
@@ -877,39 +852,17 @@
 				}
 
 				> .content {
-					$length: 2; //數量
 
 					> .inner {
 
 						> ul {
 							@extend %reset;
 
-							&:after {
-								@extend %clear;
-							}
-
 							> li {
 								@extend %clear-inner-module;
-								width: 100% / $length;
-								float: left;
 
 								> [data-index][data-type] {
 									padding: $interval-xs;
-								}
-
-								$li: ' ';
-
-								@for $i from 1 through $length {
-
-									$li: $li + '+ li '; 
-								}
-
-								&#{$li}{
-									display: none;
-								}
-
-								&:nth-child(n+#{$length + 1}) {
-									display: none;
 								}
 							}
 						}
@@ -971,17 +924,9 @@
 					> .inner {
 
 						> ul {
-							@extend %reset;
 
 							> li {
-								$li_length: 4;
 
-								width: 100% / $li_length;
-								float: left;
-							}
-
-							&:after {
-								@extend %clear;
 							}
 						}
 					}
