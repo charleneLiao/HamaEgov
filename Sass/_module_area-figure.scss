@@ -60,106 +60,150 @@
 		}
 	}
 
-//相簿圖片================================================================
+//相簿================================================================
 
 	&.album {
-		margin: $interval-xs !important;
-		overflow: hidden;
 
-		&:hover {
+		.base-module-area & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('camera');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
 
 			.content {
 
+				> .inner {
+
+				}
+
+				.divition {
+
+					&:hover {
+
+						.image {
+
+							&:before {
+								opacity: 0;
+							}
+						}
+
+						.essay {
+							background-color: $light-gray;
+						}
+					}
+				}
+
+				.image {
+					position: relative;
+
+					&:before {
+						content: $content;
+						display: block;
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background-color: rgba($black, $opacity-m);
+						transition: $transition;
+					}
+
+					span {
+						@extend %cover-bg;
+						display: block;
+						height: 120px;
+					}
+
+					img {
+						display: none;
+					}
+				}
+
+				.essay {
+					padding: $interval-s;
+					background-color: $light;
+					transition: $transition;
+				}
+
+				.figcaption {
+					margin-bottom: $interval-s;
+					font-size: $font-size-l;
+					color: $title-color;
+
+					span {
+
+					}
+				}
+
+				.label {
+					margin: $interval-s 0;
+
+					ul {
+						@extend %reset;
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					font-size: $font-size-s;
+					color: $span-color;
+				}
+
 				.paragraph {
-					display: block;
-				}
-			}
-		}
+					margin-top: $interval-s;
 
-		> .inner {
+					p {
+						@extend %reset;
+					}
 
-		}
+					span {
 
-		.header {
-			display: none;
-
-			> .inner {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-				position: relative;
-			}
-
-			.image {
-
-				span {
-					@extend %cover-bg;
-					display: block;
-				}
-
-				a {
-					display: block;
-					height: 200px;
-				}
-
-				img {
-					display: none;
+					}
 				}
 			}
 
-			.division {
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				padding: $interval-m;
-				background-color: $black;
-				background-color: rgba( $black, $opacity-h );
-			}
+			.footer {
 
-			.figcaption {
-				@extend %ellipsis;
-				margin: $interval-s 0;
-				font-size: $font-size-l;
-				color: $white;
+				> .inner {
 
-				span {
-					color: inherit;
 				}
-
-				a {
-					color: inherit;
-				}
-			}
-
-			.list {
 
 				ul {
-					@extend %reset;
-					color: $gray;
-					font-size: $font-size-s;
+
 				}
 
 				li {
-					@extend %ellipsis;
-					color: inherit;
-					font-size: inherit;
+
 				}
 
 				span {
@@ -168,20 +212,142 @@
 
 				a {
 
+				}
+			}
+		}
+
+		.base-page-area & {
+			margin: $interval-xs !important;
+			overflow: hidden;
+
+			&:hover {
+
+				.content {
+
+					.paragraph {
+						display: block;
+					}
+				}
+			}
+
+			> .inner {
+
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					position: relative;
+				}
+
+				.divition {
+
+				}
+
+				.image {
+
+					span {
+						@extend %cover-bg;
+						display: block;
+						height: 200px;
+					}
+
+					img {
+						display: none;
+					}
+				}
+
+				.essay {
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					padding: $interval-m;
+					background-color: $black;
+					background-color: rgba( $black, $opacity-h );
+				}
+
+				.figcaption {
+					@extend %ellipsis;
+					margin: $interval-s 0;
+					font-size: $font-size-l;
+					color: $white;
+
+					span {
+						color: inherit;
+					}
+				}
+
+				.label {
+
+					ul {
+						@extend %reset;
+						color: $gray;
+						font-size: $font-size-s;
+					}
+
+					li {
+						@extend %ellipsis;
+						color: inherit;
+						font-size: inherit;
+					}
+
+					span {
+
+					}
 				}
 
 				/*i*/.mask {
 
 				}
+
+				.paragraph {
+					display: none;
+
+					p {
+						@extend %reset;
+						margin: $interval-s 0;
+						color: $white;
+					}
+
+					span {
+
+					}
+				}
 			}
 
-			.paragraph {
-				display: none;
+			.footer {
 
-				p {
-					@extend %reset;
-					margin: $interval-s 0;
-					color: $white;
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
 				}
 
 				span {
@@ -191,29 +357,6 @@
 				a {
 
 				}
-			}
-		}
-
-		.footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
 			}
 		}
 	}

@@ -59,4 +59,143 @@
 			}
 		}
 	}
+
+//訊息================================================================
+
+	&.message {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('message');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			.divition {
+				padding: $interval-s;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.image {
+				float: left;
+				margin-right: $interval-m;
+
+				span {
+					@extend %cover-bg;
+					display: block;
+					width: 80px;
+					height: 80px;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				margin-bottom: $interval-s;
+				font-size: $font-size-l;
+				color: $title-color;
+
+				span {
+
+				}
+			}
+
+			.label {
+				margin: $interval-s 0;
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				font-size: $font-size-s;
+				color: $span-color;
+			}
+
+			.paragraph {
+				margin-top: $interval-s;
+
+				p {
+					@extend %reset;
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
 }

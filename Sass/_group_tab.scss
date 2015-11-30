@@ -32,11 +32,101 @@
 		> .inner > .content {
 
 			> .inner {
-				
+
+				> ul {
+
+					> li {
+						
+					}
+				}
 			}
 		}
 
 		> .inner > .footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁籤================================================================
+
+	&.tab {
+
+		> .inner {
+
+		}
+
+		> .inner > .header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .inner > .content {
+
+			> .inner {
+
+				> ul {
+					@extend %reset;
+
+					> li {
+						@extend %clear-inner-module;
+						margin-bottom: $interval-s;
+
+						+ li { //第一個 li 是頁籤
+							margin-bottom: 0;
+
+							+ li {
+								display: none;
+							}
+						}
+
+						[data-index][data-type] { //頁籤裡的 footer 不是 absolute
+
+							.footer {
+								position: static;
+								margin-top: $interval-s;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .inner > .footer {
+			@extend %footer-btns;
 
 			> .inner {
 

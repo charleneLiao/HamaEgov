@@ -776,7 +776,7 @@
 	&.slider {
 
 		> .inner {
-			background-color: $light;
+			
 		}
 
 		.header {
@@ -786,7 +786,11 @@
 			}
 
 			h4 {
-				display: none;
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('slideshow');
+				}
 			}
 
 			span {
@@ -806,10 +810,6 @@
 
 			ul {
 				@extend %reset;
-
-				&:after {
-					@extend %clear;
-				}
 			}
 
 			li {
@@ -835,62 +835,143 @@
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
 
-				&.next, &.prev {
-
-					@include at('no-js') {
-						display: none;
-					}
-
-					a {
-						$btn-width: 45px;
-
-						@extend %hide-text;
-						position: absolute;
-						top: 20%;
-						bottom: 20%;
-						display: block;
-						width: $btn-width;
-						transition: $transition;
-						background-color: $light;
-						background-color: rgba($light, $opacity-h);
-
-						&:hover {
-							background-color: $light-gray;
-							background-color: rgba($light-gray, $opacity-h);
-						}
-					}
-				}
 
 				&.prev {
 
-					a {
-						left: 0;
-						@include bg-to-pic('icon-pic/away-b-left.png', false);
-					}
 				}
 
 				&.next {
 
-					a {
-						right: 0;
-						@include bg-to-pic('icon-pic/away-b-right.png', false);
-					}
 				}
 
 				&.more {
-					display: none;
+
 				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//連結================================================================
+
+	&.link {
+		@extend %a-line-length;
+		margin-top: 0;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('link');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$length: 2; //數量
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				float: left;
+				width: 100% / $length;
+			}
+
+			span {
+				margin: $interval-xs;
+				display: block;
+			}
+
+			a {
+				position: relative;
+				display: block;
+
+				&:before {
+					content: $content;
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: rgba($black, $opacity-m);
+					transition: $transition;
+				}
+
+				&:hover {
+
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
 			}
 
 			span {

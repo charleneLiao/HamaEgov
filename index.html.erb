@@ -1,32 +1,124 @@
-<div data-index="1" data-type="3" data-child="3"><div class="inner">
-	<div class="header"><div class="inner">
-	</div></div>
-	<div class="content"><div class="inner">
-
-	</div></div>
-</div></div>
-
-<div data-index="2" data-type="3" data-child="3"><div class="inner">
+<div data-index="1" data-type="3" data-child="1"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
 	<!-- slider 輪播 -->
-		<%= render :partial => '/Module/list-pic_slider', :locals => { :index => 1 } %>
-	<!-- slider 結束 -->
-
-	<!-- anchor 錨點 -->
-		<%= render :partial => '/Module/list-text_anchor', :locals => { :index => 2 } %>
-	<!-- anchor 結束 -->
-
-	<!-- slider 輪播 -->
-		<%= render :partial => '/Module/list-text_slider', :locals => { :index => 3 } %>
+		<%#= render :partial => '/Module/list-pic_slider', :locals => { :index => 1 } %>
 	<!-- slider 結束 -->
 
 	</div></div>
 </div></div>
 
-<div data-index="3" data-type="3" data-child="3"><div class="inner">
+<div data-index="2" data-type="1" data-child="3"><div class="inner">
+	<div class="header"><div class="inner">
+	</div></div>
+	<div class="content"><div class="inner">
+
+	<div data-index="1" data-type="3" data-child="7"><div class="inner">
+		<div class="header"><div class="inner">
+		</div></div>
+		<div class="content"><div class="inner">
+
+		<!-- calender 月曆 -->
+			<%= render :partial => '/Module/area-form_calender', :locals => { :index => 1 } %>
+		<!-- calender 結束 -->
+
+		<!-- rss 訂閱 -->
+			<%= render :partial => '/Module/list-text_rss', :locals => { :index => 2, :label => true } %>
+		<!-- rss 結束 -->
+
+		<!-- anchor 錨點 -->
+			<%= render :partial => '/Module/list-text_anchor', :locals => { :index => 3 } %>
+		<!-- anchor 結束 -->
+
+		<!-- vote 投票 -->
+			<%= render :partial => '/Module/area-form_vote', :locals => { :index => 4 } %>
+		<!-- vote 結束 -->
+
+		</div></div>
+	</div></div>
+
+	<div data-index="2" data-type="3" data-child="5"><div class="inner">
+		<div class="header"><div class="inner">
+		</div></div>
+		<div class="content"><div class="inner">
+
+		<!-- slider 輪播 -->
+			<%= render :partial => '/Module/list-pic_slider', :locals => { :index => 1 } %>
+		<!-- slider 結束 -->
+
+		<!-- slider 輪播 -->
+			<%= render :partial => '/Module/list-text_slider', :locals => { :index => 2 } %>
+		<!-- slider 結束 -->
+
+		<!-- tab 頁籤 -->
+			<%= render :partial => '/Module/group-tab_tab', :locals => { :index => 3 } %>
+		<!-- tab 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 4, :inner => 'area-essay_message' } %>
+		<!-- classical-slider 結束 -->
+
+		<!-- message 消息 -->
+			<%= render :partial => '/Module/area-essay_message', :locals => { :index => 5 } %>
+		<!-- message 結束 -->
+
+		<!-- message 訊息 -->
+			<%= render :partial => '/Module/group-list_message', :locals => { :index => 6 } %>
+		<!-- message 結束 -->
+
+		</div></div>
+	</div></div>
+
+	<div data-index="3" data-type="3" data-child="10"><div class="inner">
+		<div class="header"><div class="inner">
+		</div></div>
+		<div class="content"><div class="inner">
+
+		<!-- link 連結 -->
+			<%= render :partial => '/Module/list-text_link', :locals => { :index => 1, :label => true } %>
+		<!-- link 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 2, :inner => 'list-text_link' } %>
+		<!-- classical-slider 結束 -->
+
+		<!-- link 連結 -->
+			<%= render :partial => '/Module/list-pic_link', :locals => { :index => 3 } %>
+		<!-- link 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 4, :inner => 'list-pic_link' } %>
+		<!-- classical-slider 結束 -->
+
+		<!-- link 連結 -->
+			<%= render :partial => '/Module/area-form_link', :locals => { :index => 5 } %>
+		<!-- link 結束 -->
+
+		<!-- album 相簿 -->
+			<%= render :partial => '/Module/area-figure_album', :locals => { :index => 6 } %>
+		<!-- album 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 7, :inner => 'area-figure_album' } %>
+		<!-- classical-slider 結束 -->
+
+		<!-- album 相簿 -->
+			<%= render :partial => '/Module/group-list_album', :locals => { :index => 8 } %>
+		<!-- album 結束 -->
+
+		<!-- classical-slider 古典輪播 -->
+			<%= render :partial => '/Module/group-list_classical-slider', :locals => { :index => 9, :inner => 'group-list_album' } %>
+		<!-- classical-slider 結束 -->
+
+		</div></div>
+	</div></div>
+
+	</div></div>
+</div></div>
+
+<div data-index="3" data-type="3" data-child="0"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">

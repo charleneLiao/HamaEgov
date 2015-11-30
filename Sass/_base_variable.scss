@@ -9,9 +9,9 @@
 
 //灰階================================================================
 	$white: #ffffff; //非常淺
-	$light: #f5f5f5; //淺色
-	$light-gray: #e0e0e0; //淺灰
-	$gray: #898989; //灰色
+	$light: #f0f0f0; //淺色
+	$light-gray: #e8e8e8; //淺灰
+	$gray: #bbbbbb; //灰色
 	$deep-gray: #646464; //深灰
 	$deep: #343434; //深色
 	$black: #1a1a1a; //非常深
@@ -132,8 +132,8 @@
 
 
 //按鈕樣式================================================================
-	$btn-bg-color: $gray; //按鈕背景色
-	$btn-hover-bg-color: $deep-gray; //按鈕滑入顏色
+	$btn-bg-color: $deep-gray; //按鈕背景色
+	$btn-hover-bg-color: $deep; //按鈕滑入顏色
 	$btn-text-color: $white; //按鈕文字顏色
 	$btn-padding: $interval-s $interval-m; //按鈕內邊距，決定按鈕大小
 	$btn-padding-xs: $interval-xs $interval-s; //按鈕內邊距，決定按鈕大小

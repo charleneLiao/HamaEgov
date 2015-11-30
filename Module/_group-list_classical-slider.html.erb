@@ -9,7 +9,7 @@
 
 
 <% if ( li_length > 0 ) %>
-	<div class="group-list essay-slider" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
+	<div class="group-list classical-slider" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
 		<div class="header"><div class="inner">
 			<h3><span><a>輪播</a></span></h3>
 		</div></div>
@@ -20,7 +20,7 @@
 					<li data-index="<%= i + 1 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => '/Module/' + inner, :locals => { :index => 1 } %>
+						<%= render :partial => '/Module/' + inner, :locals => { :index => 1, :label => true } %>
 					<!-- <%= inner %> 結束 -->
 
 					</li>

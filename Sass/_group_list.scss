@@ -68,68 +68,68 @@
 
 //選單列表================================================================
 
-	&.group-list-nav {
+	&.nav {
 
 		.base-mobile & {
 
 			> .inner {
 				margin: 0;
-			}
 
-			> .inner > .header {
-				display: none;
+				> .header {
+					display: none;
 
-				> .inner {
+					> .inner {
 
-				}
+					}
 
-				h3 {
+					h3 {
 
-				}
+					}
 
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
-					> ul {
-						@extend %reset;
-
-						> li {
+					span {
 							
+					}
+
+					a {
+
+					}
+				}
+
+				> .content {
+
+					> .inner {
+
+						> ul {
+							@extend %reset;
+
+							> li {
+								
+							}
 						}
 					}
 				}
-			}
 
-			> .inner > .footer {
+				> .footer {
 
-				> .inner {
+					> .inner {
 
-				}
+					}
 
-				ul {
+					ul {
 
-				}
+					}
 
-				li {
+					li {
 
-				}
+					}
 
-				span {
+					span {
 
-				}
+					}
 
-				a {
+					a {
 
+					}
 				}
 			}
 		}
@@ -141,227 +141,233 @@
 
 			> .inner {
 				@extend %center;
-			}
 
-			> .inner > .header {
-				display: none;
+				> .header {
+					display: none;
 
-				> .inner {
+					> .inner {
 
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
+						> ul {
+							$li_default_length: 6; // li的預設數量
+							$li_max_length: 10; // li的最大數量
 
-				a {
+							@extend %reset;
 
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
-					> ul {
-						$li_default_length: 6; // li的預設數量
-						$li_max_length: 10; // li的最大數量
-
-						@extend %reset;
-
-						> li {
-							position: relative;
-							width: 100% / $li_default_length;
-							float: left;
-
-							+ li {
-
-								&:before {
-									content: $content;
-									display: block;
-									position: absolute;
-									top: $interval-s;
-									bottom: $interval-s;
-									left: 0;
-									width: 1px;
-									background-color: $light-gray;
-								}
-							}
-
-							> [data-index][data-type] {
-								margin: 0;
-								padding: 0;
-								top: 0;
-								left: auto;
-								right: auto;
+							> li {
 								position: relative;
+								width: 100% / $li_default_length;
+								float: left;
 
-								&:hover {
+								+ li {
 
-									> .inner > .header {
+									&:before {
+										content: $content;
+										display: block;
+										position: absolute;
+										top: $interval-s;
+										bottom: $interval-s;
+										left: 0;
+										width: 1px;
+										background-color: $light-gray;
+									}
+								}
 
-										a {
-											background-color: $minor-color;
-											color: $white;
+								> [data-index][data-type] {
+									margin: 0;
+									padding: 0;
+									top: 0;
+									left: auto;
+									right: auto;
+									position: relative;
+
+									&:hover {
+
+										> .inner {
+
+											.header {
+
+												a {
+													background-color: $minor-color;
+													color: $white;
+												}
+											}
+
+											.content {
+												display: block;
+											}
 										}
 									}
-
-									> .inner > .content {
-										display: block;
-									}
-								}
-
-								> .inner {
-									
-								}
-
-								> .inner > .header {
-									display: block;
 
 									> .inner {
+										margin: 0;
+										padding: 0;
+
+										.header {
+											display: block;
+
+											> .inner {
+
+											}
+
+											h2 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											h3 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											h4 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											span {
+												display: block;
+											}
+
+											a {
+												@extend %ellipsis;
+												display: block;
+												padding: $interval-s;
+												margin: $interval-s;
+												text-align: center;
+												font-size: $font-size-l;
+												transition: $transition;
+
+												&:hover {
+													background-color: $minor-color;
+													color: $white;
+												}
+											}
+										}
+
+										.content {
+											display: none;
+											position: absolute;
+											top: 100%;
+											width: 100%;
+											left: 0;
+
+											> .inner {
+												padding: $interval-xs;
+												background-color: $light;
+												border: $border;
+											}
+										}
+
+										.footer {
+											display: none;
+										}
 
 									}
+								}
 
-									h2 {
-										@extend %reset;
+								@for $i from 1 through $li_max_length { //ul的寬度
 
-										&:before {
-											display: none;
-										}
+									&[data-width="#{$i}"] { //li的寬度< li的最大數量
 
-										&:after {
-											display: none;
-										}
-									}
+										> [data-index][data-type] {
 
-									h3 {
-										@extend %reset;
-
-										&:before {
-											display: none;
-										}
-
-										&:after {
-											display: none;
-										}
-									}
-
-									h4 {
-										@extend %reset;
-
-										&:before {
-											display: none;
-										}
-
-										&:after {
-											display: none;
-										}
-									}
-
-									span {
-										display: block;
-									}
-
-									a {
-										@extend %ellipsis;
-										display: block;
-										padding: $interval-s;
-										margin: $interval-s;
-										text-align: center;
-										font-size: $font-size-l;
-
-										&:hover {
-											background-color: $minor-color;
-											color: $white;
+											> .inner > .content {
+												width: 100% * $i;
+											}
 										}
 									}
 								}
 
-								> .inner > .content {
-									display: none;
-									position: absolute;
-									top: 100%;
-									width: 100%;
-									left: 0;
+								@for $i from 1 through $li_max_length { //ul的寬度
 
-									> .inner {
-										padding: $interval-xs;
-										background-color: $light;
-										border: $border;
-									}
-								}
+									&[data-width="#{$i}"] { //li的寬度< li的最大數量
 
-								> .inner > .footer {
-									display: none;
-								}
-							}
+										> .nav {
 
-							@for $i from 1 through $li_max_length { //ul的寬度
+											> .inner > .content {
 
-								&[data-width="#{$i}"] { //li的寬度< li的最大數量
+												ul {
 
-									> [data-index][data-type] {
-
-										> .inner > .content {
-											width: 100% * $i;
-										}
-									}
-								}
-							}
-
-							@for $i from 1 through $li_max_length { //ul的寬度
-
-								&[data-width="#{$i}"] { //li的寬度< li的最大數量
-
-									> .nav {
-
-										> .inner > .content {
-
-											ul {
-
-												li {
-													width: 100% / $i;
+													li {
+														width: 100% / $i;
+													}
 												}
 											}
 										}
 									}
 								}
 							}
-						}
 
-						@for $i from $li_default_length through $li_max_length { //group的child
+							@for $i from $li_default_length through $li_max_length { //group的child
 
-							&[data-child="#{$i}"] {
+								&[data-child="#{$i}"] {
 
-								> li {
-									width: 100% / $i; //均分li
-								}
+									> li {
+										width: 100% / $i; //均分li
+									}
 
-								@for $j from 2 through $li_max_length { //li的index
+									@for $j from 2 through $li_max_length { //li的index
 
-									> [data-index="#{$j}"] { //li的順序
+										> [data-index="#{$j}"] { //li的順序
 
-										@for $k from 1 through $li_max_length { //li的寬度
+											@for $k from 1 through $li_max_length { //li的寬度
 
-											&[data-width="#{$k}"] { //li的寬度< li的最大數量
+												&[data-width="#{$k}"] { //li的寬度< li的最大數量
 
-												$li_width: min($k, $i); //li的寬度 > group的child，li的寬度 = group的child
-												$all_width: $j - 1 + $li_width;
+													$li_width: min($k, $i); //li的寬度 > group的child，li的寬度 = group的child
+													$all_width: $j - 1 + $li_width;
 
-												> [data-index][data-type] {
+													> [data-index][data-type] {
 
-													> .inner {
-														
-													}
+														> .inner {
+															
+														}
 
-													> .inner > .content {
+														> .inner > .content {
 
-														@if( $all_width > $i ) {  //如果li數量大於li寬度
-															left: 100% * ( $i - $all_width ); //就推回來
+															@if( $all_width > $i ) {  //如果li數量大於li寬度
+																left: 100% * ( $i - $all_width ); //就推回來
+															}
 														}
 													}
 												}
@@ -370,33 +376,33 @@
 									}
 								}
 							}
-						}
 
-						@for $i from 1 through $li_default_length { //group的child
+							@for $i from 1 through $li_default_length { //group的child
 
-							&[data-child="#{$i}"] {
+								&[data-child="#{$i}"] {
 
-								@for $j from 2 through $li_max_length { //li的index
+									@for $j from 2 through $li_max_length { //li的index
 
-									> [data-index="#{$j}"] { //li的順序
+										> [data-index="#{$j}"] { //li的順序
 
-										@for $k from 1 through $li_max_length { //li的寬度
+											@for $k from 1 through $li_max_length { //li的寬度
 
-											&[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
+												&[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
 
-												$li_width: min($k, $li_default_length); //li的寬度 > group的child，li的寬度 = group的child
-												$all_width: $j - 1 + $li_width;
+													$li_width: min($k, $li_default_length); //li的寬度 > group的child，li的寬度 = group的child
+													$all_width: $j - 1 + $li_width;
 
-												> [data-index][data-type] {
+													> [data-index][data-type] {
 
-													> .inner {
+														> .inner {
 
-													}
+														}
 
-													> .inner > .content {
+														> .inner > .content {
 
-														@if( $all_width > $li_default_length ) { //如果li數量大於li寬度
-															left: 100% * ( $li_default_length - $all_width ); //就推回來
+															@if( $all_width > $li_default_length ) { //如果li數量大於li寬度
+																left: 100% * ( $li_default_length - $all_width ); //就推回來
+															}
 														}
 													}
 												}
@@ -405,35 +411,35 @@
 									}
 								}
 							}
-						}
 
-						&:after {
-							@extend %clear;
+							&:after {
+								@extend %clear;
+							}
 						}
 					}
 				}
-			}
 
-			> .inner > .footer {
+				> .footer {
 
-				> .inner {
+					> .inner {
 
-				}
+					}
 
-				ul {
+					ul {
 
-				}
+					}
 
-				li {
+					li {
 
-				}
+					}
 
-				span {
+					span {
 
-				}
+					}
 
-				a {
+					a {
 
+					}
 				}
 			}
 		}
@@ -443,22 +449,266 @@
 		}
 
 		.base-footer & {
-			background-color: $light;
+			background-color: $light-gray;
 			padding: $interval-l 0;
 
 			> .inner {
 				@extend %center;
-			}
 
-			> .inner > .header {
-				display: none;
+				> .header {
+					display: none;
+
+					> .inner {
+
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
+				}
+
+				> .content {
+
+					> .inner {
+
+						> ul {
+							$li_default_length: 6; // li的預設數量
+							$li_max_length: 10; // li的最大數量
+
+							@extend %reset;
+
+							> li {
+								width: 100% / $li_default_length;
+								float: left;
+
+								> [data-index][data-type] {
+									margin: 0;
+									padding: 0;
+									top: 0;
+									left: auto;
+									right: auto;
+									position: relative;
+
+									> .inner {
+
+										.header {
+											display: block;
+
+											> .inner {
+
+											}
+
+											h2 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											h3 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											h4 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											span {
+												display: block;
+											}
+
+											a {
+												@extend %ellipsis;
+												display: block;
+												padding: $interval-s $interval-m;
+												margin-bottom: $interval-s;
+												border-bottom: $border;
+												text-align: center;
+												font-size: $font-size-l;
+												color: $body-font-color;
+											}
+										}
+
+										.content {
+											display: block !important;
+											position: static;
+										}
+
+										.footer {
+											display: none;
+										}	
+									}
+								}
+							}
+
+							@for $i from $li_default_length through $li_max_length { //group list的child
+
+								&[data-child="#{$i}"] {
+
+									> li {
+										width: 100% / $i; //均分li
+									}
+								}
+							}
+
+							&:after {
+								@extend %clear;
+							}
+						}
+					}
+				}
+
+				> .footer {
+
+					> .inner {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+		}
+
+		.base-section & , .base-module-area & {
+			@extend %page;
+
+			> .inner {
+
+				> .header {
+					display: none;
+
+					> .inner {
+
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
+				}
+
+				> .content {
+
+					> .inner {
+
+						> ul {
+							@extend %reset;
+
+							> li {
+
+								+ li {
+									margin-top: $interval-s;
+								}
+							}
+						}
+					}
+
+					.nav {
+						margin: 0;
+
+						.header {
+							display: block;
+						}
+
+						.content {
+
+							ul {
+								padding-left: $interval-xl;
+							}
+						}
+					}
+				}
+
+				> .footer {
+
+					> .inner {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+		}
+	}
+
+//多重檔案下載群組================================================================
+
+	&.file-download-multiple {
+
+		> .inner {
+
+			> .header {
 
 				> .inner {
 
 				}
 
 				h3 {
-
+					@extend %page-title;
 				}
 
 				span {
@@ -470,39 +720,24 @@
 				}
 			}
 
-			> .inner > .content {
+			> .content {
 
 				> .inner {
 
 					> ul {
-						$li_default_length: 6; // li的預設數量
-						$li_max_length: 10; // li的最大數量
-
 						@extend %reset;
 
 						> li {
-							width: 100% / $li_default_length;
-							float: left;
-						}
-
-						@for $i from $li_default_length through $li_max_length { //group list的child
-
-							&[data-child="#{$i}"] {
-
-								> li {
-									width: 100% / $i; //均分li
-								}
+							
+							+ li {
+								margin-top: $interval-s;
 							}
-						}
-
-						&:after {
-							@extend %clear;
 						}
 					}
 				}
 			}
 
-			> .inner > .footer {
+			> .footer {
 
 				> .inner {
 
@@ -525,15 +760,15 @@
 				}
 			}
 		}
+	}
 
-		.base-section & {
-			@extend %page;
+//內頁列表================================================================
 
-			> .inner {
+	&.page-list {
 
-			}
+		> .inner {
 
-			> .inner > .header {
+			> .header {
 				display: none;
 
 				> .inner {
@@ -553,7 +788,7 @@
 				}
 			}
 
-			> .inner > .content {
+			> .content {
 
 				> .inner {
 
@@ -585,7 +820,7 @@
 				}
 			}
 
-			> .inner > .footer {
+			> .footer {
 
 				> .inner {
 
@@ -610,228 +845,324 @@
 		}
 	}
 
-//多重檔案下載群組================================================================
+//相簿================================================================
 
-	&.group-list-file-download-multiple {
+	&.album {
 
-		> .inner {
-
-		}
-
-		> .inner > .header {
+		.base-module-area & {
 
 			> .inner {
 
-			}
+				> .header {
 
-			h3 {
-				@extend %page-title;
-			}
+					> .inner {
 
-			span {
-					
-			}
+					}
 
-			a {
+					h3 {
+						@extend %module-title;
 
-			}
-		}
+						&:before {
+							@include icon-font('camera');
+						}
+					}
 
-		> .inner > .content {
+					span {
+							
+					}
 
-			> .inner {
+					a {
 
-				> ul {
-					@extend %reset;
+					}
+				}
 
-					> li {
-						
-						+ li {
-							margin-top: $interval-s;
+				> .content {
+					$length: 2; //數量
+
+					> .inner {
+
+						> ul {
+							@extend %reset;
+
+							&:after {
+								@extend %clear;
+							}
+
+							> li {
+								@extend %clear-inner-module;
+								width: 100% / $length;
+								float: left;
+
+								> [data-index][data-type] {
+									padding: $interval-xs;
+								}
+
+								$li: ' ';
+
+								@for $i from 1 through $length {
+
+									$li: $li + '+ li '; 
+								}
+
+								&#{$li}{
+									display: none;
+								}
+
+								&:nth-child(n+#{$length + 1}) {
+									display: none;
+								}
+							}
 						}
 					}
 				}
-			}
-		}
 
-		> .inner > .footer {
+				> .footer {
+					@extend %footer-btns;
 
-			> .inner {
+					> .inner {
 
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//選單列表================================================================
-
-	&.group-list-page-list {
-
-		> .inner {
-
-		}
-
-		> .inner > .header {
-			display: none;
-
-			> .inner {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
-				> ul {
-					@extend %reset;
-
-					> li {
-
-						+ li {
-							margin-top: $interval-s;
-						}
 					}
-				}
-			}
-
-			.nav {
-				margin: 0;
-
-				.header {
-					display: block;
-				}
-
-				.content {
 
 					ul {
-						padding-left: $interval-xl;
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
 					}
 				}
 			}
 		}
 
-		> .inner > .footer {
+		.base-page-area & {
 
 			> .inner {
 
-			}
+				> .header {
+					display: none;
 
-			ul {
+					> .inner {
 
-			}
+					}
 
-			li {
+					h3 {
 
-			}
+					}
 
-			span {
+					span {
+							
+					}
 
-			}
+					a {
 
-			a {
+					}
+				}
 
+				> .content {
+
+					> .inner {
+
+						> ul {
+							@extend %reset;
+
+							> li {
+								$li_length: 4;
+
+								width: 100% / $li_length;
+								float: left;
+							}
+
+							&:after {
+								@extend %clear;
+							}
+						}
+					}
+				}
+
+				> .footer {
+
+					> .inner {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
 			}
 		}
-
 	}
 
-//相簿列表================================================================
+//訊息================================================================
 
-	&.group-list-album {
+	&.message {
 
 		> .inner {
 
-		}
+			> .header {
 
-		> .inner > .header {
-			display: none;
+				> .inner {
 
-			> .inner {
+				}
 
-			}
+				h3 {
+					@extend %module-title;
 
-			h3 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
-				> ul {
-					@extend %reset;
-
-					> li {
-						$li_length: 4;
-
-						width: 100% / $li_length;
-						float: left;
+					&:before {
+						@include icon-font('message');
 					}
+				}
 
-					&:after {
-						@extend %clear;
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+							@extend %clear-inner-module;
+
+							+ li {
+								margin-top: $interval-s;
+							}
+						}
 					}
 				}
 			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
 		}
+	}
 
-		> .inner > .footer {
+//古典輪播================================================================
 
-			> .inner {
+	&.classical-slider {
 
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('slideshow');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			ul {
+			> .content {
 
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+							@extend %clear-inner-module;
+
+							+ li {
+								display: none;
+							}
+
+							[data-index][data-type] { //頁籤裡的 footer 不是 absolute
+
+								.footer {
+									position: static;
+									margin-top: $interval-s;
+								}
+							}
+						}
+					}
+				}
 			}
 
-			li {
+			> .footer {
+				@extend %footer-btns;
 
-			}
+				> .inner {
 
-			span {
+				}
 
-			}
+				ul {
 
-			a {
+				}
 
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

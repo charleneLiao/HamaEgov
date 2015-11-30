@@ -247,6 +247,7 @@
 					display: block;
 					padding: $interval-s;
 					text-align: center;
+					transition: $transition;
 
 					&:hover {
 						background-color: $minor-color;
@@ -347,6 +348,7 @@
 				a {
 					display: block;
 					padding: $interval-m;
+					transition: $transition;
 
 					&:before {
 						@include icon-font('keyboard_arrow_right');
@@ -354,8 +356,8 @@
 					}
 
 					&:hover {
-						background-color: $light;
-						color: $deep;
+						background-color: $light-gray;
+						color: $body-font-color;
 					}
 				}
 			}
@@ -436,6 +438,7 @@
 				a {
 					display: block;
 					padding: $interval-xs;
+					transition: $transition;
 
 					&:hover {
 						background-color: $minor-color;
@@ -468,7 +471,7 @@
 			}
 		}
 
-		.base-section & {
+		.base-section & , .base-module-area & {
 			@extend %page;
 
 			> .inner {
@@ -797,14 +800,14 @@
 						&.#{$key}{
 
 							span {
+							}
 
-								a {
-									@include icon-pic('#{$pic}');
-									background-color: $color;
+							a {
+								@include icon-pic('#{$pic}');
+								background-color: $color;
 
-									&:hover {
-										background-color: deeper($color);
-									}
+								&:hover {
+									background-color: deeper($color);
 								}
 							}
 						}
@@ -818,6 +821,7 @@
 				a {
 					@extend %hide-text;
 					display: block !important;
+					transition: $transition;
 				}
 			}
 
@@ -911,6 +915,95 @@
 			}
 
 			.footer {
+				display: none;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-content & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('link');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+
+				}
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					+ li {
+						margin-top: $interval-s;
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %ellipsis;
+					@extend %list;
+					@extend %list-hover;
+				}
+
+				/*i*/.mark {
+					display: inline-block;
+					float: right;
+					color: $span-color;
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
 
 				> .inner {
 
@@ -991,6 +1084,7 @@
 			}
 
 			.footer {
+				display: none;
 
 				> .inner {
 
@@ -1011,6 +1105,96 @@
 				a {
 
 				}
+			}
+		}
+	}
+
+//訂閱================================================================
+
+	&.rss {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %module-title;
+
+				&:before {
+					@include icon-font('stars');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+
+			}
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+				+ li {
+					margin-top: $interval-s;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %ellipsis;
+				@extend %list;
+				@extend %list-hover;
+			}
+
+			/*i*/.mark {
+				display: inline-block;
+				float: right;
+				color: $span-color;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}
@@ -1993,6 +2177,7 @@
 				display: block;
 				padding: $interval-s;
 				text-align: center;
+				transition: $transition;
 
 				&:hover {
 					background-color: $minor-color;
@@ -2043,7 +2228,7 @@
 				@extend %module-title;
 
 				&:before {
-					@include icon-font('message');
+					@include icon-font('slideshow');
 				}
 			}
 
@@ -2082,6 +2267,15 @@
 				@extend %list;
 				@extend %list-hover;
 			}
+
+			.mark {
+				display: inline-block;
+				padding: $interval-xs $interval-s;
+				margin-right: $interval-s;
+				background-color: $span-color;
+				color: $white;
+				font-size: $font-size-s;
+			}
 		}
 
 		.footer {
@@ -2109,6 +2303,104 @@
 				&.more {
 
 				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁籤================================================================
+
+	&.tab {
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+				border-bottom-style: $border-style;
+				border-bottom-width: $border-width;
+				border-bottom-color: $minor-color;
+			}
+
+			li {
+				display: inline-block;
+
+				&.is-active {
+
+					span {
+
+					}
+
+					a {
+						background-color: $minor-color;
+						color: $white;
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $btn-padding;
+				background-color: $light;
+				color: $body-font-color;
+				transition: $transition;
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
 			}
 
 			span {

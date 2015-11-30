@@ -2,6 +2,37 @@
 
 //extend 方法================================================================
 
+	%a-line-length {
+		$min_aLineLength: 1; //最少的單行數量
+		$max_aLineLength: 10; //最多的單行數量
+
+		@for $i from $min_aLineLength through $max_aLineLength { //算設定分割
+
+			&[data-aLineLength="#{$i}"] {
+
+				> .inner{
+
+					> .content {
+
+						> .inner {
+
+							> ul {
+
+								> li {
+									width: 100% / $i;
+								}
+							}
+
+							> [data-index][data-type] {
+								width: 100% / $i;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	%reset-outer { //清除外部
 		margin: 0;
 	}
@@ -20,6 +51,25 @@
 	%reset { //清除全部
 		@extend %reset-outer;
 		@extend %reset-inner;
+	}
+
+	%clear-inner-module { //清除內部群組的 margin
+
+		[data-index][data-type] {
+			margin: 0;
+
+			> .inner {
+				margin: 0;
+			}
+
+			.header {
+				display: none;
+			}
+
+			.content {
+
+			}
+		}
 	}
 
 	%clear { //偽類清除浮動的方法
@@ -90,7 +140,7 @@
 	}
 
 	%module { //模組
-		margin: $interval-l 0;
+		margin: 0 0 $interval-l;
 
 		> .inner {
 			position: relative;
@@ -128,10 +178,18 @@
 			@extend %module;
 		}
 
-		[data-index][data-type="4"] {
+		[data-index][data-type="4"], & [data-index][data-type="2"] {
 			@extend %module;
 
 			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
 				@extend %reset-outer;
 			}
 		}
@@ -167,10 +225,18 @@
 			@extend %page;
 		}
 
-		[data-index][data-type="4"] {
+		[data-index][data-type="4"], & [data-index][data-type="2"] {
 			@extend %page;
 
 			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
 				@extend %reset-outer;
 			}
 		}
@@ -212,7 +278,6 @@
 
 	%btn-xs { //小按鈕
 		@extend %btn;
-
 		padding: $btn-padding-xs;
 		font-size: $font-size-s;
 	}
@@ -250,6 +315,7 @@
 
 		ul {
 			@extend %reset;
+			text-align: right;
 		}
 
 		li {

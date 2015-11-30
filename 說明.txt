@@ -120,7 +120,7 @@
 		05-01 表單類:
 			05-01-01. '表單主題區塊'	div.form>
 			05-01-02. '表單區塊'		.fieldset>
-			05-01-03. '表單標題組件'	legend>a{可選}>span>{標題文字}
+			05-01-03. '表單標題組件'	.legend>a{可選}>span>{標題文字}
 			05-01-04. '輸入框組件'		span.button>input[type='button']
 										span.checkbox>input[type='checkbox']
 										span.color>input[type='color']
@@ -169,6 +169,14 @@
 			05-03-02. '清單區塊'		ul>li>
 										ol>li>
 			05-03-03. '清單內容組件'	span>a{可選}
+			05-03-04. 
+
+		05-03 標籤類:
+			05-03-01. '標籤主題區塊'	div.label>
+										a.label>
+			05-03-02. '標籤區塊'		ul>li>
+										ol>li>
+			05-03-03. '標籤內容組件'	span>a{可選}
 			05-03-04. 
 
 		05-04 文字類:

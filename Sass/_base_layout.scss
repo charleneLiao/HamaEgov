@@ -45,7 +45,7 @@
 	}
 
 	a {
-		color: $hover-color;
+		color: $link-color;
 		text-decoration: none;
 
 		&:link {
@@ -62,6 +62,11 @@
 
 		&:active {
 			color: $active-color;
+		}
+
+		&.divition {
+			display: block;
+			color: $body-font-color;
 		}
 	}
 
