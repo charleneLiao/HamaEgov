@@ -874,8 +874,8 @@
 //連結================================================================
 
 	&.link {
-		@include default-length-hide-more(2);
-		@include set-length-hide-more();
+		@include default-length(2);
+		@include set-length();
 		margin-top: 0;
 
 		> .inner {

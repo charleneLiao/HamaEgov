@@ -222,6 +222,18 @@
 			05-08-01. '附註'			i.mark>a{可選}>{標題文字}
 			05-08-02. 
 
+		05-08 視訊類:
+			05-08-01. '視訊主題區塊'    .video>
+			05-08-02. '視訊區塊'        video>
+			05-08-03. '視訊'            source
+			05-08-04. '註解'            span>a{可選}>{標題文字}
+
+		05-08 音訊類:
+			05-08-01. '音訊主題區塊'    .audio>
+			05-08-02. '音訊區塊'        audio>
+			05-08-03. '音訊'            source
+			05-08-04. '註解'            span>a{可選}>{標題文字}
+
 		05-08 應用:
 			05-06-01. '圖片附註文字'	div.figure>(div.figcaption>span>a{可選}>{標題文字})+(div.images>(div.image>span>a{可選}>img)+(p>span>a{可選}>img))
 			05-06-02. '文章附註圖片'	div.essay>(div.caption>span>a{可選}>{標題文字})+(div.images>(div.image>span>a{可選}>img)+(div.image>span>a{可選}>img))+(p>span>a{可選}>img)
@@ -279,7 +291,7 @@
 		02-08. .area-form			表單區塊
 		02-09. .area-essay			文章區塊
 		02-10. .area-figure			圖片區塊
-		02-11. .area-vedio			影訊區塊
+		02-11. .area-video			影訊區塊
 		02-11. .area-audio			音訊區塊
 		02-12. .area-iframe			嵌入區塊
 		02-13. .area-editor			編輯區塊
@@ -335,7 +347,7 @@
 	11. 屬於 .area-figure 的結構樣式列表：
 		15-01.
 
-	12. 屬於 .area-vedio 的結構樣式列表：
+	12. 屬於 .area-video 的結構樣式列表：
 		15-01.
 
 	12. 屬於 .area-audio 的結構樣式列表：
