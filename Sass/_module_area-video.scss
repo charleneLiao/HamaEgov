@@ -1,4 +1,4 @@
-//影音區塊
+//視訊區塊
 
 .area-video {
 
@@ -17,7 +17,11 @@
 			}
 
 			h4 {
+				@extend %module-title;
 
+				&:before {
+					@include icon-font('ondemand_video');
+				}
 			}
 
 			span {
@@ -34,67 +38,84 @@
 			> .inner {
 				
 			}
-		}
 
-		.footer {
+			.vedio {
+				margin-bottom: $interval-s;
 
-			> .inner {
+				video {
+					width: 100%;
+				}
 
-			}
+				source {
 
-			ul {
+				}
 
-			}
+				object {
+					width: 100%;
+				}
 
-			li {
+				span {
+					display: block;
+					padding: $interval-s;
+					background-color: $light;
+				}
 
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//影音================================================================
-
-	&.video {
-
-		> .inner {
-
-		}
-
-		.header {
-
-			> .inner {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
+				a {
 					
+				}
 			}
 
-			a {
+			.caption {
+				margin: $interval-s 0;
+				font-size: $font-size-l;
+				color: $title-color;
 
+				span {
+					
+				}
+
+				a {
+					color: inherit;
+					font-size: 1em;
+				}
 			}
-		}
 
-		.content {
+			.label {
+				margin: $interval-s 0;
 
-			> .inner {
-				
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				font-size: $font-size-s;
+				color: $span-color;
+			}
+
+			.paragraph {
+				margin: $interval-s 0;
+
+				p {
+					@extend %reset;
+				}
+
+				span {
+
+				}
 			}
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 

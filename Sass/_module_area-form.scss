@@ -453,7 +453,7 @@
 				}
 			}
 
-			.list {
+			.label {
 				margin: $interval-s 0;
 
 				ul {
@@ -657,6 +657,7 @@
 
 				td {
 					cursor: pointer;
+					transition: $transition;
 
 					span {
 						padding: $interval-s 0;
@@ -702,10 +703,6 @@
 				.today { //今天
 					background-color: $major-color;
 					color: $white;
-
-					&:hover {
-						background-color: deeper($major-color);
-					}
 				}
 
 				.is-active { //被選擇
