@@ -17,7 +17,11 @@
 			}
 
 			h4 {
+				@extend %module-title;
 
+				&:before {
+					@include icon-font('audiotrack');
+				}
 			}
 
 			span {
@@ -34,9 +38,83 @@
 			> .inner {
 				
 			}
+
+			.audio {
+				margin-bottom: $interval-s;
+
+				audio {
+					width: 100%;
+				}
+
+				source {
+
+				}
+
+				object {
+					min-height: 45px;
+					width: 100%;
+					margin-bottom: $interval-s;
+				}
+
+				span {
+					display: block;
+					padding: $interval-s;
+					background-color: $light;
+				}
+
+				a {
+					
+				}
+			}
+
+			.essay {
+				@extend %essay;
+			}
+
+			.caption {
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+
+				ul {
+					
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+
+			}
+
+			.paragraph {
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 

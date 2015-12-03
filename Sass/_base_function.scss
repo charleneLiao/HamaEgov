@@ -141,7 +141,7 @@
 		}
 	}
 
-	%is-module-area {
+	%is-module-area { //首頁模組
 
 		[data-index][data-type="0"] {
 			@extend %module;
@@ -188,7 +188,7 @@
 		}
 	}
 
-	%is-page-area {
+	%is-page-area { //內頁模組
 
 		[data-index][data-type="0"] {
 			@extend %page;
@@ -214,6 +214,57 @@
 	// %part { //元件
 	// 	margin: 0 0 $interval-m;
 	// }
+
+	%essay { //文章
+
+		.caption, & .figcaption {
+			margin-bottom: $interval-s;
+			font-size: $font-size-l;
+			color: $title-color;
+
+			span {
+				
+			}
+
+			a {
+				color: inherit;
+				font-size: 1em;
+			}
+		}
+
+		.label {
+			margin: $interval-s 0;
+
+			ul {
+				@extend %reset;
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+		}
+
+		/*i*/.mark {
+			font-size: $font-size-s;
+			color: $span-color;
+		}
+
+		.paragraph {
+			margin: $interval-s 0;
+
+			p {
+				@extend %reset;
+			}
+
+			span {
+
+			}
+		}
+	}
 
 	%btn { //按鈕樣式
 		display: inline-block;
@@ -245,10 +296,17 @@
 		}
 	}
 
-	%btn-xs { //小按鈕
-		@extend %btn;
+	%btn-s { //小按鈕
 		padding: $btn-padding-xs;
 		font-size: $font-size-s;
+	}
+
+	%btn-imp { // important 重要的按鈕
+		background-color: $minor-color;
+
+		&:hover {
+			background-color: deeper($minor-color);
+		}
 	}
 
 	%input { //輸入框樣式
@@ -296,7 +354,8 @@
 		}
 
 		a {
-			@extend %btn-xs;
+			@extend %btn;
+			@extend %btn-s;
 		}
 	}
 

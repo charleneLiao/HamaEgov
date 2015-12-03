@@ -20,7 +20,7 @@
 				@extend %module-title;
 
 				&:before {
-					@include icon-font('ondemand_video');
+					@include icon-font('movie');
 				}
 			}
 
@@ -39,7 +39,7 @@
 				
 			}
 
-			.vedio {
+			.video {
 				margin-bottom: $interval-s;
 
 				video {
@@ -51,7 +51,9 @@
 				}
 
 				object {
+					min-height: 45px;
 					width: 100%;
+					margin-bottom: $interval-s;
 				}
 
 				span {
@@ -65,26 +67,25 @@
 				}
 			}
 
+			.essay {
+				@extend %essay;
+			}
+
 			.caption {
-				margin: $interval-s 0;
-				font-size: $font-size-l;
-				color: $title-color;
 
 				span {
 					
 				}
 
 				a {
-					color: inherit;
-					font-size: 1em;
+
 				}
 			}
 
 			.label {
-				margin: $interval-s 0;
 
 				ul {
-					@extend %reset;
+					
 				}
 
 				li {
@@ -97,15 +98,13 @@
 			}
 
 			/*i*/.mark {
-				font-size: $font-size-s;
-				color: $span-color;
+
 			}
 
 			.paragraph {
-				margin: $interval-s 0;
 
 				p {
-					@extend %reset;
+
 				}
 
 				span {

@@ -8,60 +8,79 @@
 
 		> .inner {
 
-		}
+			> .header {
+				display: none;
 
-		> .inner > .header {
+				> .inner {
 
-			> .inner {
+				}
 
-			}
+				h3 {
 
-			h3 {
+				}
 
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
-				> ul {
-
-					> li {
+				span {
 						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+
+							+ li {
+								margin-top: $interval-s;
+							}
+						}
+					}
+				}
+
+				.list-text, &.list-pic, &[data-type="4"] {
+					margin: 0;
+
+					.header {
+						display: block;
+					}
+
+					.content {
+
+						ul {
+							padding-left: $interval-xl;
+						}
 					}
 				}
 			}
-		}
 
-		> .inner > .footer {
+			> .footer {
 
-			> .inner {
+				> .inner {
 
-			}
+				}
 
-			ul {
+				ul {
 
-			}
+				}
 
-			li {
+				li {
 
-			}
+				}
 
-			span {
+				span {
 
-			}
+				}
 
-			a {
+				a {
 
+				}
 			}
 		}
 	}
@@ -586,7 +605,6 @@
 		}
 
 		.base-section & , .base-module-area & {
-			@extend %page;
 
 			> .inner {
 
@@ -626,7 +644,7 @@
 						}
 					}
 
-					.nav {
+					.list-text, &.list-pic, &[data-type="4"] {
 						margin: 0;
 
 						.header {
@@ -735,89 +753,6 @@
 		}
 	}
 
-//內頁列表================================================================
-
-	&.page-list {
-
-		> .inner {
-
-			> .header {
-				display: none;
-
-				> .inner {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-						@extend %reset;
-
-						> li {
-
-							+ li {
-								margin-top: $interval-s;
-							}
-						}
-					}
-				}
-
-				.nav {
-					margin: 0;
-
-					.header {
-						display: block;
-					}
-
-					.content {
-
-						ul {
-							padding-left: $interval-xl;
-						}
-					}
-				}
-			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
 //相簿================================================================
 
 	&.album {
@@ -896,18 +831,19 @@
 		}
 
 		.base-page-area & {
+			@include default-length(4);
+			@include set-length();
 
 			> .inner {
 
 				> .header {
-					display: none;
 
 					> .inner {
 
 					}
 
 					h3 {
-
+						@extend %page-title;
 					}
 
 					span {
@@ -924,9 +860,14 @@
 					> .inner {
 
 						> ul {
+							@extend %reset;
 
 							> li {
+								@extend %clear-inner-module;
 
+								> [data-index][data-type] {
+									padding: $interval-xs;
+								}
 							}
 						}
 					}

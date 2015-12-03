@@ -16,14 +16,13 @@
 
 			<% if label %>
 				<% li_length.times do |i| %>
-					<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark">2015/11/26</i><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+					<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark">2015-11-26</i><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 				<% end %>
 			<% else %>
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 				<% end %>
 			<% end %>
-
 		</ul>
 	</div></div>
 	<div class="footer"><div class="inner">

@@ -435,29 +435,24 @@
 			}
 
 			.essay {
-
+				@extend %essay;
 			}
 
 			.caption {
-				margin-bottom: $interval-s;
-				font-size: $font-size-l;
-				color: $title-color;
 
 				span {
 					
 				}
 
 				a {
-					color: inherit;
-					font-size: 1em;
+
 				}
 			}
 
 			.label {
-				margin: $interval-s 0;
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -470,15 +465,13 @@
 			}
 
 			/*i*/.mark {
-				font-size: $font-size-s;
-				color: $span-color;
+
 			}
 
 			.paragraph {
-				margin: $interval-s 0;
 
 				p {
-					@extend %reset;
+
 				}
 
 				span {
@@ -519,6 +512,7 @@
 
 				a {
 					@extend %btn;
+					@extend %btn-imp;
 				}
 			}
 		}
@@ -607,7 +601,8 @@
 				}
 
 				a {
-					@extend %btn-xs;
+					@extend %btn;
+					@extend %btn-s;
 				}
 			}
 
@@ -824,6 +819,7 @@
 
 						a {
 							@extend %btn;
+							@extend %btn-imp;
 						}
 					}
 				}

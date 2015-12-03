@@ -7,48 +7,52 @@
 	&.default {
 
 		> .inner {
-
+			
 		}
 
 		.header {
+			display: none;
 
 			> .inner {
 
 			}
 
 			h4 {
-
+				@extend %reset;
 			}
 
 			span {
-					
+				display: block;
 			}
 
 			a {
-
+				@extend %list;
+				@extend %list-hover;
 			}
 		}
 
 		.content {
+
 
 			> .inner {
 				
 			}
 
 			ul {
-
+				@extend %reset;
 			}
 
 			li {
-
+				margin-top: $interval-s;
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
-
+				@extend %list;
+				@extend %list-hover;
 			}
 		}
 
@@ -472,7 +476,6 @@
 		}
 
 		.base-section & , .base-module-area & {
-			@extend %page;
 
 			> .inner {
 				
@@ -1986,85 +1989,6 @@
 				&:before {
 					margin-right: $interval-xs;
 				}
-			}
-		}
-
-		.footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//內頁文字列表================================================================
-
-	&.page-list-text {
-
-		> .inner {
-
-		}
-
-		.header {
-			display: none;
-
-			> .inner {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-				
-			}
-
-			ul {
-				@extend %reset;
-			}
-
-			li {
-
-				+ li {
-					padding-top: $interval-s;
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %list;
-				@extend %list-hover;
 			}
 		}
 

@@ -17,11 +17,15 @@
 			}
 
 			h4 {
+				@extend %module-title;
 
+				&:before {
+					@include icon-font('textsms');
+				}
 			}
 
 			span {
-					
+
 			}
 
 			a {
@@ -36,15 +40,17 @@
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
-
+				@extend %list;
+				@extend %list-hover;
 			}
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 
@@ -56,6 +62,18 @@
 
 			li {
 
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
 			}
 
 			span {

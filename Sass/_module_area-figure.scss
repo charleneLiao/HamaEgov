@@ -143,15 +143,13 @@
 				}
 
 				.essay {
+					@extend %essay;
 					padding: $interval-s;
 					background-color: $light;
 					transition: $transition;
 				}
 
 				.figcaption {
-					margin-bottom: $interval-s;
-					font-size: $font-size-l;
-					color: $title-color;
 
 					span {
 
@@ -159,10 +157,9 @@
 				}
 
 				.label {
-					margin: $interval-s 0;
 
 					ul {
-						@extend %reset;
+
 					}
 
 					li {
@@ -175,15 +172,13 @@
 				}
 
 				/*i*/.mark {
-					font-size: $font-size-s;
-					color: $span-color;
+
 				}
 
 				.paragraph {
-					margin-top: $interval-s;
 
 					p {
-						@extend %reset;
+
 					}
 
 					span {
