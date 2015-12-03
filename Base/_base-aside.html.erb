@@ -1,4 +1,4 @@
-<div class="base-aside" data-index="<%= index %>" data-type="3" data-child="1"><div class="inner">
+<div class="base-aside" data-index="<%= index %>" data-type="3" data-child="2"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
@@ -7,9 +7,13 @@
 		<%= render :partial => '/Module/simple-text_accesskey', :locals => { :accesskey => 'L', :title => '左方次要連結區，此區塊列有本網站的次要連結' } %>
 	<!-- accesskey 結束 -->
 
-	<!-- nav 選單 -->
-		<%= render :partial => '/Module/list-text_nav', :locals => { :index => 1 } %>
-	<!-- nav 結束 -->
+	<!-- group-list_nav 選單列表 -->
+		<%= render :partial => '/Module/group-list_nav', :locals => { :index => 1 } %>
+	<!-- group-list_nav 結束 -->
+
+	<!-- minor-nav 次選單 -->
+		<%= render :partial => '/Module/list-text_minor-nav', :locals => { :index => 2 } %>
+	<!-- minor-nav 結束 -->
 
 	</div></div>
 </div></div>

@@ -20,11 +20,7 @@
 			<ul data-index="1" data-child="<%= li_length %>">
 
 				<% li_length.times do |i| %>
-					<% if( i == random ) %>
-						<li data-index="<%= i + 1 %>" class="is-active"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
-					<% else %>
-						<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
-					<% end %>
+					<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 				<% end %>
 			</ul>
 		</div></div>

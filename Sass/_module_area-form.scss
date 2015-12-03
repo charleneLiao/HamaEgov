@@ -732,12 +732,7 @@
 			}
 
 			.mark {
-				display: inline-block;
-				padding: $interval-xs $interval-s;
-				margin-right: $interval-s;
-				background-color: $span-color;
-				color: $white;
-				font-size: $font-size-s;
+				@extend %mark-1;
 			}
 		}
 

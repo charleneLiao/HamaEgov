@@ -424,18 +424,7 @@
 			}
 
 			a {
-				position: absolute;
-				display: block;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				background-color: rgba($black, $opacity-m);
-				transition: $transition;
-
-				&:hover {
-					opacity: 0;
-				}
+				@extend %mask;
 
 				@include at('mobile') {
 					background-color: transparent;
@@ -925,27 +914,7 @@
 			}
 
 			a {
-				position: relative;
-				display: block;
-
-				&:before {
-					content: $content;
-					display: block;
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					background-color: rgba($black, $opacity-m);
-					transition: $transition;
-				}
-
-				&:hover {
-
-					&:before {
-						opacity: 0;
-					}
-				}
+				@extend %mask;
 			}
 
 			img {

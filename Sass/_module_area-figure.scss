@@ -105,8 +105,10 @@
 
 						.image {
 
-							&:before {
-								opacity: 0;
+							span {
+								&:before {
+									opacity: 0;
+								}
 							}
 						}
 
@@ -117,24 +119,11 @@
 				}
 
 				.image {
-					position: relative;
-
-					&:before {
-						content: $content;
-						display: block;
-						position: absolute;
-						top: 0;
-						right: 0;
-						bottom: 0;
-						left: 0;
-						background-color: rgba($black, $opacity-m);
-						transition: $transition;
-					}
 
 					span {
 						@extend %cover-bg;
-						display: block;
-						height: 120px;
+						@extend %mask;
+						height: 100px;
 					}
 
 					img {

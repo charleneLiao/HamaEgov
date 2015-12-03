@@ -209,15 +209,11 @@
 									}
 								}
 
-								[data-index][data-type] {
-									margin: 0;
-									padding: 0;
-									top: 0;
-									left: auto;
-									right: auto;
+								> [data-index][data-type] {
+									@extend %reset;
 									position: relative;
 
-									&:hover {
+									&.is-active {
 
 										> .inner {
 
@@ -236,41 +232,16 @@
 									}
 
 									> .inner {
-										margin: 0;
-										padding: 0;
+										@extend %reset;
 
 										> .header {
-											display: block;
+											@extend %reset;
 
 											> .inner {
 
 											}
 
-											h2 {
-												@extend %reset;
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
-											}
-
-											h3 {
-												@extend %reset;
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
-											}
-
-											h4 {
+											h2, & h3, & h4 {
 												@extend %reset;
 
 												&:before {
@@ -294,11 +265,6 @@
 												text-align: center;
 												font-size: $font-size-l;
 												transition: $transition;
-
-												&:hover {
-													background-color: $minor-color;
-													color: $white;
-												}
 											}
 										}
 
@@ -496,14 +462,11 @@
 							> li {
 
 								> [data-index][data-type] {
-									margin: 0;
-									padding: 0;
-									top: 0;
-									left: auto;
-									right: auto;
-									position: relative;
+									@extend %reset;
+									padding: 0 $interval-xs;
 
 									> .inner {
+										@extend %reset;
 
 										.header {
 											display: block;
@@ -512,31 +475,7 @@
 
 											}
 
-											h2 {
-												@extend %reset;
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
-											}
-
-											h3 {
-												@extend %reset;
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
-											}
-
-											h4 {
+											h2, & h3, & h4 {
 												@extend %reset;
 
 												&:before {
@@ -604,7 +543,168 @@
 			}
 		}
 
-		.base-section & , .base-module-area & {
+		.base-module-area &, .base-aside & {
+
+			> .inner {
+				background-color: $major-color;
+
+				> .header {
+
+					> .inner {
+
+					}
+
+					h3 {
+						@extend %reset;
+						font-size: $font-size-l;
+						padding: $interval-m;
+						color: $white;
+
+						&:before {
+							@include icon-font('menu');
+							margin-right: $interval-xs;
+						}
+					}
+
+					span {
+						color: inherit;
+					}
+
+					a {
+						color: inherit;
+					}
+				}
+
+				> .content {
+					overflow: hidden;
+
+					> .inner {
+
+						> ul {
+							@extend %reset;
+							margin: 0 $interval-s $interval-s;
+							background-color: $white;
+
+							> li {
+
+								+ li {
+									border-top: $border;
+								}
+
+								> [data-index][data-type] {
+									@extend %reset;
+									position: relative;
+
+									&.is-active {
+
+										> .inner {
+
+											.header {
+
+												a {
+													background-color: $minor-color !important;
+													color: $white !important;
+
+													&:before {
+														@include icon-font('keyboard_arrow_down');
+													}
+												}
+											}
+
+											.content {
+												display: block;
+											}
+										}
+									}
+
+									> .inner {
+										@extend %reset;
+
+										> .header {
+											@extend %reset;
+
+											> .inner {
+
+											}
+
+											h2, & h3, & h4 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											span {
+												display: block;
+											}
+
+											a {
+												display: block;
+												padding: $interval-m;
+												transition: $transition;
+
+												&:before {
+													@include icon-font('keyboard_arrow_right');
+													margin-right: $interval-xs;
+												}
+
+												&:hover {
+													background-color: $light;
+													color: $body-font-color;
+												}
+											}
+										}
+
+										> .content {
+											display: none;
+
+											> .inner {
+												padding: $interval-xs;
+												background-color: $light;
+											}
+										}
+
+										> .footer {
+											display: none;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				> .footer {
+
+					> .inner {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+		}
+
+		.base-section & {
 
 			> .inner {
 
@@ -652,10 +752,7 @@
 						}
 
 						.content {
-
-							ul {
-								padding-left: $interval-xl;
-							}
+							padding-left: $interval-xl;
 						}
 					}
 				}

@@ -331,6 +331,45 @@
 		transition: $transition;
 	}
 
+	%mark-1 { //第一種標籤
+		display: inline-block;
+		padding: $interval-xs $interval-s;
+		margin-right: $interval-s;
+		background-color: $span-color;
+		color: $white;
+		font-size: $font-size-s;
+	}
+
+	%mark-2 { //第二種標籤
+		display: inline-block;
+		float: right;
+		color: $span-color;
+	}
+
+	%mask {
+		position: relative;
+		display: block;
+
+		&:before {
+			content: $content;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black, $opacity-m);
+			transition: $transition;
+		}
+
+		&:hover {
+
+			&:before {
+				opacity: 0;
+			}
+		}
+	}
+
 	%footer-btns {
 		position: absolute;
 		top: $interval-xs;

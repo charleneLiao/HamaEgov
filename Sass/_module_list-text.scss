@@ -33,7 +33,6 @@
 
 		.content {
 
-
 			> .inner {
 				
 			}
@@ -43,7 +42,10 @@
 			}
 
 			li {
-				margin-top: $interval-s;
+
+				+ li {
+					margin-top: $interval-s;
+				}
 			}
 
 			span {
@@ -284,112 +286,6 @@
 			}
 		}
 
-		.base-aside & {
-
-			> .inner {
-				background-color: $major-color;
-			}
-
-			.header {
-
-				> .inner {
-
-				}
-
-				h4 {
-					@extend %reset;
-					font-size: $font-size-l;
-					padding: $interval-m;
-					color: $white;
-
-					&:before {
-						@include icon-font('menu');
-						margin-right: $interval-xs;
-					}
-				}
-
-				span {
-					color: inherit;
-				}
-
-				a {
-					color: inherit;
-				}
-			}
-
-			.content {
-				overflow: hidden;
-
-				> .inner {
-					
-				}
-
-				ul {
-					@extend %reset;
-					margin: 0 $interval-s $interval-s;
-					background-color: $white;
-				}
-
-				li {
-
-					&.is-active {
-
-						a {
-							background-color: $minor-color;
-							color: $white;
-						}
-					}
-
-					+ li {
-						border-top: $border;
-					}
-				}
-
-				span {
-					display: block;
-				}
-
-				a {
-					display: block;
-					padding: $interval-m;
-					transition: $transition;
-
-					&:before {
-						@include icon-font('keyboard_arrow_right');
-						margin-right: $interval-xs;
-					}
-
-					&:hover {
-						background-color: $light-gray;
-						color: $body-font-color;
-					}
-				}
-			}
-
-			.footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-
 		.base-footer & {
 
 			> .inner {
@@ -475,7 +371,87 @@
 			}
 		}
 
-		.base-section & , .base-module-area & {
+		.base-module-area &, .base-aside & {
+
+			> .inner {
+				
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('menu');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					+ li {
+						margin-top: $interval-s;
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %list;
+					@extend %list-hover;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
 
 			> .inner {
 				
@@ -514,7 +490,10 @@
 				}
 
 				li {
-					margin-top: $interval-s;
+
+					+ li {
+						margin-top: $interval-s;
+					}
 				}
 
 				span {
@@ -548,6 +527,114 @@
 				a {
 
 				}
+			}
+		}
+	}
+
+//次選單================================================================
+
+	&.minor-nav {
+
+		> .inner {
+			background-color: $major-color;
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %reset;
+				font-size: $font-size-l;
+				padding: $interval-m;
+				color: $white;
+
+				&:before {
+					@include icon-font('menu');
+					margin-right: $interval-xs;
+				}
+			}
+
+			span {
+				color: inherit;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.content {
+			overflow: hidden;
+
+			> .inner {
+				
+			}
+
+			ul {
+				@extend %reset;
+				margin: 0 $interval-s $interval-s;
+				background-color: $white;
+			}
+
+			li {
+
+				&.is-active {
+
+					a {
+						background-color: $minor-color;
+						color: $white;
+					}
+				}
+
+				+ li {
+					border-top: $border;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $interval-m;
+				transition: $transition;
+
+				&:before {
+					@include icon-font('keyboard_arrow_right');
+					margin-right: $interval-xs;
+				}
+
+				&:hover {
+					background-color: $light;
+					color: $body-font-color;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}
@@ -999,9 +1086,7 @@
 				}
 
 				/*i*/.mark {
-					display: inline-block;
-					float: right;
-					color: $span-color;
+					@extend %mark-2;
 				}
 			}
 
@@ -1171,9 +1256,7 @@
 			}
 
 			/*i*/.mark {
-				display: inline-block;
-				float: right;
-				color: $span-color;
+				@extend %mark-2;
 			}
 		}
 

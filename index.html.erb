@@ -10,12 +10,32 @@
 	</div></div>
 </div></div>
 
-<div data-index="2" data-type="1" data-child="3"><div class="inner">
+<div data-index="2" data-type="1" data-child="4"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
-	<div data-index="1" data-type="3" data-child="10"><div class="inner">
+	<div data-index="1" data-type="3" data-child="3"><div class="inner">
+		<div class="header"><div class="inner">
+		</div></div>
+		<div class="content"><div class="inner">
+
+		<!-- list-text 選單 -->
+			<%= render :partial => '/Module/list-text_nav', :locals => { :index => 1 } %>
+		<!-- list-text 結束 -->
+
+		<!-- group-list_nav 選單列表 -->
+			<%= render :partial => '/Module/group-list_nav', :locals => { :index => 2 } %>
+		<!-- group-list_nav 結束 -->
+
+		<!-- minor-nav 次選單 -->
+			<%= render :partial => '/Module/list-text_minor-nav', :locals => { :index => 3 } %>
+		<!-- minor-nav 結束 -->
+
+		</div></div>
+	</div></div>
+
+	<div data-index="2" data-type="3" data-child="10"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
@@ -40,30 +60,30 @@
 			<%= render :partial => '/Module/simple-text_weather', :locals => { :index => 5 } %>
 		<!-- weather 結束 -->
 
+		<!-- map 地圖 -->
+			<%= render :partial => '/Module/area-customize_map', :locals => { :index => 6 } %>
+		<!-- map 結束 -->
+
 		<!-- epaper 電子報 -->
-			<%= render :partial => '/Module/area-form_epaper', :locals => { :index => 6 } %>
+			<%= render :partial => '/Module/area-form_epaper', :locals => { :index => 7 } %>
 		<!-- epaper 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-video_default', :locals => { :index => 7 } %>
+			<%= render :partial => '/Module/area-video_default', :locals => { :index => 8 } %>
 		<!-- default 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-audio_default', :locals => { :index => 8 } %>
+			<%= render :partial => '/Module/area-audio_default', :locals => { :index => 9 } %>
 		<!-- default 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-iframe_default', :locals => { :index => 9 } %>
+			<%= render :partial => '/Module/area-iframe_default', :locals => { :index => 10 } %>
 		<!-- default 結束 -->
-
-		<!-- map 地圖 -->
-			<%= render :partial => '/Module/area-customize_map', :locals => { :index => 10 } %>
-		<!-- map 結束 -->
 
 		</div></div>
 	</div></div>
 
-	<div data-index="2" data-type="3" data-child="9"><div class="inner">
+	<div data-index="3" data-type="3" data-child="9"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
@@ -107,7 +127,7 @@
 		</div></div>
 	</div></div>
 
-	<div data-index="3" data-type="3" data-child="10"><div class="inner">
+	<div data-index="4" data-type="3" data-child="9"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
