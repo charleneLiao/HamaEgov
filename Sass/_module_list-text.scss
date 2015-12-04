@@ -111,39 +111,21 @@
 			}
 
 			.header {
-				$icon: 'icon-pic/away-b-right.png';
-				$icon-width: 30px;
-
-				position: relative;
 
 				> .inner {
 
 				}
 
 				h4 {
-					@extend %reset;
+
 				}
 
 				span {
-					display: block;
-					border-bottom: $border;
+
 				}
 
 				a {
-					display: block;
-					padding: $interval-m;
-					padding-right: $icon-width;
 
-					&:after {
-						content: $content;
-						display: block;
-						position: absolute;
-						top: 0;
-						right: 0;
-						bottom: 0;
-						width: $icon-width;
-						@include bg-to-pic($icon, false);
-					}
 				}
 			}
 
@@ -899,6 +881,105 @@
 								&:hover {
 									background-color: deeper($color);
 								}
+							}
+						}
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %hide-text;
+					display: block !important;
+					transition: $transition;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-mobile & {
+
+			> .inner {
+
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+
+					&:after {
+						@extend %clear;
+					}
+				}
+
+				li {
+					width: 100% / length($share-map);
+					float: left;
+
+					@each $key, $map in $share-map {
+
+						$pic: map-get($map, 'pic');
+						$color: map-get($map, 'color');
+
+						&.#{$key}{
+
+							span {
+								display: block;
+							}
+
+							a {
+								@include icon-pic('#{$pic}', false);
+								height: 40px;
+								background-color: $color;
 							}
 						}
 					}

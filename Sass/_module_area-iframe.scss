@@ -49,10 +49,11 @@
 			}
 
 			.essay {
-				@extend %essay;
+				
 			}
 
 			.caption {
+				@extend %caption;
 
 				span {
 					
@@ -64,9 +65,10 @@
 			}
 
 			.label {
+				@extend %label;
 
 				ul {
-					
+
 				}
 
 				li {
@@ -79,10 +81,11 @@
 			}
 
 			/*i*/.mark {
-
+				@extend %mark;
 			}
 
 			.paragraph {
+				@extend %paragraph;
 
 				p {
 

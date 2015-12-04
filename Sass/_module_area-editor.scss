@@ -16,8 +16,12 @@
 
 			}
 
-			h3 {
+			h4 {
+				@extend %module-title;
 
+				&:before {
+					@include icon-font('mode_edit');
+				}
 			}
 
 			span {

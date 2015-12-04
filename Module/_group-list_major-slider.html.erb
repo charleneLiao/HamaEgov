@@ -1,6 +1,6 @@
 <%
-	min_li = 2 #最少的li數量
-	max_li = 5 #最多的li數量
+	min_li = 1 #最少的li數量
+	max_li = 6 #最多的li數量
 %>
 
 <%
@@ -9,9 +9,9 @@
 
 
 <% if ( li_length > 0 ) %>
-	<div class="group-list classical-slider" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
+	<div class="group-list major-slider" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
 		<div class="header"><div class="inner">
-			<h3><span><a>輪播</a></span></h3>
+			<h3><span><a>主輪播</a></span></h3>
 		</div></div>
 		<div class="content"><div class="inner">
 			<ul data-index="1" data-child="<%= li_length %>">
@@ -27,8 +27,10 @@
 			</ul>
 		</div></div>
 		<div class="footer"><div class="inner">
-			<ul data-index="1" data-child="1">
-				<li class="more" data-index="1"><span><a href="#">更多</a></span></li>
+			<ul data-index="1" data-child="3">
+				<li class="prev" data-index="1"><span><a href="#">上一則</a></span></li>
+				<li class="next" data-index="2"><span><a href="#">下一則</a></span></li>
+				<li class="more" data-index="3"><span><a href="#">更多</a></span></li>
 			</ul>
 		</div></div>
 	</div></div>

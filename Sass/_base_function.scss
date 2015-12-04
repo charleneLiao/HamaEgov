@@ -15,6 +15,14 @@
 		font-size: $font-size-m;
 		font-weight: $font-weight-n;
 		transition: 0;
+
+		&:before {
+			content: none;
+		}
+
+		&:after {
+			content: none;
+		}
 	}
 
 	%reset { //清除全部
@@ -60,13 +68,13 @@
 		white-space: nowrap;
 	}
 
-	%cover-bg {
+	%cover-bg { // cover 底圖
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	%contain-bg {
+	%contain-bg { // contain 底圖
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -112,7 +120,6 @@
 		margin: 0 0 $interval-l;
 
 		> .inner {
-			position: relative;
 			margin: $interval-s;
 		}
 	}
@@ -168,7 +175,7 @@
 		margin: $interval-l 0;
 
 		> .inner {
-			position: relative;
+
 		}
 	}
 
@@ -211,58 +218,97 @@
 		}
 	}
 
-	// %part { //元件
-	// 	margin: 0 0 $interval-m;
-	// }
+	%mobile { //手機側欄模組
+		margin: $interval-m 0;
 
-	%essay { //文章
+		> .inner {
 
-		.caption, & .figcaption {
-			margin-bottom: $interval-s;
-			font-size: $font-size-l;
-			color: $title-color;
+		}
+	}
 
-			span {
-				
-			}
+	%is-mobile-area { //手機側欄模組
 
-			a {
-				color: inherit;
-				font-size: 1em;
-			}
+		[data-index][data-type="0"] {
+			@extend %mobile;
 		}
 
-		.label {
-			margin: $interval-s 0;
+		[data-index][data-type="4"], & [data-index][data-type="2"] {
+			@extend %mobile;
 
-			ul {
-				@extend %reset;
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
 			}
 
-			li {
-
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
 			}
 
-			span {
-
+			[data-index][data-type="2"] {
+				@extend %reset-outer;
 			}
 		}
+	}
 
-		/*i*/.mark {
-			font-size: $font-size-s;
-			color: $span-color;
+	%caption { //標題組件
+		margin-bottom: $interval-s;
+		font-size: $font-size-l;
+		color: $title-color;
+
+		span {
+			
 		}
 
-		.paragraph {
-			margin: $interval-s 0;
+		a {
+			color: inherit;
+			font-size: 1em;
+		}
+	}
 
-			p {
-				@extend %reset;
-			}
+	%label { //標籤組件
+		margin: $interval-s 0;
 
-			span {
+		ul {
+			@extend %reset;
+		}
 
-			}
+		li {
+
+		}
+
+		span {
+
+		}
+	}
+
+	%mark { //標籤元件
+		font-size: $font-size-s;
+		color: $span-color;
+	}
+
+	%mark-1 { //第一種標籤元件
+		display: inline-block;
+		padding: $interval-xs $interval-s;
+		margin-right: $interval-s;
+		background-color: $span-color;
+		color: $white;
+		font-size: $font-size-s;
+	}
+
+	%mark-2 { //第二種標籤元件
+		display: inline-block;
+		float: right;
+		color: $span-color;
+	}
+
+	%paragraph { //文字組件
+		margin: $interval-s 0;
+
+		p {
+			@extend %reset;
+		}
+
+		span {
+
 		}
 	}
 
@@ -331,22 +377,15 @@
 		transition: $transition;
 	}
 
-	%mark-1 { //第一種標籤
-		display: inline-block;
-		padding: $interval-xs $interval-s;
-		margin-right: $interval-s;
-		background-color: $span-color;
-		color: $white;
-		font-size: $font-size-s;
+	%list-hover { //列表 :hover 樣式
+
+		&:hover {
+			color: $black;
+			background-color: $light-gray;
+		}
 	}
 
-	%mark-2 { //第二種標籤
-		display: inline-block;
-		float: right;
-		color: $span-color;
-	}
-
-	%mask {
+	%mask { //圖片遮罩
 		position: relative;
 		display: block;
 
@@ -370,7 +409,7 @@
 		}
 	}
 
-	%footer-btns {
+	%footer-btns { //更多按鈕
 		position: absolute;
 		top: $interval-xs;
 		right: 0;
@@ -395,14 +434,6 @@
 		a {
 			@extend %btn;
 			@extend %btn-s;
-		}
-	}
-
-	%list-hover {
-
-		&:hover {
-			color: $black;
-			background-color: $light-gray;
 		}
 	}
 
@@ -513,7 +544,7 @@
 				height: image-height('icon-pic/#{$img-name}.png');
 
 			} @else {
-				@include bgToPic('icon-pic/#{$img-name}.png', $size, $height);
+				@include bg-to-pic('icon-pic/#{$img-name}.png', $size, $height);
 			}
 		}
 	}

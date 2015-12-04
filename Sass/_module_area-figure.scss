@@ -99,18 +99,9 @@
 
 				}
 
-				.divition {
+				/*a*/.divition {
 
 					&:hover {
-
-						.image {
-
-							span {
-								&:before {
-									opacity: 0;
-								}
-							}
-						}
 
 						.essay {
 							background-color: $light-gray;
@@ -122,7 +113,6 @@
 
 					span {
 						@extend %cover-bg;
-						@extend %mask;
 						height: 100px;
 					}
 
@@ -132,20 +122,21 @@
 				}
 
 				.essay {
-					@extend %essay;
 					padding: $interval-s;
 					background-color: $light;
 					transition: $transition;
 				}
 
 				.figcaption {
+					@extend %caption;
 
 					span {
-
+						
 					}
 				}
 
 				.label {
+					@extend %label;
 
 					ul {
 
@@ -161,10 +152,11 @@
 				}
 
 				/*i*/.mark {
-
+					@extend %mark;
 				}
 
 				.paragraph {
+					@extend %paragraph;
 
 					p {
 

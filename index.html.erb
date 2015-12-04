@@ -4,7 +4,7 @@
 	<div class="content"><div class="inner">
 
 	<!-- slider 輪播 -->
-		<%#= render :partial => '/Module/list-pic_slider', :locals => { :index => 1 } %>
+		<%= render :partial => '/Module/group-list_major-slider', :locals => { :index => 1, :inner => 'simple-pic_default' } %>
 	<!-- slider 結束 -->
 
 	</div></div>
@@ -15,7 +15,7 @@
 	</div></div>
 	<div class="content"><div class="inner">
 
-	<div data-index="1" data-type="3" data-child="3"><div class="inner">
+	<div data-index="1" data-type="3" data-child="7"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
@@ -32,52 +32,73 @@
 			<%= render :partial => '/Module/list-text_minor-nav', :locals => { :index => 3 } %>
 		<!-- minor-nav 結束 -->
 
+		<!-- calender 月曆 -->
+			<%= render :partial => '/Module/area-form_calender', :locals => { :index => 4 } %>
+		<!-- calender 結束 -->
+
+		<!-- map 地圖 -->
+			<%= render :partial => '/Module/area-customize_map', :locals => { :index => 5 } %>
+		<!-- map 結束 -->
+
+		<!-- vote 投票 -->
+			<%= render :partial => '/Module/area-form_vote', :locals => { :index => 6 } %>
+		<!-- vote 結束 -->
+
+		<div data-index="7" data-type="3" data-child="2"><div class="inner">
+			<div class="header"><div class="inner">
+				<h3><span><a>測試</a></span></h3>
+			</div></div>
+			<div class="content"><div class="inner">
+
+			<!-- map 地圖 -->
+				<%= render :partial => '/Module/area-customize_map', :locals => { :index => 5 } %>
+			<!-- map 結束 -->
+
+			<!-- vote 投票 -->
+				<%= render :partial => '/Module/area-form_vote', :locals => { :index => 6 } %>
+			<!-- vote 結束 -->
+
+			</div></div>
+		</div></div>
+
 		</div></div>
 	</div></div>
 
-	<div data-index="2" data-type="3" data-child="10"><div class="inner">
+	<div data-index="2" data-type="3" data-child="8"><div class="inner">
 		<div class="header"><div class="inner">
 		</div></div>
 		<div class="content"><div class="inner">
 
-		<!-- calender 月曆 -->
-			<%= render :partial => '/Module/area-form_calender', :locals => { :index => 1 } %>
-		<!-- calender 結束 -->
-
 		<!-- rss 訂閱 -->
-			<%= render :partial => '/Module/list-text_rss', :locals => { :index => 2, :label => true } %>
+			<%= render :partial => '/Module/list-text_rss', :locals => { :index => 1, :label => true } %>
 		<!-- rss 結束 -->
 
 		<!-- anchor 錨點 -->
-			<%= render :partial => '/Module/list-text_anchor', :locals => { :index => 3 } %>
+			<%= render :partial => '/Module/list-text_anchor', :locals => { :index => 2 } %>
 		<!-- anchor 結束 -->
 
-		<!-- vote 投票 -->
-			<%= render :partial => '/Module/area-form_vote', :locals => { :index => 4 } %>
-		<!-- vote 結束 -->
-
 		<!-- weather 天氣 -->
-			<%= render :partial => '/Module/simple-text_weather', :locals => { :index => 5 } %>
+			<%= render :partial => '/Module/simple-text_weather', :locals => { :index => 3 } %>
 		<!-- weather 結束 -->
 
-		<!-- map 地圖 -->
-			<%= render :partial => '/Module/area-customize_map', :locals => { :index => 6 } %>
-		<!-- map 結束 -->
-
 		<!-- epaper 電子報 -->
-			<%= render :partial => '/Module/area-form_epaper', :locals => { :index => 7 } %>
+			<%= render :partial => '/Module/area-form_epaper', :locals => { :index => 4 } %>
 		<!-- epaper 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-video_default', :locals => { :index => 8 } %>
+			<%= render :partial => '/Module/area-video_default', :locals => { :index => 5 } %>
 		<!-- default 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-audio_default', :locals => { :index => 9 } %>
+			<%= render :partial => '/Module/area-audio_default', :locals => { :index => 6 } %>
 		<!-- default 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => '/Module/area-iframe_default', :locals => { :index => 10 } %>
+			<%= render :partial => '/Module/area-iframe_default', :locals => { :index => 7 } %>
+		<!-- default 結束 -->
+
+		<!-- default 預設 -->
+			<%= render :partial => '/Module/area-editor_default', :locals => { :index => 8 } %>
 		<!-- default 結束 -->
 
 		</div></div>
@@ -174,10 +195,13 @@
 	</div></div>
 </div></div>
 
-<div data-index="3" data-type="3" data-child="0"><div class="inner">
+<div data-index="3" data-type="3" data-child="1"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
+		<!-- marqee-slider 跑馬燈輪播 -->
+			<%= render :partial => '/Module/group-list_marqee-slider', :locals => { :index => 1, :inner => 'simple-pic_default' } %>
+		<!-- marqee-slider 結束 -->
 	</div></div>
 </div></div>

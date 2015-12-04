@@ -65,11 +65,9 @@
 	&.search {
 
 		.base-mobile & {
-			border-bottom: $border;
-			padding: $interval-m;
 
 			> .inner {
-				margin: 0;
+
 			}
 
 			.header {
@@ -435,10 +433,11 @@
 			}
 
 			.essay {
-				@extend %essay;
+
 			}
 
 			.caption {
+				@extend %caption;
 
 				span {
 					
@@ -450,6 +449,7 @@
 			}
 
 			.label {
+				@extend %label;
 
 				ul {
 
@@ -465,10 +465,11 @@
 			}
 
 			/*i*/.mark {
-
+				@extend %mark;
 			}
 
 			.paragraph {
+				@extend %paragraph;
 
 				p {
 

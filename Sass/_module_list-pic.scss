@@ -630,6 +630,7 @@
 //圖片區塊列表================================================================
 
 	&.block {
+		$btn-width: 45px; //設定按鈕寬度
 
 		> .inner {
 			position: relative;
@@ -710,8 +711,6 @@
 					}
 
 					a {
-						$btn-width: 45px;
-
 						@extend %hide-text;
 						position: absolute;
 						top: 20%;

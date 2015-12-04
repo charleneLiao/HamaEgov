@@ -12,10 +12,6 @@
 
 @import 'base_variable'; //變數
 
-[data-index][data-type] {
-	min-height: 1px;
-}
-
 @for $i from $min_child through $max_child { //算自然分割
 
 	[data-type="1"][data-child="#{$i}"] {
@@ -96,14 +92,15 @@
 
 $layout_main_interval: $interval-s; //主層間隔
 
+[data-index][data-type] { //模組與群組
+	position: relative;
+	min-height: 1px;
+}
+
 [data-type="0"] { //模組
 
 	> .inner {
 		margin: 0 $layout_main_interval;
-
-		// @include at('phone') {
-		// 	margin: 0;
-		// }
 	}
 }
 

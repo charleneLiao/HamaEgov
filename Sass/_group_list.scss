@@ -92,7 +92,6 @@
 		.base-mobile & {
 
 			> .inner {
-				margin: 0;
 
 				> .header {
 					display: none;
@@ -122,7 +121,93 @@
 							@extend %reset;
 
 							> li {
-								
+
+								&.is-active {
+
+									> [data-index][data-type] {
+
+										> .inner {
+
+											.header {
+
+												a {
+													background-color: $minor-color !important;
+													color: $white !important;
+
+													&:before {
+														@include icon-font('keyboard_arrow_down');
+													}
+												}
+											}
+
+											.content {
+												display: block;
+											}
+										}
+									}
+								}
+
+								> [data-index][data-type] {
+									@extend %reset;
+									position: relative;
+
+									> .inner {
+										@extend %reset;
+
+										> .header {
+											@extend %reset;
+
+											> .inner {
+
+											}
+
+											h2, & h3, & h4 {
+												@extend %reset;
+
+												&:before {
+													display: none;
+												}
+
+												&:after {
+													display: none;
+												}
+											}
+
+											span {
+												display: block;
+											}
+
+											a {
+												display: block;
+												padding: $interval-m;
+												transition: $transition;
+
+												&:before {
+													@include icon-font('keyboard_arrow_right');
+													margin-right: $interval-xs;
+												}
+
+												&:hover {
+													background-color: $light;
+													color: $body-font-color;
+												}
+											}
+										}
+
+										> .content {
+											display: none;
+
+											> .inner {
+												padding: $interval-xs;
+												background-color: $light;
+											}
+										}
+
+										> .footer {
+											display: none;
+										}
+									}
+								}
 							}
 						}
 					}
@@ -209,15 +294,13 @@
 									}
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
-									position: relative;
+								&.is-active {
 
-									&.is-active {
+									> [data-index][data-type] {
 
 										> .inner {
 
-											.header {
+											> .header {
 
 												a {
 													background-color: $minor-color;
@@ -225,14 +308,18 @@
 												}
 											}
 
-											.content {
+											> .content {
 												display: block;
 											}
 										}
 									}
+								}
+
+								> [data-index][data-type] {
+									@extend %reset;
+									position: relative;
 
 									> .inner {
-										@extend %reset;
 
 										> .header {
 											@extend %reset;
@@ -243,14 +330,6 @@
 
 											h2, & h3, & h4 {
 												@extend %reset;
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
 											}
 
 											span {
@@ -591,11 +670,9 @@
 									border-top: $border;
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
-									position: relative;
+								&.is-active {
 
-									&.is-active {
+									> [data-index][data-type] {
 
 										> .inner {
 
@@ -616,6 +693,11 @@
 											}
 										}
 									}
+								}
+
+								> [data-index][data-type] {
+									@extend %reset;
+									position: relative;
 
 									> .inner {
 										@extend %reset;
@@ -752,7 +834,7 @@
 						}
 
 						.content {
-							padding-left: $interval-xl;
+							padding: $interval-s 0 0 $interval-xl;
 						}
 					}
 				}
@@ -1137,6 +1219,327 @@
 
 				li {
 
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//跑馬燈================================================================
+
+	&.marqee-slider {
+		$btn-width: 45px; //設定按鈕寬度
+		$max-li-length: 50; //設定 li 的最大數量
+		$show-li-length: 5; //設定一次要秀的數量
+		$max-show-li-length: 10; //設定一次要秀的範圍數量
+
+		@for $i from 1 through $max-show-li-length { //使數量可以被控制 1 ~ $max-show-li-length
+		
+			&[data-aLineLength="#{$i}"] {
+
+				> .inner > .content > .inner {
+
+					> ul {
+						width: $max_li_length / $i * 100%;
+
+						> li {
+							width: 100% / $i / ( $max_li_length / $i );
+
+							&:nth-child(n+#{$max_li_length + 1}) { //超過 $max_li_length 就藏起來
+								display: none;
+							}
+
+							$li: ' ';
+
+							@for $i from 1 through $max_li_length {
+
+								$li: $li + '+ li '; 
+							}
+
+							&#{$li}{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .inner {
+
+			> .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('slideshow');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+				background-color: $light;
+
+				> .inner {
+					overflow: hidden;
+					margin: 0 $btn-width;
+
+					> ul {
+						@extend %reset;
+						width: $max_li_length / $show_li_length * 100%;
+						list-style: none;
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							width: 100% / $show_li_length / ( $max_li_length / $show_li_length );
+							float: left;
+
+							&:nth-child(n+#{$max_li_length + 1}) { //超過 $max_li_length 就藏起來
+								display: none;
+							}
+
+							$li: ' ';
+
+							@for $i from 1 through $max_li_length {
+
+								$li: $li + '+ li '; 
+							}
+
+							&#{$li}{
+								display: none;
+							}
+
+							[data-index][data-type] { //隱藏內置模組的 header 與 footer
+								padding: $interval-xs;
+
+								> .inner {
+									@extend %reset;
+								}
+
+								.header {
+									display: none;
+								}
+
+								.footer {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					&.next, &.prev {
+
+						@include at('no-js') {
+							display: none;
+						}
+
+						a {
+							@extend %hide-text;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							display: block;
+							width: $btn-width;
+							transition: $transition;
+							background-color: $light;
+							background-color: rgba($light, $opacity-h);
+
+							&:hover {
+								background-color: $light-gray;
+								background-color: rgba($light-gray, $opacity-h);
+							}
+						}
+					}
+
+					&.prev {
+
+						a {
+							left: 0;
+							@include bg-to-pic('icon-pic/away-b-left.png', false);
+						}
+					}
+
+					&.next {
+
+						a {
+							right: 0;
+							@include bg-to-pic('icon-pic/away-b-right.png', false);
+						}
+					}
+
+					&.more {
+						display: none;
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//主輪播================================================================
+
+	&.major-slider {
+		$btn-width: 45px; //設定按鈕寬度
+
+		> .inner {
+			margin: 0 !important;
+
+			> .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %module-title;
+
+					&:before {
+						@include icon-font('slideshow');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+
+							+ li {
+								display: none;
+							}
+
+							[data-index][data-type] { //隱藏內置模組的 header 與 footer
+
+								> .inner {
+									@extend %reset;
+								}
+
+								.header {
+									display: none;
+								}
+
+								.footer {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					&.next, &.prev {
+
+						@include at('no-js') {
+							display: none;
+						}
+
+						a {
+							@extend %hide-text;
+							position: absolute;
+							top: 20%;
+							bottom: 20%;
+							display: block;
+							width: $btn-width;
+							transition: $transition;
+							background-color: $light;
+							background-color: rgba($light, $opacity-h);
+
+							&:hover {
+								background-color: $light-gray;
+								background-color: rgba($light-gray, $opacity-h);
+							}
+						}
+					}
+
+					&.prev {
+
+						a {
+							left: 0;
+							@include bg-to-pic('icon-pic/away-b-left.png', false);
+						}
+					}
+
+					&.next {
+
+						a {
+							right: 0;
+							@include bg-to-pic('icon-pic/away-b-right.png', false);
+						}
+					}
+
+					&.more {
+						display: none;
+					}
 				}
 
 				span {
