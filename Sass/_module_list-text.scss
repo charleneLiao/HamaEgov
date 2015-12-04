@@ -2212,7 +2212,7 @@
 		}
 
 		.content {
-			$li_max_length: 10; // li的最大數量
+			$li-max-length: 10; // li的最大數量
 
 			> .inner {
 				
@@ -2226,7 +2226,7 @@
 					@extend %clear;
 				}
 
-				@for $i from 2 through $li_max_length { //ul的child
+				@for $i from 2 through $li-max-length { //ul的child
 
 					&[data-child="#{$i}"] {
 

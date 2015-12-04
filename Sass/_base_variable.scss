@@ -79,10 +79,11 @@
 	$phone-width: 560px !default; //phone寬度
 
 //grid 框架設定================================================================
-	$min_child: 1; //最少的child數量
-	$max_child: 10; //最多的child數量
-	$min_aLineLength: 2; //最少的單行數量
-	$max_aLineLength: 10; //最多的單行數量
+	$min-child: 1; //最少的child數量
+	$max-child: 10; //最多的child數量
+	$min-aLineLength: 2; //最少的單行數量
+	$max-aLineLength: 10; //最多的單行數量
+	$layout-main-interval: $interval-s; //主層間隔
 
 //預設空文字================================================================
 	$content: '\200B'; //空偽類的字元

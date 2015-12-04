@@ -239,10 +239,10 @@
 		}
 
 		.base-header & {
-			$li_default_length: 6;
-			$li_max_length: 10;
+			$li-default-length: 6;
+			$li-max-length: 10;
 
-			@include default-min-length($li_default_length, $li_max_length);
+			@include default-min-length($li-default-length, $li-max-length);
 			background-color: $light;
 			position: relative;
 			z-index: 1;
@@ -368,7 +368,7 @@
 									}
 								}
 
-								@for $i from 1 through $li_max_length { //ul的寬度
+								@for $i from 1 through $li-max-length { //ul的寬度
 
 									&[data-width="#{$i}"] { //li的寬度< li的最大數量
 
@@ -381,7 +381,7 @@
 									}
 								}
 
-								@for $i from 1 through $li_max_length { //ul的寬度
+								@for $i from 1 through $li-max-length { //ul的寬度
 
 									&[data-width="#{$i}"] { //li的寬度< li的最大數量
 
@@ -401,20 +401,20 @@
 								}
 							}
 
-							@for $i from $li_default_length through $li_max_length { //group的child
+							@for $i from $li-default-length through $li-max-length { //group的child
 
 								&[data-child="#{$i}"] {
 
-									@for $j from 2 through $li_max_length { //li的index
+									@for $j from 2 through $li-max-length { //li的index
 
 										> [data-index="#{$j}"] { //li的順序
 
-											@for $k from 1 through $li_max_length { //li的寬度
+											@for $k from 1 through $li-max-length { //li的寬度
 
 												&[data-width="#{$k}"] { //li的寬度< li的最大數量
 
-													$li_width: min($k, $i); //li的寬度 > group的child，li的寬度 = group的child
-													$all_width: $j - 1 + $li_width;
+													$li-width: min($k, $i); //li的寬度 > group的child，li的寬度 = group的child
+													$all-width: $j - 1 + $li-width;
 
 													> [data-index][data-type] {
 
@@ -424,8 +424,8 @@
 
 														> .inner > .content {
 
-															@if( $all_width > $i ) {  //如果li數量大於li寬度
-																left: 100% * ( $i - $all_width ); //就推回來
+															@if( $all-width > $i ) {  //如果li數量大於li寬度
+																left: 100% * ( $i - $all-width ); //就推回來
 															}
 														}
 													}
@@ -436,20 +436,20 @@
 								}
 							}
 
-							@for $i from 1 through $li_default_length { //group的child
+							@for $i from 1 through $li-default-length { //group的child
 
 								&[data-child="#{$i}"] {
 
-									@for $j from 2 through $li_max_length { //li的index
+									@for $j from 2 through $li-max-length { //li的index
 
 										> [data-index="#{$j}"] { //li的順序
 
-											@for $k from 1 through $li_max_length { //li的寬度
+											@for $k from 1 through $li-max-length { //li的寬度
 
 												&[data-width="#{$k}"] { //ul,如果ul的寬度設定 < li的最大數量
 
-													$li_width: min($k, $li_default_length); //li的寬度 > group的child，li的寬度 = group的child
-													$all_width: $j - 1 + $li_width;
+													$li-width: min($k, $li-default-length); //li的寬度 > group的child，li的寬度 = group的child
+													$all-width: $j - 1 + $li-width;
 
 													> [data-index][data-type] {
 
@@ -459,8 +459,8 @@
 
 														> .inner > .content {
 
-															@if( $all_width > $li_default_length ) { //如果li數量大於li寬度
-																left: 100% * ( $li_default_length - $all_width ); //就推回來
+															@if( $all-width > $li-default-length ) { //如果li數量大於li寬度
+																left: 100% * ( $li-default-length - $all-width ); //就推回來
 															}
 														}
 													}
@@ -1247,18 +1247,18 @@
 				> .inner > .content > .inner {
 
 					> ul {
-						width: $max_li_length / $i * 100%;
+						width: $max-li-length / $i * 100%;
 
 						> li {
-							width: 100% / $i / ( $max_li_length / $i );
+							width: 100% / $i / ( $max-li-length / $i );
 
-							&:nth-child(n+#{$max_li_length + 1}) { //超過 $max_li_length 就藏起來
+							&:nth-child(n+#{$max-li-length + 1}) { //超過 $max-li-length 就藏起來
 								display: none;
 							}
 
 							$li: ' ';
 
-							@for $i from 1 through $max_li_length {
+							@for $i from 1 through $max-li-length {
 
 								$li: $li + '+ li '; 
 							}
@@ -1307,7 +1307,7 @@
 
 					> ul {
 						@extend %reset;
-						width: $max_li_length / $show_li_length * 100%;
+						width: $max-li-length / $show-li-length * 100%;
 						list-style: none;
 
 						&:after {
@@ -1315,16 +1315,16 @@
 						}
 
 						> li {
-							width: 100% / $show_li_length / ( $max_li_length / $show_li_length );
+							width: 100% / $show-li-length / ( $max-li-length / $show-li-length );
 							float: left;
 
-							&:nth-child(n+#{$max_li_length + 1}) { //超過 $max_li_length 就藏起來
+							&:nth-child(n+#{$max-li-length + 1}) { //超過 $max-li-length 就藏起來
 								display: none;
 							}
 
 							$li: ' ';
 
-							@for $i from 1 through $max_li_length {
+							@for $i from 1 through $max-li-length {
 
 								$li: $li + '+ li '; 
 							}

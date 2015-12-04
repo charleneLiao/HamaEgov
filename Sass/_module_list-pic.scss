@@ -302,9 +302,9 @@
 			}
 
 			li {
-				$li_length: 5;
+				$li-length: 5;
 
-				width: 100% / $li_length;
+				width: 100% / $li-length;
 				float: left;
 			}
 
@@ -408,9 +408,9 @@
 			}
 
 			li {
-				$li_length: 5;
+				$li-length: 5;
 
-				width: 100% / $li_length;
+				width: 100% / $li-length;
 				float: left;
 			}
 
@@ -505,7 +505,7 @@
 			ul {
 				@extend %reset;
 				overflow: hidden;
-				width: $max_li_length / $show_li_length * 100%;
+				width: $max-li-length / $show-li-length * 100%;
 
 				@include at('no-js') {
 					width: 100%;
@@ -518,13 +518,13 @@
 			}
 
 			li {
-				width: 100% / $show_li_length / ( $max_li_length / $show_li_length );
+				width: 100% / $show-li-length / ( $max-li-length / $show-li-length );
 				float: left;
 
 				@include at('no-js') {
-					width: 100% / $show_li_length;
+					width: 100% / $show-li-length;
 
-					&:nth-child(#{$show_li_length}n+1) {
+					&:nth-child(#{$show-li-length}n+1) {
 						clear: left;
 					}
 				}
@@ -599,7 +599,7 @@
 				&.prev {
 
 					a {
-						left: $layout_main_interval;
+						left: $layout-main-interval;
 						@include bg-to-pic('icon-pic/away-b-left.png', false);
 					}
 				}
@@ -607,7 +607,7 @@
 				&.next {
 
 					a {
-						right: $layout_main_interval;
+						right: $layout-main-interval;
 						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
 				}

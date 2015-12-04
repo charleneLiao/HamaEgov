@@ -12,7 +12,7 @@
 
 @import 'base_variable'; //變數
 
-@for $i from $min_child through $max_child { //算自然分割
+@for $i from $min-child through $max-child { //算自然分割
 
 	[data-type="1"][data-child="#{$i}"] {
 
@@ -47,7 +47,7 @@
 	}
 }
 
-@for $i from $min_aLineLength through $max_aLineLength { //算設定分割
+@for $i from $min-aLineLength through $max-aLineLength { //算設定分割
 
 	[data-type="1"][data-aLineLength="#{$i}"] {
 
@@ -90,8 +90,6 @@
 	}
 }
 
-$layout_main_interval: $interval-s; //主層間隔
-
 [data-index][data-type] { //模組與群組
 
 	> .inner {
@@ -103,7 +101,7 @@ $layout_main_interval: $interval-s; //主層間隔
 [data-type="0"] { //模組
 
 	> .inner {
-		margin: 0 $layout_main_interval;
+		margin: 0 $layout-main-interval;
 	}
 }
 
@@ -156,7 +154,7 @@ $layout_main_interval: $interval-s; //主層間隔
 [data-type="4"] { //清單
 
 	> .inner {
-		margin: 0 $layout_main_interval;
+		margin: 0 $layout-main-interval;
 	}
 
 	[data-index][data-type] { //模組

@@ -575,7 +575,7 @@
 		}
 	}
 
-	@mixin default-min-length( $default-length, $max-length: $max_child ) { //設定預設的最小單行數量，$default-length 為預設的數量，$max-length 為最大的分割數量，只能用於 [data-type="4"]
+	@mixin default-min-length( $default-length, $max-length: $max-child ) { //設定預設的最小單行數量，$default-length 為預設的數量，$max-length 為最大的分割數量，只能用於 [data-type="4"]
 
 		> .inner > .content > .inner {
 
@@ -676,7 +676,7 @@
 		}
 	}
 
-	@mixin set-length( $max-length: $max_aLineLength ) { //手動設定單行數量，$max-length 為 data-aLineLength 的最大數量
+	@mixin set-length( $max-length: $max-aLineLength ) { //手動設定單行數量，$max-length 為 data-aLineLength 的最大數量
 
 		@for $i from 1 through $max-length { //算設定分割
 
@@ -704,7 +704,7 @@
 		}
 	}
 
-	@mixin set-length-hide-more( $max-length: $max_aLineLength ) { //手動設定單行數量，並且隱藏超過的，$max-length 為 data-aLineLength 的最大數量
+	@mixin set-length-hide-more( $max-length: $max-aLineLength ) { //手動設定單行數量，並且隱藏超過的，$max-length 為 data-aLineLength 的最大數量
 		@include set-length( $max-length );
 
 		@for $i from 1 through $max-length { //算設定分割

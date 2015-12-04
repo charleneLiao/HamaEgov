@@ -13,13 +13,11 @@
 	</div></div>
 	<div class="content"><div class="inner">
 		<ul data-index="1" data-child="<%= li_length %>">
-
 			<li data-index="1"><span><a href="#">首頁</a></span></li>
 
 			<% li_length.times do |i| %>
 				<li data-index="<%= i + 2 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 			<% end %>
-
 		</ul>
 	</div></div>
 </div></div>
