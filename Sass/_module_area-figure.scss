@@ -113,7 +113,8 @@
 
 					span {
 						@extend %cover-bg;
-						height: 100px;
+						display: block;
+						height: 80px;
 					}
 
 					img {
