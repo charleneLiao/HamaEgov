@@ -113,11 +113,14 @@
 							}
 						}
 
-						[data-index][data-type] { //頁籤裡的 footer 不是 absolute
+						> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
 
-							.footer {
-								position: static;
-								margin-top: $interval-s;
+							> .inner {
+
+								> .footer {
+									position: static;
+									margin-top: $interval-s;
+								}
 							}
 						}
 					}
