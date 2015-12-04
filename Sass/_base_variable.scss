@@ -6,7 +6,6 @@
 	$icon-pic: true; // true 或 false，是否開啟雪碧圖示
 	$icon-font: true; // true 或 false，是否開啟文字圖示
 
-
 //灰階================================================================
 	$white: #ffffff; //非常淺
 	$light: #f6f6f6; //淺色
@@ -16,26 +15,21 @@
 	$deep: #343434; //深色
 	$black: #1a1a1a; //非常深
 
-
 //主要版面顏色================================================================
 	$major-color: #08c !default; //主色
 	$minor-color: #0ca !default; //次色
-
 
 //其他版面顏色================================================================
 	$lesser1-color: #fff !default; //更次色
 	$lesser2-color: #fff !default; //更次色
 	$lesser3-color: #fff !default; //更次色
 
-
 //文字顏色================================================================
 	$title-color: #c02 !default; //標題色
 	$span-color: #ca0 !default; //附註色
 
-
 //文字樣式================================================================
 	$base-font-style: Arial, '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
-
 
 //文字大小================================================================
 	$font-size-xs: .8em;
@@ -44,11 +38,9 @@
 	$font-size-l: 1.1em;
 	$font-size-xl: 1.4em;
 
-
 //文字厚度================================================================
 	$font-weight-n: 400;
 	$font-weight-b: 700;
-
 
 //文字行高================================================================
 	$line-height-xs: 1;
@@ -57,14 +49,12 @@
 	$line-height-l: 2;
 	$line-height-xl: 2.4;
 
-
 //文字間格================================================================
 	$letter-spacing-xs: 1px;
 	$letter-spacing-s: 2px;
 	$letter-spacing-m: 3px;
 	$letter-spacing-l: 4px;
 	$letter-spacing-xl: 5px;
-
 
 //透明度================================================================
 	$opacity-vl: .3;
@@ -73,7 +63,6 @@
 	$opacity-h: .8;
 	$opacity-vh: .9;
 
-
 //間隔設定================================================================
 	$interval-xs: 3px;
 	$interval-s: 6px;
@@ -81,16 +70,13 @@
 	$interval-l: 20px;
 	$interval-xl: 30px;
 
-
 //基本動畫速度================================================================
 	$transition: 200ms;
-
 
 //RWD寬度================================================================
 	$pc-width: 1010px !default; //pc寬度
 	$pad-width: 768px !default; //pad寬度
 	$phone-width: 560px !default; //phone寬度
-
 
 //grid 框架設定================================================================
 	$min_child: 1; //最少的child數量
@@ -98,20 +84,16 @@
 	$min_aLineLength: 2; //最少的單行數量
 	$max_aLineLength: 10; //最多的單行數量
 
-
 //預設空文字================================================================
 	$content: '\200B'; //空偽類的字元
-
 
 //預設陰影================================================================
 	$box-shadow: 0 0 $interval-m $light-gray;
 	$text-shadow: 0 0 $interval-m $deep-gray;
 
-
 //文字圖示================================================================
 	$icon-font-size: inherit; //文字圖示大小
 	$icon-font-color: inherit; //文字圖示顏色
-
 
 //全頁文字================================================================
 	$body-font-color: $deep !default; //網站文字顏色
@@ -119,24 +101,20 @@
 	$body-font-size-m: $font-size-s !default; //medium
 	$body-font-size-l: $font-size-m !default; //large
 
-
 //預設線條================================================================
 	$border-style: solid;
 	$border-width: 1px;
 	$border-color: $light-gray;
 	$border: $border-width $border-style $border-color;
 
-
 //預設圓角================================================================
 	$border-radius: $interval-xs;
-
 
 //連結顏色================================================================
 	$link-color: inherit !default; //連結顏色
 	$visited-color: inherit !default; //造訪過連結顏色
 	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊 
 	$active-color: inherit !default; //點擊連結顏色
-
 
 //按鈕樣式================================================================
 	$btn-bg-color: $deep-gray; //按鈕背景色
@@ -146,27 +124,22 @@
 	$btn-padding-xs: $interval-xs $interval-s; //按鈕內邊距，決定按鈕大小
 	$btn-border: 0; //按鈕線框
 
-
 //輸入框樣式================================================================
 	$input-padding: $interval-s $interval-m;
 	$input-border: $border;
 	$input-bg-color: $white;
 
-
 //特殊字元"\"================================================================
 	$backslash: str-slice( '\\', 1, 1 ); //反斜線字串
 
-
 //範例陣列===============================================================
 	$sample-list: #fff #fff;
-
 
 //範例物件===============================================================
 	$sample-map: (
 		'key1': #fff,
 		'key2': #fff
 	);
-
 
 //分享圖片 & 顏色物件===============================================================
 	$share-map: (
@@ -176,7 +149,6 @@
 		'line': ( 'pic': 'share-w-line.png', 'color': #4bc700 ),
 		'email': ( 'pic': 'share-w-email.png', 'color': #666666 )
 	);
-
 
 //檔案類型圖片 & 顏色物件===============================================================
 	$file-type-map: (
@@ -198,7 +170,6 @@
 		'xlsx': ( 'pic': 'file-type-xlsx.png', 'color': #16ab16 ),
 		'zip': ( 'pic': 'file-type-zip.png', 'color': #b5851a )
 	);
-
 
 //瀏覽器媒體================================================================
 
@@ -240,7 +211,6 @@
 		'op12': 'all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)',
 		'op16+': 'all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)'
 	);
-
 
 //連覽器支持================================================================
 

@@ -1235,7 +1235,7 @@
 //跑馬燈================================================================
 
 	&.marqee-slider {
-		$btn-width: 45px; //設定按鈕寬度
+		$btn-width: 30px; //設定按鈕寬度
 		$max-li-length: 50; //設定 li 的最大數量
 		$show-li-length: 5; //設定一次要秀的數量
 		$max-show-li-length: 10; //設定一次要秀的範圍數量
@@ -1333,8 +1333,8 @@
 								display: none;
 							}
 
-							[data-index][data-type] { //隱藏內置模組的 header 與 footer
-								padding: $interval-xs;
+							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
+								padding: $interval-s;
 
 								> .inner {
 									@extend %reset;
@@ -1379,12 +1379,10 @@
 							display: block;
 							width: $btn-width;
 							transition: $transition;
-							background-color: $light;
-							background-color: rgba($light, $opacity-h);
+							background-color: $btn-bg-color;
 
 							&:hover {
-								background-color: $light-gray;
-								background-color: rgba($light-gray, $opacity-h);
+								background-color: $btn-hover-bg-color;
 							}
 						}
 					}
@@ -1393,7 +1391,7 @@
 
 						a {
 							left: 0;
-							@include bg-to-pic('icon-pic/away-b-left.png', false);
+							@include bg-to-pic('icon-pic/away-w-left.png', false);
 						}
 					}
 
@@ -1401,7 +1399,7 @@
 
 						a {
 							right: 0;
-							@include bg-to-pic('icon-pic/away-b-right.png', false);
+							@include bg-to-pic('icon-pic/away-w-right.png', false);
 						}
 					}
 
