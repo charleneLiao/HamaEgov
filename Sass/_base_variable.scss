@@ -172,15 +172,9 @@
 		'zip': ( 'pic': 'file-type-zip.png', 'color': #b5851a )
 	);
 
-//瀏覽器媒體================================================================
+//瀏覽器媒體，給 hack 用================================================================
 
-	$media: (
-		'pc': '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
-		'pad': '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
-		'phone': '(max-width: #{$phone-width})',
-		'center': '(max-width: #{$pc-width})',
-		'mobile': '(max-width: #{$pad-width})',
-
+	$hack: (
 		'ip4-4s': 'only screen and (device-aspect-ratio: 2/3) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait)',
 		'ip5-5s': 'only screen and (device-aspect-ratio: 40/71)  and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait)',
 		'ip6': 'only screen and (device-aspect-ratio: 667/375) and (-webkit-min-device-pixel-ratio : 2) and (orientation : portrait)',
@@ -211,6 +205,16 @@
 		'op7': 'all and (min-width: 0px)',
 		'op12': 'all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)',
 		'op16+': 'all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)'
+	);
+
+//瀏覽器媒體，給 rwd 用================================================================
+
+	$media: (
+		'pc': '(max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
+		'pad': '(max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
+		'phone': '(max-width: #{$phone-width})',
+		'center': '(max-width: #{$pc-width})',
+		'mobile': '(max-width: #{$pad-width})'
 	);
 
 //連覽器支持================================================================

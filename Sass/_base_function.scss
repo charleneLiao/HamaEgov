@@ -124,6 +124,29 @@
 		}
 	}
 
+	%module-area { //首頁模組
+
+		[data-index][data-type="0"] {
+			@extend %module;
+		}
+
+		[data-index][data-type="4"], [data-index][data-type="2"] {
+			@extend %module;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
+				@extend %reset-outer;
+			}
+		}
+	}
+
 	%module-title { //模組title
 		@extend %reset;
 		font-size: $font-size-l;
@@ -148,14 +171,22 @@
 		}
 	}
 
-	%is-module-area { //首頁模組
+	%page { //內頁
+		margin: $interval-l 0;
+
+		> .inner {
+
+		}
+	}
+
+	%page-area { //內頁模組
 
 		[data-index][data-type="0"] {
-			@extend %module;
+			@extend %page;
 		}
 
-		[data-index][data-type="4"], & [data-index][data-type="2"] {
-			@extend %module;
+		[data-index][data-type="4"], [data-index][data-type="2"] {
+			@extend %page;
 
 			[data-index][data-type="0"] {
 				@extend %reset-outer;
@@ -168,14 +199,6 @@
 			[data-index][data-type="2"] {
 				@extend %reset-outer;
 			}
-		}
-	}
-
-	%page { //內頁
-		margin: $interval-l 0;
-
-		> .inner {
-
 		}
 	}
 
@@ -195,29 +218,6 @@
 		}
 	}
 
-	%is-page-area { //內頁模組
-
-		[data-index][data-type="0"] {
-			@extend %page;
-		}
-
-		[data-index][data-type="4"], & [data-index][data-type="2"] {
-			@extend %page;
-
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
-			}
-		}
-	}
-
 	%mobile { //手機側欄模組
 		margin: $interval-m 0;
 
@@ -226,13 +226,13 @@
 		}
 	}
 
-	%is-mobile-area { //手機側欄模組
+	%mobile-area { //手機側欄模組
 
 		[data-index][data-type="0"] {
 			@extend %mobile;
 		}
 
-		[data-index][data-type="4"], & [data-index][data-type="2"] {
+		[data-index][data-type="4"], [data-index][data-type="2"] {
 			@extend %mobile;
 
 			[data-index][data-type="0"] {
@@ -445,7 +445,7 @@
 				background-color: $light;
 			}
 
-			& th, & td { //th, td共同設定
+			th, td { //th, td共同設定
 				padding: $interval-m;
 				line-height: $line-height-m;
 			}
@@ -481,6 +481,9 @@
 	}
 
 	@mixin bg-to-pic( $img-src, $size: true, $height: null ) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+		background-image: image-url( $img-src );
+		background-repeat: no-repeat;
+		background-position: center;
 
 		@if( $size == true ) { //如果是 true 就匯出大小
 			width: image-width( $img-src );
@@ -517,10 +520,6 @@
 				width: $size;
 			}
 		}
-
-		background-image: image-url( $img-src );
-		background-repeat: no-repeat;
-		background-position: center;
 	}
 
 	@mixin icon-pic( $img-name, $size: true, $height: null ) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
@@ -756,48 +755,53 @@
 
 	@mixin rwd( $max, $min: 0 ) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
 
-		@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
+		@if( $rwd == true ) {
+
+			@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
+				@content;
+			}
+		}
+	}
+
+	@mixin at( $class ) { //在某種 class 下的樣式，參數是 class name
+
+		.#{$class} & {
 			@content;
 		}
 	}
 
-	@mixin at( $key, $obj: 'media' ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
+	@mixin hack( $key ) { //查詢瀏覽器媒體，給 hack 用，$key 是 $hack 的 key
 
-		@if( ( $rwd == false ) and ( $key == 'mobile' or $key == 'pad' or $key == 'phone' ) ) {
-			$obj: null;
+		@media #{map-get( $hack, $key )} {
+			@content;
 		}
+	}
 
-		@if( $key == 'no-js' ) {
-			
-			[data-js="false"] & {
+	@mixin media( $key ) { //查詢瀏覽器媒體，給 rwd 用，$key 是 $media 的 key
+
+		@if( $rwd == true ) {
+
+			@media #{map-get( $media, $key )} {
 				@content;
-			}
-			
-		} @else {
-
-			@if( $obj == 'media' ) {
-
-				@media #{map-get( $media, $key )} {
-					@content;
-				}
-
-			} @else if( $obj == 'supports' ) {
-
-				@supports #{map-get( $supports, $key )} {
-					@content;
-				}
 			}
 		}
 	}
 
-	@mixin data-js( $boolean: true ) { //在 有/無 js下的樣式表現
+	@mixin supports( $key ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 是 $supports 的 $key
+
+		@supports #{map-get( $supports, $key )} {
+			@content;
+		}
+	}
+
+	@mixin js( $boolean: true ) { //在 有/無 js下的樣式表現，$boolean 是布林值
 
 		[data-js="#{$boolean}"] & {
 			@content;
 		}
 	}
 
-	@mixin data-admin( $boolean: true ) { //在 是/否 管理員登入的樣式表現
+	@mixin admin( $boolean: true ) { //在 是/否 管理員登入的樣式，$boolean 是布林值
 
 		[data-admin="#{$boolean}"] & {
 			@content;

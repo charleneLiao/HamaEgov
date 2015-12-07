@@ -161,7 +161,7 @@
 
 											}
 
-											h2, & h3, & h4 {
+											h2, h3, h4 {
 												@extend %reset;
 
 												&:before {
@@ -328,7 +328,7 @@
 
 											}
 
-											h2, & h3, & h4 {
+											h2, h3, h4 {
 												@extend %reset;
 											}
 
@@ -560,7 +560,7 @@
 
 											}
 
-											h2, & h3, & h4 {
+											h2, h3, h4 {
 												@extend %reset;
 
 												&:before {
@@ -715,7 +715,7 @@
 
 											}
 
-											h2, & h3, & h4 {
+											h2, h3, h4 {
 												@extend %reset;
 
 												&:before {
@@ -1379,7 +1379,7 @@
 
 					&.next, &.prev {
 
-						@include at('no-js') {
+						@include js(false) {
 							display: none;
 						}
 
@@ -1509,7 +1509,7 @@
 
 					&.next, &.prev {
 
-						@include at('no-js') {
+						@include js(false) {
 							display: none;
 						}
 

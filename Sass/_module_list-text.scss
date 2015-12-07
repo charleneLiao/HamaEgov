@@ -630,11 +630,11 @@
 			right: $interval-l;
 			top: $interval-l;
 
-			@include data-admin('false') {
+			@include admin('false') {
 				display: none;
 			}
 
-			@include at('ie6-7-8') {
+			@include hack('ie6-7-8') {
 				position: absolute;
 			}
 
@@ -820,11 +820,11 @@
 			top: 200px;
 			left: $interval-l;
 
-			@include at('ie6-7-8') {
+			@include hack('ie6-7-8') {
 				display: none;
 			}
 
-			@include at('mobile') {
+			@include media('mobile') {
 				display: none;
 			}
 

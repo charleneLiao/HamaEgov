@@ -25,7 +25,7 @@
 					> [data-index][data-type] {
 						width: 100% / $i;
 
-						@include at('pad') {
+						@include media('pad') {
 							width: 50%;
 
 							&:nth-of-type(odd){
@@ -37,7 +37,7 @@
 							}
 						}
 
-						@include at('phone') {
+						@include media('phone') {
 							width: 100%;
 						}
 					}
@@ -64,7 +64,7 @@
 							clear: left;
 						}
 
-						@include at('pad') {
+						@include media('pad') {
 							width: 50%;
 
 							&:nth-of-type(#{$i}n+1) {
@@ -80,7 +80,7 @@
 							}
 						}
 
-						@include at('phone') {
+						@include media('phone') {
 							width: 100%;
 						}
 					}

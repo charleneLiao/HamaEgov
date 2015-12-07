@@ -28,7 +28,7 @@
 		}
 	}
 
-	@include at('ie6-7-8') {
+	@include hack('ie6-7-8') {
 		min-width: $pc-width;
 	}
 
@@ -120,7 +120,7 @@
 //行動載具================================================================
 
 	.base-mobile {
-		@extend %is-mobile-area;
+		@extend %mobile-area;
 		z-index: 2;
 
 		&.is-open {
@@ -135,15 +135,15 @@
 		height: 100vh;
 		transition: $transition;
 
-		@include at('pad') {
+		@include media('pad') {
 			max-width: 350px;
 		}
 
-		@include at('phone') {
+		@include media('phone') {
 			max-width: 280px;
 		}
 
-		@include at('mobile') {
+		@include media('mobile') {
 			display: block;
 		}
 
@@ -377,7 +377,7 @@
 //模組區塊================================================================
 
 	.base-module-area {
-		@extend %is-module-area;
+		@extend %module-area;
 
 		> .inner {
 
@@ -457,7 +457,7 @@
 //內頁側欄區塊================================================================
 
 	.base-aside {
-		@extend %is-module-area;
+		@extend %module-area;
 		width: 230px;
 		float: left;
 

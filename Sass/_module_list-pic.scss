@@ -331,7 +331,7 @@
 					opacity: 0;
 				}
 
-				@include at('mobile') {
+				@include media('mobile') {
 					background-color: transparent;
 				}
 			}
@@ -426,7 +426,7 @@
 			a {
 				@extend %mask;
 
-				@include at('mobile') {
+				@include media('mobile') {
 					background-color: transparent;
 				}
 			}
@@ -494,7 +494,7 @@
 		.content {
 			margin: 0 $btn-width + $interval-xs;
 
-			@include at('no-js') {
+			@include js(false) {
 				margin: 0;
 			}
 
@@ -507,7 +507,7 @@
 				overflow: hidden;
 				width: $max-li-length / $show-li-length * 100%;
 
-				@include at('no-js') {
+				@include js(false) {
 					width: 100%;
 				}
 
@@ -521,7 +521,7 @@
 				width: 100% / $show-li-length / ( $max-li-length / $show-li-length );
 				float: left;
 
-				@include at('no-js') {
+				@include js(false) {
 					width: 100% / $show-li-length;
 
 					&:nth-child(#{$show-li-length}n+1) {
@@ -553,7 +553,7 @@
 					opacity: 0;
 				}
 
-				@include at('mobile') {
+				@include media('mobile') {
 					background-color: transparent;
 				}
 			}
@@ -577,7 +577,7 @@
 
 				&.next, &.prev {
 
-					@include at('no-js') {
+					@include js(false) {
 						display: none;
 					}
 
@@ -706,7 +706,7 @@
 
 				&.next, &.prev {
 
-					@include at('no-js') {
+					@include js(false) {
 						display: none;
 					}
 
