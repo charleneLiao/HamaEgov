@@ -187,6 +187,11 @@
 			position: absolute;
 			top: 36px;
 			right: 0;
+			z-index: 3;
+
+			@include js(false) {
+				top: 40px;
+			}
 
 			&.is-open {
 
@@ -226,11 +231,15 @@
 				display: inline-block;
 
 				> .inner {
-					
+
 				}
 
 				.fieldset {
 					position: relative;
+
+					@include js(false) {
+						display: none;
+					}
 
 					span {
 						$icon-width: 36px;
@@ -269,22 +278,32 @@
 				}
 
 				.list {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
 					display: none;
 					
 					ul {
 						@extend %reset;
+						margin-top: $interval-m;
 					}
 
 					li {
 
+						+ li {
+							margin-top: $interval-s;
+						}
 					}
 
 					span {
-
+						display: block;
 					}
 
 					a {
-
+						@extend %list;
+						@extend %list-hover;
+						box-shadow: $box-shadow;
 					}
 				}
 			}
@@ -316,6 +335,10 @@
 
 				a {
 					color: inherit;
+
+					@include js(false) {
+						@extend %btn;
+					}
 				}
 			}
 		}
@@ -324,6 +347,10 @@
 //連結================================================================
 
 	&.link {
+
+		@include js(false) {
+			display: none;
+		}
 
 		> .inner {
 
@@ -482,6 +509,9 @@
 
 			.form {
 
+				@include js(false) {
+					display: none;
+				}
 			}
 
 			.fieldset {
@@ -588,6 +618,10 @@
 
 			.label {
 				float: right;
+
+				@include js(false) {
+					display: none;
+				}
 
 				ul {
 					@extend %reset;
@@ -765,6 +799,10 @@
 //電子報================================================================
 
 	&.epaper {
+
+		@include js(false) {
+			display: none;
+		}
 
 		> .inner {
 

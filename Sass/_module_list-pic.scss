@@ -599,7 +599,7 @@
 				&.prev {
 
 					a {
-						left: $layout-main-interval;
+						left: $layout-interval;
 						@include bg-to-pic('icon-pic/away-b-left.png', false);
 					}
 				}
@@ -607,7 +607,7 @@
 				&.next {
 
 					a {
-						right: $layout-main-interval;
+						right: $layout-interval;
 						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
 				}
@@ -804,6 +804,11 @@
 
 				+ li {
 					display: none;
+
+					@include js(false) {
+						display: block;
+						margin-top: $interval-m;
+					}
 				}
 			}
 
@@ -835,6 +840,12 @@
 
 			li {
 
+				&.next, &.prev {
+
+					@include js(false) {
+						display: none;
+					}
+				}
 
 				&.prev {
 

@@ -1,4 +1,4 @@
-<div class="base-footer" data-index="<%= index %>" data-type="3" data-child="3"><div class="inner">
+<div class="base-footer" data-index="<%= index %>" data-type="3" data-child="4"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
@@ -7,12 +7,12 @@
 		<%= render :partial => '/Module/simple-text_accesskey', :locals => { :accesskey => 'Z', :title => '下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結' } %>
 	<!-- accesskey 結束 -->
 
-	<!-- single-btn 單獨按鈕 -->
-		<%= render :partial => '/Module/simple-text_single-btn', :locals => { :index => 1 } %>
-	<!-- single-btn 結束 -->
+	<!-- toogle-btn 收合按鈕 -->
+		<%= render :partial => '/Module/simple-text_toogle-btn', :locals => { :index => 1 } %>
+	<!-- toogle-btn 結束 -->
 
 	<!-- group-list_nav 選單列表 -->
-		<%= render :partial => '/Module/group-list_nav', :locals => { :index => 4 } %>
+		<%= render :partial => '/Module/group-list_nav', :locals => { :index => 2 } %>
 	<!-- group-list_nav 結束 -->
 
 	<!-- group-info 資訊群組 -->
@@ -21,9 +21,9 @@
 			</div></div>
 			<div class="content"><div class="inner">
 
-			<!-- logo 標誌 -->
-				<%= render :partial => '/Module/simple-pic_logo', :locals => { :index => 1, :src => '/Images/footer_logo.png', :alt => '共通平台 v2.0' } %>
-			<!-- logo 結束 -->
+			<!-- minor-logo 次要標誌 -->
+				<%= render :partial => '/Module/simple-text_minor-logo', :locals => { :index => 1 } %>
+			<!-- minor-logo 結束 -->
 
 			<!-- icon 各種標章 -->
 				<%= render :partial => '/Module/list-pic_icon', :locals => { :index => 2 } %>

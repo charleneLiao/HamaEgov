@@ -13,8 +13,8 @@
 			</div></div>
 			<div class="content"><div class="inner">
 
-			<!-- logo 標誌 -->
-				<%= render :partial => '/Module/simple-pic_logo', :locals => { :index => 1, :src => '/Images/header_logo.png', :alt => '共通平台 v2.0' } %>
+			<!-- logo 主要標誌 -->
+				<%= render :partial => '/Module/simple-text_major-logo', :locals => { :index => 1 } %>
 			<!-- logo 結束 -->
 
 			<!-- group-msg-tool 資訊與工具群組 -->
@@ -23,21 +23,21 @@
 					</div></div>
 					<div class="content"><div class="inner">
 
-					<!-- link 連結 -->
-						<%= render :partial => '/Module/list-text_link', :locals => { :index => 1, :label => nil } %>
-					<!-- link 結束 -->
-
 					<!-- font-level 字級調整 -->
-						<%= render :partial => '/Module/list-text_font-level', :locals => { :index => 2 } %>
+						<%= render :partial => '/Module/list-text_font-level', :locals => { :index => 1 } %>
 					<!-- font-level 結束 -->
 
-					<!-- hot-key-word 熱門關鍵字 -->
-						<%= render :partial => '/Module/list-text_hot-key-word', :locals => { :index => 3 } %>
-					<!-- hot-key-word 結束 -->
+					<!-- link 連結 -->
+						<%= render :partial => '/Module/list-text_link', :locals => { :index => 2, :label => nil } %>
+					<!-- link 結束 -->
 
 					<!-- search 搜尋 -->
-						<%= render :partial => '/Module/area-form_search', :locals => { :index => 4 } %>
+						<%= render :partial => '/Module/area-form_search', :locals => { :index => 3 } %>
 					<!-- search 結束 -->
+
+					<!-- hot-key-word 熱門關鍵字 -->
+						<%= render :partial => '/Module/list-text_hot-key-word', :locals => { :index => 4 } %>
+					<!-- hot-key-word 結束 -->
 
 					</div></div>
 				</div></div>

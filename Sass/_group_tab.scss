@@ -77,12 +77,20 @@
 		> .inner > .header {
 			display: none;
 
+			@include js(false) {
+				display: block;
+			}
+
 			> .inner {
 
 			}
 
 			h3 {
+				@extend %module-title;
 
+				&:before {
+					@include icon-font('library_add');
+				}
 			}
 
 			span {
@@ -110,6 +118,11 @@
 
 							+ li {
 								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
 							}
 						}
 

@@ -16,7 +16,7 @@
 	$black: #1a1a1a; //非常深
 
 //主要版面顏色================================================================
-	$major-color: #08c !default; //主色
+	$major-color: #6aaed0 !default; //主色
 	$minor-color: #0ca !default; //次色
 
 //其他版面顏色================================================================
@@ -83,13 +83,13 @@
 	$max-child: 10; //最多的child數量
 	$min-aLineLength: 2; //最少的單行數量
 	$max-aLineLength: 10; //最多的單行數量
-	$layout-main-interval: $interval-s; //主層間隔
+	$layout-interval: $interval-s; //主層間隔
 
 //預設空文字================================================================
 	$content: '\200B'; //空偽類的字元
 
 //預設陰影================================================================
-	$box-shadow: 0 0 $interval-m $light-gray;
+	$box-shadow: 0 0 $interval-m $gray;
 	$text-shadow: 0 0 $interval-m $deep-gray;
 
 //文字圖示================================================================

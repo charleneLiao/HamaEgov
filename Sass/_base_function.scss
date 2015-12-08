@@ -481,13 +481,13 @@
 	}
 
 	@mixin bg-to-pic( $img-src, $size: true, $height: null ) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
-		background-image: image-url( $img-src );
+		background-image: image-url($img-src);
 		background-repeat: no-repeat;
 		background-position: center;
 
 		@if( $size == true ) { //如果是 true 就匯出大小
-			width: image-width( $img-src );
-			height: image-height( $img-src );
+			width: image-width($img-src);
+			height: image-height($img-src);
 
 		} @else if( $size == false ) { //如果是 false 就不匯出大小
 			
@@ -496,8 +496,8 @@
 
 			@if( $height != null ) { //如果有 $height 就給高
 				
-				@if( unitless( $height ) ) { //沒單位就是倍數
-					height: round( image-height( $img-src ) * $height);
+				@if( unitless($height) ) { //沒單位就是倍數
+					height: round( image-height($img-src) * $height);
 
 				} @else { //有單位就直接使用
 					height: $height;
@@ -506,7 +506,7 @@
 			} @else { //如果沒 $height ，高度就是 $size
 				
 				@if( unitless($size) ) { //沒單位就是倍數
-					height: round( image-height( $img-src ) * $size);
+					height: round( image-height($img-src) * $size);
 
 				} @else { //有單位就直接使用
 					height: $size;
@@ -514,7 +514,7 @@
 			}
 
 			@if( unitless($size) ) { //沒單位就是倍數
-				width: round( image-width( $img-src ) * $size);
+				width: round( image-width($img-src) * $size);
 
 			} @else { //有單位就直接使用
 				width: $size;
@@ -528,12 +528,12 @@
 			$img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
 		}
 
-		@if( $icon-pic ) {
+		@if($icon-pic) {
 			@extend %icon-pic;
 
 			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
 
-				@if( $debug ) {
+				@if($debug) {
 					@extend .icon-pic-#{ $img-name };
 				}@else {
 					@extend .icon-pic-#{ $img-name } !optional;
@@ -550,13 +550,13 @@
 
 	@mixin icon-font( $font ) { //文字圖示，列表請參閱 https://icomoon.io/
 
-		@if( $icon-font ) {
+		@if($icon-font) {
 			@extend %icon-font;
 
-			@if( $debug ) {
-				@extend .icon-font-#{ $font };
+			@if($debug) {
+				@extend .icon-font-#{$font};
 			}@else {
-				@extend .icon-font-#{ $font } !optional;
+				@extend .icon-font-#{$font} !optional;
 			}
 
 			font-size: $icon-font-size;
@@ -602,7 +602,7 @@
 		}
 	}
 
-	@mixin default-length( $length ) { //設定預設的單行數量，$length 為預設的數量
+	@mixin default-length($length) { //設定預設的單行數量，$length 為預設的數量
 
 		> .inner > .content > .inner {
 
@@ -629,8 +629,8 @@
 		}
 	}
 
-	@mixin default-length-hide-more( $length ) { //設定預設的單行數量，並且隱藏超過的，$length 為預設的數量
-		@include default-length( $length );
+	@mixin default-length-hide-more($length) { //設定預設的單行數量，並且隱藏超過的，$length 為預設的數量
+		@include default-length($length);
 
 		> .inner > .content > .inner {
 
@@ -704,7 +704,7 @@
 	}
 
 	@mixin set-length-hide-more( $max-length: $max-aLineLength ) { //手動設定單行數量，並且隱藏超過的，$max-length 為 data-aLineLength 的最大數量
-		@include set-length( $max-length );
+		@include set-length($max-length);
 
 		@for $i from 1 through $max-length { //算設定分割
 
@@ -763,21 +763,21 @@
 		}
 	}
 
-	@mixin at( $class ) { //在某種 class 下的樣式，參數是 class name
+	@mixin at($selector) { //在某種選擇器下的樣式，參數是選擇器
 
-		.#{$class} & {
+		#{$selector} & {
 			@content;
 		}
 	}
 
-	@mixin hack( $key ) { //查詢瀏覽器媒體，給 hack 用，$key 是 $hack 的 key
+	@mixin hack($key) { //查詢瀏覽器媒體，給 hack 用，$key 是 $hack 的 key
 
 		@media #{map-get( $hack, $key )} {
 			@content;
 		}
 	}
 
-	@mixin media( $key ) { //查詢瀏覽器媒體，給 rwd 用，$key 是 $media 的 key
+	@mixin media($key) { //查詢瀏覽器媒體，給 rwd 用，$key 是 $media 的 key
 
 		@if( $rwd == true ) {
 
@@ -787,7 +787,7 @@
 		}
 	}
 
-	@mixin supports( $key ) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 是 $supports 的 $key
+	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 是 $supports 的 $key
 
 		@supports #{map-get( $supports, $key )} {
 			@content;

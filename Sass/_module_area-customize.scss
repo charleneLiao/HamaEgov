@@ -64,6 +64,10 @@
 
 	&.map {
 
+		@include js(false) {
+			display: none;
+		}
+
 		> .inner {
 
 		}

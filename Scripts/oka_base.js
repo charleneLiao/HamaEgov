@@ -18,19 +18,18 @@
 	}
 })();
 
+
 $(function(){
 
-	var odd_ie = false, //判斷老IE
-		_appName = window.navigator.appName,
-		_version = window.navigator.appVersion.split(';')[1] || '';
+	// var odd_ie = false, //判斷老IE
+	// 	_appName = window.navigator.appName,
+	// 	_version = window.navigator.appVersion.split(';')[1] || '';
 
-		_version = _version.replace(/[ ]/g, '');
+	// 	_version = _version.replace(/[ ]/g, '');
 
-	if ( _appName === 'Microsoft Internet Explorer' && ( _version === 'MSIE8.0' || _version === 'MSIE7.0' || _version === 'MSIE6.0' ) ) { //如果是 IE6 - IE8
-		odd_ie = true;
-	}
+	// if ( _appName === 'Microsoft Internet Explorer' && ( _version === 'MSIE8.0' || _version === 'MSIE7.0' || _version === 'MSIE6.0' ) ) { //如果是 IE6 - IE8
+	// 	odd_ie = true;
+	// }
 
-	window.old_ie = odd_ie;
-
-	$('body').attr('data-js', true); //回傳結果給拖曳根節點，是否有開啟 js
+	// window.old_ie = odd_ie;
 });

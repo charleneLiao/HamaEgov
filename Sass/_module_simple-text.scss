@@ -86,203 +86,158 @@
 		}
 	}
 
-//單獨按鈕================================================================
+//主要標誌================================================================
 
-	&.single-btn {
+	&.major-logo {
+		float: left;
 
-		.base-mobile.is-open & {
+		> .inner {
 
-			.content {
-
-				a {
-					
-					&:before {
-						@include icon-font('close');
-						color: $white;
-					}
-
-					&:after {
-						content: $content;
-					}
-				}
-			}
 		}
 
-		.base-mobile & {
-			position: absolute;
-			left: 100%;
+		.header {
 
 			> .inner {
 
 			}
 
-			.header {
-				display: none;
+			h4 {
 
-				> .inner {
-
-				}
-
-				h4 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
 
-			.content {
-
-				> .inner {
+			span {
 					
-				}
-
-				span {
-					display: block;
-				}
-
-				a {
-					display: block;
-					line-height: 40px;
-					font-size: $font-size-xl;
-					
-					&:before {
-						@include icon-font('menu');
-						font-size: $font-size-xl;
-					}
-
-					&:after {
-						position: fixed;
-						top: 0;
-						right: 0;
-						width: 100vw;
-						height: 100vh;
-						background-color: rgba($deep, $opacity-m);
-						z-index: -1;
-					}
-				}
 			}
 
-			.footer {
+			a {
 
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
 			}
 		}
 
-		.base-footer.is-close & {
+		.content {
 
-			.content {
+			> .inner {
+				
+			}
 
-				a {
+			h1 {
+				@extend %reset;
+			}
 
-					&:before {
-						@include icon-font('keyboard_arrow_up');
-					}
+			span {
+				display: block;
+			}
 
-					&:after {
-						content: '展開選單';
-					}
-				}
+			a {
+				$pic: 'major_logo.png';
+				$pic-w: image-width($pic);
+				$pic-h: image-height($pic);
+
+				@include bg-to-pic($pic, false);
+				@extend %contain-bg;
+				@extend %hide-text;
+				display: block;
+				width: $pic-w;
+				padding-bottom: ( $pic-h / $pic-w ) * 100%;
 			}
 		}
 
-		.base-footer & {
-			border-bottom: $interval-xs solid $deep-gray;
+		.footer {
 
 			> .inner {
 
 			}
 
-			.header {
-				display: none;
+			ul {
 
-				> .inner {
-
-				}
-
-				h4 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
 
-			.content {
-				@extend %center;
+			li {
 
-				> .inner {
-					text-align: right;
-				}
-
-				span {
-					display: inline-block;
-				}
-
-				a {
-					display: block;
-					@extend %btn;
-
-					&:before {
-						@include icon-font('keyboard_arrow_down');
-						margin-right: $interval-xs;
-					}
-
-					&:after {
-						content: '收合選單';
-					}
-				}
 			}
 
-			.footer {
+			span {
 
-				> .inner {
+			}
 
-				}
+			a {
 
-				ul {
+			}
+		}
+	}
 
-				}
+//次要標誌================================================================
 
-				li {
+	&.minor-logo {
+		float: left;
 
-				}
+		> .inner {
 
-				span {
+		}
 
-				}
+		.header {
 
-				a {
+			> .inner {
 
-				}
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				$pic: 'minor_logo.png';
+				$pic-w: image-width($pic);
+				$pic-h: image-height($pic);
+
+				@include bg-to-pic($pic, false);
+				@extend %contain-bg;
+				@extend %hide-text;
+				display: block;
+				width: $pic-w;
+				padding-bottom: ( $pic-h / $pic-w ) * 100%;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}
@@ -584,6 +539,10 @@
 
 	&.weather {
 
+		@include js(false) {
+			display: none;
+		}
+
 		> .inner {
 
 		}
@@ -653,6 +612,310 @@
 
 			a {
 
+			}
+		}
+	}
+
+//收合按鈕================================================================
+
+	&.toogle-btn {
+
+		.base-mobile & {
+			position: absolute;
+			left: 100%;
+
+			@include js(false) {
+				display: none;
+			}
+
+			&.is-active {
+
+				.content {
+
+					a {
+						
+						&:before {
+							@include icon-font('close');
+							color: $white;
+						}
+
+						&:after {
+							content: $content;
+						}
+					}
+				}
+			}
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+					line-height: 40px;
+					font-size: $font-size-xl;
+					
+					&:before {
+						@include icon-font('menu');
+						font-size: $font-size-xl;
+					}
+
+					&:after {
+						position: fixed;
+						top: 0;
+						right: 0;
+						width: 100vw;
+						height: 100vh;
+						background-color: rgba($deep, $opacity-m);
+						z-index: -1;
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-footer & {
+			border-bottom: $interval-xs solid $deep-gray;
+
+			@include js(false) {
+				display: none;
+			}
+
+			&.is-active {
+
+				.content {
+
+					a {
+
+						&:before {
+							@include icon-font('keyboard_arrow_up');
+						}
+
+						&:after {
+							content: '展開選單';
+						}
+					}
+				}
+			}
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				@extend %center;
+
+				> .inner {
+					text-align: right;
+				}
+
+				span {
+					display: inline-block;
+				}
+
+				a {
+					@extend %btn;
+
+					&:before {
+						@include icon-font('keyboard_arrow_down');
+						margin-right: $interval-xs;
+					}
+
+					&:after {
+						content: '收合選單';
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//目標按鈕================================================================
+
+	&.target-btn {
+
+		.base-extend & {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			@include hack('ie6-7-8') {
+				display: none;
+			}
+
+			@include media('phone') {
+				display: none;
+			}
+
+			> .inner {
+				@extend %center;
+				position: relative;
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				$pic: 'icon-pic/away-w-top.png'; //圖片
+				$btn-w: 50px;
+				$btn-h: 30px;
+
+				> .inner {
+
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@include bg-to-pic($pic, false);
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					display: block;
+					width: $btn-w;
+					height: $btn-h;
+					background-color: $btn-bg-color;
+					transition: $transition;
+
+					&:hover {
+						height: $btn-h + $interval-m;
+						background-color: $btn-hover-bg-color;
+					}
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

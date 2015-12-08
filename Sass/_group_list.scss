@@ -247,6 +247,10 @@
 			position: relative;
 			z-index: 1;
 
+			@include js(false) {
+				padding-bottom: $interval-l;
+			}
+
 			> .inner {
 				@extend %center;
 
@@ -280,6 +284,10 @@
 							> li {
 								position: relative;
 
+								@include js(false) {
+									width: 100%;
+								}
+
 								+ li {
 
 									&:before {
@@ -291,6 +299,10 @@
 										left: 0;
 										width: $border-width;
 										background-color: $border-color;
+
+										@include js(false) {
+											content: none;
+										}
 									}
 								}
 
@@ -344,6 +356,11 @@
 												text-align: center;
 												font-size: $font-size-l;
 												transition: $transition;
+
+												@include js(false) {
+													text-align: left;
+													font-weight: $font-weight-b;
+												}
 											}
 										}
 
@@ -353,6 +370,12 @@
 											top: 100%;
 											width: 100%;
 											left: 0;
+
+											@include js(false) {
+												display: block;
+												position: static;
+												width: 100% !important;
+											}
 
 											> .inner {
 												padding: $interval-xs;
@@ -364,6 +387,25 @@
 
 										> .footer {
 											display: none;
+										}
+									}
+								}
+
+								> .nav {
+
+									> .inner > .content {
+
+										> .inner {
+
+											> ul {
+
+												> li {
+
+													@include js(false) {
+														width: 50% !important;
+													}
+												}
+											}
 										}
 									}
 								}
@@ -505,14 +547,17 @@
 			}
 		}
 
-		.base-footer.is-close & {
-			display: none;
-		}
-
 		.base-footer & {
 			@include default-min-length(6);
 			background-color: $light;
-			padding: $interval-l 0;
+
+			&.is-open {
+				display: block;
+			}
+
+			&.is-close {
+				display: none;
+			}
 
 			> .inner {
 				@extend %center;
@@ -538,6 +583,8 @@
 				}
 
 				> .content {
+					padding: $interval-l 0;
+					border-bottom: $border;
 
 					> .inner {
 
@@ -750,6 +797,10 @@
 
 										> .content {
 											display: none;
+
+											@include js(false) {
+												display: block;
+											}
 
 											> .inner {
 												padding: $interval-xs;
@@ -1201,6 +1252,11 @@
 
 							+ li {
 								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
 							}
 
 							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
@@ -1231,6 +1287,12 @@
 
 				li {
 
+					&.prev, &.next {
+
+						@include js(false) {
+							display: none;
+						}
+					}
 				}
 
 				span {
@@ -1317,10 +1379,18 @@
 					overflow: hidden;
 					margin: 0 $btn-width;
 
+					@include js(false) {
+						margin: 0;
+					}
+
 					> ul {
 						@extend %reset;
 						width: $max-li-length / $show-li-length * 100%;
 						list-style: none;
+
+						@include js(false) {
+							width: 100%;
+						}
 
 						&:after {
 							@extend %clear;
@@ -1343,6 +1413,11 @@
 
 							&#{$li}{
 								display: none;
+							}
+
+							@include js(false) {
+								display: block;
+								width: 100% / $show-li-length;
 							}
 
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
@@ -1434,7 +1509,7 @@
 //主輪播================================================================
 
 	&.major-slider {
-		$btn-width: 45px; //設定按鈕寬度
+		$btn-width: 40px; //設定按鈕寬度
 
 		> .inner {
 			margin: 0 !important;
@@ -1474,6 +1549,11 @@
 
 							+ li {
 								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
 							}
 
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
@@ -1525,6 +1605,7 @@
 							background-color: rgba($light, $opacity-h);
 
 							&:hover {
+								width: $btn-width + $interval-m;
 								background-color: $light-gray;
 								background-color: rgba($light-gray, $opacity-h);
 							}
