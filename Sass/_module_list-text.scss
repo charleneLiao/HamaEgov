@@ -1126,6 +1126,100 @@
 
 	&.link {
 
+		.base-mobile & {
+
+			&.is-open {
+
+				.header {
+					$icon: 'icon-pic/away-b-bottom.png';
+
+					a {
+
+						&:after {
+							@include bg-to-pic($icon, false);
+						}
+					}
+				}
+
+				.content {
+					display: block;
+				}
+			}
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+				display: none;
+
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+					padding-left: $interval-l;
+				}
+
+				li {
+
+				}
+
+				span {
+					display: block;
+					border-bottom: $border;
+				}
+
+				a {
+					display: block;
+					padding: $interval-m;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
 		.base-header & {
 			position: absolute;
 			top: 7px;
@@ -1133,6 +1227,10 @@
 
 			@include js(false) {
 				right: 0;
+			}
+
+			@include media('mobile') {
+				display: none;
 			}
 
 			> .inner {
@@ -1302,6 +1400,10 @@
 		}
 
 		.base-footer & {
+
+			@include media('mobile') {
+				display: none;
+			}
 
 			> .inner {
 
@@ -1482,6 +1584,10 @@
 			display: none;
 		}
 
+		@include media('mobile') {
+			display: none;
+		}
+
 		> .inner {
 			margin: 0;
 		}
@@ -1601,97 +1707,198 @@
 //熱門關鍵字================================================================
 
 	&.hot-key-word {
-		position: absolute;
-		top: 43px;
-		right: 315px;
 
-		@include js(false) {
-			right: 90px;
-		}
+		.base-mobile & {
 
-		> .inner {
-			margin: 0;
-		}
+			&.is-open {
 
-		.header {
-			display: inline;
+				.header {
+					$icon: 'icon-pic/away-b-bottom.png';
 
-			> .inner {
-				display: inline;
-			}
+					a {
 
-			h4 {
-				@extend %reset;
-				display: inline;
-				color: $white;
-
-				&:after {
-					content: ' : ';
-				}
-			}
-
-			span {
-				color: inherit;
-			}
-
-			a {
-				color: inherit;
-			}
-		}
-
-		.content {
-			display: inline;
-
-			> .inner {
-				display: inline;
-			}
-
-			ul {
-				@extend %reset;
-				display: inline;
-			}
-
-			li {
-				display: inline;
-				color: $white;
-				
-				+ li {
-
-					&:before {
-						content: ' , ';
+						&:after {
+							@include bg-to-pic($icon, false);
+						}
 					}
 				}
-			}
 
-			span {
-				color: inherit;
+				.content {
+					display: block;
+				}
 			}
-
-			a {
-				color: inherit;
-			}
-		}
-
-		.footer {
 
 			> .inner {
 
 			}
 
-			ul {
+			.header {
 
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 
-			li {
+			.content {
+				display: none;
 
+				> .inner {
+					
+				}
+
+				ul {
+					@extend %reset;
+					padding-left: $interval-l;
+				}
+
+				li {
+
+				}
+
+				span {
+					display: block;
+					border-bottom: $border;
+				}
+
+				a {
+					display: block;
+					padding: $interval-m;
+				}
 			}
 
-			span {
+			.footer {
 
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-header & {
+			position: absolute;
+			top: 43px;
+			right: 315px;
+
+			@include js(false) {
+				right: 90px;
 			}
 
-			a {
+			@include media('mobile') {
+				display: none;
+			}
 
+			> .inner {
+				margin: 0;
+			}
+
+			.header {
+				display: inline;
+
+				> .inner {
+					display: inline;
+				}
+
+				h4 {
+					@extend %reset;
+					display: inline;
+					color: $white;
+
+					&:after {
+						content: ' : ';
+					}
+				}
+
+				span {
+					color: inherit;
+				}
+
+				a {
+					color: inherit;
+				}
+			}
+
+			.content {
+				display: inline;
+
+				> .inner {
+					display: inline;
+				}
+
+				ul {
+					@extend %reset;
+					display: inline;
+				}
+
+				li {
+					display: inline;
+					color: $white;
+					
+					+ li {
+
+						&:before {
+							content: ' , ';
+						}
+					}
+				}
+
+				span {
+					color: inherit;
+				}
+
+				a {
+					color: inherit;
+				}
+			}
+
+			.footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

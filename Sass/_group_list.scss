@@ -251,6 +251,10 @@
 				padding-bottom: $interval-l;
 			}
 
+			@include media('mobile') {
+				display: none;
+			}
+
 			> .inner {
 				@extend %center;
 
@@ -550,6 +554,10 @@
 		.base-footer & {
 			@include default-min-length(6);
 			background-color: $light;
+
+			@include media('mobile') {
+				display: none;
+			}
 
 			&.is-open {
 				display: block;

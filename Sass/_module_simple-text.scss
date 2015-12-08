@@ -91,6 +91,10 @@
 	&.major-logo {
 		float: left;
 
+		@include media('mobile') {
+			float: none;
+		}
+
 		> .inner {
 
 		}
@@ -139,6 +143,11 @@
 				display: block;
 				width: $pic-w;
 				padding-bottom: ( $pic-h / $pic-w ) * 100%;
+
+				@include media('mobile') {
+					width: 100%;
+					padding-bottom: $pic-h;
+				}
 			}
 		}
 
@@ -170,6 +179,10 @@
 
 	&.minor-logo {
 		float: left;
+
+		@include media('mobile') {
+			display: none;
+		}
 
 		> .inner {
 
@@ -623,6 +636,7 @@
 		.base-mobile & {
 			position: absolute;
 			left: 100%;
+			margin: 0 !important;
 
 			@include js(false) {
 				display: none;
@@ -633,9 +647,12 @@
 				.content {
 
 					a {
+						width: auto;
+						background-color: transparent;
 						
 						&:before {
 							@include icon-font('close');
+							line-height: $rwd-btn-size;
 							color: $white;
 						}
 
@@ -647,7 +664,7 @@
 			}
 
 			> .inner {
-
+				margin: 0 !important;
 			}
 
 			.header {
@@ -681,12 +698,17 @@
 
 				a {
 					display: block;
-					line-height: 40px;
+					width: 100vw;
 					font-size: $font-size-xl;
+					background-color: deeper($major-color);
 					
 					&:before {
 						@include icon-font('menu');
-						font-size: $font-size-xl;
+						display: block;
+						width: $rwd-btn-size;
+						text-align: center;
+						line-height: $rwd-btn-size;
+						color: $white;
 					}
 
 					&:after {
@@ -729,6 +751,10 @@
 			border-bottom: $interval-xs solid $deep-gray;
 
 			@include js(false) {
+				display: none;
+			}
+
+			@include media('mobile') {
 				display: none;
 			}
 

@@ -18,6 +18,16 @@
 		}
 	}
 
+	@include media('mobile') {
+		
+		&:before {
+			display: block;
+			content: $content;
+			height: $rwd-btn-size;
+			background-color: deeper($major-color);
+		}
+	}
+
 	> .inner {
 
 		> .header {
@@ -139,6 +149,10 @@
 			right: 0;
 		}
 
+		@include js(false) {
+			display: none !important;
+		}
+
 		display: none;
 		position: fixed;
 		top: 0;
@@ -152,7 +166,7 @@
 		}
 
 		@include media('phone') {
-			max-width: 280px;
+			max-width: 320px - $rwd-btn-size;
 		}
 
 		@include media('mobile') {

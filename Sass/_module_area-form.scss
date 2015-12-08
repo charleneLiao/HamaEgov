@@ -193,6 +193,10 @@
 				top: 40px;
 			}
 
+			@include media('mobile') {
+				display: none;
+			}
+
 			&.is-open {
 
 				.content {

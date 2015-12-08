@@ -171,6 +171,10 @@
 		.base-footer & {
 			float: right;
 
+			@include media('mobile') {
+				display: none;
+			}
+
 			> .inner {
 
 			}
