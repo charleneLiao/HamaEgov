@@ -532,7 +532,7 @@
 		}
 	}
 
-	@mixin icon-font($font ) { //文字圖示，列表請參閱 https://icomoon.io/
+	@mixin icon-font($font) { //文字圖示，列表請參閱 https://icomoon.io/
 
 		@if($icon-font) {
 			@extend %icon-font;
@@ -739,7 +739,7 @@
 		}
 	}
 
-	@mixin set-len( $type, $max-len: $max-setLen ) { //手動設定單行數量，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
+	@mixin set-len($type, $max-len: $max-setLen) { //手動設定單行數量，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
@@ -791,7 +791,7 @@
 		}
 	}
 
-	@mixin set-len-hide( $type, $max-len: $max-setLen ) { //手動設定單行數量，並且隱藏超過的，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
+	@mixin set-len-hide($type, $max-len: $max-setLen) { //手動設定單行數量，並且隱藏超過的，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
 		@include set-len($type, $max-len);
 
 		@if ( $type == 0 ) { // list 模組的狀況
@@ -882,7 +882,7 @@
 		}
 	}
 
-	@mixin set-len-rwd( $key, $len, $int: 100% ) { //手動設定RWD數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
+	@mixin set-len-rwd($key, $len, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
 
 		@if( $rwd == true ) {
 
@@ -892,7 +892,7 @@
 		}
 	}
 
-	@mixin rwd( $max, $min: 0 ) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
+	@mixin rwd($max, $min: 0) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
 
 		@if( $rwd == true ) {
 

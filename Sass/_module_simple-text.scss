@@ -670,7 +670,7 @@
 			}
 
 			> .inner {
-				margin: 0 !important;
+
 			}
 
 			.header {
@@ -813,6 +813,7 @@
 
 				span {
 					display: inline-block;
+					margin-right: $layout-interval;
 				}
 
 				a {
@@ -868,7 +869,7 @@
 				display: none;
 			}
 
-			@include media('phone') {
+			@include media('mobile') {
 				display: none;
 			}
 
@@ -913,7 +914,7 @@
 					@include bg-to-pic($pic, false);
 					position: absolute;
 					bottom: 0;
-					right: 0;
+					right: $layout-interval;
 					display: block;
 					width: $btn-w;
 					height: $btn-h;
