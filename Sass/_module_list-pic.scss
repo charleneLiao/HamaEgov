@@ -1,6 +1,7 @@
 //圖片列表
 
 .list-pic {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -279,7 +280,7 @@
 			}
 
 			h4 {
-				@extend %page-title;
+				@extend %title;
 			}
 
 			span {
@@ -306,9 +307,9 @@
 			}
 
 			li {
-				$li-length: 5;
+				$li-len: 5;
 
-				width: 100% / $li-length;
+				width: 100% / $li-len;
 				float: left;
 			}
 
@@ -412,9 +413,9 @@
 			}
 
 			li {
-				$li-length: 5;
+				$li-len: 5;
 
-				width: 100% / $li-length;
+				width: 100% / $li-len;
 				float: left;
 			}
 
@@ -468,8 +469,8 @@
 
 	&.marqee {
 		$btn-width: 36px;
-		$max-li-length: 20; //設定 li 的最大數量
-		$show-li-length: 5; //設定一次要秀的數量
+		$max-li-len: 20; //設定 li 的最大數量
+		$show-li-len: 5; //設定一次要秀的數量
 
 		> .inner {
 
@@ -509,7 +510,7 @@
 			ul {
 				@extend %reset;
 				overflow: hidden;
-				width: $max-li-length / $show-li-length * 100%;
+				width: $max-li-len / $show-li-len * 100%;
 
 				@include js(false) {
 					width: 100%;
@@ -522,13 +523,13 @@
 			}
 
 			li {
-				width: 100% / $show-li-length / ( $max-li-length / $show-li-length );
+				width: 100% / $show-li-len / ( $max-li-len / $show-li-len );
 				float: left;
 
 				@include js(false) {
-					width: 100% / $show-li-length;
+					width: 100% / $show-li-len;
 
-					&:nth-child(#{$show-li-length}n+1) {
+					&:nth-child(#{$show-li-len}n+1) {
 						clear: left;
 					}
 				}
@@ -778,7 +779,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('slideshow');
@@ -877,8 +878,10 @@
 //連結================================================================
 
 	&.link {
-		@include default-length(2);
-		@include set-length();
+		$default-len: 3;
+
+		@include default-len($type, $default-len);
+		@include set-len($type);
 		margin-top: 0;
 
 		> .inner {
@@ -892,7 +895,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('link');
@@ -916,10 +919,14 @@
 
 			ul {
 				@extend %reset;
+
+				&:after {
+					@extend %clear;
+				}
 			}
 
 			li {
-
+				
 			}
 
 			span {

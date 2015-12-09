@@ -1,6 +1,7 @@
 //文字列表
 
 .list-text {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -365,7 +366,7 @@
 				}
 
 				h4 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('menu');
@@ -1223,10 +1224,10 @@
 		.base-header & {
 			position: absolute;
 			top: 7px;
-			right: 80px;
+			right: 90px;
 
 			@include js(false) {
-				right: 0;
+				right: 10px;
 			}
 
 			@include media('mobile') {
@@ -1326,7 +1327,7 @@
 				}
 
 				h4 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('link');
@@ -1500,7 +1501,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('stars');
@@ -1578,7 +1579,7 @@
 	&.font-level {
 		position: absolute;
 		top: 6px;
-		right: 0;
+		right: 10px;
 
 		@include js(false) {
 			display: none;
@@ -1805,10 +1806,10 @@
 		.base-header & {
 			position: absolute;
 			top: 43px;
-			right: 315px;
+			right: 325px;
 
 			@include js(false) {
-				right: 90px;
+				right: 100px;
 			}
 
 			@include media('mobile') {
@@ -2172,7 +2173,7 @@
 			}
 
 			h4 {
-				@extend %page-title;
+				@extend %title;
 			}
 
 			span {
@@ -2515,7 +2516,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('explore');
@@ -2532,7 +2533,7 @@
 		}
 
 		.content {
-			$li-max-length: 10; // li的最大數量
+			$li-max-len: 10; // li的最大數量
 
 			> .inner {
 				
@@ -2546,7 +2547,7 @@
 					@extend %clear;
 				}
 
-				@for $i from 2 through $li-max-length { //ul的child
+				@for $i from 2 through $li-max-len { //ul的child
 
 					&[data-child="#{$i}"] {
 
@@ -2633,7 +2634,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('slideshow');

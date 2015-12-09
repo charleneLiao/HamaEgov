@@ -1,6 +1,7 @@
 //簡單文字
 
 .simple-text {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -17,7 +18,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('textsms');
@@ -130,6 +131,10 @@
 
 			span {
 				display: block;
+
+				@include media('mobile') {
+					padding: $interval-s;
+				}
 			}
 
 			a {
@@ -143,6 +148,7 @@
 				display: block;
 				width: $pic-w;
 				padding-bottom: ( $pic-h / $pic-w ) * 100%;
+				background-color: $white;
 
 				@include media('mobile') {
 					width: 100%;
@@ -568,7 +574,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('wb_sunny');

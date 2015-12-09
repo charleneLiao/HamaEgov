@@ -1,6 +1,7 @@
 //視訊區塊
 
 .area-video {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -17,7 +18,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('movie');

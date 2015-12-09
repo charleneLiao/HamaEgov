@@ -116,6 +116,30 @@
 		}
 	}
 
+	%title { //模組、內頁 title
+		@extend %reset;
+		font-size: $font-size-l;
+		padding-bottom: $interval-m;
+		border-bottom: $border;
+		margin-bottom: $interval-m;
+
+		&:before {
+			margin-right: $interval-xs;
+		}
+
+		&:after {
+			margin-left: $interval-xs;
+		}
+
+		span {
+			color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
 	%module { //模組
 		margin: 0 0 $interval-l;
 
@@ -147,30 +171,6 @@
 		}
 	}
 
-	%module-title { //模組title
-		@extend %reset;
-		font-size: $font-size-l;
-		padding-bottom: $interval-m;
-		border-bottom: $border;
-		margin-bottom: $interval-m;
-
-		&:before {
-			margin-right: $interval-xs;
-		}
-
-		&:after {
-			margin-left: $interval-xs;
-		}
-
-		span {
-			color: inherit;
-		}
-
-		a {
-			color: inherit;
-		}
-	}
-
 	%page { //內頁
 		margin: $interval-l 0;
 
@@ -199,22 +199,6 @@
 			[data-index][data-type="2"] {
 				@extend %reset-outer;
 			}
-		}
-	}
-
-	%page-title { //內頁title
-		@extend %reset;
-		font-size: $font-size-l;
-		padding-bottom: $interval-m;
-		border-bottom: $border;
-		margin-bottom: $interval-m;
-
-		span {
-			color: inherit;
-		}
-
-		a {
-			color: inherit;
 		}
 	}
 
@@ -480,7 +464,7 @@
 		white-space: normal;
 	}
 
-	@mixin bg-to-pic( $img-src, $size: true, $height: null ) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 		background-image: image-url($img-src);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -522,7 +506,7 @@
 		}
 	}
 
-	@mixin icon-pic( $img-name, $size: true, $height: null ) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+	@mixin icon-pic($img-name, $size: true, $height: null) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
 
 		@if( str-index( $img-name, '.png') ) { //如果有副檔名就拿掉
 			$img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
@@ -548,7 +532,7 @@
 		}
 	}
 
-	@mixin icon-font( $font ) { //文字圖示，列表請參閱 https://icomoon.io/
+	@mixin icon-font($font ) { //文字圖示，列表請參閱 https://icomoon.io/
 
 		@if($icon-font) {
 			@extend %icon-font;
@@ -564,7 +548,7 @@
 		}
 	}
 
-	@mixin icon-pic-btn( $img-name, $size: true, $height: null ) { //只有icon圖片的按鈕，隱含佔用了 :before
+	@mixin icon-pic-btn($img-name, $size: true, $height: null) { //只有icon圖片的按鈕，隱含佔用了 :before
 		@extend %hide-text;
 		display: inline-block;
 
@@ -574,27 +558,66 @@
 		}
 	}
 
-	@mixin default-min-length( $default-length, $max-length: $max-child ) { //設定預設的最小單行數量，$default-length 為預設的數量，$max-length 為最大的分割數量，只能用於 [data-type="4"]
+	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量，只能用於 [data-type="4"]
 
-		> .inner > .content > .inner {
+		@if ( $type == 0 ) { // list 模組的狀況
 
-			> ul {
+			.content {
 
-				&:after {
-					@extend %clear;
-				}
-
-				> li {
-					width: 100% / $default-length;
+				li {
+					width: 100% / $default-len;
 					float: left;
 				}
 
-				@for $i from $default-length through $max-length { //group list的child
+				@for $i from ( $default-len + 1 ) through $max-len { //group list 的 child
 
-					&[data-child="#{$i}"] {
+					[data-child="#{$i}"] {
 
-						> li {
+						li {
 							width: 100% / $i; //均分li
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 1 ) { // 分割 group 的狀況
+
+			> .inner > .content > .inner {
+
+				> [data-index][data-type] {
+					width: 100% / $default-len;
+					float: left;
+				}
+			}
+
+			@for $i from ( $default-len + 1) through $max-len { //group 的 child
+
+				&[data-child="#{$i}"] {
+
+					> [data-index][data-type] {
+						width: 100% / $i; //均分li
+					}
+				}
+			}
+
+		}@else if( $type == 4 ) {
+
+			> .inner > .content > .inner {
+
+				> ul {
+
+					> li {
+						width: 100% / $default-len;
+						float: left;
+					}
+
+					@for $i from ( $default-len + 1 ) through $max-len { //group list 的 child
+
+						&[data-child="#{$i}"] {
+
+							> li {
+								width: 100% / $i; //均分li
+							}
 						}
 					}
 				}
@@ -602,49 +625,59 @@
 		}
 	}
 
-	@mixin default-length($length) { //設定預設的單行數量，$length 為預設的數量
+	@mixin default-len($type, $len) { //設定預設的單行數量，$len 為預設的數量，$type 為 data-type 參數
 
-		> .inner > .content > .inner {
+		@if ( $type == 0 ) { // list 模組的狀況
 
-			&:after {
-				@extend %clear;
-			}
+			.content {
 
-			> ul {
-
-				&:after {
-					@extend %clear;
-				}
-
-				> li {
-					width: 100% / $length;
+				li {
+					width: 100% / $len;
 					float: left;
 				}
 			}
 
-			> [data-index][data-type] {
-				width: 100% / $length;
-				float: left;
+		}@else if( $type == 1 ) { // 分割 group 的狀況
+
+			> .inner > .content > .inner {
+
+				> [data-index][data-type] {
+					width: 100% / $len;
+					float: left;
+				}
+			}
+
+		}@else if( $type == 4 ) {
+
+			> .inner > .content > .inner {
+
+				> ul {
+
+					> li {
+						width: 100% / $len;
+						float: left;
+					}
+				}
 			}
 		}
 	}
 
-	@mixin default-length-hide-more($length) { //設定預設的單行數量，並且隱藏超過的，$length 為預設的數量
-		@include default-length($length);
+	@mixin default-len-hide($type, $len) { //設定預設的單行數量，並且隱藏超過的，$len 為預設的數量，$type 為 data-type 參數
+		@include default-len($type, $len);
 
-		> .inner > .content > .inner {
+		@if ( $type == 0 ) { // list 模組的狀況
 
-			> ul {
+			.content {
 
-				> li {
+				li {
 
-					&:nth-child(n+#{$length + 1}) {
+					&:nth-child(n+#{$len + 1}) {
 						display: none;
 					}
 
-					$li: ' ';
+					$li: ' '; //以下都是 for ie8
 
-					@for $i from 1 through $length {
+					@for $i from 1 through $len { 
 
 						$li: $li + '+ li '; 
 					}
@@ -655,71 +688,155 @@
 				}
 			}
 
-			> [data-index][data-type] {
+		}@else if( $type == 1 ) { // 分割 group 的狀況
 
-				&:nth-child(n+#{$length + 1}) {
-					display: none;
-				}
-
-				$div: ' ';
-
-				@for $i from 1 through $length {
-
-					$div: $div + '+ [data-index][data-type] '; 
-				}
-
-				&#{$div}{
-					display: none;
-				}
-			}
-		}
-	}
-
-	@mixin set-length( $max-length: $max-aLineLength ) { //手動設定單行數量，$max-length 為 data-aLineLength 的最大數量
-
-		@for $i from 1 through $max-length { //算設定分割
-
-			&[data-aLineLength="#{$i}"] > .inner > .content > .inner {
-
-				&:after {
-					@extend %clear;
-				}
-
-				> ul {
-
-					&:after {
-						@extend %clear;
-					}
-
-					> li {
-						width: 100% / $i;
-					}
-				}
+			> .inner > .content > .inner {
 
 				> [data-index][data-type] {
-					width: 100% / $i;
+
+					&:nth-child(n+#{$len + 1}) {
+						display: none;
+					}
+
+					$div: ' '; //以下都是 for ie8
+
+					@for $i from 1 through $len {
+
+						$div: $div + '+ [data-index][data-type] '; 
+					}
+
+					&#{$div}{
+						display: none;
+					}
+				}
+			}
+
+		}@else if( $type == 4 ) {
+
+			> .inner > .content > .inner {
+
+				> ul {
+
+					> li {
+
+						&:nth-child(n+#{$len + 1}) {
+							display: none;
+						}
+
+						$li: ' '; //以下都是 for ie8
+
+						@for $i from 1 through $len {
+
+							$li: $li + '+ li '; 
+						}
+
+						&#{$li}{
+							display: none;
+						}
+					}
 				}
 			}
 		}
 	}
 
-	@mixin set-length-hide-more( $max-length: $max-aLineLength ) { //手動設定單行數量，並且隱藏超過的，$max-length 為 data-aLineLength 的最大數量
-		@include set-length($max-length);
+	@mixin set-len( $type, $max-len: $max-setLen ) { //手動設定單行數量，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
 
-		@for $i from 1 through $max-length { //算設定分割
+		@if ( $type == 0 ) { // list 模組的狀況
 
-			&[data-aLineLength="#{$i}"] > .inner > .content > .inner {
+			@for $i from 1 through $max-len { //算設定分割
 
-				> ul {
+				&[data-setLen="#{$i}"] {
 
-					> li {
-						display: block;
+					.content {
+
+						li {
+							width: 100% / $i;
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 1 ) { // 分割 group 的狀況
+
+			@for $i from 1 through $max-len { //算設定分割
+
+				&[data-setLen="#{$i}"] {
+
+					> .inner > .content > .inner {
+
+						> [data-index][data-type] {
+							width: 100% / $i;
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 4 ) {
+
+			@for $i from 1 through $max-len { //算設定分割
+
+				&[data-setLen="#{$i}"] {
+
+					> .inner > .content > .inner {
+
+						> ul {
+
+							> li {
+								width: 100% / $i;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@mixin set-len-hide( $type, $max-len: $max-setLen ) { //手動設定單行數量，並且隱藏超過的，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
+		@include set-len($type, $max-len);
+
+		@if ( $type == 0 ) { // list 模組的狀況
+
+			@for $i from 1 through $max-len { //算設定分割
+
+				&[data-setLen="#{$i}"] {
+
+					.content {
+
+						li {
+							display: block;
+
+							&:nth-child(n+#{$i + 1}) {
+								display: none;
+							}
+
+							$li: ' '; //以下都是 for ie8
+
+							@for $j from 1 through $i {
+
+								$li: $li + '+ li '; 
+							}
+
+							&#{$li}{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 1 ) { // 分割 group 的狀況
+
+			@for $i from 1 through $max-len { //算設定分割
+
+				&[data-setLen="#{$i}"] > .inner > .content > .inner {
+
+					> [data-index][data-type] {
 
 						&:nth-child(n+#{$i + 1}) {
 							display: none;
 						}
 
-						$li: ' ';
+						$li: ' '; //以下都是 for ie8
 
 						@for $j from 1 through $i {
 
@@ -731,24 +848,46 @@
 						}
 					}
 				}
+			}
 
-				> [data-index][data-type] {
+		}@else if( $type == 4 ) {
 
-					&:nth-child(n+#{$i + 1}) {
-						display: none;
-					}
+			@for $i from 1 through $max-len { //算設定分割
 
-					$li: ' ';
+				&[data-setLen="#{$i}"] > .inner > .content > .inner {
 
-					@for $j from 1 through $i {
+					> ul {
 
-						$li: $li + '+ li '; 
-					}
+						> li {
+							display: block;
 
-					&#{$li}{
-						display: none;
+							&:nth-child(n+#{$i + 1}) {
+								display: none;
+							}
+
+							$li: ' '; //以下都是 for ie8
+
+							@for $j from 1 through $i {
+
+								$li: $li + '+ li '; 
+							}
+
+							&#{$li}{
+								display: none;
+							}
+						}
 					}
 				}
+			}
+		}
+	}
+
+	@mixin set-len-rwd( $key, $len, $int: 100% ) { //手動設定RWD數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
+
+		@if( $rwd == true ) {
+
+			@media #{map-get( $media, $key )} {
+				width: $int / $len !important;
 			}
 		}
 	}
@@ -770,14 +909,14 @@
 		}
 	}
 
-	@mixin hack($key) { //查詢瀏覽器媒體，給 hack 用，$key 是 $hack 的 key
+	@mixin hack($key) { //查詢瀏覽器媒體，給 hack 用，$key 為 $hack 的 key
 
 		@media #{map-get( $hack, $key )} {
 			@content;
 		}
 	}
 
-	@mixin media($key) { //查詢瀏覽器媒體，給 rwd 用，$key 是 $media 的 key
+	@mixin media($key) { //查詢瀏覽器媒體，給 rwd 用，$key 為 $media 的 key
 
 		@if( $rwd == true ) {
 
@@ -787,7 +926,7 @@
 		}
 	}
 
-	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 是 $supports 的 $key
+	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 為 $supports 的 $key
 
 		@supports #{map-get( $supports, $key )} {
 			@content;

@@ -1,6 +1,7 @@
 //客製區塊
 
 .area-customize {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -79,7 +80,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('place');

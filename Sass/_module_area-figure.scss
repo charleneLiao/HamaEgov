@@ -1,6 +1,7 @@
 //圖片區塊
 
 .area-figure {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -77,7 +78,7 @@
 				}
 
 				h4 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('camera');

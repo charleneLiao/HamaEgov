@@ -45,9 +45,9 @@
 	}
 }
 
-@for $i from $min-aLineLength through $max-aLineLength { //算設定分割
+@for $i from $min-setLen through $max-setLen { //算設定分割
 
-	[data-type="1"][data-aLineLength="#{$i}"] {
+	[data-type="1"][data-setLen="#{$i}"] {
 
 		> .inner{
 

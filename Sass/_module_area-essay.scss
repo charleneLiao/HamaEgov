@@ -1,6 +1,7 @@
 //文章區塊
 
 .area-essay {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -75,7 +76,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('message');

@@ -1,6 +1,7 @@
 //頁籤群組
 
 [data-type="2"] {
+	$type: 2; //類型代碼
 
 //預設================================================================
 
@@ -86,7 +87,7 @@
 			}
 
 			h3 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('library_add');

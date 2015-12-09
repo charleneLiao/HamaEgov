@@ -1,6 +1,7 @@
 //列表群組
 
 [data-type="4"] {
+	$type: 4; //類型代碼
 
 //預設================================================================
 
@@ -239,10 +240,10 @@
 		}
 
 		.base-header & {
-			$li-default-length: 6;
-			$li-max-length: 10;
+			$default-len: 6;
+			$max-len: 10;
 
-			@include default-min-length($li-default-length, $li-max-length);
+			@include default-min-len($type, $default-len, $max-len);
 			background-color: $light;
 			position: relative;
 			z-index: 1;
@@ -284,6 +285,10 @@
 
 						> ul {
 							@extend %reset;
+
+							&:after {
+								@extend %clear;
+							}
 
 							> li {
 								position: relative;
@@ -414,7 +419,7 @@
 									}
 								}
 
-								@for $i from 1 through $li-max-length { //ul 的寬度
+								@for $i from 1 through $max-len { //ul 的寬度
 
 									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
@@ -430,7 +435,7 @@
 									}
 								}
 
-								@for $i from 1 through $li-max-length { //ul 的寬度
+								@for $i from 1 through $max-len { //ul 的寬度
 
 									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
@@ -453,15 +458,15 @@
 								}
 							}
 
-							@for $i from $li-default-length through $li-max-length { //group 的 child
+							@for $i from $default-len through $max-len { //group 的 child
 
 								&[data-child="#{$i}"] {
 
-									@for $j from 2 through $li-max-length { //li 的 index
+									@for $j from 2 through $max-len { //li 的 index
 
 										> [data-index="#{$j}"] { //li 的順序
 
-											@for $k from 1 through $li-max-length { //li 的寬度
+											@for $k from 1 through $max-len { //li 的寬度
 
 												&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
 
@@ -488,19 +493,19 @@
 								}
 							}
 
-							@for $i from 1 through $li-default-length { //group 的 child
+							@for $i from 1 through $default-len { //group 的 child
 
 								&[data-child="#{$i}"] {
 
-									@for $j from 2 through $li-max-length { //li 的 index
+									@for $j from 2 through $max-len { //li 的 index
 
 										> [data-index="#{$j}"] { //li 的順序
 
-											@for $k from 1 through $li-max-length { //li 的寬度
+											@for $k from 1 through $max-len { //li 的寬度
 
 												&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
 
-													$li-width: min($k, $li-default-length); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
+													$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
 													$all-width: $j - 1 + $li-width;
 
 													> [data-index][data-type] {
@@ -511,8 +516,8 @@
 
 														> .inner > .content {
 
-															@if( $all-width > $li-default-length ) { //如果 li 數量大於 li 寬度
-																left: 100% * ( $li-default-length - $all-width ); //就推回來
+															@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
+																left: 100% * ( $default-len - $all-width ); //就推回來
 															}
 														}
 													}
@@ -552,7 +557,10 @@
 		}
 
 		.base-footer & {
-			@include default-min-length(6);
+			$default-len: 6;
+			$max-len: 10;
+
+			@include default-min-len($type, $default-len, $max-len);
 			background-color: $light;
 
 			@include media('mobile') {
@@ -598,6 +606,10 @@
 
 						> ul {
 							@extend %reset;
+
+							&:after {
+								@extend %clear;
+							}
 
 							> li {
 
@@ -946,7 +958,7 @@
 				}
 
 				h3 {
-					@extend %page-title;
+					@extend %title;
 				}
 
 				span {
@@ -1005,8 +1017,10 @@
 	&.album {
 
 		.base-module-area & {
-			@include default-length-hide-more(2);
-			@include set-length-hide-more();
+			$default-len: 2;
+
+			@include default-len-hide($type, $default-len);
+			@include set-len-hide($type);
 
 			> .inner {
 
@@ -1017,7 +1031,7 @@
 					}
 
 					h3 {
-						@extend %module-title;
+						@extend %title;
 
 						&:before {
 							@include icon-font('camera');
@@ -1039,6 +1053,10 @@
 
 						> ul {
 							@extend %reset;
+
+							&:after {
+								@extend %clear;
+							}
 
 							> li {
 								@extend %clear-inner-module;
@@ -1078,8 +1096,10 @@
 		}
 
 		.base-page-area & {
-			@include default-length(4);
-			@include set-length();
+			$default-len: 4;
+
+			@include default-len($type, $default-len);
+			@include set-len($type);
 
 			> .inner {
 
@@ -1090,7 +1110,7 @@
 					}
 
 					h3 {
-						@extend %page-title;
+						@extend %title;
 					}
 
 					span {
@@ -1108,6 +1128,10 @@
 
 						> ul {
 							@extend %reset;
+
+							&:after {
+								@extend %clear;
+							}
 
 							> li {
 								@extend %clear-inner-module;
@@ -1159,7 +1183,7 @@
 				}
 
 				h3 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('message');
@@ -1232,7 +1256,7 @@
 				}
 
 				h3 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('slideshow');
@@ -1318,37 +1342,18 @@
 
 	&.marqee-slider {
 		$btn-width: 30px; //設定按鈕寬度
-		$max-li-length: 50; //設定 li 的最大數量
-		$show-li-length: 5; //設定一次要秀的數量
-		$max-show-li-length: 10; //設定一次要秀的範圍數量
+		$max-li-len: 50; //設定 li 的最大數量
+		$show-li-len: 5; //設定一次要秀的數量
+		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
-		@for $i from 1 through $max-show-li-length { //使數量可以被控制 1 ~ $max-show-li-length
+		@for $i from 1 through $max-show-li-len { //使數量可以被控制 1 ~ $max-show-li-len
 		
-			&[data-aLineLength="#{$i}"] {
+			&[data-setLen="#{$i}"] {
 
 				> .inner > .content > .inner {
 
 					> ul {
-						width: $max-li-length / $i * 100%;
-
-						> li {
-							width: 100% / $i / ( $max-li-length / $i );
-
-							&:nth-child(n+#{$max-li-length + 1}) { //超過 $max-li-length 就藏起來
-								display: none;
-							}
-
-							$li: ' ';
-
-							@for $i from 1 through $max-li-length {
-
-								$li: $li + '+ li '; 
-							}
-
-							&#{$li}{
-								display: none;
-							}
-						}
+						width: $max-li-len * 100% / $i;
 					}
 				}
 			}
@@ -1364,7 +1369,7 @@
 				}
 
 				h3 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('slideshow');
@@ -1393,8 +1398,10 @@
 
 					> ul {
 						@extend %reset;
-						width: $max-li-length / $show-li-length * 100%;
-						list-style: none;
+						width: $max-li-len * 100% / $show-li-len;
+
+						@include set-len-rwd('pad', 3, $max-li-len * 100%);
+						@include set-len-rwd('phone', 1, $max-li-len * 100%);
 
 						@include js(false) {
 							width: 100%;
@@ -1405,27 +1412,12 @@
 						}
 
 						> li {
-							width: 100% / $show-li-length / ( $max-li-length / $show-li-length );
+							width: 100% / $max-li-len;
 							float: left;
-
-							&:nth-child(n+#{$max-li-length + 1}) { //超過 $max-li-length 就藏起來
-								display: none;
-							}
-
-							$li: ' ';
-
-							@for $i from 1 through $max-li-length {
-
-								$li: $li + '+ li '; 
-							}
-
-							&#{$li}{
-								display: none;
-							}
 
 							@include js(false) {
 								display: block;
-								width: 100% / $show-li-length;
+								width: 100% / $show-li-len;
 							}
 
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
@@ -1520,7 +1512,6 @@
 		$btn-width: 40px; //設定按鈕寬度
 
 		> .inner {
-			margin: 0 !important;
 
 			> .header {
 				display: none;
@@ -1530,7 +1521,7 @@
 				}
 
 				h3 {
-					@extend %module-title;
+					@extend %title;
 
 					&:before {
 						@include icon-font('slideshow');
@@ -1614,8 +1605,6 @@
 
 							&:hover {
 								width: $btn-width + $interval-m;
-								background-color: $light-gray;
-								background-color: rgba($light-gray, $opacity-h);
 							}
 						}
 					}

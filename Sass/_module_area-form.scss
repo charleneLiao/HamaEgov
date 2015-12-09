@@ -1,6 +1,7 @@
 //表單區塊
 
 .area-form {
+	$type: 0; //類型代碼
 
 //預設================================================================
 
@@ -186,7 +187,7 @@
 		.base-header & {
 			position: absolute;
 			top: 36px;
-			right: 0;
+			right: 10px;
 			z-index: 3;
 
 			@include js(false) {
@@ -367,7 +368,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('link');
@@ -441,7 +442,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('radio_button_checked');
@@ -591,7 +592,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('today');
@@ -819,7 +820,7 @@
 			}
 
 			h4 {
-				@extend %module-title;
+				@extend %title;
 
 				&:before {
 					@include icon-font('email');

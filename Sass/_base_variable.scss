@@ -16,17 +16,17 @@
 	$black: #1a1a1a; //非常深
 
 //主要版面顏色================================================================
-	$major-color: #6aaed0 !default; //主色
-	$minor-color: #0ca !default; //次色
+	$major-color: #2A6FA8 !default; //主色
+	$minor-color: #1CAF9A !default; //次色
 
 //其他版面顏色================================================================
-	$lesser1-color: #fff !default; //更次色
+	$lesser1-color: #75CAE3 !default; //更次色
 	$lesser2-color: #fff !default; //更次色
 	$lesser3-color: #fff !default; //更次色
 
 //文字顏色================================================================
-	$title-color: #c02 !default; //標題色
-	$span-color: #ca0 !default; //附註色
+	$title-color: #D9534F !default; //標題色
+	$span-color: #F0AD4E !default; //附註色
 
 //文字樣式================================================================
 	$base-font-style: Arial, '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
@@ -77,13 +77,13 @@
 	$pc-width: 1010px !default; //pc寬度
 	$pad-width: 768px !default; //pad寬度
 	$phone-width: 560px !default; //phone寬度
-	$rwd-btn-size: 40px; //RWD 手機板選單按鈕
+	$rwd-btn-size: 40px; //RWD 手機側欄按鈕大小
 
 //grid 框架設定================================================================
 	$min-child: 1; //最少的child數量
 	$max-child: 10; //最多的child數量
-	$min-aLineLength: 2; //最少的單行數量
-	$max-aLineLength: 10; //最多的單行數量
+	$min-setLen: 2; //最少的單行數量
+	$max-setLen: 10; //最多的單行數量
 	$layout-interval: $interval-s; //主層間隔
 
 //預設空文字================================================================
@@ -115,7 +115,7 @@
 //連結顏色================================================================
 	$link-color: inherit !default; //連結顏色
 	$visited-color: inherit !default; //造訪過連結顏色
-	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊 
+	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊
 	$active-color: inherit !default; //點擊連結顏色
 
 //按鈕樣式================================================================
