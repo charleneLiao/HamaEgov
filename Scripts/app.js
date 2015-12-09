@@ -1,44 +1,18 @@
-require.config({
+requirejs.config({
 	baseUrl: '/Scripts',
-	paths: {
-		'jquery': 'lib/jquery-1.11.3.min'
-	}
-});
-
-require(['jquery'], function($) {
-	
-});
-
-require(['test'], function(func){
-	func();
-});
-
-require(['domReady!'], function(dom){
-	
-	Array.prototype.map.call(
-		dom.querySelectorAll('[data-function]'),
-		function(node){
-		var $this = node,
-			_func = $this.getAttribute('data-function');
-			
-		// require([_func], function(func){
-		// 	func($this);
-		// });
-		
-		console.log($this);
-		console.log(_func);
-	});
-});
-
-
-(function() {
-
-	if( !( window.console && console.log ) ) { //如果沒有 console.log，就用return
-
-		window.console = {
-			'log': function(msg) {
-				return 'log: ' + msg
-			}
+	paths: { //配置短名
+		'lib': 'lib',
+		'app': 'app',
+		'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min']
+	},
+	map: { //配置關鍵字在各個檔案的意義
+		'*': {
+			'jquery': 'lib/jquery-private'
+		},
+		'lib/jquery-private': {
+			'jquery': 'jquery'
 		}
 	}
-})();
+});
+
+requirejs(['app/main']);
