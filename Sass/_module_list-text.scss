@@ -1625,7 +1625,7 @@
 			}
 
 			li {
-				display: inline;
+				display: inline-block;
 				color: $white;
 
 				&.small {
@@ -1671,7 +1671,7 @@
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
