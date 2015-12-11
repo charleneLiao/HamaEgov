@@ -98,7 +98,7 @@ define(function(){
 	}
 
 	function getContentItem(env){ //取得 content li 節點
-		return getChild(getChildList(env), 'li');
+		return getChild(getContentList(env), 'li');
 	}
 
 	function getChildGroup(env){ //取得子模組節點(群組用)
