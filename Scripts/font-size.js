@@ -5,7 +5,9 @@ define(['cookie', 'jquery', 'group'], function(cookie, $, _){
 		// var $env = $(env).find('.content'),
 		// 	$root = $('.sys-root');
 
-		console.log(_.getInner(env));
+		console.log(_.getTitle(env));
+
+		console.log(_.getTitleText(env));
 		
 		// var _cookie_name = 'font-size',
 		// 	_default_size = 'medium';
