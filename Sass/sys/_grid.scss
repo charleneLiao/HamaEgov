@@ -6,9 +6,9 @@
 	// type 3 單欄
 	// type 4 清單
 
-@import 'sys_variable'; //系統變數
+@import 'sys/variable'; //系統變數
 
-@import 'base_variable'; //變數
+@import 'base/variable'; //變數
 
 @for $i from $min-child through $max-child { //算自然分割
 
