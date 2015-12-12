@@ -1,31 +1,32 @@
 <!doctype html>
+<%= render :partial => "/Erb/sys/variable" %>
 <html lang="zh-TW">
 	<head>
 
 	<!-- Meta 各種資訊 -->
-		<%= render :partial => '/Set/head-meta' %>
+		<%= render :partial => "/Erb/sys/meta" %>
 	<!-- Meta 結束 -->
 		
 	<!-- Title 網站標題 -->
-		<%= render :partial => '/Set/head-title' %>
+		<%= render :partial => "/Erb/sys/title" %>
 	<!-- Title 結束 -->
 
 	<!-- Icon 小圖示 -->
-		<%= render :partial => '/Set/head-icon' %>
+		<%= render :partial => "/Erb/sys/icon" %>
 	<!-- Icon 結束 -->
 
 	<!-- Css 樣式表 -->
-		<%= render :partial => '/Set/head-style' %>
+		<%= render :partial => "/Erb/sys/style" %>
 	<!-- Css 結束 -->
 
 	<!-- Script -->
-		<%= render :partial => '/Set/head-script' %>
+		<%= render :partial => "/Erb/sys/script" %>
 	<!-- Script 結束 -->
 
 	</head>
 	<body data-js="false" data-admin="false">
 	<form action="#" method="POST">
-	<script>document.body.setAttribute('data-js', 'true');</script>
+	<script>document.body.setAttribute("data-js", "true");</script>
 
 	<!-- sys-root 拖曳根節點 -->
 		<div class="sys-root" data-type="3" data-child="3"><div class="inner">
@@ -34,15 +35,15 @@
 			<div class="content"><div class="inner">
 
 			<!-- base-mobile 行動載具-->
-				<%= render :partial => '/Base/base-mobile', :locals => { :index => 1 } %>
+				<%= render :partial => "/Erb/base/base-mobile", :locals => { :index => 1 } %>
 			<!-- base-mobile 結束 -->
 
 			<!-- base-extend 額外資訊 -->
-				<%= render :partial => '/Base/base-extend', :locals => { :index => 2 } %>
+				<%= render :partial => "/Erb/base/base-extend", :locals => { :index => 2 } %>
 			<!-- base-extend 結束 -->
 
 			<!-- base-wrapper 固定佈局 -->
-				<%= render :partial => '/Base/base-wrapper', :locals => { :index => 3, :area => 'index' } %>
+				<%= render :partial => "/Erb/base/base-wrapper", :locals => { :index => 3, :area => "index" } %>
 			<!-- base-wrapper 結束 -->
 
 			</div></div>

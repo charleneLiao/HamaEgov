@@ -21,7 +21,7 @@
 				<li data-index="1">
 
 				<!-- tab 頁籤 -->
-					<%= render :partial => '/Module/list-text_tab', :locals => { :index => 1 } %>
+					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1 } %>
 				<!-- tab 結束 -->
 				</li>
 
@@ -29,7 +29,7 @@
 					<li data-index="<%= i + 2 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => '/Module/' + inner, :locals => { :index => 1 } %>
+						<%= render :partial => inner, :locals => { :index => 1 } %>
 					<!-- <%= inner %> 結束 -->
 					</li>
 				<% end %>
