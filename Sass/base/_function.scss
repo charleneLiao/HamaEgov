@@ -117,7 +117,6 @@
 	}
 
 	%title { //模組、內頁 title
-		@extend %reset;
 		font-size: $font-size-l;
 		padding-bottom: $interval-m;
 		border-bottom: $border;
@@ -403,7 +402,6 @@
 		}
 
 		ul {
-			@extend %reset;
 			text-align: right;
 		}
 

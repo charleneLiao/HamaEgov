@@ -2,8 +2,9 @@
 	min_li = 2 #最少的li數量
 	max_li = 10 #最多的li數量
 
-li_length = rand( max_li - min_li ) + min_li %>
-<% this = rand( li_length ) %>
+	li_length = rand( max_li - min_li ) + min_li
+	this = rand( li_length )
+%>
 
 <div class="list-multiple page-click" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">

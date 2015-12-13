@@ -3,6 +3,15 @@
 .list-pic {
 	$type: 0; //類型代碼
 
+//設定================================================================
+		
+	.content {
+
+		ul {
+			@extend %reset;
+		}
+	}
+
 //預設================================================================
 
 	&.default {
@@ -119,7 +128,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					text-align: right;
 				}
 
@@ -207,7 +215,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -299,7 +307,6 @@
 			}
 
 			ul {
-				@extend %reset;
 
 				&:after {
 					@extend %clear;
@@ -405,7 +412,6 @@
 			}
 
 			ul {
-				@extend %reset;
 
 				&:after {
 					@extend %clear;
@@ -508,7 +514,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				overflow: hidden;
 				width: $max-li-len / $show-li-len * 100%;
 
@@ -575,7 +580,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -668,7 +673,6 @@
 			}
 
 			ul {
-				@extend %reset;
 
 				&:after {
 					@extend %clear;
@@ -704,7 +708,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -802,7 +806,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -918,7 +922,6 @@
 			}
 
 			ul {
-				@extend %reset;
 
 				&:after {
 					@extend %clear;

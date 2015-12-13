@@ -45,6 +45,7 @@
 			}
 
 			a {
+				@extend %ellipsis;
 				@extend %list;
 				@extend %list-hover;
 			}
@@ -101,6 +102,7 @@
 		}
 
 		.header {
+			display: none;
 
 			> .inner {
 
@@ -195,6 +197,7 @@
 		}
 
 		.header {
+			display: none;
 
 			> .inner {
 
@@ -438,7 +441,6 @@
 			}
 
 			h1 {
-				@extend %reset;
 				font-size: $font-size-l;
 				padding-bottom: $interval-s;
 				border-bottom-color: $border-color;
@@ -497,7 +499,6 @@
 			}
 
 			h4 {
-				@extend %reset;
 				display: inline;
 
 				&:after {
@@ -670,10 +671,11 @@
 			}
 
 			> .inner {
-
+				margin: 0 !important;
 			}
 
 			.header {
+				display: none;
 
 				> .inner {
 
@@ -786,6 +788,7 @@
 			}
 
 			.header {
+				display: none;
 
 				> .inner {
 

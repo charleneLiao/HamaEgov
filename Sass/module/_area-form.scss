@@ -136,7 +136,6 @@
 					
 					ul {
 						@extend %reset;
-
 					}
 
 					li {
@@ -160,7 +159,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					margin-top: $interval-m;
 				}
 
@@ -322,7 +320,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					display: inline;
 				}
 

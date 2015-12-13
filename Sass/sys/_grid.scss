@@ -1,10 +1,10 @@
 //排版框架
 
-	// type 0 模組
-	// type 1 分割
-	// type 2 頁籤
-	// type 3 單欄
-	// type 4 清單
+	// type 0 模組(module)
+	// type 1 分割(cell)
+	// type 2 頁籤(tab)
+	// type 3 單欄(row)
+	// type 4 清單(list)
 
 @import 'sys/variable'; //系統變數
 
@@ -100,6 +100,40 @@
 
 	> .inner {
 		margin: 0 $layout-interval;
+	}
+
+	.header {
+
+		h1, h2, h3, h4, h5, h6 {
+			@extend %reset;
+		}
+	}
+
+	.footer {
+
+		ul {
+			@extend %reset;
+		}
+	}
+}
+
+[data-type="1"], [data-type="2"], [data-type="3"], [data-type="4"] { //群組
+
+	> .inner {
+		
+		> .header {
+
+			h1, h2, h3, h4, h5, h6 {
+				@extend %reset;
+			}
+		}
+
+		> .footer {
+
+			ul {
+				@extend %reset;
+			}
+		}
 	}
 }
 

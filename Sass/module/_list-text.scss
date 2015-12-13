@@ -3,6 +3,15 @@
 .list-text {
 	$type: 0; //類型代碼
 
+//設定================================================================
+		
+	.content {
+
+		ul {
+			@extend %reset;
+		}
+	}
+
 //預設================================================================
 
 	&.default {
@@ -19,7 +28,7 @@
 			}
 
 			h4 {
-				@extend %reset;
+
 			}
 
 			span {
@@ -39,7 +48,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -138,7 +147,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					padding-left: $interval-l;
 				}
 
@@ -213,7 +221,6 @@
 				}
 
 				ul {
-					@extend %reset;
 
 					&:after {
 						@extend %clear;
@@ -283,8 +290,6 @@
 				}
 
 				h4 {
-					@extend %reset;
-					@extend %ellipsis;
 					padding-bottom: $interval-s;
 					border-bottom: $border;
 					font-size: $font-size-l;
@@ -306,7 +311,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -389,7 +394,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -447,7 +452,7 @@
 				}
 
 				h4 {
-					@extend %reset;
+
 				}
 
 				span {
@@ -468,7 +473,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -528,7 +533,6 @@
 			}
 
 			h4 {
-				@extend %reset;
 				font-size: $font-size-l;
 				padding: $interval-m;
 				color: $white;
@@ -556,7 +560,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				margin: 0 $interval-s $interval-s;
 				background-color: $white;
 			}
@@ -660,7 +663,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				border-bottom-style: $border-style;
 				border-bottom-width: $border-width;
 				border-bottom-color: $minor-color;
@@ -771,7 +773,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -848,7 +850,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -961,7 +963,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -1056,7 +1058,6 @@
 				}
 
 				ul {
-					@extend %reset;
 
 					&:after {
 						@extend %clear;
@@ -1178,7 +1179,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					padding-left: $interval-l;
 				}
 
@@ -1265,7 +1265,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -1350,7 +1350,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -1437,7 +1437,7 @@
 				}
 
 				ul {
-					@extend %reset;
+
 				}
 
 				li {
@@ -1524,7 +1524,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -1621,7 +1621,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -1760,7 +1760,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					padding-left: $interval-l;
 				}
 
@@ -1828,7 +1827,6 @@
 				}
 
 				h4 {
-					@extend %reset;
 					display: inline;
 					color: $white;
 
@@ -1854,7 +1852,6 @@
 				}
 
 				ul {
-					@extend %reset;
 					display: inline;
 				}
 
@@ -1941,7 +1938,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				padding: $interval-s;
 				background-color: $light;
 			}
@@ -2030,7 +2026,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				text-align: right;
 				color: $gray;
 			}
@@ -2117,7 +2112,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				text-align: right;
 			}
 
@@ -2192,7 +2186,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -2282,7 +2276,7 @@
 			}
 
 			h4 {
-				@extend %reset;
+
 			}
 
 			span {
@@ -2303,7 +2297,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -2457,7 +2451,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
@@ -2540,7 +2534,6 @@
 			}
 
 			ul {
-				@extend %reset;
 				border: $border;
 
 				&:after {
@@ -2657,7 +2650,7 @@
 			}
 
 			ul {
-				@extend %reset;
+
 			}
 
 			li {
