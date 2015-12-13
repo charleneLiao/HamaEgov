@@ -1,5 +1,11 @@
 define(function(){
 
+	var _type_module = '0', //模組
+		_type_cell = '1', //分割
+		_type_tab = '2', //頁籤
+		_type_row = '3', //單欄
+		_type_list = '4'; //清單
+
 	function getChild(envs, selector){ //取得子節點，參數是節點關鍵字('ul')、Classname('.inner')或 id('#group')
 
 		if(typeof(envs) === 'undefined' || envs.length === 0) {

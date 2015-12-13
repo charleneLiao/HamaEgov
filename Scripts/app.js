@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: 'Scripts',
+	baseUrl: '/Scripts',
 	paths: { //配置短名
 		'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min'],
 		'cookie': 'lib/cookie',
@@ -10,9 +10,9 @@ requirejs.config({
 	},
 	map: { //配置關鍵字在各個檔案的意義
 		'*': {
-			'jquery': 'lib/jquery-private'
+			'jquery': 'lib/jqueryPrivate'
 		},
-		'lib/jquery-private': {
+		'lib/jqueryPrivate': {
 			'jquery': 'jquery'
 		}
 	}

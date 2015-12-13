@@ -256,7 +256,6 @@
 			$max-len: 10;
 
 			@include default-min-len($type, $default-len, $max-len);
-			background-color: $light;
 			position: relative;
 			z-index: 1;
 
@@ -268,8 +267,21 @@
 				display: none;
 			}
 
+			&.is-fixed {
+
+				> .inner {
+					position: fixed;
+					top: 0;
+					left: 0;
+					right: 0;
+					max-width: 100%;
+					margin: 0;
+					box-shadow: $box-shadow;
+				}
+			}
+
 			> .inner {
-				@extend %center;
+				background-color: $light;
 
 				> .header {
 					display: none;
@@ -292,6 +304,7 @@
 				}
 
 				> .content {
+					@extend %center;
 
 					> .inner {
 
@@ -790,7 +803,8 @@
 
 											}
 
-											h2, h3, h4 {
+											h1, h2, h3, h4, h5, h6 {
+												@extend %reset;
 
 												&:before {
 													display: none;

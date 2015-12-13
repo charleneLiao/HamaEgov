@@ -1,6 +1,7 @@
 define(['cookie', 'jquery', 'group'], function(cookie, $, group){
 
-	function main(env, opt, file){
+	function main(env, opt, file, debug){
+		
 		var $li = $(group.getContentItem(env)), //取 li
 			$li_length = $li.length,
 			$a = $li.find('a'), //取按鈕
@@ -10,7 +11,7 @@ define(['cookie', 'jquery', 'group'], function(cookie, $, group){
 			_prefix = 'font-size-', //前輟
 			_active = 'is-active'; //被選擇的 class name
 
-		var _result = cookie.get(_prefix) || $li.eq(Math.floor($li_length / 2)).attr('class'); //結果值，cookie 記錄 || 中間值
+		var _result = cookie.get(_prefix) || opt['default'] || $li.eq(Math.floor($li_length / 2)).attr('class'); //結果值，cookie 記錄 || 中間值
 
 		$a.on(_eventNmae, function(){ //換字型大小事件
 
