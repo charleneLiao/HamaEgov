@@ -4,7 +4,7 @@
 	min_text = 4 #最少的字元
 	max_text = 8 #最多的字元
 
-	li_length = rand( max_li + 1 - min_li ) + min_li
+	li_length = rand( max_li - min_li ) + min_li
 	random = rand( li_length )
 %>
 
@@ -16,6 +16,7 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
+			
 				<% if( i == random ) %>
 					<li data-index="<%= i + 1 %>" class="is-active">
 				<% else %>

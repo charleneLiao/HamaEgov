@@ -1,18 +1,18 @@
-<div class="base-extend" data-index="<%= index %>" data-type="3" data-child="2"><div class="inner">
+<div class="base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
 	<!-- user-tool 使用者工具 -->
-		<%#= render :partial => "/Erb/module/list-text_user-tool", :locals => { :index => 1 } %>
+		<%= render :partial => "/Erb/module/list-text_user-tool", :locals => { :index => 1, :func_set => nil, :header_text => '使用者工具' } %>
 	<!-- user-tool 結束 -->
 
 	<!-- share 分享 -->
-		<%#= render :partial => "/Erb/module/list-text_share", :locals => { :index => 2 } %>
+		<%= render :partial => "/Erb/module/list-text_share", :locals => { :index => 2, :func_set => nil, :header_text => '分享' } %>
 	<!-- share 結束 -->
 
 	<!-- target-btn 目標按鈕 -->
-		<%#= render :partial => "/Erb/module/simple-text_target-btn", :locals => { :index => 3 } %>
+		<%= render :partial => "/Erb/module/simple-text_target-btn", :locals => { :index => 3, :func_set => nil, :header_text => nil } %>
 	<!-- target-btn 結束 -->
 
 	</div></div>

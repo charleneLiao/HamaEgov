@@ -3,16 +3,14 @@
 	max_li = 10 #最多的li數量
 	min_width = 1 #最窄的選單寬度
 	max_width = 6 #最寬的選單寬度
+
+	li_length = rand( max_li - min_li ) + min_li
+	nav_width = rand( max_width - min_width ) + min_width
 %>
 
-<%
-	li_length = rand( max_li + 1 - min_li ) + min_li
-	nav_width = rand( max_width + 1 - min_width ) + min_width
-%>
-
-<div class="group-list nav" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
+<div class="group-list nav" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
-		<h3><span><a href="#">選單</a></span></h3>
+		<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
 	</div></div>
 
 	<% if ( li_length > 0 ) %>
@@ -23,7 +21,7 @@
 					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
 					<!-- nav 選單 -->
-						<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 1 } %>
+						<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 1, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1) } %>
 					<!-- nav 結束 -->
 					</li>
 				<% end %>

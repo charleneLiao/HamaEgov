@@ -1,42 +1,42 @@
-<div class="base-header" data-index="<%= index %>" data-type="3" data-child="2"><div class="inner">
+<div class="base-header" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
 	<!-- accesskey 導盲磚 -->
-		<%#= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :accesskey => "U", :title => "上方選單連結區，此區塊列有本網站的主要連結" } %>
+		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "U", :access_title => "上方選單連結區，此區塊列有本網站的主要連結" } %>
 	<!-- accesskey 結束 -->
 
 	<!-- group-info 資訊群組 -->
-		<div class="group-info" data-index="1" data-type="3" data-child="2"><div class="inner">
+		<div class="group-info" data-index="1" data-type="<%= $row %>" data-child="2"><div class="inner">
 			<div class="header"><div class="inner">
 			</div></div>
 			<div class="content"><div class="inner">
 
 			<!-- logo 主要標誌 -->
-				<%#= render :partial => "/Erb/module/simple-text_major-logo", :locals => { :index => 1 } %>
+				<%= render :partial => "/Erb/module/simple-text_major-logo", :locals => { :index => 1, :func_set => nil, :header_text => nil } %>
 			<!-- logo 結束 -->
 
 			<!-- group-msg-tool 資訊與工具群組 -->
-				<div class="group-msg-tool" data-index="2" data-type="3" data-child="4"><div class="inner">
+				<div class="group-msg-tool" data-index="2" data-type="<%= $row %>" data-child="4"><div class="inner">
 					<div class="header"><div class="inner">
 					</div></div>
 					<div class="content"><div class="inner">
 
 					<!-- font-size 字級 -->
-						<%#= render :partial => "/Erb/module/list-text_font-size", :locals => { :index => 1 } %>
+						<%= render :partial => "/Erb/module/list-text_font-size", :locals => { :index => 1, :func_set => "{'font-size':{'default': 'medium'}}", :header_text => '字級' } %>
 					<!-- font-size 結束 -->
 
 					<!-- link 連結 -->
-						<%#= render :partial => "/Erb/module/list-text_link", :locals => { :index => 2, :label => nil } %>
+						<%= render :partial => "/Erb/module/list-text_link", :locals => { :index => 2, :func_set => nil, :header_text => '上方連結', :show_footer => false, :show_mark => false } %>
 					<!-- link 結束 -->
 
 					<!-- search 搜尋 -->
-						<%#= render :partial => "/Erb/module/area-form_search", :locals => { :index => 3 } %>
+						<%= render :partial => "/Erb/module/area-form_search", :locals => { :index => 3, :func_set => nil, :header_text => '搜尋', :show_footer => true } %>
 					<!-- search 結束 -->
 
 					<!-- hot-key-word 熱門關鍵字 -->
-						<%#= render :partial => "/Erb/module/list-text_hot-key-word", :locals => { :index => 4 } %>
+						<%= render :partial => "/Erb/module/list-text_hot-key-word", :locals => { :index => 4, :func_set => nil, :header_text => '熱門關鍵字' } %>
 					<!-- hot-key-word 結束 -->
 
 					</div></div>
@@ -48,7 +48,7 @@
 	<!-- group-info 結束 -->
 
 	<!-- group-list_nav 選單列表 -->
-		<%#= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 2 } %>
+		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 1, :func_set => nil, :header_text => '主選單' } %>
 	<!-- group-list_nav 結束 -->
 
 	</div></div>

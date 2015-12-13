@@ -3,17 +3,15 @@
 	max_li = 10 #最多的li數量
 	min_width = 1 #最窄的選單寬度
 	max_width = 6 #最寬的選單寬度
-%>
 
-<%
 	li_length = rand( max_li + 1 - min_li ) + min_li
 	nav_width = rand( max_width + 1 - min_width ) + min_width
 %>
 
-<div class="group-tsb tab" data-index="<%= index %>" data-type="2" data-child="<%= li_length %>"><div class="inner">
-	<div class="header"><div class="inner">
-		<h3><span><a href="#">頁籤</a></span></h3>
-	</div></div>
+<div class="group-tsb tab" data-index="<%= index %>" data-type="<%= $tab %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+		<div class="header"><div class="inner">
+			<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
+		</div></div>
 
 	<% if ( li_length > 0 ) %>
 		<div class="content"><div class="inner">
@@ -21,7 +19,7 @@
 				<li data-index="1">
 
 				<!-- tab 頁籤 -->
-					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1 } %>
+					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1, :func_set => nil, :header_text => '頁籤' } %>
 				<!-- tab 結束 -->
 				</li>
 
@@ -29,7 +27,7 @@
 					<li data-index="<%= i + 2 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => { :index => 1 } %>
+						<%= render :partial => inner, :locals => { :index => 1, :func_set => nil, :header_text => "標題", :show_footer => true, :show_mark => true, :inner => "/Erb/module/simple-pic_default" } %>
 					<!-- <%= inner %> 結束 -->
 					</li>
 				<% end %>

@@ -1,6 +1,6 @@
-<div class="area-audio default" data-index="<%= index %>" data-type="0"><div class="inner">
+<div class="area-audio default" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
-		<h4><span><a>音訊</a></span></h4>
+		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
 	<div class="content"><div class="inner">
 		<div class="audio">
@@ -27,9 +27,12 @@
 			</div>
 		</div>
 	</div></div>
-	<div class="footer"><div class="inner">
-		<ul data-index="1" data-child="1">
-			<li class="more" data-index="1"><span><a href="#">更多</a></span></li>
-		</ul>
-	</div></div>
+	
+	<% if show_footer %>
+		<div class="footer"><div class="inner">
+			<ul data-index="1" data-child="1">
+				<li class="more" data-index="1"><span><a href="#">更多</a></span></li>
+			</ul>
+		</div></div>
+	<% end %>
 </div></div>

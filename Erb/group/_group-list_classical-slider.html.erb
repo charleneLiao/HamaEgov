@@ -1,17 +1,14 @@
 <%
 	min_li = 2 #最少的li數量
 	max_li = 5 #最多的li數量
-%>
 
-<%
 	li_length = rand( max_li + 1 - min_li ) + min_li
 %>
 
-
 <% if ( li_length > 0 ) %>
-	<div class="group-list classical-slider" data-index="<%= index %>" data-type="4" data-child="<%= li_length %>"><div class="inner">
+	<div class="group-list classical-slider" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 		<div class="header"><div class="inner">
-			<h3><span><a>輪播</a></span></h3>
+			<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
 		</div></div>
 		<div class="content"><div class="inner">
 			<ul data-index="1" data-child="<%= li_length %>">
@@ -20,18 +17,21 @@
 					<li data-index="<%= i + 1 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => { :index => 1, :label => true } %>
+						<%= render :partial => inner, :locals => { :index => 1, :func_set => nil, :header_text => "標題", :show_footer => true, :show_mark => true, :inner => "/Erb/module/simple-pic_default" } %>
 					<!-- <%= inner %> 結束 -->
 					</li>
 				<% end %>
 			</ul>
 		</div></div>
-		<div class="footer"><div class="inner">
-			<ul data-index="1" data-child="3">
-				<li class="prev" data-index="1"><span><a href="#">上一則</a></span></li>
-				<li class="next" data-index="2"><span><a href="#">下一則</a></span></li>
-				<li class="more" data-index="3"><span><a href="#">更多</a></span></li>
-			</ul>
-		</div></div>
+	
+		<% if show_footer %>
+			<div class="footer"><div class="inner">
+				<ul data-index="1" data-child="3">
+					<li class="prev" data-index="1"><span><a href="#">上一則</a></span></li>
+					<li class="next" data-index="2"><span><a href="#">下一則</a></span></li>
+					<li class="more" data-index="3"><span><a href="#">更多</a></span></li>
+				</ul>
+			</div></div>
+		<% end %>
 	</div></div>
 <% end %>

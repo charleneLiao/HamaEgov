@@ -1,8 +1,8 @@
-<div class="simple-text weather" data-index="<%= index %>" data-type="0"><div class="inner">
+<div class="simple-text weather" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
-		<h4><span><a>天氣</a></span></h4>
+		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
 	<div class="content"><div class="inner">
-		<span><a href="#"><i class="mark">高雄市</i>23 ~ 29 ℃</a></span>
+		<span><a href="#"><% if show_mark %><i class="mark">高雄市</i><% end %>23 ~ 29 ℃</a></span>
 	</div></div>
 </div></div>

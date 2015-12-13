@@ -1,24 +1,24 @@
-<div class="base-section" data-index="<%= index %>" data-type="3" data-child="3"><div class="inner">
+<div class="base-section" data-index="<%= index %>" data-type="<%= $row %>" data-child="3"><div class="inner">
 	<div class="header"><div class="inner">
 	</div></div>
 	<div class="content"><div class="inner">
 
 	<!-- accesskey 導盲磚 -->
-		<%#= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :accesskey => "C", :title => "中間主要內容區，此區塊呈現網頁的網頁內容" } %>
+		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "C", :access_title => "中間主要內容區，此區塊呈現網頁的網頁內容" } %>
 	<!-- accesskey 結束 -->
 
 	<!-- group-page-header 內頁頁首 -->
-		<div class="group-page-header" data-index="1" data-type="3" data-child="2"><div class="inner">
+		<div class="group-page-header" data-index="1" data-type="<%= $row %>" data-child="2"><div class="inner">
 			<div class="header"><div class="inner">
 			</div></div>
 			<div class="content"><div class="inner">
 
 			<!-- sitemap 網站地圖 -->
-				<%#= render :partial => "/Erb/module/list-text_sitemap", :locals => { :index => 1 } %>
+				<%= render :partial => "/Erb/module/list-text_sitemap", :locals => { :index => 1, :func_set => nil, :header_text => '網站地圖' } %>
 			<!-- sitemap 結束 -->
 
 			<!-- heading 頁面標題 -->
-				<%#= render :partial => "/Erb/module/simple-text_heading", :locals => { :index => 2 } %>
+				<%= render :partial => "/Erb/module/simple-text_heading", :locals => { :index => 2, :func_set => nil, :header_text => nil } %>
 			<!-- heading 結束 -->
 
 			</div></div>
@@ -26,7 +26,7 @@
 	<!-- group-page-header 結束 -->
 
 	<!-- group-page-content 內頁主要內容 -->
-		<div class="group-page-content" data-index="2" data-type="3" data-child="6"><div class="inner">
+		<div class="group-page-content" data-index="2" data-type="<%= $row %>" data-child="6"><div class="inner">
 			<div class="header"><div class="inner">
 			</div></div>
 			<div class="content"><div class="inner">
@@ -46,15 +46,15 @@
 			<div class="content"><div class="inner">
 
 			<!-- jump-tool 跳轉導航列 -->
-				<%#= render :partial => "/Erb/module/list-text_jump-tool", :locals => { :index => 1 } %>
+				<%= render :partial => "/Erb/module/list-text_jump-tool", :locals => { :index => 1, :func_set => nil, :header_text => '跳轉導航列' } %>
 			<!-- jump-tool 結束 -->
 
 			<!-- page-select 頁次導航列 -->
-				<%#= render :partial => "/Erb/module/list-multiple_page-select", :locals => { :index => 2 } %>
+				<%= render :partial => "/Erb/module/list-multiple_page-select", :locals => { :index => 2, :func_set => nil, :header_text => '頁次導航列' } %>
 			<!-- page-tool 結束 -->
 
 			<!-- page-click 頁次導航列 -->
-				<%#= render :partial => "/Erb/module/list-multiple_page-click", :locals => { :index => 3 } %>
+				<%= render :partial => "/Erb/module/list-multiple_page-click", :locals => { :index => 3, :func_set => nil, :header_text => '頁次導航列' } %>
 			<!-- page-tool 結束 -->
 
 			</div></div>
