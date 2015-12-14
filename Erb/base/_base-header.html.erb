@@ -27,7 +27,7 @@
 					<div class="content"><div class="inner">
 
 					<!-- font-size 字級 -->
-						<%= render :partial => "/Erb/module/list-text_font-size", :locals => { :index => 1, :func_set => "{'fontSize':{'default': 'medium'}}", :header_text => '字級' } %>
+						<%= render :partial => "/Erb/module/list-text_font-size", :locals => { :index => 1, :func_set => "{'fontSize':{'defaultItem': 'medium'}}", :header_text => '字級' } %>
 					<!-- font-size 結束 -->
 
 					<!-- link 連結 -->
@@ -35,7 +35,7 @@
 					<!-- link 結束 -->
 
 					<!-- search 搜尋 -->
-						<%= render :partial => "/Erb/module/area-form_search", :locals => { :index => 3, :func_set => nil, :header_text => '搜尋', :show_footer => true } %>
+						<%= render :partial => "/Erb/module/area-form_search", :locals => { :index => 3, :func_set => "{'showDataList':{}}", :header_text => '搜尋', :show_footer => true } %>
 					<!-- search 結束 -->
 
 					<!-- hot-key-word 熱門關鍵字 -->
@@ -53,6 +53,6 @@
 	<!-- group-list_nav 選單列表 -->
 		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 1, :func_set => "{'hud':{}}", :header_text => '主選單' } %>
 	<!-- group-list_nav 結束 -->
-
+	
 	</div></div>
 </div></div>

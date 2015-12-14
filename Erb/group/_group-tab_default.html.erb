@@ -1,11 +1,8 @@
 <%
-	min_li = 1 #最少的li數量
-	max_li = 10 #最多的li數量
 	min_width = 1 #最窄的選單寬度
 	max_width = 6 #最寬的選單寬度
 
-	li_length = rand( max_li + 1 - min_li ) + min_li
-	nav_width = rand( max_width + 1 - min_width ) + min_width
+	li_length = 2
 %>
 
 <div class="group-tsb default" data-index="<%= index %>" data-type="<%= $tab %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -15,20 +12,22 @@
 
 	<% if ( li_length > 0 ) %>
 		<div class="content"><div class="inner">
-			<ul data-index="1" data-child="<%= li_length %>">
+			<ul data-index="1" data-child="<%= li_length + 1 %>">
 				<li data-index="1">
 
 				<!-- tab 頁籤 -->
 					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1, :func_set => nil, :header_text => '頁籤' } %>
 				<!-- tab 結束 -->
+				
 				</li>
 
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 2 %>">
 
-					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => { :index => 1, :func_set => nil, :header_text => "標題", :show_footer => true, :show_mark => true, :inner => "/Erb/module/simple-pic_default" } %>
-					<!-- <%= inner %> 結束 -->
+					<!-- message 訊息 -->
+						<%= render :partial => "/Erb/group/group-list_message", :locals => { :index => 8, :func_set => nil, :header_text => '輪播', :show_footer => true } %>
+					<!-- message 結束 -->
+
 					</li>
 				<% end %>
 			</ul>

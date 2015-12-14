@@ -983,6 +983,7 @@
 								background-color: $color;
 
 								&:hover {
+									width: 120%;
 									background-color: deeper($color);
 								}
 							}
