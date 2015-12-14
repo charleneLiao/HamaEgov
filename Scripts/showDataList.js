@@ -6,26 +6,27 @@ define(['jquery'], function($){
 			$input = $env.find('input'),
 			$list = $env.find('.list');
 
-		var esc = 27;
+		var _active = 'is-open', //被選擇的 class name
+			_esc_key = 27;
 
 		$input.on('keyup click', function(evt){
 
-			if( $input.val() && evt.which !== esc ) { //如果 input 有資料而且不是 esc 鍵
-				$env.addClass('is-open');
+			if( $input.val() && evt.which !== _esc_key ) { //如果 input 有資料而且不是 esc 鍵
+				$env.addClass(_active);
 			}else {
-				$env.removeClass('is-open');
+				$env.removeClass(_active);
 			}
 		});
 
 		$input.on('keydown', function(evt){
 
-			if( evt.which === esc ) { //esc 鍵
-				$env.removeClass('is-open');
+			if( evt.which === _esc_key ) { //esc 鍵
+				$env.removeClass(_active);
 			}
 		});
 
 		$input.on('blur', function(evt){ //$input 失焦
-			$env.removeClass('is-open');
+			$env.removeClass(_active);
 		});
 
 		if(debug) {

@@ -83,10 +83,6 @@ define(function(){
 		return getChild(getInner(env), 'header');
 	}
 
-	function getTitle(env){ //取得 header a 節點
-		return getHeader(env).querySelector('a');
-	}
-
 	function getTitleText(env){ //取得該群組標題文字
 		return getHeader(env).innerText;
 	}
@@ -171,7 +167,6 @@ define(function(){
 		getChildLen:getChildLen,
 		getInner:getInner,
 		getHeader:getHeader,
-		getTitle:getTitle,
 		getTitleText:getTitleText,
 		setTitleText:setTitleText,
 		getContent:getContent,

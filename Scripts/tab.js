@@ -12,6 +12,8 @@ define(['jquery', 'group'], function($, group){
 			$a = $tabs.find('a'),
 			$a_length = $a.length - 1;
 
+		var _tab_key = 9;
+
 		for( var i = 0; i < $a_length; i++ ) { //註冊無障礙 tab 事件
 
 			(function(i){
@@ -21,7 +23,7 @@ define(['jquery', 'group'], function($, group){
 
 					$a.eq(i).on('keydown', function(evt){ //觸發事件
 
-						if( evt.which === 9 ) {
+						if( evt.which === _tab_key ) {
 							evt.preventDefault();
 
 							$(a[0]).focus();
@@ -30,7 +32,7 @@ define(['jquery', 'group'], function($, group){
 
 					$(a[a.length - 1]).on('keydown', function(evt){ //觸發事件
 
-						if( evt.which === 9 ) {
+						if( evt.which === _tab_key ) {
 							evt.preventDefault();
 
 							$a.eq(-1).focus();
@@ -59,7 +61,7 @@ define(['jquery', 'group'], function($, group){
 			$(this).trigger(_eventNmae);
 		});
 
-		// $a.eq(0).trigger(_eventNmae); 不先點擊，而是先用 css 做掉
+		$a.eq(0).trigger(_eventNmae); //先點擊，同時用 css 先做掉
 
 		if(debug) {
 			console.log('環境:', env);
