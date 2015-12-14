@@ -14,7 +14,11 @@ define(function(){
 			return null;
 		}
 
-		var _selector = selector || 1,
+		if( !selector ) {
+			return envs.children[0];
+		}
+
+		var _selector = selector,
 			_selector = _selector.toString().replace(/\.|#|\s/g,''), //建立 selector 比對
 			_selector_regex = new RegExp(_selector, 'i');
 
