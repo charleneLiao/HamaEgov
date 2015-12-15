@@ -34,7 +34,6 @@ define(['jquery', 'group'], function($, group){
 		});
 
 		$a.on('focusin', function(){ //觸發事件
-
 			$(this).mouseenter();
 		});
 

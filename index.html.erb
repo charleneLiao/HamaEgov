@@ -106,7 +106,7 @@
 		<!-- slider 結束 -->
 
 		<!-- slider 輪播 -->
-			<%= render :partial => "/Erb/module/list-text_slider", :locals => { :index => 4, :func_set => nil, :header_text => '輪播', :show_footer => true } %>
+			<%= render :partial => "/Erb/module/list-text_slider", :locals => { :index => 4, :func_set => "{'marqeeSraight':{'auto':false,'delay':5000,'speed':300}}", :header_text => '輪播', :show_footer => true } %>
 		<!-- slider 結束 -->
 
 		<!-- tab 頁籤 -->
@@ -187,7 +187,7 @@
 	<div class="content"><div class="inner">
 
 		<!-- marqee-slider 跑馬燈輪播 -->
-			<%= render :partial => "/Erb/group/group-list_marqee-slider", :locals => { :index => 1, :func_set => nil, :header_text => '輪播', :show_footer => true, :inner => "/Erb/module/simple-pic_default" } %>
+			<%= render :partial => "/Erb/group/group-list_marqee-slider", :locals => { :index => 1, :func_set => "{'marqeeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => '輪播', :show_footer => true, :inner => "/Erb/module/simple-pic_default" } %>
 		<!-- marqee-slider 結束 -->
 
 	</div></div>

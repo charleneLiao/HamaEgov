@@ -1,6 +1,8 @@
 //框架
 
 .sys-root {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
 	font-family: $base-font-style;
 	color: $body-font-color;

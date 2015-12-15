@@ -33,10 +33,10 @@ define(['jquery', 'group'], function($, group){
 			$(this).trigger(_eventNmae);
 		});
 
-		$a.on('focusin', function(){ //觸發事件
+		// $a.on('focusin', function(){ //觸發事件
 
-			$(this).click();
-		});
+		// 	$(this).click();
+		// });
 
 		if(debug) {
 			console.log('環境:', env);

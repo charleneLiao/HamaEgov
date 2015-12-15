@@ -124,7 +124,7 @@ define(function(){
 	}
 
 	function getFooterList(env){ //取得 footer ul 節點
-		return getFooterInner(env).querySelector('ul');
+		return getChild(getFooterInner(env), 'ul');
 	}
 
 	function getFooterItem(env){ //取得 footer li 節點

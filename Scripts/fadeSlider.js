@@ -23,32 +23,27 @@ define(['jquery', 'group'], function($, group){
 			$next_li_a = $next_li.find('a');
 
 		if( $content_li.length <= 1 ) {
-			$prev_li.hide();
-			$next_li.hide();
+			$prev_li.fadeOut();
+			$next_li.fadeOut();
 
 			return false;
 		}
 
-		var _eventNmae = file, //事件名稱
-			_index = 0; //被播放的順序
+		var _index = 0, //被播放的順序
+			right = 1,
+			left = -1;
 
 		$prev_li_a.on('click', function(evt){
 			evt.preventDefault();
 
-			var _int = -1;
-
-			_index = (_index + _int + _content_li_length) % _content_li_length; //算出第幾個要被撥放
-
+			_index = (_index + right + _content_li_length) % _content_li_length; //算出第幾個要被撥放
 			slider(_index);
 		});
 
 		$next_li_a.on('click', function(evt){
 			evt.preventDefault()
 
-			var _int = 1;
-
-			_index = (_index + _int + _content_li_length) % _content_li_length; //算出第幾個要被撥放
-
+			_index = (_index + left + _content_li_length) % _content_li_length; //算出第幾個要被撥放
 			slider(_index);
 		});
 
@@ -62,9 +57,8 @@ define(['jquery', 'group'], function($, group){
 			var timer; //設定計時器
 
 			function auto() { //設定自動撥放涵式
-				var _int = 1;
 
-				_index = (_index + _int + _content_li_length) % _content_li_length
+				_index = (_index + 1 + _content_li_length) % _content_li_length
 
 				slider(_index);
 				timer = setTimeout(auto, $set.delay);
