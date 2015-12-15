@@ -166,7 +166,6 @@
 									position: relative;
 
 									> .inner {
-										@extend %reset;
 
 										> .header {
 											@extend %reset;
@@ -339,7 +338,7 @@
 									}
 								}
 
-								&.is-active {
+								&.is-active, &:hover {
 
 									> [data-index][data-type] {
 
