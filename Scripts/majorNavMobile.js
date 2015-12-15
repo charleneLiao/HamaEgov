@@ -17,25 +17,15 @@ define(['jquery', 'group'], function($, group){
 
 		$a.on(_eventNmae, function(){
 			var $this = $(this),
-				$this_li = $this.closest('li');
+				_index = $this.closest('li').index();
 
-			if( $this_li.hasClass(_active) ) {
-				$this_li.removeClass(_active);
-			}else {
-				$li.removeClass(_active);
-				$this_li.addClass(_active);
-			}
+			$li.eq(_index).toggleClass(_active);
 		});
 
 		$a.on('click', function(evt){ //觸發事件
 			evt.preventDefault();
 
 			$(this).trigger(_eventNmae);
-		});
-
-		$a.on('focusin', function(){ //觸發事件
-
-			$(this).click();
 		});
 
 		if(debug) {

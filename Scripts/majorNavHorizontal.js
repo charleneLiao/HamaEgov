@@ -12,7 +12,8 @@ define(['jquery', 'group'], function($, group){
 			$li = $(li),
 			$child_node = $(child_node),
 			$child_node_header = $(child_node_header),
-			$a = $child_node_header.find('a');
+			$a = $child_node_header.find('a'),
+			$last_a = $(last_a);
 
 		var _eventNmae = file, //事件名稱
 			_active = 'is-active', //被選擇的 class name
@@ -26,13 +27,18 @@ define(['jquery', 'group'], function($, group){
 			$li.eq(_index).addClass(_active);
 		});
 
-		$a.on('mouseenter focusin', function(evt){ //觸發事件
+		$a.on('mouseenter', function(evt){ //觸發事件
 			evt.preventDefault();
 
 			$(this).trigger(_eventNmae);
 		});
 
-		$(last_a).on('keydown', function(evt){ //最後一個 a 按下 tab 時，關閉所有子選單
+		$a.on('focusin', function(){ //觸發事件
+
+			$(this).mouseenter();
+		});
+
+		$last_a.on('keydown', function(evt){ //最後一個 a 按下 tab 時，關閉所有子選單
 
 			if( evt.which === _tab_key ) {
 				$li.removeClass(_active);

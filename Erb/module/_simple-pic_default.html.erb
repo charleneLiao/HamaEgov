@@ -1,9 +1,13 @@
+<%
+	img = $sample_l_pic[rand($sample_l_pic.length)]
+%>
+
 <div class="simple-pic default" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
 	<div class="content"><div class="inner">
-		<span style="background-image: url('/images/sample/sample_l_01.jpg');"><a href="#"><img src="/images/sample/sample_l_01.jpg" alt=""></a></span>
+		<span style="background-image: url('<%= img %>');"><a href="#"><img src="<%= img %>" alt=""></a></span>
 	</div></div>
 	
 	<% if show_footer %>

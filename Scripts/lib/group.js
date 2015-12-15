@@ -119,12 +119,16 @@ define(function(){
 		return getChild(getInner(env), 'footer');
 	}
 
+	function getFooterInner(env){ //取得 footer inner 節點
+		return getChild(getFooter(env), 'inner');
+	}
+
 	function getFooterList(env){ //取得 footer ul 節點
 		return getFooterInner(env).querySelector('ul');
 	}
 
 	function getFooterItem(env){ //取得 footer li 節點
-		return getFooterInner(env).querySelector('li');
+		return getFooterInner(env).querySelectorAll('li');
 	}
 
 	function getCtrlBtns(env){ //取得控制項按鈕

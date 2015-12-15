@@ -24,7 +24,7 @@
 			<!-- share 結束 -->
 
 			<!-- group-list_nav 選單列表 -->
-				<div class="group-list nav" data-index="4" data-type="<%= $list %>" data-child="3"><div class="inner">
+				<div class="group-list nav" data-index="4" data-type="<%= $list %>" data-child="3" data-function="{'majorNavMobile':{}}"><div class="inner">
 					<div class="header"><div class="inner">
 						<h3><span><a href="#">選單</a></span></h3>
 					</div></div>
@@ -57,7 +57,7 @@
 			<!-- group-list_nav 結束 -->
 
 			<!-- group-list_nav 選單列表 -->
-				<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 4, :func_set => nil, :header_text => '主選單' } %>
+				<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 4, :func_set => "{'majorNavMobile':{}}", :header_text => '主選單' } %>
 			<!-- group-list_nav 結束 -->
 
 			</div></div>
