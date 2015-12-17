@@ -9,56 +9,56 @@
   2. [定義](#definition)
   3. [工具](#tools)
 * [哲學](#philosophy)
-  1. [底層、框架與內容](#base-layout-content)
-  2. [模組與群組](#module-and-group)
+  1. [模組與群組](#module-and-group)
+  2. [底層、框架與內容](#base-layout)
   3. [CSS 選擇器與範圍](#css-selector)
   4. [Javascript 優化](#javascript-optimize)
-* [HTML 實作](#)
-  1. [專案目錄結構](#)
-  2. [參數與意義](#)
-  3. [格線系統](#)
-  4. [模組/群組基本結構](#)
-  5. [群組類別與結構](#)
-  6. [模組類別與結構](#)
-  7. [組件](#)
-  8. [模組建立原則](#)
-* [Erb 實作](#)
-  1. [Erb 目錄結構](#)
-  2. [Erb 樣板語言](#)
-  3. [Erb 運作方式](#)
-  4. [關於 index樣板](#)
-  5. [關於 layout樣板](#)
-  6. [關於 sys/variable](#)
-  7. [基本 ruby 語法](#)
-  8. [假字與圖片](#)
-* [CSS/SCSS 實作](#)
-  1. [SCSS 目錄結構](#)
-  2. [類別](#)
-  3. [選擇器邏輯](#)
-  4. [檔案引入方式](#)
-  5. [關於 sys/variable](#)
-  6. [function 與 variable](#)
-  7. [noscript 方法](#)
-  8. [hack 方法](#)
-  9. [rwd 方法](#)
-  10. [admin 方法](#)
-  11. [文字圖示](#)
-  12. [sprite 圖示](#)
-  13. [debug 圖示](#)
-* [javascript/requireJS 實作](#)
-  1. [Script 目錄結構](#)
-  2. [requireJS 運作方式](#)
-  3. [以 node 呼叫 javascript 檔案](#)
-  4. [關於 lib/app 與 lib/main](#)
-  5. [javascript 執行](#)
-  6. [參數與回傳函式](#)
-  7. [關於 cookie.js](#)
-  8. [關於 jquery.js](#)
-  9. [關於 group.js](#)
-  10. [關於 plugin.js](#)
+* [HTML 實作](#html)
+  1. [專案目錄結構](#project-directory)
+  2. [參數與意義](#html-parameter)
+  3. [格線系統](#grid)
+  4. [模組/群組基本結構](#module-and-group-structure)
+  5. [群組類別與結構](#group-structure)
+  6. [模組類別與結構](#module-structure)
+  7. [組件](#component)
+  8. [模組建立原則](#module-establish-principles)
+* [Erb 實作](#erb)
+  1. [Erb 目錄結構](#erb-directory)
+  2. [Erb 樣板語言](#erb-script)
+  3. [Erb 運作方式](#erb-run)
+  4. [關於 index樣板](#erb-index-layout)
+  5. [關於 layout樣板](#erb-layout)
+  6. [關於 sys/variable](#erb-variable)
+  7. [基本 ruby 語法](#basic-ruby-script)
+  8. [假字與圖片](#lorem-ipsum-and-picture)
+* [CSS/SCSS 實作](#scss)
+  1. [SCSS 目錄結構](#scss-directory)
+  2. [類別](#scss-type)
+  3. [選擇器邏輯](#selector-logic)
+  4. [檔案引入方式](#scss-file-import)
+  5. [關於 sys/variable](#scss-variable)
+  6. [function 與 variable](#function-and-variable)
+  7. [noscript 方法](#scss-noscript)
+  8. [hack 方法](#scss-hack)
+  9. [rwd 方法](#scss-rwd)
+  10. [admin 方法](#scss-admin)
+  11. [文字圖示](#scss-font-icon)
+  12. [sprite 圖示](#scss-sprite-picture)
+  13. [debug](#scss-debug)
+* [javascript/requireJS 實作](#js)
+  1. [Script 目錄結構](#js-directory)
+  2. [requireJS 運作方式](#js-require)
+  3. [以 node 呼叫 javascript 檔案](#node-and-files)
+  4. [關於 lib/app 與 lib/main](#app-and-main)
+  5. [javascript 執行](#run-script)
+  6. [參數與回傳函式](#parameter-and-function-retune)
+  7. [關於 cookie.js](#js-cookie)
+  8. [關於 jquery.js](#js-jquery)
+  9. [關於 group.js](#js-group)
+  10. [關於 plugin.js](#js-plugin)
 
 
-<h2 id="overview">前言</h2>
+<h2 id="overview">前言</2>
 
 <h3 id="introduce">簡介</h3>
 第二版共通平台的目標，是希望能將所有**內容模組化**，去除固定框架限制，讓我們能實踐更靈活的版面設計。  
@@ -105,47 +105,8 @@ Fire.app 幫助我們整合 Erb 與 SCSS、Compass 的環境，而它依賴 JAVA
 **內容**: 依照模塊的意義有所不同，**群組**中會是其他的模塊，而**模組**中可能會是一組清單或是天氣資訊等等。  
 **附加資訊**: 一組連結清單。常見的有"更多"、"上一則"、"下一則" 或 "RSS" 等等，連至此模塊敘述內容可參照的其他資訊。  
 
-以下是一組**群組**模塊的範本：
-
-    <div><div class="inner">
-      <div class="content"><div class="inner">
-        <h3><span><a>範例群組</a></span></h3>
-      </div></div>
-      <div class="content"><div class="inner">
-        //這裡是其他子模塊
-      </div></div>
-      <div class="footer"><div class="inner">
-        <ul>
-          <li class="prev"><span><a>上一則</a></span></li>
-          <li class="next"><span><a>下一則</a></span></li>
-          <li class="more"><span><a>更多</a></span></li>
-        </ul>
-      </div></div>
-    </div></div>
-
-以下是一組**模組**模塊的範本：
-
-    <div><div class="inner">
-      <div class="content"><div class="inner">
-        <h4><span><a>範例模組</a></span></h4>
-      </div></div>
-      <div class="content"><div class="inner">
-        //這裡是模組內容
-      </div></div>
-      <div class="footer"><div class="inner">
-        <ul>
-          <li class="prev"><span><a>上一則</a></span></li>
-          <li class="next"><span><a>下一則</a></span></li>
-          <li class="more"><span><a>更多</a></span></li>
-        </ul>
-      </div></div>
-    </div></div>
-
-可以看到**群組**與**模組**的結構幾乎相同，唯一的差別是 header 裡的 heading 級數：
-**群組**是 h3 而**模組**是 h4。
-
-<h3 id="base-layout-content">底層、框架與內容</h3>
-在共通平台第二版中，我們重構了許多框架，以下將一層一層的介紹它們的意義。
+<h3 id="base-layout">底層、框架與內容</h3>
+在共通平台第二版重構了許多框架，以下將一層一層的介紹它們的意義。
 讓我們先看 HTML 示意：
 
     <html>
@@ -161,7 +122,7 @@ Fire.app 幫助我們整合 Erb 與 SCSS、Compass 的環境，而它依賴 JAVA
 **sys-root** 是一組**群組**，可以算是平台的根節點，所有網頁的內容皆由它開始延伸，
 前輟 **sys-** 即表示它是"系統級"節點，所以 CSS 樣式應該由它開始撰寫，而不應在 **html**、**body** 或 **form** 寫入任何樣式。  
 
-在 sys-root 之下有 **base-mobile**、**base-extend** 與 **base-wrapper**三個主要區塊，前輟 **sys-** 即表示它是"基礎級"節點：
+在 sys-root 之下有 **base-mobile**、**base-extend** 與 **base-wrapper**三個主要區塊，前輟 **base-** 即表示它是"基礎級"節點：
 
 **base-mobile**: 手機版側欄。通常會放置"主選單"、"分享"等等。  
 **base-extend**: 漂浮在瀏覽器上的物件層。通常會放置"回到最頂"按鈕等等。  
@@ -319,8 +280,139 @@ Fire.app 幫助我們整合 Erb 與 SCSS、Compass 的環境，而它依賴 JAVA
       </body>
     </html>
 
-以上就是整體框架示意，要記得每一層框架都是一個**群組**。
+要記得每一層框架都是一個**群組**，而**群組**有其特定的結構，以上僅是結構示意。
 
 <h3 id="css-selector">CSS 選擇器與範圍</h3>
+我們將 HTML 分類，歸納了 14 種**模組**類別、4種**群組類別**，相同類別的模塊，樣式均寫在同一個檔案裡。
+舉例來說，".nav" 與 ".font-level" 均屬於 **.list-text** 這個類別，因此它們
 
 <h3 id="javascript-optimize">Javascript 優化</h3>
+
+
+<h2 id="html">HTML 實作</h2>
+
+<h3 id="project-directory">專案目錄結構</h3>
+
+<h3 id="html-parameter">參數與意義</h3>
+
+<h3 id="grid">格線系統</h3>
+
+<h3 id="module-and-group-structure">模組/群組基本結構</h3>
+
+以下是一組**群組**模塊的範本：
+
+    <div><div class="inner">
+      <div class="content"><div class="inner">
+        <h3><span><a>範例群組</a></span></h3>
+      </div></div>
+      <div class="content"><div class="inner">
+        //這裡是其他子模塊
+      </div></div>
+      <div class="footer"><div class="inner">
+        <ul>
+          <li class="prev"><span><a>上一則</a></span></li>
+          <li class="next"><span><a>下一則</a></span></li>
+          <li class="more"><span><a>更多</a></span></li>
+        </ul>
+      </div></div>
+    </div></div>
+
+以下是一組**模組**模塊的範本：
+
+    <div><div class="inner">
+      <div class="content"><div class="inner">
+        <h4><span><a>範例模組</a></span></h4>
+      </div></div>
+      <div class="content"><div class="inner">
+        //這裡是模組內容
+      </div></div>
+      <div class="footer"><div class="inner">
+        <ul>
+          <li class="prev"><span><a>上一則</a></span></li>
+          <li class="next"><span><a>下一則</a></span></li>
+          <li class="more"><span><a>更多</a></span></li>
+        </ul>
+      </div></div>
+    </div></div>
+
+可以看到**群組**與**模組**的結構幾乎相同，唯一的差別是 header 裡的 heading 級數：
+**群組**是 h3 而**模組**是 h4。
+
+<h3 id="group-structure">群組類別與結構</h3>
+
+<h3 id="module-structure">模組類別與結構</h3>
+
+<h3 id="component">組件</h3>
+
+<h3 id="module-establish-principles">模組建立原則</h3>
+
+
+<h2 id="erb">Erb 實作</h2>
+
+<h3 id="erb-directory">Erb 目錄結構</h3>
+
+<h3 id="erb-script">Erb 樣板語言</h3>
+
+<h3 id="erb-run">Erb 運作方式</h3>
+
+<h3 id="erb-index-layout">關於 index樣板</h3>
+
+<h3 id="erb-layout">關於 layout樣板</h3>
+
+<h3 id="erb-variable">關於 sys/variable</h3>
+
+<h3 id="basic-ruby-script">基本 ruby 語法</h3>
+
+<h3 id="lorem-ipsum-and-picture">假字與圖片</h3>
+
+
+<h2 id="scss">CSS/SCSS 實作</h2>
+
+<h3 id="scss-directory">SCSS 目錄結構</h3>
+
+<h3 id="scss-type">類別</h3>
+
+<h3 id="selector-logic">選擇器邏輯</h3>
+
+<h3 id="scss-file-import">檔案引入方式</h3>
+
+<h3 id="scss-variable">關於 sys/variable</h3>
+
+<h3 id="function-and-variable">function 與 variable</h3>
+
+<h3 id="scss-noscript">noscript 方法</h3>
+
+<h3 id="scss-hack">hack 方法</h3>
+
+<h3 id="scss-rwd">rwd 方法</h3>
+
+<h3 id="scss-admin">admin 方法</h3>
+
+<h3 id="scss-font-icon">文字圖示</h3>
+
+<h3 id="scss-sprite-picture">sprite 圖示</h3>
+
+<h3 id="scss-debug">debug</h3>
+
+
+<h2 id="js">javascript/requireJS 實作</h2>
+
+<h3 id="js-directory">Script 目錄結構</h3>
+
+<h3 id="js-require">requireJS 運作方式</h3>
+
+<h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
+
+<h3 id="app-and-main">關於 lib/app 與 lib/main</h3>
+
+<h3 id="run-script">javascript 執行</h3>
+
+<h3 id="parameter-and-function-retune">參數與回傳函式</h3>
+
+<h3 id="js-cookie">關於 cookie.js</h3>
+
+<h3 id="js-jquery">關於 jquery.js</h3>
+
+<h3 id="js-group">關於 group.js</h3>
+
+<h3 id="js-plugin">關於 plugin.js</h3>
