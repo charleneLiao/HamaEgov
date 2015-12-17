@@ -45,7 +45,7 @@ define(['jquery', 'group'], function($, group){
 			slider(left);
 		});
 
-		function slider(_away){
+		function slider(_away){ //輪播的方法
 
 			if( compareWidth() ) {
 

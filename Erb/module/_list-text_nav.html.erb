@@ -1,6 +1,6 @@
 <%
 	min_li = 0 #最少的li數量
-	max_li = 12 #最多的li數量
+	max_li = 20 #最多的li數量
 	min_text = 4 #最少的字元
 	max_text = 8 #最多的字元
 
@@ -12,15 +12,14 @@
 	<div class="header"><div class="inner">
 		<h4><span><a href="#"><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
-	
-	<% if ( li_length > 0 ) %>
-		<div class="content"><div class="inner">
+	<div class="content"><div class="inner">
+		<% if ( li_length > 0 ) %>
 			<ul data-index="1" data-child="<%= li_length %>">
 
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
 				<% end %>
 			</ul>
-		</div></div>
-	<% end %>
+		<% end %>
+	</div></div>
 </div></div>

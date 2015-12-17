@@ -5,6 +5,8 @@ define(['jquery', 'group'], function($, group){
 		var li = group.getContentItem(env), //取 li
 			child_node = group.getChild(li, 'div'),
 			child_node_header = group.getHeader(child_node),
+			child_node_content_inner = group.getContentInner(child_node),
+			child_node_content_inner_length = child_node_content_inner.length || 1,
 			all_a = env.querySelectorAll('a'),
 			last_a = all_a[all_a.length - 1];
 
@@ -14,6 +16,14 @@ define(['jquery', 'group'], function($, group){
 			$child_node_header = $(child_node_header),
 			$a = $child_node_header.find('a'),
 			$last_a = $(last_a);
+
+		for( var i =0; i < child_node_content_inner_length; i++ ) { //如果 child .inner 沒有任何內容
+			var _this = child_node_content_inner[i];
+
+			if(!_this.children.length) {
+				_this.parentNode.parentNode.removeChild(_this.parentNode); //就刪掉 .content
+			}
+		}
 
 		var _eventNmae = file, //事件名稱
 			_active = 'is-active', //被選擇的 class name
