@@ -1,6 +1,12 @@
 define(['jquery'], function($){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
+
+		var $set = {
+				debug: false
+			}
+
+		$.extend($set, opt);
 
 		var $win = $(window),
 			$menu = $(env),
@@ -27,6 +33,13 @@ define(['jquery'], function($){
 		});
 
 		$win.trigger(_eventNmae);
+
+		if($set.debug) {
+			console.log('環境:', env);
+			console.log('參數:', opt);
+			console.log('檔名:', file);
+			console.log('預設值:', $set);
+		}
 	}
 	
 	return main;

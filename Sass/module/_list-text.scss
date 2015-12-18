@@ -202,7 +202,11 @@
 				}
 
 				h4 {
+					@extend %title;
 
+					&:before {
+						@include icon-font('menu');
+					}
 				}
 
 				span {

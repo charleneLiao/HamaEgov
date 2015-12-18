@@ -1,9 +1,10 @@
 define(['cookie', 'jquery', 'group'], function(cookie, $, group){
 
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
 
 		var $set = {
-				defaultItem: 'medium'
+				defaultItem: 'medium',
+				debug: false
 			}
 
 		$.extend($set, opt);
@@ -39,7 +40,7 @@ define(['cookie', 'jquery', 'group'], function(cookie, $, group){
 
 		$li.filter('.'+ _result).find('a').trigger(_eventNmae); //執行 cookie 記錄或中間值
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);

@@ -1,6 +1,12 @@
 define(['jquery', 'group'], function($, group){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
+
+		var $set = {
+				debug: false
+			}
+
+		$.extend($set, opt);
 
 		var items = group.getContentItem(env),
 			tabs = group.getContentItem(group.getChild(items[0], 'tab'));
@@ -63,10 +69,11 @@ define(['jquery', 'group'], function($, group){
 
 		$a.eq(0).trigger(_eventNmae); //先點擊，同時用 css 先做掉
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);
+			console.log('預設值:', $set);
 		}
 	}
 	

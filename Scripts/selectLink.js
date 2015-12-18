@@ -1,6 +1,12 @@
 define(['jquery'], function($){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
+
+		var $set = {
+				debug: false
+			}
+
+		$.extend($set, opt);
 
 		var $env = $(env),
 			$select = $env.find('select');
@@ -13,10 +19,11 @@ define(['jquery'], function($){
 			}
 		});
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);
+			console.log('預設值:', $set);
 		}
 	}
 	

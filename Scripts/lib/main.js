@@ -21,6 +21,7 @@ requirejs(['domReady!'], function(dom){ //當網頁載入時
 				var $opt = $func[_file];
 				
 				requirejs([_file], function(func){ //載入 function name 同名 .js，第一個參數是節點，第二個參數是設定物件，第三個參數是方法名稱
+					// $opt.debug = true;
 
 					if( typeof(func) === 'function' ) { //如果是函式就執行
 						func($env, $opt, _file);

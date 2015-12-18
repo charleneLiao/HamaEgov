@@ -1,10 +1,11 @@
 define(['jquery'], function($){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
 
 		var $set = {
 				bindNode: 'body',
-				speed: 300
+				speed: 300,
+				debug: false
 			}
 
 		$.extend($set, opt);
@@ -32,7 +33,7 @@ define(['jquery'], function($){
 			$(this).trigger(_eventNmae);
 		});
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);

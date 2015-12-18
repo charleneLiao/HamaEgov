@@ -19,7 +19,7 @@
 			<ul data-index="1" data-child="<%= li_length %>">
 
 				<% li_length.times do |i| %>
-					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) %>">
+					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
 					<!-- nav 選單 -->
 						<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 1, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1) } %>

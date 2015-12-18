@@ -1,6 +1,12 @@
 define(['jquery', 'group'], function($, group){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
+
+		var $set = {
+				debug: false
+			}
+
+		$.extend($set, opt);
 		
 		var li = group.getContentItem(env), //取 li
 			child_node = group.getChild(li, 'div'),
@@ -21,7 +27,7 @@ define(['jquery', 'group'], function($, group){
 			var _this = child_node_content_inner[i];
 
 			if(!_this.children.length) {
-				_this.parentNode.parentNode.removeChild(_this.parentNode); //就刪掉 .content
+				_this.parentNode.style.display = 'none'; //就隱藏 .content
 			}
 		}
 
@@ -58,10 +64,11 @@ define(['jquery', 'group'], function($, group){
 			$li.removeClass(_active);
 		});
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);
+			console.log('預設值:', $set);
 		}
 	}
 	

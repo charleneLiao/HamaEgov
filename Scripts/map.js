@@ -1,9 +1,6 @@
-
-
-
 define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
 
 		var $set =  {
 				height: 300,
@@ -16,7 +13,8 @@ define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
 					styles: [],
 					zoom: 6,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
+				},
+				debug: false
 			}
 
 		oka.extend($set, opt);
@@ -64,10 +62,11 @@ define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
 			});
 		}
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);
+			console.log('預設值:', $set);
 		}
 	}
 	

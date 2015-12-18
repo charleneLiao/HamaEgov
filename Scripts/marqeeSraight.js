@@ -1,11 +1,12 @@
 define(['jquery', 'group'], function($, group){
 	
-	function main(env, opt, file, debug){
+	function main(env, opt, file){
 
 		var $set = {
 				auto: false,
 				delay: 5000,
-				speed: 300
+				speed: 300,
+				debug: false
 			}
 
 		$.extend($set, opt);
@@ -103,10 +104,11 @@ define(['jquery', 'group'], function($, group){
 			timer = setTimeout(auto, $set.delay); //輪播開始
 		}
 
-		if(debug) {
+		if($set.debug) {
 			console.log('環境:', env);
 			console.log('參數:', opt);
 			console.log('檔名:', file);
+			console.log('預設值:', $set);
 		}
 	}
 	
