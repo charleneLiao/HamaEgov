@@ -24,6 +24,10 @@ requirejs(['domReady!'], function(dom){ //當網頁載入時
 
 					if( typeof(func) === 'function' ) { //如果是函式就執行
 						func($env, $opt, _file);
+					}else {
+						console.log(_file+'.js 並不是一個可執行的 function.')
+
+						return false;
 					}
 				});
 			}
