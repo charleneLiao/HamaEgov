@@ -24,9 +24,9 @@ define(['jquery', 'group'], function($, group){
 			$last_a = $(last_a);
 
 		for( var i =0; i < child_node_content_inner_length; i++ ) { //如果 child .inner 沒有任何內容
-			var _this = child_node_content_inner[i];
+			var _this = child_node_content_inner[i] || child_node_content_inner;
 
-			if(!_this.children.length) {
+			if( !_this.children.length ) {
 				_this.parentNode.style.display = 'none'; //就隱藏 .content
 			}
 		}
