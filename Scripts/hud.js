@@ -21,9 +21,10 @@ define(['jquery'], function($){
 			var $win_t = $win.scrollTop();
 
 			if ($win_t > $inner_t) {
-				$menu.height($inner_h);
+				$menu.css({'height': $inner_h});
 				$menu.addClass(_active);
 			} else {
+				$menu.css({'height': 'auto'});
 				$menu.removeClass(_active);
 			}
 		});
