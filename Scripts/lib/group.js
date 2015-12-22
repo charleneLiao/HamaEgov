@@ -22,7 +22,7 @@ define(function(){
 			_selector = _selector.toString().replace(/\.|#|\s/g,''), //建立 selector 比對
 			_selector_regex = new RegExp(_selector, 'i');
 
-		var $envs = Array.prototype.concat(envs), //所有節點環境
+		var $envs = Array.prototype.concat(envs), //所有節點環境，化為陣列
 			$envs_length = $envs.length,
 			$childs = []; //環境節點的子結點
 
@@ -54,13 +54,7 @@ define(function(){
 			}
 		}
 
-		var $result_length = $result.length; //符合項目的數量
-
-		if( $result_length === 1 ) { //如果只有一個物件就返回節點、兩個以上就返回陣列
-			return $result[0];
-		}else {
-			return $result;
-		}
+		return $result;
 	}
 
 	function getType(env){ //取得 data-type
@@ -84,11 +78,11 @@ define(function(){
 	}
 
 	function getTitleText(env){ //取得該群組標題文字
-		return getHeader(env).innerText;
+		return getHeader(env)[0].innerText;
 	}
 
 	function setTitleText(title){ //取得該群組標題文字
-		return getHeader(env).innerText = title;
+		return getHeader(env)[0].innerText = title;
 	}
 
 	function getContent(env){ //取得 content 節點
@@ -108,11 +102,21 @@ define(function(){
 	}
 
 	function getChildGroup(env){ //取得子模組節點(群組用)
-		return getChild(getContentInner(env), 'div') || getChild(getContentItem(env), 'div');
+		var result = [];
+
+		if( !getChild(getContentInner(env), 'div').length ) {
+			return getChild(getContentInner(env), 'div');
+		}
+
+		if( !getChild(getContentItem(env), 'div').length ) {
+			return getChild(getContentItem(env), 'div');
+		}
+
+		return [];
 	}
 
 	function getContentItemLen(env){ //取得 content li 節點的數量
-		return getChildList.getAttribute('data-child');
+		return getChildList[0].getAttribute('data-child');
 	}
 
 	function getFooter(env){ //取得 footer 節點
@@ -128,15 +132,15 @@ define(function(){
 	}
 
 	function getFooterItem(env){ //取得 footer li 節點
-		return getFooterInner(env).querySelectorAll('li');
+		return getFooterInner(env)[0].querySelectorAll('li');
 	}
 
 	function getCtrlBtns(env){ //取得控制項按鈕
-		return getFooterList(env).querySelectorAll('.prev, .next');
+		return getFooterList(env)[0].querySelectorAll('.prev, .next');
 	}
 
 	function getCtrlBtn(env, selector){ //查詢取得控制項按鈕，className 是 class(.prev)
-		return getFooterList(env).querySelector(selector);
+		return getFooterList(env)[0].querySelector(selector);
 	}
 
 	function updateIndex(env){ //更新 data-index

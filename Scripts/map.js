@@ -19,7 +19,7 @@ define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
 
 		oka.extend($set, opt);
 
-		var $divition = group.getChild(group.getContentInner(env), 'divition'); //google map 的 div
+		var $divition = group.getChild(group.getContentInner(env), 'divition')[0]; //google map 的 div
 
 		$divition.style.height = parseInt($set.height, 10) + 'px'; //給他高
 
