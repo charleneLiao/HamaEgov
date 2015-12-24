@@ -14,7 +14,7 @@
   2. [定義](#definition)
   3. [工具](#environment-and-tools)
 * [哲學](#philosophy)
-  1. [模組與群組](#module-and-group)
+  1. [模塊：模組與群組](#module-and-group)
   2. [CSS 選擇器與範圍](#css-selector)
   3. [Javascript 優化](#javascript-optimize)
 * [HTML 實作](#html)
@@ -22,7 +22,7 @@
   2. [參數與意義](#html-parameter)
   3. [格線系統](#grid)
   4. [底層、框架與內容](#base-layout)
-  5. [模組/群組基本結構](#module-and-group-structure)
+  5. [模塊基礎結構](#module-and-group-structure)
   6. [群組類別與結構](#group-structure)
   7. [模組類別與結構](#module-structure)
   8. [組件](#component)
@@ -116,21 +116,21 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 <h2 id="philosophy">哲學</h2>
 
 
-<h3 id="module-and-group">模組與群組</h3>
+<h3 id="module-and-group">模塊：模組與群組</h3>
 新平台基於兩種模塊：群組與模組。
 
 群組本身並沒有內容，是一種協助排版的模塊。
 模組則是一塊有意義的內容，如：天氣模組、資訊模組。
 
-前端網頁的構成，應由群組與模組堆砌而成，不應有例外。
-當我們需要一個複合型的模組，應使用現有模組去堆砌出來。例如把日曆與選單加入到群組，該群組就成為帶選單的日曆模組。
+前端網頁的構成，應由模塊堆砌而成，不應有例外。
+當我們需要一個複合型的模組，應該使用現有模組去堆砌出來。例如把日曆與選單加入到群組，該群組就類似於成為帶選單的日曆模組。
 
 模組有兩種命名方式，一是依照模組的意義命名，例如：weather(天氣)、logo(標誌)。
 另一種是依照模組的樣式命名，例如：pic-block(圖片區塊)。
 
 一般來說，首頁模組、偏向使用意義命名，而內頁模組應以樣式命名，以便於作為範本使用。
 
-更多群組與模組的規範，可參閱 [模組/群組基本結構](#module-and-group-structure) 章節。
+更多模塊的規範，可參閱 [模塊基礎結構](#module-and-group-structure) 章節。
 
 
 <h3 id="css-selector">CSS 選擇器與範圍</h3>
@@ -138,7 +138,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 由於同一類別的模塊結構完全相同，因此可直接套用同一類別的其他樣式。
 .group-list 與 .list-text、.list-pic 這三個類別相當程度上也可以套用彼此的樣式，唯群組與模組指定選擇器的方式稍有不同，需多加注意。
 
-樣式可依照區域有所變更，例如指定主選單在手機側欄、側邊欄、header、footer 與內頁時呈現不同的樣式。
+樣式可依照區域有所變更，例如指定主選單在手機側欄、側邊欄、header、footer 與內頁時呈現不同的樣式，更多框架區塊可參閱 [底層、框架與內容](#base-layout) 章節。
 
 平台提供了許多指定寬度的新方法，尤其是讓使用者透過參數來控制顯示的項目，增加了不少彈性。
 
@@ -159,19 +159,178 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 
 <h3 id="project-directory">專案目錄結構與其他檔案</h3>
-說明專案目錄如 Css、Audio、Video、Images、Prototype、Scripts、Sass。
-並說明 apple-touch-icon.png 與 favicon.ico。
-說明 config.rb 與 README.md。
-說明 .git 目錄與 .gitignore 檔案。
-說明 記事 與 說明 檔案。
+以下是專案目錄結構圖及說明。
 
+    - 專案目錄
+      |- .git
+      |- .sass-cache
+      |- Audio
+      |- Css
+      |- Document
+      |- Erb
+      |- Images
+      |- Prototype
+      |- Sass
+      |- Script
+      |- Video
+      |- .gitignore
+      |- _index_layout.html.erb
+      |- _layout.html.erb
+      |- apple-touch-icon.png
+      |- config.rb
+      |- favicon.ico
+      |- index.html.erb
+      |- index.html.layout
+      |- README.md
+
+<table>
+  <tr>
+    <th>文件、目錄</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>.git</td>
+    <td>存放 git 版本管理庫的目錄。</td>
+  </tr>
+  <tr>
+    <td>.sass-cache</td>
+    <td>存放 Sass 編譯暫存檔案的目錄。</td>
+  </tr>
+  <tr>
+    <td>Audio</td>
+    <td>存放音訊檔案的目錄。</td>
+  </tr>
+  <tr>
+    <td>Css</td>
+    <td>存放 css 文件的目錄。</td>
+  </tr>
+  <tr>
+    <td>Document</td>
+    <td>存放其他相關文件的目錄。</td>
+  </tr>
+  <tr>
+    <td>Erb</td>
+    <td>存放 Erb 樣板與模組的目錄。</td>
+  </tr>
+  <tr>
+    <td>Images</td>
+    <td>存放圖片、文字圖示的目錄。</td>
+  </tr>
+  <tr>
+    <td>Prototype</td>
+    <td>存放專案雛形、原始圖檔的目錄。</td>
+  </tr>
+  <tr>
+    <td>Sass</td>
+    <td>存放所有 Scss 相關檔案的目錄。</td>
+  </tr>
+  <tr>
+    <td>Script</td>
+    <td>存放所有 js 文件的目錄。</td>
+  </tr>
+  <tr>
+    <td>Video</td>
+    <td>存放視訊檔案的目錄。</td>
+  </tr>
+  <tr>
+    <td>.gitignore</td>
+    <td>紀錄 Git 排除名單的文件。</td>
+  </tr>
+  <tr>
+    <td>_index_layout.html.erb</td>
+    <td>index.html.erb 的樣板。</td>
+  </tr>
+  <tr>
+    <td>_layout.html.erb</td>
+    <td>所有內面的樣板。</td>
+  </tr>
+  <tr>
+    <td>apple-touch-icon.png</td>
+    <td>apple 系統的較大 icon 圖片。</td>
+  </tr>
+  <tr>
+    <td>config.rb</td>
+    <td>關於 compass、sass 的設定文件。</td>
+  </tr>
+  <tr>
+    <td>favicon.ico</th>
+    <td>網頁 icon 圖示</td>
+  </tr>
+  <tr>
+    <td>index.html.erb</td>
+    <td>以 Erb 撰寫的首頁。</td>
+  </tr>
+  <tr>
+    <td>index.html.layout</td>
+    <td>指定 _index_layout.html.erb 為 index.html.erb 樣板的設定文件。</td>
+  </tr>
+  <tr>
+    <td>README.md</td>
+    <td>專案說明文件，即本文。</td>
+  </tr>
+</table>
 
 <h3 id="html-parameter">參數與意義</h3>
-說明屬性 data-type 與 data-index、data-child。
-說明屬性 data-function 並且連結至 [以 node 呼叫 javascript 檔案](#node-and-files)。
-說明屬性 data-js 與 data-admin。
-說明屬性 data-width。
+我們使用 html5 data-* 屬性來為 css 及 javascript 做一些事，用以強化整體規範與便利性。
 
+一般的模塊具有屬性 data-type、data-index、data-child、data-function、data-setlen，而 body 則有屬性 data-js、data-admin，特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
+
+<table>
+  <tr>
+    <th>屬性名稱</th>
+    <th>意義</th>
+    <th>說明</th>
+    <th>歸屬</th>
+  </tr>
+  <tr>
+    <td>data-type</td>
+    <td>模塊類型</td>
+    <td>標示該模塊的類型，0 代表該模塊為模組，1、2、3、4 分別為不同類別的群組，更多說明請至 <a href="#group-structure">群組類別與結構</a> 章節。</td>
+    <td>模塊</td>
+  </tr>
+  <tr>
+    <td>data-index</td>
+    <td>模塊或項目順序</td>
+    <td>標示該模塊在父模中的順序、標示項目在清單中的順序。</td>
+    <td>模塊、項目(li)</td>
+  </tr>
+  <tr>
+    <td>data-child</td>
+    <td>子模塊或子項目數量</td>
+    <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量。</td>
+    <td>模塊、清單(ul)</td>
+  </tr>
+  <tr>
+    <td>data-function</td>
+    <td>呼叫模塊程式</td>
+    <td>提供一組 javascript 物件字串，用以呼叫程式模塊，更多說明請至 <a href="#node-and-files">以 node 呼叫 javascript 檔案</a> 章節。</td>
+    <td>模塊、body</td>
+  </tr>
+  <tr>
+    <td>data-setlen</td>
+    <td>設定模塊顯示項目</td>
+    <td>設定內容項目顯示的數量。設計師可設定該模塊是否開啟這項功能，更多說明請至 <a href="#scss-len-function">關於設定數量的方法</a> 章節。</td>
+    <td>模塊</td>
+  </tr>
+  <tr>
+    <td>data-js</td>
+    <td>javascript 提示</td>
+    <td>提示用戶是否開啟 javascript。</td>
+    <td>body</td>
+  </tr>
+  <tr>
+    <td>data-admin</td>
+    <td>管理者提示</td>
+    <td>提示用戶是否為系統管理者。</td>
+    <td>body</td>
+  </tr>
+  <tr>
+    <td>data-width</td>
+    <td>選單寬度</td>
+    <td>設定子模塊的 content 選單寬度。</td>
+    <td>項目(li)</td>
+  </tr>
+</table>
 
 <h3 id="grid">格線系統</h3>
 說明 data-child 與 data-setLen 的作用，並且實踐的邏輯為何。
@@ -181,7 +340,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 <h3 id="base-layout">底層、框架與內容</h3>
 
 
-<h3 id="module-and-group-structure">模組/群組基本結構</h3>
+<h3 id="module-and-group-structure"模塊基礎結構</h3>
 說明如何判定模塊並區分群組/模組。
 說明 .header、.content 與 .footer 的內容應如何區別。
 列舉群組與模組的基本結構，並且比較 .group-list 與 .list-text、.list-pic 的結構並說明相似性。
@@ -215,7 +374,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 
 <h3 id="erb-directory">Erb 目錄結構</h3>
-解說 Erb 目錄結構，並說明 _layout.html.erb、index.layout.html.erb、index.html.erb、index.html.layout 也是 Erb 的一部分，並提供用途說明。
+解說 Erb 目錄結構，並說明 _layout.html.erb、index.layout.html.erb、index.html.erb、index.html.layout 也是 Erb ，並提供用途說明。
 說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
 
 
