@@ -20,14 +20,13 @@
 * [HTML 實作](#html)
   1. [專案目錄結構](#project-directory)
   2. [參數與意義](#html-parameter)
-  3. [格線系統](#grid)
-  4. [底層、框架與內容](#base-layout)
-  5. [模塊基礎結構](#module-and-group-structure)
-  6. [群組類別與結構](#group-structure)
-  7. [模組類別與結構](#module-structure)
-  8. [組件](#component)
-  9. [模組建立原則](#module-establish-principles)
-  10. [以 class name 表示狀態](#use-class-name-to-show-status)
+  3. [底層、框架與內容](#base-layout)
+  4. [模塊基礎結構](#module-and-group-structure)
+  5. [群組類別與結構](#group-structure)
+  6. [模組類別與結構](#module-structure)
+  7. [組件](#component)
+  8. [模組建立原則](#module-establish-principles)
+  9. [以 class name 表示狀態](#use-class-name-to-show-status)
 * [Erb 實作](#erb)
   1. [Erb 目錄結構](#erb-directory)
   2. [Erb 樣板語言](#erb-script)
@@ -40,20 +39,21 @@
 * [CSS/SCSS 實作](#scss)
   1. [SCSS 目錄結構](#scss-directory)
   2. [SCSS](#scss-script)
-  3. [類別](#scss-type)
-  4. [選擇器邏輯](#selector-logic)
-  5. [檔案引入方式](#scss-file-import)
-  6. [function 與 variable](#function-and-variable)
-  7. [關於 sys/variable](#scss-sys-variable)
-  8. [noscript 方法](#scss-noscript)
-  9. [hack 方法](#scss-hack)
-  10. [rwd 方法](#scss-rwd)
-  11. [admin 方法](#scss-admin)
-  12. [背景方法](#bg-to-pic)
-  13. [文字圖示](#scss-font-icon)
-  14. [sprite 圖示](#scss-sprite-picture)
-  15. [關於設定數量的方法](#scss-len-function)
-  16. [debug](#scss-debug)
+  3. [格線系統](#grid)
+  4. [類別](#scss-type)
+  5. [選擇器邏輯](#selector-logic)
+  6. [檔案引入方式](#scss-file-import)
+  7. [function 與 variable](#function-and-variable)
+  8. [關於 sys/variable](#scss-sys-variable)
+  9. [noscript 方法](#scss-noscript)
+  10. [hack 方法](#scss-hack)
+  11. [rwd 方法](#scss-rwd)
+  12. [admin 方法](#scss-admin)
+  13. [背景方法](#bg-to-pic)
+  14. [文字圖示](#scss-font-icon)
+  15. [sprite 圖示](#scss-sprite-picture)
+  16. [關於設定數量的方法](#scss-len-function)
+  17. [debug](#scss-debug)
 * [javascript/requireJS 實作](#js)
   1. [Script 目錄結構](#js-directory)
   2. [requireJS 運作方式](#js-require)
@@ -62,7 +62,7 @@
   5. [javascript 執行](#run-script)
   6. [關於 cookie.js](#js-cookie)
   7. [關於 jquery.js](#js-jquery)
-  8. [關於 group.js](#js-group)
+  8. [關於 getNode.js](#js-getNode)
   9. [關於 plugin.js](#js-plugin)
 
 
@@ -327,18 +327,176 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
   <tr>
     <td>data-width</td>
     <td>選單寬度</td>
-    <td>設定子模塊的 content 選單寬度。</td>
+    <td>設定子模塊的 content 選單寬度，主要用於主選單，單位是基本寬度的倍數。</td>
     <td>項目(li)</td>
   </tr>
 </table>
 
-<h3 id="grid">格線系統</h3>
-說明 data-child 與 data-setLen 的作用，並且實踐的邏輯為何。
-連結說明至 [關於設定數量的方法](#scss-len-function)
-
-
 <h3 id="base-layout">底層、框架與內容</h3>
+在共通平台第二版重構了許多框架，以下將一層一層的介紹它們的意義。
+讓我們先看 HTML 示意：
 
+    <body>
+    
+      <div class="sys-root">
+        網頁內容由此開始
+      </div>
+      
+    </body>
+
+sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆由它開始延伸，前輟 sys 即表示它是*系統級*節點，所以 CSS 樣式應該由它開始撰寫，而不應在 html、body、form 寫入任何樣式。  
+
+在 sys-root 之下有 base-mobile、base-extend 與 base-wrapper 三個主要區塊，前輟 base- 即表示它是*基礎級*節點，代表它應被固定，而不能被拖曳改變排列：
+
+base-mobile: 手機版側欄。通常會放置主選單、分享模組等。  
+base-extend: 漂浮在瀏覽器上的物件層。通常會放置"回到最頂"按鈕等等。  
+base-wrapper: 網頁頁面框架。
+
+    <body>
+      <div class="sys-root">
+      
+        <div class="base-mobile">
+          手機版側欄
+        </div>
+        <div class="base-extend">
+          漂浮物件層
+        </div>
+        <div class="base-wrapper">
+          網頁頁面框架
+        </div>
+        
+      </div>
+    </body>
+
+base-wrapper 中分 base-header、base-content、base-footer 三個次要區塊：
+
+base-header: 網頁頁首。通常放置主選單、LOGO模組等。  
+base-content: 網頁主要內容。  
+base-footer: 網頁頁尾。通常放置一些網站資訊。
+
+    <body>
+      <div class="sys-root">
+        <div class="base-mobile">
+        </div>
+        <div class="extend">
+        </div>
+        <div class="base-wrapper">
+        
+          <div class="base-header">
+            網頁頁首
+          </div>
+          <div class="base-content">
+            網頁主要內容
+          </div>
+          <div class="base-footer">
+            網頁頁尾
+          </div>
+        
+        </div>
+      </div>
+    </body>
+
+依據首頁/內頁框架區塊的不同，可區分 base-module-area 與base-page-area ：
+
+base-module-area: 模組區塊。可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。  
+base-page-area: 內頁框架。
+
+    <body>
+      <div class="sys-root">
+        <div class="base-mobile">
+        </div>
+        <div class="extend">
+        </div>
+        <div class="base-wrapper">
+          <div class="base-header">
+          </div>
+          <div class="base-content">
+          
+            <div class="base-module-area">
+              //模組
+            </div>
+            <div class="base-page-area">
+              //內頁
+            </div>
+            
+          </div>
+          <div class="base-footer">
+          </div>
+        </div>
+      </div>
+    </body>
+
+進入到內頁之後，base-page-area 分為兩個區塊是 base-aside 與 base-section ：
+
+base-aside: 內頁側欄。通常放置主選單或次選單。  
+base-section: 內頁內容。
+
+    <html>
+      <body>
+        <div class="sys-root">
+          <div class="base-mobile">
+          </div>
+          <div class="extend">
+          </div>
+          <div class="base-wrapper">
+            <div class="base-header">
+            </div>
+            <div class="base-content">
+              <div class="base-module-area">
+              </div>
+              <div class="base-page-area">
+              
+                <div class="base-aside">
+                  內頁側欄
+                </div>
+                <div class="base-section">
+                  內頁內容
+                </div>
+                
+              </div>
+            </div>
+            <div class="base-footer">
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+
+最後，如果在內頁內容中有包含文章區塊，base-section 區塊會包含最後一個固定框架 base-article：
+
+base-article: 內頁文章區塊。
+
+    <body>
+      <div class="sys-root">
+        <div class="base-mobile">
+        </div>
+        <div class="extend">
+        </div>
+        <div class="base-wrapper">
+          <div class="base-header">
+          </div>
+          <div class="base-content">
+            <div class="base-module-area">
+            </div>
+            <div class="base-page-area">
+              <div class="base-aside">
+              </div>
+              <div class="base-section">
+              
+                <div class="base-article">
+                  內頁文章
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="base-footer">
+          </div>
+        </div>
+      </div>
+    </body>
+
+要記得每一層框架都是一個群組，而群組有其特定的結構，以上僅是結構示意，關於群組結構請參閱 [模塊基礎結構](#module-and-group-structure) 章節。
 
 <h3 id="module-and-group-structure"模塊基礎結構</h3>
 說明如何判定模塊並區分群組/模組。
@@ -419,6 +577,11 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 <h3 id="scss-script">SCSS</h3>
 簡述 SCSS 語言解決的問題與優勢，並提供說明網站連結。
+
+
+<h3 id="grid">格線系統</h3>
+說明 data-child 與 data-setLen 的作用，並且實踐的邏輯為何。
+連結說明至 [關於設定數量的方法](#scss-len-function)
 
 
 <h3 id="scss-type">類別</h3>
@@ -518,8 +681,8 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 闡述如何在 app.js jquery 的來源，以 jqueryPrivate 回傳一個不影響全域的 jquery，並在最後演示如何在模塊內使用 jquery。
 
 
-<h3 id="js-group">關於 group.js</h3>
-介紹 group.js 的理念、用法。
+<h3 id="js-getNode">關於 getNode.js</h3>
+介紹 getNode.js 的理念、用法。
 
 
 <h3 id="js-plugin">關於 plugin.js</h3>
