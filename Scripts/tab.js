@@ -1,4 +1,4 @@
-define(['jquery', 'group'], function($, group){
+define(['jquery', 'getNode'], function($, getNode){
 	
 	function main(env, opt, file){
 
@@ -8,8 +8,8 @@ define(['jquery', 'group'], function($, group){
 
 		$.extend($set, opt);
 
-		var items = group.getContentItem(env),
-			tabs = group.getContentItem(group.getChild(items[0], 'tab'));
+		var items = getNode.getContentItem(env),
+			tabs = getNode.getContentItem(getNode.getChild(items[0], 'tab'));
 
 		items.shift(); //把第一個 items 拿掉
 

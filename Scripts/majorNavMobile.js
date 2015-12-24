@@ -1,4 +1,4 @@
-define(['jquery', 'group'], function($, group){
+define(['jquery', 'getNode'], function($, getNode){
 	
 	function main(env, opt, file){
 
@@ -8,8 +8,8 @@ define(['jquery', 'group'], function($, group){
 
 		$.extend($set, opt);
 		
-		var li = group.getContentItem(env), //取 li
-			child_node_inner = group.getInner(group.getChild(li, 'div'));
+		var li = getNode.getContentItem(env), //取 li
+			child_node_inner = getNode.getInner(getNode.getChild(li, 'div'));
 
 		var $li = $(li),
 			$child_node_inner = $(child_node_inner).filter(function(i) { //過濾 .content 裡沒有 a 的物件

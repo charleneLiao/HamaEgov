@@ -6,7 +6,7 @@ requirejs.config({
 		'cookie': 'lib/cookie',
 		'domReady': 'lib/domReady',
 		'main': 'lib/main',
-		'group': 'lib/group',
+		'getNode': 'lib/getNode',
 		'plugin': 'lib/plugin',
 		'oka': 'lib/oka'
 	},

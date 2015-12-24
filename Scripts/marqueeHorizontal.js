@@ -1,4 +1,4 @@
-define(['jquery', 'group'], function($, group){
+define(['jquery', 'getNode'], function($, getNode){
 	
 	function main(env, opt, file){
 
@@ -11,12 +11,12 @@ define(['jquery', 'group'], function($, group){
 
 		$.extend($set, opt);
 
-		var content_inner = group.getContentInner(env),
-			content_ul = group.getChild(content_inner, 'ul'),
-			content_li = group.getChild(content_ul, 'li'),
+		var content_inner = getNode.getContentInner(env),
+			content_ul = getNode.getChild(content_inner, 'ul'),
+			content_li = getNode.getChild(content_ul, 'li'),
 			content_li_length = content_li.length || 1,
-			prev_li = group.getCtrlBtn(env, '.prev'),
-			next_li = group.getCtrlBtn(env, '.next');
+			prev_li = getNode.getCtrlBtn(env, '.prev'),
+			next_li = getNode.getCtrlBtn(env, '.next');
 
 		var $env = $(env),
 			$content_inner = $(content_inner),

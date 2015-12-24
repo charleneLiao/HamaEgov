@@ -1,4 +1,4 @@
-define(['cookie', 'jquery', 'group'], function(cookie, $, group){
+define(['cookie', 'jquery', 'getNode'], function(cookie, $, getNode){
 
 	function main(env, opt, file){
 
@@ -9,7 +9,7 @@ define(['cookie', 'jquery', 'group'], function(cookie, $, group){
 
 		$.extend($set, opt);
 		
-		var $li = $(group.getContentItem(env)), //取 li
+		var $li = $(getNode.getContentItem(env)), //取 li
 			$li_length = $li.length,
 			$a = $li.find('a'), //取按鈕
 			$root = $('.sys-root'); // root，class name 要放它身上

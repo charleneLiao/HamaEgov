@@ -1,4 +1,4 @@
-define(['jquery', 'group'], function($, group){
+define(['jquery', 'getNode'], function($, getNode){
 	
 	function main(env, opt, file){
 
@@ -8,10 +8,10 @@ define(['jquery', 'group'], function($, group){
 
 		$.extend($set, opt);
 		
-		var li = group.getContentItem(env), //取 li
-			child_node = group.getChild(li, 'div'),
-			child_node_header = group.getHeader(child_node),
-			child_node_content_inner = group.getContentInner(child_node),
+		var li = getNode.getContentItem(env), //取 li
+			child_node = getNode.getChild(li, 'div'),
+			child_node_header = getNode.getHeader(child_node),
+			child_node_content_inner = getNode.getContentInner(child_node),
 			child_node_content_inner_length = child_node_content_inner.length || 1,
 			all_a = env.querySelectorAll('a'),
 			last_a = all_a[all_a.length - 1];

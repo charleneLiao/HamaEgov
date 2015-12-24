@@ -1,4 +1,4 @@
-define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
+define(['googleMaps', 'getNode', 'oka'], function(googleMaps, getNode, oka){
 	
 	function main(env, opt, file){
 
@@ -19,7 +19,7 @@ define(['googleMaps', 'group', 'oka'], function(googlemaps, group, oka){
 
 		oka.extend($set, opt);
 
-		var $divition = group.getChild(group.getContentInner(env), 'divition')[0]; //google map 的 div
+		var $divition = getNode.getChild(getNode.getContentInner(env), 'divition')[0]; //google map 的 div
 
 		$divition.style.height = parseInt($set.height, 10) + 'px'; //給他高
 

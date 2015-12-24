@@ -298,7 +298,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
     <td>data-child</td>
     <td>子模塊或子項目數量</td>
     <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量。</td>
-    <td>模塊、清單(ul)</td>
+    <td>群組、清單(ul)</td>
   </tr>
   <tr>
     <td>data-function</td>
