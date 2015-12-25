@@ -333,30 +333,30 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 </table>
 
 <h3 id="base-layout">底層、框架與內容</h3>
-在共通平台第二版重構了許多框架，以下將一層一層的介紹它們的意義。
-讓我們先看 HTML 示意：
+在共通平台第二版重構了許多框架，他們都是群組， 框架 class name 會以 sys(系統級) 與 base(基礎級) 前輟。
+前輟 sys 是系統級節點，樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。
+前輟 base 是*基礎級*節點，代表它應被固定，而不能被拖曳改變排列。
+以下將一層一層的介紹它們的意義。
+
+sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆由它開始延伸，讓我們先看 HTML 示意：
 
     <body>
-    
       <div class="sys-root">
         網頁內容由此開始
       </div>
-      
     </body>
 
-sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆由它開始延伸，前輟 sys 即表示它是*系統級*節點，所以 CSS 樣式應該由它開始撰寫，而不應在 html、body、form 寫入任何樣式。  
+在 sys-root 之下有 base-mobile、base-extend 與 base-wrapper 三個主要區塊：
 
-在 sys-root 之下有 base-mobile、base-extend 與 base-wrapper 三個主要區塊，前輟 base- 即表示它是*基礎級*節點，代表它應被固定，而不能被拖曳改變排列：
-
-base-mobile: 手機版側欄。通常會放置主選單、分享模組等。  
-base-extend: 漂浮在瀏覽器上的物件層。通常會放置"回到最頂"按鈕等等。  
+base-mobile: 行動側欄。通常會放置主選單、分享模組等。  
+base-extend: 漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等。  
 base-wrapper: 網頁頁面框架。
 
     <body>
       <div class="sys-root">
       
         <div class="base-mobile">
-          手機版側欄
+          行動版側欄
         </div>
         <div class="base-extend">
           漂浮物件層
@@ -378,7 +378,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
       <div class="sys-root">
         <div class="base-mobile">
         </div>
-        <div class="extend">
+        <div class="base-extend">
         </div>
         <div class="base-wrapper">
         
@@ -396,7 +396,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
       </div>
     </body>
 
-依據首頁/內頁框架區塊的不同，可區分 base-module-area 與base-page-area ：
+依據首頁/內頁框架區塊的不同，可區分 base-module-area 與base-page-area：
 
 base-module-area: 模組區塊。可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。  
 base-page-area: 內頁框架。
@@ -405,7 +405,7 @@ base-page-area: 內頁框架。
       <div class="sys-root">
         <div class="base-mobile">
         </div>
-        <div class="extend">
+        <div class="base-extend">
         </div>
         <div class="base-wrapper">
           <div class="base-header">
@@ -413,10 +413,10 @@ base-page-area: 內頁框架。
           <div class="base-content">
           
             <div class="base-module-area">
-              //模組
+              模組
             </div>
             <div class="base-page-area">
-              //內頁
+              內頁
             </div>
             
           </div>
@@ -426,7 +426,7 @@ base-page-area: 內頁框架。
       </div>
     </body>
 
-進入到內頁之後，base-page-area 分為兩個區塊是 base-aside 與 base-section ：
+進入到內頁之後，base-page-area 分為兩個區塊是 base-aside 與 base-section：
 
 base-aside: 內頁側欄。通常放置主選單或次選單。  
 base-section: 內頁內容。
@@ -436,7 +436,7 @@ base-section: 內頁內容。
         <div class="sys-root">
           <div class="base-mobile">
           </div>
-          <div class="extend">
+          <div class="base-extend">
           </div>
           <div class="base-wrapper">
             <div class="base-header">
@@ -470,7 +470,7 @@ base-article: 內頁文章區塊。
       <div class="sys-root">
         <div class="base-mobile">
         </div>
-        <div class="extend">
+        <div class="base-extend">
         </div>
         <div class="base-wrapper">
           <div class="base-header">
@@ -496,9 +496,93 @@ base-article: 內頁文章區塊。
       </div>
     </body>
 
+以下以列表說明各框架具體內容與說明：
+
+<table>
+  <tr>
+    <th>框架</th>
+    <th>意義</th>
+    <th>說明</th>
+    <th>層級</th>
+  </tr>
+  <tr>
+    <td>.sys-root</td>
+    <td>平台版面根節點</td>
+    <td>樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>.base-mobile</td>
+    <td>行動版側欄</td>
+    <td>行動側欄框架。通常會放置主選單、分享模組等。</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>.base-extend</td>
+    <td>漂浮物件層</td>
+    <td>漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等。</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>.base-wrapper</td>
+    <td>網頁頁面框架</td>
+    <td>網頁頁面框架。</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>.base-header</td>
+    <td>網頁頁首</td>
+    <td>通常放置主選單、LOGO模組等。</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>.base-content</td>
+    <td>網頁主要內容</td>
+    <td>網頁主要內容。</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>.base-footer</td>
+    <td>網頁頁尾</td>
+    <td>通常放置一些網站資訊。</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>.base-module-area</td>
+    <td>模組區塊</td>
+    <td>可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>.base-page-area</td>
+    <td>內頁區塊</td>
+    <td>內頁框架。</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>.base-aside</td>
+    <td>內頁側欄</td>
+    <td>通常放置主選單或次選單。</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>.base-section</td>
+    <td>內頁內容</td>
+    <td>內頁內容。</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>.base-article</td>
+    <td>內頁文章</td>
+    <td>內頁文章區塊。</td>
+    <td>6</td>
+  </tr>
+</table>
+
 要記得每一層框架都是一個群組，而群組有其特定的結構，以上僅是結構示意，關於群組結構請參閱 [模塊基礎結構](#module-and-group-structure) 章節。
 
-<h3 id="module-and-group-structure"模塊基礎結構</h3>
+
+<h3 id="module-and-group-structure">模塊基礎結構</h3>
 說明如何判定模塊並區分群組/模組。
 說明 .header、.content 與 .footer 的內容應如何區別。
 列舉群組與模組的基本結構，並且比較 .group-list 與 .list-text、.list-pic 的結構並說明相似性。
