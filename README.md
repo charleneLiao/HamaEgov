@@ -583,14 +583,202 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-and-group-structure">模塊基礎結構</h3>
-說明如何判定模塊並區分群組/模組。
-說明 .header、.content 與 .footer 的內容應如何區別。
-列舉群組與模組的基本結構，並且比較 .group-list 與 .list-text、.list-pic 的結構並說明相似性。
-列舉例外：導盲磚。
+模塊是平台網頁的基礎單位，分為群組與模組。
+只要該模組同時含有屬性 data-index 與 data-type，該節點就是模塊的起始節點。
+模塊由 header、content、footer 三個區塊組成，以下將列表說明他們的意義：
+
+<table>
+  <tr>
+    <th>區塊</th>
+    <th>意義</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>header</td>
+    <td>標頭</td>
+    <td>該模組的標題，不論是否具有標題，模塊都將具有 header 區塊。</td>
+  </tr>
+  <tr>
+    <td>content</td>
+    <td>內容</td>
+    <td>模組表達的意義。</td>
+  </tr>
+  <tr>
+    <td>inner</td>
+    <td>附加資訊</td>
+    <td>通常用來放置上一則、下一則、更多、RSS等附加操作。若該模塊不須附加操作，那麼該模塊將沒有 footer 區塊</td>
+  </tr>
+</table>
+
+模塊起始層下有一個 .inner 層，header、.inner 層用來輔助排版，以下列出模塊基本結構。
+
+    <data-index data-type>
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            標頭
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            內容
+          </div>
+        </div>
+        <div class="footer">
+          <div class="inner">
+            附加資訊
+          </div>
+        </div>
+      </div>
+    </div>
+
+模塊的 data-type 屬性指明了該模塊是群組還是模組，以下列舉 data-type 屬性的 5 個類別。
+
+<table>
+  <tr>
+    <th>值</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>標示該模塊為模組。</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>標示該模塊為分割群組。</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>標示該模塊為頁籤群組。</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>標示該模塊為單欄群組。</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>標示該模塊為清單群組。</td>
+  </tr>
+</table>
+
+關於群組類別，請參閱 [群組類別與結構](#group-structure) 章節。
 
 
 <h3 id="group-structure">群組類別與結構</h3>
-列舉並說明群組的 3 種類別。
+群組是一個無內容的模塊，主要用於裝載其他的模塊，因此常利用它構成需要的框架。
+群組分為分割、頁籤、單欄與清單，以下針對這四種模組的意義作說明。
+
+<h4>分割群組</h4>
+分割群組會依照 [格線系統](#grid) 均分子模塊，例如分割模組裡有兩個模塊，那麼子模塊的寬度則各為 50%，該規則可設定 data-setlen 屬性覆蓋，關於此規則請參閱 [關於設定數量的方法](#scss-len-function) 章節。
+
+以下是分割群組的 html 格式：
+
+    <data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h3><span><a>標題</a></span></h3>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            子模塊
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>頁籤群組</h4>
+提供切換頁籤功能的群組。
+該模塊 content 具有一個列表，第一個項目是頁籤模組、第二個項目以後依序放入加入的子模塊。
+頁籤模組的 content 具有一個列表，依序為此頁籤群組的子模塊 header 文字。
+一般情況下，頁籤群組的子模塊 header 區塊應被隱藏。
+在無 javascript 環境下，子模塊 header 區塊應被顯示，而隱藏頁籤模組。
+
+以下是頁籤群組的 html 格式：
+
+    <data-index data-type="2">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h3><span><a>標題</a></span></h3>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <ul data-child>
+              <li data-index="1">
+                
+                   <data-index data-type="0">
+                      <div class="inner">
+                        <div class="header">
+                          <div class="inner">
+                            <h4><span><a>頁籤模組</a></span></h4>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="inner">
+                            <ul data-child>
+                              <li data-index="1"><span><a>依序加入子模塊 header文字...</a></span><li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+              </li>
+              <li data-index="2">
+                依序加入子模塊...
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>單欄群組</h4>
+相對於分割群組，單欄群組並不分割子模塊，而是依順序由上而下排列。
+
+以下是單欄群組的 html 格式：
+
+    <data-index data-type="3">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h3><span><a>標題</a></span></h3>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            子模塊
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>清單群組</h4>
+清單群組的 content 具有一個清單，而子模塊會被依序放入該清單的項目中。因為此模塊的結構與模組類別 list-text、 list-pic 的結構相似，因此可共用 javascript，樣式雖然在某種程度上也以可共用，但選擇器的指定方法稍有不同，需稍加注意。
+
+以下是清單群組的 html 格式：
+
+    <data-index data-type="3">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h3><span><a>標題</a></span></h3>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <ul data-child>
+              <li>
+                依序加入子模塊...
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 <h3 id="module-structure">模組類別與結構</h3>
