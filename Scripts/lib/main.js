@@ -2,7 +2,7 @@
 // 	console.log($('body'));
 // });
 
-requirejs(['plugin']); //幫 IE8 補東補西
+requirejs(['fix']); //幫 IE8 補東補西
 
 requirejs(['domReady!'], function(dom){ //當網頁載入時
 

@@ -8,7 +8,7 @@ requirejs.config({
 		'main': 'lib/main',
 		'getNode': 'lib/getNode',
 		'plugin': 'lib/plugin',
-		'oka': 'lib/oka'
+		'fix': 'lib/fix'
 	},
 	map: { //配置關鍵字在各個檔案的意義
 		'*': {

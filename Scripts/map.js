@@ -1,4 +1,4 @@
-define(['googleMaps', 'getNode', 'oka'], function(googleMaps, getNode, oka){
+define(['googleMaps', 'getNode', 'plugin'], function(googleMaps, getNode, plugin){
 	
 	function main(env, opt, file){
 
@@ -17,7 +17,7 @@ define(['googleMaps', 'getNode', 'oka'], function(googleMaps, getNode, oka){
 				debug: false
 			}
 
-		oka.extend($set, opt);
+		plugin.extend($set, opt);
 
 		var $divition = getNode.getChild(getNode.getContentInner(env), 'divition')[0]; //google map 的 div
 
