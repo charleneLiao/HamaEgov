@@ -69,8 +69,6 @@
 
 
 <h2 id="introduce">簡介</h2>
-
-
 <h3 id="overview">前言</h3>
 第一版共通平台發展出拖曳的方法、群組/模組的概念，在第二版得到進一步的整理，發揮更強大的彈性。
 
@@ -114,8 +112,6 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 
 <h2 id="philosophy">哲學</h2>
-
-
 <h3 id="module-and-group">模塊：模組與群組</h3>
 新平台基於兩種模塊：群組與模組。
 
@@ -156,8 +152,6 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 
 <h2 id="html">HTML 實作</h2>
-
-
 <h3 id="project-directory">專案目錄結構與其他檔案</h3>
 以下是專案目錄結構圖及說明。
 
@@ -277,7 +271,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
 
 <table>
   <tr>
-    <th>屬性名稱</th>
+    <th>屬性</th>
     <th>意義</th>
     <th>說明</th>
     <th>歸屬</th>
@@ -285,7 +279,7 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
   <tr>
     <td>data-type</td>
     <td>模塊類型</td>
-    <td>標示該模塊的類型，0 代表該模塊為模組，1、2、3、4 分別為不同類別的群組，更多說明請至 <a href="#group-structure">群組類別與結構</a> 章節。</td>
+    <td>標示該模塊的類型，0 代表該模塊為模組，1到4分別為不同類別的群組，更多說明請至 <a href="#group-structure">群組類別與結構</a> 章節。</td>
     <td>模塊</td>
   </tr>
   <tr>
@@ -585,7 +579,7 @@ base-article: 內頁文章區塊。
 <h3 id="module-and-group-structure">模塊基礎結構</h3>
 模塊是平台網頁的基礎單位，分為群組與模組。
 只要該模組同時含有屬性 data-index 與 data-type，該節點就是模塊的起始節點。
-模塊由 header、content、footer 三個區塊組成，以下將列表說明他們的意義：
+模塊由 header、content、footer 3個區塊組成，以下將列表說明他們的意義：
 
 <table>
   <tr>
@@ -632,7 +626,7 @@ base-article: 內頁文章區塊。
       </div>
     </div>
 
-模塊的 data-type 屬性指明了該模塊是群組還是模組，以下列舉 data-type 屬性的 5 個類別。
+模塊的 data-type 屬性指明了該模塊是群組還是模組，以下列舉 data-type 屬性的5個類別。
 
 <table>
   <tr>
@@ -727,9 +721,7 @@ base-article: 內頁文章區塊。
                     </div>
                 
               </li>
-              <li data-index="2">
-                依序加入子模塊...
-              </li>
+              <li data-index="2">依序加入子模塊...</li>
             </ul>
           </div>
         </div>
@@ -771,9 +763,7 @@ base-article: 內頁文章區塊。
         <div class="content">
           <div class="inner">
             <ul data-child>
-              <li>
-                依序加入子模塊...
-              </li>
+              <li>依序加入子模塊...</li>
             </ul>
           </div>
         </div>
@@ -782,27 +772,399 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-structure">模組類別與結構</h3>
-列舉並說明模組的 14 種類別。
+與群組類別相仿，模組也分為14種類別，但不論屬於何種類別，模組的 data-type 永遠是0。
+類別的意義在於區分模組的結構，例如該模組是一個列表且以圖片為主體，則屬於 list-pic 類別。
+模組使用 class name 區別類別，每個模組都應同時包含兩種 class，分別是類別 class 與自定義 class，例如選單模組：
+
+    <div calss="list-text nav" data-type="0" data-index="1">
+
+list-text 是類別 class，而 nav 是自定義 class，以說明此模組是選單。以下列舉出14種類別的意義、說明與參考格式：
+
+<h4>area-audio</h4>
+音訊模組，以 html5 audio 為主體的模組。以下是 area-audio 類別的 html 參考格式：
+
+    <class="area-audio" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <div class="audio">
+              <audio controls="">
+                <source src="#" type="audio/ogg">
+                <source src="#" type="audio/mpeg">
+                <object data="Audio/MHXSEagle.mp3">
+                  <param name="filename" value="#">
+                  <param name="Showcontrols" value="true">
+                  <param name="autoStart" value="false">
+                </object>
+                <span>您的瀏覽器不支援 html5 撥放器，請<a href="#">下載媒體</a>於本機播放。</span>
+              </audio>
+            </div>
+            <div class="essay">
+              <div class="caption"><span>內容標題</span></div>
+              <div class="label">
+                <ul>
+                  <li><span><i class="mark">標籤</i></span></li>
+                </ul>
+              </div>
+              <div class="paragraph">
+                <p><span>內容簡介</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-customize</h4>
+客製的模組，如： google map 模組。以下是 area-customize 類別的 html 參考格式：
+
+    <class="area-customize" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-editor</h4>
+客戶可以使用文字編輯器編輯內文的模組，如：下方地址。以下是 area-editor 類別的 html 參考格式：
+
+    <class="area-editor" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            使用者編輯文字
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-essay</h4>
+參雜文字與圖片，以文字為主體的模組，如：最新消息。以下是 area-essay 類別的 html 參考格式，請注意 area-essay 的內標標題應為 .caption ：
+
+    <class="area-essay" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <a href="#" class="divition">
+              <div class="image"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
+              <div class="essay">
+                <div class="caption"><span>內容標題</span></div>
+                <div class="label">
+                  <ul>
+                    <li><span><i class="mark">標籤</i></span></li>
+                  </ul>
+                </div>
+                <div class="paragraph">
+                  <p><span>內容簡介</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-figure</h4>
+參雜文字與圖片，以圖片為主體的模組，如：相簿模組。以下是 area-figure 類別的 html 參考格式，請注意 area-figure 的內標標題應為 .figcaption ：
+
+    <class="area-figure" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <a href="#" class="divition">
+              <div class="image"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
+              <div class="essay">
+                <div class="figcaption"><span>內容標題</span></div>
+                <div class="label">
+                  <ul>
+                    <li><span><i class="mark">標籤</i></span></li>
+                  </ul>
+                </div>
+                <div class="paragraph">
+                  <p><span>內容簡介</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-form</h4>
+以表單為主體的模組，如：搜尋模組。以下是 area-form 類別的 html 參考格式：
+
+    <class="area-form" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <div class="fieldset">
+              <span class="text"><input type="text"></span>
+              <span class="submit"><a href="#">送出</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-iframe</h4>
+以 iframe 為主體的模組。以下是 area-iframe 類別的 html 參考格式：
+
+    <class="area-iframe" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <div class="iframe">
+              <iframe src="#" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="essay">
+              <div class="caption"><span>內容標題</span></div>
+              <div class="label">
+                <ul>
+                  <li><span><i class="mark">標題</i></span></li>
+                </ul>
+              </div>
+              <div class="paragraph">
+                <p><span>內容簡介</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-table</h4>
+以表格為主體的模組。以下是 area-table 類別的 html 參考格式：
+
+    <class="area-table" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <table>
+              <tbody>
+                <tr>
+                  <td>內容</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>area-video</h4>
+視訊模組，以 html5 video 為主體的模組。以下是 area-video 類別的 html 參考格式：
+
+    <class="area-video" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <div class="video">
+              <video controls="">
+                <source src="#" type="video/webm">
+                <source src="#" type="video/ogg">
+                <source src="#" type="video/mp4">
+                <object classid="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95" type="application/x-oleobject" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112">
+                  <param name="filename" value="#">
+                  <param name="Showcontrols" value="true">
+                  <param name="autoStart" value="false">
+                </object>
+                <span>您的瀏覽器不支援 html5 撥放器，請<a href="#">下載媒體</a>於本機播放。</span>
+              </video>
+            </div>
+            <div class="essay">
+              <div class="caption"><span>內容標題</span></div>
+              <div class="label">
+                <ul>
+                  <li><span><i class="mark">標籤</i></span></li>
+                </ul>
+              </div>
+              <div class="paragraph">
+                <p><span>內容簡介</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>list-multiple</h4>
+多重清單模組，如：頁次導航列。以下是 area-audio 類別的 list-multiple 參考格式：
+
+    <class="list-multiple" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <ul data-child><li><span><a><i class="mark">標籤</i>依序加入清單與項目...</a></span></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>list-pic</h4>
+圖片清單模組，如：標章模組。以下是 list-pic 類別的 html 參考格式：
+
+    <class="list-text" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <ul data-child>
+              <li><span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>list-text</h4>
+文字清單模組，如：選單。以下是 list-text 類別的 html 參考格式：
+
+    <class="list-text" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <ul data-child>
+              <li><span><a><i class="mark">標籤</i>依序加入文字項目...</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>simple-pic</h4>
+只顯示一張圖片的模組，如：圖片模組。以下是 simple-pic 類別的 html 參考格式：
+
+    <class="simple-pic" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<h4>simple-text</h4>
+只敘述一行文字的文字模組，如：LOGO 模組。以下是 simple-text 類別的 html 參考格式：
+
+    <class="simple-text" data-index data-type="0">
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <h4><span><a>標題</a></span></h4>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <span><a>文字</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 <h3 id="component">組件</h3>
-列舉說明檔案內的所有組件。
+模組的 content 是一塊有意義的內容，content 由組件組成，有規則可依循。
+以下先一一列出可用的組件(emmet 格式)。
 
+<h4>表單類</h4>
+<table>
+  <tr>
+    <th>組件</th>
+    <th>格式</th>
+  </tr>
+  <tr>
+    <th>組件</th>
+    <th>格式</th>
+  </tr>
+</table>
 
 <h3 id="module-establish-principles">模組建立原則</h3>
 說明建立模組時應當把外框固定，內容組件由小至大。
 
 
 <h3 id="use-class-name-to-show-status">以 class name 表示狀態</h3>
-說明為何要命名為 is-active、is-open、is-close，並說明優點與理念。
-該 class name 必定在模組第一層或li。
+在撰寫動態切換時，我們經常使用 class name 切換，該 class name 應使用狀態命名。
+例如手機側欄被打開，切換的 class name 應取名為：is-open。
+反之，將fat footer 關閉，使用的 class name 應取名為： is-close。
 
+取名原則：與自然瀏覽狀態相對的狀態。
+例如手機側欄在自然瀏覽狀態下為關閉，使用者必須去開啟側欄，因此切換狀態的應取名為：is-open。
+反之，fat footer 在自然瀏覽狀態下為開啟，使用者必須去關閉才會隱藏，引此切換的 class name 應取名為： is-close。
 
+注意，切換狀態的 class name 只應出現在 li 或 模上，不應出現在模組中或其他地方。
+假如切換狀態的行為是發生在清單群組上，那麼切換的狀態應寫在清單群組的 li 上。
+若切換狀態的行為是發生在該模組中，那麼切換的狀態應寫在模組上。
 
 
 <h2 id="erb">Erb 實作</h2>
-
-
 <h3 id="erb-directory">Erb 目錄結構</h3>
 解說 Erb 目錄結構，並說明 _layout.html.erb、index.layout.html.erb、index.html.erb、index.html.layout 也是 Erb ，並提供用途說明。
 說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
@@ -840,8 +1202,6 @@ base-article: 內頁文章區塊。
 
 
 <h2 id="scss">CSS/SCSS 實作</h2>
-
-
 <h3 id="scss-directory">SCSS 目錄結構</h3>
 解說 Scss 目錄結構。
 說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
@@ -859,6 +1219,68 @@ base-article: 內頁文章區塊。
 <h3 id="scss-type">類別</h3>
 說明 3 個群組類別 14 個模組類別，與相同類別為何要撰寫在同一支 SCSS 檔案、是如何被寫在一起的。
 
+<table>
+  <tr>
+    <th>類別</th>
+    <th>用途</th>
+  </tr>
+  <tr>
+    <td>area-audio</td>
+    <td>音訊模組，以 html5 audio 為主體的模組。</td>
+  </tr>
+  <tr>
+    <td>area-customize</td>
+    <td>客製的模組，如： google map 模組。</td>
+  </tr>
+  <tr>
+    <td>area-editor</td>
+    <td>客戶可以使用文字編輯器編輯內文的模組，如：下方地址。</td>
+  </tr>
+  <tr>
+    <td>area-essay</td>
+    <td>參雜文字與圖片，以文字為主體的模組，如：最新消息。</td>
+  </tr>
+  <tr>
+    <td>area-figure</td>
+    <td>參雜文字與圖片，以圖片為主體的模組，如：相簿模組。</td>
+  </tr>
+  <tr>
+    <td>area-form</td>
+    <td>以表單為主體的模組，如：搜尋模組。</td>
+  </tr>
+  <tr>
+    <td>area-iframe</td>
+    <td>以 iframe 為主體的模組。</td>
+  </tr>
+  <tr>
+    <td>area-table</td>
+    <td>以表格為主體的模組。</td>
+  </tr>
+  <tr>
+    <td>area-video</td>
+    <td>視訊模組，以 html5 video 為主體的模組。</td>
+  </tr>
+  <tr>
+    <td>list-multiple</td>
+    <td>多重清單模組，如：頁次導航列。</td>
+  </tr>
+  <tr>
+    <td>list-pic</td>
+    <td>圖片清單模組，如：標章模組。</td>
+  </tr>
+  <tr>
+    <td>list-text</td>
+    <td>文字清單模組，如：選單。</td>
+  </tr>
+  <tr>
+    <td>simple-pic</td>
+    <td>只顯示一張圖片的模組，如：圖片模組。</td>
+  </tr>
+  <tr>
+    <td>simple-text</td>
+    <td>只敘述一行文字的文字模組，如：LOGO 模組。</td>
+  </tr>
+</table>
 
 <h3 id="selector-logic">選擇器邏輯</h3>
 說明 .group-list 與 .list-text、.list-pic 的結構相似性，以及 CSS 選擇器選法的不同。並且提示在複製樣式時須注意的事項與權重。
@@ -918,8 +1340,6 @@ base-article: 內頁文章區塊。
 
 
 <h2 id="js">javascript/requireJS 實作</h2>
-
-
 <h3 id="js-directory">Script 目錄結構</h3>
 解說 Script 目錄結構。
 說明 lib 目錄的意義與用途，並列舉檔案。
