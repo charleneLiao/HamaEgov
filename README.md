@@ -25,7 +25,6 @@
   5. [群組類別與結構](#group-structure)
   6. [模組類別與結構](#module-structure)
   7. [組件](#component)
-  8. [模組建立原則](#module-establish-principles)
   9. [以 class name 表示狀態](#use-class-name-to-show-status)
 * [Erb 實作](#erb)
   1. [Erb 目錄結構](#erb-directory)
@@ -34,8 +33,7 @@
   4. [關於 layout 樣板](#erb-layout)
   5. [關於 index 樣板](#erb-index-layout)
   6. [關於 sys/variable](#erb-variable)
-  7. [基本 ruby 語法](#basic-ruby-script)
-  8. [假字與圖片](#lorem-ipsum-and-picture)
+  7. [假字與圖片](#lorem-ipsum-and-picture)
 * [CSS/SCSS 實作](#scss)
   1. [SCSS 目錄結構](#scss-directory)
   2. [SCSS](#scss-script)
@@ -1134,20 +1132,361 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 模組的 content 是一塊有意義的內容，content 由組件組成，有規則可依循。
 以下先一一列出可用的組件(emmet 格式)。
 
-<h4>表單類</h4>
 <table>
   <tr>
-    <th>組件</th>
-    <th>格式</th>
+    <th colspan="2">表單類</th>
   </tr>
   <tr>
-    <th>組件</th>
-    <th>格式</th>
+    <td>表單主題區塊</td>
+    <td>div.form></td>
+  </tr>
+  <tr>
+    <td>表單區塊</td>
+    <td>.fieldset></td>
+  </tr>
+  <tr>
+    <td>表單標題組件</td>
+    <td>.legend>a{可選}>span>{標題文字}</td>
+  </tr>
+  <tr>
+    <td rowspan="23">輸入框組件</td>
+    <td>span.button>input[type='button']</td>
+  </tr>
+  <tr>
+    <td>span.checkbox>input[type='checkbox']</td>
+  </tr>
+  <tr>
+    <td>span.color>input[type='color']</td>
+  </tr>
+  <tr>
+    <td>span.date>input[type='date']</td>
+  </tr>
+  <tr>
+    <td>span.datetime>input[type='datetime']</td>
+  </tr>
+  <tr>
+    <td>span.datetime_local>input[type='datetime-local']</td>
+  </tr>
+  <tr>
+    <td>span.email>input[type='email']</td>
+  </tr>
+  <tr>
+    <td>span.file>input[type='file']</td>
+  </tr>
+  <tr>
+    <td>span.hidden>input[type='hidden']</td>
+  </tr>
+  <tr>
+    <td>span.input_image>input[type='image']</td>
+  </tr>
+  <tr>
+    <td>span.month>input[type='month']</td>
+  </tr>
+  <tr>
+    <td>span.number>input[type='number']</td>
+  </tr>
+  <tr>
+    <td>span.input>input[type='password']</td>
+  </tr>
+  <tr>
+    <td>span.radio>input[type='radio']</td>
+  </tr>
+  <tr>
+    <td>span.range>input[type='range']</td>
+  </tr>
+  <tr>
+    <td>span.reset>input[type='reset']</td>
+  </tr>
+  <tr>
+    <td>span.search>input[type='search']</td>
+  </tr>
+  <tr>
+    <td>span.submit>input[type='submit']</td>
+  </tr>
+  <tr>
+    <td>span.tel>input[type='tel']</td>
+  </tr>
+  <tr>
+    <td>span.text>input[type='text']</td>
+  </tr>
+  <tr>
+    <td>span.time>input[type='time']</td>
+  </tr>
+  <tr>
+    <td>span.url>input[type='url']</td>
+  </tr>
+  <tr>
+    <td>span.week>input[type='week']</td>
+  </tr>
+  <tr>
+    <td>標籤組件</td>
+    <td>span.label>label{可選}</td>
+  </tr>
+  <tr>
+    <td>勾選框組件</td>
+    <td>span.checkbox>(input[type='checkbox'])+(span.label>label)</td>
+  </tr>
+  <tr>
+    <td>單選框組件</td>
+    <td>span.checkbox>(input[type='radio'])+(span.label>label)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">文字輸入框組件</td>
+    <td>div.textarea>textarea</td>
+  </tr>
+  <tr>
+    <td>span.textarea>textarea</td>
+  </tr>
+  <tr>
+    <td rowspan="2">選擇框組件</td>
+    <td>div.select>select>option>{文字}</td>
+  </tr>
+  <tr>
+    <td>span.select>select>option>{文字}</td>
   </tr>
 </table>
 
-<h3 id="module-establish-principles">模組建立原則</h3>
-說明建立模組時應當把外框固定，內容組件由小至大。
+<table>
+  <tr>
+    <th colspan="2">表格類</th>
+  </tr>
+  <tr>
+    <td>表格主題區塊</td>
+    <td>div.table></td>
+  </tr>
+  <tr>
+    <td>表格區塊</td>
+    <td>table></td>
+  </tr>
+  <tr>
+    <td>表格標題區塊</td>
+    <td>thead></td>
+  </tr>
+  <tr>
+    <td>表格內容區塊</td>
+    <td>tbody></td>
+  </tr>
+  <tr>
+    <td>表格附加資訊區塊</td>
+    <td>tfoot></td>
+  </tr>
+  <tr>
+    <td rowspan="2">表格內容組件</td>
+    <td>tr>td>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>tr>th>span>a{可選}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">清單類</th>
+  </tr>
+  <tr>
+    <td rowspan="2">清單主題區塊</td>
+    <td>div.list></td>
+  </tr>
+  <tr>
+    <td>a.list></td>
+  </tr>
+  <tr>
+    <td rowspan="2">清單區塊</td>
+    <td>ul></td>
+  </tr>
+  <tr>
+    <td>ol></td>
+  </tr>
+  <tr>
+    <td>項目</td>
+    <td>li>span>a{可選}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">標籤類</th>
+  </tr>
+  <tr>
+    <td>標籤主題區塊</td>
+    <td>div.label></td>
+  </tr>
+  <tr>
+    <td>標籤區塊</td>
+    <td>ul></td>
+  </tr>
+  <tr>
+    <td>項目</td>
+    <td>li>span>a{可選}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">內文類</th>
+  </tr>
+  <tr>
+    <td rowspan="2">內文主題區塊</td>
+    <td>div.essay></td>
+  </tr>
+  <tr>
+    <td>a.essay></td>
+  </tr>
+  <tr>
+    <td rowspan="2">內文區塊</td>
+    <td>div.paragraph</td>
+  </tr>
+  <tr>
+    <td>a.paragraph></td>
+  </tr>
+  <tr>
+    <td>標題組件</td>
+    <td>div.caption>span>a{可選}>{標題文字}</td>
+  </tr>
+  <tr>
+    <td rowspan="6">標題內文組件</td>
+    <td>h1>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>h2>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>h3>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>h4>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>h5>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>h6>span>a{可選}</td>
+  </tr>
+  <tr>
+    <td>段落文字組件</td>
+    <td>p>span>a{可選}>{文字}</td>
+  </tr>
+  <tr>
+    <td>簡單文字組件</td>
+    <td>span>a{可選}>{文字}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">圖片類</th>
+  </tr>
+  <tr>
+    <td rowspan="2">圖片主題區塊</td>
+    <td>div.figure></td>
+  </tr>
+  <tr>
+    <td>a.figure></td>
+  </tr>
+  <tr>
+    <td rowspan="2">圖片區塊</td>
+    <td>div.images></td>
+  </tr>
+  <tr>
+    <td>a.images></td>
+  </tr>
+  <tr>
+    <td>標題組件</td>
+    <td>div.figcaption>span>a{可選}>{標題文字}</td>
+  </tr>
+  <tr>
+    <td>複數圖片組件</td>
+    <td>div.image>span>a{可選}>img</td>
+  </tr>
+  <tr>
+    <td>簡單圖片組件</td>
+    <td>span>a{可選}>img</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">標題類</th>
+  </tr>
+  <tr>
+    <td rowspan="2">標題主題區塊</td>
+    <td>div.heading></td>
+  </tr>
+  <tr>
+    <td>a.heading></td>
+  </tr>
+  <tr>
+    <td rowspan="2">標題區塊</td>
+    <td>div.caption></td>
+  </tr>
+  <tr>
+    <td>a.caption></td>
+  </tr>
+  <tr>
+    <td>標題組件</td>
+    <td>span>a{可選}>{標題文字}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">區塊類</th>
+  </tr>
+  <tr>
+    <td rowspan="2">區塊</td>
+    <td>div.division></td>
+  </tr>
+  <tr>
+    <td>a.division></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">視訊類</th>
+  </tr>
+  <tr>
+    <td>視訊主題區塊</td>
+    <td>.video></td>
+  </tr>
+  <tr>
+    <td>視訊區塊</td>
+    <td>video></td>
+  </tr>
+  <tr>
+    <td>視訊</td>
+    <td>source</td>
+  </tr>
+  <tr>
+    <td>註解</td>
+    <td>span>a{可選}>{標題文字}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">音訊類</th>
+  </tr>
+  <tr>
+    <td>音訊主題區塊</td>
+    <td>.audio></td>
+  </tr>
+  <tr>
+    <td>音訊區塊</td>
+    <td>audio></td>
+  </tr>
+  <tr>
+    <td>音訊</td>
+    <td>source</td>
+  </tr>
+  <tr>
+    <td>註解</td>
+    <td>span>a{可選}>{標題文字}</td>
+  </tr>
+</table>
+
+組件依模組樣式呈現需求，由小區塊到大區塊堆砌，例如使用 div.paragraph>p>span 即可滿足排版需求，則不用用到 div.essay>div.paragraph>p>span。
+所有組件均可隨意使用。
 
 
 <h3 id="use-class-name-to-show-status">以 class name 表示狀態</h3>
@@ -1166,38 +1505,110 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 
 <h2 id="erb">Erb 實作</h2>
 <h3 id="erb-directory">Erb 目錄結構</h3>
-解說 Erb 目錄結構，並說明 _layout.html.erb、index.layout.html.erb、index.html.erb、index.html.layout 也是 Erb ，並提供用途說明。
-說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
+以下是 Erb 目錄結構圖及說明。
+
+    - 專案目錄
+      |- Erb
+      |   |- base
+      |   |- group
+      |   |- module
+      |   |- page
+      |   |- sys
+      |   |- _prototype.html.erb
+
+<table>
+  <tr>
+    <th>文件、目錄</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>base</td>
+    <td>存放 base 框架樣板的目錄</td>
+  </tr>
+  <tr>
+    <td>group</td>
+    <td>存放 group 樣板的目錄。</td>
+  </tr>
+  <tr>
+    <td>module</td>
+    <td>存放 module 樣板的目錄。</td>
+  </tr>
+  <tr>
+    <td>page</td>
+    <td>存放內頁內容樣板的目錄。</td>
+  </tr>
+  <tr>
+    <td>sys</td>
+    <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable</td>
+  </tr>
+  <tr>
+    <td>_prototype.html.erb</td>
+    <td>樣板範本，示範如何傳遞參數。</td>
+  </tr>
+</table>
 
 
 <h3 id="erb-script">Erb 樣板語言</h3>
-簡述 Erb 語言的理念、優勢，並提供說明網站連結。
-說明 Erb 語言基於 Ruby，可使用 Ruby 功能，說明如何標註。
+Erb 樣板語言主要是幫助我們把 html 模組化，並且提供隨機的內容與字元長度，以幫助我們測試版型。
+我們可以將個頁面一致的 html 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
+更多 Erb 樣板語言範本與功能請見 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.html)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.html)。
 
 
 <h3 id="erb-run">Erb 運作方式</h3>
-說明區塊如何被嵌套，如何傳變數給子模塊。
+樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
+
+    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
+      <div class="header"><div class="inner">
+      </div><h3><span><a>嵌套範本</a></span></h3></div>
+      <div class="content"><div class="inner">
+      
+        <!--嵌套 /Erb/module/sample -->
+        <%= render :partial => "/Erb/module/sample" %>
+    		
+      </div></div>
+    </div></div>
+
+我們可藉由演示的語法嵌入另一個 .html.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.html.erb 檔案中。
+
+    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
+      <div class="header"><div class="inner">
+      </div><h3><span><a>嵌套範本</a></span></h3></div>
+      <div class="content"><div class="inner">
+      
+        <!--嵌套 /Erb/module/sample -->
+        <%= render :partial => "/Erb/module/sample", :locals => { :index => 4 } %>
+    		
+      </div></div>
+    </div></div>
+
+在鑲嵌的語法後，我們使用一個 :locals => {} 的形式傳遞一個區域變數 index 進去，index 的參數為 4。
+我們來看看 /Erb/module/_sample.html.erb 如何接受這個參數。
+
+    <div class="sample" data-index="<%= index %>">
+    </div>
+
+我們可以在 _sample.html.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.html#partials)。
 
 
 <h3 id="erb-layout">關於 layout樣板</h3>
-演示並說明 _layout.html.erb 的嵌套範例。
+專案目錄中的 layout.html.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 html.erb 與 .html 檔案嵌入指定的框架中。
 
 
 <h3 id="erb-index-layout">關於 index樣板</h3>
-說明 index.layout.html.erb、index.html.erb 與 index.html.layout 的意義。
+因為首頁的樣板有別於一般內頁，因此另編輯樣板 _index_layout.html.erb 供 index.html.erb 使用。
+我們以 index.html.layout 指定 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-說明全域變數與區域變數，並列舉全域變數的項目。
+在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有一個全域變數設定檔在 /Erb/sys/_variable.html.erb。
+全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
-
-<h3 id="basic-ruby-script">基本 ruby 語法</h3>
-說明迴圈、判斷與隨機的使用方法，並提供說明網站連結。
+    <div class="sample" data-type="<%= $module %>">
+    </div>
 
 
 <h3 id="lorem-ipsum-and-picture">假字與圖片</h3>
-演示假字、假段落與其他功能，並提供說明網站連結。
-
+Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設計師好幫手 Fire.app 進階篇](http://demo.tc/post/758) 一文。
 
 
 
