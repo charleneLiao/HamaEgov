@@ -57,11 +57,10 @@
   2. [requireJS 運作方式](#js-require)
   3. [以 node 呼叫 javascript 檔案](#node-and-files)
   4. [關於 lib/app 與 lib/main](#app-and-main)
-  5. [javascript 執行](#run-script)
+  5. [關於 jquery.js](#js-jquery)
   6. [關於 cookie.js](#js-cookie)
-  7. [關於 jquery.js](#js-jquery)
-  8. [關於 getNode.js](#js-getNode)
-  9. [關於 fix.js](#js-fix)
+  7. [關於 getNode.js](#js-getNode)
+  8. [關於 fix.js](#js-fix)
 
 
 
@@ -1856,36 +1855,97 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
 
 
 <h3 id="js-require">requireJS 運作方式</h3>
-介紹 requireJS 的優勢：動態插入、相依性問題、套件衝突、模組化管理，提供說明網站連結。
-並解說平台引用的方式能提高管理性。
+為了以往解決許多 script 載入的問題，新平台使用 requireJS 做為文件載入器，動態插入頁面需要的 script，並期望藉由它解決相依性問題、套件衝突，並提供模組化管理。
+
+更多有關 requireJS 的介紹，請至 [官網](http://requirejs.org) 查詢。   
 
 
 <h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
-演示並說明如何在 node 上啟用一個 js模塊 ，說明 data-function 的參數意義與字串解析，同時演示該如何在一個 node 上執行兩支以上的 funciton。
-說明檔案放置的位置。
-最後說明 .group-list 與 .list-text、.list-pic 的結構相似性，以及他們可以引用同的 function。
+先前曾在 [參數與意義](#html-parameter) 章節討論過 data-function 屬性的用途。
+data-function 可藉由傳入一個字串化物件，來啟動某個 js 模塊。
+啟用的 js 模塊位置被設定在路徑 /Script 中，可在 app.js 設定基礎路徑。
+以下示範一個模組 nav ，啟動一個名為 hud 的 js 模塊：
+
+    <div class="nav" data-type="0" data-function="{'hud':{}}">
+
+data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟動一個 /Script/hud.js 的檔案。
+hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
+
+    define(function(){
+    	
+    	function main(env, opt, file){
+    	  do something...
+    	}
+    	
+    	return main;
+    });
+
+在 hud.js 中的涵式 main 中會有三個參數，env 表示當前執行節點、opt 就是傳遞進去的參數、file 則是執行的檔案名稱，以此例來說 file 即是 hud。
+hud.js 最終回傳一個涵式給 main.js 並執行。
+同一個模塊中也可以一次執行多個 js 模塊：
+
+    <div class="nav" data-type="0" data-function="{'hud':{},'slider':{}}">
+
+以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊。
+特別注意，因為清單群組、list-text、list-pic 三種模塊的結構相似，因此他們能共用彼此的 js 模塊。
 
 
-<h3 id="app-and-main">關於 lib/app 與 lib/main</h3>
-說明 app.js 的 requirejs.config 設定的內容與意義，並解釋 requireJS 在平台上的執行順序。
-解釋 main.js 的程式碼，並且稍加說明 lib/domReady.js。
-
-
-<h3 id="run-script">javascript 執行</h3>
-介紹 js 模塊的標準寫法，必須回傳一個 function。說明回傳的執行環境、參數物件。並在最後稍加說明 debug 參數的意義。
-
-
-<h3 id="js-cookie">關於 cookie.js</h3>
-介紹 cookie.js 的想法與用法，並在最後演示如何在模塊內使用 cookie。
+<h3 id="app-and-main">關於 app.js 與 lib/main</h3>
+先前曾在 [Script 目錄結構](#js-directory) 章節討論過 app.js 與 main.js。
+app.js 的 requirejs.config 設定了套件的短名，使我們便於使用。 main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊，當模塊回傳各自的程式內容，main.js 就會執行它們。
 
 
 <h3 id="js-jquery">關於 jquery.js</h3>
-闡述如何在 app.js jquery 的來源，以 jqueryPrivate 回傳一個不影響全域的 jquery，並在最後演示如何在模塊內使用 jquery。
+我們在 app.js 中設定了一個 jquery 關鍵字，該值是一個陣列，第一個字串是 google CDN 來源的 jquery，第二個是來自本地的 jquery 作為備援。當第一項資源失效時會立即啟用備援。
+
+作為 js 模塊，jquery 的問題在於它會自動污染全域變數 ＄，因此我們需要回傳一個私有 jquery 對象的方法，即 return $.noConflict( true ) ，因此我們建置了 jqueryPrivate ，在其他檔案中，jquery 關鍵字即代表 jqueryPrivate 模塊。
+
+以下示範如何在模塊中使用 jquery：
+
+    define(['jquery'], function($){
+    	
+    	function main(env, opt, file){
+    	  you can use $('body') jquery here...
+    	}
+    	
+    	return main;
+    });
+
+
+<h3 id="js-cookie">關於 cookie.js</h3>
+cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 api：
+
+<table>
+  <tr>
+    <td>set(_key, _value, _life)</td>
+    <td>設定 cookie，_key 為 cookie 名稱， _value 為 cookie 內容， _life 為生命週期(天)。</td>
+  </tr>
+  <tr>
+    <td>get(_key)</td>
+    <td>取 cookie 值，_key 為 cookie 名稱。</td>
+  </tr>
+  <tr>
+    <td>remove(_key)</td>
+    <td>刪除 cookie，_key 為 cookie 名稱。</td>
+  </tr>
+</table>
+
+以下示範如何在模塊中使用 cookie：
+
+    define(['cookie'], function(cookie){
+    	
+    	function main(env, opt, file){
+    	  cookie.set('sample', 'true', 1);
+    	}
+    	
+    	return main;
+    });
 
 
 <h3 id="js-getNode">關於 getNode.js</h3>
-介紹 getNode.js 的理念、用法。
+因為我們統一了 html 結構，因此我們可更便捷、快速的取出想要的節點內容，getNode.js 就是為此而生。
+getNode.js 定義了許多取得節點的方法，最終都會回覆一個陣列。
 
 
 <h3 id="js-fix">關於 fix.js</h3>
-介紹 plugin.js 的用途與目前有的功能。
+fix.js 主要是修補瀏覽器的錯誤，例如 IE8 在接受到 console.log 即會拋出錯誤，我們使用這支 js 修改類似的錯誤。
