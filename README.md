@@ -61,7 +61,7 @@
   6. [關於 cookie.js](#js-cookie)
   7. [關於 jquery.js](#js-jquery)
   8. [關於 getNode.js](#js-getNode)
-  9. [關於 plugin.js](#js-plugin)
+  9. [關於 fix.js](#js-fix)
 
 
 
@@ -1589,6 +1589,51 @@ Erb 樣板語言主要是幫助我們把 html 模組化，並且提供隨機的�
 
 我們可以在 _sample.html.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.html#partials)。
 
+以下列出9個平台 Erb 樣板常用的區域變數與其意義：
+
+<table>
+  <tr>
+    <th>變數</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>index</td>
+    <td>對應模塊的 data-index 屬性。</td>
+  </tr>
+  <tr>
+    <td>child</td>
+    <td>對應模塊的 data-child 屬性。</td>
+  </tr>
+  <tr>
+    <td>func_set</td>
+    <td>對應模塊的 data-function 屬性。</td>
+  </tr>
+  <tr>
+    <td>header_text</td>
+    <td>設定模塊的 header 文字。</td>
+  </tr>
+  <tr>
+    <td>show_footer</td>
+    <td>設定是否顯示 footer 區塊。</td>
+  </tr>
+  <tr>
+    <td>show_mark</td>
+    <td>設定是否顯示標籤。</td>
+  </tr>
+  <tr>
+    <td>access_key</td>
+    <td>設定導盲磚按鍵。</td>
+  </tr>
+  <tr>
+    <td>access_title</td>
+    <td>設定導盲磚標頭。</td>
+  </tr>
+  <tr>
+    <td>inner</td>
+    <td>若模塊內鑲嵌其他模塊，可指定鑲入檔案。</td>
+  </tr>
+</table>
+
 
 <h3 id="erb-layout">關於 layout樣板</h3>
 專案目錄中的 layout.html.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 html.erb 與 .html 檔案嵌入指定的框架中。
@@ -1752,8 +1797,62 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
 
 <h2 id="js">javascript/requireJS 實作</h2>
 <h3 id="js-directory">Script 目錄結構</h3>
-解說 Script 目錄結構。
-說明 lib 目錄的意義與用途，並列舉檔案。
+以下是 Script 目錄結構圖及說明。
+
+    - 專案目錄
+      |- Script
+      |   |- app.js
+      |   |- lib
+      |   |   |- cookie.js
+      |   |   |- domReady.js
+      |   |   |- getNode.js
+      |   |   |- jqueryPrivate.js
+      |   |   |- main.js
+      |   |   |- plugin.js
+      |   |   |- fix.js
+
+<table>
+  <tr>
+    <th>文件、目錄</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td>app.js</td>
+    <td>設定套件縮寫，執行 main.js 的檔案。</td>
+  </tr>
+  <tr>
+    <td>lib</td>
+    <td>存放套件目錄。</td>
+  </tr>
+  <tr>
+    <td>cookie.js</td>
+    <td>操作 cookie 的方法套件。</td>
+  </tr>
+  <tr>
+    <td>domReady.js</td>
+    <td>延遲執行 require.js 的方法套件</td>
+  </tr>
+  <tr>
+    <td>getNode.js</td>
+    <td>操作模塊的套件。</td>
+  </tr>
+  <tr>
+    <td>jqueryPrivate.js</td>
+    <td>引用私有 jquery 的套件。</td>
+  </tr>
+  <tr>
+    <td>main.js</td>
+    <td>執行 data-function 方法的套件。</td>
+  </tr>
+  <tr>
+    <td>plugin.js</td>
+    <td>擴充方法。</td>
+  </tr>
+  <tr>
+    <td>fix.js</td>
+    <td>修正瀏覽器錯誤。</td>
+  </tr>
+</table>
 
 
 <h3 id="js-require">requireJS 運作方式</h3>
@@ -1788,5 +1887,5 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
 介紹 getNode.js 的理念、用法。
 
 
-<h3 id="js-plugin">關於 plugin.js</h3>
+<h3 id="js-fix">關於 fix.js</h3>
 介紹 plugin.js 的用途與目前有的功能。
