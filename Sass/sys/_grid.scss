@@ -165,10 +165,30 @@
 
 			> .inner {
 
-				> [data-index][data-type] {
+				> ul {
 
-					> .container {
-						margin: 0;
+					> li {
+						@extend %clear-inner-module;
+						margin-bottom: 0;
+
+						+ li { //第一個 li 是頁籤
+
+							+ li {
+								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
+							}
+						}
+
+						> [data-index][data-type] {
+
+							> .container {
+								margin: 0;
+							}
+						}
 					}
 				}
 			}

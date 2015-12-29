@@ -4,6 +4,11 @@
 
 	%reset-outer { //清除外部
 		margin: 0;
+		position: static;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
 	}
 
 	%reset-inner { //清除內部

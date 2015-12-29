@@ -367,6 +367,7 @@
 
 										> .header {
 											@extend %reset;
+											display: block;
 
 											> .inner {
 
