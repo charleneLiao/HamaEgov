@@ -1548,6 +1548,58 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>存放 base 框架樣板的目錄</td>
   </tr>
   <tr>
+    <td>base/_base-article.html.erb</td>
+    <td>編輯 base-article 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-aside.html.erb</td>
+    <td>編輯 base-aside 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-content_index.html.erb</td>
+    <td>編輯 base-content 樣板的文件，供首頁使用。</td>
+  </tr>
+  <tr>
+    <td>base/_base-content_page.html.erb</td>
+    <td>編輯 base-content 樣板的文件，供內頁使用。</td>
+  </tr>
+  <tr>
+    <td>base/_base-extend.html.erb</td>
+    <td>編輯 base-extend 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-footer.html.erb</td>
+    <td>編輯 base-footer 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-header.html.erb</td>
+    <td>編輯 base-header 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-mobile.html.erb</td>
+    <td>編輯 base-mobile 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-module-area_index.html.erb</td>
+    <td>編輯 base-module-area 樣板的文件，供首頁使用。</td>
+  </tr>
+  <tr>
+    <td>base/_base-module-area_page.html.erb</td>
+    <td>編輯 base-module-area 樣板的文件，供內頁使用。</td>
+  </tr>
+  <tr>
+    <td>base/_base-page-area.html.erb</td>
+    <td>編輯 base-page-area 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-section.html.erb</td>
+    <td>編輯 base-section 樣板的文件。</td>
+  </tr>
+  <tr>
+    <td>base/_base-wrapper.html.erb</td>
+    <td>編輯 base-wrapper 樣板的文件。</td>
+  </tr>
+  <tr>
     <td>group</td>
     <td>存放 group 樣板的目錄。</td>
   </tr>
@@ -1561,7 +1613,35 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   </tr>
   <tr>
     <td>sys</td>
-    <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable</td>
+    <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable。</td>
+  </tr>
+  <tr>
+    <td>sys/_icon.html.erb</td>
+    <td>設定 ico 引入的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_meta.html.erb</td>
+    <td>設定 meta 設定的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_script.html.erb</td>
+    <td>設定網頁 script 引入的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_style.html.erb</td>
+    <td>設定網頁樣式引入的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_test.html.erb</td>
+    <td>測試用的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_title.html.erb</td>
+    <td>設定網頁 title 的文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_variable.html.erb</td>
+    <td>設定 Erb 全域變數的文件。</td>
   </tr>
   <tr>
     <td>_prototype.html.erb</td>
@@ -1728,18 +1808,151 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
     <th>說明</th>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>base</td>
+    <td>存放 Scss 基本設定的目錄。</td>
+  </tr>
+  <tr>
+    <td>base/_function.scss</td>
+    <td>基礎級方法，可依切板需求修改文件。</td>
+  </tr>
+  <tr>
+    <td>base/_icon-font.scss</td>
+    <td>文字 icon 基礎級設定。</td>
+  </tr>
+  <tr>
+    <td>base/_layout.scss</td>
+    <td>版面 Scss 設定。</td>
+  </tr>
+  <tr>
+    <td>base/_variable.scss</td>
+    <td>基礎級變數，可依切板需求修改文件。</td>
+  </tr>
+  <tr>
+    <td>group</td>
+    <td>存放群組樣式目錄。</td>
+  </tr>
+  <tr>
+    <td>group/_group.scss</td>
+    <td>分割、單欄群組樣式設定。</td>
+  </tr>
+  <tr>
+    <td>group/_group_list.scss</td>
+    <td>清單群組樣式設定。</td>
+  </tr>
+  <tr>
+    <td>group/_group_tab.scss</td>
+    <td>頁籤群組樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module</td>
+    <td>存放模組樣式目錄。</td>
+  </tr>
+  <tr>
+    <td>module/_area-audio.scss</td>
+    <td>對應模組 area-audio 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-customize.scss</td>
+    <td>對應模組 area-customize 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-editor.scss</td>
+    <td>對應模組 area-editor 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-essay.scss</td>
+    <td>對應模組 area-essay 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-figure.scss</td>
+    <td>對應模組 area-figure 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-form.scss</td>
+    <td>對應模組 area-form 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-iframe.scss</td>
+    <td>對應模組 area-iframe 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-table.scss</td>
+    <td>對應模組 area-table 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_area-video.scss</td>
+    <td>對應模組 area-video 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_list-multiple.scss</td>
+    <td>對應模組 list-multiple 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_list-pic.scss</td>
+    <td>對應模組 list-pic 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_list-text.scss</td>
+    <td>對應模組 list-text 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_simple-pic.scss</td>
+    <td>對應模組 simple-pic 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>module/_simple-text.scss</td>
+    <td>對應模組 simple-text 類別的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>sys</td>
+    <td>存放系統級設定的目錄。</td>
+  </tr>
+  <tr>
+    <td>sys/_function.scss</td>
+    <td>系統級方法，非必要請勿修改文件。</td>
+  </tr>
+  <tr>
+    <td>sys/_global.scss</td>
+    <td>整合 sys/variable、base/variable、sys/function、base/function、sys/icon-font、base/icon-font、sys/icon-pic 的基本 Scss 檔。</td>
+  </tr>
+  <tr>
+    <td>sys/_grid.scss</td>
+    <td>格線系統，更多資訊請參閱 [格線系統](#grid) 章節。 </td>
+  </tr>
+  <tr>
+    <td>sys/_icon-font.scss</td>
+    <td>文字 icon 系統級設定，更多資訊請參閱 [文字圖示](#scss-font-icon) 章節。</td>
+  </tr>
+  <tr>
+    <td>sys/_icon-pic.scss</td>
+    <td>sprite 圖的系統級設定，更多資訊請參閱 [sprite 圖示](#scss-sprite-picture) 章節。</td>
+  </tr>
+  <tr>
+    <td>sys/_normalize.scss</td>
+    <td>normalize.css，相關資訊請參閱 (normalize.css)[https://necolas.github.io/normalize.css/]。</td>
+  </tr>
+  <tr>
+    <td>sys/_variable.scss</td>
+    <td>系統級變數，非必要請勿修改文件。</td>
+  </tr>
+  <tr>
+    <td>global.scss</td>
+    <td>整合 sys/normalize、sys/grid、base/layout 與所有群組與模組的檔案，將會匯出 global.css。</td>
+  </tr>
+  <tr>
+    <td>page.scss</td>
+    <td>內頁將會額外引入的樣式設定檔案，將會匯出 page.css。</td>
+  </tr>
+  <tr>
+    <td>print.scss</td>
+    <td>列印將會被應用的樣式設定檔案，將會匯出 print.css。</td>
   </tr>
 </table>
 
-解說 Scss 目錄結構。
-說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
-
 
 <h3 id="scss-script">SCSS</h3>
-簡述 SCSS 語言解決的問題與優勢，並提供說明網站連結。
-
+Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scss 兩種寫法。
+它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋30天掌握Sass語法系列。
 
 <h3 id="grid">格線系統</h3>
 說明 data-child 與 data-setLen 的作用，並且實踐的邏輯為何。
@@ -1876,7 +2089,7 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
     - 專案目錄
       |- Script
       |   |- app.js
-      |   |- 客製 js 模塊...
+      |   |- js 模塊...
       |   |- lib
       |   |   |- cookie.js
       |   |   |- domReady.js
