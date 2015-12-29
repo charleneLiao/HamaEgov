@@ -40,18 +40,17 @@
   3. [格線系統](#grid)
   4. [類別](#scss-type)
   5. [選擇器邏輯](#selector-logic)
-  6. [檔案引入方式](#scss-file-import)
-  7. [function 與 variable](#function-and-variable)
-  8. [關於 sys/variable](#scss-sys-variable)
-  9. [noscript 方法](#scss-noscript)
-  10. [hack 方法](#scss-hack)
-  11. [rwd 方法](#scss-rwd)
-  12. [admin 方法](#scss-admin)
-  13. [背景方法](#bg-to-pic)
-  14. [文字圖示](#scss-font-icon)
-  15. [sprite 圖示](#scss-sprite-picture)
-  16. [關於設定數量的方法](#scss-len-function)
-  17. [debug](#scss-debug)
+  6. [function 與 variable](#function-and-variable)
+  7. [關於 sys/variable](#scss-sys-variable)
+  8. [noscript 方法](#scss-noscript)
+  9. [hack 方法](#scss-hack)
+  10. [rwd 方法](#scss-rwd)
+  11. [admin 方法](#scss-admin)
+  12. [背景方法](#bg-to-pic)
+  13. [文字圖示](#scss-font-icon)
+  14. [sprite 圖示](#scss-sprite-picture)
+  15. [關於設定數量的方法](#scss-len-function)
+  16. [debug](#scss-debug)
 * [javascript/requireJS 實作](#js)
   1. [Script 目錄結構](#js-directory)
   2. [requireJS 運作方式](#js-require)
@@ -1955,85 +1954,73 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋30天掌握Sass語法系列。
 
 <h3 id="grid">格線系統</h3>
-說明 data-child 與 data-setLen 的作用，並且實踐的邏輯為何。
-連結說明至 [關於設定數量的方法](#scss-len-function)
+平台格線系統包含自然分割與設定分割。
+分割群組恨均分子模塊的寬度，主要是依據 [data-child] 的值作為 CSS 判斷。
+例如分割模組([data-type="1"])具有兩個子模塊([data-child="2"])，那麼就會均分子模塊([data-index][data-type])：
+
+    [data-type="1"][data-child="2] > .inner > .content > .inner > [data-index][data-type] {
+      width: 50%; //100% / 2
+    }
+
+設定分割是依據 [data-setLen] 的值作為 CSS 判斷。
+例如分割模組([data-type="1"])設定2排均分([data-setLen="2"])，那麼就會均分子模塊([data-index][data-type])：
+
+    [data-type="1"][data-setLen="2] > .inner > .content > .inner > [data-index][data-type] {
+      width: 50%; //100% / 2
+    }
+
+更多關於 [data-setLen] 的說明，請連結說明至 [關於設定數量的方法](#scss-len-function) 章節。
 
 
 <h3 id="scss-type">類別</h3>
-說明 3 個群組類別 14 個模組類別，與相同類別為何要撰寫在同一支 SCSS 檔案、是如何被寫在一起的。
+相同類別的模塊樣式，都撰寫在同一支 SCSS 檔案中。如：
 
-<table>
-  <tr>
-    <th>類別</th>
-    <th>用途</th>
-  </tr>
-  <tr>
-    <td>area-audio</td>
-    <td>音訊模組，以 html5 audio 為主體的模組。</td>
-  </tr>
-  <tr>
-    <td>area-customize</td>
-    <td>客製的模組，如： google map 模組。</td>
-  </tr>
-  <tr>
-    <td>area-editor</td>
-    <td>客戶可以使用文字編輯器編輯內文的模組，如：下方地址。</td>
-  </tr>
-  <tr>
-    <td>area-essay</td>
-    <td>參雜文字與圖片，以文字為主體的模組，如：最新消息。</td>
-  </tr>
-  <tr>
-    <td>area-figure</td>
-    <td>參雜文字與圖片，以圖片為主體的模組，如：相簿模組。</td>
-  </tr>
-  <tr>
-    <td>area-form</td>
-    <td>以表單為主體的模組，如：搜尋模組。</td>
-  </tr>
-  <tr>
-    <td>area-iframe</td>
-    <td>以 iframe 為主體的模組。</td>
-  </tr>
-  <tr>
-    <td>area-table</td>
-    <td>以表格為主體的模組。</td>
-  </tr>
-  <tr>
-    <td>area-video</td>
-    <td>視訊模組，以 html5 video 為主體的模組。</td>
-  </tr>
-  <tr>
-    <td>list-multiple</td>
-    <td>多重清單模組，如：頁次導航列。</td>
-  </tr>
-  <tr>
-    <td>list-pic</td>
-    <td>圖片清單模組，如：標章模組。</td>
-  </tr>
-  <tr>
-    <td>list-text</td>
-    <td>文字清單模組，如：選單。</td>
-  </tr>
-  <tr>
-    <td>simple-pic</td>
-    <td>只顯示一張圖片的模組，如：圖片模組。</td>
-  </tr>
-  <tr>
-    <td>simple-text</td>
-    <td>只敘述一行文字的文字模組，如：LOGO 模組。</td>
-  </tr>
-</table>
+    <div class="list-text nav" data-type="0"></div>
+    <div class="list-text font-size" data-type="0"></div>
+
+以上兩個模塊的樣式，都設定在 /Scss/module/list-text 類別樣式中。
+這樣的做法，可以快速的參考、交換、複製其他相同類別的模塊樣式。
+
+    .list-text {
+      &.nav {
+        ...
+      }
+      
+      &.font-size {
+        ...
+      }
+    }
+
 
 <h3 id="selector-logic">選擇器邏輯</h3>
-說明 .group-list 與 .list-text、.list-pic 的結構相似性，以及 CSS 選擇器選法的不同。並且提示在複製樣式時須注意的事項與權重。
-說明什麼該交由 .group 決定，什麼該由群組自己決定。
+模組與群組的結構十分相似，.group-list 與 .list-text、.list-pic 的結構也十分相似，甚至所有模塊的 footer 與 header 長得幾乎相同，因此樣式的交換上十分便利，但還是要注意權重指定的問題。
 
-.is-active 的撰寫
+一般來說，在設定樣式的時候，應盡可能減少指定的層數：
 
+    .list-text {
+      &.nav {
+        
+        .content {
+          ...
+        }
+      }
+    }
 
-<h3 id="scss-file-import">檔案引入方式</h3>
-說明 SCSS 檔是如何匯成 CSS，並引用至 HTML。
+因為一個模組只會有一個 content，因此可以用這種選取方法指定到唯一的 content。但群組下可能會有許多模塊，而每個模塊都有 content，因此若要指名該群組的 content，則必須明確的指定：
+
+    [data-index][data-type="1"] {
+      &.group {
+        
+        > .inner {
+          
+          > .content {
+            ...
+          }
+        }
+      }
+    }
+
+此外，行為必須寫在發生行為的模塊上，例如主選單群組的子模塊觸發 :hover 時，必須秀出該模塊的 content，這個行為應該寫在 主選單群組 而非主選單群組的子模塊。反之，主選單群組隱藏子模塊的 content，這樣行為也必須寫在主選單群組上。
 
 
 <h3 id="function-and-variable">function 與 variable</h3>
