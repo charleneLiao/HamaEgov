@@ -1242,9 +1242,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   <tr>
     <td>span.select>select>option>{文字}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">表格類</th>
   </tr>
@@ -1275,9 +1272,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   <tr>
     <td>tr>th>span>a{可選}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">清單類</th>
   </tr>
@@ -1299,9 +1293,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>項目</td>
     <td>li>span>a{可選}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">標籤類</th>
   </tr>
@@ -1317,9 +1308,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>項目</td>
     <td>li>span>a{可選}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">內文類</th>
   </tr>
@@ -1368,9 +1356,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>簡單文字組件</td>
     <td>span>a{可選}>{文字}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">圖片類</th>
   </tr>
@@ -1400,9 +1385,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>簡單圖片組件</td>
     <td>span>a{可選}>img</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">標題類</th>
   </tr>
@@ -1424,9 +1406,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>標題組件</td>
     <td>span>a{可選}>{標題文字}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">區塊類</th>
   </tr>
@@ -1437,9 +1416,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   <tr>
     <td>a.division></td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">視訊類</th>
   </tr>
@@ -1459,9 +1435,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>註解</td>
     <td>span>a{可選}>{標題文字}</td>
   </tr>
-</table>
-
-<table>
   <tr>
     <th colspan="2">音訊類</th>
   </tr>
@@ -2024,11 +1997,542 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 
 
 <h3 id="function-and-variable">function 與 variable</h3>
-說明 function 與 variable 的用途，並列舉幾個重要的變數說明。
+function 與 variable 將常用的變數與功能定義在一起。
+
+<table>
+  <tr>
+    <th colspan="3">$ 變數</th>
+  </tr>
+  <tr>
+    <td>設定(true or false)</td>
+    <td>$debug</td>
+    <td>是否除錯模式(會提示掉圖、掉文字圖示)。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$rwd</td>
+    <td>是否開啟 rwd(如不開啟，將忽略 RWD 樣式設定)。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$icon-pic</td>
+    <td>是否開啟雪碧圖示。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$icon-font</td>
+    <td>是否開啟文字圖示。</td>
+  </tr>
+  <tr>
+    <td>灰階</td>
+    <td>$white</td>
+    <td>非常淺。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$light</td>
+    <td>淺色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$light-gray</td>
+    <td>淺灰。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$gray</td>
+    <td>灰色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$deep-gray</td>
+    <td>深灰。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$deep</td>
+    <td>深色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$black</td>
+    <td>非常深。</td>
+  </tr>
+  <tr>
+    <td>主要版面顏色</td>
+    <td>$main-color</td>
+    <td>主色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$minor-color</td>
+    <td>次色。</td>
+  </tr>
+  <tr>
+    <td>其他版面顏色</td>
+    <td>$lesser1-color</td>
+    <td>更次色(設定多個為 $lesser2-color、$lesser3-color...)。</td>
+  </tr>
+  <tr>
+    <td>文字顏色</td>
+    <td>$title-color</td>
+    <td>標題色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$span-color</td>
+    <td>附註色。</td>
+  </tr>
+  <tr>
+    <td>文字樣式</td>
+    <td>base-font-style</td>
+    <td>主要文字樣式。</td>
+  </tr>
+  <tr>
+    <td>文字大小(建議使用 em)</td>
+    <td>$font-size-xs</td>
+    <td>極小字。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$font-size-s</td>
+    <td>小字。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$font-size-m</td>
+    <td>一般字。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$font-size-l</td>
+    <td>大字。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$font-size-xl</td>
+    <td>極大字。</td>
+  </tr>
+  <tr>
+    <td>文字厚度</td>
+    <td>$font-weight-n</td>
+    <td>一般字體。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$font-weight-b</td>
+    <td>粗字體。</td>
+  </tr>
+  <tr>
+    <td>文字行高</td>
+    <td>$line-height-xs</td>
+    <td>極小行高。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$line-height-s</td>
+    <td>小行高。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$line-height-m</td>
+    <td>一般行高。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$line-height-l</td>
+    <td>高行高。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$line-height-xl</td>
+    <td>極高行高。</td>
+  </tr>
+  <tr>
+    <td>文字間格</td>
+    <td>$letter-spacing-xs</td>
+    <td>極小文字間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$letter-spacing-s</td>
+    <td>小文字間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$letter-spacing-m</td>
+    <td>中文字間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$letter-spacing-l</td>
+    <td>寬字間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$letter-spacing-xl</td>
+    <td>極寬文字間隔。</td>
+  </tr>
+  <tr>
+    <td>透明度</td>
+    <td>$opacity-vl</td>
+    <td>極低透明度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$opacity-l</td>
+    <td>低透明度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$opacity-m</td>
+    <td>中等透明度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$opacity-h</td>
+    <td>高透明度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$opacity-vh</td>
+    <td>極高透明度。</td>
+  </tr>
+  <tr>
+    <td>間隔設定</td>
+    <td>$interval-xs</td>
+    <td>極窄間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$interval-s</td>
+    <td>窄間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$interval-m</td>
+    <td>中等間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$interval-l</td>
+    <td>寬間隔。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$interval-xl</td>
+    <td>極寬間隔。</td>
+  </tr>
+  <tr>
+    <td>RWD寬度</td>
+    <td>$pc-width</td>
+    <td>PC 版寬度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$pad-width</td>
+    <td>Pad 版寬度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$phone-width</td>
+    <td>手機版寬度。</td>
+  </tr>
+  <tr>
+    <td>基本動畫速度</td>
+    <td>$transition</td>
+    <td>動態過度時間。</td>
+  </tr>
+  <tr>
+    <td>全頁文字</td>
+    <td>$body-font-color</td>
+    <td>網站文字顏色</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$body-font-size-s</td>
+    <td>"小"字級文字設定。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$body-font-size-m</td>
+    <td>"中"字級文字設定。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$body-font-size-l</td>
+    <td>"大"字級文字設定。</td>
+  </tr>
+  <tr>
+    <td>文字圖示</td>
+    <td>$icon-font-size</td>
+    <td>文字圖示大小。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$icon-font-color</td>
+    <td>文字圖示顏色。</td>
+  </tr>
+  <tr>
+    <td>預設空文字</td>
+    <td>$content</td>
+    <td>空偽類的字元。</td>
+  </tr>
+  <tr>
+    <td>預設陰影</td>
+    <td>$box-shadow</td>
+    <td>區塊陰影。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$text-shadow</td>
+    <td>文字陰影。</td>
+  </tr>
+  <tr>
+    <td>預設線條</td>
+    <td>$border-style</td>
+    <td>預設線條樣式。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$border-width</td>
+    <td>預設線條寬度。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$border-color</td>
+    <td>預設線條顏色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$border</td>
+    <td>預設線條設定。</td>
+  </tr>
+  <tr>
+    <td>預設圓角</td>
+    <td>$border-radius</td>
+    <td>預設圓角設定。</td>
+  </tr>
+  <tr>
+    <td>連結顏色</td>
+    <td>$link-color</td>
+    <td>連結顏色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$visited-color</td>
+    <td>造訪過連結顏色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$hover-color</td>
+    <td>指標移入連結顏色，不可與任何底色重疊。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$active-color</td>
+    <td>點擊連結顏色。</td>
+  </tr>
+  <tr>
+    <td>按鈕樣式</td>
+    <td>$btn-bg-color</td>
+    <td>按鈕背景色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$btn-hover-bg-color</td>
+    <td>按鈕滑入顏色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$btn-text-color</td>
+    <td>按鈕文字顏色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$btn-padding</td>
+    <td>按鈕內邊距，決定按鈕大小。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$btn-border</td>
+    <td>按鈕線框。</td>
+  </tr>
+  <tr>
+    <td>輸入框樣式</td>
+    <td>$input-bg-color</td>
+    <td>輸入框背景色。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$input-padding</td>
+    <td>輸入框內邊距，決定輸入框大小。</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$input-border</td>
+    <td>輸入框線框。</td>
+  </tr>
+  <tr>
+    <td>瀏覽器媒體</td>
+    <td>$media</td>
+    <td>提供 @mixin at() 方法使用，用於 RWD 與 hack。</td>
+  </tr>
+  <tr>
+    <td>連覽器支持</td>
+    <td>$supports</td>
+    <td>提供 @mixin at() 方法使用，用於 RWD 與 hack。</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">%extend 樣式</th>
+  </tr>
+  <tr>
+    <td>%clear</td>
+    <td>清除浮動的方法，通常使用在:after 中。</td>
+  </tr>
+  <tr>
+    <td>%hide-text</td>
+    <td>隱藏文字的方法。</td>
+  </tr>
+  <tr>
+    <td>%ellipsis</td>
+    <td>超過範圍文字變成'...'的方法。</td>
+  </tr>
+  <tr>
+    <td>%icon-pic</td>
+    <td>偽類作為行內icon-pic的方法，請參閱 _sys_icon-pic 檔案內之說明。</td>
+  </tr>
+  <tr>
+    <td>%icon-font</td>
+    <td>偽類作為行內icon-font的方法，請參閱 _bace_icon-font 檔案內之說明。</td>
+  </tr>
+  <tr>
+    <td>%reset</td>
+    <td>消除所有樣式設定的方法。</td>
+  </tr>
+  <tr>
+    <td>%center</td>
+    <td>齊中寬度。</td>
+  </tr>
+  <tr>
+    <td>%icon</td>
+    <td>偽類作為行內icon的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%cover-bg</td>
+    <td>cover 的圖片背景樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%contain-bg</td>
+    <td>contain 的圖片背景樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%model</td>
+    <td>所有拖曳模組引用的樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%title</td>
+    <td>所有模組的標題樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%btn</td>
+    <td>套用預設的按鈕樣式。</td>
+  </tr>
+  <tr>
+    <td>%input</td>
+    <td>套用預設的輸入框樣式。</td>
+  </tr>
+  <tr>
+    <td>%article</td>
+    <td>內文文章樣式。</td>
+  </tr>
+  <tr>
+    <td>%page-title</td>
+    <td>內頁內容標題樣式設定。</td>
+  </tr>
+  <tr>
+    <td>%list</td>
+    <td>橫條選單樣式。</td>
+  </tr>
+  <tr>
+    <td>%table</td>
+    <td>表單樣式。</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="3">@mixin 涵式</th>
+  </tr>
+  <tr>
+    <td>re-ellipsis()</td>
+    <td>無參數</td>
+    <td>反 %ellipsis 的方法。</td>
+  </tr>
+  <tr>
+    <td>bg-to-pic($img-src,$size,$height)</td>
+    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
+    <td>依圖改變大小並置中。</td>
+  </tr>
+  <tr>
+    <td>icon-pic($img-src,$size,$height)</td>
+    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
+    <td>取雪碧圖icon。</td>
+  </tr>
+  <tr>
+    <td>icon-font($font)</td>
+    <td>$font： 文字圖示名稱(字串)</td>
+    <td>文字圖示，列表請參閱 https://icomoon.io。</td>
+  </tr>
+  <tr>
+    <td>icon-pic-btn($img-src,$size,$height)</td>
+    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
+    <td>只有icon圖片的按鈕，隱含 佔用了:before。</td>
+  </tr>
+  <tr>
+    <td>rwd($max,$min)</td>
+    <td>$max： 最大寬度設定(數字) $min(可選)： 最小寬度設定(數字)</td>
+    <td>自訂 RWD 寬度。</td>
+  </tr>
+  <tr>
+    <td>at($key,$obj)</td>
+    <td>$key： media query 的種類(字串) $obj(可選)： media query 的參數(字串)</td>
+    <td>查詢瀏覽器媒體與瀏覽器支 持，在不同情況下呈現不同 樣式。</td>
+  </tr>
+  <tr>
+    <td>data-js($boolean)</td>
+    <td>$boolean： 瀏覽器是否有開啟 Js(布林)</td>
+    <td>在 有/無 js下的樣式表現。</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="3">@function 方法</th>
+  </tr>
+  <tr>
+    <td>lighter($color,$int,$base)</td>
+    <td>$color： 顏色(字串) $int： 變亮的倍數(數字) $base(可選)： 變亮倍數的基數(數字)</td>
+    <td>顏色變亮方法。</td>
+  </tr>
+  <tr>
+    <td>deeper($color,$int,$base)</td>
+    <td>$color： 顏色(字串) $int： 變暗的倍數(數字) $base(可選)： 變暗倍數的基數(數字)</td>
+    <td>顏色變暗方法。</td>
+  </tr>
+</table>
 
 
 <h3 id="scss-sys-variable">關於 sys/variable</h3>
-說明共通平台將為何要帶入 sys/variable，要如何讓 sys/variable 參數取代 base-variable。
+命名變數時，後輟 !default 將使該變數可被後臺進階設定覆蓋，如： 
+
+    $major-color: #0088cc !default;
+
+後臺進階設定的參數將保存在 sys/variable ，為了使共通平台後臺能知曉哪些變數可以被設定，因此須將該變數加入 sys/variable 檔案，格式如：
+
+    // $major-color,主色
 
 
 <h3 id="scss-noscript">noscript 方法</h3>
