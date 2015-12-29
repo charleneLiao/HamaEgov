@@ -1509,10 +1509,33 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     - 專案目錄
       |- Erb
       |   |- base
+      |   |   |- _base-article.html.erb
+      |   |   |- _base-aside.html.erb
+      |   |   |- _base-content_index.html.erb
+      |   |   |- _base-content_page.html.erb
+      |   |   |- _base-extend.html.erb
+      |   |   |- _base-footer.html.erb
+      |   |   |- _base-header.html.erb
+      |   |   |- _base-mobile.html.erb
+      |   |   |- _base-module-area_index.html.erb
+      |   |   |- _base-module-area_page.html.erb
+      |   |   |- _base-page-area.html.erb
+      |   |   |- _base-section.html.erb
+      |   |   |- _base-wrapper.html.erb
       |   |- group
+      |   |   |- 群組模塊...
       |   |- module
+      |   |   |- 模組模塊...
       |   |- page
+      |   |   |- 內頁...
       |   |- sys
+      |   |   |- _icon.html.erb
+      |   |   |- _meta.html.erb
+      |   |   |- _script.html.erb
+      |   |   |- _style.html.erb
+      |   |   |- _test.html.erb
+      |   |   |- _title.html.erb
+      |   |   |- _variable.html.erb
       |   |- _prototype.html.erb
 
 <table>
@@ -1550,6 +1573,7 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 <h3 id="erb-script">Erb 樣板語言</h3>
 Erb 樣板語言主要是幫助我們把 html 模組化，並且提供隨機的內容與字元長度，以幫助我們測試版型。
 我們可以將個頁面一致的 html 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
+Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如陣列、物件、迴圈等等。
 更多 Erb 樣板語言範本與功能請見 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.html)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.html)。
 
 
@@ -1658,6 +1682,57 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
 
 <h2 id="scss">CSS/SCSS 實作</h2>
 <h3 id="scss-directory">SCSS 目錄結構</h3>
+以下是 Scss 目錄結構圖及說明。
+
+    - 專案目錄
+      |- SCSS
+      |   |- base
+      |   |   |- _function.scss
+      |   |   |- _icon-font.scss
+      |   |   |- _layout.scss
+      |   |   |- _variable.scss
+      |   |- group
+      |   |   |- _group.scss
+      |   |   |- _group_list.scss
+      |   |   |- _group_tab.scss
+      |   |- module
+      |   |   |- _area-audio.scss
+      |   |   |- _area-customize.scss
+      |   |   |- _area-editor.scss
+      |   |   |- _area-essay.scss
+      |   |   |- _area-figure.scss
+      |   |   |- _area-form.scss
+      |   |   |- _area-iframe.scss
+      |   |   |- _area-table.scss
+      |   |   |- _area-video.scss
+      |   |   |- _list-multiple.scss
+      |   |   |- _list-pic.scss
+      |   |   |- _list-text.scss
+      |   |   |- _simple-pic.scss
+      |   |   |- _simple-text.scss
+      |   |- sys
+      |   |   |- _function.scss
+      |   |   |- _global.scss
+      |   |   |- _grid.scss
+      |   |   |- _icon-font.scss
+      |   |   |- _icon-pic.scss
+      |   |   |- _normalize.scss
+      |   |   |- _variable.scss
+      |   |- global.scss
+      |   |- page.scss
+      |   |- print.scss
+
+<table>
+  <tr>
+    <th>文件、目錄</th>
+    <th>說明</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 解說 Scss 目錄結構。
 說明 sys、base、group 與 module 目錄的意義與用途，並列舉檔案，說明檔案命名方式。
 
@@ -1801,6 +1876,7 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
     - 專案目錄
       |- Script
       |   |- app.js
+      |   |- 客製 js 模塊...
       |   |- lib
       |   |   |- cookie.js
       |   |   |- domReady.js
@@ -1824,47 +1900,46 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
     <td>存放套件目錄。</td>
   </tr>
   <tr>
-    <td>cookie.js</td>
+    <td>lib/cookie.js</td>
     <td>操作 cookie 的方法套件。</td>
   </tr>
   <tr>
-    <td>domReady.js</td>
+    <td>lib/domReady.js</td>
     <td>延遲執行 require.js 的方法套件</td>
   </tr>
   <tr>
-    <td>getNode.js</td>
+    <td>lib/getNode.js</td>
     <td>操作模塊的套件。</td>
   </tr>
   <tr>
-    <td>jqueryPrivate.js</td>
+    <td>lib/jqueryPrivate.js</td>
     <td>引用私有 jquery 的套件。</td>
   </tr>
   <tr>
-    <td>main.js</td>
+    <td>lib/main.js</td>
     <td>執行 data-function 方法的套件。</td>
   </tr>
   <tr>
-    <td>plugin.js</td>
+    <td>lib/plugin.js</td>
     <td>擴充方法。</td>
   </tr>
   <tr>
-    <td>fix.js</td>
+    <td>lib/fix.js</td>
     <td>修正瀏覽器錯誤。</td>
   </tr>
 </table>
 
 
 <h3 id="js-require">requireJS 運作方式</h3>
-為了以往解決許多 script 載入的問題，新平台使用 requireJS 做為文件載入器，動態插入頁面需要的 script，並期望藉由它解決相依性問題、套件衝突，並提供模組化管理。
+為了解決 script 大量載入多餘套件的問題，新平台使用 requireJS 做為文件載入器。它能動態插入頁面需要的 script，並解決相依性、套件衝突等問題，並提供模組化管理。
 
 更多有關 requireJS 的介紹，請至 [官網](http://requirejs.org) 查詢。   
 
 
 <h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
 先前曾在 [參數與意義](#html-parameter) 章節討論過 data-function 屬性的用途。
-data-function 可藉由傳入一個字串化物件，來啟動某個 js 模塊。
-啟用的 js 模塊位置被設定在路徑 /Script 中，可在 app.js 設定基礎路徑。
-以下示範一個模組 nav ，啟動一個名為 hud 的 js 模塊：
+data-function 可藉由傳入一個字串化物件，來啟動指定的 js 模塊。
+js 模塊應存在 /Script 目錄中(可在 app.js 改變基礎路徑)，以下示範一個模組 nav ，啟動一個名為 hud 的 js 模塊：
 
     <div class="nav" data-type="0" data-function="{'hud':{}}">
 
@@ -1884,23 +1959,115 @@ hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接�
 hud.js 最終回傳一個涵式給 main.js 並執行。
 同一個模塊中也可以一次執行多個 js 模塊：
 
-    <div class="nav" data-type="0" data-function="{'hud':{},'slider':{}}">
+    <div class="nav" data-type="0" data-function="{'hud':{},'slider':{'auto':true}}">
 
-以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊。
-特別注意，因為清單群組、list-text、list-pic 三種模塊的結構相似，因此他們能共用彼此的 js 模塊。
+以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
+
+    define(function(){
+    	
+    	function main(env, opt, file){
+    	  console.log(opt.auto) //true
+    	}
+    	
+    	return main;
+    });
 
 
 <h3 id="app-and-main">關於 app.js 與 lib/main</h3>
 先前曾在 [Script 目錄結構](#js-directory) 章節討論過 app.js 與 main.js。
-app.js 的 requirejs.config 設定了套件的短名，使我們便於使用。 main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊，當模塊回傳各自的程式內容，main.js 就會執行它們。
+app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 app.js 的程式內容：
 
+    requirejs.config({
+      baseUrl: '/Scripts',
+      paths: {
+        'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min'],
+        'googleMaps': '//maps.googleapis.com/maps/api/js?v=3.exp',
+        'cookie': 'lib/cookie',
+        'domReady': 'lib/domReady',
+        'main': 'lib/main',
+        'getNode': 'lib/getNode',
+        'plugin': 'lib/plugin',
+        'fix': 'lib/fix'
+      },
+      map: {
+        '*': {
+          'jquery': 'lib/jqueryPrivate'
+        },
+        'lib/jqueryPrivate': {
+          'jquery': 'jquery'
+        }
+      }
+    });
+
+以下以列表說明參數意義：
+
+<table>
+  <tr>
+    <th>baseUrl</th>
+    <td>設定 js 模塊的路徑</td>
+  </tr>
+  <tr>
+    <th>paths</th>
+    <td>配置套件與相應的關鍵字</td>
+  </tr>
+  <tr>
+    <th>map</th>
+    <td>配置關鍵字在各個檔案的意義</td>
+  </tr>
+</table>
+
+設定完畢後，app.js 會執行 main.js：
+
+    requirejs(['main']);
+
+關鍵字的作用在引用套件時，可用關鍵字取出套件內容。引用的方式是利用陣列包含關鍵字，例如某個 js 模塊需要取用 jquery 與 google map：
+
+    define(['jquery','googleMaps'],function(){
+    	
+    	function main(env, opt, file){
+    	  youu can use jquery and google map api here.
+    	}
+    	
+    	return main;
+    });
+
+main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊參數，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構：
+
+    requirejs(['domReady!'], function(dom){
+      var $nodes = document.querySelectorAll('[data-function]');
+      
+      for( var i = 0; i < $nodes.length; i++ ) {
+        var $env = $nodes[i], //存節點
+        $func = JSON.parse(($env.getAttribute('data-function')).replace(/\'/g,'"')); //轉成物件
+        
+        for( var _file in $func ) { //取 function name 與設定參數
+          var $opt = $func[_file];
+          
+          requirejs([_file], function(func){
+            func($env, $opt, _file);
+          });
+        }
+      }
+    });
 
 <h3 id="js-jquery">關於 jquery.js</h3>
-我們在 app.js 中設定了一個 jquery 關鍵字，該值是一個陣列，第一個字串是 google CDN 來源的 jquery，第二個是來自本地的 jquery 作為備援。當第一項資源失效時會立即啟用備援。
+我們在 app.js 中設定了一個 jquery 關鍵字，該值是一個陣列：
 
-作為 js 模塊，jquery 的問題在於它會自動污染全域變數 ＄，因此我們需要回傳一個私有 jquery 對象的方法，即 return $.noConflict( true ) ，因此我們建置了 jqueryPrivate ，在其他檔案中，jquery 關鍵字即代表 jqueryPrivate 模塊。
+    'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min']
 
-以下示範如何在模塊中使用 jquery：
+第一個字串是 google CDN 來源的 jquery，第二個是來自本地的 jquery 作為備援。當第一項資源失效時會立即啟用備援。
+作為 js 模塊，jquery 的問題在於它會污染全域變數 $，因此我們需要回傳一個私有 jquery 對象的方法，我們建置了 jqueryPrivate 來實作這個方法，先來看看 app.js 中 maps 的設定：
+
+    map: {
+      '*': {
+        'jquery': 'lib/jqueryPrivate'
+      },
+      'lib/jqueryPrivate': {
+        'jquery': 'jquery'
+      }
+    }
+
+*代表所有的 js 模塊，在所有 js 模塊中，jquery 關鍵字代表 Script/lib/jqueryPrivate 這個模塊，而在 Script/lib/jqueryPrivate.js 中的 jquery 關鍵字則指向 Script/lib/jquery.js 模塊。以下示範如何在模塊中使用 jquery：
 
     define(['jquery'], function($){
     	
@@ -1918,15 +2085,15 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 ap
 <table>
   <tr>
     <td>set(_key, _value, _life)</td>
-    <td>設定 cookie，_key 為 cookie 名稱， _value 為 cookie 內容， _life 為生命週期(天)。</td>
+    <td>設定 cookie。_key 為 cookie 名稱， _value 為 cookie 內容， _life 為生命週期(天)。</td>
   </tr>
   <tr>
     <td>get(_key)</td>
-    <td>取 cookie 值，_key 為 cookie 名稱。</td>
+    <td>取 cookie 值。_key 為 cookie 名稱。</td>
   </tr>
   <tr>
     <td>remove(_key)</td>
-    <td>刪除 cookie，_key 為 cookie 名稱。</td>
+    <td>刪除 cookie。_key 為 cookie 名稱。</td>
   </tr>
 </table>
 
@@ -1944,7 +2111,9 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 ap
 
 <h3 id="js-getNode">關於 getNode.js</h3>
 因為我們統一了 html 結構，因此我們可更便捷、快速的取出想要的節點內容，getNode.js 就是為此而生。
-getNode.js 定義了許多取得節點的方法，最終都會回覆一個陣列。
+getNode.js 定義了許多取得節點的方法。
+
+getNode.js 的核心程式叫做 getChild，會抓取子節點並比對關鍵字，並把所有子節點展開、並回傳一個真正的陣列。
 
 
 <h3 id="js-fix">關於 fix.js</h3>
