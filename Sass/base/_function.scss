@@ -931,8 +931,16 @@
 
 	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 為 $supports 的 $key
 
-		@supports #{map-get( $supports, $key )} {
-			@content;
+		@if( map-has-key( $supports, $key) ) {
+
+			@supports #{map-get( $supports, $key )} {
+				@content;
+			}
+		}@else {
+
+			@supports #{ '(' + $key + ')' } {
+				@content;
+			}
 		}
 	}
 

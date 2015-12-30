@@ -5,11 +5,11 @@
 	<div class="content"><div class="inner">
 
 	<!-- accesskey 導盲磚 -->
-		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "Z", :access_title => "下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結" } %>
+		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "Z", :access_title => "下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結", :header_text => '導盲磚' } %>
 	<!-- accesskey 結束 -->
 
 	<!-- toogle-btn 收合按鈕 -->
-		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => { :index => 1, :func_set => "{'toogleBtn':{'targetNode':'.base-footer .group-list.nav','targetClass':'is-close','thisClass':'is-active'}}", :header_text => nil } %>
+		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => { :index => 1, :func_set => "{'toogleBtn':{'targetNode':'.base-footer .group-list.nav','targetClass':'is-close','thisClass':'is-active'}}", :header_text => '收合選單' } %>
 	<!-- toogle-btn 結束 -->
 
 	<!-- group-list_nav 選單列表 -->
@@ -24,7 +24,7 @@
 			<div class="content"><div class="inner">
 
 			<!-- minor-logo 次要標誌 -->
-				<%= render :partial => "/Erb/module/simple-text_minor-logo", :locals => { :index => 1, :func_set => nil, :header_text => nil } %>
+				<%= render :partial => "/Erb/module/simple-text_minor-logo", :locals => { :index => 1, :func_set => nil, :header_text => '標誌' } %>
 			<!-- minor-logo 結束 -->
 
 			<!-- icon 各種標章 -->
@@ -47,7 +47,7 @@
 					<!-- visit-count 結束 -->
 
 					<!-- address 聯絡資訊編輯 -->
-						<%= render :partial => "/Erb/module/area-editor_address", :locals => { :index => 3, :func_set => nil, :header_text => nil } %>
+						<%= render :partial => "/Erb/module/area-editor_address", :locals => { :index => 3, :func_set => nil, :header_text => '聯絡資訊' } %>
 					<!-- address 結束 -->
 
 					</div></div>
