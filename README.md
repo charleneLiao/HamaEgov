@@ -40,7 +40,7 @@
   3. [格線系統](#grid)
   4. [類別](#scss-type)
   5. [選擇器邏輯](#selector-logic)
-  6. [function 與 variable](#function-and-variable)
+  6. [base/variable、base/function 與 sys/function](#function-and-variable)
   7. [關於 sys/variable](#scss-sys-variable)
   8. [noscript 方法](#scss-noscript)
   9. [hack 方法](#scss-hack)
@@ -94,11 +94,11 @@ javascript 方面，減少了不必要的引入，並透過新的方法減省流
 <table>
   <tr>
     <th>開發環境</th>
-    <td>Ruby、Java、Erb、Scss、Compass。</td>
+    <td>Ruby、Java、Erb、Scss、Compass</td>
   </tr>
   <tr>
     <th>工具</th>
-    <td>Git、Fire.app、requireJS、normalize、jquery。</td>
+    <td>Git、Fire.app、requireJS、normalize、jquery</td>
   </tr>
 </table>
 
@@ -180,67 +180,67 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
   </tr>
   <tr>
     <td>.git</td>
-    <td>存放 git 版本管理庫的目錄。</td>
+    <td>存放 git 版本管理庫的目錄</td>
   </tr>
   <tr>
     <td>.sass-cache</td>
-    <td>存放 Sass 編譯暫存檔案的目錄。</td>
+    <td>存放 Sass 編譯暫存檔案的目錄</td>
   </tr>
   <tr>
     <td>Audio</td>
-    <td>存放音訊檔案的目錄。</td>
+    <td>存放音訊檔案的目錄</td>
   </tr>
   <tr>
     <td>Css</td>
-    <td>存放 css 文件的目錄。</td>
+    <td>存放 css 文件的目錄</td>
   </tr>
   <tr>
     <td>Document</td>
-    <td>存放其他相關文件的目錄。</td>
+    <td>存放其他相關文件的目錄</td>
   </tr>
   <tr>
     <td>Erb</td>
-    <td>存放 Erb 樣板與模組的目錄。</td>
+    <td>存放 Erb 樣板與模組的目錄</td>
   </tr>
   <tr>
     <td>Images</td>
-    <td>存放圖片、文字圖示的目錄。</td>
+    <td>存放圖片、文字圖示的目錄</td>
   </tr>
   <tr>
     <td>Prototype</td>
-    <td>存放專案雛形、原始圖檔的目錄。</td>
+    <td>存放專案雛形、原始圖檔的目錄</td>
   </tr>
   <tr>
     <td>Sass</td>
-    <td>存放所有 Scss 相關檔案的目錄。</td>
+    <td>存放所有 Scss 相關檔案的目錄</td>
   </tr>
   <tr>
     <td>Script</td>
-    <td>存放所有 js 文件的目錄。</td>
+    <td>存放所有 js 文件的目錄</td>
   </tr>
   <tr>
     <td>Video</td>
-    <td>存放視訊檔案的目錄。</td>
+    <td>存放視訊檔案的目錄</td>
   </tr>
   <tr>
     <td>.gitignore</td>
-    <td>紀錄 Git 排除名單的文件。</td>
+    <td>紀錄 Git 排除名單的文件</td>
   </tr>
   <tr>
     <td>_index_layout.html.erb</td>
-    <td>index.html.erb 的樣板。</td>
+    <td>index.html.erb 的樣板</td>
   </tr>
   <tr>
     <td>_layout.html.erb</td>
-    <td>所有內面的樣板。</td>
+    <td>所有內面的樣板</td>
   </tr>
   <tr>
     <td>apple-touch-icon.png</td>
-    <td>apple 系統的較大 icon 圖片。</td>
+    <td>apple 系統的較大 icon 圖片</td>
   </tr>
   <tr>
     <td>config.rb</td>
-    <td>關於 compass、sass 的設定文件。</td>
+    <td>關於 compass、sass 的設定文件</td>
   </tr>
   <tr>
     <td>favicon.ico</th>
@@ -248,15 +248,15 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
   </tr>
   <tr>
     <td>index.html.erb</td>
-    <td>以 Erb 撰寫的首頁。</td>
+    <td>以 Erb 撰寫的首頁</td>
   </tr>
   <tr>
     <td>index.html.layout</td>
-    <td>指定 _index_layout.html.erb 為 index.html.erb 樣板的設定文件。</td>
+    <td>指定 _index_layout.html.erb 為 index.html.erb 樣板的設定文件</td>
   </tr>
   <tr>
     <td>README.md</td>
-    <td>專案說明文件，即本文。</td>
+    <td>專案說明文件，即本文</td>
   </tr>
 </table>
 
@@ -275,49 +275,49 @@ note: 開發環境雖然可以自行建置，但還是推薦使用 Fire.app。
   <tr>
     <td>data-type</td>
     <td>模塊類型</td>
-    <td>標示該模塊的類型，0 代表該模塊為模組，1到4分別為不同類別的群組，更多說明請至 <a href="#group-structure">群組類別與結構</a> 章節。</td>
+    <td>標示該模塊的類型，0 代表該模塊為模組，1到4分別為不同類別的群組，更多說明請至 <a href="#group-structure">群組類別與結構</a> 章節</td>
     <td>模塊</td>
   </tr>
   <tr>
     <td>data-index</td>
     <td>模塊或項目順序</td>
-    <td>標示該模塊在父模中的順序、標示項目在清單中的順序。</td>
+    <td>標示該模塊在父模中的順序、標示項目在清單中的順序</td>
     <td>模塊、項目(li)</td>
   </tr>
   <tr>
     <td>data-child</td>
     <td>子模塊或子項目數量</td>
-    <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量。</td>
+    <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量</td>
     <td>群組、清單(ul)</td>
   </tr>
   <tr>
     <td>data-function</td>
     <td>呼叫模塊程式</td>
-    <td>提供一組 javascript 物件字串，用以呼叫程式模塊，更多說明請至 <a href="#node-and-files">以 node 呼叫 javascript 檔案</a> 章節。</td>
+    <td>提供一組 javascript 物件字串，用以呼叫程式模塊，更多說明請至 <a href="#node-and-files">以 node 呼叫 javascript 檔案</a> 章節</td>
     <td>模塊、body</td>
   </tr>
   <tr>
     <td>data-setlen</td>
     <td>設定模塊顯示項目</td>
-    <td>設定內容項目顯示的數量。設計師可設定該模塊是否開啟這項功能，更多說明請至 <a href="#scss-len-function">關於設定數量的方法</a> 章節。</td>
+    <td>設定內容項目顯示的數量。設計師可設定該模塊是否開啟這項功能，更多說明請至 <a href="#scss-len-function">關於設定數量的方法</a> 章節</td>
     <td>模塊</td>
   </tr>
   <tr>
     <td>data-js</td>
     <td>javascript 提示</td>
-    <td>提示用戶是否開啟 javascript。</td>
+    <td>提示用戶是否開啟 javascript</td>
     <td>body</td>
   </tr>
   <tr>
     <td>data-admin</td>
     <td>管理者提示</td>
-    <td>提示用戶是否為系統管理者。</td>
+    <td>提示用戶是否為系統管理者</td>
     <td>body</td>
   </tr>
   <tr>
     <td>data-width</td>
     <td>選單寬度</td>
-    <td>設定子模塊的 content 選單寬度，主要用於主選單，單位是基本寬度的倍數。</td>
+    <td>設定子模塊的 content 選單寬度，主要用於主選單，單位是基本寬度的倍數</td>
     <td>項目(li)</td>
   </tr>
 </table>
@@ -498,73 +498,73 @@ base-article: 內頁文章區塊。
   <tr>
     <td>.sys-root</td>
     <td>平台版面根節點</td>
-    <td>樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。</td>
+    <td>樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌</td>
     <td>1</td>
   </tr>
   <tr>
     <td>.base-mobile</td>
     <td>行動版側欄</td>
-    <td>行動側欄框架。通常會放置主選單、分享模組等。</td>
+    <td>行動側欄框架。通常會放置主選單、分享模組等</td>
     <td>2</td>
   </tr>
   <tr>
     <td>.base-extend</td>
     <td>漂浮物件層</td>
-    <td>漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等。</td>
+    <td>漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等</td>
     <td>2</td>
   </tr>
   <tr>
     <td>.base-wrapper</td>
     <td>網頁頁面框架</td>
-    <td>網頁頁面框架。</td>
+    <td>網頁頁面框架</td>
     <td>2</td>
   </tr>
   <tr>
     <td>.base-header</td>
     <td>網頁頁首</td>
-    <td>通常放置主選單、LOGO模組等。</td>
+    <td>通常放置主選單、LOGO模組等</td>
     <td>3</td>
   </tr>
   <tr>
     <td>.base-content</td>
     <td>網頁主要內容</td>
-    <td>網頁主要內容。</td>
+    <td>網頁主要內容</td>
     <td>3</td>
   </tr>
   <tr>
     <td>.base-footer</td>
     <td>網頁頁尾</td>
-    <td>通常放置一些網站資訊。</td>
+    <td>通常放置一些網站資訊</td>
     <td>3</td>
   </tr>
   <tr>
     <td>.base-module-area</td>
     <td>模組區塊</td>
-    <td>可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。</td>
+    <td>可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上</td>
     <td>4</td>
   </tr>
   <tr>
     <td>.base-page-area</td>
     <td>內頁區塊</td>
-    <td>內頁框架。</td>
+    <td>內頁框架</td>
     <td>4</td>
   </tr>
   <tr>
     <td>.base-aside</td>
     <td>內頁側欄</td>
-    <td>通常放置主選單或次選單。</td>
+    <td>通常放置主選單或次選單</td>
     <td>5</td>
   </tr>
   <tr>
     <td>.base-section</td>
     <td>內頁內容</td>
-    <td>內頁內容。</td>
+    <td>內頁內容</td>
     <td>5</td>
   </tr>
   <tr>
     <td>.base-article</td>
     <td>內頁文章</td>
-    <td>內頁文章區塊。</td>
+    <td>內頁文章區塊</td>
     <td>6</td>
   </tr>
 </table>
@@ -586,12 +586,12 @@ base-article: 內頁文章區塊。
   <tr>
     <td>header</td>
     <td>標頭</td>
-    <td>該模組的標題，不論是否具有標題，模塊都將具有 header 區塊。</td>
+    <td>該模組的標題，不論是否具有標題，模塊都將具有 header 區塊</td>
   </tr>
   <tr>
     <td>content</td>
     <td>內容</td>
-    <td>模組表達的意義。</td>
+    <td>模組表達的意義</td>
   </tr>
   <tr>
     <td>inner</td>
@@ -631,23 +631,23 @@ base-article: 內頁文章區塊。
   </tr>
   <tr>
     <td>0</td>
-    <td>標示該模塊為模組。</td>
+    <td>標示該模塊為模組</td>
   </tr>
   <tr>
     <td>1</td>
-    <td>標示該模塊為分割群組。</td>
+    <td>標示該模塊為分割群組</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>標示該模塊為頁籤群組。</td>
+    <td>標示該模塊為頁籤群組</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>標示該模塊為單欄群組。</td>
+    <td>標示該模塊為單欄群組</td>
   </tr>
   <tr>
     <td>4</td>
-    <td>標示該模塊為清單群組。</td>
+    <td>標示該模塊為清單群組</td>
   </tr>
 </table>
 
@@ -1147,73 +1147,95 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>.legend>a{可選}>span>{標題文字}</td>
   </tr>
   <tr>
-    <td rowspan="23">輸入框組件</td>
+    <td>輸入框組件</td>
     <td>span.button>input[type='button']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.checkbox>input[type='checkbox']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.color>input[type='color']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.date>input[type='date']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.datetime>input[type='datetime']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.datetime_local>input[type='datetime-local']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.email>input[type='email']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.file>input[type='file']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.hidden>input[type='hidden']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.input_image>input[type='image']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.month>input[type='month']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.number>input[type='number']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.input>input[type='password']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.radio>input[type='radio']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.range>input[type='range']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.reset>input[type='reset']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.search>input[type='search']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.submit>input[type='submit']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.tel>input[type='tel']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.text>input[type='text']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.time>input[type='time']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.url>input[type='url']</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.week>input[type='week']</td>
   </tr>
   <tr>
@@ -1229,17 +1251,19 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>span.checkbox>(input[type='radio'])+(span.label>label)</td>
   </tr>
   <tr>
-    <td rowspan="2">文字輸入框組件</td>
+    <td>文字輸入框組件</td>
     <td>div.textarea>textarea</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.textarea>textarea</td>
   </tr>
   <tr>
-    <td rowspan="2">選擇框組件</td>
+    <td>選擇框組件</td>
     <td>div.select>select>option>{文字}</td>
   </tr>
   <tr>
+    <td></td>
     <td>span.select>select>option>{文字}</td>
   </tr>
   <tr>
@@ -1266,27 +1290,30 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>tfoot></td>
   </tr>
   <tr>
-    <td rowspan="2">表格內容組件</td>
+    <td>表格內容組件</td>
     <td>tr>td>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>tr>th>span>a{可選}</td>
   </tr>
   <tr>
     <th colspan="2">清單類</th>
   </tr>
   <tr>
-    <td rowspan="2">清單主題區塊</td>
+    <td>清單主題區塊</td>
     <td>div.list></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.list></td>
   </tr>
   <tr>
-    <td rowspan="2">清單區塊</td>
+    <td>清單區塊</td>
     <td>ul></td>
   </tr>
   <tr>
+    <td></td>
     <td>ol></td>
   </tr>
   <tr>
@@ -1312,17 +1339,19 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <th colspan="2">內文類</th>
   </tr>
   <tr>
-    <td rowspan="2">內文主題區塊</td>
+    <td>內文主題區塊</td>
     <td>div.essay></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.essay></td>
   </tr>
   <tr>
-    <td rowspan="2">內文區塊</td>
+    <td>內文區塊</td>
     <td>div.paragraph</td>
   </tr>
   <tr>
+    <td></td>
     <td>a.paragraph></td>
   </tr>
   <tr>
@@ -1330,22 +1359,27 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <td>div.caption>span>a{可選}>{標題文字}</td>
   </tr>
   <tr>
-    <td rowspan="6">標題內文組件</td>
+    <td>標題內文組件</td>
     <td>h1>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>h2>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>h3>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>h4>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>h5>span>a{可選}</td>
   </tr>
   <tr>
+    <td></td>
     <td>h6>span>a{可選}</td>
   </tr>
   <tr>
@@ -1360,17 +1394,19 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <th colspan="2">圖片類</th>
   </tr>
   <tr>
-    <td rowspan="2">圖片主題區塊</td>
+    <td>圖片主題區塊</td>
     <td>div.figure></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.figure></td>
   </tr>
   <tr>
-    <td rowspan="2">圖片區塊</td>
+    <td>圖片區塊</td>
     <td>div.images></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.images></td>
   </tr>
   <tr>
@@ -1389,17 +1425,19 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <th colspan="2">標題類</th>
   </tr>
   <tr>
-    <td rowspan="2">標題主題區塊</td>
+    <td>標題主題區塊</td>
     <td>div.heading></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.heading></td>
   </tr>
   <tr>
-    <td rowspan="2">標題區塊</td>
+    <td>標題區塊</td>
     <td>div.caption></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.caption></td>
   </tr>
   <tr>
@@ -1410,10 +1448,11 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
     <th colspan="2">區塊類</th>
   </tr>
   <tr>
-    <td rowspan="2">區塊</td>
+    <td>區塊</td>
     <td>div.division></td>
   </tr>
   <tr>
+    <td></td>
     <td>a.division></td>
   </tr>
   <tr>
@@ -1521,103 +1560,103 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   </tr>
   <tr>
     <td>base/_base-article.html.erb</td>
-    <td>編輯 base-article 樣板的文件。</td>
+    <td>編輯 base-article 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-aside.html.erb</td>
-    <td>編輯 base-aside 樣板的文件。</td>
+    <td>編輯 base-aside 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-content_index.html.erb</td>
-    <td>編輯 base-content 樣板的文件，供首頁使用。</td>
+    <td>編輯 base-content 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
     <td>base/_base-content_page.html.erb</td>
-    <td>編輯 base-content 樣板的文件，供內頁使用。</td>
+    <td>編輯 base-content 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
     <td>base/_base-extend.html.erb</td>
-    <td>編輯 base-extend 樣板的文件。</td>
+    <td>編輯 base-extend 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-footer.html.erb</td>
-    <td>編輯 base-footer 樣板的文件。</td>
+    <td>編輯 base-footer 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-header.html.erb</td>
-    <td>編輯 base-header 樣板的文件。</td>
+    <td>編輯 base-header 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-mobile.html.erb</td>
-    <td>編輯 base-mobile 樣板的文件。</td>
+    <td>編輯 base-mobile 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-module-area_index.html.erb</td>
-    <td>編輯 base-module-area 樣板的文件，供首頁使用。</td>
+    <td>編輯 base-module-area 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
     <td>base/_base-module-area_page.html.erb</td>
-    <td>編輯 base-module-area 樣板的文件，供內頁使用。</td>
+    <td>編輯 base-module-area 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
     <td>base/_base-page-area.html.erb</td>
-    <td>編輯 base-page-area 樣板的文件。</td>
+    <td>編輯 base-page-area 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-section.html.erb</td>
-    <td>編輯 base-section 樣板的文件。</td>
+    <td>編輯 base-section 樣板的文件</td>
   </tr>
   <tr>
     <td>base/_base-wrapper.html.erb</td>
-    <td>編輯 base-wrapper 樣板的文件。</td>
+    <td>編輯 base-wrapper 樣板的文件</td>
   </tr>
   <tr>
     <td>group</td>
-    <td>存放 group 樣板的目錄。</td>
+    <td>存放 group 樣板的目錄</td>
   </tr>
   <tr>
     <td>module</td>
-    <td>存放 module 樣板的目錄。</td>
+    <td>存放 module 樣板的目錄</td>
   </tr>
   <tr>
     <td>page</td>
-    <td>存放內頁內容樣板的目錄。</td>
+    <td>存放內頁內容樣板的目錄</td>
   </tr>
   <tr>
     <td>sys</td>
-    <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable。</td>
+    <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable</td>
   </tr>
   <tr>
     <td>sys/_icon.html.erb</td>
-    <td>設定 ico 引入的文件。</td>
+    <td>設定 ico 引入的文件</td>
   </tr>
   <tr>
     <td>sys/_meta.html.erb</td>
-    <td>設定 meta 設定的文件。</td>
+    <td>設定 meta 設定的文件</td>
   </tr>
   <tr>
     <td>sys/_script.html.erb</td>
-    <td>設定網頁 script 引入的文件。</td>
+    <td>設定網頁 script 引入的文件</td>
   </tr>
   <tr>
     <td>sys/_style.html.erb</td>
-    <td>設定網頁樣式引入的文件。</td>
+    <td>設定網頁樣式引入的文件</td>
   </tr>
   <tr>
     <td>sys/_test.html.erb</td>
-    <td>測試用的文件。</td>
+    <td>測試用的文件</td>
   </tr>
   <tr>
     <td>sys/_title.html.erb</td>
-    <td>設定網頁 title 的文件。</td>
+    <td>設定網頁 title 的文件</td>
   </tr>
   <tr>
     <td>sys/_variable.html.erb</td>
-    <td>設定 Erb 全域變數的文件。</td>
+    <td>設定 Erb 全域變數的文件</td>
   </tr>
   <tr>
     <td>_prototype.html.erb</td>
-    <td>樣板範本，示範如何傳遞參數。</td>
+    <td>樣板範本，示範如何傳遞參數</td>
   </tr>
 </table>
 
@@ -1626,7 +1665,7 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 Erb 樣板語言主要是幫助我們把 html 模組化，並且提供隨機的內容與字元長度，以幫助我們測試版型。
 我們可以將個頁面一致的 html 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
 Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如陣列、物件、迴圈等等。
-更多 Erb 樣板語言範本與功能請見 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.html)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.html)。
+更多 Erb 樣板語言範本與功能請見外部連結 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.html)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.html)。
 
 
 <h3 id="erb-run">Erb 運作方式</h3>
@@ -1639,7 +1678,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample" %>
-    		
+        
       </div></div>
     </div></div>
 
@@ -1652,7 +1691,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample", :locals => { :index => 4 } %>
-    		
+        
       </div></div>
     </div></div>
 
@@ -1673,39 +1712,39 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
   </tr>
   <tr>
     <td>index</td>
-    <td>對應模塊的 data-index 屬性。</td>
+    <td>對應模塊的 data-index 屬性</td>
   </tr>
   <tr>
     <td>child</td>
-    <td>對應模塊的 data-child 屬性。</td>
+    <td>對應模塊的 data-child 屬性</td>
   </tr>
   <tr>
     <td>func_set</td>
-    <td>對應模塊的 data-function 屬性。</td>
+    <td>對應模塊的 data-function 屬性</td>
   </tr>
   <tr>
     <td>header_text</td>
-    <td>設定模塊的 header 文字。</td>
+    <td>設定模塊的 header 文字</td>
   </tr>
   <tr>
     <td>show_footer</td>
-    <td>設定是否顯示 footer 區塊。</td>
+    <td>設定是否顯示 footer 區塊</td>
   </tr>
   <tr>
     <td>show_mark</td>
-    <td>設定是否顯示標籤。</td>
+    <td>設定是否顯示標籤</td>
   </tr>
   <tr>
     <td>access_key</td>
-    <td>設定導盲磚按鍵。</td>
+    <td>設定導盲磚按鍵</td>
   </tr>
   <tr>
     <td>access_title</td>
-    <td>設定導盲磚標頭。</td>
+    <td>設定導盲磚標頭</td>
   </tr>
   <tr>
     <td>inner</td>
-    <td>若模塊內鑲嵌其他模塊，可指定鑲入檔案。</td>
+    <td>若模塊內鑲嵌其他模塊，可指定鑲入檔案</td>
   </tr>
 </table>
 
@@ -1728,7 +1767,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 
 
 <h3 id="lorem-ipsum-and-picture">假字與圖片</h3>
-Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設計師好幫手 Fire.app 進階篇](http://demo.tc/post/758) 一文。
+Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大的網頁設計師好幫手 Fire.app 進階篇](http://demo.tc/post/758) 一文。
 
 
 
@@ -1781,111 +1820,111 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
   </tr>
   <tr>
     <td>base</td>
-    <td>存放 Scss 基本設定的目錄。</td>
+    <td>存放 Scss 基本設定的目錄</td>
   </tr>
   <tr>
     <td>base/_function.scss</td>
-    <td>基礎級方法，可依切板需求修改文件。</td>
+    <td>基礎級方法，可依切板需求修改文件</td>
   </tr>
   <tr>
     <td>base/_icon-font.scss</td>
-    <td>文字 icon 基礎級設定。</td>
+    <td>文字 icon 基礎級設定</td>
   </tr>
   <tr>
     <td>base/_layout.scss</td>
-    <td>版面 Scss 設定。</td>
+    <td>版面 Scss 設定</td>
   </tr>
   <tr>
     <td>base/_variable.scss</td>
-    <td>基礎級變數，可依切板需求修改文件。</td>
+    <td>基礎級變數，可依切板需求修改文件</td>
   </tr>
   <tr>
     <td>group</td>
-    <td>存放群組樣式目錄。</td>
+    <td>存放群組樣式目錄</td>
   </tr>
   <tr>
     <td>group/_group.scss</td>
-    <td>分割、單欄群組樣式設定。</td>
+    <td>分割、單欄群組樣式設定</td>
   </tr>
   <tr>
     <td>group/_group_list.scss</td>
-    <td>清單群組樣式設定。</td>
+    <td>清單群組樣式設定</td>
   </tr>
   <tr>
     <td>group/_group_tab.scss</td>
-    <td>頁籤群組樣式設定。</td>
+    <td>頁籤群組樣式設定</td>
   </tr>
   <tr>
     <td>module</td>
-    <td>存放模組樣式目錄。</td>
+    <td>存放模組樣式目錄</td>
   </tr>
   <tr>
     <td>module/_area-audio.scss</td>
-    <td>對應模組 area-audio 類別的樣式設定。</td>
+    <td>對應模組 area-audio 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-customize.scss</td>
-    <td>對應模組 area-customize 類別的樣式設定。</td>
+    <td>對應模組 area-customize 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-editor.scss</td>
-    <td>對應模組 area-editor 類別的樣式設定。</td>
+    <td>對應模組 area-editor 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-essay.scss</td>
-    <td>對應模組 area-essay 類別的樣式設定。</td>
+    <td>對應模組 area-essay 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-figure.scss</td>
-    <td>對應模組 area-figure 類別的樣式設定。</td>
+    <td>對應模組 area-figure 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-form.scss</td>
-    <td>對應模組 area-form 類別的樣式設定。</td>
+    <td>對應模組 area-form 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-iframe.scss</td>
-    <td>對應模組 area-iframe 類別的樣式設定。</td>
+    <td>對應模組 area-iframe 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-table.scss</td>
-    <td>對應模組 area-table 類別的樣式設定。</td>
+    <td>對應模組 area-table 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_area-video.scss</td>
-    <td>對應模組 area-video 類別的樣式設定。</td>
+    <td>對應模組 area-video 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_list-multiple.scss</td>
-    <td>對應模組 list-multiple 類別的樣式設定。</td>
+    <td>對應模組 list-multiple 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_list-pic.scss</td>
-    <td>對應模組 list-pic 類別的樣式設定。</td>
+    <td>對應模組 list-pic 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_list-text.scss</td>
-    <td>對應模組 list-text 類別的樣式設定。</td>
+    <td>對應模組 list-text 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_simple-pic.scss</td>
-    <td>對應模組 simple-pic 類別的樣式設定。</td>
+    <td>對應模組 simple-pic 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_simple-text.scss</td>
-    <td>對應模組 simple-text 類別的樣式設定。</td>
+    <td>對應模組 simple-text 類別的樣式設定</td>
   </tr>
   <tr>
     <td>sys</td>
-    <td>存放系統級設定的目錄。</td>
+    <td>存放系統級設定的目錄</td>
   </tr>
   <tr>
     <td>sys/_function.scss</td>
-    <td>系統級方法，非必要請勿修改文件。</td>
+    <td>系統級方法，非必要請勿修改文件</td>
   </tr>
   <tr>
     <td>sys/_global.scss</td>
-    <td>整合 sys/variable、base/variable、sys/function、base/function、sys/icon-font、base/icon-font、sys/icon-pic 的基本 Scss 檔。</td>
+    <td>整合 sys/variable、base/variable、sys/function、base/function、sys/icon-font、base/icon-font、sys/icon-pic 的基本 Scss 檔</td>
   </tr>
   <tr>
     <td>sys/_grid.scss</td>
@@ -1893,38 +1932,38 @@ Erb 提供了假字及假圖的功能，請參照 [更新更強大的網頁設�
   </tr>
   <tr>
     <td>sys/_icon-font.scss</td>
-    <td>文字 icon 系統級設定，更多資訊請參閱 [文字圖示](#scss-font-icon) 章節。</td>
+    <td>文字 icon 系統級設定，更多資訊請參閱 [文字圖示](#scss-font-icon) 章節</td>
   </tr>
   <tr>
     <td>sys/_icon-pic.scss</td>
-    <td>sprite 圖的系統級設定，更多資訊請參閱 [sprite 圖示](#scss-sprite-picture) 章節。</td>
+    <td>sprite 圖的系統級設定，更多資訊請參閱 [sprite 圖示](#scss-sprite-picture) 章節</td>
   </tr>
   <tr>
     <td>sys/_normalize.scss</td>
-    <td>normalize.css，相關資訊請參閱 (normalize.css)[https://necolas.github.io/normalize.css/]。</td>
+    <td>normalize.css，相關資訊請參閱 (normalize.css)[https://necolas.github.io/normalize.css/]</td>
   </tr>
   <tr>
     <td>sys/_variable.scss</td>
-    <td>系統級變數，非必要請勿修改文件。</td>
+    <td>系統級變數，非必要請勿修改文件</td>
   </tr>
   <tr>
     <td>global.scss</td>
-    <td>整合 sys/normalize、sys/grid、base/layout 與所有群組與模組的檔案，將會匯出 global.css。</td>
+    <td>整合 sys/normalize、sys/grid、base/layout 與所有群組與模組的檔案，將會匯出 global.css</td>
   </tr>
   <tr>
     <td>page.scss</td>
-    <td>內頁將會額外引入的樣式設定檔案，將會匯出 page.css。</td>
+    <td>內頁將會額外引入的樣式設定檔案，將會匯出 page.css</td>
   </tr>
   <tr>
     <td>print.scss</td>
-    <td>列印將會被應用的樣式設定檔案，將會匯出 print.css。</td>
+    <td>列印將會被應用的樣式設定檔案，將會匯出 print.css</td>
   </tr>
 </table>
 
 
 <h3 id="scss-script">SCSS</h3>
 Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scss 兩種寫法。
-它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋30天掌握Sass語法系列。
+它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱外部連結 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋30天掌握Sass語法系列。
 
 <h3 id="grid">格線系統</h3>
 平台格線系統包含自然分割與設定分割。
@@ -1996,252 +2035,308 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 此外，行為必須寫在發生行為的模塊上，例如主選單群組的子模塊觸發 :hover 時，必須秀出該模塊的 content，這個行為應該寫在 主選單群組 而非主選單群組的子模塊。反之，主選單群組隱藏子模塊的 content，這樣行為也必須寫在主選單群組上。
 
 
-<h3 id="function-and-variable">function 與 variable</h3>
-function 與 variable 將常用的變數與功能定義在一起。
+<h3 id="function-and-variable">base/variable、base/function 與 sys/function</h3>
+base/function 與 base/variable 將常用的變數與功能定義在一起，而 sys/function 定義一些底層方法。
+以下首先說明 base/variable 的內容：
 
 <table>
   <tr>
     <th colspan="3">$ 變數</th>
   </tr>
   <tr>
-    <td>設定(true or false)</td>
+    <td>設定</td>
     <td>$debug</td>
-    <td>是否除錯模式(會提示掉圖、掉文字圖示)。</td>
+    <td>是否啟用除錯模式(會提示掉圖、掉文字圖示)</td>
   </tr>
   <tr>
     <td></td>
     <td>$rwd</td>
-    <td>是否開啟 rwd(如不開啟，將忽略 RWD 樣式設定)。</td>
+    <td>是否啟用 rwd(如不啟用，將忽略 RWD 樣式設定)</td>
   </tr>
   <tr>
     <td></td>
     <td>$icon-pic</td>
-    <td>是否開啟雪碧圖示。</td>
+    <td>是否啟用雪碧圖示</td>
   </tr>
   <tr>
     <td></td>
     <td>$icon-font</td>
-    <td>是否開啟文字圖示。</td>
+    <td>是否啟用文字圖示</td>
   </tr>
   <tr>
     <td>灰階</td>
     <td>$white</td>
-    <td>非常淺。</td>
+    <td>非常淺</td>
   </tr>
   <tr>
     <td></td>
     <td>$light</td>
-    <td>淺色。</td>
+    <td>白色</td>
   </tr>
   <tr>
     <td></td>
     <td>$light-gray</td>
-    <td>淺灰。</td>
+    <td>淺灰</td>
   </tr>
   <tr>
     <td></td>
     <td>$gray</td>
-    <td>灰色。</td>
+    <td>灰色</td>
   </tr>
   <tr>
     <td></td>
     <td>$deep-gray</td>
-    <td>深灰。</td>
+    <td>深灰</td>
   </tr>
   <tr>
     <td></td>
     <td>$deep</td>
-    <td>深色。</td>
+    <td>深色</td>
   </tr>
   <tr>
     <td></td>
     <td>$black</td>
-    <td>非常深。</td>
+    <td>黑色</td>
   </tr>
   <tr>
     <td>主要版面顏色</td>
-    <td>$main-color</td>
-    <td>主色。</td>
+    <td>$major-color</td>
+    <td>主色</td>
   </tr>
   <tr>
     <td></td>
     <td>$minor-color</td>
-    <td>次色。</td>
+    <td>次色</td>
   </tr>
   <tr>
     <td>其他版面顏色</td>
     <td>$lesser1-color</td>
-    <td>更次色(設定多個為 $lesser2-color、$lesser3-color...)。</td>
+    <td>更次色(設定多個為 $lesser2-color、$lesser3-color...)</td>
   </tr>
   <tr>
     <td>文字顏色</td>
     <td>$title-color</td>
-    <td>標題色。</td>
+    <td>標題色</td>
   </tr>
   <tr>
     <td></td>
     <td>$span-color</td>
-    <td>附註色。</td>
+    <td>附註色</td>
   </tr>
   <tr>
     <td>文字樣式</td>
     <td>base-font-style</td>
-    <td>主要文字樣式。</td>
+    <td>主要文字樣式</td>
   </tr>
   <tr>
     <td>文字大小(建議使用 em)</td>
     <td>$font-size-xs</td>
-    <td>極小字。</td>
+    <td>極小字</td>
   </tr>
   <tr>
     <td></td>
     <td>$font-size-s</td>
-    <td>小字。</td>
+    <td>小字</td>
   </tr>
   <tr>
     <td></td>
     <td>$font-size-m</td>
-    <td>一般字。</td>
+    <td>一般字</td>
   </tr>
   <tr>
     <td></td>
     <td>$font-size-l</td>
-    <td>大字。</td>
+    <td>大字</td>
   </tr>
   <tr>
     <td></td>
     <td>$font-size-xl</td>
-    <td>極大字。</td>
+    <td>極大字</td>
   </tr>
   <tr>
     <td>文字厚度</td>
     <td>$font-weight-n</td>
-    <td>一般字體。</td>
+    <td>一般字體</td>
   </tr>
   <tr>
     <td></td>
     <td>$font-weight-b</td>
-    <td>粗字體。</td>
+    <td>粗字體</td>
   </tr>
   <tr>
     <td>文字行高</td>
     <td>$line-height-xs</td>
-    <td>極小行高。</td>
+    <td>極小行高</td>
   </tr>
   <tr>
     <td></td>
     <td>$line-height-s</td>
-    <td>小行高。</td>
+    <td>小行高</td>
   </tr>
   <tr>
     <td></td>
     <td>$line-height-m</td>
-    <td>一般行高。</td>
+    <td>一般行高</td>
   </tr>
   <tr>
     <td></td>
     <td>$line-height-l</td>
-    <td>高行高。</td>
+    <td>高行高</td>
   </tr>
   <tr>
     <td></td>
     <td>$line-height-xl</td>
-    <td>極高行高。</td>
+    <td>極高行高</td>
   </tr>
   <tr>
     <td>文字間格</td>
     <td>$letter-spacing-xs</td>
-    <td>極小文字間隔。</td>
+    <td>極小文字間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$letter-spacing-s</td>
-    <td>小文字間隔。</td>
+    <td>小文字間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$letter-spacing-m</td>
-    <td>中文字間隔。</td>
+    <td>中文字間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$letter-spacing-l</td>
-    <td>寬字間隔。</td>
+    <td>寬字間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$letter-spacing-xl</td>
-    <td>極寬文字間隔。</td>
+    <td>極寬文字間隔</td>
   </tr>
   <tr>
     <td>透明度</td>
     <td>$opacity-vl</td>
-    <td>極低透明度。</td>
+    <td>極低透明度</td>
   </tr>
   <tr>
     <td></td>
     <td>$opacity-l</td>
-    <td>低透明度。</td>
+    <td>低透明度</td>
   </tr>
   <tr>
     <td></td>
     <td>$opacity-m</td>
-    <td>中等透明度。</td>
+    <td>中等透明度</td>
   </tr>
   <tr>
     <td></td>
     <td>$opacity-h</td>
-    <td>高透明度。</td>
+    <td>高透明度</td>
   </tr>
   <tr>
     <td></td>
     <td>$opacity-vh</td>
-    <td>極高透明度。</td>
+    <td>極高透明度</td>
   </tr>
   <tr>
     <td>間隔設定</td>
     <td>$interval-xs</td>
-    <td>極窄間隔。</td>
+    <td>極窄間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$interval-s</td>
-    <td>窄間隔。</td>
+    <td>窄間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$interval-m</td>
-    <td>中等間隔。</td>
+    <td>中等間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$interval-l</td>
-    <td>寬間隔。</td>
+    <td>寬間隔</td>
   </tr>
   <tr>
     <td></td>
     <td>$interval-xl</td>
-    <td>極寬間隔。</td>
-  </tr>
-  <tr>
-    <td>RWD寬度</td>
-    <td>$pc-width</td>
-    <td>PC 版寬度。</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$pad-width</td>
-    <td>Pad 版寬度。</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$phone-width</td>
-    <td>手機版寬度。</td>
+    <td>極寬間隔</td>
   </tr>
   <tr>
     <td>基本動畫速度</td>
     <td>$transition</td>
-    <td>動態過度時間。</td>
+    <td>動畫速度</td>
+  </tr>
+  <tr>
+    <td>RWD設定</td>
+    <td>$pc-width</td>
+    <td>PC 版寬度</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$pad-width</td>
+    <td>Pad 版寬度</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$phone-width</td>
+    <td>手機版寬度</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$rwd-btn-size</td>
+    <td>手機側欄按鈕大小</td>
+  </tr>
+  <tr>
+    <td>grid 框架設定</td>
+    <td>$min-child</td>
+    <td>最少的child數量</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$max-child</td>
+    <td>最多的child數量</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$min-setLen</td>
+    <td>最少的單行數量</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$max-setLen</td>
+    <td>最多的單行數量</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$layout-interval</td>
+    <td>主層間隔</td>
+  </tr>
+  <tr>
+    <td>預設空文字</td>
+    <td>$content</td>
+    <td>空偽類的字元</td>
+  </tr>
+  <tr>
+    <td>預設陰影</td>
+    <td>$box-shadow</td>
+    <td>區塊陰影</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$text-shadow</td>
+    <td>文字陰影</td>
+  </tr>
+  <tr>
+    <td>文字圖示</td>
+    <td>$icon-font-size</td>
+    <td>文字圖示大小</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$icon-font-color</td>
+    <td>文字圖示顏色</td>
   </tr>
   <tr>
     <td>全頁文字</td>
@@ -2251,214 +2346,285 @@ function 與 variable 將常用的變數與功能定義在一起。
   <tr>
     <td></td>
     <td>$body-font-size-s</td>
-    <td>"小"字級文字設定。</td>
+    <td>"小"字級文字設定</td>
   </tr>
   <tr>
     <td></td>
     <td>$body-font-size-m</td>
-    <td>"中"字級文字設定。</td>
+    <td>"中"字級文字設定</td>
   </tr>
   <tr>
     <td></td>
     <td>$body-font-size-l</td>
-    <td>"大"字級文字設定。</td>
-  </tr>
-  <tr>
-    <td>文字圖示</td>
-    <td>$icon-font-size</td>
-    <td>文字圖示大小。</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$icon-font-color</td>
-    <td>文字圖示顏色。</td>
-  </tr>
-  <tr>
-    <td>預設空文字</td>
-    <td>$content</td>
-    <td>空偽類的字元。</td>
-  </tr>
-  <tr>
-    <td>預設陰影</td>
-    <td>$box-shadow</td>
-    <td>區塊陰影。</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$text-shadow</td>
-    <td>文字陰影。</td>
+    <td>"大"字級文字設定</td>
   </tr>
   <tr>
     <td>預設線條</td>
     <td>$border-style</td>
-    <td>預設線條樣式。</td>
+    <td>預設線條樣式</td>
   </tr>
   <tr>
     <td></td>
     <td>$border-width</td>
-    <td>預設線條寬度。</td>
+    <td>預設線條寬度</td>
   </tr>
   <tr>
     <td></td>
     <td>$border-color</td>
-    <td>預設線條顏色。</td>
+    <td>預設線條顏色</td>
   </tr>
   <tr>
     <td></td>
     <td>$border</td>
-    <td>預設線條設定。</td>
+    <td>預設線條設定</td>
   </tr>
   <tr>
     <td>預設圓角</td>
     <td>$border-radius</td>
-    <td>預設圓角設定。</td>
+    <td>預設圓角設定</td>
   </tr>
   <tr>
     <td>連結顏色</td>
     <td>$link-color</td>
-    <td>連結顏色。</td>
+    <td>連結顏色</td>
   </tr>
   <tr>
     <td></td>
     <td>$visited-color</td>
-    <td>造訪過連結顏色。</td>
+    <td>造訪過連結顏色</td>
   </tr>
   <tr>
     <td></td>
     <td>$hover-color</td>
-    <td>指標移入連結顏色，不可與任何底色重疊。</td>
+    <td>指標移入連結顏色，不可與任何底色重疊</td>
   </tr>
   <tr>
     <td></td>
     <td>$active-color</td>
-    <td>點擊連結顏色。</td>
+    <td>點擊連結顏色</td>
   </tr>
   <tr>
     <td>按鈕樣式</td>
     <td>$btn-bg-color</td>
-    <td>按鈕背景色。</td>
+    <td>按鈕背景色</td>
   </tr>
   <tr>
     <td></td>
     <td>$btn-hover-bg-color</td>
-    <td>按鈕滑入顏色。</td>
+    <td>按鈕滑入顏色</td>
   </tr>
   <tr>
     <td></td>
     <td>$btn-text-color</td>
-    <td>按鈕文字顏色。</td>
+    <td>按鈕文字顏色</td>
   </tr>
   <tr>
     <td></td>
     <td>$btn-padding</td>
-    <td>按鈕內邊距，決定按鈕大小。</td>
+    <td>按鈕內邊距，決定按鈕大小</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$btn-padding-xs</td>
+    <td>按鈕內邊距，決定按鈕大小</td>
   </tr>
   <tr>
     <td></td>
     <td>$btn-border</td>
-    <td>按鈕線框。</td>
+    <td>按鈕線框</td>
   </tr>
   <tr>
     <td>輸入框樣式</td>
-    <td>$input-bg-color</td>
-    <td>輸入框背景色。</td>
+    <td>$input-border</td>
+    <td>輸入框線框</td>
   </tr>
   <tr>
     <td></td>
     <td>$input-padding</td>
-    <td>輸入框內邊距，決定輸入框大小。</td>
+    <td>輸入框內邊距，決定輸入框大小</td>
   </tr>
   <tr>
     <td></td>
-    <td>$input-border</td>
-    <td>輸入框線框。</td>
+    <td>$input-bg-color</td>
+    <td>輸入框背景色</td>
+  </tr>
+  <tr>
+    <td>特殊字元"\"</td>
+    <td>$backslash</td>
+    <td>逃逸字元\</td>
+  </tr>
+  <tr>
+    <td>分享</td>
+    <td>$share-map</td>
+    <td>圖片 & 顏色物件</td>
+  </tr>
+  <tr>
+    <td>檔案類型</td>
+    <td>$file-type-map</td>
+    <td>圖片 & 顏色物件，下載項目的類型</td>
   </tr>
   <tr>
     <td>瀏覽器媒體</td>
-    <td>$media</td>
-    <td>提供 @mixin at() 方法使用，用於 RWD 與 hack。</td>
+    <td>$hack</td>
+    <td>提供 @mixin hack() 方法使用，用 hack</td>
   </tr>
   <tr>
-    <td>連覽器支持</td>
+    <td></td>
+    <td>$media</td>
+    <td>提供 @mixin media() 方法使用，用於 RWD</td>
+  </tr>
+  <tr>
+    <td>瀏覽器支持</td>
     <td>$supports</td>
-    <td>提供 @mixin at() 方法使用，用於 RWD 與 hack。</td>
+    <td>提供 @mixin supports() 方法使用，用於 hack</td>
   </tr>
 </table>
+
+以下說明 base/function 的內容：
+
 <table>
   <tr>
     <th colspan="2">%extend 樣式</th>
   </tr>
   <tr>
-    <td>%clear</td>
-    <td>清除浮動的方法，通常使用在:after 中。</td>
+    <td>%reset-outer</td>
+    <td>重新設定外部樣式</td>
   </tr>
   <tr>
-    <td>%hide-text</td>
-    <td>隱藏文字的方法。</td>
-  </tr>
-  <tr>
-    <td>%ellipsis</td>
-    <td>超過範圍文字變成'...'的方法。</td>
-  </tr>
-  <tr>
-    <td>%icon-pic</td>
-    <td>偽類作為行內icon-pic的方法，請參閱 _sys_icon-pic 檔案內之說明。</td>
-  </tr>
-  <tr>
-    <td>%icon-font</td>
-    <td>偽類作為行內icon-font的方法，請參閱 _bace_icon-font 檔案內之說明。</td>
+    <td>%reset-inner</td>
+    <td>重新設定內部樣式</td>
   </tr>
   <tr>
     <td>%reset</td>
-    <td>消除所有樣式設定的方法。</td>
+    <td>重新設定全部樣式</td>
   </tr>
   <tr>
-    <td>%center</td>
-    <td>齊中寬度。</td>
+    <td>%clear-inner-module</td>
+    <td>//清除內部模塊的 margin</td>
   </tr>
   <tr>
-    <td>%icon</td>
-    <td>偽類作為行內icon的樣式設定。</td>
+    <td>%clear</td>
+    <td>偽類清除浮動的方法</td>
+  </tr>
+  <tr>
+    <td>%hide-text</td>
+    <td>隱藏文字的方法</td>
+  </tr>
+  <tr>
+    <td>%ellipsis</td>
+    <td>超過範圍文字變成'...'的方法</td>
   </tr>
   <tr>
     <td>%cover-bg</td>
-    <td>cover 的圖片背景樣式設定。</td>
+    <td>cover 底圖</td>
   </tr>
   <tr>
     <td>%contain-bg</td>
-    <td>contain 的圖片背景樣式設定。</td>
+    <td>contain 底圖</td>
   </tr>
   <tr>
-    <td>%model</td>
-    <td>所有拖曳模組引用的樣式設定。</td>
+    <td>%icon</td>
+    <td>偽類作為行內icon的方法</td>
+  </tr>
+  <tr>
+    <td>%icon-pic</td>
+    <td>偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic</td>
+  </tr>
+  <tr>
+    <td>%icon-font</td>
+    <td>偽類作為行內icon-font的方法，請參閱 /bace/icon-font</td>
+  </tr>
+  <tr>
+    <td>%center</td>
+    <td>齊中寬度</td>
   </tr>
   <tr>
     <td>%title</td>
-    <td>所有模組的標題樣式設定。</td>
+    <td>模組、內頁 title</td>
+  </tr>
+  <tr>
+    <td>%module</td>
+    <td>模組</td>
+  </tr>
+  <tr>
+    <td>%module-area</td>
+    <td>首頁模組</td>
+  </tr>
+  <tr>
+    <td>%page</td>
+    <td>內頁</td>
+  </tr>
+  <tr>
+    <td>%page-area</td>
+    <td>內頁模組</td>
+  </tr>
+  <tr>
+    <td>%mobile</td>
+    <td>手機側欄模組</td>
+  </tr>
+  <tr>
+    <td>%mobile-area</td>
+    <td>手機側欄模組</td>
+  </tr>
+  <tr>
+    <td>%caption</td>
+    <td>標題組件</td>
+  </tr>
+  <tr>
+    <td>%label</td>
+    <td>標籤組件</td>
+  </tr>
+  <tr>
+    <td>%mark</td>
+    <td>標籤元件</td>
+  </tr>
+  <tr>
+    <td>%paragraph</td>
+    <td>第二種標籤元件</td>
   </tr>
   <tr>
     <td>%btn</td>
-    <td>套用預設的按鈕樣式。</td>
+    <td>按鈕樣式</td>
+  </tr>
+  <tr>
+    <td>%btn-s</td>
+    <td>小按鈕</td>
+  </tr>
+  <tr>
+    <td>%btn-imp</td>
+    <td>important 重要的按鈕</td>
   </tr>
   <tr>
     <td>%input</td>
-    <td>套用預設的輸入框樣式。</td>
+    <td>輸入框樣式</td>
   </tr>
   <tr>
     <td>%article</td>
-    <td>內文文章樣式。</td>
-  </tr>
-  <tr>
-    <td>%page-title</td>
-    <td>內頁內容標題樣式設定。</td>
+    <td>內文文章樣式</td>
   </tr>
   <tr>
     <td>%list</td>
-    <td>橫條選單樣式。</td>
+    <td>列表樣式</td>
+  </tr>
+  <tr>
+    <td>%list-hover</td>
+    <td>列表 :hover 樣式</td>
+  </tr>
+  <tr>
+    <td>%mask</td>
+    <td>圖片遮罩</td>
+  </tr>
+  <tr>
+    <td>%footer-btns</td>
+    <td>更多按鈕</td>
   </tr>
   <tr>
     <td>%table</td>
-    <td>表單樣式。</td>
+    <td>表單樣式</td>
+  </tr>
+  <tr>
+    <td>%table-hover</td>
+    <td>表單 :hover 樣式</td>
   </tr>
 </table>
 
@@ -2469,86 +2635,228 @@ function 與 variable 將常用的變數與功能定義在一起。
   <tr>
     <td>re-ellipsis()</td>
     <td>無參數</td>
-    <td>反 %ellipsis 的方法。</td>
+    <td>反 %ellipsis 的方法</td>
   </tr>
   <tr>
-    <td>bg-to-pic($img-src,$size,$height)</td>
-    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
-    <td>依圖改變大小並置中。</td>
+    <td>bg-to-pic($img-src, $size, $height)</td>
+    <td>$img-src：圖片路徑(字串), $size(可選)：是否匯出圖片寬高(布林), 匯出指定倍數大小(數字), $height(可選)：指定高度(數字)</td>
+    <td>依圖改變大小並置中</td>
   </tr>
   <tr>
-    <td>icon-pic($img-src,$size,$height)</td>
-    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
-    <td>取雪碧圖icon。</td>
+    <td>icon-pic($img-src, $size, $height)</td>
+    <td>$img-src：圖片路徑(字串), $size(可選)：是否匯出圖片寬高(布林) 匯出指定倍數大小(數字), $height(可選)：指定高度(數字)</td>
+    <td>取雪碧圖icon</td>
   </tr>
   <tr>
     <td>icon-font($font)</td>
-    <td>$font： 文字圖示名稱(字串)</td>
-    <td>文字圖示，列表請參閱 https://icomoon.io。</td>
+    <td>$font：文字圖示名稱(字串)</td>
+    <td>文字圖示，列表請參閱 https://icomoon.io</td>
   </tr>
   <tr>
-    <td>icon-pic-btn($img-src,$size,$height)</td>
-    <td>$img-src： 圖片路徑(字串) $size(可選)： 是否匯出圖片寬高(布林) 匯出指定倍數大小(數字) $height(可選)： 指定高度(數字)</td>
-    <td>只有icon圖片的按鈕，隱含 佔用了:before。</td>
+    <td>icon-pic-btn($img-src, $size, $height)</td>
+    <td>$img-src： 圖片路徑(字串), $size(可選)：是否匯出圖片寬高(布林) 匯出指定倍數大小(數字), $height(可選)：指定高度(數字)</td>
+    <td>只有icon圖片的按鈕，隱含 佔用了:before</td>
   </tr>
   <tr>
-    <td>rwd($max,$min)</td>
-    <td>$max： 最大寬度設定(數字) $min(可選)： 最小寬度設定(數字)</td>
-    <td>自訂 RWD 寬度。</td>
+    <td>default-min-len($type, $default-len, $max-len)</td>
+    <td>$type：使用模塊類別(數字), $default-len：預設的項目數量(數字), $max-child(可選)：最大的項目數量(數字)</td>
+    <td>設定預設的最小單行數量</td>
   </tr>
   <tr>
-    <td>at($key,$obj)</td>
-    <td>$key： media query 的種類(字串) $obj(可選)： media query 的參數(字串)</td>
-    <td>查詢瀏覽器媒體與瀏覽器支 持，在不同情況下呈現不同 樣式。</td>
+    <td>default-len($type, $len)</td>
+    <td>$type：使用模塊類別(數字), len：預設的項目數量(數字)</td>
+    <td>設定預設的單行數量</td>
   </tr>
   <tr>
-    <td>data-js($boolean)</td>
-    <td>$boolean： 瀏覽器是否有開啟 Js(布林)</td>
-    <td>在 有/無 js下的樣式表現。</td>
+    <td>default-len-hide($type, $len)</td>
+    <td>$type：使用模塊類別(數字), len：預設的項目數量(數字)</td>
+    <td>設定預設的單行數量，並且隱藏超過的</td>
+  </tr>
+  <tr>
+    <td>set-len($type, $len)</td>
+    <td>$type：使用模塊類別(數字), len：預設的項目數量(數字)</td>
+    <td>手動設定單行數量</td>
+  </tr>
+  <tr>
+    <td>set-len-hide($type, $len)</td>
+    <td>$type：使用模塊類別(數字), len：預設的項目數量(數字)</td>
+    <td>手動設定單行數量，並且隱藏超過的</td>
+  </tr>
+  <tr>
+    <td>rwd($max, $min)</td>
+    <td>$max：最大寬度設定(數字), $min(可選)：最小寬度設定(數字)</td>
+    <td>自訂 RWD 寬度</td>
+  </tr>
+  <tr>
+    <td>at($selector)</td>
+    <td>$selector：選擇器(字串)</td>
+    <td>在某個選擇器下的樣式</td>
+  </tr>
+  <tr>
+    <td>hack($key)</td>
+    <td>$key：$hack 物件中的 $key(字串)</td>
+    <td>查詢瀏覽器媒體，給 hack 用</td>
+  </tr>
+  <tr>
+    <td>media($key)</td>
+    <td>$key：$media 物件中的 $key(字串)</td>
+    <td>查詢瀏覽器媒體，給 rwd 用</td>
+  </tr>
+  <tr>
+    <td>supports($key)</td>
+    <td>$key：$$supports 物件中的 $key(字串)</td>
+    <td>查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式</td>
+  </tr>
+  <tr>
+    <td>js($boolean)</td>
+    <td>$boolean：瀏覽器是否有開啟 js(布林)</td>
+    <td>有/無 js下的樣式表現</td>
+  </tr>
+  <tr>
+    <td>admin($boolean)</td>
+    <td>$boolean：瀏覽者是否為管理員(布林)</td>
+    <td>管理員/一般使用者 登入的樣式</td>
   </tr>
 </table>
+
+以下說明 sys/function 的內容：
 
 <table>
   <tr>
     <th colspan="3">@function 方法</th>
   </tr>
   <tr>
-    <td>lighter($color,$int,$base)</td>
-    <td>$color： 顏色(字串) $int： 變亮的倍數(數字) $base(可選)： 變亮倍數的基數(數字)</td>
-    <td>顏色變亮方法。</td>
+    <td>lighter($color, $int, $base)</td>
+    <td>$color：顏色(字串), $int： 變亮的倍數(數字), $base(可選)：變亮倍數的基數(數字)</td>
+    <td>顏色變亮方法</td>
   </tr>
   <tr>
     <td>deeper($color,$int,$base)</td>
-    <td>$color： 顏色(字串) $int： 變暗的倍數(數字) $base(可選)： 變暗倍數的基數(數字)</td>
-    <td>顏色變暗方法。</td>
+    <td>$color：顏色(字串), $int：變暗的倍數(數字), $base(可選)：變暗倍數的基數(數字)</td>
+    <td>顏色變暗方法</td>
   </tr>
 </table>
 
 
 <h3 id="scss-sys-variable">關於 sys/variable</h3>
-命名變數時，後輟 !default 將使該變數可被後臺進階設定覆蓋，如： 
+我們可以開放一些變數，讓共通平台後臺覆蓋設定。但在命名變數時，必須後輟 !default 如： 
 
     $major-color: #0088cc !default;
 
-後臺進階設定的參數將保存在 sys/variable ，為了使共通平台後臺能知曉哪些變數可以被設定，因此須將該變數加入 sys/variable 檔案，格式如：
+接著在 sys/variable 加入相應的註解，並依序加入 ,解釋 ,input type，格式如：
 
-    // $major-color,主色
+    // $major-color,主色,color
 
 
 <h3 id="scss-noscript">noscript 方法</h3>
-先說明目前 noscript 的尷尬處境，再演示如何使用，最後說明如何應用 data-js 與 javascript 實作這個功能。
+為了盡量避免使用 noscript 變數，推薦使用平台提供的 @mixin js() 方法，以下將示範如何撰寫無 js 的樣式：
+
+    .sys-root {
+      color: #000;
+
+      @include js(false) {
+        color: #555;
+      }
+    }
+
+在有 js 的狀況下，.sys-root 的 color 是 #000，一但關閉了 js，.sys-root 的 color 就變成了 #555。
+我們也可以透過 :before 或 :after 的 content 屬性插入引導文字。
+
+此方法具體的實作方法是在 body 加入 data-js 的屬性，在網站開始渲染之前，透過 javascript 把 data-js 設為 false，
+並將選擇器放在 [data-js="false"] 之後。
 
 
 <h3 id="scss-hack">hack 方法</h3>
-解說 @media 的 hack 方式與 variable 中的 hack 物件，並演示如何使用。
+平台設計了兩種 hack 方法，分別是 @mixin hack() 與 @mixin supports()，都是透過 @media query 的方式實作。
 
+$hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特定的瀏覽器才能閱讀，以下示範將如何利用 @mixin hack() 方法 css hack：
+
+    .sys-root {
+      color: #000;
+
+      @include hack('ie6-7-8') {
+        color: #555;
+      }
+    }
+
+在一般的瀏覽器中，.sys-root 的 color 是 #000，在 ie6-7-8 的版本裡，.sys-root 的 color 就變成了 #555。
+更多的瀏覽器選擇請參閱 $hack 物件。
+
+另一個方法是透過 @mixin supports() 方法，我們一樣在 $supports 中整理了一些方法以判別瀏覽器，我們可以像使用 @mixin hack() 的方法去使用 @mixin supports()：
+
+    .sys-root {
+      color: #000;
+
+      @include supports('gc28+') {
+        color: #555;
+      }
+    }
 
 <h3 id="scss-rwd">rwd 方法</h3>
-說明 rwd 的兩種方法與意義。
+平台提供了兩種 rwd 方法分別是 @mixin media() 與 @mixin rwd()。
+
+@mixin media() 可以使用 $media 物件裡的項目設定，分別是 center、pc、mobile、pad 與 phone，以下列表說明：
+
+<table>
+  <tr>
+    <td>center</td>
+    <td>當瀏覽器尺寸小於 $pc-width</td>
+  </tr>
+  <tr>
+    <td>pc</td>
+    <td>當瀏覽器尺寸介於 $pc-width 與 $pad-width 之間。</td>
+  </tr>
+  <tr>
+    <td>mobile</td>
+    <td>當瀏覽器尺寸小於 $pad-width</td>
+  </tr>
+  <tr>
+    <td>pad</td>
+    <td>當瀏覽器尺寸介於 $pad-width 與 $phone-width 之間。</td>
+  </tr>
+  <tr>
+    <td>phone</td>
+    <td>當瀏覽器尺寸小於 $phone-width</td>
+  </tr>
+</table>
+
+以下示範如何使用 @mixin media() 方法：
+
+    .sys-root {
+      color: #000;
+
+      @include media('phone') {
+        color: #555;
+      }
+    }
+
+在預設的樣式設定中，.sys-root 的 color 是 #000 ，在 phone 的尺寸中，.sys-root 的 color 就變成了 #555。
+
+另外，@mixin rwd() 方法允許我們設定兩個數字參數，當瀏覽器尺寸介於兩個尺寸之間，網頁就會引用該樣式：
+
+    .sys-root {
+      color: #000;
+
+      @include rwd(800, 300) {
+        color: #555;
+      }
+    }
+
+在預設的樣式設定中，.sys-root 的 color 是 #000 ，當瀏覽器尺寸介於 800px 與 300px 之間，.sys-root 的 color 就變成了 #555。
 
 
 <h3 id="scss-admin">admin 方法</h3>
-說明 admin 意義與方法。
+為了讓 管理者/一般使用者 能取用不同樣式，請使用平台提供的 @mixin admin() 方法，以下將示範如何使用 @mixin admin()：
+
+    .sys-root {
+      color: #000;
+
+      @include admin(true) {
+        color: #555;
+      }
+    }
+
+在一般使用者的狀況下，.sys-root 的 color 是 #000，如果是管理者，.sys-root 的 color 就變成了 #555。
 
 
 <h3 id="bg-to-pic">背景方法</h3>
@@ -2597,15 +2905,15 @@ function 與 variable 將常用的變數與功能定義在一起。
   </tr>
   <tr>
     <td>app.js</td>
-    <td>設定套件縮寫，執行 main.js 的檔案。</td>
+    <td>設定套件縮寫，執行 main.js 的檔案</td>
   </tr>
   <tr>
     <td>lib</td>
-    <td>存放套件目錄。</td>
+    <td>存放套件目錄</td>
   </tr>
   <tr>
     <td>lib/cookie.js</td>
-    <td>操作 cookie 的方法套件。</td>
+    <td>操作 cookie 的方法套件</td>
   </tr>
   <tr>
     <td>lib/domReady.js</td>
@@ -2613,23 +2921,23 @@ function 與 variable 將常用的變數與功能定義在一起。
   </tr>
   <tr>
     <td>lib/getNode.js</td>
-    <td>操作模塊的套件。</td>
+    <td>操作模塊的套件</td>
   </tr>
   <tr>
     <td>lib/jqueryPrivate.js</td>
-    <td>引用私有 jquery 的套件。</td>
+    <td>引用私有 jquery 的套件</td>
   </tr>
   <tr>
     <td>lib/main.js</td>
-    <td>執行 data-function 方法的套件。</td>
+    <td>執行 data-function 方法的套件</td>
   </tr>
   <tr>
     <td>lib/plugin.js</td>
-    <td>擴充方法。</td>
+    <td>擴充方法</td>
   </tr>
   <tr>
     <td>lib/fix.js</td>
-    <td>修正瀏覽器錯誤。</td>
+    <td>修正瀏覽器錯誤</td>
   </tr>
 </table>
 
@@ -2637,7 +2945,7 @@ function 與 variable 將常用的變數與功能定義在一起。
 <h3 id="js-require">requireJS 運作方式</h3>
 為了解決 script 大量載入多餘套件的問題，新平台使用 requireJS 做為文件載入器。它能動態插入頁面需要的 script，並解決相依性、套件衝突等問題，並提供模組化管理。
 
-更多有關 requireJS 的介紹，請至 [官網](http://requirejs.org) 查詢。   
+更多有關 requireJS 的介紹，請至外部連結 [require 官網](http://requirejs.org) 查詢。   
 
 
 <h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
@@ -2651,12 +2959,12 @@ data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟�
 hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
 
     define(function(){
-    	
-    	function main(env, opt, file){
-    	  do something...
-    	}
-    	
-    	return main;
+      
+      function main(env, opt, file){
+        do something...
+      }
+      
+      return main;
     });
 
 在 hud.js 中的涵式 main 中會有三個參數，env 表示當前執行節點、opt 就是傳遞進去的參數、file 則是執行的檔案名稱，以此例來說 file 即是 hud。
@@ -2668,12 +2976,12 @@ hud.js 最終回傳一個涵式給 main.js 並執行。
 以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
 
     define(function(){
-    	
-    	function main(env, opt, file){
-    	  console.log(opt.auto) //true
-    	}
-    	
-    	return main;
+      
+      function main(env, opt, file){
+        console.log(opt.auto) //true
+      }
+      
+      return main;
     });
 
 
@@ -2727,12 +3035,12 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
 關鍵字的作用在引用套件時，可用關鍵字取出套件內容。引用的方式是利用陣列包含關鍵字，例如某個 js 模塊需要取用 jquery 與 google map：
 
     define(['jquery','googleMaps'],function(){
-    	
-    	function main(env, opt, file){
-    	  youu can use jquery and google map api here.
-    	}
-    	
-    	return main;
+      
+      function main(env, opt, file){
+        youu can use jquery and google map api here.
+      }
+      
+      return main;
     });
 
 main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊參數，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構：
@@ -2774,12 +3082,12 @@ main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊�
 *代表所有的 js 模塊，在所有 js 模塊中，jquery 關鍵字代表 Script/lib/jqueryPrivate 這個模塊，而在 Script/lib/jqueryPrivate.js 中的 jquery 關鍵字則指向 Script/lib/jquery.js 模塊。以下示範如何在模塊中使用 jquery：
 
     define(['jquery'], function($){
-    	
-    	function main(env, opt, file){
-    	  you can use $('body') jquery here...
-    	}
-    	
-    	return main;
+      
+      function main(env, opt, file){
+        you can use $('body') jquery here...
+      }
+      
+      return main;
     });
 
 
@@ -2789,27 +3097,27 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 ap
 <table>
   <tr>
     <td>set(_key, _value, _life)</td>
-    <td>設定 cookie。_key 為 cookie 名稱， _value 為 cookie 內容， _life 為生命週期(天)。</td>
+    <td>設定 cookie。_key 為 cookie 名稱， _value 為 cookie 內容， _life 為生命週期(天)</td>
   </tr>
   <tr>
     <td>get(_key)</td>
-    <td>取 cookie 值。_key 為 cookie 名稱。</td>
+    <td>取 cookie 值。_key 為 cookie 名稱</td>
   </tr>
   <tr>
     <td>remove(_key)</td>
-    <td>刪除 cookie。_key 為 cookie 名稱。</td>
+    <td>刪除 cookie。_key 為 cookie 名稱</td>
   </tr>
 </table>
 
 以下示範如何在模塊中使用 cookie：
 
     define(['cookie'], function(cookie){
-    	
-    	function main(env, opt, file){
-    	  cookie.set('sample', 'true', 1);
-    	}
-    	
-    	return main;
+      
+      function main(env, opt, file){
+        cookie.set('sample', 'true', 1);
+      }
+      
+      return main;
     });
 
 

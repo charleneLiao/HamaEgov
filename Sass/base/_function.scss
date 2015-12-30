@@ -2,7 +2,7 @@
 
 //extend 方法================================================================
 
-	%reset-outer { //清除外部
+	%reset-outer { //重新設定外部樣式
 		margin: 0;
 		position: static;
 		top: auto;
@@ -11,7 +11,7 @@
 		left: auto;
 	}
 
-	%reset-inner { //清除內部
+	%reset-inner { //重新設定內部樣式
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -30,12 +30,12 @@
 		}
 	}
 
-	%reset { //清除全部
+	%reset { //重新設定全部樣式
 		@extend %reset-outer;
 		@extend %reset-inner;
 	}
 
-	%clear-inner-module { //清除內部群組的 margin
+	%clear-inner-module { //清除內部模塊的 margin
 
 		[data-index][data-type] {
 			margin: 0;
@@ -91,13 +91,13 @@
 		vertical-align: middle;
 	}
 
-	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 _bace_icon-pic
+	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic
 		content: $content;
 		display: inline-block;
 		vertical-align: middle;
 	}
 
-	%icon-font { //偽類作為行內icon-font的方法，請參閱 _bace_icon-font
+	%icon-font { //偽類作為行內icon-font的方法，請參閱 /bace/icon-font
 		font-family: 'icomoon';
 		speak: none;
 		font-style: normal;
@@ -353,7 +353,7 @@
 		outline: none;
 	}
 
-	%article{ //內文文章樣式
+	%article { //內文文章樣式
 		padding: $interval-m $interval-l;
 		background-color: $light;
 	}
@@ -448,7 +448,7 @@
 		}
 	}
 
-	%table-hover { //表單樣式
+	%table-hover { //表單 :hover 樣式
 
 		tr{
 
@@ -561,7 +561,7 @@
 		}
 	}
 
-	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量，只能用於 [data-type="4"]
+	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
@@ -905,7 +905,7 @@
 		}
 	}
 
-	@mixin at($selector) { //在某種選擇器下的樣式，參數是選擇器
+	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
 
 		#{$selector} & {
 			@content;
@@ -936,14 +936,14 @@
 		}
 	}
 
-	@mixin js( $boolean: true ) { //在 有/無 js下的樣式表現，$boolean 是布林值
+	@mixin js( $boolean: true ) { //有/無 js下的樣式表現，$boolean 是布林值
 
 		[data-js="#{$boolean}"] & {
 			@content;
 		}
 	}
 
-	@mixin admin( $boolean: true ) { //在 是/否 管理員登入的樣式，$boolean 是布林值
+	@mixin admin( $boolean: true ) { //管理員/一般使用者 登入的樣式，$boolean 是布林值
 
 		[data-admin="#{$boolean}"] & {
 			@content;
