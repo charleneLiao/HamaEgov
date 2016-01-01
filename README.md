@@ -64,7 +64,7 @@
 
 <h2 id="introduce">簡介</h2>
 <h3 id="overview">前言</h3>
-共通平台的拖曳的方法及模塊的概念，在此版本發揮更強的彈性。
+共通平台的拖曳的方法及模塊的概念，在此版本發揮更多的彈性。
 
 群組從排版物件進化成主選單、跑馬燈、輪播等複合模塊的主架構。
 例如把數個選單模組放入群組，就變成了雙層選單。
@@ -74,7 +74,7 @@
 現在我們能實踐更多元的版型，拓展設計師視野。也能減少客製化，增進專案效率。
 
 模塊新增了一些屬性，讓使用者透過參數來控制顯示的項目，增加不少彈性。
-內頁 HTML 混雜的問題，透過提供範本給工程師，以降低設計師維護的複雜度。
+內頁 HTML 混雜的問題，透過提供範本給工程師，也降低設計師維護的複雜度。
 
 我們減少了不必要的 js 引入，透過新的方法節省流量，不僅加快速度，也增加可維護性。
 此版本引進一種稱為 Erb 的樣板語言，提高設計師建立靜態頁面的效率，幫助我們測試網頁的可靠性。
@@ -89,6 +89,8 @@
 平台仍繼續維護 IE8，雖然使用 html5 宣告，但還是以 html4.2 標籤為主。許多語意標籤被轉化為 class name，便於日後轉換平台。
 唯二的例外是視訊與音訊模組，使用了 html5 撥放器，但平台也提供了相應的外掛供 IE8、IE9 使用。
 
+開發環境雖然可以自行建置，但推薦使用 Fire.app。以下是使用到的工具：
+
 <table>
   <tr>
     <th>開發環境</th>
@@ -99,8 +101,6 @@
     <td>Git、Fire.app、requireJS、normalize、jquery</td>
   </tr>
 </table>
-
-note: 開發環境雖然可以自行建置，但推薦使用 Fire.app。
 
 
 
@@ -127,7 +127,7 @@ note: 開發環境雖然可以自行建置，但推薦使用 Fire.app。
 我們將 html 整理之後，大致可以歸類出數種結構。
 而相同/相似結構的模塊，樣式設定會被寫在同一份檔案裡。
 由於同一類別的模塊結構會趨於相似，因此可以很方便的套用同一類別的其他樣式。
-.group-list 與 .list-text、.list-pic 這三個類別相當程度上也可以套用彼此的樣式，唯群組與模組指定選擇器的方式稍有不同，需多加注意，可參閱 [選擇器邏輯](#selector-logic) 章節。
+如： group-list、 list-text 與 list-pic 這三個類別，相當程度上可以套用彼此的樣式，但群組與模組指定選擇器的方式稍有不同，需多加注意，可參閱 [選擇器邏輯](#selector-logic) 章節。
 
 樣式可依所在位置有所變更，例如指定主選單在手機側欄、側邊欄與內頁時呈現不同的樣式，更多框架區塊可參閱 [底層、框架與內容](#base-layout) 章節，樣式的指定可參閱 [選擇器邏輯](#selector-logic) 章節。。
 
@@ -139,9 +139,10 @@ note: 開發環境雖然可以自行建置，但推薦使用 Fire.app。
 另一個問題在於程式執行後，無法得知哪一隻程式在控制當前節點，時常令人困擾。
 
 此版本平台使用 requireJS 解決這些問題，動態載入應執行的檔案。新的規則也能很容易的判別哪隻程式控制當前節點。
-也順勢解決相依性問題、套件衝突的問題等等。
+也順勢解決相依性問題、套件衝突的問題等等，可參閱 [requireJS 運作方式](#js-require) 章節。
 
-此外由於 html 有可依循的結構，因此許多模塊能夠共享程式。如輪播模組可被 .group-list 與 .list-text、.list-pic 這三個類別所使用，減少客製化。
+由於 html 有可依循的結構，因此許多模塊能夠共享程式。
+如輪播模組可被 group-list、list-text 與 list-pic 這三個類別所使用，減少客製化。
 
 
 
@@ -262,7 +263,7 @@ note: 開發環境雖然可以自行建置，但推薦使用 Fire.app。
 <h3 id="html-parameter">參數與意義</h3>
 我們使用 html5 data-* 屬性來為 css 及 javascript 做一些事，用以強化整體規範與便利性。
 
-一般的模塊具有屬性 data-type、data-index、data-child、data-function、data-setlen，而 body 則有屬性 data-js、data-admin，特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
+一般的模塊具有屬性 data-type、data-index、data-child、data-function、data-setlen，而 body 則有屬性 data-js、data-admin，選單特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
 
 <table>
   <tr>
@@ -322,9 +323,9 @@ note: 開發環境雖然可以自行建置，但推薦使用 Fire.app。
 </table>
 
 <h3 id="base-layout">底層、框架與內容</h3>
-在共通平台第二版重構了許多框架，他們都是群組， 框架 class name 會以 sys(系統級) 與 base(基礎級) 前輟。
-前輟 sys 是系統級節點，樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。
-前輟 base 是*基礎級*節點，代表它應被固定，而不能被拖曳改變排列。
+我們重構了許多框架，轉化為群組模塊。框架 class name 會以 sys(系統級) 與 base(基礎級) 前輟。
+前輟 sys 是系統級節點，樣式由此節點開始撰寫，而不應在它之上的 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。
+前輟 base 是基礎級節點，代表它應被固定，而不能被拖曳改變排列。
 以下將一層一層的介紹它們的意義。
 
 sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆由它開始延伸，讓我們先看 HTML 示意：
@@ -568,12 +569,12 @@ base-article: 內頁文章區塊。
   </tr>
 </table>
 
-要記得每一層框架都是一個群組，而群組有其特定的結構，以上僅是結構示意，關於群組結構請參閱 [模塊基礎結構](#module-and-group-structure) 章節。
+請記得每一層框架都是一個群組，而群組有其特定的結構，以上僅是結構示意，關於群組結構請參閱 [模塊基礎結構](#module-and-group-structure) 章節。
 
 
 <h3 id="module-and-group-structure">模塊基礎結構</h3>
 模塊是平台網頁的基礎單位，分為群組與模組。
-只要該模組同時含有屬性 data-index 與 data-type，該節點就是模塊的起始節點。
+只要該模組同時含有屬性 data-index 與 data-type，該節點就是一個模塊的起始節點。
 模塊由 header、content、footer 3個區塊組成，以下將列表說明他們的意義：
 
 <table>
@@ -599,7 +600,7 @@ base-article: 內頁文章區塊。
   </tr>
 </table>
 
-模塊起始層下有一個 .inner 層，header、.inner 層用來輔助排版，以下列出模塊基本結構。
+模塊起始層下有一個 .inner 層，.inner 層用來輔助排版，以下列出模塊基本結構。
 
     <data-index data-type>
       <div class="inner">
@@ -650,7 +651,7 @@ base-article: 內頁文章區塊。
   </tr>
 </table>
 
-關於群組類別，請參閱 [群組類別與結構](#group-structure) 章節。
+關於更多群組類別的分別，請參閱 [群組類別與結構](#group-structure) 章節。
 
 
 <h3 id="group-structure">群組類別與結構</h3>
@@ -658,7 +659,7 @@ base-article: 內頁文章區塊。
 群組分為分割、頁籤、單欄與清單，以下針對這四種模組的意義作說明。
 
 <h4>分割群組</h4>
-分割群組會依照 [格線系統](#grid) 均分子模塊，例如分割模組裡有兩個模塊，那麼子模塊的寬度則各為 50%，該規則可設定 data-setlen 屬性覆蓋，關於此規則請參閱 [關於設定數量的方法](#scss-len-function) 章節。
+分割群組會依照 [格線系統](#grid) 均分子模塊，例如分割模組裡有兩個模塊，那麼子模塊的寬度則各為 50% (100% / 2)，該規則可設定 data-setlen 屬性覆蓋，關於此規則請參閱 [關於設定數量的方法](#scss-len-function) 章節。
 
 以下是分割群組的 html 格式：
 
@@ -744,7 +745,7 @@ base-article: 內頁文章區塊。
     </div>
 
 <h4>清單群組</h4>
-清單群組的 content 具有一個清單，而子模塊會被依序放入該清單的項目中。因為此模塊的結構與模組類別 list-text、 list-pic 的結構相似，因此可共用 javascript，樣式雖然在某種程度上也以可共用，但選擇器的指定方法稍有不同，需稍加注意。
+清單群組的 content 具有一個清單，而子模塊會被依序放入該清單的項目中。因為此模塊的結構與模組類別 list-text、 list-pic 的結構相似，因此可共用 javascript，樣式雖然在某種程度上也以可共用，但選擇器的指定方法稍有不同，可參閱 [選擇器邏輯](#selector-logic) 章節。
 
 以下是清單群組的 html 格式：
 
@@ -767,13 +768,14 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-structure">模組類別與結構</h3>
-與群組類別相仿，模組也分為14種類別，但不論屬於何種類別，模組的 data-type 永遠是0。
-類別的意義在於區分模組的結構，例如該模組是一個列表且以圖片為主體，則屬於 list-pic 類別。
-模組使用 class name 區別類別，每個模組都應同時包含兩種 class，分別是類別 class 與自定義 class，例如選單模組：
+與群組類別相仿，模組也分為14種類別，但不論屬於何種類別，模組的 data-type 都是0。
+類別的意義在於區分模組的結構，例如該模組是一個圖片列表，則屬於 list-pic 類別。
+模組使用 class name 區別類別，每個模組都同時包含兩個 class name，分別是類別 class 與自定義 class，例如選單模組：
 
     <div calss="list-text nav" data-type="0" data-index="1">
 
-list-text 是類別 class，而 nav 是自定義 class，以說明此模組是選單。以下列舉出14種類別的意義、說明與參考格式：
+list-text 是類別 class，而 nav 是自定義 class。
+以下列舉出14種類別的意義、說明與參考格式：
 
 <h4>area-audio</h4>
 音訊模組，以 html5 audio 為主體的模組。以下是 area-audio 類別的 html 參考格式：
@@ -1127,7 +1129,11 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 
 <h3 id="component">組件</h3>
 模組的 content 是一塊有意義的內容，content 由組件組成，有規則可依循。
-以下先一一列出可用的組件(emmet 格式)。
+
+組件依模組需求，由小區塊到大區塊堆砌，應盡可能以簡潔為主，
+例如使用 div.paragraph>p>span 即可滿足排版需求，則不需用到 div.essay>div.paragraph>p>span。
+
+以下一一列出可用的組件(emmet 格式)：
 
 <table>
   <tr>
@@ -1494,9 +1500,6 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
   </tr>
 </table>
 
-組件依模組樣式呈現需求，由小區塊到大區塊堆砌，例如使用 div.paragraph>p>span 即可滿足排版需求，則不用用到 div.essay>div.paragraph>p>span。
-所有組件均可隨意使用。
-
 
 <h3 id="use-class-name-to-show-status">以 class name 表示狀態</h3>
 在撰寫動態切換時，我們經常使用 class name 切換，該 class name 應使用狀態命名。
@@ -1507,7 +1510,7 @@ list-text 是類別 class，而 nav 是自定義 class，以說明此模組是�
 例如手機側欄在自然瀏覽狀態下為關閉，使用者必須去開啟側欄，因此切換狀態的應取名為：is-open。
 反之，fat footer 在自然瀏覽狀態下為開啟，使用者必須去關閉才會隱藏，引此切換的 class name 應取名為： is-close。
 
-注意，切換狀態的 class name 只應出現在 li 或 模上，不應出現在模組中或其他地方。
+注意，切換狀態的 class name 只應出現在 li 或 模塊上，不應出現在模組中或其他地方。
 假如切換狀態的行為是發生在清單群組上，那麼切換的狀態應寫在清單群組的 li 上。
 若切換狀態的行為是發生在該模組中，那麼切換的狀態應寫在模組上。
 
@@ -1689,12 +1692,12 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="content"><div class="inner">
       
         <!--嵌套 /Erb/module/sample -->
-        <%= render :partial => "/Erb/module/sample", :locals => { :index => 4 } %>
+        <%= render :partial => "/Erb/module/sample", :locals => { :index => 4, :header_text => '模塊標頭' } %>
         
       </div></div>
     </div></div>
 
-在鑲嵌的語法後，我們使用一個 :locals => {} 的形式傳遞一個區域變數 index 進去，index 的參數為 4。
+在鑲嵌的語法後，我們使用一個 :locals => {} 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
 我們來看看 /Erb/module/_sample.html.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
@@ -1753,12 +1756,12 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 
 
 <h3 id="erb-index-layout">關於 index樣板</h3>
-因為首頁的樣板有別於一般內頁，因此另編輯樣板 _index_layout.html.erb 供 index.html.erb 使用。
-我們以 index.html.layout 指定 _index_layout.html.erb 為 index.html.erb 的樣板。
+因為首頁的樣板有別於一般內頁，因此必需另外編輯樣板 _index_layout.html.erb 供 index.html.erb 使用。
+我們以 index.html.layout 來指定 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有一個全域變數設定檔在 /Erb/sys/_variable.html.erb。
+在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.html.erb。
 全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
     <div class="sample" data-type="<%= $module %>">
@@ -1962,18 +1965,18 @@ Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大�
 
 <h3 id="scss-script">SCSS</h3>
 Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scss 兩種寫法。
-它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱外部連結 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋30天掌握Sass語法系列。
+它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱外部連結 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋"30天掌握Sass語法"系列教學。
 
 <h3 id="grid">格線系統</h3>
 平台格線系統包含自然分割與設定分割。
-分割群組恨均分子模塊的寬度，主要是依據 [data-child] 的值作為 CSS 判斷。
-例如分割模組([data-type="1"])具有兩個子模塊([data-child="2"])，那麼就會均分子模塊([data-index][data-type])：
+分割群組之所以會均分子模塊寬度，主要是依據 [data-child] 的值作為 CSS 判斷。
+例如分割模組([data-type="1"])具有兩個子模塊([data-child="2"])，那麼就會均分子模塊(具有 [data-index][data-type] 的節點)，稱為自然分割：
 
     [data-type="1"][data-child="2] > .inner > .content > .inner > [data-index][data-type] {
       width: 50%; //100% / 2
     }
 
-設定分割是依據 [data-setLen] 的值作為 CSS 判斷。
+設定分割是依據 [data-setLen] 的值作為 CSS 判斷，將會覆蓋自然分割的設定。
 例如分割模組([data-type="1"])設定2排均分([data-setLen="2"])，那麼就會均分子模塊([data-index][data-type])：
 
     [data-type="1"][data-setLen="2] > .inner > .content > .inner > [data-index][data-type] {
@@ -2018,7 +2021,7 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
       }
     }
 
-因為一個模組只會有一個 content，因此可以用這種選取方法指定到唯一的 content。但群組下可能會有許多模塊，而每個模塊都有 content，因此若要指名該群組的 content，則必須明確的指定：
+因為一個模組只會有一個 content，因此可以用這種選取方法指定到唯一的 content。但群組下可能會有許多模塊，每個模塊都有自己的 content，因此若要指名該群組自己的的 content，必須明確的這麼指定：
 
     [data-index][data-type="1"] {
       
@@ -2033,7 +2036,7 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
       }
     }
 
-此外，行為必須寫在發生行為的模塊上，例如主選單群組的子模塊觸發 :hover 時，必須秀出該模塊的 content，這個行為應該寫在 主選單群組 而非主選單群組的子模塊。反之，主選單群組隱藏子模塊的 content，這樣行為也必須寫在主選單群組上。
+此外，行為必須寫在發生行為的模塊上，例如主選單群組的子模塊觸發 :hover 時，必須秀出該模塊的 content，這個行為應該寫在 主選單群組，而非主選單群組的子模塊。反之，主選單群組隱藏子模塊的 content，這樣行為也必須寫在主選單群組上。
 
 我們也可以指定同一個模塊，在不同框架下的樣式，例如：
 
@@ -2052,7 +2055,7 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 
 
 <h3 id="function-and-variable">base/variable、base/function 與 sys/function</h3>
-base/function 與 base/variable 將常用的變數與功能定義在一起，而 sys/function 定義一些底層方法。
+base/function 與 base/variable 將常用的變數與功能定義在一起，sys/function 則負責定義一些底層方法。
 以下首先說明 base/variable 的內容：
 
 <table>
@@ -2774,17 +2777,17 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，而
 
     .sys-root {
       color: #000;
-
+      
       @include js(false) {
         color: #555;
       }
     }
 
-在有 js 的狀況下，.sys-root 的 color 是 #000，一但關閉了 js，.sys-root 的 color 就變成了 #555。
+在一般的的狀況下，.sys-root 的 color 是 #000，一但關閉了 js，.sys-root 的 color 就變成了 #555。
 我們也可以透過 :before 或 :after 的 content 屬性插入引導文字。
 
 此方法具體的實作方法是在 body 加入 data-js 的屬性，在網站開始渲染之前，透過 javascript 把 data-js 設為 false，
-並將選擇器放在 [data-js="false"] 之後。
+並將選擇器放在 [data-js="false"] 之中。
 
 
 <h3 id="scss-hack">hack 方法</h3>
@@ -2794,7 +2797,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+      
       @include hack('ie6-7-8') {
         color: #555;
       }
@@ -2817,7 +2820,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+      
       @include supports('display: flex') {
         color: #555;
       }
@@ -2920,7 +2923,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
 <h3 id="scss-len-function">關於設定數量的方法</h3>
 在格線系統，我們依據 [data-child] 參數去設定顯示的寬度，也可以在事後使用 [data-setLen] 去覆蓋 [格線系統](#grid) 所定的寬度。
-在 .group-list 與 .list-text、.list-pic 這三種模塊中，我們通常會設定 li 的寬度，但我們也希望使用 [data-setLen] 的方法去覆蓋我們編寫的寬度，
+在 .group-list、list-text 與 list-pic 這三種模塊中，我們通常會設定 li 的寬度，但我們也希望使用 [data-setLen] 的方法去覆蓋我們編寫的寬度，
 因此有了 @mixin default-len、@mixin default-len-hide、@mixin set-len、@mixin set-len-hide 這四個方法，以下演示使用的方式。
 
 我們會這麼設定 li 的寬度。
@@ -2966,6 +2969,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
 第一個參數是模塊類型是0，第二個參數是2，表示設定為兩排。
 如果使用 default-len-hide，那麼超過設定值2以後的 li 都會被隱藏。
+
 假使我們希望使用 @mixin default-len 的模塊可以使用 [data-setLen] 參數，則須加上 @mixin set-len，若使用 @mixin default-len-hide，則必須搭配 @mixin set-len-hide：
 
     .link {
@@ -2983,7 +2987,6 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
         }
       }
     }
-
 
 當我們使用這些方法時，就不能用一般的方法設定 li 的 rwd 的寬度，必須用到 @mixin set-len-rwd 方法：
 
