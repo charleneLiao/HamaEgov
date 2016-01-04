@@ -2519,7 +2519,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
   </tr>
   <tr>
     <td>%clear-inner-module</td>
-    <td>//清除內部模塊的 margin</td>
+    <td>清除內部模塊的 margin</td>
   </tr>
   <tr>
     <td>%clear</td>
