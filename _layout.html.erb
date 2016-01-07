@@ -20,13 +20,18 @@
 	<!-- Css 結束 -->
 
 	<!-- Script -->
-		<%= render :partial => "/Erb/sys/script" %>
+		<% if( $js ) %>
+			<%= render :partial => "/Erb/sys/script" %>
+		<% end %>
 	<!-- Script 結束 -->
 
 	</head>
 	<body data-js="false" data-admin="false">
 	<form action="#" method="POST">
-	<script>document.body.setAttribute("data-js", "true");</script>
+
+	<% if( $js ) %>
+		<script>document.body.setAttribute("data-js", "true");</script>
+	<% end %>
 		
 	<!-- sys-root 拖曳根節點 -->
 		<div class="sys-root" data-type="<%= $row %>" data-child="3"><div class="inner">
