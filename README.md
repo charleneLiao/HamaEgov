@@ -1721,8 +1721,12 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
     <td>對應模塊的 data-child 屬性</td>
   </tr>
   <tr>
+    <td>class_set</td>
+    <td>新增自訂 class name (框架群組無此功能)</td>
+  </tr>
+  <tr>
     <td>func_set</td>
-    <td>對應模塊的 data-function 屬性</td>
+    <td>對應模塊的 data-function 屬性 (框架群組無此功能)</td>
   </tr>
   <tr>
     <td>header_text</td>

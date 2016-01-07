@@ -5,15 +5,15 @@
 	<div class="content"><div class="inner">
 
 	<!-- accesskey 導盲磚 -->
-		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "Z", :access_title => "下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結", :header_text => '導盲磚' } %>
+		<%= render :partial => "/Erb/module/simple-text_accesskey", :locals => { :access_key => "Z", :access_title => "下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結", :class_set => nil, :header_text => '導盲磚' } %>
 	<!-- accesskey 結束 -->
 
 	<!-- toogle-btn 收合按鈕 -->
-		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => { :index => 1, :func_set => "{'toogleBtn':{'targetNode':'.base-footer .group-list.nav','targetClass':'is-close','thisClass':'is-active'}}", :header_text => '收合選單' } %>
+		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => { :index => 1, :class_set => nil, :func_set => "{'toogleBtn':{'targetNode':'.base-footer .group-list.nav','targetClass':'is-close','thisClass':'is-active'}}", :header_text => '收合選單' } %>
 	<!-- toogle-btn 結束 -->
 
 	<!-- group-list_nav 選單列表 -->
-		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 2, :func_set => nil, :header_text => '主選單' } %>
+		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => '主選單' } %>
 	<!-- group-list_nav 結束 -->
 
 	<!-- group-info 資訊群組 -->
@@ -24,11 +24,11 @@
 			<div class="content"><div class="inner">
 
 			<!-- minor-logo 次要標誌 -->
-				<%= render :partial => "/Erb/module/simple-text_minor-logo", :locals => { :index => 1, :func_set => nil, :header_text => '標誌' } %>
+				<%= render :partial => "/Erb/module/simple-text_minor-logo", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => '標誌' } %>
 			<!-- minor-logo 結束 -->
 
 			<!-- icon 各種標章 -->
-				<%= render :partial => "/Erb/module/list-pic_icon", :locals => { :index => 2, :func_set => nil, :header_text => '標章' } %>
+				<%= render :partial => "/Erb/module/list-pic_icon", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => '標章' } %>
 			<!-- icon 結束 -->
 
 			<!-- group-msg-tool 資訊與工具群組 -->
@@ -39,15 +39,15 @@
 					<div class="content"><div class="inner">
 
 					<!-- link 連結 -->
-						<%= render :partial => "/Erb/module/list-text_link", :locals => { :index => 1, :func_set => nil, :header_text => '下方連結', :show_footer => false, :show_mark => false } %>
+						<%= render :partial => "/Erb/module/list-text_link", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => '下方連結', :show_footer => false, :show_mark => false } %>
 					<!-- link 結束 -->
 
 					<!-- visit-count 瀏覽人次 -->
-						<%= render :partial => "/Erb/module/simple-text_visit-count", :locals => { :index => 2, :func_set => nil, :header_text => '瀏覽人次' } %>
+						<%= render :partial => "/Erb/module/simple-text_visit-count", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => '瀏覽人次' } %>
 					<!-- visit-count 結束 -->
 
 					<!-- address 聯絡資訊編輯 -->
-						<%= render :partial => "/Erb/module/area-editor_address", :locals => { :index => 3, :func_set => nil, :header_text => '聯絡資訊' } %>
+						<%= render :partial => "/Erb/module/area-editor_address", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => '聯絡資訊' } %>
 					<!-- address 結束 -->
 
 					</div></div>

@@ -7,7 +7,7 @@
 	li_length = rand( max_li - min_li ) + min_li
 %>
 
-<div class="list-text anchor" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+<div class="list-text anchor <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
