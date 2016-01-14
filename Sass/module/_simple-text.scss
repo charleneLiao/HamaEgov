@@ -145,7 +145,7 @@
 				$pic-h: image-height($pic);
 
 				@include bg-to-pic($pic, false);
-				@extend %contain-bg;
+				@extend %bg-contain;
 				@extend %hide-text;
 				display: block;
 				width: $pic-w;
@@ -232,7 +232,7 @@
 				$pic-h: image-height($pic);
 
 				@include bg-to-pic($pic, false);
-				@extend %contain-bg;
+				@extend %bg-contain;
 				@extend %hide-text;
 				display: block;
 				width: $pic-w;

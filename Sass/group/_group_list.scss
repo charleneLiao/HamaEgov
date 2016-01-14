@@ -1228,6 +1228,16 @@
 							+ li {
 								margin-top: $interval-s;
 							}
+
+							> [data-index][data-type] {
+								
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
 						}
 					}
 				}

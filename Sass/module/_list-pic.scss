@@ -321,7 +321,7 @@
 			}
 
 			span {
-				@extend %cover-bg;
+				@extend %bg-cover;
 				position: relative;
 				display: block;
 				margin: $interval-xs;
@@ -426,7 +426,7 @@
 			}
 
 			span {
-				@extend %cover-bg;
+				@extend %bg-cover;
 				position: relative;
 				display: block;
 				margin: $interval-xs;
@@ -541,7 +541,7 @@
 			}
 
 			span {
-				@extend %cover-bg;
+				@extend %bg-cover;
 				position: relative;
 				display: block;
 				margin: $interval-xs;

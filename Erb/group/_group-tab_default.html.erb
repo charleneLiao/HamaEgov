@@ -6,9 +6,9 @@
 %>
 
 <div class="group-tab default <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $tab %>" data-child="<%= li_length + 1 %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
-		<div class="header"><div class="inner">
-			<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
-		</div></div>
+	<div class="header"><div class="inner">
+		<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
+	</div></div>
 
 	<% if ( li_length > 0 ) %>
 		<div class="content"><div class="inner">
@@ -24,9 +24,9 @@
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 2 %>">
 
-					<!-- message 訊息 -->
-						<%= render :partial => "/Erb/group/group-list_message", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => '輪播', :show_footer => true } %>
-					<!-- message 結束 -->
+					<!-- <%= inner %> -->
+						<%= render :partial => inner, :locals => { :index => 4, :class_set => nil, :child => 0, :func_set => nil, :header_text => "標題", :show_footer => false, :show_mark => false, :inner => "/Erb/module/area-essay_message" } %>
+					<!-- <%= inner %> 結束 -->
 
 					</li>
 				<% end %>

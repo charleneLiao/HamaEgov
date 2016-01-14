@@ -113,7 +113,7 @@
 				.image {
 
 					span {
-						@extend %cover-bg;
+						@extend %bg-cover;
 						display: block;
 						height: 80px;
 					}
@@ -171,6 +171,7 @@
 			}
 
 			.footer {
+				@extend %footer-btns;
 
 				> .inner {
 
@@ -195,7 +196,6 @@
 		}
 
 		.base-page-area & {
-			margin: $interval-xs !important;
 			overflow: hidden;
 
 			&:hover {
@@ -245,7 +245,7 @@
 				.image {
 
 					span {
-						@extend %cover-bg;
+						@extend %bg-cover;
 						display: block;
 						height: 200px;
 					}

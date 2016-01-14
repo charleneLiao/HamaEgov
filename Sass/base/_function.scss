@@ -1,563 +1,67 @@
 //方法與涵式
 
-//extend 方法================================================================
+//@mixin 框架相關================================================================
 
-	%reset-outer { //重新設定外部樣式
-		margin: 0;
-		position: static;
-		top: auto;
-		right: auto;
-		bottom: auto;
-		left: auto;
-	}
+	@mixin rwd($max, $min: 0) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
 
-	%reset-inner { //重新設定內部樣式
-		padding: 0;
-		border: 0;
-		border-radius: 0;
-		list-style: none;
-		background-color: transparent;
-		font-size: $font-size-m;
-		font-weight: $font-weight-n;
-		transition: 0;
+		@if( $rwd == true ) {
 
-		&:before {
-			content: none;
-		}
-
-		&:after {
-			content: none;
-		}
-	}
-
-	%reset { //重新設定全部樣式
-		@extend %reset-outer;
-		@extend %reset-inner;
-	}
-
-	%clear-inner-module { //清除內部模塊的 margin
-
-		[data-index][data-type] {
-			margin: 0;
-
-			> .inner {
-				margin: 0;
-			}
-
-			.header {
-				display: none;
-			}
-
-			.content {
-
+			@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
+				@content;
 			}
 		}
 	}
 
-	%clear { //偽類清除浮動的方法
-		content: $content;
-		display: block;
-		height: 0;
-		clear: both;
+	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
+
+		#{$selector} & {
+			@content;
+		}
 	}
 
-	%hide-text { //隱藏文字的方法
-		font: 0/0 a;
-		text-shadow: 0 0 0;
-		color: transparent;
+	@mixin hack($key) { //查詢瀏覽器媒體，給 hack 用，$key 為 $hack 的 key
+
+		@media #{map-get( $hack, $key )} {
+			@content;
+		}
 	}
 
-	%ellipsis { //超過範圍文字變成'...'的方法
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+	@mixin media($key) { //查詢瀏覽器媒體，給 rwd 用，$key 為 $media 的 key
+
+		@if( $rwd == true ) {
+
+			@media #{map-get( $media, $key )} {
+				@content;
+			}
+		}
 	}
 
-	%cover-bg { // cover 底圖
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 為 $supports 的 $key
 
-	%contain-bg { // contain 底圖
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
+		@if( map-has-key( $supports, $key) ) {
 
-	%icon { //偽類作為行內icon的方法
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	%icon-font { //偽類作為行內icon-font的方法，請參閱 /bace/icon-font
-		font-family: 'icomoon';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		display: inline-block;
-		vertical-align: baseline;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	%center { //齊中寬度
-		margin: 0 auto;
-
-		@if( $rwd ) {
-			max-width: $pc-width;
+			@supports #{map-get( $supports, $key )} {
+				@content;
+			}
 		}@else {
-			width: $pc-width;
-		}
-	}
 
-	%title { //模組、內頁 title
-		font-size: $font-size-l;
-		padding-bottom: $interval-m;
-		border-bottom: $border;
-		margin-bottom: $interval-m;
-
-		&:before {
-			margin-right: $interval-xs;
-		}
-
-		&:after {
-			margin-left: $interval-xs;
-		}
-
-		span {
-			color: inherit;
-		}
-
-		a {
-			color: inherit;
-		}
-	}
-
-	%module { //模組
-		margin: 0 0 $interval-l;
-
-		> .inner {
-			margin: $interval-s;
-		}
-	}
-
-	%module-area { //首頁模組
-
-		[data-index][data-type="0"] {
-			@extend %module;
-		}
-
-		[data-index][data-type="4"], [data-index][data-type="2"] {
-			@extend %module;
-
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
+			@supports #{ '(' + $key + ')' } {
+				@content;
 			}
 		}
 	}
 
-	%page { //內頁
-		margin: $interval-l 0;
+	@mixin js( $boolean: true ) { //有/無 js下的樣式表現，$boolean 是布林值
 
-		> .inner {
-
+		[data-js="#{$boolean}"] & {
+			@content;
 		}
 	}
 
-	%page-area { //內頁模組
+	@mixin admin( $boolean: true ) { //管理員/一般使用者 登入的樣式，$boolean 是布林值
 
-		[data-index][data-type="0"] {
-			@extend %page;
-		}
-
-		[data-index][data-type="4"], [data-index][data-type="2"] {
-			@extend %page;
-
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
-			}
-		}
-	}
-
-	%mobile { //手機側欄模組
-		margin: $interval-m 0;
-
-		> .inner {
-
-		}
-	}
-
-	%mobile-area { //手機側欄模組
-
-		[data-index][data-type="0"] {
-			@extend %mobile;
-		}
-
-		[data-index][data-type="4"], [data-index][data-type="2"] {
-			@extend %mobile;
-
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
-			}
-		}
-	}
-
-	%caption { //標題組件
-		margin-bottom: $interval-s;
-		font-size: $font-size-l;
-		color: $title-color;
-
-		span {
-			
-		}
-
-		a {
-			color: inherit;
-			font-size: 1em;
-		}
-	}
-
-	%label { //標籤組件
-		margin: $interval-s 0;
-
-		ul {
-			@extend %reset;
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-	}
-
-	%mark { //標籤元件
-		font-size: $font-size-s;
-		color: $span-color;
-	}
-
-	%mark-1 { //第一種標籤元件
-		display: inline-block;
-		padding: $interval-xs $interval-s;
-		margin-right: $interval-s;
-		background-color: $span-color;
-		color: $white;
-		font-size: $font-size-s;
-	}
-
-	%mark-2 { //第二種標籤元件
-		display: inline-block;
-		float: right;
-		color: $span-color;
-	}
-
-	%paragraph { //文字組件
-		margin: $interval-s 0;
-
-		p {
-			@extend %reset;
-		}
-
-		span {
-
-		}
-	}
-
-	%btn { //按鈕樣式
-		display: inline-block;
-		padding: $btn-padding;
-		border: $btn-border;
-		box-sizing: border-box;
-		line-height: 1;
-		vertical-align: middle;
-		color: $btn-text-color;
-		cursor: pointer;
-		font-size: $font-size-s;
-		background-color: $btn-bg-color;
-		transition: $transition;
-
-		&:link {
-			color: $btn-text-color;
-		}
-
-		&:visited {
-			color: $btn-text-color;
-		}
-
-		&:hover {
-			background-color: $btn-hover-bg-color;
-		}
-
-		&:active {
-			color: $btn-text-color;
-		}
-	}
-
-	%btn-s { //小按鈕
-		padding: $btn-padding-xs;
-		font-size: $font-size-s;
-	}
-
-	%btn-imp { // important 重要的按鈕
-		background-color: $minor-color;
-
-		&:hover {
-			background-color: deeper($minor-color);
-		}
-	}
-
-	%input { //輸入框樣式
-		padding: $input-padding;
-		border: $input-border;
-		box-sizing: border-box;
-		background-color: $input-bg-color;
-		vertical-align: middle;
-		box-sizing: border-box;
-		outline: none;
-	}
-
-	%article { //內文文章樣式
-		padding: $interval-m $interval-l;
-		background-color: $light;
-	}
-
-	%list { //列表樣式
-		display: block;
-		padding: $interval-s;
-		background-color: $light;
-		transition: $transition;
-	}
-
-	%list-hover { //列表 :hover 樣式
-
-		&:hover {
-			color: $black;
-			background-color: $light-gray;
-		}
-	}
-
-	%mask { //圖片遮罩
-		position: relative;
-		display: block;
-
-		&:before {
-			content: $content;
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($black, $opacity-m);
-			transition: $transition;
-		}
-
-		&:hover {
-
-			&:before {
-				opacity: 0;
-			}
-		}
-	}
-
-	%footer-btns { //更多按鈕
-		position: absolute;
-		top: $interval-xs;
-		right: 0;
-
-		> .inner {
-
-		}
-
-		ul {
-			text-align: right;
-		}
-
-		li {
-			display: inline-block;
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-			@extend %btn;
-			@extend %btn-s;
-		}
-	}
-
-	%table { //表單樣式
-
-		tr {
-
-			&:nth-child(2n) {
-				background-color: $light;
-			}
-
-			th, td { //th, td共同設定
-				padding: $interval-m;
-				line-height: $line-height-m;
-			}
-
-			th { //標題設定
-				font-size: $font-size-l;
-				color: $title-color;
-			}
-
-			td {
-
-			}
-		}
-	}
-
-	%table-hover { //表單 :hover 樣式
-
-		tr{
-
-			&:hover {
-				background-color: $minor-color;
-				color: $white;
-			}
-		}
-	}
-
-//@mixin 涵式================================================================
-
-	@mixin re-ellipsis() { //reset %ellipsis 的方法
-		overflow: visible;
-		text-overflow: clip;
-		white-space: normal;
-	}
-
-	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
-		background-image: image-url($img-src);
-		background-repeat: no-repeat;
-		background-position: center;
-
-		@if( $size == true ) { //如果是 true 就匯出大小
-			width: image-width($img-src);
-			height: image-height($img-src);
-
-		} @else if( $size == false ) { //如果是 false 就不匯出大小
-			
-		} @else { //如果是數字就會出指定大小
-			background-size: contain;
-
-			@if( $height != null ) { //如果有 $height 就給高
-				
-				@if( unitless($height) ) { //沒單位就是倍數
-					height: round( image-height($img-src) * $height);
-
-				} @else { //有單位就直接使用
-					height: $height;
-				}
-
-			} @else { //如果沒 $height ，高度就是 $size
-				
-				@if( unitless($size) ) { //沒單位就是倍數
-					height: round( image-height($img-src) * $size);
-
-				} @else { //有單位就直接使用
-					height: $size;
-				}
-			}
-
-			@if( unitless($size) ) { //沒單位就是倍數
-				width: round( image-width($img-src) * $size);
-
-			} @else { //有單位就直接使用
-				width: $size;
-			}
-		}
-	}
-
-	@mixin icon-pic($img-name, $size: true, $height: null) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
-
-		@if( str-index( $img-name, '.png') ) { //如果有副檔名就拿掉
-			$img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
-		}
-
-		@if($icon-pic) {
-			@extend %icon-pic;
-
-			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
-
-				@if($debug) {
-					@extend .icon-pic-#{ $img-name };
-				}@else {
-					@extend .icon-pic-#{ $img-name } !optional;
-				}
-				
-				width: image-width('icon-pic/#{$img-name}.png');
-				height: image-height('icon-pic/#{$img-name}.png');
-
-			} @else {
-				@include bg-to-pic('icon-pic/#{$img-name}.png', $size, $height);
-			}
-		}
-	}
-
-	@mixin icon-font($font) { //文字圖示，列表請參閱 https://icomoon.io/
-
-		@if($icon-font) {
-			@extend %icon-font;
-
-			@if($debug) {
-				@extend .icon-font-#{$font};
-			}@else {
-				@extend .icon-font-#{$font} !optional;
-			}
-
-			font-size: $icon-font-size;
-			color: $icon-font-color;
-		}
-	}
-
-	@mixin icon-pic-btn($img-name, $size: true, $height: null) { //只有icon圖片的按鈕，隱含佔用了 :before
-		@extend %hide-text;
-		display: inline-block;
-
-		&:before{
-			@include icon-pic( $img-name, $size, $height );
-			display: block !important;
+		[data-admin="#{$boolean}"] & {
+			@content;
 		}
 	}
 
@@ -895,65 +399,572 @@
 		}
 	}
 
-	@mixin rwd($max, $min: 0) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
+//extend 樣式方法================================================================
 
-		@if( $rwd == true ) {
+	%reset-outer { //重新設定外部樣式
+		margin: 0;
+		position: static;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+	}
 
-			@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
-				@content;
+	%reset-inner { //重新設定內部樣式
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		list-style: none;
+		background-color: transparent;
+		font-size: $font-size-m;
+		font-weight: $font-weight-n;
+		transition: 0;
+
+		&:before {
+			content: none;
+		}
+
+		&:after {
+			content: none;
+		}
+	}
+
+	%reset { //重新設定全部樣式
+		@extend %reset-outer;
+		@extend %reset-inner;
+	}
+
+	%clear-inner-module { //清除內部模塊的 margin
+
+		[data-index][data-type] {
+			margin: 0;
+
+			> .inner {
+				margin: 0;
+			}
+
+			.header {
+				display: none;
+			}
+
+			.content {
+
 			}
 		}
 	}
 
-	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
-
-		#{$selector} & {
-			@content;
-		}
+	%clear { //偽類清除浮動的方法
+		content: $content;
+		display: block;
+		height: 0;
+		clear: both;
 	}
 
-	@mixin hack($key) { //查詢瀏覽器媒體，給 hack 用，$key 為 $hack 的 key
-
-		@media #{map-get( $hack, $key )} {
-			@content;
-		}
+	%hide-text { //隱藏文字的方法
+		font: 0/0 a;
+		text-shadow: 0 0 0;
+		color: transparent;
 	}
 
-	@mixin media($key) { //查詢瀏覽器媒體，給 rwd 用，$key 為 $media 的 key
-
-		@if( $rwd == true ) {
-
-			@media #{map-get( $media, $key )} {
-				@content;
-			}
-		}
+	%ellipsis { //超過範圍文字變成'...'的方法
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
-	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 為 $supports 的 $key
+	%bg-cover { // cover 底圖
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-		@if( map-has-key( $supports, $key) ) {
+	%bg-contain { // contain 底圖
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 
-			@supports #{map-get( $supports, $key )} {
-				@content;
-			}
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%icon-font { //偽類作為行內icon-font的方法，請參閱 /bace/icon-font
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		display: inline-block;
+		vertical-align: baseline;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	%center { //齊中寬度
+		margin: 0 auto;
+
+		@if( $rwd ) {
+			max-width: $pc-width;
 		}@else {
+			width: $pc-width;
+		}
+	}
 
-			@supports #{ '(' + $key + ')' } {
-				@content;
+	%title { //模組、內頁 title
+		font-size: $font-size-l;
+		padding-bottom: $interval-m;
+		border-bottom: $border;
+		margin-bottom: $interval-m;
+
+		&:before {
+			margin-right: $interval-xs;
+		}
+
+		&:after {
+			margin-left: $interval-xs;
+		}
+
+		span {
+			color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
+	%module { //模組
+		margin: 0 0 $interval-l;
+
+		> .inner {
+			margin: $interval-s;
+		}
+	}
+
+	%page { //內頁
+		margin: $interval-l 0;
+
+		> .inner {
+
+		}
+	}
+
+	%mobile { //手機側欄模組
+		margin: $interval-m 0;
+
+		> .inner {
+
+		}
+	}
+
+	%area-module { //首頁模組
+
+		[data-index][data-type="0"] {
+			@extend %module;
+		}
+
+		[data-index][data-type="4"], [data-index][data-type="2"] {
+			@extend %module;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
+				@extend %reset-outer;
 			}
 		}
 	}
 
-	@mixin js( $boolean: true ) { //有/無 js下的樣式表現，$boolean 是布林值
+	%area-page { //內頁模組
 
-		[data-js="#{$boolean}"] & {
-			@content;
+		[data-index][data-type="0"] {
+			@extend %page;
+		}
+
+		[data-index][data-type="4"], [data-index][data-type="2"] {
+			@extend %page;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
+				@extend %reset-outer;
+			}
 		}
 	}
 
-	@mixin admin( $boolean: true ) { //管理員/一般使用者 登入的樣式，$boolean 是布林值
+	%area-mobile { //手機側欄模組
 
-		[data-admin="#{$boolean}"] & {
-			@content;
+		[data-index][data-type="0"] {
+			@extend %mobile;
+		}
+
+		[data-index][data-type="4"], [data-index][data-type="2"] {
+			@extend %mobile;
+
+			[data-index][data-type="0"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="4"] {
+				@extend %reset-outer;
+			}
+
+			[data-index][data-type="2"] {
+				@extend %reset-outer;
+			}
+		}
+	}
+
+	%caption { //標題組件
+		margin-bottom: $interval-s;
+		font-size: $font-size-l;
+		color: $title-color;
+
+		span {
+			
+		}
+
+		a {
+			color: inherit;
+			font-size: 1em;
+		}
+	}
+
+	%label { //標籤組件
+		margin: $interval-s 0;
+
+		ul {
+			@extend %reset;
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+	}
+
+	%mark { //標籤元件
+		font-size: $font-size-s;
+		color: $span-color;
+	}
+
+	%mark-1 { //第一種標籤元件
+		display: inline-block;
+		padding: $interval-xs $interval-s;
+		margin-right: $interval-s;
+		background-color: $span-color;
+		color: $white;
+		font-size: $font-size-s;
+	}
+
+	%mark-2 { //第二種標籤元件
+		display: inline-block;
+		float: right;
+		color: $span-color;
+	}
+
+	%paragraph { //文字組件
+		margin: $interval-s 0;
+
+		p {
+			@extend %reset;
+		}
+
+		span {
+
+		}
+	}
+
+	%btn { //按鈕樣式
+		display: inline-block;
+		padding: $btn-padding;
+		border: $btn-border;
+		box-sizing: border-box;
+		line-height: 1;
+		vertical-align: middle;
+		color: $btn-text-color;
+		cursor: pointer;
+		font-size: $font-size-s;
+		background-color: $btn-bg-color;
+		transition: $transition;
+
+		&:link {
+			color: $btn-text-color;
+		}
+
+		&:visited {
+			color: $btn-text-color;
+		}
+
+		&:hover {
+			background-color: $btn-hover-bg-color;
+		}
+
+		&:active {
+			color: $btn-text-color;
+		}
+	}
+
+	%btn-s { //小按鈕
+		padding: $btn-padding-xs;
+		font-size: $font-size-s;
+	}
+
+	%btn-imp { // important 重要的按鈕
+		background-color: $minor-color;
+
+		&:hover {
+			background-color: deeper($minor-color);
+		}
+	}
+
+	%input { //輸入框樣式
+		padding: $input-padding;
+		border: $input-border;
+		box-sizing: border-box;
+		background-color: $input-bg-color;
+		vertical-align: middle;
+		box-sizing: border-box;
+		outline: none;
+	}
+
+	%article { //內文文章樣式
+		padding: $interval-m $interval-l;
+		background-color: $light;
+	}
+
+	%mask-link { //圖片遮罩
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	%mask { //圖片遮罩
+		position: relative;
+		display: block;
+
+		&:before {
+			content: $content;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black, $opacity-m);
+			transition: $transition;
+		}
+
+		&:hover {
+
+			&:before {
+				opacity: 0;
+			}
+		}
+	}
+
+	%footer-btns { //更多按鈕
+		position: absolute;
+		top: $interval-xs;
+		right: 0;
+
+		> .inner {
+
+		}
+
+		ul {
+			text-align: right;
+		}
+
+		li {
+			display: inline-block;
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			@extend %btn;
+			@extend %btn-s;
+		}
+	}
+
+	%list { //列表樣式
+		display: block;
+		padding: $interval-s;
+		background-color: $light;
+		transition: $transition;
+	}
+
+	%list-hover { //列表 :hover 樣式
+
+		&:hover {
+			color: $black;
+			background-color: $light-gray;
+		}
+	}
+
+	%table { //表單樣式
+
+		tr {
+
+			&:nth-child(2n) {
+				background-color: $light;
+			}
+
+			th, td { //th, td共同設定
+				padding: $interval-m;
+				line-height: $line-height-m;
+			}
+
+			th { //標題設定
+				font-size: $font-size-l;
+				color: $title-color;
+			}
+
+			td {
+
+			}
+		}
+	}
+
+	%table-hover { //表單 :hover 樣式
+
+		tr{
+
+			&:hover {
+				background-color: $minor-color;
+				color: $white;
+			}
+		}
+	}
+
+//@mixin 其他涵式================================================================
+
+	@mixin re-ellipsis() { //reset %ellipsis 的方法
+		overflow: visible;
+		text-overflow: clip;
+		white-space: normal;
+	}
+
+	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
+		background-image: image-url($img-src);
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@if( $size == true ) { //如果是 true 就匯出大小
+			width: image-width($img-src);
+			height: image-height($img-src);
+
+		} @else if( $size == false ) { //如果是 false 就不匯出大小
+			
+		} @else { //如果是數字就會出指定大小
+			background-size: contain;
+
+			@if( $height != null ) { //如果有 $height 就給高
+				
+				@if( unitless($height) ) { //沒單位就是倍數
+					height: round( image-height($img-src) * $height);
+
+				} @else { //有單位就直接使用
+					height: $height;
+				}
+
+			} @else { //如果沒 $height ，高度就是 $size
+				
+				@if( unitless($size) ) { //沒單位就是倍數
+					height: round( image-height($img-src) * $size);
+
+				} @else { //有單位就直接使用
+					height: $size;
+				}
+			}
+
+			@if( unitless($size) ) { //沒單位就是倍數
+				width: round( image-width($img-src) * $size);
+
+			} @else { //有單位就直接使用
+				width: $size;
+			}
+		}
+	}
+
+	@mixin icon-pic($img-name, $size: true, $height: null) { //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+
+		@if( str-index( $img-name, '.png') ) { //如果有副檔名就拿掉
+			$img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
+		}
+
+		@if($icon-pic) {
+			@extend %icon-pic;
+
+			@if( $size == true ) { //如果是 true 就匯出大小並使用sprites圖片
+
+				@if($debug) {
+					@extend .icon-pic-#{ $img-name };
+				}@else {
+					@extend .icon-pic-#{ $img-name } !optional;
+				}
+				
+				width: image-width('icon-pic/#{$img-name}.png');
+				height: image-height('icon-pic/#{$img-name}.png');
+
+			} @else {
+				@include bg-to-pic('icon-pic/#{$img-name}.png', $size, $height);
+			}
+		}
+	}
+
+	@mixin icon-font($font) { //文字圖示，列表請參閱 https://icomoon.io/
+
+		@if($icon-font) {
+			@extend %icon-font;
+
+			@if($debug) {
+				@extend .icon-font-#{$font};
+			}@else {
+				@extend .icon-font-#{$font} !optional;
+			}
+
+			font-size: $icon-font-size;
+			color: $icon-font-color;
+		}
+	}
+
+	@mixin icon-pic-btn($img-name, $size: true, $height: null) { //只有icon圖片的按鈕，隱含佔用了 :before
+		@extend %hide-text;
+		display: inline-block;
+
+		&:before{
+			@include icon-pic( $img-name, $size, $height );
+			display: block !important;
 		}
 	}

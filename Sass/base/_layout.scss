@@ -144,7 +144,7 @@
 //行動載具================================================================
 
 	.base-mobile {
-		@extend %mobile-area;
+		@extend %area-mobile;
 		z-index: 3;
 
 		&.is-open {
@@ -405,7 +405,7 @@
 //模組區塊================================================================
 
 	.base-module-area {
-		@extend %module-area;
+		@extend %area-module;
 
 		> .inner {
 
@@ -485,7 +485,7 @@
 //內頁側欄區塊================================================================
 
 	.base-aside {
-		@extend %module-area;
+		@extend %area-module;
 		width: 230px;
 		float: left;
 

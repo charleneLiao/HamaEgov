@@ -437,7 +437,7 @@
 //內頁主要內容================================================================
 
 	&.group-page-content {
-		@extend %page-area;
+		@extend %area-page;
 		position: relative;
 
 		> .inner {
@@ -497,7 +497,7 @@
 //內頁頁尾================================================================
 
 	&.group-page-footer {
-		@extend %page-area;
+		@extend %area-page;
 
 		> .inner {
 
