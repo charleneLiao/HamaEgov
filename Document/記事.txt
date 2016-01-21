@@ -1,4 +1,0 @@
-1. ¥[¤J %table-hover
-
-
-	<%= lorem_image("640x360") %>

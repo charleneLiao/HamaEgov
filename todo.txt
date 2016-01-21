@@ -1,2 +1,0 @@
-統一 class 與 data-index 順序
-group 引入 INNER
