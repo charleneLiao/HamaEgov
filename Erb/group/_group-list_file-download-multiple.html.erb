@@ -1,0 +1,33 @@
+<%
+	min_li = 1 #最少的li數量
+	max_li = 10 #最多的li數量
+	min_text = 4 #最少的字元
+	max_text = 8 #最多的字元
+
+	li_length = rand( max_li - min_li ) + min_li
+%>
+
+<div class="group-list file-download-multiple <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+	<div class="header"><div class="inner">
+		<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
+	</div></div>
+
+	<% if ( li_length > 0 ) %>
+		<div class="content"><div class="inner">
+			<ul data-index="1" data-child="<%= li_length %>">
+
+				<% li_length.times do |i| %>
+					<li data-index="<%= i + 1 %>">
+
+					<% text = zh_lorem_words rand( max_text - min_text ) + min_text %>
+
+					<!-- file-download-multiple 檔案下載 -->
+						<%= render :partial => "/Erb/module/list-text_file-download-multiple", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true } %>
+					<!-- dfile-download-multiple 結束 -->
+					
+					</li>
+				<% end %>
+			</ul>
+		</div></div>
+	<% end %>
+</div></div>

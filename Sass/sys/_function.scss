@@ -1,5 +1,9 @@
 //系統方法與涵式
 
+/*
+	順序上位於 base/variable 之前，因此不能使用任何 base/variable 變數 
+*/
+
 //基本 function 擴充================================================================
 	@function lighter( $color, $int: 1, $base: 10) { //更淺的顏色
 		@return lighten( $color, $int * $base );

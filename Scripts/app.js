@@ -5,7 +5,6 @@ requirejs.config({
 		'googleMaps': '//maps.googleapis.com/maps/api/js?v=3.exp',
 		'cookie': 'lib/cookie',
 		'domReady': 'lib/domReady',
-		'main': 'lib/main',
 		'getNode': 'lib/getNode',
 		'plugin': 'lib/plugin',
 		'fix': 'lib/fix'

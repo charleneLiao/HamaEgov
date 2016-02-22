@@ -150,7 +150,6 @@
 				display: block;
 				width: $pic-w;
 				padding-bottom: ( $pic-h / $pic-w ) * 100%;
-				background-color: $white;
 
 				@include media('mobile') {
 					width: 100%;

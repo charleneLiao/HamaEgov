@@ -168,7 +168,7 @@
 				> ul {
 
 					> li {
-						@extend %clear-inner-module;
+						@extend %reset-inner-module;
 						margin-bottom: $interval-s;
 
 						+ li { //第一個 li 是頁籤

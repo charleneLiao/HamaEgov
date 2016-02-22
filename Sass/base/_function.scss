@@ -1,6 +1,6 @@
 //方法與涵式
 
-//@mixin 框架相關================================================================
+//@mixin rwd 與 hack================================================================
 
 	@mixin rwd($max, $min: 0) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
 
@@ -9,13 +9,6 @@
 			@media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
 				@content;
 			}
-		}
-	}
-
-	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
-
-		#{$selector} & {
-			@content;
 		}
 	}
 
@@ -51,6 +44,15 @@
 		}
 	}
 
+//@mixin 狀態================================================================
+
+	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
+
+		#{$selector} & {
+			@content;
+		}
+	}
+
 	@mixin js( $boolean: true ) { //有/無 js下的樣式表現，$boolean 是布林值
 
 		[data-js="#{$boolean}"] & {
@@ -64,6 +66,8 @@
 			@content;
 		}
 	}
+
+//@mixin 數量與框架================================================================
 
 	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量
 
@@ -399,7 +403,7 @@
 		}
 	}
 
-//extend 樣式方法================================================================
+//%extend reset 重設樣式================================================================
 
 	%reset-outer { //重新設定外部樣式
 		margin: 0;
@@ -434,7 +438,7 @@
 		@extend %reset-inner;
 	}
 
-	%clear-inner-module { //清除內部模塊的 margin
+	%reset-inner-module { //清除內部模塊的 margin
 
 		[data-index][data-type] {
 			margin: 0;
@@ -453,6 +457,8 @@
 		}
 	}
 
+//%extend clear 清除浮動================================================================
+
 	%clear { //偽類清除浮動的方法
 		content: $content;
 		display: block;
@@ -460,17 +466,86 @@
 		clear: both;
 	}
 
+//@mixin %extend 隱藏文字與...================================================================
+
 	%hide-text { //隱藏文字的方法
 		font: 0/0 a;
 		text-shadow: 0 0 0;
 		color: transparent;
 	}
 
-	%ellipsis { //超過範圍文字變成'...'的方法
+	%ellipsis { //單行超過範圍文字變成'...'的方法
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+
+	@mixin re-ellipsis() { //reset %ellipsis 的方法
+		overflow: visible;
+		text-overflow: clip;
+		white-space: normal;
+	}
+
+	%multi-ellipsis {
+		overflow: hidden;
+
+		&:before {
+			content: '\200B';
+			display: block;
+			float: left;
+			width: 1px;
+		}
+
+		> * {
+			display: block;
+			float: right;
+			width: 100%;
+			box-sizing: border-box;
+			margin-left: -1px;
+		}
+
+		&:after {
+			content: '...';
+			position: relative;
+			float: right;
+			left: 100%;
+			width: 50px;
+			margin-left: -50px;
+			margin-right: 1px;
+			text-indent: 30px;
+			background-image: linear-gradient(to right, rgba($white, $opacity-m) 0, rgba($white, 1) 60%);
+		}
+	}
+
+	@mixin multi-ellipsis ($line: 6, $line-height: 20px){ //多行超過範圍文字變成'...'的方法
+
+		@extend .multi-ellipsis;
+		height: $line-height * $line;
+
+		&:before {
+			height: $line-height * $line;
+		}
+
+		> * {
+			line-height: $line-height;
+		}
+
+		&:after {
+			top: -1 * $line-height;
+			line-height: $line-height;
+		}
+	}
+
+	@mixin re-multi-ellipsis() { //reset %multi-ellipsis 的方法
+		height: auto;
+		overflow: visible;
+
+		&:before, &:after {
+			content: none;
+		}
+	}
+
+//%extend 背景與圖示================================================================
 
 	%bg-cover { // cover 底圖
 		background-position: center;
@@ -509,6 +584,8 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+
+//%extend 框架預設樣式================================================================
 
 	%center { //齊中寬度
 		margin: 0 auto;
@@ -636,6 +713,8 @@
 		}
 	}
 
+//%extend 元件預設樣式================================================================
+
 	%caption { //標題組件
 		margin-bottom: $interval-s;
 		font-size: $font-size-l;
@@ -752,8 +831,12 @@
 		outline: none;
 	}
 
-	%article { //內文文章樣式
+	%article { //文章樣式
 		padding: $interval-m $interval-l;
+	}
+
+	%article-extend { //延伸的文章樣式
+		@extend %article;
 		background-color: $light;
 	}
 
@@ -867,13 +950,7 @@
 		}
 	}
 
-//@mixin 其他涵式================================================================
-
-	@mixin re-ellipsis() { //reset %ellipsis 的方法
-		overflow: visible;
-		text-overflow: clip;
-		white-space: normal;
-	}
+//@mixin 背景與圖示================================================================
 
 	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 		background-image: image-url($img-src);

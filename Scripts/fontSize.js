@@ -41,10 +41,8 @@ define(['cookie', 'jquery', 'getNode'], function(cookie, $, getNode){
 		$li.filter('.'+ _result).find('a').trigger(_eventNmae); //執行 cookie 記錄或中間值
 
 		if($set.debug) {
-			console.log('環境:', env);
-			console.log('參數:', opt);
-			console.log('檔名:', file);
 			console.log('預設值:', $set);
+			console.log('檔案 '+ file +'.js 已順利執行。');
 		}
 	}
 	

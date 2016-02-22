@@ -9,10 +9,10 @@
 	position: relative;
 
 	@include js(false) {
-		
+
 		&:before {
 			display: block;
-			content: '您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。';	
+			content: '您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。';
 			padding: $interval-m;
 			line-height: $line-height-m;
 			background-color: $deep;
@@ -21,7 +21,7 @@
 	}
 
 	@include media('mobile') {
-		
+
 		&:before {
 			display: block;
 			content: $content;
@@ -39,7 +39,7 @@
 			}
 
 			span {
-				
+
 			}
 		}
 
@@ -79,7 +79,7 @@
 		&:visited {
 			color: $visited-color;
 		}
-		
+
 		&:hover {
 			color: $hover-color;
 		}
@@ -125,7 +125,7 @@
 		}
 
 		&[type="radio"] {
-			
+
 		}
 	}
 
@@ -135,6 +135,10 @@
 		option {
 
 		}
+	}
+
+	button {
+		@extend %btn;
 	}
 
 	label {
@@ -181,29 +185,29 @@
 				display: none;
 
 				> .inner {
-					
+
 				}
 
 				h3 {
-					
+
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -224,7 +228,7 @@
 				display: none;
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -232,21 +236,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -262,7 +266,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -270,21 +274,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -299,7 +303,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -307,21 +311,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -337,7 +341,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -345,21 +349,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -374,7 +378,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -382,21 +386,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -412,7 +416,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -420,21 +424,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -454,7 +458,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -462,21 +466,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -494,7 +498,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -502,21 +506,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -534,7 +538,7 @@
 			> .header {
 
 				> .inner {
-					
+
 				}
 
 				h3 {
@@ -542,21 +546,21 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 				}
 			}
 
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}
@@ -580,14 +584,14 @@
 				}
 
 				span {
-					
+
 				}
 			}
 
 			> .content {
 
 				> .inner {
-					
+
 					// [data-index][data-type] {
 					// 	@extend %part;
 					// }
@@ -597,7 +601,7 @@
 			> .footer {
 
 				> .inner {
-					
+
 				}
 			}
 		}

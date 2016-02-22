@@ -1077,10 +1077,17 @@
 							}
 
 							> li {
-								@extend %clear-inner-module;
+								@extend %reset-inner-module;
 
 								> [data-index][data-type] {
 									padding: $interval-xs;
+									
+									> .inner {
+
+										> .footer {
+											display: none;
+										}
+									}
 								}
 							}
 						}
@@ -1151,7 +1158,7 @@
 							}
 
 							> li {
-								@extend %clear-inner-module;
+								@extend %reset-inner-module;
 
 								> [data-index][data-type] {
 									padding: $interval-xs;
@@ -1223,7 +1230,7 @@
 					> ul {
 
 						> li {
-							@extend %clear-inner-module;
+							@extend %reset-inner-module;
 
 							+ li {
 								margin-top: $interval-s;
@@ -1305,7 +1312,7 @@
 					> ul {
 
 						> li {
-							@extend %clear-inner-module;
+							@extend %reset-inner-module;
 
 							+ li {
 								display: none;

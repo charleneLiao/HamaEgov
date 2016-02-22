@@ -9,7 +9,7 @@ define(function(){
 	function getChild(envs, selector){ //取得子節點，參數是節點關鍵字('ul')、Classname('.inner')或 id('#group')
 
 		if(typeof(envs) === 'undefined' || envs.length === 0) {
-			console.log('無此節點。');
+			console.log('找不到 '+ envs +' 下的節點 '+ selector +'，或是節點錯誤。');
 
 			return null;
 		}

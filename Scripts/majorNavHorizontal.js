@@ -65,10 +65,8 @@ define(['jquery', 'getNode'], function($, getNode){
 		});
 
 		if($set.debug) {
-			console.log('環境:', env);
-			console.log('參數:', opt);
-			console.log('檔名:', file);
 			console.log('預設值:', $set);
+			console.log('檔案 '+ file +'.js 已順利執行。');
 		}
 	}
 	

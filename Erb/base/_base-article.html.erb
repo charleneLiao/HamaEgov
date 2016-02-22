@@ -1,25 +1,23 @@
-<!-- base-article 文章 -->
-	<div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
-		<div class="header"><div class="inner">
-		</div></div>
-		<div class="content"><div class="inner">
-
-		<!--title 文章標題 -->
-			<%= render :partial => "/Erb/module/simple-text_title", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => nil } %>
-		<!-- title 結束 -->
-
-		<!-- detail 詳細資訊 -->
-			<%= render :partial => "/Erb/module/list-text_detail", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => '詳細資訊' } %>
-		<!-- detail 結束 -->
-
-		<!-- editor 文章編輯 -->
-			<%= render :partial => "/Erb/module/area-editor_editor", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
-		<!-- editor 結束 -->
-
-		<!-- icon 各種標章 -->
-			<%= render :partial => "/Erb/module/list-pic_icon", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => nil } %>
-		<!-- icon 結束 -->
-
-		</div></div>
+<div class="base-article" data-index="<%= index %>" data-type="<%= $row %>" data-child="4"><div class="inner">
+	<div class="header"><div class="inner">
 	</div></div>
-<!-- base-article 結束 -->
+	<div class="content"><div class="inner">
+
+	<!--title 文章標題 -->
+		<%= render :partial => "/Erb/module/simple-text_title", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => nil } %>
+	<!-- title 結束 -->
+
+	<!-- detail 詳細資訊 -->
+		<%= render :partial => "/Erb/module/list-text_detail", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => '詳細資訊' } %>
+	<!-- detail 結束 -->
+
+	<!-- editor 文章編輯 -->
+		<%= render :partial => "/Erb/module/area-editor_editor", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
+	<!-- editor 結束 -->
+
+	<!-- icon 各種標章 -->
+		<%= render :partial => "/Erb/module/list-pic_icon", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => nil } %>
+	<!-- icon 結束 -->
+
+	</div></div>
+</div></div>

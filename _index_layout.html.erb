@@ -6,7 +6,7 @@
 	<!-- Meta 各種資訊 -->
 		<%= render :partial => "/Erb/sys/meta" %>
 	<!-- Meta 結束 -->
-		
+
 	<!-- Title 網站標題 -->
 		<%= render :partial => "/Erb/sys/title" %>
 	<!-- Title 結束 -->
@@ -18,12 +18,6 @@
 	<!-- Css 樣式表 -->
 		<%= render :partial => "/Erb/sys/style" %>
 	<!-- Css 結束 -->
-
-	<!-- Script -->
-		<% if( $js ) %>
-			<%= render :partial => "/Erb/sys/script" %>
-		<% end %>
-	<!-- Script 結束 -->
 
 	</head>
 	<body data-js="false" data-admin="false">
@@ -56,6 +50,11 @@
 		</div></div>
 	<!-- sys-root 結束 -->
 
-	<%= livereload_js %>
+	<!-- Script -->
+		<% if( $js ) %>
+			<%= render :partial => "/Erb/sys/script" %>
+		<% end %>
+	<!-- Script 結束 -->
+
 	</form></body>
 </html>
