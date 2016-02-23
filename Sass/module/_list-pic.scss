@@ -386,14 +386,13 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 
 			}
 
 			h4 {
-
+				@extend %title;
 			}
 
 			span {
@@ -435,7 +434,18 @@
 			}
 
 			a {
-				@extend %mask;
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($black, $opacity-m);
+				transition: $transition;
+
+				&:hover {
+					opacity: 0;
+				}
 
 				@include media('mobile') {
 					background-color: transparent;
@@ -474,9 +484,10 @@
 //跑馬燈輪播================================================================
 
 	&.marquee {
-		$btn-width: 36px;
-		$max-li-len: 20; //設定 li 的最大數量
-		$show-li-len: 5; //設定一次要秀的數量
+		$btn-width: 30px; //設定按鈕寬度
+		$max-li-len: 50; //設定 li 的最大數量
+		$show-li-len: 4; //設定一次要秀的數量
+		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
 		> .inner {
 
@@ -503,24 +514,26 @@
 		}
 
 		.content {
-			margin: 0 $btn-width + $interval-xs;
-
-			@include js(false) {
-				margin: 0;
-			}
+			background-color: $light;
 
 			> .inner {
 				overflow: hidden;
+				margin: 0 $btn-width;
+
+				@include js(false) {
+					margin: 0;
+				}
 			}
 
 			ul {
-				overflow: hidden;
-				width: $max-li-len / $show-li-len * 100%;
+				width: $max-li-len * 100% / $show-li-len;
+
+				@include set-len-rwd('pad', 2, $max-li-len * 100%);
+				@include set-len-rwd('phone', 1, $max-li-len * 100%);
 
 				@include js(false) {
 					width: 100%;
 				}
-
 
 				&:after {
 					@extend %clear;
@@ -528,15 +541,12 @@
 			}
 
 			li {
-				width: 100% / $show-li-len / ( $max-li-len / $show-li-len );
+				width: 100% / $max-li-len;
 				float: left;
 
 				@include js(false) {
+					display: block;
 					width: 100% / $show-li-len;
-
-					&:nth-child(#{$show-li-len}n+1) {
-						clear: left;
-					}
 				}
 			}
 
@@ -594,14 +604,15 @@
 					a {
 						@extend %hide-text;
 						position: absolute;
-						top: 0px;
+						top: 0;
+						bottom: 0;
 						display: block;
 						width: $btn-width;
-						height: 100%;
 						transition: $transition;
+						background-color: $btn-bg-color;
 
 						&:hover {
-							background-color: $light;
+							background-color: $btn-hover-bg-color;
 						}
 					}
 				}
@@ -609,16 +620,16 @@
 				&.prev {
 
 					a {
-						left: $layout-interval;
-						@include bg-to-pic('icon-pic/away-b-left.png', false);
+						left: 0;
+						@include bg-to-pic('icon-pic/away-w-left.png', false);
 					}
 				}
 
 				&.next {
 
 					a {
-						right: $layout-interval;
-						@include bg-to-pic('icon-pic/away-b-right.png', false);
+						right: 0;
+						@include bg-to-pic('icon-pic/away-w-right.png', false);
 					}
 				}
 
@@ -902,7 +913,7 @@
 				@extend %title;
 
 				&:before {
-					@include icon-font('link');
+					@include icon-font('public');
 				}
 			}
 

@@ -66,6 +66,10 @@
 				@extend %list;
 				@extend %list-hover;
 			}
+
+			/*i*/.mark {
+				@extend %mark-1;
+			}
 		}
 
 		.footer {
@@ -818,10 +822,7 @@
 		}
 
 		.base-section & {
-			position: absolute;
-			top: 0;
-			right: 0;
-			margin: 0;
+			margin: 0 !important;
 
 			> .inner {
 
@@ -854,11 +855,41 @@
 				}
 
 				ul {
-
+					text-align: right;
 				}
 
 				li {
 					display: inline-block;
+
+					&.login {
+
+						a {
+
+							&:before {
+								@include icon-font('person');
+							}
+						}
+					}
+
+					&.logout {
+
+						a {
+
+							&:before {
+								@include icon-font('person_outline');
+							}
+						}
+					}
+
+					&.edit {
+
+						a {
+
+							&:before {
+								@include icon-font('mode_edit');
+							}
+						}
+					}
 
 					&.print {
 
@@ -870,12 +901,32 @@
 						}
 					}
 
-					&.edit {
+					&.nav-edit {
 
 						a {
 
 							&:before {
-								@include icon-font('edit');
+								@include icon-font('mode_edit');
+							}
+						}
+					}
+
+					&.index-edit {
+
+						a {
+
+							&:before {
+								@include icon-font('mode_edit');
+							}
+						}
+					}
+
+					&.article-edit {
+
+						a {
+
+							&:before {
+								@include icon-font('mode_edit');
 							}
 						}
 					}
@@ -886,7 +937,7 @@
 				}
 
 				a {
-					@extend %btn;
+					@extend %btn-s;
 
 					&:before {
 						margin-right: $interval-xs;
@@ -1331,7 +1382,7 @@
 					@extend %title;
 
 					&:before {
-						@include icon-font('link');
+						@include icon-font('public');
 					}
 				}
 

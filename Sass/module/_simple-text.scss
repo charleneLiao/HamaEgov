@@ -21,7 +21,7 @@
 				@extend %title;
 
 				&:before {
-					@include icon-font('textsms');
+					@include icon-font('comment');
 				}
 			}
 
@@ -577,7 +577,7 @@
 				@extend %title;
 
 				&:before {
-					@include icon-font('wb_sunny');
+					@include icon-font('cloud_queue');
 				}
 			}
 

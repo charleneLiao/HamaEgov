@@ -202,6 +202,145 @@
 		}
 	}
 
+//主題================================================================
+
+	&.topic {
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			/*a*/.divition {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.image {
+				float: left;
+				margin-right: $interval-m;
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					width: 70px;
+					height: 70px;
+					border-radius: 35px;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.paragraph {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //說明文字================================================================
 
 	&.captions {

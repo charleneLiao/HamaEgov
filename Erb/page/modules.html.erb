@@ -1,89 +1,91 @@
-//檔案下載================================================================
+<style type="text/css">
+	.module-captions {
+		/*display: none;*/
+	}
+</style>
+
+<div class="module-captions">//檔案下載================================================================</div>
 
 <!-- file-download 檔案下載 -->
 	<%= render :partial => "/Erb/module/list-text_file-download", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "檔案下載" } %>
 <!-- dfile-download 結束 -->
 
-//多重檔案下載列表================================================================
-
 <!-- file-download-multiple 多重檔案下載列表 -->
 	<%= render :partial => "/Erb/group/group-list_file-download-multiple", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "多重檔案下載" } %>
 <!-- file-download-multiple 結束 -->
 
-//圖片下載================================================================
-
 <!-- pic-download 圖片下載 -->
-	<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "圖片下載" } %>
+	<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "圖片、影片下載" } %>
 <!-- pic-download 結束 -->
 
-//選單列表================================================================
+<div class="module-captions">//選單================================================================</div>
 
 <!-- group-list_nav 選單列表 -->
 	<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 4, :class_set => nil, :func_set => "{'hud':{},'majorNavHorizontal':{}}", :header_text => "多選單" } %>
 <!-- group-list_nav 結束 -->
 
-//選單================================================================
-
 <!-- nav 選單 -->
 	<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "單層選單" } %>
 <!-- nav 結束 -->
 
-//預設列表================================================================
+<div class="module-captions">//列表================================================================</div>
 
 <!-- default 預設 -->
 	<%= render :partial => "/Erb/group/group-list_default", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "預設文字多層列表", :inner => "/Erb/module/list-text_default" } %>
 <!-- default 結束 -->
 
-//預設================================================================
-
 <!-- default 預設 -->
-	<%= render :partial => "/Erb/module/list-text_default" ,:locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "預設文字列表", :show_footer => true, :show_mark => true } %>
+	<%= render :partial => "/Erb/module/list-text_default" ,:locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "預設文字列表", :show_footer => false, :show_mark => true } %>
 <!-- default 結束 -->
 
-//展開圖片================================================================
-
-<!-- extend 展開圖片列表 -->
-	<%= render :partial => "/Erb/module/list-pic_extend", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "展開圖片" } %>
-<!-- extend 結束 -->
-
-//輪播圖片列表================================================================
-
-<!--marquee 跑馬燈輪播 -->
-	<%= render :partial => "/Erb/module/list-pic_marquee", :locals => { :index => 9, :class_set => nil, :func_set => "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => "輪播", :show_footer => true } %>
-<!-- marquee 結束 -->
-
-//相簿================================================================
-
-<!-- album 相簿 -->
-	<%= render :partial => "/Erb/module/area-figure_album", :locals => { :index => 10, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true } %>
-<!-- album 結束 -->
-
-//相簿================================================================
-
-<!-- album 相簿 -->
-	<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 11, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true } %>
-<!-- album 結束 -->
-
-//圖片區塊列表================================================================
+<div class="module-captions">//圖片================================================================</div>
 
 <!-- block 圖片區塊列表 -->
-	<%= render :partial => "/Erb/module/list-pic_block", :locals => { :index => 12, :class_set => nil, :func_set => "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", :header_text => "輪播", :show_footer => true } %>
+	<%= render :partial => "/Erb/module/list-pic_block", :locals => { :index => 8, :class_set => nil, :func_set => "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", :header_text => "輪播", :show_footer => true } %>
 <!-- block 結束 -->
 
-//列表按鈕================================================================
+<!-- extend 展開圖片列表 -->
+	<%= render :partial => "/Erb/module/list-pic_extend", :locals => { :index => 9, :class_set => nil, :func_set => nil, :header_text => "展開圖片" } %>
+<!-- extend 結束 -->
+
+<!--marquee 跑馬燈輪播 -->
+	<%= render :partial => "/Erb/module/list-pic_marquee", :locals => { :index => 10, :class_set => nil, :func_set => "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => "輪播", :show_footer => true } %>
+<!-- marquee 結束 -->
+
+<div class="module-captions">//相簿================================================================</div>
+
+<!-- album 相簿 -->
+	<%= render :partial => "/Erb/module/area-figure_album", :locals => { :index => 11, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => false } %>
+<!-- album 結束 -->
+
+<!-- album 相簿 -->
+	<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 12, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true } %>
+<!-- album 結束 -->
+
+<div class="module-captions">//按鈕================================================================</div>
 
 <!-- btn 列表按鈕 -->
 	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 13, :class_set => nil, :func_set => nil, :header_text => nil } %>
 <!-- btn 結束 -->
 
 <!-- btn 列表按鈕 -->
-	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 13, :class_set => "right", :func_set => nil, :header_text => nil } %>
+	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 14, :class_set => "right", :func_set => nil, :header_text => nil } %>
 <!-- btn 結束 -->
 
 <!-- btn 列表按鈕 -->
-	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 13, :class_set => "center", :func_set => nil, :header_text => nil } %>
+	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 15, :class_set => "center", :func_set => nil, :header_text => nil } %>
 <!-- btn 結束 -->
 
 <!-- btn 列表按鈕 -->
-	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 13, :class_set => "justify", :func_set => nil, :header_text => nil } %>
+	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 16, :class_set => "justify", :func_set => nil, :header_text => nil } %>
 <!-- btn 結束 -->
+
+<div class="module-captions">//主題================================================================</div>
+
+<!-- topic 主題 -->
+	<%= render :partial => "/Erb/module/area-essay_topic", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "單則主題", :show_footer => false } %>
+<!-- topic 結束 -->
+
+<!-- topic 主題 -->
+	<%= render :partial => "/Erb/group/group-list_topic", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "多則主題", :show_footer => false } %>
+<!-- topic 結束 -->

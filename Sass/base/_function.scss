@@ -629,7 +629,7 @@
 	}
 
 	%page { //內頁
-		margin: $interval-l 0;
+		margin: $interval-l 0 $interval-m;
 
 		> .inner {
 
@@ -809,6 +809,7 @@
 	}
 
 	%btn-s { //小按鈕
+		@extend %btn;
 		padding: $btn-padding-xs;
 		font-size: $font-size-s;
 	}
@@ -895,7 +896,6 @@
 		}
 
 		a {
-			@extend %btn;
 			@extend %btn-s;
 		}
 	}

@@ -368,7 +368,7 @@
 				@extend %title;
 
 				&:before {
-					@include icon-font('link');
+					@include icon-font('public');
 				}
 			}
 
@@ -638,7 +638,6 @@
 				}
 
 				a {
-					@extend %btn;
 					@extend %btn-s;
 				}
 			}
