@@ -3,13 +3,13 @@
 <!-- base-article 結束 -->
 
 <!-- file-download 檔案下載 -->
-	<%= render :partial => "/Erb/module/list-text_file-download", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "檔案下載" } %>
+	<%= render :partial => "/Erb/module/list-text_file-download", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "檔案下載" } %>
 <!-- dfile-download 結束 -->
 
-<!-- file-download-multiple 多重檔案下載群組 -->
-	<%= render :partial => "/Erb/group/group-list_file-download-multiple", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "多重檔案下載" } %>
+<!-- file-download-multiple 多重檔案下載列表 -->
+	<%= render :partial => "/Erb/group/group-list_file-download-multiple", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "多重檔案下載", :inner => "/Erb/module/list-text_file-download-multiple" } %>
 <!-- file-download-multiple 結束 -->
 
 <!-- pic-download 圖片下載 -->
-	<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "圖片下載" } %>
+	<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "圖片、影片下載" } %>
 <!-- pic-download 結束 -->

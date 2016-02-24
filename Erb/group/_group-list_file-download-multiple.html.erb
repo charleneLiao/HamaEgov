@@ -21,9 +21,9 @@
 
 					<% text = zh_lorem_words rand( max_text - min_text ) + min_text %>
 
-					<!-- file-download-multiple 檔案下載 -->
-						<%= render :partial => "/Erb/module/list-text_file-download-multiple", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true } %>
-					<!-- dfile-download-multiple 結束 -->
+					<!-- <%= inner %> -->
+						<%= render :partial => inner, :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true } %>
+					<!-- <%= inner %> -->
 					
 					</li>
 				<% end %>

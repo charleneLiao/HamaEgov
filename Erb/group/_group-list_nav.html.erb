@@ -22,9 +22,9 @@
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
-					<!-- nav 選單 -->
-						<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1) } %>
-					<!-- nav 結束 -->
+					<!-- <%= inner %> -->
+						<%= render :partial => inner ,:locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1) } %>
+					<!-- <%= inner %> -->
 					
 					</li>
 				<% end %>

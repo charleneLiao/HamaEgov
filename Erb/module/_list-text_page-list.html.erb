@@ -1,0 +1,30 @@
+<%
+	min_li = 2 #最少的li數量
+	max_li = 5 #最多的li數量
+	min_text = 3 #最少的字元
+	max_text = 8 #最多的字元
+
+	li_length = rand( max_li - min_li ) + min_li
+%>
+
+<div class="list-text page-list <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+	<div class="header"><div class="inner">
+		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
+	</div></div>
+	<div class="content"><div class="inner">
+		<ul data-index="1" data-child="<%= li_length %>">
+			
+			<% li_length.times do |i| %>
+				<li data-index="<%= i + 1 %>"><span><a href="#"><% if show_mark %><i class="mark">2015-11-26</i><% end %><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+			<% end %>
+		</ul>
+	</div></div>
+	
+	<% if show_footer %>
+		<div class="footer"><div class="inner">
+			<ul data-index="1" data-child="1">
+				<li class="more" data-index="1"><span><a href="#">更多</a></span></li>
+			</ul>
+		</div></div>
+	<% end %>
+</div></div>

@@ -513,13 +513,12 @@
 			margin-left: -50px;
 			margin-right: 1px;
 			text-indent: 30px;
-			background-image: linear-gradient(to right, rgba($white, $opacity-m) 0, rgba($white, 1) 60%);
 		}
 	}
 
-	@mixin multi-ellipsis ($line: 6, $line-height: 20px){ //多行超過範圍文字變成'...'的方法
+	@mixin multi-ellipsis ($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
 
-		@extend .multi-ellipsis;
+		@extend %multi-ellipsis;
 		height: $line-height * $line;
 
 		&:before {
@@ -533,6 +532,7 @@
 		&:after {
 			top: -1 * $line-height;
 			line-height: $line-height;
+			background-image: linear-gradient(to right, transparent 0, $background-color $position);
 		}
 	}
 
@@ -594,29 +594,6 @@
 			max-width: $pc-width;
 		}@else {
 			width: $pc-width;
-		}
-	}
-
-	%title { //模組、內頁 title
-		font-size: $font-size-l;
-		padding-bottom: $interval-m;
-		border-bottom: $border;
-		margin-bottom: $interval-m;
-
-		&:before {
-			margin-right: $interval-xs;
-		}
-
-		&:after {
-			margin-left: $interval-xs;
-		}
-
-		span {
-			color: inherit;
-		}
-
-		a {
-			color: inherit;
 		}
 	}
 
@@ -714,6 +691,29 @@
 	}
 
 //%extend 元件預設樣式================================================================
+
+	%title { //模組、內頁 title
+		font-size: $font-size-l;
+		padding-bottom: $interval-m;
+		border-bottom: $border;
+		margin-bottom: $interval-m;
+
+		&:before {
+			margin-right: $interval-xs;
+		}
+
+		&:after {
+			margin-left: $interval-xs;
+		}
+
+		span {
+			color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
 
 	%caption { //標題組件
 		margin-bottom: $interval-s;
