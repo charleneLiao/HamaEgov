@@ -73,6 +73,7 @@
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 
@@ -155,6 +156,7 @@
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 

@@ -7,83 +7,172 @@
 
 	&.default {
 
-		> .inner {
-
-		}
-
-		.header {
+		.base-module-area & {
 
 			> .inner {
 
 			}
 
-			h4 {
-				@extend %title;
+			.header {
 
-				&:before {
-					@include icon-font('comment');
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('comment');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
 				}
 			}
 
-			span {
+			.content {
 
+				> .inner {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %ellipsis;
+					@extend %list;
+					@extend %list-hover;
+				}
 			}
 
-			a {
+			.footer {
+				@extend %footer-btns;
 
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+
+					&.prev {
+
+					}
+
+					&.next {
+
+					}
+
+					&.more {
+
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 
-		.content {
-
-			> .inner {
-				
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %ellipsis;
-				@extend %list;
-				@extend %list-hover;
-			}
-		}
-
-		.footer {
-			@extend %footer-btns;
+		.base-page-area & {
 
 			> .inner {
 
 			}
 
-			ul {
+			.header {
 
-			}
-
-			li {
-
-
-				&.prev {
+				> .inner {
 
 				}
 
-				&.next {
+				h4 {
+					@extend %title;
+				}
+
+				span {
 
 				}
 
-				&.more {
+				a {
 
 				}
 			}
 
-			span {
+			.content {
 
+				> .inner {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %list;
+					@extend %list-hover;
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
 			}
 
-			a {
+			.footer {
+				@extend %footer-btns;
 
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+
+					&.prev {
+
+					}
+
+					&.next {
+
+					}
+
+					&.more {
+
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

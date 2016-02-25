@@ -134,11 +134,52 @@
 						> li {
 
 							+ li {
-								margin-top: $interval-m;
+								margin-top: $interval-l;
 							}
 
 							> [data-index][data-type] {
-								padding: $interval-s 0 0 $interval-xl;
+								padding-left: $interval-l;
+
+								> .inner {
+
+									> .header {
+										display: block;
+										font-size: $font-size-s;
+										border-bottom: 0;
+
+										> .inner {
+
+										}
+
+										h1, h2, h3, h4, h5, h6 {
+											border-bottom: 3px double $border-color;
+
+											&:before {
+												display: none;
+											}
+
+											&:after {
+												display: none;
+											}
+										}
+
+										span {
+
+										}
+
+										a {
+											display: block;
+										}
+									}
+
+									> .content {
+										padding-left: $interval-l;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
 							}
 						}
 					}
@@ -146,6 +187,282 @@
 			}
 
 			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁圖片列表群組================================================================
+
+	&.page-list-pic {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+
+							+ li {
+								margin-top: $interval-l;
+							}
+
+							> [data-index][data-type] {
+								padding-left: $interval-l;
+
+								> .inner {
+
+									> .header {
+										display: block;
+										font-size: $font-size-s;
+										border-bottom: 0;
+
+										> .inner {
+
+										}
+
+										h1, h2, h3, h4, h5, h6 {
+											border-bottom: 3px double $border-color;
+
+											&:before {
+												display: none;
+											}
+
+											&:after {
+												display: none;
+											}
+										}
+
+										span {
+
+										}
+
+										a {
+											display: block;
+										}
+									}
+
+									> .content {
+										padding-left: $interval-l;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁區塊群組================================================================
+
+	&.page-block {
+		$default-len: 3;
+		$max-len: 6;
+
+		@include default-min-len($type, $default-len, $max-len);
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							@extend %reset-inner-module;
+
+							> [data-index][data-type] {
+								padding: $interval-xs;
+
+								> .inner {
+
+									> .header {
+										display: none;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁列表群組================================================================
+
+	&.page-list {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							@extend %reset-inner-module;
+
+							+ li {
+								margin-top: $interval-s;
+							}
+
+							> [data-index][data-type] {
+								
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
 
 				> .inner {
 
@@ -1104,177 +1421,10 @@
 //相簿================================================================
 
 	&.album {
+		$default-len: 2;
 
-		.base-module-area & {
-			$default-len: 2;
-
-			@include default-len-hide($type, $default-len);
-			@include set-len-hide($type);
-
-			> .inner {
-
-				> .header {
-
-					> .inner {
-
-					}
-
-					h3 {
-						@extend %title;
-
-						&:before {
-							@include icon-font('camera');
-						}
-					}
-
-					span {
-							
-					}
-
-					a {
-
-					}
-				}
-
-				> .content {
-
-					> .inner {
-
-						> ul {
-
-							&:after {
-								@extend %clear;
-							}
-
-							> li {
-								@extend %reset-inner-module;
-
-								> [data-index][data-type] {
-									padding: $interval-xs;
-									
-									> .inner {
-
-										> .footer {
-											display: none;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-				> .footer {
-					@extend %footer-btns;
-
-					> .inner {
-
-					}
-
-					ul {
-
-					}
-
-					li {
-
-					}
-
-					span {
-
-					}
-
-					a {
-
-					}
-				}
-			}
-		}
-
-		.base-page-area & {
-			$default-len: 4;
-
-			@include default-len($type, $default-len);
-			@include set-len($type);
-
-			> .inner {
-
-				> .header {
-
-					> .inner {
-
-					}
-
-					h3 {
-						@extend %title;
-					}
-
-					span {
-							
-					}
-
-					a {
-
-					}
-				}
-
-				> .content {
-
-					> .inner {
-
-						> ul {
-
-							&:after {
-								@extend %clear;
-							}
-
-							> li {
-								@extend %reset-inner-module;
-
-								> [data-index][data-type] {
-									padding: $interval-xs;
-
-									> .inner {
-
-										> .footer {
-											display: none;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-				> .footer {
-					@extend %footer-btns;
-
-					> .inner {
-
-					}
-
-					ul {
-
-					}
-
-					li {
-
-					}
-
-					span {
-
-					}
-
-					a {
-
-					}
-				}
-			}
-		}
-	}
-
-//訊息================================================================
-
-	&.message {
+		@include default-len-hide($type, $default-len);
+		@include set-len-hide($type);
 
 		> .inner {
 
@@ -1288,7 +1438,7 @@
 					@extend %title;
 
 					&:before {
-						@include icon-font('message');
+						@include icon-font('camera');
 					}
 				}
 
@@ -1307,21 +1457,15 @@
 
 					> ul {
 
+						&:after {
+							@extend %clear;
+						}
+
 						> li {
 							@extend %reset-inner-module;
 
-							+ li {
-								margin-top: $interval-s;
-							}
-
 							> [data-index][data-type] {
-								
-								> .inner {
-
-									> .footer {
-										display: none;
-									}
-								}
+								padding: $interval-xs;
 							}
 						}
 					}
@@ -1354,21 +1498,24 @@
 		}
 	}
 
-//主題================================================================
+//訊息================================================================
 
-	&.topic {
+	&.message {
 
 		> .inner {
 
 			> .header {
-				display: none;
 
 				> .inner {
 
 				}
 
 				h3 {
+					@extend %title;
 
+					&:before {
+						@include icon-font('message');
+					}
 				}
 
 				span {

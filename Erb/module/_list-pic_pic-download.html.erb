@@ -3,6 +3,8 @@
 	max_li = 10 #最多的li數量
 
 	li_length = rand( max_li - min_li ) + min_li
+
+	types = ['img', 'vedio']
 %>
 
 <div class="list-pic pic-download <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -13,9 +15,12 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
-				<% img = $sample_m_pic[rand($sample_m_pic.length)] %>
+				<%
+					img = $sample_m_pic[rand($sample_m_pic.length)]
+					type = types[rand(types.length)]
+				%>
 
-				<li data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><img src="<%= img %>" alt=""></a></span></li>
+				<li <% if type %>class="is-<%= type %>"<% end %> data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><img src="<%= img %>" alt=""></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

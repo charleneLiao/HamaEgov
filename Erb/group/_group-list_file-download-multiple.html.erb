@@ -22,7 +22,7 @@
 					<% text = zh_lorem_words rand( max_text - min_text ) + min_text %>
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true } %>
+						<%= render :partial => inner, :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true, :show_mark => false, :inner => "/Erb/module/simple-pic_default", :inner_len => 2 } %>
 					<!-- <%= inner %> -->
 					
 					</li>

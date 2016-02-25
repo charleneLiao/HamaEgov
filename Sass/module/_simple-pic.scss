@@ -7,74 +7,147 @@
 
 	&.default {
 
-		> .inner {
-
-		}
-
-		.header {
+		.base-module-area & {
 
 			> .inner {
 
 			}
 
-			h4 {
-				@extend %title;
+			.header {
 
-				&:before {
-					@include icon-font('photo');
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
 				}
 			}
 
-			span {
+			.content {
+
+				> .inner {
 					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+				}
 			}
 
-			a {
+			.footer {
+				@extend %footer-btns;
 
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 
-		.content {
-
-			> .inner {
-				
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				display: block;
-			}
-
-			img {
-				display: block;
-				width: 100%;
-			}
-		}
-
-		.footer {
-			@extend %footer-btns;
+		.base-page-area & {
 
 			> .inner {
 
 			}
 
-			ul {
+			.header {
 
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			li {
+			.content {
 
+				> .inner {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+				}
 			}
 
-			span {
+			.footer {
+				@extend %footer-btns;
 
-			}
+				> .inner {
 
-			a {
+				}
 
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

@@ -99,7 +99,7 @@
 		<!-- default 結束 -->
 
 		<!-- default 預設 -->
-			<%= render :partial => "/Erb/module/simple-text_default", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "文字", :show_footer => true } %>
+			<%= render :partial => "/Erb/module/simple-text_default", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "文字", :show_footer => true, :show_mark => true } %>
 		<!-- default 結束 -->
 
 		<!-- slider 輪播 -->
@@ -123,7 +123,7 @@
 		<!-- classical-slider 結束 -->
 
 		<!-- message 訊息 -->
-			<%= render :partial => "/Erb/group/group-list_message", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "訊息", :show_footer => true } %>
+			<%= render :partial => "/Erb/group/group-list_message", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "訊息", :show_footer => true, :inner => "/Erb/module/area-essay_message" } %>
 		<!-- message 結束 -->
 
 		<!-- classical-slider 古典輪播 -->
@@ -168,7 +168,7 @@
 		<!-- classical-slider 結束 -->
 
 		<!-- album 相簿 -->
-			<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true } %>
+			<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true, :inner => "/Erb/group/group-list_album" } %>
 		<!-- album 結束 -->
 
 		<!-- classical-slider 古典輪播 -->

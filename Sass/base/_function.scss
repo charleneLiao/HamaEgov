@@ -1,6 +1,6 @@
 //方法與涵式
 
-//@mixin rwd 與 hack================================================================
+//rwd 與 hack================================================================
 
 	@mixin rwd($max, $min: 0) { //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
 
@@ -44,7 +44,7 @@
 		}
 	}
 
-//@mixin 狀態================================================================
+//狀態================================================================
 
 	@mixin at($selector) { //在某個選擇器下的樣式，參數是選擇器
 
@@ -67,7 +67,7 @@
 		}
 	}
 
-//@mixin 數量與框架================================================================
+//數量與框架================================================================
 
 	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量
 
@@ -403,7 +403,7 @@
 		}
 	}
 
-//%extend reset 重設樣式================================================================
+//reset 重設樣式================================================================
 
 	%reset-outer { //重新設定外部樣式
 		margin: 0;
@@ -457,7 +457,7 @@
 		}
 	}
 
-//%extend clear 清除浮動================================================================
+//clear 清除浮動================================================================
 
 	%clear { //偽類清除浮動的方法
 		content: $content;
@@ -466,7 +466,7 @@
 		clear: both;
 	}
 
-//@mixin %extend 隱藏文字與...================================================================
+//隱藏文字與...================================================================
 
 	%hide-text { //隱藏文字的方法
 		font: 0/0 a;
@@ -545,47 +545,7 @@
 		}
 	}
 
-//%extend 背景與圖示================================================================
-
-	%bg-cover { // cover 底圖
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	%bg-contain { // contain 底圖
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-	%icon { //偽類作為行內icon的方法
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic
-		content: $content;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	%icon-font { //偽類作為行內icon-font的方法，請參閱 /bace/icon-font
-		font-family: 'icomoon';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		display: inline-block;
-		vertical-align: baseline;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-//%extend 框架預設樣式================================================================
+//框架預設樣式================================================================
 
 	%center { //齊中寬度
 		margin: 0 auto;
@@ -690,7 +650,7 @@
 		}
 	}
 
-//%extend 元件預設樣式================================================================
+//元件預設樣式================================================================
 
 	%title { //模組、內頁 title
 		font-size: $font-size-l;
@@ -841,39 +801,6 @@
 		background-color: $light;
 	}
 
-	%mask-link { //圖片遮罩
-		position: absolute;
-		display: block;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-
-	%mask { //圖片遮罩
-		position: relative;
-		display: block;
-
-		&:before {
-			content: $content;
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($black, $opacity-m);
-			transition: $transition;
-		}
-
-		&:hover {
-
-			&:before {
-				opacity: 0;
-			}
-		}
-	}
-
 	%footer-btns { //更多按鈕
 		position: absolute;
 		top: $interval-xs;
@@ -950,7 +877,80 @@
 		}
 	}
 
-//@mixin 背景與圖示================================================================
+//快速取用樣式================================================================
+
+	%mask-link { //圖片遮罩
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	%mask { //圖片遮罩
+		position: relative;
+		display: block;
+
+		&:before {
+			content: $content;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black, $opacity-m);
+			transition: $transition;
+		}
+
+		&:hover {
+
+			&:before {
+				opacity: 0;
+			}
+		}
+	}
+
+//背景與圖示================================================================
+
+	%bg-cover { // cover 底圖
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	%bg-contain { // contain 底圖
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	%icon { //偽類作為行內icon的方法
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%icon-pic { //偽類作為行內icon-pic的方法，請參閱 /bace/icon-pic
+		content: $content;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	%icon-font { //偽類作為行內icon-font的方法，請參閱 /bace/icon-font
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		display: inline-block;
+		vertical-align: baseline;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
 	@mixin bg-to-pic($img-src, $size: true, $height: null) { //依圖改變大小並置中，$img-src為圖片檔名，$size為false就不匯出寬高，參數為數字就會出指定倍數大小，$size為數字帶單位就會匯出指定大小，若指定$height就會當作高度使用
 		background-image: image-url($img-src);

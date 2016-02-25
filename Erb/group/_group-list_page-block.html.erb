@@ -6,7 +6,7 @@
 %>
 
 <% if ( li_length > 0 ) %>
-	<div class="group-list topic <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+	<div class="group-list page-block <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 		<div class="header"><div class="inner">
 			<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
 		</div></div>
@@ -16,9 +16,9 @@
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>">
 
-					<!-- message 消息 -->
-						<%= render :partial => "/Erb/module/area-essay_topic", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(5)+1), :show_footer => false } %>
-					<!-- message 結束 -->
+					<!-- <%= inner %> -->
+						<%= render :partial => inner, :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(5)+1), :show_footer => false, :show_mark => false, :inner => "/Erb/module/simple-pic_default", :inner_len => 2 } %>
+					<!-- <%= inner %> -->
 					
 					</li>
 				<% end %>

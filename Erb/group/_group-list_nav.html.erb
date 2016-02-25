@@ -23,7 +23,7 @@
 					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner ,:locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1) } %>
+						<%= render :partial => inner ,:locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => (zh_lorem_words rand(7)+1), :show_footer => false, :show_mark => false, :inner => "/Erb/module/simple-pic_default", :inner_len => 2 } %>
 					<!-- <%= inner %> -->
 					
 					</li>

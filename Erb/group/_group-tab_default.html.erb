@@ -16,7 +16,7 @@
 				<li data-index="1">
 
 				<!-- tab 頁籤 -->
-					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => '頁籤', :inner_len => li_length } %>
+					<%= render :partial => '/Erb/module/list-text_tab', :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "頁籤", :inner_len => li_length } %>
 				<!-- tab 結束 -->
 				
 				</li>
@@ -25,8 +25,8 @@
 					<li data-index="<%= i + 2 %>">
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => { :index => 4, :class_set => nil, :child => 0, :func_set => nil, :header_text => "標題", :show_footer => false, :show_mark => false, :inner => "/Erb/module/area-essay_message" } %>
-					<!-- <%= inner %> 結束 -->
+						<%= render :partial => inner, :locals => { :index => 4, :class_set => nil, :child => 0, :func_set => nil, :header_text => "標題", :show_footer => false, :show_mark => false, :inner => "/Erb/module/area-essay_message", :inner_len => 2 } %>
+					<!-- <%= inner %> -->
 
 					</li>
 				<% end %>

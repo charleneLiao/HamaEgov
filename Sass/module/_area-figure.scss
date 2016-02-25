@@ -65,117 +65,78 @@
 
 	&.album {
 
-		.base-module-area & {
+		> .inner {
+
+		}
+
+		.header {
 
 			> .inner {
 
 			}
 
-			.header {
+			h4 {
+				@extend %title;
 
-				> .inner {
-
+				&:before {
+					@include icon-font('camera');
 				}
+			}
 
-				h4 {
-					@extend %title;
+			span {
+					
+			}
 
-					&:before {
-						@include icon-font('camera');
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+
+			}
+
+			/*a*/.divition {
+
+				&:hover {
+
+					.essay {
+						background-color: $light-gray;
 					}
 				}
+			}
+
+			.image {
 
 				span {
-						
+					@extend %bg-cover;
+					display: block;
+					height: 80px;
 				}
 
-				a {
-
-				}
-			}
-
-			.content {
-
-				> .inner {
-
-				}
-
-				/*a*/.divition {
-
-					&:hover {
-
-						.essay {
-							background-color: $light-gray;
-						}
-					}
-				}
-
-				.image {
-
-					span {
-						@extend %bg-cover;
-						display: block;
-						height: 80px;
-					}
-
-					img {
-						display: none;
-					}
-				}
-
-				.essay {
-					padding: $interval-s;
-					background-color: $light;
-					transition: $transition;
-				}
-
-				.figcaption {
-					@extend %caption;
-
-					span {
-						
-					}
-				}
-
-				.label {
-					@extend %label;
-
-					ul {
-
-					}
-
-					li {
-
-					}
-
-					span {
-
-					}
-				}
-
-				/*i*/.mark {
-					@extend %mark;
-				}
-
-				.paragraph {
-					@extend %paragraph;
-
-					p {
-
-					}
-
-					span {
-
-					}
+				img {
+					display: none;
 				}
 			}
 
-			.footer {
-				@extend %footer-btns;
+			.essay {
+				padding: $interval-s;
+				background-color: $light;
+				transition: $transition;
+			}
 
-				> .inner {
+			.figcaption {
+				@extend %caption;
 
+				span {
+					
 				}
+			}
+
+			.label {
+				@extend %label;
 
 				ul {
 
@@ -188,140 +149,273 @@
 				span {
 
 				}
+			}
 
-				a {
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.paragraph {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
 
 				}
 			}
 		}
 
-		.base-page-area & {
-			overflow: hidden;
-
-			&:hover {
-
-				.content {
-
-					.paragraph {
-						display: block;
-					}
-				}
-			}
+		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 
 			}
 
-			.header {
-				display: none;
+			ul {
 
-				> .inner {
-
-				}
-
-				h4 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標題-標籤-內文)================================================================
+
+	&.page-figure {
+		overflow: hidden;
+
+		&:hover {
 
 			.content {
 
-				> .inner {
-					position: relative;
-				}
-
-				.divition {
-
-				}
-
-				.image {
-
-					span {
-						@extend %bg-cover;
-						display: block;
-						height: 200px;
-					}
-
-					img {
-						display: none;
-					}
-				}
-
-				.essay {
-					position: absolute;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					padding: $interval-m;
-					background-color: $black;
-					background-color: rgba( $black, $opacity-h );
-				}
-
-				.figcaption {
-					@extend %ellipsis;
-					margin: $interval-s 0;
-					font-size: $font-size-l;
-					color: $white;
-
-					span {
-						color: inherit;
-					}
-				}
-
-				.label {
-
-					ul {
-						@extend %reset;
-						color: $gray;
-						font-size: $font-size-s;
-					}
-
-					li {
-						@extend %ellipsis;
-						color: inherit;
-						font-size: inherit;
-					}
-
-					span {
-
-					}
-				}
-
-				/*i*/.mask {
-
-				}
-
 				.paragraph {
+					display: block;
+				}
+			}
+		}
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				position: relative;
+			}
+
+			.divition {
+
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					padding-bottom: 68%;
+				}
+
+				img {
 					display: none;
-
-					p {
-						@extend %reset;
-						margin: $interval-s 0;
-						color: $white;
-					}
-
-					span {
-
-					}
 				}
 			}
 
-			.footer {
+			.essay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: $interval-m;
+				background-color: $black;
+				background-color: rgba( $black, $opacity-h );
+			}
 
-				> .inner {
+			.figcaption {
+				@extend %ellipsis;
+				margin: $interval-s 0;
+				font-size: $font-size-l;
+				color: $white;
 
+				span {
+					color: inherit;
 				}
+			}
+
+			.label {
 
 				ul {
+					@extend %reset;
+					color: $gray;
+					font-size: $font-size-s;
+				}
 
+				li {
+					@extend %ellipsis;
+					color: inherit;
+					font-size: inherit;
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+
+			}
+
+			.paragraph {
+				display: none;
+
+				p {
+					@extend %reset;
+					margin: $interval-s 0;
+					color: $white;
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標題-標籤)================================================================
+
+	&.page-image-figcaption-label {
+		overflow: hidden;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				position: relative;
+			}
+
+			.divition {
+
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					padding-bottom: 68%;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+
+			}
+
+			.figcaption {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: $interval-m;
+				background-color: $black;
+				background-color: rgba( $black, $opacity-h );
+				font-size: $font-size-l;
+				color: $white;
+
+				span {
+					color: inherit;
+				}
+			}
+
+			.label {
+				position: absolute;
+				top: $interval-s;
+				left: $interval-s;
+
+				ul {
+					@extend %reset;
 				}
 
 				li {
@@ -331,10 +425,587 @@
 				span {
 
 				}
+			}
+
+			/*i*/.mark {
+				@extend %mark-1;
+			}
+
+			.paragraph {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: $interval-m;
+				background-color: $black;
+				background-color: rgba( $black, $opacity-h );
+
+				p {
+					@extend %reset;
+					margin: $interval-s 0;
+					color: $white;
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標題)================================================================
+
+	&.page-image-figcaption {
+		overflow: hidden;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				position: relative;
+			}
+
+			.divition {
+
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					padding-bottom: 68%;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.figcaption {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: $interval-m;
+				background-color: $black;
+				background-color: rgba( $black, $opacity-h );
+				font-size: $font-size-l;
+				color: $white;
+
+				span {
+					color: inherit;
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標籤)================================================================
+
+	&.page-image-label {
+		overflow: hidden;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				position: relative;
+			}
+
+			.divition {
+
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					padding-bottom: 68%;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.label {
+				position: absolute;
+				top: $interval-s;
+				left: $interval-s;
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark-1;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標題-內文)================================================================
+
+	&.page-image-figcaption-paragraph {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$pic_w: 150px;
+
+			> .inner {
+				
+			}
+
+			/*a*/.divition {
+				position: relative;
+				background-color: $light;
+				transition: $transition;
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					position: absolute;
+					display: block;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: $pic_w;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				padding: $interval-l;
+				padding-left: $pic_w + $interval-l;
+			}
+
+			.figcaption {
+				@extend %caption;
+
+				span {
+					
+				}
 
 				a {
 
 				}
+			}
+
+			.paragraph {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-標籤-內文)================================================================
+
+	&.page-image-label-paragraph {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$pic_w: 150px;
+
+			> .inner {
+				
+			}
+
+			/*a*/.divition {
+				position: relative;
+				background-color: $light;
+				transition: $transition;
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					position: absolute;
+					display: block;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: $pic_w;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				padding: $interval-l;
+				padding-left: $pic_w + $interval-l;
+			}
+
+			.label {
+				margin-bottom: $interval-m;
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark-1;
+			}
+
+			.paragraph {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁圖片敘述群組(圖片-內文)================================================================
+
+	&.page-image-paragraph {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$pic_w: 150px;
+
+			> .inner {
+				
+			}
+
+			/*a*/.divition {
+				position: relative;
+				background-color: $light;
+				transition: $transition;
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					position: absolute;
+					display: block;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: $pic_w;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.paragraph {
+				@extend %paragraph;
+				padding: $interval-l;
+				padding-left: $pic_w + $interval-l;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}
