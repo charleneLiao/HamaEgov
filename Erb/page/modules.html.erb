@@ -46,6 +46,24 @@
 	<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 9, :class_set => "justify", :func_set => nil, :header_text => nil } %>
 <!-- btn 結束 -->
 
+<div class="module-captions">//視訊================================================================</div>
+
+<!-- default 預設 -->
+	<%= render :partial => "/Erb/module/area-video_default", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
+<!-- default 結束 -->
+
+<div class="module-captions">//音訊================================================================</div>
+
+<!-- default 預設 -->
+	<%= render :partial => "/Erb/module/area-audio_default", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
+<!-- default 結束 -->
+
+<div class="module-captions">//框架================================================================</div>
+
+<!-- default 預設 -->
+	<%= render :partial => "/Erb/module/area-iframe_default", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
+<!-- default 結束 -->
+
 <div class="module-captions">//內頁列表================================================================</div>
 
 <!-- default 預設 -->
@@ -60,7 +78,7 @@
 	<%= render :partial => "/Erb/group/group-list_page-list-text", :locals => { :index => 12, :class_set => nil, :func_set => nil, :header_text => "內頁文字列表群組", :inner => "/Erb/module/list-text_page-list" } %>
 <!-- page-list-text 結束 -->
 
-<div class="module-captions">//圖片================================================================</div>
+<div class="module-captions">//內頁圖片================================================================</div>
 
 <!-- default 預設 -->
 	<%= render :partial => "/Erb/module/simple-pic_default", :locals => { :index => 13, :class_set => nil, :func_set => nil, :header_text => "單則圖片", :show_footer => true } %>
@@ -82,7 +100,7 @@
 	<%= render :partial => "/Erb/module/list-pic_page-marquee", :locals => { :index => 16, :class_set => nil, :func_set => "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => "跑馬燈", :show_footer => true } %>
 <!-- marquee 結束 -->
 
-<div class="module-captions">//圖片敘述================================================================</div>
+<div class="module-captions">//內頁圖片敘述================================================================</div>
 
 <!-- page-figure 內頁圖片敘述(圖片-標題-標籤-內文) -->
 	<%= render :partial => "/Erb/module/area-figure_page-figure", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
@@ -112,7 +130,7 @@
 	<%= render :partial => "/Erb/module/area-figure_page-image-paragraph", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-內文)", :show_footer => true } %>
 <!-- page-figure 結束 -->
 
-<div class="module-captions">//文章敘述================================================================</div>
+<div class="module-captions">//內頁文章敘述================================================================</div>
 
 <!-- page-essay 內頁文章敘述(圖片-標題-標籤-內文) -->
 	<%= render :partial => "/Erb/module/area-essay_page-essay", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
@@ -138,7 +156,7 @@
 	<%= render :partial => "/Erb/module/area-essay_page-caption-paragraph", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-內文)", :show_footer => true } %>
 <!-- page-caption-paragraph 結束 -->
 
-<div class="module-captions">//敘述群組================================================================</div>
+<div class="module-captions">//內頁敘述群組================================================================</div>
 
 <!-- group-list_page-block 內頁區塊群組 -->
 	<%= render :partial => "/Erb/group/group-list_page-block", :locals => { :index => 20, :class_set => nil, :func_set => nil, :header_text => "內頁區塊群組", :show_footer => false, :inner => "/Erb/module/area-figure_page-figure" } %>
