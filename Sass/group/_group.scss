@@ -190,7 +190,6 @@
 		}
 
 		.base-footer & {
-			background-color: $light;
 
 			> .inner {
 				@extend %center;
@@ -375,6 +374,10 @@
 
 	&.group-page-header {
 
+		+ [data-index][data-type] {
+			margin-top: $interval-l;
+		}
+
 		> .inner {
 
 		}
@@ -402,24 +405,6 @@
 
 			> .inner {
 
-			}
-
-			.list-text {
-
-				&.user-tool {
-					float: right;
-				}
-
-				&.sitemap {
-					clear: both;
-				}
-			}
-
-			.simple-text {
-
-				&.heading {
-					overflow: hidden;
-				}
 			}
 		}
 

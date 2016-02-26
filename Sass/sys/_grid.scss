@@ -1,14 +1,10 @@
 //排版框架
 
-	// type 0 模組(module)
-	// type 1 分割(cell)
-	// type 2 頁籤(tab)
-	// type 3 單欄(row)
-	// type 4 清單(list)
-
-@import 'sys/variable'; //系統變數
-
-@import 'base/variable'; //變數
+// type 0 模組(module)
+// type 1 分割(cell)
+// type 2 頁籤(tab)
+// type 3 單欄(row)
+// type 4 清單(list)
 
 @for $i from $min-child through $max-child { //算自然分割
 

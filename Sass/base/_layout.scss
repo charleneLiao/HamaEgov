@@ -335,7 +335,7 @@
 //主要內容================================================================
 
 	.base-content {
-		margin-bottom: $interval-l;
+		margin-bottom: $interval-xl;
 
 		> .inner {
 			@extend %center;
@@ -376,6 +376,7 @@
 //頁尾資訊================================================================
 
 	.base-footer {
+		background-color: $white;
 
 		> .inner {
 
@@ -574,7 +575,6 @@
 //文章================================================================
 
 	.base-article{
-		@extend %page;
 
 		> .inner {
 

@@ -560,12 +560,12 @@
 		margin: 0 0 $interval-l;
 
 		> .inner {
-			margin: $interval-s;
+			margin: $layout-interval;
 		}
 	}
 
 	%page { //內頁
-		margin: $interval-xl 0 $interval-m;
+		margin: $interval-xl 0 $layout-interval;
 
 		> .inner {
 
@@ -573,7 +573,7 @@
 	}
 
 	%mobile { //手機側欄模組
-		margin: $interval-m 0;
+		margin: $layout-interval 0;
 
 		> .inner {
 
@@ -605,11 +605,7 @@
 
 	%area-page { //內頁模組
 
-		[data-index][data-type="0"] {
-			@extend %page;
-		}
-
-		[data-index][data-type="4"], [data-index][data-type="2"] {
+		[data-index][data-type] + [data-index][data-type] {
 			@extend %page;
 
 			[data-index][data-type="0"] {
@@ -829,7 +825,7 @@
 
 	%list { //列表樣式
 		display: block;
-		padding: $interval-s;
+		padding: $interval-m;
 		background-color: $light;
 		transition: $transition;
 	}

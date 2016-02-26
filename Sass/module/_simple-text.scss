@@ -108,6 +108,10 @@
 
 				h4 {
 					@extend %title;
+
+					&:before {
+						@include icon-font('list');
+					}
 				}
 
 				span {
@@ -424,6 +428,10 @@
 
 	&.heading {
 
+		.group-page-header & {
+			overflow: hidden;
+		}
+
 		> .inner {
 
 		}
@@ -530,7 +538,7 @@
 			h1 {
 				@extend %reset;
 				font-size: $font-size-l;
-				padding-bottom: $interval-s;
+				padding: $interval-s 0;
 				border-bottom-color: $border-color;
 				border-bottom-width: $interval-xs;
 				border-bottom-style: double;
@@ -898,8 +906,13 @@
 
 			.content {
 				@extend %center;
+				position: relative;
 
 				> .inner {
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: -1px;
 					text-align: right;
 				}
 
@@ -989,7 +1002,7 @@
 			.content {
 				$pic: 'icon-pic/away-w-top.png'; //圖片
 				$btn-w: 50px;
-				$btn-h: 30px;
+				$btn-h: 25px;
 
 				> .inner {
 
@@ -1009,10 +1022,12 @@
 					height: $btn-h;
 					background-color: $btn-bg-color;
 					transition: $transition;
+					background-position: center 8px;
 
 					&:hover {
-						height: $btn-h + $interval-m;
+						height: $btn-h + 3;
 						background-color: $btn-hover-bg-color;
+						background-position: center 5px;
 					}
 				}
 			}

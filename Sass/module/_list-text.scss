@@ -113,6 +113,10 @@
 
 			h4 {
 				@extend %title;
+
+				&:before {
+					@include icon-font('list');
+				}
 			}
 
 			span {
@@ -821,6 +825,10 @@
 
 	&.user-tool {
 
+		.group-page-header & {
+			float: right;
+		}
+
 		.base-extend & {
 			position: fixed;
 			right: $interval-l;
@@ -917,7 +925,7 @@
 			}
 
 			> .inner {
-				
+
 			}
 
 			.header {
@@ -938,8 +946,7 @@
 					@extend %btn;
 
 					&:before {
-						@include icon-font('settings_applications');
-						margin-right: $interval-s;
+						@include icon-font('settings');
 					}
 				}
 			}
@@ -1664,7 +1671,7 @@
 				@extend %title;
 
 				&:before {
-					@include icon-font('stars');
+					@include icon-font('star');
 				}
 			}
 
@@ -2065,6 +2072,10 @@
 
 	&.sitemap {
 
+		.group-page-header & {
+			clear: both;
+		}
+
 		> .inner {
 
 		}
@@ -2151,7 +2162,7 @@
 //詳細資訊================================================================
 
 	&.detail {
-		margin: 0 !important;
+		margin: $interval-m 0 !important;
 
 		> .inner {
 
@@ -2326,6 +2337,10 @@
 
 			h4 {
 				@extend %title;
+
+				&:before {
+					@include icon-font('cloud_download');
+				}
 			}
 
 			span {
@@ -2443,6 +2458,9 @@
 
 			a {
 
+				&:hover {
+					color: currentColor;
+				}
 			}
 		}
 
@@ -2539,6 +2557,7 @@
 //列表按鈕================================================================
 
 	&.btn {
+		margin: $interval-m 0 !important;
 
 		&.right {
 
@@ -2889,7 +2908,7 @@
 //標籤================================================================
 
 	&.label {
-		margin: 0 !important;
+		margin: $interval-m 0 !important;
 
 		> .inner {
 

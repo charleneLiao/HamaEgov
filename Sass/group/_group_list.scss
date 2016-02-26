@@ -114,6 +114,10 @@
 
 				h3 {
 					@extend %title;
+
+					&:before {
+						@include icon-font('list');
+					}
 				}
 
 				span {
@@ -225,6 +229,10 @@
 
 				h3 {
 					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
 				}
 
 				span {
@@ -249,7 +257,6 @@
 							}
 
 							> [data-index][data-type] {
-								padding-left: $interval-l;
 
 								> .inner {
 
@@ -643,7 +650,7 @@
 
 			@include default-min-len($type, $default-len, $max-len);
 			position: relative;
-			z-index: 1;
+			z-index: 2;
 
 			@include js(false) {
 				padding-bottom: $interval-l;
@@ -971,7 +978,6 @@
 			$max-len: 10;
 
 			@include default-min-len($type, $default-len, $max-len);
-			background-color: $light;
 
 			@include media('mobile') {
 				display: none;
@@ -1365,6 +1371,10 @@
 
 				h3 {
 					@extend %title;
+
+					&:before {
+						@include icon-font('cloud_download');
+					}
 				}
 
 				span {
@@ -1372,7 +1382,7 @@
 				}
 
 				a {
-
+					
 				}
 			}
 
