@@ -6,7 +6,7 @@
 
 //灰階================================================================
 	$white: #ffffff; //白色
-	$light: #f6f6f6; //淺色
+	$light: #f0f0f0; //淺色
 	$light-gray: #e4e4e4; //淺灰
 	$gray: #b6b6b6; //灰色
 	$deep-gray: #646464; //深灰
@@ -63,16 +63,16 @@
 
 //間隔設定================================================================
 	$interval-xs: 3px;
-	$interval-s: 6px;
-	$interval-m: 10px;
-	$interval-l: 20px;
+	$interval-s: 5px;
+	$interval-m: 8px;
+	$interval-l: 15px;
 	$interval-xl: 30px;
 
 //基本動畫速度================================================================
 	$transition: 200ms;
 
 //RWD設定================================================================
-	$pc-width: 1010px !default; //pc寬度
+	$pc-width: 1000px !default; //pc寬度
 	$pad-width: 768px !default; //pad寬度
 	$phone-width: 560px !default; //phone寬度
 	$rwd-btn-size: 40px; //RWD 手機側欄按鈕大小

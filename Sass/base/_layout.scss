@@ -259,6 +259,7 @@
 //固定佈局================================================================
 
 	.base-wrapper {
+		background-color: $light;
 
 		> .inner {
 			margin: 0;
@@ -334,9 +335,12 @@
 //主要內容================================================================
 
 	.base-content {
+		margin-bottom: $interval-l;
 
 		> .inner {
 			@extend %center;
+			background-color: $white;
+			border: $border;
 
 			> .header {
 
@@ -410,6 +414,7 @@
 
 	.base-module-area {
 		@extend %area-module;
+		margin: $interval-m;
 
 		> .inner {
 
@@ -447,7 +452,7 @@
 //內頁區塊================================================================
 
 	.base-page-area {
-		margin: $interval-l 0;
+		margin: $interval-m $interval-m $interval-l;
 
 		> .inner {
 
@@ -490,7 +495,7 @@
 
 	.base-aside {
 		@extend %area-module;
-		width: 230px;
+		width: 190px;
 		float: left;
 
 		> .inner {
@@ -533,7 +538,7 @@
 		position: relative;
 
 		> .inner {
-			margin: $interval-m;
+			margin: $interval-s $interval-m;
 
 			> .header {
 

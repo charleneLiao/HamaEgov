@@ -423,7 +423,6 @@
 //頁面標題================================================================
 
 	&.heading {
-		overflow: hidden;
 
 		> .inner {
 
@@ -456,10 +455,10 @@
 
 			h3 {
 				@extend %reset;
-				padding-bottom: $interval-s;
-				font-size: $font-size-xl;
-				font-weight: $font-weight-n;
-				color: $title-color;
+				padding-bottom: $interval-m;
+				border-bottom: $border;
+				margin-bottom: $interval-m;
+				font-size: $font-size-l;
 			}
 
 			span {
@@ -529,12 +528,14 @@
 			}
 
 			h1 {
+				@extend %reset;
 				font-size: $font-size-l;
 				padding-bottom: $interval-s;
 				border-bottom-color: $border-color;
 				border-bottom-width: $interval-xs;
 				border-bottom-style: double;
 				margin-bottom: $interval-s;
+				color: $title-color;
 			}
 
 			span {

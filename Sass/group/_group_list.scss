@@ -774,7 +774,6 @@
 												padding: $interval-s;
 												margin: $interval-s;
 												text-align: center;
-												font-size: $font-size-l;
 												transition: $transition;
 
 												@include js(false) {
@@ -1116,8 +1115,8 @@
 
 					}
 
-					h3 {
-						font-size: $font-size-l;
+					h3 { 
+						@extend %reset;
 						padding: $interval-m;
 						color: $white;
 
@@ -1466,6 +1465,13 @@
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
+
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
 							}
 						}
 					}

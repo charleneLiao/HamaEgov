@@ -69,17 +69,17 @@
 			<%= render :partial => "/Erb/module/area-form_epaper", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "訂閱電子報" } %>
 		<!-- epaper 結束 -->
 
-		<!-- default 預設 -->
-			<%= render :partial => "/Erb/module/area-video_default", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
-		<!-- default 結束 -->
+		<!-- area-customize_video 視訊 -->
+			<%= render :partial => "/Erb/module/area-customize_video", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
+		<!-- area-customize_video 結束 -->
 
-		<!-- default 預設 -->
-			<%= render :partial => "/Erb/module/area-audio_default", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
-		<!-- default 結束 -->
+		<!-- area-customize_audio 音訊 -->
+			<%= render :partial => "/Erb/module/area-customize_audio", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
+		<!-- area-customize_audio 結束 -->
 
-		<!-- default 預設 -->
-			<%= render :partial => "/Erb/module/area-iframe_default", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
-		<!-- default 結束 -->
+		<!-- area-customize_iframe 框架 -->
+			<%= render :partial => "/Erb/module/area-customize_iframe", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
+		<!-- area-customize_iframe 結束 -->
 
 		<!-- default 預設 -->
 			<%= render :partial => "/Erb/module/area-editor_default", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "自訂標題" } %>
@@ -168,7 +168,7 @@
 		<!-- classical-slider 結束 -->
 
 		<!-- album 相簿 -->
-			<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true, :inner => "/Erb/group/group-list_album" } %>
+			<%= render :partial => "/Erb/group/group-list_album", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "相簿", :show_footer => true, :inner => "/Erb/module/area-figure_album" } %>
 		<!-- album 結束 -->
 
 		<!-- classical-slider 古典輪播 -->

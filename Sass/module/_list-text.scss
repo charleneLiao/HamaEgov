@@ -625,7 +625,7 @@
 			}
 
 			h4 {
-				font-size: $font-size-l;
+				@extend %reset;
 				padding: $interval-m;
 				color: $white;
 
@@ -906,44 +906,66 @@
 		}
 
 		.base-section & {
-			margin: 0 !important;
+			position: relative;
+			z-index: 1;
+
+			&:hover {
+
+				.content {
+					display: block;
+				}
+			}
 
 			> .inner {
-
+				
 			}
 
 			.header {
-				display: none;
 
 				> .inner {
 
 				}
 
 				h4 {
-
+					@extend %reset;
 				}
 
 				span {
-
+					display: block;
 				}
 
 				a {
+					@extend %btn;
 
+					&:before {
+						@include icon-font('settings_applications');
+						margin-right: $interval-s;
+					}
 				}
 			}
 
 			.content {
+				position: absolute;
+				display: none;
+				top: 100%;
+				right: 0;
 
 				> .inner {
-					
+					padding: $interval-m;
+					border: $border;
+					background-color: $white;
 				}
 
 				ul {
-					text-align: right;
+
 				}
 
 				li {
-					display: inline-block;
+					display: block;
+
+					+ li {
+						margin-top: $interval-xs;
+					}
 
 					&.login {
 
@@ -1021,7 +1043,9 @@
 				}
 
 				a {
-					@extend %btn-s;
+					@extend %btn;
+					display: block;
+					white-space: nowrap;
 
 					&:before {
 						margin-right: $interval-xs;
@@ -2040,8 +2064,6 @@
 //網站地圖================================================================
 
 	&.sitemap {
-		float: right;
-		max-width: 50%;
 
 		> .inner {
 
@@ -2818,6 +2840,107 @@
 				background-color: $span-color;
 				color: $white;
 				font-size: $font-size-s;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.next, &.prev {
+
+					@include js(false) {
+						display: none;
+					}
+				}
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//標籤================================================================
+
+	&.label {
+		margin: 0 !important;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+				
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+				text-align: right;
+
+				&:before {
+					content: '標籤 : ';
+					margin-right: $interval-s;
+					color: $gray;
+				}
+			}
+
+			li {
+				display: inline-block;
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %mark-1;
 			}
 		}
 

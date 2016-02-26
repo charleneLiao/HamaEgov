@@ -69,52 +69,28 @@
 			display: none;
 		}
 
-		> .inner {
-
-		}
-
-		.header {
+		.base-module-area & {
 
 			> .inner {
 
 			}
 
-			h4 {
-				@extend %title;
+			.header {
 
-				&:before {
-					@include icon-font('place');
+				> .inner {
+
 				}
-			}
 
-			span {
+				h4 {
+					@extend %title;
 
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-
-			}
-
-			.divition {
-				margin-bottom: $interval-s;
-			}
-
-			.essay {
-				
-			}
-
-			.caption {
-				@extend %caption;
+					&:before {
+						@include icon-font('place');
+					}
+				}
 
 				span {
-					
+
 				}
 
 				a {
@@ -122,8 +98,71 @@
 				}
 			}
 
-			.label {
-				@extend %label;
+			.content {
+
+				> .inner {
+
+				}
+
+				.divition {
+					margin-bottom: $interval-s;
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.paragraph {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
 
 				ul {
 
@@ -136,46 +175,922 @@
 				span {
 
 				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-page-area & {
+
+			> .inner {
+
 			}
 
-			/*i*/.mark {
-				@extend %mark;
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 
-			.paragraph {
-				@extend %paragraph;
+			.content {
 
-				p {
+				> .inner {
+
+				}
+
+				.divition {
+					margin-bottom: $interval-s;
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
+
+				.paragraph {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
 
 				}
 
 				span {
 
 				}
+
+				a {
+
+				}
 			}
 		}
+	}
 
-		.footer {
-			@extend %footer-btns;
+//視訊================================================================
+
+	&.video {
+
+		.base-module-area & {
 
 			> .inner {
 
 			}
 
-			ul {
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('movie');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.video {
+					margin-bottom: $interval-s;
+
+					video {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.paragraph {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-page-area & {
+
+			> .inner {
 
 			}
 
-			li {
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.video {
+					margin-bottom: $interval-s;
+
+					video {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
+
+				.paragraph {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//音訊================================================================
+
+	&.audio {
+
+		.base-module-area & {
+
+			> .inner {
 
 			}
 
-			span {
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('audiotrack');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.audio {
+					margin-bottom: $interval-s;
+
+					audio {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.paragraph {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-page-area & {
+
+			> .inner {
 
 			}
 
-			a {
+			.header {
 
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.audio {
+					margin-bottom: $interval-s;
+
+					audio {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
+
+				.paragraph {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//框架================================================================
+
+	&.iframe {
+
+		.base-module-area & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.iframe {
+					margin-bottom: $interval-s;
+
+					iframe {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.paragraph {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-page-area & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+					
+				}
+
+				.iframe {
+					margin-bottom: $interval-s;
+
+					iframe {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
+
+				.paragraph {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}

@@ -401,11 +401,24 @@
 		> .inner > .content {
 
 			> .inner {
-				border-bottom: $border;
-				margin-bottom: $interval-m;
 
-				&:after {
-					@extend %clear;
+			}
+
+			.list-text {
+
+				&.user-tool {
+					float: right;
+				}
+
+				&.sitemap {
+					clear: both;
+				}
+			}
+
+			.simple-text {
+
+				&.heading {
+					overflow: hidden;
 				}
 			}
 		}

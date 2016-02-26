@@ -565,7 +565,7 @@
 	}
 
 	%page { //內頁
-		margin: $interval-l 0 $interval-m;
+		margin: $interval-xl 0 $interval-m;
 
 		> .inner {
 
@@ -792,11 +792,12 @@
 	}
 
 	%article { //文章樣式
-		padding: $interval-m $interval-l;
+		color: inherit;
 	}
 
 	%article-extend { //延伸的文章樣式
 		@extend %article;
+		padding: $interval-m $interval-l;
 		background-color: $light;
 	}
 
