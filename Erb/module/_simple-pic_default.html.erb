@@ -1,5 +1,5 @@
 <%
-	img = $sample_l_pic[rand($sample_l_pic.length)]
+	img = $sample_l_pic.sample
 %>
 
 <div class="simple-pic default <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">

@@ -691,7 +691,7 @@
 
 				&:hover {
 					background-color: $light;
-					color: $body-font-color;
+					color: currentColor;
 				}
 			}
 		}
@@ -2525,7 +2525,7 @@
 				&:hover {
 					border-left-width: $interval-m;
 					background-color: $white;
-					color: $deep;
+					color: currentColor;
 				}
 			}
 		}

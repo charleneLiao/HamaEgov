@@ -142,7 +142,7 @@
 							}
 
 							> [data-index][data-type] {
-								padding-left: $interval-l;
+								padding-left: $interval-xl;
 
 								> .inner {
 
@@ -177,7 +177,7 @@
 									}
 
 									> .content {
-										padding-left: $interval-l;
+
 									}
 
 									> .footer {
@@ -257,6 +257,7 @@
 							}
 
 							> [data-index][data-type] {
+								padding-left: $interval-xl;
 
 								> .inner {
 
@@ -291,7 +292,7 @@
 									}
 
 									> .content {
-										padding-left: $interval-l;
+
 									}
 
 									> .footer {
@@ -595,7 +596,7 @@
 
 												&:hover {
 													background-color: $light;
-													color: $body-font-color;
+													color: currentColor;
 												}
 											}
 										}
@@ -1223,7 +1224,7 @@
 
 												&:hover {
 													background-color: $light;
-													color: $body-font-color;
+													color: currentColor;
 												}
 											}
 										}
@@ -1742,7 +1743,7 @@
 
 				> .inner {
 					overflow: hidden;
-					margin: 0 $btn-width;
+					// margin: 0 $btn-width; //如果要與圖不重疊
 
 					@include js(false) {
 						margin: 0;
@@ -1817,10 +1818,11 @@
 							display: block;
 							width: $btn-width;
 							transition: $transition;
-							background-color: $btn-bg-color;
+							background-color: $light;
+							background-color: rgba($light, $opacity-h);
 
 							&:hover {
-								background-color: $btn-hover-bg-color;
+								background-color: rgba($light, $opacity-vh);
 							}
 						}
 					}
@@ -1829,7 +1831,7 @@
 
 						a {
 							left: 0;
-							@include bg-to-pic('icon-pic/away-w-left.png', false);
+							@include bg-to-pic('icon-pic/away-b-left.png', false);
 						}
 					}
 
@@ -1837,7 +1839,7 @@
 
 						a {
 							right: 0;
-							@include bg-to-pic('icon-pic/away-w-right.png', false);
+							@include bg-to-pic('icon-pic/away-b-right.png', false);
 						}
 					}
 
@@ -1954,7 +1956,7 @@
 							background-color: rgba($light, $opacity-h);
 
 							&:hover {
-								width: $btn-width + $interval-m;
+								background-color: rgba($light, $opacity-vh);
 							}
 						}
 					}

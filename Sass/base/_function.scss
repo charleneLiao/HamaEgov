@@ -833,7 +833,7 @@
 	%list-hover { //列表 :hover 樣式
 
 		&:hover {
-			color: $black;
+			color: currentColor;
 			background-color: $light-gray;
 		}
 	}

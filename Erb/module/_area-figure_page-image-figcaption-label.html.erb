@@ -1,5 +1,5 @@
 <%
-	img = $sample_m_pic[rand($sample_m_pic.length)]
+	img = $sample_m_pic.sample
 %>
 
 <div class="area-figure page-image-figcaption-label <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">

@@ -16,8 +16,8 @@
 
 			<% li_length.times do |i| %>
 				<%
-					img = $sample_m_pic[rand($sample_m_pic.length)]
-					type = types[rand(types.length)]
+					img = $sample_m_pic.sample
+					type = types.sample
 				%>
 
 				<li <% if type %>class="is-<%= type %>"<% end %> data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><img src="<%= img %>" alt=""></a></span></li>

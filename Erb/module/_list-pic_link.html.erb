@@ -13,7 +13,7 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
-				<% img = $sample_m_pic[rand($sample_m_pic.length)] %>
+				<% img = $sample_m_pic.sample %>
 
 				<li data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><img src="<%= img %>" alt=""></a></span></li>
 			<% end %>

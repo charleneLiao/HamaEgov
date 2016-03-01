@@ -918,7 +918,6 @@
 
 				span {
 					display: inline-block;
-					margin-right: $layout-interval;
 				}
 
 				a {
@@ -1016,18 +1015,15 @@
 					@include bg-to-pic($pic, false);
 					position: absolute;
 					bottom: 0;
-					right: $layout-interval;
+					right: 0;
 					display: block;
 					width: $btn-w;
 					height: $btn-h;
 					background-color: $btn-bg-color;
 					transition: $transition;
-					background-position: center 8px;
 
 					&:hover {
-						height: $btn-h + 3;
 						background-color: $btn-hover-bg-color;
-						background-position: center 5px;
 					}
 				}
 			}
