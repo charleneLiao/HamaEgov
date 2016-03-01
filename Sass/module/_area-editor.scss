@@ -68,7 +68,7 @@
 //使用者編輯================================================================
 
 	&.user-edit {
-		margin: $interval-m 0 !important;
+		@extend %area-page-no-header;
 
 		> .inner {
 
@@ -128,7 +128,7 @@
 //系統資訊================================================================
 
 	&.system-info {
-		margin: $interval-m 0 !important;
+		@extend %area-page-no-header;
 
 		> .inner {
 

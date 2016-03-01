@@ -95,7 +95,7 @@
 	&.icon {
 
 		.base-content & {
-			margin: $interval-m 0 !important;
+			@extend %area-page-no-header;
 
 			> .inner {
 

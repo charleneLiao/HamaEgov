@@ -88,4 +88,130 @@
 			}
 		}
 	}
+
+//內頁表格================================================================
+
+	&.page-table {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('view_compact');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			table {
+				table-layout: fixed;
+				width: 100%;
+			}
+
+			thead {
+
+				tr {
+					border-bottom: 3px double $border-color;
+					background-color: $light;
+				}
+
+				th, td {
+					border: $border;
+				}
+			}
+
+			tbody {
+
+				tr {
+					
+					&:nth-child(even) {
+						background-color: $light;
+					}
+				}
+
+				th, td {
+					border: $border;
+				}
+			}
+
+			tfoot {
+
+				th, td {
+					padding-top: $interval-m;
+				}
+
+				span {
+					@extend %article-extend;
+				}
+			}
+
+			tr {
+
+			}
+
+			th {
+				color: $title-color;
+			}
+
+			th, td {
+
+			}
+
+			td {
+
+			}
+
+			span {
+				display: block;
+				padding: $interval-m;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
 }

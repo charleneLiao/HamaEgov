@@ -176,33 +176,33 @@
 				&.select {
 
 					&:before {
-						content: '第 ';
+						content: attr(data-before);
 					}
 
 					&:after {
-						content: ' 頁';
+						content: attr(data-after);
 					}
 				}
 
 				&.number {
 
 					&:before {
-						content: '，顯示 ';
+						content: attr(data-before);
 					}
 
 					&:after {
-						content: ' 筆';
+						content: attr(data-after);
 					}
 				}
 
 				&.count {
 
 					&:before {
-						content: '，共 ';
+						content: attr(data-before);
 					}
 
 					&:after {
-						content: ' 頁';
+						content: attr(data-after);
 					}
 				}
 

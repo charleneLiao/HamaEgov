@@ -24,13 +24,13 @@
 		</div></div>
 		<div class="content"><div class="inner">
 
-		<!-- list-text 選單 -->
+		<!-- nav 選單 -->
 			<%= render :partial => "/Erb/module/list-text_nav", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "選單" } %>
-		<!-- list-text 結束 -->
+		<!-- nav 結束 -->
 
-		<!-- group-list_nav 選單列表 -->
+		<!-- nav 選單列表 -->
 			<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 2, :class_set => nil, :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
-		<!-- group-list_nav 結束 -->
+		<!-- nav 結束 -->
 
 		<!-- minor-nav 次選單 -->
 			<%= render :partial => "/Erb/module/list-text_minor-nav", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "次選單" } %>
@@ -66,20 +66,20 @@
 		<!-- weather 結束 -->
 
 		<!-- epaper 電子報 -->
-			<%= render :partial => "/Erb/module/area-form_epaper", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "訂閱電子報" } %>
+			<%= render :partial => "/Erb/module/area-form_epaper", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "訂閱電子報", :show_footer => true } %>
 		<!-- epaper 結束 -->
 
-		<!-- area-customize_video 視訊 -->
+		<!-- video 視訊 -->
 			<%= render :partial => "/Erb/module/area-customize_video", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
-		<!-- area-customize_video 結束 -->
+		<!-- video 結束 -->
 
-		<!-- area-customize_audio 音訊 -->
+		<!-- audio 音訊 -->
 			<%= render :partial => "/Erb/module/area-customize_audio", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
-		<!-- area-customize_audio 結束 -->
+		<!-- audio 結束 -->
 
-		<!-- area-customize_iframe 框架 -->
+		<!-- iframe 框架 -->
 			<%= render :partial => "/Erb/module/area-customize_iframe", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
-		<!-- area-customize_iframe 結束 -->
+		<!-- iframe 結束 -->
 
 		<!-- default 預設 -->
 			<%= render :partial => "/Erb/module/area-editor_default", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "自訂標題" } %>

@@ -213,3 +213,24 @@
 		}
 	}
 }
+
+.pc-hide { //電腦版隱藏
+
+	@include media('pc') {
+		display: none !important;
+	}
+}
+
+.pad-hide { //平板版關閉
+
+	@include media('pad') {
+		display: none !important;
+	}
+}
+
+.phone-hide { //手機版關閉
+
+	@include media('phone') {
+		display: none !important;
+	}
+}

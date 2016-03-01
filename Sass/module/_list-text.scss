@@ -1149,7 +1149,6 @@
 								background-color: $color;
 
 								&:hover {
-									width: 120%;
 									background-color: deeper($color);
 								}
 							}
@@ -2113,15 +2112,18 @@
 
 			li {
 				display: inline;
+				font-size: $font-size-xs;
 
 				&:before {
 					@include icon-font('home');
+					vertical-align: middle;
 				}
 
 				+ li {
 
 					&:before {
 						@include icon-font('navigate_next');
+						vertical-align: middle;
 					}
 				}
 			}
@@ -2162,7 +2164,7 @@
 //詳細資訊================================================================
 
 	&.detail {
-		margin: $interval-m 0 !important;
+		@extend %area-page-no-header;
 
 		> .inner {
 
@@ -2557,7 +2559,7 @@
 //列表按鈕================================================================
 
 	&.btn {
-		margin: $interval-m 0 !important;
+		@extend %area-page-no-header;
 
 		&.right {
 
@@ -2908,7 +2910,7 @@
 //標籤================================================================
 
 	&.label {
-		margin: $interval-m 0 !important;
+		@extend %area-page-no-header;
 
 		> .inner {
 

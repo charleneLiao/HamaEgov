@@ -840,22 +840,23 @@
 
 			.fieldset{
 
+				+ .fieldset {
+					margin-top: $interval-s;
+					text-align: right;
+				}
+
 				span {
-					display: block;
 
 					&.text {
-
+						display: block;
 					}
 
 					&.submit {
-						display: block;
-						margin-top: $interval-s;
-						text-align: right;
+						display: inline-block;
+					}
 
-						a {
-							@extend %btn;
-							@extend %btn-imp;
-						}
+					&.reset {
+						display: inline-block;
 					}
 				}
 
@@ -864,6 +865,149 @@
 					&[type="text"] {
 						display: block;
 						width: 100%;
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="reset"] {
+
+					}
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁搜尋================================================================
+
+	&.page-search {
+		@extend %area-page-no-header;
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			$height: 30px;
+
+
+			background-color: $light;
+			padding: $interval-s;
+
+			> .inner {
+
+			}
+
+			.fieldset {
+				display: inline-block;
+				margin: $interval-s;
+
+				span {
+					display: inline-block;
+					vertical-align: middle;
+
+					&:before {
+						content: attr(data-before);
+					}
+
+					&:after {
+						content: attr(data-after);
+					}
+
+					&.select {
+
+					}
+
+					&.date {
+
+					}
+
+					&.text {
+
+					}
+
+					&.submit {
+
+					}
+
+					&.reset {
+
+					}
+				}
+
+				select {
+					line-height: $height;
+					height: $height;
+					max-width: 120px;
+
+					option {
+
+					}
+				}
+
+				input {
+
+					&[type="text"] {
+						line-height: $height;
+						height: $height;
+					}
+
+					&[type="date"] {
+						line-height: $height;
+						height: $height;
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="reset"] {
+						
 					}
 				}
 			}
@@ -881,6 +1025,9 @@
 
 			li {
 
+				&.advanced {
+					
+				}
 			}
 
 			span {

@@ -580,7 +580,44 @@
 		}
 	}
 
+	%area-module-no-header { //沒有 header 的首頁模組
+		margin: $interval-m 0 !important;
+
+		> .inner {
+			
+			> .header {
+				display: none !important;
+			}
+		}
+	}
+
+	%area-page-no-header { //沒有 header 的內頁模組
+		margin: $interval-m 0 !important;
+
+		> .inner {
+			
+			> .header {
+				display: none !important;
+			}
+		}
+	}
+
+	%area-mobile-no-header { //沒有 header 的手機側欄模組
+		margin: $interval-m 0 !important;
+
+		> .inner {
+			
+			> .header {
+				display: none !important;
+			}
+		}
+	}
+
 	%area-module { //首頁模組
+
+		.no-header { //在首頁模組上下 ".no-header" 的樣式
+			@extend %area-module-no-header;
+		}
 
 		[data-index][data-type="0"] {
 			@extend %module;
@@ -605,6 +642,10 @@
 
 	%area-page { //內頁模組
 
+		.no-header { //在內頁模組上下 ".no-header" 的樣式
+			@extend %area-page-no-header;
+		}
+
 		[data-index][data-type] + [data-index][data-type] {
 			@extend %page;
 
@@ -623,6 +664,10 @@
 	}
 
 	%area-mobile { //手機側欄模組
+
+		.no-header { //在手機側欄模組上下 ".no-header" 的樣式
+			@extend %area-mobile-no-header;
+		}
 
 		[data-index][data-type="0"] {
 			@extend %mobile;
