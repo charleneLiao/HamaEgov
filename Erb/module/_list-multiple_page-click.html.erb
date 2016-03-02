@@ -2,7 +2,7 @@
 	min_li = 2 #最少的li數量
 	max_li = 10 #最多的li數量
 
-	li_length = rand( max_li - min_li ) + min_li
+	li_length = (min_li..max_li).to_a.sample
 	this = rand( li_length )
 %>
 
@@ -12,12 +12,12 @@
 	</div></div>
 	<div class="content"><div class="inner">
 		<ul data-index="1" data-child="2">
-			<li class="first" data-index="1"><span><a href="#">最前頁</a></span></li>
-			<li class="prev" data-index="2"><span><a href="#">上一頁</a></span></li>
+			<li data-index="1" class="first"><span><a href="#">最前頁</a></span></li>
+			<li data-index="2" class="prev"><span><a href="#">上一頁</a></span></li>
 		</ul>
 		<ul data-index="2" data-child="2">
-			<li class="next" data-index="1"><span><a href="#">下一頁</a></span></li>
-			<li class="last" data-index="2"><span><a href="#">最後頁</a></span></li>
+			<li data-index="1" class="next"><span><a href="#">下一頁</a></span></li>
+			<li data-index="2" class="last"><span><a href="#">最後頁</a></span></li>
 		</ul>
 		<ul data-index="3" data-child="<%= li_length %>">
 

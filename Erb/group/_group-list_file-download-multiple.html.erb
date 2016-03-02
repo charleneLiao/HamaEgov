@@ -4,7 +4,7 @@
 	min_text = 4 #最少的字元
 	max_text = 8 #最多的字元
 
-	li_length = rand( max_li - min_li ) + min_li
+	li_length = (min_li..max_li).to_a.sample
 %>
 
 <div class="group-list file-download-multiple <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -19,7 +19,7 @@
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>">
 
-					<% text = zh_lorem_words rand( max_text - min_text ) + min_text %>
+					<% text = zh_lorem_words (min_text..max_text).to_a.sample %>
 
 					<!-- <%= inner %> -->
 						<%= render :partial => inner, :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => text, :show_footer => true, :show_mark => false, :inner => "/Erb/module/simple-pic_default", :inner_len => 2 } %>

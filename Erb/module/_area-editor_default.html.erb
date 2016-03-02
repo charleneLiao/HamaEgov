@@ -4,7 +4,7 @@
 	min_paragraph = 1 #最少的段落
 	max_paragraph = 3 #最多的段落
 
-	paragraph_length = rand( min_paragraph_size - min_paragraph ) + min_paragraph
+	paragraph_length = (min_paragraph..min_paragraph_size).to_a.sample
 %>
 
 <div class="area-editor default <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">

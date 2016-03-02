@@ -17,7 +17,7 @@
 				<% else %>
 					<li data-index="<%= i + 1 %>">
 				<% end %>
-				<span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+				<span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

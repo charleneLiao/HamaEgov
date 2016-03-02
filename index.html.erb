@@ -40,8 +40,12 @@
 			<%= render :partial => "/Erb/module/area-form_calender", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "月曆", :show_footer => true } %>
 		<!-- calender 結束 -->
 
+		<!-- vote 投票 -->
+			<%= render :partial => "/Erb/module/area-form_vote", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "投票", :show_footer => true } %>
+		<!-- vote 結束 -->
+
 		<!-- map 地圖 -->
-			<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 5, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
+			<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 6, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
 		<!-- map 結束 -->
 
 		</div></div>

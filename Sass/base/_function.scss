@@ -615,7 +615,7 @@
 
 	%area-module { //首頁模組
 
-		.no-header { //在首頁模組上下 ".no-header" 的樣式
+		.is-hide-header { //在首頁模組上下 ".is-hide-header" 的樣式
 			@extend %area-module-no-header;
 		}
 
@@ -642,7 +642,7 @@
 
 	%area-page { //內頁模組
 
-		.no-header { //在內頁模組上下 ".no-header" 的樣式
+		.is-hide-header { //在內頁模組上下 ".is-hide-header" 的樣式
 			@extend %area-page-no-header;
 		}
 
@@ -665,7 +665,7 @@
 
 	%area-mobile { //手機側欄模組
 
-		.no-header { //在手機側欄模組上下 ".no-header" 的樣式
+		.is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的樣式
 			@extend %area-mobile-no-header;
 		}
 

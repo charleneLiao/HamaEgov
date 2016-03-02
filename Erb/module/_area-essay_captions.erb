@@ -4,7 +4,7 @@
 	min_paragraph = 1 #最少的段落
 	max_paragraph = 6 #最多的段落
 
-	paragraph_length = rand( max_paragraph - min_paragraph ) + min_paragraph
+	paragraph_length = (min_paragraph..max_paragraph).to_a.sample
 %>
 
 <div class="area-essay captions <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -14,7 +14,7 @@
 	<div class="content"><div class="inner">
 
 		<% paragraph_length.times do |i| %>
-			<p><%= zh_lorem_paragraphs rand( max_paragraph_size - min_paragraph_size ) + min_paragraph_size %></p>
+			<p><%= zh_lorem_paragraphs (min_paragraph_size..max_paragraph_size).to_a.sample %></p>
 		<% end %>
 	</div></div>
 </div></div>

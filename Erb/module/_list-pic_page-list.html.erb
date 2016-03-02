@@ -2,7 +2,7 @@
 	min_li = 4 #最少的li數量
 	max_li = 10 #最多的li數量
 
-	li_length = rand( max_li - min_li ) + min_li
+	li_length = (min_li..max_li).to_a.sample
 %>
 
 <div class="list-pic page-list <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">

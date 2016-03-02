@@ -105,7 +105,7 @@
 
 						display: block;
 
-						&.text {
+						&.search {
 							display: block;
 							padding-right: $icon-width;
 
@@ -249,7 +249,7 @@
 
 						display: block;
 
-						&.text {
+						&.search {
 							display: block;
 							padding-right: $icon-width;
 
@@ -511,41 +511,60 @@
 
 			.form {
 
-				@include js(false) {
-					display: none;
-				}
 			}
 
 			.fieldset {
-				margin-top: $interval-s;
-				padding: $interval-m;
-				background-color: $light;
+				@extend %article-extend;
+
+				+ .fieldset {
+					margin-top: $interval-s;
+					padding: 0;
+					text-align: right;
+					background-color: transparent;
+				}
 
 				span {
-					display: block;
 
-					+ span {
+					&.radio {
+						display: block;
 						margin-top: $interval-s;
+					}
+
+					&.checkbox {
+						display: block;
+						margin-top: $interval-s;
+					}
+
+					&.submit {
+						display: block;
+					}
+
+					&.reset {
+						display: block;
 					}
 				}
 
-				[type="radio"] {
-					margin-right: $interval-xs;
+				input {
+
+					&[type="radio"] {
+
+					}
+
+					&[type="checkbox"] {
+						
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="reset"] {
+						
+					}
 				}
 
 				label {
 
-				}
-			}
-
-			.submit {
-				display: block;
-				margin-top: $interval-s;
-				text-align: right;
-
-				a {
-					@extend %btn;
-					@extend %btn-imp;
 				}
 			}
 		}
@@ -935,7 +954,6 @@
 		.content {
 			$height: 30px;
 
-
 			background-color: $light;
 			padding: $interval-s;
 
@@ -967,7 +985,7 @@
 
 					}
 
-					&.text {
+					&.search {
 
 					}
 
@@ -992,7 +1010,7 @@
 
 				input {
 
-					&[type="text"] {
+					&[type="search"] {
 						line-height: $height;
 						height: $height;
 					}
@@ -1014,6 +1032,7 @@
 		}
 
 		.footer {
+			@extend %footer-btns;
 
 			> .inner {
 
@@ -1027,6 +1046,671 @@
 
 				&.advanced {
 					
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁表單================================================================
+
+	&.page-form {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('view_comfortable');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			@extend %article-extend;
+
+			> .inner {
+
+			}
+
+			.fieldset {
+				$height: 26px;
+
+				+ .fieldset {
+					margin-top: $interval-m;
+					border-top: $border;
+					border-top-color: $light-gray;
+					padding-top: $interval-m;
+					text-align: right;
+				}
+
+				.legend {
+					margin-top: $interval-l;
+					margin-bottom: $interval-s;
+					padding-bottom: $interval-m;
+					border-bottom: 3px double $light-gray;
+
+					span {
+						color: $title-color;
+					}
+				}
+
+				span {
+					display: block;
+
+					&.select {
+						margin-top: $interval-s;
+					}
+
+					&.text {
+						margin-top: $interval-s;
+					}
+
+					&.password {
+						margin-top: $interval-s;
+					}
+
+					&.date {
+						margin-top: $interval-s;
+					}
+					
+					&.number {
+						margin-top: $interval-s;
+					}
+					
+					&.search {
+						margin-top: $interval-s;
+					}
+
+					&.email {
+						margin-top: $interval-s;
+					}
+
+					&.radio {
+						margin-top: $interval-s;
+					}
+
+					&.checkbox {
+						margin-top: $interval-s;
+					}
+
+					&.textarea {
+						margin-top: $interval-s;
+					}
+
+					&.submit {
+						display: inline-block;
+					}
+
+					&.reset {
+						display: inline-block;
+					}
+
+					&.button {
+						display: inline-block;
+					}
+				}
+
+				select {
+					max-width: 100%;
+					line-height: $height;
+
+					option {
+
+					}
+				}
+
+				input {
+					max-width: 100%;
+
+					&[type="text"] {
+						line-height: $height;
+					}
+
+					&[type="password"] {
+						line-height: $height;
+					}
+
+					&[type="date"] {
+						line-height: $height;
+					}
+					
+					&[type="number"] {
+						line-height: $height;
+					}
+					
+					&[type="search"] {
+						line-height: $height;
+					}
+
+					&[type="email"] {
+						line-height: $height;
+					}
+
+					&[type="radio"] {
+						line-height: $height;
+					}
+
+					&[type="checkbox"] {
+						line-height: $height;
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="reset"] {
+						
+					}
+
+					&[type="button"] {
+
+					}
+				}
+
+				textarea {
+					max-width: 100%;
+				}
+
+				label {
+					line-height: $height;
+				}
+
+				.divition {
+					text-align: right;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.advanced {
+					
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//送出================================================================
+
+	&.submit {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('font_download');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			@extend %article-extend;
+
+			> .inner {
+
+			}
+
+			.fieldset {
+				$height: 26px;
+
+				+ .fieldset {
+					margin-top: $interval-m;
+					border-top: $border;
+					border-top-color: $light-gray;
+					padding-top: $interval-m;
+					text-align: right;
+				}
+
+				span {
+					display: block;
+
+					&.is-error {
+
+						&:before {
+							content: attr(data-before) ' *' !important;
+							color: $title-color;
+						}
+
+						input {
+							border-color: $title-color;
+						}
+
+						select {
+							border-color: $title-color;
+						}
+
+						textarea {
+							border-color: $title-color;
+						}
+					}
+
+					&:before {
+						display: block;
+						margin-bottom: $interval-xs;
+						font-size: $font-size-s;
+					}
+
+					&.select {
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.text {
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.email {
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.button {
+						display: inline-block;
+					}
+
+					&.textarea {
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.submit {
+						display: inline-block;
+					}
+
+					&.reset {
+						display: inline-block;
+					}
+				}
+
+				select {
+					width: 100%;
+					line-height: $height;
+
+					option {
+
+					}
+				}
+
+				input {
+					line-height: $height;
+
+					&[type="text"] {
+						width: 100%;
+					}
+
+					&[type="email"] {
+						width: 100%;
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="reset"] {
+						
+					}
+
+					&[type="button"] {
+						background-color: transparent;
+						color: $body-font-color;
+					}
+				}
+
+				textarea {
+					width: 100%;
+				}
+
+				.divition {
+					text-align: right;
+				}
+
+				.image {
+					display: inline-block;
+					vertical-align: top;
+
+					span {
+						display: block;
+					}
+
+					img {
+						display: block;
+						border: $border;
+						border-color: $gray;
+					}
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.advanced {
+					
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//登入與申請帳號================================================================
+
+	&.sign-in {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('person');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			@extend %article-extend;
+
+			> .inner {
+
+			}
+
+			.form {
+
+			}
+
+			.fieldset {
+
+				+ .fieldset {
+					margin-top: $interval-m;
+				}
+
+				span {
+					display: block;
+
+					&.is-error {
+
+						&:before {
+							content: attr(data-before) ' *' !important;
+							color: $title-color;
+						}
+
+						input {
+							border-color: $title-color;
+						}
+					}
+
+					&:before {
+						display: block;
+						margin-bottom: $interval-xs;
+						font-size: $font-size-s;
+					}
+
+					&.email {
+						display: block;
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.password {
+						display: block;
+						margin-top: $interval-s;
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.text {
+
+						&:before {
+							content: attr(data-before);
+						}
+					}
+
+					&.submit {
+
+					}
+
+					&.button {
+						display: inline-block;
+						vertical-align: top;
+					}
+				}
+
+				.divition {
+					text-align: right;
+				}
+
+				.image {
+					display: inline-block;
+					vertical-align: top;
+
+					span {
+						display: block;
+					}
+
+					img {
+						display: block;
+						border: $border;
+						border-color: $gray;
+					}
+				}
+
+				input {
+					$line-height: 25px;
+
+					line-height: $line-height;
+					width: 100%;
+
+					&[type="email"] {
+
+					}
+
+					&[type="password"] {
+
+					}
+
+					&[type="text"] {
+
+					}
+
+					&[type="submit"] {
+						@extend %btn-imp;
+					}
+
+					&[type="button"] {
+						background-color: transparent;
+						color: $body-font-color;
+					}
+				}
+			}
+
+			.list {
+				margin-top: $interval-l;
+				border-top: $border;
+				border-top-color: $light-gray;
+				padding-top: $interval-l;
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					+ li {
+						margin-top: $interval-s;
+					}
+
+					@each $key, $map in $share-map {
+
+						$pic: map-get($map, 'pic');
+						$color: map-get($map, 'color');
+						$deep-color: deeper($color);;
+
+						&.#{$key}{
+
+							span {
+
+							}
+
+							a {
+								background-color: $color;
+								border: $border-width $border-style $deep-color;
+
+								&:before {
+									@include icon-pic('#{$pic}');
+									background-color: $deep-color;
+								}
+
+								&:hover {
+									background-color: $deep-color;
+								}
+							}
+						}
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+					color: $white;
+					transition: $transition;
+
+					&:before {
+						margin-right: $interval-l;
+					}
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.forget-password {
+
 				}
 			}
 

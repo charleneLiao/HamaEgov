@@ -6,8 +6,8 @@
 	min_text = 3 #最少的字元
 	max_text = 8 #最多的字元
 
-	cell_length = rand( max_cell - min_cell ) + min_cell
-	row_length = rand( max_row - min_row ) + min_row
+	cell_length = (min_cell..max_cell).to_a.sample
+	row_length = (min_row..max_row).to_a.sample
 %>
 
 <div class="area-table page-table <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -21,7 +21,7 @@
 
 					<% cell_length.times do |i| %>
 
-						<th><span><%= zh_lorem_words rand( max_text - min_text ) + min_text %></span></th>
+						<th><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
 					<% end %>
 				</tr>
 			</thead>
@@ -39,7 +39,7 @@
 			</tbody>
 			<tfoot data-index="3" data-child="1">
 				<tr data-index="1" data-child="1">
-					<td data-index="1" colspan="<%= cell_length %>"><span>tfooter 是表格，需要附加說明時，將文字貼入其中。</span></td>
+					<td data-index="1" colspan="<%= cell_length %>"><span><%= zh_lorem_sentence %></span></td>
 				</tr>
 			</tfoot>
 		</table>
@@ -48,7 +48,7 @@
 	<% if show_footer %>
 		<div class="footer"><div class="inner">
 			<ul data-index="1" data-child="1">
-				<li class="more" data-index="1"><span><a href="#">更多</a></span></li>
+				<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
 			</ul>
 		</div></div>
 	<% end %>

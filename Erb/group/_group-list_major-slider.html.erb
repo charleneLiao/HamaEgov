@@ -2,7 +2,7 @@
 	min_li = 1 #最少的li數量
 	max_li = 8 #最多的li數量
 
-	li_length = rand( max_li - min_li ) + min_li
+	li_length = (min_li..max_li).to_a.sample
 %>
 
 <% if ( li_length > 0 ) %>
@@ -28,9 +28,9 @@
 		<% if show_footer %>
 			<div class="footer"><div class="inner">
 				<ul data-index="1" data-child="3">
-					<li class="prev" data-index="1"><span><a href="#">上一則</a></span></li>
-					<li class="next" data-index="2"><span><a href="#">下一則</a></span></li>
-					<li class="more" data-index="3"><span><a href="#">更多</a></span></li>
+					<li data-index="1" class="prev"><span><a href="#">上一則</a></span></li>
+					<li data-index="2" class="next"><span><a href="#">下一則</a></span></li>
+					<li data-index="3" class="more"><span><a href="#">更多</a></span></li>
 				</ul>
 			</div></div>
 		<% end %>

@@ -4,7 +4,7 @@
 	min_text = 10 #最少的字元
 	max_text = 25 #最多的字元
 
-	li_length = rand( max_li - min_li ) + min_li
+	li_length = (min_li..max_li).to_a.sample
 %>
 
 <div class="list-text slider <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -15,7 +15,7 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words rand( max_text - min_text ) + min_text %></a></span></li>
+				<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>
@@ -23,9 +23,9 @@
 	<% if show_footer %>
 		<div class="footer"><div class="inner">
 			<ul data-index="1" data-child="3">
-				<li class="prev" data-index="1"><span><a href="#">上一則</a></span></li>
-				<li class="next" data-index="2"><span><a href="#">下一則</a></span></li>
-				<li class="more" data-index="3"><span><a href="#">更多</a></span></li>
+				<li data-index="1" class="prev"><span><a href="#">上一則</a></span></li>
+				<li data-index="2" class="next"><span><a href="#">下一則</a></span></li>
+				<li data-index="3" class="more"><span><a href="#">更多</a></span></li>
 			</ul>
 		</div></div>
 	<% end %>

@@ -2,7 +2,7 @@
 	min_radio = 3 #最少的radio數量
 	max_radio = 7 #最多的radio數量
 
-	radio_length = rand( max_radio + 1 - min_radio ) + min_radio
+	radio_length = (min_radio..max_radio ).to_a.sample
 %>
 
 <div class="area-form vote <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
@@ -25,10 +25,16 @@
 			<div class="fieldset">
 
 				<% radio_length.times do |i| %>
-					<span class="radio"><input id="vote_<%= i %>" type="radio" name="vote"><label for="vote_<%= i %>"><%= zh_lorem_sentence %></label></span>
+					<span class="radio">
+						<input id="vote_<%= i %>" type="radio" name="vote">
+						<label for="vote_<%= i %>"><%= zh_lorem_sentence %></label>
+					</span>
 				<% end %>
 			</div>
-			<span class="submit"><a href="#">送出</a></span>
+			<div class="fieldset">
+				<span class="submit"><input type="submit" value="送出"></span>
+				<span class="reset"><input type="reset" value="清除"></span>
+			</div>
 		</div>
 	</div></div>
 </div></div>

@@ -116,17 +116,17 @@
 		}
 
 		&[type="text"],
+		&[type="password"],
 		&[type="date"],
 		&[type="email"],
 		&[type="number"],
-		&[type="password"],
-		&[type="search"],
-		&[type="number"] {
+		&[type="search"] {
 			@extend %input;
 		}
 
-		&[type="radio"] {
-
+		&[type="radio"],
+		&[yupe="checkbox"] {
+			cursor: pointer;
 		}
 	}
 
@@ -144,6 +144,10 @@
 
 	label {
 		cursor: pointer;
+	}
+
+	textarea {
+		@extend %input;
 	}
 
 //行動載具================================================================
