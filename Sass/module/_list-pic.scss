@@ -277,6 +277,10 @@
 				margin: $interval-xs;
 				border: $interval-xs solid $light-gray;
 				height: 80px;
+
+				@include media('phone') {
+					height: 160px;
+				}
 			}
 
 			a {
@@ -696,6 +700,18 @@
 				width: 100% / $li-len;
 				float: left;
 
+				@include media('pad') {
+					$li-len: 3;
+
+					width: 100% / $li-len;
+				}
+
+				@include media('phone') {
+					$li-len: 1;
+
+					width: 100% / $li-len;
+				}
+
 				&.is-img {
 					
 					a {
@@ -720,6 +736,10 @@
 				margin: $interval-xs;
 				border: $interval-xs solid $light-gray;
 				height: 100px;
+
+				@include media('phone') {
+					height: 180px;
+				}
 			}
 
 			a {
@@ -819,6 +839,18 @@
 
 				width: 100% / $li-len;
 				float: left;
+
+				@include media('pad') {
+					$li-len: 3;
+
+					width: 100% / $li-len;
+				}
+
+				@include media('phone') {
+					$li-len: 1;
+
+					width: 100% / $li-len;
+				}
 			}
 
 			span {
@@ -828,6 +860,10 @@
 				margin: $interval-xs;
 				border: $interval-xs solid $light-gray;
 				height: 100px;
+
+				@include media('phone') {
+					height: 180px;
+				}
 			}
 
 			a {

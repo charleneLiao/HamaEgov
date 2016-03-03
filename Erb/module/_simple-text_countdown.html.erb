@@ -1,9 +1,16 @@
+<%
+	min_num = 1 #最少的數字
+	max_num = 364 #最多的數字
+
+	num = (min_num..max_num).to_a.sample
+%>
+
 <div class="simple-text countdown <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
 	<div class="header"><div class="inner">
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
 	<div class="content"><div class="inner">
-		<span>365</span>
+		<span><%= num %></span>
 	</div></div>
 	
 	<% if show_footer %>

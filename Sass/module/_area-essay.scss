@@ -257,12 +257,24 @@
 				float: left;
 				margin-right: $interval-l;
 
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
 				span {
 					@extend %bg-cover;
 					display: block;
 					width: 70px;
 					height: 70px;
 					border-radius: 50%;
+
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
 				}
 
 				img {
@@ -399,12 +411,24 @@
 				float: left;
 				margin-right: $interval-m;
 
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
 				span {
 					@extend %bg-cover;
 					display: block;
 					width: 70px;
 					height: 70px;
 					border-radius: 50%;
+
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
 				}
 
 				img {
@@ -529,12 +553,24 @@
 				float: left;
 				margin-right: $interval-m;
 
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
 				span {
 					@extend %bg-cover;
 					display: block;
 					width: 70px;
 					height: 70px;
 					border-radius: 50%;
+					
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
 				}
 
 				img {

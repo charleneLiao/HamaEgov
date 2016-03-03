@@ -569,7 +569,7 @@
 			}
 
 			ul {
-				margin: 0 $interval-s $interval-s;
+				margin: 0 $interval-xs $interval-xs;
 				background-color: $white;
 			}
 
@@ -636,6 +636,10 @@
 //使用者工具================================================================
 
 	&.user-tool {
+
+		@include media('mobile') {
+			display: none;
+		}
 
 		.group-page-header & {
 			float: right;
@@ -2257,14 +2261,17 @@
 
 			li {
 				float: left;
-				padding: $interval-s;
+				padding: $interval-xs;
 				box-sizing: border-box;
 				max-width: 100%;
+
+				@include media('phone') {
+					float: none;
+				}
 
 				&.is-active {
 
 					span {
-
 
 						&:before, &:after {
 							background-color: $minor-color;
@@ -2295,11 +2302,19 @@
 				&:before {
 					top: 0;
 					transform: skewX($skewX);
+
+					@include media('phone') {
+						transform: skewX(0);
+					}
 				}
 
 				&:after {
 					bottom: 0;
 					transform: skewX(-1 * $skewX);
+
+					@include media('phone') {
+						transform: skewX(0);
+					}
 				}
 
 				&:hover {
@@ -2422,6 +2437,17 @@
 
 			li {
 				display: inline-block;
+
+				+ li {
+
+					@include media('mobile') {
+						margin-top: $interval-xs;
+					}
+				}
+
+				@include media('mobile') {
+					display: block;
+				}
 			}
 
 			span {
@@ -2430,6 +2456,12 @@
 
 			a {
 				@extend %btn;
+
+				@include media('mobile') {
+					display: block;
+					text-align: center;
+					padding: $interval-m;
+				}
 
 				&:before {
 					margin-right: $interval-xs;
@@ -2592,12 +2624,6 @@
 
 			ul {
 				text-align: right;
-
-				&:before {
-					content: '標籤 : ';
-					margin-right: $interval-s;
-					color: $gray;
-				}
 			}
 
 			li {
@@ -2857,6 +2883,10 @@
 			ul {
 				text-align: right;
 				color: $gray;
+
+				@include media('phone') {
+					text-align: left;
+				}
 			}
 
 			li {
@@ -3028,6 +3058,10 @@
 		.header {
 			display: inline-block;
 
+			@include media('phone') {
+				display: block;
+			}
+
 			> .inner {
 
 			}
@@ -3052,22 +3086,36 @@
 			display: inline-block;
 			margin-left: $interval-m;
 
+			@include media('phone') {
+				display: block;
+				margin-left: 0;
+			}
+
 			> .inner {
 
 			}
 
 			ul {
-
+				padding: $interval-s;
 			}
 
 			li {
 				display: inline-block;
+
+				@include media('phone') {
+					display: block;
+					margin-top: $interval-s;
+				}
 
 				+ li {
 
 					&:before {
 						content: ' | ';
 						color: $gray;
+
+						@include media('phone') {
+							content: none;
+						}
 					}
 				}
 
@@ -3096,11 +3144,18 @@
 			}
 
 			a {
+				box-sizing: border-box;
 				padding: $interval-xs $interval-s;
 				border-width: $border-width;
 				border-style: $border-style;
 				border-color: transparent;
 				transition: $transition;
+
+				@include media('phone') {
+					display: block;
+					background-color: $white;
+					padding: $interval-m $interval-l;
+				}
 
 				&:before {
 					margin-right: $interval-xs;

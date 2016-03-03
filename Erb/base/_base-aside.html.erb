@@ -9,11 +9,11 @@
 	<!-- accesskey 結束 -->
 
 	<!-- nav 選單 -->
-		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 1, :class_set => nil, :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
+		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 1, :class_set => "pad-hide phone-hide", :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
 	<!-- nav 結束 -->
 
 	<!-- minor-nav 次選單 -->
-		<%= render :partial => "/Erb/module/list-text_minor-nav", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "次選單" } %>
+		<%= render :partial => "/Erb/module/list-text_minor-nav", :locals => { :index => 2, :class_set => "pad-hide phone-hide", :func_set => nil, :header_text => "次選單" } %>
 	<!-- minor-nav 結束 -->
 
 	</div></div>

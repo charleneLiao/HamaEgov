@@ -751,8 +751,16 @@
 			display: inline-block;
 			vertical-align: middle;
 
+			@include media('mobile') {
+				display: block;
+			}
+
 			> .inner {
 				display: inline-block;
+
+				@include media('mobile') {
+					display: block;
+				}
 			}
 
 			span {
@@ -764,12 +772,28 @@
 			display: inline-block;
 			vertical-align: middle;
 
+			@include media('mobile') {
+				display: block;
+				margin-top: $interval-m;
+				border-top: $border;
+				border-top-color: $light-gray;
+				padding-top: $interval-m;
+			}
+
 			> .inner {
 				display: inline-block;
+
+				@include media('mobile') {
+					display: block;
+				}
 			}
 
 			ul {
 				display: inline-block;
+
+				@include media('mobile') {
+					display: block;
+				}
 			}
 
 			li {
@@ -1241,7 +1265,10 @@
 			}
 
 			a {
-
+				
+				&:hover {
+					color: currentColor;
+				}
 			}
 		}
 

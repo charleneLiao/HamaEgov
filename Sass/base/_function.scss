@@ -784,6 +784,7 @@
 		border: $btn-border;
 		box-sizing: border-box;
 		line-height: 1;
+		text-align: center;
 		vertical-align: middle;
 		color: $btn-text-color;
 		cursor: pointer;
@@ -846,6 +847,11 @@
 		position: absolute;
 		top: $interval-xs;
 		right: 0;
+
+		@include media('phone') {
+			margin-top: $interval-xs;
+			position: static;
+		}
 
 		> .inner {
 

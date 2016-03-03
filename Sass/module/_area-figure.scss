@@ -743,16 +743,30 @@
 					left: 0;
 					bottom: 0;
 					width: $pic_w;
+
+					@include media('phone') {
+						position: static;
+						width: auto;
+					}
 				}
 
 				img {
 					display: none;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 
 			.essay {
 				padding: $interval-l;
 				padding-left: $pic_w + $interval-l;
+
+				@include media('phone') {
+					padding-left: $interval-l;
+				}
 			}
 
 			.figcaption {
@@ -863,16 +877,30 @@
 					left: 0;
 					bottom: 0;
 					width: $pic_w;
+
+					@include media('phone') {
+						position: static;
+						width: auto;
+					}
 				}
 
 				img {
 					display: none;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 
 			.essay {
 				padding: $interval-l;
 				padding-left: $pic_w + $interval-l;
+
+				@include media('phone') {
+					padding-left: $interval-l;
+				}
 			}
 
 			.label {
@@ -991,10 +1019,20 @@
 					left: 0;
 					bottom: 0;
 					width: $pic_w;
+
+					@include media('phone') {
+						position: static;
+						width: auto;
+					}
 				}
 
 				img {
 					display: none;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 
@@ -1002,6 +1040,10 @@
 				@extend %paragraph;
 				padding: $interval-l;
 				padding-left: $pic_w + $interval-l;
+
+				@include media('phone') {
+					padding-left: $interval-l;
+				}
 
 				p {
 

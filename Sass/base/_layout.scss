@@ -508,6 +508,11 @@
 		width: 190px;
 		float: left;
 
+		@include media('mobile') {
+			width: 100%;
+			float: none;
+		}
+
 		> .inner {
 
 			> .header {
@@ -549,6 +554,10 @@
 
 		> .inner {
 			margin: $interval-s $interval-m;
+
+			@include media('phone') {
+				margin: $interval-s 0;
+			}
 
 			> .header {
 

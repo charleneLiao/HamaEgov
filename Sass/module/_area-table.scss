@@ -140,8 +140,16 @@
 					display: none;
 				}
 
+				@include media('phone') {
+					float: none;
+				}
+
 				ul {
 					@extend %reset;
+
+					@include media('phone') {
+						text-align: center;
+					}
 				}
 
 				li {
@@ -160,9 +168,14 @@
 			.caption {
 				@extend %ellipsis;
 				overflow: hidden;
-				margin-bottom: $interval-s;
 				font-size: $font-size-l;
 				color: $title-color;
+
+				@include media('phone') {
+					text-align: center;
+					margin-bottom: 0;
+					margin-top: $interval-s;
+				}
 
 				span {
 					

@@ -123,6 +123,10 @@
 					float: left;
 					padding-top: 5px;
 
+					@include media('mobile') {
+						display: none;
+					}
+
 					a {
 						@extend %btn;
 					}
@@ -131,6 +135,10 @@
 				&[data-index="2"] {
 					float: right;
 					padding-top: 5px;
+
+					@include media('mobile') {
+						display: none;
+					}
 
 					a {
 						@extend %btn;
@@ -181,6 +189,10 @@
 				}
 
 				&.number {
+
+					@include media('phone') {
+						display: none;
+					}
 
 					label {
 						
@@ -293,6 +305,10 @@
 				&[data-index="3"] {
 					overflow: hidden;
 					text-align: center;
+
+					@include media('phone') {
+						display: none;
+					}
 				}
 			}
 

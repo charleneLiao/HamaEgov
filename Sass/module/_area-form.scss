@@ -1594,26 +1594,56 @@
 
 					&[type="text"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 
 					&[type="password"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 
 					&[type="date"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 					
 					&[type="number"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 					
 					&[type="search"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 
 					&[type="email"] {
 						line-height: $height;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
 					}
 
 					&[type="radio"] {

@@ -808,7 +808,7 @@
 					> .inner {
 
 						> ul {
-							margin: 0 $interval-s $interval-s;
+							margin: 0 $interval-xs $interval-xs;
 							background-color: $white;
 
 							> li {
@@ -1772,6 +1772,10 @@
 							> [data-index][data-type] {
 								padding-left: $interval-xl;
 
+								@include media('phone') {
+									padding-left: $interval-m;
+								}
+
 								> .inner {
 
 									> .header {
@@ -1887,6 +1891,10 @@
 							> [data-index][data-type] {
 								padding-left: $interval-xl;
 
+								@include media('phone') {
+									padding-left: $interval-m;
+								}
+
 								> .inner {
 
 									> .header {
@@ -1999,6 +2007,18 @@
 
 						> li {
 							@extend %reset-inner-module;
+
+							@include media('pad') {
+								$li-len: 2;
+
+								width: 100% / $li-len !important;
+							}
+
+							@include media('phone') {
+								$li-len: 1;
+
+								width: 100% / $li-len !important;
+							}
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
