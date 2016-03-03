@@ -7,7 +7,7 @@
 
 	&.default {
 
-		.base-module-area & {
+		.base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -177,6 +177,74 @@
 				a {
 
 				}
+			}
+		}
+	}
+
+//導盲磚================================================================
+
+	&.accesskey {
+
+		> .inner {
+			margin: 0;
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			height: 0;
+
+			> .inner {
+				
+			}
+
+			span {
+				color: $light-gray;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}
@@ -356,23 +424,31 @@
 		}
 	}
 
-//導盲磚================================================================
+//天氣================================================================
 
-	&.accesskey {
+	&.weather {
 
-		> .inner {
-			margin: 0;
-		}
-
-		.header {
+		@include js(false) {
 			display: none;
+		}
+
+		> .inner {
+
+		}
+
+		.header {
+
 
 			> .inner {
 
 			}
 
 			h4 {
+				@extend %title;
 
+				&:before {
+					@include icon-font('cloud_queue');
+				}
 			}
 
 			span {
@@ -385,19 +461,24 @@
 		}
 
 		.content {
-			height: 0;
+
 
 			> .inner {
 				
 			}
 
 			span {
-				color: $light-gray;
+				display: block;
 			}
 
 			a {
-				color: inherit;
+				@extend %list;
+				@extend %list-hover;
 			}
+		}
+
+		.mark {
+			@extend %mark-1;
 		}
 
 		.footer {
@@ -424,13 +505,9 @@
 		}
 	}
 
-//頁面標題================================================================
+//倒數日================================================================
 
-	&.heading {
-
-		.group-page-header & {
-			overflow: hidden;
-		}
+	&.countdown {
 
 		> .inner {
 
@@ -438,12 +515,17 @@
 
 		.header {
 
+
 			> .inner {
 
 			}
 
 			h4 {
+				@extend %title;
 
+				&:before {
+					@include icon-font('today');
+				}
 			}
 
 			span {
@@ -456,124 +538,35 @@
 		}
 
 		.content {
+			padding: $interval-m;
+			background-color: $light;
 
 			> .inner {
-				
-			}
+				text-align: center;
+				padding: $interval-m 0;
 
-			h3 {
-				@extend %reset;
-				padding-bottom: $interval-m;
-				border-bottom: $border;
-				margin-bottom: $interval-m;
-				font-size: $font-size-l;
+				&:after {
+					content: '天';
+					font-size: $font-size-s;
+				}
 			}
 
 			span {
-				
-			}
-
-			a {
-
-			}
-		}
-
-		.footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//文章標題================================================================
-
-	&.title {
-
-		> .inner {
-
-		}
-
-		.header {
-
-			> .inner {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-				
-			}
-
-			h1 {
-				@extend %reset;
-				font-size: $font-size-l;
-				padding: $interval-s 0;
-				border-bottom-color: $border-color;
-				border-bottom-width: $interval-xs;
-				border-bottom-style: double;
-				margin-bottom: $interval-s;
+				font-size: 5em;
 				color: $title-color;
 			}
-
-			span {
-				
-			}
-
-			a {
-
-			}
 		}
 
 		.footer {
+			padding: $interval-m;
+			background-color: $light;
+			border-top: $border-width $border-style $light-gray;
 
 			> .inner {
 
 			}
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
 			span {
-
-			}
-
-			a {
 
 			}
 		}
@@ -652,12 +645,18 @@
 		}
 	}
 
-//天氣================================================================
+//投票結果================================================================
 
-	&.weather {
+	&.vote-result {
 
-		@include js(false) {
-			display: none;
+		.is-most & {
+
+			.content {
+
+				span {
+					background-color: $minor-color;
+				}
+			}
 		}
 
 		> .inner {
@@ -666,17 +665,77 @@
 
 		.header {
 
+			> .inner {
+
+			}
+
+			h4 {
+				margin-bottom: $interval-s;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+				&:hover {
+					color: currentColor;
+				}
+			}
+		}
+
+		.content {
+
+			> .inner {
+
+			}
+
+			span {
+				display: block;
+				box-sizing: border-box;
+				padding: $interval-m;
+				text-align: right;
+				background-color: $major-color;
+				color: $white;
+				white-space: nowrap;
+
+				&:after {
+					content: '%';
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			span {
+				font-size: $font-size-s;
+				color: $gray;
+			}
+		}
+	}
+
+//詢問================================================================
+
+	&.query {
+		@extend %area-page-no-header;
+
+		> .inner {
+			@extend %article-extend;
+		}
+
+		.header {
 
 			> .inner {
 
 			}
 
 			h4 {
-				@extend %title;
 
-				&:before {
-					@include icon-font('cloud_queue');
-				}
 			}
 
 			span {
@@ -689,10 +748,40 @@
 		}
 
 		.content {
-
+			display: inline-block;
+			vertical-align: middle;
 
 			> .inner {
+				display: inline-block;
+			}
+
+			span {
+
+			}
+		}
+
+		.footer {
+			display: inline-block;
+			vertical-align: middle;
+
+			> .inner {
+				display: inline-block;
+			}
+
+			ul {
+				display: inline-block;
+			}
+
+			li {
+				display: inline-block;
 				
+				&.allow {
+
+				}
+
+				&.deny {
+
+				}
 			}
 
 			span {
@@ -700,35 +789,7 @@
 			}
 
 			a {
-				@extend %list;
-				@extend %list-hover;
-			}
-		}
-
-		.mark {
-			@extend %mark-1;
-		}
-
-		.footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
+				@extend %btn;
 			}
 		}
 	}
@@ -1049,6 +1110,161 @@
 				a {
 
 				}
+			}
+		}
+	}
+
+//頁面標題================================================================
+
+	&.heading {
+
+		.group-page-header & {
+			overflow: hidden;
+		}
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			h3 {
+				@extend %reset;
+				padding-bottom: $interval-m;
+				border-bottom: $border;
+				margin-bottom: $interval-m;
+				font-size: $font-size-l;
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//文章標題================================================================
+
+	&.title {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			h1 {
+				@extend %reset;
+				font-size: $font-size-l;
+				padding: $interval-s 0;
+				border-bottom-color: $border-color;
+				border-bottom-width: $interval-xs;
+				border-bottom-style: double;
+				margin-bottom: $interval-s;
+				color: $title-color;
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}

@@ -175,34 +175,22 @@
 
 				&.select {
 
-					&:before {
-						content: attr(data-before);
-					}
+					label {
 
-					&:after {
-						content: attr(data-after);
 					}
 				}
 
 				&.number {
 
-					&:before {
-						content: attr(data-before);
-					}
-
-					&:after {
-						content: attr(data-after);
+					label {
+						
 					}
 				}
 
 				&.count {
 
-					&:before {
-						content: attr(data-before);
-					}
-
-					&:after {
-						content: attr(data-after);
+					label {
+						
 					}
 				}
 
@@ -215,6 +203,10 @@
 				}
 
 				input {
+					
+				}
+
+				label {
 					
 				}
 			}

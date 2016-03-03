@@ -10,225 +10,251 @@
 		<%= render :partial => "/Erb/module/list-text_detail", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "詳細資訊" } %>
 	<!-- detail 結束 -->
 
+<!-- //步驟================================================================ -->
+
+	<!-- step 步驟 -->
+		<%= render :partial => "/Erb/module/list-text_step", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
+	<!-- step 結束 -->
+
+<!-- //搜尋================================================================ -->
+
+	<!-- page-search 內頁搜尋 -->
+		<%= render :partial => "/Erb/module/area-form_page-search", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "搜尋", :show_footer => false } %>
+	<!-- page-search 結束 -->
+
+<!-- //詢問================================================================ -->
+
+	<!-- query 詢問 -->
+		<%= render :partial => "/Erb/module/simple-text_query", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "詢問", :show_footer => true } %>
+	<!-- query 結束 -->
+
 <!-- //文章區塊================================================================ -->
 
 	<!-- system-info 系統資訊 -->
-		<%= render :partial => "/Erb/module/area-editor_system-info", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
+		<%= render :partial => "/Erb/module/area-editor_system-info", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => nil } %>
 	<!-- system-info 結束 -->
 
 	<!-- user-edit 使用者編輯 -->
-		<%= render :partial => "/Erb/module/area-editor_user-edit", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
+		<%= render :partial => "/Erb/module/area-editor_user-edit", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => nil } %>
 	<!-- user-edit 結束 -->
 
 	<!-- //標籤區塊================================================================ -->
 
 	<!-- label 標籤 -->
-		<%= render :partial => "/Erb/module/list-text_label", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => nil } %>
+		<%= render :partial => "/Erb/module/list-text_label", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => nil } %>
 	<!-- label 結束 -->
 
 <!-- //檔案下載================================================================ -->
 
 	<!-- file-download 檔案下載 -->
-		<%= render :partial => "/Erb/module/list-text_file-download", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "檔案下載" } %>
+		<%= render :partial => "/Erb/module/list-text_file-download", :locals => { :index => 9, :class_set => nil, :func_set => nil, :header_text => "檔案下載" } %>
 	<!-- dfile-download 結束 -->
 
 	<!-- file-download-multiple 多重檔案下載列表 -->
-		<%= render :partial => "/Erb/group/group-list_file-download-multiple", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "多重檔案下載", :inner => "/Erb/module/list-text_file-download-multiple" } %>
+		<%= render :partial => "/Erb/group/group-list_file-download-multiple", :locals => { :index => 10, :class_set => nil, :func_set => nil, :header_text => "多重檔案下載", :inner => "/Erb/module/list-text_file-download-multiple" } %>
 	<!-- file-download-multiple 結束 -->
 
 	<!-- pic-download 圖片下載 -->
-		<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 3, :class_set => nil, :func_set => nil, :header_text => "圖片、影片下載" } %>
+		<%= render :partial => "/Erb/module/list-pic_pic-download", :locals => { :index => 11, :class_set => nil, :func_set => nil, :header_text => "圖片、影片下載" } %>
 	<!-- pic-download 結束 -->
-
-<!-- //搜尋================================================================ -->
-
-	<!-- page-search 內頁搜尋 -->
-		<%= render :partial => "/Erb/module/area-form_page-search", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "搜尋", :show_footer => false } %>
-	<!-- page-search 結束 -->
 
 <!-- //登入================================================================ -->
 
 	<!-- sign-in 登入與申請帳號 -->
-		<%= render :partial => "/Erb/module/area-form_sign-in", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "登入", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-form_sign-in", :locals => { :index => 12, :class_set => nil, :func_set => nil, :header_text => "登入", :show_footer => true } %>
 	<!-- sign-in 結束 -->
 
 <!-- //送出================================================================ -->
 
 	<!-- submit 送出 -->
-		<%= render :partial => "/Erb/module/area-form_submit", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "送出資訊", :show_footer => false } %>
+		<%= render :partial => "/Erb/module/area-form_submit", :locals => { :index => 13, :class_set => nil, :func_set => nil, :header_text => "送出", :show_footer => true } %>
 	<!-- submit 結束 -->
+
+<!-- //投票================================================================ -->
+
+	<!-- vote 投票 -->
+		<%= render :partial => "/Erb/module/area-form_vote", :locals => { :index => 14, :class_set => nil, :func_set => nil, :header_text => "投票", :show_footer => false } %>
+	<!-- vote 結束 -->
+
+	<!-- vote-result 投票結果 -->
+		<%= render :partial => "/Erb/module/simple-text_vote-result", :locals => { :index => 15, :class_set => nil, :func_set => nil, :header_text => "投票結果", :show_footer => true } %>
+	<!-- vote-result 結束 -->
+
+	<!-- vote-result 投票結果 -->
+		<%= render :partial => "/Erb/group/group-list_vote-result", :locals => { :index => 16, :class_set => nil, :func_set => nil, :header_text => "投票結果", :show_footer => true, :inner => "/Erb/module/simple-text_vote-result" } %>
+	<!-- vote-result 結束 -->
 
 <!-- //選單================================================================ -->
 
 	<!-- nav 選單 -->
-		<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "單層選單" } %>
+		<%= render :partial => "/Erb/module/list-text_nav" ,:locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "單層選單" } %>
 	<!-- nav 結束 -->
 
-	<!-- nav 選單列表 -->
-		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 5, :class_set => nil, :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
+	<!-- nav 選單 -->
+		<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 18, :class_set => nil, :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
 	<!-- nav 結束 -->
 
 <!-- //按鈕================================================================ -->
 
-	<!-- btn 列表按鈕 -->
-		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => nil } %>
+	<!-- btn 按鈕 -->
+		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => nil } %>
 	<!-- btn 結束 -->
 
-	<!-- btn 列表按鈕 -->
-		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 7, :class_set => "right", :func_set => nil, :header_text => nil } %>
+	<!-- btn 按鈕 -->
+		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 20, :class_set => "is-right", :func_set => nil, :header_text => nil } %>
 	<!-- btn 結束 -->
 
-	<!-- btn 列表按鈕 -->
-		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 8, :class_set => "center", :func_set => nil, :header_text => nil } %>
+	<!-- btn 按鈕 -->
+		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 21, :class_set => "is-center", :func_set => nil, :header_text => nil } %>
 	<!-- btn 結束 -->
 
-	<!-- btn 列表按鈕 -->
-		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 9, :class_set => "justify", :func_set => nil, :header_text => nil } %>
+	<!-- btn 按鈕 -->
+		<%= render :partial => "/Erb/module/list-text_btn", :locals => { :index => 22, :class_set => "is-justify", :func_set => nil, :header_text => nil } %>
 	<!-- btn 結束 -->
 
 <!-- //視訊================================================================ -->
 
 	<!-- video 視訊 -->
-		<%= render :partial => "/Erb/module/area-customize_video", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-customize_video", :locals => { :index => 23, :class_set => nil, :func_set => nil, :header_text => "視訊", :show_footer => true } %>
 	<!-- video 結束 -->
 
 <!-- //音訊================================================================ -->
 
 	<!-- audio 音訊 -->
-		<%= render :partial => "/Erb/module/area-customize_audio", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-customize_audio", :locals => { :index => 24, :class_set => nil, :func_set => nil, :header_text => "音訊", :show_footer => true } %>
 	<!-- audio 結束 -->
 
 <!-- //框架================================================================ -->
 
 	<!-- iframe 框架 -->
-		<%= render :partial => "/Erb/module/area-customize_iframe", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
+		<%= render :partial => "/Erb/module/area-customize_iframe", :locals => { :index => 25, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
 	<!-- iframe 結束 -->
 
 <!-- //地圖================================================================ -->
 
 	<!-- map 地圖 -->
-		<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 5, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 26, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
 	<!-- map 結束 -->
 
 <!-- //內頁列表================================================================ -->
 
 	<!-- default 預設 -->
-		<%= render :partial => "/Erb/module/simple-text_default", :locals => { :index => 10, :class_set => nil, :func_set => nil, :header_text => "單則文字", :show_footer => true, :show_mark => true } %>
+		<%= render :partial => "/Erb/module/simple-text_default", :locals => { :index => 27, :class_set => nil, :func_set => nil, :header_text => "單則文字", :show_footer => true, :show_mark => true } %>
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁文字列表 -->
-		<%= render :partial => "/Erb/module/list-text_page-list" ,:locals => { :index => 11, :class_set => nil, :func_set => nil, :header_text => "內頁文字列表", :show_footer => true, :show_mark => true } %>
+		<%= render :partial => "/Erb/module/list-text_page-list" ,:locals => { :index => 28, :class_set => nil, :func_set => nil, :header_text => "內頁文字列表", :show_footer => true, :show_mark => true } %>
 	<!-- page-list 結束 -->
 
 	<!-- page-list-text 內頁文字列表群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-list-text", :locals => { :index => 12, :class_set => nil, :func_set => nil, :header_text => "內頁文字列表群組", :inner => "/Erb/module/list-text_page-list" } %>
+		<%= render :partial => "/Erb/group/group-list_page-list-text", :locals => { :index => 29, :class_set => nil, :func_set => nil, :header_text => "內頁文字列表群組", :inner => "/Erb/module/list-text_page-list" } %>
 	<!-- page-list-text 結束 -->
 
 <!-- //內頁圖片================================================================ -->
 
 	<!-- default 預設 -->
-		<%= render :partial => "/Erb/module/simple-pic_default", :locals => { :index => 13, :class_set => nil, :func_set => nil, :header_text => "單則圖片", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/simple-pic_default", :locals => { :index => 30, :class_set => nil, :func_set => nil, :header_text => "單則圖片", :show_footer => true } %>
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁圖片列表 -->
-		<%= render :partial => "/Erb/module/list-pic_page-list", :locals => { :index => 14, :class_set => nil, :func_set => nil, :header_text => "內頁圖片列表" } %>
+		<%= render :partial => "/Erb/module/list-pic_page-list", :locals => { :index => 31, :class_set => nil, :func_set => nil, :header_text => "內頁圖片列表" } %>
 	<!-- page-list 結束 -->
 
 	<!-- page-list-pic 內頁圖片列表群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-list-pic", :locals => { :index => 12, :class_set => nil, :func_set => nil, :header_text => "內頁圖片列表群組", :inner => "/Erb/module/list-pic_page-list" } %>
+		<%= render :partial => "/Erb/group/group-list_page-list-pic", :locals => { :index => 32, :class_set => nil, :func_set => nil, :header_text => "內頁圖片列表群組", :inner => "/Erb/module/list-pic_page-list" } %>
 	<!-- page-list-pic 結束 -->
 
 	<!-- page-block 內頁區塊 -->
-		<%= render :partial => "/Erb/module/list-pic_page-block", :locals => { :index => 15, :class_set => nil, :func_set => "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", :header_text => "內頁圖片區塊列表", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/list-pic_page-block", :locals => { :index => 33, :class_set => nil, :func_set => "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", :header_text => "內頁圖片區塊列表", :show_footer => true } %>
 	<!-- page-block 結束 -->
 
 	<!--marquee 跑馬燈輪播 -->
-		<%= render :partial => "/Erb/module/list-pic_page-marquee", :locals => { :index => 16, :class_set => nil, :func_set => "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => "跑馬燈", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/list-pic_page-marquee", :locals => { :index => 34, :class_set => nil, :func_set => "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", :header_text => "跑馬燈", :show_footer => true } %>
 	<!-- marquee 結束 -->
 
 <!-- //內頁圖片敘述================================================================ -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-標籤-內文) -->
-		<%= render :partial => "/Erb/module/area-figure_page-figure", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-figure", :locals => { :index => 35, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-標籤) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption-label", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-標籤)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption-label", :locals => { :index => 36, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-標籤)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption", :locals => { :index => 37, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標籤) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-label", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標籤)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-label", :locals => { :index => 38, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標籤)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-內文) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption-paragraph", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-figcaption-paragraph", :locals => { :index => 39, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標題-內文)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標籤-內文) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-label-paragraph", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標籤-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-label-paragraph", :locals => { :index => 40, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-標籤-內文)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-內文) -->
-		<%= render :partial => "/Erb/module/area-figure_page-image-paragraph", :locals => { :index => 17, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-figure_page-image-paragraph", :locals => { :index => 41, :class_set => nil, :func_set => nil, :header_text => "內頁圖片敘述(圖片-內文)", :show_footer => true } %>
 	<!-- page-figure 結束 -->
 
 <!-- //內頁文章敘述================================================================ -->
 
 	<!-- page-essay 內頁文章敘述(圖片-標題-標籤-內文) -->
-		<%= render :partial => "/Erb/module/area-essay_page-essay", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-essay", :locals => { :index => 42, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-標籤-內文)", :show_footer => true } %>
 	<!-- page-essay 結束 -->
 
 	<!-- page-caption-label-paragraph 內頁文章敘述(圖片-標題-標籤) -->
-		<%= render :partial => "/Erb/module/area-essay_page-image-caption-label", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-標籤)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-image-caption-label", :locals => { :index => 43, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-標籤)", :show_footer => true } %>
 	<!-- page-caption-label-paragraph 結束 -->
 
 	<!-- page-image-caption-paragraph 內頁文章敘述(圖片-標題-內文) -->
-		<%= render :partial => "/Erb/module/area-essay_page-image-caption-paragraph", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-image-caption-paragraph", :locals => { :index => 44, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(圖片-標題-內文)", :show_footer => true } %>
 	<!-- page-caption-label-paragraph 結束 -->
 
 	<!-- page-caption-label-paragraph 內頁文章敘述(標題-標籤-內文) -->
-		<%= render :partial => "/Erb/module/area-essay_page-caption-label-paragraph", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-標籤-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-caption-label-paragraph", :locals => { :index => 45, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-標籤-內文)", :show_footer => true } %>
 	<!-- page-caption-label-paragraph 結束 -->
 
 	<!-- page-caption-label 內頁文章敘述(標題-標籤) -->
-		<%= render :partial => "/Erb/module/area-essay_page-caption-label", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-標籤)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-caption-label", :locals => { :index => 46, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-標籤)", :show_footer => true } %>
 	<!-- page-caption-label 結束 -->
 
 	<!-- page-caption-paragraph 內頁文章敘述(標題-內文) -->
-		<%= render :partial => "/Erb/module/area-essay_page-caption-paragraph", :locals => { :index => 19, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-內文)", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-essay_page-caption-paragraph", :locals => { :index => 47, :class_set => nil, :func_set => nil, :header_text => "內頁文章敘述(標題-內文)", :show_footer => true } %>
 	<!-- page-caption-paragraph 結束 -->
 
 <!-- //內頁敘述群組================================================================ -->
 
 	<!-- page-block 內頁區塊群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-block", :locals => { :index => 20, :class_set => nil, :func_set => nil, :header_text => "內頁區塊群組", :show_footer => false, :inner => "/Erb/module/area-figure_page-figure" } %>
+		<%= render :partial => "/Erb/group/group-list_page-block", :locals => { :index => 48, :class_set => nil, :func_set => nil, :header_text => "內頁區塊群組", :show_footer => false, :inner => "/Erb/module/area-figure_page-figure" } %>
 	<!-- page-block 結束 -->
 
 	<!-- page-list 內頁列表群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-list", :locals => { :index => 18, :class_set => nil, :func_set => nil, :header_text => "內頁列表群組", :show_footer => true, :inner => "/Erb/module/area-figure_page-image-figcaption-paragraph" } %>
+		<%= render :partial => "/Erb/group/group-list_page-list", :locals => { :index => 49, :class_set => nil, :func_set => nil, :header_text => "內頁列表群組", :show_footer => true, :inner => "/Erb/module/area-figure_page-image-figcaption-paragraph" } %>
 	<!-- page-list 結束 -->
 
 	<!-- page-block 內頁區塊群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-block", :locals => { :index => 20, :class_set => nil, :func_set => nil, :header_text => "內頁區塊群組", :show_footer => false, :inner => "/Erb/module/area-essay_page-caption-label-paragraph" } %>
+		<%= render :partial => "/Erb/group/group-list_page-block", :locals => { :index => 50, :class_set => nil, :func_set => nil, :header_text => "內頁區塊群組", :show_footer => false, :inner => "/Erb/module/area-essay_page-caption-label-paragraph" } %>
 	<!-- page-essay 結束 -->
 
 	<!-- page-list 內頁列表群組 -->
-		<%= render :partial => "/Erb/group/group-list_page-list", :locals => { :index => 18, :class_set => nil, :func_set => nil, :header_text => "內頁列表群組", :show_footer => true, :inner => "/Erb/module/area-essay_page-essay" } %>
+		<%= render :partial => "/Erb/group/group-list_page-list", :locals => { :index => 51, :class_set => nil, :func_set => nil, :header_text => "內頁列表群組", :show_footer => true, :inner => "/Erb/module/area-essay_page-essay" } %>
 	<!-- page-list 結束 -->
 
 <!-- //內頁表格================================================================ -->
 
 	<!-- page-table 內頁表格 -->
-		<%= render :partial => "/Erb/module/area-table_page-table", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "內頁表格", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-table_page-table", :locals => { :index => 52, :class_set => nil, :func_set => nil, :header_text => "內頁表格", :show_footer => true } %>
 	<!-- page-table 結束 -->
 
 <!-- //內頁表單================================================================ -->
 
 	<!-- page-form 內頁表單 -->
-		<%= render :partial => "/Erb/module/area-form_page-form", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "內頁表單", :show_footer => true } %>
+		<%= render :partial => "/Erb/module/area-form_page-form", :locals => { :index => 53, :class_set => nil, :func_set => nil, :header_text => "內頁表單", :show_footer => true } %>
 	<!-- page-form 結束 -->
 

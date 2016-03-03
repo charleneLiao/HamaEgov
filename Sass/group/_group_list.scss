@@ -22,480 +22,140 @@
 
 	&.default {
 
-		> .inner {
+		.base-module-area &, .base-aside & {
 
-			> .header {
-				display: none;
+			> .inner {
 
-				> .inner {
+				> .header {
 
+					> .inner {
+
+					}
+
+					h3 {
+						@extend %title;
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
+						> ul {
 
-				a {
+							> li {
+								margin-top: $interval-m;
 
-				}
-			}
+								> [data-index][data-type] {
 
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								margin-top: $interval-s;
-							}
-
-							> [data-index][data-type] {
-								margin: 0;
-
-								> .inner {
-
-									> .header {
-										display: block;
-									}
-
-									> .content {
-										padding: $interval-s 0 0 $interval-xl;
-									}
 								}
 							}
 						}
 					}
 				}
-			}
 
-			> .footer {
+				> .footer {
+					@extend %footer-btns;
 
-				> .inner {
+					> .inner {
 
-				}
+					}
 
-				ul {
+					ul {
 
-				}
+					}
 
-				li {
+					li {
 
-				}
+					}
 
-				span {
+					span {
 
-				}
+					}
 
-				a {
+					a {
 
+					}
 				}
 			}
 		}
-	}
 
-//內頁文字列表群組================================================================
+		.base-section & {
 
-	&.page-list-text {
+			> .inner {
 
-		> .inner {
+				> .header {
 
-			> .header {
+					> .inner {
 
-				> .inner {
+					}
 
-				}
+					h3 {
+						@extend %title;
+					}
 
-				h3 {
-					@extend %title;
+					span {
+							
+					}
 
-					&:before {
-						@include icon-font('list');
+					a {
+
 					}
 				}
 
-				span {
-						
-				}
+				> .content {
 
-				a {
+					> .inner {
 
-				}
-			}
+						> ul {
 
-			> .content {
+							> li {
+								@extend %reset-inner-module;
 
-				> .inner {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								margin-top: $interval-l;
-							}
-
-							> [data-index][data-type] {
-								padding-left: $interval-xl;
-
-								> .inner {
-
-									> .header {
-										display: block;
-										font-size: $font-size-s;
-										border-bottom: 0;
-
-										> .inner {
-
-										}
-
-										h1, h2, h3, h4, h5, h6 {
-											border-bottom: 3px double $border-color;
-
-											&:before {
-												display: none;
-											}
-
-											&:after {
-												display: none;
-											}
-										}
-
-										span {
-
-										}
-
-										a {
-											display: block;
-										}
-									}
-
-									> .content {
-
-									}
-
-									> .footer {
-										display: none;
-									}
+								+ li {
+									margin-top: $interval-s;
 								}
 							}
 						}
 					}
 				}
-			}
 
-			> .footer {
+				> .footer {
+					@extend %footer-btns;
 
-				> .inner {
+					> .inner {
 
-				}
+					}
 
-				ul {
+					ul {
 
-				}
+					}
 
-				li {
+					li {
 
-				}
+					}
 
-				span {
+					span {
 
-				}
+					}
 
-				a {
+					a {
 
+					}
 				}
 			}
 		}
 	}
 
-//內頁圖片列表群組================================================================
-
-	&.page-list-pic {
-
-		> .inner {
-
-			> .header {
-
-				> .inner {
-
-				}
-
-				h3 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('photo');
-					}
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								margin-top: $interval-l;
-							}
-
-							> [data-index][data-type] {
-								padding-left: $interval-xl;
-
-								> .inner {
-
-									> .header {
-										display: block;
-										font-size: $font-size-s;
-										border-bottom: 0;
-
-										> .inner {
-
-										}
-
-										h1, h2, h3, h4, h5, h6 {
-											border-bottom: 3px double $border-color;
-
-											&:before {
-												display: none;
-											}
-
-											&:after {
-												display: none;
-											}
-										}
-
-										span {
-
-										}
-
-										a {
-											display: block;
-										}
-									}
-
-									> .content {
-
-									}
-
-									> .footer {
-										display: none;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-//內頁區塊群組================================================================
-
-	&.page-block {
-		$default-len: 3;
-		$max-len: 6;
-
-		@include default-min-len($type, $default-len, $max-len);
-
-		> .inner {
-
-			> .header {
-
-				> .inner {
-
-				}
-
-				h3 {
-					@extend %title;
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						&:after {
-							@extend %clear;
-						}
-
-						> li {
-							@extend %reset-inner-module;
-
-							> [data-index][data-type] {
-								padding: $interval-xs;
-
-								> .inner {
-
-									> .header {
-										display: none;
-									}
-
-									> .footer {
-										display: none;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .footer {
-				@extend %footer-btns;
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-//內頁列表群組================================================================
-
-	&.page-list {
-
-		> .inner {
-
-			> .header {
-
-				> .inner {
-
-				}
-
-				h3 {
-					@extend %title;
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						> li {
-							@extend %reset-inner-module;
-
-							+ li {
-								margin-top: $interval-s;
-							}
-
-							> [data-index][data-type] {
-								
-								> .inner {
-
-									> .footer {
-										display: none;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .footer {
-				@extend %footer-btns;
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-//選單列表================================================================
+//選單================================================================
 
 	&.nav {
 
@@ -1358,13 +1018,15 @@
 		}
 	}
 
-//多重檔案下載列表================================================================
+//主輪播================================================================
 
-	&.file-download-multiple {
+	&.major-slider {
+		$btn-width: 40px; //設定按鈕寬度
 
 		> .inner {
 
 			> .header {
+				display: none;
 
 				> .inner {
 
@@ -1374,7 +1036,7 @@
 					@extend %title;
 
 					&:before {
-						@include icon-font('cloud_download');
+						@include icon-font('slideshow');
 					}
 				}
 
@@ -1383,7 +1045,7 @@
 				}
 
 				a {
-					
+
 				}
 			}
 
@@ -1394,90 +1056,24 @@
 					> ul {
 
 						> li {
-							
+
 							+ li {
-								margin-top: $interval-s;
+								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
 							}
-						}
-					}
-				}
-			}
 
-			> .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-//相簿================================================================
-
-	&.album {
-		$default-len: 2;
-
-		@include default-len-hide($type, $default-len);
-		@include set-len-hide($type);
-
-		> .inner {
-
-			> .header {
-
-				> .inner {
-
-				}
-
-				h3 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('camera');
-					}
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						&:after {
-							@extend %clear;
-						}
-
-						> li {
-							@extend %reset-inner-module;
-
-							> [data-index][data-type] {
-								padding: $interval-xs;
+							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
 
 								> .inner {
+									@extend %reset;
+
+									> .header {
+										display: none;
+									}
 
 									> .footer {
 										display: none;
@@ -1490,7 +1086,6 @@
 			}
 
 			> .footer {
-				@extend %footer-btns;
 
 				> .inner {
 
@@ -1502,88 +1097,48 @@
 
 				li {
 
-				}
+					&.next, &.prev {
 
-				span {
+						@include js(false) {
+							display: none;
+						}
 
-				}
+						a {
+							@extend %hide-text;
+							position: absolute;
+							top: 20%;
+							bottom: 20%;
+							display: block;
+							width: $btn-width;
+							transition: $transition;
+							background-color: $light;
+							background-color: rgba($light, $opacity-h);
 
-				a {
-
-				}
-			}
-		}
-	}
-
-//訊息================================================================
-
-	&.message {
-
-		> .inner {
-
-			> .header {
-
-				> .inner {
-
-				}
-
-				h3 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('message');
-					}
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .content {
-
-				> .inner {
-
-					> ul {
-
-						> li {
-							@extend %reset-inner-module;
-
-							+ li {
-								margin-top: $interval-s;
-							}
-
-							> [data-index][data-type] {
-								
-								> .inner {
-
-									> .footer {
-										display: none;
-									}
-								}
+							&:hover {
+								background-color: rgba($light, $opacity-vh);
 							}
 						}
 					}
-				}
-			}
 
-			> .footer {
-				@extend %footer-btns;
+					&.prev {
 
-				> .inner {
+						a {
+							left: 0;
+							@include bg-to-pic('icon-pic/away-b-left.png', false);
+						}
+					}
 
-				}
+					&.next {
 
-				ul {
+						a {
+							right: 0;
+							@include bg-to-pic('icon-pic/away-b-right.png', false);
+						}
+					}
 
-				}
-
-				li {
-
+					&.more {
+						display: none;
+					}
 				}
 
 				span {
@@ -1859,15 +1414,13 @@
 		}
 	}
 
-//主輪播================================================================
+//訊息================================================================
 
-	&.major-slider {
-		$btn-width: 40px; //設定按鈕寬度
+	&.message {
 
 		> .inner {
 
 			> .header {
-				display: none;
 
 				> .inner {
 
@@ -1877,7 +1430,321 @@
 					@extend %title;
 
 					&:before {
-						@include icon-font('slideshow');
+						@include icon-font('message');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							@extend %reset-inner-module;
+
+							+ li {
+								margin-top: $interval-s;
+							}
+
+							> [data-index][data-type] {
+								
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//相簿================================================================
+
+	&.album {
+		$default-len: 2;
+
+		@include default-len-hide($type, $default-len);
+		@include set-len-hide($type);
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('camera');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							@extend %reset-inner-module;
+
+							> [data-index][data-type] {
+								padding: $interval-xs;
+
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//投票結果================================================================
+
+	&.vote-result {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('data_usage');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							margin-top: $interval-m;
+
+							> [data-index][data-type] {
+
+								> .inner {
+									margin: 0 !important;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//多重檔案下載列表================================================================
+
+	&.file-download-multiple {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('cloud_download');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+					
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							
+							+ li {
+								margin-top: $interval-s;
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁文字列表群組================================================================
+
+	&.page-list-text {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('list');
 					}
 				}
 
@@ -1899,21 +1766,46 @@
 						> li {
 
 							+ li {
-								display: none;
-
-								@include js(false) {
-									display: block;
-									margin-top: $interval-m;
-								}
+								margin-top: $interval-l;
 							}
 
-							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
+							> [data-index][data-type] {
+								padding-left: $interval-xl;
 
 								> .inner {
-									@extend %reset;
 
 									> .header {
-										display: none;
+										display: block;
+										font-size: $font-size-s;
+										border-bottom: 0;
+
+										> .inner {
+
+										}
+
+										h1, h2, h3, h4, h5, h6 {
+											border-bottom: 3px double $border-color;
+
+											&:before {
+												display: none;
+											}
+
+											&:after {
+												display: none;
+											}
+										}
+
+										span {
+
+										}
+
+										a {
+											display: block;
+										}
+									}
+
+									> .content {
+
 									}
 
 									> .footer {
@@ -1938,48 +1830,286 @@
 
 				li {
 
-					&.next, &.prev {
+				}
 
-						@include js(false) {
-							display: none;
-						}
+				span {
 
-						a {
-							@extend %hide-text;
-							position: absolute;
-							top: 20%;
-							bottom: 20%;
-							display: block;
-							width: $btn-width;
-							transition: $transition;
-							background-color: $light;
-							background-color: rgba($light, $opacity-h);
+				}
 
-							&:hover {
-								background-color: rgba($light, $opacity-vh);
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁圖片列表群組================================================================
+
+	&.page-list-pic {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+
+							+ li {
+								margin-top: $interval-l;
+							}
+
+							> [data-index][data-type] {
+								padding-left: $interval-xl;
+
+								> .inner {
+
+									> .header {
+										display: block;
+										font-size: $font-size-s;
+										border-bottom: 0;
+
+										> .inner {
+
+										}
+
+										h1, h2, h3, h4, h5, h6 {
+											border-bottom: 3px double $border-color;
+
+											&:before {
+												display: none;
+											}
+
+											&:after {
+												display: none;
+											}
+										}
+
+										span {
+
+										}
+
+										a {
+											display: block;
+										}
+									}
+
+									> .content {
+
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
 							}
 						}
 					}
+				}
+			}
 
-					&.prev {
+			> .footer {
 
-						a {
-							left: 0;
-							@include bg-to-pic('icon-pic/away-b-left.png', false);
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁區塊群組================================================================
+
+	&.page-block {
+		$default-len: 3;
+		$max-len: 6;
+
+		@include default-min-len($type, $default-len, $max-len);
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							@extend %reset-inner-module;
+
+							> [data-index][data-type] {
+								padding: $interval-xs;
+
+								> .inner {
+
+									> .header {
+										display: none;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
 						}
 					}
+				}
+			}
 
-					&.next {
+			> .footer {
+				@extend %footer-btns;
 
-						a {
-							right: 0;
-							@include bg-to-pic('icon-pic/away-b-right.png', false);
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁列表群組================================================================
+
+	&.page-list {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							@extend %reset-inner-module;
+
+							+ li {
+								margin-top: $interval-s;
+							}
+
+							> [data-index][data-type] {
+								
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
 						}
 					}
+				}
+			}
 
-					&.more {
-						display: none;
-					}
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
 				}
 
 				span {

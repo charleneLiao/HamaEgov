@@ -18,7 +18,7 @@
 	</div></div>
 	<div class="content"><div class="inner">
 
-	<div data-index="1" data-type="<%= $row %>" data-child="6"><div class="inner">
+	<div data-index="1" data-type="<%= $row %>" data-child="10"><div class="inner">
 		<div class="header"><div class="inner">
 			<h3><span><a></a></span></h3>
 		</div></div>
@@ -28,7 +28,7 @@
 			<%= render :partial => "/Erb/module/list-text_nav", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "選單" } %>
 		<!-- nav 結束 -->
 
-		<!-- nav 選單列表 -->
+		<!-- nav 選單 -->
 			<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 2, :class_set => nil, :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
 		<!-- nav 結束 -->
 
@@ -37,21 +37,25 @@
 		<!-- minor-nav 結束 -->
 
 		<!-- calender 月曆 -->
-			<%= render :partial => "/Erb/module/area-form_calender", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "月曆", :show_footer => true } %>
+			<%= render :partial => "/Erb/module/area-table_calender", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "月曆", :show_footer => true } %>
 		<!-- calender 結束 -->
 
 		<!-- vote 投票 -->
 			<%= render :partial => "/Erb/module/area-form_vote", :locals => { :index => 5, :class_set => nil, :func_set => nil, :header_text => "投票", :show_footer => true } %>
 		<!-- vote 結束 -->
 
-		<!-- map 地圖 -->
-			<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 6, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
-		<!-- map 結束 -->
+		<!-- countdown 倒數日 -->
+			<%= render :partial => "/Erb/module/simple-text_countdown", :locals => { :index => 6, :class_set => nil, :func_set => nil, :header_text => "距離大年初三", :show_footer => true, :show_mark => true } %>
+		<!-- countdown 結束 -->
+
+		<!-- default 預設 -->
+			<%= render :partial => "/Erb/group/group-list_default", :locals => { :index => 10, :class_set => nil, :func_set => nil, :header_text => "預設列表", :show_footer => true, :inner => "/Erb/module/simple-text_countdown" } %>
+		<!-- default 結束 -->
 
 		</div></div>
 	</div></div>
 
-	<div data-index="2" data-type="<%= $row %>" data-child="8"><div class="inner">
+	<div data-index="2" data-type="<%= $row %>" data-child="9"><div class="inner">
 		<div class="header"><div class="inner">
 			<h3><span><a></a></span></h3>
 		</div></div>
@@ -85,8 +89,12 @@
 			<%= render :partial => "/Erb/module/area-customize_iframe", :locals => { :index => 7, :class_set => nil, :func_set => nil, :header_text => "框架", :show_footer => false } %>
 		<!-- iframe 結束 -->
 
+		<!-- map 地圖 -->
+			<%= render :partial => "/Erb/module/area-customize_map", :locals => { :index => 8, :class_set => nil, :func_set => "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", :header_text => "地圖", :show_footer => true } %>
+		<!-- map 結束 -->
+
 		<!-- default 預設 -->
-			<%= render :partial => "/Erb/module/area-editor_default", :locals => { :index => 8, :class_set => nil, :func_set => nil, :header_text => "自訂標題" } %>
+			<%= render :partial => "/Erb/module/area-editor_default", :locals => { :index => 9, :class_set => nil, :func_set => nil, :header_text => "自訂標題" } %>
 		<!-- default 結束 -->
 
 		</div></div>

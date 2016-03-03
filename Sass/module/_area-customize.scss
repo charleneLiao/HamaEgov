@@ -61,246 +61,11 @@
 		}
 	}
 
-//地圖================================================================
-
-	&.map {
-
-		@include js(false) {
-			display: none;
-		}
-
-		.base-module-area & {
-
-			> .inner {
-
-			}
-
-			.header {
-
-				> .inner {
-
-				}
-
-				h4 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('place');
-					}
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-
-			.content {
-
-				> .inner {
-
-				}
-
-				.divition {
-					margin-bottom: $interval-s;
-				}
-
-				.essay {
-					
-				}
-
-				.caption {
-					@extend %caption;
-
-					span {
-						
-					}
-
-					a {
-
-					}
-				}
-
-				.label {
-					@extend %label;
-
-					ul {
-
-					}
-
-					li {
-
-					}
-
-					span {
-
-					}
-				}
-
-				/*i*/.mark {
-					@extend %mark;
-				}
-
-				.paragraph {
-					@extend %paragraph;
-
-					p {
-
-					}
-
-					span {
-
-					}
-				}
-			}
-
-			.footer {
-				@extend %footer-btns;
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-
-		.base-page-area & {
-
-			> .inner {
-
-			}
-
-			.header {
-
-				> .inner {
-
-				}
-
-				h4 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('place');
-					}
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-
-			.content {
-
-				> .inner {
-
-				}
-
-				.divition {
-					margin-bottom: $interval-s;
-				}
-
-				.essay {
-					
-				}
-
-				.caption {
-					@extend %caption;
-
-					span {
-						
-					}
-
-					a {
-
-					}
-				}
-
-				.label {
-					@extend %label;
-
-					ul {
-
-					}
-
-					li {
-
-					}
-
-					span {
-
-					}
-				}
-
-				/*i*/.mark {
-					@extend %mark-1;
-				}
-
-				.paragraph {
-					@extend %article-extend;
-
-					p {
-
-					}
-
-					span {
-
-					}
-				}
-			}
-
-			.footer {
-				@extend %footer-btns;
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
 //視訊================================================================
 
 	&.video {
 
-		.base-module-area & {
+		.base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -587,7 +352,7 @@
 
 	&.audio {
 
-		.base-module-area & {
+		.base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -874,7 +639,7 @@
 
 	&.iframe {
 
-		.base-module-area & {
+		.base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -1034,6 +799,241 @@
 						display: block;
 						width: 100%;
 					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-1;
+				}
+
+				.paragraph {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//地圖================================================================
+
+	&.map {
+
+		@include js(false) {
+			display: none;
+		}
+
+		.base-module-area &, .base-aside & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('place');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+
+				}
+
+				.divition {
+					margin-bottom: $interval-s;
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.paragraph {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-page-area & {
+
+			> .inner {
+
+			}
+
+			.header {
+
+				> .inner {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('place');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
+
+				> .inner {
+
+				}
+
+				.divition {
+					margin-bottom: $interval-s;
 				}
 
 				.essay {

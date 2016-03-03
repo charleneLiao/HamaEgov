@@ -90,6 +90,378 @@
 		}
 	}
 
+//輪播================================================================
+
+	&.slider {
+
+		> .inner {
+			
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('slideshow');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				+ li {
+					display: none;
+
+					@include js(false) {
+						display: block;
+						margin-top: $interval-m;
+					}
+				}
+			}
+
+			span {
+				display: block;
+				background-image: none !important;
+			}
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.next, &.prev {
+
+					@include js(false) {
+						display: none;
+					}
+				}
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//跑馬燈輪播================================================================
+
+	&.page-marquee {
+		$btn-width: 30px; //設定按鈕寬度
+		$max-li-len: 50; //設定 li 的最大數量
+		$show-li-len: 4; //設定一次要秀的數量
+		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
+
+		> .inner {
+
+		}
+
+		.header {
+			display: none;
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			background-color: $light;
+
+			> .inner {
+				overflow: hidden;
+				// margin: 0 $btn-width; //如果要與圖不重疊
+
+				@include js(false) {
+					margin: 0;
+				}
+			}
+
+			ul {
+				width: $max-li-len * 100% / $show-li-len;
+
+				@include set-len-rwd('pad', 2, $max-li-len * 100%);
+				@include set-len-rwd('phone', 1, $max-li-len * 100%);
+
+				@include js(false) {
+					width: 100%;
+				}
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				width: 100% / $max-li-len;
+				float: left;
+
+				@include js(false) {
+					display: block;
+					width: 100% / $show-li-len;
+				}
+			}
+
+			span {
+				@extend %bg-cover;
+				position: relative;
+				display: block;
+				margin: $interval-xs;
+				border: $interval-xs solid $light-gray;
+				height: 80px;
+			}
+
+			a {
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($black, $opacity-m);
+				transition: $transition;
+
+				&:hover {
+					opacity: 0;
+				}
+
+				@include media('mobile') {
+					background-color: transparent;
+				}
+			}
+
+			img {
+				display: none;
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.next, &.prev {
+
+					@include js(false) {
+						display: none;
+					}
+
+					a {
+						@extend %hide-text;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						display: block;
+						width: $btn-width;
+						transition: $transition;
+						background-color: $light;
+						background-color: rgba($light, $opacity-h);
+
+						&:hover {
+							background-color: rgba($light, $opacity-vh);
+						}
+					}
+				}
+
+				&.prev {
+
+					a {
+						left: 0;
+						@include bg-to-pic('icon-pic/away-b-left.png', false);
+					}
+				}
+
+				&.next {
+
+					a {
+						right: 0;
+						@include bg-to-pic('icon-pic/away-b-right.png', false);
+					}
+				}
+
+				&.more {
+					display: none;
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//連結================================================================
+
+	&.link {
+		$default-len: 3;
+
+		@include default-len($type, $default-len);
+		@include set-len($type);
+		margin-top: 0;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('public');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				
+			}
+
+			span {
+				margin: $interval-xs;
+				display: block;
+			}
+
+			a {
+				@extend %mask;
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //各種標章================================================================
 
 	&.icon {
@@ -506,174 +878,6 @@
 		}
 	}
 
-//跑馬燈輪播================================================================
-
-	&.page-marquee {
-		$btn-width: 30px; //設定按鈕寬度
-		$max-li-len: 50; //設定 li 的最大數量
-		$show-li-len: 4; //設定一次要秀的數量
-		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
-
-		> .inner {
-
-		}
-
-		.header {
-			display: none;
-
-			> .inner {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-			background-color: $light;
-
-			> .inner {
-				overflow: hidden;
-				// margin: 0 $btn-width; //如果要與圖不重疊
-
-				@include js(false) {
-					margin: 0;
-				}
-			}
-
-			ul {
-				width: $max-li-len * 100% / $show-li-len;
-
-				@include set-len-rwd('pad', 2, $max-li-len * 100%);
-				@include set-len-rwd('phone', 1, $max-li-len * 100%);
-
-				@include js(false) {
-					width: 100%;
-				}
-
-				&:after {
-					@extend %clear;
-				}
-			}
-
-			li {
-				width: 100% / $max-li-len;
-				float: left;
-
-				@include js(false) {
-					display: block;
-					width: 100% / $show-li-len;
-				}
-			}
-
-			span {
-				@extend %bg-cover;
-				position: relative;
-				display: block;
-				margin: $interval-xs;
-				border: $interval-xs solid $light-gray;
-				height: 80px;
-			}
-
-			a {
-				position: absolute;
-				display: block;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				background-color: rgba($black, $opacity-m);
-				transition: $transition;
-
-				&:hover {
-					opacity: 0;
-				}
-
-				@include media('mobile') {
-					background-color: transparent;
-				}
-			}
-
-			img {
-				display: none;
-			}
-		}
-
-		.footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				&.next, &.prev {
-
-					@include js(false) {
-						display: none;
-					}
-
-					a {
-						@extend %hide-text;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						display: block;
-						width: $btn-width;
-						transition: $transition;
-						background-color: $light;
-						background-color: rgba($light, $opacity-h);
-
-						&:hover {
-							background-color: rgba($light, $opacity-vh);
-						}
-					}
-				}
-
-				&.prev {
-
-					a {
-						left: 0;
-						@include bg-to-pic('icon-pic/away-b-left.png', false);
-					}
-				}
-
-				&.next {
-
-					a {
-						right: 0;
-						@include bg-to-pic('icon-pic/away-b-right.png', false);
-					}
-				}
-
-				&.more {
-					display: none;
-				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
 //內頁圖片區塊列表================================================================
 
 	&.page-block {
@@ -792,210 +996,6 @@
 				&.more {
 					display: none;
 				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//輪播================================================================
-
-	&.slider {
-
-		> .inner {
-			
-		}
-
-		.header {
-
-			> .inner {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('slideshow');
-				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-				
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				+ li {
-					display: none;
-
-					@include js(false) {
-						display: block;
-						margin-top: $interval-m;
-					}
-				}
-			}
-
-			span {
-				display: block;
-				background-image: none !important;
-			}
-
-			a {
-				display: block;
-			}
-
-			img {
-				display: block;
-				width: 100%;
-			}
-		}
-
-		.footer {
-			@extend %footer-btns;
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				&.next, &.prev {
-
-					@include js(false) {
-						display: none;
-					}
-				}
-
-				&.prev {
-
-				}
-
-				&.next {
-
-				}
-
-				&.more {
-
-				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//連結================================================================
-
-	&.link {
-		$default-len: 3;
-
-		@include default-len($type, $default-len);
-		@include set-len($type);
-		margin-top: 0;
-
-		> .inner {
-
-		}
-
-		.header {
-
-			> .inner {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('public');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.content {
-
-			> .inner {
-				
-			}
-
-			ul {
-
-				&:after {
-					@extend %clear;
-				}
-			}
-
-			li {
-				
-			}
-
-			span {
-				margin: $interval-xs;
-				display: block;
-			}
-
-			a {
-				@extend %mask;
-			}
-
-			img {
-				width: 100%;
-				display: block;
-			}
-		}
-
-		.footer {
-			@extend %footer-btns;
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
 			}
 
 			span {
