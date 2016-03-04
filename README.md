@@ -1586,7 +1586,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="content"><div class="inner">
     
         <!--嵌套 /Erb/module/sample -->
-        <%= render :partial => "/Erb/module/sample", :locals => { :index => 4, :header_text => '模塊標頭' } %>
+        <%= render :partial => "/Erb/module/sample", :locals => set({ :index => 4, :header_text => '模塊標頭' }) %>
     
       </div></div>
     </div></div>

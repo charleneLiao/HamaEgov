@@ -1,7 +1,6 @@
 //圖片列表
 
 .list-pic {
-	$type: 0; //類型代碼
 
 //設定================================================================
 
@@ -378,8 +377,8 @@
 	&.link {
 		$default-len: 3;
 
-		@include default-len($type, $default-len);
-		@include set-len($type);
+		@include default-len(0, $default-len);
+		@include set-len(0);
 		margin-top: 0;
 
 		> .inner {

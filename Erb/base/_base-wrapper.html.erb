@@ -9,15 +9,15 @@
 	<!-- test 結束 -->
 	
 	<!-- base-header 頁首資訊 -->
-		<%= render :partial => "/Erb/base/base-header", :locals => { :index => 1 } %>
+		<%= render :partial => "/Erb/base/base-header", :locals => set({ :index => 1 }) %>
 	<!-- base-header 結束 -->
 
 	<!-- base-content 主要內容 -->
-		<%= render :partial => "/Erb/base/base-content_" + area, :locals => { :index => 2 } %>
+		<%= render :partial => "/Erb/base/base-content_" + area, :locals => set({ :index => 2 }) %>
 	<!-- base-content 結束 -->
 
 	<!-- base-footer 頁尾資訊 -->
-		<%= render :partial => "/Erb/base/base-footer", :locals => { :index => 3 } %>
+		<%= render :partial => "/Erb/base/base-footer", :locals => set({ :index => 3 }) %>
 	<!-- base-footer 結束 -->
 
 	</div></div>

@@ -1,7 +1,6 @@
 //列表群組
 
 [data-type="4"] {
-	$type: 4; //類型代碼
 
 //設定================================================================
 
@@ -309,7 +308,7 @@
 			$default-len: 6;
 			$max-len: 10;
 
-			@include default-min-len($type, $default-len, $max-len);
+			@include default-min-len(4, $default-len, $max-len);
 			position: relative;
 			z-index: 2;
 
@@ -638,7 +637,7 @@
 			$default-len: 6;
 			$max-len: 10;
 
-			@include default-min-len($type, $default-len, $max-len);
+			@include default-min-len(4, $default-len, $max-len);
 
 			@include media('mobile') {
 				display: none;
@@ -1501,8 +1500,8 @@
 	&.album {
 		$default-len: 2;
 
-		@include default-len-hide($type, $default-len);
-		@include set-len-hide($type);
+		@include default-len-hide(4, $default-len);
+		@include set-len-hide(4);
 
 		> .inner {
 
@@ -1972,7 +1971,7 @@
 		$default-len: 3;
 		$max-len: 6;
 
-		@include default-min-len($type, $default-len, $max-len);
+		@include default-min-len(4, $default-len, $max-len);
 
 		> .inner {
 

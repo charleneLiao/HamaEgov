@@ -17,4 +17,30 @@
 
 #檔案類型陣列================================================================
 	$file_types = ["doc", "docx", "exl", "link", "odf", "odp", "ods", "odt", "other", "pdf", "ppt", "pptx", "rar", "txt", "xls", "xlsx", "zip"]
+
+#設定參數方法================================================================
+
+	def set(opt = {})
+
+		set = {
+			:index => 1,
+			:class_set => nil,
+			:child => 0,
+			:func_set => nil,
+			:header_text => "標題",
+			:show_footer => true,
+			:show_mark => true,
+			:inner => "/Erb/module/simple-pic_default",
+			:access_title => "導盲磚說明",
+			:access_key => "Z",
+			:inner_len => 2
+		}
+
+		opt.each do |key, value|
+
+			set[key.to_sym] = value
+		end
+
+		set
+	end
 %>

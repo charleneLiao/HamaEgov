@@ -1,4 +1,3 @@
-<%= render :partial => "/Erb/sys/variable" %>
 <!doctype html>
 <html lang="zh-TW">
 	<head>
@@ -35,15 +34,15 @@
 			<div class="content"><div class="inner">
 
 			<!-- base-mobile 行動載具-->
-				<%= render :partial => "/Erb/base/base-mobile", :locals => { :index => 1 } %>
+				<%= render :partial => "/Erb/base/base-mobile", :locals => set({ :index => 1 }) %>
 			<!-- base-mobile 結束 -->
 
 			<!-- base-extend 額外資訊 -->
-				<%= render :partial => "/Erb/base/base-extend", :locals => { :index => 2 } %>
+				<%= render :partial => "/Erb/base/base-extend", :locals => set({ :index => 2 }) %>
 			<!-- base-extend 結束 -->
 
 			<!-- base-wrapper 固定佈局 -->
-				<%= render :partial => "/Erb/base/base-wrapper", :locals => { :index => 3, :area => "page" } %>
+				<%= render :partial => "/Erb/base/base-wrapper", :locals => set({ :index => 3, :area => "page" }) %>
 			<!-- base-wrapper 結束 -->
 
 			</div></div>

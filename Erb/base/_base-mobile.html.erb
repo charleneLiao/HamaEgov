@@ -5,7 +5,7 @@
 	<div class="content"><div class="inner">
 
 	<!-- toogle-btn 收合按鈕 -->
-		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => { :index => 1, :class_set => nil, :func_set => "{'toogleBtn':{'targetNode':'.base-mobile','targetClass':'is-open','thisClass':'is-active'}}", :header_text => "收合側欄" } %>
+		<%= render :partial => "/Erb/module/simple-text_toogle-btn", :locals => set({ :index => 1, :func_set => "{'toogleBtn':{'targetNode':'.base-mobile','targetClass':'is-open','thisClass':'is-active'}}", :header_text => "收合側欄" }) %>
 	<!-- toogle-btn 結束 -->
 
 	<!-- group-info 資訊群組 -->
@@ -16,11 +16,11 @@
 			<div class="content"><div class="inner">
 
 			<!-- search 搜尋 -->
-				<%= render :partial => "/Erb/module/area-form_search", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "搜尋", :show_footer => true } %>
+				<%= render :partial => "/Erb/module/area-form_search", :locals => set({ :index => 1, :header_text => "搜尋" }) %>
 			<!-- search 結束 -->
 
 			<!-- share 分享 -->
-				<%= render :partial => "/Erb/module/list-text_share", :locals => { :index => 2, :class_set => nil, :func_set => nil, :header_text => "分享" } %>
+				<%= render :partial => "/Erb/module/list-text_share", :locals => set({ :index => 2, :header_text => "分享" }) %>
 			<!-- share 結束 -->
 
 			<!-- nav 選單 -->
@@ -33,21 +33,21 @@
 							<li data-index="1">
 
 							<!-- hot-key-word 熱門關鍵字 -->
-								<%= render :partial => "/Erb/module/list-text_hot-key-word", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "熱門關鍵字" } %>
+								<%= render :partial => "/Erb/module/list-text_hot-key-word", :locals => set({ :index => 1, :header_text => "熱門關鍵字" }) %>
 							<!-- hot-key-word 結束 -->
 
 							</li>
 							<li data-index="2">
 
 							<!-- link 連結 -->
-								<%= render :partial => "/Erb/module/list-text_link", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "上方連結", :show_footer => false, :show_mark => false } %>
+								<%= render :partial => "/Erb/module/list-text_link", :locals => set({ :index => 1, :header_text => "上方連結", :show_footer => false, :show_mark => false }) %>
 							<!-- link 結束 -->
 							
 							</li>
 							<li data-index="3">
 
 							<!-- link 連結 -->
-								<%= render :partial => "/Erb/module/list-text_link", :locals => { :index => 1, :class_set => nil, :func_set => nil, :header_text => "下方連結", :show_footer => false, :show_mark => false } %>
+								<%= render :partial => "/Erb/module/list-text_link", :locals => set({ :index => 1, :header_text => "下方連結", :show_footer => false, :show_mark => false }) %>
 							<!-- link 結束 -->
 
 							</li>
@@ -57,7 +57,7 @@
 			<!-- nav 結束 -->
 
 			<!-- nav 選單 -->
-				<%= render :partial => "/Erb/group/group-list_nav", :locals => { :index => 4, :class_set => nil, :func_set => "{'majorNavMobile':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" } %>
+				<%= render :partial => "/Erb/group/group-list_nav", :locals => set({ :index => 4, :func_set => "{'majorNavMobile':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" }) %>
 			<!-- nav 結束 -->
 
 			</div></div>
