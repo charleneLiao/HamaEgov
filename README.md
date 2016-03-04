@@ -167,12 +167,12 @@
       |- Script
       |- Video
       |- .gitignore
-      |- _index_layout.HTML.erb
-      |- _layout.HTML.erb
+      |- _index_layout.html.erb
+      |- _layout.html.erb
       |- apple-touch-icon.png
       |- config.rb
       |- favicon.ico
-      |- index.HTML.erb
+      |- index.html.erb
       |- index.HTML.layout
       |- README.md
 
@@ -230,11 +230,11 @@
     <td>紀錄 Git 排除名單的文件</td>
   </tr>
   <tr>
-    <td>_index_layout.HTML.erb</td>
-    <td>index.HTML.erb 的樣板</td>
+    <td>_index_layout.html.erb</td>
+    <td>index.html.erb 的樣板</td>
   </tr>
   <tr>
-    <td>_layout.HTML.erb</td>
+    <td>_layout.html.erb</td>
     <td>所有內面的樣板</td>
   </tr>
   <tr>
@@ -250,12 +250,12 @@
     <td>網頁 icon 圖示</td>
   </tr>
   <tr>
-    <td>index.HTML.erb</td>
+    <td>index.html.erb</td>
     <td>以 Erb 撰寫的首頁</td>
   </tr>
   <tr>
     <td>index.HTML.layout</td>
-    <td>指定 _index_layout.HTML.erb 為 index.HTML.erb 樣板的設定文件</td>
+    <td>指定 _index_layout.html.erb 為 index.html.erb 樣板的設定文件</td>
   </tr>
   <tr>
     <td>README.md</td>
@@ -348,7 +348,7 @@ base-wrapper: 網頁頁面框架。
 
     <body>
       <div class="sys-root">
-    
+
         <div class="base-mobile">
           行動版側欄
         </div>
@@ -358,7 +358,7 @@ base-wrapper: 網頁頁面框架。
         <div class="base-wrapper">
           網頁頁面框架
         </div>
-    
+
       </div>
     </body>
 
@@ -375,7 +375,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
         <div class="base-extend">
         </div>
         <div class="base-wrapper">
-    
+
           <div class="base-header">
             網頁頁首
           </div>
@@ -385,7 +385,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
           <div class="base-footer">
             網頁頁尾
           </div>
-    
+
         </div>
       </div>
     </body>
@@ -405,14 +405,14 @@ base-page-area: 內頁框架。
           <div class="base-header">
           </div>
           <div class="base-content">
-    
+
             <div class="base-module-area">
               模組
             </div>
             <div class="base-page-area">
               內頁
             </div>
-    
+
           </div>
           <div class="base-footer">
           </div>
@@ -439,14 +439,14 @@ base-section: 內頁內容。
               <div class="base-module-area">
               </div>
               <div class="base-page-area">
-    
+
                 <div class="base-aside">
                   內頁側欄
                 </div>
                 <div class="base-section">
                   內頁內容
                 </div>
-    
+
               </div>
             </div>
             <div class="base-footer">
@@ -476,11 +476,11 @@ base-article: 內頁文章區塊。
               <div class="base-aside">
               </div>
               <div class="base-section">
-    
+
                 <div class="base-article">
                   內頁文章
                 </div>
-    
+
               </div>
             </div>
           </div>
@@ -700,9 +700,9 @@ base-article: 內頁文章區塊。
         </div>
         <div class="content">
           <div class="inner">
-            <ul data-child>
+            <ul data-index data-child>
               <li data-index="1">
-    
+
                    <data-index data-type="0">
                       <div class="inner">
                         <div class="header">
@@ -719,7 +719,7 @@ base-article: 內頁文章區塊。
                         </div>
                       </div>
                     </div>
-    
+
               </li>
               <li data-index="2">依序加入子模塊...</li>
             </ul>
@@ -772,7 +772,7 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-structure">模組類別與結構</h3>
-與群組類別相仿，模組也分為11種類別，但不論屬於何種類別，模組的 data-type 都是0。
+與群組類別相仿，模組也分為11種類別，但不論屬於何種類別，模組的 data-type 都是 0。
 類別的意義在於區分模組的結構，例如該模組是一個圖片列表，則屬於 list-pic 類別。
 模組使用 class name 區別類別，每個模組都同時包含兩個 class name，分別是類別 class 與自定義 class，例如選單模組：
 
@@ -913,11 +913,21 @@ list-text 是類別 class，而 nav 是自定義 class。
         <div class="content">
           <div class="inner">
             <table>
-              <tbody>
-                <tr>
-                  <td>內容</td>
+              <thead data-index data-child>
+                <tr data-index data-child>
+                  <th data-index><span>標頭</span></th>
+                </tr>
+              </thead>
+              <tbody data-index data-child>
+                <tr data-index data-child>
+                  <td data-index><span>內容</span></td>
                 </tr>
               </tbody>
+              <tfoot data-index data-child>
+                <tr data-index data-child>
+                  <th data-index><span>附加資訊</span></th>
+                </tr>
+              </foot>
             </table>
           </div>
         </div>
@@ -936,7 +946,8 @@ list-text 是類別 class，而 nav 是自定義 class。
         </div>
         <div class="content">
           <div class="inner">
-            <ul data-child><li><span><a><i class="mark">標籤</i>依序加入清單與項目...</a></span></li></ul>
+            <ul data-index data-child><li><span>1</span></li></ul>
+            <ul data-index data-child><li><span>1</span></li></ul>
           </div>
         </div>
       </div>
@@ -954,8 +965,8 @@ list-text 是類別 class，而 nav 是自定義 class。
         </div>
         <div class="content">
           <div class="inner">
-            <ul data-child>
-              <li><span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span></li>
+            <ul data-index data-child>
+              <li data-index><span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span></li>
             </ul>
           </div>
         </div>
@@ -974,8 +985,8 @@ list-text 是類別 class，而 nav 是自定義 class。
         </div>
         <div class="content">
           <div class="inner">
-            <ul data-child>
-              <li><span><a><i class="mark">標籤</i>依序加入文字項目...</a></span></li>
+            <ul data-index data-child>
+              <li data-index><span><a><i class="mark">標籤</i>依序加入文字項目...</a></span></li>
             </ul>
           </div>
         </div>
@@ -1416,19 +1427,19 @@ list-text 是類別 class，而 nav 是自定義 class。
     - 專案目錄
       |- Erb
       |   |- base
-      |   |   |- _base-article.HTML.erb
-      |   |   |- _base-aside.HTML.erb
-      |   |   |- _base-content_index.HTML.erb
-      |   |   |- _base-content_page.HTML.erb
-      |   |   |- _base-extend.HTML.erb
-      |   |   |- _base-footer.HTML.erb
-      |   |   |- _base-header.HTML.erb
-      |   |   |- _base-mobile.HTML.erb
-      |   |   |- _base-module-area_index.HTML.erb
-      |   |   |- _base-module-area_page.HTML.erb
-      |   |   |- _base-page-area.HTML.erb
-      |   |   |- _base-section.HTML.erb
-      |   |   |- _base-wrapper.HTML.erb
+      |   |   |- _base-article.html.erb
+      |   |   |- _base-aside.html.erb
+      |   |   |- _base-content_index.html.erb
+      |   |   |- _base-content_page.html.erb
+      |   |   |- _base-extend.html.erb
+      |   |   |- _base-footer.html.erb
+      |   |   |- _base-header.html.erb
+      |   |   |- _base-mobile.html.erb
+      |   |   |- _base-module-area_index.html.erb
+      |   |   |- _base-module-area_page.html.erb
+      |   |   |- _base-page-area.html.erb
+      |   |   |- _base-section.html.erb
+      |   |   |- _base-wrapper.html.erb
       |   |- group
       |   |   |- 群組模塊...
       |   |- module
@@ -1436,14 +1447,14 @@ list-text 是類別 class，而 nav 是自定義 class。
       |   |- page
       |   |   |- 內頁...
       |   |- sys
-      |   |   |- _icon.HTML.erb
-      |   |   |- _meta.HTML.erb
-      |   |   |- _script.HTML.erb
-      |   |   |- _style.HTML.erb
-      |   |   |- _test.HTML.erb
-      |   |   |- _title.HTML.erb
-      |   |   |- _variable.HTML.erb
-      |   |- _prototype.HTML.erb
+      |   |   |- _icon.html.erb
+      |   |   |- _meta.html.erb
+      |   |   |- _script.html.erb
+      |   |   |- _style.html.erb
+      |   |   |- _test.html.erb
+      |   |   |- _title.html.erb
+      |   |   |- _variable.html.erb
+
 
 <table>
   <tr>
@@ -1455,55 +1466,55 @@ list-text 是類別 class，而 nav 是自定義 class。
     <td>存放 base 框架樣板的目錄</td>
   </tr>
   <tr>
-    <td>base/_base-article.HTML.erb</td>
+    <td>base/_base-article.html.erb</td>
     <td>編輯 base-article 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-aside.HTML.erb</td>
+    <td>base/_base-aside.html.erb</td>
     <td>編輯 base-aside 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-content_index.HTML.erb</td>
+    <td>base/_base-content_index.html.erb</td>
     <td>編輯 base-content 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-content_page.HTML.erb</td>
+    <td>base/_base-content_page.html.erb</td>
     <td>編輯 base-content 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-extend.HTML.erb</td>
+    <td>base/_base-extend.html.erb</td>
     <td>編輯 base-extend 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-footer.HTML.erb</td>
+    <td>base/_base-footer.html.erb</td>
     <td>編輯 base-footer 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-header.HTML.erb</td>
+    <td>base/_base-header.html.erb</td>
     <td>編輯 base-header 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-mobile.HTML.erb</td>
+    <td>base/_base-mobile.html.erb</td>
     <td>編輯 base-mobile 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-module-area_index.HTML.erb</td>
+    <td>base/_base-module-area_index.html.erb</td>
     <td>編輯 base-module-area 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-module-area_page.HTML.erb</td>
+    <td>base/_base-module-area_page.html.erb</td>
     <td>編輯 base-module-area 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-page-area.HTML.erb</td>
+    <td>base/_base-page-area.html.erb</td>
     <td>編輯 base-page-area 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-section.HTML.erb</td>
+    <td>base/_base-section.html.erb</td>
     <td>編輯 base-section 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-wrapper.HTML.erb</td>
+    <td>base/_base-wrapper.html.erb</td>
     <td>編輯 base-wrapper 樣板的文件</td>
   </tr>
   <tr>
@@ -1523,36 +1534,32 @@ list-text 是類別 class，而 nav 是自定義 class。
     <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable</td>
   </tr>
   <tr>
-    <td>sys/_icon.HTML.erb</td>
+    <td>sys/_icon.html.erb</td>
     <td>設定 ico 引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_meta.HTML.erb</td>
+    <td>sys/_meta.html.erb</td>
     <td>設定 meta 設定的文件</td>
   </tr>
   <tr>
-    <td>sys/_script.HTML.erb</td>
+    <td>sys/_script.html.erb</td>
     <td>設定網頁 script 引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_style.HTML.erb</td>
+    <td>sys/_style.html.erb</td>
     <td>設定網頁樣式引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_test.HTML.erb</td>
+    <td>sys/_test.html.erb</td>
     <td>測試用的文件</td>
   </tr>
   <tr>
-    <td>sys/_title.HTML.erb</td>
+    <td>sys/_title.html.erb</td>
     <td>設定網頁 title 的文件</td>
   </tr>
   <tr>
-    <td>sys/_variable.HTML.erb</td>
+    <td>sys/_variable.html.erb</td>
     <td>設定 Erb 全域變數的文件</td>
-  </tr>
-  <tr>
-    <td>_prototype.HTML.erb</td>
-    <td>樣板範本，示範如何傳遞參數</td>
   </tr>
 </table>
 
@@ -1565,41 +1572,41 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 
 
 <h3 id="erb-run">Erb 運作方式</h3>
-樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .HTML.erb 檔。
+樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-    
+
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample" %>
-    
+
       </div></div>
     </div></div>
 
-我們可藉由演示的語法嵌入另一個 .HTML.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.HTML.erb 檔案中。
+我們可藉由演示的語法嵌入另一個 .html.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.html.erb 檔案中。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-    
+
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample", :locals => set({ :index => 4, :header_text => '模塊標頭' }) %>
-    
+
       </div></div>
     </div></div>
 
-在鑲嵌的語法後，我們使用一個 :locals => {} 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
-我們來看看 /Erb/module/_sample.HTML.erb 如何接受這個參數。
+在鑲嵌的語法後，我們使用一個 :locals => set({  }) 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
+我們來看看 /Erb/module/_sample.html.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
     </div>
 
-我們可以在 _sample.HTML.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.HTML#partials)。
+我們可以在 _sample.html.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.HTML#partials)。
 
-以下列出9個平台 Erb 樣板常用的區域變數與其意義：
+以下列出幾個平台 Erb 樣板常用的區域變數與其意義：
 
 <table>
   <tr>
@@ -1610,10 +1617,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
     <td>index</td>
     <td>對應模塊的 data-index 屬性</td>
   </tr>
-  <tr>
-    <td>child</td>
-    <td>對應模塊的 data-child 屬性</td>
-  </tr>
+
   <tr>
     <td>class_set</td>
     <td>新增自訂 class name (框架群組無此功能)</td>
@@ -1648,18 +1652,19 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
   </tr>
 </table>
 
+關於所有的變數，可參閱 Erb/module/_simple-text_test-require.html.erb 的內容。
 
 <h3 id="erb-layout">關於 layout樣板</h3>
-專案目錄中的 layout.HTML.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 HTML.erb 與 .HTML 檔案嵌入指定的框架中。
+專案目錄中的 layout.html.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 html.erb 與 .HTML 檔案嵌入指定的框架中。
 
 
 <h3 id="erb-index-layout">關於 index樣板</h3>
-因為首頁的樣板有別於一般內頁，因此必需另外編輯樣板 _index_layout.HTML.erb 供 index.HTML.erb 使用。
-我們以 index.HTML.layout 來指向 _index_layout.HTML.erb 為 index.HTML.erb 的樣板。
+因為首頁的樣板有別於一般內頁，因此必需另外編輯樣板 _index_layout.html.erb 供 index.html.erb 使用。
+我們以 index.HTML.layout 來指向 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.HTML.erb。
+在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.html.erb。
 全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
     <div class="sample" data-type="<%= $module %>">
@@ -1879,11 +1884,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 這樣的做法，可以快速的參考、交換、複製其他相同類別的模塊樣式。
 
     .list-text {
-    
+
       &.nav {
         ...
       }
-    
+
       &.font-size {
         ...
       }
@@ -1896,9 +1901,9 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 一般來說，在設定樣式的時候，應盡可能減少指定的層數：
 
     .list-text {
-    
+
       &.nav {
-    
+
         .content {
           ...
         }
@@ -1909,11 +1914,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 **但群組下可能會有許多模塊，每個模塊都有自己的 content**，因此若要指名該群組自己的的 content，必須明確的這麼指定：
 
     [data-index][data-type="1"] {
-    
+
       &.group {
-    
+
         > .inner {
-    
+
           > .content {
             ...
           }
@@ -1926,11 +1931,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 我們也可以指定同一模塊在不同框架下的樣式，例如：
 
     .nav {
-    
+
       .base-header & {
        color: #000;
       }
-    
+
       .base-footer & {
        color: #555;
       }
@@ -1943,7 +1948,7 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 base/function 與 base/variable 將常用的變數與功能定義在一起，sys/function 則負責定義一些底層方法。
 
 
-以下首先說明 base/variable 的內容：
+以下首先說明 base/variable 的一些常用內容：
 
 <table>
   <tr>
@@ -1959,16 +1964,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
     <td>$rwd</td>
     <td>是否啟用 rwd(如不啟用，將忽略 RWD 樣式設定)</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>$icon-pic</td>
-    <td>是否啟用雪碧圖示</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$icon-font</td>
-    <td>是否啟用文字圖示</td>
-  </tr>
+
   <tr>
     <td>灰階</td>
     <td>$white</td>
@@ -2030,9 +2026,9 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
     <td>附註色</td>
   </tr>
   <tr>
-    <td>文字樣式</td>
-    <td>base-font-style</td>
-    <td>主要文字樣式</td>
+
+
+
   </tr>
   <tr>
     <td>文字大小(建議使用 em)</td>
@@ -2650,7 +2646,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 
 
 <h3 id="scss-sys-variable">關於 sys/variable</h3>
-我們可以開放一些變數，讓共通平台後臺覆蓋設定。但在命名變數時，**必須後輟 !default** 如： 
+我們可以開放一些變數，讓共通平台後臺覆蓋設定。但在命名變數時，**必須後輟 !default** 如：
 
     $major-color: #0088cc !default;
 
@@ -2664,7 +2660,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 
     .sys-root {
       color: #000;
-    
+
       @include js(false) {
         color: #555;
       }
@@ -2683,7 +2679,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include hack('ie6-7-8') {
         color: #555;
       }
@@ -2696,7 +2692,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include supports('gc28+') {
         color: #555;
       }
@@ -2706,7 +2702,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include supports('display: flex') {
         color: #555;
       }
@@ -2747,7 +2743,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include media('phone') {
         color: #555;
       }
@@ -2759,7 +2755,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include rwd(800, 300) {
         color: #555;
       }
@@ -2773,7 +2769,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-    
+
       @include admin(true) {
         color: #555;
       }
@@ -2790,7 +2786,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
 
 <h3 id="h3 id="rwd-hide">">隱藏模塊 header 的方法</h3>
-許多模塊都帶有 .header，但有時候我們希望把 .header 隱藏起來，這時候只需要在模塊加上 .is-hide-header 即可。 
+許多模塊都帶有 .header，但有時候我們希望把 .header 隱藏起來，這時候只需要在模塊加上 .is-hide-header 即可。
 
 
 <h3 id="scss-font-icon">文字圖示</h3>
@@ -2825,11 +2821,11 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 我們會這麼設定 li 的寬度。
 
     .link {
-    
+
       .content {
-    
+
         ul {
-    
+
           &:after {
             content: '';
             display: block;
@@ -2838,7 +2834,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
             visibility: hidden;
           }
         }
-    
+
         li {
           width: 50%;
           float: left;
@@ -2850,15 +2846,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
     .link {
       @include default-len(0, 2);
-    
+
       .content {
-    
+
         ul {
-    
+
         }
-    
+
         li {
-    
+
         }
       }
     }
@@ -2871,15 +2867,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-    
+
       .content {
-    
+
         ul {
-    
+
         }
-    
+
         li {
-    
+
         }
       }
     }
@@ -2889,13 +2885,13 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-    
+
       .content {
-    
+
         ul {
-    
+
         }
-    
+
         li {
           @include set-len-rwd('pad', 2);
           @include set-len-rwd('phone', 1);
@@ -2984,11 +2980,11 @@ data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟�
 hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
 
     define(function(){
-    
+
       function main(env, opt, file){
         do something...
       }
-    
+
       return main;
     });
 
@@ -3001,30 +2997,23 @@ hud.js 最終回傳一個涵式給 main.js 並執行。
 以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
 
     define(function(){
-    
+
       function main(env, opt, file){
         console.log(opt.auto) //true
       }
-    
+
       return main;
     });
 
 
 <h3 id="app-and-main">關於 app.js 與 lib/main</h3>
 先前曾在 [Script 目錄結構](#js-directory) 章節討論過 app.js 與 main.js。
-app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 app.js 的程式內容：
+app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 app.js 的程式部分內容：
 
     requirejs.config({
       baseUrl: '/Scripts',
       paths: {
-        'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min'],
-        'googleMaps': '//maps.googleapis.com/maps/api/js?v=3.exp',
-        'cookie': 'lib/cookie',
-        'domReady': 'lib/domReady',
-        'main': 'lib/main',
-        'getNode': 'lib/getNode',
-        'plugin': 'lib/plugin',
-        'fix': 'lib/fix'
+        'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min', 'lib/jquery-1.11.3.min']
       },
       map: {
         '*': {
@@ -3060,26 +3049,26 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
 關鍵字的作用在引用套件時，可用關鍵字取出套件內容。引用的方式是利用陣列包含關鍵字，例如某個 js 模塊需要取用 jquery 與 google map：
 
     define(['jquery','googleMaps'],function(){
-    
+
       function main(env, opt, file){
         youu can use jquery and google map api here.
       }
-    
+
       return main;
     });
 
-main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊參數，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構：
+main.js 會先執行 fix.js，接著一一解析有 data-function 參數的模塊，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構以便說明：
 
     requirejs(['domReady!'], function(dom){
       var $nodes = document.querySelectorAll('[data-function]');
-    
+
       for( var i = 0; i < $nodes.length; i++ ) {
         var $env = $nodes[i], //存節點
         $func = JSON.parse(($env.getAttribute('data-function')).replace(/\'/g,'"')); //轉成物件
-    
+
         for( var _file in $func ) { //取 function name 與設定參數
           var $opt = $func[_file];
-    
+
           requirejs([_file], function(func){
             func($env, $opt, _file);
           });
@@ -3107,17 +3096,17 @@ main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊�
 *代表所有的 js 模塊，在所有 js 模塊中，jquery 關鍵字代表 Script/lib/jqueryPrivate 這個模塊，而在 Script/lib/jqueryPrivate.js 中的 jquery 關鍵字則指向 Script/lib/jquery.js 模塊。以下示範如何在模塊中使用 jquery：
 
     define(['jquery'], function($){
-    
+
       function main(env, opt, file){
         you can use $('body') jquery here...
       }
-    
+
       return main;
     });
 
 
 <h3 id="js-cookie">關於 cookie.js</h3>
-cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 api：
+cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉一些它的 api：
 
 <table>
   <tr>
@@ -3137,11 +3126,11 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 ap
 以下示範如何在模塊中使用 cookie：
 
     define(['cookie'], function(cookie){
-    
+
       function main(env, opt, file){
         cookie.set('sample', 'true', 1);
       }
-    
+
       return main;
     });
 
