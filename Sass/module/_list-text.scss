@@ -2433,20 +2433,16 @@
 
 			ul {
 
+				@include media('mobile') {
+					text-align: right !important;
+				}
 			}
 
 			li {
 				display: inline-block;
 
-				+ li {
-
-					@include media('mobile') {
-						margin-top: $interval-xs;
-					}
-				}
-
 				@include media('mobile') {
-					display: block;
+					margin-top: $interval-xs;
 				}
 			}
 
@@ -2458,8 +2454,6 @@
 				@extend %btn;
 
 				@include media('mobile') {
-					display: block;
-					text-align: center;
 					padding: $interval-m;
 				}
 

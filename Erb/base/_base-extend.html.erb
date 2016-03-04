@@ -1,4 +1,4 @@
-<div class="base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="inner">
+<div class="base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="4"><div class="inner">
 	<div class="header"><div class="inner">
 		<h3><span><a></a></span></h3>
 	</div></div>
@@ -15,6 +15,10 @@
 	<!-- target-btn 目標按鈕 -->
 		<%= render :partial => "/Erb/module/simple-text_target-btn", :locals => { :index => 3, :class_set => nil, :func_set => "{'anchor':{'bindNode':'body','speed':300}}", :header_text => "回到最頂" } %>
 	<!-- target-btn 結束 -->
+
+	<!-- query 詢問 -->
+		<%=render :partial => "/Erb/module/simple-text_query", :locals => { :index => 4, :class_set => nil, :func_set => nil, :header_text => "詢問", :show_footer => true } %>
+	<!-- query 結束 -->
 
 	</div></div>
 </div></div>

@@ -6,8 +6,6 @@
 [oka Li](mailto:okaoka0709@gmail.com)
 
 
-
-
 <h2>目錄</h2>
 * [簡介](#introduce)
   1. [前言](#overview)
@@ -17,15 +15,15 @@
   1. [模塊：模組與群組](#module-and-group)
   2. [CSS 選擇器與範圍](#css-selector)
   3. [Javascript 優化](#javascript-optimize)
-* [HTML 實作](#html)
+* [HTML 實作](#HTML)
   1. [專案目錄結構](#project-directory)
-  2. [參數與意義](#html-parameter)
+  2. [參數與意義](#HTML-parameter)
   3. [底層、框架與內容](#base-layout)
   4. [模塊基礎結構](#module-and-group-structure)
   5. [群組類別與結構](#group-structure)
   6. [模組類別與結構](#module-structure)
   7. [組件](#component)
-  9. [以 class name 表示狀態](#use-class-name-to-show-status)
+  8. [以 class name 表示狀態](#use-class-name-to-show-status)
 * [Erb 實作](#erb)
   1. [Erb 目錄結構](#erb-directory)
   2. [Erb 樣板語言](#erb-script)
@@ -45,10 +43,12 @@
   8. [noscript 方法](#scss-noscript)
   9. [hack 方法](#scss-hack)
   10. [rwd 方法](#scss-rwd)
-  11. [admin 方法](#scss-admin)
-  12. [文字圖示](#scss-font-icon)
-  13. [sprite 圖示](#scss-sprite-picture)
-  14. [關於設定數量的方法](#scss-len-function)
+  11. [在 pc、pad、phone 寬度隱藏模塊](#rwd-hide)
+  12. [隱藏模塊 header 的方法](#hide-header)
+  13. [admin 方法](#scss-admin)
+  14. [文字圖示](#scss-font-icon)
+  15. [sprite 圖示](#scss-sprite-picture)
+  16. [關於設定數量的方法](#scss-len-function)
 * [javascript/requireJS 實作](#js)
   1. [Script 目錄結構](#js-directory)
   2. [requireJS 運作方式](#js-require)
@@ -59,46 +59,48 @@
   7. [關於 getNode.js](#js-getNode)
   8. [關於 fix.js](#js-fix)
 
-
-
-
 <h2 id="introduce">簡介</h2>
 <h3 id="overview">前言</h3>
-共通平台的拖曳的方法及模塊的概念，在此版本發揮更多的彈性。
+共通平台是一套商用 cms 系統，本文解說其前端規範。
 
-群組從排版物件進化成主選單、跑馬燈、輪播等複合模塊的主架構。
-例如把數個選單模組放入群組，就變成了雙層選單。
-而雙層選單在手機側欄、側邊欄、上方區塊、在內頁時能依所在位置呈現不同樣式，因此只需要維護一份 HTML 就好，簡化了工作。
+共通平台定義了模塊的概念，每一個具有內容的模塊，都是一塊**模組模塊**。
+與之相對，**群組模塊**僅在排版時發揮作用，沒有任何內容。
 
-模塊 HTML 規範被統一，讓它們可以使用彼此的樣式，甚至 javascript 程式。
-現在我們能實踐更多元的版型，拓展設計師視野。也能減少客製化，增進專案效率。
+群組模塊可以作為主選單、跑馬燈、輪播等複合模塊的載體(box)。
+當我們把數個選單模組放入群組模塊，該群組模塊就可做為雙層選單使用。
 
-模塊新增了一些屬性，讓使用者透過參數來控制顯示的項目，增加不少彈性。
-內頁 HTML 混雜的問題，透過提供範本給工程師，也降低設計師維護的複雜度。
+其他特點如下：
 
-我們減少了不必要的 js 引入，透過新的方法節省流量，不僅加快速度，也增加可維護性。
-此版本引進一種稱為 Erb 的樣板語言，提高設計師建立靜態頁面的效率，幫助我們測試網頁的可靠性。
+1. 模塊在手機側欄、側邊欄或內頁，都能依所在位置呈現不同樣式，因此僅需要維護一份 HTML ，簡化工作流程。
 
+2. 提供範本模塊給工程師，降低工程師、設計師維護的複雜度。
+
+3. 模塊 HTML 規範被統一，它們可以使用彼此的樣式，甚至  javascript 程式。
+
+4. 讓使用者透過參數來控制顯示項目。
+
+5. 透過 requireJS 引入其他 javascript 檔案，以增進速度與維護性。
+
+6. 引進 Erb 的樣板語言，提高建立靜態頁面、網頁測試的效率。
 
 <h3 id="definition">定義</h3>
-本文件規範的範圍包括前台的 HTML 制定、CSS 與 javascript 的引用和執行，不應干涉後端資料的傳輸。但某些涉及後端資料的 Dom 操作則是例外。
+本文規範包括前台的 HTML 制定、CSS 與 javascript 的引用與執行，不干涉後端資料的傳輸。但某些涉及後端資料的 Dom 操作則是例外。
 
 
 <h3 id="environment-and-tools">環境與工具</h3>
-我們支援 IE8 以上的瀏覽器，並做到優雅降級。
-平台仍繼續維護 IE8，雖然使用 html5 宣告，但還是以 html4.2 標籤為主。許多語意標籤被轉化為 class name，便於日後轉換平台。
-唯二的例外是視訊與音訊模組，使用了 html5 撥放器，但平台也提供了相應的外掛供 IE8、IE9 使用。
+我們支援 IE8 以上的瀏覽器，並做到優雅降級。使用 HTML 5 的宣告與 HTML 4.2 的標籤。語意標籤被轉化為 class name，便於日後轉換。
+唯二的例外是視訊與音訊模組，使用原生地 HTML 5 撥放器，但也提供了相應的外掛給 IE8、IE9 使用。
 
-開發環境雖然可以自行建置，但推薦使用 Fire.app。以下是使用到的工具：
+開發環境推薦使用 Fire.app。以下是使用到的工具：
 
 <table>
   <tr>
     <th>開發環境</th>
-    <td>Ruby、Java、Erb、Scss、Compass</td>
+    <td>Ruby(Erb)、Java(Fire.app)、Scss、Compass</td>
   </tr>
   <tr>
     <th>工具</th>
-    <td>Git、Fire.app、requireJS、normalize、jquery</td>
+    <td>Fire.app、requireJS、normalize、jquery</td>
   </tr>
 </table>
 
@@ -107,47 +109,48 @@
 
 <h2 id="philosophy">哲學</h2>
 <h3 id="module-and-group">模塊：模組與群組</h3>
-平台基於兩種模塊：群組與模組。
+平台基於兩種模塊：**群組模塊**與**模組模塊**。
 
-群組本身並沒有內容，是一種協助排版的模塊。
-模組則是一塊有意義的內容，如：天氣模組、資訊模組。
+> 共通平台定義了模塊的概念，每一個具有內容的模塊，都是一塊模組模塊。
+> 與之相對，群組模塊僅在排版時發揮作用，沒有任何內容。
 
-前端網頁的構成，應由模塊堆砌而成，不應有例外。
-當我們需要一個複合型的模組，應該使用現有模塊堆砌出來。例如把日曆與選單加入到群組，該群組就類似於成為帶選單的日曆模組。
+共通平台網頁的構成，應由模塊堆砌而成，不應有例外。
+當我們需要一個複合模組，應該使用現有模塊堆砌出來。
+例如把日曆模組與選單模組加入到群組裡，該群組就成為類似於帶選單的日曆模組。
 
 模組有兩種命名方式，一是依照模組的意義命名，例如：weather(天氣)、logo(標誌)。
 另一種是依照模組的樣式命名，例如：pic-block(圖片區塊)。
 
-一般來說，首頁模組、偏向使用意義命名，而內頁模組以樣式命名為主，以便作為範本使用。
+一般來說，首頁模組、偏向使用意義命名，而內頁模組以樣式命名為主，以作為範本使用。
 
 更多模塊的規範，可參閱 [模塊基礎結構](#module-and-group-structure) 章節。
 
 
 <h3 id="css-selector">CSS 選擇器與範圍</h3>
-我們將 html 整理之後，大致可以歸類出數種結構。
+將平台 HTML 整理之後，大致可以歸類出數種結構。
 而相同/相似結構的模塊，樣式設定會被寫在同一份檔案裡。
-由於同一類別的模塊結構會趨於相似，因此可以很方便的套用同一類別的其他樣式。
-如： group-list、 list-text 與 list-pic 這三個類別，相當程度上可以套用彼此的樣式，但群組與模組指定選擇器的方式稍有不同，需多加注意，可參閱 [選擇器邏輯](#selector-logic) 章節。
+
+
+由於同一類別的模塊結構趨於相似，因此可以很方便的套用同類別的其他樣式。
+如 group-list、 list-text 與 list-pic 這三個類別，相當程度上可以套用彼此的樣式，但群組與模組指定選擇器的方式稍有不同，需多加注意，可參閱 [選擇器邏輯](#selector-logic) 章節。
 
 樣式可依所在位置有所變更，例如指定主選單在手機側欄、側邊欄與內頁時呈現不同的樣式，更多框架區塊可參閱 [底層、框架與內容](#base-layout) 章節，樣式的指定可參閱 [選擇器邏輯](#selector-logic) 章節。。
 
-平台提供了許多指定寬度的新方法，尤其是讓使用者透過參數來控制顯示的項目，增加了不少彈性，可參閱 [關於設定數量的方法](#scss-len-function) 章節。
+平台提供了許多指定寬度的方法，例如讓使用者透過參數來調整顯示的項目，可參閱 [關於設定數量的方法](#scss-len-function) 章節。
 
 
 <h3 id="javascript-optimize">Javascript 優化</h3>
-以往新增/修改 javascript 程式，必須在 head 標籤中引入，時間一久往往會不知道哪些程式在做什麼，進而造成維護上的問題，同時也引入不少實際上並沒有被使用的部分，浪費不少資源。
-另一個問題在於程式執行後，無法得知哪一隻程式在控制當前節點，時常令人困擾。
+以往新增/修改 javascript 程式，必須在 head 標籤中引入，時間一久往往會造成維護上的問題，也因為引入不少該頁面沒有使用到的程式，浪費不少資源。
 
-此版本平台使用 requireJS 解決這些問題，動態載入應執行的檔案。新的規則也能很容易的判別哪隻程式控制當前節點。
-也順勢解決相依性問題、套件衝突的問題等等，可參閱 [requireJS 運作方式](#js-require) 章節。
+平台使用 requireJS 解決這些問題，動態載入執行的檔案。新的規則能很容易的判別哪隻程式控制當前節點，也順勢解決相依性問題、套件衝突的問題，可參閱 [requireJS 運作方式](#js-require) 章節。
 
-由於 html 有可依循的結構，因此許多模塊能夠共享程式。
+由於 HTML 有可依循的結構，因此許多模塊能夠共享程式。
 如輪播模組可被 group-list、list-text 與 list-pic 這三個類別所使用，減少客製化。
 
 
 
 
-<h2 id="html">HTML 實作</h2>
+<h2 id="HTML">HTML 實作</h2>
 <h3 id="project-directory">專案目錄結構與其他檔案</h3>
 以下是專案目錄結構圖及說明。
 
@@ -164,13 +167,13 @@
       |- Script
       |- Video
       |- .gitignore
-      |- _index_layout.html.erb
-      |- _layout.html.erb
+      |- _index_layout.HTML.erb
+      |- _layout.HTML.erb
       |- apple-touch-icon.png
       |- config.rb
       |- favicon.ico
-      |- index.html.erb
-      |- index.html.layout
+      |- index.HTML.erb
+      |- index.HTML.layout
       |- README.md
 
 <table>
@@ -212,7 +215,7 @@
   </tr>
   <tr>
     <td>Sass</td>
-    <td>存放所有 Scss 相關檔案的目錄</td>
+    <td>存放 Scss 相關檔案的目錄</td>
   </tr>
   <tr>
     <td>Script</td>
@@ -227,41 +230,41 @@
     <td>紀錄 Git 排除名單的文件</td>
   </tr>
   <tr>
-    <td>_index_layout.html.erb</td>
-    <td>index.html.erb 的樣板</td>
+    <td>_index_layout.HTML.erb</td>
+    <td>index.HTML.erb 的樣板</td>
   </tr>
   <tr>
-    <td>_layout.html.erb</td>
+    <td>_layout.HTML.erb</td>
     <td>所有內面的樣板</td>
   </tr>
   <tr>
     <td>apple-touch-icon.png</td>
-    <td>apple 系統的較大 icon 圖片</td>
+    <td>iOS、OSX 使用較大的 icon 圖片</td>
   </tr>
   <tr>
     <td>config.rb</td>
-    <td>關於 compass、sass 的設定文件</td>
+    <td>compass、sass 的設定文件</td>
   </tr>
   <tr>
     <td>favicon.ico</th>
     <td>網頁 icon 圖示</td>
   </tr>
   <tr>
-    <td>index.html.erb</td>
+    <td>index.HTML.erb</td>
     <td>以 Erb 撰寫的首頁</td>
   </tr>
   <tr>
-    <td>index.html.layout</td>
-    <td>指定 _index_layout.html.erb 為 index.html.erb 樣板的設定文件</td>
+    <td>index.HTML.layout</td>
+    <td>指定 _index_layout.HTML.erb 為 index.HTML.erb 樣板的設定文件</td>
   </tr>
   <tr>
     <td>README.md</td>
-    <td>專案說明文件，即本文</td>
+    <td>說明文件，即本文</td>
   </tr>
 </table>
 
-<h3 id="html-parameter">參數與意義</h3>
-我們使用 html5 data-* 屬性來為 css 及 javascript 做一些事，用以強化整體規範與便利性。
+<h3 id="HTML-parameter">參數與意義</h3>
+我們使用 HTML5 data-* 屬性為 css 及 javascript 做一些事，以強化整體規範與便利性。
 
 一般的模塊具有屬性 data-type、data-index、data-child、data-function、data-setlen，而 body 則有屬性 data-js、data-admin，選單特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
 
@@ -281,13 +284,13 @@
   <tr>
     <td>data-index</td>
     <td>模塊或項目順序</td>
-    <td>標示該模塊在父模中的順序、標示項目在清單中的順序</td>
+    <td>標示該模塊在父模塊中的順序、標示項目在清單中的順序、標示tr在 thead、tbody、tfoot 的順序、標示 td 與 th 在 tr 中的順序</td>
     <td>模塊、項目(li)</td>
   </tr>
   <tr>
     <td>data-child</td>
     <td>子模塊或子項目數量</td>
-    <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量</td>
+    <td>標示該模塊包含的子模塊數量、標示該清單的子項目數量，標示 thead、tbody、tfoot 中的 tr 數量，標示 tr 中的 td 與 th 數量</td>
     <td>群組、清單(ul)</td>
   </tr>
   <tr>
@@ -299,19 +302,19 @@
   <tr>
     <td>data-setlen</td>
     <td>設定模塊顯示項目</td>
-    <td>設定內容項目顯示的數量。設計師可設定該模塊是否開啟這項功能，更多說明請至 <a href="#scss-len-function">關於設定數量的方法</a> 章節</td>
+    <td>設定內容項目顯示的數量。設計師可透過 CSS 設定該模塊是否開啟這項功能，更多說明請至 <a href="#scss-len-function">關於設定數量的方法</a> 章節</td>
     <td>模塊</td>
   </tr>
   <tr>
     <td>data-js</td>
     <td>javascript 提示</td>
-    <td>提示用戶是否開啟 javascript</td>
+    <td>標示用戶是否開啟 javascript</td>
     <td>body</td>
   </tr>
   <tr>
     <td>data-admin</td>
     <td>管理者提示</td>
-    <td>提示用戶是否為系統管理者</td>
+    <td>標示目前用戶是否為系統管理者</td>
     <td>body</td>
   </tr>
   <tr>
@@ -323,10 +326,11 @@
 </table>
 
 <h3 id="base-layout">底層、框架與內容</h3>
-我們重構了許多框架，轉化為群組模塊。框架 class name 會以 sys(系統級) 與 base(基礎級) 前輟。
-前輟 sys 是系統級節點，樣式由此節點開始撰寫，而不應在它之上的 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌。
-前輟 base 是基礎級節點，代表它應被固定，而不能被拖曳改變排列。
-以下將一層一層的介紹它們的意義。
+底層與框架是一些**固定存在**的群組模塊。以 sys(系統級) 與 base(基礎級) 前輟區分。
+
+前輟 sys 是系統級節點，內容由此節點開始堆砌，而樣式也應由此節點開始撰寫，**不應在 HTML、body、form(C# .NET) 寫入任何樣式**。
+
+前輟 base 是基礎級節點，**在任何情況下不應被修改**。以下將一層一層的介紹它們的意義。
 
 sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆由它開始延伸，讓我們先看 HTML 示意：
 
@@ -338,13 +342,13 @@ sys-root 是一組群組，是平台版面根節點，所有網頁的內容皆�
 
 在 sys-root 之下有 base-mobile、base-extend 與 base-wrapper 三個主要區塊：
 
-base-mobile: 行動側欄。通常會放置主選單、分享模組等。  
-base-extend: 漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等。  
+base-mobile: 行動側欄。通常會放置主選單、分享模組等。
+base-extend: 漂浮在瀏覽器上的物件層。通常會放置回到最頂按鈕等等。
 base-wrapper: 網頁頁面框架。
 
     <body>
       <div class="sys-root">
-      
+    
         <div class="base-mobile">
           行動版側欄
         </div>
@@ -354,14 +358,14 @@ base-wrapper: 網頁頁面框架。
         <div class="base-wrapper">
           網頁頁面框架
         </div>
-        
+    
       </div>
     </body>
 
 base-wrapper 中分 base-header、base-content、base-footer 三個次要區塊：
 
-base-header: 網頁頁首。通常放置主選單、LOGO模組等。  
-base-content: 網頁主要內容。  
+base-header: 網頁頁首。通常放置主選單、LOGO模組等。
+base-content: 網頁主要內容。
 base-footer: 網頁頁尾。通常放置一些網站資訊。
 
     <body>
@@ -371,7 +375,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
         <div class="base-extend">
         </div>
         <div class="base-wrapper">
-        
+    
           <div class="base-header">
             網頁頁首
           </div>
@@ -381,14 +385,14 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
           <div class="base-footer">
             網頁頁尾
           </div>
-        
+    
         </div>
       </div>
     </body>
 
-依據首頁/內頁框架區塊的不同，可區分 base-module-area 與base-page-area：
+依據首頁/內頁框架區塊的不同，可區分 base-module-area 與 base-page-area：
 
-base-module-area: 模組區塊。可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。  
+base-module-area: 模組區塊。可放置各種模組。在內頁時該區塊會顯示在 base-page-area 之上。
 base-page-area: 內頁框架。
 
     <body>
@@ -401,14 +405,14 @@ base-page-area: 內頁框架。
           <div class="base-header">
           </div>
           <div class="base-content">
-          
+    
             <div class="base-module-area">
               模組
             </div>
             <div class="base-page-area">
               內頁
             </div>
-            
+    
           </div>
           <div class="base-footer">
           </div>
@@ -416,12 +420,12 @@ base-page-area: 內頁框架。
       </div>
     </body>
 
-進入到內頁之後，base-page-area 分為兩個區塊是 base-aside 與 base-section：
+base-page-area 分為 base-aside 與 base-section：
 
-base-aside: 內頁側欄。通常放置主選單或次選單。  
+base-aside: 內頁側欄。通常放置主選單或次選單。
 base-section: 內頁內容。
 
-    <html>
+    <HTML>
       <body>
         <div class="sys-root">
           <div class="base-mobile">
@@ -435,14 +439,14 @@ base-section: 內頁內容。
               <div class="base-module-area">
               </div>
               <div class="base-page-area">
-              
+    
                 <div class="base-aside">
                   內頁側欄
                 </div>
                 <div class="base-section">
                   內頁內容
                 </div>
-                
+    
               </div>
             </div>
             <div class="base-footer">
@@ -450,9 +454,9 @@ base-section: 內頁內容。
           </div>
         </div>
       </body>
-    </html>
+    </HTML>
 
-最後，如果在內頁內容中有包含文章區塊，base-section 區塊會包含最後一個固定框架 base-article：
+最後，**如果在內頁內容中有包含文章區塊**，base-section 區塊會包含最後一個固定框架 base-article：
 
 base-article: 內頁文章區塊。
 
@@ -472,11 +476,11 @@ base-article: 內頁文章區塊。
               <div class="base-aside">
               </div>
               <div class="base-section">
-              
+    
                 <div class="base-article">
                   內頁文章
                 </div>
-                
+    
               </div>
             </div>
           </div>
@@ -498,7 +502,7 @@ base-article: 內頁文章區塊。
   <tr>
     <td>.sys-root</td>
     <td>平台版面根節點</td>
-    <td>樣式由此節點開始撰寫，而不應在 html、body、form 寫入任何樣式。網頁內容也應由此節點開始堆砌</td>
+    <td>內容由此節點開始堆砌，而樣式也應由此節點開始撰寫，不應在 HTML、body、form(C# .NET) 寫入任何樣式</td>
     <td>1</td>
   </tr>
   <tr>
@@ -573,9 +577,9 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-and-group-structure">模塊基礎結構</h3>
-模塊是平台網頁的基礎單位，分為群組與模組。
+模塊是平台網頁的基礎單位，分為**群組模塊**與**模組模塊**。
 只要該模組同時含有屬性 data-index 與 data-type，該節點就是一個模塊的起始節點。
-模塊由 header、content、footer 3個區塊組成，以下將列表說明他們的意義：
+模塊由 header、content、footer 三個區塊組成，以下將列表說明他們的意義：
 
 <table>
   <tr>
@@ -596,7 +600,7 @@ base-article: 內頁文章區塊。
   <tr>
     <td>inner</td>
     <td>附加資訊</td>
-    <td>通常用來放置上一則、下一則、更多、RSS等附加操作。若該模塊不須附加操作，那麼該模塊將沒有 footer 區塊</td>
+    <td>通常用來放置上一則、下一則、更多、RSS等附加操作或補充說明。若該模塊不須附加操作，那麼該模塊將沒有 footer 區塊</td>
   </tr>
 </table>
 
@@ -655,13 +659,13 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="group-structure">群組類別與結構</h3>
-群組是一個無內容的模塊，主要用於裝載其他的模塊，因此常利用它構成需要的框架。
-群組分為分割、頁籤、單欄與清單，以下針對這四種模組的意義作說明。
+群組是一個無內容的模塊，主要用於裝載其他的模塊，因此常利用它構成版面需要的框架。
+群組分為**分割**、**頁籤**、**單欄**與**清單**，以下針對這四種模組的意義作說明。
 
 <h4>分割群組</h4>
-分割群組會依照 [格線系統](#grid) 均分子模塊，例如分割模組裡有兩個模塊，那麼子模塊的寬度則各為 50% (100% / 2)，該規則可設定 data-setlen 屬性覆蓋，關於此規則請參閱 [關於設定數量的方法](#scss-len-function) 章節。
+分割群組會依照 [格線系統](#grid) 均分子模塊，例如分割模組裡有兩個模塊，那麼子模塊的寬度則各為 50% (100% / 2)，**該規則可被 data-setlen 屬性覆蓋**，關於此規則請參閱 [關於設定數量的方法](#scss-len-function) 章節。
 
-以下是分割群組的 html 格式：
+以下是分割群組的 HTML 格式：
 
     <data-index data-type="0">
       <div class="inner">
@@ -680,12 +684,12 @@ base-article: 內頁文章區塊。
 
 <h4>頁籤群組</h4>
 提供切換頁籤功能的群組。
-該模塊 content 具有一個列表，第一個項目是頁籤模組、第二個項目以後依序放入加入的子模塊。
-頁籤模組的 content 具有一個列表，依序為此頁籤群組的子模塊 header 文字。
-一般情況下，頁籤群組的子模塊 header 區塊應被隱藏。
-在無 javascript 環境下，子模塊 header 區塊應被顯示，而隱藏頁籤模組。
+該模塊 content 具有一個列表，**第一個項目是頁籤模組、第二個項目以後依序放入其他子模塊**。
 
-以下是頁籤群組的 html 格式：
+頁籤模組的 content 具有一個列表，依序為此頁籤群組的子模塊 header 文字。
+一般情況下，頁籤群組的子模塊 header 區塊應被隱藏。在**無 javascript 環境下，應隱藏頁籤模組，而其他子模塊的 header 區塊應被顯示**。
+
+以下是頁籤群組的 HTML 格式：
 
     <data-index data-type="2">
       <div class="inner">
@@ -698,7 +702,7 @@ base-article: 內頁文章區塊。
           <div class="inner">
             <ul data-child>
               <li data-index="1">
-                
+    
                    <data-index data-type="0">
                       <div class="inner">
                         <div class="header">
@@ -715,7 +719,7 @@ base-article: 內頁文章區塊。
                         </div>
                       </div>
                     </div>
-                
+    
               </li>
               <li data-index="2">依序加入子模塊...</li>
             </ul>
@@ -727,7 +731,7 @@ base-article: 內頁文章區塊。
 <h4>單欄群組</h4>
 相對於分割群組，單欄群組並不分割子模塊，而是依順序由上而下排列。
 
-以下是單欄群組的 html 格式：
+以下是單欄群組的 HTML 格式：
 
     <data-index data-type="3">
       <div class="inner">
@@ -745,9 +749,9 @@ base-article: 內頁文章區塊。
     </div>
 
 <h4>清單群組</h4>
-清單群組的 content 具有一個清單，而子模塊會被依序放入該清單的項目中。因為此模塊的結構與模組類別 list-text、 list-pic 的結構相似，因此可共用 javascript，樣式雖然在某種程度上也以可共用，但選擇器的指定方法稍有不同，可參閱 [選擇器邏輯](#selector-logic) 章節。
+清單群組的 content 具有一個清單，而子模塊會被依序放入該清單的項目(li)中。因為此模塊的結構與模組類別 list-text、 list-pic 的結構相似，因此可共用 javascript，樣式雖然在某種程度上也以可共用，但選擇器的指定方法稍有不同，可參閱 [選擇器邏輯](#selector-logic) 章節。
 
-以下是清單群組的 html 格式：
+以下是清單群組的 HTML 格式：
 
     <data-index data-type="3">
       <div class="inner">
@@ -768,57 +772,17 @@ base-article: 內頁文章區塊。
 
 
 <h3 id="module-structure">模組類別與結構</h3>
-與群組類別相仿，模組也分為14種類別，但不論屬於何種類別，模組的 data-type 都是0。
+與群組類別相仿，模組也分為11種類別，但不論屬於何種類別，模組的 data-type 都是0。
 類別的意義在於區分模組的結構，例如該模組是一個圖片列表，則屬於 list-pic 類別。
 模組使用 class name 區別類別，每個模組都同時包含兩個 class name，分別是類別 class 與自定義 class，例如選單模組：
 
     <div calss="list-text nav" data-type="0" data-index="1">
 
 list-text 是類別 class，而 nav 是自定義 class。
-以下列舉出14種類別的意義、說明與參考格式：
-
-<h4>area-audio</h4>
-音訊模組，以 html5 audio 為主體的模組。以下是 area-audio 類別的 html 參考格式：
-
-    <class="area-audio" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
-            <h4><span><a>標題</a></span></h4>
-          </div>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <div class="audio">
-              <audio controls="">
-                <source src="#" type="audio/ogg">
-                <source src="#" type="audio/mpeg">
-                <object data="Audio/MHXSEagle.mp3">
-                  <param name="filename" value="#">
-                  <param name="Showcontrols" value="true">
-                  <param name="autoStart" value="false">
-                </object>
-                <span>您的瀏覽器不支援 html5 撥放器，請<a href="#">下載媒體</a>於本機播放。</span>
-              </audio>
-            </div>
-            <div class="essay">
-              <div class="caption"><span>內容標題</span></div>
-              <div class="label">
-                <ul>
-                  <li><span><i class="mark">標籤</i></span></li>
-                </ul>
-              </div>
-              <div class="paragraph">
-                <p><span>內容簡介</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+以下列舉出12種類別的意義、說明與參考格式：
 
 <h4>area-customize</h4>
-客製的模組，如： google map 模組。以下是 area-customize 類別的 html 參考格式：
+客製的模組，如： google map 模組、iframe 框架模組、vedia 視訊模組、audio 音訊模組等等。以下是 area-customize 類別的 HTML 參考格式：
 
     <class="area-customize" data-index data-type="0">
       <div class="inner">
@@ -836,7 +800,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>area-editor</h4>
-客戶可以使用文字編輯器編輯內文的模組，如：下方地址。以下是 area-editor 類別的 html 參考格式：
+客戶可以使用文字編輯器編輯內文的模組，如：下方地址。以下是 area-editor 類別的 HTML 參考格式：
 
     <class="area-editor" data-index data-type="0">
       <div class="inner">
@@ -854,7 +818,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>area-essay</h4>
-參雜文字與圖片，以文字為主體的模組，如：最新消息。以下是 area-essay 類別的 html 參考格式，請注意 area-essay 的內標標題應為 .caption ：
+參雜文字與圖片，以文字為主體的模組，如：最新消息。以下是 area-essay 類別的 HTML 參考格式，請注意 area-essay 的內標標題應為 .caption ：
 
     <class="area-essay" data-index data-type="0">
       <div class="inner">
@@ -885,7 +849,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>area-figure</h4>
-參雜文字與圖片，以圖片為主體的模組，如：相簿模組。以下是 area-figure 類別的 html 參考格式，請注意 area-figure 的內標標題應為 .figcaption ：
+參雜文字與圖片，以圖片為主體的模組，如：相簿模組。以下是 area-figure 類別的 HTML 參考格式，請注意 area-figure 的內標標題應為 .figcaption ：
 
     <class="area-figure" data-index data-type="0">
       <div class="inner">
@@ -916,7 +880,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>area-form</h4>
-以表單為主體的模組，如：搜尋模組。以下是 area-form 類別的 html 參考格式：
+以表單為主體的模組，如：搜尋模組。以下是 area-form 類別的 HTML 參考格式：
 
     <class="area-form" data-index data-type="0">
       <div class="inner">
@@ -936,39 +900,8 @@ list-text 是類別 class，而 nav 是自定義 class。
       </div>
     </div>
 
-<h4>area-iframe</h4>
-以 iframe 為主體的模組。以下是 area-iframe 類別的 html 參考格式：
-
-    <class="area-iframe" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
-            <h4><span><a>標題</a></span></h4>
-          </div>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <div class="iframe">
-              <iframe src="#" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-            <div class="essay">
-              <div class="caption"><span>內容標題</span></div>
-              <div class="label">
-                <ul>
-                  <li><span><i class="mark">標題</i></span></li>
-                </ul>
-              </div>
-              <div class="paragraph">
-                <p><span>內容簡介</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 <h4>area-table</h4>
-以表格為主體的模組。以下是 area-table 類別的 html 參考格式：
+以表格為主體的模組。以下是 area-table 類別的 HTML 參考格式：
 
     <class="area-table" data-index data-type="0">
       <div class="inner">
@@ -986,47 +919,6 @@ list-text 是類別 class，而 nav 是自定義 class。
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<h4>area-video</h4>
-視訊模組，以 html5 video 為主體的模組。以下是 area-video 類別的 html 參考格式：
-
-    <class="area-video" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
-            <h4><span><a>標題</a></span></h4>
-          </div>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <div class="video">
-              <video controls="">
-                <source src="#" type="video/webm">
-                <source src="#" type="video/ogg">
-                <source src="#" type="video/mp4">
-                <object classid="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95" type="application/x-oleobject" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112">
-                  <param name="filename" value="#">
-                  <param name="Showcontrols" value="true">
-                  <param name="autoStart" value="false">
-                </object>
-                <span>您的瀏覽器不支援 html5 撥放器，請<a href="#">下載媒體</a>於本機播放。</span>
-              </video>
-            </div>
-            <div class="essay">
-              <div class="caption"><span>內容標題</span></div>
-              <div class="label">
-                <ul>
-                  <li><span><i class="mark">標籤</i></span></li>
-                </ul>
-              </div>
-              <div class="paragraph">
-                <p><span>內容簡介</span></p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1051,7 +943,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>list-pic</h4>
-圖片清單模組，如：標章模組。以下是 list-pic 類別的 html 參考格式：
+圖片清單模組，如：標章模組。以下是 list-pic 類別的 HTML 參考格式：
 
     <class="list-text" data-index data-type="0">
       <div class="inner">
@@ -1071,7 +963,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>list-text</h4>
-文字清單模組，如：選單。以下是 list-text 類別的 html 參考格式：
+文字清單模組，如：選單。以下是 list-text 類別的 HTML 參考格式：
 
     <class="list-text" data-index data-type="0">
       <div class="inner">
@@ -1091,7 +983,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>simple-pic</h4>
-只顯示一張圖片的模組，如：圖片模組。以下是 simple-pic 類別的 html 參考格式：
+只顯示一張圖片的模組，如：圖片模組。以下是 simple-pic 類別的 HTML 參考格式：
 
     <class="simple-pic" data-index data-type="0">
       <div class="inner">
@@ -1109,7 +1001,7 @@ list-text 是類別 class，而 nav 是自定義 class。
     </div>
 
 <h4>simple-text</h4>
-只敘述一行文字的文字模組，如：LOGO 模組。以下是 simple-text 類別的 html 參考格式：
+只敘述一行文字的文字模組，如：LOGO 模組。以下是 simple-text 類別的 HTML 參考格式：
 
     <class="simple-text" data-index data-type="0">
       <div class="inner">
@@ -1506,13 +1398,15 @@ list-text 是類別 class，而 nav 是自定義 class。
 例如手機側欄被打開，切換的 class name 應取名為：is-open。
 反之，將fat footer 關閉，使用的 class name 應取名為： is-close。
 
-取名原則：與自然瀏覽狀態相對的狀態。
-例如手機側欄在自然瀏覽狀態下為關閉，使用者必須去開啟側欄，因此切換狀態的應取名為：is-open。
+取名原則應使用**與自然瀏覽相對的狀態**，例如手機側欄在自然瀏覽狀態下為關閉，使用者必須去開啟側欄，因此切換狀態的應取名為：is-open。
 反之，fat footer 在自然瀏覽狀態下為開啟，使用者必須去關閉才會隱藏，引此切換的 class name 應取名為： is-close。
 
-注意，切換狀態的 class name 只應出現在 li 或 模塊上，不應出現在模組中或其他地方。
-假如切換狀態的行為是發生在清單群組上，那麼切換的狀態應寫在清單群組的 li 上。
-若切換狀態的行為是發生在該模組中，那麼切換的狀態應寫在模組上。
+注意，切換狀態的 class name 只應出現在模塊、項目(li) 或 表單項目的父 span (.text、.select、.radio...etc)，不應出現在其他地方。
+
+**假如切換狀態的行為是發生在清單群組上，那麼切換的狀態應寫在清單群組的 li 上。**
+**若切換狀態的行為是發生在該模組中，那麼切換的狀態應寫在模組上。**
+
+
 
 
 <h2 id="erb">Erb 實作</h2>
@@ -1522,19 +1416,19 @@ list-text 是類別 class，而 nav 是自定義 class。
     - 專案目錄
       |- Erb
       |   |- base
-      |   |   |- _base-article.html.erb
-      |   |   |- _base-aside.html.erb
-      |   |   |- _base-content_index.html.erb
-      |   |   |- _base-content_page.html.erb
-      |   |   |- _base-extend.html.erb
-      |   |   |- _base-footer.html.erb
-      |   |   |- _base-header.html.erb
-      |   |   |- _base-mobile.html.erb
-      |   |   |- _base-module-area_index.html.erb
-      |   |   |- _base-module-area_page.html.erb
-      |   |   |- _base-page-area.html.erb
-      |   |   |- _base-section.html.erb
-      |   |   |- _base-wrapper.html.erb
+      |   |   |- _base-article.HTML.erb
+      |   |   |- _base-aside.HTML.erb
+      |   |   |- _base-content_index.HTML.erb
+      |   |   |- _base-content_page.HTML.erb
+      |   |   |- _base-extend.HTML.erb
+      |   |   |- _base-footer.HTML.erb
+      |   |   |- _base-header.HTML.erb
+      |   |   |- _base-mobile.HTML.erb
+      |   |   |- _base-module-area_index.HTML.erb
+      |   |   |- _base-module-area_page.HTML.erb
+      |   |   |- _base-page-area.HTML.erb
+      |   |   |- _base-section.HTML.erb
+      |   |   |- _base-wrapper.HTML.erb
       |   |- group
       |   |   |- 群組模塊...
       |   |- module
@@ -1542,14 +1436,14 @@ list-text 是類別 class，而 nav 是自定義 class。
       |   |- page
       |   |   |- 內頁...
       |   |- sys
-      |   |   |- _icon.html.erb
-      |   |   |- _meta.html.erb
-      |   |   |- _script.html.erb
-      |   |   |- _style.html.erb
-      |   |   |- _test.html.erb
-      |   |   |- _title.html.erb
-      |   |   |- _variable.html.erb
-      |   |- _prototype.html.erb
+      |   |   |- _icon.HTML.erb
+      |   |   |- _meta.HTML.erb
+      |   |   |- _script.HTML.erb
+      |   |   |- _style.HTML.erb
+      |   |   |- _test.HTML.erb
+      |   |   |- _title.HTML.erb
+      |   |   |- _variable.HTML.erb
+      |   |- _prototype.HTML.erb
 
 <table>
   <tr>
@@ -1561,55 +1455,55 @@ list-text 是類別 class，而 nav 是自定義 class。
     <td>存放 base 框架樣板的目錄</td>
   </tr>
   <tr>
-    <td>base/_base-article.html.erb</td>
+    <td>base/_base-article.HTML.erb</td>
     <td>編輯 base-article 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-aside.html.erb</td>
+    <td>base/_base-aside.HTML.erb</td>
     <td>編輯 base-aside 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-content_index.html.erb</td>
+    <td>base/_base-content_index.HTML.erb</td>
     <td>編輯 base-content 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-content_page.html.erb</td>
+    <td>base/_base-content_page.HTML.erb</td>
     <td>編輯 base-content 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-extend.html.erb</td>
+    <td>base/_base-extend.HTML.erb</td>
     <td>編輯 base-extend 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-footer.html.erb</td>
+    <td>base/_base-footer.HTML.erb</td>
     <td>編輯 base-footer 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-header.html.erb</td>
+    <td>base/_base-header.HTML.erb</td>
     <td>編輯 base-header 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-mobile.html.erb</td>
+    <td>base/_base-mobile.HTML.erb</td>
     <td>編輯 base-mobile 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-module-area_index.html.erb</td>
+    <td>base/_base-module-area_index.HTML.erb</td>
     <td>編輯 base-module-area 樣板的文件，供首頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-module-area_page.html.erb</td>
+    <td>base/_base-module-area_page.HTML.erb</td>
     <td>編輯 base-module-area 樣板的文件，供內頁使用</td>
   </tr>
   <tr>
-    <td>base/_base-page-area.html.erb</td>
+    <td>base/_base-page-area.HTML.erb</td>
     <td>編輯 base-page-area 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-section.html.erb</td>
+    <td>base/_base-section.HTML.erb</td>
     <td>編輯 base-section 樣板的文件</td>
   </tr>
   <tr>
-    <td>base/_base-wrapper.html.erb</td>
+    <td>base/_base-wrapper.HTML.erb</td>
     <td>編輯 base-wrapper 樣板的文件</td>
   </tr>
   <tr>
@@ -1629,81 +1523,81 @@ list-text 是類別 class，而 nav 是自定義 class。
     <td>存放 head 設定的樣板如：icon、meta、script、style、title，另有測試用的 test 與全域變數設定檔 variable</td>
   </tr>
   <tr>
-    <td>sys/_icon.html.erb</td>
+    <td>sys/_icon.HTML.erb</td>
     <td>設定 ico 引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_meta.html.erb</td>
+    <td>sys/_meta.HTML.erb</td>
     <td>設定 meta 設定的文件</td>
   </tr>
   <tr>
-    <td>sys/_script.html.erb</td>
+    <td>sys/_script.HTML.erb</td>
     <td>設定網頁 script 引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_style.html.erb</td>
+    <td>sys/_style.HTML.erb</td>
     <td>設定網頁樣式引入的文件</td>
   </tr>
   <tr>
-    <td>sys/_test.html.erb</td>
+    <td>sys/_test.HTML.erb</td>
     <td>測試用的文件</td>
   </tr>
   <tr>
-    <td>sys/_title.html.erb</td>
+    <td>sys/_title.HTML.erb</td>
     <td>設定網頁 title 的文件</td>
   </tr>
   <tr>
-    <td>sys/_variable.html.erb</td>
+    <td>sys/_variable.HTML.erb</td>
     <td>設定 Erb 全域變數的文件</td>
   </tr>
   <tr>
-    <td>_prototype.html.erb</td>
+    <td>_prototype.HTML.erb</td>
     <td>樣板範本，示範如何傳遞參數</td>
   </tr>
 </table>
 
 
 <h3 id="erb-script">Erb 樣板語言</h3>
-Erb 樣板語言主要是幫助我們把 html 模組化，並且提供隨機的內容與字元長度，以幫助我們測試版型。
-我們可以將個頁面一致的 html 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
+Erb 幫助我們把 HTML 模組化，並且提供隨機的內容與字元長度，幫助我們測試版型。
+我們可以將個頁面一致的 HTML 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
 Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如陣列、物件、迴圈等等。
-更多 Erb 樣板語言範本與功能請見外部連結 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.html)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.html)。
+更多 Erb 樣板語言範本與功能請見外部連結 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.HTML)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.HTML)。
 
 
 <h3 id="erb-run">Erb 運作方式</h3>
-樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
+樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .HTML.erb 檔。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-      
+    
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample" %>
-        
+    
       </div></div>
     </div></div>
 
-我們可藉由演示的語法嵌入另一個 .html.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.html.erb 檔案中。
+我們可藉由演示的語法嵌入另一個 .HTML.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.HTML.erb 檔案中。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-      
+    
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample", :locals => { :index => 4, :header_text => '模塊標頭' } %>
-        
+    
       </div></div>
     </div></div>
 
 在鑲嵌的語法後，我們使用一個 :locals => {} 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
-我們來看看 /Erb/module/_sample.html.erb 如何接受這個參數。
+我們來看看 /Erb/module/_sample.HTML.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
     </div>
 
-我們可以在 _sample.html.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.html#partials)。
+我們可以在 _sample.HTML.erb 檔案中，在 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若需要印出在網頁上，則必須加上等號 <%= index %> ，更多教學可前往 [局部樣板 Partials](https://ihower.tw/rails4/actionview.HTML#partials)。
 
 以下列出9個平台 Erb 樣板常用的區域變數與其意義：
 
@@ -1756,16 +1650,16 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 
 
 <h3 id="erb-layout">關於 layout樣板</h3>
-專案目錄中的 layout.html.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 html.erb 與 .html 檔案嵌入指定的框架中。
+專案目錄中的 layout.HTML.erb 樣板文件，是所有網頁的預設框架，會把專案中所有的 HTML.erb 與 .HTML 檔案嵌入指定的框架中。
 
 
 <h3 id="erb-index-layout">關於 index樣板</h3>
-因為首頁的樣板有別於一般內頁，因此必需另外編輯樣板 _index_layout.html.erb 供 index.html.erb 使用。
-我們以 index.html.layout 來指定 _index_layout.html.erb 為 index.html.erb 的樣板。
+因為首頁的樣板有別於一般內頁，因此必需另外編輯樣板 _index_layout.HTML.erb 供 index.HTML.erb 使用。
+我們以 index.HTML.layout 來指向 _index_layout.HTML.erb 為 index.HTML.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.html.erb。
+在 [Erb 運作方式](#erb-run) 一章曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.HTML.erb。
 全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
     <div class="sample" data-type="<%= $module %>">
@@ -1793,15 +1687,12 @@ Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大�
       |   |   |- _group_list.scss
       |   |   |- _group_tab.scss
       |   |- module
-      |   |   |- _area-audio.scss
       |   |   |- _area-customize.scss
       |   |   |- _area-editor.scss
       |   |   |- _area-essay.scss
       |   |   |- _area-figure.scss
       |   |   |- _area-form.scss
-      |   |   |- _area-iframe.scss
       |   |   |- _area-table.scss
-      |   |   |- _area-video.scss
       |   |   |- _list-multiple.scss
       |   |   |- _list-pic.scss
       |   |   |- _list-text.scss
@@ -1865,10 +1756,6 @@ Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大�
     <td>存放模組樣式目錄</td>
   </tr>
   <tr>
-    <td>module/_area-audio.scss</td>
-    <td>對應模組 area-audio 類別的樣式設定</td>
-  </tr>
-  <tr>
     <td>module/_area-customize.scss</td>
     <td>對應模組 area-customize 類別的樣式設定</td>
   </tr>
@@ -1889,16 +1776,8 @@ Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大�
     <td>對應模組 area-form 類別的樣式設定</td>
   </tr>
   <tr>
-    <td>module/_area-iframe.scss</td>
-    <td>對應模組 area-iframe 類別的樣式設定</td>
-  </tr>
-  <tr>
     <td>module/_area-table.scss</td>
     <td>對應模組 area-table 類別的樣式設定</td>
-  </tr>
-  <tr>
-    <td>module/_area-video.scss</td>
-    <td>對應模組 area-video 類別的樣式設定</td>
   </tr>
   <tr>
     <td>module/_list-multiple.scss</td>
@@ -1968,12 +1847,12 @@ Erb 提供了假字及假圖的功能，請參照外部連結 [更新更強大�
 
 
 <h3 id="scss-script">SCSS</h3>
-Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scss 兩種寫法。
-它讓 CSS 可以使用變數、函式這些特性，提升撰寫 CSS 的效率，更多教學可以參閱外部連結 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html) 或上網搜尋"30天掌握Sass語法"系列教學。
+Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass 另一種擴充寫法。
+它讓 CSS 可以使用變數、函式，提升撰寫 CSS 的效率，更多教學可以參閱外部連結 [Sass 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.HTML) 教學。
 
 <h3 id="grid">格線系統</h3>
-平台格線系統包含自然分割與設定分割。
-分割群組之所以會均分子模塊寬度，主要是依據 [data-child] 的值作為 CSS 判斷。
+平台格線系統包含**自然分割**與**設定分割**。
+分割群組之所以會均分子模塊寬度，主要是**依據 [data-child] 的值作判斷(CSS)**。
 例如分割模組([data-type="1"])具有兩個子模塊([data-child="2"])，那麼就會均分子模塊(具有 [data-index][data-type] 的節點)，稱為自然分割：
 
     [data-type="1"][data-child="2] > .inner > .content > .inner > [data-index][data-type] {
@@ -2000,10 +1879,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 這樣的做法，可以快速的參考、交換、複製其他相同類別的模塊樣式。
 
     .list-text {
+    
       &.nav {
         ...
       }
-      
+    
       &.font-size {
         ...
       }
@@ -2016,23 +1896,24 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 一般來說，在設定樣式的時候，應盡可能減少指定的層數：
 
     .list-text {
-     
+    
       &.nav {
-        
+    
         .content {
           ...
         }
       }
     }
 
-因為一個模組只會有一個 content，因此可以用這種選取方法指定到唯一的 content。但群組下可能會有許多模塊，每個模塊都有自己的 content，因此若要指名該群組自己的的 content，必須明確的這麼指定：
+因為一個模組只會有一個 content，因此可以用這種選取方法指定到唯一的 content。
+**但群組下可能會有許多模塊，每個模塊都有自己的 content**，因此若要指名該群組自己的的 content，必須明確的這麼指定：
 
     [data-index][data-type="1"] {
-      
+    
       &.group {
-        
+    
         > .inner {
-          
+    
           > .content {
             ...
           }
@@ -2040,16 +1921,16 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
       }
     }
 
-此外，行為必須寫在發生行為的模塊上，例如主選單群組的子模塊觸發 :hover 時，必須秀出該模塊的 content，這個行為應該寫在 主選單群組，而非主選單群組的子模塊。反之，主選單群組隱藏子模塊的 content，這樣行為也必須寫在主選單群組上。
+此外，**行為必須寫在發生行為的模塊上**，例如主選單群組的子模塊觸發 :hover，秀出該模塊的 content，這個行為應該寫在 主選單群組，而非子模塊(群組行為)。
 
-我們也可以指定同一個模塊，在不同框架下的樣式，例如：
+我們也可以指定同一模塊在不同框架下的樣式，例如：
 
     .nav {
-      
+    
       .base-header & {
        color: #000;
       }
-      
+    
       .base-footer & {
        color: #555;
       }
@@ -2060,6 +1941,8 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，分為 Sass 與 Scs
 
 <h3 id="function-and-variable">base/variable、base/function 與 sys/function</h3>
 base/function 與 base/variable 將常用的變數與功能定義在一起，sys/function 則負責定義一些底層方法。
+
+
 以下首先說明 base/variable 的內容：
 
 <table>
@@ -2767,7 +2650,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 
 
 <h3 id="scss-sys-variable">關於 sys/variable</h3>
-我們可以開放一些變數，讓共通平台後臺覆蓋設定。但在命名變數時，必須後輟 !default 如： 
+我們可以開放一些變數，讓共通平台後臺覆蓋設定。但在命名變數時，**必須後輟 !default** 如： 
 
     $major-color: #0088cc !default;
 
@@ -2781,7 +2664,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 
     .sys-root {
       color: #000;
-      
+    
       @include js(false) {
         color: #555;
       }
@@ -2790,8 +2673,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 在一般的的狀況下，.sys-root 的 color 是 #000，一但關閉了 js，.sys-root 的 color 就變成了 #555。
 我們也可以透過 :before 或 :after 的 content 屬性插入引導文字。
 
-此方法具體的實作方法是在 body 加入 data-js 的屬性，在網站開始渲染之前，透過 javascript 把 data-js 設為 false，
-並將選擇器放在 [data-js="false"] 之中。
+此方法具體的實作方法是在 body 加入 data-js 的屬性，在網站開始渲染之前，透過 javascript 把 data-js 設為 false，並將選擇器放在 [data-js="false"] 中。
 
 
 <h3 id="scss-hack">hack 方法</h3>
@@ -2801,7 +2683,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-      
+    
       @include hack('ie6-7-8') {
         color: #555;
       }
@@ -2814,7 +2696,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include supports('gc28+') {
         color: #555;
       }
@@ -2824,7 +2706,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-      
+    
       @include supports('display: flex') {
         color: #555;
       }
@@ -2865,7 +2747,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-      
+    
       @include media('phone') {
         color: #555;
       }
@@ -2877,7 +2759,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-      
+    
       @include rwd(800, 300) {
         color: #555;
       }
@@ -2891,13 +2773,24 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-      
+    
       @include admin(true) {
         color: #555;
       }
     }
 
 在一般使用者的狀況下，.sys-root 的 color 是 #000，如果是管理者，.sys-root 的 color 就變成了 #555。
+
+
+<h3 id="rwd-hide">在 pc、pad、phone 寬度隱藏模塊</h3>
+我們可以指定模塊在 pc、pad、phone 尺寸中隱藏，只要在欲隱藏的區塊加入 .pc-hide .pad-hide .phone-hide 相應的 class 即可。
+
+
+該方法的設定存在於 sys/_grid.scss 中。
+
+
+<h3 id="h3 id="rwd-hide">">隱藏模塊 header 的方法</h3>
+許多模塊都帶有 .header，但有時候我們希望把 .header 隱藏起來，這時候只需要在模塊加上 .is-hide-header 即可。 
 
 
 <h3 id="scss-font-icon">文字圖示</h3>
@@ -2910,9 +2803,8 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
   2. 開啟 style.css
   3. 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
   4. ":before" 字串全數刪除
-  5. 將 ".icon-" 取代成 ".icon-font-"
+  5. 將 ".icon-" 取代成 "%icon-font-"
   6. 將修改的內容複製至 /Sass/bace/icon-font.scss
-
 
 <h3 id="scss-sprite-picture">sprite 圖示</h3>
 spriting 圖旨在減少HTTP的請求數。將多張小圖合併成一張大圖，再用 css 把小圖取出。
@@ -2924,20 +2816,20 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
   1. 將 a.png 圖片放入 images/icon-pic
   2. 在某個選擇器中使用 @include icon-pic('a');
 
-
 <h3 id="scss-len-function">關於設定數量的方法</h3>
 在格線系統，我們依據 [data-child] 參數去設定顯示的寬度，也可以在事後使用 [data-setLen] 去覆蓋 [格線系統](#grid) 所定的寬度。
+
 在 .group-list、list-text 與 list-pic 這三種模塊中，我們通常會設定 li 的寬度，但我們也希望使用 [data-setLen] 的方法去覆蓋我們編寫的寬度，
 因此有了 @mixin default-len、@mixin default-len-hide、@mixin set-len、@mixin set-len-hide 這四個方法，以下演示使用的方式。
 
 我們會這麼設定 li 的寬度。
 
     .link {
-      
+    
       .content {
-      
+    
         ul {
-        
+    
           &:after {
             content: '';
             display: block;
@@ -2946,7 +2838,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
             visibility: hidden;
           }
         }
-      
+    
         li {
           width: 50%;
           float: left;
@@ -2958,15 +2850,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
     .link {
       @include default-len(0, 2);
-      
+    
       .content {
-       
+    
         ul {
-        
+    
         }
-        
+    
         li {
-        
+    
         }
       }
     }
@@ -2979,15 +2871,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-      
+    
       .content {
-        
+    
         ul {
-        
+    
         }
-        
+    
         li {
-        
+    
         }
       }
     }
@@ -2997,13 +2889,13 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-      
+    
       .content {
-        
+    
         ul {
-       
+    
         }
-        
+    
         li {
           @include set-len-rwd('pad', 2);
           @include set-len-rwd('phone', 1);
@@ -3076,13 +2968,13 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
 
 <h3 id="js-require">requireJS 運作方式</h3>
-為了解決 script 大量載入多餘套件的問題，新平台使用 requireJS 做為文件載入器。它能動態插入頁面需要的 script，並解決相依性、套件衝突等問題，並提供模組化管理。
+平台使用 requireJS 做為文件載入器。它能動態插入頁面需要的 script，並解決相依性、套件衝突等問題，並提供模組化管理。
 
 更多有關 requireJS 的介紹，請至外部連結 [require 官網](http://requirejs.org) 查詢。   
 
 
 <h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
-先前曾在 [參數與意義](#html-parameter) 章節討論過 data-function 屬性的用途。
+先前曾在 [參數與意義](#HTML-parameter) 章節討論過 data-function 屬性的用途。
 data-function 可藉由傳入一個字串化物件，來啟動指定的 js 模塊。
 js 模塊應存在 /Script 目錄中(可在 app.js 改變基礎路徑)，以下示範一個模組 nav ，啟動一個名為 hud 的 js 模塊：
 
@@ -3092,11 +2984,11 @@ data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟�
 hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
 
     define(function(){
-      
+    
       function main(env, opt, file){
         do something...
       }
-      
+    
       return main;
     });
 
@@ -3109,11 +3001,11 @@ hud.js 最終回傳一個涵式給 main.js 並執行。
 以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
 
     define(function(){
-      
+    
       function main(env, opt, file){
         console.log(opt.auto) //true
       }
-      
+    
       return main;
     });
 
@@ -3168,11 +3060,11 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
 關鍵字的作用在引用套件時，可用關鍵字取出套件內容。引用的方式是利用陣列包含關鍵字，例如某個 js 模塊需要取用 jquery 與 google map：
 
     define(['jquery','googleMaps'],function(){
-      
+    
       function main(env, opt, file){
         youu can use jquery and google map api here.
       }
-      
+    
       return main;
     });
 
@@ -3180,14 +3072,14 @@ main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊�
 
     requirejs(['domReady!'], function(dom){
       var $nodes = document.querySelectorAll('[data-function]');
-      
+    
       for( var i = 0; i < $nodes.length; i++ ) {
         var $env = $nodes[i], //存節點
         $func = JSON.parse(($env.getAttribute('data-function')).replace(/\'/g,'"')); //轉成物件
-        
+    
         for( var _file in $func ) { //取 function name 與設定參數
           var $opt = $func[_file];
-          
+    
           requirejs([_file], function(func){
             func($env, $opt, _file);
           });
@@ -3215,11 +3107,11 @@ main.js 會先執行 fix.js，接著一一解析擁有 data-function 的模塊�
 *代表所有的 js 模塊，在所有 js 模塊中，jquery 關鍵字代表 Script/lib/jqueryPrivate 這個模塊，而在 Script/lib/jqueryPrivate.js 中的 jquery 關鍵字則指向 Script/lib/jquery.js 模塊。以下示範如何在模塊中使用 jquery：
 
     define(['jquery'], function($){
-      
+    
       function main(env, opt, file){
         you can use $('body') jquery here...
       }
-      
+    
       return main;
     });
 
@@ -3245,17 +3137,17 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉它的 ap
 以下示範如何在模塊中使用 cookie：
 
     define(['cookie'], function(cookie){
-      
+    
       function main(env, opt, file){
         cookie.set('sample', 'true', 1);
       }
-      
+    
       return main;
     });
 
 
 <h3 id="js-getNode">關於 getNode.js</h3>
-因為我們統一了 html 結構，因此我們可更便捷、快速的取出想要的節點內容，getNode.js 就是為此而生。
+因為我們統一了 HTML 結構，因此我們可更便捷、快速的取出想要的節點內容，getNode.js 就是為此而生。
 getNode.js 定義了許多取得節點的方法。
 
 getNode.js 的核心程式叫做 getChild，會抓取子節點並比對關鍵字，並把所有子節點展開、並回傳一個真正的陣列。

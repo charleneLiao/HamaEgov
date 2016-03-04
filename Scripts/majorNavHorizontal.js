@@ -35,7 +35,7 @@ define(['jquery', 'getNode'], function($, getNode){
 			_active = 'is-active', //被選擇的 class name
 			_tab_key = 9;
 
-		$a.on(_eventNmae, function(){
+		$li.on(_eventNmae, function(){
 			var $this = $(this),
 				_index = $this.closest('li').index();
 
@@ -43,13 +43,13 @@ define(['jquery', 'getNode'], function($, getNode){
 			$li.eq(_index).addClass(_active);
 		});
 
-		$a.on('mouseenter', function(evt){ //觸發事件
+		$li.on('mouseenter', function(evt){ //觸發事件
 			evt.preventDefault();
 
 			$(this).trigger(_eventNmae);
 		});
 
-		$a.on('focusin', function(){ //觸發事件
+		$li.on('focusin', function(){ //觸發事件
 			$(this).mouseenter();
 		});
 

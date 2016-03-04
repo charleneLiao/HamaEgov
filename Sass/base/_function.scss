@@ -848,11 +848,6 @@
 		top: $interval-xs;
 		right: 0;
 
-		@include media('phone') {
-			margin-top: $interval-xs;
-			position: static;
-		}
-
 		> .inner {
 
 		}

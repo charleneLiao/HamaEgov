@@ -722,98 +722,231 @@
 //詢問================================================================
 
 	&.query {
-		@extend %area-page-no-header;
 
-		> .inner {
-			@extend %article-extend;
-		}
-
-		.header {
+		.base-wrapper & {
+		
+			@extend %area-page-no-header;
 
 			> .inner {
-
+				@extend %article-extend;
 			}
 
-			h4 {
+			.header {
 
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			span {
+			.content {
+				display: inline-block;
+				vertical-align: middle;
+
+				@include media('mobile') {
+					display: block;
+				}
+
+				> .inner {
+					display: inline-block;
+
+					@include media('mobile') {
+						display: block;
+					}
+				}
+
+				span {
+
+				}
+			}
+
+			.footer {
+				display: inline-block;
+				vertical-align: middle;
+
+				@include media('mobile') {
+					display: block;
+					margin-top: $interval-m;
+					border-top: $border;
+					border-top-color: $light-gray;
+					padding-top: $interval-m;
+				}
+
+				> .inner {
+					display: inline-block;
+
+					@include media('mobile') {
+						display: block;
+					}
+				}
+
+				ul {
+					display: inline-block;
+
+					@include media('mobile') {
+						display: block;
+					}
+				}
+
+				li {
+					display: inline-block;
 					
-			}
+					&.allow {
 
-			a {
+						a {
+							@extend %btn-imp;
+						}
+					}
 
+					&.deny {
+
+					}
+
+					&.close {
+
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %btn;
+				}
 			}
 		}
 
-		.content {
-			display: inline-block;
-			vertical-align: middle;
-
-			@include media('mobile') {
-				display: block;
-			}
-
-			> .inner {
-				display: inline-block;
-
-				@include media('mobile') {
-					display: block;
-				}
-			}
-
-			span {
-
-			}
-		}
-
-		.footer {
-			display: inline-block;
-			vertical-align: middle;
-
-			@include media('mobile') {
-				display: block;
-				margin-top: $interval-m;
-				border-top: $border;
-				border-top-color: $light-gray;
-				padding-top: $interval-m;
-			}
+		.base-extend & {
+			display: none;
+			position: fixed;
+			right: $interval-l;
+			bottom: $interval-l;
+			left: $interval-l;
 
 			> .inner {
+				position: relative;
+				padding: $interval-l;
+				margin: 0;
+				border: $border;
+				border-color: $gray;
+				text-align: center;
+				background-color: $light;
+				box-shadow: $box-shadow;
+
+				@include media('phone') {
+					padding: $interval-m;
+				}
+			}
+
+			.header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.content {
 				display: inline-block;
+				vertical-align: middle;
 
 				@include media('mobile') {
 					display: block;
+					text-align: justify;
+				}
+
+				> .inner {
+					display: inline-block;
+
+					@include media('mobile') {
+						display: block;
+					}
+				}
+
+				span {
+
 				}
 			}
 
-			ul {
+			.footer {
 				display: inline-block;
+				vertical-align: middle;
 
 				@include media('mobile') {
 					display: block;
-				}
-			}
-
-			li {
-				display: inline-block;
-				
-				&.allow {
-
+					margin-top: $interval-m;
+					border-top: $border;
+					border-top-color: $light-gray;
+					padding-top: $interval-m;
 				}
 
-				&.deny {
+				> .inner {
+					display: inline-block;
 
+					@include media('mobile') {
+						display: block;
+					}
 				}
-			}
 
-			span {
-				display: block;
-			}
+				ul {
+					display: inline-block;
+					padding: $interval-s;
 
-			a {
-				@extend %btn;
+					@include media('mobile') {
+						display: block;
+					}
+				}
+
+				li {
+					display: inline-block;
+					
+					&.allow {
+
+						a {
+							@extend %btn-imp;
+						}
+					}
+
+					&.deny {
+
+					}
+
+					&.close {
+
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %btn;
+				}
 			}
 		}
 	}

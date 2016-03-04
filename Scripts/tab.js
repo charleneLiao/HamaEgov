@@ -41,7 +41,7 @@ define(['jquery', 'getNode'], function($, getNode){
 						if( evt.which === _tab_key ) {
 							evt.preventDefault();
 
-							$a.eq(-1).focus();
+							$a.eq(i + 1).focus();
 						}
 					});
 				}
