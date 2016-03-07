@@ -6,7 +6,7 @@
 
 	&.default {
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -745,7 +745,7 @@
 			}
 		}
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 				background-color: $major-color;
@@ -1121,6 +1121,181 @@
 
 				a {
 
+				}
+			}
+		}
+	}
+
+//燈箱================================================================
+
+	&.pop-up {
+		$btn-width: 40px; //設定按鈕寬度
+
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		background-color: rgba($black, $opacity-m);
+		text-align: center;
+
+		@include js(false) {
+			display: none;
+		}
+
+		&.is-show {
+			display: block;
+		}
+
+		&:before {
+			content: $content;
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		> .inner {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			max-width: 80%;
+			max-height: 100%;
+			padding: $interval-m;
+			vertical-align: middle;
+			background-color: $light;
+
+			@include media('phone') {
+				max-width: 90%;
+			}
+
+			> .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+
+							+ li {
+								display: none;
+
+								@include js(false) {
+									display: block;
+									margin-top: $interval-m;
+								}
+							}
+
+							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
+
+								> .inner {
+									@extend %reset;
+
+									> .header {
+										display: none;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+					&.next, &.prev {
+
+						a {
+							@extend %hide-text;
+							position: absolute;
+							top: 20%;
+							bottom: 20%;
+							display: block;
+							width: $btn-width;
+							transition: $transition;
+						}
+					}
+
+					&.prev {
+
+						a {
+							left: 0;
+							@include bg-to-pic('icon-pic/away-b-left.png', false);
+						}
+					}
+
+					&.next {
+
+						a {
+							right: 0;
+							@include bg-to-pic('icon-pic/away-b-right.png', false);
+						}
+					}
+
+					&.close {
+						$btn-size: 30px;
+
+						a {
+							@extend %hide-text;
+							@include bg-to-pic('icon-pic/ctrl-b-close.png', false);
+							position: absolute;
+							top: -0.5 * $btn-size;
+							right: -0.5 * $btn-size;
+							display: block;
+							width: $btn-size;
+							height: $btn-size;
+							transition: $transition;
+							border-radius: 50%;
+						}
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+					background-color: $light;
+					background-color: rgba($light, $opacity-h);
+
+					&:hover {
+						background-color: rgba($light, $opacity-vh);
+					}
 				}
 			}
 		}

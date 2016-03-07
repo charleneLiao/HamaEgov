@@ -64,7 +64,7 @@
 
 	&.video {
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -351,7 +351,7 @@
 
 	&.audio {
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -638,7 +638,7 @@
 
 	&.iframe {
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 
@@ -883,7 +883,7 @@
 			display: none;
 		}
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 

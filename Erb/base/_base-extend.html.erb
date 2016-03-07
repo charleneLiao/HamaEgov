@@ -1,4 +1,4 @@
-<div class="group base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="4"><div class="inner">
+<div class="group base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="5"><div class="inner">
 	<div class="header"><div class="inner">
 		<h3><span><a></a></span></h3>
 	</div></div>
@@ -19,6 +19,10 @@
 	<!-- query 詢問 -->
 		<%=render :partial => "/Erb/module/simple-text_query", :locals => set({ :index => 4, :header_text => "詢問" }) %>
 	<!-- query 結束 -->
+
+	<!-- pop-up 燈箱 -->
+		<%= render :partial => "/Erb/group/group-list_pop-up", :locals => set({ :index => 5, :func_set => "{'popUpSlider':{'speed':300}}", :header_text => "燈箱" }) %>
+	<!-- pop-up 結束 -->
 
 	</div></div>
 </div></div>

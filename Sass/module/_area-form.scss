@@ -427,7 +427,7 @@
 
 	&.vote {
 
-		.base-module-area &, .base-aside & {
+		.base-extend &, .base-module-area &, .base-aside & {
 
 			> .inner {
 
