@@ -1,21 +1,6 @@
 //頁籤群組
 
-[data-type="2"] {
-
-//設定================================================================
-
-	> .inner {
-		
-		> .content {
-
-			> .inner {
-
-				> ul {
-					@extend %reset;
-				}
-			}
-		}
-	}
+.group-tab {
 
 //預設================================================================
 
@@ -23,81 +8,56 @@
 
 		> .inner {
 
-		}
+			> .header {
+				display: none;
 
-		> .inner > .header {
-			display: none;
+				> .inner {
 
-			@include js(false) {
-				display: block;
-			}
+				}
 
-			> .inner {
+				h3 {
+					@extend %title;
 
-			}
+					&:before {
+						@include icon-font('library_add');
+					}
+				}
 
-			h3 {
-				@extend %title;
+				span {
+						
+				}
 
-				&:before {
-					@include icon-font('library_add');
+				a {
+
 				}
 			}
 
-			span {
-					
-			}
+			> .content {
 
-			a {
+				> .inner {
 
-			}
-		}
+					> ul {
+						@extend %reset;
 
-		> .inner > .content {
+						> li {
 
-			> .inner {
+							+ li {
+								margin-top: $interval-m;
+							}
 
-				> ul {
-					@extend %reset;
+							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
 
-					> li {
+								> .inner {
 
-						> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
-
-							> .inner {
-
-								> .footer {
-									position: static;
-									margin-top: $interval-s;
+									> .footer {
+										position: static;
+										margin-top: $interval-s;
+									}
 								}
 							}
 						}
 					}
 				}
-			}
-		}
-
-		> .inner > .footer {
-			@extend %footer-btns;
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
 			}
 		}
 	}

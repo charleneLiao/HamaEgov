@@ -1,4 +1,4 @@
-<div class="base-aside" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="inner">
+<div class="group base-aside" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="inner">
 	<div class="header"><div class="inner">
 		<h3><span><a></a></span></h3>
 	</div></div>
@@ -9,11 +9,11 @@
 	<!-- accesskey 結束 -->
 
 	<!-- nav 選單 -->
-		<%= render :partial => "/Erb/group/group-list_nav", :locals => set({ :index => 1, :class_set => "pad-hide phone-hide", :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" }) %>
+		<%= render :partial => "/Erb/group/group-list_nav", :locals => set({ :index => 1, :class_set => "is-pad-hide is-phone-hide", :func_set => "{'majorNavStraight':{}}", :header_text => "主選單", :inner => "/Erb/module/list-text_nav" }) %>
 	<!-- nav 結束 -->
 
 	<!-- minor-nav 次選單 -->
-		<%= render :partial => "/Erb/module/list-text_minor-nav", :locals => set({ :index => 2, :class_set => "pad-hide phone-hide", :header_text => "次選單" }) %>
+		<%= render :partial => "/Erb/module/list-text_minor-nav", :locals => set({ :index => 2, :class_set => "is-pad-hide is-phone-hide", :header_text => "次選單" }) %>
 	<!-- minor-nav 結束 -->
 
 	</div></div>

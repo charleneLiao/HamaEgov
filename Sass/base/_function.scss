@@ -556,35 +556,11 @@
 		}
 	}
 
-	%module { //模組
-		margin: 0 0 $interval-l;
-
-		> .inner {
-			margin: $layout-interval;
-		}
-	}
-
-	%page { //內頁
-		margin: $interval-xl 0 $layout-interval;
-
-		> .inner {
-
-		}
-	}
-
-	%mobile { //手機側欄模組
-		margin: $layout-interval 0;
-
-		> .inner {
-
-		}
-	}
-
 	%area-module-no-header { //沒有 header 的首頁模組
-		margin: $interval-m 0 !important;
+		margin-top: $interval-s !important;
 
 		> .inner {
-			
+
 			> .header {
 				display: none !important;
 			}
@@ -592,10 +568,10 @@
 	}
 
 	%area-page-no-header { //沒有 header 的內頁模組
-		margin: $interval-m 0 !important;
+		margin-top: $interval-m !important;
 
 		> .inner {
-			
+
 			> .header {
 				display: none !important;
 			}
@@ -603,10 +579,10 @@
 	}
 
 	%area-mobile-no-header { //沒有 header 的手機側欄模組
-		margin: $interval-m 0 !important;
+		margin-top: $interval-m !important;
 
 		> .inner {
-			
+
 			> .header {
 				display: none !important;
 			}
@@ -615,82 +591,86 @@
 
 	%area-module { //首頁模組
 
-		.is-hide-header { //在首頁模組上下 ".is-hide-header" 的樣式
-			@extend %area-module-no-header;
+		[data-index][data-type="0"], [data-index][data-type="2"], [data-index][data-type="4"] {
+
+			> .inner {
+				margin-left: $interval-m;
+				margin-right: $interval-m;
+			}
 		}
 
-		[data-index][data-type="0"] {
-			@extend %module;
+		[data-index][data-type] {
+
+			> .inner {
+				margin-top: $interval-m;
+			}
 		}
 
-		[data-index][data-type="4"], [data-index][data-type="2"] {
-			@extend %module;
+		[data-index][data-type] + [data-index][data-type] {
 
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
+			> .inner {
+				margin-top: $interval-m * 2;
 			}
+		}
 
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
+		[data-index][data-type] + .is-hide-header { //在首頁模組上下 ".is-hide-header" 的樣式
 
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
+			> .inner {
+				@extend %area-module-no-header;
 			}
 		}
 	}
 
 	%area-page { //內頁模組
 
-		.is-hide-header { //在內頁模組上下 ".is-hide-header" 的樣式
-			@extend %area-page-no-header;
+		[data-index][data-type] + [data-index][data-type] {
+			margin-top: $interval-xl;
 		}
 
-		[data-index][data-type] + [data-index][data-type] {
-			@extend %page;
-
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
-			}
+		[data-index][data-type] + .is-hide-header { //在內頁模組上下 ".is-hide-header" 的 margin 樣式
+			@extend %area-page-no-header;
 		}
 	}
 
 	%area-mobile { //手機側欄模組
 
-		.is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的樣式
-			@extend %area-mobile-no-header;
+		[data-index][data-type="0"], [data-index][data-type="2"], [data-index][data-type="4"] {
+
+			> .inner {
+				margin-left: $interval-m;
+				margin-right: $interval-m;
+			}
 		}
 
-		[data-index][data-type="0"] {
-			@extend %mobile;
+		[data-index][data-type] + [data-index][data-type] {
+
+			> .inner {
+				margin-top: $interval-l;
+				margin-bottom: $interval-l;
+			}
 		}
 
-		[data-index][data-type="4"], [data-index][data-type="2"] {
-			@extend %mobile;
+		[data-index][data-type] + .is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的 margin 樣式
 
-			[data-index][data-type="0"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="4"] {
-				@extend %reset-outer;
-			}
-
-			[data-index][data-type="2"] {
-				@extend %reset-outer;
+			> .inner {
+				@extend %area-mobile-no-header;
 			}
 		}
 	}
 
 //元件預設樣式================================================================
+
+	%a { //顯示文字連結顏色
+		$color: #08c;
+
+		color: $color;
+		text-decoration: underline;
+
+		&:hover {
+			color: deeper($color);
+			text-decoration: none;
+		}
+	}
 
 	%title { //模組、內頁 title
 		font-size: $font-size-l;
@@ -707,11 +687,11 @@
 		}
 
 		span {
-			color: inherit;
+
 		}
 
 		a {
-			color: inherit;
+
 		}
 	}
 
@@ -725,7 +705,6 @@
 		}
 
 		a {
-			color: inherit;
 			font-size: 1em;
 		}
 	}
@@ -771,6 +750,10 @@
 
 		p {
 			@extend %reset;
+		}
+
+		a {
+			@extend %a;
 		}
 
 		span {
@@ -834,7 +817,10 @@
 	}
 
 	%article { //文章樣式
-		color: inherit;
+		
+		a {
+			@extend %a;
+		}
 	}
 
 	%article-extend { //延伸的文章樣式
@@ -881,41 +867,6 @@
 		&:hover {
 			color: currentColor;
 			background-color: $light-gray;
-		}
-	}
-
-	%table { //表單樣式
-
-		tr {
-
-			&:nth-child(2n) {
-				background-color: $light;
-			}
-
-			th, td { //th, td共同設定
-				padding: $interval-m;
-				line-height: $line-height-m;
-			}
-
-			th { //標題設定
-				font-size: $font-size-l;
-				color: $title-color;
-			}
-
-			td {
-
-			}
-		}
-	}
-
-	%table-hover { //表單 :hover 樣式
-
-		tr{
-
-			&:hover {
-				background-color: $minor-color;
-				color: $white;
-			}
 		}
 	}
 

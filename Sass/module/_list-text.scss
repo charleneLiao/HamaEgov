@@ -552,11 +552,11 @@
 			}
 
 			span {
-				color: inherit;
+
 			}
 
 			a {
-				color: inherit;
+
 			}
 		}
 
@@ -640,7 +640,7 @@
 			display: none;
 		}
 
-		.group-page-header & {
+		.group.page-header & {
 			float: right;
 		}
 
@@ -658,7 +658,7 @@
 			}
 
 			> .inner {
-				margin: 0;
+
 			}
 
 			.header {
@@ -762,6 +762,7 @@
 
 					&:before {
 						@include icon-font('settings');
+						color: $white;
 					}
 				}
 			}
@@ -867,6 +868,7 @@
 				a {
 					@extend %btn;
 					display: block;
+					text-align: left;
 					white-space: nowrap;
 
 					&:before {
@@ -914,7 +916,7 @@
 			}
 
 			> .inner {
-				margin: 0;
+
 			}
 
 			.header {
@@ -1121,7 +1123,7 @@
 		}
 
 		> .inner {
-			margin: 0;
+
 		}
 
 		.header {
@@ -1347,7 +1349,7 @@
 			}
 
 			> .inner {
-				margin: 0;
+
 			}
 
 			.header {
@@ -1367,11 +1369,11 @@
 				}
 
 				span {
-					color: inherit;
+
 				}
 
 				a {
-					color: inherit;
+
 				}
 			}
 
@@ -1760,7 +1762,7 @@
 			}
 
 			> .inner {
-				margin: 0;
+				
 			}
 
 			.header {
@@ -1977,11 +1979,11 @@
 				}
 
 				span {
-					color: inherit;
+					
 				}
 
 				a {
-					color: inherit;
+
 				}
 			}
 
@@ -2226,7 +2228,6 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 
@@ -2405,7 +2406,6 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 
@@ -2490,7 +2490,7 @@
 
 	&.sitemap {
 
-		.group-page-header & {
+		.group.page-header & {
 			clear: both;
 		}
 
@@ -2590,7 +2590,6 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 
@@ -2678,7 +2677,6 @@
 //跳轉導航列================================================================
 
 	&.jump-tool {
-		margin: $interval-l 0;
 
 		> .inner {
 
@@ -2848,7 +2846,6 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 
@@ -2875,7 +2872,6 @@
 
 			ul {
 				text-align: right;
-				color: $gray;
 
 				@include media('phone') {
 					text-align: left;
@@ -2885,6 +2881,7 @@
 			li {
 				display: inline;
 				font-size: $font-size-s;
+				color: $gray;
 				
 				+ li {
 

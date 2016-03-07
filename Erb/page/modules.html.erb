@@ -1,4 +1,5 @@
 <%= render :partial => "/Erb/sys/variable" %>
+
 <!-- //標題================================================================ -->
 
 	<!--title 文章標題 -->
@@ -39,7 +40,7 @@
 		<%=render :partial => "/Erb/module/area-editor_user-edit", :locals => set({ :index => 7, :header_text => nil }) %>
 	<!-- user-edit 結束 -->
 
-	<!-- //標籤區塊================================================================ -->
+<!-- //標籤區塊================================================================ -->
 
 	<!-- label 標籤 -->
 		<%=render :partial => "/Erb/module/list-text_label", :locals => set({ :index => 8, :header_text => nil }) %>
@@ -84,6 +85,18 @@
 	<!-- vote-result 投票結果 -->
 		<%=render :partial => "/Erb/group/group-list_vote-result", :locals => set({ :index => 16, :header_text => "投票結果", :inner => "/Erb/module/simple-text_vote-result" }) %>
 	<!-- vote-result 結束 -->
+
+<!-- //錯誤訊息================================================================ -->
+
+	<!-- error-info 錯誤訊息 -->
+		<%=render :partial => "/Erb/module/area-editor_error-info", :locals => set({ :index => 6, :header_text => "404 Page Not Found" }) %>
+	<!-- error-info 結束 -->
+
+<!-- //頁籤================================================================ -->
+
+	<!-- tab 頁籤 -->
+		<%= render :partial => "/Erb/group/group-tab_default", :locals => set({ :index => 5, :func_set => "{'tab':{}}", :header_text => "頁籤", :show_footer => false, :inner =>  "/Erb/module/area-figure_page-figure" }) %>
+	<!-- tab 結束 -->
 
 <!-- //選單================================================================ -->
 
@@ -258,4 +271,3 @@
 	<!-- page-form 內頁表單 -->
 		<%= render :partial => "/Erb/module/area-form_page-form", :locals => set({ :index => 53, :header_text => "內頁表單" }) %>
 	<!-- page-form 結束 -->
-

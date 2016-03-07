@@ -1,19 +1,25 @@
-<div class="simple-text test-require <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+<div class="simple-text test-require <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" data-function="{'testRequire':{'opt':'sampleData'}}"><div class="inner">
 	<div class="header"><div class="inner">
-		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
+		<h4></h4>
 	</div></div>
 	<div class="content"><div class="inner">
-		<span>index: <%= index %></span><br />
-		<span>class_set: <%= class_set %></span><br />
-		<span>child: <%= child %></span><br />
-		<span>func_set: <%= func_set %></span><br />
-		<span>header_text: <%= header_text %></span><br />
-		<span>show_footer: <%= show_footer %></span><br />
-		<span>show_mark: <%= show_mark %></span><br />
-		<span>access_key: <%= access_key %></span><br />
-		<span>access_title: <%= access_title %></span><br />
-		<span>inner: <%= inner %></span><br />
-		<span>inner_len: <%= inner_len %></span><br />
-		<span>請打開開發人員工具，測試 test.js 執行狀態。</span>
+		<span>Erb 引數內容列表：</span><br />
+		<br />
+		<span>index => <%= index %></span><br />
+		<span>class_set => <%= class_set %></span><br />
+		<span>child => <%= child %></span><br />
+		<span>func_set => <%= func_set %> <i>#此檔案模塊的 data-function 參數並非由此傳入</i></span><br />
+		<span>header_text => <%= header_text %></span><br />
+		<span>show_footer => <%= show_footer %></span><br />
+		<span>show_mark => <%= show_mark %></span><br />
+		<span>access_key => <%= access_key %></span><br />
+		<span>access_title => <%= access_title %></span><br />
+		<span>inner => <%= inner %></span><br />
+		<span>inner_len => <%= inner_len %></span><br />
+		<br />
+		<br />
+		<span>javascript 測試：</span><br />
+		<br />
+		<span>請打開開發人員工具 -> 主控台，觀察 testRequire.js 是正常執行。</span>
 	</div></div>
 </div></div>

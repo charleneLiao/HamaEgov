@@ -1,8 +1,12 @@
-<div class="base-module-area" data-index="<%= index %>" data-type="<%= $row %>" data-child="1"><div class="inner">
+<div class="group base-module-area" data-index="<%= index %>" data-type="<%= $row %>" data-child="1"><div class="inner">
 	<div class="header"><div class="inner">
 		<h3><span><a></a></span></h3>
 	</div></div>
 	<div class="content"><div class="inner">
 
+	<!-- slider 主輪播 -->
+		<%= render :partial => "/Erb/group/group-list_major-slider", :locals => set({ :index => 1, :func_set => "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", :header_text => "主輪播" }) %>
+	<!-- slider 結束 -->
+	
 	</div></div>
 </div></div>

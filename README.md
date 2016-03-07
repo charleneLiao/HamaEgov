@@ -348,7 +348,7 @@ base-wrapper: 網頁頁面框架。
 
     <body>
       <div class="sys-root">
-
+    
         <div class="base-mobile">
           行動版側欄
         </div>
@@ -358,7 +358,7 @@ base-wrapper: 網頁頁面框架。
         <div class="base-wrapper">
           網頁頁面框架
         </div>
-
+    
       </div>
     </body>
 
@@ -375,7 +375,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
         <div class="base-extend">
         </div>
         <div class="base-wrapper">
-
+    
           <div class="base-header">
             網頁頁首
           </div>
@@ -385,7 +385,7 @@ base-footer: 網頁頁尾。通常放置一些網站資訊。
           <div class="base-footer">
             網頁頁尾
           </div>
-
+    
         </div>
       </div>
     </body>
@@ -405,14 +405,14 @@ base-page-area: 內頁框架。
           <div class="base-header">
           </div>
           <div class="base-content">
-
+    
             <div class="base-module-area">
               模組
             </div>
             <div class="base-page-area">
               內頁
             </div>
-
+    
           </div>
           <div class="base-footer">
           </div>
@@ -439,14 +439,14 @@ base-section: 內頁內容。
               <div class="base-module-area">
               </div>
               <div class="base-page-area">
-
+    
                 <div class="base-aside">
                   內頁側欄
                 </div>
                 <div class="base-section">
                   內頁內容
                 </div>
-
+    
               </div>
             </div>
             <div class="base-footer">
@@ -476,11 +476,11 @@ base-article: 內頁文章區塊。
               <div class="base-aside">
               </div>
               <div class="base-section">
-
+    
                 <div class="base-article">
                   內頁文章
                 </div>
-
+    
               </div>
             </div>
           </div>
@@ -667,7 +667,7 @@ base-article: 內頁文章區塊。
 
 以下是分割群組的 HTML 格式：
 
-    <data-index data-type="0">
+    <data-index class="group" data-type="0">
       <div class="inner">
         <div class="header">
           <div class="inner">
@@ -691,7 +691,7 @@ base-article: 內頁文章區塊。
 
 以下是頁籤群組的 HTML 格式：
 
-    <data-index data-type="2">
+    <data-index class="group-tab" data-type="2">
       <div class="inner">
         <div class="header">
           <div class="inner">
@@ -702,7 +702,7 @@ base-article: 內頁文章區塊。
           <div class="inner">
             <ul data-index data-child>
               <li data-index="1">
-
+    
                    <data-index data-type="0">
                       <div class="inner">
                         <div class="header">
@@ -719,7 +719,7 @@ base-article: 內頁文章區塊。
                         </div>
                       </div>
                     </div>
-
+    
               </li>
               <li data-index="2">依序加入子模塊...</li>
             </ul>
@@ -733,7 +733,7 @@ base-article: 內頁文章區塊。
 
 以下是單欄群組的 HTML 格式：
 
-    <data-index data-type="3">
+    <data-index class="group" data-type="3">
       <div class="inner">
         <div class="header">
           <div class="inner">
@@ -753,7 +753,7 @@ base-article: 內頁文章區塊。
 
 以下是清單群組的 HTML 格式：
 
-    <data-index data-type="3">
+    <data-index class="group-list" data-type="3">
       <div class="inner">
         <div class="header">
           <div class="inner">
@@ -1578,10 +1578,10 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-
+    
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample" %>
-
+    
       </div></div>
     </div></div>
 
@@ -1591,10 +1591,10 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="header"><div class="inner">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="content"><div class="inner">
-
+    
         <!--嵌套 /Erb/module/sample -->
         <%= render :partial => "/Erb/module/sample", :locals => set({ :index => 4, :header_text => '模塊標頭' }) %>
-
+    
       </div></div>
     </div></div>
 
@@ -1884,11 +1884,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 這樣的做法，可以快速的參考、交換、複製其他相同類別的模塊樣式。
 
     .list-text {
-
+    
       &.nav {
         ...
       }
-
+    
       &.font-size {
         ...
       }
@@ -1901,9 +1901,9 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 一般來說，在設定樣式的時候，應盡可能減少指定的層數：
 
     .list-text {
-
+    
       &.nav {
-
+    
         .content {
           ...
         }
@@ -1914,11 +1914,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 **但群組下可能會有許多模塊，每個模塊都有自己的 content**，因此若要指名該群組自己的的 content，必須明確的這麼指定：
 
     [data-index][data-type="1"] {
-
+    
       &.group {
-
+    
         > .inner {
-
+    
           > .content {
             ...
           }
@@ -1931,11 +1931,11 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 我們也可以指定同一模塊在不同框架下的樣式，例如：
 
     .nav {
-
+    
       .base-header & {
        color: #000;
       }
-
+    
       .base-footer & {
        color: #555;
       }
@@ -2209,11 +2209,6 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
     <td></td>
     <td>$max-setLen</td>
     <td>最多的單行數量</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>$layout-interval</td>
-    <td>主層間隔</td>
   </tr>
   <tr>
     <td>預設空文字</td>
@@ -2660,7 +2655,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
 
     .sys-root {
       color: #000;
-
+    
       @include js(false) {
         color: #555;
       }
@@ -2679,7 +2674,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include hack('ie6-7-8') {
         color: #555;
       }
@@ -2692,7 +2687,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include supports('gc28+') {
         color: #555;
       }
@@ -2702,7 +2697,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include supports('display: flex') {
         color: #555;
       }
@@ -2743,7 +2738,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include media('phone') {
         color: #555;
       }
@@ -2755,7 +2750,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include rwd(800, 300) {
         color: #555;
       }
@@ -2769,7 +2764,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
     .sys-root {
       color: #000;
-
+    
       @include admin(true) {
         color: #555;
       }
@@ -2779,10 +2774,10 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
 
 <h3 id="rwd-hide">在 pc、pad、phone 寬度隱藏模塊</h3>
-我們可以指定模塊在 pc、pad、phone 尺寸中隱藏，只要在欲隱藏的區塊加入 .pc-hide .pad-hide .phone-hide 相應的 class 即可。
+我們可以指定模塊在 pc、pad、phone 尺寸中隱藏，只要在欲隱藏的區塊加入 .is-pc-hide .is-pad-hide .is-phone-hide 相應的 class 即可。
 
 
-該方法的設定存在於 sys/_grid.scss 中。
+該方法的設定存在於 base/_layout.scss 中。
 
 
 <h3 id="h3 id="rwd-hide">">隱藏模塊 header 的方法</h3>
@@ -2821,11 +2816,11 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 我們會這麼設定 li 的寬度。
 
     .link {
-
+    
       .content {
-
+    
         ul {
-
+    
           &:after {
             content: '';
             display: block;
@@ -2834,7 +2829,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
             visibility: hidden;
           }
         }
-
+    
         li {
           width: 50%;
           float: left;
@@ -2846,15 +2841,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
     .link {
       @include default-len(0, 2);
-
+    
       .content {
-
+    
         ul {
-
+    
         }
-
+    
         li {
-
+    
         }
       }
     }
@@ -2867,15 +2862,15 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-
+    
       .content {
-
+    
         ul {
-
+    
         }
-
+    
         li {
-
+    
         }
       }
     }
@@ -2885,13 +2880,13 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
     .link {
       @include default-len(0, 2);
       @include set-len(0);
-
+    
       .content {
-
+    
         ul {
-
+    
         }
-
+    
         li {
           @include set-len-rwd('pad', 2);
           @include set-len-rwd('phone', 1);
@@ -2980,11 +2975,11 @@ data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟�
 hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
 
     define(function(){
-
+    
       function main(env, opt, file){
         do something...
       }
-
+    
       return main;
     });
 
@@ -2997,11 +2992,11 @@ hud.js 最終回傳一個涵式給 main.js 並執行。
 以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
 
     define(function(){
-
+    
       function main(env, opt, file){
         console.log(opt.auto) //true
       }
-
+    
       return main;
     });
 
@@ -3049,11 +3044,11 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
 關鍵字的作用在引用套件時，可用關鍵字取出套件內容。引用的方式是利用陣列包含關鍵字，例如某個 js 模塊需要取用 jquery 與 google map：
 
     define(['jquery','googleMaps'],function(){
-
+    
       function main(env, opt, file){
         youu can use jquery and google map api here.
       }
-
+    
       return main;
     });
 
@@ -3061,14 +3056,14 @@ main.js 會先執行 fix.js，接著一一解析有 data-function 參數的模�
 
     requirejs(['domReady!'], function(dom){
       var $nodes = document.querySelectorAll('[data-function]');
-
+    
       for( var i = 0; i < $nodes.length; i++ ) {
         var $env = $nodes[i], //存節點
         $func = JSON.parse(($env.getAttribute('data-function')).replace(/\'/g,'"')); //轉成物件
-
+    
         for( var _file in $func ) { //取 function name 與設定參數
           var $opt = $func[_file];
-
+    
           requirejs([_file], function(func){
             func($env, $opt, _file);
           });
@@ -3096,11 +3091,11 @@ main.js 會先執行 fix.js，接著一一解析有 data-function 參數的模�
 *代表所有的 js 模塊，在所有 js 模塊中，jquery 關鍵字代表 Script/lib/jqueryPrivate 這個模塊，而在 Script/lib/jqueryPrivate.js 中的 jquery 關鍵字則指向 Script/lib/jquery.js 模塊。以下示範如何在模塊中使用 jquery：
 
     define(['jquery'], function($){
-
+    
       function main(env, opt, file){
         you can use $('body') jquery here...
       }
-
+    
       return main;
     });
 
@@ -3126,11 +3121,11 @@ cookie.js 定義了幾種方法來操控網頁 cookie，以下將列舉一些它
 以下示範如何在模塊中使用 cookie：
 
     define(['cookie'], function(cookie){
-
+    
       function main(env, opt, file){
         cookie.set('sample', 'true', 1);
       }
-
+    
       return main;
     });
 

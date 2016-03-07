@@ -185,7 +185,7 @@
 	&.accesskey {
 
 		> .inner {
-			margin: 0;
+
 		}
 
 		.header {
@@ -212,11 +212,11 @@
 			height: 0;
 
 			> .inner {
-				
+				color: $gray;
 			}
 
 			span {
-				color: $light-gray;
+				color: inherit;
 			}
 
 			a {
@@ -574,7 +574,6 @@
 //瀏覽人次================================================================
 
 	&.visit-count {
-		margin: $interval-m 0;
 
 		> .inner {
 
@@ -596,11 +595,11 @@
 			}
 
 			span {
-				color: inherit;
+				
 			}
 
 			a {
-				color: inherit;
+
 			}
 		}
 
@@ -723,7 +722,6 @@
 	&.query {
 
 		.base-wrapper & {
-		
 			@extend %area-page-no-header;
 
 			> .inner {
@@ -834,10 +832,13 @@
 			bottom: $interval-l;
 			left: $interval-l;
 
+			&.is-open {
+				display: block;
+			}
+
 			> .inner {
 				position: relative;
 				padding: $interval-l;
-				margin: 0;
 				border: $border;
 				border-color: $gray;
 				text-align: center;
@@ -957,7 +958,6 @@
 		.base-mobile & {
 			position: absolute;
 			left: 100%;
-			margin: 0 !important;
 
 			@include js(false) {
 				display: none;
@@ -985,7 +985,7 @@
 			}
 
 			> .inner {
-				margin: 0 !important;
+
 			}
 
 			.header {
@@ -1274,7 +1274,7 @@
 
 	&.heading {
 
-		.group-page-header & {
+		.group.page-header & {
 			overflow: hidden;
 		}
 
@@ -1309,6 +1309,7 @@
 
 			h3 {
 				@extend %reset;
+				padding-left: $interval-s;
 				padding-bottom: $interval-m;
 				border-bottom: $border;
 				margin-bottom: $interval-m;
@@ -1316,7 +1317,7 @@
 			}
 
 			span {
-				
+				display: block;
 			}
 
 			a {

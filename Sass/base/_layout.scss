@@ -8,6 +8,37 @@
 	color: $body-font-color;
 	position: relative;
 
+	.is-pc-hide { //電腦版隱藏
+
+		@include media('pc') {
+			display: none !important;
+		}
+	}
+
+	.is-pad-hide { //平板版關閉
+
+		@include media('pad') {
+			display: none !important;
+		}
+	}
+
+	.is-phone-hide { //手機版關閉
+
+		@include media('phone') {
+			display: none !important;
+		}
+	}
+
+	.is-hide-header { //沒有 header 的模組樣式，margin 設定請至 base/_function.scss 設定
+
+		> .inner {
+
+			> .header {
+				display: none !important;
+			}
+		}
+	}
+
 	@include js(false) {
 
 		&:before {
@@ -25,30 +56,8 @@
 		&:before {
 			display: block;
 			content: $content;
-			height: $rwd-btn-size;
+			min-height: $rwd-btn-size;
 			background-color: deeper($major-color);
-		}
-	}
-
-	> .inner {
-
-		> .header {
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .content {
-
-		}
-
-		> .footer {
-
 		}
 	}
 
@@ -91,6 +100,10 @@
 		&.divition {
 			display: block;
 			color: $body-font-color;
+		}
+
+		&.btn {
+			@extend %btn;
 		}
 	}
 
@@ -154,10 +167,34 @@
 		@extend %input;
 	}
 
+	> .inner {
+
+		> .header {
+
+			> .inner {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+
+			}
+		}
+
+		> .content {
+
+			> .inner {
+
+			}
+		}
+	}
+
 //行動載具================================================================
 
 	.base-mobile {
-		@extend %area-mobile;
 		z-index: 3;
 
 		&.is-open {
@@ -212,13 +249,6 @@
 
 				}
 			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-			}
 		}
 	}
 
@@ -255,13 +285,6 @@
 
 				}
 			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-			}
 		}
 	}
 
@@ -271,7 +294,6 @@
 		background-color: $light;
 
 		> .inner {
-			margin: 0;
 
 			> .header {
 
@@ -289,13 +311,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 
@@ -326,13 +341,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 
@@ -372,13 +380,6 @@
 
 				}
 			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-			}
 		}
 	}
 
@@ -405,13 +406,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 
@@ -449,13 +443,6 @@
 
 				}
 			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-			}
 		}
 	}
 
@@ -486,13 +473,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 
@@ -536,13 +516,6 @@
 
 				}
 			}
-
-			> .footer {
-
-				> .inner {
-
-				}
-			}
 		}
 	}
 
@@ -553,10 +526,10 @@
 		position: relative;
 
 		> .inner {
-			margin: $interval-s $interval-m;
+			margin: 0 $interval-m;
 
 			@include media('phone') {
-				margin: $interval-s 0;
+				margin: 0;
 			}
 
 			> .header {
@@ -575,13 +548,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 
@@ -612,16 +578,6 @@
 			}
 
 			> .content {
-
-				> .inner {
-
-					// [data-index][data-type] {
-					// 	@extend %part;
-					// }
-				}
-			}
-
-			> .footer {
 
 				> .inner {
 

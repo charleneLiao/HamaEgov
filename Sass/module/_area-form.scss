@@ -964,7 +964,6 @@
 					label {
 						display: block;
 						margin-bottom: $interval-xs;
-						font-size: $font-size-s;
 
 						&:after {
 							content: '： ';
@@ -1157,7 +1156,6 @@
 					label {
 						display: block;
 						margin-bottom: $interval-xs;
-						font-size: $font-size-s;
 
 						&:after {
 							content: '： ';
@@ -1336,7 +1334,6 @@
 		}
 
 		.header {
-			display: none;
 
 			> .inner {
 

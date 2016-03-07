@@ -22,7 +22,7 @@
 
 	def set(opt = {})
 
-		set = {
+		@set = {
 			:index => 1,
 			:class_set => nil,
 			:child => 0,
@@ -38,9 +38,9 @@
 
 		opt.each do |key, value|
 
-			set[key.to_sym] = value
+			@set[key.to_sym] = value
 		end
 
-		set
+		@set
 	end
 %>

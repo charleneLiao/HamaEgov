@@ -1,18 +1,6 @@
 //群組
 
-[data-type] {
-
-//設定================================================================
-
-	> .inner {
-		
-		> .content {
-
-			> .inner {
-				
-			}
-		}
-	}
+.group {
 
 //預設================================================================
 
@@ -47,36 +35,14 @@
 
 			}
 		}
-
-		> .inner > .footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
 	}
 
 //資訊群組================================================================
 
-	&.group-info {
+	&.info {
 
 		.base-mobile & {
+			@extend %area-mobile;
 
 			> .inner {
 
@@ -112,29 +78,6 @@
 					height: 100vh;
 					overflow-y: auto;
 					background-color: $light;
-				}
-			}
-
-			> .inner > .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
 				}
 			}
 		}
@@ -175,29 +118,6 @@
 					}
 				}
 			}
-
-			> .inner > .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
 		}
 
 		.base-footer & {
@@ -236,35 +156,12 @@
 					}
 				}
 			}
-
-			> .inner > .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
 		}
 	}
 
 //資訊與工具群組================================================================
 
-	&.group-msg-tool {
+	&.msg-tool {
 
 		.base-header & {
 			position: relative;
@@ -298,29 +195,6 @@
 
 				}
 			}
-
-			> .inner > .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
 		}
 
 		.base-footer & {
@@ -350,31 +224,9 @@
 			}
 
 			> .inner > .content {
+				padding: 0 $interval-m;
 
 				> .inner {
-
-				}
-			}
-
-			> .inner > .footer {
-
-				> .inner {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
 
 				}
 			}
@@ -383,11 +235,7 @@
 
 //內頁頁首================================================================
 
-	&.group-page-header {
-
-		+ [data-index][data-type] {
-			margin-top: $interval-l;
-		}
+	&.page-header {
 
 		> .inner {
 
@@ -413,31 +261,9 @@
 		}
 
 		> .inner > .content {
+			margin-top: $interval-m;
 
 			> .inner {
-
-			}
-		}
-
-		> .inner > .footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
 
 			}
 		}
@@ -445,9 +271,10 @@
 
 //內頁主要內容================================================================
 
-	&.group-page-content {
+	&.page-content {
 		@extend %area-page;
 		position: relative;
+		margin-top: $interval-l;
 
 		> .inner {
 
@@ -475,29 +302,6 @@
 		> .inner > .content {
 
 			> .inner {
-
-			}
-		}
-
-		> .inner > .footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
 
 			}
 		}
@@ -505,7 +309,7 @@
 
 //內頁頁尾================================================================
 
-	&.group-page-footer {
+	&.page-footer {
 		@extend %area-page;
 
 		> .inner {
@@ -534,29 +338,6 @@
 		> .inner > .content {
 
 			> .inner {
-
-			}
-		}
-
-		> .inner > .footer {
-
-			> .inner {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
 
 			}
 		}

@@ -89,19 +89,53 @@
 	> .inner {
 		position: relative;
 		min-height: 1px;
+
+		> .header {
+
+			h3, h4 {
+
+			}
+
+			span {
+				color: inherit;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
 	}
 }
 
 [data-type="0"] { //模組
 
 	> .inner {
-		margin: 0 $layout-interval;
+
 	}
 
 	.header {
 
-		h1, h2, h3, h4, h5, h6 {
+		> .inner {
+
+		}
+
+		h4 {
 			@extend %reset;
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+
+	.content {
+
+		> .inner {
+
 		}
 	}
 
@@ -110,25 +144,9 @@
 		ul {
 			@extend %reset;
 		}
-	}
-}
 
-[data-type="1"], [data-type="2"], [data-type="3"], [data-type="4"] { //群組
-
-	> .inner {
-		
-		> .header {
-
-			h1, h2, h3, h4, h5, h6 {
-				@extend %reset;
-			}
-		}
-
-		> .footer {
-
-			ul {
-				@extend %reset;
-			}
+		span {
+			
 		}
 	}
 }
@@ -136,6 +154,21 @@
 [data-type="1"] { //分割
 
 	> .inner {
+		
+		> .header {
+
+			h3 {
+				@extend %reset;
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
 
 		> .content {
 
@@ -156,34 +189,55 @@
 [data-type="2"] { //頁籤
 
 	> .inner {
+		
+		> .header {
+			display: none;
+
+			h3 {
+				@extend %reset;
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
 
 		> .content {
 
 			> .inner {
 
 				> ul {
+					@extend %reset;
 
 					> li {
 						@extend %reset-inner-module;
-						margin-bottom: $interval-s;
 
-						+ li { //第一個 li 是頁籤
-							margin-bottom: 0;
+						+ li {
+							@include js(false) {
+								display: none;
+							}
 
 							+ li {
 								display: none;
-
-								@include js(false) {
-									display: block;
-									margin-top: $interval-m;
-								}
 							}
 						}
 
 						> [data-index][data-type] {
 
-							> .container {
-								margin: 0;
+							> .inner {
+								@extend %reset-outer;
+
+								> .header {
+									display: none;
+
+									@include js(false) {
+										display: block;
+									}
+								}
 							}
 						}
 					}
@@ -196,41 +250,82 @@
 [data-type="3"] { //單欄
 
 	> .inner {
+		
+		> .header {
 
+			h3 {
+				@extend %reset;
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		> .content {
+
+			> .inner {
+
+				> [data-index][data-type] {
+
+				}
+			}
+		}
 	}
 }
 
 [data-type="4"] { //清單
 
 	> .inner {
-		margin: 0 $layout-interval;
-	}
+		
+		> .header {
 
-	[data-index][data-type] { //模組
+			h3 {
+				@extend %reset;
+			}
 
-		> .inner {
-			margin: 0;
+			span {
+
+			}
+
+			a {
+
+			}
 		}
-	}
-}
 
-.pc-hide { //電腦版隱藏
+		> .content {
 
-	@include media('pc') {
-		display: none !important;
-	}
-}
+			> .inner {
 
-.pad-hide { //平板版關閉
+				> ul {
+					@extend %reset;
 
-	@include media('pad') {
-		display: none !important;
-	}
-}
+					> li {
 
-.phone-hide { //手機版關閉
+						> [data-index][data-type] { //模組
 
-	@include media('phone') {
-		display: none !important;
+							> .inner {
+								@extend %reset-outer;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .footer {
+
+			ul {
+				@extend %reset;
+			}
+
+			span {
+				
+			}
+		}
 	}
 }

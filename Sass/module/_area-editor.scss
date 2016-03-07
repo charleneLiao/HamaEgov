@@ -78,7 +78,7 @@
 
 			}
 
-			h3 {
+			h4 {
 
 			}
 
@@ -137,7 +137,7 @@
 
 			}
 
-			h3 {
+			h4 {
 
 			}
 
@@ -197,7 +197,7 @@
 
 			}
 
-			h3 {
+			h4 {
 
 			}
 
@@ -215,6 +215,73 @@
 
 			> .inner {
 				
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//錯誤訊息================================================================
+
+	&.error-info {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				$color: #c40;
+
+				@extend %title;
+				color: $color;
+				font-size: $font-size-xl;
+
+				&:before {
+					@include icon-font('error');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+			@extend %article-extend;
+
+			> .inner {
+				line-height: $line-height-m;
 			}
 		}
 

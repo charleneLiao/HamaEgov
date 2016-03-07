@@ -1,21 +1,6 @@
 //列表群組
 
-[data-type="4"] {
-
-//設定================================================================
-
-	> .inner {
-		
-		> .content {
-
-			> .inner {
-
-				> ul {
-					@extend %reset;
-				}
-			}
-		}
-	}
+.group-list {
 
 //預設================================================================
 
@@ -52,10 +37,6 @@
 
 							> li {
 								margin-top: $interval-m;
-
-								> [data-index][data-type] {
-
-								}
 							}
 						}
 					}
@@ -220,23 +201,17 @@
 									position: relative;
 
 									> .inner {
+										@extend %reset;
 
 										> .header {
 											@extend %reset;
 
 											> .inner {
-
+												@extend %reset;
 											}
 
-											h1, h2, h3, h4, h5, h6 {
-
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
+											h3, h4 {
+												@extend %reset;
 											}
 
 											span {
@@ -261,6 +236,7 @@
 										}
 
 										> .content {
+											@extend %reset;
 											display: none;
 
 											> .inner {
@@ -334,7 +310,6 @@
 
 			> .inner {
 				background-color: $light;
-				margin: 0;
 
 				> .header {
 					display: none;
@@ -418,16 +393,17 @@
 									position: relative;
 
 									> .inner {
+										@extend %reset;
 
 										> .header {
 											@extend %reset;
 											display: block;
 
 											> .inner {
-
+												@extend %reset;
 											}
 
-											h1, h2, h3, h4, h5, h6 {
+											h3, h4 {
 												@extend %reset;
 											}
 
@@ -451,6 +427,7 @@
 										}
 
 										> .content {
+											@extend %reset;
 											display: none;
 											position: absolute;
 											top: 100%;
@@ -643,10 +620,6 @@
 				display: none;
 			}
 
-			&.is-open {
-				display: block;
-			}
-
 			&.is-close {
 				display: none;
 			}
@@ -696,13 +669,14 @@
 										@extend %reset;
 
 										> .header {
+											@extend %reset;
 											display: block;
 
 											> .inner {
-
+												@extend %reset;
 											}
 
-											h1, h2, h3, h4, h5, h6 {
+											h3, h4 {
 												@extend %reset;
 
 												&:before {
@@ -731,6 +705,7 @@
 										}
 
 										> .content {
+											@extend %reset;
 											display: block !important;
 											position: static;
 										}
@@ -793,11 +768,11 @@
 					}
 
 					span {
-						color: inherit;
+						
 					}
 
 					a {
-						color: inherit;
+
 					}
 				}
 
