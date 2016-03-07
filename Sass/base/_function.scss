@@ -637,20 +637,14 @@
 		[data-index][data-type="0"], [data-index][data-type="2"], [data-index][data-type="4"] {
 
 			> .inner {
-				margin-left: $interval-m;
+				margin-top: $interval-m;
 				margin-right: $interval-m;
+				margin-bottom: $interval-m;
+				margin-left: $interval-m;
 			}
 		}
 
-		[data-index][data-type] + [data-index][data-type] {
-
-			> .inner {
-				margin-top: $interval-l;
-				margin-bottom: $interval-l;
-			}
-		}
-
-		[data-index][data-type] + .is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的 margin 樣式
+		.is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的 margin 樣式
 
 			> .inner {
 				@extend %area-mobile-no-header;

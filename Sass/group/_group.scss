@@ -201,7 +201,7 @@
 			overflow: hidden;
 
 			> .inner {
-
+				@extend %area-mobile;
 			}
 
 			> .inner > .header {
@@ -224,7 +224,6 @@
 			}
 
 			> .inner > .content {
-				padding: 0 $interval-m;
 
 				> .inner {
 
