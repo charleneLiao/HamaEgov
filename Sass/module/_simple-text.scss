@@ -833,21 +833,24 @@
 			bottom: $interval-l;
 			left: $interval-l;
 
-			&.is-open {
+			&.is-show {
 				display: block;
 			}
 
 			> .inner {
+				@extend %center;
 				position: relative;
 				padding: $interval-l;
 				border: $border;
 				border-color: $gray;
 				text-align: center;
 				background-color: $light;
+				box-sizing: border-box;
 				box-shadow: $box-shadow;
 
 				@include media('phone') {
 					padding: $interval-m;
+					padding-top: $interval-l;
 				}
 			}
 
