@@ -1266,6 +1266,7 @@
 							a {
 								background-color: $color;
 								border: $border-width $border-style $deep-color;
+								text-decoration: none;
 
 								&:before {
 									@include icon-pic('#{$pic}');

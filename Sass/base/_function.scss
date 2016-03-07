@@ -811,9 +811,15 @@
 	}
 
 	%article { //文章樣式
+		line-height: $line-height-m;
 		
 		a {
 			@extend %a;
+		}
+
+		img {
+			max-width: 100%;
+			margin: $interval-m;
 		}
 	}
 
