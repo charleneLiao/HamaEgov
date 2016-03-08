@@ -490,13 +490,11 @@
 
 		&:before {
 			content: '\200B';
-			display: block;
 			float: left;
 			width: 1px;
 		}
 
 		> * {
-			display: block;
 			float: right;
 			width: 100%;
 			box-sizing: border-box;
@@ -719,27 +717,21 @@
 		}
 	}
 
-	%mark { //標籤元件
+	%mark { //標籤組件
+		display: inline-block;
 		font-size: $font-size-s;
 		color: $span-color;
-	}
-
-	%mark-1 { //第一種標籤元件
-		display: inline-block;
-		padding: $interval-xs $interval-s;
 		margin-right: $interval-s;
-		background-color: $span-color;
+	}
+
+	%mark-extend { //延伸的標籤組件
+		@extend %mark;
 		color: $white;
-		font-size: $font-size-s;
+		padding: $interval-xs $interval-s;
+		background-color: $span-color;
 	}
 
-	%mark-2 { //第二種標籤元件
-		display: inline-block;
-		float: right;
-		color: $span-color;
-	}
-
-	%paragraph { //文字組件
+	%paragraph { //文章段落組件
 		margin: $interval-s 0;
 
 		p {
@@ -755,7 +747,7 @@
 		}
 	}
 
-	%btn { //按鈕樣式
+	%btn { //按鈕組件
 		display: inline-block;
 		padding: $btn-padding;
 		border: $btn-border;
@@ -786,13 +778,13 @@
 		}
 	}
 
-	%btn-s { //小按鈕
+	%btn-s { //小按鈕組件
 		@extend %btn;
 		padding: $btn-padding-xs;
 		font-size: $font-size-s;
 	}
 
-	%btn-imp { // important 重要的按鈕
+	%btn-imp { // important 重要的按鈕組件
 		background-color: $minor-color;
 
 		&:hover {
@@ -800,7 +792,7 @@
 		}
 	}
 
-	%input { //輸入框樣式
+	%input { //輸入框組件
 		padding: $input-padding;
 		border: $input-border;
 		box-sizing: border-box;
@@ -810,7 +802,7 @@
 		outline: none;
 	}
 
-	%article { //文章樣式
+	%article { //文章區塊組件
 		line-height: $line-height-m;
 		
 		a {
@@ -823,13 +815,13 @@
 		}
 	}
 
-	%article-extend { //延伸的文章樣式
+	%article-extend { //延伸的文章區塊組件
 		@extend %article;
 		padding: $interval-m $interval-l;
 		background-color: $light;
 	}
 
-	%footer-btns { //更多按鈕
+	%footer-btns { //footer 按鈕
 		position: absolute;
 		top: $interval-xs;
 		right: 0;

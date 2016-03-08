@@ -3,6 +3,6 @@
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
 	<div class="content"><div class="inner">
-		<span><a href="#" accesskey="<%= access_key %>" title="<%= access_title %>">:::</a></span>
+		<span><a href="#" <% if access_key %>accesskey="<%= access_key %>"<% end %> <% if access_title %>title="<%= access_title %>"<% end %>>:::</a></span>
 	</div></div>
 </div></div>

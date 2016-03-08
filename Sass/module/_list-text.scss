@@ -67,7 +67,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-1;
+				@extend %mark-extend;
 			}
 		}
 
@@ -1898,7 +1898,7 @@
 				}
 
 				/*i*/.mark {
-					@extend %mark-2;
+					@extend %mark;
 				}
 			}
 
@@ -2072,7 +2072,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-2;
+				@extend %mark;
 			}
 		}
 
@@ -2627,7 +2627,7 @@
 			}
 
 			a {
-				@extend %mark-1;
+				@extend %mark-extend;
 			}
 		}
 
@@ -2807,7 +2807,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-1;
+				@extend %mark-extend;
 			}
 		}
 
