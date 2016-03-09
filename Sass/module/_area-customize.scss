@@ -79,7 +79,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('movie');
 					}
 				}
@@ -220,7 +220,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('movie');
 					}
 				}
@@ -366,7 +366,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('audiotrack');
 					}
 				}
@@ -507,7 +507,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('audiotrack');
 					}
 				}
@@ -653,7 +653,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('public');
 					}
 				}
@@ -771,7 +771,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('public');
 					}
 				}
@@ -898,7 +898,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('place');
 					}
 				}
@@ -1011,7 +1011,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('place');
 					}
 				}

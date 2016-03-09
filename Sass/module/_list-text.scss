@@ -109,7 +109,7 @@
 
 					a {
 
-						&:after {
+						&::after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -208,7 +208,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('menu');
 					}
 				}
@@ -230,7 +230,7 @@
 
 				ul {
 
-					&:after {
+					&::after {
 						@extend %clear;
 					}
 				}
@@ -381,7 +381,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('menu');
 					}
 				}
@@ -545,7 +545,7 @@
 				padding: $interval-m;
 				color: $white;
 
-				&:before {
+				&::before {
 					@include icon-font('menu');
 					margin-right: $interval-xs;
 				}
@@ -596,7 +596,7 @@
 				padding: $interval-m;
 				transition: $transition;
 
-				&:before {
+				&::before {
 					@include icon-font('keyboard_arrow_right');
 					margin-right: $interval-xs;
 				}
@@ -760,7 +760,7 @@
 				a {
 					@extend %btn;
 
-					&:before {
+					&::before {
 						@include icon-font('settings');
 						color: $white;
 					}
@@ -794,7 +794,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('person');
 							}
 						}
@@ -804,7 +804,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('person_outline');
 							}
 						}
@@ -814,7 +814,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -824,7 +824,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('print');
 							}
 						}
@@ -834,7 +834,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -844,7 +844,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -854,7 +854,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -871,7 +871,7 @@
 					text-align: left;
 					white-space: nowrap;
 
-					&:before {
+					&::before {
 						margin-right: $interval-xs;
 					}
 				}
@@ -1042,7 +1042,7 @@
 
 				ul {
 
-					&:after {
+					&::after {
 						@extend %clear;
 					}
 				}
@@ -1251,7 +1251,7 @@
 
 					a {
 
-						&:after {
+						&::after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -1363,7 +1363,7 @@
 					display: inline;
 					color: $white;
 
-					&:after {
+					&::after {
 						content: ' : ';
 					}
 				}
@@ -1394,7 +1394,7 @@
 					
 					+ li {
 
-						&:before {
+						&::before {
 							content: ' , ';
 						}
 					}
@@ -1552,7 +1552,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('slideshow');
 				}
 			}
@@ -1664,7 +1664,7 @@
 
 					a {
 
-						&:after {
+						&::after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -1801,7 +1801,7 @@
 					
 					+ li {
 
-						&:before {
+						&::before {
 							content: ' | ';
 						}
 					}
@@ -1856,7 +1856,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('public');
 					}
 				}
@@ -1972,7 +1972,7 @@
 					
 					+ li {
 
-						&:before {
+						&::before {
 							content: ' | ';
 						}
 					}
@@ -2030,7 +2030,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('star');
 				}
 			}
@@ -2118,7 +2118,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('explore');
 				}
 			}
@@ -2142,7 +2142,7 @@
 			ul {
 				border: $border;
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 
@@ -2163,7 +2163,7 @@
 
 				+ li {
 
-					&:before {
+					&::before {
 						content: $content;
 						display: block;
 						position: absolute;
@@ -2254,7 +2254,7 @@
 
 			ul {
 				
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}
@@ -2273,7 +2273,7 @@
 
 					span {
 
-						&:before, &:after {
+						&::before, &::after {
 							background-color: $minor-color;
 						}
 					}
@@ -2287,7 +2287,7 @@
 				position: relative;
 				z-index: 1;
 
-				&:before, &:after {
+				&::before, &::after {
 					content: $content;
 					display: block;
 					position: absolute;
@@ -2299,7 +2299,7 @@
 					transition: $transition;
 				}
 
-				&:before {
+				&::before {
 					top: 0;
 					transform: skewX($skewX);
 
@@ -2308,7 +2308,7 @@
 					}
 				}
 
-				&:after {
+				&::after {
 					bottom: 0;
 					transform: skewX(-1 * $skewX);
 
@@ -2319,7 +2319,7 @@
 
 				&:hover {
 
-					&:before, &:after {
+					&::before, &::after {
 						background-color: $btn-hover-bg-color;
 					}
 				}
@@ -2391,7 +2391,7 @@
 					text-align: justify;
 					line-height: 0;
 
-					&:after {
+					&::after {
 						content: $content;
 						display: inline-block;
 						width: 100%;
@@ -2456,7 +2456,7 @@
 					padding: $interval-m;
 				}
 
-				&:before {
+				&::before {
 					margin-right: $interval-xs;
 				}
 			}
@@ -2533,14 +2533,14 @@
 				display: inline;
 				font-size: $font-size-xs;
 
-				&:before {
+				&::before {
 					@include icon-font('home');
 					vertical-align: middle;
 				}
 
 				+ li {
 
-					&:before {
+					&::before {
 						@include icon-font('navigate_next');
 						vertical-align: middle;
 					}
@@ -2766,7 +2766,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('list');
 				}
 			}
@@ -2885,7 +2885,7 @@
 				
 				+ li {
 
-					&:before {
+					&::before {
 						content: ' | ';
 						color: $light-gray;
 					}
@@ -2942,7 +2942,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('cloud_download');
 				}
 			}
@@ -2981,7 +2981,7 @@
 						a {
 							border-left-color: $color;
 
-							&:before {
+							&::before {
 								@include icon-pic($pic);
 							}
 						}
@@ -2999,7 +2999,7 @@
 				border-left-width: $interval-xs;
 				border-left-style: solid;
 
-				&:before {
+				&::before {
 					margin-right: $interval-xs;
 				}
 
@@ -3099,7 +3099,7 @@
 
 				+ li {
 
-					&:before {
+					&::before {
 						content: ' | ';
 						color: $gray;
 
@@ -3117,7 +3117,7 @@
 
 						a {
 
-							&:before {
+							&::before {
 								@include icon-pic($pic);
 							}
 
@@ -3147,7 +3147,7 @@
 					padding: $interval-m $interval-l;
 				}
 
-				&:before {
+				&::before {
 					margin-right: $interval-xs;
 				}
 

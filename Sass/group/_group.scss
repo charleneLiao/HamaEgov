@@ -113,7 +113,7 @@
 
 				> .inner {
 
-					&:after {
+					&::after {
 						@extend %clear;
 					}
 				}
@@ -151,7 +151,7 @@
 
 				> .inner {
 
-					&:after {
+					&::after {
 						@extend %clear;
 					}
 				}

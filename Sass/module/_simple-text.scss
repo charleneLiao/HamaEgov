@@ -21,7 +21,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('comment');
 					}
 				}
@@ -108,7 +108,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('list');
 					}
 				}
@@ -445,7 +445,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('cloud_queue');
 				}
 			}
@@ -522,7 +522,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('today');
 				}
 			}
@@ -544,7 +544,7 @@
 				text-align: center;
 				padding: $interval-m 0;
 
-				&:after {
+				&::after {
 					content: '天';
 					font-size: $font-size-s;
 				}
@@ -589,7 +589,7 @@
 			h4 {
 				display: inline;
 
-				&:after {
+				&::after {
 					content: ' : ';
 				}
 			}
@@ -698,7 +698,7 @@
 				color: $white;
 				white-space: nowrap;
 
-				&:after {
+				&::after {
 					content: '%';
 				}
 			}
@@ -975,13 +975,13 @@
 						width: auto;
 						background-color: transparent;
 						
-						&:before {
+						&::before {
 							@include icon-font('close');
 							line-height: $rwd-btn-size;
 							color: $white;
 						}
 
-						&:after {
+						&::after {
 							content: $content;
 						}
 					}
@@ -1028,7 +1028,7 @@
 					font-size: $font-size-xl;
 					background-color: deeper($major-color);
 					
-					&:before {
+					&::before {
 						@include icon-font('menu');
 						display: block;
 						width: $rwd-btn-size;
@@ -1037,7 +1037,7 @@
 						color: $white;
 					}
 
-					&:after {
+					&::after {
 						position: fixed;
 						top: 0;
 						right: 0;
@@ -1090,11 +1090,11 @@
 
 					a {
 
-						&:before {
+						&::before {
 							@include icon-font('keyboard_arrow_up');
 						}
 
-						&:after {
+						&::after {
 							content: '展開選單';
 						}
 					}
@@ -1144,12 +1144,12 @@
 				a {
 					@extend %btn;
 
-					&:before {
+					&::before {
 						@include icon-font('keyboard_arrow_down');
 						margin-right: $interval-xs;
 					}
 
-					&:after {
+					&::after {
 						content: '收合選單';
 					}
 				}

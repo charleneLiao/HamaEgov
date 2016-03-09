@@ -424,11 +424,11 @@
 		font-weight: $font-weight-n;
 		transition: 0;
 
-		&:before {
+		&::before {
 			content: none;
 		}
 
-		&:after {
+		&::after {
 			content: none;
 		}
 	}
@@ -488,7 +488,7 @@
 	%multi-ellipsis {
 		overflow: hidden;
 
-		&:before {
+		&::before {
 			content: '\200B';
 			float: left;
 			width: 1px;
@@ -501,7 +501,7 @@
 			margin-left: -1px;
 		}
 
-		&:after {
+		&::after {
 			content: '...';
 			position: relative;
 			float: right;
@@ -518,7 +518,7 @@
 		@extend %multi-ellipsis;
 		height: $line-height * $line;
 
-		&:before {
+		&::before {
 			height: $line-height * $line;
 		}
 
@@ -526,7 +526,7 @@
 			line-height: $line-height;
 		}
 
-		&:after {
+		&::after {
 			top: -1 * $line-height;
 			line-height: $line-height;
 			background-image: linear-gradient(to right, transparent 0, $background-color $position);
@@ -537,7 +537,7 @@
 		height: auto;
 		overflow: visible;
 
-		&:before, &:after {
+		&::before, &::after {
 			content: none;
 		}
 	}
@@ -670,11 +670,11 @@
 		border-bottom: $border;
 		margin-bottom: $interval-m;
 
-		&:before {
+		&::before {
 			margin-right: $interval-xs;
 		}
 
-		&:after {
+		&::after {
 			margin-left: $interval-xs;
 		}
 
@@ -877,7 +877,7 @@
 		position: relative;
 		display: block;
 
-		&:before {
+		&::before {
 			content: $content;
 			display: block;
 			position: absolute;
@@ -892,7 +892,7 @@
 
 		&:hover {
 
-			&:before {
+			&::before {
 				opacity: 0;
 			}
 		}
@@ -1022,7 +1022,7 @@
 		@extend %hide-text;
 		display: inline-block;
 
-		&:before{
+		&::before{
 			@include icon-pic( $img-name, $size, $height );
 			display: block !important;
 		}

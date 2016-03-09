@@ -106,7 +106,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('slideshow');
 				}
 			}
@@ -254,7 +254,7 @@
 					width: 100%;
 				}
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}
@@ -394,7 +394,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('public');
 				}
 			}
@@ -416,7 +416,7 @@
 
 			ul {
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}
@@ -665,7 +665,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('cloud_download');
 				}
 			}
@@ -687,7 +687,7 @@
 
 			ul {
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}
@@ -806,7 +806,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('photo');
 				}
 			}
@@ -828,7 +828,7 @@
 
 			ul {
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}
@@ -951,7 +951,7 @@
 
 			ul {
 
-				&:after {
+				&::after {
 					@extend %clear;
 				}
 			}

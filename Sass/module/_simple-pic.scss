@@ -21,7 +21,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('photo');
 					}
 				}
@@ -95,7 +95,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('photo');
 					}
 				}

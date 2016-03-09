@@ -366,7 +366,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('public');
 				}
 			}
@@ -442,7 +442,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('radio_button_checked');
 					}
 				}
@@ -618,7 +618,7 @@
 				h4 {
 					@extend %title;
 
-					&:before {
+					&::before {
 						@include icon-font('radio_button_checked');
 					}
 				}
@@ -801,7 +801,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('email');
 				}
 			}
@@ -903,7 +903,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('font_download');
 				}
 			}
@@ -943,7 +943,7 @@
 						label {
 							color: $title-color;
 
-							&:before {
+							&::before {
 								content: '* ';
 							}
 						}
@@ -965,7 +965,7 @@
 						display: block;
 						margin-bottom: $interval-xs;
 
-						&:after {
+						&::after {
 							content: '： ';
 						}
 					}
@@ -1105,7 +1105,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('person');
 				}
 			}
@@ -1144,7 +1144,7 @@
 						label {
 							color: $title-color;
 
-							&:before {
+							&::before {
 								content: '* ';
 							}
 						}
@@ -1158,7 +1158,7 @@
 						display: block;
 						margin-bottom: $interval-xs;
 
-						&:after {
+						&::after {
 							content: '： ';
 						}
 					}
@@ -1270,7 +1270,7 @@
 								border: $border-width $border-style $deep-color;
 								text-decoration: none;
 
-								&:before {
+								&::before {
 									@include icon-pic('#{$pic}');
 									background-color: $deep-color;
 								}
@@ -1292,7 +1292,7 @@
 					color: $white;
 					transition: $transition;
 
-					&:before {
+					&::before {
 						margin-right: $interval-l;
 					}
 				}
@@ -1373,11 +1373,11 @@
 					display: inline-block;
 					vertical-align: middle;
 
-					&:before {
+					&::before {
 						content: attr(data-before);
 					}
 
-					&:after {
+					&::after {
 						content: attr(data-after);
 					}
 
@@ -1480,7 +1480,7 @@
 			h4 {
 				@extend %title;
 
-				&:before {
+				&::before {
 					@include icon-font('view_comfortable');
 				}
 			}
