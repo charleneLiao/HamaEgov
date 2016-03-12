@@ -601,13 +601,7 @@
 
 			> .inner {
 				margin-top: $interval-m;
-			}
-		}
-
-		[data-index][data-type] + [data-index][data-type] {
-
-			> .inner {
-				margin-top: $interval-m * 2;
+				margin-bottom: $interval-l;
 			}
 		}
 

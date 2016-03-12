@@ -4,23 +4,23 @@
 	<div class="content"><div class="inner">
 
 	<!--title 文章標題 -->
-		<%= render :partial => "/Erb/module/simple-text_title", :locals => set({ :index => 1, :header_text => nil }) %>
+		<%= render partial: "/Erb/module/simple-text_title", locals: set({ index: 1, header_text: nil }) %>
 	<!-- title 結束 -->
 
 	<!-- detail 詳細資訊 -->
-		<%= render :partial => "/Erb/module/list-text_detail", :locals => set({ :index => 2, :header_text => "詳細資訊" }) %>
+		<%= render partial: "/Erb/module/list-text_detail", locals: set({ index: 2, header_text: "詳細資訊" }) %>
 	<!-- detail 結束 -->
 
 	<!-- user-edit 使用者編輯 -->
-		<%= render :partial => "/Erb/module/area-editor_user-edit", :locals => set({ :index => 3, :header_text => nil }) %>
+		<%= render partial: "/Erb/module/area-editor_user-edit", locals: set({ index: 3, header_text: nil }) %>
 	<!-- user-edit 結束 -->
 
 	<!-- label 標籤 -->
-		<%= render :partial => "/Erb/module/list-text_label", :locals => set({ :index => 4, :header_text => nil }) %>
+		<%= render partial: "/Erb/module/list-text_label", locals: set({ index: 4, header_text: nil }) %>
 	<!-- label 結束 -->
 
 	<!-- icon 各種標章 -->
-		<%= render :partial => "/Erb/module/list-pic_icon", :locals => set({ :index => 5, :header_text => nil }) %>
+		<%= render partial: "/Erb/module/list-pic_icon", locals: set({ index: 5, header_text: nil }) %>
 	<!-- icon 結束 -->
 
 	</div></div>

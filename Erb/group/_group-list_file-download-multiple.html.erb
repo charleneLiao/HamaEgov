@@ -22,7 +22,7 @@
 					<% text = zh_lorem_words (min_text..max_text).to_a.sample %>
 
 					<!-- <%= inner %> -->
-						<%= render :partial => inner, :locals => set({ :index => 2, :header_text => text, :show_mark => false, :inner_len => 2 }) %>
+						<%= render partial: inner, locals: set({ index: 2, header_text: text, show_mark: false, inner_len: 2 }) %>
 					<!-- <%= inner %> -->
 					
 					</li>

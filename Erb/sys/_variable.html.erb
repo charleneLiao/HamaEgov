@@ -23,17 +23,17 @@
 	def set(opt = {})
 
 		@set = {
-			:index => 1,
-			:class_set => nil,
-			:child => 0,
-			:func_set => nil,
-			:header_text => "標題",
-			:show_footer => true,
-			:show_mark => true,
-			:inner => "/Erb/module/simple-pic_default",
-			:access_title => nil,
-			:access_key => nil,
-			:inner_len => 2
+			index: 1,
+			class_set: nil,
+			child: 0,
+			func_set: nil,
+			header_text: "標題",
+			show_footer: true,
+			show_mark: true,
+			inner: "/Erb/module/simple-pic_default",
+			access_title: nil,
+			access_key: nil,
+			inner_len: 2
 		}
 
 		opt.each do |key, value|
@@ -41,6 +41,6 @@
 			@set[key.to_sym] = value
 		end
 
-		@set
+		return @set
 	end
 %>

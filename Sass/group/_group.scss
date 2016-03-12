@@ -8,31 +8,30 @@
 
 		> .inner {
 
-		}
+			.header {
 
-		> .inner > .header {
+				> .inner {
 
-			> .inner {
+				}
 
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			h3 {
+			> .content {
 
-			}
+				> .inner {
 
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
+				}
 			}
 		}
 	}
@@ -46,38 +45,37 @@
 
 			> .inner {
 
-			}
+				> .header {
+					display: none;
 
-			> .inner > .header {
-				display: none;
+					> .inner {
 
-				> .inner {
+					}
 
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-					position: absolute;
-					top: 0;
-					right: 0;
-					left: 0;
-					height: 100vh;
-					overflow-y: auto;
-					background-color: $light;
+					> .inner {
+						position: absolute;
+						top: 0;
+						right: 0;
+						left: 0;
+						height: 100vh;
+						overflow-y: auto;
+						background-color: $light;
+					}
 				}
 			}
 		}
@@ -87,34 +85,34 @@
 
 			> .inner {
 				@extend %center;
-			}
 
-			> .inner > .header {
-				display: none;
+				> .header {
+					display: none;
 
-				> .inner {
+					> .inner {
 
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
-					&::after {
-						@extend %clear;
+						&::after {
+							@extend %clear;
+						}
 					}
 				}
 			}
@@ -125,34 +123,34 @@
 			> .inner {
 				@extend %center;
 				padding: $interval-l 0;
-			}
 
-			> .inner > .header {
-				display: none;
+				> .header {
+					display: none;
 
-				> .inner {
+					> .inner {
 
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
-					&::after {
-						@extend %clear;
+						&::after {
+							@extend %clear;
+						}
 					}
 				}
 			}
@@ -168,31 +166,30 @@
 
 			> .inner {
 
-			}
+				> .header {
 
-			> .inner > .header {
+					> .inner {
 
-				> .inner {
+					}
 
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
+					}
 				}
 			}
 		}
@@ -202,31 +199,31 @@
 
 			> .inner {
 				@extend %area-mobile;
-			}
+				
+				> .header {
 
-			> .inner > .header {
+					> .inner {
 
-				> .inner {
+					}
 
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .content {
 
-				}
+					> .inner {
 
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .inner > .content {
-
-				> .inner {
-
+					}
 				}
 			}
 		}
@@ -238,32 +235,31 @@
 
 		> .inner {
 
-		}
+			> .header {
 
-		> .inner > .header {
+				> .inner {
 
-			> .inner {
+				}
 
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			h3 {
+			> .content {
+				margin-top: $interval-m;
 
-			}
+				> .inner {
 
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-			margin-top: $interval-m;
-
-			> .inner {
-
+				}
 			}
 		}
 	}
@@ -277,31 +273,30 @@
 
 		> .inner {
 
-		}
+			> .header {
 
-		> .inner > .header {
+				> .inner {
 
-			> .inner {
+				}
 
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			h3 {
+			> .content {
 
-			}
+				> .inner {
 
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
+				}
 			}
 		}
 	}
@@ -313,31 +308,30 @@
 
 		> .inner {
 
-		}
+			> .header {
 
-		> .inner > .header {
+				> .inner {
 
-			> .inner {
+				}
 
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			h3 {
+			> .content {
 
-			}
+				> .inner {
 
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		> .inner > .content {
-
-			> .inner {
-
+				}
 			}
 		}
 	}

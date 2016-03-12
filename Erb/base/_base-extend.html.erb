@@ -5,23 +5,23 @@
 	<div class="content"><div class="inner">
 
 	<!-- user-tool 使用者工具 -->
-		<%= render :partial => "/Erb/module/list-text_user-tool", :locals => set({ :index => 1, :header_text => "使用者工具" }) %>
+		<%= render partial: "/Erb/module/list-text_user-tool", locals: set({ index: 1, header_text: "使用者工具" }) %>
 	<!-- user-tool 結束 -->
 
 	<!-- share 分享 -->
-		<%= render :partial => "/Erb/module/list-text_share", :locals => set({ :index => 2, :header_text => "分享" }) %>
+		<%= render partial: "/Erb/module/list-text_share", locals: set({ index: 2, header_text: "分享" }) %>
 	<!-- share 結束 -->
 
 	<!-- target-btn 目標按鈕 -->
-		<%= render :partial => "/Erb/module/simple-text_target-btn", :locals => set({ :index => 3, :func_set => "{'anchor':{'bindNode':'body','speed':300}}", :header_text => "回到最頂" }) %>
+		<%= render partial: "/Erb/module/simple-text_target-btn", locals: set({ index: 3, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "回到最頂" }) %>
 	<!-- target-btn 結束 -->
 
 	<!-- query 詢問 -->
-		<%=render :partial => "/Erb/module/simple-text_query", :locals => set({ :index => 4, :func_set => "{'query':{'speed':300}}", :header_text => "詢問" }) %>
+		<%=render partial: "/Erb/module/simple-text_query", locals: set({ index: 4, func_set: "{'query':{'speed':300}}", header_text: "詢問" }) %>
 	<!-- query 結束 -->
 
 	<!-- pop-up 燈箱 -->
-		<%= render :partial => "/Erb/group/group-list_pop-up", :locals => set({ :index => 5, :func_set => "{'popUpSlider':{'speed':300}}", :header_text => "燈箱" }) %>
+		<%= render partial: "/Erb/group/group-list_pop-up", locals: set({ index: 5, func_set: "{'popUpSlider':{'speed':300}}", header_text: "燈箱" }) %>
 	<!-- pop-up 結束 -->
 
 	</div></div>

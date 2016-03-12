@@ -472,6 +472,10 @@
 		.base-content & {
 			@extend %area-page-no-header;
 
+			@include media('mobile') {
+				display: none;
+			}
+
 			> .inner {
 
 			}

@@ -201,6 +201,138 @@
 		}
 	}
 
+//連結================================================================
+
+	&.link {
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&::before {
+					@include icon-font('public');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+
+			}
+
+			/*a*/.divition {
+
+				&:hover {
+
+					.essay {
+						background-color: $light-gray;
+					}
+				}
+			}
+
+			.image {
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					height: 80px;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				padding: $interval-m;
+				background-color: $light;
+				transition: $transition;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.paragraph {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.footer {
+			@extend %footer-btns;
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //內頁文章敘述(圖片-標題-標籤-內文)================================================================
 
 	&.page-essay {

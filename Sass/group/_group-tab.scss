@@ -1,0 +1,64 @@
+//頁籤群組
+
+.group-tab {
+
+//預設================================================================
+
+	&.default {
+
+		> .inner {
+
+			> .header {
+				display: none;
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&::before {
+						@include icon-font('library_add');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+						@extend %reset;
+
+						> li {
+
+							+ li {
+								margin-top: $interval-m;
+							}
+
+							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
+
+								> .inner {
+
+									> .footer {
+										position: static;
+										margin-top: $interval-s;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

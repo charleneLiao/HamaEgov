@@ -1579,7 +1579,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="content"><div class="inner">
 
         <!--嵌套 /Erb/module/sample -->
-        <%= render :partial => "/Erb/module/sample" %>
+        <%= render partial: "/Erb/module/sample" %>
 
       </div></div>
     </div></div>
@@ -1592,12 +1592,12 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
       <div class="content"><div class="inner">
 
         <!--嵌套 /Erb/module/sample -->
-        <%= render :partial => "/Erb/module/sample", :locals => set({ :index => 4, :header_text => '模塊標頭' }) %>
+        <%= render partial: "/Erb/module/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
 
       </div></div>
     </div></div>
 
-在鑲嵌的語法後，我們使用一個 :locals => set({  }) 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
+在鑲嵌的語法後，我們使用一個 locals: set({  }) 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
 我們來看看 /Erb/module/_sample.html.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
