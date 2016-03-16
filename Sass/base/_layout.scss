@@ -167,6 +167,14 @@
 		@extend %input;
 	}
 
+	[href] {
+		cursor: pointer;
+	}
+
+	[disabled] {
+		cursor: not-allowed;	
+	}
+
 	> .inner {
 
 		> .header {

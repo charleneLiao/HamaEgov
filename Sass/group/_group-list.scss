@@ -1823,6 +1823,119 @@
 		}
 	}
 
+//分類================================================================
+
+	&.classify {
+
+		> .inner {
+
+			> .header {
+
+				> .inner {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&::before {
+						@include icon-font('view_module');
+					}
+				}
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			> .content {
+
+				> .inner {
+
+					> ul {
+
+						> li {
+							display: inline-block;
+							margin-bottom: $interval-xs;
+
+							> [data-index][data-type] {
+								margin: 0 !important;
+								padding: $interval-s;
+								border: $border;
+								
+								> .inner {
+
+									> .footer {
+										display: none;
+									}
+
+									> .header {
+										display: inline-block !important;
+
+										> .inner {
+
+										}
+
+										h3, h4 {
+
+										}
+
+										span {
+											
+											&:after {
+												content: ': ';
+											}
+										}
+
+										a {
+
+										}
+									}
+
+									> .content {
+										display: inline-block;
+									}
+
+									> .footer {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@extend %footer-btns;
+
+				> .inner {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
 //投票結果================================================================
 
 	&.vote-result {

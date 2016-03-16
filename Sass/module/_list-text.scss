@@ -1535,6 +1535,101 @@
 		}
 	}
 
+//分類================================================================
+
+	&.classify {
+		@extend %area-page-no-header;
+
+		> .inner {
+
+		}
+
+		.header {
+
+			> .inner {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.content {
+
+			> .inner {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+				display: inline-block;
+
+				&.is-active {
+
+					span {
+
+					}
+
+					a {
+						background-color: $minor-color;
+						color: $white;
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $btn-padding;
+				background-color: $light;
+				color: $body-font-color;
+				transition: $transition;
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+		}
+
+		.footer {
+
+			> .inner {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //輪播================================================================
 
 	&.slider {

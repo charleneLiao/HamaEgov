@@ -1,0 +1,24 @@
+<%
+	min_text = 2 #最少的字元
+	max_text = 6 #最多的字元
+%>
+
+<div class="list-text classify <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
+	<div class="header"><div class="inner">
+		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
+	</div></div>
+	<div class="content"><div class="inner">
+		<ul data-index="1" data-child="<%= inner_len %>">
+
+			<% inner_len.times do |i| %>
+			
+				<% if( i == 0 ) %>
+					<li data-index="<%= i + 1 %>" class="is-active">
+				<% else %>
+					<li data-index="<%= i + 1 %>">
+				<% end %>
+				<span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
+			<% end %>
+		</ul>
+	</div></div>
+</div></div>
