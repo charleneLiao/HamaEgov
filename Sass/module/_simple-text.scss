@@ -647,7 +647,7 @@
 
 	&.vote-result {
 
-		.is-most & {
+		.is-special & {
 
 			.content {
 
@@ -694,7 +694,7 @@
 				box-sizing: border-box;
 				padding: $interval-m;
 				text-align: right;
-				background-color: $major-color;
+				background-color: $deep-gray;
 				color: $white;
 				white-space: nowrap;
 

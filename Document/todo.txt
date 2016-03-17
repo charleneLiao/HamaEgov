@@ -1,3 +1,3 @@
-1. 加入 RWD 表格
-2. 表單加入 :after 'A' 斷行
-3. 加入圖片未 load 的 before & after
+1. 表單加入 :after 'A' 斷行
+2. 圖片讀取備援機制
+3. default 樣式設定 
