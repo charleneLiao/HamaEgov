@@ -33,15 +33,15 @@ Func.prototype.log = function(){ //測試
 	console.log('檔名:', this.file);
 }
 
-var $nodes = document.querySelectorAll('[data-function]'),
+var $nodes = document.querySelectorAll('[data-func]'),
 	$nodes_length = $nodes.length;
 
 var $func_array = [];
 
-for( var i = 0; i < $nodes_length; i++ ) { //雖然想用 Array.prototype.map.call(dom.querySelectorAll('[data-function]'), function(node){})，但 IE8 不支持
+for( var i = 0; i < $nodes_length; i++ ) { //雖然想用 Array.prototype.map.call(dom.querySelectorAll('[data-func]'), function(node){})，但 IE8 不支持
 
 	var $env = $nodes[i], //存節點
-		_func = ($env.getAttribute('data-function')).replace(/\'/g,'"'), //存 data-function 的字串，並反轉雙引號(") 及單引號(')
+		_func = ($env.getAttribute('data-func')).replace(/\'/g,'"'), //存 data-func 的字串，並反轉雙引號(") 及單引號(')
 		$func = JSON.parse(_func); //轉成物件
 
 	for( var _file in $func ) { //取 function name 與設定參數

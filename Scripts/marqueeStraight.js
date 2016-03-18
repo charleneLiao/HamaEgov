@@ -11,15 +11,15 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var content_inner = getNode.getContentInner(env),
-			content_ul = getNode.getChild(content_inner, 'ul'),
+		var content_in = getNode.getCtIn(env),
+			content_ul = getNode.getChild(content_in, 'ul'),
 			content_li = getNode.getChild(content_ul, 'li'),
 			content_li_length = content_li.length || 1,
 			prev_li = getNode.getCtrlBtn(env, '.prev'),
 			next_li = getNode.getCtrlBtn(env, '.next');
 
 		var $env = $(env),
-			$content_inner = $(content_inner),
+			$content_in = $(content_in),
 			$content_ul = $(content_ul),
 			$content_li = $(content_li),
 			$content_li_height = $content_li.height(),
@@ -38,7 +38,7 @@ define(['jquery', 'getNode'], function($, getNode){
 		var up = 1,
 			down = 0;
 
-		$content_inner.css({
+		$content_in.css({
 			'height': $content_li_height, //把 ul 的高度設成跟第一則一樣
 			'overflow': 'hidden'
 		});

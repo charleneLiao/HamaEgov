@@ -11,7 +11,7 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var content_li = getNode.getContentItem(env),
+		var content_li = getNode.getCtItem(env),
 			_content_li_length = content_li.length,
 			prev_li = getNode.getCtrlBtn(env, '.prev'),
 			next_li = getNode.getCtrlBtn(env, '.next');

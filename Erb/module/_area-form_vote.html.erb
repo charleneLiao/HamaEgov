@@ -5,11 +5,11 @@
 	radio_length = (min_radio..max_radio ).to_a.sample
 %>
 
-<div class="area-form vote <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
-	<div class="header"><div class="inner">
+<div class="area-form vote <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<div class="hd"><div class="in">
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 		<div class="essay">
 			<div class="caption"><span><%= zh_lorem_sentence %></span></div>
 			<div class="label">
@@ -17,7 +17,7 @@
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
-			<div class="paragraph">
+			<div class="p">
 				<p><span><%= zh_lorem_paragraph %></span></p>
 			</div>
 		</div>

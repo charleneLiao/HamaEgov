@@ -6,11 +6,12 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
-			.header {
+			.hd {
+				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -27,9 +28,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -43,12 +44,12 @@
 		.base-mobile & {
 			@extend %area-mobile;
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -65,9 +66,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 						position: absolute;
 						top: 0;
 						right: 0;
@@ -83,13 +84,13 @@
 		.base-header & {
 			background-color: $major-color;
 
-			> .inner {
+			> .in {
 				@extend %center;
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -106,9 +107,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						&::after {
 							@extend %clear;
@@ -120,14 +121,14 @@
 
 		.base-footer & {
 
-			> .inner {
+			> .in {
 				@extend %center;
 				padding: $interval-l 0;
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -144,9 +145,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						&::after {
 							@extend %clear;
@@ -164,11 +165,11 @@
 		.base-header & {
 			position: relative;
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -185,9 +186,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 					}
 				}
@@ -197,12 +198,12 @@
 		.base-footer & {
 			overflow: hidden;
 
-			> .inner {
+			> .in {
 				@extend %area-mobile;
 				
-				> .header {
+				> .hd {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -219,9 +220,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 					}
 				}
@@ -233,11 +234,11 @@
 
 	&.page-header {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -254,10 +255,10 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 				margin-top: $interval-m;
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -271,11 +272,11 @@
 		position: relative;
 		margin-top: $interval-l;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -292,9 +293,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -306,11 +307,11 @@
 	&.page-footer {
 		@extend %area-page;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -327,9 +328,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}

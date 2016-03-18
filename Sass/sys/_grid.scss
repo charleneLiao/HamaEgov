@@ -10,11 +10,11 @@
 
 	[data-type="1"][data-child="#{$i}"] {
 
-		> .inner{
+		> .in{
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> [data-index][data-type] {
 						width: 100% / $i;
@@ -45,11 +45,11 @@
 
 	[data-type="1"][data-setLen="#{$i}"] {
 
-		> .inner{
+		> .in{
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> [data-index][data-type] {
 						width: 100% / $i;
@@ -86,11 +86,11 @@
 
 [data-index][data-type] { //模組與群組
 
-	> .inner {
+	> .in {
 		position: relative;
 		min-height: 1px;
 
-		> .header {
+		> .hd {
 
 			h3, h4 {
 
@@ -109,13 +109,13 @@
 
 [data-type="0"] { //模組
 
-	> .inner {
+	> .in {
 
 	}
 
-	.header {
+	.hd {
 
-		> .inner {
+		> .in {
 
 		}
 
@@ -132,14 +132,14 @@
 		}
 	}
 
-	.content {
+	.ct {
 
-		> .inner {
+		> .in {
 
 		}
 	}
 
-	.footer {
+	.ft {
 
 		ul {
 			@extend %reset;
@@ -153,9 +153,9 @@
 
 [data-type="1"] { //分割
 
-	> .inner {
+	> .in {
 		
-		> .header {
+		> .hd {
 
 			h3 {
 				@extend %reset;
@@ -170,9 +170,9 @@
 			}
 		}
 
-		> .content {
+		> .ct {
 
-			> .inner {
+			> .in {
 
 				> [data-index][data-type] {
 					float: left
@@ -188,9 +188,9 @@
 
 [data-type="2"] { //頁籤
 
-	> .inner {
+	> .in {
 		
-		> .header {
+		> .hd {
 			display: none;
 
 			h3 {
@@ -206,15 +206,15 @@
 			}
 		}
 
-		> .content {
+		> .ct {
 
-			> .inner {
+			> .in {
 
 				> ul {
 					@extend %reset;
 
 					> li {
-						@extend %reset-inner-module;
+						@extend %reset.in-module;
 
 						+ li {
 							@include js(false) {
@@ -228,10 +228,10 @@
 
 						> [data-index][data-type] {
 
-							> .inner {
+							> .in {
 								@extend %reset-outer;
 
-								> .header {
+								> .hd {
 									display: none;
 
 									@include js(false) {
@@ -249,9 +249,9 @@
 
 [data-type="3"] { //單欄
 
-	> .inner {
+	> .in {
 		
-		> .header {
+		> .hd {
 
 			h3 {
 				@extend %reset;
@@ -266,9 +266,9 @@
 			}
 		}
 
-		> .content {
+		> .ct {
 
-			> .inner {
+			> .in {
 
 				> [data-index][data-type] {
 
@@ -280,9 +280,9 @@
 
 [data-type="4"] { //清單
 
-	> .inner {
+	> .in {
 		
-		> .header {
+		> .hd {
 
 			h3 {
 				@extend %reset;
@@ -297,9 +297,9 @@
 			}
 		}
 
-		> .content {
+		> .ct {
 
-			> .inner {
+			> .in {
 
 				> ul {
 					@extend %reset;
@@ -308,7 +308,7 @@
 
 						> [data-index][data-type] { //模組
 
-							> .inner {
+							> .in {
 								@extend %reset-outer;
 							}
 						}
@@ -317,7 +317,7 @@
 			}
 		}
 
-		> .footer {
+		> .ft {
 
 			ul {
 				@extend %reset;

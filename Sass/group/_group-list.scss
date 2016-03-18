@@ -8,11 +8,11 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -29,9 +29,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						> ul {
 
@@ -42,10 +42,10 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 					@extend %footer-btns;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -70,11 +70,11 @@
 
 		.base-section & {
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -91,14 +91,14 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						> ul {
 
 							> li {
-								@extend %reset-inner-module;
+								@extend %reset.in-module;
 
 								+ li {
 									margin-top: $interval-s;
@@ -108,10 +108,10 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 					@extend %footer-btns;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -141,12 +141,12 @@
 
 		.base-mobile & {
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -163,9 +163,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						> ul {
 
@@ -175,9 +175,9 @@
 
 									> [data-index][data-type] {
 
-										> .inner {
+										> .in {
 
-											.header {
+											.hd {
 
 												a {
 													background-color: $minor-color !important;
@@ -189,7 +189,7 @@
 												}
 											}
 
-											.content {
+											.ct {
 												display: block;
 											}
 										}
@@ -200,13 +200,13 @@
 									@extend %reset;
 									position: relative;
 
-									> .inner {
+									> .in {
 										@extend %reset;
 
-										> .header {
+										> .hd {
 											@extend %reset;
 
-											> .inner {
+											> .in {
 												@extend %reset;
 											}
 
@@ -235,17 +235,17 @@
 											}
 										}
 
-										> .content {
+										> .ct {
 											@extend %reset;
 											display: none;
 
-											> .inner {
+											> .in {
 												padding: $interval-xs;
 												background-color: $light;
 											}
 										}
 
-										> .footer {
+										> .ft {
 											display: none;
 										}
 									}
@@ -255,9 +255,9 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -282,7 +282,8 @@
 
 		.base-header & {
 			$default-len: 6;
-			$max-len: 10;
+			$max-len: 8;
+			$max-sec-floor: 4;
 
 			@include default-min-len(4, $default-len, $max-len);
 			position: relative;
@@ -298,7 +299,7 @@
 
 			&.is-fixed {
 
-				> .inner {
+				> .in {
 					position: fixed;
 					top: 0;
 					left: 0;
@@ -308,13 +309,13 @@
 				}
 			}
 
-			> .inner {
+			> .in {
 				background-color: $light;
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -331,10 +332,10 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 					@extend %center;
 
-					> .inner {
+					> .in {
 
 						> ul {
 
@@ -344,6 +345,8 @@
 
 							> li {
 								position: relative;
+								box-sizing: border-box;
+								padding: $interval-s;
 
 								@include js(false) {
 									width: 100%;
@@ -367,13 +370,21 @@
 									}
 								}
 
+								&:nth-child(#{$default-len}n+1) { //多數排的首項目
+
+									&::before {
+										content: none;
+									}
+								}
+
 								&.is-active, &:hover {
+									z-index: 1; //避免雙層選單覆蓋問題
 
 									> [data-index][data-type] {
 
-										> .inner {
+										> .in {
 
-											> .header {
+											> .hd {
 
 												a {
 													background-color: $minor-color;
@@ -381,7 +392,7 @@
 												}
 											}
 
-											> .content {
+											> .ct {
 												display: block;
 											}
 										}
@@ -392,14 +403,14 @@
 									@extend %reset;
 									position: relative;
 
-									> .inner {
+									> .in {
 										@extend %reset;
 
-										> .header {
+										> .hd {
 											@extend %reset;
 											display: block;
 
-											> .inner {
+											> .in {
 												@extend %reset;
 											}
 
@@ -415,7 +426,6 @@
 												@extend %ellipsis;
 												display: block;
 												padding: $interval-s;
-												margin: $interval-s;
 												text-align: center;
 												transition: $transition;
 
@@ -426,7 +436,7 @@
 											}
 										}
 
-										> .content {
+										> .ct {
 											@extend %reset;
 											display: none;
 											position: absolute;
@@ -440,7 +450,7 @@
 												width: 100% !important;
 											}
 
-											> .inner {
+											> .in {
 												padding: $interval-xs;
 												background-color: $white;
 												border: $border;
@@ -448,7 +458,7 @@
 											}
 										}
 
-										> .footer {
+										> .ft {
 											display: none;
 										}
 									}
@@ -456,11 +466,11 @@
 
 								> .nav {
 
-									> .inner {
+									> .in {
 
-										> .content {
+										> .ct {
 
-											> .inner {
+											> .in {
 
 												> ul {
 
@@ -476,122 +486,126 @@
 									}
 								}
 
-								@for $i from 1 through $max-len { //ul 的寬度
+								//自動選單寬度 & 移位功能================================================================
 
-									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
+								// @for $i from 1 through $max-len { //ul 的寬度
 
-										> [data-index][data-type] {
+								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
-											> .inner {
+								// 		> [data-index][data-type] {
 
-												> .content {
-													width: 100% * $i;
-												}
-											}
-										}
-									}
-								}
+								// 			> .in {
 
-								@for $i from 1 through $max-len { //ul 的寬度
+								// 				> .ct {
+								// 					width: 100% * $i;
+								// 				}
+								// 			}
+								// 		}
+								// 	}
+								// }
 
-									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
+								// @for $i from 1 through $max-len { //ul 的寬度
 
-										> .nav {
+								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
-											> .inner {
+								// 		> .nav {
 
-												> .content {
+								// 			> .in {
 
-													> .inner {
+								// 				> .ct {
 
-														> ul {
+								// 					> .in {
 
-															> li {
-																width: 100% / $i;
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
+								// 						> ul {
+
+								// 							> li {
+								// 								width: 100% / $i;
+								// 							}
+								// 						}
+								// 					}
+								// 				}
+								// 			}
+								// 		}
+								// 	}
+								// }
 							}
 
-							@for $i from $default-len through $max-len { //group 的 child
+							//自動選單寬度 & 移位功能================================================================
 
-								&[data-child="#{$i}"] {
+							// @for $i from $default-len through $max-len { //group 的 child
 
-									@for $j from 2 through $max-len { //li 的 index
+							// 	&[data-child="#{$i}"] {
 
-										> [data-index="#{$j}"] { //li 的順序
+							// 		@for $j from 2 through $max-len { //li 的 index
 
-											@for $k from 1 through $max-len { //li 的寬度
+							// 			> [data-index="#{$j}"] { //li 的順序
 
-												&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
+							// 				@for $k from 1 through $max-len { //li 的寬度
 
-													$li-width: min($k, $i); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-													$all-width: $j - 1 + $li-width;
+							// 					&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
 
-													> [data-index][data-type] {
+							// 						$li-width: min($k, $i); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
+							// 						$all-width: $j - 1 + $li-width;
 
-														> .inner {
+							// 						> [data-index][data-type] {
 
-															> .content {
+							// 							> .in {
 
-																@if( $all-width > $i ) { //如果 li 數量大於 li 寬度
-																	left: 100% * ( $i - $all-width ); //就推回來
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
+							// 								> .ct {
 
-							@for $i from 1 through $default-len { //group 的 child
+							// 									@if( $all-width > $i ) { //如果 li 數量大於 li 寬度
+							// 										left: 100% * ( $i - $all-width ); //就推回來
+							// 									}
+							// 								}
+							// 							}
+							// 						}
+							// 					}
+							// 				}
+							// 			}
+							// 		}
+							// 	}
+							// }
 
-								&[data-child="#{$i}"] {
+							// @for $i from 1 through $default-len { //group 的 child
 
-									@for $j from 2 through $max-len { //li 的 index
+							// 	&[data-child="#{$i}"] {
 
-										> [data-index="#{$j}"] { //li 的順序
+							// 		@for $j from 2 through $max-len { //li 的 index
 
-											@for $k from 1 through $max-len { //li 的寬度
+							// 			> [data-index="#{$j}"] { //li 的順序
 
-												&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
+							// 				@for $k from 1 through $max-len { //li 的寬度
 
-													$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-													$all-width: $j - 1 + $li-width;
+							// 					&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
 
-													> [data-index][data-type] {
+							// 						$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
+							// 						$all-width: $j - 1 + $li-width;
 
-														> .inner {
+							// 						> [data-index][data-type] {
 
-															> .content {
+							// 							> .in {
 
-																@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
-																	left: 100% * ( $default-len - $all-width ); //就推回來
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
+							// 								> .ct {
+
+							// 									@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
+							// 										left: 100% * ( $default-len - $all-width ); //就推回來
+							// 									}
+							// 								}
+							// 							}
+							// 						}
+							// 					}
+							// 				}
+							// 			}
+							// 		}
+							// 	}
+							// }
 						}
 					}
 				}
 
-				> .footer {
+				> .ft {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -628,13 +642,13 @@
 				display: none;
 			}
 
-			> .inner {
+			> .in {
 				@extend %center;
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -651,11 +665,11 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 					padding: $interval-l 0;
 					border-bottom: $border;
 
-					> .inner {
+					> .in {
 
 						> ul {
 
@@ -669,14 +683,14 @@
 									@extend %reset;
 									padding: 0 $interval-xs;
 
-									> .inner {
+									> .in {
 										@extend %reset;
 
-										> .header {
+										> .hd {
 											@extend %reset;
 											display: block;
 
-											> .inner {
+											> .in {
 												@extend %reset;
 											}
 
@@ -708,13 +722,13 @@
 											}
 										}
 
-										> .content {
+										> .ct {
 											@extend %reset;
 											display: block !important;
 											position: static;
 										}
 
-										> .footer {
+										> .ft {
 											display: none;
 										}	
 									}
@@ -724,9 +738,9 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -751,12 +765,12 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .inner {
+			> .in {
 				background-color: $major-color;
 
-				> .header {
+				> .hd {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -780,10 +794,10 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 					overflow: hidden;
 
-					> .inner {
+					> .in {
 
 						> ul {
 							margin: 0 $interval-xs $interval-xs;
@@ -799,9 +813,9 @@
 
 									> [data-index][data-type] {
 
-										> .inner {
+										> .in {
 
-											> .header {
+											> .hd {
 
 												a {
 													background-color: $minor-color !important;
@@ -813,7 +827,7 @@
 												}
 											}
 
-											> .content {
+											> .ct {
 												display: block;
 											}
 										}
@@ -824,13 +838,13 @@
 									@extend %reset;
 									position: relative;
 
-									> .inner {
+									> .in {
 										@extend %reset;
 
-										> .header {
+										> .hd {
 											@extend %reset;
 
-											> .inner {
+											> .in {
 
 											}
 
@@ -867,20 +881,20 @@
 											}
 										}
 
-										> .content {
+										> .ct {
 											display: none;
 
 											@include js(false) {
 												display: block;
 											}
 
-											> .inner {
+											> .in {
 												padding: $interval-xs;
 												background-color: $light;
 											}
 										}
 
-										> .footer {
+										> .ft {
 											display: none;
 										}
 									}
@@ -890,9 +904,9 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -917,12 +931,12 @@
 
 		.base-section & {
 
-			> .inner {
+			> .in {
 
-				> .header {
+				> .hd {
 					display: none;
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -939,9 +953,9 @@
 					}
 				}
 
-				> .content {
+				> .ct {
 
-					> .inner {
+					> .in {
 
 						> ul {
 
@@ -954,13 +968,13 @@
 								> [data-index][data-type] {
 									margin: 0;
 
-									> .inner {
+									> .in {
 
-										> .header {
+										> .hd {
 											display: block;
 										}
 
-										> .content {
+										> .ct {
 											padding: $interval-s 0 0 $interval-xl;
 										}
 									}
@@ -970,9 +984,9 @@
 					}
 				}
 
-				> .footer {
+				> .ft {
 
-					> .inner {
+					> .in {
 
 					}
 
@@ -1001,12 +1015,12 @@
 	&.major-slider {
 		$btn-width: 40px; //設定按鈕寬度
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1027,9 +1041,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1046,14 +1060,14 @@
 
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
 
-								> .inner {
+								> .in {
 									@extend %reset;
 
-									> .header {
+									> .hd {
 										display: none;
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1063,9 +1077,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1160,7 +1174,7 @@
 			vertical-align: middle;
 		}
 
-		> .inner {
+		> .in {
 			position: relative;
 			display: inline-block;
 			box-sizing: border-box;
@@ -1174,10 +1188,10 @@
 				max-width: 90%;
 			}
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1194,9 +1208,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1213,14 +1227,14 @@
 
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
 
-								> .inner {
+								> .in {
 									@extend %reset;
 
-									> .header {
+									> .hd {
 										display: none;
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1230,9 +1244,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1309,11 +1323,11 @@
 
 	&.classical-slider {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1334,14 +1348,14 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							+ li {
 								display: none;
@@ -1354,9 +1368,9 @@
 
 							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
 
-								> .inner {
+								> .in {
 
-									.footer {
+									.ft {
 										position: static;
 										margin-top: $interval-s;
 									}
@@ -1367,10 +1381,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1411,7 +1425,7 @@
 		
 			&[data-setLen="#{$i}"] {
 
-				> .inner > .content > .inner {
+				> .in > .ct > .in {
 
 					> ul {
 						width: $max-li-len * 100% / $i;
@@ -1420,12 +1434,12 @@
 			}
 		}
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1446,10 +1460,10 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 				background-color: $light;
 
-				> .inner {
+				> .in {
 					overflow: hidden;
 					// margin: 0 $btn-width; //如果要與圖不重疊
 
@@ -1483,14 +1497,14 @@
 							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
 								padding: $interval-s;
 
-								> .inner {
+								> .in {
 									@extend %reset;
 
-									> .header {
+									> .hd {
 										display: none;
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1500,9 +1514,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1571,11 +1585,11 @@
 
 	&.message {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1596,14 +1610,14 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							+ li {
 								margin-top: $interval-s;
@@ -1611,9 +1625,9 @@
 
 							> [data-index][data-type] {
 								
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1623,10 +1637,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1657,11 +1671,11 @@
 		@include default-len-hide(4, $default-len);
 		@include set-len-hide(4);
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1682,9 +1696,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1693,14 +1707,14 @@
 						}
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
 
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1710,10 +1724,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1744,11 +1758,11 @@
 		@include default-len-hide(4, $default-len);
 		@include set-len-hide(4);
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1769,9 +1783,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1780,14 +1794,14 @@
 						}
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
 
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1797,10 +1811,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1827,11 +1841,11 @@
 
 	&.classify {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1852,9 +1866,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1867,16 +1881,16 @@
 								padding: $interval-s;
 								border: $border;
 								
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 
-									> .header {
+									> .hd {
 										display: inline-block !important;
 
-										> .inner {
+										> .in {
 
 										}
 
@@ -1896,11 +1910,11 @@
 										}
 									}
 
-									> .content {
+									> .ct {
 										display: inline-block;
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -1910,10 +1924,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1940,11 +1954,11 @@
 
 	&.vote-result {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -1965,9 +1979,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -1976,7 +1990,7 @@
 
 							> [data-index][data-type] {
 
-								> .inner {
+								> .in {
 									margin: 0 !important;
 								}
 							}
@@ -1985,10 +1999,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2015,11 +2029,11 @@
 
 	&.file-download-multiple {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2040,9 +2054,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -2056,9 +2070,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2085,11 +2099,11 @@
 
 	&.page-list-text {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2110,9 +2124,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -2129,14 +2143,14 @@
 									padding-left: $interval-m;
 								}
 
-								> .inner {
+								> .in {
 
-									> .header {
+									> .hd {
 										display: block;
 										font-size: $font-size-s;
 										border-bottom: 0;
 
-										> .inner {
+										> .in {
 
 										}
 
@@ -2161,11 +2175,11 @@
 										}
 									}
 
-									> .content {
+									> .ct {
 
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -2175,9 +2189,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2204,11 +2218,11 @@
 
 	&.page-list-pic {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2229,9 +2243,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -2248,14 +2262,14 @@
 									padding-left: $interval-m;
 								}
 
-								> .inner {
+								> .in {
 
-									> .header {
+									> .hd {
 										display: block;
 										font-size: $font-size-s;
 										border-bottom: 0;
 
-										> .inner {
+										> .in {
 
 										}
 
@@ -2280,11 +2294,11 @@
 										}
 									}
 
-									> .content {
+									> .ct {
 
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -2294,9 +2308,9 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2327,11 +2341,11 @@
 
 		@include default-min-len(4, $default-len, $max-len);
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2348,9 +2362,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
@@ -2359,7 +2373,7 @@
 						}
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							@include media('pad') {
 								$li-len: 2;
@@ -2376,13 +2390,13 @@
 							> [data-index][data-type] {
 								padding: $interval-xs;
 
-								> .inner {
+								> .in {
 
-									> .header {
+									> .hd {
 										display: none;
 									}
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -2392,10 +2406,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2422,11 +2436,11 @@
 
 	&.page-list {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -2443,14 +2457,14 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 
 						> li {
-							@extend %reset-inner-module;
+							@extend %reset.in-module;
 
 							+ li {
 								margin-top: $interval-s;
@@ -2458,9 +2472,9 @@
 
 							> [data-index][data-type] {
 								
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										display: none;
 									}
 								}
@@ -2470,10 +2484,10 @@
 				}
 			}
 
-			> .footer {
+			> .ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 

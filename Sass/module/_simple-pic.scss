@@ -8,13 +8,13 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .inner {
+			> .in {
 
 			}
 
-			.header {
+			.hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -35,9 +35,9 @@
 				}
 			}
 
-			.content {
+			.ct {
 
-				> .inner {
+				> .in {
 					
 				}
 
@@ -55,10 +55,10 @@
 				}
 			}
 
-			.footer {
+			.ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -82,13 +82,13 @@
 
 		.base-page-area & {
 
-			> .inner {
+			> .in {
 
 			}
 
-			.header {
+			.hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -109,9 +109,9 @@
 				}
 			}
 
-			.content {
+			.ct {
 
-				> .inner {
+				> .in {
 					
 				}
 
@@ -129,10 +129,10 @@
 				}
 			}
 
-			.footer {
+			.ft {
 				@extend %footer-btns;
 
-				> .inner {
+				> .in {
 
 				}
 

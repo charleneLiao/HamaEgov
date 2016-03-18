@@ -5,11 +5,11 @@
 	li_length = (min_li..max_li).to_a.sample
 %>
 
-<div class="area-table calender <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
-	<div class="header"><div class="inner">
+<div class="area-table calender <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<div class="hd"><div class="in">
 		<h4><span><a><% if header_text %><%= header_text %><% end %></a></span></h4>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 		<div class="heading">
 			<div class="label">
 				<ul data-index="1" data-child="3">
@@ -91,7 +91,7 @@
 		</div>
 	
 		<% if ( li_length > 0 ) %>
-			<div class="list">
+			<div class="li">
 				<ul data-index="1" data-child="<%= li_length %>">
 					
 					<% li_length.times do |i| %>
@@ -103,7 +103,7 @@
 	</div></div>
 	
 	<% if show_footer %>
-		<div class="footer"><div class="inner">
+		<div class="ft"><div class="in">
 			<ul data-index="1" data-child="1">
 				<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
 			</ul>

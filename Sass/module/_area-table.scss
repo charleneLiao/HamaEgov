@@ -6,13 +6,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -29,9 +29,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -64,9 +64,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -92,13 +92,13 @@
 
 	&.calender {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -119,9 +119,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -270,7 +270,7 @@
 				}
 			}
 
-			.list {
+			.li {
 				margin-top: $interval-s;
 
 				ul {
@@ -300,10 +300,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -329,13 +329,13 @@
 
 	&.page-table {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -356,9 +356,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -427,10 +427,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -456,13 +456,13 @@
 
 	&.rwd-table {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -483,9 +483,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -648,10 +648,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 

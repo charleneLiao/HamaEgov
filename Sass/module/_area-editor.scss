@@ -6,13 +6,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -33,16 +33,16 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -69,13 +69,13 @@
 	&.address {
 		@extend %area-mobile-no-header;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -92,9 +92,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -103,9 +103,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -132,13 +132,13 @@
 	&.user-edit {
 		@extend %area-page-no-header;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -155,17 +155,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 			@extend %article-extend;
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -192,13 +192,13 @@
 	&.system-info {
 		@extend %area-page-no-header;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -215,17 +215,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 			@extend %article;
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -251,13 +251,13 @@
 
 	&.error-info {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -282,17 +282,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 			@extend %article-extend;
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 

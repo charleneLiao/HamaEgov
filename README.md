@@ -271,7 +271,7 @@
 <h3 id="HTML-parameter">參數與意義</h3>
 我們使用 HTML5 data-* 屬性為 css 及 javascript 做一些事，以強化整體規範與便利性。
 
-一般的模塊具有屬性 data-type、data-index、data-child、data-function、data-setlen，而 body 則有屬性 data-js、data-admin，選單特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
+一般的模塊具有屬性 data-type、data-index、data-child、data-func、data-setlen，而 body 則有屬性 data-js、data-admin，選單特殊屬性有 data-width，以下將這幾種屬性的用途、意義等一一說明。
 
 <table>
   <tr>
@@ -299,7 +299,7 @@
     <td>群組、清單(ul)</td>
   </tr>
   <tr>
-    <td>data-function</td>
+    <td>data-func</td>
     <td>呼叫模塊程式</td>
     <td>提供一組 javascript 物件字串，用以呼叫程式模塊，更多說明請至 <a href="#node-and-files">以 node 呼叫 javascript 檔案</a> 章節</td>
     <td>模塊、body</td>
@@ -612,19 +612,19 @@ base-article: 內頁文章區塊。
 模塊起始層下有一個 .inner 層，.inner 層用來輔助排版，以下列出模塊基本結構。
 
     <data-index data-type>
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             標頭
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             內容
           </div>
         </div>
-        <div class="footer">
-          <div class="inner">
+        <div class="ft">
+          <div class="in">
             附加資訊
           </div>
         </div>
@@ -672,15 +672,15 @@ base-article: 內頁文章區塊。
 
 以下是分割群組的 HTML 格式：
 
-    <data-index class="group" data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+    <data-index class="g" data-type="0">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h3><span><a>標題</a></span></h3>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             子模塊
           </div>
         </div>
@@ -697,26 +697,26 @@ base-article: 內頁文章區塊。
 以下是頁籤群組的 HTML 格式：
 
     <data-index class="group-tab" data-type="2">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h3><span><a>標題</a></span></h3>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <ul data-index data-child>
               <li data-index="1">
 
                    <data-index data-type="0">
-                      <div class="inner">
-                        <div class="header">
-                          <div class="inner">
+                      <div class="in">
+                        <div class="hd">
+                          <div class="in">
                             <h4><span><a>頁籤模組</a></span></h4>
                           </div>
                         </div>
-                        <div class="content">
-                          <div class="inner">
+                        <div class="ct">
+                          <div class="in">
                             <ul data-child>
                               <li data-index="1"><span><a>依序加入子模塊 header文字...</a></span><li>
                             </ul>
@@ -738,15 +738,15 @@ base-article: 內頁文章區塊。
 
 以下是單欄群組的 HTML 格式：
 
-    <data-index class="group" data-type="3">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+    <data-index class="g" data-type="3">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h3><span><a>標題</a></span></h3>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             子模塊
           </div>
         </div>
@@ -759,14 +759,14 @@ base-article: 內頁文章區塊。
 以下是清單群組的 HTML 格式：
 
     <data-index class="group-list" data-type="3">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h3><span><a>標題</a></span></h3>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <ul data-child>
               <li>依序加入子模塊...</li>
             </ul>
@@ -790,14 +790,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 客製的模組，如： google map 模組、iframe 框架模組、vedia 視訊模組、audio 音訊模組等等。以下是 area-customize 類別的 HTML 參考格式：
 
     <class="area-customize" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             ...
           </div>
         </div>
@@ -808,14 +808,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 客戶可以使用文字編輯器編輯內文的模組，如：下方地址。以下是 area-editor 類別的 HTML 參考格式：
 
     <class="area-editor" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             使用者編輯文字
           </div>
         </div>
@@ -826,16 +826,16 @@ list-text 是類別 class，而 nav 是自定義 class。
 參雜文字與圖片，以文字為主體的模組，如：最新消息。以下是 area-essay 類別的 HTML 參考格式，請注意 area-essay 的內標標題應為 .caption ：
 
     <class="area-essay" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
-            <a href="#" class="divition">
-              <div class="image"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
+        <div class="ct">
+          <div class="in">
+            <a href="#" class="div">
+              <div class="img"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
               <div class="essay">
                 <div class="caption"><span>內容標題</span></div>
                 <div class="label">
@@ -843,7 +843,7 @@ list-text 是類別 class，而 nav 是自定義 class。
                     <li><span><i class="mark">標籤</i></span></li>
                   </ul>
                 </div>
-                <div class="paragraph">
+                <div class="p">
                   <p><span>內容簡介</span></p>
                 </div>
               </div>
@@ -857,16 +857,16 @@ list-text 是類別 class，而 nav 是自定義 class。
 參雜文字與圖片，以圖片為主體的模組，如：相簿模組。以下是 area-figure 類別的 HTML 參考格式，請注意 area-figure 的內標標題應為 .figcaption ：
 
     <class="area-figure" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
-            <a href="#" class="divition">
-              <div class="image"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
+        <div class="ct">
+          <div class="in">
+            <a href="#" class="div">
+              <div class="img"><span style="background-image: url('#')"><img src="#" alt=""></span></div>
               <div class="essay">
                 <div class="figcaption"><span>內容標題</span></div>
                 <div class="label">
@@ -874,7 +874,7 @@ list-text 是類別 class，而 nav 是自定義 class。
                     <li><span><i class="mark">標籤</i></span></li>
                   </ul>
                 </div>
-                <div class="paragraph">
+                <div class="p">
                   <p><span>內容簡介</span></p>
                 </div>
               </div>
@@ -888,14 +888,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 以表單為主體的模組，如：搜尋模組。以下是 area-form 類別的 HTML 參考格式：
 
     <class="area-form" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <div class="fieldset">
               <span class="text"><input type="text"></span>
               <span class="submit"><a href="#">送出</a></span>
@@ -909,14 +909,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 以表格為主體的模組。以下是 area-table 類別的 HTML 參考格式：
 
     <class="area-table" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <table>
               <thead data-index data-child>
                 <tr data-index data-child>
@@ -943,14 +943,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 多重清單模組，如：頁次導航列。以下是 area-audio 類別的 list-multiple 參考格式：
 
     <class="list-multiple" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <ul data-index data-child><li><span>1</span></li></ul>
             <ul data-index data-child><li><span>1</span></li></ul>
           </div>
@@ -962,14 +962,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 圖片清單模組，如：標章模組。以下是 list-pic 類別的 HTML 參考格式：
 
     <class="list-text" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <ul data-index data-child>
               <li data-index><span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span></li>
             </ul>
@@ -982,14 +982,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 文字清單模組，如：選單。以下是 list-text 類別的 HTML 參考格式：
 
     <class="list-text" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <ul data-index data-child>
               <li data-index><span><a><i class="mark">標籤</i>依序加入文字項目...</a></span></li>
             </ul>
@@ -1002,14 +1002,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 只顯示一張圖片的模組，如：圖片模組。以下是 simple-pic 類別的 HTML 參考格式：
 
     <class="simple-pic" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <span style="background-image: url('#');"><a href="#"><img src="#" alt=""></a></span>
           </div>
         </div>
@@ -1020,14 +1020,14 @@ list-text 是類別 class，而 nav 是自定義 class。
 只敘述一行文字的文字模組，如：LOGO 模組。以下是 simple-text 類別的 HTML 參考格式：
 
     <class="simple-text" data-index data-type="0">
-      <div class="inner">
-        <div class="header">
-          <div class="inner">
+      <div class="in">
+        <div class="hd">
+          <div class="in">
             <h4><span><a>標題</a></span></h4>
           </div>
         </div>
-        <div class="content">
-          <div class="inner">
+        <div class="ct">
+          <div class="in">
             <span><a>文字</a></span>
           </div>
         </div>
@@ -1573,10 +1573,10 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 <h3 id="erb-run">Erb 運作方式</h3>
 樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
 
-    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
-      <div class="header"><div class="inner">
+    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
+      <div class="hd"><div class="in">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
-      <div class="content"><div class="inner">
+      <div class="ct"><div class="in">
 
         <!--嵌套 /Erb/module/sample -->
         <%= render partial: "/Erb/module/sample" %>
@@ -1586,10 +1586,10 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
 
 我們可藉由演示的語法嵌入另一個 .html.erb 檔案，以下將演示如何帶參數進 /Erb/module/_sample.html.erb 檔案中。
 
-    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="inner">
-      <div class="header"><div class="inner">
+    <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
+      <div class="hd"><div class="in">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
-      <div class="content"><div class="inner">
+      <div class="ct"><div class="in">
 
         <!--嵌套 /Erb/module/sample -->
         <%= render partial: "/Erb/module/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
@@ -1623,7 +1623,7 @@ Erb 主要基於 Ruby 語言，因此可以使用許多 Ruby 語言的方法如�
   </tr>
   <tr>
     <td>func_set</td>
-    <td>對應模塊的 data-function 屬性 (框架群組無此功能)</td>
+    <td>對應模塊的 data-func 屬性 (框架群組無此功能)</td>
   </tr>
   <tr>
     <td>header_text</td>
@@ -1914,7 +1914,7 @@ Sass 是為了增強 CSS 的特性而設計的擴充語言，Scss 則是 Sass �
 
     [data-index][data-type="1"] {
 
-      &.group {
+      &.g {
 
         > .inner {
 
@@ -2944,7 +2944,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
   </tr>
   <tr>
     <td>lib/main.js</td>
-    <td>執行 data-function 方法的套件</td>
+    <td>執行 data-func 方法的套件</td>
   </tr>
   <tr>
     <td>lib/plugin.js</td>
@@ -2964,13 +2964,13 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
 
 
 <h3 id="node-and-files">以 node 呼叫 javascript 檔案</h3>
-先前曾在 [參數與意義](#HTML-parameter) 章節討論過 data-function 屬性的用途。
-data-function 可藉由傳入一個字串化物件，來啟動指定的 js 模塊。
+先前曾在 [參數與意義](#HTML-parameter) 章節討論過 data-func 屬性的用途。
+data-func 可藉由傳入一個字串化物件，來啟動指定的 js 模塊。
 js 模塊應存在 /Script 目錄中(可在 app.js 改變基礎路徑)，以下示範一個模組 nav ，啟動一個名為 hud 的 js 模塊：
 
-    <div class="nav" data-type="0" data-function="{'hud':{}}">
+    <div class="nav" data-type="0" data-func="{'hud':{}}">
 
-data-function 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟動一個 /Script/hud.js 的檔案。
+data-func 的值為一個物件，{'hud':{}} 中的 hud 為 js 模塊，啟動一個 /Script/hud.js 的檔案。
 hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接收到這組參數：
 
     define(function(){
@@ -2986,7 +2986,7 @@ hud 後面對應的物件為參數物件，你將可以在 hud.js 檔案中接�
 hud.js 最終回傳一個涵式給 main.js 並執行。
 同一個模塊中也可以一次執行多個 js 模塊：
 
-    <div class="nav" data-type="0" data-function="{'hud':{},'slider':{'auto':true}}">
+    <div class="nav" data-type="0" data-func="{'hud':{},'slider':{'auto':true}}">
 
 以此例來說，nav 同時啟用了 hud.js、slider.js 兩個 js 模塊，且 slider 傳送了一組參數 'auto':true，我們可以從 opt 取出參數。
 
@@ -3051,14 +3051,14 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
       return main;
     });
 
-main.js 會先執行 fix.js，接著一一解析有 data-function 參數的模塊，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構以便說明：
+main.js 會先執行 fix.js，接著一一解析有 data-func 參數的模塊，讓模塊回傳各自的程式內容，再執行它們，以下是簡化過的 main.js 結構以便說明：
 
     requirejs(['domReady!'], function(dom){
-      var $nodes = document.querySelectorAll('[data-function]');
+      var $nodes = document.querySelectorAll('[data-func]');
 
       for( var i = 0; i < $nodes.length; i++ ) {
         var $env = $nodes[i], //存節點
-        $func = JSON.parse(($env.getAttribute('data-function')).replace(/\'/g,'"')); //轉成物件
+        $func = JSON.parse(($env.getAttribute('data-func')).replace(/\'/g,'"')); //轉成物件
 
         for( var _file in $func ) { //取 function name 與設定參數
           var $opt = $func[_file];

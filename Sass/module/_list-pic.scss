@@ -4,7 +4,7 @@
 
 //設定================================================================
 
-	.content {
+	.ct {
 
 		ul {
 			@extend %reset;
@@ -15,13 +15,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -38,9 +38,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -65,9 +65,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -93,13 +93,13 @@
 
 	&.slider {
 
-		> .inner {
+		> .in {
 			
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -120,9 +120,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -157,10 +157,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -208,14 +208,14 @@
 		$show-li-len: 4; //設定一次要秀的數量
 		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 			display: none;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -232,10 +232,10 @@
 			}
 		}
 
-		.content {
+		.ct {
 			background-color: $light;
 
-			> .inner {
+			> .in {
 				overflow: hidden;
 				// margin: 0 $btn-width; //如果要與圖不重疊
 
@@ -306,9 +306,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -381,13 +381,13 @@
 		@include set-len(0);
 		margin-top: 0;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -408,9 +408,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -440,10 +440,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -476,13 +476,13 @@
 				display: none;
 			}
 
-			> .inner {
+			> .in {
 
 			}
 
-			.header {
+			.hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -499,9 +499,9 @@
 				}
 			}
 
-			.content {
+			.ct {
 
-				> .inner {
+				> .in {
 					
 				}
 
@@ -531,9 +531,9 @@
 				}
 			}
 
-			.footer {
+			.ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -563,14 +563,14 @@
 				display: none;
 			}
 
-			> .inner {
+			> .in {
 
 			}
 
-			.header {
+			.hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -587,9 +587,9 @@
 				}
 			}
 
-			.content {
+			.ct {
 
-				> .inner {
+				> .in {
 					
 				}
 
@@ -627,9 +627,9 @@
 				}
 			}
 
-			.footer {
+			.ft {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -656,13 +656,13 @@
 
 	&.pic-download {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -683,9 +683,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -769,9 +769,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -797,13 +797,13 @@
 
 	&.page-list {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -824,9 +824,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -894,9 +894,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -923,14 +923,14 @@
 	&.page-block {
 		$btn-width: 45px; //設定按鈕寬度
 
-		> .inner {
+		> .in {
 			position: relative;
 		}
 
-		.header {
+		.hd {
 			display: none;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -947,9 +947,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -982,9 +982,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 

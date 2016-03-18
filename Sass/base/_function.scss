@@ -73,7 +73,7 @@
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
-			.content {
+			.ct {
 
 				li {
 					width: 100% / $default-len;
@@ -93,7 +93,7 @@
 
 		}@else if( $type == 1 ) { // 分割 group 的狀況
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> [data-index][data-type] {
 					width: 100% / $default-len;
@@ -113,7 +113,7 @@
 
 		}@else if( $type == 4 ) {
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> ul {
 
@@ -140,7 +140,7 @@
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
-			.content {
+			.ct {
 
 				li {
 					width: 100% / $len;
@@ -150,7 +150,7 @@
 
 		}@else if( $type == 1 ) { // 分割 group 的狀況
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> [data-index][data-type] {
 					width: 100% / $len;
@@ -160,7 +160,7 @@
 
 		}@else if( $type == 4 ) {
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> ul {
 
@@ -178,7 +178,7 @@
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
-			.content {
+			.ct {
 
 				li {
 
@@ -201,7 +201,7 @@
 
 		}@else if( $type == 1 ) { // 分割 group 的狀況
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> [data-index][data-type] {
 
@@ -224,7 +224,7 @@
 
 		}@else if( $type == 4 ) {
 
-			> .inner > .content > .inner {
+			> .in > .ct > .in {
 
 				> ul {
 
@@ -258,7 +258,7 @@
 
 				&[data-setLen="#{$i}"] {
 
-					.content {
+					.ct {
 
 						li {
 							width: 100% / $i;
@@ -273,7 +273,7 @@
 
 				&[data-setLen="#{$i}"] {
 
-					> .inner > .content > .inner {
+					> .in > .ct > .in {
 
 						> [data-index][data-type] {
 							width: 100% / $i;
@@ -288,7 +288,7 @@
 
 				&[data-setLen="#{$i}"] {
 
-					> .inner > .content > .inner {
+					> .in > .ct > .in {
 
 						> ul {
 
@@ -311,7 +311,7 @@
 
 				&[data-setLen="#{$i}"] {
 
-					.content {
+					.ct {
 
 						li {
 							display: block;
@@ -339,7 +339,7 @@
 
 			@for $i from 1 through $max-len { //算設定分割
 
-				&[data-setLen="#{$i}"] > .inner > .content > .inner {
+				&[data-setLen="#{$i}"] > .in > .ct > .in {
 
 					> [data-index][data-type] {
 
@@ -365,7 +365,7 @@
 
 			@for $i from 1 through $max-len { //算設定分割
 
-				&[data-setLen="#{$i}"] > .inner > .content > .inner {
+				&[data-setLen="#{$i}"] > .in > .ct > .in {
 
 					> ul {
 
@@ -414,7 +414,7 @@
 		left: auto;
 	}
 
-	%reset-inner { //重新設定內部樣式
+	%reset.in { //重新設定內部樣式
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -435,23 +435,23 @@
 
 	%reset { //重新設定全部樣式
 		@extend %reset-outer;
-		@extend %reset-inner;
+		@extend %reset.in;
 	}
 
-	%reset-inner-module { //清除內部模塊的 margin
+	%reset.in-module { //清除內部模塊的 margin
 
 		[data-index][data-type] {
 			margin: 0;
 
-			> .inner {
+			> .in {
 				margin: 0;
 			}
 
-			.header {
+			.hd {
 				display: none;
 			}
 
-			.content {
+			.ct {
 
 			}
 		}
@@ -557,9 +557,9 @@
 	%area-module-no-header { //沒有 header 的首頁模組
 		margin-top: $interval-s !important;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none !important;
 			}
 		}
@@ -568,9 +568,9 @@
 	%area-page-no-header { //沒有 header 的內頁模組
 		margin-top: $interval-m !important;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none !important;
 			}
 		}
@@ -579,9 +579,9 @@
 	%area-mobile-no-header { //沒有 header 的手機側欄模組
 		margin-top: $interval-m !important;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none !important;
 			}
 		}
@@ -591,7 +591,7 @@
 
 		[data-index][data-type="0"], [data-index][data-type="2"], [data-index][data-type="4"] {
 
-			> .inner {
+			> .in {
 				margin-left: $interval-m;
 				margin-right: $interval-m;
 			}
@@ -599,7 +599,7 @@
 
 		[data-index][data-type] {
 
-			> .inner {
+			> .in {
 				margin-top: $interval-m;
 				margin-bottom: $interval-l;
 			}
@@ -607,7 +607,7 @@
 
 		[data-index][data-type] + .is-hide-header { //在首頁模組上下 ".is-hide-header" 的樣式
 
-			> .inner {
+			> .in {
 				@extend %area-module-no-header;
 			}
 		}
@@ -628,7 +628,7 @@
 
 		[data-index][data-type="0"], [data-index][data-type="2"], [data-index][data-type="4"] {
 
-			> .inner {
+			> .in {
 				margin-top: $interval-m;
 				margin-right: $interval-m;
 				margin-bottom: $interval-m;
@@ -638,7 +638,7 @@
 
 		.is-hide-header { //在手機側欄模組上下 ".is-hide-header" 的 margin 樣式
 
-			> .inner {
+			> .in {
 				@extend %area-mobile-no-header;
 			}
 		}
@@ -820,7 +820,7 @@
 		top: $interval-xs;
 		right: 0;
 
-		> .inner {
+		> .in {
 
 		}
 

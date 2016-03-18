@@ -31,9 +31,9 @@
 
 	.is-hide-header { //沒有 header 的模組樣式，margin 設定請至 base/_function.scss 設定
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none !important;
 			}
 		}
@@ -97,7 +97,7 @@
 			color: $active-color;
 		}
 
-		&.divition {
+		&.div {
 			display: block;
 			color: $body-font-color;
 		}
@@ -175,11 +175,11 @@
 		cursor: not-allowed;	
 	}
 
-	> .inner {
+	> .in {
 
-		> .header {
+		> .hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -192,9 +192,9 @@
 			}
 		}
 
-		> .content {
+		> .ct {
 
-			> .inner {
+			> .in {
 
 			}
 		}
@@ -234,12 +234,12 @@
 			display: block;
 		}
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -252,9 +252,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -270,12 +270,12 @@
 		right: 0;
 		z-index: 4;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -288,9 +288,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -302,11 +302,11 @@
 	.base-wrapper {
 		background-color: $light;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -319,9 +319,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -332,11 +332,11 @@
 
 	.base-header {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -349,9 +349,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -363,14 +363,14 @@
 	.base-content {
 		margin-bottom: $interval-xl;
 
-		> .inner {
+		> .in {
 			@extend %center;
 			background-color: $white;
 			border: $border;
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -383,9 +383,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -397,11 +397,11 @@
 	.base-footer {
 		background-color: $white;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -414,9 +414,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -429,11 +429,11 @@
 		@extend %area-module;
 		margin: $interval-m;
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -446,9 +446,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -460,15 +460,15 @@
 	.base-page-area {
 		margin: $interval-m $interval-m $interval-l;
 
-		> .inner {
+		> .in {
 
 			&::after {
 				@extend %clear;
 			}
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -481,9 +481,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -502,11 +502,11 @@
 			float: none;
 		}
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -519,9 +519,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -534,16 +534,16 @@
 		overflow: hidden;
 		position: relative;
 
-		> .inner {
+		> .in {
 			margin: 0 $interval-m;
 
 			@include media('phone') {
 				margin: 0;
 			}
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -556,9 +556,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}
@@ -569,11 +569,11 @@
 
 	.base-article{
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -586,9 +586,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 				}
 			}

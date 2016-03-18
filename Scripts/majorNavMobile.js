@@ -8,14 +8,14 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 		
-		var li = getNode.getContentItem(env), //取 li
-			child_node_inner = getNode.getInner(getNode.getChild(li, 'div'));
+		var li = getNode.getCtItem(env), //取 li
+			child_node_in = getNode.getIn(getNode.getChild(li, 'div'));
 
 		var $li = $(li),
-			$child_node_inner = $(child_node_inner).filter(function(i) { //過濾 .content 裡沒有 a 的物件
+			$child_node_in = $(child_node_in).filter(function(i) { //過濾 .content 裡沒有 a 的物件
 				return $(this).children('.content').find('a').length;
 			}),
-			$child_node_header = $child_node_inner.children('.header'),
+			$child_node_header = $child_node_in.children('.header'),
 			$a = $child_node_header.find('a');
 
 		var _eventNmae = file, //事件名稱

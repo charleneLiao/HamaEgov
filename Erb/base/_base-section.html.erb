@@ -1,19 +1,19 @@
-<div class="group base-section" data-index="<%= index %>" data-type="<%= $row %>" data-child="3"><div class="inner">
-	<div class="header"><div class="inner">
+<div class="group base-section" data-index="<%= index %>" data-type="<%= $row %>" data-child="3"><div class="in">
+	<div class="hd"><div class="in">
 		<h3><span><a></a></span></h3>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 
 	<!-- accesskey 導盲磚 -->
 		<%= render partial: "/Erb/module/simple-text_accesskey", locals: set({ access_key: "C", access_title: "中間主要內容區，此區塊呈現網頁的網頁內容", header_text: "導盲磚" }) %>
 	<!-- accesskey 結束 -->
 
 	<!-- group-page-header 內頁頁首 -->
-		<div class="group page-header" data-index="1" data-type="<%= $row %>" data-child="3"><div class="inner">
-			<div class="header"><div class="inner">
+		<div class="group page-header" data-index="1" data-type="<%= $row %>" data-child="3"><div class="in">
+			<div class="hd"><div class="in">
 				<h3><span><a></a></span></h3>
 			</div></div>
-			<div class="content"><div class="inner">
+			<div class="ct"><div class="in">
 
 			<!-- user-tool 使用者工具 -->
 				<%= render partial: "/Erb/module/list-text_user-tool", locals: set({ index: 1, header_text: nil }) %>
@@ -32,11 +32,11 @@
 	<!-- group-page-header 結束 -->
 
 	<!-- group-page-content 內頁主要內容 -->
-		<div class="group page-content" data-index="2" data-type="<%= $row %>" data-child="6"><div class="inner">
-			<div class="header"><div class="inner">
+		<div class="group page-content" data-index="2" data-type="<%= $row %>" data-child="6"><div class="in">
+			<div class="hd"><div class="in">
 				<h3><span><a></a></span></h3>
 			</div></div>
-			<div class="content"><div class="inner">
+			<div class="ct"><div class="in">
 
 			<!-- 內頁內容開始 -->
 				<%= yield %>
@@ -47,11 +47,11 @@
 	<!-- group-page-content 結束 -->
 
 	<!-- group-page-footer 內頁頁尾 -->
-		<div class="group page-footer" data-index="3" data-type="6" data-child="3"><div class="inner">
-			<div class="header"><div class="inner">
+		<div class="group page-footer" data-index="3" data-type="6" data-child="3"><div class="in">
+			<div class="hd"><div class="in">
 				<h3><span><a></a></span></h3>
 			</div></div>
-			<div class="content"><div class="inner">
+			<div class="ct"><div class="in">
 
 			<!-- jump-tool 跳轉導航列 -->
 				<%= render partial: "/Erb/module/list-text_jump-tool", locals: set({ index: 1, header_text: "跳轉導航列" }) %>

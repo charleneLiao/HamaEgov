@@ -6,12 +6,12 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
-			> .header {
+			> .hd {
 				display: none;
 
-				> .inner {
+				> .in {
 
 				}
 
@@ -32,9 +32,9 @@
 				}
 			}
 
-			> .content {
+			> .ct {
 
-				> .inner {
+				> .in {
 
 					> ul {
 						@extend %reset;
@@ -47,9 +47,9 @@
 
 							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
 
-								> .inner {
+								> .in {
 
-									> .footer {
+									> .ft {
 										position: static;
 										margin-top: $interval-s;
 									}

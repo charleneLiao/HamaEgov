@@ -46,6 +46,16 @@
 		<%= render partial: "/Erb/module/list-text_label", locals: set({ index: 8, header_text: nil }) %>
 	<!-- label 結束 -->
 
+<!-- //分類區塊================================================================ -->
+
+	<!-- classify 分類 -->
+		<%= render partial: "/Erb/module/list-text_classify", locals: set({ index: 8, header_text: "分類" }) %>
+	<!-- classify 結束 -->
+
+	<!-- classify 內頁列表群組 -->
+		<%= render partial: "/Erb/group/group-list_classify", locals: set({ index: 53, header_text: "分類群組", inner: "/Erb/module/list-text_classify" }) %>
+	<!-- classify 結束 -->
+
 <!-- //檔案下載================================================================ -->
 
 	<!-- file-download 檔案下載 -->
@@ -260,14 +270,18 @@
 		<%= render partial: "/Erb/group/group-list_page-list", locals: set({ index: 53, header_text: "內頁列表群組", inner: "/Erb/module/area-essay_page-essay" }) %>
 	<!-- page-list 結束 -->
 
+<!-- //內頁表單================================================================ -->
+
+	<!-- page-form 內頁表單 -->
+		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 55, header_text: "內頁表單" }) %>
+	<!-- page-form 結束 -->
+
 <!-- //內頁表格================================================================ -->
 
 	<!-- page-table 內頁表格 -->
 		<%= render partial: "/Erb/module/area-table_page-table", locals: set({ index: 54, header_text: "內頁表格" }) %>
 	<!-- page-table 結束 -->
 
-<!-- //內頁表單================================================================ -->
-
-	<!-- page-form 內頁表單 -->
-		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 55, header_text: "內頁表單" }) %>
-	<!-- page-form 結束 -->
+	<!-- rwd-table RWD 表格 -->
+		<%= render partial: "/Erb/module/area-table_rwd-table", locals: set({ index: 54, header_text: "RWD 表格" }) %>
+	<!-- rwd-table 結束 -->

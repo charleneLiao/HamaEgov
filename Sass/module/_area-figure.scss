@@ -6,13 +6,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -29,16 +29,16 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -64,13 +64,13 @@
 
 	&.album {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -91,13 +91,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 
 				&:hover {
 
@@ -107,7 +107,7 @@
 				}
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -154,7 +154,7 @@
 				@extend %mark;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -167,10 +167,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -199,21 +199,21 @@
 
 		&:hover {
 
-			.content {
+			.ct {
 
-				.paragraph {
+				.p {
 					display: block;
 				}
 			}
 		}
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -234,17 +234,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				position: relative;
 			}
 
-			.divition {
+			.div {
 
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -301,7 +301,7 @@
 
 			}
 
-			.paragraph {
+			.p {
 				display: none;
 
 				p {
@@ -316,10 +316,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -346,13 +346,13 @@
 	&.page-image-figcaption-label {
 		overflow: hidden;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -373,17 +373,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				position: relative;
 			}
 
-			.divition {
+			.div {
 
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -438,7 +438,7 @@
 				@extend %mark-extend;
 			}
 
-			.paragraph {
+			.p {
 				position: absolute;
 				left: 0;
 				right: 0;
@@ -459,10 +459,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -489,13 +489,13 @@
 	&.page-image-figcaption {
 		overflow: hidden;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -516,17 +516,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				position: relative;
 			}
 
-			.divition {
+			.div {
 
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -556,10 +556,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -586,13 +586,13 @@
 	&.page-image-label {
 		overflow: hidden;
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -613,17 +613,17 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				position: relative;
 			}
 
-			.divition {
+			.div {
 
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -659,10 +659,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -688,13 +688,13 @@
 
 	&.page-image-figcaption-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -715,14 +715,14 @@
 			}
 		}
 
-		.content {
+		.ct {
 			$pic_w: 150px;
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				position: relative;
 				background-color: $light;
 				transition: $transition;
@@ -732,7 +732,7 @@
 				}
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -780,7 +780,7 @@
 				}
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -793,10 +793,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -822,13 +822,13 @@
 
 	&.page-image-label-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -849,14 +849,14 @@
 			}
 		}
 
-		.content {
+		.ct {
 			$pic_w: 150px;
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				position: relative;
 				background-color: $light;
 				transition: $transition;
@@ -866,7 +866,7 @@
 				}
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -922,7 +922,7 @@
 				@extend %mark-extend;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -935,10 +935,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -964,13 +964,13 @@
 
 	&.page-image-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -991,14 +991,14 @@
 			}
 		}
 
-		.content {
+		.ct {
 			$pic_w: 150px;
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				position: relative;
 				background-color: $light;
 				transition: $transition;
@@ -1008,7 +1008,7 @@
 				}
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -1035,7 +1035,7 @@
 				}
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 				padding: $interval-l;
 				padding-left: $pic_w + $interval-l;
@@ -1054,10 +1054,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 

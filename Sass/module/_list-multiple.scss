@@ -6,13 +6,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -29,9 +29,9 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
@@ -52,9 +52,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -80,14 +80,14 @@
 
 	&.page-select {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 			display: none;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -104,11 +104,11 @@
 			}
 		}
 
-		.content {
+		.ct {
 			padding-top: $interval-s;
 			border-top: $border;
 
-			> .inner {
+			> .in {
 				
 				&::after {
 					@extend %clear;
@@ -227,9 +227,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -255,14 +255,14 @@
 
 	&.page-click {
 
-		> .inner {
+		> .in {
 			
 		}
 
-		.header {
+		.hd {
 			display: none;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -279,11 +279,11 @@
 			}
 		}
 
-		.content {
+		.ct {
 			padding-top: $interval-s;
 			border-top: $border;
 
-			> .inner {
+			> .in {
 				
 				&::after {
 					@extend %clear;
@@ -358,9 +358,9 @@
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 

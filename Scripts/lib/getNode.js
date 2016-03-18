@@ -6,7 +6,7 @@ define(function(){
 		_type_row = '3', //單欄
 		_type_list = '4'; //清單
 
-	function getChild(envs, selector){ //取得子節點，參數是節點關鍵字('ul')、Classname('.inner')或 id('#group')
+	function getChild(envs, selector){ //取得子節點，參數是節點關鍵字('ul')、Classname('.in')或 id('#group')
 
 		if(typeof(envs) === 'undefined' || envs.length === 0) {
 			console.log('找不到 '+ envs +' 下的節點 '+ selector +'，或是節點錯誤。');
@@ -69,78 +69,82 @@ define(function(){
 		return env.getAttribute('data-child');
 	}
 
-	function getInner(env){ //取得 inner 節點
-		return getChild(env, 'inner');
+	function getIn(env){ //取得 in 節點
+		return getChild(env, 'in');
 	}
 
-	function getHeader(env){ //取得 header 節點
-		return getChild(getInner(env), 'header');
+	function getHd(env){ //取得 hd 節點
+		return getChild(getIn(env), 'hd');
+	}
+
+	function getHdIn(env){ //取得 header in 節點
+		return getChild(getHd(env), 'in');
 	}
 
 	function getTitleText(env){ //取得該群組標題文字
-		return getHeader(env)[0].innerText;
+		return getHd(env)[0].innerText;
 	}
 
 	function setTitleText(title){ //取得該群組標題文字
-		return getHeader(env)[0].innerText = title;
+		return getHd(env)[0].innerText = title;
 	}
 
-	function getContent(env){ //取得 content 節點
-		return getChild(getInner(env), 'content');
+	function getCt(env){ //取得 content 節點
+		return getChild(getIn(env), 'ct');
 	}
 
-	function getContentInner(env){ //取得 content inner 節點
-		return getChild(getContent(env), 'inner');
+	function getCtIn(env){ //取得 content in 節點
+		return getChild(getCt(env), 'in');
 	}
 
-	function getContentList(env){ //取得 content ul 節點
-		return getChild(getContentInner(env), 'ul');
+	function getCtList(env){ //取得 content ul 節點
+		return getChild(getCtIn(env), 'ul');
 	}
 
-	function getContentItem(env){ //取得 content li 節點
-		return getChild(getContentList(env), 'li');
+	function getCtItem(env){ //取得 content li 節點
+		return getChild(getCtList(env), 'li');
 	}
 
 	function getChildGroup(env){ //取得子模組節點(群組用)
 		var result = [];
 
-		if( !getChild(getContentInner(env), 'div').length ) {
-			return getChild(getContentInner(env), 'div');
+		if( !getChild(getCtIn(env), 'div').length ) {
+			return getChild(getCtIn(env), 'div');
 		}
 
-		if( !getChild(getContentItem(env), 'div').length ) {
-			return getChild(getContentItem(env), 'div');
+		if( !getChild(getCtItem(env), 'div').length ) {
+			return getChild(getCtItem(env), 'div');
 		}
 
 		return [];
 	}
 
-	function getContentItemLen(env){ //取得 content li 節點的數量
+	function getCtItemLen(env){ //取得 content li 節點的數量
 		return getChildList[0].getAttribute('data-child');
 	}
 
-	function getFooter(env){ //取得 footer 節點
-		return getChild(getInner(env), 'footer');
+	function getFt(env){ //取得 footer 節點
+		return getChild(getIn(env), 'ft');
 	}
 
-	function getFooterInner(env){ //取得 footer inner 節點
-		return getChild(getFooter(env), 'inner');
+	function getFtIn(env){ //取得 footer in 節點
+		return getChild(getFt(env), 'in');
 	}
 
-	function getFooterList(env){ //取得 footer ul 節點
-		return getChild(getFooterInner(env), 'ul');
+	function getFtList(env){ //取得 footer ul 節點
+		return getChild(getFtIn(env), 'ul');
 	}
 
-	function getFooterItem(env){ //取得 footer li 節點
-		return getFooterInner(env)[0].querySelectorAll('li');
+	function getFtItem(env){ //取得 footer li 節點
+		return getFtIn(env)[0].querySelectorAll('li');
 	}
 
 	function getCtrlBtns(env){ //取得控制項按鈕
-		return getFooterList(env)[0].querySelectorAll('.prev, .next');
+		return getFtList(env)[0].querySelectorAll('.prev, .next');
 	}
 
 	function getCtrlBtn(env, selector){ //查詢取得控制項按鈕，className 是 class(.prev)
-		return getFooterList(env)[0].querySelector(selector);
+		return getFtList(env)[0].querySelector(selector);
 	}
 
 	function updateIndex(env){ //更新 data-index
@@ -157,7 +161,7 @@ define(function(){
 	}
 
 	function updateContentItemLen(env){ //更新 content li 節點的數量
-		var $List = getContentList(env);
+		var $List = getCtList(env);
 
 		$List.setAttribute('data-child', $List.children.length);
 
@@ -169,28 +173,29 @@ define(function(){
 	}
 
 	return {
-		getChild:getChild,
-		getType:getType,
-		getIndex:getIndex,
-		getChildLen:getChildLen,
-		getInner:getInner,
-		getHeader:getHeader,
-		getTitleText:getTitleText,
-		setTitleText:setTitleText,
-		getContent:getContent,
-		getContentInner:getContentInner,
-		getContentList:getContentList,
-		getContentItem:getContentItem,
-		getChildGroup:getChildGroup,
-		getContentItemLen:getContentItemLen,
-		getFooter:getFooter,
-		getFooterList:getFooterList,
-		getFooterItem:getFooterItem,
-		getCtrlBtns:getCtrlBtns,
-		getCtrlBtn:getCtrlBtn,
-		updateIndex:updateIndex,
-		updateChildLen:updateChildLen,
-		updateContentItemLen:updateContentItemLen,
-		buildGroup:buildGroup
+		getChild: getChild,
+		getType: getType,
+		getIndex: getIndex,
+		getChildLen: getChildLen,
+		getIn: getIn,
+		getHd: getHd,
+		getHdIn: getHdIn,
+		getTitleText: getTitleText,
+		setTitleText: setTitleText,
+		getCt: getCt,
+		getCtIn: getCtIn,
+		getCtList: getCtList,
+		getCtItem: getCtItem,
+		getChildGroup: getChildGroup,
+		getCtItemLen: getCtItemLen,
+		getFt: getFt,
+		getFtList: getFtList,
+		getFtItem: getFtItem,
+		getCtrlBtns: getCtrlBtns,
+		getCtrlBtn: getCtrlBtn,
+		updateIndex: updateIndex,
+		updateChildLen: updateChildLen,
+		updateContentItemLen: updateContentItemLen,
+		buildGroup: buildGroup
 	}
 });

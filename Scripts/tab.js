@@ -8,8 +8,8 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var items = getNode.getContentItem(env),
-			tabs = getNode.getContentItem(getNode.getChild(items[0], 'tab'));
+		var items = getNode.getCtItem(env),
+			tabs = getNode.getCtItem(getNode.getChild(items[0], 'tab'));
 
 		items.shift(); //把第一個 items 拿掉
 

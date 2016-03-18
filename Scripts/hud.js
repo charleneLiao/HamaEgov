@@ -10,9 +10,9 @@ define(['jquery'], function($){
 
 		var $win = $(window),
 			$menu = $(env),
-			$inner = $menu.children('.inner'),
-			$inner_h = $inner.height(),
-			$inner_t = $inner.offset().top;
+			$in = $menu.children('.in'),
+			$in_h = $in.height(),
+			$in_t = $in.offset().top;
 
 		var _eventNmae = 'fixed', //事件名稱
 			_active = 'is-fixed'; //被選擇的 class name
@@ -20,8 +20,8 @@ define(['jquery'], function($){
 		$win.on(_eventNmae, function () { //開始監測滾動多少的事件
 			var $win_t = $win.scrollTop();
 
-			if ($win_t > $inner_t) {
-				$menu.css({'height': $inner_h});
+			if ($win_t > $in_t) {
+				$menu.css({'height': $in_h});
 				$menu.addClass(_active);
 			} else {
 				$menu.css({'height': 'auto'});

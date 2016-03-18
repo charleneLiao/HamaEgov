@@ -5,13 +5,13 @@
 	li_length = 3
 %>
 
-<div class="group-tab default <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $tab %>" data-child="<%= li_length + 1 %>" <% if func_set %> data-function="<%= func_set %>"<% end %> ><div class="inner">
-	<div class="header"><div class="inner">
+<div class="group-tab default <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $tab %>" data-child="<%= li_length + 1 %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<div class="hd"><div class="in">
 		<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
 	</div></div>
 
 	<% if ( li_length > 0 ) %>
-		<div class="content"><div class="inner">
+		<div class="ct"><div class="in">
 			<ul data-index="1" data-child="<%= li_length + 1 %>">
 				<li data-index="1">
 

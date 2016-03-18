@@ -8,11 +8,11 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 		
-		var li = getNode.getContentItem(env), //取 li
+		var li = getNode.getCtItem(env), //取 li
 			child_node = getNode.getChild(li, 'div'),
-			child_node_header = getNode.getHeader(child_node),
-			child_node_content_inner = getNode.getContentInner(child_node),
-			child_node_content_inner_length = child_node_content_inner.length || 1,
+			child_node_header = getNode.getHd(child_node),
+			child_node_content_in = getNode.getCtIn(child_node),
+			child_node_content_in_length = child_node_content_in.length || 1,
 			all_a = env.querySelectorAll('a'),
 			last_a = all_a[all_a.length - 1];
 
@@ -23,8 +23,8 @@ define(['jquery', 'getNode'], function($, getNode){
 			$a = $child_node_header.find('a'),
 			$last_a = $(last_a);
 
-		for( var i =0; i < child_node_content_inner_length; i++ ) { //如果 child .inner 沒有任何內容
-			var _this = child_node_content_inner[i] || child_node_content_inner;
+		for( var i =0; i < child_node_content_in_length; i++ ) { //如果 child .in 沒有任何內容
+			var _this = child_node_content_in[i] || child_node_content_in;
 
 			if( !_this.children.length ) {
 				_this.parentNode.style.display = 'none'; //就隱藏 .content
@@ -41,6 +41,10 @@ define(['jquery', 'getNode'], function($, getNode){
 
 			$li.removeClass(_active);
 			$li.eq(_index).addClass(_active);
+
+			$this.on('mouseleave', function(){
+				$this.removeClass(_active);
+			});
 		});
 
 		$li.on('mouseenter', function(evt){ //觸發事件

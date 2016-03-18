@@ -1,9 +1,9 @@
 <%= render partial: "/Erb/sys/variable" %>
-<div class="group" data-index="1" data-type="<%= $row %>" data-child="1"><div class="inner">
-	<div class="header"><div class="inner">
+<div class="g" data-index="1" data-type="<%= $row %>" data-child="1"><div class="in">
+	<div class="hd"><div class="in">
 		<h3><span><a></a></span></h3>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 
 	<!-- slider 主輪播 -->
 		<%= render partial: "/Erb/group/group-list_major-slider", locals: set({ index: 1, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "主輪播" }) %>
@@ -12,17 +12,17 @@
 	</div></div>
 </div></div>
 
-<div class="group" data-index="2" data-type="<%= $cell %>" data-child="4"><div class="inner">
-	<div class="header"><div class="inner">
+<div class="g" data-index="2" data-type="<%= $cell %>" data-child="4"><div class="in">
+	<div class="hd"><div class="in">
 		<h3><span><a></a></span></h3>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 
-	<div data-index="1" data-type="<%= $row %>" data-child="7"><div class="inner">
-		<div class="header"><div class="inner">
+	<div data-index="1" data-type="<%= $row %>" data-child="7"><div class="in">
+		<div class="hd"><div class="in">
 			<h3><span><a></a></span></h3>
 		</div></div>
-		<div class="content"><div class="inner">
+		<div class="ct"><div class="in">
 
 		<!-- nav 選單 -->
 			<%= render partial: "/Erb/module/list-text_nav", locals: set({ index: 1, header_text: "選單" }) %>
@@ -55,11 +55,11 @@
 		</div></div>
 	</div></div>
 
-	<div data-index="2" data-type="<%= $row %>" data-child="9"><div class="inner">
-		<div class="header"><div class="inner">
+	<div data-index="2" data-type="<%= $row %>" data-child="9"><div class="in">
+		<div class="hd"><div class="in">
 			<h3><span><a></a></span></h3>
 		</div></div>
-		<div class="content"><div class="inner">
+		<div class="ct"><div class="in">
 
 		<!-- vote 投票 -->
 			<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 5, header_text: "投票" }) %>
@@ -96,11 +96,11 @@
 		</div></div>
 	</div></div>
 
-	<div data-index="3" data-type="<%= $row %>" data-child="9"><div class="inner">
-		<div class="header"><div class="inner">
+	<div data-index="3" data-type="<%= $row %>" data-child="9"><div class="in">
+		<div class="hd"><div class="in">
 			<h3><span><a></a></span></h3>
 		</div></div>
-		<div class="content"><div class="inner">
+		<div class="ct"><div class="in">
 
 		<!-- message 訊息 -->
 			<%= render partial: "/Erb/group/group-list_message", locals: set({ index: 8, header_text: "訊息", inner: "/Erb/module/area-essay_message" }) %>
@@ -141,11 +141,11 @@
 		</div></div>
 	</div></div>
 
-	<div data-index="4" data-type="<%= $row %>" data-child="9"><div class="inner">
-		<div class="header"><div class="inner">
+	<div data-index="4" data-type="<%= $row %>" data-child="9"><div class="in">
+		<div class="hd"><div class="in">
 			<h3><span><a></a></span></h3>
 		</div></div>
-		<div class="content"><div class="inner">
+		<div class="ct"><div class="in">
 
 		<!-- default 預設 -->
 			<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 2, header_text: "文字" }) %>
@@ -181,11 +181,11 @@
 	</div></div>
 </div></div>
 
-<div class="group" data-index="3" data-type="<%= $row %>" data-child="1"><div class="inner">
-	<div class="header"><div class="inner">
+<div class="g" data-index="3" data-type="<%= $row %>" data-child="1"><div class="in">
+	<div class="hd"><div class="in">
 		<h3><span><a></a></span></h3>
 	</div></div>
-	<div class="content"><div class="inner">
+	<div class="ct"><div class="in">
 
 		<!-- marquee-slider 跑馬燈輪播 -->
 			<%= render partial: "/Erb/group/group-list_marquee-slider", locals: set({ index: 1, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "輪播" }) %>

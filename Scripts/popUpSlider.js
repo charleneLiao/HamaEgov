@@ -11,7 +11,7 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		var _class = 'is-show';
 
-		var content_li = getNode.getContentItem(env),
+		var content_li = getNode.getCtItem(env),
 			_content_li_length = content_li.length,
 			close_li = getNode.getCtrlBtn(env, '.close'),
 			prev_li = getNode.getCtrlBtn(env, '.prev'),

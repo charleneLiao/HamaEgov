@@ -19,7 +19,7 @@ define(['googleMaps', 'getNode', 'plugin'], function(googleMaps, getNode, plugin
 
 		plugin.extend($set, opt);
 
-		var $divition = getNode.getChild(getNode.getContentInner(env), 'divition')[0]; //google map 的 div
+		var $divition = getNode.getChild(getNode.getCtIn(env), 'divition')[0]; //google map 的 div
 
 		$divition.style.height = parseInt($set.height, 10) + 'px'; //給他高
 

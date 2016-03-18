@@ -6,13 +6,13 @@
 
 	&.default {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -29,16 +29,16 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 		}
 
-		.footer {
+		.ft {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -64,13 +64,13 @@
 
 	&.message {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -91,13 +91,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-m;
 				background-color: $light;
 				transition: $transition;
@@ -111,7 +111,7 @@
 				}
 			}
 
-			.image {
+			.img {
 				float: left;
 				margin-right: $interval-m;
 
@@ -163,7 +163,7 @@
 				@extend %mark;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -176,10 +176,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -205,13 +205,13 @@
 
 	&.link {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -232,13 +232,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 
 				&:hover {
 
@@ -248,7 +248,7 @@
 				}
 			}
 
-			.image {
+			.img {
 
 				span {
 					@extend %bg-cover;
@@ -295,7 +295,7 @@
 				@extend %mark;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -308,10 +308,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -337,13 +337,13 @@
 
 	&.page-essay {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -364,13 +364,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -384,7 +384,7 @@
 				}
 			}
 
-			.image {
+			.img {
 				float: left;
 				margin-right: $interval-l;
 
@@ -449,7 +449,7 @@
 				@extend %mark;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -462,10 +462,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -491,13 +491,13 @@
 
 	&.page-image-caption-label {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -518,13 +518,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -538,7 +538,7 @@
 				}
 			}
 
-			.image {
+			.img {
 				float: left;
 				margin-right: $interval-m;
 
@@ -604,10 +604,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -633,13 +633,13 @@
 
 	&.page-image-caption-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -660,13 +660,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -680,7 +680,7 @@
 				}
 			}
 
-			.image {
+			.img {
 				float: left;
 				margin-right: $interval-m;
 
@@ -725,7 +725,7 @@
 				}
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -738,10 +738,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -767,13 +767,13 @@
 
 	&.page-caption-label-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -794,13 +794,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -846,7 +846,7 @@
 				@extend %mark;
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -859,10 +859,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -888,13 +888,13 @@
 
 	&.page-caption-label {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -915,13 +915,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -968,10 +968,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -997,13 +997,13 @@
 
 	&.page-caption-paragraph {
 
-		> .inner {
+		> .in {
 
 		}
 
-		.header {
+		.hd {
 
-			> .inner {
+			> .in {
 
 			}
 
@@ -1024,13 +1024,13 @@
 			}
 		}
 
-		.content {
+		.ct {
 
-			> .inner {
+			> .in {
 				
 			}
 
-			/*a*/.divition {
+			/*a*/.div {
 				padding: $interval-l;
 				background-color: $light;
 				transition: $transition;
@@ -1056,7 +1056,7 @@
 				}
 			}
 
-			.paragraph {
+			.p {
 				@extend %paragraph;
 
 				p {
@@ -1069,10 +1069,10 @@
 			}
 		}
 
-		.footer {
+		.ft {
 			@extend %footer-btns;
 
-			> .inner {
+			> .in {
 
 			}
 
