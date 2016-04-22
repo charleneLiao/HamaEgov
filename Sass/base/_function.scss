@@ -414,7 +414,7 @@
 		left: auto;
 	}
 
-	%reset.in { //重新設定內部樣式
+	%reset-inner { //重新設定內部樣式
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -435,10 +435,10 @@
 
 	%reset { //重新設定全部樣式
 		@extend %reset-outer;
-		@extend %reset.in;
+		@extend %reset-inner;
 	}
 
-	%reset.in-module { //清除內部模塊的 margin
+	%reset-inner-module { //清除內部模塊的 margin
 
 		[data-index][data-type] {
 			margin: 0;
@@ -513,7 +513,7 @@
 		}
 	}
 
-	@mixin multi-ellipsis ($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
+	@mixin multi-ellipsis($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
 
 		@extend %multi-ellipsis;
 		height: $line-height * $line;

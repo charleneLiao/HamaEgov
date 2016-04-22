@@ -98,7 +98,7 @@
 						> ul {
 
 							> li {
-								@extend %reset.in-module;
+								@extend %reset-inner-module;
 
 								+ li {
 									margin-top: $interval-s;
@@ -1355,7 +1355,7 @@
 					> ul {
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							+ li {
 								display: none;
@@ -1617,7 +1617,7 @@
 					> ul {
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							+ li {
 								margin-top: $interval-s;
@@ -1707,7 +1707,7 @@
 						}
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
@@ -1794,7 +1794,7 @@
 						}
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							> [data-index][data-type] {
 								padding: $interval-xs;
@@ -2373,7 +2373,7 @@
 						}
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							@include media('pad') {
 								$li-len: 2;
@@ -2464,7 +2464,7 @@
 					> ul {
 
 						> li {
-							@extend %reset.in-module;
+							@extend %reset-inner-module;
 
 							+ li {
 								margin-top: $interval-s;

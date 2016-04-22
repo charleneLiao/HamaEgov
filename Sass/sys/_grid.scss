@@ -214,7 +214,7 @@
 					@extend %reset;
 
 					> li {
-						@extend %reset.in-module;
+						@extend %reset-inner-module;
 
 						+ li {
 							@include js(false) {
