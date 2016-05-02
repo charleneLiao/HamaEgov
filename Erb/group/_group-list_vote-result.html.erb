@@ -10,9 +10,11 @@
 
 <% if ( li_length > 0 ) %>
 	<div class="group-list vote-result <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
-		<div class="hd"><div class="in">
-			<h3><span><a><% if header_text %><%= header_text %><% end %></a></span></h3>
-		</div></div>
+		<% if header_text %>
+			<div class="hd"><div class="in">
+				<h3><span><a href="#"><%= header_text %></a></span></h3>
+			</div></div>
+		<% end %>
 		<div class="ct"><div class="in">
 			<ul data-index="1" data-child="<%= li_length %>">
 

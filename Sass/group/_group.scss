@@ -111,7 +111,7 @@
 
 					> .in {
 
-						&::after {
+						&:after {
 							@extend %clear;
 						}
 					}
@@ -149,7 +149,7 @@
 
 					> .in {
 
-						&::after {
+						&:after {
 							@extend %clear;
 						}
 					}

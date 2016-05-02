@@ -19,7 +19,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('mode_edit');
 				}
 			}
@@ -268,7 +268,7 @@
 				color: $color;
 				font-size: $font-size-xl;
 
-				&::before {
+				&:before {
 					@include icon-font('error');
 				}
 			}

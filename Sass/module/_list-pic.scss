@@ -60,6 +60,10 @@
 
 			}
 
+			/*i*/.mark {
+				
+			}
+
 			img {
 				
 			}
@@ -106,7 +110,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('slideshow');
 				}
 			}
@@ -149,6 +153,10 @@
 
 			a {
 				display: block;
+			}
+
+			/*i*/.mark {
+				
 			}
 
 			img {
@@ -254,7 +262,7 @@
 					width: 100%;
 				}
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -299,6 +307,10 @@
 				@include media('mobile') {
 					background-color: transparent;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 
 			img {
@@ -394,7 +406,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('public');
 				}
 			}
@@ -416,7 +428,7 @@
 
 			ul {
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -432,6 +444,10 @@
 
 			a {
 				@extend %mask;
+			}
+
+			/*i*/.mark {
+				
 			}
 
 			img {
@@ -524,6 +540,10 @@
 
 				a {
 					display: block;
+				}
+
+				/*i*/.mark {
+					
 				}
 
 				img {
@@ -622,6 +642,10 @@
 					display: block;
 				}
 
+				/*i*/.mark {
+					
+				}
+
 				img {
 					display: block;
 				}
@@ -669,7 +693,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('cloud_download');
 				}
 			}
@@ -691,7 +715,7 @@
 
 			ul {
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -764,6 +788,10 @@
 				}
 			}
 
+			/*i*/.mark {
+				
+			}
+
 			img {
 				display: none;
 			}
@@ -810,7 +838,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('photo');
 				}
 			}
@@ -832,7 +860,7 @@
 
 			ul {
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -887,6 +915,10 @@
 				@include media('mobile') {
 					background-color: transparent;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 
 			img {
@@ -955,7 +987,7 @@
 
 			ul {
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -974,6 +1006,10 @@
 
 			a {
 				display: block;
+			}
+
+			/*i*/.mark {
+				
 			}
 
 			img {

@@ -105,7 +105,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('view_compact');
 				}
 			}
@@ -232,7 +232,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('view_compact');
 				}
 			}

@@ -109,7 +109,7 @@
 
 					a {
 
-						&::after {
+						&:after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -167,6 +167,10 @@
 					display: block;
 					padding: $interval-m;
 				}
+
+				/*i*/.mark {
+
+				}
 			}
 
 			.ft {
@@ -208,7 +212,7 @@
 				h4 {
 					@extend %title;
 
-					&::before {
+					&:before {
 						@include icon-font('menu');
 					}
 				}
@@ -230,7 +234,7 @@
 
 				ul {
 
-					&::after {
+					&:after {
 						@extend %clear;
 					}
 				}
@@ -257,6 +261,10 @@
 						background-color: $minor-color;
 						color: $white;
 					}
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -340,6 +348,10 @@
 						color: $white;
 					}
 				}
+
+				/*i*/.mark {
+					
+				}
 			}
 
 			.ft {
@@ -381,7 +393,7 @@
 				h4 {
 					@extend %title;
 
-					&::before {
+					&:before {
 						@include icon-font('menu');
 					}
 				}
@@ -419,6 +431,10 @@
 				a {
 					@extend %list;
 					@extend %list-hover;
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -499,6 +515,10 @@
 					@extend %list;
 					@extend %list-hover;
 				}
+
+				/*i*/.mark {
+					
+				}
 			}
 
 			.ft {
@@ -545,7 +565,7 @@
 				padding: $interval-m;
 				color: $white;
 
-				&::before {
+				&:before {
 					@include icon-font('menu');
 					margin-right: $interval-xs;
 				}
@@ -596,7 +616,7 @@
 				padding: $interval-m;
 				transition: $transition;
 
-				&::before {
+				&:before {
 					@include icon-font('keyboard_arrow_right');
 					margin-right: $interval-xs;
 				}
@@ -605,6 +625,10 @@
 					background-color: $light;
 					color: currentColor;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -702,6 +726,10 @@
 				a {
 					@extend %btn;
 				}
+
+				/*i*/.mark {
+					
+				}
 			}
 
 			.ft {
@@ -760,7 +788,7 @@
 				a {
 					@extend %btn;
 
-					&::before {
+					&:before {
 						@include icon-font('settings');
 						color: $white;
 					}
@@ -794,7 +822,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('person');
 							}
 						}
@@ -804,7 +832,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('person_outline');
 							}
 						}
@@ -814,7 +842,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -824,7 +852,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('print');
 							}
 						}
@@ -834,7 +862,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -844,7 +872,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -854,7 +882,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-font('mode_edit');
 							}
 						}
@@ -871,9 +899,13 @@
 					text-align: left;
 					white-space: nowrap;
 
-					&::before {
+					&:before {
 						margin-right: $interval-xs;
 					}
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -982,6 +1014,10 @@
 					display: block !important;
 					transition: $transition;
 				}
+
+				/*i*/.mark {
+					
+				}
 			}
 
 			.ft {
@@ -1042,7 +1078,7 @@
 
 				ul {
 
-					&::after {
+					&:after {
 						@extend %clear;
 					}
 				}
@@ -1079,6 +1115,10 @@
 					@extend %hide-text;
 					display: block !important;
 					transition: $transition;
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -1212,6 +1252,10 @@
 				border-style: solid;
 				border-color: transparent;
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
@@ -1251,7 +1295,7 @@
 
 					a {
 
-						&::after {
+						&:after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -1309,6 +1353,10 @@
 					display: block;
 					padding: $interval-m;
 				}
+
+				/*i*/.mark {
+					
+				}
 			}
 
 			.ft {
@@ -1363,7 +1411,7 @@
 					display: inline;
 					color: $white;
 
-					&::after {
+					&:after {
 						content: ' : ';
 					}
 				}
@@ -1394,7 +1442,7 @@
 					
 					+ li {
 
-						&::before {
+						&:before {
 							content: ' , ';
 						}
 					}
@@ -1406,6 +1454,10 @@
 
 				a {
 					color: inherit;
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -1509,6 +1561,10 @@
 					background-color: $light-gray;
 				}
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
@@ -1604,6 +1660,10 @@
 					background-color: $light-gray;
 				}
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
@@ -1647,7 +1707,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('slideshow');
 				}
 			}
@@ -1693,7 +1753,7 @@
 				@extend %list-hover;
 			}
 
-			.mark {
+			/*i*/.mark {
 				display: inline-block;
 				padding: $interval-xs $interval-s;
 				margin-right: $interval-s;
@@ -1759,7 +1819,7 @@
 
 					a {
 
-						&::after {
+						&:after {
 							@include bg-to-pic($icon, false);
 						}
 					}
@@ -1816,6 +1876,10 @@
 				a {
 					display: block;
 					padding: $interval-m;
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -1896,7 +1960,7 @@
 					
 					+ li {
 
-						&::before {
+						&:before {
 							content: ' | ';
 						}
 					}
@@ -1908,6 +1972,10 @@
 
 				a {
 					color: inherit;
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -1951,7 +2019,7 @@
 				h4 {
 					@extend %title;
 
-					&::before {
+					&:before {
 						@include icon-font('public');
 					}
 				}
@@ -2067,7 +2135,7 @@
 					
 					+ li {
 
-						&::before {
+						&:before {
 							content: ' | ';
 						}
 					}
@@ -2079,6 +2147,10 @@
 
 				a {
 
+				}
+
+				/*i*/.mark {
+					
 				}
 			}
 
@@ -2125,7 +2197,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('star');
 				}
 			}
@@ -2213,7 +2285,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('explore');
 				}
 			}
@@ -2237,7 +2309,7 @@
 			ul {
 				border: $border;
 
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 
@@ -2258,7 +2330,7 @@
 
 				+ li {
 
-					&::before {
+					&:before {
 						content: $content;
 						display: block;
 						position: absolute;
@@ -2286,6 +2358,10 @@
 					background-color: $minor-color;
 					color: $white;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -2349,7 +2425,7 @@
 
 			ul {
 				
-				&::after {
+				&:after {
 					@extend %clear;
 				}
 			}
@@ -2368,7 +2444,7 @@
 
 					span {
 
-						&::before, &::after {
+						&:before, &:after {
 							background-color: $minor-color;
 						}
 					}
@@ -2382,7 +2458,7 @@
 				position: relative;
 				z-index: 1;
 
-				&::before, &::after {
+				&:before, &:after {
 					content: $content;
 					display: block;
 					position: absolute;
@@ -2394,7 +2470,7 @@
 					transition: $transition;
 				}
 
-				&::before {
+				&:before {
 					top: 0;
 					transform: skewX($skewX);
 
@@ -2403,7 +2479,7 @@
 					}
 				}
 
-				&::after {
+				&:after {
 					bottom: 0;
 					transform: skewX(-1 * $skewX);
 
@@ -2414,7 +2490,7 @@
 
 				&:hover {
 
-					&::before, &::after {
+					&:before, &:after {
 						background-color: $btn-hover-bg-color;
 					}
 				}
@@ -2426,6 +2502,10 @@
 				max-width: 100%;
 				padding: $interval-m $interval-l;
 				color: $white;
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -2486,7 +2566,7 @@
 					text-align: justify;
 					line-height: 0;
 
-					&::after {
+					&:after {
 						content: $content;
 						display: inline-block;
 						width: 100%;
@@ -2551,9 +2631,13 @@
 					padding: $interval-m;
 				}
 
-				&::before {
+				&:before {
 					margin-right: $interval-xs;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -2628,14 +2712,14 @@
 				display: inline;
 				font-size: $font-size-xs;
 
-				&::before {
+				&:before {
 					@include icon-font('home');
 					vertical-align: middle;
 				}
 
 				+ li {
 
-					&::before {
+					&:before {
 						@include icon-font('navigate_next');
 						vertical-align: middle;
 					}
@@ -2648,6 +2732,10 @@
 
 			a {
 
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -2723,6 +2811,10 @@
 
 			a {
 				@extend %mark-extend;
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -2818,6 +2910,10 @@
 			a {
 				@extend %btn;
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
@@ -2861,7 +2957,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('list');
 				}
 			}
@@ -2980,7 +3076,7 @@
 				
 				+ li {
 
-					&::before {
+					&:before {
 						content: ' | ';
 						color: $light-gray;
 					}
@@ -2993,6 +3089,10 @@
 
 			a {
 				color: inherit;
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -3037,7 +3137,7 @@
 			h4 {
 				@extend %title;
 
-				&::before {
+				&:before {
 					@include icon-font('cloud_download');
 				}
 			}
@@ -3076,7 +3176,7 @@
 						a {
 							border-left-color: $color;
 
-							&::before {
+							&:before {
 								@include icon-pic($pic);
 							}
 						}
@@ -3094,13 +3194,17 @@
 				border-left-width: $interval-xs;
 				border-left-style: solid;
 
-				&::before {
+				&:before {
 					margin-right: $interval-xs;
 				}
 
 				&:hover {
 					border-left-width: $interval-m;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
@@ -3194,7 +3298,7 @@
 
 				+ li {
 
-					&::before {
+					&:before {
 						content: ' | ';
 						color: $gray;
 
@@ -3212,7 +3316,7 @@
 
 						a {
 
-							&::before {
+							&:before {
 								@include icon-pic($pic);
 							}
 
@@ -3242,7 +3346,7 @@
 					padding: $interval-m $interval-l;
 				}
 
-				&::before {
+				&:before {
 					margin-right: $interval-xs;
 				}
 
@@ -3251,6 +3355,10 @@
 					background-color: $white;
 					color: currentColor;
 				}
+			}
+
+			/*i*/.mark {
+				
 			}
 		}
 
