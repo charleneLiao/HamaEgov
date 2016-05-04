@@ -643,6 +643,78 @@
 		}
 	}
 
+//更新時間================================================================
+
+	&.update-time {
+
+		> .in {
+
+		}
+
+		.hd {
+			display: inline;
+
+			> .in {
+				display: inline;
+			}
+
+			h4 {
+				display: inline;
+
+				&:after {
+					content: ' : ';
+				}
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			display: inline;
+
+			> .in {
+				display: inline;
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //投票結果================================================================
 
 	&.vote-result {

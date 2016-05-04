@@ -82,7 +82,7 @@
 
 <h3 id="environment-and-tools">環境與工具</h3>
 我們支援 IE8 以上的瀏覽器，使用 HTML5 宣告與 HTML4.2 的標籤。語意標籤被轉化為 class name，便於日後轉換(如 nav 標籤)。
-唯二的例外是視訊與音訊模組，使用原生地 HTML 5 撥放器，但也提供了相應的外掛給 IE8、IE9 使用。
+唯二的例外是視訊與音訊模組，使用 HTML 5 原生撥放器，但也提供了相應的外掛給 IE8、IE9 使用。
 
 開發環境推薦使用 Fire.app。以下是使用到的工具：
 
@@ -1035,6 +1035,8 @@ list-text 是類別 class，而 nav 是自定義 class。
       </div>
     </div>
 
+若想參閱所有模組列表，可以參閱 [模組盤點](https://docs.google.com/document/d/15XokVf-KISYmoEm7otdGADsnAHNIpbIypbBoaRkbMrE/edit)。
+
 
 <h3 id="component">組件</h3>
 模組的 ct 是一塊有意義的內容，ct 由組件組成，有規則可依循。
@@ -1569,7 +1571,7 @@ Erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
 
 
 <h3 id="erb-run">Erb 運作方式</h3>
-樣板是一段 HTML，在樣板中，我們可以輕易地嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
+樣板是一段 HTML，在樣板中，我們可以輕易嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
       <div class="hd"><div class="in">
@@ -3052,7 +3054,7 @@ app.js 的 requirejs.config 設定了套件的短名與命名配置，以下是 
 
       return main;
     });
-    
+
 
 執行完 require.config 的設定後，接著 app.js 會執行 main.js
 

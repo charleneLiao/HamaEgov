@@ -666,7 +666,7 @@
 				}
 
 				> .ct {
-					padding: $interval-l 0;
+					padding: $interval-s 0;
 					border-bottom: $border;
 
 					> .in {
@@ -678,10 +678,13 @@
 							}
 
 							> li {
+								&:nth-child(#{$max-len - 1}n+1) {
+									clear: left;
+								}
 
 								> [data-index][data-type] {
 									@extend %reset;
-									padding: 0 $interval-xs;
+									padding: $interval-m $interval-xs;
 
 									> .in {
 										@extend %reset;

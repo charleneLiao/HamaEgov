@@ -36,12 +36,16 @@
 						<%= render partial: "/Erb/module/list-text_link", locals: set({ index: 1, header_text: "下方連結", show_footer: false, show_mark: false }) %>
 					<!-- link 結束 -->
 
+					<!-- update-time 更新時間 -->
+						<%= render partial: "/Erb/module/simple-text_update-time", locals: set({ index: 2, header_text: "更新時間" }) %>
+					<!-- update-time 結束 -->
+
 					<!-- visit-count 瀏覽人次 -->
-						<%= render partial: "/Erb/module/simple-text_visit-count", locals: set({ index: 2, header_text: "瀏覽人次" }) %>
+						<%= render partial: "/Erb/module/simple-text_visit-count", locals: set({ index: 3, header_text: "瀏覽人次" }) %>
 					<!-- visit-count 結束 -->
 
 					<!-- address 聯絡資訊編輯 -->
-						<%= render partial: "/Erb/module/area-editor_address", locals: set({ index: 3, header_text: "聯絡資訊" }) %>
+						<%= render partial: "/Erb/module/area-editor_address", locals: set({ index: 4, header_text: "聯絡資訊" }) %>
 					<!-- address 結束 -->
 
 					</div></div>

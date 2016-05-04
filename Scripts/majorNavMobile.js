@@ -13,9 +13,9 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		var $li = $(li),
 			$child_node_in = $(child_node_in).filter(function(i) { //過濾 .content 裡沒有 a 的物件
-				return $(this).children('.content').find('a').length;
+				return $(this).children('.ct').find('a').length;
 			}),
-			$child_node_header = $child_node_in.children('.header'),
+			$child_node_header = $child_node_in.children('.hd'),
 			$a = $child_node_header.find('a');
 
 		var _eventNmae = file, //事件名稱
