@@ -787,10 +787,11 @@
 
 				a {
 					@extend %btn;
+					color: $white;
 
 					&:before {
 						@include icon-font('settings');
-						color: $white;
+						margin-right: $interval-xs;
 					}
 				}
 			}
