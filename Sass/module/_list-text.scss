@@ -859,6 +859,46 @@
 						}
 					}
 
+					&.rss {
+
+						a {
+
+							&:before {
+								@include icon-font('star');
+							}
+						}
+					}
+
+					&.json {
+
+						a {
+
+							&:before {
+								@include icon-font('cloud_download');
+							}
+						}
+					}
+
+					&.xml {
+
+						a {
+
+							&:before {
+								@include icon-font('cloud_download');
+							}
+						}
+					}
+
+					&.csv {
+
+						a {
+
+							&:before {
+								@include icon-font('cloud_download');
+							}
+						}
+					}
+
 					&.nav-edit {
 
 						a {
