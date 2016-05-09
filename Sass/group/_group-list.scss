@@ -488,117 +488,117 @@
 
 								//自動選單寬度 & 移位功能================================================================
 
-								// @for $i from 1 through $max-len { //ul 的寬度
+								@for $i from 1 through $max-len { //ul 的寬度
 
-								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
+									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
-								// 		> [data-index][data-type] {
+										> [data-index][data-type] {
 
-								// 			> .in {
+											> .in {
 
-								// 				> .ct {
-								// 					width: 100% * $i;
-								// 				}
-								// 			}
-								// 		}
-								// 	}
-								// }
+												> .ct {
+													width: 100% * $i;
+												}
+											}
+										}
+									}
+								}
 
-								// @for $i from 1 through $max-len { //ul 的寬度
+								@for $i from 1 through $max-len { //ul 的寬度
 
-								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
+									&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
 
-								// 		> .nav {
+										> .nav {
 
-								// 			> .in {
+											> .in {
 
-								// 				> .ct {
+												> .ct {
 
-								// 					> .in {
+													> .in {
 
-								// 						> ul {
+														> ul {
 
-								// 							> li {
-								// 								width: 100% / $i;
-								// 							}
-								// 						}
-								// 					}
-								// 				}
-								// 			}
-								// 		}
-								// 	}
-								// }
+															> li {
+																width: 100% / $i;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
 							}
 
 							//自動選單寬度 & 移位功能================================================================
 
-							// @for $i from $default-len through $max-len { //group 的 child
+							@for $i from $default-len through $max-len { //group 的 child
 
-							// 	&[data-child="#{$i}"] {
+								&[data-child="#{$i}"] {
 
-							// 		@for $j from 2 through $max-len { //li 的 index
+									@for $j from 2 through $max-len { //li 的 index
 
-							// 			> [data-index="#{$j}"] { //li 的順序
+										> [data-index="#{$j}"] { //li 的順序
 
-							// 				@for $k from 1 through $max-len { //li 的寬度
+											@for $k from 1 through $max-len { //li 的寬度
 
-							// 					&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
+												&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
 
-							// 						$li-width: min($k, $i); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-							// 						$all-width: $j - 1 + $li-width;
+													$li-width: min($k, $i); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
+													$all-width: $j - 1 + $li-width;
 
-							// 						> [data-index][data-type] {
+													> [data-index][data-type] {
 
-							// 							> .in {
+														> .in {
 
-							// 								> .ct {
+															> .ct {
 
-							// 									@if( $all-width > $i ) { //如果 li 數量大於 li 寬度
-							// 										left: 100% * ( $i - $all-width ); //就推回來
-							// 									}
-							// 								}
-							// 							}
-							// 						}
-							// 					}
-							// 				}
-							// 			}
-							// 		}
-							// 	}
-							// }
+																@if( $all-width > $i ) { //如果 li 數量大於 li 寬度
+																	left: 100% * ( $i - $all-width ); //就推回來
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 
-							// @for $i from 1 through $default-len { //group 的 child
+							@for $i from 1 through $default-len { //group 的 child
 
-							// 	&[data-child="#{$i}"] {
+								&[data-child="#{$i}"] {
 
-							// 		@for $j from 2 through $max-len { //li 的 index
+									@for $j from 2 through $max-len { //li 的 index
 
-							// 			> [data-index="#{$j}"] { //li 的順序
+										> [data-index="#{$j}"] { //li 的順序
 
-							// 				@for $k from 1 through $max-len { //li 的寬度
+											@for $k from 1 through $max-len { //li 的寬度
 
-							// 					&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
+												&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
 
-							// 						$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-							// 						$all-width: $j - 1 + $li-width;
+													$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
+													$all-width: $j - 1 + $li-width;
 
-							// 						> [data-index][data-type] {
+													> [data-index][data-type] {
 
-							// 							> .in {
+														> .in {
 
-							// 								> .ct {
+															> .ct {
 
-							// 									@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
-							// 										left: 100% * ( $default-len - $all-width ); //就推回來
-							// 									}
-							// 								}
-							// 							}
-							// 						}
-							// 					}
-							// 				}
-							// 			}
-							// 		}
-							// 	}
-							// }
+																@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
+																	left: 100% * ( $default-len - $all-width ); //就推回來
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
