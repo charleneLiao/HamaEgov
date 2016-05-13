@@ -580,14 +580,13 @@
 		}
 
 		.hd {
-			display: inline;
+			display: inline-block;
 
 			> .in {
-				display: inline;
+
 			}
 
 			h4 {
-				display: inline;
 
 				&:after {
 					content: ' : ';
@@ -595,27 +594,27 @@
 			}
 
 			span {
-				
+				display: inline-block;
 			}
 
 			a {
-
+				display: block;
 			}
 		}
 
 		.ct {
-			display: inline;
+			display: inline-block;
 
 			> .in {
-				display: inline;
+
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
-
+				display: block;
 			}
 		}
 
@@ -652,14 +651,13 @@
 		}
 
 		.hd {
-			display: inline;
+			display: inline-block;
 
 			> .in {
-				display: inline;
+
 			}
 
 			h4 {
-				display: inline;
 
 				&:after {
 					content: ' : ';
@@ -667,27 +665,27 @@
 			}
 
 			span {
-				
+				display: inline-block;
 			}
 
 			a {
-
+				display: block;
 			}
 		}
 
 		.ct {
-			display: inline;
+			display: inline-block;
 
 			> .in {
-				display: inline;
+
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
-
+				display: block;
 			}
 		}
 

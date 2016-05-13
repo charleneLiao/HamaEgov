@@ -656,16 +656,131 @@
 		}
 	}
 
+//開放資料================================================================
+
+	&.open-data {
+
+		> .in {
+			padding: $interval-xs 0;
+		}
+
+		.hd {
+			display: inline-block;
+
+			> .in {
+
+			}
+
+			h4 {
+
+				&:after {
+					content: ' : ';
+				}
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			a {
+				display: block;
+			}
+		}
+
+		.ct {
+			display: inline-block;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+				display: inline-block;
+
+				+ li {
+					margin-left: $interval-xs;
+				}
+
+				&.json {
+
+					a {
+
+						&:before {
+
+						}
+					}
+				}
+
+				&.xml {
+
+					a {
+
+						&:before {
+
+						}
+					}
+				}
+
+				&.csv {
+
+					a {
+
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %btn;
+
+				&:before {
+					margin-right: $interval-xs;
+					@include icon-font('cloud_download');
+				}
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 //使用者工具================================================================
 
 	&.user-tool {
 
 		@include media('mobile') {
 			display: none;
-		}
-
-		.group.page-header & {
-			float: right;
 		}
 
 		.base-extend & {
@@ -757,55 +872,39 @@
 		}
 
 		.base-section & {
-			position: relative;
-			z-index: 1;
-
-			&:hover {
-
-				.ct {
-					display: block;
-				}
-			}
 
 			> .in {
-
+				padding: $interval-xs 0;
 			}
 
 			.hd {
+				display: inline-block;
 
 				> .in {
 
 				}
 
 				h4 {
-					@extend %reset;
+
+					&:after {
+						content: ' : ';
+					}
 				}
 
 				span {
-					display: block;
+					display: inline-block;
 				}
 
 				a {
-					@extend %btn;
-					color: $white;
-
-					&:before {
-						@include icon-font('settings');
-						margin-right: $interval-xs;
-					}
+					display: block;
 				}
 			}
 
 			.ct {
-				position: absolute;
-				display: none;
-				top: 100%;
-				right: 0;
+				display: inline-block;
 
 				> .in {
-					padding: $interval-m;
-					border: $border;
-					background-color: $white;
+
 				}
 
 				ul {
@@ -813,60 +912,10 @@
 				}
 
 				li {
-					display: block;
+					display: inline-block;
 
 					+ li {
-						margin-top: $interval-xs;
-					}
-
-					&.login {
-
-						a {
-
-							&:before {
-								@include icon-font('person');
-							}
-						}
-					}
-
-					&.logout {
-
-						a {
-
-							&:before {
-								@include icon-font('person_outline');
-							}
-						}
-					}
-
-					&.edit {
-
-						a {
-
-							&:before {
-								@include icon-font('mode_edit');
-							}
-						}
-					}
-
-					&.print {
-
-						a {
-
-							&:before {
-								@include icon-font('print');
-							}
-						}
-					}
-
-					&.rss {
-
-						a {
-
-							&:before {
-								@include icon-font('star');
-							}
-						}
+						margin-left: $interval-xs;
 					}
 
 					&.json {
@@ -874,7 +923,7 @@
 						a {
 
 							&:before {
-								@include icon-font('cloud_download');
+
 							}
 						}
 					}
@@ -884,7 +933,7 @@
 						a {
 
 							&:before {
-								@include icon-font('cloud_download');
+
 							}
 						}
 					}
@@ -893,39 +942,6 @@
 
 						a {
 
-							&:before {
-								@include icon-font('cloud_download');
-							}
-						}
-					}
-
-					&.nav-edit {
-
-						a {
-
-							&:before {
-								@include icon-font('mode_edit');
-							}
-						}
-					}
-
-					&.index-edit {
-
-						a {
-
-							&:before {
-								@include icon-font('mode_edit');
-							}
-						}
-					}
-
-					&.article-edit {
-
-						a {
-
-							&:before {
-								@include icon-font('mode_edit');
-							}
 						}
 					}
 				}
@@ -936,12 +952,10 @@
 
 				a {
 					@extend %btn;
-					display: block;
-					text-align: left;
-					white-space: nowrap;
 
 					&:before {
 						margin-right: $interval-xs;
+						@include icon-font('cloud_download');
 					}
 				}
 
@@ -1442,14 +1456,13 @@
 			}
 
 			.hd {
-				display: inline;
+				display: inline-block;
 
 				> .in {
-					display: inline;
+
 				}
 
 				h4 {
-					display: inline;
 					color: $white;
 
 					&:after {
@@ -1458,27 +1471,27 @@
 				}
 
 				span {
-
+					display: inline-block;
 				}
 
 				a {
-
+					display: block;
 				}
 			}
 
 			.ct {
-				display: inline;
+				display: inline-block;
 
 				> .in {
-					display: inline;
+					
 				}
 
 				ul {
-					display: inline;
+					
 				}
 
 				li {
-					display: inline;
+					display: inline-block;
 					color: $white;
 					
 					+ li {
@@ -1490,11 +1503,11 @@
 				}
 
 				span {
-					color: inherit;
+					display: inline-block;
 				}
 
 				a {
-					color: inherit;
+					display: block;
 				}
 
 				/*i*/.mark {
@@ -1996,23 +2009,26 @@
 				}
 
 				li {
-					display: inline;
+					display: inline-block;
+					vertical-align: middle;
 					color: $white;
 					
 					+ li {
 
 						&:before {
 							content: ' | ';
+							vertical-align: middle;
 						}
 					}
 				}
 
 				span {
-					color: inherit;
+					display: inline-block;
+					vertical-align: middle;
 				}
 
 				a {
-					color: inherit;
+					display: block;
 				}
 
 				/*i*/.mark {
@@ -2172,22 +2188,25 @@
 				}
 
 				li {
-					display: inline;
+					display: inline-block;
+					vertical-align: middle;
 					
 					+ li {
 
 						&:before {
 							content: ' | ';
+							vertical-align: middle;
 						}
 					}
 				}
 
 				span {
-					
+					display: inline-block;
+					vertical-align: middle;
 				}
 
 				a {
-
+					display: block;
 				}
 
 				/*i*/.mark {
@@ -2709,10 +2728,7 @@
 //網站地圖================================================================
 
 	&.sitemap {
-
-		.group.page-header & {
-			clear: both;
-		}
+		margin: $interval-m 0;
 
 		> .in {
 
@@ -2860,7 +2876,6 @@
 		}
 
 		.ft {
-			@extend %footer-btns;
 
 			> .in {
 
@@ -2872,24 +2887,6 @@
 
 			li {
 
-				&.next, &.prev {
-
-					@include js(false) {
-						display: none;
-					}
-				}
-
-				&.prev {
-
-				}
-
-				&.next {
-
-				}
-
-				&.more {
-
-				}
 			}
 
 			span {
@@ -3111,7 +3108,7 @@
 			}
 
 			li {
-				display: inline;
+				display: inline-block;
 				font-size: $font-size-s;
 				color: $gray;
 				
@@ -3119,17 +3116,18 @@
 
 					&:before {
 						content: ' | ';
-						color: $light-gray;
+						vertical-align: middle;
 					}
 				}
 			}
 
 			span {
-				color: inherit;
+				display: inline-block;
+				vertical-align: middle;
 			}
 
 			a {
-				color: inherit;
+				display: block;
 			}
 
 			/*i*/.mark {

@@ -270,7 +270,7 @@
 	&.page-content {
 		@extend %area-page;
 		position: relative;
-		margin-top: $interval-l;
+		margin: $interval-m 0;
 
 		> .in {
 
