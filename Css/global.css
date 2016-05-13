@@ -282,7 +282,7 @@
   vertical-align: middle; }
 
 /* line 921, ../Sass/base/_function.scss */
-.group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .group-list.link > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.anchor .hd h4:before, .list-text.sitemap .ct li:before, .list-text.sitemap .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.error-info .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before {
+.group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .group-list.link > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct li.login a:before, .base-section .list-text.user-tool .ct li.logout a:before, .base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.print a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.anchor .hd h4:before, .list-text.sitemap .ct li:before, .list-text.sitemap .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.error-info .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -338,7 +338,7 @@
   content: "\e0ee"; }
 
 /* line 222, ../Sass/base/_icon-font.scss */
-.group-list.file-download-multiple > .in > .hd h3:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct a:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before {
+.group-list.file-download-multiple > .in > .hd h3:before, .list-text.open-data .ct a:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before {
   content: "\e0fb"; }
 
 /* line 225, ../Sass/base/_icon-font.scss */
@@ -364,6 +364,10 @@
 /* line 309, ../Sass/base/_icon-font.scss */
 .group-list.album > .in > .hd h3:before, .area-figure.album .hd h4:before {
   content: "\e144"; }
+
+/* line 336, ../Sass/base/_icon-font.scss */
+.base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before {
+  content: "\e15e"; }
 
 /* line 417, ../Sass/base/_icon-font.scss */
 .list-text.sitemap .ct li + li:before {
@@ -398,8 +402,12 @@
   content: "\e20e"; }
 
 /* line 615, ../Sass/base/_icon-font.scss */
-.area-form.sign-in .hd h4:before {
+.base-section .list-text.user-tool .ct li.login a:before, .area-form.sign-in .hd h4:before {
   content: "\e253"; }
+
+/* line 621, ../Sass/base/_icon-font.scss */
+.base-section .list-text.user-tool .ct li.logout a:before {
+  content: "\e255"; }
 
 /* line 627, ../Sass/base/_icon-font.scss */
 .group-list.link > .in > .hd h3:before, .base-content .list-text.link .hd h4:before, .list-pic.link .hd h4:before, .area-form.link .hd h4:before, .area-essay.link .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before {
@@ -424,6 +432,10 @@
 /* line 792, ../Sass/base/_icon-font.scss */
 .group-list.page-list-text > .in > .hd h3:before, .base-section .simple-text.default .hd h4:before, .list-text.page-list .hd h4:before {
   content: "\e2aa"; }
+
+/* line 813, ../Sass/base/_icon-font.scss */
+.base-section .list-text.user-tool .ct li.print a:before {
+  content: "\e2c1"; }
 
 /* line 846, ../Sass/base/_icon-font.scss */
 .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before {
@@ -3223,20 +3235,17 @@ th {
     /* line 1316, ../Sass/module/_simple-text.scss */
     .base-extend .simple-text.target-btn .ct a:hover {
       background-color: #343434; }
-/* line 1351, ../Sass/module/_simple-text.scss */
-.group.page-header .simple-text.heading {
-  overflow: hidden; }
-/* line 1384, ../Sass/module/_simple-text.scss */
+/* line 1380, ../Sass/module/_simple-text.scss */
 .simple-text.heading .ct h3 {
   padding-left: 5px;
   padding-bottom: 8px;
   border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-size: 1.1em; }
-/* line 1393, ../Sass/module/_simple-text.scss */
+/* line 1389, ../Sass/module/_simple-text.scss */
 .simple-text.heading .ct span {
   display: block; }
-/* line 1459, ../Sass/module/_simple-text.scss */
+/* line 1455, ../Sass/module/_simple-text.scss */
 .simple-text.title .ct h1 {
   font-size: 1.1em;
   padding: 5px 0;
@@ -3245,7 +3254,7 @@ th {
   border-bottom-style: double;
   margin-bottom: 5px;
   color: #79561b; }
-/* line 1476, ../Sass/module/_simple-text.scss */
+/* line 1472, ../Sass/module/_simple-text.scss */
 .simple-text.title .ct a:hover {
   color: currentColor; }
 
@@ -3443,44 +3452,44 @@ th {
     .list-text.minor-nav .ct a:hover {
       background-color: #f0f0f0;
       color: currentColor; }
-/* line 663, ../Sass/module/_list-text.scss */
-.list-text.open-data > .in {
-  padding: 3px 0; }
-/* line 667, ../Sass/module/_list-text.scss */
-.list-text.open-data .hd {
-  display: inline-block; }
-  /* line 676, ../Sass/module/_list-text.scss */
-  .list-text.open-data .hd h4:after {
-    content: ' : '; }
-  /* line 681, ../Sass/module/_list-text.scss */
-  .list-text.open-data .hd span {
+/* line 661, ../Sass/module/_list-text.scss */
+.list-text.open-data {
+  margin: 5px 0; }
+  /* line 668, ../Sass/module/_list-text.scss */
+  .list-text.open-data .hd {
     display: inline-block; }
-  /* line 685, ../Sass/module/_list-text.scss */
-  .list-text.open-data .hd a {
-    display: block; }
-/* line 690, ../Sass/module/_list-text.scss */
-.list-text.open-data .ct {
-  display: inline-block;
-  /*i*/ }
-  /* line 701, ../Sass/module/_list-text.scss */
-  .list-text.open-data .ct li {
-    display: inline-block; }
-    /* line 704, ../Sass/module/_list-text.scss */
-    .list-text.open-data .ct li + li {
-      margin-left: 3px; }
-  /* line 736, ../Sass/module/_list-text.scss */
-  .list-text.open-data .ct span {
-    display: block; }
-  /* line 743, ../Sass/module/_list-text.scss */
-  .list-text.open-data .ct a:before {
-    margin-right: 3px;
-    font-size: inherit;
-    color: inherit; }
+    /* line 677, ../Sass/module/_list-text.scss */
+    .list-text.open-data .hd h4:after {
+      content: ' : '; }
+    /* line 682, ../Sass/module/_list-text.scss */
+    .list-text.open-data .hd span {
+      display: inline-block; }
+    /* line 686, ../Sass/module/_list-text.scss */
+    .list-text.open-data .hd a {
+      display: block; }
+  /* line 691, ../Sass/module/_list-text.scss */
+  .list-text.open-data .ct {
+    display: inline-block;
+    /*i*/ }
+    /* line 702, ../Sass/module/_list-text.scss */
+    .list-text.open-data .ct li {
+      display: inline-block; }
+      /* line 705, ../Sass/module/_list-text.scss */
+      .list-text.open-data .ct li + li {
+        margin-left: 3px; }
+    /* line 737, ../Sass/module/_list-text.scss */
+    .list-text.open-data .ct span {
+      display: block; }
+    /* line 744, ../Sass/module/_list-text.scss */
+    .list-text.open-data .ct a:before {
+      margin-right: 3px;
+      font-size: inherit;
+      color: inherit; }
 @media (max-width: 768px) {
-  /* line 780, ../Sass/module/_list-text.scss */
+  /* line 781, ../Sass/module/_list-text.scss */
   .list-text.user-tool {
     display: none; } }
-/* line 786, ../Sass/module/_list-text.scss */
+/* line 787, ../Sass/module/_list-text.scss */
 .base-extend .list-text.user-tool {
   position: fixed;
   right: 15px;
@@ -3489,184 +3498,210 @@ th {
   [data-admin="false"] .base-extend .list-text.user-tool {
     display: none; }
   @media \0screen\,screen\9 {
-    /* line 786, ../Sass/module/_list-text.scss */
+    /* line 787, ../Sass/module/_list-text.scss */
     .base-extend .list-text.user-tool {
       position: absolute; } }
-  /* line 803, ../Sass/module/_list-text.scss */
+  /* line 804, ../Sass/module/_list-text.scss */
   .base-extend .list-text.user-tool .hd {
     display: none; }
-  /* line 823, ../Sass/module/_list-text.scss */
+  /* line 824, ../Sass/module/_list-text.scss */
   .base-extend .list-text.user-tool .ct {
     /*i*/ }
-    /* line 833, ../Sass/module/_list-text.scss */
+    /* line 834, ../Sass/module/_list-text.scss */
     .base-extend .list-text.user-tool .ct li {
       display: inline-block; }
-    /* line 837, ../Sass/module/_list-text.scss */
+    /* line 838, ../Sass/module/_list-text.scss */
     .base-extend .list-text.user-tool .ct span {
       display: block; }
-/* line 876, ../Sass/module/_list-text.scss */
-.base-section .list-text.user-tool > .in {
-  padding: 3px 0; }
-/* line 880, ../Sass/module/_list-text.scss */
-.base-section .list-text.user-tool .hd {
-  display: inline-block; }
-  /* line 889, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .hd h4:after {
-    content: ' : '; }
-  /* line 894, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .hd span {
+/* line 875, ../Sass/module/_list-text.scss */
+.base-section .list-text.user-tool {
+  margin: 5px 0; }
+  /* line 882, ../Sass/module/_list-text.scss */
+  .base-section .list-text.user-tool .hd {
     display: inline-block; }
-  /* line 898, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .hd a {
-    display: block; }
-/* line 903, ../Sass/module/_list-text.scss */
-.base-section .list-text.user-tool .ct {
-  display: inline-block;
-  /*i*/ }
-  /* line 914, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .ct li {
-    display: inline-block; }
-    /* line 917, ../Sass/module/_list-text.scss */
-    .base-section .list-text.user-tool .ct li + li {
-      margin-left: 3px; }
-  /* line 949, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .ct span {
-    display: block; }
-  /* line 956, ../Sass/module/_list-text.scss */
-  .base-section .list-text.user-tool .ct a:before {
-    margin-right: 3px;
-    font-size: inherit;
-    color: inherit; }
-/* line 996, ../Sass/module/_list-text.scss */
+    /* line 891, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .hd h4:after {
+      content: ' : '; }
+    /* line 896, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .hd span {
+      display: inline-block; }
+    /* line 900, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .hd a {
+      display: block; }
+  /* line 905, ../Sass/module/_list-text.scss */
+  .base-section .list-text.user-tool .ct {
+    display: inline-block;
+    /*i*/ }
+    /* line 916, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .ct li {
+      display: inline-block; }
+      /* line 919, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li + li {
+        margin-left: 3px; }
+      /* line 927, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.login a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 937, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.logout a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 947, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.edit a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 957, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.print a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 967, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.nav-edit a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 977, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.index-edit a:before {
+        font-size: inherit;
+        color: inherit; }
+      /* line 987, ../Sass/module/_list-text.scss */
+      .base-section .list-text.user-tool .ct li.article-edit a:before {
+        font-size: inherit;
+        color: inherit; }
+    /* line 994, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .ct span {
+      display: block; }
+    /* line 1001, ../Sass/module/_list-text.scss */
+    .base-section .list-text.user-tool .ct a:before {
+      margin-right: 3px; }
+/* line 1040, ../Sass/module/_list-text.scss */
 .base-extend .list-text.share {
   position: fixed;
   top: 200px;
   left: 15px; }
   @media (max-width: 768px) {
-    /* line 996, ../Sass/module/_list-text.scss */
+    /* line 1040, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share {
       display: none; } }
-  /* line 1009, ../Sass/module/_list-text.scss */
+  /* line 1053, ../Sass/module/_list-text.scss */
   .base-extend .list-text.share .hd {
     display: none; }
-  /* line 1029, ../Sass/module/_list-text.scss */
+  /* line 1073, ../Sass/module/_list-text.scss */
   .base-extend .list-text.share .ct {
     /*i*/ }
-    /* line 1051, ../Sass/module/_list-text.scss */
+    /* line 1095, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct li.facebook a {
       width: 36px;
       height: 36px;
       background-color: #3c5998; }
-      /* line 1055, ../Sass/module/_list-text.scss */
+      /* line 1099, ../Sass/module/_list-text.scss */
       .base-extend .list-text.share .ct li.facebook a:hover {
         background-color: #2e4473; }
-    /* line 1051, ../Sass/module/_list-text.scss */
+    /* line 1095, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct li.google a {
       width: 36px;
       height: 36px;
       background-color: #cb3726; }
-      /* line 1055, ../Sass/module/_list-text.scss */
+      /* line 1099, ../Sass/module/_list-text.scss */
       .base-extend .list-text.share .ct li.google a:hover {
         background-color: #a02b1e; }
-    /* line 1051, ../Sass/module/_list-text.scss */
+    /* line 1095, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct li.twitter a {
       width: 36px;
       height: 36px;
       background-color: #6aaed0; }
-      /* line 1055, ../Sass/module/_list-text.scss */
+      /* line 1099, ../Sass/module/_list-text.scss */
       .base-extend .list-text.share .ct li.twitter a:hover {
         background-color: #4399c4; }
-    /* line 1051, ../Sass/module/_list-text.scss */
+    /* line 1095, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct li.line a {
       width: 36px;
       height: 36px;
       background-color: #4bc700; }
-      /* line 1055, ../Sass/module/_list-text.scss */
+      /* line 1099, ../Sass/module/_list-text.scss */
       .base-extend .list-text.share .ct li.line a:hover {
         background-color: #389400; }
-    /* line 1051, ../Sass/module/_list-text.scss */
+    /* line 1095, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct li.email a {
       width: 36px;
       height: 36px;
       background-color: #666666; }
-      /* line 1055, ../Sass/module/_list-text.scss */
+      /* line 1099, ../Sass/module/_list-text.scss */
       .base-extend .list-text.share .ct li.email a:hover {
         background-color: #4d4d4d; }
-    /* line 1063, ../Sass/module/_list-text.scss */
+    /* line 1107, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct span {
       display: block; }
-    /* line 1067, ../Sass/module/_list-text.scss */
+    /* line 1111, ../Sass/module/_list-text.scss */
     .base-extend .list-text.share .ct a {
       display: block !important;
       transition: 150ms; }
-/* line 1108, ../Sass/module/_list-text.scss */
+/* line 1152, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.share .hd {
   display: none; }
-/* line 1128, ../Sass/module/_list-text.scss */
+/* line 1172, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.share .ct {
   /*i*/ }
-  /* line 1141, ../Sass/module/_list-text.scss */
+  /* line 1185, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.share .ct li {
     width: 20%;
     float: left; }
-    /* line 1152, ../Sass/module/_list-text.scss */
+    /* line 1196, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.facebook span {
       display: block; }
-    /* line 1156, ../Sass/module/_list-text.scss */
+    /* line 1200, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.facebook a {
       background-image: url('../Images/icon-pic/share-w-facebook.png?1435286745');
       background-repeat: no-repeat;
       background-position: center;
       height: 40px;
       background-color: #3c5998; }
-    /* line 1152, ../Sass/module/_list-text.scss */
+    /* line 1196, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.google span {
       display: block; }
-    /* line 1156, ../Sass/module/_list-text.scss */
+    /* line 1200, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.google a {
       background-image: url('../Images/icon-pic/share-w-google.png?1452065596');
       background-repeat: no-repeat;
       background-position: center;
       height: 40px;
       background-color: #cb3726; }
-    /* line 1152, ../Sass/module/_list-text.scss */
+    /* line 1196, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.twitter span {
       display: block; }
-    /* line 1156, ../Sass/module/_list-text.scss */
+    /* line 1200, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.twitter a {
       background-image: url('../Images/icon-pic/share-w-twitter.png?1435286736');
       background-repeat: no-repeat;
       background-position: center;
       height: 40px;
       background-color: #6aaed0; }
-    /* line 1152, ../Sass/module/_list-text.scss */
+    /* line 1196, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.line span {
       display: block; }
-    /* line 1156, ../Sass/module/_list-text.scss */
+    /* line 1200, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.line a {
       background-image: url('../Images/icon-pic/share-w-line.png?1435286566');
       background-repeat: no-repeat;
       background-position: center;
       height: 40px;
       background-color: #4bc700; }
-    /* line 1152, ../Sass/module/_list-text.scss */
+    /* line 1196, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.email span {
       display: block; }
-    /* line 1156, ../Sass/module/_list-text.scss */
+    /* line 1200, ../Sass/module/_list-text.scss */
     .base-mobile .list-text.share .ct li.email a {
       background-image: url('../Images/icon-pic/share-w-email.png?1435286517');
       background-repeat: no-repeat;
       background-position: center;
       height: 40px;
       background-color: #666666; }
-  /* line 1165, ../Sass/module/_list-text.scss */
+  /* line 1209, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.share .ct span {
     display: block; }
-  /* line 1169, ../Sass/module/_list-text.scss */
+  /* line 1213, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.share .ct a {
     display: block !important;
     transition: 150ms; }
-/* line 1207, ../Sass/module/_list-text.scss */
+/* line 1251, ../Sass/module/_list-text.scss */
 .list-text.font-size {
   position: absolute;
   top: 6px;
@@ -3675,20 +3710,20 @@ th {
   [data-js="false"] .list-text.font-size {
     display: none; }
   @media (max-width: 768px) {
-    /* line 1207, ../Sass/module/_list-text.scss */
+    /* line 1251, ../Sass/module/_list-text.scss */
     .list-text.font-size {
       display: none; } }
-  /* line 1224, ../Sass/module/_list-text.scss */
+  /* line 1268, ../Sass/module/_list-text.scss */
   .list-text.font-size .hd {
     display: none; }
-  /* line 1244, ../Sass/module/_list-text.scss */
+  /* line 1288, ../Sass/module/_list-text.scss */
   .list-text.font-size .ct {
     /*i*/ }
-    /* line 1255, ../Sass/module/_list-text.scss */
+    /* line 1299, ../Sass/module/_list-text.scss */
     .list-text.font-size .ct li {
       display: inline-block;
       color: #ffffff; }
-      /* line 1263, ../Sass/module/_list-text.scss */
+      /* line 1307, ../Sass/module/_list-text.scss */
       .list-text.font-size .ct li.small span a {
         display: inline-block; }
         /* line 1019, ../Sass/base/_function.scss */
@@ -3696,7 +3731,7 @@ th {
           width: 17px;
           height: 17px;
           display: block !important; }
-      /* line 1273, ../Sass/module/_list-text.scss */
+      /* line 1317, ../Sass/module/_list-text.scss */
       .list-text.font-size .ct li.medium span a {
         display: inline-block; }
         /* line 1019, ../Sass/base/_function.scss */
@@ -3704,7 +3739,7 @@ th {
           width: 17px;
           height: 17px;
           display: block !important; }
-      /* line 1283, ../Sass/module/_list-text.scss */
+      /* line 1327, ../Sass/module/_list-text.scss */
       .list-text.font-size .ct li.large span a {
         display: inline-block; }
         /* line 1019, ../Sass/base/_function.scss */
@@ -3712,42 +3747,42 @@ th {
           width: 17px;
           height: 17px;
           display: block !important; }
-      /* line 1293, ../Sass/module/_list-text.scss */
+      /* line 1337, ../Sass/module/_list-text.scss */
       .list-text.font-size .ct li.is-active span a {
         border-color: #fa7076;
         background-color: #fa7076; }
-    /* line 1301, ../Sass/module/_list-text.scss */
+    /* line 1345, ../Sass/module/_list-text.scss */
     .list-text.font-size .ct span {
       display: block; }
-    /* line 1305, ../Sass/module/_list-text.scss */
+    /* line 1349, ../Sass/module/_list-text.scss */
     .list-text.font-size .ct a {
       border-width: 2px;
       border-style: solid;
       border-color: transparent; }
-/* line 1353, ../Sass/module/_list-text.scss */
+/* line 1397, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.hot-key-word.is-open .hd a:after {
   background-image: url('../Images/icon-pic/away-b-bottom.png?1440646523');
   background-repeat: no-repeat;
   background-position: center; }
-/* line 1359, ../Sass/module/_list-text.scss */
+/* line 1403, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.hot-key-word.is-open .ct {
   display: block; }
-/* line 1387, ../Sass/module/_list-text.scss */
+/* line 1431, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.hot-key-word .ct {
   display: none;
   /*i*/ }
-  /* line 1394, ../Sass/module/_list-text.scss */
+  /* line 1438, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.hot-key-word .ct ul {
     padding-left: 15px; }
-  /* line 1402, ../Sass/module/_list-text.scss */
+  /* line 1446, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.hot-key-word .ct span {
     display: block;
     border-bottom: 1px solid #e4e4e4; }
-  /* line 1407, ../Sass/module/_list-text.scss */
+  /* line 1451, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.hot-key-word .ct a {
     display: block;
     padding: 8px; }
-/* line 1441, ../Sass/module/_list-text.scss */
+/* line 1485, ../Sass/module/_list-text.scss */
 .base-header .list-text.hot-key-word {
   position: absolute;
   top: 43px;
@@ -3756,116 +3791,116 @@ th {
   [data-js="false"] .base-header .list-text.hot-key-word {
     right: 100px; }
   @media (max-width: 768px) {
-    /* line 1441, ../Sass/module/_list-text.scss */
+    /* line 1485, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word {
       display: none; } }
-  /* line 1458, ../Sass/module/_list-text.scss */
+  /* line 1502, ../Sass/module/_list-text.scss */
   .base-header .list-text.hot-key-word .hd {
     display: inline-block; }
-    /* line 1465, ../Sass/module/_list-text.scss */
+    /* line 1509, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .hd h4 {
       color: #ffffff; }
-      /* line 1468, ../Sass/module/_list-text.scss */
+      /* line 1512, ../Sass/module/_list-text.scss */
       .base-header .list-text.hot-key-word .hd h4:after {
         content: ' : '; }
-    /* line 1473, ../Sass/module/_list-text.scss */
+    /* line 1517, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .hd span {
       display: inline-block; }
-    /* line 1477, ../Sass/module/_list-text.scss */
+    /* line 1521, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .hd a {
       display: block; }
-  /* line 1482, ../Sass/module/_list-text.scss */
+  /* line 1526, ../Sass/module/_list-text.scss */
   .base-header .list-text.hot-key-word .ct {
     display: inline-block;
     /*i*/ }
-    /* line 1493, ../Sass/module/_list-text.scss */
+    /* line 1537, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .ct li {
       display: inline-block;
       color: #ffffff; }
-      /* line 1499, ../Sass/module/_list-text.scss */
+      /* line 1543, ../Sass/module/_list-text.scss */
       .base-header .list-text.hot-key-word .ct li + li:before {
         content: ' , '; }
-    /* line 1505, ../Sass/module/_list-text.scss */
+    /* line 1549, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .ct span {
       display: inline-block; }
-    /* line 1509, ../Sass/module/_list-text.scss */
+    /* line 1553, ../Sass/module/_list-text.scss */
     .base-header .list-text.hot-key-word .ct a {
       display: block; }
 /* line 58, ../Sass/base/_function.scss */
 [data-js="false"] .list-text.tab {
   display: none; }
-/* line 1555, ../Sass/module/_list-text.scss */
+/* line 1599, ../Sass/module/_list-text.scss */
 .list-text.tab .hd {
   display: none; }
-/* line 1575, ../Sass/module/_list-text.scss */
+/* line 1619, ../Sass/module/_list-text.scss */
 .list-text.tab .ct {
   /*i*/ }
-  /* line 1581, ../Sass/module/_list-text.scss */
+  /* line 1625, ../Sass/module/_list-text.scss */
   .list-text.tab .ct ul {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #fa7076; }
-  /* line 1587, ../Sass/module/_list-text.scss */
+  /* line 1631, ../Sass/module/_list-text.scss */
   .list-text.tab .ct li {
     display: inline-block; }
-    /* line 1596, ../Sass/module/_list-text.scss */
+    /* line 1640, ../Sass/module/_list-text.scss */
     .list-text.tab .ct li.is-active a {
       background-color: #fa7076;
       color: #ffffff; }
-  /* line 1603, ../Sass/module/_list-text.scss */
+  /* line 1647, ../Sass/module/_list-text.scss */
   .list-text.tab .ct span {
     display: block; }
-  /* line 1607, ../Sass/module/_list-text.scss */
+  /* line 1651, ../Sass/module/_list-text.scss */
   .list-text.tab .ct a {
     display: block;
     padding: 5px 8px;
     background-color: #f0f0f0;
     color: #343434;
     transition: 150ms; }
-    /* line 1614, ../Sass/module/_list-text.scss */
+    /* line 1658, ../Sass/module/_list-text.scss */
     .list-text.tab .ct a:hover {
       background-color: #e4e4e4; }
-/* line 1676, ../Sass/module/_list-text.scss */
+/* line 1720, ../Sass/module/_list-text.scss */
 .list-text.classify .ct {
   /*i*/ }
-  /* line 1686, ../Sass/module/_list-text.scss */
+  /* line 1730, ../Sass/module/_list-text.scss */
   .list-text.classify .ct li {
     display: inline-block; }
-    /* line 1695, ../Sass/module/_list-text.scss */
+    /* line 1739, ../Sass/module/_list-text.scss */
     .list-text.classify .ct li.is-active a {
       background-color: #fa7076;
       color: #ffffff; }
-  /* line 1702, ../Sass/module/_list-text.scss */
+  /* line 1746, ../Sass/module/_list-text.scss */
   .list-text.classify .ct span {
     display: block; }
-  /* line 1706, ../Sass/module/_list-text.scss */
+  /* line 1750, ../Sass/module/_list-text.scss */
   .list-text.classify .ct a {
     display: block;
     padding: 5px 8px;
     background-color: #f0f0f0;
     color: #343434;
     transition: 150ms; }
-    /* line 1713, ../Sass/module/_list-text.scss */
+    /* line 1757, ../Sass/module/_list-text.scss */
     .list-text.classify .ct a:hover {
       background-color: #e4e4e4; }
-/* line 1764, ../Sass/module/_list-text.scss */
+/* line 1808, ../Sass/module/_list-text.scss */
 .list-text.slider .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 1778, ../Sass/module/_list-text.scss */
+/* line 1822, ../Sass/module/_list-text.scss */
 .list-text.slider .ct {
   /*i*/ }
-  /* line 1790, ../Sass/module/_list-text.scss */
+  /* line 1834, ../Sass/module/_list-text.scss */
   .list-text.slider .ct li + li {
     display: none; }
     /* line 58, ../Sass/base/_function.scss */
     [data-js="false"] .list-text.slider .ct li + li {
       display: block;
       margin-top: 8px; }
-  /* line 1800, ../Sass/module/_list-text.scss */
+  /* line 1844, ../Sass/module/_list-text.scss */
   .list-text.slider .ct span {
     display: block; }
-  /* line 1810, ../Sass/module/_list-text.scss */
+  /* line 1854, ../Sass/module/_list-text.scss */
   .list-text.slider .ct .mark {
     display: inline-block;
     padding: 3px 5px;
@@ -3876,30 +3911,30 @@ th {
 /* line 58, ../Sass/base/_function.scss */
 [data-js="false"] .list-text.slider .ft li.next, [data-js="false"] .list-text.slider .ft li.prev {
   display: none; }
-/* line 1876, ../Sass/module/_list-text.scss */
+/* line 1920, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.link.is-open .hd a:after {
   background-image: url('../Images/icon-pic/away-b-bottom.png?1440646523');
   background-repeat: no-repeat;
   background-position: center; }
-/* line 1882, ../Sass/module/_list-text.scss */
+/* line 1926, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.link.is-open .ct {
   display: block; }
-/* line 1910, ../Sass/module/_list-text.scss */
+/* line 1954, ../Sass/module/_list-text.scss */
 .base-mobile .list-text.link .ct {
   display: none;
   /*i*/ }
-  /* line 1917, ../Sass/module/_list-text.scss */
+  /* line 1961, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.link .ct ul {
     padding-left: 15px; }
-  /* line 1925, ../Sass/module/_list-text.scss */
+  /* line 1969, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.link .ct span {
     display: block;
     border-bottom: 1px solid #e4e4e4; }
-  /* line 1930, ../Sass/module/_list-text.scss */
+  /* line 1974, ../Sass/module/_list-text.scss */
   .base-mobile .list-text.link .ct a {
     display: block;
     padding: 8px; }
-/* line 1964, ../Sass/module/_list-text.scss */
+/* line 2008, ../Sass/module/_list-text.scss */
 .base-header .list-text.link {
   position: absolute;
   top: 7px;
@@ -3908,138 +3943,138 @@ th {
   [data-js="false"] .base-header .list-text.link {
     right: 10px; }
   @media (max-width: 768px) {
-    /* line 1964, ../Sass/module/_list-text.scss */
+    /* line 2008, ../Sass/module/_list-text.scss */
     .base-header .list-text.link {
       display: none; } }
-  /* line 1981, ../Sass/module/_list-text.scss */
+  /* line 2025, ../Sass/module/_list-text.scss */
   .base-header .list-text.link .hd {
     display: none; }
-  /* line 2001, ../Sass/module/_list-text.scss */
+  /* line 2045, ../Sass/module/_list-text.scss */
   .base-header .list-text.link .ct {
     /*i*/ }
-    /* line 2011, ../Sass/module/_list-text.scss */
+    /* line 2055, ../Sass/module/_list-text.scss */
     .base-header .list-text.link .ct li {
       display: inline-block;
       vertical-align: middle;
       color: #ffffff; }
-      /* line 2018, ../Sass/module/_list-text.scss */
+      /* line 2062, ../Sass/module/_list-text.scss */
       .base-header .list-text.link .ct li + li:before {
         content: ' | ';
         vertical-align: middle; }
-    /* line 2025, ../Sass/module/_list-text.scss */
+    /* line 2069, ../Sass/module/_list-text.scss */
     .base-header .list-text.link .ct span {
       display: inline-block;
       vertical-align: middle; }
-    /* line 2030, ../Sass/module/_list-text.scss */
+    /* line 2074, ../Sass/module/_list-text.scss */
     .base-header .list-text.link .ct a {
       display: block; }
-  /* line 2039, ../Sass/module/_list-text.scss */
+  /* line 2083, ../Sass/module/_list-text.scss */
   .base-header .list-text.link .ft {
     display: none; }
-/* line 2079, ../Sass/module/_list-text.scss */
+/* line 2123, ../Sass/module/_list-text.scss */
 .base-content .list-text.link .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 2093, ../Sass/module/_list-text.scss */
+/* line 2137, ../Sass/module/_list-text.scss */
 .base-content .list-text.link .ct {
   /*i*/ }
-  /* line 2105, ../Sass/module/_list-text.scss */
+  /* line 2149, ../Sass/module/_list-text.scss */
   .base-content .list-text.link .ct li + li {
     margin-top: 5px; }
-  /* line 2110, ../Sass/module/_list-text.scss */
+  /* line 2154, ../Sass/module/_list-text.scss */
   .base-content .list-text.link .ct span {
     display: block; }
 @media (max-width: 768px) {
-  /* line 2150, ../Sass/module/_list-text.scss */
+  /* line 2194, ../Sass/module/_list-text.scss */
   .base-footer .list-text.link {
     display: none; } }
-/* line 2160, ../Sass/module/_list-text.scss */
+/* line 2204, ../Sass/module/_list-text.scss */
 .base-footer .list-text.link .hd {
   display: none; }
-/* line 2180, ../Sass/module/_list-text.scss */
+/* line 2224, ../Sass/module/_list-text.scss */
 .base-footer .list-text.link .ct {
   /*i*/ }
-  /* line 2190, ../Sass/module/_list-text.scss */
+  /* line 2234, ../Sass/module/_list-text.scss */
   .base-footer .list-text.link .ct li {
     display: inline-block;
     vertical-align: middle; }
-    /* line 2196, ../Sass/module/_list-text.scss */
+    /* line 2240, ../Sass/module/_list-text.scss */
     .base-footer .list-text.link .ct li + li:before {
       content: ' | ';
       vertical-align: middle; }
-  /* line 2203, ../Sass/module/_list-text.scss */
+  /* line 2247, ../Sass/module/_list-text.scss */
   .base-footer .list-text.link .ct span {
     display: inline-block;
     vertical-align: middle; }
-  /* line 2208, ../Sass/module/_list-text.scss */
+  /* line 2252, ../Sass/module/_list-text.scss */
   .base-footer .list-text.link .ct a {
     display: block; }
-/* line 2217, ../Sass/module/_list-text.scss */
+/* line 2261, ../Sass/module/_list-text.scss */
 .base-footer .list-text.link .ft {
   display: none; }
-/* line 2260, ../Sass/module/_list-text.scss */
+/* line 2304, ../Sass/module/_list-text.scss */
 .list-text.rss .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 2274, ../Sass/module/_list-text.scss */
+/* line 2318, ../Sass/module/_list-text.scss */
 .list-text.rss .ct {
   /*i*/ }
-  /* line 2286, ../Sass/module/_list-text.scss */
+  /* line 2330, ../Sass/module/_list-text.scss */
   .list-text.rss .ct li + li {
     margin-top: 5px; }
-  /* line 2291, ../Sass/module/_list-text.scss */
+  /* line 2335, ../Sass/module/_list-text.scss */
   .list-text.rss .ct span {
     display: block; }
-/* line 2348, ../Sass/module/_list-text.scss */
+/* line 2392, ../Sass/module/_list-text.scss */
 .list-text.anchor .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 2362, ../Sass/module/_list-text.scss */
+/* line 2406, ../Sass/module/_list-text.scss */
 .list-text.anchor .ct {
   /*i*/ }
-  /* line 2369, ../Sass/module/_list-text.scss */
+  /* line 2413, ../Sass/module/_list-text.scss */
   .list-text.anchor .ct ul {
     border: 1px solid #e4e4e4; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="2"] > li {
       width: 50%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="3"] > li {
       width: 33.3333333333%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="4"] > li {
       width: 25%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="5"] > li {
       width: 20%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="6"] > li {
       width: 16.6666666667%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="7"] > li {
       width: 14.2857142857%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="8"] > li {
       width: 12.5%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="9"] > li {
       width: 11.1111111111%;
       float: left; }
-    /* line 2380, ../Sass/module/_list-text.scss */
+    /* line 2424, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct ul[data-child="10"] > li {
       width: 10%;
       float: left; }
-  /* line 2388, ../Sass/module/_list-text.scss */
+  /* line 2432, ../Sass/module/_list-text.scss */
   .list-text.anchor .ct li {
     position: relative; }
-    /* line 2393, ../Sass/module/_list-text.scss */
+    /* line 2437, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct li + li:before {
       content: "​";
       display: block;
@@ -4049,41 +4084,41 @@ th {
       left: 0;
       width: 1px;
       background-color: #e4e4e4; }
-  /* line 2406, ../Sass/module/_list-text.scss */
+  /* line 2450, ../Sass/module/_list-text.scss */
   .list-text.anchor .ct span {
     display: block; }
-  /* line 2410, ../Sass/module/_list-text.scss */
+  /* line 2454, ../Sass/module/_list-text.scss */
   .list-text.anchor .ct a {
     display: block;
     padding: 5px;
     text-align: center;
     transition: 150ms; }
-    /* line 2417, ../Sass/module/_list-text.scss */
+    /* line 2461, ../Sass/module/_list-text.scss */
     .list-text.anchor .ct a:hover {
       background-color: #fa7076;
       color: #ffffff; }
-/* line 2480, ../Sass/module/_list-text.scss */
+/* line 2524, ../Sass/module/_list-text.scss */
 .list-text.step .ct {
   /*i*/ }
-  /* line 2493, ../Sass/module/_list-text.scss */
+  /* line 2537, ../Sass/module/_list-text.scss */
   .list-text.step .ct li {
     float: left;
     padding: 3px;
     box-sizing: border-box;
     max-width: 100%; }
     @media (max-width: 560px) {
-      /* line 2493, ../Sass/module/_list-text.scss */
+      /* line 2537, ../Sass/module/_list-text.scss */
       .list-text.step .ct li {
         float: none; } }
-    /* line 2507, ../Sass/module/_list-text.scss */
+    /* line 2551, ../Sass/module/_list-text.scss */
     .list-text.step .ct li.is-active span:before, .list-text.step .ct li.is-active span:after {
       background-color: #fa7076; }
-  /* line 2514, ../Sass/module/_list-text.scss */
+  /* line 2558, ../Sass/module/_list-text.scss */
   .list-text.step .ct span {
     display: block;
     position: relative;
     z-index: 1; }
-    /* line 2521, ../Sass/module/_list-text.scss */
+    /* line 2565, ../Sass/module/_list-text.scss */
     .list-text.step .ct span:before, .list-text.step .ct span:after {
       content: "​";
       display: block;
@@ -4094,848 +4129,848 @@ th {
       background-color: #646464;
       z-index: -1;
       transition: 150ms; }
-    /* line 2533, ../Sass/module/_list-text.scss */
+    /* line 2577, ../Sass/module/_list-text.scss */
     .list-text.step .ct span:before {
       top: 0;
       transform: skewX(30deg); }
       @media (max-width: 560px) {
-        /* line 2533, ../Sass/module/_list-text.scss */
+        /* line 2577, ../Sass/module/_list-text.scss */
         .list-text.step .ct span:before {
           transform: skewX(0); } }
-    /* line 2542, ../Sass/module/_list-text.scss */
+    /* line 2586, ../Sass/module/_list-text.scss */
     .list-text.step .ct span:after {
       bottom: 0;
       transform: skewX(-30deg); }
       @media (max-width: 560px) {
-        /* line 2542, ../Sass/module/_list-text.scss */
+        /* line 2586, ../Sass/module/_list-text.scss */
         .list-text.step .ct span:after {
           transform: skewX(0); } }
-    /* line 2553, ../Sass/module/_list-text.scss */
+    /* line 2597, ../Sass/module/_list-text.scss */
     .list-text.step .ct span:hover:before, .list-text.step .ct span:hover:after {
       background-color: #343434; }
-  /* line 2559, ../Sass/module/_list-text.scss */
+  /* line 2603, ../Sass/module/_list-text.scss */
   .list-text.step .ct a {
     display: block;
     max-width: 100%;
     padding: 8px 15px;
     color: #ffffff; }
-/* line 2605, ../Sass/module/_list-text.scss */
+/* line 2649, ../Sass/module/_list-text.scss */
 .list-text.btn.is-right .ct ul {
   text-align: right; }
-/* line 2615, ../Sass/module/_list-text.scss */
+/* line 2659, ../Sass/module/_list-text.scss */
 .list-text.btn.is-center .ct ul {
   text-align: center; }
-/* line 2625, ../Sass/module/_list-text.scss */
+/* line 2669, ../Sass/module/_list-text.scss */
 .list-text.btn.is-justify .ct ul {
   text-align: justify;
   line-height: 0; }
-  /* line 2629, ../Sass/module/_list-text.scss */
+  /* line 2673, ../Sass/module/_list-text.scss */
   .list-text.btn.is-justify .ct ul:after {
     content: "​";
     display: inline-block;
     width: 100%;
     height: 0; }
-/* line 2662, ../Sass/module/_list-text.scss */
+/* line 2706, ../Sass/module/_list-text.scss */
 .list-text.btn .ct {
   /*i*/ }
   @media (max-width: 768px) {
-    /* line 2668, ../Sass/module/_list-text.scss */
+    /* line 2712, ../Sass/module/_list-text.scss */
     .list-text.btn .ct ul {
       text-align: right !important; } }
-  /* line 2675, ../Sass/module/_list-text.scss */
+  /* line 2719, ../Sass/module/_list-text.scss */
   .list-text.btn .ct li {
     display: inline-block; }
     @media (max-width: 768px) {
-      /* line 2675, ../Sass/module/_list-text.scss */
+      /* line 2719, ../Sass/module/_list-text.scss */
       .list-text.btn .ct li {
         margin-top: 3px; } }
-  /* line 2683, ../Sass/module/_list-text.scss */
+  /* line 2727, ../Sass/module/_list-text.scss */
   .list-text.btn .ct span {
     display: block; }
   @media (max-width: 768px) {
-    /* line 2687, ../Sass/module/_list-text.scss */
+    /* line 2731, ../Sass/module/_list-text.scss */
     .list-text.btn .ct a {
       padding: 8px; } }
-  /* line 2694, ../Sass/module/_list-text.scss */
+  /* line 2738, ../Sass/module/_list-text.scss */
   .list-text.btn .ct a:before {
     margin-right: 3px; }
-/* line 2730, ../Sass/module/_list-text.scss */
+/* line 2774, ../Sass/module/_list-text.scss */
 .list-text.sitemap {
-  margin: 8px 0; }
-  /* line 2737, ../Sass/module/_list-text.scss */
+  margin: 5px 0; }
+  /* line 2781, ../Sass/module/_list-text.scss */
   .list-text.sitemap .hd {
     display: none; }
-  /* line 2757, ../Sass/module/_list-text.scss */
+  /* line 2801, ../Sass/module/_list-text.scss */
   .list-text.sitemap .ct {
     /*i*/ }
-    /* line 2763, ../Sass/module/_list-text.scss */
+    /* line 2807, ../Sass/module/_list-text.scss */
     .list-text.sitemap .ct ul {
       padding: 5px;
       background-color: #f0f0f0; }
-    /* line 2768, ../Sass/module/_list-text.scss */
+    /* line 2812, ../Sass/module/_list-text.scss */
     .list-text.sitemap .ct li {
       display: inline;
       font-size: 0.8em; }
-      /* line 2772, ../Sass/module/_list-text.scss */
+      /* line 2816, ../Sass/module/_list-text.scss */
       .list-text.sitemap .ct li:before {
         font-size: inherit;
         color: inherit;
         vertical-align: middle; }
-      /* line 2779, ../Sass/module/_list-text.scss */
+      /* line 2823, ../Sass/module/_list-text.scss */
       .list-text.sitemap .ct li + li:before {
         font-size: inherit;
         color: inherit;
         vertical-align: middle; }
-/* line 2851, ../Sass/module/_list-text.scss */
+/* line 2895, ../Sass/module/_list-text.scss */
 .list-text.label .ct {
   /*i*/ }
-  /* line 2857, ../Sass/module/_list-text.scss */
+  /* line 2901, ../Sass/module/_list-text.scss */
   .list-text.label .ct ul {
     text-align: right; }
-  /* line 2861, ../Sass/module/_list-text.scss */
+  /* line 2905, ../Sass/module/_list-text.scss */
   .list-text.label .ct li {
     display: inline-block; }
-  /* line 2865, ../Sass/module/_list-text.scss */
+  /* line 2909, ../Sass/module/_list-text.scss */
   .list-text.label .ct span {
     display: block; }
-/* line 2910, ../Sass/module/_list-text.scss */
+/* line 2954, ../Sass/module/_list-text.scss */
 .list-text.jump-tool .hd {
   display: none; }
-/* line 2930, ../Sass/module/_list-text.scss */
+/* line 2974, ../Sass/module/_list-text.scss */
 .list-text.jump-tool .ct {
   /*i*/ }
-  /* line 2936, ../Sass/module/_list-text.scss */
+  /* line 2980, ../Sass/module/_list-text.scss */
   .list-text.jump-tool .ct ul {
     text-align: right; }
-  /* line 2940, ../Sass/module/_list-text.scss */
+  /* line 2984, ../Sass/module/_list-text.scss */
   .list-text.jump-tool .ct li {
     display: inline-block; }
-  /* line 2944, ../Sass/module/_list-text.scss */
+  /* line 2988, ../Sass/module/_list-text.scss */
   .list-text.jump-tool .ct span {
     display: block; }
-/* line 2998, ../Sass/module/_list-text.scss */
+/* line 3042, ../Sass/module/_list-text.scss */
 .list-text.page-list .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 3012, ../Sass/module/_list-text.scss */
+/* line 3056, ../Sass/module/_list-text.scss */
 .list-text.page-list .ct {
   /*i*/ }
-  /* line 3024, ../Sass/module/_list-text.scss */
+  /* line 3068, ../Sass/module/_list-text.scss */
   .list-text.page-list .ct li + li {
     margin-top: 5px; }
-  /* line 3029, ../Sass/module/_list-text.scss */
+  /* line 3073, ../Sass/module/_list-text.scss */
   .list-text.page-list .ct span {
     display: block; }
-/* line 3096, ../Sass/module/_list-text.scss */
+/* line 3140, ../Sass/module/_list-text.scss */
 .list-text.detail .ct {
   /*i*/ }
-  /* line 3102, ../Sass/module/_list-text.scss */
+  /* line 3146, ../Sass/module/_list-text.scss */
   .list-text.detail .ct ul {
     text-align: right; }
     @media (max-width: 560px) {
-      /* line 3102, ../Sass/module/_list-text.scss */
+      /* line 3146, ../Sass/module/_list-text.scss */
       .list-text.detail .ct ul {
         text-align: left; } }
-  /* line 3110, ../Sass/module/_list-text.scss */
+  /* line 3154, ../Sass/module/_list-text.scss */
   .list-text.detail .ct li {
     display: inline-block;
     font-size: 0.9em;
     color: #b6b6b6; }
-    /* line 3117, ../Sass/module/_list-text.scss */
+    /* line 3161, ../Sass/module/_list-text.scss */
     .list-text.detail .ct li + li:before {
       content: ' | ';
       vertical-align: middle; }
-  /* line 3124, ../Sass/module/_list-text.scss */
+  /* line 3168, ../Sass/module/_list-text.scss */
   .list-text.detail .ct span {
     display: inline-block;
     vertical-align: middle; }
-  /* line 3129, ../Sass/module/_list-text.scss */
+  /* line 3173, ../Sass/module/_list-text.scss */
   .list-text.detail .ct a {
     display: block; }
-/* line 3179, ../Sass/module/_list-text.scss */
+/* line 3223, ../Sass/module/_list-text.scss */
 .list-text.file-download .hd h4:before {
   font-size: inherit;
   color: inherit; }
-/* line 3193, ../Sass/module/_list-text.scss */
+/* line 3237, ../Sass/module/_list-text.scss */
 .list-text.file-download .ct {
   /*i*/ }
-  /* line 3205, ../Sass/module/_list-text.scss */
+  /* line 3249, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li + li {
     margin-top: 5px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ai a {
     border-left-color: #5A422A; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ai a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.avi a {
     border-left-color: #1E4B84; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.avi a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.bmp a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.bmp a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.css a {
     border-left-color: #BEC730; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.css a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.csv a {
     border-left-color: #745076; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.csv a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.doc a {
     border-left-color: #2A5696; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.doc a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.docx a {
     border-left-color: #2A5696; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.docx a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.gif a {
     border-left-color: #DCA61F; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.gif a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.html a {
     border-left-color: #25B7D3; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.html a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ico a {
     border-left-color: #A60B09; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ico a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.jpeg a {
     border-left-color: #208895; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.jpeg a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.jpg a {
     border-left-color: #208895; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.jpg a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.js a {
     border-left-color: #5E5021; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.js a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.link a {
     border-left-color: #0069FF; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.link a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.md a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.md a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.mov a {
     border-left-color: #0069FF; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.mov a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.mp3 a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.mp3 a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.mp4 a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.mp4 a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.odf a {
     border-left-color: #03659D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.odf a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.odp a {
     border-left-color: #9C3B03; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.odp a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ods a {
     border-left-color: #179D03; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ods a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.odt a {
     border-left-color: #03659D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.odt a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ogg a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ogg a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ogv a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ogv a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.other a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.other a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.pdf a {
     border-left-color: #EF1011; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.pdf a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.png a {
     border-left-color: #3374AE; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.png a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.ppt a {
     border-left-color: #D04324; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.ppt a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.pptx a {
     border-left-color: #D04324; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.pptx a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.psd a {
     border-left-color: #2C275D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.psd a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.rar a {
     border-left-color: #AA834D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.rar a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.rss a {
     border-left-color: #F8991D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.rss a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.sass a {
     border-left-color: #CC6699; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.sass a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.svg a {
     border-left-color: #5A422A; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.svg a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.swf a {
     border-left-color: #B60000; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.swf a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.tar a {
     border-left-color: #AA834D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.tar a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.tif a {
     border-left-color: #2C275D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.tif a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.txt a {
     border-left-color: #333333; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.txt a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.wav a {
     border-left-color: #254B9D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.wav a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.webm a {
     border-left-color: #70BA1D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.webm a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.xls a {
     border-left-color: #1D7044; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.xls a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.xlsx a {
     border-left-color: #1D7044; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.xlsx a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.xml a {
     border-left-color: #25B7D3; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.xml a:before {
       width: 16px;
       height: 16px; }
-  /* line 3215, ../Sass/module/_list-text.scss */
+  /* line 3259, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct li.zip a {
     border-left-color: #AA834D; }
-    /* line 3218, ../Sass/module/_list-text.scss */
+    /* line 3262, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct li.zip a:before {
       width: 16px;
       height: 16px; }
-  /* line 3226, ../Sass/module/_list-text.scss */
+  /* line 3270, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct span {
     display: block; }
-  /* line 3230, ../Sass/module/_list-text.scss */
+  /* line 3274, ../Sass/module/_list-text.scss */
   .list-text.file-download .ct a {
     border-left-width: 3px;
     border-left-style: solid; }
-    /* line 3236, ../Sass/module/_list-text.scss */
+    /* line 3280, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct a:before {
       margin-right: 3px; }
-    /* line 3240, ../Sass/module/_list-text.scss */
+    /* line 3284, ../Sass/module/_list-text.scss */
     .list-text.file-download .ct a:hover {
       border-left-width: 8px; }
-/* line 3276, ../Sass/module/_list-text.scss */
+/* line 3320, ../Sass/module/_list-text.scss */
 .list-text.file-download-multiple {
   border-left-width: 3px;
   border-left-style: solid;
   border-left-color: #b6b6b6; }
-  /* line 3286, ../Sass/module/_list-text.scss */
+  /* line 3330, ../Sass/module/_list-text.scss */
   .list-text.file-download-multiple .hd {
     display: inline-block; }
     @media (max-width: 560px) {
-      /* line 3286, ../Sass/module/_list-text.scss */
+      /* line 3330, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .hd {
         display: block; } }
-    /* line 3307, ../Sass/module/_list-text.scss */
+    /* line 3351, ../Sass/module/_list-text.scss */
     .list-text.file-download-multiple .hd a:hover {
       color: currentColor; }
-  /* line 3313, ../Sass/module/_list-text.scss */
+  /* line 3357, ../Sass/module/_list-text.scss */
   .list-text.file-download-multiple .ct {
     display: inline-block;
     margin-left: 8px;
     /*i*/ }
     @media (max-width: 560px) {
-      /* line 3313, ../Sass/module/_list-text.scss */
+      /* line 3357, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct {
         display: block;
         margin-left: 0; } }
-    /* line 3326, ../Sass/module/_list-text.scss */
+    /* line 3370, ../Sass/module/_list-text.scss */
     .list-text.file-download-multiple .ct ul {
       padding: 5px; }
-    /* line 3330, ../Sass/module/_list-text.scss */
+    /* line 3374, ../Sass/module/_list-text.scss */
     .list-text.file-download-multiple .ct li {
       display: inline-block; }
       @media (max-width: 560px) {
-        /* line 3330, ../Sass/module/_list-text.scss */
+        /* line 3374, ../Sass/module/_list-text.scss */
         .list-text.file-download-multiple .ct li {
           display: block;
           margin-top: 5px; } }
-      /* line 3340, ../Sass/module/_list-text.scss */
+      /* line 3384, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li + li:before {
         content: ' | ';
         color: #b6b6b6; }
         @media (max-width: 560px) {
-          /* line 3340, ../Sass/module/_list-text.scss */
+          /* line 3384, ../Sass/module/_list-text.scss */
           .list-text.file-download-multiple .ct li + li:before {
             content: none; } }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ai a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ai a:hover {
         border-color: #5A422A; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.avi a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.avi a:hover {
         border-color: #1E4B84; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.bmp a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.bmp a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.css a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.css a:hover {
         border-color: #BEC730; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.csv a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.csv a:hover {
         border-color: #745076; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.doc a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.doc a:hover {
         border-color: #2A5696; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.docx a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.docx a:hover {
         border-color: #2A5696; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.gif a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.gif a:hover {
         border-color: #DCA61F; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.html a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.html a:hover {
         border-color: #25B7D3; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ico a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ico a:hover {
         border-color: #A60B09; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.jpeg a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.jpeg a:hover {
         border-color: #208895; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.jpg a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.jpg a:hover {
         border-color: #208895; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.js a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.js a:hover {
         border-color: #5E5021; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.link a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.link a:hover {
         border-color: #0069FF; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.md a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.md a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mov a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mov a:hover {
         border-color: #0069FF; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mp3 a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mp3 a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mp4 a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.mp4 a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odf a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odf a:hover {
         border-color: #03659D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odp a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odp a:hover {
         border-color: #9C3B03; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ods a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ods a:hover {
         border-color: #179D03; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odt a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.odt a:hover {
         border-color: #03659D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ogg a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ogg a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ogv a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ogv a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.other a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.other a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.pdf a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.pdf a:hover {
         border-color: #EF1011; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.png a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.png a:hover {
         border-color: #3374AE; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ppt a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.ppt a:hover {
         border-color: #D04324; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.pptx a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.pptx a:hover {
         border-color: #D04324; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.psd a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.psd a:hover {
         border-color: #2C275D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.rar a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.rar a:hover {
         border-color: #AA834D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.rss a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.rss a:hover {
         border-color: #F8991D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.sass a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.sass a:hover {
         border-color: #CC6699; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.svg a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.svg a:hover {
         border-color: #5A422A; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.swf a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.swf a:hover {
         border-color: #B60000; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.tar a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.tar a:hover {
         border-color: #AA834D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.tif a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.tif a:hover {
         border-color: #2C275D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.txt a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.txt a:hover {
         border-color: #333333; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.wav a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.wav a:hover {
         border-color: #254B9D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.webm a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.webm a:hover {
         border-color: #70BA1D; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xls a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xls a:hover {
         border-color: #1D7044; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xlsx a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xlsx a:hover {
         border-color: #1D7044; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xml a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.xml a:hover {
         border-color: #25B7D3; }
-      /* line 3358, ../Sass/module/_list-text.scss */
+      /* line 3402, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.zip a:before {
         width: 16px;
         height: 16px; }
-      /* line 3362, ../Sass/module/_list-text.scss */
+      /* line 3406, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct li.zip a:hover {
         border-color: #AA834D; }
-    /* line 3374, ../Sass/module/_list-text.scss */
+    /* line 3418, ../Sass/module/_list-text.scss */
     .list-text.file-download-multiple .ct a {
       box-sizing: border-box;
       padding: 3px 5px;
@@ -4944,15 +4979,15 @@ th {
       border-color: transparent;
       transition: 150ms; }
       @media (max-width: 560px) {
-        /* line 3374, ../Sass/module/_list-text.scss */
+        /* line 3418, ../Sass/module/_list-text.scss */
         .list-text.file-download-multiple .ct a {
           display: block;
           background-color: #ffffff;
           padding: 8px 15px; } }
-      /* line 3388, ../Sass/module/_list-text.scss */
+      /* line 3432, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct a:before {
         margin-right: 3px; }
-      /* line 3392, ../Sass/module/_list-text.scss */
+      /* line 3436, ../Sass/module/_list-text.scss */
       .list-text.file-download-multiple .ct a:hover {
         border-left-width: 8px;
         background-color: #ffffff;

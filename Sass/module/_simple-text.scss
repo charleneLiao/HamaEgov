@@ -1348,10 +1348,6 @@
 
 	&.heading {
 
-		.group.page-header & {
-			overflow: hidden;
-		}
-
 		> .in {
 
 		}
@@ -1386,7 +1382,7 @@
 				padding-left: $interval-s;
 				padding-bottom: $interval-m;
 				border-bottom: $border;
-				margin-bottom: $interval-m;
+				margin-bottom: $interval-s;
 				font-size: $font-size-l;
 			}
 

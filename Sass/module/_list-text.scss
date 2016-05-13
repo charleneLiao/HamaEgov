@@ -659,9 +659,10 @@
 //開放資料================================================================
 
 	&.open-data {
+		margin: $interval-s 0;
 
 		> .in {
-			padding: $interval-xs 0;
+
 		}
 
 		.hd {
@@ -872,9 +873,10 @@
 		}
 
 		.base-section & {
+			margin: $interval-s 0;
 
 			> .in {
-				padding: $interval-xs 0;
+
 			}
 
 			.hd {
@@ -918,30 +920,73 @@
 						margin-left: $interval-xs;
 					}
 
-					&.json {
+					&.login {
 
 						a {
 
 							&:before {
-
+								@include icon-font('person');
 							}
 						}
 					}
 
-					&.xml {
+					&.logout {
 
 						a {
 
 							&:before {
-
+								@include icon-font('person_outline');
 							}
 						}
 					}
 
-					&.csv {
+					&.edit {
 
 						a {
 
+							&:before {
+								@include icon-font('edit');
+							}
+						}
+					}
+
+					&.print {
+
+						a {
+
+							&:before {
+								@include icon-font('print');
+							}
+						}
+					}
+
+					&.nav-edit {
+
+						a {
+
+							&:before {
+								@include icon-font('edit');
+							}
+						}
+					}
+
+					&.index-edit {
+
+						a {
+
+							&:before {
+								@include icon-font('edit');
+							}
+						}
+					}
+
+					&.article-edit {
+
+						a {
+
+							&:before {
+								@include icon-font('edit');
+							}
 						}
 					}
 				}
@@ -955,7 +1000,6 @@
 
 					&:before {
 						margin-right: $interval-xs;
-						@include icon-font('cloud_download');
 					}
 				}
 
@@ -2728,7 +2772,7 @@
 //網站地圖================================================================
 
 	&.sitemap {
-		margin: $interval-m 0;
+		margin: $interval-s 0;
 
 		> .in {
 
