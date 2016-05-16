@@ -19,11 +19,11 @@ define(['googleMaps', 'getNode', 'plugin'], function(googleMaps, getNode, plugin
 
 		plugin.extend($set, opt);
 
-		var $divition = getNode.getChild(getNode.getCtIn(env), 'divition')[0]; //google map 的 div
+		var $div = getNode.getChild(getNode.getCtIn(env), 'div')[0]; //google map 的 div
 
-		$divition.style.height = parseInt($set.height, 10) + 'px'; //給他高
+		$div.style.height = parseInt($set.height, 10) + 'px'; //給他高
 
-		var map = new google.maps.Map($divition, $set.set); //丟 set 進去產生地圖
+		var map = new google.maps.Map($div, $set.set); //丟 set 進去產生地圖
 
 		if( typeof($set.marker) === 'object' && $set.marker.length ) { //如果有傳入 marker
 			var $markers = $set.marker,
