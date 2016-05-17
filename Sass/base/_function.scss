@@ -725,6 +725,13 @@
 		background-color: $span-color;
 	}
 
+	%mark-absolute { //延伸的標籤組件
+		@extend %mark-extend;
+		position: absolute;
+		top: $interval-m;
+		left: $interval-m;
+	}
+
 	%paragraph { //文章段落組件
 		margin: $interval-s 0;
 

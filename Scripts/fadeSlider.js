@@ -23,7 +23,7 @@ define(['jquery', 'getNode'], function($, getNode){
 			$next_li = $(next_li),
 			$next_li_a = $next_li.find('a');
 
-		if( $content_li.length < 2 ) {
+		if( $content_li.length <= 1 ) {
 			$prev_li.fadeOut();
 			$next_li.fadeOut();
 

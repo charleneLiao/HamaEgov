@@ -24,7 +24,7 @@
 				<% else %>
 					<li data-index="<%= i + 1 %>">
 				<% end %>
-				<span><a href="#">步驟<%= i + 1 %> <%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
+				<span><a href="#"><% if show_mark %><i class="mark">步驟<%= i + 1 %></i><% end %><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

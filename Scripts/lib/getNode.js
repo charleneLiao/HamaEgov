@@ -85,57 +85,56 @@ define(function(){
 		return getHd(env)[0].innerText;
 	}
 
-	function setTitleText(title){ //取得該群組標題文字
+	function setTitleText(env, title){ //取得該群組標題文字
 		return getHd(env)[0].innerText = title;
 	}
 
-	function getCt(env){ //取得 content 節點
+	function getCt(env){ //取得 ct 節點
 		return getChild(getIn(env), 'ct');
 	}
 
-	function getCtIn(env){ //取得 content in 節點
+	function getCtIn(env){ //取得 ct in 節點
 		return getChild(getCt(env), 'in');
 	}
 
-	function getCtList(env){ //取得 content ul 節點
+	function getCtList(env){ //取得 ct ul 節點
 		return getChild(getCtIn(env), 'ul');
 	}
 
-	function getCtItem(env){ //取得 content li 節點
+	function getCtItem(env){ //取得 ct li 節點
 		return getChild(getCtList(env), 'li');
 	}
 
 	function getChildGroup(env){ //取得子模組節點(群組用)
-		var result = [];
 
-		if( !getChild(getCtIn(env), 'div').length ) {
+		if( getChild(getCtIn(env), 'div').length ) {
 			return getChild(getCtIn(env), 'div');
 		}
 
-		if( !getChild(getCtItem(env), 'div').length ) {
+		if( getChild(getCtItem(env), 'div').length ) {
 			return getChild(getCtItem(env), 'div');
 		}
 
 		return [];
 	}
 
-	function getCtItemLen(env){ //取得 content li 節點的數量
+	function getCtItemLen(env){ //取得 ct li 節點的數量
 		return getChildList[0].getAttribute('data-child');
 	}
 
-	function getFt(env){ //取得 footer 節點
+	function getFt(env){ //取得 ft 節點
 		return getChild(getIn(env), 'ft');
 	}
 
-	function getFtIn(env){ //取得 footer in 節點
+	function getFtIn(env){ //取得 ft in 節點
 		return getChild(getFt(env), 'in');
 	}
 
-	function getFtList(env){ //取得 footer ul 節點
+	function getFtList(env){ //取得 ft ul 節點
 		return getChild(getFtIn(env), 'ul');
 	}
 
-	function getFtItem(env){ //取得 footer li 節點
+	function getFtItem(env){ //取得 ft li 節點
 		return getFtIn(env)[0].querySelectorAll('li');
 	}
 
@@ -160,7 +159,7 @@ define(function(){
 		return env;
 	}
 
-	function updateContentItemLen(env){ //更新 content li 節點的數量
+	function updateContentItemLen(env){ //更新 ct li 節點的數量
 		var $List = getCtList(env);
 
 		$List.setAttribute('data-child', $List.children.length);

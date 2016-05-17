@@ -156,7 +156,7 @@
 			}
 
 			/*i*/.mark {
-				
+				@extend %mark-absolute;
 			}
 
 			img {
@@ -309,7 +309,7 @@
 			}
 
 			/*i*/.mark {
-				
+				@extend %mark-absolute;
 			}
 
 			img {
@@ -446,7 +446,104 @@
 			}
 
 			/*i*/.mark {
+				@extend %mark-absolute;
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//相簿================================================================
+
+	&.album {
+		$default-len: 3;
+
+		@include default-len(0, $default-len);
+		@include set-len(0);
+		margin-top: 0;
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('public');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
 				
+			}
+
+			ul {
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				
+			}
+
+			span {
+				margin: $interval-xs;
+				display: block;
+			}
+
+			a {
+				@extend %mask;
+			}
+
+			/*i*/.mark {
+				@extend %mark-absolute;
 			}
 
 			img {
@@ -787,7 +884,7 @@
 			}
 
 			/*i*/.mark {
-				
+				@extend %mark-absolute;
 			}
 
 			img {
@@ -915,7 +1012,7 @@
 			}
 
 			/*i*/.mark {
-				
+				@extend %mark-absolute;
 			}
 
 			img {
@@ -1006,7 +1103,7 @@
 			}
 
 			/*i*/.mark {
-				
+				@extend %mark-absolute;
 			}
 
 			img {

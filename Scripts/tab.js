@@ -9,25 +9,45 @@ define(['jquery', 'getNode'], function($, getNode){
 		$.extend($set, opt);
 
 		var items = getNode.getCtItem(env),
-			tabs = getNode.getCtItem(getNode.getChild(items[0], 'tab'));
+			tabs = items.shift(); //把 tabs 從陣列拿掉(實際上是 li)，
 
-		items.shift(); //把第一個 items 拿掉
+		var items_l = items.length;
 
-		var $items = $(items),
+		var $items = $(items), //li
 			$tabs = $(tabs),
-			$a = $tabs.find('a'),
-			$a_length = $a.length - 1;
+			$tabs_li = $tabs.find('li'),
+			$tab_a = $tabs_li.find('a'),
+			$tab_a_length = $tab_a.length - 1;
 
 		var _tab_key = 9;
 
-		for( var i = 0; i < $a_length; i++ ) { //註冊無障礙 tab 事件
+		$items.each(function(i, n){
+			var $this = $(this),
+				$hd = $this.find('.hd'),
+				$hd_a = $hd.find('a');
+
+			$hd_a.each(function(i, n){
+				var $this = $(this),
+					_href = $this.attr('href');
+
+				if( !_href || _href === '#' ) {
+					$this.removeAttr('href');
+				}
+			});
+
+			if( $hd.css('display') === 'none' ) {
+				$hd.find('a').removeAttr('href');
+			}
+		});
+
+		for( var i = 0; i < $tab_a_length; i++ ) { //註冊無障礙 tab 事件
 
 			(function(i){
 				var a = items[i].querySelectorAll('a[href]');
 
-				if(a) {
+				if(a.length) {
 
-					$a.eq(i).on('keydown', function(evt){ //觸發事件
+					$tab_a.eq(i).on('keydown', function(evt){ //觸發事件
 
 						if( evt.which === _tab_key ) {
 							evt.preventDefault();
@@ -41,7 +61,7 @@ define(['jquery', 'getNode'], function($, getNode){
 						if( evt.which === _tab_key ) {
 							evt.preventDefault();
 
-							$a.eq(i + 1).focus();
+							$tab_a.eq(i + 1).focus();
 						}
 					});
 				}
@@ -51,23 +71,23 @@ define(['jquery', 'getNode'], function($, getNode){
 		var _eventNmae = file, //事件名稱
 			_active = 'is-active'; //被選擇的 class name
 
-		$a.on(_eventNmae, function(){
+		$tab_a.on(_eventNmae, function(){
 			var $this = $(this),
 				_index = $this.closest('li').index();
 
-			$tabs.removeClass(_active);
-			$tabs.eq(_index).addClass(_active);
+			$tabs_li.removeClass(_active);
+			$tabs_li.eq(_index).addClass(_active);
 			$items.hide();
 			$items.eq(_index).show();
 		});
 
-		$a.on('click focusin', function(evt){ //觸發事件
+		$tab_a.on('click focusin', function(evt){ //觸發事件
 			evt.preventDefault();
 
 			$(this).trigger(_eventNmae);
 		});
 
-		$a.eq(0).trigger(_eventNmae); //先點擊，同時用 css 先做掉
+		$tab_a.eq(0).trigger(_eventNmae); //先點擊，同時用 css 先做掉
 
 		if($set.debug) {
 			console.log('預設值:', $set);
