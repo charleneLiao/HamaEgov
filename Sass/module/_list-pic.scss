@@ -775,6 +775,7 @@
 //圖片下載================================================================
 
 	&.pic-download {
+		@include default-len(4, 5);
 
 		> .in {
 
@@ -817,22 +818,8 @@
 			}
 
 			li {
-				$li-len: 5;
-
-				width: 100% / $li-len;
-				float: left;
-
-				@include media('pad') {
-					$li-len: 3;
-
-					width: 100% / $li-len;
-				}
-
-				@include media('phone') {
-					$li-len: 1;
-
-					width: 100% / $li-len;
-				}
+				@include set-len-rwd('pad', 3);
+				@include set-len-rwd('phone', 1);
 
 				&.is-img {
 					
@@ -919,6 +906,7 @@
 //內頁圖片列表================================================================
 
 	&.page-list {
+		@include default-len(4, 5);
 
 		> .in {
 
@@ -961,22 +949,8 @@
 			}
 
 			li {
-				$li-len: 5;
-
-				width: 100% / $li-len;
-				float: left;
-
-				@include media('pad') {
-					$li-len: 3;
-
-					width: 100% / $li-len;
-				}
-
-				@include media('phone') {
-					$li-len: 1;
-
-					width: 100% / $li-len;
-				}
+				@include set-len-rwd('pad', 3);
+				@include set-len-rwd('phone', 1);
 			}
 
 			span {

@@ -73,13 +73,14 @@
 			> .in {
 
 				> .hd {
+					display: none;
 
 					> .in {
 
 					}
 
 					h3 {
-						@extend %title;
+
 					}
 
 					span {
@@ -424,6 +425,7 @@
 
 											a {
 												@extend %ellipsis;
+												line-height: $interval-xl;
 												display: block;
 												padding: $interval-s;
 												text-align: center;
@@ -1008,6 +1010,168 @@
 					a {
 
 					}
+				}
+			}
+		}
+	}
+
+//內頁階層================================================================
+
+	&.content {
+		$max-len: 3;
+
+		@include default-len(4, 1);
+		@include set-len(4, $max-len);
+
+		> .in {
+
+			> .hd {
+
+				> .in {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('format_list_numbered');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							@include set-len-rwd('mobile', 1);
+
+							> [data-index][data-type] {
+								margin: $interval-xs !important;
+							}
+						}
+					}
+				}
+			}
+
+			> .ft {
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//網站地圖================================================================
+
+	&.sitemap {
+
+		> .in {
+
+			> .hd {
+				display: none;
+
+				> .in {
+
+				}
+
+				h3 {
+					@extend %reset;
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %list;
+					@extend %list-hover;
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						> li {
+
+							+ li {
+								margin-top: $interval-s;
+							}
+
+							> [data-index][data-type] {
+								margin: 0;
+
+								> .in {
+
+									> .hd {
+										display: block;
+									}
+
+									> .ct {
+										padding: $interval-s 0 0 $interval-xl;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .ft {
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
 				}
 			}
 		}

@@ -75,6 +75,7 @@
 	$pc-width: 1000px !default; //pc寬度
 	$pad-width: 768px !default; //pad寬度
 	$phone-width: 560px !default; //phone寬度
+
 	$rwd-btn-size: 40px; //RWD 手機側欄按鈕大小
 
 //grid 框架設定================================================================
@@ -96,6 +97,7 @@
 
 //全頁文字================================================================
 	$body-font-color: $deep !default; //網站文字顏色
+	
 	$body-font-size-s: $font-size-xs !default; //small
 	$body-font-size-m: $font-size-s !default; //medium
 	$body-font-size-l: $font-size-m !default; //large

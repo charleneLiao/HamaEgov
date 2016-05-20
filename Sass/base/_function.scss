@@ -262,6 +262,10 @@
 
 						li {
 							width: 100% / $i;
+
+							&:nth-child(#{$i}n+1) {
+								clear: left;
+							}
 						}
 					}
 				}
@@ -277,6 +281,10 @@
 
 						> [data-index][data-type] {
 							width: 100% / $i;
+
+							&:nth-child(#{$i}n+1) {
+								clear: left;
+							}
 						}
 					}
 				}
@@ -294,6 +302,10 @@
 
 							> li {
 								width: 100% / $i;
+
+								&:nth-child(#{$i}n+1) {
+									clear: left;
+								}
 							}
 						}
 					}

@@ -108,6 +108,30 @@
 		<%= render partial: "/Erb/group/group-tab_default", locals: set({ index: 20, func_set: "{'tab':{}}", header_text: "頁籤", show_footer: false, :inner =>  "/Erb/module/area-figure_page-figure" }) %>
 	<!-- tab 結束 -->
 
+<!-- //內頁階層================================================================ -->
+
+	<!-- content 內頁階層 -->
+		<%= render partial: "/Erb/group/group-list_content", locals: set({ index: 22, header_text: "階層內容"}) %>
+	<!-- content 結束 -->
+
+	<!-- content-text 內頁階層內容 -->
+		<%= render partial: "/Erb/module/simple-text_content-text", locals: set({ index: 31 }) %>
+	<!-- content-text 結束 -->
+
+	<!-- content-file 內頁階層內容 -->
+		<%= render partial: "/Erb/module/list-text_content-file" ,locals: set({ index: 21 }) %>
+	<!-- content-files 結束 -->
+
+<!-- //網站地圖================================================================ -->
+
+	<!-- sitemap 選單 -->
+		<%= render partial: "/Erb/group/group-list_sitemap", locals: set({ index: 22, header_text: "網站地圖" }) %>
+	<!-- sitemap 結束 -->
+
+	<!-- sitemap 網站地圖 -->
+		<%= render partial: "/Erb/module/list-text_sitemap", locals: set({ index: 2, header_text: "網站地圖" }) %>
+	<!-- sitemap 結束 -->
+
 <!-- //選單================================================================ -->
 
 	<!-- nav 選單 -->
@@ -115,7 +139,7 @@
 	<!-- nav 結束 -->
 
 	<!-- nav 選單 -->
-		<%= render partial: "/Erb/group/group-list_nav", locals: set({ index: 22, func_set: "{'majorNavStraight':{}}", header_text: "主選單", inner: "/Erb/module/list-text_nav" }) %>
+		<%= render partial: "/Erb/group/group-list_nav", locals: set({ index: 22, header_text: "主選單", inner: "/Erb/module/list-text_nav" }) %>
 	<!-- nav 結束 -->
 
 <!-- //按鈕================================================================ -->
@@ -163,7 +187,7 @@
 <!-- //內頁列表================================================================ -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 31, header_text: "單則文字" }) %>
+		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 31, show_mark: false, header_text: "單則文字" }) %>
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁文字列表 -->
