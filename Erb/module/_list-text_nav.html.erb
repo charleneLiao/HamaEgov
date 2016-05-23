@@ -14,14 +14,14 @@
 			<h4><span><a href="#"><%= header_text %></a></span></h4>
 		</div></div>
 	<% end %>
-	<div class="ct"><div class="in">
-		<% if ( li_length > 0 ) %>
+	<% if ( li_length > 0 ) %>
+		<div class="ct"><div class="in">
 			<ul data-index="1" data-child="<%= li_length %>">
 
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
 				<% end %>
 			</ul>
-		<% end %>
-	</div></div>
+		</div></div>
+	<% end %>
 </div></div>

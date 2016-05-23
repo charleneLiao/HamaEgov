@@ -111,201 +111,201 @@
 <!-- //內頁階層================================================================ -->
 
 	<!-- content 內頁階層 -->
-		<%= render partial: "/Erb/group/group-list_content", locals: set({ index: 22, header_text: "階層內容"}) %>
+		<%= render partial: "/Erb/group/group-list_content", locals: set({ index: 21, header_text: "階層內容"}) %>
 	<!-- content 結束 -->
 
-	<!-- content-text 內頁階層內容 -->
-		<%= render partial: "/Erb/module/simple-text_content-text", locals: set({ index: 31 }) %>
-	<!-- content-text 結束 -->
+	<!-- content-file 內頁階層列表 -->
+		<%= render partial: "/Erb/module/list-text_content-list" ,locals: set({ index: 22 }) %>
+	<!-- content-files 結束 -->
 
-	<!-- content-file 內頁階層內容 -->
-		<%= render partial: "/Erb/module/list-text_content-file" ,locals: set({ index: 21 }) %>
+	<!-- content-file 內頁階層檔案 -->
+		<%= render partial: "/Erb/module/list-text_content-file" ,locals: set({ index: 23 }) %>
 	<!-- content-files 結束 -->
 
 <!-- //網站地圖================================================================ -->
 
 	<!-- sitemap 選單 -->
-		<%= render partial: "/Erb/group/group-list_sitemap", locals: set({ index: 22, header_text: "網站地圖" }) %>
+		<%= render partial: "/Erb/group/group-list_sitemap", locals: set({ index: 24, header_text: "網站地圖" }) %>
 	<!-- sitemap 結束 -->
 
 	<!-- sitemap 網站地圖 -->
-		<%= render partial: "/Erb/module/list-text_sitemap", locals: set({ index: 2, header_text: "網站地圖" }) %>
+		<%= render partial: "/Erb/module/list-text_sitemap", locals: set({ index: 25, header_text: "網站地圖" }) %>
 	<!-- sitemap 結束 -->
 
 <!-- //選單================================================================ -->
 
 	<!-- nav 選單 -->
-		<%= render partial: "/Erb/module/list-text_nav" ,locals: set({ index: 21, header_text: "單層選單" }) %>
+		<%= render partial: "/Erb/module/list-text_nav" ,locals: set({ index: 26, header_text: "單層選單" }) %>
 	<!-- nav 結束 -->
 
 	<!-- nav 選單 -->
-		<%= render partial: "/Erb/group/group-list_nav", locals: set({ index: 22, header_text: "主選單", inner: "/Erb/module/list-text_nav" }) %>
+		<%= render partial: "/Erb/group/group-list_nav", locals: set({ index: 27, header_text: "主選單", inner: "/Erb/module/list-text_nav" }) %>
 	<!-- nav 結束 -->
 
 <!-- //按鈕================================================================ -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 23 }) %>
+		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 28 }) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 24, class_set: "is-right" }) %>
+		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 29, class_set: "is-right" }) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 25, class_set: "is-center" }) %>
+		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 30, class_set: "is-center" }) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 26, class_set: "is-justify" }) %>
+		<%= render partial: "/Erb/module/list-text_btn", locals: set({ index: 31, class_set: "is-justify" }) %>
 	<!-- btn 結束 -->
 
 <!-- //視訊================================================================ -->
 
 	<!-- video 視訊 -->
-		<%= render partial: "/Erb/module/area-customize_video", locals: set({ index: 27, header_text: "視訊" }) %>
+		<%= render partial: "/Erb/module/area-customize_video", locals: set({ index: 32, header_text: "視訊" }) %>
 	<!-- video 結束 -->
 
 <!-- //音訊================================================================ -->
 
 	<!-- audio 音訊 -->
-		<%= render partial: "/Erb/module/area-customize_audio", locals: set({ index: 28, header_text: "音訊" }) %>
+		<%= render partial: "/Erb/module/area-customize_audio", locals: set({ index: 33, header_text: "音訊" }) %>
 	<!-- audio 結束 -->
 
 <!-- //框架================================================================ -->
 
 	<!-- iframe 框架 -->
-		<%= render partial: "/Erb/module/area-customize_iframe", locals: set({ index: 29, header_text: "框架", show_footer: false }) %>
+		<%= render partial: "/Erb/module/area-customize_iframe", locals: set({ index: 34, header_text: "框架", show_footer: false }) %>
 	<!-- iframe 結束 -->
 
 <!-- //地圖================================================================ -->
 
 	<!-- map 地圖 -->
-		<%= render partial: "/Erb/module/area-customize_map", locals: set({ index: 30, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
+		<%= render partial: "/Erb/module/area-customize_map", locals: set({ index: 35, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
 	<!-- map 結束 -->
 
 <!-- //內頁列表================================================================ -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 31, show_mark: false, header_text: "單則文字" }) %>
+		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 36, show_mark: false, header_text: "單則文字" }) %>
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁文字列表 -->
-		<%= render partial: "/Erb/module/list-text_page-list" ,locals: set({ index: 32, header_text: "內頁文字列表" }) %>
+		<%= render partial: "/Erb/module/list-text_page-list" ,locals: set({ index: 37, header_text: "內頁文字列表" }) %>
 	<!-- page-list 結束 -->
 
 	<!-- page-list-text 內頁文字列表群組 -->
-		<%= render partial: "/Erb/group/group-list_page-list-text", locals: set({ index: 33, header_text: "內頁文字列表群組", inner: "/Erb/module/list-text_page-list" }) %>
+		<%= render partial: "/Erb/group/group-list_page-list-text", locals: set({ index: 38, header_text: "內頁文字列表群組", inner: "/Erb/module/list-text_page-list" }) %>
 	<!-- page-list-text 結束 -->
 
 <!-- //內頁圖片================================================================ -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-pic_default", locals: set({ index: 34, header_text: "單則圖片" }) %>
+		<%= render partial: "/Erb/module/simple-pic_default", locals: set({ index: 39, header_text: "單則圖片" }) %>
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁圖片列表 -->
-		<%= render partial: "/Erb/module/list-pic_page-list", locals: set({ index: 35, header_text: "內頁圖片列表" }) %>
+		<%= render partial: "/Erb/module/list-pic_page-list", locals: set({ index: 40, header_text: "內頁圖片列表" }) %>
 	<!-- page-list 結束 -->
 
 	<!-- page-list-pic 內頁圖片列表群組 -->
-		<%= render partial: "/Erb/group/group-list_page-list-pic", locals: set({ index: 36, header_text: "內頁圖片列表群組", inner: "/Erb/module/list-pic_page-list" }) %>
+		<%= render partial: "/Erb/group/group-list_page-list-pic", locals: set({ index: 41, header_text: "內頁圖片列表群組", inner: "/Erb/module/list-pic_page-list" }) %>
 	<!-- page-list-pic 結束 -->
 
 	<!-- page-block 內頁區塊 -->
-		<%= render partial: "/Erb/module/list-pic_page-block", locals: set({ index: 37, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "內頁圖片區塊列表" }) %>
+		<%= render partial: "/Erb/module/list-pic_page-block", locals: set({ index: 42, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "內頁圖片區塊列表" }) %>
 	<!-- page-block 結束 -->
 
 	<!--marquee 跑馬燈輪播 -->
-		<%= render partial: "/Erb/module/list-pic_page-marquee", locals: set({ index: 38, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈" }) %>
+		<%= render partial: "/Erb/module/list-pic_page-marquee", locals: set({ index: 43, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈" }) %>
 	<!-- marquee 結束 -->
 
 <!-- //內頁圖片敘述================================================================ -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-標籤-內文) -->
-		<%= render partial: "/Erb/module/area-figure_page-figure", locals: set({ index: 39, header_text: "內頁圖片敘述(圖片-標題-標籤-內文)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-figure", locals: set({ index: 44, header_text: "內頁圖片敘述(圖片-標題-標籤-內文)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-標籤) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-figcaption-label", locals: set({ index: 40, header_text: "內頁圖片敘述(圖片-標題-標籤)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-figcaption-label", locals: set({ index: 45, header_text: "內頁圖片敘述(圖片-標題-標籤)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-figcaption", locals: set({ index: 41, header_text: "內頁圖片敘述(圖片-標題)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-figcaption", locals: set({ index: 46, header_text: "內頁圖片敘述(圖片-標題)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標籤) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-label", locals: set({ index: 42, header_text: "內頁圖片敘述(圖片-標籤)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-label", locals: set({ index: 47, header_text: "內頁圖片敘述(圖片-標籤)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標題-內文) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-figcaption-p", locals: set({ index: 43, header_text: "內頁圖片敘述(圖片-標題-內文)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-figcaption-p", locals: set({ index: 48, header_text: "內頁圖片敘述(圖片-標題-內文)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-標籤-內文) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-label-p", locals: set({ index: 44, header_text: "內頁圖片敘述(圖片-標籤-內文)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-label-p", locals: set({ index: 49, header_text: "內頁圖片敘述(圖片-標籤-內文)" }) %>
 	<!-- page-figure 結束 -->
 
 	<!-- page-figure 內頁圖片敘述(圖片-內文) -->
-		<%= render partial: "/Erb/module/area-figure_page-img-p", locals: set({ index: 45, header_text: "內頁圖片敘述(圖片-內文)" }) %>
+		<%= render partial: "/Erb/module/area-figure_page-img-p", locals: set({ index: 50, header_text: "內頁圖片敘述(圖片-內文)" }) %>
 	<!-- page-figure 結束 -->
 
 <!-- //內頁文章敘述================================================================ -->
 
 	<!-- page-essay 內頁文章敘述(圖片-標題-標籤-內文) -->
-		<%= render partial: "/Erb/module/area-essay_page-essay", locals: set({ index: 46, header_text: "內頁文章敘述(圖片-標題-標籤-內文)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-essay", locals: set({ index: 51, header_text: "內頁文章敘述(圖片-標題-標籤-內文)" }) %>
 	<!-- page-essay 結束 -->
 
 	<!-- page-caption-label-p 內頁文章敘述(圖片-標題-標籤) -->
-		<%= render partial: "/Erb/module/area-essay_page-img-caption-label", locals: set({ index: 47, header_text: "內頁文章敘述(圖片-標題-標籤)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-img-caption-label", locals: set({ index: 52, header_text: "內頁文章敘述(圖片-標題-標籤)" }) %>
 	<!-- page-caption-label-p 結束 -->
 
 	<!-- page-img-caption-p 內頁文章敘述(圖片-標題-內文) -->
-		<%= render partial: "/Erb/module/area-essay_page-img-caption-p", locals: set({ index: 48, header_text: "內頁文章敘述(圖片-標題-內文)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-img-caption-p", locals: set({ index: 53, header_text: "內頁文章敘述(圖片-標題-內文)" }) %>
 	<!-- page-caption-label-p 結束 -->
 
 	<!-- page-caption-label-p 內頁文章敘述(標題-標籤-內文) -->
-		<%= render partial: "/Erb/module/area-essay_page-caption-label-p", locals: set({ index: 49, header_text: "內頁文章敘述(標題-標籤-內文)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-caption-label-p", locals: set({ index: 54, header_text: "內頁文章敘述(標題-標籤-內文)" }) %>
 	<!-- page-caption-label-p 結束 -->
 
 	<!-- page-caption-label 內頁文章敘述(標題-標籤) -->
-		<%= render partial: "/Erb/module/area-essay_page-caption-label", locals: set({ index: 50, header_text: "內頁文章敘述(標題-標籤)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-caption-label", locals: set({ index: 55, header_text: "內頁文章敘述(標題-標籤)" }) %>
 	<!-- page-caption-label 結束 -->
 
 	<!-- page-caption-p 內頁文章敘述(標題-內文) -->
-		<%= render partial: "/Erb/module/area-essay_page-caption-p", locals: set({ index: 51, header_text: "內頁文章敘述(標題-內文)" }) %>
+		<%= render partial: "/Erb/module/area-essay_page-caption-p", locals: set({ index: 56, header_text: "內頁文章敘述(標題-內文)" }) %>
 	<!-- page-caption-p 結束 -->
 
 <!-- //內頁敘述群組================================================================ -->
 
 	<!-- page-block 內頁區塊群組 -->
-		<%= render partial: "/Erb/group/group-list_page-block", locals: set({ index: 52, header_text: "內頁區塊群組", show_footer: false, inner: "/Erb/module/area-figure_page-figure" }) %>
+		<%= render partial: "/Erb/group/group-list_page-block", locals: set({ index: 57, header_text: "內頁區塊群組", show_footer: false, inner: "/Erb/module/area-figure_page-figure" }) %>
 	<!-- page-block 結束 -->
 
 	<!-- page-list 內頁列表群組 -->
-		<%= render partial: "/Erb/group/group-list_page-list", locals: set({ index: 53, header_text: "內頁列表群組", inner: "/Erb/module/area-figure_page-img-figcaption-p" }) %>
+		<%= render partial: "/Erb/group/group-list_page-list", locals: set({ index: 58, header_text: "內頁列表群組", inner: "/Erb/module/area-figure_page-img-figcaption-p" }) %>
 	<!-- page-list 結束 -->
 
 	<!-- page-block 內頁區塊群組 -->
-		<%= render partial: "/Erb/group/group-list_page-block", locals: set({ index: 54, header_text: "內頁區塊群組", show_footer: false, inner: "/Erb/module/area-essay_page-caption-label-p" }) %>
+		<%= render partial: "/Erb/group/group-list_page-block", locals: set({ index: 59, header_text: "內頁區塊群組", show_footer: false, inner: "/Erb/module/area-essay_page-caption-label-p" }) %>
 	<!-- page-essay 結束 -->
 
 	<!-- page-list 內頁列表群組 -->
-		<%= render partial: "/Erb/group/group-list_page-list", locals: set({ index: 55, header_text: "內頁列表群組", inner: "/Erb/module/area-essay_page-essay" }) %>
+		<%= render partial: "/Erb/group/group-list_page-list", locals: set({ index: 60, header_text: "內頁列表群組", inner: "/Erb/module/area-essay_page-essay" }) %>
 	<!-- page-list 結束 -->
 
 <!-- //內頁表單================================================================ -->
 
 	<!-- page-form 內頁表單 -->
-		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 56, header_text: "內頁表單" }) %>
+		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 61, header_text: "內頁表單" }) %>
 	<!-- page-form 結束 -->
 
 <!-- //內頁表格================================================================ -->
 
 	<!-- page-table 內頁表格 -->
-		<%= render partial: "/Erb/module/area-table_page-table", locals: set({ index: 57, header_text: "內頁表格" }) %>
+		<%= render partial: "/Erb/module/area-table_page-table", locals: set({ index: 62, header_text: "內頁表格" }) %>
 	<!-- page-table 結束 -->
 
 	<!-- rwd-table RWD 表格 -->
-		<%= render partial: "/Erb/module/area-table_rwd-table", locals: set({ index: 58, header_text: "RWD 表格" }) %>
+		<%= render partial: "/Erb/module/area-table_rwd-table", locals: set({ index: 63, header_text: "RWD 表格" }) %>
 	<!-- rwd-table 結束 -->

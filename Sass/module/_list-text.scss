@@ -656,12 +656,18 @@
 		}
 	}
 
-//內頁階層內容================================================================
+//內頁階層檔案================================================================
 
 	&.content-file {
 		@extend %list;
 		@extend %list-hover;
-		padding: ( $interval-m / 2 ) $interval-m;
+		border-left-width: $interval-xs;
+		border-left-style: solid;
+		border-left-color: $major-color;
+
+		&:hover {
+			border-left-width: $interval-m;
+		}
 
 		> .in {
 
@@ -778,6 +784,97 @@
 					background-color: $white;
 					color: currentColor;
 				}
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁階層列表================================================================
+
+	&.content-list {
+
+		> .in {
+			
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
+				border-left-width: $interval-xs;
+				border-left-style: solid;
+				border-left-color: $major-color;
+
+				&:hover {
+					border-left-width: $interval-m;
+				}
+			}
+		}
+
+		.ct {
+			padding: $interval-s 0 0 $interval-xl;
+
+			> .in {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				+ li {
+					margin-top: $interval-s;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
 			}
 
 			/*i*/.mark {
