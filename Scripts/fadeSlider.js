@@ -42,7 +42,7 @@ define(['jquery', 'getNode'], function($, getNode){
 		});
 
 		$next_li_a.on('click', function(evt){
-			evt.preventDefault()
+			evt.preventDefault();
 
 			_index = (_index + left + _content_li_length) % _content_li_length; //算出第幾個要被撥放
 			slider(_index);

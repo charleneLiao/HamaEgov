@@ -339,6 +339,10 @@
 				.video {
 					margin-bottom: $interval-s;
 
+					iframe {
+						width: 100%;
+					}
+
 					video {
 						width: 100%;
 					}
@@ -1343,6 +1347,74 @@
 				a {
 
 				}
+			}
+		}
+	}
+
+//圖表================================================================
+
+	&.chart {
+
+		@include js(false) {
+			display: none;
+		}
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('insert_chart');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
 			}
 		}
 	}

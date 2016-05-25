@@ -151,12 +151,16 @@
 		<%= render partial: "/Erb/module/area-customize_audio", locals: set({ index: 3, header_text: "音訊" }) %>
 	<!-- audio 結束 -->
 
+	<!-- chart 圖表 -->
+		<%= render partial: "/Erb/module/area-customize_chart", locals: set({ index: 4, header_text: "圖表" }) %>
+	<!-- chart 結束 -->
+
 	<!-- iframe 框架 -->
-		<%= render partial: "/Erb/module/area-customize_iframe", locals: set({ index: 4, header_text: "框架", show_footer: false }) %>
+		<%= render partial: "/Erb/module/area-customize_iframe", locals: set({ index: 5, header_text: "框架" }) %>
 	<!-- iframe 結束 -->
 
 	<!-- map 地圖 -->
-		<%= render partial: "/Erb/module/area-customize_map", locals: set({ index: 5, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
+		<%= render partial: "/Erb/module/area-customize_map", locals: set({ index: 6, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
 	<!-- map 結束 -->
 
 	</div></div>
