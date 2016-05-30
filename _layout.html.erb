@@ -14,10 +14,6 @@
 		<%= render partial: "/Erb/sys/icon" %>
 	<!-- Icon 結束 -->
 
-	<!-- Css 樣式表 -->
-		<%= render partial: "/Erb/sys/style" %>
-	<!-- Css 結束 -->
-
 	</head>
 	<body data-js="false" data-admin="false">
 	<form action="#" method="POST">
@@ -25,6 +21,10 @@
 	<% if( $js ) %>
 		<script>document.body.setAttribute("data-js", "true");</script>
 	<% end %>
+
+	<!-- Css 樣式表 -->
+		<%= render partial: "/Erb/sys/style" %>
+	<!-- Css 結束 -->
 
 	<!-- sys-root 拖曳根節點 -->
 		<div class="group sys-root" data-type="<%= $row %>" data-child="3"><div class="in">

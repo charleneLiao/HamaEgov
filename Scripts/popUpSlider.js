@@ -13,9 +13,9 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		var content_li = getNode.getCtItem(env),
 			_content_li_length = content_li.length,
-			close_li = getNode.getCtrlBtn(env, '.close'),
-			prev_li = getNode.getCtrlBtn(env, '.prev'),
-			next_li = getNode.getCtrlBtn(env, '.next');
+			close_li = getNode.getFtItemBtn(env, 'close'),
+			prev_li = getNode.getFtItemBtn(env, 'prev'),
+			next_li = getNode.getFtItemBtn(env, 'next');
 
 		var $env = $(env),
 			$content_li = $(content_li),

@@ -4,23 +4,21 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		var $set = {
 				speed: 300,
-				debug: false
+				debug: false,
+				class: 'is-show',
+				event: 'click'
 			}
 
 		$.extend($set, opt);
 
-		var _class = 'is-show';
-
-		var close_li = getNode.getCtrlBtn(env, '.close');
-
 		var $env = $(env),
-			$close_li = $(close_li),
-			$close_li_a = $close_li.find('a');
+			$ft = $(getNode.getFt(env)),
+			$close = $ft.find('a.close');
 
-		$close_li_a.on('click', function(evt){
+		$close.on(event, function(evt){
 			evt.preventDefault()
 
-			$env.removeClass(_class);
+			$env.removeClass($set.class);
 		});
 
 		if($set.debug) {
