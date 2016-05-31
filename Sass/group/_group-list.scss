@@ -1311,181 +1311,6 @@
 		}
 	}
 
-//燈箱================================================================
-
-	&.pop-up {
-		$btn-width: 40px; //設定按鈕寬度
-
-		position: fixed;
-		display: none;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: $black;
-		background-color: rgba($black, $opacity-m);
-		text-align: center;
-
-		@include js(false) {
-			display: none;
-		}
-
-		&.is-show {
-			display: block;
-		}
-
-		&:before {
-			content: $content;
-			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-		}
-
-		> .in {
-			position: relative;
-			display: inline-block;
-			box-sizing: border-box;
-			max-width: 80%;
-			max-height: 100%;
-			padding: $interval-m;
-			vertical-align: middle;
-			background-color: $light;
-
-			@include media('phone') {
-				max-width: 90%;
-			}
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								display: none;
-
-								@include js(false) {
-									display: block;
-									margin-top: $interval-m;
-								}
-							}
-
-							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
-
-								> .in {
-									@extend %reset;
-
-									> .hd {
-										display: none;
-									}
-
-									> .ft {
-										display: none;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .ft {
-
-				> .in {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-					&.next, &.prev {
-
-						a {
-							@extend %hide-text;
-							position: absolute;
-							top: 20%;
-							bottom: 20%;
-							display: block;
-							width: $btn-width;
-							transition: $transition;
-						}
-					}
-
-					&.prev {
-
-						a {
-							left: 0;
-							@include bg-to-pic('icon-pic/away-b-left.png', false);
-						}
-					}
-
-					&.next {
-
-						a {
-							right: 0;
-							@include bg-to-pic('icon-pic/away-b-right.png', false);
-						}
-					}
-
-					&.close {
-						$btn-size: 30px;
-
-						a {
-							@extend %hide-text;
-							@include bg-to-pic('icon-pic/ctrl-b-close.png', false);
-							position: absolute;
-							top: -0.5 * $btn-size;
-							right: -0.5 * $btn-size;
-							display: block;
-							width: $btn-size;
-							height: $btn-size;
-							transition: $transition;
-							border-radius: 50%;
-						}
-					}
-				}
-
-				span {
-
-				}
-
-				a {
-					background-color: $light;
-					background-color: rgba($light, $opacity-h);
-
-					&:hover {
-						background-color: rgba($light, $opacity-vh);
-					}
-				}
-			}
-		}
-	}
-
 //古典輪播================================================================
 
 	&.classical-slider {
@@ -1583,166 +1408,318 @@
 //跑馬燈================================================================
 
 	&.marquee-slider {
-		$btn-width: 30px; //設定按鈕寬度
-		$max-li-len: 50; //設定 li 的最大數量
-		$show-li-len: 5; //設定一次要秀的數量
-		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
-		@for $i from 1 through $max-show-li-len { //使數量可以被控制 1 ~ $max-show-li-len
-		
-			&[data-setLen="#{$i}"] {
+		.base-content & {
+			$btn-width: 30px; //設定按鈕寬度
+			$max-li-len: 50; //設定 li 的最大數量
+			$show-li-len: 5; //設定一次要秀的數量
+			$max-show-li-len: 10; //設定一次要秀的範圍數量，給 data-setLen 用
 
-				> .in > .ct > .in {
+			@for $i from 1 through $max-show-li-len { //使數量可以被控制 1 ~ $max-show-li-len
+			
+				&[data-setLen="#{$i}"] {
 
-					> ul {
-						width: $max-li-len * 100% / $i;
+					> .in > .ct > .in {
+
+						> ul {
+							width: $max-li-len * 100% / $i;
+						}
 					}
 				}
 			}
-		}
 
-		> .in {
+			> .in {
 
-			> .hd {
-				display: none;
+				> .hd {
+					display: none;
 
-				> .in {
+					> .in {
 
-				}
+					}
 
-				h3 {
-					@extend %title;
+					h3 {
+						@extend %title;
 
-					&:before {
-						@include icon-font('slideshow');
+						&:before {
+							@include icon-font('slideshow');
+						}
+					}
+
+					span {
+							
+					}
+
+					a {
+
 					}
 				}
 
-				span {
-						
-				}
+				> .ct {
+					background-color: $light;
 
-				a {
-
-				}
-			}
-
-			> .ct {
-				background-color: $light;
-
-				> .in {
-					overflow: hidden;
-					// margin: 0 $btn-width; //如果要與圖不重疊
-
-					@include js(false) {
-						margin: 0;
-					}
-
-					> ul {
-						width: $max-li-len * 100% / $show-li-len;
-
-						@include set-len-rwd('pad', 3, $max-li-len * 100%);
-						@include set-len-rwd('phone', 1, $max-li-len * 100%);
+					> .in {
+						overflow: hidden;
+						// margin: 0 $btn-width; //如果要與圖不重疊
 
 						@include js(false) {
-							width: 100%;
+							margin: 0;
 						}
 
-						&:after {
-							@extend %clear;
-						}
+						> ul {
+							width: $max-li-len * 100% / $show-li-len;
 
-						> li {
-							width: 100% / $max-li-len;
-							float: left;
+							@include set-len-rwd('pad', 3, $max-li-len * 100%);
+							@include set-len-rwd('phone', 1, $max-li-len * 100%);
 
 							@include js(false) {
-								display: block;
-								width: 100% / $show-li-len;
+								width: 100%;
 							}
 
-							> [data-index][data-type] { //隱藏內置模組的 header 與 footer
-								padding: $interval-s;
+							&:after {
+								@extend %clear;
+							}
 
-								> .in {
-									@extend %reset;
+							> li {
+								width: 100% / $max-li-len;
+								float: left;
 
-									> .hd {
-										display: none;
-									}
+								@include js(false) {
+									display: block;
+									width: 100% / $show-li-len;
+								}
 
-									> .ft {
-										display: none;
+								> [data-index][data-type] { //隱藏內置模組的 header 與 footer
+									padding: $interval-s;
+
+									> .in {
+										@extend %reset;
+
+										> .hd {
+											display: none;
+										}
+
+										> .ft {
+											display: none;
+										}
 									}
 								}
 							}
 						}
 					}
 				}
-			}
 
-			> .ft {
+				> .ft {
 
-				> .in {
+					> .in {
 
-				}
+					}
 
-				ul {
+					ul {
 
-				}
+					}
 
-				li {
+					li {
 
-					&.next, &.prev {
+						&.next, &.prev {
 
-						@include js(false) {
-							display: none;
+							@include js(false) {
+								display: none;
+							}
+
+							a {
+								@extend %hide-text;
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								display: block;
+								width: $btn-width;
+								transition: $transition;
+								background-color: $light;
+								background-color: rgba($light, $opacity-h);
+
+								&:hover {
+									background-color: rgba($light, $opacity-vh);
+								}
+							}
 						}
 
-						a {
-							@extend %hide-text;
-							position: absolute;
-							top: 0;
-							bottom: 0;
-							display: block;
-							width: $btn-width;
-							transition: $transition;
-							background-color: $light;
-							background-color: rgba($light, $opacity-h);
+						&.prev {
 
-							&:hover {
-								background-color: rgba($light, $opacity-vh);
+							a {
+								left: 0;
+								@include bg-to-pic('icon-pic/away-b-left.png', false);
+							}
+						}
+
+						&.next {
+
+							a {
+								right: 0;
+								@include bg-to-pic('icon-pic/away-b-right.png', false);
+							}
+						}
+
+						&.more {
+							display: none;
+						}
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
+			}
+		}
+
+		.base-extend & {
+			$btn-width: 80px; //設定按鈕寬度
+			$max-li-len: 50; //設定 li 的最大數量
+			$show-li-len: 1; //設定一次要秀的數量
+
+			> .in {
+
+				> .hd {
+					display: none;
+
+					> .in {
+
+					}
+
+					h3 {
+						@extend %title;
+
+						&:before {
+							@include icon-font('slideshow');
+						}
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
+				}
+
+				> .ct {
+					background-color: $light;
+
+					> .in {
+						overflow: hidden;
+						// margin: 0 $btn-width; //如果要與圖不重疊
+
+						@include js(false) {
+							margin: 0;
+						}
+
+						> ul {
+							width: $max-li-len * 100% / $show-li-len;
+
+							&:after {
+								@extend %clear;
+							}
+
+							> li {
+								width: 100% / $max-li-len;
+								float: left;
+
+								@include js(false) {
+									display: block;
+									width: 100% / $show-li-len;
+								}
+
+								> [data-index][data-type] { //隱藏內置模組的 header 與 footer
+									padding: $interval-s;
+
+									> .in {
+										@extend %reset;
+
+										> .hd {
+											display: none;
+										}
+
+										> .ft {
+											display: none;
+										}
+									}
+								}
 							}
 						}
 					}
+				}
 
-					&.prev {
+				> .ft {
 
-						a {
-							left: 0;
-							@include bg-to-pic('icon-pic/away-b-left.png', false);
+					> .in {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+						&.next, &.prev {
+
+							@include js(false) {
+								display: none;
+							}
+
+							a {
+								@extend %hide-text;
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								display: block;
+								width: $btn-width;
+								transition: $transition;
+								background-color: $light;
+								background-color: rgba($light, $opacity-h);
+
+								@include media('mobile') {
+									width: 50px;
+								}
+
+								&:hover {
+									background-color: rgba($light, $opacity-vh);
+								}
+							}
+						}
+
+						&.prev {
+
+							a {
+								left: 0;
+								@include bg-to-pic('icon-pic/away-b-left.png', false);
+							}
+						}
+
+						&.next {
+
+							a {
+								right: 0;
+								@include bg-to-pic('icon-pic/away-b-right.png', false);
+							}
+						}
+
+						&.more {
+							display: none;
 						}
 					}
 
-					&.next {
+					span {
 
-						a {
-							right: 0;
-							@include bg-to-pic('icon-pic/away-b-right.png', false);
-						}
 					}
 
-					&.more {
-						display: none;
+					a {
+
 					}
-				}
-
-				span {
-
-				}
-
-				a {
-
 				}
 			}
 		}

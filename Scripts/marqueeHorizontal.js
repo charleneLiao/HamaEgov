@@ -14,8 +14,13 @@ define(['jquery', 'getNode'], function($, getNode){
 		var content_in = getNode.getCtIn(env),
 			content_ul = getNode.getChild(content_in, 'ul'),
 			content_li = getNode.getChild(content_ul, 'li'),
-			content_li_length = content_li.length || 1,
-			prev_li = getNode.getFtItemBtn(env, 'prev'),
+			content_li_length = content_li.length || 1;
+
+		if( content_li_length <= 1 ) { //如果輪播項目在一個以下，就掰掰囉~
+			return false;
+		}
+			
+		var prev_li = getNode.getFtItemBtn(env, 'prev'),
 			next_li = getNode.getFtItemBtn(env, 'next');
 
 		var $env = $(env),

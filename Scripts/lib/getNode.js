@@ -6,7 +6,7 @@ define(function() {
 		_type_row = '3', //單欄
 		_type_list = '4'; //清單
 
-	var $main = {
+	return {
 
 		getChild: function(envs, selector) { //取得子節點，參數是節點關鍵字('ul')、Classname('.in')或 id('#group')
 
@@ -179,15 +179,27 @@ define(function() {
 				$btn.innerHTML = '<span><a href="#">'+ className +'</a></span>';
 
 				this.getFtList(env)[0].appendChild($btn);
-
 				this.updateFtItemLen(env);
+				this.updateIndex($btn);
 			}
 
 			return $btn;
 		},
 
 		updateIndex: function(env) { //更新 data-index
+			var $parent = env.parentNode,
+				$childs = $parent.children,
+				$childs_l = $childs.length;
 
+			if($parent.tagName.toLowerCase() === 'ul') {
+				$parent.setAttribute('data-child', $childs_l);
+			}
+
+			for( var i = 0; i < $childs_l; i++ ) {
+				$childs[i].setAttribute('data-index', i + 1);
+			}
+
+			return env;
 		},
 
 		updateChildLen: function(env) { //更新子模組的數量
@@ -224,6 +236,4 @@ define(function() {
 
 		}
 	}
-
-	return $main;
 });

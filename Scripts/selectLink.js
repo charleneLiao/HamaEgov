@@ -3,7 +3,8 @@ define(['jquery'], function($){
 	function main(env, opt, file){
 
 		var $set = {
-				debug: false
+				debug: false,
+				blankClass: 'isnewwindow'
 			}
 
 		$.extend($set, opt);
@@ -12,10 +13,11 @@ define(['jquery'], function($){
 			$select = $env.find('select');
 
 		$select.change(function(){ //觸發事件
-			var $selected = $select.find(':selected');
+			var $selected = $select.find(':selected'),
+				_target = ( $selected.data($set.blankClass) )? '_blank': '_self'; //是否新開視窗
 
 			if( $selected.data('href') ) {
-				window.open($selected.data('href'));
+				window.open($selected.data('href'), _target);
 			}
 		});
 

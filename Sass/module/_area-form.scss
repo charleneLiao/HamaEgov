@@ -130,11 +130,11 @@
 					}
 				}
 
-				.li {
+				.list {
 					display: none;
 					
 					ul {
-						@extend %reset;
+
 					}
 
 					li {
@@ -199,7 +199,7 @@
 
 				.ct {
 
-					.li {
+					.list {
 						display: block;
 					}
 				}
@@ -279,7 +279,7 @@
 					}
 				}
 
-				.li {
+				.list {
 					position: absolute;
 					top: 100%;
 					left: 0;

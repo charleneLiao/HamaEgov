@@ -36,6 +36,121 @@
 		}
 	}
 
+//燈箱================================================================
+
+	&.light-box {
+		$btn-size: 30px;
+		
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		background-color: rgba($black, $opacity-m);
+		text-align: center;
+
+		@include js(false) {
+			display: none;
+		}
+
+		&.is-show {
+			display: block;
+		}
+
+		&:before {
+			content: $content;
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		> .in {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			max-width: 80%;
+			max-height: 80%;
+			padding: $btn-size / 2;
+			vertical-align: middle;
+
+			@include media('phone') {
+				max-width: 90%;
+			}
+
+			> .hd {
+				display: none;
+
+				> .in {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+				}
+			}
+
+			> .ft {
+
+				> .in {
+
+				}
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					&.close {
+
+						a {
+							@extend %hide-text;
+							@include bg-to-pic('icon-pic/ctrl-b-close.png', false);
+							position: absolute;
+							top: 0;
+							right: 0;
+							display: block;
+							width: $btn-size;
+							height: $btn-size;
+							transition: $transition;
+							border-radius: 50%;
+						}
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+					background-color: $light;
+					background-color: rgba($light, $opacity-h);
+
+					&:hover {
+						background-color: rgba($light, $opacity-vh);
+					}
+				}
+			}
+		}
+	}
+
 //資訊群組================================================================
 
 	&.info {
