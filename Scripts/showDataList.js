@@ -12,9 +12,11 @@ define(['jquery'], function($){
 		var $env = $(env),
 			$input = $env.find('input'),
 			$list = $env.find('.list'),
-			$li = $list.find('li');
+			$li = $list.find('li'),
+			$a = $li.find('a');
 
 		var _esc_key = 27,
+			_flag = false, //指標是否在區塊內
 			_key_word = '';
 
 		$input.on('keyup click', function(evt){
@@ -40,7 +42,25 @@ define(['jquery'], function($){
 			}
 		});
 
-		$input.on('blur', function(evt){ //$input 失焦
+		$env.on('mouseover', function(evt){
+			_flag = true;
+		});
+
+		$env.on('mouseleave', function(evt){
+			_flag = false;
+		});
+
+		$input.on('focusout', function(evt){ //$input 失焦
+
+			if (!_flag) {
+				$env.removeClass($set.activeClass);
+			}
+		});
+
+		$a.on('click', function(evt){
+			evt.preventDefault();
+
+			$input.val($(this).text());
 			$env.removeClass($set.activeClass);
 		});
 
@@ -51,9 +71,7 @@ define(['jquery'], function($){
 				var $this = $(this),
 					$this_t = $.trim($this.text()); //取出物件的文字並 trim
 
-				console.log($this_t.match(regex));
-
-				if( $this_t.match(regex) ) {
+				if( $this_t.match(regex) && $this_t !== string ) {
 					$this.show();
 				}else {
 					$this.hide();

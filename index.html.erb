@@ -166,7 +166,7 @@
 	</div></div>
 </div></div>
 
-<div data-index="7" data-type="<%= $row %>" data-child="11"><div class="in">
+<div data-index="7" data-type="<%= $row %>" data-child="10"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">其他</a></span></h3>
 	</div></div>
@@ -176,44 +176,40 @@
 		<%= render partial: "/Erb/module/list-text_anchor", locals: set({ index: 1, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "錨點" }) %>
 	<!-- anchor 結束 -->
 
-	<!-- rss 訂閱 -->
-		<%= render partial: "/Erb/module/list-text_rss", locals: set({ index: 2, header_text: "RSS" }) %>
-	<!-- rss 結束 -->
-
 	<!-- countdown 倒數日 -->
-		<%= render partial: "/Erb/module/simple-text_countdown", locals: set({ index: 3, header_text: "距離大年初三" }) %>
+		<%= render partial: "/Erb/module/simple-text_countdown", locals: set({ index: 2, header_text: "距離大年初三" }) %>
 	<!-- countdown 結束 -->
 
 	<!-- weather 天氣 -->
-		<%= render partial: "/Erb/module/simple-text_weather", locals: set({ index: 4, header_text: "天氣" }) %>
+		<%= render partial: "/Erb/module/simple-text_weather", locals: set({ index: 3, header_text: "天氣" }) %>
 	<!-- weather 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 5, header_text: "文字" }) %>
+		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 4, header_text: "文字" }) %>
 	<!-- default 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-pic_default", locals: set({ index: 6, header_text: "圖片" }) %>
+		<%= render partial: "/Erb/module/simple-pic_default", locals: set({ index: 5, header_text: "圖片" }) %>
 	<!-- default 結束 -->
 
 	<!-- vote 投票 -->
-		<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 7, header_text: "投票" }) %>
+		<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 6, header_text: "投票" }) %>
 	<!-- vote 結束 -->
 
 	<!-- epaper 電子報 -->
-		<%= render partial: "/Erb/module/area-form_epaper", locals: set({ index: 8, header_text: "訂閱電子報" }) %>
+		<%= render partial: "/Erb/module/area-form_epaper", locals: set({ index: 7, header_text: "訂閱電子報" }) %>
 	<!-- epaper 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/area-editor_default", locals: set({ index: 9, header_text: "圖文區塊" }) %>
+		<%= render partial: "/Erb/module/area-editor_default", locals: set({ index: 8, header_text: "圖文區塊" }) %>
 	<!-- default 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/group/group-list_default", locals: set({ index: 10, header_text: "預設列表", inner: "/Erb/module/area-essay_message" }) %>
+		<%= render partial: "/Erb/group/group-list_default", locals: set({ index: 9, header_text: "預設列表", inner: "/Erb/module/area-essay_message" }) %>
 	<!-- default 結束 -->
 
 	<!-- tab 頁籤 -->
-		<%= render partial: "/Erb/group/group-tab_default", locals: set({ index: 11, func_set: "{'tab':{}}", header_text: "頁籤", show_footer: false, :inner =>  "/Erb/group/group-list_message" }) %>
+		<%= render partial: "/Erb/group/group-tab_default", locals: set({ index: 10, func_set: "{'tab':{}}", header_text: "頁籤", show_footer: false, :inner =>  "/Erb/group/group-list_message" }) %>
 	<!-- tab 結束 -->
 
 	</div></div>
