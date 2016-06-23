@@ -2094,6 +2094,156 @@
 		}
 	}
 
+	&.link {
+		$default-len: 2;
+
+		@include default-len-hide(4, $default-len);
+		@include set-len-hide(4);
+
+		> .in {
+
+			> .hd {
+
+				> .in {
+
+				}
+
+				h3 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						&:after {
+							@extend %clear;
+						}
+
+						> li {
+							@extend %reset-inner-module;
+
+							> [data-index][data-type] {
+								padding: $interval-xs;
+
+								> .in {
+
+									> .ft {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> .ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//詢問================================================================
+
+	&.query {
+
+		> .in {
+
+			> .hd {
+				display: none;
+
+				> .in {
+
+				}
+
+				h3 {
+					
+				}
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						> li {
+							
+						}
+					}
+				}
+			}
+
+			> .ft {
+				display: none;	
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
 //投票結果================================================================
 
 	&.vote-result {

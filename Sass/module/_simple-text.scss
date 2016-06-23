@@ -869,19 +869,11 @@
 				li {
 					display: inline-block;
 					
-					&.allow {
+					&.focus {
 
 						a {
 							@extend %btn-imp;
 						}
-					}
-
-					&.deny {
-
-					}
-
-					&.close {
-
 					}
 				}
 
@@ -891,7 +883,6 @@
 
 				a {
 					@extend %btn;
-					text-decoration: none;
 				}
 			}
 		}
@@ -998,19 +989,11 @@
 				li {
 					display: inline-block;
 					
-					&.allow {
+					&.focus {
 
 						a {
 							@extend %btn-imp;
 						}
-					}
-
-					&.deny {
-
-					}
-
-					&.close {
-
 					}
 				}
 
