@@ -2026,7 +2026,32 @@
 //分類================================================================
 
 	&.classify {
+		$active-color: $minor-color;
+
 		@extend %area-page-no-header;
+
+		&.is-active {
+			background-color: $minor-color;
+
+			.hd {
+
+				a {
+					color: $white;
+				}
+			}
+
+			.ct {
+
+				a {
+					background-color: deeper($active-color);
+					color: $white;
+
+					&:hover {
+						background-color: deeper($active-color, 2);
+					}
+				}
+			}
+		}
 
 		> .in {
 
@@ -2071,7 +2096,7 @@
 					}
 
 					a {
-						background-color: $minor-color;
+						background-color: $active-color;
 						color: $white;
 					}
 				}
@@ -2086,7 +2111,6 @@
 				padding: $btn-padding;
 				background-color: $light;
 				color: $body-font-color;
-				transition: $transition;
 
 				&:hover {
 					background-color: $light-gray;

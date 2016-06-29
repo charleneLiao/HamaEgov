@@ -818,7 +818,7 @@
 			}
 
 			.ct {
-				display: inline-block;
+				display: inline;
 				vertical-align: middle;
 
 				@include media('mobile') {
@@ -826,7 +826,7 @@
 				}
 
 				> .in {
-					display: inline-block;
+					display: inline;
 
 					@include media('mobile') {
 						display: block;
@@ -841,6 +841,7 @@
 			.ft {
 				display: inline-block;
 				vertical-align: middle;
+				margin-left: $interval-s;
 
 				@include media('mobile') {
 					display: block;

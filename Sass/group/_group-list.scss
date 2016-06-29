@@ -2019,6 +2019,7 @@
 						> li {
 							display: inline-block;
 							margin-bottom: $interval-xs;
+							margin-right: $interval-xs;
 
 							> [data-index][data-type] {
 								margin: 0 !important;
@@ -2043,14 +2044,11 @@
 										}
 
 										span {
-											
-											&:after {
-												content: ': ';
-											}
+
 										}
 
 										a {
-
+											
 										}
 									}
 

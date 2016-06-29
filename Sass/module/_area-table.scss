@@ -115,7 +115,11 @@
 			}
 
 			a {
+				text-decoration: underline;
 
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 
@@ -188,6 +192,14 @@
 				display: block;
 				padding: $interval-m;
 			}
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 
 		.ft {
@@ -242,7 +254,11 @@
 			}
 
 			a {
+				text-decoration: underline;
 
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 
@@ -407,6 +423,14 @@
 
 				@include media('phone') {
 					padding: $interval-xs $interval-m;
+				}
+			}
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
 				}
 			}
 		}
