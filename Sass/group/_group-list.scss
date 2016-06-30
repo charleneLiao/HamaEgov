@@ -1897,85 +1897,168 @@
 //連結================================================================
 
 	&.link {
-		$default-len: 2;
 
-		@include default-len-hide(4, $default-len);
-		@include set-len-hide(4);
+		.base-module-area &, .base-aside & {
+			$default-len: 2;
 
-		> .in {
+			@include default-len-hide(4, $default-len);
+			@include set-len-hide(4);
 
-			> .hd {
+			> .in {
 
-				> .in {
+				> .hd {
 
-				}
+					> .in {
 
-				h3 {
-					@extend %title;
+					}
 
-					&:before {
-						@include icon-font('public');
+					h3 {
+						@extend %title;
+
+						&:before {
+							@include icon-font('public');
+						}
+					}
+
+					span {
+							
+					}
+
+					a {
+
 					}
 				}
 
-				span {
-						
-				}
+				> .ct {
 
-				a {
+					> .in {
 
-				}
-			}
+						> ul {
 
-			> .ct {
+							&:after {
+								@extend %clear;
+							}
 
-				> .in {
+							> li {
+								@extend %reset-inner-module;
 
-					> ul {
+								> [data-index][data-type] {
+									padding: $interval-xs;
 
-						&:after {
-							@extend %clear;
-						}
+									> .in {
 
-						> li {
-							@extend %reset-inner-module;
-
-							> [data-index][data-type] {
-								padding: $interval-xs;
-
-								> .in {
-
-									> .ft {
-										display: none;
+										> .ft {
+											display: none;
+										}
 									}
 								}
 							}
 						}
 					}
 				}
+
+				> .ft {
+					@extend %footer-btns;
+
+					> .in {
+
+					}
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
+				}
 			}
+		}
 
-			> .ft {
-				@extend %footer-btns;
+		.base-section & {
 
-				> .in {
+			> .in {
 
+				> .hd {
+
+					> .in {
+
+					}
+
+					h3 {
+						@extend %title;
+
+						&:before {
+							@include icon-font('public');
+						}
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				ul {
+				> .ct {
 
+					> .in {
+
+						> ul {
+
+							> li {
+								@extend %reset-inner-module;
+
+								+ li {
+									margin-top: $interval-s;
+								}
+
+								> [data-index][data-type] {
+									
+									> .in {
+
+										> .ft {
+											display: none;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 
-				li {
+				> .ft {
+					@extend %footer-btns;
 
-				}
+					> .in {
 
-				span {
+					}
 
-				}
+					ul {
 
-				a {
+					}
 
+					li {
+
+					}
+
+					span {
+
+					}
+
+					a {
+
+					}
 				}
 			}
 		}
@@ -2055,91 +2138,6 @@
 									> .ct {
 										display: inline-block;
 									}
-
-									> .ft {
-										display: none;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .ft {
-				@extend %footer-btns;
-
-				> .in {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-	&.link {
-		$default-len: 2;
-
-		@include default-len-hide(4, $default-len);
-		@include set-len-hide(4);
-
-		> .in {
-
-			> .hd {
-
-				> .in {
-
-				}
-
-				h3 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('public');
-					}
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					> ul {
-
-						&:after {
-							@extend %clear;
-						}
-
-						> li {
-							@extend %reset-inner-module;
-
-							> [data-index][data-type] {
-								padding: $interval-xs;
-
-								> .in {
 
 									> .ft {
 										display: none;

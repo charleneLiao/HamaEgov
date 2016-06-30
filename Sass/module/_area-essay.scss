@@ -205,78 +205,117 @@
 
 	&.link {
 
-		> .in {
-
-		}
-
-		.hd {
+		.base-module-area &, .base-aside & {
 
 			> .in {
 
 			}
 
-			h4 {
-				@extend %title;
+			.hd {
 
-				&:before {
-					@include icon-font('public');
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
 				}
 			}
 
-			span {
-					
-			}
+			.ct {
 
-			a {
+				> .in {
 
-			}
-		}
+				}
 
-		.ct {
+				/*a*/.div {
 
-			> .in {
+					&:hover {
 
-			}
+						.essay {
+							background-color: $light-gray;
+						}
+					}
+				}
 
-			/*a*/.div {
+				.img {
 
-				&:hover {
+					span {
+						@extend %bg-cover;
+						display: block;
+						height: 80px;
+					}
 
-					.essay {
-						background-color: $light-gray;
+					img {
+						display: none;
+					}
+				}
+
+				.essay {
+					padding: $interval-m;
+					background-color: $light;
+					transition: $transition;
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
 					}
 				}
 			}
 
-			.img {
+			.ft {
+				@extend %footer-btns;
 
-				span {
-					@extend %bg-cover;
-					display: block;
-					height: 80px;
+				> .in {
+
 				}
-
-				img {
-					display: none;
-				}
-			}
-
-			.essay {
-				padding: $interval-m;
-				background-color: $light;
-				transition: $transition;
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-			}
-
-			.label {
-				@extend %label;
 
 				ul {
 
@@ -289,46 +328,162 @@
 				span {
 
 				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
 			}
 
-			/*i*/.mark {
-				@extend %mark;
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			.p {
-				@extend %paragraph;
+			.ct {
+				$pic_w: 150px;
 
-				p {
+				> .in {
+					
+				}
+
+				/*a*/.div {
+					position: relative;
+					background-color: $light;
+					transition: $transition;
+
+					&:hover {
+						background-color: $light-gray;
+					}
+				}
+
+				.img {
+
+					span {
+						@extend %bg-cover;
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						width: $pic_w;
+
+						@include media('phone') {
+							position: static;
+							width: auto;
+						}
+					}
+
+					img {
+						display: none;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
+					}
+				}
+
+				.essay {
+					padding: $interval-l;
+					padding-left: $pic_w + $interval-l;
+
+					@include media('phone') {
+						padding-left: $interval-l;
+					}
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
 
 				}
 
 				span {
 
 				}
-			}
-		}
 
-		.ft {
-			@extend %footer-btns;
+				a {
 
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
+				}
 			}
 		}
 	}
