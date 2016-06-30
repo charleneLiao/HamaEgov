@@ -939,10 +939,19 @@
 				span {
 					display: block;
 
+					&[data-message] {
+
+						&:after {
+							content: attr(data-message);
+							margin-left: $interval-xs;
+							color: $minor-color;
+						}
+					}
+
 					&.is-error {
 
 						label {
-							color: $title-color;
+							color: $minor-color;
 
 							&:before {
 								content: '* ';
@@ -950,15 +959,15 @@
 						}
 
 						input {
-							border-color: $title-color;
+							border-color: $minor-color;
 						}
 
 						select {
-							border-color: $title-color;
+							border-color: $minor-color;
 						}
 
 						textarea {
-							border-color: $title-color;
+							border-color: $minor-color;
 						}
 					}
 
@@ -1136,10 +1145,19 @@
 				span {
 					display: block;
 
+					&[data-message] {
+
+						&:after {
+							content: attr(data-message);
+							margin-left: $interval-xs;
+							color: $minor-color;
+						}
+					}
+
 					&.is-error {
 
 						label {
-							color: $title-color;
+							color: $minor-color;
 
 							&:before {
 								content: '* ';
@@ -1147,7 +1165,30 @@
 						}
 
 						input {
-							border-color: $title-color;
+							border-color: $minor-color;
+						}
+
+						select {
+							border-color: $minor-color;
+						}
+
+						textarea {
+							border-color: $minor-color;
+						}
+					}
+
+					&.is-error {
+
+						label {
+							color: $minor-color;
+
+							&:before {
+								content: '* ';
+							}
+						}
+
+						input {
+							border-color: $minor-color;
 						}
 					}
 
@@ -1506,6 +1547,38 @@
 
 				span {
 					display: block;
+
+					&[data-message] {
+
+						&:after {
+							content: attr(data-message);
+							margin-left: $interval-xs;
+							color: $minor-color;
+						}
+					}
+
+					&.is-error {
+
+						label {
+							color: $minor-color;
+
+							&:before {
+								content: '* ';
+							}
+						}
+
+						input {
+							border-color: $minor-color;
+						}
+
+						select {
+							border-color: $minor-color;
+						}
+
+						textarea {
+							border-color: $minor-color;
+						}
+					}
 
 					&.select {
 						margin-top: $interval-s;
