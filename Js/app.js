@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: '/Scripts',
+	baseUrl: '/Js',
 	paths: { //配置短名
 		'jquery': 'jquery-1.11.3.min',
 		'googleMaps': '//maps.googleapis.com/maps/api/js?v=3.exp',
