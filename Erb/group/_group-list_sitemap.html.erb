@@ -5,12 +5,12 @@
 
 	li_length = (min_li..max_li).to_a.sample
 
-	inner = ["/Erb/group/group-list_sitemap", "/Erb/module/list-text_sitemap"]
+	inner = ["/erb/group/group-list_sitemap", "/erb/module/list-text_sitemap"]
 
 	current_deep = deep + 1;
 
 	if( current_deep >= max_deep  )
-		inner = ["/Erb/module/list-text_sitemap"]
+		inner = ["/erb/module/list-text_sitemap"]
 	end
 %>
 

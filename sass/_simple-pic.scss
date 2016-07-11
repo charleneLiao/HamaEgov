@@ -1,0 +1,157 @@
+//簡單圖片
+
+.simple-pic {
+
+//預設================================================================
+
+	&.default {
+
+		.base-extend &, .base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					display: block;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+}

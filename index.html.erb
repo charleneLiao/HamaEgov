@@ -1,4 +1,4 @@
-<%= render partial: "/Erb/sys/variable" %>
+<%= render partial: "/erb/sys/variable" %>
 
 <div data-index="1" data-type="<%= $row %>" data-child="8"><div class="in">
 	<div class="hd"><div class="in">
@@ -7,35 +7,35 @@
 	<div class="ct"><div class="in">
 
 	<!-- slider 主輪播 -->
-		<%= render partial: "/Erb/group/group-list_major-slider", locals: set({ index: 1, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "主輪播" }) %>
+		<%= render partial: "/erb/group/group-list_major-slider", locals: set({ index: 1, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "主輪播" }) %>
 	<!-- slider 結束 -->
 
 	<!-- marquee-slider 跑馬燈輪播 -->
-		<%= render partial: "/Erb/group/group-list_marquee-slider", locals: set({ index: 2, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "輪播" }) %>
+		<%= render partial: "/erb/group/group-list_marquee-slider", locals: set({ index: 2, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "輪播" }) %>
 	<!-- marquee-slider 結束 -->
 
 	<!-- slider 輪播 -->
-		<%= render partial: "/Erb/module/list-pic_slider", locals: set({ index: 3, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
+		<%= render partial: "/erb/module/list-pic_slider", locals: set({ index: 3, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
 	<!-- slider 結束 -->
 
 	<!-- slider 輪播 -->
-		<%= render partial: "/Erb/module/list-pic_slider", locals: set({ index: 4, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
+		<%= render partial: "/erb/module/list-pic_slider", locals: set({ index: 4, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
 	<!-- slider 結束 -->
 
 	<!-- slider 輪播 -->
-		<%= render partial: "/Erb/module/list-text_slider", locals: set({ index: 5, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
+		<%= render partial: "/erb/module/list-text_slider", locals: set({ index: 5, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
 	<!-- slider 結束 -->
 
 	<!-- slider 輪播 -->
-		<%= render partial: "/Erb/module/list-text_slider", locals: set({ index: 6, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
+		<%= render partial: "/erb/module/list-text_slider", locals: set({ index: 6, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
 	<!-- slider 結束 -->
 
 	<!-- classical-slider 古典輪播 -->
-		<%= render partial: "/Erb/group/group-list_classical-slider", locals: set({ index: 7, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播", inner: "/Erb/module/area-essay_message" }) %>
+		<%= render partial: "/erb/group/group-list_classical-slider", locals: set({ index: 7, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播", inner: "/erb/module/area-essay_message" }) %>
 	<!-- classical-slider 結束 -->
 
 	<!-- classical-slider 古典輪播 -->
-		<%= render partial: "/Erb/group/group-list_classical-slider", locals: set({ index: 8, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播", inner: "/Erb/module/area-essay_message" }) %>
+		<%= render partial: "/erb/group/group-list_classical-slider", locals: set({ index: 8, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播", inner: "/erb/module/area-essay_message" }) %>
 	<!-- classical-slider 結束 -->
 
 	</div></div>
@@ -48,15 +48,15 @@
 	<div class="ct"><div class="in">
 
 	<!-- nav 選單 -->
-		<%= render partial: "/Erb/module/list-text_nav", locals: set({ index: 1, header_text: "選單" }) %>
+		<%= render partial: "/erb/module/list-text_nav", locals: set({ index: 1, header_text: "選單" }) %>
 	<!-- nav 結束 -->
 
 	<!-- nav 選單 -->
-		<%= render partial: "/Erb/group/group-list_nav", locals: set({ index: 2, func_set: "{'majorNavStraight':{}}", header_text: "主選單", inner: "/Erb/module/list-text_nav" }) %>
+		<%= render partial: "/erb/group/group-list_nav", locals: set({ index: 2, func_set: "{'majorNavStraight':{}}", header_text: "主選單", inner: "/erb/module/list-text_nav" }) %>
 	<!-- nav 結束 -->
 
 	<!-- minor-nav 次選單 -->
-		<%= render partial: "/Erb/module/list-text_minor-nav", locals: set({ index: 3, header_text: "次選單" }) %>
+		<%= render partial: "/erb/module/list-text_minor-nav", locals: set({ index: 3, header_text: "次選單" }) %>
 	<!-- minor-nav 結束 -->
 
 	</div></div>
@@ -69,23 +69,23 @@
 	<div class="ct"><div class="in">
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/module/list-text_link", locals: set({ index: 1, header_text: "連結" }) %>
+		<%= render partial: "/erb/module/list-text_link", locals: set({ index: 1, header_text: "連結" }) %>
 	<!-- link 結束 -->
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/module/list-pic_link", locals: set({ index: 2, header_text: "連結" }) %>
+		<%= render partial: "/erb/module/list-pic_link", locals: set({ index: 2, header_text: "連結" }) %>
 	<!-- link 結束 -->
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/group/group-list_link", locals: set({ index: 3, header_text: "連結", inner: "/Erb/module/area-essay_link" }) %>
+		<%= render partial: "/erb/group/group-list_link", locals: set({ index: 3, header_text: "連結", inner: "/erb/module/area-essay_link" }) %>
 	<!-- link 結束 -->
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/module/area-essay_link", locals: set({ index: 4, header_text: "連結" }) %>
+		<%= render partial: "/erb/module/area-essay_link", locals: set({ index: 4, header_text: "連結" }) %>
 	<!-- link 連結 -->
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/module/area-form_link", locals: set({ index: 5, func_set: "{'selectLink':{}}", header_text: "連結" }) %>
+		<%= render partial: "/erb/module/area-form_link", locals: set({ index: 5, func_set: "{'selectLink':{}}", header_text: "連結" }) %>
 	<!-- link 結束 -->
 
 	</div></div>
@@ -98,15 +98,15 @@
 	<div class="ct"><div class="in">
 
 	<!-- link 連結 -->
-		<%= render partial: "/Erb/module/list-pic_album", locals: set({ index: 1, header_text: "相簿" }) %>
+		<%= render partial: "/erb/module/list-pic_album", locals: set({ index: 1, header_text: "相簿" }) %>
 	<!-- link 結束 -->
 
 	<!-- album 相簿 -->
-		<%= render partial: "/Erb/module/area-figure_album", locals: set({ index: 2, header_text: "相簿" }) %>
+		<%= render partial: "/erb/module/area-figure_album", locals: set({ index: 2, header_text: "相簿" }) %>
 	<!-- album 結束 -->
 
 	<!-- album 相簿 -->
-		<%= render partial: "/Erb/group/group-list_album", locals: set({ index: 3, header_text: "相簿", inner: "/Erb/module/area-figure_album" }) %>
+		<%= render partial: "/erb/group/group-list_album", locals: set({ index: 3, header_text: "相簿", inner: "/erb/module/area-figure_album" }) %>
 	<!-- album 結束 -->
 
 	</div></div>
@@ -119,15 +119,15 @@
 	<div class="ct"><div class="in">
 
 	<!-- message 訂閱 -->
-		<%= render partial: "/Erb/module/list-text_message", locals: set({ index: 1, header_text: "訊息" }) %>
+		<%= render partial: "/erb/module/list-text_message", locals: set({ index: 1, header_text: "訊息" }) %>
 	<!-- message 結束 -->
 
 	<!-- message 訊息 -->
-		<%= render partial: "/Erb/module/area-essay_message", locals: set({ index: 2, header_text: "訊息" }) %>
+		<%= render partial: "/erb/module/area-essay_message", locals: set({ index: 2, header_text: "訊息" }) %>
 	<!-- message 結束 -->
 
 	<!-- message 訊息 -->
-		<%= render partial: "/Erb/group/group-list_message", locals: set({ index: 1, header_text: "訊息", inner: "/Erb/module/area-essay_message" }) %>
+		<%= render partial: "/erb/group/group-list_message", locals: set({ index: 1, header_text: "訊息", inner: "/erb/module/area-essay_message" }) %>
 	<!-- message 結束 -->
 
 	</div></div>
@@ -140,27 +140,27 @@
 	<div class="ct"><div class="in">
 
 	<!-- calender 月曆 -->
-		<%= render partial: "/Erb/module/area-customize_calender", locals: set({ index: 1, header_text: "月曆" }) %>
+		<%= render partial: "/erb/module/area-customize_calender", locals: set({ index: 1, header_text: "月曆" }) %>
 	<!-- calender 結束 -->
 
 	<!-- video 視訊 -->
-		<%= render partial: "/Erb/module/area-customize_video", locals: set({ index: 2, header_text: "視訊" }) %>
+		<%= render partial: "/erb/module/area-customize_video", locals: set({ index: 2, header_text: "視訊" }) %>
 	<!-- video 結束 -->
 
 	<!-- audio 音訊 -->
-		<%= render partial: "/Erb/module/area-customize_audio", locals: set({ index: 3, header_text: "音訊" }) %>
+		<%= render partial: "/erb/module/area-customize_audio", locals: set({ index: 3, header_text: "音訊" }) %>
 	<!-- audio 結束 -->
 
 	<!-- chart 圖表 -->
-		<%= render partial: "/Erb/module/area-customize_chart", locals: set({ index: 4, func_set: "{'chart':{'chart':{'type':'bar'},'title':{'text':''},'xAxis':{'categories':['八十四年','八十五年','八十六年','八十七年'],'crosshair':true},'yAxis':{'min':0,'title':{'text':''}},'tooltip':{'shared':true},'plotOptions':{'column':{'pointPadding':0.2,'borderWidth':0}},'series':[{'name':'發生數1','data':[26257.0,28074.0,29990.0,31512.0]},{'name':'查獲數21','data':[24394.0,28583.0,31017.0,29776.0]},{'name':'發生數31','data':[9392.0,9436.0,9999.0,11015.0]},{'name':'查獲數4','data':[8695.0,9680.0,10229.0,10284.0]}]}}", header_text: "圖表" }) %>
+		<%= render partial: "/erb/module/area-customize_chart", locals: set({ index: 4, func_set: "{'chart':{'chart':{'type':'bar'},'title':{'text':''},'xAxis':{'categories':['八十四年','八十五年','八十六年','八十七年'],'crosshair':true},'yAxis':{'min':0,'title':{'text':''}},'tooltip':{'shared':true},'plotOptions':{'column':{'pointPadding':0.2,'borderWidth':0}},'series':[{'name':'發生數1','data':[26257.0,28074.0,29990.0,31512.0]},{'name':'查獲數21','data':[24394.0,28583.0,31017.0,29776.0]},{'name':'發生數31','data':[9392.0,9436.0,9999.0,11015.0]},{'name':'查獲數4','data':[8695.0,9680.0,10229.0,10284.0]}]}}", header_text: "圖表" }) %>
 	<!-- chart 結束 -->
 
 	<!-- iframe 框架 -->
-		<%= render partial: "/Erb/module/area-customize_iframe", locals: set({ index: 5, header_text: "框架" }) %>
+		<%= render partial: "/erb/module/area-customize_iframe", locals: set({ index: 5, header_text: "框架" }) %>
 	<!-- iframe 結束 -->
 
 	<!-- map 地圖 -->
-		<%= render partial: "/Erb/module/area-customize_map", locals: set({ index: 6, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
+		<%= render partial: "/erb/module/area-customize_map", locals: set({ index: 6, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
 	<!-- map 結束 -->
 
 	</div></div>
@@ -173,43 +173,43 @@
 	<div class="ct"><div class="in">
 
 	<!-- anchor 錨點 -->
-		<%= render partial: "/Erb/module/list-text_anchor", locals: set({ index: 1, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "錨點" }) %>
+		<%= render partial: "/erb/module/list-text_anchor", locals: set({ index: 1, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "錨點" }) %>
 	<!-- anchor 結束 -->
 
 	<!-- countdown 倒數日 -->
-		<%= render partial: "/Erb/module/simple-text_countdown", locals: set({ index: 2, header_text: "距離大年初三" }) %>
+		<%= render partial: "/erb/module/simple-text_countdown", locals: set({ index: 2, header_text: "距離大年初三" }) %>
 	<!-- countdown 結束 -->
 
 	<!-- weather 天氣 -->
-		<%= render partial: "/Erb/module/simple-text_weather", locals: set({ index: 3, header_text: "天氣" }) %>
+		<%= render partial: "/erb/module/simple-text_weather", locals: set({ index: 3, header_text: "天氣" }) %>
 	<!-- weather 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-text_default", locals: set({ index: 4, header_text: "文字" }) %>
+		<%= render partial: "/erb/module/simple-text_default", locals: set({ index: 4, header_text: "文字" }) %>
 	<!-- default 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/simple-pic_default", locals: set({ index: 5, header_text: "圖片" }) %>
+		<%= render partial: "/erb/module/simple-pic_default", locals: set({ index: 5, header_text: "圖片" }) %>
 	<!-- default 結束 -->
 
 	<!-- vote 投票 -->
-		<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 6, header_text: "投票" }) %>
+		<%= render partial: "/erb/module/area-form_vote", locals: set({ index: 6, header_text: "投票" }) %>
 	<!-- vote 結束 -->
 
 	<!-- epaper 電子報 -->
-		<%= render partial: "/Erb/module/area-form_epaper", locals: set({ index: 7, header_text: "訂閱電子報" }) %>
+		<%= render partial: "/erb/module/area-form_epaper", locals: set({ index: 7, header_text: "訂閱電子報" }) %>
 	<!-- epaper 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/module/area-editor_default", locals: set({ index: 8, header_text: "圖文區塊" }) %>
+		<%= render partial: "/erb/module/area-editor_default", locals: set({ index: 8, header_text: "圖文區塊" }) %>
 	<!-- default 結束 -->
 
 	<!-- default 預設 -->
-		<%= render partial: "/Erb/group/group-list_default", locals: set({ index: 9, header_text: "預設列表", inner: "/Erb/module/area-essay_message" }) %>
+		<%= render partial: "/erb/group/group-list_default", locals: set({ index: 9, header_text: "預設列表", inner: "/erb/module/area-essay_message" }) %>
 	<!-- default 結束 -->
 
 	<!-- tab 頁籤 -->
-		<%= render partial: "/Erb/group/group-tab_default", locals: set({ index: 10, func_set: "{'tab':{}}", header_text: "頁籤", show_footer: false, :inner =>  "/Erb/group/group-list_message" }) %>
+		<%= render partial: "/erb/group/group-tab_default", locals: set({ index: 10, func_set: "{'tab':{}}", header_text: "頁籤", show_footer: false, :inner =>  "/erb/group/group-list_message" }) %>
 	<!-- tab 結束 -->
 
 	</div></div>

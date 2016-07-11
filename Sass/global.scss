@@ -1,42 +1,42 @@
 //全域
 
-@import 'sys/global'; //sass 基礎設定
+@import 'sys_global'; //sass 基礎設定
 
 	// 請注意！本 scss 所做設定皆全域可見。
 	// 本 sass 僅做基礎框架、格線的引入，請避免在此直接寫入樣式。
 	// 若需要對全域樣式設定，請撰寫在 bace/layout.scss。
 
 
-@import 'sys/normalize'; //正常化 css
+@import 'sys_normalize'; //正常化 css
 
-@import 'sys/grid'; //格線
+@import 'sys_grid'; //格線
 
-@import 'base/layout'; //框架
+@import 'base_layout'; //框架
 
-@import 'group/group'; //群組
+@import 'group'; //群組
 
-@import 'group/group-tab'; //頁籤群組
+@import 'group-tab'; //頁籤群組
 
-@import 'group/group-list'; //列表群組
+@import 'group-list'; //列表群組
 
-@import 'module/simple-text'; //簡單文字
+@import 'simple-text'; //簡單文字
 
-@import 'module/simple-pic'; //簡單圖片
+@import 'simple-pic'; //簡單圖片
 
-@import 'module/list-text'; //文字列表
+@import 'list-text'; //文字列表
 
-@import 'module/list-pic'; //圖片列表W
+@import 'list-pic'; //圖片列表W
 
-@import 'module/list-multiple'; //多重列表
+@import 'list-multiple'; //多重列表
 
-@import 'module/area-table'; //表格區塊
+@import 'area-table'; //表格區塊
 
-@import 'module/area-form'; //表單區塊
+@import 'area-form'; //表單區塊
 
-@import 'module/area-essay'; //文章區塊
+@import 'area-essay'; //文章區塊
 
-@import 'module/area-figure'; //圖片區塊
+@import 'area-figure'; //圖片區塊
 
-@import 'module/area-editor'; //編輯區塊
+@import 'area-editor'; //編輯區塊
 
-@import 'module/area-customize'; //客製區塊
+@import 'area-customize'; //客製區塊

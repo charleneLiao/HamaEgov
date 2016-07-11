@@ -1,0 +1,384 @@
+//多重列表
+
+.list-multiple {
+
+//預設================================================================
+
+	&.default {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁次導航列================================================================
+
+	&.page-select {
+
+		> .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			padding-top: $interval-s;
+			border-top: $border;
+
+			> .in {
+				
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			ul {
+				@extend %reset;
+
+				&[data-index="1"] {
+					float: left;
+					padding-top: 5px;
+
+					@include media('mobile') {
+						display: none;
+					}
+
+					a {
+						@extend %btn;
+					}
+				}
+
+				&[data-index="2"] {
+					float: right;
+					padding-top: 5px;
+
+					@include media('mobile') {
+						display: none;
+					}
+
+					a {
+						@extend %btn;
+					}
+				}
+
+				&[data-index="3"] {
+					overflow: hidden;
+					text-align: center;
+				}
+			}
+
+			li {
+				display: inline-block;
+
+				&.first {
+					
+				}
+
+				&.prev {
+					
+				}
+
+				&.next {
+
+				}
+
+				&.last {
+					
+				}
+
+				span {
+
+					a {
+
+					}
+				}
+			}
+
+			span {
+				display: block;
+
+				&.select {
+
+					label {
+
+					}
+				}
+
+				&.number {
+
+					@include media('phone') {
+						display: none;
+					}
+
+					label {
+						
+					}
+				}
+
+				&.count {
+
+					label {
+						
+					}
+				}
+
+				select {
+
+				}
+
+				option {
+
+				}
+
+				input {
+					
+				}
+
+				label {
+					
+				}
+			}
+
+			a {
+
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//頁次導航列================================================================
+
+	&.page-click {
+
+		> .in {
+			
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			padding-top: $interval-s;
+			border-top: $border;
+
+			> .in {
+				
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			ul {
+				@extend %reset;
+
+				&[data-index="1"] {
+					float: left;
+				}
+
+				&[data-index="2"] {
+					float: right;
+				}
+
+				&[data-index="3"] {
+					overflow: hidden;
+					text-align: center;
+
+					@include media('phone') {
+						display: none;
+					}
+				}
+			}
+
+			li {
+				display: inline-block;
+
+				&.first {
+					
+				}
+
+				&.prev {
+					
+				}
+
+				&.next {
+
+				}
+
+				&.last {
+					
+				}
+
+				&.is-active {
+
+					a {
+						background-color: $minor-color;
+
+						&:hover {
+							background-color: deeper($minor-color);
+						}
+					}
+				}
+
+				span {
+
+					a {
+
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %btn;
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

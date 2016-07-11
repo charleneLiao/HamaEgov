@@ -1,0 +1,316 @@
+//編輯區塊
+
+.area-editor {
+
+//預設================================================================
+
+	&.default {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('mode_edit');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//聯絡資訊編輯================================================================
+
+	&.address {
+		@extend %area-mobile-no-header;
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			a {
+				@extend %a;
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//使用者編輯================================================================
+
+	&.user-edit {
+		@extend %area-page-no-header;
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			@extend %article-extend;
+
+			> .in {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//系統資訊================================================================
+
+	&.system-info {
+		@extend %area-page-no-header;
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			@extend %article;
+
+			> .in {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//錯誤訊息================================================================
+
+	&.error-info {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				$color: #c40;
+
+				@extend %title;
+				color: $color;
+				font-size: $font-size-xl;
+
+				&:before {
+					@include icon-font('error');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			@extend %article-extend;
+
+			> .in {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

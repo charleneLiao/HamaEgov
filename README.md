@@ -24,10 +24,10 @@
   6. [模組類別與結構](#module-structure)
   7. [組件](#component)
   8. [以 class name 表示狀態](#use-class-name-to-show-status)
-* [Erb 實作](#erb)
-  1. [Erb 目錄結構](#erb-directory)
-  2. [Erb 樣板語言](#erb-script)
-  3. [Erb 運作方式](#erb-run)
+* [erb 實作](#erb)
+  1. [erb 目錄結構](#erb-directory)
+  2. [erb 樣板語言](#erb-script)
+  3. [erb 運作方式](#erb-run)
   4. [關於 layout 樣板](#erb-layout)
   5. [關於 index 樣板](#erb-index-layout)
   6. [關於 sys/variable](#erb-variable)
@@ -89,7 +89,7 @@
 <table>
   <tr>
     <th>開發環境</th>
-    <td>Ruby(Erb)、Java(Fire.app)、Scss、Compass</td>
+    <td>Ruby(erb)、Java(Fire.app)、Scss、Compass</td>
   </tr>
   <tr>
     <th>工具</th>
@@ -145,16 +145,16 @@
     - 專案目錄
       |- .git
       |- .sass-cache
-      |- Audio
+      |- audio
       |- Css
       |- Document
-      |- Erb
-      |- Images
+      |- erb
+      |- images
       |- Prototype
       |- Sample
       |- Sass
       |- Script
-      |- Video
+      |- video
       |- .gitignore
       |- _index_layout.html.erb
       |- _layout.html.erb
@@ -179,7 +179,7 @@
     <td>存放 Sass 編譯暫存檔案的目錄</td>
   </tr>
   <tr>
-    <td>Audio</td>
+    <td>audio</td>
     <td>存放音訊檔案的目錄</td>
   </tr>
   <tr>
@@ -191,11 +191,11 @@
     <td>存放其他相關文件的目錄</td>
   </tr>
   <tr>
-    <td>Erb</td>
-    <td>存放 Erb 樣板與模組的目錄</td>
+    <td>erb</td>
+    <td>存放 erb 樣板與模組的目錄</td>
   </tr>
   <tr>
-    <td>Images</td>
+    <td>images</td>
     <td>存放圖片、圖示的目錄(包含文字圖示)</td>
   </tr>
   <tr>
@@ -215,7 +215,7 @@
     <td>存放 javascript 文件</td>
   </tr>
   <tr>
-    <td>Video</td>
+    <td>video</td>
     <td>存放視訊檔案</td>
   </tr>
   <tr>
@@ -244,7 +244,7 @@
   </tr>
   <tr>
     <td>index.html.erb</td>
-    <td>以 Erb 撰寫的首頁</td>
+    <td>以 erb 撰寫的首頁</td>
   </tr>
   <tr>
     <td>index.HTML.layout</td>
@@ -1425,12 +1425,12 @@ list-text 是類別 class，而 nav 是自定義 class。
 
 
 
-<h2 id="erb">Erb 實作</h2>
-<h3 id="erb-directory">Erb 目錄結構</h3>
-以下是 Erb 目錄結構圖及說明。
+<h2 id="erb">erb 實作</h2>
+<h3 id="erb-directory">erb 目錄結構</h3>
+以下是 erb 目錄結構圖及說明。
 
     - 專案目錄
-      |- Erb
+      |- erb
       |   |- base
       |   |   |- _base-article.html.erb
       |   |   |- _base-aside.html.erb
@@ -1558,19 +1558,19 @@ list-text 是類別 class，而 nav 是自定義 class。
   </tr>
   <tr>
     <td>sys/_variable.html.erb</td>
-    <td>設定 Erb 全域變數的文件</td>
+    <td>設定 erb 全域變數的文件</td>
   </tr>
 </table>
 
 
-<h3 id="erb-script">Erb 樣板語言</h3>
-Erb 幫助我們把 HTML 模組化，並提供隨機的內容與字元長度，幫助我們測試版型。
+<h3 id="erb-script">erb 樣板語言</h3>
+erb 幫助我們把 HTML 模組化，並提供隨機的內容與字元長度，幫助我們測試版型。
 我們可以將個頁面一致的 HTML 存成一個檔案，在檢視時自動嵌套，簡化維護的難度。
-Erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
-更多 Erb 樣板語言請參閱 [fire.app Erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.HTML)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.HTML)。
+erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
+更多 erb 樣板語言請參閱 [fire.app erb 樣板語言簡介](http://fireapp.kkbox.com/doc/tw/tutorial_1.HTML)、[Ruby on Rails 實戰聖經 Action View - 樣板設計](https://ihower.tw/rails4/actionview.HTML)。
 
 
-<h3 id="erb-run">Erb 運作方式</h3>
+<h3 id="erb-run">erb 運作方式</h3>
 樣板是一段 HTML，在樣板中，我們可以輕易嵌入另一塊樣板，達成 HTML 模組化，以下我將示範如何嵌套一個 .html.erb 檔。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
@@ -1578,34 +1578,34 @@ Erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="ct"><div class="in">
 
-        <!--嵌套 /Erb/module/sample -->
-        <%= render partial: "/Erb/module/sample" %>
+        <!--嵌套 /erb/module/sample -->
+        <%= render partial: "/erb/module/sample" %>
 
       </div></div>
     </div></div>
 
-我們可藉由演示的語法嵌入 /Erb/module/_sample.html.erb，以下將演示如何傳參數進 erb 檔案。
+我們可藉由演示的語法嵌入 /erb/module/_sample.html.erb，以下將演示如何傳參數進 erb 檔案。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
       <div class="hd"><div class="in">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="ct"><div class="in">
 
-        <!--嵌套 /Erb/module/sample -->
-        <%= render partial: "/Erb/module/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
+        <!--嵌套 /erb/module/sample -->
+        <%= render partial: "/erb/module/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
 
       </div></div>
     </div></div>
 
 使用一個 locals: set({  }) 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
-接著演示 /Erb/module/_sample.html.erb 如何接受這個參數。
+接著演示 /erb/module/_sample.html.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
     </div>
 
 我們可以在 _sample.html.erb 檔案中，將 <% %> 中間放入區域變數名，此例即是 index 關鍵字，若要打印在 HTML 裡，則必須加上等號 <%= index %> ，更多教學請參閱 [局部樣板 Partials](https://ihower.tw/rails4/actionview.HTML#partials)。
 
-以下列出幾個平台 Erb 樣板常用的區域變數與其意義：
+以下列出幾個平台 erb 樣板常用的區域變數與其意義：
 
 <table>
   <tr>
@@ -1651,7 +1651,7 @@ Erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
   </tr>
 </table>
 
-關於所有的變數，可參閱 Erb/module/_simple-text_test-require.html.erb 的內容。
+關於所有的變數，可參閱 erb/module/_simple-text_test-require.html.erb 的內容。
 
 
 <h3 id="erb-layout">關於 layout 樣板</h3>
@@ -1664,7 +1664,7 @@ index.html.layout 指明 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-在 [Erb 運作方式](#erb-run) 曾提及區域變數的使用方式，另有全域變數設定在 /Erb/sys/_variable.html.erb。
+在 [erb 運作方式](#erb-run) 曾提及區域變數的使用方式，另有全域變數設定在 /erb/sys/_variable.html.erb。
 全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
     <div class="sample" data-type="<%= $module %>">
@@ -1672,7 +1672,7 @@ index.html.layout 指明 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="lorem-ipsum-and-picture">假字與圖片</h3>
-Erb 提供了假字及假圖的功能，使用方式請參閱 [更新更強大的網頁設計師好幫手 Fire.app 進階篇](http://demo.tc/post/758)。
+erb 提供了假字及假圖的功能，使用方式請參閱 [更新更強大的網頁設計師好幫手 Fire.app 進階篇](http://demo.tc/post/758)。
 
 
 
@@ -2799,7 +2799,7 @@ $hack 物件中彙整了一些針對瀏覽器設定的 @media query，只有特�
 
 新增字型步驟如下：
 
-  1. 將 icon 包下載回來後，將包裡的 fonts 目錄檔案 .eot .svg .ttf .woff 檔案複製到 /Images/icon-font
+  1. 將 icon 包下載回來後，將包裡的 fonts 目錄檔案 .eot .svg .ttf .woff 檔案複製到 /images/icon-font
   2. 開啟 style.css
   3. 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
   4. ":before" 字串全數刪除

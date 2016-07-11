@@ -1,0 +1,1421 @@
+//客製區塊
+
+.area-customize {
+
+//預設================================================================
+
+	&.default {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//月曆================================================================
+
+	&.calender {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('today');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+
+			.heading {
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			.label {
+				float: right;
+
+				@include js(false) {
+					display: none;
+				}
+
+				@include media('phone') {
+					float: none;
+				}
+
+				ul {
+					@extend %reset;
+
+					@include media('phone') {
+						text-align: center;
+					}
+				}
+
+				li {
+					display: inline-block;
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %btn-s;
+				}
+			}
+
+			.caption {
+				@extend %ellipsis;
+				overflow: hidden;
+				font-size: $font-size-l;
+				color: $title-color;
+
+				@include media('phone') {
+					text-align: center;
+					margin-bottom: 0;
+					margin-top: $interval-s;
+				}
+
+				span {
+					color: inherit;
+				}
+
+				a {
+					color: inherit;
+					font-size: 1em;
+				}
+			}
+
+			.table {
+				margin: $interval-s 0;
+				padding: $interval-s;
+				background-color: $light;
+
+				table {
+					table-layout: fixed;
+					width: 100%;
+				}
+
+				tbody {
+
+				}
+
+				tr {
+
+				}
+
+				th {
+					padding-bottom: $interval-s;
+
+					span {
+						padding: $interval-s 0;
+						background-color: $major-color;
+						color: $white;
+					}
+				}
+
+				td {
+					cursor: pointer;
+					transition: $transition;
+
+					span {
+						padding: $interval-s 0;
+					}
+
+					&:hover {
+						background-color: $light-gray;
+					}
+				}
+
+				th ,& td {
+					text-align: center;
+				}
+
+				span {
+					display: block;
+				}
+
+				.event { //有事件
+					text-decoration: underline;
+				}
+
+				.this-week { //這週
+					background-color: $white;
+				}
+
+				.prev-mounth { //上個月的日期
+					color: $gray;
+				}
+
+				.next-mounth { //下個月的日期
+					color: $gray;
+				}
+
+				.weekend { //假日
+					color: $title-color;
+
+					&.prev-mounth, &.next-mounth {
+						color: mix( $deep-gray, $title-color );
+					}
+				}
+
+				.today { //今天
+					background-color: $major-color;
+					color: $white;
+				}
+
+				.is-active { //被選擇
+					border: $border;
+					border-color: $minor-color;
+				}
+			}
+
+			.list {
+				margin-top: $interval-s;
+
+				ul {
+					@extend %reset;
+				}
+
+				li {
+
+					+ li {
+						margin-top: $interval-s;
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %ellipsis;
+					@extend %list;
+					@extend %list-hover;
+				}
+			}
+
+			.mark {
+				@extend %mark-extend;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//視訊================================================================
+
+	&.video {
+
+		.base-extend &, .base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('movie');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.video {
+					margin-bottom: $interval-s;
+
+					iframe {
+						width: 100%;
+					}
+
+					video {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('movie');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.video {
+					margin-bottom: $interval-s;
+
+					video {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-extend;
+				}
+
+				.p {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//音訊================================================================
+
+	&.audio {
+
+		.base-extend &, .base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('audiotrack');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.audio {
+					margin-bottom: $interval-s;
+
+					audio {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('audiotrack');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.audio {
+					margin-bottom: $interval-s;
+
+					audio {
+						width: 100%;
+					}
+
+					source {
+
+					}
+
+					object {
+						min-height: 45px;
+						width: 100%;
+						margin-bottom: $interval-s;
+					}
+
+					span {
+						display: block;
+						padding: $interval-s;
+						background-color: $light;
+					}
+
+					a {
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-extend;
+				}
+
+				.p {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//框架================================================================
+
+	&.iframe {
+
+		.base-extend &, .base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.iframe {
+					margin-bottom: $interval-s;
+
+					iframe {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+					
+				}
+
+				.iframe {
+					margin-bottom: $interval-s;
+
+					iframe {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-extend;
+				}
+
+				.p {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//地圖================================================================
+
+	&.map {
+
+		@include js(false) {
+			display: none;
+		}
+
+		.base-extend &, .base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('place');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+
+				}
+
+				.div {
+					margin-bottom: $interval-s;
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('place');
+					}
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+
+				}
+
+				.div {
+					margin-bottom: $interval-s;
+				}
+
+				.essay {
+					
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark-extend;
+				}
+
+				.p {
+					@extend %article-extend;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//圖表================================================================
+
+	&.chart {
+
+		@include js(false) {
+			display: none;
+		}
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('insert_chart');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

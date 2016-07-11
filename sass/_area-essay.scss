@@ -1,0 +1,1251 @@
+//文章區塊
+
+.area-essay {
+
+//預設================================================================
+
+	&.default {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//訊息================================================================
+
+	&.message {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('message');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-m;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.img {
+				float: left;
+				margin-right: $interval-m;
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					width: 80px;
+					height: 80px;
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//連結================================================================
+
+	&.link {
+
+		.base-module-area &, .base-aside & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('public');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+
+				> .in {
+
+				}
+
+				/*a*/.div {
+
+					&:hover {
+
+						.essay {
+							background-color: $light-gray;
+						}
+					}
+				}
+
+				.img {
+
+					span {
+						@extend %bg-cover;
+						display: block;
+						height: 80px;
+					}
+
+					img {
+						display: none;
+					}
+				}
+
+				.essay {
+					padding: $interval-m;
+					background-color: $light;
+					transition: $transition;
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+
+		.base-section & {
+
+			> .in {
+
+			}
+
+			.hd {
+
+				> .in {
+
+				}
+
+				h4 {
+					@extend %title;
+
+					&:before {
+						@include icon-font('photo');
+					}
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			.ct {
+				$pic_w: 150px;
+
+				> .in {
+					
+				}
+
+				/*a*/.div {
+					position: relative;
+					background-color: $light;
+					transition: $transition;
+
+					&:hover {
+						background-color: $light-gray;
+					}
+				}
+
+				.img {
+
+					span {
+						@extend %bg-cover;
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						width: $pic_w;
+
+						@include media('phone') {
+							position: static;
+							width: auto;
+						}
+					}
+
+					img {
+						display: none;
+
+						@include media('phone') {
+							display: block;
+							width: 100%;
+						}
+					}
+				}
+
+				.essay {
+					padding: $interval-l;
+					padding-left: $pic_w + $interval-l;
+
+					@include media('phone') {
+						padding-left: $interval-l;
+					}
+				}
+
+				.caption {
+					@extend %caption;
+
+					span {
+						
+					}
+
+					a {
+
+					}
+				}
+
+				.label {
+					@extend %label;
+
+					ul {
+
+					}
+
+					li {
+
+					}
+
+					span {
+
+					}
+				}
+
+				/*i*/.mark {
+					@extend %mark;
+				}
+
+				.p {
+					@extend %paragraph;
+
+					p {
+
+					}
+
+					span {
+
+					}
+				}
+			}
+
+			.ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+//內頁文章敘述(圖片-標題-標籤-內文)================================================================
+
+	&.page-essay {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.img {
+				float: left;
+				margin-right: $interval-l;
+
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁文章敘述(圖片-標題-標籤)================================================================
+
+	&.page-img-caption-label {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.img {
+				float: left;
+				margin-right: $interval-m;
+
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁文章敘述(圖片-標題-內文)================================================================
+
+	&.page-img-caption-p {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.img {
+				float: left;
+				margin-right: $interval-m;
+
+				@include media('phone') {
+					float: none;
+					margin-right: auto;
+					margin-bottom: $interval-l;
+				}
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+					
+					@include media('phone') {
+						width: 100px;
+						height: 100px;
+						margin: 0 auto;
+					}
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			.essay {
+				overflow: hidden;
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁文章敘述(標題-標籤-內文)================================================================
+
+	&.page-caption-label-p {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁文章敘述(標題-標籤)================================================================
+
+	&.page-caption-label {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+//內頁文章敘述(標題-內文)================================================================
+
+	&.page-caption-p {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('subject');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			/*a*/.div {
+				padding: $interval-l;
+				background-color: $light;
+				transition: $transition;
+				
+				&:after {
+					@extend %clear;
+				}
+
+				&:hover {
+					background-color: $light-gray;
+				}
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}
