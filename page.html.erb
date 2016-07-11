@@ -21,7 +21,7 @@
 <!-- //搜尋================================================================ -->
 
 	<!-- page-search 內頁搜尋 -->
-		<%= render partial: "/Erb/module/area-form_page-search", locals: set({ index: 4, header_text: "搜尋", show_footer: false }) %>
+		<%= render partial: "/Erb/module/area-form_page-search", locals: set({ index: 4, func_set: "{'reset':{}}", header_text: "搜尋", show_footer: false }) %>
 	<!-- page-search 結束 -->
 
 <!-- //詢問================================================================ -->
@@ -83,13 +83,13 @@
 <!-- //送出================================================================ -->
 
 	<!-- submit 送出 -->
-		<%= render partial: "/Erb/module/area-form_submit", locals: set({ index: 15, header_text: "送出" }) %>
+		<%= render partial: "/Erb/module/area-form_submit", locals: set({ index: 15, func_set: "{'reset':{}}", header_text: "送出" }) %>
 	<!-- submit 結束 -->
 
 <!-- //投票================================================================ -->
 
 	<!-- vote 投票 -->
-		<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 16, header_text: "投票", show_footer: false }) %>
+		<%= render partial: "/Erb/module/area-form_vote", locals: set({ index: 16, func_set: "{'reset':{}}", header_text: "投票", show_footer: false }) %>
 	<!-- vote 結束 -->
 
 	<!-- vote-result 投票結果 -->
@@ -313,7 +313,7 @@
 <!-- //內頁表單================================================================ -->
 
 	<!-- page-form 內頁表單 -->
-		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 62, header_text: "內頁表單" }) %>
+		<%= render partial: "/Erb/module/area-form_page-form", locals: set({ index: 62, func_set: "{'reset':{}}", header_text: "內頁表單" }) %>
 	<!-- page-form 結束 -->
 
 <!-- //內頁表格================================================================ -->

@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -7,27 +7,22 @@ define(['jquery', 'getNode'], function($, getNode){
 			}
 
 		$.extend($set, opt);
-		
-		var li = getNode.getCtItem(env), //取 li
-			child_node = getNode.getChild(li, 'div'),
-			child_node_header = getNode.getHd(child_node),
-			child_node_content_in = getNode.getCtIn(child_node),
-			child_node_content_in_length = child_node_content_in.length || 1,
-			all_a = env.querySelectorAll('a'),
-			last_a = all_a[all_a.length - 1];
 
 		var $env = $(env),
-			$li = $(li),
-			$child_node = $(child_node),
-			$child_node_header = $(child_node_header),
+			$li = getNode.getCtItem(env), //取 li
+			$child_node = $li.children('div'),
+			$child_node_header = getNode.getHd($child_node),
 			$a = $child_node_header.find('a'),
-			$last_a = $(last_a);
+			$child_node_content_in = getNode.getCtIn($child_node),
+			$child_node_content_in_length = $child_node_content_in.length || 1,
+			$all_a = $env.find('a'),
+			$last_a = $all_a.eq(-1);
 
-		for( var i =0; i < child_node_content_in_length; i++ ) { //如果 child .in 沒有任何內容
-			var _this = child_node_content_in[i] || child_node_content_in;
+		for( var i =0; i < $child_node_content_in_length; i++ ) { //如果 child .in 沒有任何內容
+			var _this = $child_node_content_in.eq(i) || $child_node_content_in;
 
-			if( !_this.children.length ) {
-				_this.parentNode.style.display = 'none'; //就隱藏 .content
+			if( !_this.children().length ) {
+				_this.parent().hide(); //就隱藏 .content
 			}
 		}
 

@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -11,38 +11,36 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var content_li = getNode.getCtItem(env),
-			content_li_length = content_li.length;
+		var $content_li = getNode.getCtItem(env),
+			$content_li_length = $content_li.length;
 
-		if( content_li_length <= 1 ) { //如果輪播項目在一個以下，就掰掰囉~
+		if( $content_li_length <= 1 ) { //如果輪播項目在一個以下，就掰掰囉~
 			return false;
 		}
 
-		var prev_li = getNode.getFtItemBtn(env, 'prev'),
-			next_li = getNode.getFtItemBtn(env, 'next');
+		var $env = $(env);
 
-		var $env = $(env),
-			$content_li = $(content_li),
-			$prev_li = $(prev_li),
-			$prev_li_a = $prev_li.find('a'),
-			$next_li = $(next_li),
+		var $prev_li = getNode.getFtItemBtn(env, 'prev'),
+			$next_li = getNode.getFtItemBtn(env, 'next');
+
+		var $prev_li_a = $prev_li.find('a'),
 			$next_li_a = $next_li.find('a');
 
 		var _index = 0, //被播放的順序
-			right = 1,
-			left = -1;
+			_right = 1,
+			_left = -1;
 
 		$prev_li_a.on('click', function(evt){
 			evt.preventDefault();
 
-			_index = (_index + right + content_li_length) % content_li_length; //算出第幾個要被撥放
+			_index = (_index + _right + $content_li_length) % $content_li_length; //算出第幾個要被撥放
 			slider(_index);
 		});
 
 		$next_li_a.on('click', function(evt){
 			evt.preventDefault();
 
-			_index = (_index + left + content_li_length) % content_li_length; //算出第幾個要被撥放
+			_index = (_index + _left + $content_li_length) % $content_li_length; //算出第幾個要被撥放
 			slider(_index);
 		});
 

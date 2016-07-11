@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -8,11 +8,10 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 		
-		var li = getNode.getCtItem(env), //取 li
-			child_node_in = getNode.getIn(getNode.getChild(li, 'div'));
+		var $li = getNode.getCtItem(env), //取 li
+			$child_node_in = getNode.getIn($li.children('[data-type]'));
 
-		var $li = $(li),
-			$child_node_in = $(child_node_in).filter(function(i) { //過濾 .content 裡沒有 a 的物件
+		var $child_node_in = $child_node_in.filter(function(i) { //過濾 .content 裡沒有 a 的物件
 				return $(this).children('.ct').find('a').length;
 			}),
 			$child_node_header = $child_node_in.children('.hd'),

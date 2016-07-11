@@ -1,4 +1,4 @@
-define(['googleMaps', 'getNode', 'plugin'], function(googleMaps, getNode, plugin){
+define(['googleMaps'], function(googleMaps){
 	
 	function main(env, opt, file){
 
@@ -17,13 +17,15 @@ define(['googleMaps', 'getNode', 'plugin'], function(googleMaps, getNode, plugin
 				debug: false
 			}
 
-		plugin.extend($set, opt);
+		$.extend($set, opt);
 
-		var $div = getNode.getChild(getNode.getCtIn(env), 'div')[0]; //google map 的 div
+		var $div = $(env).find('.div'); //google map 的 div
 
-		$div.style.height = parseInt($set.height, 10) + 'px'; //給他高
+		$div.css({ //給他高
+			'height': $set.height
+		});
 
-		var map = new google.maps.Map($div, $set.set); //丟 set 進去產生地圖
+		var map = new google.maps.Map($div[0], $set.set); //丟 set 進去產生地圖
 
 		if( typeof($set.marker) === 'object' && $set.marker.length ) { //如果有傳入 marker
 			var $markers = $set.marker,

@@ -948,14 +948,21 @@
 						}
 					}
 
+					&.is-required {
+
+						label {
+
+							&:before {
+								content: '* ';
+								color: $minor-color;
+							}
+						}
+					}
+
 					&.is-error {
 
 						label {
 							color: $minor-color;
-
-							&:before {
-								content: '* ';
-							}
 						}
 
 						input {
@@ -1154,26 +1161,14 @@
 						}
 					}
 
-					&.is-error {
+					&.is-required {
 
 						label {
-							color: $minor-color;
 
 							&:before {
 								content: '* ';
+								color: $minor-color;
 							}
-						}
-
-						input {
-							border-color: $minor-color;
-						}
-
-						select {
-							border-color: $minor-color;
-						}
-
-						textarea {
-							border-color: $minor-color;
 						}
 					}
 
@@ -1181,10 +1176,6 @@
 
 						label {
 							color: $minor-color;
-
-							&:before {
-								content: '* ';
-							}
 						}
 
 						input {
@@ -1557,14 +1548,21 @@
 						}
 					}
 
+					&.is-required {
+
+						label {
+
+							&:before {
+								content: '* ';
+								color: $minor-color;
+							}
+						}
+					}
+
 					&.is-error {
 
 						label {
 							color: $minor-color;
-
-							&:before {
-								content: '* ';
-							}
 						}
 
 						input {

@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -8,13 +8,12 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var items = getNode.getCtItem(env),
-			tabs = items.shift(); //把 tabs 從陣列拿掉(實際上是 li)，
-
-		var items_l = items.length;
-
-		var $items = $(items), //li
-			$tabs = $(tabs),
+		var $all_item = getNode.getCtItem(env),
+			$items = $all_item.filter(function(i) { //過濾第一個 jquery 物件，也就是 tab
+				return !!i;
+			}),
+			$items_l = $items.length,
+			$tabs = $all_item.eq(0),
 			$tabs_li = $tabs.find('li'),
 			$tab_a = $tabs_li.find('a'),
 			$tab_a_length = $tab_a.length - 1;
@@ -43,20 +42,20 @@ define(['jquery', 'getNode'], function($, getNode){
 		for( var i = 0; i < $tab_a_length; i++ ) { //註冊無障礙 tab 事件
 
 			(function(i){
-				var a = items[i].querySelectorAll('a[href]');
+				var $a = $items.eq(i).find('a[href]');
 
-				if(a.length) {
+				if($a.length) {
 
 					$tab_a.eq(i).on('keydown', function(evt){ //觸發事件
 
 						if( evt.which === _tab_key ) {
 							evt.preventDefault();
 
-							$(a[0]).focus();
+							$a.eq(0).focus();
 						}
 					});
 
-					$(a[a.length - 1]).on('keydown', function(evt){ //觸發事件
+					$a.eq(-1).on('keydown', function(evt){ //觸發事件
 
 						if( evt.which === _tab_key ) {
 							evt.preventDefault();

@@ -1,4 +1,4 @@
-define(['cookie', 'jquery', 'getNode'], function(cookie, $, getNode){
+define(['cookie', 'getNode'], function(cookie, getNode){
 
 	function main(env, opt, file){
 

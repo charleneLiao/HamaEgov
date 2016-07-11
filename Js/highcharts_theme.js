@@ -6,7 +6,6 @@ Highcharts.theme.push($.extend(true, {}, Highcharts.getOptions(), {}));
 * Dark blue theme for Highcharts JS
 * @author Torstein Honsi
 */
-
 Highcharts.theme.push({
 	colors: ["#DDDF0D", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
 		"#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
@@ -1308,7 +1307,7 @@ Highcharts.theme.push({
 });
 
 //var HCDefaults = $.extend(true, {}, Highcharts.getOptions(), {});
-Highcharts.theme.ResetOptions = function() {
+function ResetOptions() {
     // Fortunately, Highcharts returns the reference to defaultOptions itself
     // We can manipulate this and delete all the properties
     var defaultOptions = Highcharts.getOptions();

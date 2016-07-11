@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -11,27 +11,22 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var content_in = getNode.getCtIn(env),
-			content_ul = getNode.getChild(content_in, 'ul'),
-			content_li = getNode.getChild(content_ul, 'li'),
-			content_li_length = content_li.length || 1;
+		var $content_in = getNode.getCtIn(env),
+			$content_ul = $content_in.children('ul'),
+			$content_li = $content_ul.children('li'),
+			$content_li_length = $content_li.length || 1;
 
-		if( content_li_length <= 1 ) { //如果輪播項目在一個以下，就掰掰囉~
+		if( $content_li_length <= 1 ) { //如果輪播項目在一個以下，就掰掰囉~
 			return false;
 		}
 			
-		var prev_li = getNode.getFtItemBtn(env, 'prev'),
-			next_li = getNode.getFtItemBtn(env, 'next');
+		var $prev_li = getNode.getFtItemBtn(env, 'prev'),
+			$next_li = getNode.getFtItemBtn(env, 'next');
 
 		var $env = $(env),
-			$content_in = $(content_in),
 			$content_in_width = $content_in.width(),
-			$content_ul = $(content_ul),
-			$content_li = $(content_li),
 			$content_li_width = $content_li.width(),
-			$prev_li = $(prev_li),
 			$prev_li_a = $prev_li.find('a'),
-			$next_li = $(next_li),
 			$next_li_a = $next_li.find('a');
 
 		var right = 1,
@@ -85,7 +80,7 @@ define(['jquery', 'getNode'], function($, getNode){
 			$content_in_width = $content_in.width();
 			$content_li_width = $content_li.width();
 
-			if( $content_in_width + $content_li_width / 2 >= $content_li_width * content_li_length ) {
+			if( $content_in_width + $content_li_width / 2 >= $content_li_width * $content_li_length ) {
 				$prev_li.fadeOut();
 				$next_li.fadeOut();
 

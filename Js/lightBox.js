@@ -1,4 +1,4 @@
-define(['jquery', 'getNode'], function($, getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -10,9 +10,10 @@ define(['jquery', 'getNode'], function($, getNode){
 
 		$.extend($set, opt);
 
-		var $close = $(getNode.getFtItemBtn(env, 'close'));
+		var $close = $(getNode.getFtItemBtn(env, 'close')),
+			_event = 'change.close';
 
-		$close.on('change.close', function(){
+		$close.on(_event, function(){
 
 			close();
 		});
@@ -20,7 +21,7 @@ define(['jquery', 'getNode'], function($, getNode){
 		$close.on('click', function(evt){
 			evt.preventDefault()
 
-			$close.trigger('change.close');
+			$close.trigger(_event);
 		});
 
 		function close() {
