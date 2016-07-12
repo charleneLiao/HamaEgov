@@ -152,7 +152,7 @@
 	<!-- audio 結束 -->
 
 	<!-- chart 圖表 -->
-		<%= render partial: "/erb/module/area-customize_chart", locals: set({ index: 4, func_set: "{'chart':{'chart':{'type':'bar'},'title':{'text':''},'xAxis':{'categories':['八十四年','八十五年','八十六年','八十七年'],'crosshair':true},'yAxis':{'min':0,'title':{'text':''}},'tooltip':{'shared':true},'plotOptions':{'column':{'pointPadding':0.2,'borderWidth':0}},'series':[{'name':'發生數1','data':[26257.0,28074.0,29990.0,31512.0]},{'name':'查獲數21','data':[24394.0,28583.0,31017.0,29776.0]},{'name':'發生數31','data':[9392.0,9436.0,9999.0,11015.0]},{'name':'查獲數4','data':[8695.0,9680.0,10229.0,10284.0]}]}}", header_text: "圖表" }) %>
+		<%= render partial: "/erb/module/area-customize_chart", locals: set({ index: 4, header_text: "圖表" }) %>
 	<!-- chart 結束 -->
 
 	<!-- iframe 框架 -->
@@ -160,7 +160,7 @@
 	<!-- iframe 結束 -->
 
 	<!-- map 地圖 -->
-		<%= render partial: "/erb/module/area-customize_map", locals: set({ index: 6, func_set: "{'map':{'height': '220px','set':{'center':{'lat':23.5825975,'lng':120.75},'scrollwheel':false,'styles':[],'zoom':6},'marker':[{'台中':{'lat':24.1477358,'lang':120.6736482,'msg':'說明文字'}},{'臺東':{'lat':23.15634,'lang':121.0961322551,'msg':'說明文字'}}]}}", header_text: "地圖" }) %>
+		<%= render partial: "/erb/module/area-customize_map", locals: set({ index: 6, header_text: "地圖" }) %>
 	<!-- map 結束 -->
 
 	</div></div>

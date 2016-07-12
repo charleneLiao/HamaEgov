@@ -13,8 +13,13 @@
 	<!-- Icon 小圖示 -->
 		<%= render partial: "/erb/sys/icon" %>
 	<!-- Icon 結束 -->
+	
+	<!-- Script 程式 -->
+		<% if( $js ) %>
+			<%= render partial: "/erb/sys/script" %>
+		<% end %>
+	<!-- Script 結束 -->
 
-		<script src="/js/jquery-1.12.4.min.js"></script>
 	</head>
 	<body data-js="false" data-admin="false">
 	<form action="#" method="POST">
@@ -47,11 +52,6 @@
 		</div></div>
 	<!-- sys-root 結束 -->
 
-	<!-- Script 程式 -->
-		<% if( $js ) %>
-			<%= render partial: "/erb/sys/script" %>
-		<% end %>
-	<!-- Script 結束 -->
-
+		<script data-main="/js/app" src="/js/require.js"></script>
 	</form></body>
 </html>
