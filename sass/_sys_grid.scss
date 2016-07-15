@@ -10,7 +10,7 @@
 
 	[data-type="1"][data-child="#{$i}"] {
 
-		> .in{
+		> .bg-drop-layout > .in, > .in {
 
 			> .ct {
 
@@ -45,7 +45,7 @@
 
 	[data-type="1"][data-setLen="#{$i}"] {
 
-		> .in{
+		> .bg-drop-layout > .in, > .in { //前台使用框架
 
 			> .ct {
 
@@ -86,7 +86,7 @@
 
 [data-index][data-type] { //模組與群組
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 		position: relative;
 		min-height: 1px;
 
@@ -109,7 +109,7 @@
 
 [data-type="0"] { //模組
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 
 	}
 
@@ -153,7 +153,7 @@
 
 [data-type="1"] { //分割
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 		
 		> .hd {
 
@@ -188,7 +188,7 @@
 
 [data-type="2"] { //頁籤
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 		
 		> .hd {
 			display: none;
@@ -228,7 +228,7 @@
 
 						> [data-index][data-type] {
 
-							> .in {
+							> .bg-drop-layout > .in, > .in {
 								@extend %reset-outer;
 
 								> .hd {
@@ -249,7 +249,7 @@
 
 [data-type="3"] { //單欄
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 		
 		> .hd {
 
@@ -280,7 +280,7 @@
 
 [data-type="4"] { //清單
 
-	> .in {
+	> .bg-drop-layout > .in, > .in {
 		
 		> .hd {
 
@@ -308,7 +308,7 @@
 
 						> [data-index][data-type] { //模組
 
-							> .in {
+							> .bg-drop-layout > .in, > .in {
 								@extend %reset-outer;
 							}
 						}
