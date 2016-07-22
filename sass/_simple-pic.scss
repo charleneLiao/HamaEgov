@@ -8,7 +8,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -82,7 +82,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 

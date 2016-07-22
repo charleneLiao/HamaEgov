@@ -6,7 +6,7 @@
 
 	&.default {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -92,7 +92,7 @@
 
 	&.page-table {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -231,7 +231,7 @@
 
 	&.rwd-table {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 

@@ -8,7 +8,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -184,7 +184,7 @@
 
 	&.accesskey {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -257,7 +257,7 @@
 			float: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -351,7 +351,7 @@
 			display: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -431,7 +431,7 @@
 			display: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -508,7 +508,7 @@
 
 	&.countdown {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -575,7 +575,7 @@
 
 	&.visit-count {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -646,7 +646,7 @@
 
 	&.update-time {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -727,7 +727,7 @@
 			}
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -794,7 +794,7 @@
 		.base-wrapper & {
 			@extend %area-page-no-header;
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				@extend %article-extend;
 			}
 
@@ -899,7 +899,7 @@
 				display: block;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				@extend %center;
 				position: relative;
 				padding: $interval-l;
@@ -1042,7 +1042,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1155,7 +1155,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1248,7 +1248,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				@extend %center;
 				position: relative;
 			}
@@ -1332,7 +1332,7 @@
 
 	&.heading {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -1407,7 +1407,7 @@
 
 	&.title {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 

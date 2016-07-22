@@ -6,7 +6,7 @@
 
 	&.default {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -69,7 +69,7 @@
 	&.address {
 		@extend %area-mobile-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -132,7 +132,7 @@
 	&.user-edit {
 		@extend %area-page-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -192,7 +192,7 @@
 	&.system-info {
 		@extend %area-page-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -251,7 +251,7 @@
 
 	&.error-info {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 

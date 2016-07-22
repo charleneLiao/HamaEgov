@@ -67,7 +67,7 @@
 }
 
 /* line 559, ../sass/_base_function.scss */
-.sys-root .base-content > .in, .base-header .group.info > .bg-drop-layout > .in, .base-header .group.info > .in, .base-footer .group.info > .bg-drop-layout > .in, .base-footer .group.info > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-extend .simple-text.query > .in, .base-footer .simple-text.toogle-btn .ct, .base-extend .simple-text.target-btn > .in {
+.sys-root .base-content > .in, .base-header .group.info > .bg-drop-layout > .in, .base-header .group.info > .in, .base-footer .group.info > .bg-drop-layout > .in, .base-footer .group.info > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in, .base-footer .simple-text.toogle-btn .ct, .base-extend .simple-text.target-btn > .bg-drop-layout > .in, .base-extend .simple-text.target-btn > .in {
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -124,7 +124,7 @@
 }
 
 /* line 661, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .p a, .base-module-area .area-form.vote .ct .p a, .base-aside .area-form.vote .ct .p a, .base-section .area-form.vote .ct .p a, .area-essay.message .ct .p a, .base-module-area .area-essay.link .ct .p a, .base-aside .area-essay.link .ct .p a, .base-section .area-essay.link .ct .p a, .area-essay.page-essay .ct .p a, .area-essay.page-img-caption-p .ct .p a, .area-essay.page-caption-label-p .ct .p a, .area-essay.page-caption-p .ct .p a, .area-figure.album .ct .p a, .area-figure.link .ct .p a, .area-figure.page-img-figcaption-p .ct .p a, .area-figure.page-img-label-p .ct .p a, .area-figure.page-img-p .ct .p a, .base-extend .area-customize.video .ct .p a, .base-module-area .area-customize.video .ct .p a, .base-aside .area-customize.video .ct .p a, .base-extend .area-customize.audio .ct .p a, .base-module-area .area-customize.audio .ct .p a, .base-aside .area-customize.audio .ct .p a, .base-extend .area-customize.iframe .ct .p a, .base-module-area .area-customize.iframe .ct .p a, .base-aside .area-customize.iframe .ct .p a, .base-extend .area-customize.map .ct .p a, .base-module-area .area-customize.map .ct .p a, .base-aside .area-customize.map .ct .p a, .base-wrapper .simple-text.query > .in a, .area-table.page-table .ct tfoot span a, .area-table.rwd-table .ct tfoot span a, .base-section .area-form.vote .ct .form a, .area-form.submit .ct a, .area-form.sign-in .ct a, .area-form.page-form .ct a, .area-editor.user-edit .ct a, .area-editor.error-info .ct a, .base-section .area-customize.video .ct .p a, .base-section .area-customize.audio .ct .p a, .base-section .area-customize.iframe .ct .p a, .base-section .area-customize.map .ct .p a, .area-editor.system-info .ct a, .area-editor.address .ct a {
+.base-extend .area-form.vote .ct .p a, .base-module-area .area-form.vote .ct .p a, .base-aside .area-form.vote .ct .p a, .base-section .area-form.vote .ct .p a, .area-essay.message .ct .p a, .base-module-area .area-essay.link .ct .p a, .base-aside .area-essay.link .ct .p a, .base-section .area-essay.link .ct .p a, .area-essay.page-essay .ct .p a, .area-essay.page-img-caption-p .ct .p a, .area-essay.page-caption-label-p .ct .p a, .area-essay.page-caption-p .ct .p a, .area-figure.album .ct .p a, .area-figure.link .ct .p a, .area-figure.page-img-figcaption-p .ct .p a, .area-figure.page-img-label-p .ct .p a, .area-figure.page-img-p .ct .p a, .base-extend .area-customize.video .ct .p a, .base-module-area .area-customize.video .ct .p a, .base-aside .area-customize.video .ct .p a, .base-extend .area-customize.audio .ct .p a, .base-module-area .area-customize.audio .ct .p a, .base-aside .area-customize.audio .ct .p a, .base-extend .area-customize.iframe .ct .p a, .base-module-area .area-customize.iframe .ct .p a, .base-aside .area-customize.iframe .ct .p a, .base-extend .area-customize.map .ct .p a, .base-module-area .area-customize.map .ct .p a, .base-aside .area-customize.map .ct .p a, .base-wrapper .simple-text.query > .bg-drop-layout > .in a, .base-wrapper .simple-text.query > .in a, .area-table.page-table .ct tfoot span a, .area-table.rwd-table .ct tfoot span a, .base-section .area-form.vote .ct .form a, .area-form.submit .ct a, .area-form.sign-in .ct a, .area-form.page-form .ct a, .area-editor.user-edit .ct a, .area-editor.error-info .ct a, .base-section .area-customize.video .ct .p a, .base-section .area-customize.audio .ct .p a, .base-section .area-customize.iframe .ct .p a, .base-section .area-customize.map .ct .p a, .area-editor.system-info .ct a, .area-editor.address .ct a {
   color: #08c;
   text-decoration: underline;
 }
@@ -253,17 +253,17 @@
 }
 
 /* line 819, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p, .area-editor.system-info .ct {
+.base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p, .area-editor.system-info .ct {
   line-height: 1.4;
 }
 /* line 826, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query > .in img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .base-section .area-form.vote .ct .form img, .area-form.submit .ct img, .area-form.sign-in .ct img, .area-form.page-form .ct img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .base-section .area-customize.video .ct .p img, .base-section .area-customize.audio .ct .p img, .base-section .area-customize.iframe .ct .p img, .base-section .area-customize.map .ct .p img, .area-editor.system-info .ct img {
+.base-wrapper .simple-text.query > .bg-drop-layout > .in img, .base-wrapper .simple-text.query > .in img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .base-section .area-form.vote .ct .form img, .area-form.submit .ct img, .area-form.sign-in .ct img, .area-form.page-form .ct img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .base-section .area-customize.video .ct .p img, .base-section .area-customize.audio .ct .p img, .base-section .area-customize.iframe .ct .p img, .base-section .area-customize.map .ct .p img, .area-editor.system-info .ct img {
   max-width: 100%;
   margin: 8px;
 }
 
 /* line 832, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p {
+.base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p {
   padding: 8px 15px;
   background-color: #f0f0f0;
 }
@@ -4401,7 +4401,7 @@ th {
   display: block;
 }
 /* line 902, ../sass/_simple-text.scss */
-.base-extend .simple-text.query > .in {
+.base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
   position: relative;
   padding: 15px;
   border: 1px solid #e4e4e4;
@@ -4413,7 +4413,7 @@ th {
 }
 @media (max-width: 560px) {
   /* line 902, ../sass/_simple-text.scss */
-  .base-extend .simple-text.query > .in {
+  .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
     padding: 8px;
     padding-top: 15px;
   }
@@ -4615,7 +4615,7 @@ th {
   }
 }
 /* line 1251, ../sass/_simple-text.scss */
-.base-extend .simple-text.target-btn > .in {
+.base-extend .simple-text.target-btn > .bg-drop-layout > .in, .base-extend .simple-text.target-btn > .in {
   position: relative;
 }
 /* line 1256, ../sass/_simple-text.scss */
@@ -4790,7 +4790,7 @@ th {
   color: #ffffff;
 }
 /* line 297, ../sass/_list-text.scss */
-.base-footer .list-text.nav > .in {
+.base-footer .list-text.nav > .bg-drop-layout > .in, .base-footer .list-text.nav > .in {
   padding: 0 5px;
 }
 /* line 301, ../sass/_list-text.scss */
@@ -4864,7 +4864,7 @@ th {
   display: block;
 }
 /* line 553, ../sass/_list-text.scss */
-.list-text.minor-nav > .in {
+.list-text.minor-nav > .bg-drop-layout > .in, .list-text.minor-nav > .in {
   background-color: #058f89;
 }
 /* line 563, ../sass/_list-text.scss */
@@ -8071,7 +8071,7 @@ th {
   display: none;
 }
 /* line 1026, ../sass/_list-pic.scss */
-.list-pic.page-block > .in {
+.list-pic.page-block > .bg-drop-layout > .in, .list-pic.page-block > .in {
   position: relative;
 }
 /* line 1030, ../sass/_list-pic.scss */
@@ -8509,7 +8509,7 @@ th {
   display: block;
 }
 /* line 208, ../sass/_area-form.scss */
-.base-header .area-form.search > .in {
+.base-header .area-form.search > .bg-drop-layout > .in, .base-header .area-form.search > .in {
   margin: 0;
 }
 /* line 212, ../sass/_area-form.scss */

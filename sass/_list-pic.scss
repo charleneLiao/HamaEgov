@@ -15,7 +15,7 @@
 
 	&.default {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -97,7 +97,7 @@
 
 	&.slider {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			
 		}
 
@@ -216,7 +216,7 @@
 		$show-li-len: 4; //設定一次要秀的數量
 		$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -392,7 +392,7 @@
 		@include set-len(0);
 		margin-top: 0;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -489,7 +489,7 @@
 		@include set-len(0);
 		margin-top: 0;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -588,7 +588,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -679,7 +679,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -777,7 +777,7 @@
 	&.pic-download {
 		@include default-len(4, 5);
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -908,7 +908,7 @@
 	&.page-list {
 		@include default-len(4, 5);
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -1023,7 +1023,7 @@
 	&.page-block {
 		$btn-width: 45px; //設定按鈕寬度
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			position: relative;
 		}
 

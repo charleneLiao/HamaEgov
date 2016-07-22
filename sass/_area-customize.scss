@@ -6,7 +6,7 @@
 
 	&.default {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -64,7 +64,7 @@
 
 	&.calender {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -303,7 +303,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -448,7 +448,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -594,7 +594,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -735,7 +735,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -881,7 +881,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -999,7 +999,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1126,7 +1126,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1239,7 +1239,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1359,7 +1359,7 @@
 			display: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 

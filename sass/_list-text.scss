@@ -15,7 +15,7 @@
 
 	&.default {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			
 		}
 
@@ -120,7 +120,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -199,7 +199,7 @@
 
 		.base-header & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -294,7 +294,7 @@
 
 		.base-footer & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				padding: 0 $interval-s;
 			}
 
@@ -380,7 +380,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				
 			}
 
@@ -464,7 +464,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				
 			}
 
@@ -550,7 +550,7 @@
 
 	&.minor-nav {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			background-color: $major-color;
 		}
 
@@ -669,7 +669,7 @@
 			border-left-width: $interval-m;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -819,7 +819,7 @@
 
 	&.content-list {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			
 		}
 
@@ -910,7 +910,7 @@
 
 	&.sitemap {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			
 		}
 
@@ -995,7 +995,7 @@
 	&.open-data {
 		margin: $interval-s 0;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -1131,7 +1131,7 @@
 				position: absolute;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1209,7 +1209,7 @@
 		.base-section & {
 			margin: $interval-s 0;
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1380,7 +1380,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1595,7 +1595,7 @@
 			display: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -1739,7 +1739,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1829,7 +1829,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -1926,7 +1926,7 @@
 			display: none;
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2053,7 +2053,7 @@
 			}
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2150,7 +2150,7 @@
 
 	&.slider {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2286,7 +2286,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -2376,7 +2376,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				
 			}
 
@@ -2465,7 +2465,7 @@
 
 		.base-content & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -2555,7 +2555,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
@@ -2646,7 +2646,7 @@
 
 	&.rss {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2754,7 +2754,7 @@
 
 	&.message {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2842,7 +2842,7 @@
 
 	&.anchor {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -2964,7 +2964,7 @@
 	&.step {
 		@extend %area-page-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3146,7 +3146,7 @@
 			}
 		}
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3240,7 +3240,7 @@
 	&.breadcrumb {
 		margin: $interval-s 0;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3335,7 +3335,7 @@
 	&.label {
 		@extend %area-page-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3413,7 +3413,7 @@
 
 	&.jump-tool {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3492,7 +3492,7 @@
 
 	&.page-list {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 			
 		}
 
@@ -3580,7 +3580,7 @@
 	&.detail {
 		@extend %area-page-no-header;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3673,7 +3673,7 @@
 
 	&.file-download {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
@@ -3790,7 +3790,7 @@
 		border-left-style: solid;
 		border-left-color: $gray;
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 		}
 
