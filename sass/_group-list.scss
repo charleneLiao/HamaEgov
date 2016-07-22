@@ -8,7 +8,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 
@@ -70,7 +70,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 					display: none;
@@ -142,7 +142,7 @@
 
 		.base-mobile & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 					display: none;
@@ -310,7 +310,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				background-color: $light;
 
 				> .hd {
@@ -644,7 +644,7 @@
 				display: none;
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				@extend %center;
 
 				> .hd {
@@ -770,7 +770,7 @@
 
 		.base-extend &, .base-module-area &, .base-aside & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 				background-color: $major-color;
 
 				> .hd {
@@ -936,7 +936,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 					display: none;
@@ -1023,7 +1023,7 @@
 		@include default-len(4, 1);
 		@include set-len(4, $max-len);
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -1098,7 +1098,7 @@
 
 	&.sitemap {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 				display: none;
@@ -1182,7 +1182,7 @@
 	&.major-slider {
 		$btn-width: 40px; //設定按鈕寬度
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 				display: none;
@@ -1315,7 +1315,7 @@
 
 	&.classical-slider {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -1428,7 +1428,7 @@
 				}
 			}
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 					display: none;
@@ -1580,7 +1580,7 @@
 			$max-li-len: 50; //設定 li 的最大數量
 			$show-li-len: 1; //設定一次要秀的數量
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 					display: none;
@@ -1729,7 +1729,7 @@
 
 	&.message {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -1815,7 +1815,7 @@
 		@include default-len-hide(4, $default-len);
 		@include set-len-hide(4);
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -1904,7 +1904,7 @@
 			@include default-len-hide(4, $default-len);
 			@include set-len-hide(4);
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 
@@ -1985,7 +1985,7 @@
 
 		.base-section & {
 
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 				> .hd {
 
@@ -2068,7 +2068,7 @@
 
 	&.classify {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2179,7 +2179,7 @@
 
 	&.query {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 				display: none;
@@ -2244,7 +2244,7 @@
 
 	&.vote-result {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2319,7 +2319,7 @@
 
 	&.file-download-multiple {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2389,7 +2389,7 @@
 
 	&.page-list-text {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2508,7 +2508,7 @@
 
 	&.page-list-pic {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2631,7 +2631,7 @@
 
 		@include default-min-len(4, $default-len, $max-len);
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
@@ -2726,7 +2726,7 @@
 
 	&.page-list {
 
-		> .in {
+		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
 
