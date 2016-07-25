@@ -3,15 +3,16 @@ define(function(){
 	function main(env, opt, file){
 
 		var $set = {
+				externalClass: 'link', //外部連結的 class
 				debug: false
 			}
 
 		$.extend($set, opt);
 
 		var $this = $(env),
-			$a = $this.find('a[href^="http"]').filter(function(i){
+			$a = $this.find('a').filter(function(i){ //沒有圖片的 a
 				return !($(this).find('img').length)
-			}); //外部連結
+			});
 
 		var _doname = window.location.hostname;
 
@@ -21,13 +22,14 @@ define(function(){
 				_dot_i = _href.lastIndexOf('.'),
 				_slash = _href.lastIndexOf('/');
 
-			var _is_local = (_href.indexOf(_doname) != -1); //如果是本地
+			var _has_http = !!(_href.match(/http[s]?\:/)),
+				_is_local = (_href.indexOf(_doname) != -1); //如果是本地
 
-			if( _is_local || ( _slash > _dot_i ) ) { //如果是本 或 最後是 /
-				return; //跳下一個迴圈
+			if( _has_http && !_is_local ) { //如果沒有 http 又不是本地 就是外部連結
+				$this.addClass($set.externalClass); //加入外部連結 class
+			}else if( _dot_i > _slash ) { //最後是 .*
+				$this.addClass(_href.substr(_href.lastIndexOf('.') + 1, _href.length)); //加入副檔名 class
 			}
-
-			$this.addClass( _href.substr(_href.lastIndexOf('.') + 1, _href.length) ); //加入副檔名 class
 		});
 
 		if($set.debug) {

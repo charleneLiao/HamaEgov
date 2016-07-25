@@ -124,12 +124,12 @@
 }
 
 /* line 661, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .p a, .base-module-area .area-form.vote .ct .p a, .base-aside .area-form.vote .ct .p a, .base-section .area-form.vote .ct .p a, .area-essay.message .ct .p a, .base-module-area .area-essay.link .ct .p a, .base-aside .area-essay.link .ct .p a, .base-section .area-essay.link .ct .p a, .area-essay.page-essay .ct .p a, .area-essay.page-img-caption-p .ct .p a, .area-essay.page-caption-label-p .ct .p a, .area-essay.page-caption-p .ct .p a, .area-figure.album .ct .p a, .area-figure.link .ct .p a, .area-figure.page-img-figcaption-p .ct .p a, .area-figure.page-img-label-p .ct .p a, .area-figure.page-img-p .ct .p a, .base-extend .area-customize.video .ct .p a, .base-module-area .area-customize.video .ct .p a, .base-aside .area-customize.video .ct .p a, .base-extend .area-customize.audio .ct .p a, .base-module-area .area-customize.audio .ct .p a, .base-aside .area-customize.audio .ct .p a, .base-extend .area-customize.iframe .ct .p a, .base-module-area .area-customize.iframe .ct .p a, .base-aside .area-customize.iframe .ct .p a, .base-extend .area-customize.map .ct .p a, .base-module-area .area-customize.map .ct .p a, .base-aside .area-customize.map .ct .p a, .base-wrapper .simple-text.query > .bg-drop-layout > .in a, .base-wrapper .simple-text.query > .in a, .area-table.page-table .ct tfoot span a, .area-table.rwd-table .ct tfoot span a, .base-section .area-form.vote .ct .form a, .area-form.submit .ct a, .area-form.sign-in .ct a, .area-form.page-form .ct a, .area-editor.user-edit .ct a, .area-editor.error-info .ct a, .base-section .area-customize.video .ct .p a, .base-section .area-customize.audio .ct .p a, .base-section .area-customize.iframe .ct .p a, .base-section .area-customize.map .ct .p a, .area-editor.system-info .ct a, .area-editor.address .ct a {
+.base-extend .area-form.vote .ct .p a, .base-module-area .area-form.vote .ct .p a, .base-aside .area-form.vote .ct .p a, .base-section .area-form.vote .ct .p a, .area-essay.message .ct .p a, .base-module-area .area-essay.link .ct .p a, .base-aside .area-essay.link .ct .p a, .base-section .area-essay.link .ct .p a, .area-essay.page-essay .ct .p a, .area-essay.page-img-caption-p .ct .p a, .area-essay.page-caption-label-p .ct .p a, .area-essay.page-caption-p .ct .p a, .area-figure.album .ct .p a, .area-figure.link .ct .p a, .area-figure.page-img-figcaption-p .ct .p a, .area-figure.page-img-label-p .ct .p a, .area-figure.page-img-p .ct .p a, .base-extend .area-customize.video .ct .p a, .base-module-area .area-customize.video .ct .p a, .base-aside .area-customize.video .ct .p a, .base-extend .area-customize.audio .ct .p a, .base-module-area .area-customize.audio .ct .p a, .base-aside .area-customize.audio .ct .p a, .base-extend .area-customize.iframe .ct .p a, .base-module-area .area-customize.iframe .ct .p a, .base-aside .area-customize.iframe .ct .p a, .base-extend .area-customize.map .ct .p a, .base-module-area .area-customize.map .ct .p a, .base-aside .area-customize.map .ct .p a, .base-wrapper .simple-text.query > .bg-drop-layout > .in a, .base-wrapper .simple-text.query > .in a, .area-table.page-table .ct tfoot span a, .area-table.rwd-table .ct tfoot span a, .base-section .area-form.vote .ct .form a, .area-form.submit .ct a, .area-form.sign-in .ct a, .area-form.page-form .ct a, .area-editor.user-edit .ct a, .area-editor.error-info .ct a, .base-section .area-customize.video .ct .p a, .base-section .area-customize.audio .ct .p a, .base-section .area-customize.iframe .ct .p a, .base-section .area-customize.map .ct .p a, .area-editor.address .ct a, .area-editor.system-info .ct a {
   color: #08c;
   text-decoration: underline;
 }
 /* line 667, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .p a:hover, .base-module-area .area-form.vote .ct .p a:hover, .base-aside .area-form.vote .ct .p a:hover, .base-section .area-form.vote .ct .p a:hover, .area-essay.message .ct .p a:hover, .base-module-area .area-essay.link .ct .p a:hover, .base-aside .area-essay.link .ct .p a:hover, .base-section .area-essay.link .ct .p a:hover, .area-essay.page-essay .ct .p a:hover, .area-essay.page-img-caption-p .ct .p a:hover, .area-essay.page-caption-label-p .ct .p a:hover, .area-essay.page-caption-p .ct .p a:hover, .area-figure.album .ct .p a:hover, .area-figure.link .ct .p a:hover, .area-figure.page-img-figcaption-p .ct .p a:hover, .area-figure.page-img-label-p .ct .p a:hover, .area-figure.page-img-p .ct .p a:hover, .base-extend .area-customize.video .ct .p a:hover, .base-module-area .area-customize.video .ct .p a:hover, .base-aside .area-customize.video .ct .p a:hover, .base-extend .area-customize.audio .ct .p a:hover, .base-module-area .area-customize.audio .ct .p a:hover, .base-aside .area-customize.audio .ct .p a:hover, .base-extend .area-customize.iframe .ct .p a:hover, .base-module-area .area-customize.iframe .ct .p a:hover, .base-aside .area-customize.iframe .ct .p a:hover, .base-extend .area-customize.map .ct .p a:hover, .base-module-area .area-customize.map .ct .p a:hover, .base-aside .area-customize.map .ct .p a:hover, .base-wrapper .simple-text.query > .in a:hover, .area-table.page-table .ct tfoot span a:hover, .area-table.rwd-table .ct tfoot span a:hover, .base-section .area-form.vote .ct .form a:hover, .area-form.submit .ct a:hover, .area-form.sign-in .ct a:hover, .area-form.page-form .ct a:hover, .area-editor.user-edit .ct a:hover, .area-editor.error-info .ct a:hover, .base-section .area-customize.video .ct .p a:hover, .base-section .area-customize.audio .ct .p a:hover, .base-section .area-customize.iframe .ct .p a:hover, .base-section .area-customize.map .ct .p a:hover, .area-editor.system-info .ct a:hover, .area-editor.address .ct a:hover {
+.base-extend .area-form.vote .ct .p a:hover, .base-module-area .area-form.vote .ct .p a:hover, .base-aside .area-form.vote .ct .p a:hover, .base-section .area-form.vote .ct .p a:hover, .area-essay.message .ct .p a:hover, .base-module-area .area-essay.link .ct .p a:hover, .base-aside .area-essay.link .ct .p a:hover, .base-section .area-essay.link .ct .p a:hover, .area-essay.page-essay .ct .p a:hover, .area-essay.page-img-caption-p .ct .p a:hover, .area-essay.page-caption-label-p .ct .p a:hover, .area-essay.page-caption-p .ct .p a:hover, .area-figure.album .ct .p a:hover, .area-figure.link .ct .p a:hover, .area-figure.page-img-figcaption-p .ct .p a:hover, .area-figure.page-img-label-p .ct .p a:hover, .area-figure.page-img-p .ct .p a:hover, .base-extend .area-customize.video .ct .p a:hover, .base-module-area .area-customize.video .ct .p a:hover, .base-aside .area-customize.video .ct .p a:hover, .base-extend .area-customize.audio .ct .p a:hover, .base-module-area .area-customize.audio .ct .p a:hover, .base-aside .area-customize.audio .ct .p a:hover, .base-extend .area-customize.iframe .ct .p a:hover, .base-module-area .area-customize.iframe .ct .p a:hover, .base-aside .area-customize.iframe .ct .p a:hover, .base-extend .area-customize.map .ct .p a:hover, .base-module-area .area-customize.map .ct .p a:hover, .base-aside .area-customize.map .ct .p a:hover, .base-wrapper .simple-text.query > .in a:hover, .area-table.page-table .ct tfoot span a:hover, .area-table.rwd-table .ct tfoot span a:hover, .base-section .area-form.vote .ct .form a:hover, .area-form.submit .ct a:hover, .area-form.sign-in .ct a:hover, .area-form.page-form .ct a:hover, .area-editor.user-edit .ct a:hover, .area-editor.error-info .ct a:hover, .base-section .area-customize.video .ct .p a:hover, .base-section .area-customize.audio .ct .p a:hover, .base-section .area-customize.iframe .ct .p a:hover, .base-section .area-customize.map .ct .p a:hover, .area-editor.address .ct a:hover, .area-editor.system-info .ct a:hover {
   color: #006699;
   text-decoration: none;
 }
@@ -253,11 +253,11 @@
 }
 
 /* line 819, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p, .area-editor.system-info .ct {
-  line-height: 1.4;
+.base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .base-section .area-form.vote .ct .form, .area-form.submit .ct, .area-form.sign-in .ct, .area-form.page-form .ct, .area-editor.user-edit .ct, .area-editor.error-info .ct, .base-section .area-customize.video .ct .p, .base-section .area-customize.audio .ct .p, .base-section .area-customize.iframe .ct .p, .base-section .area-customize.map .ct .p, .area-editor.address .ct, .area-editor.system-info .ct {
+  line-height: 1.6;
 }
 /* line 826, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query > .bg-drop-layout > .in img, .base-wrapper .simple-text.query > .in img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .base-section .area-form.vote .ct .form img, .area-form.submit .ct img, .area-form.sign-in .ct img, .area-form.page-form .ct img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .base-section .area-customize.video .ct .p img, .base-section .area-customize.audio .ct .p img, .base-section .area-customize.iframe .ct .p img, .base-section .area-customize.map .ct .p img, .area-editor.system-info .ct img {
+.base-wrapper .simple-text.query > .bg-drop-layout > .in img, .base-wrapper .simple-text.query > .in img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .base-section .area-form.vote .ct .form img, .area-form.submit .ct img, .area-form.sign-in .ct img, .area-form.page-form .ct img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .base-section .area-customize.video .ct .p img, .base-section .area-customize.audio .ct .p img, .base-section .area-customize.iframe .ct .p img, .base-section .area-customize.map .ct .p img, .area-editor.address .ct img, .area-editor.system-info .ct img {
   max-width: 100%;
   margin: 8px;
 }
@@ -339,14 +339,14 @@
 }
 
 /* line 935, ../sass/_base_function.scss */
-.list-text.content-file .ct li.ai a:before, .list-text.content-file .ct li.avi a:before, .list-text.content-file .ct li.bmp a:before, .list-text.content-file .ct li.css a:before, .list-text.content-file .ct li.csv a:before, .list-text.content-file .ct li.doc a:before, .list-text.content-file .ct li.docx a:before, .list-text.content-file .ct li.gif a:before, .list-text.content-file .ct li.html a:before, .list-text.content-file .ct li.ico a:before, .list-text.content-file .ct li.jpeg a:before, .list-text.content-file .ct li.jpg a:before, .list-text.content-file .ct li.js a:before, .list-text.content-file .ct li.link a:before, .list-text.content-file .ct li.md a:before, .list-text.content-file .ct li.mov a:before, .list-text.content-file .ct li.mp3 a:before, .list-text.content-file .ct li.mp4 a:before, .list-text.content-file .ct li.odf a:before, .list-text.content-file .ct li.odp a:before, .list-text.content-file .ct li.ods a:before, .list-text.content-file .ct li.odt a:before, .list-text.content-file .ct li.ogg a:before, .list-text.content-file .ct li.ogv a:before, .list-text.content-file .ct li.other a:before, .list-text.content-file .ct li.pdf a:before, .list-text.content-file .ct li.png a:before, .list-text.content-file .ct li.ppt a:before, .list-text.content-file .ct li.pptx a:before, .list-text.content-file .ct li.psd a:before, .list-text.content-file .ct li.rar a:before, .list-text.content-file .ct li.rss a:before, .list-text.content-file .ct li.sass a:before, .list-text.content-file .ct li.svg a:before, .list-text.content-file .ct li.swf a:before, .list-text.content-file .ct li.tar a:before, .list-text.content-file .ct li.tif a:before, .list-text.content-file .ct li.txt a:before, .list-text.content-file .ct li.wav a:before, .list-text.content-file .ct li.webm a:before, .list-text.content-file .ct li.xls a:before, .list-text.content-file .ct li.xlsx a:before, .list-text.content-file .ct li.xml a:before, .list-text.content-file .ct li.zip a:before, .base-extend .list-text.share .ct li.facebook a, .base-extend .list-text.share .ct li.google a, .base-extend .list-text.share .ct li.twitter a, .base-extend .list-text.share .ct li.line a, .base-extend .list-text.share .ct li.email a, .base-mobile .list-text.share .ct li.facebook a, .base-mobile .list-text.share .ct li.google a, .base-mobile .list-text.share .ct li.twitter a, .base-mobile .list-text.share .ct li.line a, .base-mobile .list-text.share .ct li.email a, .list-text.font-size .ct li.small span a:before, .list-text.font-size .ct li.medium span a:before, .list-text.font-size .ct li.large span a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.ai a:before, .list-text.file-download-multiple .ct li.avi a:before, .list-text.file-download-multiple .ct li.bmp a:before, .list-text.file-download-multiple .ct li.css a:before, .list-text.file-download-multiple .ct li.csv a:before, .list-text.file-download-multiple .ct li.doc a:before, .list-text.file-download-multiple .ct li.docx a:before, .list-text.file-download-multiple .ct li.gif a:before, .list-text.file-download-multiple .ct li.html a:before, .list-text.file-download-multiple .ct li.ico a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .list-text.file-download-multiple .ct li.js a:before, .list-text.file-download-multiple .ct li.link a:before, .list-text.file-download-multiple .ct li.md a:before, .list-text.file-download-multiple .ct li.mov a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.odf a:before, .list-text.file-download-multiple .ct li.odp a:before, .list-text.file-download-multiple .ct li.ods a:before, .list-text.file-download-multiple .ct li.odt a:before, .list-text.file-download-multiple .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogv a:before, .list-text.file-download-multiple .ct li.other a:before, .list-text.file-download-multiple .ct li.pdf a:before, .list-text.file-download-multiple .ct li.png a:before, .list-text.file-download-multiple .ct li.ppt a:before, .list-text.file-download-multiple .ct li.pptx a:before, .list-text.file-download-multiple .ct li.psd a:before, .list-text.file-download-multiple .ct li.rar a:before, .list-text.file-download-multiple .ct li.rss a:before, .list-text.file-download-multiple .ct li.sass a:before, .list-text.file-download-multiple .ct li.svg a:before, .list-text.file-download-multiple .ct li.swf a:before, .list-text.file-download-multiple .ct li.tar a:before, .list-text.file-download-multiple .ct li.tif a:before, .list-text.file-download-multiple .ct li.txt a:before, .list-text.file-download-multiple .ct li.wav a:before, .list-text.file-download-multiple .ct li.webm a:before, .list-text.file-download-multiple .ct li.xls a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xml a:before, .list-text.file-download-multiple .ct li.zip a:before, .area-form.sign-in .ct .list li.facebook a:before, .area-form.sign-in .ct .list li.google a:before, .area-form.sign-in .ct .list li.twitter a:before, .area-form.sign-in .ct .list li.line a:before, .area-form.sign-in .ct .list li.email a:before {
+.sys-root .base-section a.ai:after, .sys-root .base-section a.avi:after, .sys-root .base-section a.bmp:after, .sys-root .base-section a.css:after, .sys-root .base-section a.csv:after, .sys-root .base-section a.doc:after, .sys-root .base-section a.docx:after, .sys-root .base-section a.gif:after, .sys-root .base-section a.html:after, .sys-root .base-section a.ico:after, .sys-root .base-section a.jpeg:after, .sys-root .base-section a.jpg:after, .sys-root .base-section a.js:after, .sys-root .base-section a.link:after, .sys-root .base-section a.md:after, .sys-root .base-section a.mov:after, .sys-root .base-section a.mp3:after, .sys-root .base-section a.mp4:after, .sys-root .base-section a.odf:after, .sys-root .base-section a.odp:after, .sys-root .base-section a.ods:after, .sys-root .base-section a.odt:after, .sys-root .base-section a.ogg:after, .sys-root .base-section a.ogv:after, .sys-root .base-section a.other:after, .sys-root .base-section a.pdf:after, .sys-root .base-section a.png:after, .sys-root .base-section a.ppt:after, .sys-root .base-section a.pptx:after, .sys-root .base-section a.psd:after, .sys-root .base-section a.rar:after, .sys-root .base-section a.rss:after, .sys-root .base-section a.sass:after, .sys-root .base-section a.svg:after, .sys-root .base-section a.swf:after, .sys-root .base-section a.tar:after, .sys-root .base-section a.tif:after, .sys-root .base-section a.txt:after, .sys-root .base-section a.wav:after, .sys-root .base-section a.webm:after, .sys-root .base-section a.xls:after, .sys-root .base-section a.xlsx:after, .sys-root .base-section a.xml:after, .sys-root .base-section a.zip:after, .list-text.content-file .ct li.ai a:before, .list-text.content-file .ct li.avi a:before, .list-text.content-file .ct li.bmp a:before, .list-text.content-file .ct li.css a:before, .list-text.content-file .ct li.csv a:before, .list-text.content-file .ct li.doc a:before, .list-text.content-file .ct li.docx a:before, .list-text.content-file .ct li.gif a:before, .list-text.content-file .ct li.html a:before, .list-text.content-file .ct li.ico a:before, .list-text.content-file .ct li.jpeg a:before, .list-text.content-file .ct li.jpg a:before, .list-text.content-file .ct li.js a:before, .list-text.content-file .ct li.link a:before, .list-text.content-file .ct li.md a:before, .list-text.content-file .ct li.mov a:before, .list-text.content-file .ct li.mp3 a:before, .list-text.content-file .ct li.mp4 a:before, .list-text.content-file .ct li.odf a:before, .list-text.content-file .ct li.odp a:before, .list-text.content-file .ct li.ods a:before, .list-text.content-file .ct li.odt a:before, .list-text.content-file .ct li.ogg a:before, .list-text.content-file .ct li.ogv a:before, .list-text.content-file .ct li.other a:before, .list-text.content-file .ct li.pdf a:before, .list-text.content-file .ct li.png a:before, .list-text.content-file .ct li.ppt a:before, .list-text.content-file .ct li.pptx a:before, .list-text.content-file .ct li.psd a:before, .list-text.content-file .ct li.rar a:before, .list-text.content-file .ct li.rss a:before, .list-text.content-file .ct li.sass a:before, .list-text.content-file .ct li.svg a:before, .list-text.content-file .ct li.swf a:before, .list-text.content-file .ct li.tar a:before, .list-text.content-file .ct li.tif a:before, .list-text.content-file .ct li.txt a:before, .list-text.content-file .ct li.wav a:before, .list-text.content-file .ct li.webm a:before, .list-text.content-file .ct li.xls a:before, .list-text.content-file .ct li.xlsx a:before, .list-text.content-file .ct li.xml a:before, .list-text.content-file .ct li.zip a:before, .base-extend .list-text.share .ct li.facebook a, .base-extend .list-text.share .ct li.google a, .base-extend .list-text.share .ct li.twitter a, .base-extend .list-text.share .ct li.line a, .base-extend .list-text.share .ct li.email a, .base-mobile .list-text.share .ct li.facebook a, .base-mobile .list-text.share .ct li.google a, .base-mobile .list-text.share .ct li.twitter a, .base-mobile .list-text.share .ct li.line a, .base-mobile .list-text.share .ct li.email a, .list-text.font-size .ct li.small span a:before, .list-text.font-size .ct li.medium span a:before, .list-text.font-size .ct li.large span a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.ai a:before, .list-text.file-download-multiple .ct li.avi a:before, .list-text.file-download-multiple .ct li.bmp a:before, .list-text.file-download-multiple .ct li.css a:before, .list-text.file-download-multiple .ct li.csv a:before, .list-text.file-download-multiple .ct li.doc a:before, .list-text.file-download-multiple .ct li.docx a:before, .list-text.file-download-multiple .ct li.gif a:before, .list-text.file-download-multiple .ct li.html a:before, .list-text.file-download-multiple .ct li.ico a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .list-text.file-download-multiple .ct li.js a:before, .list-text.file-download-multiple .ct li.link a:before, .list-text.file-download-multiple .ct li.md a:before, .list-text.file-download-multiple .ct li.mov a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.odf a:before, .list-text.file-download-multiple .ct li.odp a:before, .list-text.file-download-multiple .ct li.ods a:before, .list-text.file-download-multiple .ct li.odt a:before, .list-text.file-download-multiple .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogv a:before, .list-text.file-download-multiple .ct li.other a:before, .list-text.file-download-multiple .ct li.pdf a:before, .list-text.file-download-multiple .ct li.png a:before, .list-text.file-download-multiple .ct li.ppt a:before, .list-text.file-download-multiple .ct li.pptx a:before, .list-text.file-download-multiple .ct li.psd a:before, .list-text.file-download-multiple .ct li.rar a:before, .list-text.file-download-multiple .ct li.rss a:before, .list-text.file-download-multiple .ct li.sass a:before, .list-text.file-download-multiple .ct li.svg a:before, .list-text.file-download-multiple .ct li.swf a:before, .list-text.file-download-multiple .ct li.tar a:before, .list-text.file-download-multiple .ct li.tif a:before, .list-text.file-download-multiple .ct li.txt a:before, .list-text.file-download-multiple .ct li.wav a:before, .list-text.file-download-multiple .ct li.webm a:before, .list-text.file-download-multiple .ct li.xls a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xml a:before, .list-text.file-download-multiple .ct li.zip a:before, .area-form.sign-in .ct .list li.facebook a:before, .area-form.sign-in .ct .list li.google a:before, .area-form.sign-in .ct .list li.twitter a:before, .area-form.sign-in .ct .list li.line a:before, .area-form.sign-in .ct .list li.email a:before {
   content: "​";
   display: inline-block;
   vertical-align: middle;
 }
 
 /* line 941, ../sass/_base_function.scss */
-.group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct li.login a:before, .base-section .list-text.user-tool .ct li.logout a:before, .base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.print a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.error-info .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
+.group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct li.login a:before, .base-section .list-text.user-tool .ct li.logout a:before, .base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.print a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.address .ct a.is-map:after, .area-editor.error-info .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -487,6 +487,11 @@
   content: "\e1bc";
 }
 
+/* line 504, ../sass/_base_icon-font.scss */
+.area-editor.address .ct a.is-map:after {
+  content: "\e1f3";
+}
+
 /* line 513, ../sass/_base_icon-font.scss */
 .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before {
   content: "\e1f7";
@@ -563,7 +568,7 @@
 }
 
 /* line 1080, icon-pic/*.png */
-.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-right, .icon-pic-away-w-top, .icon-pic-ctrl-b-close, .icon-pic-file-type-ai, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-css, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-doc, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-gif, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .list-text.font-size .ct li.large span a:before, .icon-pic-font-medium, .list-text.font-size .ct li.medium span a:before, .icon-pic-font-smail, .list-text.font-size .ct li.small span a:before, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-vedio, .icon-pic-share-w-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .icon-pic-share-w-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .icon-pic-share-w-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .icon-pic-share-w-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .icon-pic-share-w-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .icon-pic-weather-type-01, .icon-pic-weather-type-02, .icon-pic-weather-type-03, .icon-pic-weather-type-04, .icon-pic-weather-type-05, .icon-pic-weather-type-06, .icon-pic-weather-type-07, .icon-pic-weather-type-08, .icon-pic-weather-type-09, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65 {
+.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-right, .icon-pic-away-w-top, .icon-pic-ctrl-b-close, .icon-pic-file-type-ai, .sys-root .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .sys-root .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .sys-root .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-css, .sys-root .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .sys-root .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-doc, .sys-root .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .sys-root .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-gif, .sys-root .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .sys-root .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .sys-root .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .sys-root .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .sys-root .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .sys-root .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .sys-root .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .sys-root .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .sys-root .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .sys-root .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .sys-root .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .sys-root .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .sys-root .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .sys-root .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .sys-root .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .sys-root .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .sys-root .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .sys-root .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .sys-root .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .sys-root .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .sys-root .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .sys-root .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .sys-root .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .sys-root .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .sys-root .base-section a.rss:after, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .sys-root .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .sys-root .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .sys-root .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .sys-root .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .sys-root .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .sys-root .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .sys-root .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .sys-root .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .sys-root .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .sys-root .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .sys-root .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .sys-root .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .list-text.font-size .ct li.large span a:before, .icon-pic-font-medium, .list-text.font-size .ct li.medium span a:before, .icon-pic-font-smail, .list-text.font-size .ct li.small span a:before, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-vedio, .icon-pic-share-w-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .icon-pic-share-w-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .icon-pic-share-w-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .icon-pic-share-w-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .icon-pic-share-w-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .icon-pic-weather-type-01, .icon-pic-weather-type-02, .icon-pic-weather-type-03, .icon-pic-weather-type-04, .icon-pic-weather-type-05, .icon-pic-weather-type-06, .icon-pic-weather-type-07, .icon-pic-weather-type-08, .icon-pic-weather-type-09, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65 {
   background-image: url('../images/icon-pic-s9282b7a054.png');
   background-repeat: no-repeat;
 }
@@ -614,67 +619,67 @@
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ai, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before {
+.icon-pic-file-type-ai, .sys-root .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before {
   background-position: 0 -144px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-avi, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before {
+.icon-pic-file-type-avi, .sys-root .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before {
   background-position: 0 -160px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-bmp, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before {
+.icon-pic-file-type-bmp, .sys-root .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before {
   background-position: 0 -176px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-css, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before {
+.icon-pic-file-type-css, .sys-root .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before {
   background-position: 0 -192px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-csv, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before {
+.icon-pic-file-type-csv, .sys-root .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before {
   background-position: 0 -208px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-doc, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before {
+.icon-pic-file-type-doc, .sys-root .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before {
   background-position: 0 -224px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-docx, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before {
+.icon-pic-file-type-docx, .sys-root .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before {
   background-position: 0 -240px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-gif, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before {
+.icon-pic-file-type-gif, .sys-root .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before {
   background-position: 0 -256px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-html, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before {
+.icon-pic-file-type-html, .sys-root .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before {
   background-position: 0 -272px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ico, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before {
+.icon-pic-file-type-ico, .sys-root .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before {
   background-position: 0 -288px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-jpeg, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before {
+.icon-pic-file-type-jpeg, .sys-root .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before {
   background-position: 0 -304px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-jpg, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before {
+.icon-pic-file-type-jpg, .sys-root .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before {
   background-position: 0 -320px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-js, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before {
+.icon-pic-file-type-js, .sys-root .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before {
   background-position: 0 -336px;
 }
 
@@ -684,157 +689,157 @@
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-link, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before {
+.icon-pic-file-type-link, .sys-root .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before {
   background-position: 0 -368px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-md, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before {
+.icon-pic-file-type-md, .sys-root .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before {
   background-position: 0 -384px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-mov, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before {
+.icon-pic-file-type-mov, .sys-root .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before {
   background-position: 0 -400px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-mp3, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before {
+.icon-pic-file-type-mp3, .sys-root .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before {
   background-position: 0 -416px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-mp4, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before {
+.icon-pic-file-type-mp4, .sys-root .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before {
   background-position: 0 -432px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-odf, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before {
+.icon-pic-file-type-odf, .sys-root .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before {
   background-position: 0 -448px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-odp, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before {
+.icon-pic-file-type-odp, .sys-root .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before {
   background-position: 0 -464px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ods, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before {
+.icon-pic-file-type-ods, .sys-root .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before {
   background-position: 0 -480px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-odt, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before {
+.icon-pic-file-type-odt, .sys-root .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before {
   background-position: 0 -496px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ogg, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before {
+.icon-pic-file-type-ogg, .sys-root .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before {
   background-position: 0 -512px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ogv, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before {
+.icon-pic-file-type-ogv, .sys-root .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before {
   background-position: 0 -528px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-other, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before {
+.icon-pic-file-type-other, .sys-root .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before {
   background-position: 0 -544px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-pdf, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before {
+.icon-pic-file-type-pdf, .sys-root .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before {
   background-position: 0 -560px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-png, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before {
+.icon-pic-file-type-png, .sys-root .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before {
   background-position: 0 -576px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-ppt, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before {
+.icon-pic-file-type-ppt, .sys-root .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before {
   background-position: 0 -592px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-pptx, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before {
+.icon-pic-file-type-pptx, .sys-root .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before {
   background-position: 0 -608px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-psd, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before {
+.icon-pic-file-type-psd, .sys-root .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before {
   background-position: 0 -624px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-rar, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before {
+.icon-pic-file-type-rar, .sys-root .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before {
   background-position: 0 -640px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-rss, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before {
+.icon-pic-file-type-rss, .sys-root .base-section a.rss:after, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before {
   background-position: 0 -656px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-sass, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before {
+.icon-pic-file-type-sass, .sys-root .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before {
   background-position: 0 -672px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-svg, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before {
+.icon-pic-file-type-svg, .sys-root .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before {
   background-position: 0 -688px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-swf, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before {
+.icon-pic-file-type-swf, .sys-root .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before {
   background-position: 0 -704px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-tar, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before {
+.icon-pic-file-type-tar, .sys-root .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before {
   background-position: 0 -720px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-tif, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before {
+.icon-pic-file-type-tif, .sys-root .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before {
   background-position: 0 -736px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-txt, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before {
+.icon-pic-file-type-txt, .sys-root .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before {
   background-position: 0 -752px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-wav, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before {
+.icon-pic-file-type-wav, .sys-root .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before {
   background-position: 0 -768px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-webm, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before {
+.icon-pic-file-type-webm, .sys-root .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before {
   background-position: 0 -784px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-xls, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before {
+.icon-pic-file-type-xls, .sys-root .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before {
   background-position: 0 -800px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-xlsx, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before {
+.icon-pic-file-type-xlsx, .sys-root .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before {
   background-position: 0 -816px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-xml, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before {
+.icon-pic-file-type-xml, .sys-root .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before {
   background-position: 0 -832px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-file-type-zip, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before {
+.icon-pic-file-type-zip, .sys-root .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before {
   background-position: 0 -848px;
 }
 
@@ -2279,7 +2284,7 @@ th {
   display: block;
   content: '您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。';
   padding: 8px;
-  line-height: 1.4;
+  line-height: 1.6;
   background-color: #343434;
   color: #ffffff;
 }
@@ -2462,12 +2467,276 @@ th {
   overflow: hidden;
   position: relative;
 }
-/* line 537, ../sass/_base_layout.scss */
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ai:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.avi:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.bmp:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.css:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.csv:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.doc:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.docx:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.gif:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.html:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ico:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.jpeg:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.jpg:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.js:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.link:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.md:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.mov:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.mp3:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.mp4:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.odf:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.odp:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ods:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.odt:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ogg:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ogv:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.other:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.pdf:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.png:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.ppt:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.pptx:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.psd:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.rar:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.rss:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.sass:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.svg:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.swf:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.tar:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.tif:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.txt:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.wav:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.webm:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.xls:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.xlsx:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.xml:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 544, ../sass/_base_layout.scss */
+.sys-root .base-section a.zip:after {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+/* line 552, ../sass/_base_layout.scss */
 .sys-root .base-section > .in {
   margin: 0 8px;
 }
 @media (max-width: 560px) {
-  /* line 537, ../sass/_base_layout.scss */
+  /* line 552, ../sass/_base_layout.scss */
   .sys-root .base-section > .in {
     margin: 0;
   }
@@ -10090,12 +10359,18 @@ th {
   font-size: inherit;
   color: inherit;
 }
-/* line 264, ../sass/_area-editor.scss */
+/* line 107, ../sass/_area-editor.scss */
+.area-editor.address .ct a.is-map:after {
+  font-size: inherit;
+  color: inherit;
+  margin-left: 5px;
+}
+/* line 273, ../sass/_area-editor.scss */
 .area-editor.error-info .hd h4 {
   color: #c40;
   font-size: 1.4em;
 }
-/* line 271, ../sass/_area-editor.scss */
+/* line 280, ../sass/_area-editor.scss */
 .area-editor.error-info .hd h4:before {
   font-size: inherit;
   color: inherit;

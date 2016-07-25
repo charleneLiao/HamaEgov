@@ -534,6 +534,21 @@
 		overflow: hidden;
 		position: relative;
 
+		a {
+			@each $key, $map in $file-type-map {
+				$pic: map-get($map, 'pic');
+				$color: map-get($map, 'color');
+
+				&.#{$key} {
+
+					&:after {
+						@include icon-pic($pic);
+						margin-left: $interval-s;
+					}
+				}
+			}
+		}
+
 		> .in {
 			margin: 0 $interval-m;
 
