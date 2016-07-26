@@ -21,7 +21,14 @@ define(function() {
 		},
 
 		getIn: function(env) { //取得 in 節點
-			return $(env).children('.in');
+
+			var $this = $(env);
+
+			if( $this.children('.bg-drop-layout').length ) {
+				return $this.children('.bg-drop-layout').children('.in');
+			}
+
+			return $this.children('.in');
 		},
 
 		getHd: function(env, add) { //取得 hd 節點

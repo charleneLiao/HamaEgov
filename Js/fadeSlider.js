@@ -55,7 +55,7 @@ define(['getNode'], function(getNode){
 
 			function auto() { //設定自動撥放涵式
 
-				_index = (_index + 1 + content_li_length) % content_li_length
+				_index = (_index + 1 + $content_li_length) % $content_li_length;
 
 				slider(_index);
 				timer = setTimeout(auto, $set.delay);
