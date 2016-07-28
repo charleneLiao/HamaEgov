@@ -2743,6 +2743,16 @@ th {
 }
 
 /* line 41, ../sass/_group.scss */
+.group.page {
+  border: 1px solid #e4e4e4;
+}
+/* line 69, ../sass/_group.scss */
+.group.page > .bg-drop-layout > .in > .ct > .in > [data-type][data-index], .group.page > .in > .ct > .in > [data-type][data-index] {
+  margin-top: 0;
+  box-sizing: border-box;
+  padding: 8px;
+}
+/* line 81, ../sass/_group.scss */
 .group.light-box {
   position: fixed;
   display: none;
@@ -2758,18 +2768,18 @@ th {
 [data-js="false"] .group.light-box {
   display: none;
 }
-/* line 58, ../sass/_group.scss */
+/* line 98, ../sass/_group.scss */
 .group.light-box.is-show {
   display: block;
 }
-/* line 62, ../sass/_group.scss */
+/* line 102, ../sass/_group.scss */
 .group.light-box:before {
   content: "​";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 69, ../sass/_group.scss */
+/* line 109, ../sass/_group.scss */
 .group.light-box > .bg-drop-layout > .in, .group.light-box > .in {
   position: relative;
   display: inline-block;
@@ -2780,16 +2790,16 @@ th {
   vertical-align: middle;
 }
 @media (max-width: 560px) {
-  /* line 69, ../sass/_group.scss */
+  /* line 109, ../sass/_group.scss */
   .group.light-box > .bg-drop-layout > .in, .group.light-box > .in {
     max-width: 90%;
   }
 }
-/* line 82, ../sass/_group.scss */
+/* line 122, ../sass/_group.scss */
 .group.light-box > .bg-drop-layout > .in > .hd, .group.light-box > .in > .hd {
   display: none;
 }
-/* line 123, ../sass/_group.scss */
+/* line 163, ../sass/_group.scss */
 .group.light-box > .bg-drop-layout > .in > .ft li.close a, .group.light-box > .in > .ft li.close a {
   background-image: url('../images/icon-pic/ctrl-b-close.png?1457350278');
   background-repeat: no-repeat;
@@ -2803,20 +2813,20 @@ th {
   transition: 150ms;
   border-radius: 50%;
 }
-/* line 142, ../sass/_group.scss */
+/* line 182, ../sass/_group.scss */
 .group.light-box > .bg-drop-layout > .in > .ft a, .group.light-box > .in > .ft a {
   background-color: #f0f0f0;
   background-color: rgba(240, 240, 240, 0.7);
 }
-/* line 146, ../sass/_group.scss */
+/* line 186, ../sass/_group.scss */
 .group.light-box > .bg-drop-layout > .in > .ft a:hover, .group.light-box > .in > .ft a:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* line 163, ../sass/_group.scss */
+/* line 203, ../sass/_group.scss */
 .base-mobile .group.info > .bg-drop-layout > .in > .hd, .base-mobile .group.info > .in > .hd {
   display: none;
 }
-/* line 185, ../sass/_group.scss */
+/* line 225, ../sass/_group.scss */
 .base-mobile .group.info > .bg-drop-layout > .in > .ct > .in, .base-mobile .group.info > .in > .ct > .in {
   position: absolute;
   top: 0;
@@ -2826,35 +2836,35 @@ th {
   overflow-y: auto;
   background-color: #f0f0f0;
 }
-/* line 198, ../sass/_group.scss */
+/* line 238, ../sass/_group.scss */
 .base-header .group.info {
   background-color: #058f89;
 }
-/* line 204, ../sass/_group.scss */
+/* line 244, ../sass/_group.scss */
 .base-header .group.info > .bg-drop-layout > .in > .hd, .base-header .group.info > .in > .hd {
   display: none;
 }
-/* line 238, ../sass/_group.scss */
+/* line 278, ../sass/_group.scss */
 .base-footer .group.info > .bg-drop-layout > .in, .base-footer .group.info > .in {
   padding: 15px 0;
 }
-/* line 242, ../sass/_group.scss */
+/* line 282, ../sass/_group.scss */
 .base-footer .group.info > .bg-drop-layout > .in > .hd, .base-footer .group.info > .in > .hd {
   display: none;
 }
-/* line 279, ../sass/_group.scss */
+/* line 319, ../sass/_group.scss */
 .base-header .group.msg-tool {
   position: relative;
 }
-/* line 312, ../sass/_group.scss */
+/* line 352, ../sass/_group.scss */
 .base-footer .group.msg-tool {
   overflow: hidden;
 }
-/* line 372, ../sass/_group.scss */
+/* line 412, ../sass/_group.scss */
 .group.page-header > .bg-drop-layout > .in > .ct, .group.page-header > .in > .ct {
   margin-top: 8px;
 }
-/* line 384, ../sass/_group.scss */
+/* line 424, ../sass/_group.scss */
 .group.page-content {
   position: relative;
   margin: 8px 0;
@@ -10746,6 +10756,10 @@ th {
 .area-customize.chart .hd h4:before {
   font-size: inherit;
   color: inherit;
+}
+/* line 1433, ../sass/_area-customize.scss */
+.area-customize.recitation .hd {
+  display: none;
 }
 
 /*# sourceMappingURL=global.css.map */
