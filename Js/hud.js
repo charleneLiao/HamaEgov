@@ -3,6 +3,7 @@ define(function(){
 	function main(env, opt, file){
 
 		var $set = {
+				activeClass: 'is-fixed',
 				debug: false
 			}
 
@@ -11,11 +12,11 @@ define(function(){
 		var $win = $(window),
 			$menu = $(env),
 			$in = $menu.children('.in'),
-			$in_h = $in.height(),
+			$in_h = $in.outerHeight(),
 			$in_t = $in.offset().top;
 
 		var _eventNmae = 'fixed', //事件名稱
-			_active = 'is-fixed'; //被選擇的 class name
+			_active = $set.activeClass; //被選擇的 class name
 
 		$win.on(_eventNmae, function () { //開始監測滾動多少的事件
 			var $win_t = $win.scrollTop();

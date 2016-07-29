@@ -3,6 +3,7 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
+				activeClass: 'is-active',
 				debug: false
 			}
 
@@ -27,7 +28,7 @@ define(['getNode'], function(getNode){
 		}
 
 		var _eventNmae = file, //事件名稱
-			_active = 'is-active', //被選擇的 class name
+			_active = $set.activeClass, //被選擇的 class name
 			_tab_key = 9;
 
 		$li.on(_eventNmae, function(){

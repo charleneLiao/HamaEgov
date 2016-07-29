@@ -3,6 +3,7 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
+				activeClass: 'is-active',
 				debug: false
 			}
 
@@ -16,7 +17,7 @@ define(['getNode'], function(getNode){
 			$a = $child_node_header.find('a');
 
 		var _eventNmae = file, //事件名稱
-			_active = 'is-active'; //被選擇的 class name
+			_active = $set.activeClass; //被選擇的 class name
 
 		$a.on(_eventNmae, function(){
 			var $this = $(this),

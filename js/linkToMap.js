@@ -3,7 +3,7 @@ define(function(){
 	function main(env, opt, file){
 
 		var $set = {
-				bindClass: '.map',
+				bindSelector: '.map',
 				linkClass: 'map', 
 				debug: false
 			}
@@ -11,7 +11,7 @@ define(function(){
 		$.extend($set, opt);
 
 		var $this = $(env),
-			$bind = $this.find($set.bindClass);
+			$bind = $this.find($set.bindSelector);
 
 		$bind.each(function(i, d){
 			var $this = $(this),
