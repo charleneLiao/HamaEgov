@@ -24,9 +24,18 @@
 				<% li_length.times do |i| %>
 					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
-					<!-- <%= inner %> -->
-						<%= render partial: inner ,locals: set({ index: 1, header_text: (zh_lorem_words rand(7)+1), show_footer: false, show_mark: false }) %>
-					<!-- <%= inner %> -->
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#"><%= (zh_lorem_words rand(7)+1) %></a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- <%= inner %> -->
+								<%= render partial: inner ,locals: set({ index: 1, show_footer: false, show_mark: false }) %>
+							<!-- <%= inner %> -->
+
+							</div></div>
+						</div></div>
 					
 					</li>
 				<% end %>

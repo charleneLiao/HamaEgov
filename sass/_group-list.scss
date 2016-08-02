@@ -400,23 +400,18 @@
 									}
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
-									position: relative;
+								> [data-index][data-type] { //應該是 group nav
 
 									> .in {
-										@extend %reset;
 
 										> .hd {
-											@extend %reset;
-											display: block;
 
 											> .in {
-												@extend %reset;
+
 											}
 
 											h3, h4 {
-												@extend %reset;
+
 											}
 
 											span {
@@ -439,7 +434,6 @@
 										}
 
 										> .ct {
-											@extend %reset;
 											display: none;
 											position: absolute;
 											top: 100%;
@@ -462,28 +456,6 @@
 
 										> .ft {
 											display: none;
-										}
-									}
-								}
-
-								> .nav {
-
-									> .in {
-
-										> .ct {
-
-											> .in {
-
-												> ul {
-
-													> li {
-
-														@include js(false) {
-															width: 50% !important;
-														}
-													}
-												}
-											}
 										}
 									}
 								}
