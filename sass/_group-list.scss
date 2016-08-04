@@ -284,7 +284,6 @@
 		.base-header & {
 			$default-len: 6;
 			$max-len: 8;
-			$max-sec-floor: 4;
 
 			@include default-min-len(4, $default-len, $max-len);
 			position: relative;

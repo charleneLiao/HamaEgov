@@ -12,18 +12,18 @@ define(['getNode'], function(getNode){
 		var $env = $(env),
 			$li = getNode.getCtItem(env), //取 li
 			$child_node = $li.children('div'),
-			$child_node_header = getNode.getHd($child_node),
-			$a = $child_node_header.find('a'),
-			$child_node_content_in = getNode.getCtIn($child_node),
-			$child_node_content_in_length = $child_node_content_in.length || 1,
+			$child_node_hd = getNode.getHd($child_node),
+			$a = $child_node_hd.find('a'),
+			$child_node_ct_in = getNode.getCtIn($child_node),
+			$child_node_ct_in_length = $child_node_ct_in.length || 1,
 			$all_a = $env.find('a'),
 			$last_a = $all_a.eq(-1);
 
-		for( var i = 0; i < $child_node_content_in_length; i++ ) { //如果 child .in 沒有任何內容
-			var _this = $child_node_content_in.eq(i) || $child_node_content_in;
+		for( var i = 0; i < $child_node_ct_in_length; i++ ) { //如果 child .in 沒有任何內容
+			var _this = $child_node_ct_in.eq(i) || $child_node_ct_in;
 
-			if( !_this.children().length ) {
-				_this.parent().hide(); //就隱藏 .content
+			if( !_this.find('a').length ) {
+				_this.parent().remove(); //就刪除 .content
 			}
 		}
 

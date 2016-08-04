@@ -18,7 +18,7 @@ define(function(){
 
 		$a.each(function(i, d){
 			var $this = $(this),
-				_href = $this.attr('href'),
+				_href = $this.attr('href') || '',
 				_dot_i = _href.lastIndexOf('.'),
 				_slash = _href.lastIndexOf('/');
 

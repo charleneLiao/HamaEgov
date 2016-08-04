@@ -198,6 +198,21 @@
 		}
 
 		.base-header & {
+			$min-setLen: 2;
+			$max-setLen: 8;
+
+			@for $i from $min-setLen through $max-setLen { //算設定分割
+
+				&[data-setLen="#{$i}"] {
+
+					.ct {
+
+						li {
+							width: 100% / $i;
+						}
+					}
+				}
+			}
 
 			> .bg-drop-layout > .in, > .in {
 
@@ -1290,6 +1305,16 @@
 
 							&:before {
 								@include icon-font('print');
+							}
+						}
+					}
+
+					&.data {
+
+						a {
+
+							&:before {
+								@include icon-font('data_usage');
 							}
 						}
 					}
