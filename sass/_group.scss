@@ -80,31 +80,73 @@
 
 	&.nav {
 
-		> .bg-drop-layout > .in, > .in {
+		&.base-mobile {
 
-			.hd {
+			> .bg-drop-layout > .in, > .in {
 
-				> .in {
+				.hd {
 
+					> .in {
+
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
 				}
 
-				h3 {
+				> .ct {
 
-				}
+					> .in {
 
-				span {
-						
-				}
+					}
 
-				a {
+					[data-type][data-index] {
 
+						> .bg-drop-layout > .in, > .in {
+							margin: 0 !important;
+						}
+					}
 				}
 			}
+		}
 
-			> .ct {
+		&.base-wrapper {
 
-				> .in {
+			> .bg-drop-layout > .in, > .in {
 
+				.hd {
+
+					> .in {
+
+					}
+
+					h3 {
+
+					}
+
+					span {
+							
+					}
+
+					a {
+
+					}
+				}
+
+				> .ct {
+
+					> .in {
+
+					}
 				}
 			}
 		}

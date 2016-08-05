@@ -4,6 +4,7 @@ define(['getNode'], function(getNode){
 
 		var $set = {
 				activeClass: 'is-active',
+				singleClass: 'is-single',
 				debug: false
 			}
 
@@ -13,7 +14,18 @@ define(['getNode'], function(getNode){
 			$child_node_in = getNode.getIn($li.children('[data-type]'));
 
 		var $child_node_in = $child_node_in.filter(function(i) { //過濾 .content 裡沒有 a 的物件
-				return $(this).children('.ct').find('a').length;
+
+				var $this = $(this),
+					$child_len = $this.children('.ct').find('a').length;
+
+				if( !$child_len ) { //如果裡面沒東西
+
+					$this.closest('li').addClass($set.singleClass);
+
+					return false;
+				}else {
+					return true;
+				}
 			}),
 			$child_node_header = $child_node_in.children('.hd'),
 			$a = $child_node_header.find('a');

@@ -9,16 +9,24 @@
 		<div class="group info" data-index="2" data-type="<%= $row %>" data-child="2"><div class="in">
 			<div class="ct"><div class="in">
 
+			<!-- logo 主要標誌 -->
+				<%= render partial: "/erb/module/simple-text_major-logo", locals: set({ index: 1, header_text: "標誌" }) %>
+			<!-- logo 結束 -->
+
 			<!-- search 搜尋 -->
-				<%= render partial: "/erb/module/area-form_search", locals: set({ index: 1, header_text: "搜尋" }) %>
+				<%= render partial: "/erb/module/area-form_search", locals: set({ index: 2, header_text: "搜尋" }) %>
 			<!-- search 結束 -->
 
 			<!-- share 分享 -->
-				<%= render partial: "/erb/module/list-text_share", locals: set({ index: 2, header_text: "分享" }) %>
+				<%= render partial: "/erb/module/list-text_share", locals: set({ index: 3, header_text: "分享" }) %>
 			<!-- share 結束 -->
 
 			<!-- nav 選單 -->
-				<div class="group-list nav" data-index="3" data-type="<%= $list %>" data-child="3" data-func="{'majorNavMobile':{}}"><div class="in">
+				<%= render partial: "/erb/group/group-list_nav", locals: set({ index: 4, func_set: "{'majorNavMobile':{}}", header_text: "主選單", inner: "/erb/module/list-text_nav" }) %>
+			<!-- nav 結束 -->
+
+			<!-- nav 選單 -->
+				<div class="group-list nav" data-index="5" data-type="<%= $list %>" data-child="3" data-func="{'majorNavMobile':{}}"><div class="in">
 					<div class="hd"><div class="in">
 						<h3><span><a href="#">選單</a></span></h3>
 					</div></div>
@@ -26,32 +34,55 @@
 						<ul data-index="1" data-child="3">
 							<li data-index="1">
 
-							<!-- hot-key-word 熱門關鍵字 -->
-								<%= render partial: "/erb/module/list-text_hot-key-word", locals: set({ index: 1, header_text: "熱門關鍵字" }) %>
-							<!-- hot-key-word 結束 -->
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">熱門關鍵字</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- hot-key-word 熱門關鍵字 -->
+										<%= render partial: "/erb/module/list-text_hot-key-word", locals: set({ index: 1 }) %>
+									<!-- hot-key-word 結束 -->
+
+									</div></div>
+								</div></div>
 
 							</li>
 							<li data-index="2">
 
-							<!-- link 連結 -->
-								<%= render partial: "/erb/module/list-text_link", locals: set({ index: 1, header_text: "上方連結", show_footer: false, show_mark: false }) %>
-							<!-- link 結束 -->
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">上方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										<%= render partial: "/erb/module/list-text_link", locals: set({ index: 1, show_footer: false, show_mark: false }) %>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
 							
 							</li>
 							<li data-index="3">
 
-							<!-- link 連結 -->
-								<%= render partial: "/erb/module/list-text_link", locals: set({ index: 1, header_text: "下方連結", show_footer: false, show_mark: false }) %>
-							<!-- link 結束 -->
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">下方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										<%= render partial: "/erb/module/list-text_link", locals: set({ index: 1, show_footer: false, show_mark: false }) %>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
 
 							</li>
 						</ul>
 					</div></div>
 				</div></div>
-			<!-- nav 結束 -->
-
-			<!-- nav 選單 -->
-				<%= render partial: "/erb/group/group-list_nav", locals: set({ index: 4, func_set: "{'majorNavMobile':{}}", header_text: "主選單", inner: "/erb/module/list-text_nav" }) %>
 			<!-- nav 結束 -->
 
 			</div></div>

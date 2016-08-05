@@ -172,6 +172,10 @@
 
 							> li {
 
+								+ li {
+									border-top: $border;
+								}
+
 								&.is-active {
 
 									> .group.nav {
@@ -181,17 +185,33 @@
 											.hd {
 
 												a {
-													background-color: $minor-color !important;
-													color: $white !important;
-
-													&:before {
-														@include icon-font('keyboard_arrow_down');
-													}
+													background-color: $minor-color;
+													color: $white;
 												}
 											}
 
 											.ct {
 												display: block;
+											}
+										}
+									}
+								}
+
+								&.is-single {
+
+									> .group.nav {
+										position: relative;
+
+										> .in {
+
+											> .hd {
+
+												a {
+
+													&:before {
+														@include icon-font('keyboard_arrow_right');
+													}
+												}
 											}
 										}
 									}
@@ -220,10 +240,13 @@
 												display: block;
 												padding: $interval-m;
 												transition: $transition;
+												padding-right: 40px;
 
 												&:before {
-													@include icon-font('keyboard_arrow_right');
-													margin-right: $interval-xs;
+													@include icon-font('keyboard_arrow_down');
+													position: absolute;
+													top: 10px;
+													right: 10px;
 												}
 
 												&:hover {
@@ -234,6 +257,7 @@
 										}
 
 										> .ct {
+											display: none;
 
 											> .in {
 												padding: $interval-xs;

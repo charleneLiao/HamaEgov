@@ -251,93 +251,177 @@
 //主要標誌================================================================
 
 	&.major-logo {
-		float: left;
 
-		@include media('mobile') {
-			float: none;
-		}
+		.base-mobile & {
 
-		> .bg-drop-layout > .in, > .in {
-
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
-			h4 {
+			.hd {
+				display: none;
 
+				> .in {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			span {
+			.ct {
+
+				> .in {
 					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-
-			h1 {
-				@extend %reset;
-			}
-
-			span {
-				display: block;
-
-				@include media('mobile') {
-					padding: $interval-s;
 				}
-			}
 
-			a {
-				$pic: 'major_logo.png';
-				$pic-w: image-width($pic);
-				$pic-h: image-height($pic);
+				h1 {
+					@extend %reset;
+				}
 
-				@include bg-to-pic($pic, false);
-				@extend %bg-contain;
-				@extend %hide-text;
-				display: block;
-				width: $pic-w;
-				padding-bottom: ( $pic-h / $pic-w ) * 100%;
+				span {
+					display: block;
+				}
 
-				@include media('mobile') {
+				a {
+					$pic: 'major_logo.png';
+					$pic-w: image-width($pic);
+					$pic-h: image-height($pic);
+
+					@include bg-to-pic($pic, false);
+					@extend %bg-contain;
+					@extend %hide-text;
+					display: block;
 					width: 100%;
-					padding-bottom: $pic-h;
+					padding-bottom: ( $pic-h / $pic-w ) * 100%;
+				}
+			}
+
+			.ft {
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
 				}
 			}
 		}
 
-		.ft {
+		.base-header & {
+			float: left;
 
-			> .in {
+			@include media('mobile') {
+				float: none;
+				position: fixed;
+				top: 0;
+				right: 0;
+				left: 0;
+				z-index: 1;
+				background-color: $major-color;
+			}
+
+			> .bg-drop-layout > .in, > .in {
 
 			}
 
-			ul {
+			.hd {
+				display: none;
 
+				> .in {
+
+				}
+
+				h4 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			li {
+			.ct {
 
+				> .in {
+					
+				}
+
+				h1 {
+					@extend %reset;
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					$pic: 'major_logo.png';
+					$pic-w: image-width($pic);
+					$pic-h: image-height($pic);
+
+					@include bg-to-pic($pic, false);
+					@extend %bg-contain;
+					@extend %hide-text;
+					display: block;
+					width: $pic-w;
+					padding-bottom: ( $pic-h / $pic-w ) * 100%;
+
+					@include media('mobile') {
+						width: auto;
+						padding-bottom: $rwd-btn-size;
+						margin-left: $rwd-btn-size;
+					}
+				}
 			}
 
-			span {
+			.ft {
 
-			}
+				> .in {
 
-			a {
+				}
 
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}
@@ -794,6 +878,10 @@
 		.base-wrapper & {
 			@extend %area-page-no-header;
 
+			@include media('mobile') {
+				margin-top: $rwd-btn-size;
+			}
+
 			> .bg-drop-layout > .in, > .in {
 				@extend %article-extend;
 			}
@@ -1078,7 +1166,7 @@
 
 				a {
 					display: block;
-					width: 100vw;
+					width: $rwd-btn-size;
 					font-size: $font-size-xl;
 					background-color: deeper($major-color);
 					
