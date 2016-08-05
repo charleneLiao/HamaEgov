@@ -174,7 +174,7 @@
 
 								&.is-active {
 
-									> [data-index][data-type] {
+									> .group.nav {
 
 										> .in {
 
@@ -197,22 +197,19 @@
 									}
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
+								> .group.nav {
 									position: relative;
 
 									> .in {
-										@extend %reset;
 
 										> .hd {
-											@extend %reset;
 
 											> .in {
-												@extend %reset;
+
 											}
 
-											h3, h4 {
-												@extend %reset;
+											h3 {
+
 											}
 
 											span {
@@ -237,17 +234,11 @@
 										}
 
 										> .ct {
-											@extend %reset;
-											display: none;
 
 											> .in {
 												padding: $interval-xs;
 												background-color: $light;
 											}
-										}
-
-										> .ft {
-											display: none;
 										}
 									}
 								}
@@ -380,7 +371,7 @@
 								&.is-active, &:hover {
 									z-index: 1; //避免雙層選單覆蓋問題
 
-									> [data-index][data-type] {
+									> .group.nav {
 
 										> .in {
 
@@ -399,7 +390,7 @@
 									}
 								}
 
-								> [data-index][data-type] { //應該是 group nav
+								> .group.nav {
 
 									> .in {
 
@@ -409,7 +400,7 @@
 
 											}
 
-											h3, h4 {
+											h3 {
 
 											}
 
@@ -458,120 +449,7 @@
 										}
 									}
 								}
-
-								//自動選單寬度 & 移位功能================================================================
-
-								// @for $i from 1 through $max-len { //ul 的寬度
-
-								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
-
-								// 		> [data-index][data-type] {
-
-								// 			> .in {
-
-								// 				> .ct {
-								// 					width: 100% * $i;
-								// 				}
-								// 			}
-								// 		}
-								// 	}
-								// }
-
-								// @for $i from 1 through $max-len { //ul 的寬度
-
-								// 	&[data-width="#{$i}"] { //li 的寬度 < li 的最大數量
-
-								// 		> .nav {
-
-								// 			> .in {
-
-								// 				> .ct {
-
-								// 					> .in {
-
-								// 						> ul {
-
-								// 							> li {
-								// 								width: 100% / $i;
-								// 							}
-								// 						}
-								// 					}
-								// 				}
-								// 			}
-								// 		}
-								// 	}
-								// }
 							}
-
-							//自動選單寬度 & 移位功能================================================================
-
-							// @for $i from $default-len through $max-len { //group 的 child
-
-							// 	&[data-child="#{$i}"] {
-
-							// 		@for $j from 2 through $max-len { //li 的 index
-
-							// 			> [data-index="#{$j}"] { //li 的順序
-
-							// 				@for $k from 1 through $max-len { //li 的寬度
-
-							// 					&[data-width="#{$k}"] { //li 的寬度 < li 的最大數量
-
-							// 						$li-width: min($k, $i); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-							// 						$all-width: $j - 1 + $li-width;
-
-							// 						> [data-index][data-type] {
-
-							// 							> .in {
-
-							// 								> .ct {
-
-							// 									@if( $all-width > $i ) { //如果 li 數量大於 li 寬度
-							// 										left: 100% * ( $i - $all-width ); //就推回來
-							// 									}
-							// 								}
-							// 							}
-							// 						}
-							// 					}
-							// 				}
-							// 			}
-							// 		}
-							// 	}
-							// }
-
-							// @for $i from 1 through $default-len { //group 的 child
-
-							// 	&[data-child="#{$i}"] {
-
-							// 		@for $j from 2 through $max-len { //li 的 index
-
-							// 			> [data-index="#{$j}"] { //li 的順序
-
-							// 				@for $k from 1 through $max-len { //li 的寬度
-
-							// 					&[data-width="#{$k}"] { //如果 ul 的寬度設定 < li 的最大數量
-
-							// 						$li-width: min($k, $default-len); //li 的寬度 > group 的 child，li 的寬度 = group 的 child
-							// 						$all-width: $j - 1 + $li-width;
-
-							// 						> [data-index][data-type] {
-
-							// 							> .in {
-
-							// 								> .ct {
-
-							// 									@if( $all-width > $default-len ) { //如果 li 數量大於 li 寬度
-							// 										left: 100% * ( $default-len - $all-width ); //就推回來
-							// 									}
-							// 								}
-							// 							}
-							// 						}
-							// 					}
-							// 				}
-							// 			}
-							// 		}
-							// 	}
-							// }
 						}
 					}
 				}
@@ -655,31 +533,20 @@
 									clear: left;
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
+								> .group.nav {
 									padding: $interval-m $interval-xs;
 
 									> .in {
-										@extend %reset;
 
 										> .hd {
-											@extend %reset;
 											display: block;
 
 											> .in {
-												@extend %reset;
+
 											}
 
-											h3, h4 {
-												@extend %reset;
+											h3 {
 
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
 											}
 
 											span {
@@ -787,7 +654,7 @@
 
 								&.is-active {
 
-									> [data-index][data-type] {
+									> .group.nav {
 
 										> .in {
 
@@ -810,30 +677,19 @@
 									}
 								}
 
-								> [data-index][data-type] {
-									@extend %reset;
+								> .group.nav {
 									position: relative;
 
 									> .in {
-										@extend %reset;
 
 										> .hd {
-											@extend %reset;
 
 											> .in {
 
 											}
 
-											h1, h2, h3, h4, h5, h6 {
-												@extend %reset;
+											h3 {
 
-												&:before {
-													display: none;
-												}
-
-												&:after {
-													display: none;
-												}
 											}
 
 											span {
@@ -941,7 +797,7 @@
 									margin-top: $interval-s;
 								}
 
-								> [data-index][data-type] {
+								> .group.nav {
 									margin: 0;
 
 									> .in {
