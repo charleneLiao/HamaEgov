@@ -83,7 +83,8 @@
         "Type": 3,
         "Class": "info",
         "func": "",
-        "Sub": [{
+        "Sub": [
+          {
             "GroupType": "FixedModuleString",
             "Name": "TopLog"
           },
@@ -162,6 +163,30 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "BaseName": "page-header",
+    "Sub": [
+      {
+        "GroupType": "WebArchive_Header",
+        "Name": "FooterLink"
+      },{
+        "GroupType": "WebArchive_Breadcrumb",
+        "Name": "FooterLink"
+      },{
+        "GroupType": "WebArchive_OpenData",
+        "Name": "FooterLink"
+      },{
+        "GroupType": "WebArchive_NextNodes",
+        "Name": "FooterLink"
+      },{
+        "GroupType": "WebArchive_TTS",
+        "Name": "FooterLink"
+      },{
+        "GroupType": "WebArchive_TTS",
+        "Name": "WebArchive_TopDesc"
       }
     ]
   }
