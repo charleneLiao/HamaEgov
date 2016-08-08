@@ -156,11 +156,13 @@
 
 				li {
 
+					+ li {
+						border-top: $border;
+					}
 				}
 
 				span {
 					display: block;
-					border-bottom: $border;
 				}
 
 				a {
@@ -1799,12 +1801,11 @@
 				}
 
 				li {
-
+					border-top: $border;
 				}
 
 				span {
 					display: block;
-					border-bottom: $border;
 				}
 
 				a {
@@ -2347,11 +2348,13 @@
 
 				li {
 
+					+ li {
+						border-top: $border;
+					}
 				}
 
 				span {
 					display: block;
-					border-bottom: $border;
 				}
 
 				a {

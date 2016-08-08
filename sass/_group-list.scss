@@ -200,7 +200,6 @@
 								&.is-single {
 
 									> .group.nav {
-										position: relative;
 
 										> .in {
 
@@ -212,56 +211,6 @@
 														@include icon-font('keyboard_arrow_right');
 													}
 												}
-											}
-										}
-									}
-								}
-
-								> .group.nav {
-									position: relative;
-
-									> .in {
-
-										> .hd {
-
-											> .in {
-
-											}
-
-											h3 {
-
-											}
-
-											span {
-												display: block;
-											}
-
-											a {
-												display: block;
-												padding: $interval-m;
-												transition: $transition;
-												padding-right: 40px;
-
-												&:before {
-													@include icon-font('keyboard_arrow_down');
-													position: absolute;
-													top: 10px;
-													right: 10px;
-												}
-
-												&:hover {
-													background-color: $light;
-													color: currentColor;
-												}
-											}
-										}
-
-										> .ct {
-											display: none;
-
-											> .in {
-												padding: $interval-xs;
-												background-color: $light;
 											}
 										}
 									}
@@ -413,66 +362,6 @@
 										}
 									}
 								}
-
-								> .group.nav {
-
-									> .in {
-
-										> .hd {
-
-											> .in {
-
-											}
-
-											h3 {
-
-											}
-
-											span {
-												display: block;
-											}
-
-											a {
-												@extend %ellipsis;
-												line-height: $interval-xl;
-												display: block;
-												padding: $interval-s;
-												text-align: center;
-												transition: $transition;
-
-												@include js(false) {
-													text-align: left;
-													font-weight: $font-weight-b;
-												}
-											}
-										}
-
-										> .ct {
-											display: none;
-											position: absolute;
-											top: 100%;
-											width: 100%;
-											left: 0;
-
-											@include js(false) {
-												display: block;
-												position: static;
-												width: 100% !important;
-											}
-
-											> .in {
-												padding: $interval-xs;
-												background-color: $white;
-												border: $border;
-												box-shadow: $box-shadow;
-											}
-										}
-
-										> .ft {
-											display: none;
-										}
-									}
-								}
 							}
 						}
 					}
@@ -553,52 +442,9 @@
 							}
 
 							> li {
+
 								&:nth-child(#{$max-len - 1}n+1) {
 									clear: left;
-								}
-
-								> .group.nav {
-									padding: $interval-m $interval-xs;
-
-									> .in {
-
-										> .hd {
-											display: block;
-
-											> .in {
-
-											}
-
-											h3 {
-
-											}
-
-											span {
-												display: block;
-											}
-
-											a {
-												@extend %ellipsis;
-												display: block;
-												padding: $interval-s $interval-m;
-												margin-bottom: $interval-s;
-												border-bottom: $border;
-												text-align: center;
-												font-size: $font-size-l;
-												color: $body-font-color;
-											}
-										}
-
-										> .ct {
-											@extend %reset;
-											display: block !important;
-											position: static;
-										}
-
-										> .ft {
-											display: none;
-										}	
-									}
 								}
 							}
 						}
@@ -700,61 +546,6 @@
 										}
 									}
 								}
-
-								> .group.nav {
-									position: relative;
-
-									> .in {
-
-										> .hd {
-
-											> .in {
-
-											}
-
-											h3 {
-
-											}
-
-											span {
-												display: block;
-											}
-
-											a {
-												display: block;
-												padding: $interval-m;
-												transition: $transition;
-
-												&:before {
-													@include icon-font('keyboard_arrow_right');
-													margin-right: $interval-xs;
-												}
-
-												&:hover {
-													background-color: $light;
-													color: currentColor;
-												}
-											}
-										}
-
-										> .ct {
-											display: none;
-
-											@include js(false) {
-												display: block;
-											}
-
-											> .in {
-												padding: $interval-xs;
-												background-color: $light;
-											}
-										}
-
-										> .ft {
-											display: none;
-										}
-									}
-								}
 							}
 						}
 					}
@@ -819,21 +610,6 @@
 
 								+ li {
 									margin-top: $interval-s;
-								}
-
-								> .group.nav {
-									margin: 0;
-
-									> .in {
-
-										> .hd {
-											display: block;
-										}
-
-										> .ct {
-											padding: $interval-s 0 0 $interval-xl;
-										}
-									}
 								}
 							}
 						}
