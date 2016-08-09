@@ -20,10 +20,12 @@ define(function(){
 			var $this = $(this),
 				$href = $($this.attr('href'));
 
+			var $fixed_h = $('.is-fixed').outerHeight() || 0; //浮動高度
+
 			if( !$href.length ) { $href = $($set.bindNode) }
 
 			$env.stop().animate({
-				scrollTop : $href.offset().top
+				scrollTop : ( $href.offset().top ) - $fixed_h
 			}, $set.speed );
 		});
 

@@ -28,7 +28,8 @@
               },
               {
                 "GroupType": "FixedModuleString",
-                "Name": "FontLevel"
+                "Name": "FontLevel",
+                "func": "{'fontSize':{'defaultItem': 'medium'}}"
               },
               {
                 "GroupType": "FixedModuleString",
@@ -36,7 +37,8 @@
               },
               {
                 "GroupType": "FixedModuleString",
-                "Name": "Search"
+                "Name": "Search",
+                "func": "{'showDataList':{}}"
               }
             ]
           }
@@ -44,7 +46,8 @@
       },
       {
         "GroupType": "FixedModuleString",
-        "Name": "Menu"
+        "Name": "MagaMenu",
+        "func": "{'hud':{},'majorNavHorizontal':{},'setNavWidth':{}}"
       }
     ]
   },
@@ -98,7 +101,8 @@
           },
           {
             "GroupType": "FixedModuleString",
-            "Name": "MobileMenu"
+            "Name": "Menu",
+            "func": "{'majorNavMobile':{}}"
           }
         ]
       }
@@ -122,7 +126,7 @@
       },
       {
         "GroupType": "FixedModuleString",
-        "Name": "Footer_Fat_Footer"
+        "Name": "Menu"
       },
       {
         "GroupType": "Group",
@@ -158,7 +162,8 @@
               },
               {
                 "GroupType": "FixedModuleString",
-                "Name": "Footer_Info"
+                "Name": "Footer_Info",
+                "func": "{'linkToMap':{'bindClass':'.map','linkClass':'is-map'}}"
               }
             ]
           }
@@ -170,22 +175,22 @@
     "BaseName": "page-header",
     "Sub": [
       {
-        "GroupType": "WebArchive_Header",
-        "Name": "FooterLink"
+        "GroupType": "FixedModuleString",
+        "Name": "WebArchive_Header"
       },{
-        "GroupType": "WebArchive_Breadcrumb",
-        "Name": "FooterLink"
+        "GroupType": "FixedModuleString",
+        "Name": "WebArchive_Breadcrumb"
       },{
-        "GroupType": "WebArchive_OpenData",
-        "Name": "FooterLink"
+        "GroupType": "FixedModuleString",
+        "Name": "WebArchive_OpenData"
       },{
-        "GroupType": "WebArchive_NextNodes",
-        "Name": "FooterLink"
+        "GroupType": "FixedModuleString",
+        "Name": "WebArchive_NextNodes"
       },{
-        "GroupType": "WebArchive_TTS",
-        "Name": "FooterLink"
+        "GroupType": "FixedModuleString",
+        "Name": "WebArchive_TTS"
       },{
-        "GroupType": "WebArchive_TTS",
+        "GroupType": "FixedModuleString",
         "Name": "WebArchive_TopDesc"
       }
     ]
