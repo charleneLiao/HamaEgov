@@ -10411,6 +10411,10 @@ th {
   font-size: inherit;
   color: inherit;
 }
+/* line 340, ../sass/_area-editor.scss */
+.area-editor.cp .hd h4 {
+  display: none;
+}
 
 /* line 80, ../sass/_area-customize.scss */
 .area-customize.calender .hd h4:before {

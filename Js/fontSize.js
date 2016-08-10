@@ -4,6 +4,7 @@ define(['getNode'], function(getNode){
 
 		var $set = {
 				defaultItem: 'medium',
+				bindNode: '.sys-root',
 				debug: false
 			}
 
@@ -12,7 +13,7 @@ define(['getNode'], function(getNode){
 		var $li = getNode.getCtItem(env), //取 li
 			$li_length = $li.length,
 			$a = $li.find('a'), //取按鈕
-			$root = $('.sys-root'); // root，class name 要放它身上
+			$root = $($set.bindNode); // root，class name 要放它身上
 
 		var _eventNmae = file, //事件名稱
 			_prefix = 'font-size-', //前輟
