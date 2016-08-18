@@ -4,6 +4,7 @@ define(function(){
 
 		var $set = {
 				externalClass: 'link', //外部連結的 class
+				domains: [],
 				debug: false
 			}
 
@@ -14,7 +15,11 @@ define(function(){
 				return !($(this).find('img').length)
 			});
 
-		var _doname = window.location.hostname;
+		var $domains = $set.domains;
+
+		$domains.push(window.location.hostname);
+
+		var $domains_l = $domains.length;
 
 		$a.each(function(i, d){
 			var $this = $(this),
@@ -22,10 +27,14 @@ define(function(){
 				_dot_i = _href.lastIndexOf('.'),
 				_slash = _href.lastIndexOf('/');
 
-			var _has_http = !!(_href.match(/http[s]?\:/)),
-				_is_local = (_href.indexOf(_doname) != -1); //如果是本地
+			var _has_http = !!(_href.match(/^https?\:\/\//)),
+				_is_local = -1; //如果是本地落指定檔案
 
-			if( _has_http && !_is_local ) { //如果沒有 http 又不是本地 就是外部連結
+			for( var i = 0; i < $domains_l; i++) {
+				_is_local = Math.max(_is_local, _href.indexOf($domains[i])); //反正最小就 -1，其他就是外部
+			}
+
+			if( _has_http && ( _is_local === -1 ) ) { //如果有 http(s) 又不是本地 就是外部連結
 				$this.addClass($set.externalClass); //加入外部連結 class
 			}else if( _dot_i > _slash ) { //最後是 .*
 				$this.addClass(_href.substr(_href.lastIndexOf('.') + 1, _href.length)); //加入副檔名 class
