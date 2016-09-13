@@ -36,7 +36,8 @@ define(function(){
 			console.log('===============================');
 		}
 
-		var _attrName = 'data-func';
+		var _attrName = 'data-func',
+			new_attrName = 'data-funclog';
 
 		var $nodes = document.querySelectorAll('['+ _attrName +']'),
 			$nodes_length = $nodes.length;
@@ -44,10 +45,11 @@ define(function(){
 		for( var i = 0; i < $nodes_length; i++ ) { //雖然想用 Array.prototype.map.call(dom.querySelectorAll('[data-func]'), function(node){})，但 IE8 不支持
 
 			var $env = $nodes[i], //存節點
-				_func = ($env.getAttribute(_attrName)).replace(/\'/g,'"'), //存 data-func 的字串，並反轉雙引號(") 及單引號(')
-				$func = JSON.parse(_func); //轉成物件
+				_func = $env.getAttribute(_attrName),
+				$func = JSON.parse(_func.replace(/\'/g,'"')); //轉成物件
 
 			$env.removeAttribute(_attrName);
+			$env.setAttribute(new_attrName, _func);
 
 			for( var _file in $func ) { //取 function name 與設定參數
 				var $opt = $func[_file];
