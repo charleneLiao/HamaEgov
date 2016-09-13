@@ -1291,6 +1291,16 @@
 						}
 					}
 
+					&.bopomofo {
+
+						a {
+
+							&:before {
+								@include icon-font('font_download');
+							}
+						}
+					}
+
 					&.edit {
 
 						a {

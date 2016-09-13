@@ -185,6 +185,9 @@
         "Name": "WebArchive_OpenData"
       },{
         "GroupType": "FixedModuleString",
+        "Name": "Tools"
+      },{
+        "GroupType": "FixedModuleString",
         "Name": "WebArchive_NextNodes"
       },{
         "GroupType": "FixedModuleString",
