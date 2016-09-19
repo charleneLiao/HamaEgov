@@ -627,16 +627,48 @@
 			> .in {
 				text-align: center;
 				padding: $interval-m 0;
-
-				&:after {
-					content: '天';
-					font-size: $font-size-s;
-				}
 			}
 
 			span {
-				font-size: 5em;
+				font-size: $font-size-xl;
 				color: $title-color;
+
+				&.d {
+					
+					+ .mark {
+
+					}
+				}
+
+				&.h {
+					
+					+ .mark {
+
+					}
+				}
+
+				&.m {
+					
+					+ .mark {
+
+					}
+				}
+
+				&.s {
+					
+					+ .mark {
+
+					}
+				}
+
+				&.ms {
+					display: none;
+				}
+			}
+
+			/*i*/.mark {
+				margin: 0 $interval-m 0 $interval-xs;
+				font-size: $font-size-xs;
 			}
 		}
 
@@ -649,7 +681,19 @@
 
 			}
 
+			ul {
+
+			}
+
+			li {
+
+			}
+
 			span {
+
+			}
+
+			a {
 
 			}
 		}
