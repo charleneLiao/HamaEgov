@@ -44,6 +44,22 @@ define(['getNode'], function(getNode){
 			slider(_index);
 		});
 
+		$env.touchwipe({
+			wipeLeft: function() {
+				_index = (_index + _right + $content_li_length) % $content_li_length; //算出第幾個要被撥放
+				slider(_index);
+				clearTimeout(timer);
+			},
+			wipeRight: function() {
+				_index = (_index + _left + $content_li_length) % $content_li_length; //算出第幾個要被撥放
+				slider(_index);
+				clearTimeout(timer);
+			},
+			min_move_x: 20,
+			min_move_y: 20,
+			preventDefaultEvents: false
+		});
+
 		function slider(_index) {
 			var $slider_node = $content_li.eq(_index); //播放的節點
 

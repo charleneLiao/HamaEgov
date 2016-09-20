@@ -46,6 +46,20 @@ define(['getNode'], function(getNode){
 			slider(left);
 		});
 
+		$env.touchwipe({
+			wipeLeft: function() {
+				slider(right);
+				clearTimeout(timer);
+			},
+			wipeRight: function() {
+				slider(left);
+				clearTimeout(timer);
+			},
+			min_move_x: 20,
+			min_move_y: 20,
+			preventDefaultEvents: false
+		});
+
 		function slider(_away){ //輪播的方法
 
 			if( compareWidth() ) {
