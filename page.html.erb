@@ -71,7 +71,7 @@
 	<!-- file-download-multiple 結束 -->
 
 	<!-- pic-download 圖片下載 -->
-		<%= render partial: "/erb/module/list-pic_pic-download", locals: set({ index: 13, header_text: "圖片、影片下載" }) %>
+		<%= render partial: "/erb/module/list-pic_pic-download", locals: set({ index: 13, func_set: "{'gallery':{}}", header_text: "圖片、影片下載" }) %>
 	<!-- pic-download 結束 -->
 
 <!-- //登入================================================================ -->
@@ -221,7 +221,7 @@
 	<!-- default 結束 -->
 
 	<!-- page-list 內頁圖片列表 -->
-		<%= render partial: "/erb/module/list-pic_page-list", locals: set({ index: 41, header_text: "內頁圖片列表" }) %>
+		<%= render partial: "/erb/module/list-pic_page-list", locals: set({ index: 41, func_set: "{'gallery':{}}", header_text: "內頁圖片列表" }) %>
 	<!-- page-list 結束 -->
 
 	<!-- page-list-pic 內頁圖片列表群組 -->
@@ -229,11 +229,11 @@
 	<!-- page-list-pic 結束 -->
 
 	<!-- page-block 內頁區塊 -->
-		<%= render partial: "/erb/module/list-pic_page-block", locals: set({ index: 43, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "內頁圖片區塊列表" }) %>
+		<%= render partial: "/erb/module/list-pic_page-block", locals: set({ index: 43, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300},'gallery':{}}", header_text: "內頁圖片區塊列表" }) %>
 	<!-- page-block 結束 -->
 
 	<!--marquee 跑馬燈輪播 -->
-		<%= render partial: "/erb/module/list-pic_page-marquee", locals: set({ index: 44, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈" }) %>
+		<%= render partial: "/erb/module/list-pic_page-marquee", locals: set({ index: 44, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈" }) %>
 	<!-- marquee 結束 -->
 
 <!-- //內頁圖片敘述================================================================ -->

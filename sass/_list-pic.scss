@@ -829,10 +829,10 @@
 					}
 				}
 
-				&.is-vedio {
+				&.is-video {
 					
 					a {
-						@include bg-to-pic('icon-pic/icon-w-vedio.png', false);
+						@include bg-to-pic('icon-pic/icon-w-video.png', false);
 						background-position: top $interval-s left $interval-s;
 					}
 				}
