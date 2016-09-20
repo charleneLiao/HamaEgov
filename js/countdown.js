@@ -2,6 +2,24 @@ define(function(){
 	
 	function main(env, opt, file){
 
+		var $lang = { //語系
+
+			'en': {
+				'day':'d',
+				'hour': 'h',
+				'minute': 'm',
+				'second': 's',
+				'arrivedMessage': 'It\'s now!'
+			},
+			'tw': {
+				'day': '日',
+				'hour': '時',
+				'minute': '分',
+				'second': '秒',
+				'arrivedMessage': '就是現在!'
+			}
+		}
+
 		var $set = {
 				debug: false,
 				year: 2020,
@@ -11,10 +29,15 @@ define(function(){
 				minute: 0,
 				second: 0,
 				delayTime: 1000, //ms
-				arrivedMessage: 'now!'
+				arrivedMessage: null,
+				lang: 'en'
 			}
 
 		$.extend($set, opt);
+
+		if( $lang[$set.lang] === undefined ) {
+			$set.lang = 'en';
+		}
 
 		var $this = $(env),
 			$ct = $this.find('.ct'),
@@ -28,7 +51,7 @@ define(function(){
 			var _new = new Date();
 
 			if( _new > _target_moment ) {
-				printToclient($set.arrivedMessage);
+				printToclient($set.arrivedMessage || $lang[$set.lang].arrivedMessage);
 
 				return false;
 			}
@@ -52,7 +75,7 @@ define(function(){
 				_s = Math.floor((_ms % _minute) / _second),
 				_ms = _ms % _second;
 
-			return '<span class="d">'+ _d +'</span><i class="mark">d</i><span class="h">'+ _h +'</span><i class="mark">h</i><span class="m">'+ _m +'</span><i class="mark">m</i><span class="s">'+ _s +'</span><i class="mark">s</i><span class="ms">'+ _ms +'</span>';
+			return '<span class="d">'+ _d +'</span><i class="mark">'+ $lang[$set.lang].day +'</i><span class="h">'+ _h +'</span><i class="mark">'+ $lang[$set.lang].hour +'</i><span class="m">'+ _m +'</span><i class="mark">'+ $lang[$set.lang].minute +'</i><span class="s">'+ _s +'</span><i class="mark">'+ $lang[$set.lang].second +'</i><span class="ms">'+ _ms +'</span>';
 		}
 
 		function printToclient( _text ){

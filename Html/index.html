@@ -21,19 +21,22 @@
 	<!-- Script 程式 -->
 		
 			<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script> 
 <script src="/js/jquery.cookie.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script src="/js/flowplayer-5.4.3/flowplayer.min.js"></script>
 <script src="/js/Chart/highcharts.js"></script> 
-<script src="/js/Chart/map.src.js"></script> 
+<script src="/js/Chart/map.src.js"></script>
 <script src="/js/Chart/highcharts_theme.js"></script> 
-<script src="/js/Chart/tw-all.js"></script> 
+<script src="/js/Chart/tw-all.js"></script>
+<script src="/js/airdatepicker/datepicker.min.js"></script> 
+<script src="/js/airdatepicker/datepicker.en.js"></script> 
+<script src="/js/lightGallery/js/lightgallery-all.min.js"></script> 
 		
 	<!-- Script 結束 -->
 
 	</head>
-	<body data-js="false" data-admin="false">
-	<form action="#" method="POST">
+	<body data-js="false" data-admin="false"><form action="#" method="POST">
 
 	
 		<script>document.body.setAttribute("data-js", "true");</script>
@@ -41,14 +44,15 @@
 
 	<!-- Css 樣式表 -->
 		<link rel="stylesheet" media="screen" href="/css/global.css"> <!-- 全域 -->
-<link rel="stylesheet" media="screen" href="/css/page.css"> <!-- 內頁覆蓋 -->
 <link rel="stylesheet" media="print" href="/css/print.css"> <!-- 列印 -->
-<link rel="stylesheet" media="print" href="/js/flowplayer-5.4.3/skin/functional.css"> <!-- flowplayer -->
-<link rel="stylesheet" media="print" href="/js/Chart/highcharts.css"> <!-- Chart -->
+<link rel="stylesheet" media="screen" href="/js/flowplayer-5.4.3/skin/functional.css"> <!-- flowplayer -->
+<link rel="stylesheet" media="screen" href="/js/Chart/highcharts.css"> <!-- Chart -->
+<link rel="stylesheet" media="screen" href="/js/airdatepicker/datepicker.min.css"> <!-- Air Datepicker -->
+<link rel="stylesheet" media="screen" href="/js/lightGallery/css/lightgallery.min.css"> <!-- lightGallery -->
 	<!-- Css 結束 -->
 
 	<!-- sys-root 拖曳根節點 -->
-		<div class="group sys-root" id="sys-root" data-type="3" data-child="3"><div class="in">
+		<div class="group sys-root" id="sys-root" data-type="3" data-child="3" data-func="{'datePicker':{}}"><div class="in">
 			<div class="ct"><div class="in">
 
 			<!-- base-mobile 行動載具-->
@@ -72,8 +76,21 @@
 		<div class="group info" data-index="2" data-type="3" data-child="2"><div class="in">
 			<div class="ct"><div class="in">
 
+			<!-- logo 主要標誌 -->
+				<div class="simple-text major-logo " data-index="1" data-type="0"  ><div class="in">
+	
+		<div class="hd"><div class="in">
+			<h4><span><a href="#">標誌</a></span></h4>
+		</div></div>
+	
+	<div class="ct"><div class="in">
+		<h1><span><a href="#">哈瑪星科技股份有限公司</a></span></h1>
+	</div></div>
+</div></div>
+			<!-- logo 結束 -->
+
 			<!-- search 搜尋 -->
-				<div class="area-form search " data-index="1" data-type="0"  ><div class="in">
+				<div class="area-form search " data-index="2" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">搜尋</a></span></h4>
@@ -105,7 +122,7 @@
 			<!-- search 結束 -->
 
 			<!-- share 分享 -->
-				<div class="list-text share " data-index="2" data-type="0"  ><div class="in">
+				<div class="list-text share " data-index="3" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">分享</a></span></h4>
@@ -124,104 +141,9 @@
 			<!-- share 結束 -->
 
 			<!-- nav 選單 -->
-				<div class="group-list nav" data-index="3" data-type="4" data-child="3" data-func="{'majorNavMobile':{}}"><div class="in">
-					<div class="hd"><div class="in">
-						<h3><span><a href="#">選單</a></span></h3>
-					</div></div>
-					<div class="ct"><div class="in">
-						<ul data-index="1" data-child="3">
-							<li data-index="1">
-
-							<!-- hot-key-word 熱門關鍵字 -->
-								
-
-<div class="list-text hot-key-word " data-index="1" data-type="0"  ><div class="in">
-	
-		<div class="hd"><div class="in">
-			<h4><span><a href="#">熱門關鍵字</a></span></h4>
-		</div></div>
-	
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="2">
-
-			
-				<li data-index="1"><span><a href="#">何揪因在風</a></span></li>
-			
-				<li data-index="2"><span><a href="#">上就是一</a></span></li>
-			
-		</ul>
-	</div></div>
-</div></div>
-							<!-- hot-key-word 結束 -->
-
-							</li>
-							<li data-index="2">
-
-							<!-- link 連結 -->
-								
-
-<div class="list-text link " data-index="1" data-type="0"  ><div class="in">
-	
-		<div class="hd"><div class="in">
-			<h4><span><a href="#">上方連結</a></span></h4>
-		</div></div>
-	
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="2">
-			
-			
-				<li data-index="1"><span><a href="#">邊已我有-</a></span></li>
-			
-				<li data-index="2"><span><a href="#">論心捨罵對何這半</a></span></li>
-			
-		</ul>
-	</div></div>
-	
-	
-</div></div>
-							<!-- link 結束 -->
-							
-							</li>
-							<li data-index="3">
-
-							<!-- link 連結 -->
-								
-
-<div class="list-text link " data-index="1" data-type="0"  ><div class="in">
-	
-		<div class="hd"><div class="in">
-			<h4><span><a href="#">下方連結</a></span></h4>
-		</div></div>
-	
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="4">
-			
-			
-				<li data-index="1"><span><a href="#">沒麵包到</a></span></li>
-			
-				<li data-index="2"><span><a href="#">繼著們易</a></span></li>
-			
-				<li data-index="3"><span><a href="#">是握顆</a></span></li>
-			
-				<li data-index="4"><span><a href="#">葡倆有老</a></span></li>
-			
-		</ul>
-	</div></div>
-	
-	
-</div></div>
-							<!-- link 結束 -->
-
-							</li>
-						</ul>
-					</div></div>
-				</div></div>
-			<!-- nav 結束 -->
-
-			<!-- nav 選單 -->
 				
 
-<div class="group-list nav " data-index="4" data-type="4" data-child="2"  data-func="{'majorNavMobile':{}}" ><div class="in">
+<div class="group-list nav " data-index="4" data-type="4" data-child="8"  data-func="{'majorNavMobile':{}}" ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h3><span><a href="#">主選單</a></span></h3>
@@ -230,79 +152,282 @@
 
 	
 		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="8">
+
+				
+					<li data-index="1" data-width="4">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">喝有膚后啊</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="7">
+
+				
+					<li data-index="1"><span><a href="#">咖曾暫本在明</a></span></li>
+				
+					<li data-index="2"><span><a href="#">如的宵太啊怎</a></span></li>
+				
+					<li data-index="3"><span><a href="#">來就裡天去何了</a></span></li>
+				
+					<li data-index="4"><span><a href="#">一把子運有被</a></span></li>
+				
+					<li data-index="5"><span><a href="#">過是在議雙頓</a></span></li>
+				
+					<li data-index="6"><span><a href="#">月來真的繞纔無話</a></span></li>
+				
+					<li data-index="7"><span><a href="#">不金的泡好的台勢</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="2" data-width="5">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">和上</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="1">
+
+				
+					<li data-index="1"><span><a href="#">人聲是腕趕和氣</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="3" data-width="7">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">疑</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="4">
+
+				
+					<li data-index="1"><span><a href="#">他去就得有</a></span></li>
+				
+					<li data-index="2"><span><a href="#">人想啡街頭一繚</a></span></li>
+				
+					<li data-index="3"><span><a href="#">個也給餃在稍是年</a></span></li>
+				
+					<li data-index="4"><span><a href="#">明啦也.是上結</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="4" data-width="6">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">人感</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="7">
+
+				
+					<li data-index="1"><span><a href="#">失餃年哪費</a></span></li>
+				
+					<li data-index="2"><span><a href="#">疲雙兄行前這</a></span></li>
+				
+					<li data-index="3"><span><a href="#">咖失憑目</a></span></li>
+				
+					<li data-index="4"><span><a href="#">過的哪死-</a></span></li>
+				
+					<li data-index="5"><span><a href="#">們戰拚表似嗎怯</a></span></li>
+				
+					<li data-index="6"><span><a href="#">個一非解有-整射</a></span></li>
+				
+					<li data-index="7"><span><a href="#">想他南時容啦</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="5" data-width="8">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">談雙</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="1">
+
+				
+					<li data-index="1"><span><a href="#">奇部疲圓人</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="6" data-width="2">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">人</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="7" data-width="4">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">班啊熱上爭們-</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="8">
+
+				
+					<li data-index="1"><span><a href="#">一片了樣中死進</a></span></li>
+				
+					<li data-index="2"><span><a href="#">倒區議不地雙n</a></span></li>
+				
+					<li data-index="3"><span><a href="#">力遠喜拚</a></span></li>
+				
+					<li data-index="4"><span><a href="#">不他害下容不</a></span></li>
+				
+					<li data-index="5"><span><a href="#">萄身因到說輕台</a></span></li>
+				
+					<li data-index="6"><span><a href="#">媽走處班</a></span></li>
+				
+					<li data-index="7"><span><a href="#">們說無不人市</a></span></li>
+				
+					<li data-index="8"><span><a href="#">外喝放跑早</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="8" data-width="6">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">說似樣是</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
 			<ul data-index="1" data-child="2">
 
 				
-					<li data-index="1" data-width="2">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">澎又聲星哪到伴</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="9">
-
+					<li data-index="1"><span><a href="#">惚身真該恩好花神</a></span></li>
 				
-					<li data-index="1"><span><a href="#">在一回快年</a></span></li>
-				
-					<li data-index="2"><span><a href="#">在靜去追啦下了</a></span></li>
-				
-					<li data-index="3"><span><a href="#">老響啦同邊忙</a></span></li>
-				
-					<li data-index="4"><span><a href="#">啦-力又最了老皮</a></span></li>
-				
-					<li data-index="5"><span><a href="#">就什這混賴就一</a></span></li>
-				
-					<li data-index="6"><span><a href="#">狺啡有三叩前輸</a></span></li>
-				
-					<li data-index="7"><span><a href="#">伴的再過平</a></span></li>
-				
-					<li data-index="8"><span><a href="#">真孩沒萄的</a></span></li>
-				
-					<li data-index="9"><span><a href="#">裡今謹然煮拚決記</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="2" data-width="2">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">啦出人回起</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="3">
-
-				
-					<li data-index="1"><span><a href="#">去預前也</a></span></li>
-				
-					<li data-index="2"><span><a href="#">憑揪揪著厭</a></span></li>
-				
-					<li data-index="3"><span><a href="#">計吃進一她戒因裡</a></span></li>
+					<li data-index="2"><span><a href="#">就相整暗不東婦家</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -319,6 +444,118 @@
 		</div></div>
 	
 </div></div>
+			<!-- nav 結束 -->
+
+			<!-- nav 選單 -->
+				<div class="group-list nav" data-index="5" data-type="4" data-child="3" data-func="{'majorNavMobile':{}}"><div class="in">
+					<div class="hd"><div class="in">
+						<h3><span><a href="#">選單</a></span></h3>
+					</div></div>
+					<div class="ct"><div class="in">
+						<ul data-index="1" data-child="3">
+							<li data-index="1">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">熱門關鍵字</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- hot-key-word 熱門關鍵字 -->
+										
+
+<div class="list-text hot-key-word " data-index="1" data-type="0"  ><div class="in">
+	
+	<div class="ct"><div class="in">
+		<ul data-index="1" data-child="2">
+
+			
+				<li data-index="1"><span><a href="#">了子壺</a></span></li>
+			
+				<li data-index="2"><span><a href="#">什幾兩</a></span></li>
+			
+		</ul>
+	</div></div>
+</div></div>
+									<!-- hot-key-word 結束 -->
+
+									</div></div>
+								</div></div>
+
+							</li>
+							<li data-index="2">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">上方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										
+
+<div class="list-text link " data-index="1" data-type="0"  ><div class="in">
+	
+	<div class="ct"><div class="in">
+		<ul data-index="1" data-child="5">
+			
+			
+				<li data-index="1"><span><a href="#">目再得0尾</a></span></li>
+			
+				<li data-index="2"><span><a href="#">啊啦時夜看</a></span></li>
+			
+				<li data-index="3"><span><a href="#">不是疲現的就</a></span></li>
+			
+				<li data-index="4"><span><a href="#">領卻手為忽好家</a></span></li>
+			
+				<li data-index="5"><span><a href="#">這有意</a></span></li>
+			
+		</ul>
+	</div></div>
+	
+	
+</div></div>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
+							
+							</li>
+							<li data-index="3">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">下方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										
+
+<div class="list-text link " data-index="1" data-type="0"  ><div class="in">
+	
+	<div class="ct"><div class="in">
+		<ul data-index="1" data-child="2">
+			
+			
+				<li data-index="1"><span><a href="#">千經麵</a></span></li>
+			
+				<li data-index="2"><span><a href="#">的樹去老不失卻年</a></span></li>
+			
+		</ul>
+	</div></div>
+	
+	
+</div></div>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
+
+							</li>
+						</ul>
+					</div></div>
+				</div></div>
 			<!-- nav 結束 -->
 
 			</div></div>
@@ -341,14 +578,16 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="7">
+		<ul data-index="1" data-child="8">
 			<li data-index="1" class="login"><span><a href="#">登入</a></span></li>
 			<li data-index="2" class="logout"><span><a href="#">登出</a></span></li>
-			<li data-index="3" class="edit"><span><a href="#">編輯</a></span></li>
-			<li data-index="4" class="print"><span><a href="#">列印</a></span></li>
-			<li data-index="5" class="nav-edit"><span><a href="#">選單編輯</a></span></li>
-			<li data-index="6" class="index-edit"><span><a href="#">首頁編輯</a></span></li>
-			<li data-index="7" class="article-edit"><span><a href="#">文章編輯</a></span></li>
+			<li data-index="3" class="bopomofo"><span><a href="#">注音</a></span></li>
+			<li data-index="4" class="edit"><span><a href="#">編輯</a></span></li>
+			<li data-index="5" class="print"><span><a href="#">列印</a></span></li>
+			<li data-index="6" class="data"><span><a href="#">詮釋資料</a></span></li>
+			<li data-index="7" class="nav-edit"><span><a href="#">選單編輯</a></span></li>
+			<li data-index="8" class="index-edit"><span><a href="#">首頁編輯</a></span></li>
+			<li data-index="9" class="article-edit"><span><a href="#">文章編輯</a></span></li>
 		</ul>
 	</div></div>
 </div></div>
@@ -394,7 +633,7 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span>和他們一拚！</span>
+		<span>礙步的石頭，漏射到地上。</span>
 	</div></div>
 	
 	
@@ -417,14 +656,14 @@
 	<!-- marquee-slider 跑馬燈輪播 -->
 		
 
-	<div class="group-list marquee-slider " data-index="1" data-type="4" data-child="16"  data-func="{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" ><div class="in">
+	<div class="group-list marquee-slider " data-index="1" data-type="4" data-child="15"  data-func="{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" ><div class="in">
 		
 			<div class="hd"><div class="in">
 				<h3><span><a href="#">輪播</a></span></h3>
 			</div></div>
 		
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="16">
+			<ul data-index="1" data-child="15">
 
 				
 					<li data-index="1">
@@ -435,11 +674,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">夠被是價</a></span></h4>
+			<h4><span><a href="#">譁來</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_08.jpg');"><a href="#"><img src="/images/sample/sample_l_08.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_02.jpg');"><a href="#"><img src="/images/sample/sample_l_02.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -456,7 +695,7 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">問繞的鬧</a></span></h4>
+			<h4><span><a href="#">問言為目想</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
@@ -477,11 +716,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">柱亦謂值是</a></span></h4>
+			<h4><span><a href="#">疑台甜難</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_02.jpg');"><a href="#"><img src="/images/sample/sample_l_02.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -498,11 +737,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">臉最</a></span></h4>
+			<h4><span><a href="#">龍著媽水響</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_08.jpg');"><a href="#"><img src="/images/sample/sample_l_08.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -519,11 +758,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">中了們</a></span></h4>
+			<h4><span><a href="#">頭晚</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_08.jpg');"><a href="#"><img src="/images/sample/sample_l_08.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -540,11 +779,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">啦給更</a></span></h4>
+			<h4><span><a href="#">可泡</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_01.jpg');"><a href="#"><img src="/images/sample/sample_l_01.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_05.jpg');"><a href="#"><img src="/images/sample/sample_l_05.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -561,11 +800,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">能好是看懷</a></span></h4>
+			<h4><span><a href="#">地的</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_06.jpg');"><a href="#"><img src="/images/sample/sample_l_06.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -582,11 +821,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">了能體歹頭</a></span></h4>
+			<h4><span><a href="#">繁一一</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -603,7 +842,7 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">的的命所</a></span></h4>
+			<h4><span><a href="#">到有在情</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
@@ -624,11 +863,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">列</a></span></h4>
+			<h4><span><a href="#">的頭</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -645,11 +884,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">-腕有</a></span></h4>
+			<h4><span><a href="#">崎</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_07.jpg');"><a href="#"><img src="/images/sample/sample_l_07.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -666,11 +905,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">命們的是</a></span></h4>
+			<h4><span><a href="#">和些來</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_06.jpg');"><a href="#"><img src="/images/sample/sample_l_06.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_07.jpg');"><a href="#"><img src="/images/sample/sample_l_07.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -687,7 +926,7 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">聲過割</a></span></h4>
+			<h4><span><a href="#">死此種</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
@@ -708,11 +947,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">裡是</a></span></h4>
+			<h4><span><a href="#">是能已這</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_05.jpg');"><a href="#"><img src="/images/sample/sample_l_05.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -729,32 +968,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">新應了自包</a></span></h4>
+			<h4><span><a href="#">水餃到</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
-	</div></div>
-	
-	
-</div></div>
-					<!-- /erb/module/simple-pic_default -->
-					
-					</li>
-				
-					<li data-index="16">
-
-					<!-- /erb/module/simple-pic_default -->
-						
-
-<div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
-	
-		<div class="hd"><div class="in">
-			<h4><span><a href="#">要議問易千</a></span></h4>
-		</div></div>
-	
-	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_06.jpg');"><a href="#"><img src="/images/sample/sample_l_06.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -846,12 +1064,18 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="2">
+		<ul data-index="1" data-child="5">
 			
 			
-				<li data-index="1"><span><a href="#">門金究不</a></span></li>
+				<li data-index="1"><span><a href="#">住人樣看哪</a></span></li>
 			
-				<li data-index="2"><span><a href="#">年蛋不</a></span></li>
+				<li data-index="2"><span><a href="#">早談雪心</a></span></li>
+			
+				<li data-index="3"><span><a href="#">次彼的</a></span></li>
+			
+				<li data-index="4"><span><a href="#">趕科來自滿坐來</a></span></li>
+			
+				<li data-index="5"><span><a href="#">跌和他暗領現憊不</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -888,14 +1112,12 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="3">
+		<ul data-index="1" data-child="2">
 
 			
-				<li data-index="1"><span><a href="#">忘遠戒的</a></span></li>
+				<li data-index="1"><span><a href="#">讓筆了</a></span></li>
 			
-				<li data-index="2"><span><a href="#">快點似容的</a></span></li>
-			
-				<li data-index="3"><span><a href="#">悲標的賴了</a></span></li>
+				<li data-index="2"><span><a href="#">有啦方他輕</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -945,7 +1167,7 @@
 	<!-- nav 選單 -->
 		
 
-<div class="group-list nav " data-index="2" data-type="4" data-child="6"  data-func="{'hud':{},'majorNavHorizontal':{},'setNavWidth':{}}" ><div class="in">
+<div class="group-list nav " data-index="2" data-type="4" data-child="10"  data-func="{'hud':{},'majorNavHorizontal':{},'setNavWidth':{}}" ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h3><span><a href="#">主選單</a></span></h3>
@@ -954,14 +1176,14 @@
 
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="6">
+			<ul data-index="1" data-child="10">
 
 				
-					<li data-index="1" data-width="2">
+					<li data-index="1" data-width="4">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">某</a></span></h3>
+								<h3><span><a href="#">有有了一上</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -975,11 +1197,11 @@
 			<ul data-index="1" data-child="3">
 
 				
-					<li data-index="1"><span><a href="#">不易歡腕憊解</a></span></li>
+					<li data-index="1"><span><a href="#">似腦地此</a></span></li>
 				
-					<li data-index="2"><span><a href="#">我去一整的回做</a></span></li>
+					<li data-index="2"><span><a href="#">甜的咖不丙的一</a></span></li>
 				
-					<li data-index="3"><span><a href="#">到笑甲惱子疑2</a></span></li>
+					<li data-index="3"><span><a href="#">要當地那</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -992,11 +1214,11 @@
 					
 					</li>
 				
-					<li data-index="2" data-width="3">
+					<li data-index="2" data-width="9">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">不問那</a></span></h3>
+								<h3><span><a href="#">何已啡高本部歲</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -1007,26 +1229,22 @@
 	
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="9">
+			<ul data-index="1" data-child="7">
 
 				
-					<li data-index="1"><span><a href="#">了做前和不都棒得</a></span></li>
+					<li data-index="1"><span><a href="#">是杯到險樣血是坐</a></span></li>
 				
-					<li data-index="2"><span><a href="#">沒表一候龍腦連他</a></span></li>
+					<li data-index="2"><span><a href="#">不人了震如已</a></span></li>
 				
-					<li data-index="3"><span><a href="#">夜昨須拚月事兄</a></span></li>
+					<li data-index="3"><span><a href="#">了信聲失地辨粉</a></span></li>
 				
-					<li data-index="4"><span><a href="#">易都人明禮一</a></span></li>
+					<li data-index="4"><span><a href="#">山快以判幾年進以</a></span></li>
 				
-					<li data-index="5"><span><a href="#">這的百女人</a></span></li>
+					<li data-index="5"><span><a href="#">去就身進</a></span></li>
 				
-					<li data-index="6"><span><a href="#">包了掉想他</a></span></li>
+					<li data-index="6"><span><a href="#">了的笑前忘議中</a></span></li>
 				
-					<li data-index="7"><span><a href="#">有兩橋熱</a></span></li>
-				
-					<li data-index="8"><span><a href="#">不一全趕金前要如</a></span></li>
-				
-					<li data-index="9"><span><a href="#">嬉一的恩不吃麼</a></span></li>
+					<li data-index="7"><span><a href="#">的這拚這切</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -1039,11 +1257,11 @@
 					
 					</li>
 				
-					<li data-index="3" data-width="1">
+					<li data-index="3" data-width="7">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">橫戶前惚利</a></span></h3>
+								<h3><span><a href="#">不</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -1053,17 +1271,6 @@
 <div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
 	
 	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="2">
-
-				
-					<li data-index="1"><span><a href="#">極買身的子一將</a></span></li>
-				
-					<li data-index="2"><span><a href="#">臉上再揪悽年人這</a></span></li>
-				
-			</ul>
-		</div></div>
-	
 </div></div>
 							<!-- /erb/module/list-text_nav -->
 
@@ -1072,42 +1279,11 @@
 					
 					</li>
 				
-					<li data-index="4" data-width="4">
+					<li data-index="4" data-width="9">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">失丙</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="1">
-
-				
-					<li data-index="1"><span><a href="#">爸不此去爸看用的</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="5" data-width="6">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">有算要</a></span></h3>
+								<h3><span><a href="#">煮他地快</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -1121,17 +1297,17 @@
 			<ul data-index="1" data-child="6">
 
 				
-					<li data-index="1"><span><a href="#">有問在恨原</a></span></li>
+					<li data-index="1"><span><a href="#">有啊餃真弱而龍死</a></span></li>
 				
-					<li data-index="2"><span><a href="#">是以何因比口</a></span></li>
+					<li data-index="2"><span><a href="#">真太時因</a></span></li>
 				
-					<li data-index="3"><span><a href="#">相太愈差有走喝</a></span></li>
+					<li data-index="3"><span><a href="#">地方地心喝歡激</a></span></li>
 				
-					<li data-index="4"><span><a href="#">意真真多似他</a></span></li>
+					<li data-index="4"><span><a href="#">1滿就走此命言笑</a></span></li>
 				
-					<li data-index="5"><span><a href="#">在著上甜好</a></span></li>
+					<li data-index="5"><span><a href="#">情和喊因陽不</a></span></li>
 				
-					<li data-index="6"><span><a href="#">決樂罵有媽腕可</a></span></li>
+					<li data-index="6"><span><a href="#">集８代裡光見時</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -1144,11 +1320,11 @@
 					
 					</li>
 				
-					<li data-index="6" data-width="4">
+					<li data-index="5" data-width="7">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">餃棄員２傷來弟</a></span></h3>
+								<h3><span><a href="#">一少看咖憑</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -1159,36 +1335,195 @@
 	
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="14">
+			<ul data-index="1" data-child="7">
 
 				
-					<li data-index="1"><span><a href="#">Q死了向麵年憑進</a></span></li>
+					<li data-index="1"><span><a href="#">須亙有-說無否了</a></span></li>
 				
-					<li data-index="2"><span><a href="#">如談了.被過台這</a></span></li>
+					<li data-index="2"><span><a href="#">我的為負甲</a></span></li>
 				
-					<li data-index="3"><span><a href="#">時等～餃曲醉意</a></span></li>
+					<li data-index="3"><span><a href="#">本２老煙大非罵</a></span></li>
 				
-					<li data-index="4"><span><a href="#">似實比是走自</a></span></li>
+					<li data-index="4"><span><a href="#">級合點們須</a></span></li>
 				
-					<li data-index="5"><span><a href="#">快孫疼在山</a></span></li>
+					<li data-index="5"><span><a href="#">字童記逐</a></span></li>
 				
-					<li data-index="6"><span><a href="#">平時鬧節</a></span></li>
+					<li data-index="6"><span><a href="#">無不長上</a></span></li>
 				
-					<li data-index="7"><span><a href="#">吃心及難</a></span></li>
+					<li data-index="7"><span><a href="#">得為說屋</a></span></li>
 				
-					<li data-index="8"><span><a href="#">和稍遇好去眾</a></span></li>
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
 				
-					<li data-index="9"><span><a href="#">真坐一樣氣無問</a></span></li>
+					<li data-index="6" data-width="8">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">行他繞進</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="5">
+
 				
-					<li data-index="10"><span><a href="#">念前煩餃奉進我</a></span></li>
+					<li data-index="1"><span><a href="#">８說是歲又要</a></span></li>
 				
-					<li data-index="11"><span><a href="#">咖何封受龍興節</a></span></li>
+					<li data-index="2"><span><a href="#">太麵有進都地似</a></span></li>
 				
-					<li data-index="12"><span><a href="#">也我在而８和此傷</a></span></li>
+					<li data-index="3"><span><a href="#">啦球～合倍情蕩女</a></span></li>
 				
-					<li data-index="13"><span><a href="#">可實煩明的</a></span></li>
+					<li data-index="4"><span><a href="#">那得掉前快</a></span></li>
 				
-					<li data-index="14"><span><a href="#">這這和階此</a></span></li>
+					<li data-index="5"><span><a href="#">且裡中然去</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="7" data-width="4">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">咖爭全☆弟不２</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="6">
+
+				
+					<li data-index="1"><span><a href="#">把0下白</a></span></li>
+				
+					<li data-index="2"><span><a href="#">進上可和來受容目</a></span></li>
+				
+					<li data-index="3"><span><a href="#">把起得一</a></span></li>
+				
+					<li data-index="4"><span><a href="#">盲老口-爭</a></span></li>
+				
+					<li data-index="5"><span><a href="#">什蔽受疲友</a></span></li>
+				
+					<li data-index="6"><span><a href="#">而反何了地容</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="8" data-width="8">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">萄程</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="1">
+
+				
+					<li data-index="1"><span><a href="#">問著個餃</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="9" data-width="6">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">倍把害</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="1">
+
+				
+					<li data-index="1"><span><a href="#">程就邊國終價又</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="10" data-width="5">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">媽甘問闊</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="1">
+
+				
+					<li data-index="1"><span><a href="#">弟理去也球在開</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -1243,14 +1578,14 @@
 	<!-- slider 主輪播 -->
 		
 
-	<div class="group-list major-slider " data-index="1" data-type="4" data-child="2"  data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}" ><div class="in">
+	<div class="group-list major-slider " data-index="1" data-type="4" data-child="3"  data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}" ><div class="in">
 		
 			<div class="hd"><div class="in">
 				<h3><span><a href="#">主輪播</a></span></h3>
 			</div></div>
 		
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="2">
+			<ul data-index="1" data-child="3">
 
 				
 					<li data-index="1">
@@ -1261,7 +1596,7 @@
 <div class="simple-pic default " data-index="1" data-type="0"  ><div class="in">
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_07.jpg');"><a href="#"><img src="/images/sample/sample_l_07.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1284,7 +1619,30 @@
 <div class="simple-pic default " data-index="1" data-type="0"  ><div class="in">
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_08.jpg');"><a href="#"><img src="/images/sample/sample_l_08.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_05.jpg');"><a href="#"><img src="/images/sample/sample_l_05.jpg" alt=""></a></span>
+	</div></div>
+	
+	
+		<div class="ft"><div class="in">
+			<ul data-index="1" data-child="1">
+				<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
+			</ul>
+		</div></div>
+	
+</div></div>
+					<!-- /erb/module/simple-pic_default -->
+					
+					</li>
+				
+					<li data-index="3">
+
+					<!-- /erb/module/simple-pic_default -->
+						
+
+<div class="simple-pic default " data-index="1" data-type="0"  ><div class="in">
+	
+	<div class="ct"><div class="in">
+		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1334,11 +1692,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">輸黎</a></span></h4>
+			<h4><span><a href="#">疲</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_08.jpg');"><a href="#"><img src="/images/sample/sample_l_08.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_05.jpg');"><a href="#"><img src="/images/sample/sample_l_05.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1355,11 +1713,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">詰</a></span></h4>
+			<h4><span><a href="#">來碰逐得</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_01.jpg');"><a href="#"><img src="/images/sample/sample_l_01.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_02.jpg');"><a href="#"><img src="/images/sample/sample_l_02.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1376,11 +1734,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">有</a></span></h4>
+			<h4><span><a href="#">他裡</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_06.jpg');"><a href="#"><img src="/images/sample/sample_l_06.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1397,11 +1755,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">壯啡</a></span></h4>
+			<h4><span><a href="#">開不把喜人</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_07.jpg');"><a href="#"><img src="/images/sample/sample_l_07.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1418,11 +1776,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">狺便斷了</a></span></h4>
+			<h4><span><a href="#">２情卻鑼是</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1439,11 +1797,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">候要</a></span></h4>
+			<h4><span><a href="#">旗來機到</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_04.jpg');"><a href="#"><img src="/images/sample/sample_l_04.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1460,11 +1818,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">不心興</a></span></h4>
+			<h4><span><a href="#">人了厭爭目</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1481,11 +1839,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">挨</a></span></h4>
+			<h4><span><a href="#">不利美球真</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_03.jpg');"><a href="#"><img src="/images/sample/sample_l_03.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_09.jpg');"><a href="#"><img src="/images/sample/sample_l_09.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1502,11 +1860,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">狗蔥災名但</a></span></h4>
+			<h4><span><a href="#">又苦-</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_07.jpg');"><a href="#"><img src="/images/sample/sample_l_07.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1523,11 +1881,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">歲的揪為</a></span></h4>
+			<h4><span><a href="#">咖很說</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_02.jpg');"><a href="#"><img src="/images/sample/sample_l_02.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1544,11 +1902,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">本啦如譁</a></span></h4>
+			<h4><span><a href="#">不爭責奈但</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_01.jpg');"><a href="#"><img src="/images/sample/sample_l_01.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1565,11 +1923,11 @@
 <div class="simple-pic default " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">何婦喝亂提</a></span></h4>
+			<h4><span><a href="#">的總啊-</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_10.jpg');"><a href="#"><img src="/images/sample/sample_l_10.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_05.jpg');"><a href="#"><img src="/images/sample/sample_l_05.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -1602,48 +1960,36 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="10">
+		<ul data-index="1" data-child="7">
 
 			
 				
 
-				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><a href="#"><img src="/images/sample/sample_m_03.jpg" alt=""></a></span></li>
+				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><a href="#"><img src="/images/sample/sample_m_05.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><a href="#"><img src="/images/sample/sample_m_03.jpg" alt=""></a></span></li>
+				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><a href="#"><img src="/images/sample/sample_m_06.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
+				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
 				<li data-index="7"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="8"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><a href="#"><img src="/images/sample/sample_m_05.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="9"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="10"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
 			
 		</ul>
 	</div></div>
@@ -1668,48 +2014,28 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="10">
+		<ul data-index="1" data-child="5">
 
 			
 				
 
-				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
+				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><a href="#"><img src="/images/sample/sample_m_03.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><a href="#"><img src="/images/sample/sample_m_04.jpg" alt=""></a></span></li>
+				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><a href="#"><img src="/images/sample/sample_m_06.jpg" alt=""></a></span></li>
+				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><a href="#"><img src="/images/sample/sample_m_05.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="7"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><a href="#"><img src="/images/sample/sample_m_05.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="8"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><a href="#"><img src="/images/sample/sample_m_09.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="9"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><a href="#"><img src="/images/sample/sample_m_05.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="10"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
+				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><a href="#"><img src="/images/sample/sample_m_09.jpg" alt=""></a></span></li>
 			
 		</ul>
 	</div></div>
@@ -1734,26 +2060,18 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="9">
+		<ul data-index="1" data-child="5">
 
 			
-				<li data-index="1"><span><a href="#">見哈理個們遮一向中太用可害千腕台不但</a></span></li>
+				<li data-index="1"><span><a href="#">來鍛媽割是要適孫眼的這兒是就頓誘</a></span></li>
 			
-				<li data-index="2"><span><a href="#">各腕進的身水回腕歲是是在不的又</a></span></li>
+				<li data-index="2"><span><a href="#">真來是平不出似鑼奶罵葡反們</a></span></li>
 			
-				<li data-index="3"><span><a href="#">們們麵們提上們盲不趕咖８來什肉好</a></span></li>
+				<li data-index="3"><span><a href="#">方鬥錢鬧差及非入了繞杯錢這吃只鼓挺城部-分力</a></span></li>
 			
-				<li data-index="4"><span><a href="#">趕麼的現爭悲什繞鬧想地</a></span></li>
+				<li data-index="4"><span><a href="#">盲行熱掉今不去什聲去不城何的值巢憤易就兄煩意失最</a></span></li>
 			
-				<li data-index="5"><span><a href="#">不再咖一人末２因為們再歡追開地點</a></span></li>
-			
-				<li data-index="6"><span><a href="#">爸恩腦算憊成裡懷眩要回這而龍穿☆樣妄憑啡就這上妄</a></span></li>
-			
-				<li data-index="7"><span><a href="#">不亦呼得時過說在氣一過</a></span></li>
-			
-				<li data-index="8"><span><a href="#">有情行況憊明尋樣地一了</a></span></li>
-			
-				<li data-index="9"><span><a href="#">險閒光是捐又媽太夜老到詰利們身們要光雖豪怯千的憑</a></span></li>
+				<li data-index="5"><span><a href="#">的麼半蔽的的壞暫既人街不上上們嘗好下皮的傳說</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -1778,16 +2096,18 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="4">
+		<ul data-index="1" data-child="5">
 
 			
-				<li data-index="1"><span><a href="#">撐這２憊2地葡追失這早讓做憐進啡掉一</a></span></li>
+				<li data-index="1"><span><a href="#">有是人裡金有想短上歡棒雙有盲一好橫亦易萄</a></span></li>
 			
-				<li data-index="2"><span><a href="#">好停咖粉要們溺早一什這裡進的出拚人妄不縷</a></span></li>
+				<li data-index="2"><span><a href="#">啡這罵裡我這民差真台服碰８功前啦啊</a></span></li>
 			
-				<li data-index="3"><span><a href="#">２傾腕褲這纔茶步戚樹了已去一</a></span></li>
+				<li data-index="3"><span><a href="#">在白樣應意前這那著難銅一</a></span></li>
 			
-				<li data-index="4"><span><a href="#">媽前著跑預妄這啊掃進他</a></span></li>
+				<li data-index="4"><span><a href="#">在事話傻顆者他問的趕走我命了勞輕啡目吧是孫</a></span></li>
+			
+				<li data-index="5"><span><a href="#">明得媽出啡然盡歹們縷最不年解水通咖論我佔人導出須暗</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -1824,16 +2144,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><img src="/images/sample/sample_m_09.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>實在想不到！</span></div>
+				<div class="caption"><span>有時再往親戚家去，真的太好吃了啦！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>是不容有異議，２２８運去台中！我去拿一面鑼來。只在我們貴地，他倆不想到休息，一時看鬧熱的人，愈要追尋快樂，金錢愈不能到手，明夜沒得再看啦！終也渡過彼岸。放射到地平線以外，兄弟們來！不是皆發了幾十萬，可以回答曼特寧，歲月真容易過！</span></p>
+					<p><span>有沒有人要揪團！暫時的時空靜止。來和他們一拚！兄弟們來！居然宣佈了戰爭，接連鬥過兩三晚，行行前進，導發反抗力的火戰。不知橫亙到何處。恩～不賴。</span></p>
 				</div>
 			</div>
 		</a>
@@ -1860,16 +2180,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>那痛苦就更難堪了。</span></div>
+				<div class="caption"><span>熱血正在沸騰，精神上多有些緊張，只在我們貴地，各個兒指手畫腳，但是這一番啊！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>也不上你的甜！憑這雙腕！有些餓了翻身下床，疲憊不堪，失了伴侶的他，不顧慮傍人，什麼樣子，一綵綵霜痕，那纔利害啦！就是戒不掉。來和他們一拚！放射到地平線以外，在這次血祭壇上，要是說一聲不肯，等一個人咖啡。睡到下午下台中，看看又要到了。</span></p>
+					<p><span>忽然地顛蹶，地方領導人。孩子們得到指示，坐著閒談。無目的地前進！放不少鞭炮，卻不能稍超興奮，鬧熱到了，咖啡效果好的驚人，捨此一身和他一拚！短褲短袖。</span></p>
 				</div>
 			</div>
 		</a>
@@ -1896,16 +2216,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>盲目地前進！</span></div>
+				<div class="caption"><span>正可養成競爭心，想泡杯燕麥片，一個有年紀的人，和他們做新過年。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>忘卻了一切。就和解去。又受了他們一頓罵！早餐機投入使用。</span></p>
+					<p><span>經過了很久，和他們一拚！要是說一聲不肯，一邊的行列，不過隨意做作而已，地方領導人。不問是誰，在這黑暗統治之下，有點疲憊！愈會碰著痛苦。本該挨罵。黃金難買少年心。</span></p>
 				</div>
 			</div>
 		</a>
@@ -1959,16 +2279,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><img src="/images/sample/sample_m_10.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><img src="/images/sample/sample_m_03.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>到城裡去啊！</span></div>
+				<div class="caption"><span>街上頓添一種活氣，憑我們有這一身，汝算不到，過了些時，終是不可解的疑問。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>心情真的很差。無目的地前進！一樣是歹命人！來--來！我不明白，這是如何地悲悽！</span></p>
+					<p><span>神所厭棄本無價值。由著裊裊的晚風，亦不算壞。來--來！乙感嘆地說，所以也不擔心到，歲月真容易過！但現在的曆法，很好判斷一個人。併也不見陶醉，會讓我撐到幾時。</span></p>
 				</div>
 			</div>
 		</a>
@@ -1995,16 +2315,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><img src="/images/sample/sample_m_02.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>第二杯咖啡，奏起悲壯的進行曲。</span></div>
+				<div class="caption"><span>我的爸媽！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>看看又要到了。做事業的人們，由著裊裊的晚風，金錢的問題，由我的生的行程中，雪可屋的特調咖啡。一個有年紀的人，甘失掉了麵皮！</span></p>
+					<p><span>就說不關什麼，有人醉酒有人醉茶，一邊的行列，老人懷疑地問。趕快走下山去！有的孩子喊著，來--來！何用自作麻煩。甲哈哈地笑著說。漏射到地上。</span></p>
 				</div>
 			</div>
 		</a>
@@ -2056,32 +2376,24 @@
 	
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="12">
+			<ul data-index="1" data-child="8">
 
 				
-					<li data-index="1"><span><a href="#">來啦歡啦歹豪</a></span></li>
+					<li data-index="1"><span><a href="#">小皮前去下身山上</a></span></li>
 				
-					<li data-index="2"><span><a href="#">買情柚自割後就悲</a></span></li>
+					<li data-index="2"><span><a href="#">不發去拚不</a></span></li>
 				
-					<li data-index="3"><span><a href="#">地一狗暇有了很</a></span></li>
+					<li data-index="3"><span><a href="#">呢十的是的一命悠</a></span></li>
 				
-					<li data-index="4"><span><a href="#">讓治奈輸已</a></span></li>
+					<li data-index="4"><span><a href="#">爭辯家力</a></span></li>
 				
-					<li data-index="5"><span><a href="#">煮輕明時甲死有我</a></span></li>
+					<li data-index="5"><span><a href="#">動子了難口說了</a></span></li>
 				
-					<li data-index="6"><span><a href="#">事拚們發還</a></span></li>
+					<li data-index="6"><span><a href="#">他這了無</a></span></li>
 				
-					<li data-index="7"><span><a href="#">他好被者傷後的</a></span></li>
+					<li data-index="7"><span><a href="#">夜他了就地都啡-</a></span></li>
 				
-					<li data-index="8"><span><a href="#">我中刺也</a></span></li>
-				
-					<li data-index="9"><span><a href="#">作鬧不下他白圓知</a></span></li>
-				
-					<li data-index="10"><span><a href="#">在索聲算又須來聲</a></span></li>
-				
-					<li data-index="11"><span><a href="#">何你方不</a></span></li>
-				
-					<li data-index="12"><span><a href="#">亮子想明</a></span></li>
+					<li data-index="8"><span><a href="#">悲了面弟一地有</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -2092,7 +2404,7 @@
 	<!-- nav 選單 -->
 		
 
-<div class="group-list nav " data-index="2" data-type="4" data-child="6"  data-func="{'majorNavStraight':{}}" ><div class="in">
+<div class="group-list nav " data-index="2" data-type="4" data-child="2"  data-func="{'majorNavStraight':{}}" ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h3><span><a href="#">主選單</a></span></h3>
@@ -2101,14 +2413,14 @@
 
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="6">
+			<ul data-index="1" data-child="2">
 
 				
-					<li data-index="1" data-width="2">
+					<li data-index="1" data-width="1">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">就人暗咖</a></span></h3>
+								<h3><span><a href="#">傻比折爭</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -2117,19 +2429,6 @@
 
 <div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
 	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="3">
-
-				
-					<li data-index="1"><span><a href="#">要比的幫我</a></span></li>
-				
-					<li data-index="2"><span><a href="#">信算須晨弟息他</a></span></li>
-				
-					<li data-index="3"><span><a href="#">到年全賴子牙就人</a></span></li>
-				
-			</ul>
-		</div></div>
 	
 </div></div>
 							<!-- /erb/module/list-text_nav -->
@@ -2143,138 +2442,7 @@
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">雙玩忙眼</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="9">
-
-				
-					<li data-index="1"><span><a href="#">去馬了他週</a></span></li>
-				
-					<li data-index="2"><span><a href="#">啊世原８</a></span></li>
-				
-					<li data-index="3"><span><a href="#">認還無麻</a></span></li>
-				
-					<li data-index="4"><span><a href="#">生在了自麼逐</a></span></li>
-				
-					<li data-index="5"><span><a href="#">回何不山甜興啡</a></span></li>
-				
-					<li data-index="6"><span><a href="#">錢導意咖浪腕沒不</a></span></li>
-				
-					<li data-index="7"><span><a href="#">鍛髓-宣果過</a></span></li>
-				
-					<li data-index="8"><span><a href="#">遇決苦下眼教筋甲</a></span></li>
-				
-					<li data-index="9"><span><a href="#">相胃中訓晚表到</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="3" data-width="2">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">過</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="4" data-width="5">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">多揪礙昨地買們</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="1">
-
-				
-					<li data-index="1"><span><a href="#">女啊媽曉如</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="5" data-width="6">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">去人苦輸</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="1">
-
-				
-					<li data-index="1"><span><a href="#">地何起你嬉們</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="6" data-width="4">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">人</a></span></h3>
+								<h3><span><a href="#">了靜們</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -2288,11 +2456,11 @@
 			<ul data-index="1" data-child="3">
 
 				
-					<li data-index="1"><span><a href="#">啡記我夜下</a></span></li>
+					<li data-index="1"><span><a href="#">高地們氛有客已成</a></span></li>
 				
-					<li data-index="2"><span><a href="#">孱著熱賺前地咖</a></span></li>
+					<li data-index="2"><span><a href="#">0麵地趕盲渡</a></span></li>
 				
-					<li data-index="3"><span><a href="#">了有啊掉皮有地</a></span></li>
+					<li data-index="3"><span><a href="#">子過些一</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -2321,14 +2489,44 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="1">
+		<ul data-index="1" data-child="6">
 
 			
 			
 				
-					<li data-index="1" class="is-active">
+					<li data-index="1">
 				
-				<span><a href="#">皮也麻的</a></span></li>
+				<span><a href="#">如的你過外把不</a></span></li>
+			
+			
+				
+					<li data-index="2">
+				
+				<span><a href="#">們頭盲就了亮</a></span></li>
+			
+			
+				
+					<li data-index="3">
+				
+				<span><a href="#">明悲身到都本在來</a></span></li>
+			
+			
+				
+					<li data-index="4" class="is-active">
+				
+				<span><a href="#">了顛煮裡容用</a></span></li>
+			
+			
+				
+					<li data-index="5">
+				
+				<span><a href="#">到棒黃啡有</a></span></li>
+			
+			
+				
+					<li data-index="6">
+				
+				<span><a href="#">人晚互他一惚</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -2357,15 +2555,15 @@
 		<ul data-index="1" data-child="5">
 			
 			
-				<li data-index="1"><span><a href="#"><i class="mark">類別</i>杯個宜</a></span></li>
+				<li data-index="1"><span><a href="#"><i class="mark">類別</i>這忙都</a></span></li>
 			
-				<li data-index="2"><span><a href="#"><i class="mark">類別</i>味點在啊趕</a></span></li>
+				<li data-index="2"><span><a href="#"><i class="mark">類別</i>星新北煙麼們</a></span></li>
 			
-				<li data-index="3"><span><a href="#"><i class="mark">類別</i>些不地中</a></span></li>
+				<li data-index="3"><span><a href="#"><i class="mark">類別</i>腕來打</a></span></li>
 			
-				<li data-index="4"><span><a href="#"><i class="mark">類別</i>這禮看多火城下杯</a></span></li>
+				<li data-index="4"><span><a href="#"><i class="mark">類別</i>們你是也</a></span></li>
 			
-				<li data-index="5"><span><a href="#"><i class="mark">類別</i>要來這２是上科</a></span></li>
+				<li data-index="5"><span><a href="#"><i class="mark">類別</i>再得先</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -2390,48 +2588,24 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="10">
+		<ul data-index="1" data-child="4">
 
 			
 				
 
-				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
+				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_03.jpg" alt=""></a></span></li>
+				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_06.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="7"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="8"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="9"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_04.jpg" alt=""></a></span></li>
-			
-				
-
-				<li data-index="10"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
+				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_03.jpg" alt=""></a></span></li>
 			
 		</ul>
 	</div></div>
@@ -2473,16 +2647,16 @@
 
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>強盛到肉體的增長，多有一百倍以上。</span></div>
+				<div class="caption"><span>以樂其心志，是鬧哪樣啊！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>經過幾許途程，約同不平者的聲援，街上實在繁榮極了。人類的一分子了。有什麼科派捐募，做事業的人們，以及麻醉劑。</span></p>
+					<p><span>住在福戶內的人，何須非議。橋梁是否有斷折，在閃爍地放亮。亦不算壞。實在想不到！錢的可能性愈少，只些婦女們，好久已無聲響的雷，但是這一番啊！已闢農場已築家室，早幾點鐘解決，那纔利害啦！</span></p>
 				</div>
 			</div>
 		</a>
@@ -2514,16 +2688,16 @@
 
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><img src="/images/sample/sample_m_09.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><img src="/images/sample/sample_m_10.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>筋肉比較的瘦弱，在成堆的人們中，覺得分外悠遠，甘失掉了麵皮！</span></div>
+				<div class="caption"><span>失了伴侶的他，喝了一口咖啡，水☆餃☆子。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>幫忙打掃整理家裡！咖啡早冷了。自己走出家來，使勞動者們，最適合中國人。</span></p>
+					<p><span>等一個人咖啡。就會想過去喝一杯。將要千圓。進來的人說，又一人說。以及麻醉劑。也不上你的甜！</span></p>
 				</div>
 			</div>
 		</a>
@@ -2567,16 +2741,16 @@
 
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><img src="/images/sample/sample_m_09.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>怎麼就十五年了。</span></div>
+				<div class="caption"><span>險些兒跌倒。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>早餐機投入使用。只有風先生的慇懃，還是孱弱的可憐，聽說市長和郡長，把我們龍頭割去！何須非議。不能隨即回家，兄弟們來！</span></p>
+					<p><span>我的爸媽！今天大哥說，現在不高興了，來浪費有用的金錢，福戶內的事，險些兒跌倒。連生意本，在做頭老的，盲目地前進！使勞動者們，親戚們多贊稱我，和鍛鍊團結力。會讓我撐到幾時。</span></p>
 				</div>
 			</div>
 		</a>
@@ -2603,8 +2777,8 @@
 		<div class="select">
 			<select>
 				<option data-href="" selected>請選擇</option>
-				<option data-href="http://www.google.com" data-isnewwindow="true">可以借它的魔力，老不死的混蛋！</option>
-				<option data-href="http://tw.yahoo.com">議論已失去了熱烈，我的爸媽！</option>
+				<option data-href="http://www.google.com" data-isnewwindow="true">互相提攜走向前去。</option>
+				<option data-href="http://tw.yahoo.com">那纔利害啦！</option>
 			</select>
 		</div>
 	</div></div>
@@ -2635,35 +2809,35 @@
 			
 				
 
-				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="1"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
+				<li data-index="2"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_09.jpg" alt=""></a></span></li>
+				<li data-index="3"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_08.jpg" alt=""></a></span></li>
+				<li data-index="4"><span style="background-image: url('/images/sample/sample_m_01.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_01.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_06.jpg" alt=""></a></span></li>
+				<li data-index="5"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_10.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_09.jpg" alt=""></a></span></li>
+				<li data-index="6"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_07.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="7"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
+				<li data-index="7"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_04.jpg" alt=""></a></span></li>
 			
 				
 
-				<li data-index="8"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_02.jpg" alt=""></a></span></li>
+				<li data-index="8"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><a href="#"><i class="mark">類別</i><img src="/images/sample/sample_m_09.jpg" alt=""></a></span></li>
 			
 		</ul>
 	</div></div>
@@ -2689,16 +2863,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><img src="/images/sample/sample_m_03.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="figcaption"><span>有些多事的人問。</span></div>
+				<div class="figcaption"><span>趕快走下山去！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">2015/11/26</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>都很讚成，在閃爍地放亮。老不死的混蛋！人類的一分子了。在這黑暗之中，要開始了。早幾點鐘解決，台北市信義區2級。</span></p>
+					<p><span>睡到下午下台中，在做頭老的，也就不容易，怎麼就十五年了。他倆人中的一個，沒有年歲，今天大哥說，也是不容易，捨此一身和他一拚！草繩上插的香條，人們的信仰，忘卻了一切。</span></p>
 				</div>
 			</div>
 		</a>
@@ -2740,16 +2914,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><img src="/images/sample/sample_m_05.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="figcaption"><span>地方領導人。</span></div>
+				<div class="figcaption"><span>為著前進而前進。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">2015/11/26</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>老不死的混蛋！就是金錢。真的太好吃了啦！</span></p>
+					<p><span>這是如何地悲悽！險些兒跌倒。這是如何的決意！胃又疼了。以後再也不亂玩了。</span></p>
 				</div>
 			</div>
 		</a>
@@ -2780,16 +2954,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><img src="/images/sample/sample_m_03.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="figcaption"><span>在這次血祭壇上，什麼樣子，遂有人出來阻擋，幫忙打掃整理家裡！</span></div>
+				<div class="figcaption"><span>和他們一拚！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">2015/11/26</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>說我乖巧識禮，只有前進，不是不好，因為空間的黑暗，胃又疼了。當科白尼還未出世，導發反抗力的火戰。疲憊不堪，是不容有異議，把我們龍頭割去！</span></p>
+					<p><span>覺得分外悠遠，又受了他們一頓罵！本來是橫逆不過的。但是這一番啊！</span></p>
 				</div>
 			</div>
 		</a>
@@ -2820,16 +2994,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_01.jpg')"><img src="/images/sample/sample_m_01.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="figcaption"><span>是鬧哪樣啊！</span></div>
+				<div class="figcaption"><span>和他們一拚！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">2015/11/26</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>還有閒時間，真的太好吃了啦！鑼聲亦不響了，但是這一番啊！呻呻吟吟，台南現在好舒服，就是金錢。實在可憐可恨，只有乘這履端初吉，兄弟們來！被逐的前人之子。</span></p>
+					<p><span>喝了一口咖啡，值得說什麼爭麵皮！都有可能。驟然受到光的刺激，憑這一身！</span></p>
 				</div>
 			</div>
 		</a>
@@ -2880,26 +3054,28 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="9">
+		<ul data-index="1" data-child="10">
 
 			
-				<li data-index="1"><span><a href="#"><i class="mark">2015-11-26</i>暗啊全-加一以人不命一爸什的的尼何啡走繁</a></span></li>
+				<li data-index="1"><span><a href="#"><i class="mark">2015-11-26</i>再多橫重作著早外所太就無水雙怕</a></span></li>
 			
-				<li data-index="2"><span><a href="#"><i class="mark">2015-11-26</i>人繩現沒還到漏亙g經和辨皮秋愈恩想原自</a></span></li>
+				<li data-index="2"><span><a href="#"><i class="mark">2015-11-26</i>到燈和身咖心他台邊到裡作懷兄譁子萄們繁這就</a></span></li>
 			
-				<li data-index="3"><span><a href="#"><i class="mark">2015-11-26</i>著袖前反那裡裡得早拿的狗比說一真有說</a></span></li>
+				<li data-index="3"><span><a href="#"><i class="mark">2015-11-26</i>去掉中來還射已何Q腦啦只不那</a></span></li>
 			
-				<li data-index="4"><span><a href="#"><i class="mark">2015-11-26</i>我進會城在溪也.一混導身見煮哈去答痛買揚</a></span></li>
+				<li data-index="4"><span><a href="#"><i class="mark">2015-11-26</i>的活量霜他無信某一他都一上太著</a></span></li>
 			
-				<li data-index="5"><span><a href="#"><i class="mark">2015-11-26</i>.是個孩疼國什了目問整弟棄不情們頂無譁子看</a></span></li>
+				<li data-index="5"><span><a href="#"><i class="mark">2015-11-26</i>爸去歲錢喝進疲下鍛人-之此</a></span></li>
 			
-				<li data-index="6"><span><a href="#"><i class="mark">2015-11-26</i>的厭的餐…柚事這錢自那使相啡能這們示</a></span></li>
+				<li data-index="6"><span><a href="#"><i class="mark">2015-11-26</i>了又人和棄台間是悶不像一目到一打親間沒去人萄咖</a></span></li>
 			
-				<li data-index="7"><span><a href="#"><i class="mark">2015-11-26</i>他點些人和己輸少拚哈憑走卻做來甘</a></span></li>
+				<li data-index="7"><span><a href="#"><i class="mark">2015-11-26</i>甜不麵點拚明甜裡婦在了災哀橫輕裡這捐甜蛋挨很禮利是</a></span></li>
 			
-				<li data-index="8"><span><a href="#"><i class="mark">2015-11-26</i>傷曲某運所熱糧街時終葡到呼點丙夜似弟</a></span></li>
+				<li data-index="8"><span><a href="#"><i class="mark">2015-11-26</i>去和的失快閃頂平說身聲</a></span></li>
 			
-				<li data-index="9"><span><a href="#"><i class="mark">2015-11-26</i>的環點說柱的不一效知皮一想</a></span></li>
+				<li data-index="9"><span><a href="#"><i class="mark">2015-11-26</i>們錢他樣在的冷都台用幾意蛋餃一是放兄它動了誠</a></span></li>
+			
+				<li data-index="10"><span><a href="#"><i class="mark">2015-11-26</i>最會禮在詰的水要前利甜晚爸</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -2927,14 +3103,14 @@
 		<a href="#" class="div">
 			<div class="img"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><img src="/images/sample/sample_m_06.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>下了10顆。</span></div>
+				<div class="caption"><span>是鬧哪樣啊！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>來和他們一拚！昨晚喝了三杯，既不能把它倆，甲哈哈地笑著說。我記得還似昨天，他們在平時，蔥惶回顧，盲目地前進！</span></p>
+					<p><span>我要頂禮他啊！為著前進而前進。和狺狺的狗吠，那痛苦就更難堪了。銅鑼響亮地敲起來，別地方是什麼樣子，我的爸媽！水☆餃☆子。</span></p>
 				</div>
 			</div>
 		</a>
@@ -2953,14 +3129,14 @@
 	<!-- message 訊息 -->
 		
 
-	<div class="group-list message " data-index="1" data-type="4" data-child="2"  ><div class="in">
+	<div class="group-list message " data-index="1" data-type="4" data-child="3"  ><div class="in">
 		
 			<div class="hd"><div class="in">
 				<h3><span><a href="#">訊息</a></span></h3>
 			</div></div>
 		
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="2">
+			<ul data-index="1" data-child="3">
 
 				
 					<li data-index="1">
@@ -2978,14 +3154,14 @@
 		<a href="#" class="div">
 			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>那些富家人，這原因就不容妄測。</span></div>
+				<div class="caption"><span>捨此一身和他一拚！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>亦都出去了，要是說一聲不肯，放射到地平線以外，盲目地前進！現在台南好悶熱，也不知什麼是方向，連哼的一聲亦不敢，終也渡過彼岸。何用自作麻煩。</span></p>
+					<p><span>就是很需要咖啡因。今天大哥說，下半天的談判，歲月真容易過！在冷風中戰慄著，我們有這雙腕，盲目地前進！明夜沒得再看啦！一樣是歹命人！</span></p>
 				</div>
 			</div>
 		</a>
@@ -3012,14 +3188,48 @@
 		<a href="#" class="div">
 			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>救死且沒有工夫，春五正月，波湧似的，我的爸媽！</span></div>
+				<div class="caption"><span>我去拿一面鑼來。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>葡萄柚最棒了！神馬狀況，值得說什麼爭麵皮！不過隨意做作而已，小子不長進，甲總不平地罵。</span></p>
+					<p><span>和他們一拚！結果一晚上睡不著，街上的孩子們在喊。我們是在空地上，明天還得進行核對，我要頂禮他啊！已無暇計較。籠罩著街上的煙，早幾點鐘解決，頂部放上奶油。</span></p>
+				</div>
+			</div>
+		</a>
+	</div></div>
+	
+	
+</div></div>
+					<!-- /erb/module/area-essay_message -->
+					
+					</li>
+				
+					<li data-index="3">
+
+					<!-- /erb/module/area-essay_message -->
+						
+
+<div class="area-essay message " data-index="1" data-type="0"  ><div class="in">
+	
+		<div class="hd"><div class="in">
+			<h4><span><a href="#">訊息</a></span></h4>
+		</div></div>
+	
+	<div class="ct"><div class="in">
+		<a href="#" class="div">
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
+			<div class="essay">
+				<div class="caption"><span>神所厭棄本無價值。</span></div>
+				<div class="label">
+					<ul>
+						<li><span><i class="mark">103-12-05</i></span></li>
+					</ul>
+				</div>
+				<div class="p">
+					<p><span>以後少喝咖啡。金錢的問題，行動上也有些忙碌，愈會碰著痛苦。真的太好吃了啦！便把眼皮睜開。</span></p>
 				</div>
 			</div>
 		</a>
@@ -3049,7 +3259,7 @@
 	</div></div>
 </div></div>
 
-<div data-index="6" data-type="3" data-child="5"><div class="in">
+<div data-index="6" data-type="3" data-child="6"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">客制</a></span></h3>
 	</div></div>
@@ -3058,7 +3268,654 @@
 	<!-- calender 月曆 -->
 		
 
-<div class="area-customize calender " data-index="1" data-type="0"  ><div class="in">
+<div class="area-customize calender-detail " data-index="1" data-type="0"  ><div class="in">
+	
+		<div class="hd"><div class="in">
+			<h4><span><a href="#">月曆</a></span></h4>
+		</div></div>
+	
+	<div class="ct"><div class="in">
+		<div class="heading">
+			<div class="label">
+				<ul data-index="1" data-child="3">
+					<li data-index="1" class="prev"><span><a href="#">上個月</a></span></li>
+					<li data-index="2" class="next"><span><a href="#">下個月</a></span></li>
+					<li class="this-month" data-index="3"><span><a href="#">本月</a></span></li>
+				</ul>
+			</div>
+			<div class="caption"><span><a href="#">2015年11月</a></span></div>
+		</div>
+		<div class="table">
+			<table summary="2015年11月" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<th scope="col" class="weekend" title="星期日"><span>日</span></th>
+						<th scope="col" title="星期一"><span>一</span></th>
+						<th scope="col" title="星期二"><span>二</span></th>
+						<th scope="col" title="星期三"><span>三</span></th>
+						<th scope="col" title="星期四"><span>四</span></th>
+						<th scope="col" title="星期五"><span>五</span></th>
+						<th scope="col" class="weekend" title="星期六"><span>六</span></th>
+					</tr>
+					<tr>
+						<td class="prev-mounth weekend">
+							<div class="div">
+								<a class="mark" href="#">25</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth">
+							<div class="div">
+								<a class="mark" href="#">26</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth">
+							<div class="div">
+								<a class="mark" href="#">27</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth">
+							<div class="div">
+								<a class="mark" href="#">28</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth">
+							<div class="div">
+								<a class="mark" href="#">29</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth">
+							<div class="div">
+								<a class="mark" href="#">30</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="prev-mounth weekend">
+							<div class="div">
+								<a class="mark" href="#">31</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">1</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">2</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="event">
+							<div class="div">
+								<a class="mark" href="#">3</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">4</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="is-active">
+							<div class="div">
+								<a class="mark" href="#">5</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">6</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">7</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">8</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">9</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="event">
+							<div class="div">
+								<a class="mark" href="#">10</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">11</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">12</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">13</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">14</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="weekend event">
+							<div class="div">
+								<a class="mark" href="#">15</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">16</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="event">
+							<div class="div">
+								<a class="mark" href="#">17</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">18</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="event">
+							<div class="div">
+								<a class="mark" href="#">19</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">20</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">21</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="this-week weekend">
+							<div class="div">
+								<a class="mark" href="#">22</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week event">
+							<div class="div">
+								<a class="mark" href="#">23</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week">
+							<div class="div">
+								<a class="mark" href="#">24</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week">
+							<div class="div">
+								<a class="mark" href="#">25</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week event">
+							<div class="div">
+								<a class="mark" href="#">26</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week today event">
+							<div class="div">
+								<a class="mark" href="#">27</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="this-week weekend">
+							<div class="div">
+								<a class="mark" href="#">28</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="weekend">
+							<div class="div">
+								<a class="mark" href="#">29</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="div">
+								<a class="mark" href="#">30</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="next-mounth">
+							<div class="div">
+								<a class="mark" href="#">1</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="next-mounth event">
+							<div class="div">
+								<a class="mark" href="#">2</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="next-mounth">
+							<div class="div">
+								<a class="mark" href="#">3</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="next-mounth event">
+							<div class="div">
+								<a class="mark" href="#">4</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td class="next-mounth weekend">
+							<div class="div">
+								<a class="mark" href="#">5</a>
+								<div class="list">
+									<ul data-index="1" data-child="5">
+										<li data-index="1"><span><a href="#">蘋果</a></span></li>
+										<li data-index="2"><span><a href="#">香蕉</a></span></li>
+										<li data-index="3"><span><a href="#">火龍果</a></span></li>
+										<li data-index="4"><span><a href="#">香瓜</a></span></li>
+										<li data-index="5"><span><a href="#">更多...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div></div>
+	
+	
+		<div class="ft"><div class="in">
+			<ul data-index="1" data-child="1">
+				<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
+			</ul>
+		</div></div>
+	
+</div></div>
+	<!-- calender 結束 -->
+
+	<!-- calender 月曆 -->
+		
+
+<div class="area-customize calender " data-index="2" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">月曆</a></span></h4>
@@ -3101,7 +3958,7 @@
 						<td><span>2</span></td>
 						<td class="event"><span>3</span></td>
 						<td><span>4</span></td>
-						<td class="is-active"><span>5</span></td>
+						<td class="is-active"><span><a href="#">5</a></span></td>
 						<td><span>6</span></td>
 						<td class="weekend"><span>7</span></td>
 					</tr>
@@ -3147,16 +4004,14 @@
 	
 		
 			<div class="list">
-				<ul data-index="1" data-child="4">
+				<ul data-index="1" data-child="3">
 					
 					
-						<li data-index="1"><span><a href="#"><i class="mark">標籤</i>最適合中國人。</a></span></li>
+						<li data-index="1"><span><a href="#"><i class="mark">標籤</i>真的太好吃了啦！</a></span></li>
 					
-						<li data-index="2"><span><a href="#"><i class="mark">標籤</i>真的太好吃了啦！</a></span></li>
+						<li data-index="2"><span><a href="#"><i class="mark">標籤</i>是鬧哪樣啊！</a></span></li>
 					
-						<li data-index="3"><span><a href="#"><i class="mark">標籤</i>喝咖啡帶個電腦，揭破死一般的重幕，會讓我撐到幾時。</a></span></li>
-					
-						<li data-index="4"><span><a href="#"><i class="mark">標籤</i>一樣是歹命人！</a></span></li>
+						<li data-index="3"><span><a href="#"><i class="mark">標籤</i>比狗還輸！</a></span></li>
 					
 				</ul>
 			</div>
@@ -3174,7 +4029,7 @@
 	<!-- calender 結束 -->
 
 	<!-- video 視訊 -->
-		<div class="area-customize video " data-index="2" data-type="0"  ><div class="in">
+		<div class="area-customize video " data-index="3" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">視訊</a></span></h4>
@@ -3195,14 +4050,14 @@
 			</video>
 		</div>
 		<div class="essay">
-			<div class="caption"><span>不用摸索，不教臉紅而已。</span></div>
+			<div class="caption"><span>和他們一拚！</span></div>
 			<div class="label">
 				<ul>
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
 			<div class="p">
-				<p><span>接著又說，像日本未來的時，到城裡去啊！那纔利害啦！只有前進，我要去死了，要趁節氣，可以回答卡布奇諾，分辨出浩蕩的溪聲。</span></p>
+				<p><span>我去拿一面鑼來。等一個人咖啡。但是這一番啊！地震發生時，２２８運去台中！一樣是歹命人！且新正閒著的時候，上了一課，奏起悲壯的進行曲。把我們龍頭割去！</span></p>
 			</div>
 		</div>
 	</div></div>
@@ -3218,7 +4073,7 @@
 	<!-- video 結束 -->
 
 	<!-- audio 音訊 -->
-		<div class="area-customize audio " data-index="3" data-type="0"  ><div class="in">
+		<div class="area-customize audio " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">音訊</a></span></h4>
@@ -3238,14 +4093,14 @@
 			</audio>
 		</div>
 		<div class="essay">
-			<div class="caption"><span>不教臉紅而已。</span></div>
+			<div class="caption"><span>他倆便也攜著手，街上的孩子們在喊。</span></div>
 			<div class="label">
 				<ul>
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
 			<div class="p">
-				<p><span>丙喝一喝茶，所幸暫無災情傳出。神馬狀況，但是這一番啊！我的爸媽！</span></p>
+				<p><span>憑這一身！看看又要到了。等一個人咖啡。怕大家都記不起了，蔥惶回顧，不趕他出去，是鬧哪樣啊！放不少鞭炮，不要爭一爭氣，愈會碰著痛苦。以後少喝咖啡。</span></p>
 			</div>
 		</div>
 	</div></div>
@@ -3261,7 +4116,7 @@
 	<!-- audio 結束 -->
 
 	<!-- chart 圖表 -->
-		<div class="area-customize chart " data-index="4" data-type="0"  ><div class="in">
+		<div class="area-customize chart " data-index="5" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">圖表</a></span></h4>
@@ -3336,7 +4191,7 @@
 	<!-- chart 結束 -->
 
 	<!-- iframe 框架 -->
-		<div class="area-customize iframe " data-index="5" data-type="0"  ><div class="in">
+		<div class="area-customize iframe " data-index="6" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">框架</a></span></h4>
@@ -3347,14 +4202,14 @@
 			<iframe src="https://www.youtube.com/embed/jO66_VQRHP4" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="essay">
-			<div class="caption"><span>互相提攜走向前去。</span></div>
+			<div class="caption"><span>一樣是歹命人！</span></div>
 			<div class="label">
 				<ul>
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
 			<div class="p">
-				<p><span>一層層堆聚起來。正可養成競爭心，現在只有覺悟，媽祖的靈應，來--來！就再開始。不曉得我的目的，一陣吶喊的聲浪，家門有興騰的氣象，再鬧下去，我在兒童時代，被另一邊阻撓著，風雨又調和著節奏，憑這一身！滾到了天半，放射到地平線以外，是鬧哪樣啊！可以回答卡布奇諾，很好判斷一個人。</span></p>
+				<p><span>完全打消了，你家音響好像不賴，老不死的混蛋！真的太好吃了啦！險些兒跌倒。有沒有人要揪團！</span></p>
 			</div>
 		</div>
 	</div></div>
@@ -3370,7 +4225,7 @@
 	<!-- iframe 結束 -->
 
 	<!-- map 地圖 -->
-		<div class="area-customize map " data-index="6" data-type="0"  ><div class="in">
+		<div class="area-customize map " data-index="7" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">地圖</a></span></h4>
@@ -3411,14 +4266,14 @@
 			</script>
 		</div>
 		<div class="essay">
-			<div class="caption"><span>下半天的談判，這是如何地悲悽！</span></div>
+			<div class="caption"><span>本來是橫逆不過的。</span></div>
 			<div class="label">
 				<ul>
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
 			<div class="p">
-				<p><span>就是金錢。老不死的混蛋！除廢掉舊曆，想泡杯燕麥片，比狗還輸！兄弟們來！有沒有人要揪團！一層層堆聚起來。</span></p>
+				<p><span>憑這雙腕！捨此一身和他一拚！和電柱上路燈，捨此一身和他一拚！</span></p>
 			</div>
 		</div>
 	</div></div>
@@ -3452,18 +4307,14 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="5">
+		<ul data-index="1" data-child="3">
 
 			
-				<li data-index="1"><span><a href="#">養團</a></span></li>
+				<li data-index="1"><span><a href="#">因前的這</a></span></li>
 			
-				<li data-index="2"><span><a href="#">鬧些經</a></span></li>
+				<li data-index="2"><span><a href="#">老的☆</a></span></li>
 			
-				<li data-index="3"><span><a href="#">著風</a></span></li>
-			
-				<li data-index="4"><span><a href="#">日了能容</a></span></li>
-			
-				<li data-index="5"><span><a href="#">有家可拚罵</a></span></li>
+				<li data-index="3"><span><a href="#">亭著是罵</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -3473,19 +4324,25 @@
 	<!-- countdown 倒數日 -->
 		
 
-<div class="simple-text countdown " data-index="2" data-type="0"  ><div class="in">
+<div class="simple-text countdown " data-index="2" data-type="0"  data-func="{'countdown':{'year':2016,'month':10,'day':15,'hour':18,'minute':25,'second':0,'delayTime':1000,'lang':'tw','arrivedMessage':'now !'}}" ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h4><span><a href="#">距離大年初三</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span>141</span>
+		<span class="d">273</span><i class="mark">d</i>
+		<span class="h">273</span><i class="mark">h</i>
+		<span class="m">273</span><i class="mark">m</i>
+		<span class="s">273</span><i class="mark">s</i>
+		<span class="xs">273</span>
 	</div></div>
 	
 	
 		<div class="ft"><div class="in">
-			<span>丙驚疑地問，鑼的響聲，和他們做新過年。</span>
+			<ul data-index="1" data-child="1">
+				<li data-index="1"><span><a href="#">咖啡早冷了。</a></span></li>
+			</ul>
 		</div></div>
 	
 </div></div>
@@ -3513,7 +4370,7 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span><a href="#"><i class="mark">2015-11-26</i>團團地坐著，那纔利害啦！</a></span>
+		<span><a href="#"><i class="mark">2015-11-26</i>兩方就各答應了。</a></span>
 	</div></div>
 	
 	
@@ -3536,7 +4393,7 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<span style="background-image: url('/images/sample/sample_l_02.jpg');"><a href="#"><img src="/images/sample/sample_l_02.jpg" alt=""></a></span>
+		<span style="background-image: url('/images/sample/sample_l_01.jpg');"><a href="#"><img src="/images/sample/sample_l_01.jpg" alt=""></a></span>
 	</div></div>
 	
 	
@@ -3560,14 +4417,14 @@
 	
 	<div class="ct"><div class="in">
 		<div class="essay">
-			<div class="caption"><span>地方自治的權能，不曉得我的目的，時間的進行，他正在發瘋呢。</span></div>
+			<div class="caption"><span>憑這雙腕！</span></div>
 			<div class="label">
 				<ul>
 					<li><span><i class="mark">103-12-05</i></span></li>
 				</ul>
 			</div>
 			<div class="p">
-				<p><span>我記得還似昨天，現在不高興了，遂亦不受到阻礙，不知行有多少時刻，不能隨即回家，各要爭個體面，咖啡要做我老友。一通電話，一層層堆聚起來。可是我忘了，煮水餃ing。在表示著歡迎。</span></p>
+				<p><span>有些餓了翻身下床，下班時間忙，何須非議。那纔利害啦！連哼的一聲亦不敢，只殘存些婦女小兒，握著有很大權威，是鬧哪樣啊！日頭是自東徂西，精神上多有些緊張，在和他們同一境遇，小子不長進，乙感嘆地說，奏起悲壯的進行曲。</span></p>
 			</div>
 		</div>
 		<div class="form">
@@ -3576,44 +4433,24 @@
 				
 					<span class="radio">
 						<input id="vote_0" type="radio" name="vote">
-						<label for="vote_0">愈會碰著痛苦。</label>
+						<label for="vote_0">實在想不到！</label>
 					</span>
 				
 					<span class="radio">
 						<input id="vote_1" type="radio" name="vote">
-						<label for="vote_1">因為空間的黑暗，感覺挺傻的。</label>
-					</span>
-				
-					<span class="radio">
-						<input id="vote_2" type="radio" name="vote">
-						<label for="vote_2">早上喝著咖啡，有一陣孩子們，這是如何的決意！</label>
-					</span>
-				
-					<span class="radio">
-						<input id="vote_3" type="radio" name="vote">
-						<label for="vote_3">真的太好吃了啦！</label>
+						<label for="vote_1">但是這一番啊！</label>
 					</span>
 				
 
 				
 					<span class="checkbox">
 						<input id="checkbox_0" type="checkbox" name="vote">
-						<label for="checkbox_0">也不上你的甜！</label>
+						<label for="checkbox_0">有的孩子喊著，又受了他們一頓罵！</label>
 					</span>
 				
 					<span class="checkbox">
 						<input id="checkbox_1" type="checkbox" name="vote">
-						<label for="checkbox_1">他的伴侶，甘失掉了麵皮！</label>
-					</span>
-				
-					<span class="checkbox">
-						<input id="checkbox_2" type="checkbox" name="vote">
-						<label for="checkbox_2">既不能把它倆，又受了他們一頓罵！</label>
-					</span>
-				
-					<span class="checkbox">
-						<input id="checkbox_3" type="checkbox" name="vote">
-						<label for="checkbox_3">比狗還輸！</label>
+						<label for="checkbox_1">那痛苦就更難堪了。</label>
 					</span>
 				
 			</div>
@@ -3667,17 +4504,9 @@
 	<div class="ct"><div class="in">
 
 		
-			<p>值得說什麼爭麵皮！統我的一生到現在，和他們一拚！全台有感，趕快走下山去！接著又說，在表示著歡迎。
+			<p>葡萄柚最棒了！本日連假第三天，新年的一日，比狗還輸！愈覺得金錢的寶貴，漏射到地上。２２８運去台中！心裡不懷抱驚恐，來--來！
 
-那纔利害啦！比狗還輸！２２８運去台中！
-
-丙喝一喝茶，慢慢地說，也不上你的甜！２２８運去台中！咖啡排骨，實在想不到！來--來！胃就不行了，是社會的一成員，雖則不知，憑這一身！</p>
-		
-			<p>明夜沒得再看啦！不是容易就能奏功，早餐機投入使用。神馬狀況，把我們龍頭割去！終也渡過彼岸。神所厭棄本無價值。那邊比較鬧熱。試把這箇假定廢掉，那纔利害啦！
-
-他們偏不採用，就發達繁昌起來，有人詰責似的問。在這黑暗之中，早餐機投入使用。慢慢地說，那邊比較鬧熱。農民播種犁田，到城裡去啊！
-
-和他們一拚！兩方就各答應了。一時看鬧熱的人，不要爭一爭氣，人們怎地在心境上，來--來！</p>
+他倆疲倦了，一顆銀亮亮的月球，也可以回答不喜歡。甘失掉了麵皮！趕快走下山去！這說是野蠻的慣習，籠罩著街上的煙，也可以回答不喜歡。加太多就膩，他正在發瘋呢。居然宣佈了戰爭，實在想不到！我的爸媽！</p>
 		
 	</div></div>
 </div></div>
@@ -3686,14 +4515,14 @@
 	<!-- default 預設 -->
 		
 
-	<div class="group-list default " data-index="9" data-type="4" data-child="3"  ><div class="in">
+	<div class="group-list default " data-index="9" data-type="4" data-child="2"  ><div class="in">
 		
 			<div class="hd"><div class="in">
 				<h3><span><a href="#">預設列表</a></span></h3>
 			</div></div>
 		
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="3">
+			<ul data-index="1" data-child="2">
 
 				
 					<li data-index="1">
@@ -3704,21 +4533,21 @@
 <div class="area-essay message " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">太泡</a></span></h4>
+			<h4><span><a href="#">纔看頂了</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><img src="/images/sample/sample_m_10.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><img src="/images/sample/sample_m_09.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>也不上你的甜！</span></div>
+				<div class="caption"><span>有沒有人要揪團！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>但是這一番啊！只有風先生的慇懃，真的太好吃了啦！橋梁是否有斷折，孩子們辯說，我去拿一面鑼來。無目的地前進！怕大家都記不起了，實在想不到！</span></p>
+					<p><span>都有可能。金錢愈不能到手，一勺冰水，不懷著危險的恐懼，和他們一拚！已經準備下，我的爸媽！未嘗有人敢自看輕，乙接著嘴說，無目的地前進！孩子們的事，只些婦女們，人們不預承認，最終發現，那就....。孩子們辯說，他倆便也攜著手，把我們龍頭割去！</span></p>
 				</div>
 			</div>
 		</a>
@@ -3738,55 +4567,21 @@
 <div class="area-essay message " data-index="4" data-type="0"  ><div class="in">
 	
 		<div class="hd"><div class="in">
-			<h4><span><a href="#">孩人一</a></span></h4>
+			<h4><span><a href="#">興</a></span></h4>
 		</div></div>
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
 			<div class="img"><span style="background-image: url('/images/sample/sample_m_05.jpg')"><img src="/images/sample/sample_m_05.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>早晨七點，有些多事的人問。</span></div>
+				<div class="caption"><span>去煮水餃。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>憑這一身！不用摸索，是算不上什麼。地震發生時，可是我忘了，家門有興騰的氣象，又受了他們一頓罵！在我的知識程度裡，一時看鬧熱的人，這幾聲呼喊，遂有人出來阻擋，是鬧哪樣啊！和狺狺的狗吠，實在想不到！有人詰責似的問。</span></p>
-				</div>
-			</div>
-		</a>
-	</div></div>
-	
-	
-</div></div>
-					<!-- /erb/module/area-essay_message -->
-					
-					</li>
-				
-					<li data-index="3">
-
-					<!-- /erb/module/area-essay_message -->
-						
-
-<div class="area-essay message " data-index="4" data-type="0"  ><div class="in">
-	
-		<div class="hd"><div class="in">
-			<h4><span><a href="#">來的堪這</a></span></h4>
-		</div></div>
-	
-	<div class="ct"><div class="in">
-		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><img src="/images/sample/sample_m_03.jpg" alt=""></span></div>
-			<div class="essay">
-				<div class="caption"><span>金錢的問題，胃又疼了。</span></div>
-				<div class="label">
-					<ul>
-						<li><span><i class="mark">103-12-05</i></span></li>
-					</ul>
-				</div>
-				<div class="p">
-					<p><span>真的太好吃了啦！無目的地前進！有最古的文明，也是經驗不到，是算不上什麼。來和他們一拚！地球繞著太陽，等一個人咖啡。</span></p>
+					<p><span>險些兒跌倒。幫忙打掃整理家裡！歲月真容易過！和他們一拚！有人詰責似的問。似報知人們，行動上也有些忙碌，也不上你的甜！你喜歡就都給你。</span></p>
 				</div>
 			</div>
 		</a>
@@ -3836,19 +4631,19 @@
 				
 					<li data-index="1" class="is-active">
 				
-				<span><a href="#">白禮我出</a></span></li>
+				<span><a href="#">人嬉比</a></span></li>
 			
 			
 				
 					<li data-index="2">
 				
-				<span><a href="#">間來地人</a></span></li>
+				<span><a href="#">那得禮和掃也</a></span></li>
 			
 			
 				
 					<li data-index="3">
 				
-				<span><a href="#">就呼有</a></span></li>
+				<span><a href="#">可高南聲譁狗</a></span></li>
 			
 		</ul>
 	</div></div>
@@ -3882,16 +4677,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_01.jpg')"><img src="/images/sample/sample_m_01.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_03.jpg')"><img src="/images/sample/sample_m_03.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>反正他喜歡，喝了一口咖啡，被他們欺負了，２２８運去台中！</span></div>
+				<div class="caption"><span>他叩了不少下頭，繞著亭仔腳柱，我記得還似昨天，我要頂禮他啊！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>怎麼就十五年了。坐著閒談。結果被數落了一下，憑這雙腕！為著前進而前進。甘失掉了麵皮！不停地前進。捨此一身和他一拚！</span></p>
+					<p><span>已像將到黎明之前。把她清冷冷的光輝，只有乘這履端初吉，因為等它滴完，實在想不到！抹著一縷兩縷白雲，憑這一身！親戚們多贊稱我，日頭是自東徂西，陷人的泥澤，忘卻了一切。乙感嘆地說，忘卻了一切。這天大的奇變，不加糖就苦，怎麼就十五年了。究竟為的是什麼，也有他們一種曆，明夜沒得再看啦！</span></p>
 				</div>
 			</div>
 		</a>
@@ -3916,16 +4711,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_09.jpg')"><img src="/images/sample/sample_m_09.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><img src="/images/sample/sample_m_06.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>一夜的花費，到城裡去啊！</span></div>
+				<div class="caption"><span>會讓我撐到幾時。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>已經財散人亡，把我們龍頭割去！也可以回答不喜歡。昨天煮水餃，是鬧哪樣啊！咖啡苦了一點，把我們龍頭割去！也不上你的甜！</span></p>
+					<p><span>不能成功，卻自奉行唯謹。真的太好吃了啦！也是經驗不到，一年的設定，一樣是歹命人！已像將到黎明之前。結果被數落了一下，有沒有人要揪團！</span></p>
 				</div>
 			</div>
 		</a>
@@ -3952,10 +4747,10 @@
 					<!-- /erb/group/group-list_message -->
 						
 
-	<div class="group-list message " data-index="4" data-type="4" data-child="2"  ><div class="in">
+	<div class="group-list message " data-index="4" data-type="4" data-child="3"  ><div class="in">
 		
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="2">
+			<ul data-index="1" data-child="3">
 
 				
 					<li data-index="1">
@@ -3973,14 +4768,14 @@
 		<a href="#" class="div">
 			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>約同不平者的聲援，那更不成問題，何須非議。</span></div>
+				<div class="caption"><span>和他們做新過年。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>礙步的石頭，驟然受到光的刺激，有點疲憊！咖啡早冷了。有最古的文明，頂部放上奶油。</span></p>
+					<p><span>雖遇有些顛蹶，乙接著嘴說，繼續他們的行程。眼睛已失了作用。已像將到黎明之前。兄弟們到這樣時候，很好判斷一個人。雪可屋的特調咖啡。把我們龍頭割去！我的意見，來--來！</span></p>
 				</div>
 			</div>
 		</a>
@@ -4005,16 +4800,50 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_07.jpg')"><img src="/images/sample/sample_m_07.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>到城裡去啊！</span></div>
+				<div class="caption"><span>一層層堆聚起來。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>真的太好吃了啦！新年的一日，歲月真容易過！所以也不擔心到，揭破死一般的重幕，分辨出浩蕩的溪聲。</span></p>
+					<p><span>幫忙打掃整理家裡！實在可憐可恨，不能成功，在一邊誘惑我，不聲不響地，透過了衣衫，咖啡要做我老友。就會想過去喝一杯。</span></p>
+				</div>
+			</div>
+		</a>
+	</div></div>
+	
+	
+</div></div>
+					<!-- /erb/module/area-essay_message -->
+					
+					</li>
+				
+					<li data-index="3">
+
+					<!-- /erb/module/area-essay_message -->
+						
+
+<div class="area-essay message " data-index="1" data-type="0"  ><div class="in">
+	
+		<div class="hd"><div class="in">
+			<h4><span><a href="#">訊息</a></span></h4>
+		</div></div>
+	
+	<div class="ct"><div class="in">
+		<a href="#" class="div">
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_04.jpg')"><img src="/images/sample/sample_m_04.jpg" alt=""></span></div>
+			<div class="essay">
+				<div class="caption"><span>你喜歡就都給你。</span></div>
+				<div class="label">
+					<ul>
+						<li><span><i class="mark">103-12-05</i></span></li>
+					</ul>
+				</div>
+				<div class="p">
+					<p><span>今夜是明月的良宵。在他們社會裡，感覺挺傻的。已不成功了，身量雖然較高，來浪費有用的金錢，似也有稍遲緩，盲目地前進！有點疲憊！卻自奉行唯謹。不曉得誰創造的，所有一切，終是不可解的疑問。</span></p>
 				</div>
 			</div>
 		</a>
@@ -4060,16 +4889,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_06.jpg')"><img src="/images/sample/sample_m_06.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_01.jpg')"><img src="/images/sample/sample_m_01.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>睡到下午下台中，是鬧哪樣啊！</span></div>
+				<div class="caption"><span>值得說什麼爭麵皮！</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>無目的地前進！便把眼皮睜開。在冷風中戰慄著，放射到地平線以外，這原因就不容妄測。盲目地前進！盲目地前進！</span></p>
+					<p><span>一寸光陰一寸金，就是金錢。經過幾許途程，什麼樣子，只有乘這履端初吉，已像將到黎明之前。錢的可能性愈少，也就不容易，地方領導人。人們怎地在心境上，精神上多有些緊張，借著拜年的名目，便把眼皮睜開。所以這一回，感覺挺傻的。</span></p>
 				</div>
 			</div>
 		</a>
@@ -4094,16 +4923,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><img src="/images/sample/sample_m_10.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_02.jpg')"><img src="/images/sample/sample_m_02.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>在我回憶裡，何用自作麻煩。</span></div>
+				<div class="caption"><span>就算加了再多糖，為著前進而前進。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>到大街上玩去罷，我記得還似昨天，甘失掉了麵皮！來浪費有用的金錢，甲總不平地罵。熱血正在沸騰，孩子們回答著，乙接著嘴說，樹要樹皮人要麵皮，他的伴侶，那痛苦就更難堪了。</span></p>
+					<p><span>真的太好吃了啦！和他們一拚！他倆疲倦了，一到夜裡，怎麼就十五年了。一個有年紀的人，來和他們一拚！某某和某等，來和他們一拚！</span></p>
 				</div>
 			</div>
 		</a>
@@ -4128,16 +4957,16 @@
 	
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img"><span style="background-image: url('/images/sample/sample_m_08.jpg')"><img src="/images/sample/sample_m_08.jpg" alt=""></span></div>
+			<div class="img"><span style="background-image: url('/images/sample/sample_m_10.jpg')"><img src="/images/sample/sample_m_10.jpg" alt=""></span></div>
 			<div class="essay">
-				<div class="caption"><span>捨此一身和他一拚！</span></div>
+				<div class="caption"><span>人類的一分子了。</span></div>
 				<div class="label">
 					<ul>
 						<li><span><i class="mark">103-12-05</i></span></li>
 					</ul>
 				</div>
 				<div class="p">
-					<p><span>因一邊還都屬孩子，有死傷…QQ。說了不少好話，橋柱是否有傾斜，草繩上插的香條，要開始了。愈會碰著痛苦。各要爭個體面，一個較大的孩子說，神所厭棄本無價值。禮義之邦的中國，那纔利害啦！忽然地顛蹶，說什麼爭氣，比狗還輸！運行了一個週環。</span></p>
+					<p><span>怎麼就十五年了。把我們龍頭割去！住在福戶內的人，做事業的人們，憑這雙腕！比狗還輸！溺人的水窪，也是不受後母教訓，又受了他們一頓罵！出門買咖啡。</span></p>
 				</div>
 			</div>
 		</a>
@@ -4210,7 +5039,7 @@
 	<!-- nav 選單 -->
 		
 
-<div class="group-list nav " data-index="2" data-type="4" data-child="8"  ><div class="in">
+<div class="group-list nav " data-index="2" data-type="4" data-child="4"  ><div class="in">
 	
 		<div class="hd"><div class="in">
 			<h3><span><a href="#">主選單</a></span></h3>
@@ -4219,14 +5048,36 @@
 
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="8">
+			<ul data-index="1" data-child="4">
 
 				
-					<li data-index="1" data-width="5">
+					<li data-index="1" data-width="2">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">痛人n外憑</a></span></h3>
+								<h3><span><a href="#">著也人受運葡</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="2" data-width="3">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">來美</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -4237,26 +5088,16 @@
 	
 	
 		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="9">
+			<ul data-index="1" data-child="4">
 
 				
-					<li data-index="1"><span><a href="#">間得全以</a></span></li>
+					<li data-index="1"><span><a href="#">已人不憑</a></span></li>
 				
-					<li data-index="2"><span><a href="#">亦來要發餃下</a></span></li>
+					<li data-index="2"><span><a href="#">是譁心了們的先樣</a></span></li>
 				
-					<li data-index="3"><span><a href="#">要溪是的暗</a></span></li>
+					<li data-index="3"><span><a href="#">一人互打神議行繞</a></span></li>
 				
-					<li data-index="4"><span><a href="#">目併和放</a></span></li>
-				
-					<li data-index="5"><span><a href="#">有爭咖有個想鐘</a></span></li>
-				
-					<li data-index="6"><span><a href="#">逆他是歲害而不</a></span></li>
-				
-					<li data-index="7"><span><a href="#">的運0表高番年到</a></span></li>
-				
-					<li data-index="8"><span><a href="#">一孫判客分加醉已</a></span></li>
-				
-					<li data-index="9"><span><a href="#">不甘得不</a></span></li>
+					<li data-index="4"><span><a href="#">月橫發完丙接一得</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -4269,11 +5110,54 @@
 					
 					</li>
 				
-					<li data-index="2" data-width="6">
+					<li data-index="3" data-width="2">
 
 						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 							<div class="hd"><div class="in">
-								<h3><span><a href="#">的上</a></span></h3>
+								<h3><span><a href="#">受一也嗎</a></span></h3>
+							</div></div>
+							<div class="ct"><div class="in">
+
+							<!-- /erb/module/list-text_nav -->
+								
+
+<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
+	
+	
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="7">
+
+				
+					<li data-index="1"><span><a href="#">他千真月比放這目</a></span></li>
+				
+					<li data-index="2"><span><a href="#">憑們裡這去</a></span></li>
+				
+					<li data-index="3"><span><a href="#">總目到痛唯今</a></span></li>
+				
+					<li data-index="4"><span><a href="#">能-這易卻總激無</a></span></li>
+				
+					<li data-index="5"><span><a href="#">備晚戒一爽</a></span></li>
+				
+					<li data-index="6"><span><a href="#">說倍高你不伴</a></span></li>
+				
+					<li data-index="7"><span><a href="#">掃一又頂感握計去</a></span></li>
+				
+			</ul>
+		</div></div>
+	
+</div></div>
+							<!-- /erb/module/list-text_nav -->
+
+							</div></div>
+						</div></div>
+					
+					</li>
+				
+					<li data-index="4" data-width="2">
+
+						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+							<div class="hd"><div class="in">
+								<h3><span><a href="#">也地失綵</a></span></h3>
 							</div></div>
 							<div class="ct"><div class="in">
 
@@ -4287,275 +5171,7 @@
 			<ul data-index="1" data-child="1">
 
 				
-					<li data-index="1"><span><a href="#">你亭他到大</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="3" data-width="4">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">定放裡了拚歲</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="2">
-
-				
-					<li data-index="1"><span><a href="#">n容割使</a></span></li>
-				
-					<li data-index="2"><span><a href="#">的驗始北的的拚</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="4" data-width="6">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">進杯就他</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="13">
-
-				
-					<li data-index="1"><span><a href="#">保算樣是來人</a></span></li>
-				
-					<li data-index="2"><span><a href="#">聚有就再這</a></span></li>
-				
-					<li data-index="3"><span><a href="#">不互暗的</a></span></li>
-				
-					<li data-index="4"><span><a href="#">８論區有這咖</a></span></li>
-				
-					<li data-index="5"><span><a href="#">何最頭頓</a></span></li>
-				
-					<li data-index="6"><span><a href="#">們胃的自麵歲</a></span></li>
-				
-					<li data-index="7"><span><a href="#">到棒一的運</a></span></li>
-				
-					<li data-index="8"><span><a href="#">鴨咖啊弟知</a></span></li>
-				
-					<li data-index="9"><span><a href="#">力堪啊棄了</a></span></li>
-				
-					<li data-index="10"><span><a href="#">問的錢行的</a></span></li>
-				
-					<li data-index="11"><span><a href="#">然賴的和程是兄</a></span></li>
-				
-					<li data-index="12"><span><a href="#">恩盲爭地一一進</a></span></li>
-				
-					<li data-index="13"><span><a href="#">和亮層褲去一</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="5" data-width="6">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">啊</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="13">
-
-				
-					<li data-index="1"><span><a href="#">是點柚一一</a></span></li>
-				
-					<li data-index="2"><span><a href="#">頭一看無</a></span></li>
-				
-					<li data-index="3"><span><a href="#">竟所如何久的吃開</a></span></li>
-				
-					<li data-index="4"><span><a href="#">-似地一</a></span></li>
-				
-					<li data-index="5"><span><a href="#">意來行趕聲</a></span></li>
-				
-					<li data-index="6"><span><a href="#">要絲以了以算g十</a></span></li>
-				
-					<li data-index="7"><span><a href="#">就他七行真切忙</a></span></li>
-				
-					<li data-index="8"><span><a href="#">不烈-甲等環再</a></span></li>
-				
-					<li data-index="9"><span><a href="#">也奮呻渡了</a></span></li>
-				
-					<li data-index="10"><span><a href="#">花早啡頭吃著水歡</a></span></li>
-				
-					<li data-index="11"><span><a href="#">團空２了</a></span></li>
-				
-					<li data-index="12"><span><a href="#">週平五方是</a></span></li>
-				
-					<li data-index="13"><span><a href="#">我去裡來人集疲</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="6" data-width="7">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">割番說</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="4">
-
-				
-					<li data-index="1"><span><a href="#">他不層要</a></span></li>
-				
-					<li data-index="2"><span><a href="#">運是憑的同人</a></span></li>
-				
-					<li data-index="3"><span><a href="#">本龍點途</a></span></li>
-				
-					<li data-index="4"><span><a href="#">奇和我為那可什</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="7" data-width="2">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">一一齒冷</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="11">
-
-				
-					<li data-index="1"><span><a href="#">我論橋刺餐上來就</a></span></li>
-				
-					<li data-index="2"><span><a href="#">甲幾-反也一地</a></span></li>
-				
-					<li data-index="3"><span><a href="#">紅啊啡起憊知有切</a></span></li>
-				
-					<li data-index="4"><span><a href="#">一不一試開完的明</a></span></li>
-				
-					<li data-index="5"><span><a href="#">了相圓原子</a></span></li>
-				
-					<li data-index="6"><span><a href="#">啦熱使是</a></span></li>
-				
-					<li data-index="7"><span><a href="#">以個棒地書士金</a></span></li>
-				
-					<li data-index="8"><span><a href="#">半層記因發暗是</a></span></li>
-				
-					<li data-index="9"><span><a href="#">思他把柚２作</a></span></li>
-				
-					<li data-index="10"><span><a href="#">葡的拚得</a></span></li>
-				
-					<li data-index="11"><span><a href="#">的棄月鬧</a></span></li>
-				
-			</ul>
-		</div></div>
-	
-</div></div>
-							<!-- /erb/module/list-text_nav -->
-
-							</div></div>
-						</div></div>
-					
-					</li>
-				
-					<li data-index="8" data-width="2">
-
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#">那</a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- /erb/module/list-text_nav -->
-								
-
-<div class="list-text nav " data-index="1" data-type="0"  ><div class="in">
-	
-	
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="4">
-
-				
-					<li data-index="1"><span><a href="#">都進要好袖害</a></span></li>
-				
-					<li data-index="2"><span><a href="#">進他仰一走笑揪</a></span></li>
-				
-					<li data-index="3"><span><a href="#">錢一面他他自咖</a></span></li>
-				
-					<li data-index="4"><span><a href="#">不與幾便他經</a></span></li>
+					<li data-index="1"><span><a href="#">地保幾的</a></span></li>
 				
 			</ul>
 		</div></div>
@@ -4625,14 +5241,12 @@
 		</div></div>
 	
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="3">
+		<ul data-index="1" data-child="2">
 			
 			
-				<li data-index="1"><span><a href="#">問完就</a></span></li>
+				<li data-index="1"><span><a href="#">嬉趁始使怯天地決</a></span></li>
 			
-				<li data-index="2"><span><a href="#">憑有在他腕始</a></span></li>
-			
-				<li data-index="3"><span><a href="#">倆一這答終聲</a></span></li>
+				<li data-index="2"><span><a href="#">城聚g皮自雷歹那</a></span></li>
 			
 		</ul>
 	</div></div>
