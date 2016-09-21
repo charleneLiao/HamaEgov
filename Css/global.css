@@ -3,7 +3,7 @@
 	順序上位於 base/variable 之前，因此不能使用任何 base/variable 變數 
 */
 /* line 420, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .label ul, .base-module-area .area-form.vote .ct .label ul, .base-aside .area-form.vote .ct .label ul, .base-section .area-form.vote .ct .label ul, .area-essay.message .ct .label ul, .base-module-area .area-essay.link .ct .label ul, .base-aside .area-essay.link .ct .label ul, .base-section .area-essay.link .ct .label ul, .area-essay.page-essay .ct .label ul, .area-essay.page-img-caption-label .ct .label ul, .area-essay.page-caption-label-p .ct .label ul, .area-essay.page-caption-label .ct .label ul, .area-figure.album .ct .label ul, .area-figure.link .ct .label ul, .base-extend .area-customize.video .ct .label ul, .base-module-area .area-customize.video .ct .label ul, .base-aside .area-customize.video .ct .label ul, .base-section .area-customize.video .ct .label ul, .base-extend .area-customize.audio .ct .label ul, .base-module-area .area-customize.audio .ct .label ul, .base-aside .area-customize.audio .ct .label ul, .base-section .area-customize.audio .ct .label ul, .base-extend .area-customize.iframe .ct .label ul, .base-module-area .area-customize.iframe .ct .label ul, .base-aside .area-customize.iframe .ct .label ul, .base-section .area-customize.iframe .ct .label ul, .base-extend .area-customize.map .ct .label ul, .base-module-area .area-customize.map .ct .label ul, .base-aside .area-customize.map .ct .label ul, .base-section .area-customize.map .ct .label ul, .base-extend .area-form.vote .ct .p p, .base-module-area .area-form.vote .ct .p p, .base-aside .area-form.vote .ct .p p, .base-section .area-form.vote .ct .p p, .area-essay.message .ct .p p, .base-module-area .area-essay.link .ct .p p, .base-aside .area-essay.link .ct .p p, .base-section .area-essay.link .ct .p p, .area-essay.page-essay .ct .p p, .area-essay.page-img-caption-p .ct .p p, .area-essay.page-caption-label-p .ct .p p, .area-essay.page-caption-p .ct .p p, .area-figure.album .ct .p p, .area-figure.link .ct .p p, .area-figure.page-img-figcaption-p .ct .p p, .area-figure.page-img-label-p .ct .p p, .area-figure.page-img-p .ct .p p, .base-extend .area-customize.video .ct .p p, .base-module-area .area-customize.video .ct .p p, .base-aside .area-customize.video .ct .p p, .base-extend .area-customize.audio .ct .p p, .base-module-area .area-customize.audio .ct .p p, .base-aside .area-customize.audio .ct .p p, .base-extend .area-customize.iframe .ct .p p, .base-module-area .area-customize.iframe .ct .p p, .base-aside .area-customize.iframe .ct .p p, .base-extend .area-customize.map .ct .p p, .base-module-area .area-customize.map .ct .p p, .base-aside .area-customize.map .ct .p p, [data-type="0"] .hd h4, [data-type="0"] .ft ul, [data-type="1"] > .bg-drop-layout > .in > .hd h3, [data-type="1"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .hd h3, [data-type="2"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="2"] > .in > .ct > .in > ul, [data-type="3"] > .bg-drop-layout > .in > .hd h3, [data-type="3"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .hd h3, [data-type="4"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="4"] > .in > .ct > .in > ul, [data-type="4"] > .bg-drop-layout > .in > .ft ul, [data-type="4"] > .in > .ft ul, .base-footer .group.nav > .bg-drop-layout > .in > .ct, .base-footer .group.nav > .in > .ct, .group.light-box > .bg-drop-layout > .in > .ft ul, .group.light-box > .in > .ft ul, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul, .group-tab.default > .in > .ct > .in > ul, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.nav > .in > .hd h3, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.nav > .in > .hd h3, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.nav > .in > .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-mobile .simple-text.major-logo .ct h1, .base-header .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .list-text .ct ul, .list-text.minor-nav .hd h4, .list-text.sitemap .hd h4, .list-pic .ct ul, .list-multiple.page-select .ct ul, .list-multiple.page-click .ct ul, .base-header .area-form.search .ct .list ul, .area-form.sign-in .ct .list ul, .area-figure.page-figure .ct .label ul, .area-figure.page-figure .ct .p p, .area-figure.page-img-figcaption-label .ct .label ul, .area-figure.page-img-figcaption-label .ct .p p, .area-figure.page-img-label .ct .label ul, .area-figure.page-img-label-p .ct .label ul, .area-customize.calender-detail .ct .label ul, .area-customize.calender-detail .ct .list ul, .area-customize.calender .ct .label ul, .area-customize.calender .ct .list ul, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="2"] > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="2"] > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="4"] > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="4"] > .in > .ct > .in > ul > li > [data-index][data-type] > .in {
+.base-extend .area-form.vote .ct .label ul, .base-module-area .area-form.vote .ct .label ul, .base-aside .area-form.vote .ct .label ul, .base-section .area-form.vote .ct .label ul, .area-essay.message .ct .label ul, .base-module-area .area-essay.link .ct .label ul, .base-aside .area-essay.link .ct .label ul, .base-section .area-essay.link .ct .label ul, .area-essay.page-essay .ct .label ul, .area-essay.page-img-caption-label .ct .label ul, .area-essay.page-caption-label-p .ct .label ul, .area-essay.page-caption-label .ct .label ul, .area-figure.album .ct .label ul, .area-figure.link .ct .label ul, .base-extend .area-customize.video .ct .label ul, .base-module-area .area-customize.video .ct .label ul, .base-aside .area-customize.video .ct .label ul, .base-section .area-customize.video .ct .label ul, .base-extend .area-customize.audio .ct .label ul, .base-module-area .area-customize.audio .ct .label ul, .base-aside .area-customize.audio .ct .label ul, .base-section .area-customize.audio .ct .label ul, .base-extend .area-customize.iframe .ct .label ul, .base-module-area .area-customize.iframe .ct .label ul, .base-aside .area-customize.iframe .ct .label ul, .base-section .area-customize.iframe .ct .label ul, .base-extend .area-customize.map .ct .label ul, .base-module-area .area-customize.map .ct .label ul, .base-aside .area-customize.map .ct .label ul, .base-section .area-customize.map .ct .label ul, .base-extend .area-form.vote .ct .p p, .base-module-area .area-form.vote .ct .p p, .base-aside .area-form.vote .ct .p p, .base-section .area-form.vote .ct .p p, .area-essay.message .ct .p p, .base-module-area .area-essay.link .ct .p p, .base-aside .area-essay.link .ct .p p, .base-section .area-essay.link .ct .p p, .area-essay.page-essay .ct .p p, .area-essay.page-img-caption-p .ct .p p, .area-essay.page-caption-label-p .ct .p p, .area-essay.page-caption-p .ct .p p, .area-figure.album .ct .p p, .area-figure.link .ct .p p, .area-figure.page-img-figcaption-p .ct .p p, .area-figure.page-img-label-p .ct .p p, .area-figure.page-img-p .ct .p p, .base-extend .area-customize.video .ct .p p, .base-module-area .area-customize.video .ct .p p, .base-aside .area-customize.video .ct .p p, .base-extend .area-customize.audio .ct .p p, .base-module-area .area-customize.audio .ct .p p, .base-aside .area-customize.audio .ct .p p, .base-extend .area-customize.iframe .ct .p p, .base-module-area .area-customize.iframe .ct .p p, .base-aside .area-customize.iframe .ct .p p, .base-extend .area-customize.map .ct .p p, .base-module-area .area-customize.map .ct .p p, .base-aside .area-customize.map .ct .p p, [data-type="0"] .hd h4, [data-type="0"] .ft ul, [data-type="1"] > .bg-drop-layout > .in > .hd h3, [data-type="1"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .hd h3, [data-type="2"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="2"] > .in > .ct > .in > ul, [data-type="3"] > .bg-drop-layout > .in > .hd h3, [data-type="3"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .hd h3, [data-type="4"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="4"] > .in > .ct > .in > ul, [data-type="4"] > .bg-drop-layout > .in > .ft ul, [data-type="4"] > .in > .ft ul, .base-footer .group.nav > .bg-drop-layout > .in > .ct, .base-footer .group.nav > .in > .ct, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul, .group-tab.default > .in > .ct > .in > ul, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.nav > .in > .hd h3, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.nav > .in > .hd h3, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.nav > .in > .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-mobile .simple-text.major-logo .ct h1, .base-header .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .list-text .ct ul, .list-text.minor-nav .hd h4, .list-text.sitemap .hd h4, .list-pic .ct ul, .list-multiple.page-select .ct ul, .list-multiple.page-click .ct ul, .base-header .area-form.search .ct .list ul, .area-form.sign-in .ct .list ul, .area-figure.page-figure .ct .label ul, .area-figure.page-figure .ct .p p, .area-figure.page-img-figcaption-label .ct .label ul, .area-figure.page-img-figcaption-label .ct .p p, .area-figure.page-img-label .ct .label ul, .area-figure.page-img-label-p .ct .label ul, .area-customize.calender-detail .ct .label ul, .area-customize.calender-detail .ct .list ul, .area-customize.calender .ct .label ul, .area-customize.calender .ct .list ul, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="2"] > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="2"] > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, [data-type="4"] > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, [data-type="4"] > .in > .ct > .in > ul > li > [data-index][data-type] > .in {
   margin: 0;
   position: static;
   top: auto;
@@ -13,7 +13,7 @@
 }
 
 /* line 429, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .label ul, .base-module-area .area-form.vote .ct .label ul, .base-aside .area-form.vote .ct .label ul, .base-section .area-form.vote .ct .label ul, .area-essay.message .ct .label ul, .base-module-area .area-essay.link .ct .label ul, .base-aside .area-essay.link .ct .label ul, .base-section .area-essay.link .ct .label ul, .area-essay.page-essay .ct .label ul, .area-essay.page-img-caption-label .ct .label ul, .area-essay.page-caption-label-p .ct .label ul, .area-essay.page-caption-label .ct .label ul, .area-figure.album .ct .label ul, .area-figure.link .ct .label ul, .base-extend .area-customize.video .ct .label ul, .base-module-area .area-customize.video .ct .label ul, .base-aside .area-customize.video .ct .label ul, .base-section .area-customize.video .ct .label ul, .base-extend .area-customize.audio .ct .label ul, .base-module-area .area-customize.audio .ct .label ul, .base-aside .area-customize.audio .ct .label ul, .base-section .area-customize.audio .ct .label ul, .base-extend .area-customize.iframe .ct .label ul, .base-module-area .area-customize.iframe .ct .label ul, .base-aside .area-customize.iframe .ct .label ul, .base-section .area-customize.iframe .ct .label ul, .base-extend .area-customize.map .ct .label ul, .base-module-area .area-customize.map .ct .label ul, .base-aside .area-customize.map .ct .label ul, .base-section .area-customize.map .ct .label ul, .base-extend .area-form.vote .ct .p p, .base-module-area .area-form.vote .ct .p p, .base-aside .area-form.vote .ct .p p, .base-section .area-form.vote .ct .p p, .area-essay.message .ct .p p, .base-module-area .area-essay.link .ct .p p, .base-aside .area-essay.link .ct .p p, .base-section .area-essay.link .ct .p p, .area-essay.page-essay .ct .p p, .area-essay.page-img-caption-p .ct .p p, .area-essay.page-caption-label-p .ct .p p, .area-essay.page-caption-p .ct .p p, .area-figure.album .ct .p p, .area-figure.link .ct .p p, .area-figure.page-img-figcaption-p .ct .p p, .area-figure.page-img-label-p .ct .p p, .area-figure.page-img-p .ct .p p, .base-extend .area-customize.video .ct .p p, .base-module-area .area-customize.video .ct .p p, .base-aside .area-customize.video .ct .p p, .base-extend .area-customize.audio .ct .p p, .base-module-area .area-customize.audio .ct .p p, .base-aside .area-customize.audio .ct .p p, .base-extend .area-customize.iframe .ct .p p, .base-module-area .area-customize.iframe .ct .p p, .base-aside .area-customize.iframe .ct .p p, .base-extend .area-customize.map .ct .p p, .base-module-area .area-customize.map .ct .p p, .base-aside .area-customize.map .ct .p p, [data-type="0"] .hd h4, [data-type="0"] .ft ul, [data-type="1"] > .bg-drop-layout > .in > .hd h3, [data-type="1"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .hd h3, [data-type="2"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="2"] > .in > .ct > .in > ul, [data-type="3"] > .bg-drop-layout > .in > .hd h3, [data-type="3"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .hd h3, [data-type="4"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="4"] > .in > .ct > .in > ul, [data-type="4"] > .bg-drop-layout > .in > .ft ul, [data-type="4"] > .in > .ft ul, .base-footer .group.nav > .bg-drop-layout > .in > .ct, .base-footer .group.nav > .in > .ct, .group.light-box > .bg-drop-layout > .in > .ft ul, .group.light-box > .in > .ft ul, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul, .group-tab.default > .in > .ct > .in > ul, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.nav > .in > .hd h3, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.nav > .in > .hd h3, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.nav > .in > .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-mobile .simple-text.major-logo .ct h1, .base-header .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .list-text .ct ul, .list-text.minor-nav .hd h4, .list-text.sitemap .hd h4, .list-pic .ct ul, .list-multiple.page-select .ct ul, .list-multiple.page-click .ct ul, .base-header .area-form.search .ct .list ul, .area-form.sign-in .ct .list ul, .area-figure.page-figure .ct .label ul, .area-figure.page-figure .ct .p p, .area-figure.page-img-figcaption-label .ct .label ul, .area-figure.page-img-figcaption-label .ct .p p, .area-figure.page-img-label .ct .label ul, .area-figure.page-img-label-p .ct .label ul, .area-customize.calender-detail .ct .label ul, .area-customize.calender-detail .ct .list ul, .area-customize.calender .ct .label ul, .area-customize.calender .ct .list ul {
+.base-extend .area-form.vote .ct .label ul, .base-module-area .area-form.vote .ct .label ul, .base-aside .area-form.vote .ct .label ul, .base-section .area-form.vote .ct .label ul, .area-essay.message .ct .label ul, .base-module-area .area-essay.link .ct .label ul, .base-aside .area-essay.link .ct .label ul, .base-section .area-essay.link .ct .label ul, .area-essay.page-essay .ct .label ul, .area-essay.page-img-caption-label .ct .label ul, .area-essay.page-caption-label-p .ct .label ul, .area-essay.page-caption-label .ct .label ul, .area-figure.album .ct .label ul, .area-figure.link .ct .label ul, .base-extend .area-customize.video .ct .label ul, .base-module-area .area-customize.video .ct .label ul, .base-aside .area-customize.video .ct .label ul, .base-section .area-customize.video .ct .label ul, .base-extend .area-customize.audio .ct .label ul, .base-module-area .area-customize.audio .ct .label ul, .base-aside .area-customize.audio .ct .label ul, .base-section .area-customize.audio .ct .label ul, .base-extend .area-customize.iframe .ct .label ul, .base-module-area .area-customize.iframe .ct .label ul, .base-aside .area-customize.iframe .ct .label ul, .base-section .area-customize.iframe .ct .label ul, .base-extend .area-customize.map .ct .label ul, .base-module-area .area-customize.map .ct .label ul, .base-aside .area-customize.map .ct .label ul, .base-section .area-customize.map .ct .label ul, .base-extend .area-form.vote .ct .p p, .base-module-area .area-form.vote .ct .p p, .base-aside .area-form.vote .ct .p p, .base-section .area-form.vote .ct .p p, .area-essay.message .ct .p p, .base-module-area .area-essay.link .ct .p p, .base-aside .area-essay.link .ct .p p, .base-section .area-essay.link .ct .p p, .area-essay.page-essay .ct .p p, .area-essay.page-img-caption-p .ct .p p, .area-essay.page-caption-label-p .ct .p p, .area-essay.page-caption-p .ct .p p, .area-figure.album .ct .p p, .area-figure.link .ct .p p, .area-figure.page-img-figcaption-p .ct .p p, .area-figure.page-img-label-p .ct .p p, .area-figure.page-img-p .ct .p p, .base-extend .area-customize.video .ct .p p, .base-module-area .area-customize.video .ct .p p, .base-aside .area-customize.video .ct .p p, .base-extend .area-customize.audio .ct .p p, .base-module-area .area-customize.audio .ct .p p, .base-aside .area-customize.audio .ct .p p, .base-extend .area-customize.iframe .ct .p p, .base-module-area .area-customize.iframe .ct .p p, .base-aside .area-customize.iframe .ct .p p, .base-extend .area-customize.map .ct .p p, .base-module-area .area-customize.map .ct .p p, .base-aside .area-customize.map .ct .p p, [data-type="0"] .hd h4, [data-type="0"] .ft ul, [data-type="1"] > .bg-drop-layout > .in > .hd h3, [data-type="1"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .hd h3, [data-type="2"] > .in > .hd h3, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="2"] > .in > .ct > .in > ul, [data-type="3"] > .bg-drop-layout > .in > .hd h3, [data-type="3"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .hd h3, [data-type="4"] > .in > .hd h3, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul, [data-type="4"] > .in > .ct > .in > ul, [data-type="4"] > .bg-drop-layout > .in > .ft ul, [data-type="4"] > .in > .ft ul, .base-footer .group.nav > .bg-drop-layout > .in > .ct, .base-footer .group.nav > .in > .ct, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul, .group-tab.default > .in > .ct > .in > ul, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.nav > .in > .hd h3, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.nav > .in > .hd h3, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.nav > .in > .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .base-mobile .simple-text.major-logo .ct h1, .base-header .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .list-text .ct ul, .list-text.minor-nav .hd h4, .list-text.sitemap .hd h4, .list-pic .ct ul, .list-multiple.page-select .ct ul, .list-multiple.page-click .ct ul, .base-header .area-form.search .ct .list ul, .area-form.sign-in .ct .list ul, .area-figure.page-figure .ct .label ul, .area-figure.page-figure .ct .p p, .area-figure.page-img-figcaption-label .ct .label ul, .area-figure.page-img-figcaption-label .ct .p p, .area-figure.page-img-label .ct .label ul, .area-figure.page-img-label-p .ct .label ul, .area-customize.calender-detail .ct .label ul, .area-customize.calender-detail .ct .list ul, .area-customize.calender .ct .label ul, .area-customize.calender .ct .list ul {
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -24,11 +24,11 @@
   transition: 0;
 }
 /* line 439, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .label ul:before, .base-module-area .area-form.vote .ct .label ul:before, .base-aside .area-form.vote .ct .label ul:before, .base-section .area-form.vote .ct .label ul:before, .area-essay.message .ct .label ul:before, .base-module-area .area-essay.link .ct .label ul:before, .base-aside .area-essay.link .ct .label ul:before, .base-section .area-essay.link .ct .label ul:before, .area-essay.page-essay .ct .label ul:before, .area-essay.page-img-caption-label .ct .label ul:before, .area-essay.page-caption-label-p .ct .label ul:before, .area-essay.page-caption-label .ct .label ul:before, .area-figure.album .ct .label ul:before, .area-figure.link .ct .label ul:before, .base-extend .area-customize.video .ct .label ul:before, .base-module-area .area-customize.video .ct .label ul:before, .base-aside .area-customize.video .ct .label ul:before, .base-section .area-customize.video .ct .label ul:before, .base-extend .area-customize.audio .ct .label ul:before, .base-module-area .area-customize.audio .ct .label ul:before, .base-aside .area-customize.audio .ct .label ul:before, .base-section .area-customize.audio .ct .label ul:before, .base-extend .area-customize.iframe .ct .label ul:before, .base-module-area .area-customize.iframe .ct .label ul:before, .base-aside .area-customize.iframe .ct .label ul:before, .base-section .area-customize.iframe .ct .label ul:before, .base-extend .area-customize.map .ct .label ul:before, .base-module-area .area-customize.map .ct .label ul:before, .base-aside .area-customize.map .ct .label ul:before, .base-section .area-customize.map .ct .label ul:before, .base-extend .area-form.vote .ct .p p:before, .base-module-area .area-form.vote .ct .p p:before, .base-aside .area-form.vote .ct .p p:before, .base-section .area-form.vote .ct .p p:before, .area-essay.message .ct .p p:before, .base-module-area .area-essay.link .ct .p p:before, .base-aside .area-essay.link .ct .p p:before, .base-section .area-essay.link .ct .p p:before, .area-essay.page-essay .ct .p p:before, .area-essay.page-img-caption-p .ct .p p:before, .area-essay.page-caption-label-p .ct .p p:before, .area-essay.page-caption-p .ct .p p:before, .area-figure.album .ct .p p:before, .area-figure.link .ct .p p:before, .area-figure.page-img-figcaption-p .ct .p p:before, .area-figure.page-img-label-p .ct .p p:before, .area-figure.page-img-p .ct .p p:before, .base-extend .area-customize.video .ct .p p:before, .base-module-area .area-customize.video .ct .p p:before, .base-aside .area-customize.video .ct .p p:before, .base-extend .area-customize.audio .ct .p p:before, .base-module-area .area-customize.audio .ct .p p:before, .base-aside .area-customize.audio .ct .p p:before, .base-extend .area-customize.iframe .ct .p p:before, .base-module-area .area-customize.iframe .ct .p p:before, .base-aside .area-customize.iframe .ct .p p:before, .base-extend .area-customize.map .ct .p p:before, .base-module-area .area-customize.map .ct .p p:before, .base-aside .area-customize.map .ct .p p:before, [data-type="0"] .hd h4:before, [data-type="0"] .ft ul:before, [data-type="1"] > .bg-drop-layout > .in > .hd h3:before, [data-type="1"] > .in > .hd h3:before, [data-type="2"] > .bg-drop-layout > .in > .hd h3:before, [data-type="2"] > .in > .hd h3:before, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul:before, [data-type="2"] > .in > .ct > .in > ul:before, [data-type="3"] > .bg-drop-layout > .in > .hd h3:before, [data-type="3"] > .in > .hd h3:before, [data-type="4"] > .bg-drop-layout > .in > .hd h3:before, [data-type="4"] > .in > .hd h3:before, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul:before, [data-type="4"] > .in > .ct > .in > ul:before, [data-type="4"] > .bg-drop-layout > .in > .ft ul:before, [data-type="4"] > .in > .ft ul:before, .base-footer .group.nav > .bg-drop-layout > .in > .ct:before, .base-footer .group.nav > .in > .ct:before, .group.light-box > .bg-drop-layout > .in > .ft ul:before, .group.light-box > .in > .ft ul:before, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul:before, .group-tab.default > .in > .ct > .in > ul:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-mobile .simple-text.major-logo .ct h1:before, .base-header .simple-text.major-logo .ct h1:before, .simple-text.heading .ct h3:before, .simple-text.title .ct h1:before, .list-text .ct ul:before, .list-text.minor-nav .hd h4:before, .list-text.sitemap .hd h4:before, .list-pic .ct ul:before, .list-multiple.page-select .ct ul:before, .list-multiple.page-click .ct ul:before, .base-header .area-form.search .ct .list ul:before, .area-form.sign-in .ct .list ul:before, .area-figure.page-figure .ct .label ul:before, .area-figure.page-figure .ct .p p:before, .area-figure.page-img-figcaption-label .ct .label ul:before, .area-figure.page-img-figcaption-label .ct .p p:before, .area-figure.page-img-label .ct .label ul:before, .area-figure.page-img-label-p .ct .label ul:before, .area-customize.calender-detail .ct .label ul:before, .area-customize.calender-detail .ct .list ul:before, .area-customize.calender .ct .label ul:before, .area-customize.calender .ct .list ul:before {
+.base-extend .area-form.vote .ct .label ul:before, .base-module-area .area-form.vote .ct .label ul:before, .base-aside .area-form.vote .ct .label ul:before, .base-section .area-form.vote .ct .label ul:before, .area-essay.message .ct .label ul:before, .base-module-area .area-essay.link .ct .label ul:before, .base-aside .area-essay.link .ct .label ul:before, .base-section .area-essay.link .ct .label ul:before, .area-essay.page-essay .ct .label ul:before, .area-essay.page-img-caption-label .ct .label ul:before, .area-essay.page-caption-label-p .ct .label ul:before, .area-essay.page-caption-label .ct .label ul:before, .area-figure.album .ct .label ul:before, .area-figure.link .ct .label ul:before, .base-extend .area-customize.video .ct .label ul:before, .base-module-area .area-customize.video .ct .label ul:before, .base-aside .area-customize.video .ct .label ul:before, .base-section .area-customize.video .ct .label ul:before, .base-extend .area-customize.audio .ct .label ul:before, .base-module-area .area-customize.audio .ct .label ul:before, .base-aside .area-customize.audio .ct .label ul:before, .base-section .area-customize.audio .ct .label ul:before, .base-extend .area-customize.iframe .ct .label ul:before, .base-module-area .area-customize.iframe .ct .label ul:before, .base-aside .area-customize.iframe .ct .label ul:before, .base-section .area-customize.iframe .ct .label ul:before, .base-extend .area-customize.map .ct .label ul:before, .base-module-area .area-customize.map .ct .label ul:before, .base-aside .area-customize.map .ct .label ul:before, .base-section .area-customize.map .ct .label ul:before, .base-extend .area-form.vote .ct .p p:before, .base-module-area .area-form.vote .ct .p p:before, .base-aside .area-form.vote .ct .p p:before, .base-section .area-form.vote .ct .p p:before, .area-essay.message .ct .p p:before, .base-module-area .area-essay.link .ct .p p:before, .base-aside .area-essay.link .ct .p p:before, .base-section .area-essay.link .ct .p p:before, .area-essay.page-essay .ct .p p:before, .area-essay.page-img-caption-p .ct .p p:before, .area-essay.page-caption-label-p .ct .p p:before, .area-essay.page-caption-p .ct .p p:before, .area-figure.album .ct .p p:before, .area-figure.link .ct .p p:before, .area-figure.page-img-figcaption-p .ct .p p:before, .area-figure.page-img-label-p .ct .p p:before, .area-figure.page-img-p .ct .p p:before, .base-extend .area-customize.video .ct .p p:before, .base-module-area .area-customize.video .ct .p p:before, .base-aside .area-customize.video .ct .p p:before, .base-extend .area-customize.audio .ct .p p:before, .base-module-area .area-customize.audio .ct .p p:before, .base-aside .area-customize.audio .ct .p p:before, .base-extend .area-customize.iframe .ct .p p:before, .base-module-area .area-customize.iframe .ct .p p:before, .base-aside .area-customize.iframe .ct .p p:before, .base-extend .area-customize.map .ct .p p:before, .base-module-area .area-customize.map .ct .p p:before, .base-aside .area-customize.map .ct .p p:before, [data-type="0"] .hd h4:before, [data-type="0"] .ft ul:before, [data-type="1"] > .bg-drop-layout > .in > .hd h3:before, [data-type="1"] > .in > .hd h3:before, [data-type="2"] > .bg-drop-layout > .in > .hd h3:before, [data-type="2"] > .in > .hd h3:before, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul:before, [data-type="2"] > .in > .ct > .in > ul:before, [data-type="3"] > .bg-drop-layout > .in > .hd h3:before, [data-type="3"] > .in > .hd h3:before, [data-type="4"] > .bg-drop-layout > .in > .hd h3:before, [data-type="4"] > .in > .hd h3:before, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul:before, [data-type="4"] > .in > .ct > .in > ul:before, [data-type="4"] > .bg-drop-layout > .in > .ft ul:before, [data-type="4"] > .in > .ft ul:before, .base-footer .group.nav > .bg-drop-layout > .in > .ct:before, .base-footer .group.nav > .in > .ct:before, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul:before, .group-tab.default > .in > .ct > .in > ul:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .base-mobile .simple-text.major-logo .ct h1:before, .base-header .simple-text.major-logo .ct h1:before, .simple-text.heading .ct h3:before, .simple-text.title .ct h1:before, .list-text .ct ul:before, .list-text.minor-nav .hd h4:before, .list-text.sitemap .hd h4:before, .list-pic .ct ul:before, .list-multiple.page-select .ct ul:before, .list-multiple.page-click .ct ul:before, .base-header .area-form.search .ct .list ul:before, .area-form.sign-in .ct .list ul:before, .area-figure.page-figure .ct .label ul:before, .area-figure.page-figure .ct .p p:before, .area-figure.page-img-figcaption-label .ct .label ul:before, .area-figure.page-img-figcaption-label .ct .p p:before, .area-figure.page-img-label .ct .label ul:before, .area-figure.page-img-label-p .ct .label ul:before, .area-customize.calender-detail .ct .label ul:before, .area-customize.calender-detail .ct .list ul:before, .area-customize.calender .ct .label ul:before, .area-customize.calender .ct .list ul:before {
   content: none;
 }
 /* line 443, ../sass/_base_function.scss */
-.base-extend .area-form.vote .ct .label ul:after, .base-module-area .area-form.vote .ct .label ul:after, .base-aside .area-form.vote .ct .label ul:after, .base-section .area-form.vote .ct .label ul:after, .area-essay.message .ct .label ul:after, .base-module-area .area-essay.link .ct .label ul:after, .base-aside .area-essay.link .ct .label ul:after, .base-section .area-essay.link .ct .label ul:after, .area-essay.page-essay .ct .label ul:after, .area-essay.page-img-caption-label .ct .label ul:after, .area-essay.page-caption-label-p .ct .label ul:after, .area-essay.page-caption-label .ct .label ul:after, .area-figure.album .ct .label ul:after, .area-figure.link .ct .label ul:after, .base-extend .area-customize.video .ct .label ul:after, .base-module-area .area-customize.video .ct .label ul:after, .base-aside .area-customize.video .ct .label ul:after, .base-section .area-customize.video .ct .label ul:after, .base-extend .area-customize.audio .ct .label ul:after, .base-module-area .area-customize.audio .ct .label ul:after, .base-aside .area-customize.audio .ct .label ul:after, .base-section .area-customize.audio .ct .label ul:after, .base-extend .area-customize.iframe .ct .label ul:after, .base-module-area .area-customize.iframe .ct .label ul:after, .base-aside .area-customize.iframe .ct .label ul:after, .base-section .area-customize.iframe .ct .label ul:after, .base-extend .area-customize.map .ct .label ul:after, .base-module-area .area-customize.map .ct .label ul:after, .base-aside .area-customize.map .ct .label ul:after, .base-section .area-customize.map .ct .label ul:after, .base-extend .area-form.vote .ct .p p:after, .base-module-area .area-form.vote .ct .p p:after, .base-aside .area-form.vote .ct .p p:after, .base-section .area-form.vote .ct .p p:after, .area-essay.message .ct .p p:after, .base-module-area .area-essay.link .ct .p p:after, .base-aside .area-essay.link .ct .p p:after, .base-section .area-essay.link .ct .p p:after, .area-essay.page-essay .ct .p p:after, .area-essay.page-img-caption-p .ct .p p:after, .area-essay.page-caption-label-p .ct .p p:after, .area-essay.page-caption-p .ct .p p:after, .area-figure.album .ct .p p:after, .area-figure.link .ct .p p:after, .area-figure.page-img-figcaption-p .ct .p p:after, .area-figure.page-img-label-p .ct .p p:after, .area-figure.page-img-p .ct .p p:after, .base-extend .area-customize.video .ct .p p:after, .base-module-area .area-customize.video .ct .p p:after, .base-aside .area-customize.video .ct .p p:after, .base-extend .area-customize.audio .ct .p p:after, .base-module-area .area-customize.audio .ct .p p:after, .base-aside .area-customize.audio .ct .p p:after, .base-extend .area-customize.iframe .ct .p p:after, .base-module-area .area-customize.iframe .ct .p p:after, .base-aside .area-customize.iframe .ct .p p:after, .base-extend .area-customize.map .ct .p p:after, .base-module-area .area-customize.map .ct .p p:after, .base-aside .area-customize.map .ct .p p:after, [data-type="0"] .hd h4:after, [data-type="0"] .ft ul:after, [data-type="1"] > .bg-drop-layout > .in > .hd h3:after, [data-type="1"] > .in > .hd h3:after, [data-type="2"] > .bg-drop-layout > .in > .hd h3:after, [data-type="2"] > .in > .hd h3:after, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul:after, [data-type="2"] > .in > .ct > .in > ul:after, [data-type="3"] > .bg-drop-layout > .in > .hd h3:after, [data-type="3"] > .in > .hd h3:after, [data-type="4"] > .bg-drop-layout > .in > .hd h3:after, [data-type="4"] > .in > .hd h3:after, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul:after, [data-type="4"] > .in > .ct > .in > ul:after, [data-type="4"] > .bg-drop-layout > .in > .ft ul:after, [data-type="4"] > .in > .ft ul:after, .base-footer .group.nav > .bg-drop-layout > .in > .ct:after, .base-footer .group.nav > .in > .ct:after, .group.light-box > .bg-drop-layout > .in > .ft ul:after, .group.light-box > .in > .ft ul:after, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul:after, .group-tab.default > .in > .ct > .in > ul:after, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-extend .group-list.nav > .in > .hd h3:after, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.nav > .in > .hd h3:after, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.nav > .in > .hd h3:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:after, .group-list.sitemap > .in > .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-mobile .simple-text.major-logo .ct h1:after, .base-header .simple-text.major-logo .ct h1:after, .simple-text.heading .ct h3:after, .simple-text.title .ct h1:after, .list-text .ct ul:after, .list-text.minor-nav .hd h4:after, .list-text.sitemap .hd h4:after, .list-pic .ct ul:after, .list-multiple.page-select .ct ul:after, .list-multiple.page-click .ct ul:after, .base-header .area-form.search .ct .list ul:after, .area-form.sign-in .ct .list ul:after, .area-figure.page-figure .ct .label ul:after, .area-figure.page-figure .ct .p p:after, .area-figure.page-img-figcaption-label .ct .label ul:after, .area-figure.page-img-figcaption-label .ct .p p:after, .area-figure.page-img-label .ct .label ul:after, .area-figure.page-img-label-p .ct .label ul:after, .area-customize.calender-detail .ct .label ul:after, .area-customize.calender-detail .ct .list ul:after, .area-customize.calender .ct .label ul:after, .area-customize.calender .ct .list ul:after {
+.base-extend .area-form.vote .ct .label ul:after, .base-module-area .area-form.vote .ct .label ul:after, .base-aside .area-form.vote .ct .label ul:after, .base-section .area-form.vote .ct .label ul:after, .area-essay.message .ct .label ul:after, .base-module-area .area-essay.link .ct .label ul:after, .base-aside .area-essay.link .ct .label ul:after, .base-section .area-essay.link .ct .label ul:after, .area-essay.page-essay .ct .label ul:after, .area-essay.page-img-caption-label .ct .label ul:after, .area-essay.page-caption-label-p .ct .label ul:after, .area-essay.page-caption-label .ct .label ul:after, .area-figure.album .ct .label ul:after, .area-figure.link .ct .label ul:after, .base-extend .area-customize.video .ct .label ul:after, .base-module-area .area-customize.video .ct .label ul:after, .base-aside .area-customize.video .ct .label ul:after, .base-section .area-customize.video .ct .label ul:after, .base-extend .area-customize.audio .ct .label ul:after, .base-module-area .area-customize.audio .ct .label ul:after, .base-aside .area-customize.audio .ct .label ul:after, .base-section .area-customize.audio .ct .label ul:after, .base-extend .area-customize.iframe .ct .label ul:after, .base-module-area .area-customize.iframe .ct .label ul:after, .base-aside .area-customize.iframe .ct .label ul:after, .base-section .area-customize.iframe .ct .label ul:after, .base-extend .area-customize.map .ct .label ul:after, .base-module-area .area-customize.map .ct .label ul:after, .base-aside .area-customize.map .ct .label ul:after, .base-section .area-customize.map .ct .label ul:after, .base-extend .area-form.vote .ct .p p:after, .base-module-area .area-form.vote .ct .p p:after, .base-aside .area-form.vote .ct .p p:after, .base-section .area-form.vote .ct .p p:after, .area-essay.message .ct .p p:after, .base-module-area .area-essay.link .ct .p p:after, .base-aside .area-essay.link .ct .p p:after, .base-section .area-essay.link .ct .p p:after, .area-essay.page-essay .ct .p p:after, .area-essay.page-img-caption-p .ct .p p:after, .area-essay.page-caption-label-p .ct .p p:after, .area-essay.page-caption-p .ct .p p:after, .area-figure.album .ct .p p:after, .area-figure.link .ct .p p:after, .area-figure.page-img-figcaption-p .ct .p p:after, .area-figure.page-img-label-p .ct .p p:after, .area-figure.page-img-p .ct .p p:after, .base-extend .area-customize.video .ct .p p:after, .base-module-area .area-customize.video .ct .p p:after, .base-aside .area-customize.video .ct .p p:after, .base-extend .area-customize.audio .ct .p p:after, .base-module-area .area-customize.audio .ct .p p:after, .base-aside .area-customize.audio .ct .p p:after, .base-extend .area-customize.iframe .ct .p p:after, .base-module-area .area-customize.iframe .ct .p p:after, .base-aside .area-customize.iframe .ct .p p:after, .base-extend .area-customize.map .ct .p p:after, .base-module-area .area-customize.map .ct .p p:after, .base-aside .area-customize.map .ct .p p:after, [data-type="0"] .hd h4:after, [data-type="0"] .ft ul:after, [data-type="1"] > .bg-drop-layout > .in > .hd h3:after, [data-type="1"] > .in > .hd h3:after, [data-type="2"] > .bg-drop-layout > .in > .hd h3:after, [data-type="2"] > .in > .hd h3:after, [data-type="2"] > .bg-drop-layout > .in > .ct > .in > ul:after, [data-type="2"] > .in > .ct > .in > ul:after, [data-type="3"] > .bg-drop-layout > .in > .hd h3:after, [data-type="3"] > .in > .hd h3:after, [data-type="4"] > .bg-drop-layout > .in > .hd h3:after, [data-type="4"] > .in > .hd h3:after, [data-type="4"] > .bg-drop-layout > .in > .ct > .in > ul:after, [data-type="4"] > .in > .ct > .in > ul:after, [data-type="4"] > .bg-drop-layout > .in > .ft ul:after, [data-type="4"] > .in > .ft ul:after, .base-footer .group.nav > .bg-drop-layout > .in > .ct:after, .base-footer .group.nav > .in > .ct:after, .group-tab.default > .bg-drop-layout > .in > .ct > .in > ul:after, .group-tab.default > .in > .ct > .in > ul:after, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-extend .group-list.nav > .in > .hd h3:after, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.nav > .in > .hd h3:after, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.nav > .in > .hd h3:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:after, .group-list.sitemap > .in > .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .base-mobile .simple-text.major-logo .ct h1:after, .base-header .simple-text.major-logo .ct h1:after, .simple-text.heading .ct h3:after, .simple-text.title .ct h1:after, .list-text .ct ul:after, .list-text.minor-nav .hd h4:after, .list-text.sitemap .hd h4:after, .list-pic .ct ul:after, .list-multiple.page-select .ct ul:after, .list-multiple.page-click .ct ul:after, .base-header .area-form.search .ct .list ul:after, .area-form.sign-in .ct .list ul:after, .area-figure.page-figure .ct .label ul:after, .area-figure.page-figure .ct .p p:after, .area-figure.page-img-figcaption-label .ct .label ul:after, .area-figure.page-img-figcaption-label .ct .p p:after, .area-figure.page-img-label .ct .label ul:after, .area-figure.page-img-label-p .ct .label ul:after, .area-customize.calender-detail .ct .label ul:after, .area-customize.calender-detail .ct .list ul:after, .area-customize.calender .ct .label ul:after, .area-customize.calender .ct .list ul:after {
   content: none;
 }
 
@@ -46,7 +46,7 @@
 }
 
 /* line 474, ../sass/_base_function.scss */
-[data-type="1"] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"] > .in > .ct > .in:after, .sys-root .base-page-area > .in:after, .base-header .group.info > .bg-drop-layout > .in > .ct > .in:after, .base-header .group.info > .in > .ct > .in:after, .base-footer .group.info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .group.info > .in > .ct > .in:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .group-list.content > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.content > .in > .ct > .in > ul:after, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul:after, .base-content .group-list.marquee-slider > .in > .ct > .in > ul:after, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul:after, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul:after, .group-list.album > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.album > .in > .ct > .in > ul:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .ct > .in > ul:after, .base-module-area .group-list.link > .in > .ct > .in > ul:after, .base-aside .group-list.link > .bg-drop-layout > .in > .ct > .in > ul:after, .base-aside .group-list.link > .in > .ct > .in > ul:after, .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.page-block > .in > .ct > .in > ul:after, .base-header .list-text.nav .ct ul:after, .base-mobile .list-text.share .ct ul:after, .list-text.anchor .ct ul:after, .list-text.step .ct ul:after, .list-pic.page-marquee .ct ul:after, .list-pic.link .ct ul:after, .list-pic.album .ct ul:after, .list-pic.pic-download .ct ul:after, .list-pic.page-list .ct ul:after, .list-pic.page-block .ct ul:after, .list-multiple.page-select .ct > .in:after, .list-multiple.page-click .ct > .in:after, .area-essay.message .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-customize.calender-detail .ct .heading:after, .area-customize.calender .ct .heading:after {
+[data-type="1"] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"] > .in > .ct > .in:after, .sys-root .base-page-area > .in:after, .base-header .group.info > .bg-drop-layout > .in > .ct > .in:after, .base-header .group.info > .in > .ct > .in:after, .base-footer .group.info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .group.info > .in > .ct > .in:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .group-list.content > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.content > .in > .ct > .in > ul:after, .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.marquee-slider > .in > .ct > .in > ul:after, .group-list.album > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.album > .in > .ct > .in > ul:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .ct > .in > ul:after, .base-module-area .group-list.link > .in > .ct > .in > ul:after, .base-aside .group-list.link > .bg-drop-layout > .in > .ct > .in > ul:after, .base-aside .group-list.link > .in > .ct > .in > ul:after, .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.page-block > .in > .ct > .in > ul:after, .base-header .list-text.nav .ct ul:after, .base-mobile .list-text.share .ct ul:after, .list-text.anchor .ct ul:after, .list-text.step .ct ul:after, .list-pic.page-marquee .ct ul:after, .list-pic.link .ct ul:after, .list-pic.album .ct ul:after, .list-pic.pic-download .ct ul:after, .list-pic.page-list .ct ul:after, .list-pic.page-block .ct ul:after, .list-multiple.page-select .ct > .in:after, .list-multiple.page-click .ct > .in:after, .area-essay.message .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-customize.calender-detail .ct .heading:after, .area-customize.calender .ct .heading:after {
   content: "​";
   display: block;
   height: 0;
@@ -54,7 +54,7 @@
 }
 
 /* line 483, ../sass/_base_function.scss */
-.group.light-box > .bg-drop-layout > .in > .ft li.close a, .group.light-box > .in > .ft li.close a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-content .group-list.marquee-slider > .in > .ft li.next a, .base-content .group-list.marquee-slider > .in > .ft li.prev a, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-extend .group-list.marquee-slider > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .in > .ft li.prev a, .base-mobile .simple-text.major-logo .ct a, .base-header .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct li.small span a, .list-text.font-size .ct li.medium span a, .list-text.font-size .ct li.large span a, .list-pic.page-marquee .ft li.next a, .list-pic.page-marquee .ft li.prev a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-header .area-form.search .ct .fieldset span.submit a {
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee-slider > .in > .ft li.next a, .group-list.marquee-slider > .in > .ft li.prev a, .base-mobile .simple-text.major-logo .ct a, .base-header .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct li.small span a, .list-text.font-size .ct li.medium span a, .list-text.font-size .ct li.large span a, .list-pic.page-marquee .ft li.next a, .list-pic.page-marquee .ft li.prev a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-header .area-form.search .ct .fieldset span.submit a {
   font: 0/0 a;
   color: transparent;
 }
@@ -135,18 +135,18 @@
 }
 
 /* line 673, ../sass/_base_function.scss */
-.group-tab.default > .bg-drop-layout > .in > .hd h3, .group-tab.default > .in > .hd h3, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.default > .in > .hd h3, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.default > .in > .hd h3, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.default > .in > .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .hd h3, .group-list.major-slider > .in > .hd h3, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3, .group-list.classical-slider > .in > .hd h3, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3, .base-content .group-list.marquee-slider > .in > .hd h3, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.marquee-slider > .in > .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .group-list.album > .bg-drop-layout > .in > .hd h3, .group-list.album > .in > .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.link > .in > .hd h3, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3, .base-section .group-list.link > .in > .hd h3, .group-list.classify > .bg-drop-layout > .in > .hd h3, .group-list.classify > .in > .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .base-extend .simple-text.default .hd h4, .base-module-area .simple-text.default .hd h4, .base-aside .simple-text.default .hd h4, .base-section .simple-text.default .hd h4, .simple-text.weather .hd h4, .simple-text.countdown .hd h4, .base-extend .simple-pic.default .hd h4, .base-module-area .simple-pic.default .hd h4, .base-aside .simple-pic.default .hd h4, .base-section .simple-pic.default .hd h4, .base-header .list-text.nav .hd h4, .base-extend .list-text.nav .hd h4, .base-module-area .list-text.nav .hd h4, .base-aside .list-text.nav .hd h4, .list-text.slider .hd h4, .base-content .list-text.link .hd h4, .list-text.rss .hd h4, .list-text.message .hd h4, .list-text.anchor .hd h4, .list-text.page-list .hd h4, .list-text.file-download .hd h4, .list-pic.slider .hd h4, .list-pic.link .hd h4, .list-pic.album .hd h4, .list-pic.pic-download .hd h4, .list-pic.page-list .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .area-form.link .hd h4, .base-extend .area-form.vote .hd h4, .base-module-area .area-form.vote .hd h4, .base-aside .area-form.vote .hd h4, .base-section .area-form.vote .hd h4, .area-form.epaper .hd h4, .area-form.submit .hd h4, .area-form.sign-in .hd h4, .area-form.page-form .hd h4, .area-essay.message .hd h4, .base-module-area .area-essay.link .hd h4, .base-aside .area-essay.link .hd h4, .base-section .area-essay.link .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-p .hd h4, .area-figure.album .hd h4, .area-figure.link .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-editor.default .hd h4, .area-editor.error-info .hd h4, .area-customize.calender-detail .hd h4, .area-customize.calender .hd h4, .base-extend .area-customize.video .hd h4, .base-module-area .area-customize.video .hd h4, .base-aside .area-customize.video .hd h4, .base-section .area-customize.video .hd h4, .base-extend .area-customize.audio .hd h4, .base-module-area .area-customize.audio .hd h4, .base-aside .area-customize.audio .hd h4, .base-section .area-customize.audio .hd h4, .base-extend .area-customize.iframe .hd h4, .base-module-area .area-customize.iframe .hd h4, .base-aside .area-customize.iframe .hd h4, .base-section .area-customize.iframe .hd h4, .base-extend .area-customize.map .hd h4, .base-module-area .area-customize.map .hd h4, .base-aside .area-customize.map .hd h4, .base-section .area-customize.map .hd h4, .area-customize.chart .hd h4 {
+.group-tab.default > .bg-drop-layout > .in > .hd h3, .group-tab.default > .in > .hd h3, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3, .base-extend .group-list.default > .in > .hd h3, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.default > .in > .hd h3, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.default > .in > .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .hd h3, .group-list.major-slider > .in > .hd h3, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3, .group-list.classical-slider > .in > .hd h3, .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3, .group-list.marquee-slider > .in > .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .group-list.album > .bg-drop-layout > .in > .hd h3, .group-list.album > .in > .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3, .base-aside .group-list.link > .in > .hd h3, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3, .base-section .group-list.link > .in > .hd h3, .group-list.classify > .bg-drop-layout > .in > .hd h3, .group-list.classify > .in > .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .base-extend .simple-text.default .hd h4, .base-module-area .simple-text.default .hd h4, .base-aside .simple-text.default .hd h4, .base-section .simple-text.default .hd h4, .simple-text.weather .hd h4, .simple-text.countdown .hd h4, .base-extend .simple-pic.default .hd h4, .base-module-area .simple-pic.default .hd h4, .base-aside .simple-pic.default .hd h4, .base-section .simple-pic.default .hd h4, .base-header .list-text.nav .hd h4, .base-extend .list-text.nav .hd h4, .base-module-area .list-text.nav .hd h4, .base-aside .list-text.nav .hd h4, .list-text.slider .hd h4, .base-content .list-text.link .hd h4, .list-text.rss .hd h4, .list-text.message .hd h4, .list-text.anchor .hd h4, .list-text.page-list .hd h4, .list-text.file-download .hd h4, .list-pic.slider .hd h4, .list-pic.link .hd h4, .list-pic.album .hd h4, .list-pic.pic-download .hd h4, .list-pic.page-list .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .area-form.link .hd h4, .base-extend .area-form.vote .hd h4, .base-module-area .area-form.vote .hd h4, .base-aside .area-form.vote .hd h4, .base-section .area-form.vote .hd h4, .area-form.epaper .hd h4, .area-form.submit .hd h4, .area-form.sign-in .hd h4, .area-form.page-form .hd h4, .area-essay.message .hd h4, .base-module-area .area-essay.link .hd h4, .base-aside .area-essay.link .hd h4, .base-section .area-essay.link .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-p .hd h4, .area-figure.album .hd h4, .area-figure.link .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-editor.default .hd h4, .area-editor.error-info .hd h4, .area-customize.calender-detail .hd h4, .area-customize.calender .hd h4, .base-extend .area-customize.video .hd h4, .base-module-area .area-customize.video .hd h4, .base-aside .area-customize.video .hd h4, .base-section .area-customize.video .hd h4, .base-extend .area-customize.audio .hd h4, .base-module-area .area-customize.audio .hd h4, .base-aside .area-customize.audio .hd h4, .base-section .area-customize.audio .hd h4, .base-extend .area-customize.iframe .hd h4, .base-module-area .area-customize.iframe .hd h4, .base-aside .area-customize.iframe .hd h4, .base-section .area-customize.iframe .hd h4, .base-extend .area-customize.map .hd h4, .base-module-area .area-customize.map .hd h4, .base-aside .area-customize.map .hd h4, .base-section .area-customize.map .hd h4, .area-customize.chart .hd h4 {
   font-size: 1.1em;
   padding-bottom: 8px;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 8px;
 }
 /* line 679, ../sass/_base_function.scss */
-.group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.default > .in > .hd h3:before, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.default > .in > .hd h3:before, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.default > .in > .hd h3:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.error-info .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
+.group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.default > .in > .hd h3:before, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.default > .in > .hd h3:before, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.default > .in > .hd h3:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.error-info .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
   margin-right: 3px;
 }
 /* line 683, ../sass/_base_function.scss */
-.group-tab.default > .bg-drop-layout > .in > .hd h3:after, .group-tab.default > .in > .hd h3:after, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-extend .group-list.default > .in > .hd h3:after, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.default > .in > .hd h3:after, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.default > .in > .hd h3:after, .group-list.content > .bg-drop-layout > .in > .hd h3:after, .group-list.content > .in > .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.major-slider > .in > .hd h3:after, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.classical-slider > .in > .hd h3:after, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:after, .base-content .group-list.marquee-slider > .in > .hd h3:after, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:after, .base-extend .group-list.marquee-slider > .in > .hd h3:after, .group-list.message > .bg-drop-layout > .in > .hd h3:after, .group-list.message > .in > .hd h3:after, .group-list.album > .bg-drop-layout > .in > .hd h3:after, .group-list.album > .in > .hd h3:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.link > .in > .hd h3:after, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.link > .in > .hd h3:after, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-section .group-list.link > .in > .hd h3:after, .group-list.classify > .bg-drop-layout > .in > .hd h3:after, .group-list.classify > .in > .hd h3:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:after, .group-list.vote-result > .in > .hd h3:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.file-download-multiple > .in > .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-text > .in > .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-pic > .in > .hd h3:after, .group-list.page-block > .bg-drop-layout > .in > .hd h3:after, .group-list.page-block > .in > .hd h3:after, .group-list.page-list > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list > .in > .hd h3:after, .base-extend .simple-text.default .hd h4:after, .base-module-area .simple-text.default .hd h4:after, .base-aside .simple-text.default .hd h4:after, .base-section .simple-text.default .hd h4:after, .simple-text.weather .hd h4:after, .simple-text.countdown .hd h4:after, .base-extend .simple-pic.default .hd h4:after, .base-module-area .simple-pic.default .hd h4:after, .base-aside .simple-pic.default .hd h4:after, .base-section .simple-pic.default .hd h4:after, .base-header .list-text.nav .hd h4:after, .base-extend .list-text.nav .hd h4:after, .base-module-area .list-text.nav .hd h4:after, .base-aside .list-text.nav .hd h4:after, .list-text.slider .hd h4:after, .base-content .list-text.link .hd h4:after, .list-text.rss .hd h4:after, .list-text.message .hd h4:after, .list-text.anchor .hd h4:after, .list-text.page-list .hd h4:after, .list-text.file-download .hd h4:after, .list-pic.slider .hd h4:after, .list-pic.link .hd h4:after, .list-pic.album .hd h4:after, .list-pic.pic-download .hd h4:after, .list-pic.page-list .hd h4:after, .area-table.page-table .hd h4:after, .area-table.rwd-table .hd h4:after, .area-form.link .hd h4:after, .base-extend .area-form.vote .hd h4:after, .base-module-area .area-form.vote .hd h4:after, .base-aside .area-form.vote .hd h4:after, .base-section .area-form.vote .hd h4:after, .area-form.epaper .hd h4:after, .area-form.submit .hd h4:after, .area-form.sign-in .hd h4:after, .area-form.page-form .hd h4:after, .area-essay.message .hd h4:after, .base-module-area .area-essay.link .hd h4:after, .base-aside .area-essay.link .hd h4:after, .base-section .area-essay.link .hd h4:after, .area-essay.page-essay .hd h4:after, .area-essay.page-img-caption-label .hd h4:after, .area-essay.page-img-caption-p .hd h4:after, .area-essay.page-caption-label-p .hd h4:after, .area-essay.page-caption-label .hd h4:after, .area-essay.page-caption-p .hd h4:after, .area-figure.album .hd h4:after, .area-figure.link .hd h4:after, .area-figure.page-figure .hd h4:after, .area-figure.page-img-figcaption-label .hd h4:after, .area-figure.page-img-figcaption .hd h4:after, .area-figure.page-img-label .hd h4:after, .area-figure.page-img-figcaption-p .hd h4:after, .area-figure.page-img-label-p .hd h4:after, .area-figure.page-img-p .hd h4:after, .area-editor.default .hd h4:after, .area-editor.error-info .hd h4:after, .area-customize.calender-detail .hd h4:after, .area-customize.calender .hd h4:after, .base-extend .area-customize.video .hd h4:after, .base-module-area .area-customize.video .hd h4:after, .base-aside .area-customize.video .hd h4:after, .base-section .area-customize.video .hd h4:after, .base-extend .area-customize.audio .hd h4:after, .base-module-area .area-customize.audio .hd h4:after, .base-aside .area-customize.audio .hd h4:after, .base-section .area-customize.audio .hd h4:after, .base-extend .area-customize.iframe .hd h4:after, .base-module-area .area-customize.iframe .hd h4:after, .base-aside .area-customize.iframe .hd h4:after, .base-section .area-customize.iframe .hd h4:after, .base-extend .area-customize.map .hd h4:after, .base-module-area .area-customize.map .hd h4:after, .base-aside .area-customize.map .hd h4:after, .base-section .area-customize.map .hd h4:after, .area-customize.chart .hd h4:after {
+.group-tab.default > .bg-drop-layout > .in > .hd h3:after, .group-tab.default > .in > .hd h3:after, .base-extend .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-extend .group-list.default > .in > .hd h3:after, .base-module-area .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.default > .in > .hd h3:after, .base-aside .group-list.default > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.default > .in > .hd h3:after, .group-list.content > .bg-drop-layout > .in > .hd h3:after, .group-list.content > .in > .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.major-slider > .in > .hd h3:after, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.classical-slider > .in > .hd h3:after, .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.marquee-slider > .in > .hd h3:after, .group-list.message > .bg-drop-layout > .in > .hd h3:after, .group-list.message > .in > .hd h3:after, .group-list.album > .bg-drop-layout > .in > .hd h3:after, .group-list.album > .in > .hd h3:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.link > .in > .hd h3:after, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-aside .group-list.link > .in > .hd h3:after, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-section .group-list.link > .in > .hd h3:after, .group-list.classify > .bg-drop-layout > .in > .hd h3:after, .group-list.classify > .in > .hd h3:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:after, .group-list.vote-result > .in > .hd h3:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.file-download-multiple > .in > .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-text > .in > .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-pic > .in > .hd h3:after, .group-list.page-block > .bg-drop-layout > .in > .hd h3:after, .group-list.page-block > .in > .hd h3:after, .group-list.page-list > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list > .in > .hd h3:after, .base-extend .simple-text.default .hd h4:after, .base-module-area .simple-text.default .hd h4:after, .base-aside .simple-text.default .hd h4:after, .base-section .simple-text.default .hd h4:after, .simple-text.weather .hd h4:after, .simple-text.countdown .hd h4:after, .base-extend .simple-pic.default .hd h4:after, .base-module-area .simple-pic.default .hd h4:after, .base-aside .simple-pic.default .hd h4:after, .base-section .simple-pic.default .hd h4:after, .base-header .list-text.nav .hd h4:after, .base-extend .list-text.nav .hd h4:after, .base-module-area .list-text.nav .hd h4:after, .base-aside .list-text.nav .hd h4:after, .list-text.slider .hd h4:after, .base-content .list-text.link .hd h4:after, .list-text.rss .hd h4:after, .list-text.message .hd h4:after, .list-text.anchor .hd h4:after, .list-text.page-list .hd h4:after, .list-text.file-download .hd h4:after, .list-pic.slider .hd h4:after, .list-pic.link .hd h4:after, .list-pic.album .hd h4:after, .list-pic.pic-download .hd h4:after, .list-pic.page-list .hd h4:after, .area-table.page-table .hd h4:after, .area-table.rwd-table .hd h4:after, .area-form.link .hd h4:after, .base-extend .area-form.vote .hd h4:after, .base-module-area .area-form.vote .hd h4:after, .base-aside .area-form.vote .hd h4:after, .base-section .area-form.vote .hd h4:after, .area-form.epaper .hd h4:after, .area-form.submit .hd h4:after, .area-form.sign-in .hd h4:after, .area-form.page-form .hd h4:after, .area-essay.message .hd h4:after, .base-module-area .area-essay.link .hd h4:after, .base-aside .area-essay.link .hd h4:after, .base-section .area-essay.link .hd h4:after, .area-essay.page-essay .hd h4:after, .area-essay.page-img-caption-label .hd h4:after, .area-essay.page-img-caption-p .hd h4:after, .area-essay.page-caption-label-p .hd h4:after, .area-essay.page-caption-label .hd h4:after, .area-essay.page-caption-p .hd h4:after, .area-figure.album .hd h4:after, .area-figure.link .hd h4:after, .area-figure.page-figure .hd h4:after, .area-figure.page-img-figcaption-label .hd h4:after, .area-figure.page-img-figcaption .hd h4:after, .area-figure.page-img-label .hd h4:after, .area-figure.page-img-figcaption-p .hd h4:after, .area-figure.page-img-label-p .hd h4:after, .area-figure.page-img-p .hd h4:after, .area-editor.default .hd h4:after, .area-editor.error-info .hd h4:after, .area-customize.calender-detail .hd h4:after, .area-customize.calender .hd h4:after, .base-extend .area-customize.video .hd h4:after, .base-module-area .area-customize.video .hd h4:after, .base-aside .area-customize.video .hd h4:after, .base-section .area-customize.video .hd h4:after, .base-extend .area-customize.audio .hd h4:after, .base-module-area .area-customize.audio .hd h4:after, .base-aside .area-customize.audio .hd h4:after, .base-section .area-customize.audio .hd h4:after, .base-extend .area-customize.iframe .hd h4:after, .base-module-area .area-customize.iframe .hd h4:after, .base-aside .area-customize.iframe .hd h4:after, .base-section .area-customize.iframe .hd h4:after, .base-extend .area-customize.map .hd h4:after, .base-module-area .area-customize.map .hd h4:after, .base-aside .area-customize.map .hd h4:after, .base-section .area-customize.map .hd h4:after, .area-customize.chart .hd h4:after {
   margin-left: 3px;
 }
 
@@ -233,11 +233,11 @@
 }
 
 /* line 801, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query .ft li.focus a, .base-extend .simple-text.query .ft li.focus a, .base-extend .area-form.vote .ct .fieldset input[type="submit"], .base-module-area .area-form.vote .ct .fieldset input[type="submit"], .base-aside .area-form.vote .ct .fieldset input[type="submit"], .base-section .area-form.vote .ct .fieldset input[type="submit"], .area-form.epaper .ct .fieldset input[type="submit"], .area-form.submit .ct .fieldset input[type="submit"], .area-form.sign-in .ct .fieldset input[type="submit"], .area-form.page-search .ct .fieldset input[type="submit"], .area-form.page-form .ct .fieldset input[type="submit"] {
+.base-wrapper .simple-text.query .ft li.deny a, .base-extend .simple-text.query .ft li.deny a, .base-extend .area-form.vote .ct .fieldset input[type="submit"], .base-module-area .area-form.vote .ct .fieldset input[type="submit"], .base-aside .area-form.vote .ct .fieldset input[type="submit"], .base-section .area-form.vote .ct .fieldset input[type="submit"], .area-form.epaper .ct .fieldset input[type="submit"], .area-form.submit .ct .fieldset input[type="submit"], .area-form.sign-in .ct .fieldset input[type="submit"], .area-form.page-search .ct .fieldset input[type="submit"], .area-form.page-form .ct .fieldset input[type="submit"] {
   background-color: #fa7076;
 }
 /* line 804, ../sass/_base_function.scss */
-.base-wrapper .simple-text.query .ft li.focus a:hover, .base-extend .simple-text.query .ft li.focus a:hover, .base-extend .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-module-area .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-aside .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-section .area-form.vote .ct .fieldset input[type="submit"]:hover, .area-form.epaper .ct .fieldset input[type="submit"]:hover, .area-form.submit .ct .fieldset input[type="submit"]:hover, .area-form.sign-in .ct .fieldset input[type="submit"]:hover, .area-form.page-search .ct .fieldset input[type="submit"]:hover, .area-form.page-form .ct .fieldset input[type="submit"]:hover {
+.base-wrapper .simple-text.query .ft li.deny a:hover, .base-extend .simple-text.query .ft li.deny a:hover, .base-extend .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-module-area .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-aside .area-form.vote .ct .fieldset input[type="submit"]:hover, .base-section .area-form.vote .ct .fieldset input[type="submit"]:hover, .area-form.epaper .ct .fieldset input[type="submit"]:hover, .area-form.submit .ct .fieldset input[type="submit"]:hover, .area-form.sign-in .ct .fieldset input[type="submit"]:hover, .area-form.page-search .ct .fieldset input[type="submit"]:hover, .area-form.page-form .ct .fieldset input[type="submit"]:hover {
   background-color: #f83f47;
 }
 
@@ -346,7 +346,7 @@
 }
 
 /* line 941, ../sass/_base_function.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-extend .group.nav > .bg-drop-layout > .in .hd a:before, .base-extend .group.nav > .in .hd a:before, .base-module-area .group.nav > .bg-drop-layout > .in .hd a:before, .base-module-area .group.nav > .in .hd a:before, .base-aside .group.nav > .bg-drop-layout > .in .hd a:before, .base-aside .group.nav > .in .hd a:before, .group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct li.login a:before, .base-section .list-text.user-tool .ct li.logout a:before, .base-section .list-text.user-tool .ct li.bopomofo a:before, .base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.print a:before, .base-section .list-text.user-tool .ct li.data a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.address .ct a.is-map:after, .area-editor.error-info .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
+.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-extend .group.nav > .bg-drop-layout > .in .hd a:before, .base-extend .group.nav > .in .hd a:before, .base-module-area .group.nav > .bg-drop-layout > .in .hd a:before, .base-module-area .group.nav > .in .hd a:before, .base-aside .group.nav > .bg-drop-layout > .in .hd a:before, .base-aside .group.nav > .in .hd a:before, .group-tab.default > .bg-drop-layout > .in > .hd h3:before, .group-tab.default > .in > .hd h3:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.nav > .in > .hd h3:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.nav > .in > .hd h3:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.nav > .in > .hd h3:before, .base-extend .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-extend .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-module-area .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-module-area .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-aside .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-aside .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before, .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .base-extend .simple-text.default .hd h4:before, .base-module-area .simple-text.default .hd h4:before, .base-aside .simple-text.default .hd h4:before, .base-section .simple-text.default .hd h4:before, .simple-text.weather .hd h4:before, .simple-text.countdown .hd h4:before, .base-mobile .simple-text.toogle-btn.is-active .ct a:before, .base-mobile .simple-text.toogle-btn .ct a:before, .base-footer .simple-text.toogle-btn.is-active .ct a:before, .base-footer .simple-text.toogle-btn .ct a:before, .base-extend .simple-pic.default .hd h4:before, .base-module-area .simple-pic.default .hd h4:before, .base-aside .simple-pic.default .hd h4:before, .base-section .simple-pic.default .hd h4:before, .base-header .list-text.nav .hd h4:before, .base-extend .list-text.nav .hd h4:before, .base-module-area .list-text.nav .hd h4:before, .base-aside .list-text.nav .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.open-data .ct a:before, .base-section .list-text.user-tool .ct li.login a:before, .base-section .list-text.user-tool .ct li.logout a:before, .base-section .list-text.user-tool .ct li.bopomofo a:before, .base-section .list-text.user-tool .ct li.edit a:before, .base-section .list-text.user-tool .ct li.print a:before, .base-section .list-text.user-tool .ct li.data a:before, .base-section .list-text.user-tool .ct li.nav-edit a:before, .base-section .list-text.user-tool .ct li.index-edit a:before, .base-section .list-text.user-tool .ct li.article-edit a:before, .list-text.slider .hd h4:before, .base-content .list-text.link .hd h4:before, .list-text.rss .hd h4:before, .list-text.message .hd h4:before, .list-text.anchor .hd h4:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.page-list .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.slider .hd h4:before, .list-pic.link .hd h4:before, .list-pic.album .hd h4:before, .list-pic.pic-download .hd h4:before, .list-pic.page-list .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .area-form.link .hd h4:before, .base-extend .area-form.vote .hd h4:before, .base-module-area .area-form.vote .hd h4:before, .base-aside .area-form.vote .hd h4:before, .base-section .area-form.vote .hd h4:before, .area-form.epaper .hd h4:before, .area-form.submit .hd h4:before, .area-form.sign-in .hd h4:before, .area-form.page-form .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-aside .area-essay.link .hd h4:before, .base-section .area-essay.link .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-figure.album .hd h4:before, .area-figure.link .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-editor.default .hd h4:before, .area-editor.address .ct a.is-map:after, .area-editor.error-info .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.calender .hd h4:before, .base-extend .area-customize.video .hd h4:before, .base-module-area .area-customize.video .hd h4:before, .base-aside .area-customize.video .hd h4:before, .base-section .area-customize.video .hd h4:before, .base-extend .area-customize.audio .hd h4:before, .base-module-area .area-customize.audio .hd h4:before, .base-aside .area-customize.audio .hd h4:before, .base-section .area-customize.audio .hd h4:before, .base-extend .area-customize.iframe .hd h4:before, .base-module-area .area-customize.iframe .hd h4:before, .base-aside .area-customize.iframe .hd h4:before, .base-section .area-customize.iframe .hd h4:before, .base-extend .area-customize.map .hd h4:before, .base-module-area .area-customize.map .hd h4:before, .base-aside .area-customize.map .hd h4:before, .base-section .area-customize.map .hd h4:before, .area-customize.chart .hd h4:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -473,7 +473,7 @@
 }
 
 /* line 444, ../sass/_base_icon-font.scss */
-.group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before, .list-text.slider .hd h4:before, .list-pic.slider .hd h4:before {
+.group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .group-list.classical-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.classical-slider > .in > .hd h3:before, .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before, .list-text.slider .hd h4:before, .list-pic.slider .hd h4:before {
   content: "\e1ac";
 }
 
@@ -568,8 +568,8 @@
 }
 
 /* line 1080, icon-pic/*.png */
-.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-right, .icon-pic-away-w-top, .icon-pic-ctrl-b-close, .icon-pic-file-type-ai, .sys-root .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .sys-root .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .sys-root .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-css, .sys-root .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .sys-root .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-doc, .sys-root .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .sys-root .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-gif, .sys-root .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .sys-root .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .sys-root .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .sys-root .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .sys-root .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .sys-root .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .sys-root .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .sys-root .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .sys-root .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .sys-root .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .sys-root .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .sys-root .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .sys-root .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .sys-root .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .sys-root .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .sys-root .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .sys-root .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .sys-root .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .sys-root .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .sys-root .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .sys-root .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .sys-root .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .sys-root .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .sys-root .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .sys-root .base-section a.rss:after, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .sys-root .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .sys-root .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .sys-root .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .sys-root .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .sys-root .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .sys-root .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .sys-root .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .sys-root .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .sys-root .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .sys-root .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .sys-root .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .sys-root .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .list-text.font-size .ct li.large span a:before, .icon-pic-font-medium, .list-text.font-size .ct li.medium span a:before, .icon-pic-font-smail, .list-text.font-size .ct li.small span a:before, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-vedio, .icon-pic-share-w-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .icon-pic-share-w-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .icon-pic-share-w-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .icon-pic-share-w-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .icon-pic-share-w-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .icon-pic-weather-type-01, .icon-pic-weather-type-02, .icon-pic-weather-type-03, .icon-pic-weather-type-04, .icon-pic-weather-type-05, .icon-pic-weather-type-06, .icon-pic-weather-type-07, .icon-pic-weather-type-08, .icon-pic-weather-type-09, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65 {
-  background-image: url('../images/icon-pic-s9282b7a054.png');
+.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-right, .icon-pic-away-w-top, .icon-pic-ctrl-b-close, .icon-pic-file-type-ai, .sys-root .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .sys-root .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .sys-root .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-css, .sys-root .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .sys-root .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-doc, .sys-root .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .sys-root .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-gif, .sys-root .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .sys-root .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .sys-root .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .sys-root .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .sys-root .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .sys-root .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .sys-root .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .sys-root .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .sys-root .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .sys-root .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .sys-root .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .sys-root .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .sys-root .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .sys-root .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .sys-root .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .sys-root .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .sys-root .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .sys-root .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .sys-root .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .sys-root .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .sys-root .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .sys-root .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .sys-root .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .sys-root .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .sys-root .base-section a.rss:after, .list-text.content-file .ct li.rss a:before, .list-text.rss .ct li a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .sys-root .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .sys-root .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .sys-root .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .sys-root .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .sys-root .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .sys-root .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .sys-root .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .sys-root .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .sys-root .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .sys-root .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .sys-root .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .sys-root .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .list-text.font-size .ct li.large span a:before, .icon-pic-font-medium, .list-text.font-size .ct li.medium span a:before, .icon-pic-font-smail, .list-text.font-size .ct li.small span a:before, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-video, .icon-pic-share-w-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .icon-pic-share-w-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .icon-pic-share-w-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .icon-pic-share-w-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .icon-pic-share-w-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .icon-pic-weather-type-01, .icon-pic-weather-type-02, .icon-pic-weather-type-03, .icon-pic-weather-type-04, .icon-pic-weather-type-05, .icon-pic-weather-type-06, .icon-pic-weather-type-07, .icon-pic-weather-type-08, .icon-pic-weather-type-09, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65 {
+  background-image: url('../images/icon-pic-s1dd32f9649.png');
   background-repeat: no-repeat;
 }
 
@@ -869,7 +869,7 @@
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-icon-w-vedio {
+.icon-pic-icon-w-video {
   background-position: 0 -957px;
 }
 
@@ -2901,81 +2901,11 @@ th {
 .base-section .group.nav > .bg-drop-layout > .in > .ct, .base-section .group.nav > .in > .ct {
   padding: 5px 0 0 30px;
 }
-/* line 328, ../sass/_group.scss */
-.group.light-box {
-  position: fixed;
-  display: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #1a1a1a;
-  background-color: rgba(26, 26, 26, 0.5);
-  text-align: center;
-}
-/* line 58, ../sass/_base_function.scss */
-[data-js="false"] .group.light-box {
-  display: none;
-}
-/* line 345, ../sass/_group.scss */
-.group.light-box.is-show {
-  display: block;
-}
-/* line 349, ../sass/_group.scss */
-.group.light-box:before {
-  content: "​";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-/* line 356, ../sass/_group.scss */
-.group.light-box > .bg-drop-layout > .in, .group.light-box > .in {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  max-width: 80%;
-  max-height: 80%;
-  padding: 15px;
-  vertical-align: middle;
-}
-@media (max-width: 560px) {
-  /* line 356, ../sass/_group.scss */
-  .group.light-box > .bg-drop-layout > .in, .group.light-box > .in {
-    max-width: 90%;
-  }
-}
-/* line 369, ../sass/_group.scss */
-.group.light-box > .bg-drop-layout > .in > .hd, .group.light-box > .in > .hd {
-  display: none;
-}
-/* line 410, ../sass/_group.scss */
-.group.light-box > .bg-drop-layout > .in > .ft li.close a, .group.light-box > .in > .ft li.close a {
-  background-image: url('../images/icon-pic/ctrl-b-close.png?1457350278');
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 30px;
-  height: 30px;
-  transition: 150ms;
-  border-radius: 50%;
-}
-/* line 429, ../sass/_group.scss */
-.group.light-box > .bg-drop-layout > .in > .ft a, .group.light-box > .in > .ft a {
-  background-color: #f0f0f0;
-  background-color: rgba(240, 240, 240, 0.7);
-}
-/* line 433, ../sass/_group.scss */
-.group.light-box > .bg-drop-layout > .in > .ft a:hover, .group.light-box > .in > .ft a:hover {
-  background-color: rgba(240, 240, 240, 0.9);
-}
-/* line 485, ../sass/_group.scss */
+/* line 370, ../sass/_group.scss */
 .base-mobile .group.info > .bg-drop-layout > .in > .hd, .base-mobile .group.info > .in > .hd {
   display: none;
 }
-/* line 507, ../sass/_group.scss */
+/* line 392, ../sass/_group.scss */
 .base-mobile .group.info > .bg-drop-layout > .in > .ct > .in, .base-mobile .group.info > .in > .ct > .in {
   position: absolute;
   top: 0;
@@ -2985,35 +2915,35 @@ th {
   overflow-y: auto;
   background-color: #f0f0f0;
 }
-/* line 520, ../sass/_group.scss */
+/* line 405, ../sass/_group.scss */
 .base-header .group.info {
   background-color: #058f89;
 }
-/* line 526, ../sass/_group.scss */
+/* line 411, ../sass/_group.scss */
 .base-header .group.info > .bg-drop-layout > .in > .hd, .base-header .group.info > .in > .hd {
   display: none;
 }
-/* line 560, ../sass/_group.scss */
+/* line 445, ../sass/_group.scss */
 .base-footer .group.info > .bg-drop-layout > .in, .base-footer .group.info > .in {
   padding: 15px 0;
 }
-/* line 564, ../sass/_group.scss */
+/* line 449, ../sass/_group.scss */
 .base-footer .group.info > .bg-drop-layout > .in > .hd, .base-footer .group.info > .in > .hd {
   display: none;
 }
-/* line 601, ../sass/_group.scss */
+/* line 486, ../sass/_group.scss */
 .base-header .group.msg-tool {
   position: relative;
 }
-/* line 634, ../sass/_group.scss */
+/* line 519, ../sass/_group.scss */
 .base-footer .group.msg-tool {
   overflow: hidden;
 }
-/* line 694, ../sass/_group.scss */
+/* line 579, ../sass/_group.scss */
 .group.page-header > .bg-drop-layout > .in > .ct, .group.page-header > .in > .ct {
   margin-top: 8px;
 }
-/* line 706, ../sass/_group.scss */
+/* line 591, ../sass/_group.scss */
 .group.page-content {
   position: relative;
   margin: 8px 0;
@@ -3407,115 +3337,115 @@ th {
 [data-js="false"] .group-list.classical-slider > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .group-list.classical-slider > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .group-list.classical-slider > .in > .ft li.prev, [data-js="false"] .group-list.classical-slider > .in > .ft li.next {
   display: none;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="1"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="1"] > .in > .ct > .in > ul {
   width: 5000%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="2"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="2"] > .in > .ct > .in > ul {
   width: 2500%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="3"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="3"] > .in > .ct > .in > ul {
   width: 1666.6666666667%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="4"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="4"] > .in > .ct > .in > ul {
   width: 1250%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="5"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="5"] > .in > .ct > .in > ul {
   width: 1000%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="6"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="6"] > .in > .ct > .in > ul {
   width: 833.3333333333%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="7"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="7"] > .in > .ct > .in > ul {
   width: 714.2857142857%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="8"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="8"] > .in > .ct > .in > ul {
   width: 625%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="9"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="9"] > .in > .ct > .in > ul {
   width: 555.5555555556%;
 }
-/* line 1051, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider[data-setLen="10"] > .in > .ct > .in > ul {
+/* line 1049, ../sass/_group-list.scss */
+.group-list.marquee-slider[data-setLen="10"] > .in > .ct > .in > ul {
   width: 500%;
 }
-/* line 1060, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd, .base-content .group-list.marquee-slider > .in > .hd {
+/* line 1058, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .hd, .group-list.marquee-slider > .in > .hd {
   display: none;
 }
-/* line 1070, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.marquee-slider > .in > .hd h3:before {
+/* line 1068, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.marquee-slider > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1084, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct, .base-content .group-list.marquee-slider > .in > .ct {
+/* line 1082, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct, .group-list.marquee-slider > .in > .ct {
   background-color: #f0f0f0;
 }
-/* line 1087, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, .base-content .group-list.marquee-slider > .in > .ct > .in {
+/* line 1085, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, .group-list.marquee-slider > .in > .ct > .in {
   overflow: hidden;
 }
 /* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .base-content .group-list.marquee-slider > .in > .ct > .in {
+[data-js="false"] .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .group-list.marquee-slider > .in > .ct > .in {
   margin: 0;
 }
-/* line 1095, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .base-content .group-list.marquee-slider > .in > .ct > .in > ul {
+/* line 1093, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .group-list.marquee-slider > .in > .ct > .in > ul {
   width: 1000%;
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 1095, ../sass/_group-list.scss */
-  .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .base-content .group-list.marquee-slider > .in > .ct > .in > ul {
+  /* line 1093, ../sass/_group-list.scss */
+  .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .group-list.marquee-slider > .in > .ct > .in > ul {
     width: 1666.6666666667% !important;
   }
 }
 @media (max-width: 560px) {
-  /* line 1095, ../sass/_group-list.scss */
-  .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .base-content .group-list.marquee-slider > .in > .ct > .in > ul {
+  /* line 1093, ../sass/_group-list.scss */
+  .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .group-list.marquee-slider > .in > .ct > .in > ul {
     width: 5000% !important;
   }
 }
 /* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, [data-js="false"] .base-content .group-list.marquee-slider > .in > .ct > .in > ul {
+[data-js="false"] .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, [data-js="false"] .group-list.marquee-slider > .in > .ct > .in > ul {
   width: 100%;
 }
-/* line 1109, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li {
+/* line 1107, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.marquee-slider > .in > .ct > .in > ul > li {
   width: 2%;
   float: left;
 }
 /* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, [data-js="false"] .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li {
+[data-js="false"] .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, [data-js="false"] .group-list.marquee-slider > .in > .ct > .in > ul > li {
   display: block;
   width: 20%;
 }
-/* line 1118, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] {
+/* line 1116, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding: 5px;
 }
-/* line 1124, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
+/* line 1122, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
   display: none;
 }
-/* line 1128, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-content .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
+/* line 1126, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
 /* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .base-content .group-list.marquee-slider > .in > .ft li.next, [data-js="false"] .base-content .group-list.marquee-slider > .in > .ft li.prev {
+[data-js="false"] .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .group-list.marquee-slider > .in > .ft li.next, [data-js="false"] .group-list.marquee-slider > .in > .ft li.prev {
   display: none;
 }
-/* line 1156, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-content .group-list.marquee-slider > .in > .ft li.next a, .base-content .group-list.marquee-slider > .in > .ft li.prev a {
+/* line 1154, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee-slider > .in > .ft li.next a, .group-list.marquee-slider > .in > .ft li.prev a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3525,128 +3455,38 @@ th {
   background-color: #f0f0f0;
   background-color: rgba(240, 240, 240, 0.7);
 }
-/* line 1167, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a:hover, .base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a:hover, .base-content .group-list.marquee-slider > .in > .ft li.next a:hover, .base-content .group-list.marquee-slider > .in > .ft li.prev a:hover {
+/* line 1165, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a:hover, .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a:hover, .group-list.marquee-slider > .in > .ft li.next a:hover, .group-list.marquee-slider > .in > .ft li.prev a:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* line 1175, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-content .group-list.marquee-slider > .in > .ft li.prev a {
+/* line 1173, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee-slider > .in > .ft li.prev a {
   left: 0;
   background-image: url('../images/icon-pic/away-b-left.png?1440646505');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 1183, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-content .group-list.marquee-slider > .in > .ft li.next a {
+/* line 1181, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee-slider > .in > .ft li.next a {
   right: 0;
   background-image: url('../images/icon-pic/away-b-right.png?1440646487');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 1189, ../sass/_group-list.scss */
-.base-content .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.more, .base-content .group-list.marquee-slider > .in > .ft li.more {
+/* line 1187, ../sass/_group-list.scss */
+.group-list.marquee-slider > .bg-drop-layout > .in > .ft li.more, .group-list.marquee-slider > .in > .ft li.more {
   display: none;
 }
-/* line 1212, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd, .base-extend .group-list.marquee-slider > .in > .hd {
-  display: none;
-}
-/* line 1222, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .hd h3:before, .base-extend .group-list.marquee-slider > .in > .hd h3:before {
-  font-size: inherit;
-  color: inherit;
-}
-/* line 1236, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct, .base-extend .group-list.marquee-slider > .in > .ct {
-  background-color: #f0f0f0;
-}
-/* line 1239, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, .base-extend .group-list.marquee-slider > .in > .ct > .in {
-  overflow: hidden;
-}
-/* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .base-extend .group-list.marquee-slider > .in > .ct > .in {
-  margin: 0;
-}
-/* line 1247, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul {
-  width: 5000%;
-}
-/* line 1254, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li {
-  width: 2%;
-  float: left;
-}
-/* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li, [data-js="false"] .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li {
-  display: block;
-  width: 100%;
-}
-/* line 1263, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] {
-  padding: 5px;
-}
-/* line 1269, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
-  display: none;
-}
-/* line 1273, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-extend .group-list.marquee-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
-  display: none;
-}
-/* line 58, ../sass/_base_function.scss */
-[data-js="false"] .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .base-extend .group-list.marquee-slider > .in > .ft li.next, [data-js="false"] .base-extend .group-list.marquee-slider > .in > .ft li.prev {
-  display: none;
-}
-/* line 1301, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-extend .group-list.marquee-slider > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .in > .ft li.prev a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: block;
-  width: 80px;
-  transition: 150ms;
-  background-color: #f0f0f0;
-  background-color: rgba(240, 240, 240, 0.7);
-}
-@media (max-width: 768px) {
-  /* line 1301, ../sass/_group-list.scss */
-  .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-extend .group-list.marquee-slider > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .in > .ft li.prev a {
-    width: 50px;
-  }
-}
-/* line 1316, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a:hover, .base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a:hover, .base-extend .group-list.marquee-slider > .in > .ft li.next a:hover, .base-extend .group-list.marquee-slider > .in > .ft li.prev a:hover {
-  background-color: rgba(240, 240, 240, 0.9);
-}
-/* line 1324, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.prev a, .base-extend .group-list.marquee-slider > .in > .ft li.prev a {
-  left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1440646505');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-/* line 1332, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.next a, .base-extend .group-list.marquee-slider > .in > .ft li.next a {
-  right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1440646487');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-/* line 1338, ../sass/_group-list.scss */
-.base-extend .group-list.marquee-slider > .bg-drop-layout > .in > .ft li.more, .base-extend .group-list.marquee-slider > .in > .ft li.more {
-  display: none;
-}
-/* line 1370, ../sass/_group-list.scss */
+/* line 1218, ../sass/_group-list.scss */
 .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1393, ../sass/_group-list.scss */
+/* line 1241, ../sass/_group-list.scss */
 .group-list.message > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.message > .in > .ct > .in > ul > li + li {
   margin-top: 5px;
 }
-/* line 1401, ../sass/_group-list.scss */
+/* line 1249, ../sass/_group-list.scss */
 .group-list.message > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.message > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
@@ -3863,16 +3703,16 @@ th {
 .group-list.album[data-setLen="10"] > .in > .ct > .in > ul > li + li + li + li + li + li + li + li + li + li + li {
   display: none;
 }
-/* line 1456, ../sass/_group-list.scss */
+/* line 1304, ../sass/_group-list.scss */
 .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1483, ../sass/_group-list.scss */
+/* line 1331, ../sass/_group-list.scss */
 .group-list.album > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.album > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding: 3px;
 }
-/* line 1488, ../sass/_group-list.scss */
+/* line 1336, ../sass/_group-list.scss */
 .group-list.album > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.album > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
@@ -4089,182 +3929,182 @@ th {
 .base-module-area .group-list.link[data-setLen="10"] > .in > .ct > .in > ul > li + li + li + li + li + li + li + li + li + li + li, .base-aside .group-list.link[data-setLen="10"] > .in > .ct > .in > ul > li + li + li + li + li + li + li + li + li + li + li {
   display: none;
 }
-/* line 1545, ../sass/_group-list.scss */
+/* line 1393, ../sass/_group-list.scss */
 .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-aside .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-aside .group-list.link > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1572, ../sass/_group-list.scss */
+/* line 1420, ../sass/_group-list.scss */
 .base-module-area .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .base-module-area .group-list.link > .in > .ct > .in > ul > li > [data-index][data-type], .base-aside .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .base-aside .group-list.link > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding: 3px;
 }
-/* line 1577, ../sass/_group-list.scss */
+/* line 1425, ../sass/_group-list.scss */
 .base-module-area .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-module-area .group-list.link > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-aside .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-aside .group-list.link > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 1626, ../sass/_group-list.scss */
+/* line 1474, ../sass/_group-list.scss */
 .base-section .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-section .group-list.link > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1649, ../sass/_group-list.scss */
+/* line 1497, ../sass/_group-list.scss */
 .base-section .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li + li, .base-section .group-list.link > .in > .ct > .in > ul > li + li {
   margin-top: 5px;
 }
-/* line 1657, ../sass/_group-list.scss */
+/* line 1505, ../sass/_group-list.scss */
 .base-section .group-list.link > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .base-section .group-list.link > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 1709, ../sass/_group-list.scss */
+/* line 1557, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1729, ../sass/_group-list.scss */
+/* line 1577, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.classify > .in > .ct > .in > ul > li {
   display: inline-block;
   margin-bottom: 3px;
   margin-right: 3px;
 }
-/* line 1734, ../sass/_group-list.scss */
+/* line 1582, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.classify > .in > .ct > .in > ul > li > [data-index][data-type] {
   margin: 0 !important;
   padding: 5px;
   border: 1px solid #e4e4e4;
 }
-/* line 1741, ../sass/_group-list.scss */
+/* line 1589, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.classify > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 1745, ../sass/_group-list.scss */
+/* line 1593, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.classify > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
   display: inline-block !important;
 }
-/* line 1765, ../sass/_group-list.scss */
+/* line 1613, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ct, .group-list.classify > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ct {
   display: inline-block;
 }
-/* line 1769, ../sass/_group-list.scss */
+/* line 1617, ../sass/_group-list.scss */
 .group-list.classify > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.classify > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 1811, ../sass/_group-list.scss */
+/* line 1659, ../sass/_group-list.scss */
 .group-list.query > .bg-drop-layout > .in > .hd, .group-list.query > .in > .hd {
   display: none;
 }
-/* line 1844, ../sass/_group-list.scss */
+/* line 1692, ../sass/_group-list.scss */
 .group-list.query > .bg-drop-layout > .in > .ft, .group-list.query > .in > .ft {
   display: none;
 }
-/* line 1885, ../sass/_group-list.scss */
+/* line 1733, ../sass/_group-list.scss */
 .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1905, ../sass/_group-list.scss */
+/* line 1753, ../sass/_group-list.scss */
 .group-list.vote-result > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.vote-result > .in > .ct > .in > ul > li {
   margin-top: 8px;
 }
-/* line 1910, ../sass/_group-list.scss */
+/* line 1758, ../sass/_group-list.scss */
 .group-list.vote-result > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.vote-result > .in > .ct > .in > ul > li > [data-index][data-type] > .in {
   margin: 0 !important;
 }
-/* line 1960, ../sass/_group-list.scss */
+/* line 1808, ../sass/_group-list.scss */
 .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 1982, ../sass/_group-list.scss */
+/* line 1830, ../sass/_group-list.scss */
 .group-list.file-download-multiple > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.file-download-multiple > .in > .ct > .in > ul > li + li {
   margin-top: 5px;
 }
-/* line 2030, ../sass/_group-list.scss */
+/* line 1878, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 2052, ../sass/_group-list.scss */
+/* line 1900, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.page-list-text > .in > .ct > .in > ul > li + li {
   margin-top: 15px;
 }
-/* line 2056, ../sass/_group-list.scss */
+/* line 1904, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding-left: 30px;
 }
 @media (max-width: 560px) {
-  /* line 2056, ../sass/_group-list.scss */
+  /* line 1904, ../sass/_group-list.scss */
   .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] {
     padding-left: 8px;
   }
 }
-/* line 2065, ../sass/_group-list.scss */
+/* line 1913, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
   display: block;
   font-size: 0.9em;
   border-bottom: 0;
 }
-/* line 2074, ../sass/_group-list.scss */
+/* line 1922, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6 {
   border-bottom: 3px double #e4e4e4;
 }
-/* line 2077, ../sass/_group-list.scss */
+/* line 1925, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:before, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:before, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:before, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:before, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:before {
   display: none;
 }
-/* line 2081, ../sass/_group-list.scss */
+/* line 1929, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:after, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:after, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:after, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:after, .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:after, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:after {
   display: none;
 }
-/* line 2090, ../sass/_group-list.scss */
+/* line 1938, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a {
   display: block;
 }
-/* line 2099, ../sass/_group-list.scss */
+/* line 1947, ../sass/_group-list.scss */
 .group-list.page-list-text > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.page-list-text > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 2149, ../sass/_group-list.scss */
+/* line 1997, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 2171, ../sass/_group-list.scss */
+/* line 2019, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.page-list-pic > .in > .ct > .in > ul > li + li {
   margin-top: 15px;
 }
-/* line 2175, ../sass/_group-list.scss */
+/* line 2023, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding-left: 30px;
 }
 @media (max-width: 560px) {
-  /* line 2175, ../sass/_group-list.scss */
+  /* line 2023, ../sass/_group-list.scss */
   .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] {
     padding-left: 8px;
   }
 }
-/* line 2184, ../sass/_group-list.scss */
+/* line 2032, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
   display: block;
   font-size: 0.9em;
   border-bottom: 0;
 }
-/* line 2193, ../sass/_group-list.scss */
+/* line 2041, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6 {
   border-bottom: 3px double #e4e4e4;
 }
-/* line 2196, ../sass/_group-list.scss */
+/* line 2044, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:before, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:before {
   display: none;
 }
-/* line 2200, ../sass/_group-list.scss */
+/* line 2048, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:after, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:after, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:after, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:after, .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h1:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h2:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h3:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h4:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h5:after, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd h6:after {
   display: none;
 }
-/* line 2209, ../sass/_group-list.scss */
+/* line 2057, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd a {
   display: block;
 }
-/* line 2218, ../sass/_group-list.scss */
+/* line 2066, ../sass/_group-list.scss */
 .group-list.page-list-pic > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.page-list-pic > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
@@ -4286,34 +4126,34 @@ th {
   width: 16.6666666667%;
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 2292, ../sass/_group-list.scss */
+  /* line 2140, ../sass/_group-list.scss */
   .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.page-block > .in > .ct > .in > ul > li {
     width: 50% !important;
   }
 }
 @media (max-width: 560px) {
-  /* line 2292, ../sass/_group-list.scss */
+  /* line 2140, ../sass/_group-list.scss */
   .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.page-block > .in > .ct > .in > ul > li {
     width: 100% !important;
   }
 }
-/* line 2307, ../sass/_group-list.scss */
+/* line 2155, ../sass/_group-list.scss */
 .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-block > .in > .ct > .in > ul > li > [data-index][data-type] {
   padding: 3px;
 }
-/* line 2312, ../sass/_group-list.scss */
+/* line 2160, ../sass/_group-list.scss */
 .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.page-block > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
   display: none;
 }
-/* line 2316, ../sass/_group-list.scss */
+/* line 2164, ../sass/_group-list.scss */
 .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.page-block > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
-/* line 2386, ../sass/_group-list.scss */
+/* line 2234, ../sass/_group-list.scss */
 .group-list.page-list > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.page-list > .in > .ct > .in > ul > li + li {
   margin-top: 5px;
 }
-/* line 2394, ../sass/_group-list.scss */
+/* line 2242, ../sass/_group-list.scss */
 .group-list.page-list > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.page-list > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
   display: none;
 }
@@ -8276,7 +8116,7 @@ th {
 }
 /* line 834, ../sass/_list-pic.scss */
 .list-pic.pic-download .ct li.is-video a {
-  background-image: url('../images/icon-pic/icon-w-video.png');
+  background-image: url('../images/icon-pic/icon-w-video.png?1456368750');
   background-repeat: no-repeat;
   background-position: center;
   background-position: top 5px left 5px;
@@ -8553,152 +8393,136 @@ th {
   font-size: inherit;
   color: inherit;
 }
-/* line 117, ../sass/_area-table.scss */
-.area-table.page-table .hd a {
-  text-decoration: underline;
-}
-/* line 120, ../sass/_area-table.scss */
-.area-table.page-table .hd a:hover {
-  text-decoration: none;
-}
-/* line 132, ../sass/_area-table.scss */
+/* line 128, ../sass/_area-table.scss */
 .area-table.page-table .ct table {
   table-layout: fixed;
   width: 100%;
 }
-/* line 139, ../sass/_area-table.scss */
+/* line 135, ../sass/_area-table.scss */
 .area-table.page-table .ct thead tr {
   border-bottom: 3px double #e4e4e4;
   background-color: #f0f0f0;
 }
-/* line 144, ../sass/_area-table.scss */
+/* line 140, ../sass/_area-table.scss */
 .area-table.page-table .ct thead th, .area-table.page-table .ct thead td {
   border: 1px solid #e4e4e4;
 }
-/* line 153, ../sass/_area-table.scss */
+/* line 149, ../sass/_area-table.scss */
 .area-table.page-table .ct tbody tr:nth-child(even) {
   background-color: #f0f0f0;
 }
-/* line 158, ../sass/_area-table.scss */
+/* line 154, ../sass/_area-table.scss */
 .area-table.page-table .ct tbody th, .area-table.page-table .ct tbody td {
   border: 1px solid #e4e4e4;
 }
-/* line 165, ../sass/_area-table.scss */
+/* line 161, ../sass/_area-table.scss */
 .area-table.page-table .ct tfoot th, .area-table.page-table .ct tfoot td {
   padding-top: 8px;
 }
-/* line 182, ../sass/_area-table.scss */
+/* line 178, ../sass/_area-table.scss */
 .area-table.page-table .ct th {
   background-color: #fa7076;
   color: #ffffff;
 }
-/* line 191, ../sass/_area-table.scss */
+/* line 187, ../sass/_area-table.scss */
 .area-table.page-table .ct span {
   display: block;
   padding: 8px;
 }
-/* line 196, ../sass/_area-table.scss */
+/* line 192, ../sass/_area-table.scss */
 .area-table.page-table .ct a {
   text-decoration: underline;
 }
-/* line 199, ../sass/_area-table.scss */
+/* line 195, ../sass/_area-table.scss */
 .area-table.page-table .ct a:hover {
   text-decoration: none;
 }
-/* line 247, ../sass/_area-table.scss */
+/* line 243, ../sass/_area-table.scss */
 .area-table.rwd-table .hd h4:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 256, ../sass/_area-table.scss */
-.area-table.rwd-table .hd a {
-  text-decoration: underline;
-}
-/* line 259, ../sass/_area-table.scss */
-.area-table.rwd-table .hd a:hover {
-  text-decoration: none;
-}
-/* line 271, ../sass/_area-table.scss */
+/* line 263, ../sass/_area-table.scss */
 .area-table.rwd-table .ct table {
   table-layout: fixed;
   width: 100%;
 }
 @media (max-width: 560px) {
-  /* line 271, ../sass/_area-table.scss */
+  /* line 263, ../sass/_area-table.scss */
   .area-table.rwd-table .ct table {
     display: block;
   }
 }
 @media (max-width: 560px) {
-  /* line 280, ../sass/_area-table.scss */
+  /* line 272, ../sass/_area-table.scss */
   .area-table.rwd-table .ct thead {
     display: none;
   }
 }
-/* line 286, ../sass/_area-table.scss */
+/* line 278, ../sass/_area-table.scss */
 .area-table.rwd-table .ct thead tr {
   border-bottom: 3px double #e4e4e4;
   background-color: #f0f0f0;
 }
-/* line 303, ../sass/_area-table.scss */
+/* line 295, ../sass/_area-table.scss */
 .area-table.rwd-table .ct thead th, .area-table.rwd-table .ct thead td {
   border: 1px solid #e4e4e4;
 }
 @media (max-width: 560px) {
-  /* line 308, ../sass/_area-table.scss */
+  /* line 300, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody {
     display: block;
   }
 }
 @media (max-width: 560px) {
-  /* line 314, ../sass/_area-table.scss */
+  /* line 306, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody tr {
     border: 1px solid #e4e4e4;
   }
 }
-/* line 320, ../sass/_area-table.scss */
+/* line 312, ../sass/_area-table.scss */
 .area-table.rwd-table .ct tbody tr:nth-child(even) {
   background-color: #f0f0f0;
 }
 @media (max-width: 560px) {
-  /* line 320, ../sass/_area-table.scss */
+  /* line 312, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody tr:nth-child(even) {
     background-color: transparent;
   }
 }
 @media (max-width: 560px) {
-  /* line 328, ../sass/_area-table.scss */
+  /* line 320, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody tr + tr {
     margin-top: 8px;
   }
 }
-/* line 336, ../sass/_area-table.scss */
+/* line 328, ../sass/_area-table.scss */
 .area-table.rwd-table .ct tbody th, .area-table.rwd-table .ct tbody td {
   border: 1px solid #e4e4e4;
 }
 @media (max-width: 560px) {
-  /* line 336, ../sass/_area-table.scss */
+  /* line 328, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody th, .area-table.rwd-table .ct tbody td {
     border: 0;
   }
 }
 @media (max-width: 560px) {
-  /* line 348, ../sass/_area-table.scss */
+  /* line 340, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody td {
     margin-top: 8px;
   }
 }
-/* line 354, ../sass/_area-table.scss */
+/* line 346, ../sass/_area-table.scss */
 .area-table.rwd-table .ct tbody td .caption {
   display: none;
 }
 @media (max-width: 560px) {
-  /* line 354, ../sass/_area-table.scss */
+  /* line 346, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tbody td .caption {
     display: block;
   }
 }
-/* line 361, ../sass/_area-table.scss */
+/* line 353, ../sass/_area-table.scss */
 .area-table.rwd-table .ct tbody td .caption span {
   display: block;
   padding: 0;
@@ -8708,49 +8532,49 @@ th {
   color: #79561b;
 }
 @media (max-width: 560px) {
-  /* line 373, ../sass/_area-table.scss */
+  /* line 365, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tfoot {
     display: block;
   }
 }
-/* line 379, ../sass/_area-table.scss */
+/* line 371, ../sass/_area-table.scss */
 .area-table.rwd-table .ct tfoot th, .area-table.rwd-table .ct tfoot td {
   padding-top: 8px;
 }
 @media (max-width: 560px) {
-  /* line 396, ../sass/_area-table.scss */
+  /* line 388, ../sass/_area-table.scss */
   .area-table.rwd-table .ct tr {
     display: block;
     padding: 8px;
   }
 }
 @media (max-width: 560px) {
-  /* line 404, ../sass/_area-table.scss */
+  /* line 396, ../sass/_area-table.scss */
   .area-table.rwd-table .ct th, .area-table.rwd-table .ct td {
     display: block;
   }
 }
-/* line 411, ../sass/_area-table.scss */
+/* line 403, ../sass/_area-table.scss */
 .area-table.rwd-table .ct th {
   background-color: #fa7076;
   color: #ffffff;
 }
-/* line 420, ../sass/_area-table.scss */
+/* line 412, ../sass/_area-table.scss */
 .area-table.rwd-table .ct span {
   display: block;
   padding: 8px;
 }
 @media (max-width: 560px) {
-  /* line 420, ../sass/_area-table.scss */
+  /* line 412, ../sass/_area-table.scss */
   .area-table.rwd-table .ct span {
     padding: 3px 8px;
   }
 }
-/* line 429, ../sass/_area-table.scss */
+/* line 421, ../sass/_area-table.scss */
 .area-table.rwd-table .ct a {
   text-decoration: underline;
 }
-/* line 432, ../sass/_area-table.scss */
+/* line 424, ../sass/_area-table.scss */
 .area-table.rwd-table .ct a:hover {
   text-decoration: none;
 }

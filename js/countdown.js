@@ -28,7 +28,7 @@ define(function(){
 				hour: 0,
 				minute: 0,
 				second: 0,
-				delayTime: 1000, //ms
+				delayTime: 1000, //多久計時一次(ms)
 				arrivedMessage: null,
 				lang: 'en'
 			}

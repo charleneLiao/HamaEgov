@@ -3,23 +3,67 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
+				msg: 'query sample.',
 				speed: 300,
-				debug: false,
-				class: 'is-show',
-				event: 'click'
+				interval: 1, //彈跳間隔時間(days)
+				cookieName: 'query',
+				cookieValue: 'oka',
+				hideBtn: false, //隱藏 是&否
+				debug: false
 			}
 
 		$.extend($set, opt);
 
 		var $env = $(env),
-			$ft = $(getNode.getFt(env)),
-			$close = $ft.find('a.close');
+			$ct = getNode.getCt(env),
+			$span = $ct.find('span'),
+			$ft = getNode.getFt(env),
+			$btn = $ft.find('a'),
+			$allow = $ft.find('.allow').find('a'),
+			$deny = $ft.find('.deny').find('a'),
+			$close = $ft.find('.close').find('a');
 
-		$close.on(event, function(evt){
-			evt.preventDefault()
+		if( $set.hideBtn ) {
+			$allow.hide();
+			$deny.hide();
+		}
 
-			$env.removeClass($set.class);
-		});
+		if( !$.cookie($set.cookieName) ) {
+
+			$span.text($set.msg);
+
+			$env.fadeIn($set.speed);
+
+			$allow.on('click', function(evt){
+				evt.preventDefault();
+
+				//...
+				queryClose();
+			});
+
+			$deny.on('click', function(evt){
+				evt.preventDefault();
+
+				//...
+				queryClose();
+			});
+
+			$close.on('click', function(evt){
+				evt.preventDefault();
+
+				//...
+				queryClose();
+			});
+		}
+
+		function queryClose(){
+
+			$env.fadeOut($set.speed, function(){
+				$env.remove();
+			});
+
+			$.cookie($set.cookieName, $set.cookieValue, {expires: $set.interval});
+		}
 
 		if($set.debug) {
 			console.log('預設值:', $set);

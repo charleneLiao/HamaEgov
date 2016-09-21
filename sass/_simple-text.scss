@@ -1002,7 +1002,7 @@
 				li {
 					display: inline-block;
 					
-					&.focus {
+					&.deny {
 
 						a {
 							@extend %btn-imp;
@@ -1122,7 +1122,7 @@
 				li {
 					display: inline-block;
 					
-					&.focus {
+					&.deny {
 
 						a {
 							@extend %btn-imp;
