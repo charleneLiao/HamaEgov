@@ -726,19 +726,14 @@
 	%mark { //標籤組件
 		display: inline-block;
 		font-size: $font-size-s;
-		color: $span-color;
-		margin-right: $interval-s;
-	}
-
-	%mark-extend { //延伸的標籤組件
-		@extend %mark;
-		color: $white;
 		padding: $interval-xs $interval-s;
+		margin-right: $interval-s;
+		color: $white;
 		background-color: $span-color;
 	}
 
 	%mark-absolute { //延伸的標籤組件
-		@extend %mark-extend;
+		@extend %mark;
 		position: absolute;
 		top: $interval-m;
 		left: $interval-m;
@@ -850,10 +845,15 @@
 
 		li {
 			display: inline-block;
+
+			+ li {
+				margin-left: $interval-xs;
+			}
 		}
 
 		span {
 			display: block;
+			background-image: none !important;
 		}
 
 		a {
@@ -878,15 +878,6 @@
 
 //快速取用樣式================================================================
 
-	%mask-link { //圖片遮罩
-		position: absolute;
-		display: block;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-
 	%mask { //圖片遮罩
 		position: relative;
 		display: block;
@@ -910,6 +901,15 @@
 				opacity: 0;
 			}
 		}
+	}
+
+	%mask-link { //圖片遮罩
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 	}
 
 //背景與圖示================================================================

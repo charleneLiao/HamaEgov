@@ -878,7 +878,10 @@
 				}
 
 				ul {
-
+					background-color: $light;
+					overflow: hidden;
+					padding: 0 $interval-m;
+					text-align: center;
 				}
 
 				li {
@@ -924,6 +927,41 @@
 
 					&.more {
 						display: none;
+					}
+
+					&.is-dot {
+						display: inline-block;
+						margin: $interval-m $interval-xs;
+						vertical-align: middle;
+
+						@include media('mobile') {
+							display: none;
+						}
+
+						&.is-active {
+
+							a {
+								background-color: $minor-color;
+							}
+						}
+
+						span {
+							display: block;
+						}
+
+						a {
+							@extend %hide-text;
+							display: block;
+							width: 12px;
+							height: 12px;
+							background-color: $gray;
+							transition: $transition;
+							border-radius: 50%;
+
+							&:hover {
+								opacity: $opacity-h;
+							}
+						}
 					}
 				}
 
@@ -1018,6 +1056,22 @@
 						@include js(false) {
 							display: none;
 						}
+					}
+
+					&.prev {
+						
+					}
+
+					&.next {
+
+					}
+
+					&.more {
+
+					}
+
+					&.is-dot {
+
 					}
 				}
 

@@ -3,7 +3,6 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
-				msg: 'query sample.',
 				speed: 300,
 				interval: 1, //彈跳間隔時間(days)
 				cookieName: 'query',
@@ -29,8 +28,6 @@ define(['getNode'], function(getNode){
 		}
 
 		if( !$.cookie($set.cookieName) ) {
-
-			$span.text($set.msg);
 
 			$env.fadeIn($set.speed);
 

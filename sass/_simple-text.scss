@@ -35,7 +35,7 @@
 				}
 
 				/*i*/.mark {
-					@extend %mark-extend;
+					@extend %mark;
 				}
 			}
 
@@ -138,7 +138,7 @@
 				}
 
 				/*i*/.mark {
-					@extend %mark-extend;
+					@extend %mark;
 				}
 			}
 
@@ -561,7 +561,7 @@
 		}
 
 		.mark {
-			@extend %mark-extend;
+			@extend %mark;
 		}
 
 		.ft {
@@ -1427,10 +1427,12 @@
 					width: $btn-w;
 					height: $btn-h;
 					background-color: $btn-bg-color;
+					opacity: $opacity-l;
 					transition: $transition;
 
 					&:hover {
 						background-color: $btn-hover-bg-color;
+						opacity: $opacity-h;
 					}
 				}
 			}

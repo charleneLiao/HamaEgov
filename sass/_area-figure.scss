@@ -567,7 +567,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-extend;
+				@extend %mark;
 			}
 
 			.p {
@@ -787,7 +787,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-extend;
+				@extend %mark;
 			}
 		}
 
@@ -1051,7 +1051,7 @@
 			}
 
 			/*i*/.mark {
-				@extend %mark-extend;
+				@extend %mark;
 			}
 
 			.p {

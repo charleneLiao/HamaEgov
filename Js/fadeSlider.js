@@ -4,12 +4,18 @@ define(['getNode'], function(getNode){
 
 		var $set = {
 				auto: false,
-				delay: 5000,
-				speed: 300,
+				delay: 5000, //停留時間
+				speed: 300, //輪播速度
+				sliderType: 0, //預設是 0(箭頭) 1(點點) 2(箭頭+點點)
+				activeClass: 'is-active', //啟動點點的 class
 				debug: false
 			}
 
 		$.extend($set, opt);
+
+		var _event = 'change.node';
+
+		var $env = $(env);
 
 		var $content_li = getNode.getCtItem(env),
 			$content_li_length = $content_li.length;
@@ -18,41 +24,75 @@ define(['getNode'], function(getNode){
 			return false;
 		}
 
-		var $env = $(env);
-
-		var $prev_li = getNode.getFtItemBtn(env, 'prev'),
-			$next_li = getNode.getFtItemBtn(env, 'next');
-
-		var $prev_li_a = $prev_li.find('a'),
-			$next_li_a = $next_li.find('a');
+		var $dots = $();
 
 		var _index = 0, //被播放的順序
 			_right = 1,
 			_left = -1;
 
-		$prev_li_a.on('click', function(evt){
-			evt.preventDefault();
+		if( $set.sliderType !== 1 ) { //箭頭
+		
+			var $prev_li = getNode.getFtItemBtn(env, 'prev'),
+				$next_li = getNode.getFtItemBtn(env, 'next');
 
-			_index = (_index + _right + $content_li_length) % $content_li_length; //算出第幾個要被撥放
-			slider(_index);
-		});
+			var $prev_li_a = $prev_li.find('a'),
+				$next_li_a = $next_li.find('a');
 
-		$next_li_a.on('click', function(evt){
-			evt.preventDefault();
+			$prev_li_a.on(_event, function(){
+				slider(_left);
+			});
 
-			_index = (_index + _left + $content_li_length) % $content_li_length; //算出第幾個要被撥放
-			slider(_index);
-		});
+			$prev_li_a.on('click', function(evt){
+				evt.preventDefault();
+
+				$(this).trigger(_event);
+			});
+
+			$next_li_a.on(_event, function(){
+				slider(_right);
+			});
+
+			$next_li_a.on('click', function(evt){
+				evt.preventDefault();
+
+				$(this).trigger(_event);
+			});
+		}
+
+		if( $set.sliderType === 1 || $set.sliderType === 2 ) { //點點
+
+			for( var i = 0; i < $content_li_length; i++ ) {
+				var $dot = getNode.getFtItemBtn(env, 'slider-item'+ (i + 1)),
+					$a = $dot.find('a');
+
+				$dots = $dots.add($dot);
+
+				$dot.addClass('is-dot');
+
+				(function(j){ //閉包傳遞參數
+
+					$a.on(_event, function(){
+						slider(j - _index);
+					});
+
+					$a.on('click', function(evt){
+						evt.preventDefault();
+
+						$(this).trigger(_event);
+					});
+				})(i)
+			}
+		}
 
 		$env.touchwipe({
 			wipeLeft: function() {
-				_index = (_index + _right + $content_li_length) % $content_li_length; //算出第幾個要被撥放
-				slider(_index);
+
+				slider(_left);
 				clearTimeout(timer);
 			},
 			wipeRight: function() {
-				_index = (_index + _left + $content_li_length) % $content_li_length; //算出第幾個要被撥放
-				slider(_index);
+
+				slider(_right);
 				clearTimeout(timer);
 			},
 			min_move_x: 20,
@@ -60,10 +100,18 @@ define(['getNode'], function(getNode){
 			preventDefaultEvents: false
 		});
 
-		function slider(_index) {
-			var $slider_node = $content_li.eq(_index); //播放的節點
+		slider(0); //播放第一個
 
-			$slider_node.fadeIn($set.speed).siblings().hide(); //show出圖片並把其他隱藏
+		function slider(_away) { //輪播特效
+
+			_index = (_index + _away + $content_li_length) % $content_li_length; //算出第幾個要被撥放
+
+			var $node = $content_li.eq(_index);
+
+			$node.fadeIn($set.speed).siblings().hide(); //show 出物件並把其他隱藏
+
+			$dots.removeClass($set.activeClass);
+			$env.find('.slider-item'+ (_index + 1)).addClass($set.activeClass);
 		}
 
 		if ($set.auto) { //如果要輪播
@@ -71,9 +119,7 @@ define(['getNode'], function(getNode){
 
 			function auto() { //設定自動撥放涵式
 
-				_index = (_index + 1 + $content_li_length) % $content_li_length;
-
-				slider(_index);
+				slider(_right); //預設向右撥放
 				timer = setTimeout(auto, $set.delay);
 			}
 			
