@@ -419,7 +419,7 @@
 
 	%reset-outer { //重新設定外部樣式
 		margin: 0;
-		position: relative;
+		position: static;
 		top: auto;
 		right: auto;
 		bottom: auto;

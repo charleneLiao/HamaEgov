@@ -310,6 +310,7 @@
 
 							> .bg-drop-layout > .in, > .in {
 								@extend %reset-outer;
+								position: relative;
 							}
 						}
 					}
