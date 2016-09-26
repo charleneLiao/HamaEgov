@@ -1356,7 +1356,33 @@
 //內頁搜尋================================================================
 
 	&.page-search {
-		@extend %area-page-no-header;
+
+		&.is-active {
+
+			.ct {
+				display: block;
+			}
+
+			.ft {
+
+				li {
+
+					&.more {
+
+						span {
+
+						}
+
+						a {
+
+							&:before {
+								content: 'close';
+							}
+						}
+					}
+				}
+			}
+		}
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -1369,7 +1395,11 @@
 			}
 
 			h4 {
+				@extend %title;
 
+				&:before {
+					@include icon-font('search');
+				}
 			}
 
 			span {
@@ -1384,8 +1414,13 @@
 		.ct {
 			$height: 30px;
 
+			display: none;
 			background-color: $light;
 			padding: $interval-s;
+
+			@include js(false) {
+				display: block;
+			}
 
 			> .in {
 
@@ -1476,6 +1511,20 @@
 
 				&.advanced {
 					
+				}
+
+				&.more {
+
+					span {
+
+					}
+
+					a {
+
+						&:before {
+							content: 'open';
+						}
+					}
 				}
 			}
 

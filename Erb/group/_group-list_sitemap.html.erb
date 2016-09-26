@@ -29,7 +29,18 @@
 					<li data-index="<%= i + 1 %>">
 
 					<!-- <%= inner %> -->
-						<%= render partial: inner.sample, locals: set({ index: 4, header_text: (zh_lorem_words rand(5)+1), deep: (current_deep + 1) }) %>
+
+						<%
+							group = inner.sample
+
+							if ( group === "/erb/module/list-text_sitemap" )
+								sets = { index: (i+1), func_set: "{'toogleBtn':{'btnText':''}}", header_text: (zh_lorem_words rand(5)+1), deep: (current_deep + 1) }
+							else
+								sets = { index: (i+1), header_text: (zh_lorem_words rand(5)+1), deep: (current_deep + 1) }
+							end
+						%>
+
+						<%= render partial: group, locals: set(sets) %>
 					<!-- <%= inner %> -->
 					
 					</li>

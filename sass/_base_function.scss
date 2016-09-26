@@ -419,7 +419,7 @@
 
 	%reset-outer { //重新設定外部樣式
 		margin: 0;
-		position: static;
+		position: relative;
 		top: auto;
 		right: auto;
 		bottom: auto;
@@ -627,11 +627,11 @@
 
 	%area-page { //內頁模組
 
-		[data-index][data-type] + [data-index][data-type] {
-			margin-top: $interval-xl;
+		[data-type] + [data-type] {
+			margin-top: $interval-l;
 		}
 
-		[data-index][data-type] + .is-hide-header { //在內頁模組上下 ".is-hide-header" 的 margin 樣式
+		[data-type] + .is-hide-header { //在內頁模組上下 ".is-hide-header" 的 margin 樣式
 			@extend %area-page-no-header;
 		}
 	}

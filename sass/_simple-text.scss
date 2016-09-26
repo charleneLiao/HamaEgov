@@ -1281,7 +1281,7 @@
 						}
 
 						&:after {
-							content: '展開選單';
+							content: 'open';
 						}
 					}
 				}
@@ -1336,7 +1336,7 @@
 					}
 
 					&:after {
-						content: '收合選單';
+						content: 'close';
 					}
 				}
 			}

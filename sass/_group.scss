@@ -43,7 +43,7 @@
 
 		> .bg-drop-layout > .in, > .in {
 
-			.hd {
+			> .hd {
 
 				> .in {
 
@@ -141,7 +141,7 @@
 
 			> .bg-drop-layout > .in, > .in {
 
-				.hd {
+				> .hd {
 
 					> .in {
 
@@ -152,7 +152,7 @@
 					}
 
 					span {
-						display: block;
+
 					}
 
 					a {
@@ -198,7 +198,7 @@
 
 			> .bg-drop-layout > .in, > .in {
 
-				.hd {
+				> .hd {
 
 					> .in {
 
@@ -241,7 +241,7 @@
 
 			> .bg-drop-layout > .in, > .in {
 
-				.hd {
+				> .hd {
 
 					> .in {
 
@@ -283,6 +283,13 @@
 						padding: $interval-xs;
 						background-color: $light;
 					}
+
+					> .nav {
+						
+						> .in {
+							margin: 0;
+						}
+					}
 				}
 			}
 		}
@@ -292,7 +299,7 @@
 
 			> .bg-drop-layout > .in, > .in {
 
-				.hd {
+				> .hd {
 					display: block;
 
 					> .in {
