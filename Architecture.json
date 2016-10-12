@@ -89,10 +89,6 @@
         "Sub": [
           {
             "GroupType": "FixedModuleString",
-            "Name": "TopLog"
-          },
-          {
-            "GroupType": "FixedModuleString",
             "Name": "Search"
           },
           {

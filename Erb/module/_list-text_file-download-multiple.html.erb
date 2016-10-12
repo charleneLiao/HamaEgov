@@ -17,7 +17,7 @@
 
 				<% li_length.times do |i| %>
 
-					<% file_type = $file_types[rand($file_types.length)] %>
+					<% file_type = $file_types.sample %>
 
 					<li class="<%= file_type %>" data-index="<%= i + 1 %>"><span><a href="#" title="<%= file_type %> 格式"><%= file_type %></a></span></li>
 				<% end %>

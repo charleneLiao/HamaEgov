@@ -1079,6 +1079,7 @@
 
 		.hd {
 			display: inline-block;
+			vertical-align: middle;
 
 			> .in {
 
@@ -1102,6 +1103,7 @@
 
 		.ct {
 			display: inline-block;
+			vertical-align: middle;
 
 			> .in {
 
@@ -1293,6 +1295,7 @@
 
 			.hd {
 				display: inline-block;
+				vertical-align: middle;
 
 				> .in {
 
@@ -1316,6 +1319,7 @@
 
 			.ct {
 				display: inline-block;
+				vertical-align: middle;
 
 				> .in {
 
@@ -1730,14 +1734,14 @@
 
 			li {
 				display: inline-block;
-				color: $white;
+				vertical-align: middle;
 
 				&.small {
 
 					span {
 
 						a {
-							@include icon-pic-btn('font-smail');
+							@include bg-to-pic('icon-pic/font-smail.png');
 						}
 					}
 				}
@@ -1747,7 +1751,7 @@
 					span {
 
 						a {
-							@include icon-pic-btn('font-medium');
+							@include bg-to-pic('icon-pic/font-medium.png');
 						}
 					}
 				}
@@ -1757,7 +1761,7 @@
 					span {
 
 						a {
-							@include icon-pic-btn('font-large');
+							@include bg-to-pic('icon-pic/font-large.png');
 						}
 					}
 				}
@@ -1779,6 +1783,8 @@
 			}
 
 			a {
+				@extend %hide-text;
+				display: block;
 				border-width: 2px;
 				border-style: solid;
 				border-color: transparent;

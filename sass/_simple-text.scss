@@ -251,177 +251,98 @@
 //主要標誌================================================================
 
 	&.major-logo {
+		float: left;
+		position: relative;
+		z-index: 1;
 
-		.base-mobile & {
+		@include media('mobile') {
+			float: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 2;
+			background-color: $major-color;
+		}
 
-			> .bg-drop-layout > .in, > .in {
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
 
 			}
 
-			.hd {
-				display: none;
+			h4 {
 
-				> .in {
-
-				}
-
-				h4 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
 
-			.ct {
-
-				> .in {
+			span {
 					
-				}
-
-				h1 {
-					@extend %reset;
-				}
-
-				span {
-					display: block;
-				}
-
-				a {
-					$pic: 'major_logo.png';
-					$pic-w: image-width($pic);
-					$pic-h: image-height($pic);
-
-					@include bg-to-pic($pic, false);
-					@extend %bg-contain;
-					@extend %hide-text;
-					display: block;
-					width: 100%;
-					padding-bottom: ( $pic-h / $pic-w ) * 100%;
-				}
 			}
 
-			.ft {
+			a {
 
-				> .in {
+			}
+		}
 
-				}
+		.ct {
 
-				ul {
+			> .in {
+				
+			}
 
-				}
+			h1 {
+				@extend %reset;
+			}
 
-				li {
+			span {
+				display: block;
+			}
 
-				}
+			a {
+				$pic: 'major_logo.png';
+				$pic-w: image-width($pic);
+				$pic-h: image-height($pic);
 
-				span {
+				@include bg-to-pic($pic, false);
+				@extend %bg-contain;
+				@extend %hide-text;
+				display: block;
+				width: $pic-w;
+				padding-bottom: ( $pic-h / $pic-w ) * 100%;
 
-				}
-
-				a {
-
+				@include media('mobile') {
+					width: auto;
+					padding-bottom: $rwd-btn-size;
+					margin-left: $rwd-btn-size;
 				}
 			}
 		}
 
-		.base-header & {
-			float: left;
+		.ft {
 
-			@include media('mobile') {
-				float: none;
-				position: fixed;
-				top: 0;
-				right: 0;
-				left: 0;
-				z-index: 2;
-				background-color: $major-color;
-			}
-
-			> .bg-drop-layout > .in, > .in {
+			> .in {
 
 			}
 
-			.hd {
-				display: none;
+			ul {
 
-				> .in {
-
-				}
-
-				h4 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
 
-			.ct {
+			li {
 
-				> .in {
-					
-				}
-
-				h1 {
-					@extend %reset;
-				}
-
-				span {
-					display: block;
-				}
-
-				a {
-					$pic: 'major_logo.png';
-					$pic-w: image-width($pic);
-					$pic-h: image-height($pic);
-
-					@include bg-to-pic($pic, false);
-					@extend %bg-contain;
-					@extend %hide-text;
-					display: block;
-					width: $pic-w;
-					padding-bottom: ( $pic-h / $pic-w ) * 100%;
-
-					@include media('mobile') {
-						width: auto;
-						padding-bottom: $rwd-btn-size;
-						margin-left: $rwd-btn-size;
-					}
-				}
 			}
 
-			.ft {
+			span {
 
-				> .in {
+			}
 
-				}
+			a {
 
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
 			}
 		}
 	}

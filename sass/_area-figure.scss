@@ -327,17 +327,6 @@
 //內頁圖片敘述(圖片-標題-標籤-內文)================================================================
 
 	&.page-figure {
-		overflow: hidden;
-
-		&:hover {
-
-			.ct {
-
-				.p {
-					display: block;
-				}
-			}
-		}
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -367,13 +356,18 @@
 		}
 
 		.ct {
+			background-color: $light;
 
 			> .in {
 				position: relative;
 			}
 
-			.div {
+			/*a*/.div {
+				transition: $transition;
 
+				&:hover {
+					background-color: $light-gray;
+				}
 			}
 
 			.img {
@@ -381,7 +375,7 @@
 				span {
 					@extend %bg-cover;
 					display: block;
-					padding-bottom: 68%;
+					height: 240px;
 				}
 
 				img {
@@ -390,23 +384,18 @@
 			}
 
 			.essay {
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				padding: $interval-m;
-				background-color: $black;
-				background-color: rgba( $black, $opacity-h );
+				padding: $interval-l;
+				
+				&:after {
+					@extend %clear;
+				}
 			}
 
 			.figcaption {
-				@extend %ellipsis;
-				margin: $interval-s 0;
-				font-size: $font-size-l;
-				color: $white;
+				@extend %caption;
 
 				span {
-					color: inherit;
+
 				}
 			}
 
@@ -434,12 +423,10 @@
 			}
 
 			.p {
-				display: none;
+				@extend %paragraph;
 
 				p {
-					@extend %reset;
-					margin: $interval-s 0;
-					color: $white;
+
 				}
 
 				span {
@@ -449,7 +436,8 @@
 		}
 
 		.ft {
-			@extend %footer-btns;
+			padding: $interval-s;
+			background-color: $light;
 
 			> .in {
 
@@ -460,7 +448,10 @@
 			}
 
 			li {
-
+				
+				+ li {
+					margin-top: $interval-xs;
+				}
 			}
 
 			span {
@@ -468,7 +459,8 @@
 			}
 
 			a {
-
+				@extend %btn;
+				display: block;
 			}
 		}
 	}
