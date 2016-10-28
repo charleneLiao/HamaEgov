@@ -23,8 +23,11 @@
 			}
 		}
 	}
+}
 
-	[data-type="1"][data-setLen="#{$i}"] { //設定分割
+@for $i from 2 through $max-child {
+
+	[data-type="1"][data-setlen="#{$i}"] { //設定分割
 
 		> .bg-drop-layout > .in, > .in {
 
