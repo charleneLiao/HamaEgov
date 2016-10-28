@@ -1,0 +1,82 @@
+//列表群組
+
+//訊息================================================================
+
+.group-list.message {
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('message');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					> li {
+
+						+ li {
+							margin-top: $interval-s;
+						}
+
+						> [data-index][data-type] {
+							
+							> .in {
+
+								> .ft {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

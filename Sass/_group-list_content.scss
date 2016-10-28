@@ -1,0 +1,80 @@
+//列表群組
+
+//內頁階層================================================================
+
+.group-list.content {
+	$max-len: 3;
+
+	@include default-len(4, 1);
+	@include set-len(4, $max-len);
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('format_list_numbered');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					&:after {
+						@extend %clear;
+					}
+
+					> li {
+						@include set-len-rwd('mobile', 1);
+
+						> [data-index][data-type] {
+							margin: $interval-xs !important;
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

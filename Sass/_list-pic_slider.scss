@@ -1,0 +1,209 @@
+//圖片列表
+
+//輪播================================================================
+
+.list-pic.slider {
+	$btn-width: 45px; //設定按鈕寬度
+
+	> .bg-drop-layout > .in, > .in {
+		position: relative;
+	}
+
+	.hd {
+		display: none;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		ul {
+
+			&:after {
+				@extend %clear;
+			}
+		}
+
+		li {
+
+			+ li {
+				display: none;
+			}
+		}
+
+		span {
+			display: block;
+			background-image: none !important;
+		}
+
+		a {
+			display: block;
+		}
+
+		/*i*/.mark {
+			@extend %mark-absolute;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+			background-color: $light;
+			overflow: hidden;
+			padding: 0 $interval-m;
+			text-align: center;
+		}
+
+		li {
+
+			&.next, &.prev {
+
+				@include js(false) {
+					display: none;
+				}
+
+				a {
+					@extend %hide-text;
+					position: absolute;
+					top: 20%;
+					bottom: 20%;
+					display: block;
+					width: $btn-width;
+					transition: $transition;
+					background-color: $light;
+					background-color: rgba($light, $opacity-h);
+
+					&:hover {
+						background-color: rgba($light, $opacity-vh);
+					}
+				}
+			}
+
+			&.prev {
+
+				a {
+					left: 0;
+					@include bg-to-pic('icon-pic/away-b-left.png', false);
+				}
+			}
+
+			&.next {
+
+				a {
+					right: 0;
+					@include bg-to-pic('icon-pic/away-b-right.png', false);
+				}
+			}
+
+			&.more {
+				display: none;
+			}
+
+			&.is-img {
+				display: inline-block;
+				margin: $interval-s $interval-xs;
+				vertical-align: middle;
+				border: $border;
+
+				@include media('mobile') {
+					display: none;
+				}
+
+				&.is-active {
+					border-color: $minor-color;
+
+					a {
+
+						&:before {
+							opacity: 0;
+						}
+					}
+				}
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					position: relative;
+					width: 42px;
+					height: 42px;
+				}
+
+				a {
+					@extend %mask;
+					@extend %mask-link;
+					@extend %hide-text;
+				}
+			}
+
+			&.is-dot {
+				display: inline-block;
+				margin: $interval-m $interval-xs;
+				vertical-align: middle;
+
+				@include media('mobile') {
+					display: none;
+				}
+
+				&.is-active {
+
+					a {
+						background-color: $minor-color;
+					}
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					@extend %hide-text;
+					display: block;
+					width: 12px;
+					height: 12px;
+					background-color: $gray;
+					transition: $transition;
+					border-radius: 50%;
+
+					&:hover {
+						opacity: $opacity-h;
+					}
+				}
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

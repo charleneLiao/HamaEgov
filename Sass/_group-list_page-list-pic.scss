@@ -1,0 +1,120 @@
+//列表群組
+
+//內頁圖片列表群組================================================================
+
+.group-list.page-list-pic {
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('photo');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					> li {
+
+						+ li {
+							margin-top: $interval-l;
+						}
+
+						> [data-index][data-type] {
+							padding-left: $interval-xl;
+
+							@include media('phone') {
+								padding-left: $interval-m;
+							}
+
+							> .in {
+
+								> .hd {
+									display: block;
+									font-size: $font-size-s;
+									border-bottom: 0;
+
+									> .in {
+
+									}
+
+									h1, h2, h3, h4, h5, h6 {
+										border-bottom: 3px double $border-color;
+
+										&:before {
+											display: none;
+										}
+
+										&:after {
+											display: none;
+										}
+									}
+
+									span {
+
+									}
+
+									a {
+										display: block;
+									}
+								}
+
+								> .ct {
+
+								}
+
+								> .ft {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

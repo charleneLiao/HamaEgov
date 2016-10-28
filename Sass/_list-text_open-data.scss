@@ -1,0 +1,123 @@
+//文字列表
+
+//開放資料================================================================
+
+.list-text.open-data {
+	margin: $interval-s 0;
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		display: inline-block;
+		vertical-align: middle;
+
+		> .in {
+
+		}
+
+		h4 {
+
+			&:after {
+				content: ' : ';
+			}
+		}
+
+		span {
+			display: inline-block;
+		}
+
+		a {
+			display: block;
+		}
+	}
+
+	.ct {
+		display: inline-block;
+		vertical-align: middle;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+			display: inline-block;
+
+			+ li {
+				margin-left: $interval-xs;
+			}
+
+			&.json {
+
+				a {
+
+					&:before {
+
+					}
+				}
+			}
+
+			&.xml {
+
+				a {
+
+					&:before {
+
+					}
+				}
+			}
+
+			&.csv {
+
+				a {
+
+				}
+			}
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			@extend %btn;
+
+			&:before {
+				margin-right: $interval-xs;
+				@include icon-font('cloud_download');
+			}
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

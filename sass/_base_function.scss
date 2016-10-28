@@ -250,7 +250,7 @@
 		}
 	}
 
-	@mixin set-len($type, $max-len: $max-setLen) { //手動設定單行數量，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
+	@mixin set-len($type, $max-len: $max-child) { //手動設定單行數量，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
@@ -314,7 +314,7 @@
 		}
 	}
 
-	@mixin set-len-hide($type, $max-len: $max-setLen) { //手動設定單行數量，並且隱藏超過的，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
+	@mixin set-len-hide($type, $max-len: $max-child) { //手動設定單行數量，並且隱藏超過的，$type 為 data-type 參數，$max-len 為 data-setLen 的最大數量
 		@include set-len($type, $max-len);
 
 		@if ( $type == 0 ) { // list 模組的狀況
@@ -434,7 +434,7 @@
 		background-color: transparent;
 		font-size: $font-size-m;
 		font-weight: $font-weight-n;
-		transition: 0;
+		transition: initial;
 
 		&:before {
 			content: none;
@@ -448,25 +448,6 @@
 	%reset { //重新設定全部樣式
 		@extend %reset-outer;
 		@extend %reset-inner;
-	}
-
-	%reset-inner-module { //清除內部模塊的 margin
-
-		[data-index][data-type] {
-			margin: 0;
-
-			> .in {
-				margin: 0;
-			}
-
-			.hd {
-				display: none;
-			}
-
-			.ct {
-
-			}
-		}
 	}
 
 //clear 清除浮動================================================================
@@ -711,7 +692,7 @@
 		margin: $interval-s 0;
 
 		ul {
-			@extend %reset;
+
 		}
 
 		li {
@@ -743,7 +724,7 @@
 		margin: $interval-s 0;
 
 		p {
-			@extend %reset;
+			
 		}
 
 		a {

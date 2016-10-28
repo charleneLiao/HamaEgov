@@ -1,0 +1,236 @@
+//客製區塊
+
+//地圖================================================================
+
+.area-customize.map {
+
+	@include js(false) {
+		display: none;
+	}
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('place');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+
+			.div {
+				margin-bottom: $interval-s;
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('place');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+
+			}
+
+			.div {
+				margin-bottom: $interval-s;
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %article-extend;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

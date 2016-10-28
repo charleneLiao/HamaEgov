@@ -1,0 +1,176 @@
+//圖片列表
+
+//跑馬燈輪播================================================================
+
+.list-pic.page-marquee {
+	$btn-width: 30px; //設定按鈕寬度
+	$max-li-len: 50; //設定 li 的最大數量
+	$show-li-len: 4; //設定一次要秀的數量
+	$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		display: none;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		background-color: $light;
+
+		> .in {
+			overflow: hidden;
+			// margin: 0 $btn-width; //如果要與圖不重疊
+
+			@include js(false) {
+				margin: 0;
+			}
+		}
+
+		ul {
+			width: $max-li-len * 100% / $show-li-len;
+
+			@include set-len-rwd('pad', 2, $max-li-len * 100%);
+			@include set-len-rwd('phone', 1, $max-li-len * 100%);
+
+			@include js(false) {
+				width: 100%;
+			}
+
+			&:after {
+				@extend %clear;
+			}
+		}
+
+		li {
+			width: 100% / $max-li-len;
+			float: left;
+
+			@include js(false) {
+				width: 100% / $show-li-len;
+			}
+		}
+
+		span {
+			@extend %bg-cover;
+			position: relative;
+			display: block;
+			margin: $interval-xs;
+			border: $interval-xs solid $light-gray;
+			height: 80px;
+
+			@include media('phone') {
+				height: 160px;
+			}
+		}
+
+		a {
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black, $opacity-m);
+			transition: $transition;
+
+			&:hover {
+				opacity: 0;
+			}
+
+			@include media('mobile') {
+				background-color: transparent;
+			}
+		}
+
+		/*i*/.mark {
+			@extend %mark-absolute;
+		}
+
+		img {
+			display: none;
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+			&.next, &.prev {
+
+				@include js(false) {
+					display: none;
+				}
+
+				a {
+					@extend %hide-text;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					display: block;
+					width: $btn-width;
+					transition: $transition;
+					background-color: $light;
+					background-color: rgba($light, $opacity-h);
+
+					&:hover {
+						background-color: rgba($light, $opacity-vh);
+					}
+				}
+			}
+
+			&.prev {
+
+				a {
+					left: 0;
+					@include bg-to-pic('icon-pic/away-b-left.png', false);
+				}
+			}
+
+			&.next {
+
+				a {
+					right: 0;
+					@include bg-to-pic('icon-pic/away-b-right.png', false);
+				}
+			}
+
+			&.more {
+				display: none;
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

@@ -1,0 +1,87 @@
+//列表群組
+
+//相簿================================================================
+
+.group-list.album {
+	$default-len: 2;
+
+	@include default-len-hide(4, $default-len);
+	@include set-len-hide(4);
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('camera');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					&:after {
+						@extend %clear;
+					}
+
+					> li {
+
+						> [data-index][data-type] {
+							padding: $interval-xs;
+
+							> .in {
+
+								> .ft {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

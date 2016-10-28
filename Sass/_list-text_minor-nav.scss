@@ -1,0 +1,110 @@
+//文字列表
+
+//次選單================================================================
+
+.list-text.minor-nav {
+
+	> .bg-drop-layout > .in, > .in {
+		background-color: $major-color;
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			padding: $interval-m;
+			color: $white;
+
+			&:before {
+				@include icon-font('menu');
+				margin-right: $interval-xs;
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		overflow: hidden;
+
+		> .in {
+			
+		}
+
+		ul {
+			margin: 0 $interval-xs $interval-xs;
+			background-color: $white;
+		}
+
+		li {
+
+			&.is-active {
+
+				a {
+					background-color: $minor-color;
+					color: $white;
+				}
+			}
+
+			+ li {
+				border-top: $border;
+			}
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			display: block;
+			padding: $interval-m;
+			transition: $transition;
+
+			&:before {
+				@include icon-font('keyboard_arrow_right');
+				margin-right: $interval-xs;
+			}
+
+			&:hover {
+				background-color: $light;
+				color: currentColor;
+			}
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

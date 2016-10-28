@@ -1,0 +1,186 @@
+//表單區塊
+
+//內頁搜尋================================================================
+
+.area-form.page-search {
+
+	&.is-active {
+
+		.ct {
+			display: block;
+		}
+
+		.ft {
+
+			li {
+
+				&.more {
+
+					span {
+
+					}
+
+					a {
+
+						&:before {
+							content: 'close';
+						}
+					}
+				}
+			}
+		}
+	}
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('search');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		$height: 30px;
+
+		display: none;
+		background-color: $light;
+		padding: $interval-s;
+
+		@include js(false) {
+			display: block;
+		}
+
+		> .in {
+
+		}
+
+		.fieldset {
+			display: inline-block;
+			margin: $interval-s;
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+
+				&:before {
+					content: attr(data-before);
+				}
+
+				&:after {
+					content: attr(data-after);
+				}
+
+				&.select {
+
+				}
+
+				&.date {
+
+				}
+
+				&.search {
+
+				}
+
+				&.submit {
+
+				}
+
+				&.reset {
+
+				}
+			}
+
+			select {
+				line-height: $height;
+				height: $height;
+				max-width: 120px;
+
+				option {
+
+				}
+			}
+
+			input {
+
+				&[type="search"] {
+					line-height: $height;
+					height: $height;
+				}
+
+				&[type="date"] {
+					line-height: $height;
+					height: $height;
+				}
+
+				&[type="submit"] {
+					@extend %btn-imp;
+				}
+
+				&[type="reset"] {
+					
+				}
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+			&.advanced {
+				
+			}
+
+			&.more {
+
+				span {
+
+				}
+
+				a {
+
+					&:before {
+						content: 'open';
+					}
+				}
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

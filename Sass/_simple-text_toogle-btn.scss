@@ -1,0 +1,226 @@
+//簡單文字
+
+//收合按鈕================================================================
+
+.simple-text.toogle-btn {
+
+	.base-mobile & {
+		position: absolute;
+		left: 100%;
+
+		@include js(false) {
+			display: none;
+		}
+
+		&.is-active {
+
+			.ct {
+
+				a {
+					width: auto;
+					background-color: transparent;
+					
+					&:before {
+						@include icon-font('close');
+						line-height: $rwd-btn-size;
+						color: $white;
+					}
+
+					&:after {
+						content: $content;
+					}
+				}
+			}
+		}
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				width: $rwd-btn-size;
+				font-size: $font-size-xl;
+				background-color: deeper($major-color);
+				
+				&:before {
+					@include icon-font('menu');
+					display: block;
+					width: $rwd-btn-size;
+					text-align: center;
+					line-height: $rwd-btn-size;
+					color: $white;
+				}
+
+				&:after {
+					position: fixed;
+					top: 0;
+					right: 0;
+					width: 100vw;
+					height: 100vh;
+					background-color: rgba($deep, $opacity-m);
+					z-index: -1;
+				}
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-footer & {
+		border-bottom: $interval-xs solid $deep-gray;
+
+		@include js(false) {
+			display: none;
+		}
+
+		@include media('mobile') {
+			display: none;
+		}
+
+		&.is-active {
+
+			.ct {
+
+				a {
+
+					&:before {
+						@include icon-font('keyboard_arrow_up');
+					}
+
+					&:after {
+						content: 'open';
+					}
+				}
+			}
+		}
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			@extend %center;
+			position: relative;
+
+			> .in {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -1px;
+				text-align: right;
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			a {
+				@extend %btn;
+
+				&:before {
+					@include icon-font('keyboard_arrow_down');
+					margin-right: $interval-xs;
+				}
+
+				&:after {
+					content: 'close';
+				}
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

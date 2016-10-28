@@ -1,0 +1,112 @@
+//簡單文字
+
+//倒數日================================================================
+
+.simple-text.countdown {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('today');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		padding: $interval-m;
+		background-color: $light;
+
+		> .in {
+			text-align: center;
+			padding: $interval-m 0;
+		}
+
+		span {
+			font-size: $font-size-xl;
+			color: $title-color;
+
+			&.d {
+				
+				+ .mark {
+
+				}
+			}
+
+			&.h {
+				
+				+ .mark {
+
+				}
+			}
+
+			&.m {
+				
+				+ .mark {
+
+				}
+			}
+
+			&.s {
+				
+				+ .mark {
+
+				}
+			}
+
+			&.ms {
+				display: none;
+			}
+		}
+
+		/*i*/.mark {
+			margin: 0 $interval-m 0 $interval-xs;
+			font-size: $font-size-xs;
+		}
+	}
+
+	.ft {
+		padding: $interval-m;
+		background-color: $light;
+		border-top: $border-width $border-style $light-gray;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

@@ -1,0 +1,82 @@
+//簡單文字
+
+//天氣================================================================
+
+.simple-text.weather {
+
+	@include js(false) {
+		display: none;
+	}
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('cloud_queue');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+
+		> .in {
+			
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			@extend %list;
+			@extend %list-hover;
+		}
+	}
+
+	.mark {
+		@extend %mark;
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

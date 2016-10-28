@@ -1,0 +1,76 @@
+//列表群組
+
+//投票結果================================================================
+
+.group-list.vote-result {
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('data_usage');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					> li {
+						margin-top: $interval-m;
+
+						> [data-index][data-type] {
+
+							> .in {
+								margin: 0 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

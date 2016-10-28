@@ -1,0 +1,102 @@
+//文章區塊
+
+//內頁文章敘述(標題-內文)================================================================
+
+.area-essay.page-caption-p {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('subject');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		/*a*/.div {
+			padding: $interval-l;
+			background-color: $light;
+			transition: $transition;
+			
+			&:after {
+				@extend %clear;
+			}
+
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
+
+		.caption {
+			@extend %caption;
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		.p {
+			@extend %paragraph;
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

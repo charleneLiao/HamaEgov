@@ -1,0 +1,154 @@
+//簡單圖片
+
+//預設================================================================
+
+.simple-pic.default {
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('photo');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('photo');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

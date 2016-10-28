@@ -1,0 +1,285 @@
+//表單區塊
+
+//內頁表單================================================================
+
+.area-form.page-form {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('view_comfortable');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		@extend %article-extend;
+
+		> .in {
+
+		}
+
+		.fieldset {
+			$height: 26px;
+
+			+ .fieldset {
+				margin-top: $interval-m;
+				border-top: $border;
+				padding-top: $interval-m;
+				text-align: right;
+			}
+
+			span {
+				display: block;
+
+				&[data-message] {
+
+					&:after {
+						content: attr(data-message);
+						margin-left: $interval-xs;
+						color: $minor-color;
+					}
+				}
+
+				&.is-required {
+
+					label {
+
+						&:before {
+							content: '* ';
+							color: $minor-color;
+						}
+					}
+				}
+
+				&.is-error {
+
+					label {
+						color: $minor-color;
+					}
+
+					input {
+						border-color: $minor-color;
+					}
+
+					select {
+						border-color: $minor-color;
+					}
+
+					textarea {
+						border-color: $minor-color;
+					}
+				}
+
+				&.select {
+					margin-top: $interval-s;
+				}
+
+				&.text {
+					margin-top: $interval-s;
+				}
+
+				&.password {
+					margin-top: $interval-s;
+				}
+
+				&.date {
+					margin-top: $interval-s;
+				}
+				
+				&.number {
+					margin-top: $interval-s;
+				}
+				
+				&.search {
+					margin-top: $interval-s;
+				}
+
+				&.email {
+					margin-top: $interval-s;
+				}
+
+				&.radio {
+					margin-top: $interval-s;
+				}
+
+				&.checkbox {
+					margin-top: $interval-s;
+				}
+
+				&.textarea {
+					margin-top: $interval-s;
+				}
+
+				&.submit {
+					display: inline-block;
+				}
+
+				&.reset {
+					display: inline-block;
+				}
+
+				&.button {
+					display: inline-block;
+				}
+			}
+
+			select {
+				max-width: 100%;
+				line-height: $height;
+
+				option {
+
+				}
+			}
+
+			input {
+				max-width: 100%;
+
+				&[type="text"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				&[type="password"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				&[type="date"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+				
+				&[type="number"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+				
+				&[type="search"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				&[type="email"] {
+					line-height: $height;
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				&[type="radio"] {
+					line-height: $height;
+				}
+
+				&[type="checkbox"] {
+					line-height: $height;
+				}
+
+				&[type="submit"] {
+					@extend %btn-imp;
+				}
+
+				&[type="reset"] {
+					
+				}
+
+				&[type="button"] {
+
+				}
+			}
+
+			textarea {
+				max-width: 100%;
+			}
+
+			label {
+				line-height: $height;
+			}
+
+			.img {
+				display: inline-block;
+				vertical-align: middle;
+
+				span {
+					display: block;
+				}
+
+				img {
+					display: block;
+					border: $border;
+					border-color: $gray;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+			&.advanced {
+				
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

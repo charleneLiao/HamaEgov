@@ -1,383 +1,59 @@
 //編輯區塊
 
+//設定================================================================
+
 .area-editor {
 
-//預設================================================================
+	> .bg-drop-layout > .in, > .in {
 
-	&.default {
+	}
 
-		> .bg-drop-layout > .in, > .in {
+	.hd {
+
+		> .in {
 
 		}
 
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('mode_edit');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
+		h4 {
+			
 		}
 
-		.ct {
-
-			> .in {
+		span {
 				
-			}
 		}
 
-		.ft {
+		a {
 
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 
-//聯絡資訊編輯================================================================
+	.ct {
 
-	&.address {
-		@extend %area-mobile-no-header;
-
-		> .bg-drop-layout > .in, > .in {
-
-		}
-
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-			@extend %article;
-
-			> .in {
-				
-			}
-
-			a {
-				@extend %a;
-
-				&.is-map {
-
-					&:after {
-						@include icon-font('map');
-						margin-left: $interval-s;
-					}
-				}
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
+		> .in {
+			
 		}
 	}
 
-//使用者編輯================================================================
+	.ft {
 
-	&.user-edit {
-		@extend %area-page-no-header;
-
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-			@extend %article-extend;
-
-			> .in {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//系統資訊================================================================
-
-	&.system-info {
-		@extend %area-page-no-header;
-
-		> .bg-drop-layout > .in, > .in {
+		ul {
 
 		}
 
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-			@extend %article;
-
-			> .in {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//錯誤訊息================================================================
-
-	&.error-info {
-
-		> .bg-drop-layout > .in, > .in {
+		li {
 
 		}
 
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-				$color: #c40;
-
-				@extend %title;
-				color: $color;
-				font-size: $font-size-xl;
-
-				&:before {
-					@include icon-font('error');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-			@extend %article-extend;
-
-			> .in {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-//cp 頁框架================================================================
-
-	&.cp {
-
-		> .bg-drop-layout > .in, > .in {
+		span {
 
 		}
 
-		.hd {
+		a {
 
-			> .in {
-
-			}
-
-			h4 {
-				display: none;
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

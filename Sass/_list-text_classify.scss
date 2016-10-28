@@ -1,0 +1,124 @@
+//文字列表
+
+//分類================================================================
+
+.list-text.classify {
+	$active-color: $minor-color;
+
+	@extend %area-page-no-header;
+
+	&.is-active {
+		background-color: $minor-color;
+
+		.hd {
+
+			a {
+				color: $white;
+			}
+		}
+
+		.ct {
+
+			a {
+				background-color: deeper($active-color);
+				color: $white;
+
+				&:hover {
+					background-color: deeper($active-color, 2);
+				}
+			}
+		}
+	}
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		ul {
+
+		}
+
+		li {
+			display: inline-block;
+
+			&.is-active {
+
+				span {
+
+				}
+
+				a {
+					background-color: $active-color;
+					color: $white;
+				}
+			}
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			display: block;
+			padding: $btn-padding;
+			background-color: $light;
+			color: $body-font-color;
+
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

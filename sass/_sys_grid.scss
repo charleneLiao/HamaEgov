@@ -6,9 +6,9 @@
 // type 3 單欄(row)
 // type 4 清單(list)
 
-@for $i from $min-child through $max-child { //算自然分割
+@for $i from 1 through $max-child {
 
-	[data-type="1"][data-child="#{$i}"] {
+	[data-type="1"][data-child="#{$i}"] { //自然分割
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -18,34 +18,15 @@
 
 					> [data-index][data-type] {
 						width: 100% / $i;
-
-						@include media('pad') {
-							width: 50%;
-
-							&:nth-of-type(odd){
-								clear: left;
-							}
-
-							[data-index][data-type] {
-								width: 100%;
-							}
-						}
-
-						@include media('phone') {
-							width: 100%;
-						}
 					}
 				}
 			}
 		}
 	}
-}
 
-@for $i from $min-setLen through $max-setLen { //算設定分割
+	[data-type="1"][data-setLen="#{$i}"] { //設定分割
 
-	[data-type="1"][data-setLen="#{$i}"] {
-
-		> .bg-drop-layout > .in, > .in { //前台使用框架
+		> .bg-drop-layout > .in, > .in {
 
 			> .ct {
 
@@ -53,31 +34,43 @@
 
 					> [data-index][data-type] {
 						width: 100% / $i;
+					}
+				}
+			}
+		}
+	}
+}
 
-						&:nth-of-type(#{$i}n+1) {
+[data-type="1"][data-child] { //分割
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .ct {
+
+			> .in {
+
+				> [data-index][data-type] {
+					float: left;
+
+					@include media('pad') {
+						width: 50%;
+
+						&:nth-of-type(odd){
 							clear: left;
 						}
 
-						@include media('pad') {
-							width: 50%;
-
-							&:nth-of-type(#{$i}n+1) {
-								clear: none;
-							}
-
-							&:nth-of-type(odd){
-								clear: left;
-							}
-
-							[data-index] {
-								width: 100%;
-							}
-						}
-
-						@include media('phone') {
+						[data-index][data-type] {
 							width: 100%;
 						}
 					}
+
+					@include media('phone') {
+						width: 100%;
+					}
+				}
+
+				&:after{
+					@extend %clear;
 				}
 			}
 		}
@@ -89,53 +82,44 @@
 	> .bg-drop-layout > .in, > .in {
 		position: relative;
 		min-height: 1px;
-
-		> .hd {
-
-			h3, h4 {
-
-			}
-
-			span {
-				color: inherit;
-			}
-
-			a {
-				color: inherit;
-			}
-		}
-	}
-}
-
-[data-type="0"] { //模組
-
-	> .bg-drop-layout > .in, > .in {
-
 	}
 
 	.hd {
 
-		> .in {
-
-		}
-
-		h4 {
+		h3, h4 {
 			@extend %reset;
 		}
 
 		span {
-
+			color: inherit;
 		}
 
 		a {
-
+			color: inherit;
 		}
 	}
 
 	.ct {
+		
+		.list {
 
-		> .in {
+			ul {
+				@extend %reset;
+			}
+		}
 
+		.label {
+
+			ul {
+				@extend %reset;
+			}
+		}
+
+		.p {
+
+			p {
+				@extend %reset;
+			}
 		}
 	}
 
@@ -143,190 +127,6 @@
 
 		ul {
 			@extend %reset;
-		}
-
-		span {
-			
-		}
-	}
-}
-
-[data-type="1"] { //分割
-
-	> .bg-drop-layout > .in, > .in {
-		
-		> .hd {
-
-			h3 {
-				@extend %reset;
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-				> [data-index][data-type] {
-					float: left
-				}
-
-				&:after{
-					@extend %clear;
-				}
-			}
-		}
-	}
-}
-
-[data-type="2"] { //頁籤
-
-	> .bg-drop-layout > .in, > .in {
-		
-		> .hd {
-			display: none;
-
-			h3 {
-				@extend %reset;
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-				> ul {
-					@extend %reset;
-
-					> li {
-						@extend %reset-inner-module;
-
-						+ li {
-							@include js(false) {
-								display: none;
-							}
-
-							+ li {
-								display: none;
-							}
-						}
-
-						> [data-index][data-type] {
-
-							> .bg-drop-layout > .in, > .in {
-								@extend %reset-outer;
-
-								> .hd {
-									display: none;
-
-									@include js(false) {
-										display: block;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-[data-type="3"] { //單欄
-
-	> .bg-drop-layout > .in, > .in {
-		
-		> .hd {
-
-			h3 {
-				@extend %reset;
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-				> [data-index][data-type] {
-
-				}
-			}
-		}
-	}
-}
-
-[data-type="4"] { //清單
-
-	> .bg-drop-layout > .in, > .in {
-		
-		> .hd {
-
-			h3 {
-				@extend %reset;
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-				> ul {
-					@extend %reset;
-
-					> li {
-
-						> [data-index][data-type] { //模組
-
-							> .bg-drop-layout > .in, > .in {
-								@extend %reset-outer;
-								position: relative;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		> .ft {
-
-			ul {
-				@extend %reset;
-			}
-
-			span {
-				
-			}
 		}
 	}
 }

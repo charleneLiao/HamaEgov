@@ -1,0 +1,68 @@
+//編輯區塊
+
+//錯誤訊息================================================================
+
+.area-editor.error-info {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			$color: #c40;
+
+			@extend %title;
+			color: $color;
+			font-size: $font-size-xl;
+
+			&:before {
+				@include icon-font('error');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		@extend %article-extend;
+
+		> .in {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

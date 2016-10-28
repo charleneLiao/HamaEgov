@@ -1,0 +1,136 @@
+//表格區塊
+
+//內頁表格================================================================
+
+.area-table.page-table {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('view_compact');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		table {
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		thead {
+
+			tr {
+				border-bottom: 3px double $border-color;
+				background-color: $light;
+			}
+
+			th, td {
+				border: $border;
+			}
+		}
+
+		tbody {
+
+			tr {
+				
+				&:nth-child(even) {
+					background-color: $light;
+				}
+			}
+
+			th, td {
+				border: $border;
+			}
+		}
+
+		tfoot {
+
+			th, td {
+				padding-top: $interval-m;
+			}
+
+			span {
+				@extend %article-extend;
+			}
+		}
+
+		tr {
+
+		}
+
+		th, td {
+
+		}
+
+		th {
+			background-color: $minor-color;
+			color: $white;
+		}
+
+		td {
+
+		}
+
+		span {
+			display: block;
+			padding: $interval-m;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

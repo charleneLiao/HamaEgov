@@ -1,0 +1,292 @@
+//客製區塊
+
+//視訊================================================================
+
+.area-customize.video {
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('movie');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			.video {
+				margin-bottom: $interval-s;
+
+				iframe {
+					width: 100%;
+				}
+
+				video {
+					width: 100%;
+				}
+
+				source {
+
+				}
+
+				object {
+					min-height: 45px;
+					width: 100%;
+					margin-bottom: $interval-s;
+				}
+
+				span {
+					display: block;
+					padding: $interval-s;
+					background-color: $light;
+				}
+
+				a {
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('movie');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			.video {
+				margin-bottom: $interval-s;
+
+				video {
+					width: 100%;
+				}
+
+				source {
+
+				}
+
+				object {
+					min-height: 45px;
+					width: 100%;
+					margin-bottom: $interval-s;
+				}
+
+				span {
+					display: block;
+					padding: $interval-s;
+					background-color: $light;
+				}
+
+				a {
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %article-extend;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

@@ -1,0 +1,133 @@
+//圖片區塊
+
+//連結================================================================
+
+.area-figure.link {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('public');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		/*a*/.div {
+
+			&:hover {
+
+				.essay {
+					background-color: $light-gray;
+				}
+			}
+		}
+
+		.img {
+
+			span {
+				@extend %bg-cover;
+				display: block;
+				height: 80px;
+			}
+
+			img {
+				display: none;
+			}
+		}
+
+		.essay {
+			padding: $interval-m;
+			background-color: $light;
+			transition: $transition;
+		}
+
+		.figcaption {
+			@extend %caption;
+
+			span {
+				
+			}
+		}
+
+		.label {
+			@extend %label;
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+		}
+
+		/*i*/.mark {
+			@extend %mark;
+		}
+
+		.p {
+			@extend %paragraph;
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

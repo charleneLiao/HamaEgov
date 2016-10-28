@@ -1,0 +1,116 @@
+//圖片列表
+
+//內頁圖片列表================================================================
+
+.list-pic.page-list {
+	@include default-len(4, 5);
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('photo');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		ul {
+
+			&:after {
+				@extend %clear;
+			}
+		}
+
+		li {
+			@include set-len-rwd('pad', 3);
+			@include set-len-rwd('phone', 1);
+		}
+
+		span {
+			@extend %bg-cover;
+			position: relative;
+			display: block;
+			margin: $interval-xs;
+			border: $interval-xs solid $light-gray;
+			height: 100px;
+
+			@include media('phone') {
+				height: 180px;
+			}
+		}
+
+		a {
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($black, $opacity-m);
+			transition: $transition;
+
+			&:hover {
+				opacity: 0;
+			}
+
+			@include media('mobile') {
+				background-color: transparent;
+			}
+		}
+
+		/*i*/.mark {
+			@extend %mark-absolute;
+		}
+
+		img {
+			display: none;
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

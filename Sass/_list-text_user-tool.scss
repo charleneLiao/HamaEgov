@@ -1,0 +1,280 @@
+//文字列表
+
+//使用者工具================================================================
+
+.list-text.user-tool {
+
+	@include media('mobile') {
+		display: none;
+	}
+
+	.base-extend & {
+		position: fixed;
+		right: $interval-l;
+		top: 0;
+
+		@include admin('false') {
+			display: none;
+		}
+
+		@include hack('ie6-7-8') {
+			position: absolute;
+		}
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+				display: inline-block;
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %btn;
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+		margin: $interval-s 0;
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: inline-block;
+			vertical-align: middle;
+
+			> .in {
+
+			}
+
+			h4 {
+
+				&:after {
+					content: ' : ';
+				}
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			a {
+				display: block;
+			}
+		}
+
+		.ct {
+			display: inline-block;
+			vertical-align: middle;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+				display: inline-block;
+
+				+ li {
+					margin-left: $interval-xs;
+				}
+
+				&.login {
+
+					a {
+
+						&:before {
+							@include icon-font('person');
+						}
+					}
+				}
+
+				&.logout {
+
+					a {
+
+						&:before {
+							@include icon-font('person_outline');
+						}
+					}
+				}
+
+				&.bopomofo {
+
+					a {
+
+						&:before {
+							@include icon-font('font_download');
+						}
+					}
+				}
+
+				&.edit {
+
+					a {
+
+						&:before {
+							@include icon-font('edit');
+						}
+					}
+				}
+
+				&.print {
+
+					a {
+
+						&:before {
+							@include icon-font('print');
+						}
+					}
+				}
+
+				&.data {
+
+					a {
+
+						&:before {
+							@include icon-font('data_usage');
+						}
+					}
+				}
+
+				&.nav-edit {
+
+					a {
+
+						&:before {
+							@include icon-font('edit');
+						}
+					}
+				}
+
+				&.index-edit {
+
+					a {
+
+						&:before {
+							@include icon-font('edit');
+						}
+					}
+				}
+
+				&.article-edit {
+
+					a {
+
+						&:before {
+							@include icon-font('edit');
+						}
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %btn;
+
+				&:before {
+					margin-right: $interval-xs;
+				}
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

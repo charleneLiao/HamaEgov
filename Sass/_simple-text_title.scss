@@ -1,0 +1,81 @@
+//簡單文字
+
+//文章標題================================================================
+
+.simple-text.title {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		h1 {
+			@extend %reset;
+			font-size: $font-size-l;
+			padding: $interval-s 0;
+			border-bottom-color: $border-color;
+			border-bottom-width: $interval-xs;
+			border-bottom-style: double;
+			margin-bottom: $interval-s;
+			color: $title-color;
+		}
+
+		span {
+			
+		}
+
+		a {
+			
+			&:hover {
+				color: currentColor;
+			}
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

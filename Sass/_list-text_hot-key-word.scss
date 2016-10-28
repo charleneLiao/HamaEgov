@@ -1,0 +1,203 @@
+//文字列表
+
+//熱門關鍵字================================================================
+
+.list-text.hot-key-word {
+
+	.base-mobile & {
+
+		&.is-open {
+
+			.hd {
+				$icon: 'icon-pic/away-b-bottom.png';
+
+				a {
+
+					&:after {
+						@include bg-to-pic($icon, false);
+					}
+				}
+			}
+
+			.ct {
+				display: block;
+			}
+		}
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+			display: none;
+
+			> .in {
+				
+			}
+
+			ul {
+				padding-left: $interval-l;
+			}
+
+			li {
+				border-top: $border;
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $interval-m;
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-header & {
+		position: absolute;
+		top: 43px;
+		right: 325px;
+
+		@include js(false) {
+			right: 100px;
+		}
+
+		@include media('mobile') {
+			display: none;
+		}
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+			display: inline-block;
+
+			> .in {
+
+			}
+
+			h4 {
+				color: $white;
+
+				&:after {
+					content: ' : ';
+				}
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			a {
+				display: block;
+			}
+		}
+
+		.ct {
+			display: inline-block;
+
+			> .in {
+				
+			}
+
+			ul {
+				
+			}
+
+			li {
+				display: inline-block;
+				color: $white;
+				
+				+ li {
+
+					&:before {
+						content: ' , ';
+					}
+				}
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			a {
+				display: block;
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

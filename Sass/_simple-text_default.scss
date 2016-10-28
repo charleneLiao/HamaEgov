@@ -1,0 +1,179 @@
+//簡單文字
+
+//預設================================================================
+
+.simple-text.default {
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('comment');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %ellipsis;
+				@extend %list;
+				@extend %list-hover;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('list');
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+
+				&.prev {
+
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

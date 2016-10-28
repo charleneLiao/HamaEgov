@@ -1,0 +1,95 @@
+//列表群組
+
+//內頁區塊群組================================================================
+
+.group-list.page-block {
+	$default-len: 3;
+	$max-len: 6;
+
+	@include default-min-len(4, $default-len, $max-len);
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					&:after {
+						@extend %clear;
+					}
+
+					> li {
+
+						@include media('pad') {
+							$li-len: 2;
+
+							width: 100% / $li-len !important;
+						}
+
+						@include media('phone') {
+							$li-len: 1;
+
+							width: 100% / $li-len !important;
+						}
+
+						> [data-index][data-type] {
+							padding: $interval-xs;
+
+							> .in {
+
+								> .hd {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

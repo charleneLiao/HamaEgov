@@ -1,0 +1,106 @@
+//文字列表
+
+//頁籤================================================================
+
+.list-text.tab {
+
+	@include js(false) {
+		display: none;
+	}
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		display: none;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		ul {
+			border-bottom-style: $border-style;
+			border-bottom-width: $border-width;
+			border-bottom-color: $minor-color;
+		}
+
+		li {
+			display: inline-block;
+
+			&.is-active {
+
+				span {
+
+				}
+
+				a {
+					background-color: $minor-color;
+					color: $white;
+				}
+			}
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			display: block;
+			padding: $btn-padding;
+			background-color: $light;
+			color: $body-font-color;
+			transition: $transition;
+
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

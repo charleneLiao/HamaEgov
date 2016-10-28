@@ -1,0 +1,112 @@
+//列表群組
+
+//分類================================================================
+
+.group-list.classify {
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('view_module');
+				}
+			}
+
+			span {
+				
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					> li {
+						display: inline-block;
+						margin-bottom: $interval-xs;
+						margin-right: $interval-xs;
+
+						> [data-index][data-type] {
+							margin: 0 !important;
+							padding: $interval-s;
+							border: $border;
+							
+							> .in {
+
+								> .ft {
+									display: none;
+								}
+
+								> .hd {
+									display: inline-block !important;
+
+									> .in {
+
+									}
+
+									h3, h4 {
+
+									}
+
+									span {
+
+									}
+
+									a {
+										
+									}
+								}
+
+								> .ct {
+									display: inline-block;
+								}
+
+								> .ft {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

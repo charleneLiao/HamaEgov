@@ -1,0 +1,96 @@
+//文字列表
+
+//麵包屑================================================================
+
+.list-text.breadcrumb {
+	margin: $interval-s 0;
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		display: none;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		ul {
+			padding: $interval-s;
+			background-color: $light;
+		}
+
+		li {
+			display: inline;
+			font-size: $font-size-xs;
+
+			&:before {
+				@include icon-font('home');
+				vertical-align: middle;
+			}
+
+			+ li {
+
+				&:before {
+					@include icon-font('navigate_next');
+					vertical-align: middle;
+				}
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

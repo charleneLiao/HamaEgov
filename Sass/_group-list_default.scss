@@ -1,0 +1,134 @@
+//列表群組
+
+//預設================================================================
+
+.group-list.default {
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+			> .hd {
+
+				> .in {
+
+				}
+
+				h3 {
+					@extend %title;
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						> li {
+							margin-top: $interval-m;
+						}
+					}
+				}
+			}
+
+			> .ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .bg-drop-layout > .in, > .in {
+
+			> .hd {
+				display: none;
+
+				> .in {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+					> ul {
+
+						> li {
+
+							+ li {
+								margin-top: $interval-s;
+							}
+						}
+					}
+				}
+			}
+
+			> .ft {
+				@extend %footer-btns;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
+		}
+	}
+}

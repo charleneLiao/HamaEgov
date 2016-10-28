@@ -1,57 +1,61 @@
 //頁籤群組
 
+//設定================================================================
+
 .group-tab {
 
-//預設================================================================
+	> .bg-drop-layout > .in, > .in {
 
-	&.default {
+		> .hd {
+			display: none;
 
-		> .bg-drop-layout > .in, > .in {
+			> .in {
 
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-					@extend %title;
-
-					&:before {
-						@include icon-font('library_add');
-					}
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
 			}
 
-			> .ct {
+			h3 {
+				
+			}
 
-				> .in {
+			span {
+					
+			}
 
-					> ul {
-						@extend %reset;
+			a {
 
-						> li {
+			}
+		}
 
-							+ li {
-								margin-top: $interval-m;
+		> .ct {
+
+			> .in {
+
+				> ul {
+					@extend %reset;
+
+					> li {
+
+						+ li {
+							@include js(false) {
+								display: none;
 							}
 
-							> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
+							+ li {
+								display: none;
+							}
+						}
 
-								> .in {
+						> [data-index][data-type] {
+							@extend %reset-outer;
 
-									> .ft {
-										position: static;
-										margin-top: $interval-s;
+							> .bg-drop-layout > .in, > .in {
+								@extend %reset-outer;
+
+								> .hd {
+									display: none;
+
+									@include js(false) {
+										display: block;
 									}
 								}
 							}

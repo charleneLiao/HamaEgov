@@ -1,0 +1,110 @@
+//列表群組
+
+//古典輪播================================================================
+
+.group-list.classical-slider {
+
+	> .bg-drop-layout > .in, > .in {
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('slideshow');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+				> ul {
+
+					> li {
+
+						+ li {
+							display: none;
+
+							@include js(false) {
+								display: block;
+								margin-top: $interval-m;
+							}
+						}
+
+						> [data-index][data-type] { //頁籤裡的 footer 不是 absolute
+
+							> .in {
+
+								.ft {
+									position: static;
+									margin-top: $interval-s;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		> .ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				&.prev, &.next {
+
+					@include js(false) {
+						display: none;
+					}
+				}
+
+				&.prev {
+					
+				}
+
+				&.next {
+
+				}
+
+				&.more {
+
+				}
+
+				&.is-dot {
+
+				}
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+//圖片區塊
+
+//內頁圖片敘述(圖片-標題-標籤-內文)================================================================
+
+.area-figure.page-figure {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+			@extend %title;
+
+			&:before {
+				@include icon-font('photo');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		background-color: $light;
+
+		> .in {
+			position: relative;
+		}
+
+		/*a*/.div {
+			transition: $transition;
+
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
+
+		.img {
+
+			span {
+				@extend %bg-cover;
+				display: block;
+				height: 240px;
+			}
+
+			img {
+				display: none;
+			}
+		}
+
+		.essay {
+			padding: $interval-l;
+			
+			&:after {
+				@extend %clear;
+			}
+		}
+
+		.figcaption {
+			@extend %caption;
+
+			span {
+
+			}
+		}
+
+		.label {
+
+			ul {
+				color: $gray;
+				font-size: $font-size-s;
+			}
+
+			li {
+				@extend %ellipsis;
+				color: inherit;
+				font-size: inherit;
+			}
+
+			span {
+
+			}
+		}
+
+		/*i*/.mark {
+
+		}
+
+		.p {
+			@extend %paragraph;
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.ft {
+		padding: $interval-s;
+		background-color: $light;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+			
+			+ li {
+				margin-top: $interval-xs;
+			}
+		}
+
+		span {
+
+		}
+
+		a {
+			@extend %btn;
+			display: block;
+		}
+	}
+}

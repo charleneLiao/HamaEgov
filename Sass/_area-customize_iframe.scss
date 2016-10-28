@@ -1,0 +1,242 @@
+//客製區塊
+
+//框架================================================================
+
+.area-customize.iframe {
+
+	.base-extend &, .base-module-area &, .base-aside & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('public');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			.iframe {
+				margin-bottom: $interval-s;
+
+				iframe {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %paragraph;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.base-section & {
+
+		> .bg-drop-layout > .in, > .in {
+
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+				@extend %title;
+
+				&:before {
+					@include icon-font('public');
+				}
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			.iframe {
+				margin-bottom: $interval-s;
+
+				iframe {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.essay {
+				
+			}
+
+			.caption {
+				@extend %caption;
+
+				span {
+					
+				}
+
+				a {
+
+				}
+			}
+
+			.label {
+				@extend %label;
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+			}
+
+			/*i*/.mark {
+				@extend %mark;
+			}
+
+			.p {
+				@extend %article-extend;
+
+				p {
+
+				}
+
+				span {
+
+				}
+			}
+		}
+
+		.ft {
+			@extend %footer-btns;
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+}
