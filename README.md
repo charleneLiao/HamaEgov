@@ -1578,27 +1578,27 @@ erb 主要基於 Ruby 語言，因此可以在裡面使用 Ruby。
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="ct"><div class="in">
 
-        <!--嵌套 /erb/module/sample -->
-        <%= render partial: "/erb/module/sample" %>
+        <!--嵌套 /erb/sample -->
+        <%= render partial: "/erb/sample" %>
 
       </div></div>
     </div></div>
 
-我們可藉由演示的語法嵌入 /erb/module/_sample.html.erb，以下將演示如何傳參數進 erb 檔案。
+我們可藉由演示的語法嵌入 /erb/_sample.html.erb，以下將演示如何傳參數進 erb 檔案。
 
     <div class="base-article" data-index="1" data-type="3" data-child="4"><div class="in">
       <div class="hd"><div class="in">
       </div><h3><span><a>嵌套範本</a></span></h3></div>
       <div class="ct"><div class="in">
 
-        <!--嵌套 /erb/module/sample -->
-        <%= render partial: "/erb/module/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
+        <!--嵌套 /erb/sample -->
+        <%= render partial: "/erb/sample", locals: set({ index: 4, header_text: '模塊標頭' }) %>
 
       </div></div>
     </div></div>
 
 使用一個 locals: set({  }) 的形式傳遞兩個區域變數 index 與 header_text 進去，index 的參數為 4。
-接著演示 /erb/module/_sample.html.erb 如何接受這個參數。
+接著演示 /erb/_sample.html.erb 如何接受這個參數。
 
     <div class="sample" data-index="<%= index %>">
     </div>
@@ -1664,7 +1664,7 @@ index.html.layout 指明 _index_layout.html.erb 為 index.html.erb 的樣板。
 
 
 <h3 id="erb-variable">關於 sys/variable</h3>
-在 [erb 運作方式](#erb-run) 曾提及區域變數的使用方式，另有全域變數設定在 /erb/sys/_variable.html.erb。
+在 [erb 運作方式](#erb-run) 曾提及區域變數的使用方式，另有全域變數設定在 /erb/sys__variable.html.erb。
 全域變數以 $ 前輟命名，使用方式如同區域變數一般。
 
     <div class="sample" data-type="<%= $module %>">

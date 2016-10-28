@@ -3,20 +3,20 @@
 	<head>
 
 	<!-- Meta 各種資訊 -->
-		<%= render partial: "/erb/sys/meta" %>
+		<%= render partial: "/erb/sys_meta" %>
 	<!-- Meta 結束 -->
 
 	<!-- Title 網站標題 -->
-		<%= render partial: "/erb/sys/title" %>
+		<%= render partial: "/erb/sys_title" %>
 	<!-- Title 結束 -->
 
 	<!-- Icon 小圖示 -->
-		<%= render partial: "/erb/sys/icon" %>
+		<%= render partial: "/erb/sys_icon" %>
 	<!-- Icon 結束 -->
 	
 	<!-- Script 程式 -->
 		<% if( $js ) %>
-			<%= render partial: "/erb/sys/script" %>
+			<%= render partial: "/erb/sys_script" %>
 		<% end %>
 	<!-- Script 結束 -->
 
@@ -28,7 +28,7 @@
 	<% end %>
 
 	<!-- Css 樣式表 -->
-		<%= render partial: "/erb/sys/style" %>
+		<%= render partial: "/erb/sys_style" %>
 		<link rel="stylesheet" media="screen" href="/css/page.css"> <!-- 內頁覆蓋 -->
 	<!-- Css 結束 -->
 
@@ -37,15 +37,15 @@
 			<div class="ct"><div class="in">
 
 			<!-- base-mobile 行動載具-->
-				<%= render partial: "/erb/base/base-mobile", locals: set({ index: 1 }) %>
+				<%= render partial: "/erb/base-mobile", locals: set({ index: 1 }) %>
 			<!-- base-mobile 結束 -->
 
 			<!-- base-extend 額外資訊 -->
-				<%= render partial: "/erb/base/base-extend", locals: set({ index: 2 }) %>
+				<%= render partial: "/erb/base-extend", locals: set({ index: 2 }) %>
 			<!-- base-extend 結束 -->
 
 			<!-- base-wrapper 固定佈局 -->
-				<%= render partial: "/erb/base/base-wrapper", locals: set({ index: 3, area: "page" }) %>
+				<%= render partial: "/erb/base-wrapper", locals: set({ index: 3, area: "page" }) %>
 			<!-- base-wrapper 結束 -->
 
 			</div></div>
