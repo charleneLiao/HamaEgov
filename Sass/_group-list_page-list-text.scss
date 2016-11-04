@@ -36,58 +36,14 @@
 				> ul {
 
 					> li {
+						padding-left: $interval-xl;
+
+						@include media('phone') {
+							padding-left: $interval-m;
+						}
 
 						+ li {
 							margin-top: $interval-l;
-						}
-
-						> [data-index][data-type] {
-							padding-left: $interval-xl;
-
-							@include media('phone') {
-								padding-left: $interval-m;
-							}
-
-							> .in {
-
-								> .hd {
-									display: block;
-									font-size: $font-size-s;
-									border-bottom: 0;
-
-									> .in {
-
-									}
-
-									h1, h2, h3, h4, h5, h6 {
-										border-bottom: 3px double $border-color;
-
-										&:before {
-											display: none;
-										}
-
-										&:after {
-											display: none;
-										}
-									}
-
-									span {
-
-									}
-
-									a {
-										display: block;
-									}
-								}
-
-								> .ct {
-
-								}
-
-								> .ft {
-									display: none;
-								}
-							}
 						}
 					}
 				}
@@ -95,6 +51,7 @@
 		}
 
 		> .ft {
+			@extend %footer-btns;
 
 			> .in {
 

@@ -141,7 +141,6 @@
 		}
 
 		.ft {
-			@extend %footer-btns;
 
 			> .in {
 
@@ -152,19 +151,7 @@
 			}
 
 			li {
-
-
-				&.prev {
-
-				}
-
-				&.next {
-
-				}
-
-				&.more {
-
-				}
+				
 			}
 
 			span {

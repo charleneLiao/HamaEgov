@@ -3,6 +3,7 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
+				language: 'en'.
 				debug: false
 			}
 
@@ -17,10 +18,8 @@ define(['getNode'], function(getNode){
 			var $this = $(env),
 				$date = $this.find('[type="date"]');
 
-			$date.each(function(i,n){
-				$(n).datepicker({
-					language: 'en'
-				});
+			$date.each(function(i, n){
+				$(n).datepicker($set);
 			});
 		}
 

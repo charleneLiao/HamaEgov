@@ -82,12 +82,12 @@
 			}
 		}
 
-		/*i*/.mark {
-			@extend %mark-absolute;
-		}
-
 		img {
 			display: none;
+		}
+
+		/*i*/.mark {
+			@extend %mark-absolute;
 		}
 	}
 

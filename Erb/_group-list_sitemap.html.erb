@@ -1,0 +1,51 @@
+<%
+	min_li = 2 #最少的li數量
+	max_li = 4 #最多的li數量
+	max_deep = 5 #最多的層數
+
+	li_length = (min_li..max_li).to_a.sample
+
+	inner = ["/erb/group-list_sitemap", "/erb/list-text_sitemap"]
+
+	current_deep = deep + 1;
+
+	if( current_deep >= max_deep  )
+		inner = ["/erb/list-text_sitemap"]
+	end
+%>
+
+<div class="group-list sitemap <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h3><span><a href="#"><%= header_text %></a></span></h3>
+		</div></div>
+	<% end %>
+
+	<% if ( li_length > 0 ) %>
+		<div class="ct"><div class="in">
+			<ul data-index="1" data-child="<%= li_length %>">
+
+				<% li_length.times do |i| %>
+					<li data-index="<%= i + 1 %>">
+
+					<!-- <%= inner %> -->
+
+						<%
+							group = inner.sample
+
+							if ( group === "/erb/list-text_sitemap" )
+								sets = { index: (i+1), func_set: "{'toogleBtn':{'btnText':''}}", header_text: (zh_lorem_words rand(5)+1), deep: (current_deep + 1) }
+							else
+								sets = { index: (i+1), header_text: (zh_lorem_words rand(5)+1), deep: (current_deep + 1) }
+							end
+						%>
+
+						<%= render partial: group, locals: set(sets) %>
+					<!-- <%= inner %> -->
+					
+					</li>
+				<% end %>
+			</ul>
+		</div></div>
+	<% end %>
+</div></div>

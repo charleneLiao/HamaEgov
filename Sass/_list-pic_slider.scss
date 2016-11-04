@@ -58,13 +58,13 @@
 			display: block;
 		}
 
-		/*i*/.mark {
-			@extend %mark-absolute;
-		}
-
 		img {
 			display: block;
 			width: 100%;
+		}
+
+		/*i*/.mark {
+			@extend %mark-absolute;
 		}
 	}
 

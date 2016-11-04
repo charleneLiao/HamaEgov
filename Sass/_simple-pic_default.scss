@@ -4,7 +4,7 @@
 
 .simple-pic.default {
 
-	.base-extend &, .base-module-area &, .base-aside & {
+	.base-module-area &, .base-aside & {
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -51,10 +51,13 @@
 				display: block;
 				width: 100%;
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
-			@extend %footer-btns;
 
 			> .in {
 
@@ -125,10 +128,13 @@
 				display: block;
 				width: 100%;
 			}
+
+			/*i*/.mark {
+				
+			}
 		}
 
 		.ft {
-			@extend %footer-btns;
 
 			> .in {
 

@@ -1,0 +1,89 @@
+<div class="group base-mobile" id="base-mobile" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="in">
+	<div class="ct"><div class="in">
+
+	<!-- toogle-btn 收合按鈕 -->
+		<%= render partial: "/erb/simple-text_toogle-btn", locals: set({ index: 1, func_set: "{'toogleBtn':{'targetNode':'.base-mobile','targetClass':'is-open','thisClass':'is-active'}}", header_text: "收合側欄" }) %>
+	<!-- toogle-btn 結束 -->
+
+	<!-- group-info 資訊群組 -->
+		<div class="group info" data-index="2" data-type="<%= $row %>" data-child="2"><div class="in">
+			<div class="ct"><div class="in">
+
+			<!-- search 搜尋 -->
+				<%= render partial: "/erb/area-form_search", locals: set({ index: 2, header_text: "搜尋" }) %>
+			<!-- search 結束 -->
+
+			<!-- share 分享 -->
+				<%= render partial: "/erb/list-text_share", locals: set({ index: 3, header_text: "分享" }) %>
+			<!-- share 結束 -->
+
+			<!-- nav 選單 -->
+				<%= render partial: "/erb/group-list_nav", locals: set({ index: 4, func_set: "{'majorNavMobile':{}}", header_text: "主選單", inner: "/erb/list-text_nav" }) %>
+			<!-- nav 結束 -->
+
+			<!-- nav 選單 -->
+				<div class="group-list nav" data-index="5" data-type="<%= $list %>" data-child="3" data-func="{'majorNavMobile':{}}"><div class="in">
+					<div class="hd"><div class="in">
+						<h3><span><a href="#">選單</a></span></h3>
+					</div></div>
+					<div class="ct"><div class="in">
+						<ul data-index="1" data-child="3">
+							<li data-index="1">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">熱門關鍵字</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- hot-key-word 熱門關鍵字 -->
+										<%= render partial: "/erb/list-text_hot-key-word", locals: set({ index: 1 }) %>
+									<!-- hot-key-word 結束 -->
+
+									</div></div>
+								</div></div>
+
+							</li>
+							<li data-index="2">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">上方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										<%= render partial: "/erb/list-text_link", locals: set({ index: 1 }) %>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
+							
+							</li>
+							<li data-index="3">
+
+								<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+									<div class="hd"><div class="in">
+										<h3><span><a href="#">下方連結</a></span></h3>
+									</div></div>
+									<div class="ct"><div class="in">
+
+									<!-- link 連結 -->
+										<%= render partial: "/erb/list-text_link", locals: set({ index: 1 }) %>
+									<!-- link 結束 -->
+
+									</div></div>
+								</div></div>
+
+							</li>
+						</ul>
+					</div></div>
+				</div></div>
+			<!-- nav 結束 -->
+
+			</div></div>
+		</div></div>
+	<!-- group-info 結束 -->
+
+	</div></div>
+</div></div>
