@@ -14,11 +14,7 @@
 			}
 
 			h3 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('library_add');
-				}
+				
 			}
 
 			span {

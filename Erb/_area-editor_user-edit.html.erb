@@ -1,7 +1,6 @@
 <%
-	min_paragraph = 1 #最少的段落
+	min_paragraph = 2 #最少的段落
 	max_paragraph = 6 #最多的段落
-	paragraphs_length = 3 #隨機的段落長度 * 3
 
 	paragraph_length = (min_paragraph..max_paragraph).to_a.sample
 %>
@@ -15,7 +14,7 @@
 	<div class="ct"><div class="in">
 
 		<% paragraph_length.times do |i| %>
-			<p><%= zh_lorem_paragraphs paragraphs_length %></p>
+			<p><%= zh_lorem_paragraph %></p>
 		<% end %>
 	</div></div>
 </div></div>

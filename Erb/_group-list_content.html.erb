@@ -1,5 +1,5 @@
 <%
-	min_li = 1 #最少的li數量
+	min_li = 4 #最少的li數量
 	max_li = 10 #最多的li數量
 	min_width = 1 #最窄的選單寬度
 	max_width = 6 #最寬的選單寬度
@@ -25,7 +25,7 @@
 				<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
 				<!-- <%= inner %> -->
-					<%= render partial: inner.sample ,locals: set() %>
+					<%= render partial:  inner.sample, locals: set({}) %>
 				<!-- <%= inner %> -->
 				
 				</li>

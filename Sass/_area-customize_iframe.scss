@@ -4,28 +4,57 @@
 
 .area-customize.iframe {
 
-	.base-extend &, .base-module-area &, .base-aside & {
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
 
 		}
 
-		.hd {
+		h4 {
 
-			> .in {
-
+			&:before {
+				@include icon-font('public');
 			}
+		}
 
-			h4 {
-				@extend %title;
+		span {
+				
+		}
 
-				&:before {
-					@include icon-font('public');
-				}
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		.iframe {
+			margin-bottom: $interval-s;
+
+			iframe {
+				display: block;
+				width: 100%;
 			}
+		}
+
+		.essay {
+			
+		}
+
+		.caption {
+			@extend %caption;
 
 			span {
-					
+				
 			}
 
 			a {
@@ -33,76 +62,8 @@
 			}
 		}
 
-		.ct {
-
-			> .in {
-				
-			}
-
-			.iframe {
-				margin-bottom: $interval-s;
-
-				iframe {
-					display: block;
-					width: 100%;
-				}
-			}
-
-			.essay {
-				
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
-		}
-
-		.ft {
-			@extend %footer-btns;
-
-			> .in {
-
-			}
+		.label {
+			@extend %label;
 
 			ul {
 
@@ -115,128 +76,46 @@
 			span {
 
 			}
+		}
 
-			a {
+		/*i*/.mark {
+			@extend %mark;
+		}
+
+		.p {
+			@extend %article-extend;
+
+			p {
+
+			}
+
+			span {
 
 			}
 		}
 	}
 
-	.base-section & {
+	.ft {
+		@extend %footer-btns;
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('public');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
+		li {
 
-			> .in {
-				
-			}
-
-			.iframe {
-				margin-bottom: $interval-s;
-
-				iframe {
-					display: block;
-					width: 100%;
-				}
-			}
-
-			.essay {
-				
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %article-extend;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
 		}
 
-		.ft {
-			@extend %footer-btns;
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

@@ -163,70 +163,7 @@
 		}
 	}
 
-	.base-footer & {
-		padding: $interval-m $interval-xs;
-
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-					display: block;
-				}
-
-				a {
-					@extend %ellipsis;
-					display: block;
-					padding: $interval-s $interval-m;
-					margin-bottom: $interval-s;
-					border-bottom: $border;
-					text-align: center;
-					font-size: $font-size-l;
-					color: $body-font-color;
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-				}
-			}
-
-			> .ft {
-
-				> .in {
-
-				}
-
-				ul {
-					
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-	.base-aside & {
+	.base-content & {
 		position: relative;
 
 		> .bg-drop-layout > .in, > .in {
@@ -307,13 +244,12 @@
 		}
 	}
 
-	.base-section & {
-		margin: 0;
+	.base-footer & {
+		padding: $interval-m $interval-xs;
 
 		> .bg-drop-layout > .in, > .in {
 
 			> .hd {
-				display: block;
 
 				> .in {
 
@@ -324,16 +260,22 @@
 				}
 
 				span {
-						
+					display: block;
 				}
 
 				a {
-
+					@extend %ellipsis;
+					display: block;
+					padding: $interval-s $interval-m;
+					margin-bottom: $interval-s;
+					border-bottom: $border;
+					text-align: center;
+					font-size: $font-size-l;
+					color: $body-font-color;
 				}
 			}
 
 			> .ct {
-				padding: $interval-s 0 0 $interval-xl;
 
 				> .in {
 

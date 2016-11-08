@@ -7,13 +7,13 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
+			@extend %title;
 
 			> .in {
 
 			}
 
 			h3 {
-				@extend %title;
 
 				&:before {
 					@include icon-font('arrow_drop_down');

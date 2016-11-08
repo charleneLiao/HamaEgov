@@ -9,17 +9,13 @@
 	}
 
 	.hd {
+		@extend %title;
 
 		> .in {
 
 		}
 
 		h4 {
-			$color: #c40;
-
-			@extend %title;
-			color: $color;
-			font-size: $font-size-xl;
 
 			&:before {
 				@include icon-font('error');

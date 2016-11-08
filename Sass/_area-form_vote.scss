@@ -4,28 +4,48 @@
 
 .area-form.vote {
 
-	.base-extend &, .base-module-area &, .base-aside & {
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
 
 		}
 
-		.hd {
+		h4 {
 
-			> .in {
-
+			&:before {
+				@include icon-font('radio_button_checked');
 			}
+		}
 
-			h4 {
-				@extend %title;
+		span {
+				
+		}
 
-				&:before {
-					@include icon-font('radio_button_checked');
-				}
-			}
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		.essay {
+
+		}
+
+		.caption {
+			@extend %caption;
 
 			span {
-					
+				
 			}
 
 			a {
@@ -33,134 +53,8 @@
 			}
 		}
 
-		.ct {
-
-			> .in {
-				
-			}
-
-			.essay {
-
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
-
-			.form {
-				padding: $interval-m;
-				background-color: $light;
-			}
-
-			.fieldset {
-
-				+ .fieldset {
-					margin-top: $interval-m;
-					border-top: $border;
-					border-top-color: $light-gray;
-					padding-top: $interval-m;
-					text-align: right;
-				}
-
-				span {
-
-					&.radio {
-						display: block;
-						margin-top: $interval-s;
-					}
-
-					&.checkbox {
-						display: block;
-						margin-top: $interval-s;
-					}
-
-					&.submit {
-						display: inline-block;
-					}
-
-					&.reset {
-						display: inline-block;
-					}
-
-					&.button {
-						display: inline-block;
-					}
-				}
-
-				input {
-
-					&[type="radio"] {
-
-					}
-
-					&[type="checkbox"] {
-						
-					}
-
-					&[type="submit"] {
-						@extend %btn-imp;
-					}
-
-					&[type="reset"] {
-						
-					}
-
-					&[type="button"] {
-						
-					}
-				}
-
-				label {
-
-				}
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
+		.label {
+			@extend %label;
 
 			ul {
 
@@ -173,186 +67,113 @@
 			span {
 
 			}
+		}
 
-			a {
+		/*i*/.mark {
+			@extend %mark;
+		}
+
+		.p {
+			@extend %paragraph;
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+
+		.form {
+			@extend %article-extend;
+			margin-top: $interval-l;
+		}
+
+		.fieldset {
+
+			+ .fieldset {
+				margin-top: $interval-m;
+				border-top: $border;
+				border-top-color: $light-gray;
+				padding-top: $interval-m;
+				text-align: right;
+			}
+
+			span {
+
+				&.radio {
+					display: block;
+					margin-top: $interval-s;
+				}
+
+				&.checkbox {
+					display: block;
+					margin-top: $interval-s;
+				}
+
+				&.submit {
+					display: inline-block;
+				}
+
+				&.reset {
+					display: inline-block;
+				}
+
+				&.button {
+					display: inline-block;
+				}
+			}
+
+			input {
+
+				&[type="radio"] {
+
+				}
+
+				&[type="checkbox"] {
+					
+				}
+
+				&[type="submit"] {
+					@extend %btn-imp;
+				}
+
+				&[type="reset"] {
+					
+				}
+
+				&[type="button"] {
+					
+				}
+			}
+
+			label {
 
 			}
 		}
 	}
 
-	.base-section & {
+	.ft {
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('radio_button_checked');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
+		li {
 
-			> .in {
-				
-			}
-
-			.essay {
-
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
-
-			.form {
-				@extend %article-extend;
-				margin-top: $interval-l;
-			}
-
-			.fieldset {
-
-				+ .fieldset {
-					margin-top: $interval-m;
-					border-top: $border;
-					border-top-color: $light-gray;
-					padding-top: $interval-m;
-					text-align: right;
-				}
-
-				span {
-
-					&.radio {
-						display: block;
-						margin-top: $interval-s;
-					}
-
-					&.checkbox {
-						display: block;
-						margin-top: $interval-s;
-					}
-
-					&.submit {
-						display: inline-block;
-					}
-
-					&.reset {
-						display: inline-block;
-					}
-
-					&.button {
-						display: inline-block;
-					}
-				}
-
-				input {
-
-					&[type="radio"] {
-
-					}
-
-					&[type="checkbox"] {
-						
-					}
-
-					&[type="submit"] {
-						@extend %btn-imp;
-					}
-
-					&[type="reset"] {
-						
-					}
-
-					&[type="button"] {
-						
-					}
-				}
-
-				label {
-
-				}
-			}
 		}
 
-		.ft {
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

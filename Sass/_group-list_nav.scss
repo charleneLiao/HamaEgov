@@ -256,91 +256,7 @@
 		}
 	}
 
-	.base-footer & {
-		$default-len: 6;
-		$max-len: 10;
-
-		@include default-min-len(4, $default-len, $max-len);
-
-		@include media('mobile') {
-			display: none;
-		}
-
-		&.is-close {
-			display: none;
-		}
-
-		> .bg-drop-layout > .in, > .in {
-			@extend %center;
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-				padding: $interval-s 0;
-				border-bottom: $border;
-
-				> .in {
-
-					> ul {
-
-						&:after {
-							@extend %clear;
-						}
-
-						> li {
-
-							&:nth-child(#{$max-len - 1}n+1) {
-								clear: left;
-							}
-						}
-					}
-				}
-			}
-
-			> .ft {
-
-				> .in {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-	.base-aside & {
+	.base-content & {
 
 		> .bg-drop-layout > .in, > .in {
 			background-color: $major-color;
@@ -439,9 +355,22 @@
 		}
 	}
 
-	.base-section & {
+	.base-footer & {
+		$default-len: 6;
+		$max-len: 10;
+
+		@include default-min-len(4, $default-len, $max-len);
+
+		@include media('mobile') {
+			display: none;
+		}
+
+		&.is-close {
+			display: none;
+		}
 
 		> .bg-drop-layout > .in, > .in {
+			@extend %center;
 
 			> .hd {
 				display: none;
@@ -464,15 +393,21 @@
 			}
 
 			> .ct {
+				padding: $interval-s 0;
+				border-bottom: $border;
 
 				> .in {
 
 					> ul {
 
+						&:after {
+							@extend %clear;
+						}
+
 						> li {
 
-							+ li {
-								margin-top: $interval-s;
+							&:nth-child(#{$max-len - 1}n+1) {
+								clear: left;
 							}
 						}
 					}

@@ -16,7 +16,7 @@
 
 			<% li_length.times do |i| %>
 				<%
-					img = $sample_pic.sample
+					img = lorem_image('640x480')
 					title = zh_lorem_sentence
 					alt = zh_lorem_sentence
 				%>
@@ -38,7 +38,7 @@
 
 			<% li_length.times do |i| %>
 				<%
-					img = $sample_pic.sample
+					img = img = lorem_image('640x480')
 					title = zh_lorem_sentence
 					alt = zh_lorem_sentence
 				%>
@@ -60,10 +60,10 @@
 
 			<% li_length.times do |i| %>
 				<%
-					img = $sample_pic.sample
+					img = img = lorem_image('640x480')
 					video = '/video/sample/sample.mp4'
 					alt = zh_lorem_sentence
-					id = lorem_word
+					id = zh_lorem_word
 					flag = rand(1024)
 				%>
 				<li class="is-video" data-index="<%= i + 1 %>" data-sub-html="<%= alt %>" data-html="#<%= id %><%= flag %>" data-poster="<%= img %>">

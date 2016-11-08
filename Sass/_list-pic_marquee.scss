@@ -2,7 +2,7 @@
 
 //跑馬燈輪播================================================================
 
-.list-pic.page-marquee {
+.list-pic.marquee {
 	$btn-width: 30px; //設定按鈕寬度
 	$max-li-len: 50; //設定 li 的最大數量
 	$show-li-len: 4; //設定一次要秀的數量
@@ -62,6 +62,8 @@
 		li {
 			width: 100% / $max-li-len;
 			float: left;
+			box-sizing: border-box;
+			padding: $interval-m;
 
 			@include js(false) {
 				width: 100% / $show-li-len;
@@ -72,8 +74,6 @@
 			@extend %bg-cover;
 			position: relative;
 			display: block;
-			margin: $interval-xs;
-			border: $interval-xs solid $light-gray;
 			height: 80px;
 
 			@include media('phone') {

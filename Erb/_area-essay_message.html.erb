@@ -1,5 +1,5 @@
 <%
-	img = $sample_pic.sample
+	img = lorem_image('360x360')
 %>
 
 <div class="area-essay message <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
@@ -15,7 +15,7 @@
 				<div class="caption"><span><%= zh_lorem_sentence %></span></div>
 				<div class="label">
 					<ul>
-						<li><span><i class="mark">103-12-05</i></span></li>
+						<li><span><i class="mark"><%= lorem_word %></i></span></li>
 					</ul>
 				</div>
 				<div class="p">

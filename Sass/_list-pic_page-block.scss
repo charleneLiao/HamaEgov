@@ -121,6 +121,46 @@
 					@include bg-to-pic('icon-pic/away-b-right.png', false);
 				}
 			}
+
+			&.more {
+				display: none;
+			}
+
+			&.is-img {
+				display: inline-block;
+				margin: $interval-s $interval-xs;
+				vertical-align: middle;
+				border: $border;
+
+				@include media('mobile') {
+					display: none;
+				}
+
+				&.is-active {
+					border-color: $minor-color;
+
+					a {
+
+						&:before {
+							opacity: 0;
+						}
+					}
+				}
+
+				span {
+					@extend %bg-cover;
+					display: block;
+					position: relative;
+					width: 42px;
+					height: 42px;
+				}
+
+				a {
+					@extend %mask;
+					@extend %mask-link;
+					@extend %hide-text;
+				}
+			}
 		}
 
 		span {

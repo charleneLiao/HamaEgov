@@ -1,8 +1,6 @@
 <%
 	min_li = 3 #最少的li數量
 	max_li = 4 #最多的li數量
-	min_text = 3 #最少的字元
-	max_text = 5 #最多的字元
 
 	li_length = (min_li..max_li).to_a.sample
 %>
@@ -17,7 +15,7 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>"><span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
+				<li data-index="<%= i + 1 %>"><span><a href="#"><%= lorem_word %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

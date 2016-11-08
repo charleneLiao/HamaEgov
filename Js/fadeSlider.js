@@ -6,8 +6,6 @@ define(['getNode'], function(getNode){
 				auto: false,
 				delay: 5000, //停留時間
 				speed: 300, //輪播速度
-				sliderType: 0, //預設是 0(箭頭) 1(點點) 2(箭頭+點點)
-				activeClass: 'is-active', //啟動點點的 class
 				debug: false
 			}
 
@@ -29,60 +27,32 @@ define(['getNode'], function(getNode){
 		var _index = 0, //被播放的順序
 			_right = 1,
 			_left = -1;
-
-		if( $set.sliderType !== 1 ) { //箭頭
 		
-			var $prev_li = getNode.getFtItemBtn(env, 'prev'),
-				$next_li = getNode.getFtItemBtn(env, 'next');
+		var $prev_li = getNode.getFtItemBtn(env, 'prev'),
+			$next_li = getNode.getFtItemBtn(env, 'next');
 
-			var $prev_li_a = $prev_li.find('a'),
-				$next_li_a = $next_li.find('a');
+		var $prev_li_a = $prev_li.find('a'),
+			$next_li_a = $next_li.find('a');
 
-			$prev_li_a.on(_event, function(){
-				slider(_left);
-			});
+		$prev_li_a.on(_event, function(){
+			slider(_left);
+		});
 
-			$prev_li_a.on('click', function(evt){
-				evt.preventDefault();
+		$prev_li_a.on('click', function(evt){
+			evt.preventDefault();
 
-				$(this).trigger(_event);
-			});
+			$(this).trigger(_event);
+		});
 
-			$next_li_a.on(_event, function(){
-				slider(_right);
-			});
+		$next_li_a.on(_event, function(){
+			slider(_right);
+		});
 
-			$next_li_a.on('click', function(evt){
-				evt.preventDefault();
+		$next_li_a.on('click', function(evt){
+			evt.preventDefault();
 
-				$(this).trigger(_event);
-			});
-		}
-
-		if( $set.sliderType === 1 || $set.sliderType === 2 ) { //點點
-
-			for( var i = 0; i < $content_li_length; i++ ) {
-				var $dot = getNode.getFtItemBtn(env, 'slider-item'+ (i + 1)),
-					$a = $dot.find('a');
-
-				$dots = $dots.add($dot);
-
-				$dot.addClass('is-dot');
-
-				(function(j){ //閉包傳遞參數
-
-					$a.on(_event, function(){
-						slider(j - _index);
-					});
-
-					$a.on('click', function(evt){
-						evt.preventDefault();
-
-						$(this).trigger(_event);
-					});
-				})(i)
-			}
-		}
+			$(this).trigger(_event);
+		});
 
 		$env.touchwipe({
 			wipeLeft: function() {

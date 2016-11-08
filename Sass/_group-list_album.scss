@@ -11,6 +11,7 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
+			@extend %title;
 
 			> .in {
 

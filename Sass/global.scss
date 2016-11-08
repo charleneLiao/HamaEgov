@@ -13,324 +13,59 @@
 
 @import 'base-layout'; //框架
 
+@import 'sys_template'; //模組-框架
 
-//群組
 
-@import 'group'; //設定
+// @import 'page_album'; //album
 
-@import 'group_center'; //置中
+// @import 'page_article'; //article
 
-@import 'group_default'; //預設
+// @import 'page_calender'; //calender
 
-@import 'group_nav'; //選單
+// @import 'page_chart'; //chart
 
-@import 'group_page'; //內頁
+// @import 'page_content'; //content
 
-@import 'group_page-content'; //內頁主要內容
+// @import 'page_cp'; //cp
 
-@import 'group_page-footer'; //內頁頁尾
+// @import 'page_download'; //download
 
-@import 'group_page-header'; //內頁頁首
+// @import 'page_error-info'; //error-info
 
+// @import 'page_essay'; //essay
 
-//頁籤群組
+// @import 'page_figure'; //figure
 
-@import 'group-tab'; //設定
+// @import 'page_form'; //form
 
-@import 'group-tab_default'; //預設
+// @import 'page_index'; //index
 
+// @import 'page_link'; //link
 
-//列表群組
+// @import 'page_map'; //map
 
-@import 'group-list'; //設定
+// @import 'page_media'; //media
 
-@import 'group-list_album'; //相簿
+// @import 'page_message'; //message
 
-@import 'group-list_classical-slider'; //古典輪播
+// @import 'page_page'; //page
 
-@import 'group-list_classify'; //分類
+// @import 'page_pic'; //pic
 
-@import 'group-list_content'; //內頁階層
+// @import 'page_query'; //query
 
-@import 'group-list_default'; //預設
+// @import 'page_rss'; //rss
 
-@import 'group-list_file-download-multiple'; //多重檔案下載列表
+// @import 'page_sign-in'; //sign-in
 
-@import 'group-list_link'; //連結
+// @import 'page_sitemap'; //sitemap
 
-@import 'group-list_major-slider'; //主輪播
+// @import 'page_slider'; //slider
 
-@import 'group-list_marquee-slider'; //跑馬燈
+// @import 'page_system-info'; //system-info
 
-@import 'group-list_message'; //訊息
+// @import 'page_table'; //table
 
-@import 'group-list_nav'; //選單
+// @import 'page_text'; //text
 
-@import 'group-list_page-block'; //內頁區塊群組
-
-@import 'group-list_page-list'; //內頁列表群組
-
-@import 'group-list_page-list-pic'; //內頁圖片列表群組
-
-@import 'group-list_page-list-text'; //內頁文字列表群組
-
-@import 'group-list_query'; //詢問
-
-@import 'group-list_sitemap'; //網站地圖
-
-@import 'group-list_vote-result'; //投票結果
-
-
-//簡單文字
-
-@import 'simple-text'; //設定
-
-@import 'simple-text_accesskey'; //導盲磚
-
-@import 'simple-text_countdown'; //倒數日
-
-@import 'simple-text_default'; //預設
-
-@import 'simple-text_heading'; //頁面標題
-
-@import 'simple-text_major-logo'; //主要標誌
-
-@import 'simple-text_minor-logo'; //次要標誌
-
-@import 'simple-text_query'; //詢問
-
-@import 'simple-text_target-btn'; //目標按鈕
-
-@import 'simple-text_title'; //文章標題
-
-@import 'simple-text_toogle-btn'; //收合按鈕
-
-@import 'simple-text_update-time'; //更新時間
-
-@import 'simple-text_visit-count'; //瀏覽人次
-
-@import 'simple-text_vote-result'; //投票結果
-
-@import 'simple-text_weather'; //天氣
-
-
-//簡單圖片
-
-@import 'simple-pic'; //設定
-
-@import 'simple-pic_default'; //預設
-
-
-//文字列表
-
-@import 'list-text'; //設定
-
-@import 'list-text_anchor'; //錨點
-
-@import 'list-text_breadcrumb'; //麵包屑
-
-@import 'list-text_btn'; //按鈕
-
-@import 'list-text_classify'; //分類
-
-@import 'list-text_content-file'; //內頁階層檔案
-
-@import 'list-text_content-list'; //內頁階層列表
-
-@import 'list-text_default'; //預設
-
-@import 'list-text_detail'; //詳細資訊
-
-@import 'list-text_file-download'; //檔案下載
-
-@import 'list-text_file-download-multiple'; //多重檔案下載
-
-@import 'list-text_font-size'; //字級
-
-@import 'list-text_hot-key-word'; //熱門關鍵字
-
-@import 'list-text_jump-tool'; //跳轉導航列
-
-@import 'list-text_label'; //標籤
-
-@import 'list-text_link'; //連結
-
-@import 'list-text_message'; //訊息
-
-@import 'list-text_minor-nav'; //次選單
-
-@import 'list-text_nav'; //選單
-
-@import 'list-text_open-data'; //開放資料
-
-@import 'list-text_page-list'; //內頁列表
-
-@import 'list-text_rss'; //訂閱
-
-@import 'list-text_share'; //分享
-
-@import 'list-text_sitemap'; //網站地圖
-
-@import 'list-text_slider'; //輪播
-
-@import 'list-text_step'; //步驟
-
-@import 'list-text_tab'; //頁籤
-
-@import 'list-text_user-tool'; //使用者工具
-
-
-//圖片列表
-
-@import 'list-pic'; //設定
-
-@import 'list-pic_album'; //相簿
-
-@import 'list-pic_default'; //預設
-
-@import 'list-pic_icon'; //各種標章
-
-@import 'list-pic_link'; //連結
-
-@import 'list-pic_page-block'; //內頁圖片區塊列表
-
-@import 'list-pic_page-list'; //內頁圖片列表
-
-@import 'list-pic_page-marquee'; //跑馬燈輪播
-
-@import 'list-pic_pic-download'; //圖片下載
-
-@import 'list-pic_slider'; //輪播
-
-
-//多重列表
-
-@import 'list-multiple'; //設定
-
-@import 'list-multiple_default'; //預設
-
-@import 'list-multiple_page-click'; //頁次導航列
-
-@import 'list-multiple_page-select'; //頁次導航列
-
-
-//表格區塊
-
-@import 'area-table'; //設定
-
-@import 'area-table_default'; //預設
-
-@import 'area-table_page-table'; //內頁表格
-
-@import 'area-table_rwd-table'; //RWD 表格
-
-
-//表單區塊
-
-@import 'area-form'; //設定
-
-@import 'area-form_default'; //預設
-
-@import 'area-form_epaper'; //電子報
-
-@import 'area-form_link'; //連結
-
-@import 'area-form_page-form'; //內頁表單
-
-@import 'area-form_page-search'; //內頁搜尋
-
-@import 'area-form_search'; //搜尋
-
-@import 'area-form_sign-in'; //登入與申請帳號
-
-@import 'area-form_submit'; //送出
-
-@import 'area-form_vote'; //投票
-
-
-//文章區塊
-
-@import 'area-essay'; //設定
-
-@import 'area-essay_default'; //預設
-
-@import 'area-essay_link'; //連結
-
-@import 'area-essay_message'; //訊息
-
-@import 'area-essay_page-caption-label'; //內頁文章敘述(標題-標籤)
-
-@import 'area-essay_page-caption-label-p'; //內頁文章敘述(標題-標籤-內文)
-
-@import 'area-essay_page-caption-p'; //內頁文章敘述(標題-內文)
-
-@import 'area-essay_page-essay'; //內頁文章敘述(圖片-標題-標籤-內文)
-
-@import 'area-essay_page-img-caption-label'; //內頁文章敘述(圖片-標題-標籤)
-
-@import 'area-essay_page-img-caption-p'; //內頁文章敘述(圖片-標題-內文)
-
-
-//圖片區塊
-
-@import 'area-figure'; //設定
-
-@import 'area-figure_album'; //相簿
-
-@import 'area-figure_default'; //預設
-
-@import 'area-figure_link'; //連結
-
-@import 'area-figure_page-figure'; //內頁圖片敘述(圖片-標題-標籤-內文)
-
-@import 'area-figure_page-img-figcaption'; //內頁圖片敘述(圖片-標題)
-
-@import 'area-figure_page-img-figcaption-label'; //內頁圖片敘述(圖片-標題-標籤)
-
-@import 'area-figure_page-img-figcaption-p'; //內頁圖片敘述(圖片-標題-內文)
-
-@import 'area-figure_page-img-label'; //內頁圖片敘述(圖片-標籤)
-
-@import 'area-figure_page-img-label-p'; //內頁圖片敘述(圖片-標籤-內文)
-
-@import 'area-figure_page-img-p'; //內頁圖片敘述(圖片-內文)
-
-
-//編輯區塊
-
-@import 'area-editor'; //設定
-
-@import 'area-editor_address'; //聯絡資訊
-
-@import 'area-editor_cp'; //cp 頁框架
-
-@import 'area-editor_default'; //預設
-
-@import 'area-editor_error-info'; //錯誤訊息
-
-@import 'area-editor_system-info'; //系統資訊
-
-@import 'area-editor_user-edit'; //使用者編輯
-
-
-//客製區塊
-
-@import 'area-customize'; //設定
-
-@import 'area-customize_audio'; //音訊
-
-@import 'area-customize_calender'; //月曆
-
-@import 'area-customize_calender-detail'; //月曆
-
-@import 'area-customize_chart'; //圖表
-
-@import 'area-customize_default'; //預設
-
-@import 'area-customize_iframe'; //框架
-
-@import 'area-customize_map'; //地圖
-
-@import 'area-customize_recitation'; //朗誦
-
-@import 'area-customize_video'; //視訊
+// @import 'page_vote'; //vote

@@ -17,7 +17,7 @@
 		<ul data-index="1" data-child="<%= li_length %>">
 
 			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark">類別</i><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
+				<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark"><%= lorem_word %></i><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

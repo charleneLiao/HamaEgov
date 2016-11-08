@@ -15,11 +15,7 @@
 			}
 
 			h3 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('slideshow');
-				}
+				
 			}
 
 			span {
@@ -122,41 +118,6 @@
 
 				&.more {
 					display: none;
-				}
-
-				&.is-dot {
-					display: inline-block;
-					margin: $interval-m $interval-xs;
-					vertical-align: middle;
-
-					@include media('mobile') {
-						display: none;
-					}
-
-					&.is-active {
-
-						a {
-							background-color: $minor-color;
-						}
-					}
-
-					span {
-						display: block;
-					}
-
-					a {
-						@extend %hide-text;
-						display: block;
-						width: 12px;
-						height: 12px;
-						background-color: $gray;
-						transition: $transition;
-						border-radius: 50%;
-
-						&:hover {
-							opacity: $opacity-h;
-						}
-					}
 				}
 			}
 

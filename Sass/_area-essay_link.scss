@@ -4,28 +4,91 @@
 
 .area-essay.link {
 
-	.base-module-area &, .base-aside & {
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
 
 		}
 
-		.hd {
+		h4 {
 
-			> .in {
-
+			&:before {
+				@include icon-font('photo');
 			}
+		}
 
-			h4 {
-				@extend %title;
+		span {
+				
+		}
 
-				&:before {
-					@include icon-font('public');
+		a {
+
+		}
+	}
+
+	.ct {
+		$pic_w: 150px;
+
+		> .in {
+			
+		}
+
+		/*a*/.div {
+			position: relative;
+			background-color: $light;
+			transition: $transition;
+
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
+
+		.img {
+
+			span {
+				@extend %bg-cover;
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: $pic_w;
+
+				@include media('phone') {
+					position: static;
+					width: auto;
 				}
 			}
 
+			img {
+				display: none;
+
+				@include media('phone') {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+
+		.essay {
+			padding: $interval-l;
+			padding-left: $pic_w + $interval-l;
+
+			@include media('phone') {
+				padding-left: $interval-l;
+			}
+		}
+
+		.caption {
+			@extend %caption;
+
 			span {
-					
+				
 			}
 
 			a {
@@ -33,88 +96,8 @@
 			}
 		}
 
-		.ct {
-
-			> .in {
-
-			}
-
-			/*a*/.div {
-
-				&:hover {
-
-					.essay {
-						background-color: $light-gray;
-					}
-				}
-			}
-
-			.img {
-
-				span {
-					@extend %bg-cover;
-					display: block;
-					height: 80px;
-				}
-
-				img {
-					display: none;
-				}
-			}
-
-			.essay {
-				padding: $interval-m;
-				background-color: $light;
-				transition: $transition;
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
-		}
-
-		.ft {
-			@extend %footer-btns;
-
-			> .in {
-
-			}
+		.label {
+			@extend %label;
 
 			ul {
 
@@ -127,162 +110,46 @@
 			span {
 
 			}
+		}
 
-			a {
+		/*i*/.mark {
+			@extend %mark;
+		}
+
+		.p {
+			@extend %paragraph;
+
+			p {
+
+			}
+
+			span {
 
 			}
 		}
 	}
 
-	.base-section & {
+	.ft {
+		@extend %footer-btns;
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('photo');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
-			$pic_w: 150px;
+		li {
 
-			> .in {
-				
-			}
-
-			/*a*/.div {
-				position: relative;
-				background-color: $light;
-				transition: $transition;
-
-				&:hover {
-					background-color: $light-gray;
-				}
-			}
-
-			.img {
-
-				span {
-					@extend %bg-cover;
-					position: absolute;
-					display: block;
-					top: 0;
-					left: 0;
-					bottom: 0;
-					width: $pic_w;
-
-					@include media('phone') {
-						position: static;
-						width: auto;
-					}
-				}
-
-				img {
-					display: none;
-
-					@include media('phone') {
-						display: block;
-						width: 100%;
-					}
-				}
-			}
-
-			.essay {
-				padding: $interval-l;
-				padding-left: $pic_w + $interval-l;
-
-				@include media('phone') {
-					padding-left: $interval-l;
-				}
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
 		}
 
-		.ft {
-			@extend %footer-btns;
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

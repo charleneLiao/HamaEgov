@@ -131,11 +131,7 @@
 			}
 
 			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('menu');
-				}
+				
 			}
 
 			span {
@@ -213,6 +209,86 @@
 		}
 	}
 
+	.base-content & {
+
+		> .bg-drop-layout > .in, > .in {
+			
+		}
+
+		.hd {
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			ul {
+
+			}
+
+			li {
+
+				+ li {
+					margin-top: $interval-s;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %list;
+				@extend %list-hover;
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 	.base-footer & {
 
 		> .bg-drop-layout > .in, > .in {
@@ -220,16 +296,13 @@
 		}
 
 		.hd {
-			margin-bottom: $interval-s;
 
 			> .in {
 
 			}
 
 			h4 {
-				padding-bottom: $interval-s;
-				border-bottom: $border;
-				font-size: $font-size-l;
+
 			}
 
 			span {
@@ -268,173 +341,6 @@
 					background-color: $minor-color;
 					color: $white;
 				}
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-	.base-extend &, .base-module-area &, .base-aside & {
-
-		> .bg-drop-layout > .in, > .in {
-			
-		}
-
-		.hd {
-
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('menu');
-				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				+ li {
-					margin-top: $interval-s;
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %list;
-				@extend %list-hover;
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-	.base-section & {
-
-		> .bg-drop-layout > .in, > .in {
-			
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %list;
-				@extend %list-hover;
-			}
-		}
-
-		.ct {
-
-
-			> .in {
-				
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				+ li {
-					margin-top: $interval-s;
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %list;
-				@extend %list-hover;
 			}
 
 			/*i*/.mark {

@@ -1,8 +1,3 @@
-<%
-	min_text = 2 #最少的字元
-	max_text = 6 #最多的字元
-%>
-
 <div class="list-text tab <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
 	<% if header_text %>
 		<div class="hd"><div class="in">
@@ -19,7 +14,7 @@
 				<% else %>
 					<li data-index="<%= i + 1 %>">
 				<% end %>
-				<span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
+				<span><a href="#"><%= lorem_word %></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

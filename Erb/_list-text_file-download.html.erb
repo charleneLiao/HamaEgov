@@ -20,7 +20,7 @@
 				<% li_length.times do |i| %>
 
 					<% file_type = $file_types[rand($file_types.length)] %>
-					<% text = zh_lorem_words (min_text..max_text).to_a.sample %>
+					<% text = zh_lorem_word %>
 
 					<li class="<%= file_type %>" data-index="<%= i + 1 %>"><span><a href="#" title="<%= text %>.<%= file_type %>"><%= text %></a></span></li>
 				<% end %>

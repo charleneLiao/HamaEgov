@@ -7,11 +7,7 @@
 	@extend %list-hover;
 	border-left-width: $interval-xs;
 	border-left-style: solid;
-	border-left-color: $major-color;
-
-	&:hover {
-		border-left-width: $interval-m;
-	}
+	border-left-color: $gray;
 
 	> .bg-drop-layout > .in, > .in {
 

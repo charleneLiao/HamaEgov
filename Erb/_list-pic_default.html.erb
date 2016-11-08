@@ -17,7 +17,7 @@
 			<% li_length.times do |i| %>
 				<% img = $sample_pic.sample %>
 
-				<li data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><i class="mark">類別</i><img src="<%= img %>" alt=""></a></span></li>
+				<li data-index="<%= i + 1 %>"><span style="background-image: url('<%= img %>')"><a href="#"><i class="mark"><%= lorem_word %></i><img src="<%= img %>" alt=""></a></span></li>
 			<% end %>
 		</ul>
 	</div></div>

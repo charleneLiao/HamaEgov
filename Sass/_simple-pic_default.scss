@@ -4,157 +4,73 @@
 
 .simple-pic.default {
 
-	.base-module-area &, .base-aside & {
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+
+		> .in {
 
 		}
 
-		.hd {
+		h4 {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('photo');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
-
-			> .in {
+		span {
 				
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				display: block;
-			}
-
-			img {
-				display: block;
-				width: 100%;
-			}
-
-			/*i*/.mark {
-				
-			}
 		}
 
-		.ft {
+		a {
 
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 
-	.base-section & {
+	.ct {
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
+			
+		}
+
+		span {
+			display: block;
+		}
+
+		a {
+			display: block;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		/*i*/.mark {
+			
+		}
+	}
+
+	.ft {
+
+		> .in {
 
 		}
 
-		.hd {
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('photo');
-				}
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
+		li {
 
-			> .in {
-				
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				display: block;
-			}
-
-			img {
-				display: block;
-				width: 100%;
-			}
-
-			/*i*/.mark {
-				
-			}
 		}
 
-		.ft {
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

@@ -8,28 +8,52 @@
 		display: none;
 	}
 
-	.base-extend &, .base-module-area &, .base-aside & {
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
 
 		}
 
-		.hd {
+		h4 {
 
-			> .in {
-
+			&:before {
+				@include icon-font('place');
 			}
+		}
 
-			h4 {
-				@extend %title;
+		span {
 
-				&:before {
-					@include icon-font('place');
-				}
-			}
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		.div {
+			margin-bottom: $interval-s;
+		}
+
+		.essay {
+			
+		}
+
+		.caption {
+			@extend %caption;
 
 			span {
-
+				
 			}
 
 			a {
@@ -37,71 +61,8 @@
 			}
 		}
 
-		.ct {
-
-			> .in {
-
-			}
-
-			.div {
-				margin-bottom: $interval-s;
-			}
-
-			.essay {
-				
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %paragraph;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
-		}
-
-		.ft {
-			@extend %footer-btns;
-
-			> .in {
-
-			}
+		.label {
+			@extend %label;
 
 			ul {
 
@@ -114,123 +75,46 @@
 			span {
 
 			}
+		}
 
-			a {
+		/*i*/.mark {
+			@extend %mark;
+		}
+
+		.p {
+			@extend %article-extend;
+
+			p {
+
+			}
+
+			span {
 
 			}
 		}
 	}
 
-	.base-section & {
+	.ft {
+		@extend %footer-btns;
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('place');
-				}
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
+		li {
 
-			> .in {
-
-			}
-
-			.div {
-				margin-bottom: $interval-s;
-			}
-
-			.essay {
-				
-			}
-
-			.caption {
-				@extend %caption;
-
-				span {
-					
-				}
-
-				a {
-
-				}
-			}
-
-			.label {
-				@extend %label;
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-
-			.p {
-				@extend %article-extend;
-
-				p {
-
-				}
-
-				span {
-
-				}
-			}
 		}
 
-		.ft {
-			@extend %footer-btns;
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

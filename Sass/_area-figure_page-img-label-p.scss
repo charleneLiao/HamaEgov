@@ -9,13 +9,13 @@
 	}
 
 	.hd {
+		@extend %title;
 
 		> .in {
 
 		}
 
 		h4 {
-			@extend %title;
 
 			&:before {
 				@include icon-font('photo');

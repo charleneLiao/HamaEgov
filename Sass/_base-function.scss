@@ -31,16 +31,8 @@
 
 	@mixin supports($key) { //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式，$key 為 $supports 的 $key
 
-		@if( map-has-key( $supports, $key) ) {
-
-			@supports #{map-get( $supports, $key )} {
-				@content;
-			}
-		}@else {
-
-			@supports #{ '(' + $key + ')' } {
-				@content;
-			}
+		@supports #{ '(' + $key + ')' } {
+			@content;
 		}
 	}
 
@@ -652,17 +644,24 @@
 	}
 
 	%title { //模組、內頁 title
-		font-size: $font-size-l;
-		padding-bottom: $interval-m;
-		border-bottom: $border;
-		margin-bottom: $interval-m;
 
-		&:before {
-			margin-right: $interval-xs;
+		> .in {
+
 		}
 
-		&:after {
-			margin-left: $interval-xs;
+		h4, h3 {
+			font-size: $font-size-l;
+			padding-bottom: $interval-m;
+			border-bottom: $border;
+			margin-bottom: $interval-m;
+
+			&:before {
+				margin-right: $interval-xs;
+			}
+
+			&:after {
+				margin-left: $interval-xs;
+			}
 		}
 
 		span {

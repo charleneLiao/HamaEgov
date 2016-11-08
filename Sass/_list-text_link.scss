@@ -29,6 +29,7 @@
 		}
 
 		.hd {
+			display: none;
 
 			> .in {
 
@@ -80,6 +81,7 @@
 		}
 
 		.ft {
+			display: none;
 
 			> .in {
 
@@ -210,13 +212,13 @@
 		}
 
 		.hd {
+			@extend %title;
 
 			> .in {
 
 			}
 
 			h4 {
-				@extend %title;
 
 				&:before {
 					@include icon-font('public');

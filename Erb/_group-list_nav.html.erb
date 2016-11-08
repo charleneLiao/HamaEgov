@@ -17,29 +17,27 @@
 		</div></div>
 	<% end %>
 
-	<% if ( li_length > 0 ) %>
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="<%= li_length %>">
+	<div class="ct"><div class="in">
+		<ul data-index="1" data-child="<%= li_length %>">
 
-				<% li_length.times do |i| %>
-					<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
+			<% li_length.times do |i| %>
+				<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
-						<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
-							<div class="hd"><div class="in">
-								<h3><span><a href="#"><%= (zh_lorem_words rand(7)+1) %></a></span></h3>
-							</div></div>
-							<div class="ct"><div class="in">
-
-							<!-- <%= inner %> -->
-								<%= render partial: inner ,locals: set({ index: 1 }) %>
-							<!-- <%= inner %> -->
-
-							</div></div>
+					<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
+						<div class="hd"><div class="in">
+							<h3><span><a href="#"><%= lorem_word %></a></span></h3>
 						</div></div>
-					
-					</li>
-				<% end %>
-			</ul>
-		</div></div>
-	<% end %>
+						<div class="ct"><div class="in">
+
+						<!-- <%= inner %> -->
+							<%= render partial:  inner, locals: set({ index: 1 }) %>
+						<!-- <%= inner %> -->
+
+						</div></div>
+					</div></div>
+				
+				</li>
+			<% end %>
+		</ul>
+	</div></div>
 </div></div>
