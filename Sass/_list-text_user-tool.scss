@@ -3,29 +3,47 @@
 //使用者工具================================================================
 
 .list-text.user-tool {
+	display: inline-block;
+
+	@include js(false) {
+		display: block;
+	}
 
 	@include media('mobile') {
 		display: none;
 	}
-		margin: $interval-s 0;
+
+	&.is-active {
 
 		> .bg-drop-layout > .in, > .in {
 
+			.hd {
+
+				a {
+
+					&:before {
+						@include icon-font('arrow_drop_up');
+					}
+				}
+			}
+
+			.ct {
+				display: block;
+			}
 		}
+	}
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
 
 	.hd {
-		display: inline-block;
-		vertical-align: middle;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:after {
-				content: ' : ';
-			}
 		}
 
 		span {
@@ -34,26 +52,44 @@
 
 		a {
 			display: block;
+			padding: $interval-s;
+
+			&:before {
+				@include icon-font('arrow_drop_down');
+				margin-right: $interval-xs;
+			}
 		}
 	}
 
 	.ct {
-		display: inline-block;
-		vertical-align: middle;
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		min-width: 120px;
+		z-index: 1;
+
+		@include js(false) {
+			display: block;
+			position: static;
+			top: auto;
+			right: auto;
+			min-width: 0;
+		}
 
 		> .in {
 
 		}
 
 		ul {
-
+			background-color: $light;
+			padding: $interval-s;
 		}
 
 		li {
-			display: inline-block;
 
 			+ li {
-				margin-left: $interval-xs;
+				margin-top: $interval-xs;
 			}
 
 			&.login {
@@ -153,6 +189,8 @@
 
 		a {
 			@extend %btn;
+			display: block;
+			text-align: left;
 
 			&:before {
 				margin-right: $interval-xs;

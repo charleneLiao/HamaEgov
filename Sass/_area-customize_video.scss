@@ -39,6 +39,8 @@
 
 		.video {
 			margin-bottom: $interval-s;
+			background-color: $light-gray;
+			@include bg-to-pic('icon-pic/icon-w-video.png', false);
 
 			video {
 				width: 100%;

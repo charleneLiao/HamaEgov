@@ -48,6 +48,31 @@ define(function() {
 			return this.getIn(this.getHd(env));
 		},
 
+		getHdLink: function(env, add) { //取得 ft li btn 節點
+			var $hdIn = this.getHdIn(env),
+				_type = this.getType(env),
+				$link = null;
+
+			if( !_type ) {
+				$link = $hdIn.children('h4');
+			} else {
+				$link = $hdIn.children('h3');
+			}
+
+			if( !$link.length && !_type && add !== false ) {
+
+				$link = $('<h4><a href="#"></a></h4>');
+				$hdIn.append($link);
+
+			}else if( !$link.length && add !== false ) {
+
+				$link = $('<h3><a href="#"></a></h3>');
+				$hdIn.append($link);
+			}
+
+			return $link;
+		},
+
 		getCt: function(env) { //取得 ct 節點
 			return this.getIn(env).children('.ct');
 		},
@@ -121,10 +146,16 @@ define(function() {
 			var $ftList = this.getFtList(env),
 				$btn = $ftList.children('.'+ className);
 
-			if( !$btn.length && add !== false ) {
-				$btn = $('<li class="'+ className +'"><span><a href="#">'+ className +'</a></span></li>');
-
+			if( !$btn.length && !className && add !== false ) { //空按鈕
+				$btn = $('<li><span><a href="#"></a></span></li>');
 				$ftList.append($btn);
+
+				this.updateFtItemLen(env);
+				this.updateIndex($btn);
+			}else if( !$btn.length && add !== false ) {
+				$btn = $('<li class="'+ className +'"><span><a href="#">'+ className +'</a></span></li>');
+				$ftList.append($btn);
+
 				this.updateFtItemLen(env);
 				this.updateIndex($btn);
 			}

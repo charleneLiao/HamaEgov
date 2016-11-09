@@ -46,7 +46,7 @@
 
 			&:before {
 				@include icon-font('home');
-				vertical-align: middle;
+				margin-right: $interval-s;
 			}
 
 			+ li {

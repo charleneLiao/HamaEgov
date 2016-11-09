@@ -18,6 +18,12 @@
 		<%= render partial: "/erb/group-list_classify", locals: set({ header_text: "分類群組", inner: "/erb/list-text_classify" }) %>
 	<!-- classify 結束 -->
 
+<!-- //頁籤================================================================ -->
+
+	<!-- tab 頁籤 -->
+		<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤", :inner =>  "/erb/group-list_message" }) %>
+	<!-- tab 結束 -->
+
 <!-- //按鈕================================================================ -->
 
 	<!-- btn 按鈕 -->

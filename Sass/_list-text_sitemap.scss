@@ -21,26 +21,6 @@
 			.ct {
 				display: block;
 			}
-
-			.ft {
-
-				li {
-
-					&.more {
-
-						span {
-
-						}
-
-						a {
-
-							&:before {
-								content: 'close';
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 

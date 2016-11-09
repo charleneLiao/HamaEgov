@@ -3,7 +3,7 @@
 .sys-root {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-size: $body-font-size-m; //預設大小，應與font-size-medium同大
+	font-size: $body-font-size-m; //預設大小
 	font-family: $base-font-style;
 	color: $body-font-color;
 	position: relative;
@@ -681,6 +681,43 @@
 
 					&:after {
 						@extend %clear;
+					}
+				}
+			}
+		}
+	}
+
+	.base-content & {
+
+		> .bg-drop-layout > .in, > .in {
+
+			> .hd {
+				display: none;
+
+				> .in {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+					text-align: right;
+
+					@include js(false) {
+						text-align: left;
 					}
 				}
 			}

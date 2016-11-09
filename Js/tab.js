@@ -6,7 +6,7 @@ define(['getNode'], function(getNode){
 				auto: false, //是否自動撥放
 				delay: 5000, //停留時間
 				event: 'click focusin', //jQuery 事件名稱
-				activeClass: 'is-active', //啟動點點的 class
+				activeClass: 'is-active', //啟動的 class
 				debug: false
 			}
 

@@ -8,30 +8,42 @@
 	<%= render partial: "/erb/list-text_slider", locals: set({ index: 2, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播" }) %>
 <!-- slider 結束 -->
 
-<!-- link 連結 -->
-	<%= render partial: "/erb/area-form_link", locals: set({ index: 3, func_set: "{'selectLink':{}}", header_text: "連結" }) %>
-<!-- link 結束 -->
+<div class="group" data-index="3" data-type="<%= $cell %>" data-child="2"><div class="in">
+	<div class="ct"><div class="in">
 
-<!-- anchor 錨點 -->
-	<%= render partial: "/erb/list-text_anchor", locals: set({ index: 4, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "錨點" }) %>
-<!-- anchor 結束 -->
+	<!-- anchor 錨點 -->
+		<%= render partial: "/erb/list-text_anchor", locals: set({ index: 1, func_set: "{'anchor':{'bindNode':'body','speed':300}}", header_text: "錨點" }) %>
+	<!-- anchor 結束 -->
 
-<!-- countdown 倒數日 -->
-	<%= render partial: "/erb/simple-text_countdown", locals: set({ index: 5, func_set: "{'countdown':{'year':2016,'month':10,'day':15,'hour':18,'minute':25,'second':0,'delayTime':1000,'lang':'tw','arrivedMessage':'now !'}}", header_text: "距離大年初三" }) %>
-<!-- countdown 結束 -->
+	<!-- countdown 倒數日 -->
+		<%= render partial: "/erb/simple-text_countdown", locals: set({ index: 2, func_set: "{'countdown':{'year':2016,'month':10,'day':15,'hour':18,'minute':25,'second':0,'delayTime':1000,'lang':'tw','arrivedMessage':'now !'}}", header_text: "距離大年初三" }) %>
+	<!-- countdown 結束 -->
 
-<!-- weather 天氣 -->
-	<%= render partial: "/erb/simple-text_weather", locals: set({ index: 6, header_text: "天氣" }) %>
-<!-- weather 結束 -->
+	</div></div>
+</div></div>
+
+<div class="group" data-index="4" data-type="<%= $cell %>" data-child="2"><div class="in">
+	<div class="ct"><div class="in">
+
+	<!-- link 連結 -->
+		<%= render partial: "/erb/area-form_link", locals: set({ index: 1, func_set: "{'selectLink':{}}", header_text: "連結" }) %>
+	<!-- link 結束 -->
+
+	<!-- weather 天氣 -->
+		<%= render partial: "/erb/simple-text_weather", locals: set({ index: 2, header_text: "天氣" }) %>
+	<!-- weather 結束 -->
+
+	</div></div>
+</div></div>
 
 <!-- epaper 電子報 -->
-	<%= render partial: "/erb/area-form_epaper", locals: set({ index: 7, header_text: "訂閱電子報" }) %>
+	<%= render partial: "/erb/area-form_epaper", locals: set({ index: 5, header_text: "訂閱電子報" }) %>
 <!-- epaper 結束 -->
 
 <!-- default 預設 -->
-	<%= render partial: "/erb/area-editor_default", locals: set({ index: 8, header_text: "圖文區塊" }) %>
+	<%= render partial: "/erb/area-editor_default", locals: set({ index: 6, header_text: "圖文區塊" }) %>
 <!-- default 結束 -->
 
 <!-- tab 頁籤 -->
-	<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤", :inner =>  "/erb/group-list_message" }) %>
+	<%= render partial: "/erb/group-tab_default", locals: set({ index: 7, func_set: "{'tab':{}}", header_text: "頁籤", :inner =>  "/erb/group-list_message" }) %>
 <!-- tab 結束 -->

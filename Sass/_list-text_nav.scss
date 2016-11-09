@@ -212,7 +212,7 @@
 	.base-content & {
 
 		> .bg-drop-layout > .in, > .in {
-			
+			margin: $interval-xs !important;
 		}
 
 		.hd {
@@ -246,9 +246,6 @@
 
 			li {
 
-				+ li {
-					margin-top: $interval-s;
-				}
 			}
 
 			span {
