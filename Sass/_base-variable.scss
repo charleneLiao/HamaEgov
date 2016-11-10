@@ -18,9 +18,9 @@
 	$minor-color: #fa7076 !default; //次色 #1caf9a
 
 //其他版面顏色================================================================
-	$lesser1-color: #fff !default; //更次色
-	$lesser2-color: #fff !default; //更次色
-	$lesser3-color: #fff !default; //更次色
+	$lesser1-color: #fff; //更次色
+	$lesser2-color: #fff; //更次色
+	$lesser3-color: #fff; //更次色
 
 //文字顏色================================================================
 	$title-color: #79561b !default; //標題色 #d9534f
@@ -74,9 +74,9 @@
 	$transition: 150ms;
 
 //RWD設定================================================================
-	$pc-width: 1000px !default; //pc寬度
-	$pad-width: 768px !default; //pad寬度
-	$phone-width: 560px !default; //phone寬度
+	$pc-width: 1000px; //pc寬度
+	$pad-width: 768px; //pad寬度
+	$phone-width: 560px; //phone寬度
 
 	$rwd-btn-size: 40px; //RWD 手機側欄按鈕大小
 
@@ -95,11 +95,11 @@
 	$icon-font-color: inherit; //文字圖示顏色
 
 //全頁文字================================================================
-	$body-font-color: $deep !default; //網站文字顏色
+	$body-font-color: $deep; //網站文字顏色
 	
-	$body-font-size-s: $font-size-s !default; //small
-	$body-font-size-m: $font-size-m !default; //medium
-	$body-font-size-l: $font-size-l !default; //large
+	$body-font-size-s: $font-size-s; //small
+	$body-font-size-m: $font-size-m; //medium
+	$body-font-size-l: $font-size-l; //large
 
 //預設線條================================================================
 	$border-style: solid;
@@ -111,10 +111,10 @@
 	$border-radius: $interval-xs;
 
 //連結顏色================================================================
-	$link-color: inherit !default; //連結顏色
-	$visited-color: inherit !default; //造訪過連結顏色
-	$hover-color: $gray !default; //指標移入連結顏色，不可與任何底色重疊
-	$active-color: inherit !default; //點擊連結顏色
+	$link-color: inherit; //連結顏色
+	$visited-color: inherit; //造訪過連結顏色
+	$hover-color: $gray; //指標移入連結顏色，不可與任何底色重疊
+	$active-color: inherit; //點擊連結顏色
 
 //按鈕樣式================================================================
 	$btn-bg-color: $deep-gray; //按鈕背景色

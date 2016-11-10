@@ -17,7 +17,20 @@ define(['getNode'], function(getNode){
 
 		var $env = $(env),
 			$target = $($set.targetNode),
-			$btn = null;
+			$btn = null; //按鈕物件
+
+		var _uuid = $env.attr('class').replace($set.toggleClass, ''),
+			_flag = $.cookie(_uuid) || 0; //0 未執行 / 1 執行中
+
+		console.log(_uuid, $.cookie(_uuid), _flag);
+
+		if( _flag ) {
+			$env.addClass($set.toggleClass);
+		}else {
+			$env.removeClass($set.toggleClass);
+
+			console.log($env.removeClass($set.toggleClass))
+		}
 
 		if( $set.bindNode === 'hd' ) { //版頭抑或綁尾
 			$btn = getNode.getHdLink(env).find('a');
@@ -25,12 +38,22 @@ define(['getNode'], function(getNode){
 			$btn = getNode.getFtItemBtn(env).find('a');
 		}
 
-		if( !!$set.btnOrangeText ) { //如果沒有文字
+		if( !!$set.btnOrangeText && _flag && !!$set.btnActiveText ) { //如果有設定文字
+			$btn.text($set.btnActiveText);
+		}else if( !!$set.btnOrangeText ) {
 			$btn.text($set.btnOrangeText);
 		}
 
 		$btn.on(_eventNmae, function(){
 			$env.toggleClass($set.toggleClass);
+
+			if( $env.attr('class').search($set.toggleClass) > -1 ) {
+				$.cookie(_uuid, 1);
+			}else {
+				$.cookie(_uuid, 0);
+			}
+
+			console.info($.cookie(_uuid));
 
 			if( $btn.text() === $set.btnOrangeText && !!$set.btnActiveText ) { //更改文字
 				$btn.text($set.btnActiveText);
