@@ -601,7 +601,7 @@
 	%area-page { //內頁模組
 
 		[data-type] + [data-type] {
-			margin-top: $interval-l;
+			margin-top: $interval-xl;
 		}
 
 		[data-type] + .is-hide-header { //在內頁模組上下 ".is-hide-header" 的 margin 樣式

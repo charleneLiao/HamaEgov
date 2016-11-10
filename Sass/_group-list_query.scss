@@ -7,14 +7,18 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			display: none;
+			@extend %title;
 
 			> .in {
 
 			}
 
 			h3 {
-				
+				@extend %title;
+
+				&:before {
+					@include icon-font('person');
+				}
 			}
 
 			span {
