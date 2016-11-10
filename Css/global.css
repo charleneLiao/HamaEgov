@@ -41,7 +41,7 @@
 }
 
 /* line 456, ../sass/_base-function.scss */
-.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .list-pic.page-block .ft li.is-img a, .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.slider > .in > .ft li.next a, .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a, .list-pic.slider .ft li.is-img a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
+.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.slider > .in > .ft li.next a, .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
   font: 0/0 a;
   color: transparent;
 }
@@ -289,12 +289,12 @@
 }
 
 /* line 861, ../sass/_base-function.scss */
-.list-pic.album .ct a, .list-pic.link .ct a, .list-pic.page-block .ft li.is-img a, .list-pic.slider .ft li.is-img a {
+.list-pic.album .ct a, .list-pic.link .ct a {
   position: relative;
   display: block;
 }
 /* line 865, ../sass/_base-function.scss */
-.list-pic.album .ct a:before, .list-pic.link .ct a:before, .list-pic.page-block .ft li.is-img a:before, .list-pic.slider .ft li.is-img a:before {
+.list-pic.album .ct a:before, .list-pic.link .ct a:before {
   content: "​";
   display: block;
   position: absolute;
@@ -307,22 +307,12 @@
   transition: 150ms;
 }
 /* line 880, ../sass/_base-function.scss */
-.list-pic.album .ct a:hover:before, .list-pic.link .ct a:hover:before, .list-pic.page-block .ft li.is-img a:hover:before, .list-pic.slider .ft li.is-img a:hover:before {
+.list-pic.album .ct a:hover:before, .list-pic.link .ct a:hover:before {
   opacity: 0;
 }
 
-/* line 886, ../sass/_base-function.scss */
-.list-pic.page-block .ft li.is-img a, .list-pic.slider .ft li.is-img a {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 /* line 897, ../sass/_base-function.scss */
-.list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .area-essay.link .ct .img span, .area-figure.link .ct .img span, .area-essay.message .ct .img span, .list-pic.page-list .ct span, .list-pic.page-block .ft li.is-img span, .list-pic.slider .ft li.is-img span, .list-pic.marquee .ct span {
+.list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .area-essay.link .ct .img span, .area-figure.link .ct .img span, .area-essay.message .ct .img span, .list-pic.page-list .ct span, .list-pic.marquee .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,7 +333,7 @@
 }
 
 /* line 921, ../sass/_base-function.scss */
-.simple-text.default .hd h4:before, .area-editor.default .hd h4:before, .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-content .group.nav > .bg-drop-layout > .in > .hd a:before, .base-content .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.nav > .in > .hd h3:before, .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .list-text.link .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-mobile .simple-text.btn.is-active .ct a:before, .base-mobile .simple-text.btn .ct a:before, .base-footer .simple-text.btn.is-active .ct a:before, .base-footer .simple-text.btn .ct a:before, .area-editor.address .ct a.is-map:after, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .list-pic.album .hd h4:before, .area-figure.album .hd h4:before, .area-customize.calender .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.chart .hd h4:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .area-editor.error-info .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-form.page-form .hd h4:before, .area-form.submit .hd h4:before, .simple-text.countdown .hd h4:before, .simple-text.weather .hd h4:before, .list-text.anchor .hd h4:before, .list-text.slider .hd h4:before, .area-form.epaper .hd h4:before, .area-form.link .hd h4:before, .group-list.link > .bg-drop-layout > .in > .hd h3:before, .group-list.link > .in > .hd h3:before, .list-pic.link .hd h4:before, .area-essay.link .hd h4:before, .area-figure.link .hd h4:before, .area-customize.map .hd h4:before, .area-customize.audio .hd h4:before, .area-customize.iframe .hd h4:before, .area-customize.video .hd h4:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .list-text.message .hd h4:before, .area-essay.message .hd h4:before, .area-form.page-search .hd h4:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-pic.page-list .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .list-text.rss .hd h4:before, .area-form.sign-in .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .area-form.vote .hd h4:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
+.simple-text.default .hd h4:before, .area-editor.default .hd h4:before, .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-content .group.nav > .bg-drop-layout > .in > .hd a:before, .base-content .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.nav > .in > .hd h3:before, .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .list-text.link .hd h4:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-mobile .simple-text.btn.is-active .ct a:before, .base-mobile .simple-text.btn .ct a:before, .base-footer .simple-text.btn.is-active .ct a:before, .base-footer .simple-text.btn .ct a:before, .area-editor.address .ct a.is-map:after, .group-list.album > .bg-drop-layout > .in > .hd h3:before, .group-list.album > .in > .hd h3:before, .list-pic.album .hd h4:before, .area-figure.album .hd h4:before, .area-customize.calender .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.chart .hd h4:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .area-editor.error-info .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-form.page-form .hd h4:before, .area-form.submit .hd h4:before, .simple-text.countdown .hd h4:before, .simple-text.weather .hd h4:before, .list-text.anchor .hd h4:before, .list-text.slider .hd h4:before, .area-form.epaper .hd h4:before, .area-form.link .hd h4:before, .group-list.link > .bg-drop-layout > .in > .hd h3:before, .group-list.link > .in > .hd h3:before, .list-pic.link .hd h4:before, .area-essay.link .hd h4:before, .area-figure.link .hd h4:before, .area-customize.map .hd h4:before, .area-customize.audio .hd h4:before, .area-customize.iframe .hd h4:before, .area-customize.video .hd h4:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .list-text.message .hd h4:before, .area-essay.message .hd h4:before, .area-form.page-search.is-active .hd h4:before, .area-form.page-search .hd h4:before, .group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-pic.page-list .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .list-text.rss .hd h4:before, .area-form.sign-in .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .area-form.vote .hd h4:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -485,12 +475,12 @@
 }
 
 /* line 519, ../sass/_base-icon-font.scss */
-.list-text.open-data .hd a:before, .list-text.user-tool .hd a:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap .hd h4:before {
+.list-text.open-data .hd a:before, .list-text.user-tool .hd a:before, .area-form.page-search .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap .hd h4:before {
   content: "\e201";
 }
 
 /* line 525, ../sass/_base-icon-font.scss */
-.list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before {
+.list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .area-form.page-search.is-active .hd h4:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before {
   content: "\e203";
 }
 
@@ -540,18 +530,13 @@
 }
 
 /* line 792, ../sass/_base-icon-font.scss */
-.simple-text.default .hd h4:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before {
+.simple-text.default .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before {
   content: "\e2aa";
 }
 
 /* line 813, ../sass/_base-icon-font.scss */
 .list-text.user-tool .ct li.print a:before {
   content: "\e2c1";
-}
-
-/* line 831, ../sass/_base-icon-font.scss */
-.area-form.page-search .hd h4:before {
-  content: "\e2ca";
 }
 
 /* line 846, ../sass/_base-icon-font.scss */
@@ -564,8 +549,13 @@
   content: "\e2f1";
 }
 
+/* line 906, ../sass/_base-icon-font.scss */
+.group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before {
+  content: "\e301";
+}
+
 /* line 909, ../sass/_base-icon-font.scss */
-.group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before {
+.group-list.classify > .bg-drop-layout > .in > .hd h3:before, .group-list.classify > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before {
   content: "\e302";
 }
 
@@ -2657,7 +2647,7 @@ th {
 /* line 112, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 /* line 112, ../sass/_base-function.scss */
 .base-header .group-list.nav > .in > .ct > .in > ul > li {
@@ -3772,38 +3762,42 @@ th {
     display: none;
   }
 }
-/* line 24, ../sass/_list-text_open-data.scss */
+/* line 22, ../sass/_list-text_open-data.scss */
+.list-text.open-data.is-active > .bg-drop-layout > .in .hd a, .list-text.open-data.is-active > .in .hd a {
+  background-color: #f0f0f0;
+}
+/* line 25, ../sass/_list-text_open-data.scss */
 .list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 30, ../sass/_list-text_open-data.scss */
+/* line 31, ../sass/_list-text_open-data.scss */
 .list-text.open-data.is-active > .bg-drop-layout > .in .ct, .list-text.open-data.is-active > .in .ct {
   display: block;
 }
-/* line 49, ../sass/_list-text_open-data.scss */
+/* line 51, ../sass/_list-text_open-data.scss */
 .list-text.open-data .hd span {
-  display: inline-block;
+  display: block;
 }
-/* line 53, ../sass/_list-text_open-data.scss */
+/* line 55, ../sass/_list-text_open-data.scss */
 .list-text.open-data .hd a {
   display: block;
   padding: 5px;
 }
-/* line 57, ../sass/_list-text_open-data.scss */
+/* line 59, ../sass/_list-text_open-data.scss */
 .list-text.open-data .hd a:before {
   font-size: inherit;
   color: inherit;
   margin-right: 3px;
 }
-/* line 64, ../sass/_list-text_open-data.scss */
+/* line 66, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct {
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
   min-width: 120px;
-  z-index: 1;
+  z-index: 2;
   /*i*/
 }
 /* line 50, ../sass/_base-function.scss */
@@ -3814,25 +3808,25 @@ th {
   right: auto;
   min-width: 0;
 }
-/* line 84, ../sass/_list-text_open-data.scss */
+/* line 86, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct ul {
   background-color: #f0f0f0;
   padding: 5px;
 }
-/* line 91, ../sass/_list-text_open-data.scss */
+/* line 93, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct li + li {
   margin-top: 3px;
 }
-/* line 126, ../sass/_list-text_open-data.scss */
+/* line 128, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct span {
   display: block;
 }
-/* line 130, ../sass/_list-text_open-data.scss */
+/* line 132, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct a {
   display: block;
   text-align: left;
 }
-/* line 135, ../sass/_list-text_open-data.scss */
+/* line 137, ../sass/_list-text_open-data.scss */
 .list-text.open-data .ct a:before {
   font-size: inherit;
   color: inherit;
@@ -3853,38 +3847,42 @@ th {
     display: none;
   }
 }
-/* line 24, ../sass/_list-text_user-tool.scss */
+/* line 22, ../sass/_list-text_user-tool.scss */
+.list-text.user-tool.is-active > .bg-drop-layout > .in .hd a, .list-text.user-tool.is-active > .in .hd a {
+  background-color: #f0f0f0;
+}
+/* line 25, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 30, ../sass/_list-text_user-tool.scss */
+/* line 31, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool.is-active > .bg-drop-layout > .in .ct, .list-text.user-tool.is-active > .in .ct {
   display: block;
 }
-/* line 49, ../sass/_list-text_user-tool.scss */
+/* line 50, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .hd span {
-  display: inline-block;
+  display: block;
 }
-/* line 53, ../sass/_list-text_user-tool.scss */
+/* line 54, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .hd a {
   display: block;
   padding: 5px;
 }
-/* line 57, ../sass/_list-text_user-tool.scss */
+/* line 58, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .hd a:before {
   font-size: inherit;
   color: inherit;
   margin-right: 3px;
 }
-/* line 64, ../sass/_list-text_user-tool.scss */
+/* line 65, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct {
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
   min-width: 120px;
-  z-index: 1;
+  z-index: 2;
   /*i*/
 }
 /* line 50, ../sass/_base-function.scss */
@@ -3895,70 +3893,70 @@ th {
   right: auto;
   min-width: 0;
 }
-/* line 84, ../sass/_list-text_user-tool.scss */
+/* line 85, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct ul {
   background-color: #f0f0f0;
   padding: 5px;
 }
-/* line 91, ../sass/_list-text_user-tool.scss */
+/* line 92, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li + li {
   margin-top: 3px;
 }
-/* line 99, ../sass/_list-text_user-tool.scss */
+/* line 100, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.login a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 109, ../sass/_list-text_user-tool.scss */
+/* line 110, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.logout a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 119, ../sass/_list-text_user-tool.scss */
+/* line 120, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.bopomofo a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 129, ../sass/_list-text_user-tool.scss */
+/* line 130, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.edit a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 139, ../sass/_list-text_user-tool.scss */
+/* line 140, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.print a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 149, ../sass/_list-text_user-tool.scss */
+/* line 150, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.data a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 159, ../sass/_list-text_user-tool.scss */
+/* line 160, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.nav-edit a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 169, ../sass/_list-text_user-tool.scss */
+/* line 170, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.index-edit a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 179, ../sass/_list-text_user-tool.scss */
+/* line 180, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct li.article-edit a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 186, ../sass/_list-text_user-tool.scss */
+/* line 187, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct span {
   display: block;
 }
-/* line 190, ../sass/_list-text_user-tool.scss */
+/* line 191, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct a {
   display: block;
   text-align: left;
 }
-/* line 195, ../sass/_list-text_user-tool.scss */
+/* line 196, ../sass/_list-text_user-tool.scss */
 .list-text.user-tool .ct a:before {
   margin-right: 3px;
 }
@@ -8706,61 +8704,59 @@ th {
   margin-right: 5px;
 }
 
-/* line 9, ../sass/_area-form_page-search.scss */
+/* line 13, ../sass/_area-form_page-search.scss */
+.area-form.page-search.is-active .hd h4:before {
+  font-size: inherit;
+  color: inherit;
+}
+/* line 19, ../sass/_area-form_page-search.scss */
 .area-form.page-search.is-active .ct {
   display: block;
 }
-/* line 25, ../sass/_area-form_page-search.scss */
-.area-form.page-search.is-active .ft li.more a:before {
-  content: 'close';
-}
-/* line 47, ../sass/_area-form_page-search.scss */
+/* line 37, ../sass/_area-form_page-search.scss */
 .area-form.page-search .hd h4:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 61, ../sass/_area-form_page-search.scss */
+/* line 51, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct {
+  display: none;
   background-color: #f0f0f0;
   padding: 5px;
 }
-/* line 71, ../sass/_area-form_page-search.scss */
+/* line 62, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset {
   display: inline-block;
   margin: 5px;
 }
-/* line 75, ../sass/_area-form_page-search.scss */
+/* line 66, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 79, ../sass/_area-form_page-search.scss */
+/* line 70, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset span:before {
   content: attr(data-before);
 }
-/* line 83, ../sass/_area-form_page-search.scss */
+/* line 74, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset span:after {
   content: attr(data-after);
 }
-/* line 108, ../sass/_area-form_page-search.scss */
+/* line 99, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset select {
   line-height: 30px;
   height: 30px;
   max-width: 120px;
 }
-/* line 120, ../sass/_area-form_page-search.scss */
+/* line 111, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset input[type="search"] {
   line-height: 30px;
   height: 30px;
 }
-/* line 125, ../sass/_area-form_page-search.scss */
+/* line 116, ../sass/_area-form_page-search.scss */
 .area-form.page-search .ct .fieldset input[type="date"] {
   line-height: 30px;
   height: 30px;
-}
-/* line 166, ../sass/_area-form_page-search.scss */
-.area-form.page-search .ft li.more a:before {
-  content: 'open';
 }
 
 /* line 18, ../sass/_group-list_classify.scss */
@@ -8898,42 +8894,41 @@ th {
   margin-right: 3px;
 }
 
-/* line 112, ../sass/_base-function.scss */
-.group-list.page-block > .in > .ct > .in > ul > li {
-  width: 33.3333333333%;
+/* line 18, ../sass/_group-list_page-block.scss */
+.group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before {
+  font-size: inherit;
+  color: inherit;
+}
+/* line 42, ../sass/_group-list_page-block.scss */
+.group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.page-block > .in > .ct > .in > ul > li {
   float: left;
+  width: 33.3333333333%;
+  box-sizing: border-box;
+  padding: 0 3px 5px;
 }
-/* line 121, ../sass/_base-function.scss */
-.group-list.page-block > .in > .ct > .in > ul[data-child="4"] > li {
-  width: 25%;
-}
-/* line 121, ../sass/_base-function.scss */
-.group-list.page-block > .in > .ct > .in > ul[data-child="5"] > li {
-  width: 20%;
-}
-/* line 121, ../sass/_base-function.scss */
-.group-list.page-block > .in > .ct > .in > ul[data-child="6"] > li {
-  width: 16.6666666667%;
+/* line 50, ../sass/_group-list_page-block.scss */
+.group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(3n+1), .group-list.page-block > .in > .ct > .in > ul > li:nth-child(3n+1) {
+  clear: left;
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 43, ../sass/_group-list_page-block.scss */
+  /* line 42, ../sass/_group-list_page-block.scss */
   .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.page-block > .in > .ct > .in > ul > li {
-    width: 50% !important;
+    width: 50%;
+  }
+  /* line 59, ../sass/_group-list_page-block.scss */
+  .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(2n+1), .group-list.page-block > .in > .ct > .in > ul > li:nth-child(2n+1) {
+    clear: left;
   }
 }
 @media (max-width: 560px) {
-  /* line 43, ../sass/_group-list_page-block.scss */
+  /* line 42, ../sass/_group-list_page-block.scss */
   .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li, .group-list.page-block > .in > .ct > .in > ul > li {
-    width: 100% !important;
+    width: 100%;
   }
-}
-/* line 57, ../sass/_group-list_page-block.scss */
-.group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-list.page-block > .in > .ct > .in > ul > li > [data-index][data-type] {
-  padding: 3px;
-}
-/* line 62, ../sass/_group-list_page-block.scss */
-.group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.page-block > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
-  display: none;
+  /* line 69, ../sass/_group-list_page-block.scss */
+  .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(1n+1), .group-list.page-block > .in > .ct > .in > ul > li:nth-child(1n+1) {
+    clear: left;
+  }
 }
 
 /* line 18, ../sass/_group-list_page-list.scss */
@@ -9109,34 +9104,6 @@ th {
 /* line 125, ../sass/_list-pic_page-block.scss */
 .list-pic.page-block .ft li.more {
   display: none;
-}
-/* line 129, ../sass/_list-pic_page-block.scss */
-.list-pic.page-block .ft li.is-img {
-  display: inline-block;
-  margin: 5px 3px;
-  vertical-align: middle;
-  border: 1px solid #e4e4e4;
-}
-@media (max-width: 768px) {
-  /* line 129, ../sass/_list-pic_page-block.scss */
-  .list-pic.page-block .ft li.is-img {
-    display: none;
-  }
-}
-/* line 139, ../sass/_list-pic_page-block.scss */
-.list-pic.page-block .ft li.is-img.is-active {
-  border-color: #fa7076;
-}
-/* line 144, ../sass/_list-pic_page-block.scss */
-.list-pic.page-block .ft li.is-img.is-active a:before {
-  opacity: 0;
-}
-/* line 150, ../sass/_list-pic_page-block.scss */
-.list-pic.page-block .ft li.is-img span {
-  display: block;
-  position: relative;
-  width: 42px;
-  height: 42px;
 }
 
 /* line 9, ../sass/_group-list_query.scss */
@@ -9882,34 +9849,6 @@ th {
 /* line 125, ../sass/_list-pic_slider.scss */
 .list-pic.slider .ft li.more {
   display: none;
-}
-/* line 129, ../sass/_list-pic_slider.scss */
-.list-pic.slider .ft li.is-img {
-  display: inline-block;
-  margin: 5px 3px;
-  vertical-align: middle;
-  border: 1px solid #e4e4e4;
-}
-@media (max-width: 768px) {
-  /* line 129, ../sass/_list-pic_slider.scss */
-  .list-pic.slider .ft li.is-img {
-    display: none;
-  }
-}
-/* line 139, ../sass/_list-pic_slider.scss */
-.list-pic.slider .ft li.is-img.is-active {
-  border-color: #fa7076;
-}
-/* line 144, ../sass/_list-pic_slider.scss */
-.list-pic.slider .ft li.is-img.is-active a:before {
-  opacity: 0;
-}
-/* line 150, ../sass/_list-pic_slider.scss */
-.list-pic.slider .ft li.is-img span {
-  display: block;
-  position: relative;
-  width: 42px;
-  height: 42px;
 }
 
 /* line 15, ../sass/_list-pic_marquee.scss */

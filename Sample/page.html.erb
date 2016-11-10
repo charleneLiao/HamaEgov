@@ -9,7 +9,7 @@
 <!-- //搜尋================================================================ -->
 
 	<!-- page-search 內頁搜尋 -->
-		<%= render partial: "/erb/area-form_page-search", locals: set({ func_set: "{'reset':{}}" }) %>
+		<%= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋",func_set: "{'reset':{},'toggleBtn':{}}" }) %>
 	<!-- page-search 結束 -->
 
 <!-- //分類區塊================================================================ -->
@@ -49,12 +49,4 @@
 
 	<!-- page-list 內頁列表群組 -->
 		<%= render partial: "/erb/group-list_page-list", locals: set({ header_text: "內頁列表群組", inner: "/erb/area-figure_page-img-figcaption-p" }) %>
-	<!-- page-list 結束 -->
-
-	<!-- page-block 內頁區塊群組 -->
-		<%= render partial: "/erb/group-list_page-block", locals: set({ header_text: "內頁區塊群組", inner: "/erb/area-essay_page-caption-label-p" }) %>
-	<!-- page-essay 結束 -->
-
-	<!-- page-list 內頁列表群組 -->
-		<%= render partial: "/erb/group-list_page-list", locals: set({ header_text: "內頁列表群組", inner: "/erb/area-essay_page-essay" }) %>
 	<!-- page-list 結束 -->

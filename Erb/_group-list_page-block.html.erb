@@ -1,6 +1,6 @@
 <%
-	min_li = 2 #最少的li數量
-	max_li = 4 #最多的li數量
+	min_li = 5 #最少的li數量
+	max_li = 20 #最多的li數量
 
 	li_length = (min_li..max_li).to_a.sample
 %>
@@ -18,7 +18,7 @@
 				<li data-index="<%= i + 1 %>">
 
 				<!-- <%= inner %> -->
-					<%= render partial:  inner, locals: set({ index: 1, header_text: (zh_lorem_words rand(5)+1), inner_len: 2 }) %>
+					<%= render partial:  inner, locals: set({ }) %>
 				<!-- <%= inner %> -->
 				
 				</li>

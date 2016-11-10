@@ -6,28 +6,18 @@
 
 	&.is-active {
 
-		.ct {
-			display: block;
-		}
+		.hd {
 
-		.ft {
+			h4 {
 
-			li {
-
-				&.more {
-
-					span {
-
-					}
-
-					a {
-
-						&:before {
-							content: 'close';
-						}
-					}
+				&:before {
+					@include icon-font('arrow_drop_up');
 				}
 			}
+		}
+
+		.ct {
+			display: block;
 		}
 	}
 
@@ -45,7 +35,7 @@
 		h4 {
 
 			&:before {
-				@include icon-font('search');
+				@include icon-font('arrow_drop_down');
 			}
 		}
 
@@ -61,6 +51,7 @@
 	.ct {
 		$height: 30px;
 
+		display: none;
 		background-color: $light;
 		padding: $interval-s;
 
@@ -151,23 +142,6 @@
 
 		li {
 
-			&.advanced {
-				
-			}
-
-			&.more {
-
-				span {
-
-				}
-
-				a {
-
-					&:before {
-						content: 'open';
-					}
-				}
-			}
 		}
 
 		span {

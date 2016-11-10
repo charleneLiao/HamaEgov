@@ -3,10 +3,6 @@
 //內頁區塊群組================================================================
 
 .group-list.page-block {
-	$default-len: 3;
-	$max-len: 6;
-
-	@include default-min-len(4, $default-len, $max-len);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -19,6 +15,9 @@
 
 			h3 {
 
+				&:before {
+					@include icon-font('view_module');
+				}
 			}
 
 			span {
@@ -41,27 +40,34 @@
 					}
 
 					> li {
+						$len: 3;
+
+						float: left;
+						width: ( 100% / $len );
+						box-sizing: border-box;
+						padding: 0 $interval-xs $interval-s;
+
+						&:nth-child(#{$len}n+1) {
+							clear: left;
+						}
 
 						@include media('pad') {
-							$li-len: 2;
+							$len: 2;
 
-							width: 100% / $li-len !important;
+							width: 100% / $len;
+
+							&:nth-child(#{$len}n+1) {
+								clear: left;
+							}
 						}
 
 						@include media('phone') {
-							$li-len: 1;
+							$len: 1;
 
-							width: 100% / $li-len !important;
-						}
+							width: 100% / $len;
 
-						> [data-index][data-type] {
-							padding: $interval-xs;
-
-							> .in {
-
-								> .hd {
-									display: none;
-								}
+							&:nth-child(#{$len}n+1) {
+								clear: left;
 							}
 						}
 					}

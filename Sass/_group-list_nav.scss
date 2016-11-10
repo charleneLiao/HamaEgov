@@ -115,7 +115,7 @@
 
 		@include default-min-len(4, $default-len, $max-len);
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 
 		@include js(false) {
 			padding-bottom: $interval-l;

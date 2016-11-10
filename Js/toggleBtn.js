@@ -5,8 +5,8 @@ define(['getNode'], function(getNode){
 		var $set = {
 				bindNode: 'hd',
 				toggleClass: 'is-active',
-				btnOrangeText: 'open',
-				btnActiveText: 'close',
+				btnOrangeText: null,
+				btnActiveText: null,
 				event: 'click', //jQuery 事件名稱
 				debug: false
 			}
@@ -25,16 +25,16 @@ define(['getNode'], function(getNode){
 			$btn = getNode.getFtItemBtn(env).find('a');
 		}
 
-		if( !$btn.text() ) { //如果沒有文字
+		if( !!$set.btnOrangeText ) { //如果沒有文字
 			$btn.text($set.btnOrangeText);
 		}
 
 		$btn.on(_eventNmae, function(){
 			$env.toggleClass($set.toggleClass);
 
-			if( $btn.text() === $set.btnOrangeText ) { //更改文字
+			if( $btn.text() === $set.btnOrangeText && !!$set.btnActiveText ) { //更改文字
 				$btn.text($set.btnActiveText);
-			}else if( $btn.text() === $set.btnActiveText ) {
+			}else if( $btn.text() === $set.btnActiveText && !!$set.btnOrangeText ) {
 				$btn.text($set.btnOrangeText);
 			}
 		});

@@ -20,6 +20,7 @@
 			.hd {
 
 				a {
+					background-color: $light;
 
 					&:before {
 						@include icon-font('arrow_drop_up');
@@ -44,10 +45,11 @@
 		}
 
 		h4 {
+
 		}
 
 		span {
-			display: inline-block;
+			display: block;
 		}
 
 		a {
@@ -67,7 +69,7 @@
 		top: 100%;
 		right: 0;
 		min-width: 120px;
-		z-index: 1;
+		z-index: 2;
 
 		@include js(false) {
 			display: block;
