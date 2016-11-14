@@ -140,11 +140,7 @@
 				a {
 
 					&:before {
-						@include icon-font('keyboard_arrow_up');
-					}
-
-					&:after {
-						content: 'open';
+						@include icon-font('arrow_drop_up');
 					}
 				}
 			}
@@ -194,12 +190,8 @@
 				@extend %btn;
 
 				&:before {
-					@include icon-font('keyboard_arrow_down');
+					@include icon-font('arrow_drop_down');
 					margin-right: $interval-xs;
-				}
-
-				&:after {
-					content: 'close';
 				}
 			}
 

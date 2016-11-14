@@ -1,5 +1,58 @@
 [
 	{
+		"BaseName": "base-mobile",
+		"Sub": [
+			{
+				"GroupType": "Module",
+				"Type": 0,
+				"ht": "",
+				"ct": "<span><a href=\"#\"></a></span>",
+				"ft": "",
+				"Class": "simple-text btn",
+				"func": "{'toggleBtn':{'bindNode':'.ct','targetNode':'.base-mobile','targetClass':'is-open'}}"
+			},
+			{
+				"GroupType": "Group",
+				"Type": 3,
+				"Class": "info",
+				"func": "",
+				"Sub": [
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "Search"
+					},
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "ShareBox"
+					},
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "Menu",
+						"func": "{'majorNavMobile':{}}"
+					}
+				]
+			}
+		]
+	},
+	{
+		"BaseName": "base-extend",
+		"Sub": [
+			{
+				"GroupType": "FixedModuleString",
+				"Name": "ShareBox"
+			},
+			{
+				"GroupType": "Module",
+				"Type": 0,
+				"ht": "",
+				"ct": "<span><a href=\"#\"></a></span>",
+				"ft": "",
+				"Class": "simple-text btn",
+				"func": "{'anchor':{}}"
+			}
+		]
+	},
+	{
 		"BaseName": "base-header",
 		"Sub": [
 			{
@@ -52,59 +105,6 @@
 		]
 	},
 	{
-		"BaseName": "base-extend",
-		"Sub": [
-			{
-				"GroupType": "FixedModuleString",
-				"Name": "ShareBox"
-			},
-			{
-				"GroupType": "Module",
-				"Type": 0,
-				"ht": "",
-				"ct": "<span><a href=\"#\"></a></span>",
-				"ft": "",
-				"Class": "simple-text btn",
-				"func": "{'anchor':{}}"
-			}
-		]
-	},
-	{
-		"BaseName": "base-mobile",
-		"Sub": [
-			{
-				"GroupType": "Module",
-				"Type": 0,
-				"ht": "",
-				"ct": "<span><a href=\"#\"></a></span>",
-				"ft": "",
-				"Class": "simple-text btn",
-				"func": "{'targetBtn':{ 'targetNode':'.base-mobile','targetClass':'is-open'}}"
-			},
-			{
-				"GroupType": "Group",
-				"Type": 3,
-				"Class": "info",
-				"func": "",
-				"Sub": [
-					{
-						"GroupType": "FixedModuleString",
-						"Name": "Search"
-					},
-					{
-						"GroupType": "FixedModuleString",
-						"Name": "ShareBox"
-					},
-					{
-						"GroupType": "FixedModuleString",
-						"Name": "Menu",
-						"func": "{'majorNavMobile':{}}"
-					}
-				]
-			}
-		]
-	},
-	{
 		"BaseName": "base-footer",
 		"Sub": [
 			{
@@ -118,7 +118,7 @@
 				"ct": "<span><a href=\"#\"></a></span>",
 				"ft": "",
 				"Class": "simple-text btn",
-				"func": "{'targetBtn':{ 'targetNode':'.base-footer .group-list.nav','targetClass':'is-close'}}"
+				"func": "{'toggleBtn':{'bindNode':'.ct','targetNode':'.base-footer .group-list.nav','targetClass':'is-close','btnOrangeText':'open','btnActiveText':'close'}}"
 			},
 			{
 				"GroupType": "FixedModuleString",

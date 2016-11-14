@@ -9,7 +9,7 @@
 <!-- //搜尋================================================================ -->
 
 	<!-- page-search 內頁搜尋 -->
-		<%= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋",func_set: "{'reset':{},'toggleBtn':{}}" }) %>
+		<%= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
 	<!-- page-search 結束 -->
 
 <!-- //分類區塊================================================================ -->
@@ -21,7 +21,7 @@
 <!-- //頁籤================================================================ -->
 
 	<!-- tab 頁籤 -->
-		<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤", :inner =>  "/erb/group-list_message" }) %>
+		<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤", inner: "/erb/group-list_message" }) %>
 	<!-- tab 結束 -->
 
 <!-- //按鈕================================================================ -->
