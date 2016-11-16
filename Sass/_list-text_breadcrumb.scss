@@ -42,7 +42,7 @@
 
 		li {
 			display: inline;
-			font-size: $font-size-xs;
+			font-size: $font-size-s;
 
 			&:before {
 				@include icon-font('home');

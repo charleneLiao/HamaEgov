@@ -333,6 +333,7 @@
 				display: block;
 				padding: $interval-xs;
 				transition: $transition;
+				font-size: $font-size-s;
 
 				&:hover {
 					background-color: $minor-color;

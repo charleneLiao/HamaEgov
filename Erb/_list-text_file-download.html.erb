@@ -1,8 +1,6 @@
 <%
 	min_li = 1 #最少的li數量
 	max_li = 10 #最多的li數量
-	min_text = 4 #最少的字元
-	max_text = 8 #最多的字元
 
 	li_length = (min_li..max_li).to_a.sample
 %>
@@ -20,7 +18,7 @@
 				<% li_length.times do |i| %>
 
 					<% file_type = $file_types[rand($file_types.length)] %>
-					<% text = zh_lorem_word %>
+					<% text = lorem_word %>
 
 					<li class="<%= file_type %>" data-index="<%= i + 1 %>"><span><a href="#" title="<%= text %>.<%= file_type %>"><%= text %></a></span></li>
 				<% end %>

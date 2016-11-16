@@ -17,6 +17,7 @@
 		h4 {
 			padding: $interval-m;
 			color: $white;
+			font-size: $font-size-l;
 
 			&:before {
 				@include icon-font('menu');

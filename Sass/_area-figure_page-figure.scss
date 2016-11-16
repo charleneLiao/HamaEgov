@@ -78,14 +78,11 @@
 		.label {
 
 			ul {
-				color: $gray;
-				font-size: $font-size-s;
+				
 			}
 
 			li {
-				@extend %ellipsis;
-				color: inherit;
-				font-size: inherit;
+
 			}
 
 			span {
@@ -94,7 +91,7 @@
 		}
 
 		/*i*/.mark {
-
+			@extend %mark;
 		}
 
 		.p {

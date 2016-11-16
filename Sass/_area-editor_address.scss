@@ -30,6 +30,7 @@
 
 	.ct {
 		@extend %article;
+		font-size: $font-size-s;
 
 		> .in {
 			

@@ -186,6 +186,7 @@
 					display: block;
 					padding: $interval-m;
 					transition: $transition;
+					font-size: $font-size-l;
 
 					&:before {
 						@include icon-font('keyboard_arrow_right');
@@ -270,7 +271,6 @@
 					margin-bottom: $interval-s;
 					border-bottom: $border;
 					text-align: center;
-					font-size: $font-size-l;
 					color: $body-font-color;
 				}
 			}
