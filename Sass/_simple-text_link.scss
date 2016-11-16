@@ -1,12 +1,8 @@
 //簡單文字
 
-//天氣================================================================
+//連結================================================================
 
-.simple-text.weather {
-
-	@include js(false) {
-		display: none;
-	}
+.simple-text.link {
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -22,7 +18,7 @@
 		h4 {
 
 			&:before {
-				@include icon-font('cloud_queue');
+				@include icon-font('public');
 			}
 		}
 
@@ -36,7 +32,6 @@
 	}
 
 	.ct {
-
 
 		> .in {
 			
