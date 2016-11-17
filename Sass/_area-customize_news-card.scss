@@ -9,7 +9,7 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
@@ -17,9 +17,6 @@
 
 		h4 {
 
-			&:before {
-				@include icon-font('today');
-			}
 		}
 
 		span {
@@ -38,58 +35,128 @@
 		}
 
 		ul {
+			@extend %reset;
 
+			&:after {
+				@extend %clear;
+			}
 		}
 
 		li {
+			$len: 4;
 
-			&.is-green {
+			float: left;
+			width: ( 100% / $len );
 
+			@include media('pad') {
+				$len: 2;
+
+				float: left;
+				width: ( 100% / $len );
 			}
 
-			&.is-red {
-				
-			}
-
-			&.is-orange {
-				
-			}
-
-			&.is-yellow {
-				
+			@include media('phone') {
+				float: none;
+				width: auto;
 			}
 		}
 
-		.essay {
+		/*a*/.div {
+			position: relative;
+			display: block;
+			padding-top: $interval-m;
+			margin: $interval-s;
+			border: $border;
+			height: 400px;
+			overflow: hidden;
 
+			@include media('phone') {
+				margin: 0;
+				border: 0;
+				border-top: $border;
+				padding-bottom: $interval-m;
+				height: auto;
+			}
+
+			&:before, &:after {
+				content: $content;
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: $interval-m;
+
+				@include media('phone') {
+					content: none;
+				}
+			}
+
+			&:before {
+				top: 0;
+				background-color: $major-color;
+			}
+
+			&:after {
+				bottom: 0;
+				background-color: $white;
+			}
+
+			&:hover {
+
+				.p {
+					text-decoration: underline;
+				}
+			}
 		}
 
 		.mark {
+			@extend %ellipsis;
+			margin: $interval-m;
 
+			@include media('phone') {
+				display: none;
+			}
 		}
 
 		.img {
+			margin: $interval-m 0;
+
+			@include media('phone') {
+				display: none;
+			}
 
 			span {
-
+				@extend %bg-cover;
+				display: block;
+				height: 210px;
+				background-color: $light;
 			}
 
 			img {
-
+				display: none;
 			}
 		}
 
 		.caption {
+			@extend %caption;
+			margin: $interval-m;
 
+			@include media('phone') {
+				margin: 0;
+				font-size: $font-size-xl;
+			}
 		}
 
 		.p {
+			margin: $interval-m;
 
+			@include media('phone') {
+				display: none;
+			}
 		}
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

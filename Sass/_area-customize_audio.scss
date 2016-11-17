@@ -9,17 +9,14 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:before {
-				@include icon-font('audiotrack');
-			}
+			
 		}
 
 		span {
@@ -119,7 +116,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

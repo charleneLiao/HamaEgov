@@ -18,12 +18,12 @@
 				<% img = lorem_image('60x60') %>
 
 				<li data-index="<%= i + 1 %>">
-					<div class="figure">
+					<a class="div" href="#">
 						<div class="img">
 							<span style="background-image: url('<%= img %>')"><img src="<%= img %>" alt=""></span>
 						</div>
 						<div class="caption"><%= lorem_word %></div>
-					</div>
+					</a>
 				</li>
 			<% end %>
 		</ul>

@@ -7,7 +7,7 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			@extend %title;
+			@extend %header;
 
 			> .in {
 
@@ -40,7 +40,7 @@
 		}
 
 		> .ft {
-			@extend %footer-btns;
+			@extend %footer;
 
 			> .in {
 

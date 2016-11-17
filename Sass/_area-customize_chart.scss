@@ -13,17 +13,14 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:before {
-				@include icon-font('insert_chart');
-			}
+			
 		}
 
 		span {
@@ -47,7 +44,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

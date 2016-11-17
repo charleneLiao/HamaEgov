@@ -9,17 +9,14 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:before {
-				@include icon-font('message');
-			}
+			
 		}
 
 		span {
@@ -64,7 +61,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

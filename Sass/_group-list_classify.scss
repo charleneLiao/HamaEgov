@@ -7,17 +7,14 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			@extend %title;
+			@extend %header;
 
 			> .in {
 
 			}
 
 			h3 {
-
-				&:before {
-					@include icon-font('view_module');
-				}
+				
 			}
 
 			span {

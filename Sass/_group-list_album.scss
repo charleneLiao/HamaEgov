@@ -11,18 +11,14 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			@extend %title;
+			@extend %header;
 
 			> .in {
 
 			}
 
 			h3 {
-				@extend %title;
-
-				&:before {
-					@include icon-font('camera');
-				}
+				
 			}
 
 			span {
@@ -62,7 +58,7 @@
 		}
 
 		> .ft {
-			@extend %footer-btns;
+			@extend %footer;
 
 			> .in {
 

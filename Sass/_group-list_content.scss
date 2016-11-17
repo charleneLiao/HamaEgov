@@ -11,17 +11,14 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			@extend %title;
+			@extend %header;
 
 			> .in {
 
 			}
 
 			h3 {
-
-				&:before {
-					@include icon-font('format_list_numbered');
-				}
+				
 			}
 
 			span {

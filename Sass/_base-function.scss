@@ -643,7 +643,7 @@
 		}
 	}
 
-	%title { //模組、內頁 title
+	%header { //模組、內頁 title
 
 		> .in {
 
@@ -810,7 +810,7 @@
 		background-color: $light;
 	}
 
-	%footer-btns { //footer 按鈕
+	%footer { //footer 按鈕
 		position: absolute;
 		top: $interval-xs;
 		right: 0;

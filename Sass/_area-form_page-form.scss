@@ -9,7 +9,7 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
@@ -17,9 +17,6 @@
 
 		h4 {
 
-			&:before {
-				@include icon-font('view_comfortable');
-			}
 		}
 
 		span {
@@ -257,7 +254,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

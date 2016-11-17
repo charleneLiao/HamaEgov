@@ -9,17 +9,14 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:before {
-				@include icon-font('view_compact');
-			}
+			
 		}
 
 		span {
@@ -111,7 +108,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

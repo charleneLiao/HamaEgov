@@ -9,7 +9,7 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
@@ -29,33 +29,65 @@
 	}
 
 	.ct {
+		padding: $interval-l $interval-xl;
+		background-color: $light;
 
 		> .in {
 
 		}
 
-		.figure {
+		ul {
+			@extend %reset;
+			text-align: center;
+		}
 
+		li {
+			display: inline-block;
+			width: 110px;
+		}
+
+		/*a*/.div {
+			display: block;
+			padding: $interval-m;
+
+			&:hover {
+
+				.img {
+
+					span {
+						box-shadow: 0 0 0 3px $major-color;
+					}
+				}
+			}
 		}
 
 		.img {
+			margin-bottom: $interval-s;
 
 			span {
-
+				@extend %bg-contain;
+				display: block;
+				height: 60px;
+				width: 60px;
+				margin: 0 auto;
+				border-radius: 50%;
+				background-color: $white;
+				transition: $transition;
 			}
 
 			img {
-
+				display: none;
 			}
 		}
 
 		.caption {
-
+			margin: $interval-s 0;
+			text-align: center;
 		}
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 

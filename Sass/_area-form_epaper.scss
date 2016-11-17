@@ -13,17 +13,14 @@
 	}
 
 	.hd {
-		@extend %title;
+		@extend %header;
 
 		> .in {
 
 		}
 
 		h4 {
-
-			&:before {
-				@include icon-font('email');
-			}
+			
 		}
 
 		span {
@@ -82,7 +79,7 @@
 	}
 
 	.ft {
-		@extend %footer-btns;
+		@extend %footer;
 
 		> .in {
 
