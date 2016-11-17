@@ -1,0 +1,80 @@
+//客製區塊
+
+//圖示群組(台中市府 - hyc)================================================================
+
+.area-customize.icons-g2 {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		.figure {
+
+		}
+
+		.img {
+
+			span {
+
+			}
+
+			img {
+
+			}
+		}
+
+		.caption {
+
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

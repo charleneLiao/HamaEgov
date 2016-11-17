@@ -79,9 +79,6 @@ define(['getNode'], function(getNode){
 			var $node = $content_li.eq(_index);
 
 			$node.fadeIn($set.speed).siblings().hide(); //show 出物件並把其他隱藏
-
-			$dots.removeClass($set.activeClass);
-			$env.find('.slider-item'+ (_index + 1)).addClass($set.activeClass);
 		}
 
 		if ($set.auto) { //如果要輪播

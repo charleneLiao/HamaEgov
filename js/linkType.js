@@ -12,7 +12,7 @@ define(function(){
 
 		var $this = $(env),
 			$a = $this.find('a').filter(function(i){ //沒有圖片的 a
-				return !($(this).find('img').length)
+				return !($(this).find('*').length)
 			});
 
 		var $domains = $set.domains;

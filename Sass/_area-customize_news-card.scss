@@ -1,0 +1,114 @@
+//客製區塊
+
+//消息卡片(台中市府 - hyc)================================================================
+
+.area-customize.news-card {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		@extend %title;
+
+		> .in {
+
+		}
+
+		h4 {
+
+			&:before {
+				@include icon-font('today');
+			}
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+			&.is-green {
+
+			}
+
+			&.is-red {
+				
+			}
+
+			&.is-orange {
+				
+			}
+
+			&.is-yellow {
+				
+			}
+		}
+
+		.essay {
+
+		}
+
+		.mark {
+
+		}
+
+		.img {
+
+			span {
+
+			}
+
+			img {
+
+			}
+		}
+
+		.caption {
+
+		}
+
+		.p {
+
+		}
+	}
+
+	.ft {
+		@extend %footer-btns;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}
