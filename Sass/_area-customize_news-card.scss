@@ -59,6 +59,46 @@
 				float: none;
 				width: auto;
 			}
+
+			&:nth-child(4n+1) {
+				
+				.div {
+
+					&:before {
+						background-color: #619100;
+					}
+				}
+			}
+
+			&:nth-child(4n+2) {
+				
+				.div {
+
+					&:before {
+						background-color: #ce0013;
+					}
+				}
+			}
+
+			&:nth-child(4n+3) {
+				
+				.div {
+
+					&:before {
+						background-color: #e27b00;
+					}
+				}
+			}
+
+			&:nth-child(4n) {
+				
+				.div {
+
+					&:before {
+						background-color: #e0c800;
+					}
+				}
+			}
 		}
 
 		/*a*/.div {

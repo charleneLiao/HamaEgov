@@ -4569,7 +4569,23 @@ th {
     width: auto;
   }
 }
-/* line 64, ../sass/_area-customize_news-card.scss */
+/* line 67, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct li:nth-child(4n+1) .div:before {
+  background-color: #619100;
+}
+/* line 77, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct li:nth-child(4n+2) .div:before {
+  background-color: #ce0013;
+}
+/* line 87, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct li:nth-child(4n+3) .div:before {
+  background-color: #e27b00;
+}
+/* line 97, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct li:nth-child(4n) .div:before {
+  background-color: #e0c800;
+}
+/* line 104, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div {
   position: relative;
   display: block;
@@ -4580,7 +4596,7 @@ th {
   overflow: hidden;
 }
 @media (max-width: 560px) {
-  /* line 64, ../sass/_area-customize_news-card.scss */
+  /* line 104, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .div {
     margin: 0;
     border: 0;
@@ -4589,7 +4605,7 @@ th {
     height: auto;
   }
 }
-/* line 81, ../sass/_area-customize_news-card.scss */
+/* line 121, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:before, .area-customize.news-card .ct .div:after {
   content: "​";
   position: absolute;
@@ -4598,72 +4614,72 @@ th {
   height: 8px;
 }
 @media (max-width: 560px) {
-  /* line 81, ../sass/_area-customize_news-card.scss */
+  /* line 121, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .div:before, .area-customize.news-card .ct .div:after {
     content: none;
   }
 }
-/* line 93, ../sass/_area-customize_news-card.scss */
+/* line 133, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:before {
   top: 0;
   background-color: #058f89;
 }
-/* line 98, ../sass/_area-customize_news-card.scss */
+/* line 138, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:after {
   bottom: 0;
   background-color: #ffffff;
 }
-/* line 105, ../sass/_area-customize_news-card.scss */
+/* line 145, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:hover .p {
   text-decoration: underline;
 }
-/* line 111, ../sass/_area-customize_news-card.scss */
+/* line 151, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .mark {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 111, ../sass/_area-customize_news-card.scss */
+  /* line 151, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .mark {
     display: none;
   }
 }
-/* line 120, ../sass/_area-customize_news-card.scss */
+/* line 160, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img {
   margin: 8px 0;
 }
 @media (max-width: 560px) {
-  /* line 120, ../sass/_area-customize_news-card.scss */
+  /* line 160, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .img {
     display: none;
   }
 }
-/* line 127, ../sass/_area-customize_news-card.scss */
+/* line 167, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img span {
   display: block;
   height: 210px;
   background-color: #f0f0f0;
 }
-/* line 134, ../sass/_area-customize_news-card.scss */
+/* line 174, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img img {
   display: none;
 }
-/* line 139, ../sass/_area-customize_news-card.scss */
+/* line 179, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .caption {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 139, ../sass/_area-customize_news-card.scss */
+  /* line 179, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .caption {
     margin: 0;
     font-size: 1.4em;
   }
 }
-/* line 149, ../sass/_area-customize_news-card.scss */
+/* line 189, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .p {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 149, ../sass/_area-customize_news-card.scss */
+  /* line 189, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .p {
     display: none;
   }
