@@ -5,7 +5,7 @@
 .list-text.classify-multiple {
 	$active-color: $minor-color;
 
-	padding: $interval-s;
+	padding: $interval-xs;
 	border: $border;
 
 	&.is-active {
@@ -70,6 +70,7 @@
 
 		li {
 			display: inline-block;
+			margin: $interval-xs;
 			vertical-align: middle;
 
 			&.is-active {

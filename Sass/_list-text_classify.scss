@@ -42,6 +42,8 @@
 
 		li {
 			display: inline-block;
+			vertical-align: middle;
+			margin: $interval-xs;
 
 			&.is-active {
 

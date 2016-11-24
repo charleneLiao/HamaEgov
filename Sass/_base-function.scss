@@ -470,15 +470,6 @@
 		}
 	}
 
-	@mixin len($key, $len: 1, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
-		width: $int / $len;
-		float: left;
-
-		&:nth-child(#{$len}n+1) {
-			clear: left
-		}
-	}
-
 	@mixin len-rwd($key, $len: 1, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
 
 		@if( $rwd == true ) {

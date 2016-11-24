@@ -73,6 +73,7 @@
 	}
 
 	.base-page-area & {
+		@include default-len(4, 4);
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -106,7 +107,6 @@
 							box-sizing: border-box;
 							padding: $interval-xs;
 
-							@include len(4);
 							@include len-rwd('pad', 2);
 							@include len-rwd('phone', 1);
 						}

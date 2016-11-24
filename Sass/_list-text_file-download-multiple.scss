@@ -15,6 +15,7 @@
 
 	.hd {
 		display: inline-block;
+		vertical-align: middle;
 
 		@include media('phone') {
 			display: block;
@@ -43,6 +44,7 @@
 	.ct {
 		display: inline-block;
 		margin-left: $interval-m;
+		vertical-align: middle;
 
 		@include media('phone') {
 			display: block;

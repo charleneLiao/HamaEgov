@@ -187,13 +187,15 @@
 
 
 
-<div class="group" data-index="4" data-type="<%= $cell %>" data-child="1"><div class="in">
+<div class="group" data-index="4" data-type="<%= $row %>" data-child="1"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">線上投票</a></span></h3>
 	</div></div>
 	<div class="ct"><div class="in">
 
-	
+	<!-- vote 投票 -->
+		<%= render partial: "/erb/area-form_vote", locals: set({ func_set: "{'reset':{}}", header_text: "標題+票選期間+選項" }) %>
+	<!-- vote 結束 -->
 
 	</div></div>
 </div></div>

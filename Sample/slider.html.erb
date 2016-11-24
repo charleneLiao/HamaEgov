@@ -1,5 +1,9 @@
 <%= render partial: "/erb/sys_variable" %>
 
+<!-- major-slider 主輪播 -->
+	<%= render partial: "/erb/group-list_major-slider", locals: set({ index: 1, func_set: "{'picSlider':{'auto':false,'delay':5000,'speed':300,'sliderType':4}}", header_text: "主輪播" }) %>
+<!-- slider 結束 -->
+
 <!-- slider 輪播 -->
 	<%= render partial: "/erb/group-list_slider", locals: set({ func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}", header_text: "輪播(物件)" }) %>
 <!-- slider 結束 -->
