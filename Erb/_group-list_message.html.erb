@@ -1,8 +1,7 @@
 <%
-	min_li = 2 #最少的li數量
-	max_li = 3 #最多的li數量
-
-	li_length = (min_li..max_li).to_a.sample
+	essay_length = (2..4).to_a.sample
+	text_length = (3..5).to_a.sample
+	li_length = essay_length + text_length
 %>
 
 <div class="group-list message <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
@@ -14,21 +13,25 @@
 	<div class="ct"><div class="in">
 		<ul data-index="1" data-child="<%= li_length %>">
 
-			<% li_length.times do |i| %>
+			<% essay_length.times do |i| %>
 				<li data-index="<%= i + 1 %>">
 
-				<!-- <%= inner %> -->
-					<%= render partial:  inner, locals: set({}) %>
-				<!-- <%= inner %> -->
+				<!-- message 訊息 -->
+					<%= render partial: "/erb/area-essay_message", locals: set({ }) %>
+				<!-- message 結束 -->
 				
 				</li>
 			<% end %>
-		</ul>
-	</div></div>
-	<div class="ft"><div class="in">
-		<ul data-index="1" data-child="2">
-			<li data-index="1" class="rss"><span><a href="#">RSS</a></span></li>
-			<li data-index="2" class="more"><span><a href="#">更多</a></span></li>
+
+			<% text_length.times do |i| %>
+				<li data-index="<%= i + essay_length + 1 %>">
+
+				<!-- message 訊息 -->
+					<%= render partial: "/erb/simple-text_message", locals: set({ }) %>
+				<!-- message 結束 -->
+				
+				</li>
+			<% end %>
 		</ul>
 	</div></div>
 </div></div>

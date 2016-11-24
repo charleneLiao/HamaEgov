@@ -43,8 +43,8 @@
 		}
 
 		li {
-			@include set-len-rwd('pad', 3);
-			@include set-len-rwd('phone', 1);
+			@include len-rwd('pad', 3);
+			@include len-rwd('phone', 1);
 
 			&.is-img {
 				

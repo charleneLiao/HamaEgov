@@ -2581,7 +2581,7 @@ base/function 與 base/variable 將常用的變數與功能定義在一起，sys
     <td>手動設定單行數量，並且隱藏超過的</td>
   </tr>
   <tr>
-    <td>set-len-rwd($key, $len, $int)</td>
+    <td>len-rwd($key, $len, $int)</td>
     <td>$key：$media 物件中的 $key(字串), len：預設的項目數量(數字), int(可選)：被計算的基數(數字)</td>
     <td>手動設定 rwd 數量</td>
   </tr>
@@ -2883,7 +2883,7 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
       }
     }
 
-當我們使用這些方法時，就不能用一般的方法設定 li 的 rwd 的寬度，必須用到 @mixin set-len-rwd 方法：
+當我們使用這些方法時，就不能用一般的方法設定 li 的 rwd 的寬度，必須用到 @mixin len-rwd 方法：
 
     .link {
       @include default-len(0, 2);
@@ -2896,8 +2896,8 @@ SCSS 能夠自動將指定資料夾中的圖片彙整成大圖，並自動產生
         }
 
         li {
-          @include set-len-rwd('pad', 2);
-          @include set-len-rwd('phone', 1);
+          @include len-rwd('pad', 2);
+          @include len-rwd('phone', 1);
         }
       }
     }

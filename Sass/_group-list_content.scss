@@ -36,16 +36,8 @@
 
 				> ul {
 
-					&:after {
-						@extend %clear;
-					}
-
 					> li {
-						@include set-len-rwd('mobile', 1);
-
-						> [data-index][data-type] {
-							margin: $interval-xs !important;
-						}
+						@include len-rwd('mobile', 1);
 					}
 				}
 			}

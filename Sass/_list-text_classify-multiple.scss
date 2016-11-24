@@ -1,17 +1,43 @@
 //文字列表
 
-//分類================================================================
+//多重分類================================================================
 
-.list-text.classify {
+.list-text.classify-multiple {
 	$active-color: $minor-color;
 
-	@extend %area-page-no-header;
+	padding: $interval-s;
+	border: $border;
+
+	&.is-active {
+		background-color: $minor-color;
+
+		.hd {
+
+			a {
+				color: $white;
+			}
+		}
+
+		.ct {
+
+			a {
+				background-color: deeper($active-color);
+				color: $white;
+
+				&:hover {
+					background-color: deeper($active-color, 2);
+				}
+			}
+		}
+	}
 
 	> .bg-drop-layout > .in, > .in {
 
 	}
 
 	.hd {
+		display: inline-block;
+		vertical-align: middle;
 
 		> .in {
 
@@ -31,6 +57,8 @@
 	}
 
 	.ct {
+		display: inline-block;
+		vertical-align: middle;
 
 		> .in {
 			
@@ -42,6 +70,7 @@
 
 		li {
 			display: inline-block;
+			vertical-align: middle;
 
 			&.is-active {
 

@@ -47,8 +47,8 @@
 		ul {
 			width: $max-li-len * 100% / $show-li-len;
 
-			@include set-len-rwd('pad', 2, $max-li-len * 100%);
-			@include set-len-rwd('phone', 1, $max-li-len * 100%);
+			@include len-rwd('pad', 2, $max-li-len * 100%);
+			@include len-rwd('phone', 1, $max-li-len * 100%);
 
 			@include js(false) {
 				width: 100%;

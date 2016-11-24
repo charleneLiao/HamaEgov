@@ -61,7 +61,7 @@
 
 //數量與框架================================================================
 
-	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量
+	@mixin default-min-len($type, $default-len, $max-len: $max-child) { //設定預設的最小單行數量，更多時會平均分割。$default-len 為預設的數量，$type 為 data-type 參數，$max-len 為最大的分割數量，超過時會以預設數量往下新增
 
 		@if ( $type == 0 ) { // list 模組的狀況
 
@@ -165,7 +165,7 @@
 		}
 	}
 
-	@mixin default-len-hide($type, $len) { //設定預設的單行數量，並且隱藏超過的，$len 為預設的數量，$type 為 data-type 參數
+	@mixin default-len-hide($type, $len) { //設定預設的單行數量，更多時會隱藏，$len 為預設的數量，$type 為 data-type 參數
 		@include default-len($type, $len);
 
 		@if ( $type == 0 ) { // list 模組的狀況
@@ -235,6 +235,79 @@
 
 						&#{$li}{
 							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@mixin average($type, $default-len: 4, $max-len: $max-child) { //平均分割物件的數量，若超過 $max-child，則隱藏起來，$type 為 data-type 參數
+
+		@if ( $type == 0 ) { // list 模組的狀況
+
+			.ct {
+
+				li {
+					width: 100% / $default-len;
+					float: left;
+				}
+			}
+
+			@for $i from 1 through $max-child {
+
+				&[data-child="#{$i}"] { //自然分割
+
+					.ct {
+
+						li {
+							width: 100% / $i;
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 1 ) { // 分割 group 的狀況
+
+			> .in > .ct > .in {
+
+				> [data-index][data-type] {
+					width: 100% / $default-len;
+					float: left;
+				}
+			}
+
+			@for $i from 1 through $max-child {
+
+				&[data-child="#{$i}"] { //自然分割
+
+					> .in > .ct > .in {
+
+						> [data-index][data-type] {
+							width: 100% / $i;
+						}
+					}
+				}
+			}
+
+		}@else if( $type == 4 ) {
+
+			> .in > .ct > .in > ul {
+
+				> li {
+					width: 100% / $default-len;
+					float: left;
+				}
+			}
+
+			@for $i from 1 through $max-child {
+
+				&[data-child="#{$i}"] { //自然分割
+
+					> .in > .ct > .in > ul {
+
+						> li {
+							width: 100% / $i;
 						}
 					}
 				}
@@ -397,12 +470,26 @@
 		}
 	}
 
-	@mixin set-len-rwd($key, $len, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
+	@mixin len($key, $len: 1, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
+		width: $int / $len;
+		float: left;
+
+		&:nth-child(#{$len}n+1) {
+			clear: left
+		}
+	}
+
+	@mixin len-rwd($key, $len: 1, $int: 100%) { //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
 
 		@if( $rwd == true ) {
 
 			@media #{map-get( $media, $key )} {
 				width: $int / $len !important;
+				clear: none;
+
+				&:nth-child(#{$len}n+1) {
+					clear: left
+				}
 			}
 		}
 	}
@@ -812,7 +899,7 @@
 
 	%footer { //footer 按鈕
 		position: absolute;
-		top: $interval-xs;
+		top: $interval-l;
 		right: 0;
 
 		> .in {

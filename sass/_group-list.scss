@@ -32,14 +32,16 @@
 				> ul {
 					@extend %reset;
 
+					&:after {
+						@extend %clear;
+					}
+
 					> li {
 
-						> [data-index][data-type] { //模組
-							@extend %reset-outer;
+						> [data-type] {
 
 							> .bg-drop-layout > .in, > .in {
-								@extend %reset-outer;
-								position: relative;
+								margin: 0 !important;
 							}
 						}
 					}

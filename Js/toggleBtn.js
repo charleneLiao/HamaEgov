@@ -55,8 +55,6 @@ define(['getNode'], function(getNode){
 			$btn.text($set.btnOrangeText);
 		}
 
-		console.log($btn.text());
-
 		$btn.on(_eventNmae, function(){
 			$target.toggleClass($set.targetClass);
 			$env.toggleClass($set.toggleClass);

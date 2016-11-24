@@ -57,8 +57,8 @@
 				> ul {
 					width: $max-li-len * 100% / $show-li-len;
 
-					@include set-len-rwd('pad', 3, $max-li-len * 100%);
-					@include set-len-rwd('phone', 1, $max-li-len * 100%);
+					@include len-rwd('pad', 3, $max-li-len * 100%);
+					@include len-rwd('phone', 1, $max-li-len * 100%);
 
 					@include js(false) {
 						width: 100%;
@@ -77,20 +77,6 @@
 						@include js(false) {
 							display: block;
 							width: 100% / $show-li-len;
-						}
-
-						> [data-index][data-type] { //隱藏內置模組的 header 與 footer
-
-							> .in {
-
-								> .hd {
-									display: none;
-								}
-
-								> .ft {
-									display: none;
-								}
-							}
 						}
 					}
 				}

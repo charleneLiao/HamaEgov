@@ -35,6 +35,10 @@
 
 		ul {
 			@extend %reset;
+
+			&:after {
+				@extend %clear;
+			}
 		}
 
 		li {

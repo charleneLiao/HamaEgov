@@ -1,8 +1,8 @@
 //列表群組
 
-//網站地圖================================================================
+//多重分類================================================================
 
-.group-list.sitemap {
+.group-list.classify-multiple {
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -18,7 +18,7 @@
 			}
 
 			span {
-
+				
 			}
 
 			a {
@@ -27,24 +27,20 @@
 		}
 
 		> .ct {
-			padding: $interval-s 0 0 $interval-xl;
 
 			> .in {
 
 				> ul {
 
 					> li {
-
-						+ li {
-							margin-top: $interval-l;
-						}
+						display: inline-block;
+						vertical-align: middle;
 					}
 				}
 			}
 		}
 
 		> .ft {
-			@extend %footer;
 
 			> .in {
 

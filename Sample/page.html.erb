@@ -15,7 +15,11 @@
 <!-- //分類區塊================================================================ -->
 
 	<!-- classify 內頁列表群組 -->
-		<%= render partial: "/erb/group-list_classify", locals: set({ header_text: "分類群組", inner: "/erb/list-text_classify" }) %>
+		<%= render partial: "/erb/list-text_classify", locals: set({ header_text: "分類" }) %>
+	<!-- classify 結束 -->
+
+	<!-- classify 內頁列表群組 -->
+		<%= render partial: "/erb/group-list_classify-multiple", locals: set({ header_text: "多重分類", inner: "/erb/list-text_classify-multiple" }) %>
 	<!-- classify 結束 -->
 
 <!-- //頁籤================================================================ -->

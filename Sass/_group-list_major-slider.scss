@@ -43,20 +43,6 @@
 								margin-top: $interval-m;
 							}
 						}
-
-						> [data-index][data-type] { //隱藏內置模組的 header 與 footer
-
-							> .in {
-
-								> .hd {
-									display: none;
-								}
-
-								> .ft {
-									display: none;
-								}
-							}
-						}
 					}
 				}
 			}

@@ -4,6 +4,10 @@
 
 .list-text.nav {
 
+	> .bg-drop-layout > .in, > .in {
+		margin: 0 !important;
+	}
+
 	.base-mobile & {
 
 		&.is-open {
@@ -246,6 +250,13 @@
 
 			li {
 
+				&.is-active {
+
+					a {
+						background-color: $white;
+						color: $minor-color;
+					}
+				}
 			}
 
 			span {

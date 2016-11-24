@@ -119,6 +119,7 @@
 
 		.hd {
 			display: inline-block;
+			vertical-align: middle;
 
 			> .in {
 
@@ -143,6 +144,7 @@
 
 		.ct {
 			display: inline-block;
+			vertical-align: middle;
 
 			> .in {
 				
@@ -154,6 +156,7 @@
 
 			li {
 				display: inline-block;
+				vertical-align: middle;
 				color: $white;
 				
 				+ li {

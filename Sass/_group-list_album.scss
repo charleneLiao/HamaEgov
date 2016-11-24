@@ -3,81 +3,139 @@
 //相簿================================================================
 
 .group-list.album {
-	$default-len: 2;
 
-	@include default-len-hide(4, $default-len);
-	@include set-len-hide(4);
+	.base-module-area & {
+		@include average(4);
 
-	> .bg-drop-layout > .in, > .in {
+		> .bg-drop-layout > .in, > .in {
 
-		> .hd {
-			@extend %header;
+			> .hd {
+				@extend %header;
 
-			> .in {
+				> .in {
 
-			}
+				}
 
-			h3 {
-				
-			}
-
-			span {
+				h3 {
 					
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			a {
+			> .ct {
 
-			}
-		}
+				> .in {
 
-		> .ct {
+					> ul {
 
-			> .in {
-
-				> ul {
-
-					&:after {
-						@extend %clear;
-					}
-
-					> li {
-
-						> [data-index][data-type] {
+						> li {
+							box-sizing: border-box;
 							padding: $interval-xs;
 
-							> .in {
-
-								> .ft {
-									display: none;
-								}
-							}
+							@include len-rwd('pad', 2);
+							@include len-rwd('phone', 1);
 						}
 					}
 				}
 			}
+
+			> .ft {
+				@extend %footer;
+
+				> .in {
+
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
+			}
 		}
+	}
 
-		> .ft {
-			@extend %footer;
+	.base-page-area & {
 
-			> .in {
+		> .bg-drop-layout > .in, > .in {
 
+			> .hd {
+				@extend %header;
+
+				> .in {
+
+				}
+
+				h3 {
+					
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
 			}
 
-			ul {
+			> .ct {
 
+				> .in {
+
+					> ul {
+
+						> li {
+							box-sizing: border-box;
+							padding: $interval-xs;
+
+							@include len(4);
+							@include len-rwd('pad', 2);
+							@include len-rwd('phone', 1);
+						}
+					}
+				}
 			}
 
-			li {
+			> .ft {
+				@extend %footer;
 
-			}
+				> .in {
 
-			span {
+				}
 
-			}
+				ul {
 
-			a {
+				}
 
+				li {
+
+				}
+
+				span {
+
+				}
+
+				a {
+
+				}
 			}
 		}
 	}
