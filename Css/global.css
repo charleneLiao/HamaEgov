@@ -3,7 +3,7 @@
 	順序上位於 base/variable 之前，因此不能使用任何 base/variable 變數 
 */
 /* line 499, ../sass/_base-function.scss */
-[data-index][data-type] .hd h3, [data-index][data-type] .hd h4, [data-index][data-type] .ct .list ul, [data-index][data-type] .ct .label ul, [data-index][data-type] .ct .p p, [data-index][data-type] .ft ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul, .group-tab > .in > .ct > .in > ul, .group-list > .bg-drop-layout > .in > .ct > .in > ul, .group-list > .in > .ct > .in > ul, .list-text .ct ul, .list-pic .ct ul, .list-multiple .ct ul, .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .area-customize.news-card .ct ul, .area-customize.icons-g2 .ct ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-tab > .in > .ct > .in > ul > li > [data-index][data-type], .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-tab > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, .group-tab > .in > .ct > .in > ul > li > [data-index][data-type] > .in {
+[data-index][data-type] .hd h3, [data-index][data-type] .hd h4, [data-index][data-type] .ct .list ul, [data-index][data-type] .ct .label ul, [data-index][data-type] .ct .p p, [data-index][data-type] .ft ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul, .group-tab > .in > .ct > .in > ul, .group-list > .bg-drop-layout > .in > .ct > .in > ul, .group-list > .in > .ct > .in > ul, .list-text .ct ul, .list-pic .ct ul, .list-multiple .ct ul, .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .area-customize.news-card .ct ul, .area-customize.icons-g2 .ct ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type], .group-tab > .in > .ct > .in > ul > li > [data-index][data-type], .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, .group-tab > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-tab > .in > .ct > .in > ul > li > [data-index][data-type] > .bg-drop-layout > .in, .group-tab > .in > .ct > .in > ul > li > [data-index][data-type] > .in {
   margin: 0;
   position: static;
   top: auto;
@@ -13,7 +13,7 @@
 }
 
 /* line 508, ../sass/_base-function.scss */
-[data-index][data-type] .hd h3, [data-index][data-type] .hd h4, [data-index][data-type] .ct .list ul, [data-index][data-type] .ct .label ul, [data-index][data-type] .ct .p p, [data-index][data-type] .ft ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul, .group-tab > .in > .ct > .in > ul, .group-list > .bg-drop-layout > .in > .ct > .in > ul, .group-list > .in > .ct > .in > ul, .list-text .ct ul, .list-pic .ct ul, .list-multiple .ct ul, .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .area-customize.news-card .ct ul, .area-customize.icons-g2 .ct ul {
+[data-index][data-type] .hd h3, [data-index][data-type] .hd h4, [data-index][data-type] .ct .list ul, [data-index][data-type] .ct .label ul, [data-index][data-type] .ct .p p, [data-index][data-type] .ft ul, .group-tab > .bg-drop-layout > .in > .ct > .in > ul, .group-tab > .in > .ct > .in > ul, .group-list > .bg-drop-layout > .in > .ct > .in > ul, .group-list > .in > .ct > .in > ul, .list-text .ct ul, .list-pic .ct ul, .list-multiple .ct ul, .simple-text.major-logo .ct h1, .simple-text.heading .ct h3, .simple-text.title .ct h1, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in, .area-customize.news-card .ct ul, .area-customize.icons-g2 .ct ul {
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -24,16 +24,16 @@
   transition: initial;
 }
 /* line 518, ../sass/_base-function.scss */
-[data-index][data-type] .hd h3:before, [data-index][data-type] .hd h4:before, [data-index][data-type] .ct .list ul:before, [data-index][data-type] .ct .label ul:before, [data-index][data-type] .ct .p p:before, [data-index][data-type] .ft ul:before, .group-tab > .bg-drop-layout > .in > .ct > .in > ul:before, .group-tab > .in > .ct > .in > ul:before, .group-list > .bg-drop-layout > .in > .ct > .in > ul:before, .group-list > .in > .ct > .in > ul:before, .list-text .ct ul:before, .list-pic .ct ul:before, .list-multiple .ct ul:before, .simple-text.major-logo .ct h1:before, .simple-text.heading .ct h3:before, .simple-text.title .ct h1:before, .area-customize.news-card .ct ul:before, .area-customize.icons-g2 .ct ul:before {
+[data-index][data-type] .hd h3:before, [data-index][data-type] .hd h4:before, [data-index][data-type] .ct .list ul:before, [data-index][data-type] .ct .label ul:before, [data-index][data-type] .ct .p p:before, [data-index][data-type] .ft ul:before, .group-tab > .bg-drop-layout > .in > .ct > .in > ul:before, .group-tab > .in > .ct > .in > ul:before, .group-list > .bg-drop-layout > .in > .ct > .in > ul:before, .group-list > .in > .ct > .in > ul:before, .list-text .ct ul:before, .list-pic .ct ul:before, .list-multiple .ct ul:before, .simple-text.major-logo .ct h1:before, .simple-text.heading .ct h3:before, .simple-text.title .ct h1:before, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:before, .area-customize.news-card .ct ul:before, .area-customize.icons-g2 .ct ul:before {
   content: none;
 }
 /* line 522, ../sass/_base-function.scss */
-[data-index][data-type] .hd h3:after, [data-index][data-type] .hd h4:after, [data-index][data-type] .ct .list ul:after, [data-index][data-type] .ct .label ul:after, [data-index][data-type] .ct .p p:after, [data-index][data-type] .ft ul:after, .group-tab > .bg-drop-layout > .in > .ct > .in > ul:after, .group-tab > .in > .ct > .in > ul:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .list-multiple .ct ul:after, .simple-text.major-logo .ct h1:after, .simple-text.heading .ct h3:after, .simple-text.title .ct h1:after, .area-customize.news-card .ct ul:after, .area-customize.icons-g2 .ct ul:after {
+[data-index][data-type] .hd h3:after, [data-index][data-type] .hd h4:after, [data-index][data-type] .ct .list ul:after, [data-index][data-type] .ct .label ul:after, [data-index][data-type] .ct .p p:after, [data-index][data-type] .ft ul:after, .group-tab > .bg-drop-layout > .in > .ct > .in > ul:after, .group-tab > .in > .ct > .in > ul:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .list-multiple .ct ul:after, .simple-text.major-logo .ct h1:after, .simple-text.heading .ct h3:after, .simple-text.title .ct h1:after, .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in:after, .area-customize.news-card .ct ul:after, .area-customize.icons-g2 .ct ul:after {
   content: none;
 }
 
 /* line 534, ../sass/_base-function.scss */
-[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .sys-root .base-page-area > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .list-pic.album .ct ul:after, .area-customize.calender .ct .heading:after, .area-customize.calender-detail .ct .heading:after, .list-pic.pic-download .ct ul:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .list-pic.link .ct ul:after, .area-essay.message .ct .div:after, .list-text.step .ct ul:after, .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.page-block > .in > .ct > .in > ul:after, .list-pic.page-list .ct ul:after, .list-pic.page-block .ct ul:after, .group-list.marquee > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.marquee > .in > .ct > .in > ul:after, .list-pic.slider .ct ul:after, .list-pic.marquee .ct ul:after {
+[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .sys-root .base-page-area > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .list-pic.album .ct ul:after, .area-customize.calender .ct .heading:after, .area-customize.calender-detail .ct .heading:after, .list-pic.pic-download .ct ul:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .area-customize.news-card .ct .label:after, .list-pic.link .ct ul:after, .area-essay.message .ct .div:after, .list-text.step .ct ul:after, .group-list.page-block > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.page-block > .in > .ct > .in > ul:after, .list-pic.page-list .ct ul:after, .list-pic.page-block .ct ul:after, .group-list.marquee > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list.marquee > .in > .ct > .in > ul:after, .list-pic.slider .ct ul:after, .list-pic.marquee .ct ul:after {
   content: "​";
   display: block;
   height: 0;
@@ -41,13 +41,13 @@
 }
 
 /* line 543, ../sass/_base-function.scss */
-.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .base-page-area .group-list.slider > .in > .ft li.next a, .base-page-area .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
+.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .base-page-area .group-list.slider > .in > .ft li.next a, .base-page-area .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
   font: 0/0 a;
   color: transparent;
 }
 
 /* line 548, ../sass/_base-function.scss */
-.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .area-customize.calender .ct .caption, .area-customize.calender .ct .list a, .area-customize.calender-detail .ct .caption, .list-text.anchor .ct a, .list-text.slider .ct a, .area-customize.news-card .ct .mark, .list-text.message .ct a, .list-text.step .ct a {
+.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .area-customize.calender .ct .caption, .area-customize.calender .ct .list a, .area-customize.calender-detail .ct .caption, .list-text.anchor .ct a, .list-text.slider .ct a, .list-text.message .ct a, .list-text.step .ct a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -122,18 +122,18 @@
 }
 
 /* line 739, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4, .group-list.default > .in > .hd h4, .simple-text.default .hd h4, .area-editor.default .hd h4, .base-content .list-text.link .hd h4, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.album > .in > .hd h4, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.album > .in > .hd h4, .list-pic.album .hd h4, .area-figure.album .hd h4, .area-customize.calender .hd h4, .area-customize.calender-detail .hd h4, .area-customize.chart .hd h4, .group-list.content > .bg-drop-layout > .in > .hd h4, .group-list.content > .in > .hd h4, .list-text.file-download .hd h4, .list-pic.pic-download .hd h4, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4, .group-list.file-download-multiple > .in > .hd h4, .area-editor.error-info .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-p .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-form.page-form .hd h4, .area-form.submit .hd h4, .simple-text.weather .hd h4, .list-text.anchor .hd h4, .list-text.slider .hd h4, .area-form.epaper .hd h4, .area-form.link .hd h4, .area-customize.news-card .hd h4, .area-customize.icons-g2 .hd h4, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.link > .in > .hd h4, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.link > .in > .hd h4, .list-pic.link .hd h4, .base-module-area .area-essay.link .hd h4, .base-page-area .area-essay.link .hd h4, .area-customize.map .hd h4, .area-customize.audio .hd h4, .area-customize.iframe .hd h4, .area-customize.video .hd h4, .simple-text.message .hd h4, .group-list.message > .bg-drop-layout > .in > .hd h4, .group-list.message > .in > .hd h4, .list-text.message .hd h4, .area-essay.message .hd h4, .area-form.page-search .hd h4, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4, .group-list.classify-multiple > .in > .hd h4, .group-list.page-block > .bg-drop-layout > .in > .hd h4, .group-list.page-block > .in > .hd h4, .group-list.page-list > .bg-drop-layout > .in > .hd h4, .group-list.page-list > .in > .hd h4, .list-pic.page-list .hd h4, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4, .group-list.page-list-pic > .in > .hd h4, .group-list.query > .bg-drop-layout > .in > .hd h4, .group-list.query > .in > .hd h4, .list-text.rss .hd h4, .area-form.sign-in .hd h4, .group-list.sitemap > .bg-drop-layout > .in > .hd h4, .group-list.sitemap > .in > .hd h4, .list-text.sitemap .hd h4, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.slider > .in > .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .list-text.page-list .hd h4, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4, .group-list.page-list-text > .in > .hd h4, .area-form.vote .hd h4, .group-list.vote-result > .bg-drop-layout > .in > .hd h4, .group-list.vote-result > .in > .hd h4, .group-list.default > .bg-drop-layout > .in > .hd h3, .group-list.default > .in > .hd h3, .simple-text.default .hd h3, .area-editor.default .hd h3, .base-content .list-text.link .hd h3, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.album > .in > .hd h3, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.album > .in > .hd h3, .list-pic.album .hd h3, .area-figure.album .hd h3, .area-customize.calender .hd h3, .area-customize.calender-detail .hd h3, .area-customize.chart .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .list-text.file-download .hd h3, .list-pic.pic-download .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .area-editor.error-info .hd h3, .area-essay.page-caption-label .hd h3, .area-essay.page-caption-label-p .hd h3, .area-essay.page-caption-p .hd h3, .area-essay.page-essay .hd h3, .area-essay.page-img-caption-label .hd h3, .area-essay.page-img-caption-p .hd h3, .area-figure.page-figure .hd h3, .area-figure.page-img-figcaption .hd h3, .area-figure.page-img-figcaption-label .hd h3, .area-figure.page-img-figcaption-p .hd h3, .area-figure.page-img-label .hd h3, .area-figure.page-img-label-p .hd h3, .area-figure.page-img-p .hd h3, .area-form.page-form .hd h3, .area-form.submit .hd h3, .simple-text.weather .hd h3, .list-text.anchor .hd h3, .list-text.slider .hd h3, .area-form.epaper .hd h3, .area-form.link .hd h3, .area-customize.news-card .hd h3, .area-customize.icons-g2 .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.link > .in > .hd h3, .list-pic.link .hd h3, .base-module-area .area-essay.link .hd h3, .base-page-area .area-essay.link .hd h3, .area-customize.map .hd h3, .area-customize.audio .hd h3, .area-customize.iframe .hd h3, .area-customize.video .hd h3, .simple-text.message .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .list-text.message .hd h3, .area-essay.message .hd h3, .area-form.page-search .hd h3, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3, .group-list.classify-multiple > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .list-pic.page-list .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.query > .bg-drop-layout > .in > .hd h3, .group-list.query > .in > .hd h3, .list-text.rss .hd h3, .area-form.sign-in .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .list-text.sitemap .hd h3, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.slider > .in > .hd h3, .area-table.page-table .hd h3, .area-table.rwd-table .hd h3, .list-text.page-list .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .area-form.vote .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3 {
+.group-list.default > .bg-drop-layout > .in > .hd h4, .group-list.default > .in > .hd h4, .simple-text.default .hd h4, .area-editor.default .hd h4, .base-content .list-text.link .hd h4, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.album > .in > .hd h4, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.album > .in > .hd h4, .list-pic.album .hd h4, .area-figure.album .hd h4, .area-customize.calender .hd h4, .area-customize.calender-detail .hd h4, .area-customize.chart .hd h4, .group-list.content > .bg-drop-layout > .in > .hd h4, .group-list.content > .in > .hd h4, .list-text.file-download .hd h4, .list-pic.pic-download .hd h4, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4, .group-list.file-download-multiple > .in > .hd h4, .area-editor.error-info .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-p .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-form.page-form .hd h4, .area-form.submit .hd h4, .group-list.major-slider > .bg-drop-layout > .in > .hd h4, .group-list.major-slider > .in > .hd h4, .simple-text.weather .hd h4, .list-text.anchor .hd h4, .list-text.slider .hd h4, .area-form.epaper .hd h4, .area-form.link .hd h4, .area-customize.news-card .hd h4, .area-customize.icons-g2 .hd h4, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.link > .in > .hd h4, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.link > .in > .hd h4, .list-pic.link .hd h4, .base-module-area .area-essay.link .hd h4, .base-page-area .area-essay.link .hd h4, .area-customize.map .hd h4, .area-customize.audio .hd h4, .area-customize.iframe .hd h4, .area-customize.video .hd h4, .simple-text.message .hd h4, .group-list.message > .bg-drop-layout > .in > .hd h4, .group-list.message > .in > .hd h4, .list-text.message .hd h4, .area-essay.message .hd h4, .area-form.page-search .hd h4, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4, .group-list.classify-multiple > .in > .hd h4, .group-list.page-block > .bg-drop-layout > .in > .hd h4, .group-list.page-block > .in > .hd h4, .group-list.page-list > .bg-drop-layout > .in > .hd h4, .group-list.page-list > .in > .hd h4, .list-pic.page-list .hd h4, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4, .group-list.page-list-pic > .in > .hd h4, .group-list.query > .bg-drop-layout > .in > .hd h4, .group-list.query > .in > .hd h4, .list-text.rss .hd h4, .area-form.sign-in .hd h4, .group-list.sitemap > .bg-drop-layout > .in > .hd h4, .group-list.sitemap > .in > .hd h4, .list-text.sitemap .hd h4, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.slider > .in > .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .list-text.page-list .hd h4, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4, .group-list.page-list-text > .in > .hd h4, .area-form.vote .hd h4, .group-list.vote-result > .bg-drop-layout > .in > .hd h4, .group-list.vote-result > .in > .hd h4, .group-list.default > .bg-drop-layout > .in > .hd h3, .group-list.default > .in > .hd h3, .simple-text.default .hd h3, .area-editor.default .hd h3, .base-content .list-text.link .hd h3, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.album > .in > .hd h3, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.album > .in > .hd h3, .list-pic.album .hd h3, .area-figure.album .hd h3, .area-customize.calender .hd h3, .area-customize.calender-detail .hd h3, .area-customize.chart .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .list-text.file-download .hd h3, .list-pic.pic-download .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .area-editor.error-info .hd h3, .area-essay.page-caption-label .hd h3, .area-essay.page-caption-label-p .hd h3, .area-essay.page-caption-p .hd h3, .area-essay.page-essay .hd h3, .area-essay.page-img-caption-label .hd h3, .area-essay.page-img-caption-p .hd h3, .area-figure.page-figure .hd h3, .area-figure.page-img-figcaption .hd h3, .area-figure.page-img-figcaption-label .hd h3, .area-figure.page-img-figcaption-p .hd h3, .area-figure.page-img-label .hd h3, .area-figure.page-img-label-p .hd h3, .area-figure.page-img-p .hd h3, .area-form.page-form .hd h3, .area-form.submit .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .hd h3, .group-list.major-slider > .in > .hd h3, .simple-text.weather .hd h3, .list-text.anchor .hd h3, .list-text.slider .hd h3, .area-form.epaper .hd h3, .area-form.link .hd h3, .area-customize.news-card .hd h3, .area-customize.icons-g2 .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.link > .in > .hd h3, .list-pic.link .hd h3, .base-module-area .area-essay.link .hd h3, .base-page-area .area-essay.link .hd h3, .area-customize.map .hd h3, .area-customize.audio .hd h3, .area-customize.iframe .hd h3, .area-customize.video .hd h3, .simple-text.message .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .list-text.message .hd h3, .area-essay.message .hd h3, .area-form.page-search .hd h3, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3, .group-list.classify-multiple > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .list-pic.page-list .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.query > .bg-drop-layout > .in > .hd h3, .group-list.query > .in > .hd h3, .list-text.rss .hd h3, .area-form.sign-in .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .list-text.sitemap .hd h3, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.slider > .in > .hd h3, .area-table.page-table .hd h3, .area-table.rwd-table .hd h3, .list-text.page-list .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .area-form.vote .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3 {
   font-size: 1.75em;
   padding-bottom: 8px;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 8px;
 }
 /* line 745, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4:before, .group-list.default > .in > .hd h4:before, .simple-text.default .hd h4:before, .area-editor.default .hd h4:before, .base-content .list-text.link .hd h4:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.album > .in > .hd h4:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.album > .in > .hd h4:before, .list-pic.album .hd h4:before, .area-figure.album .hd h4:before, .area-customize.calender .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.chart .hd h4:before, .group-list.content > .bg-drop-layout > .in > .hd h4:before, .group-list.content > .in > .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.file-download-multiple > .in > .hd h4:before, .area-editor.error-info .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-form.page-form .hd h4:before, .area-form.submit .hd h4:before, .simple-text.weather .hd h4:before, .list-text.anchor .hd h4:before, .list-text.slider .hd h4:before, .area-form.epaper .hd h4:before, .area-form.link .hd h4:before, .area-customize.news-card .hd h4:before, .area-customize.icons-g2 .hd h4:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.link > .in > .hd h4:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.link > .in > .hd h4:before, .list-pic.link .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-page-area .area-essay.link .hd h4:before, .area-customize.map .hd h4:before, .area-customize.audio .hd h4:before, .area-customize.iframe .hd h4:before, .area-customize.video .hd h4:before, .simple-text.message .hd h4:before, .group-list.message > .bg-drop-layout > .in > .hd h4:before, .group-list.message > .in > .hd h4:before, .list-text.message .hd h4:before, .area-essay.message .hd h4:before, .area-form.page-search .hd h4:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.classify-multiple > .in > .hd h4:before, .group-list.page-block > .bg-drop-layout > .in > .hd h4:before, .group-list.page-block > .in > .hd h4:before, .group-list.page-list > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list > .in > .hd h4:before, .list-pic.page-list .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-pic > .in > .hd h4:before, .group-list.query > .bg-drop-layout > .in > .hd h4:before, .group-list.query > .in > .hd h4:before, .list-text.rss .hd h4:before, .area-form.sign-in .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:before, .group-list.sitemap > .in > .hd h4:before, .list-text.sitemap .hd h4:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.slider > .in > .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-text > .in > .hd h4:before, .area-form.vote .hd h4:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:before, .group-list.vote-result > .in > .hd h4:before, .group-list.default > .bg-drop-layout > .in > .hd h3:before, .group-list.default > .in > .hd h3:before, .simple-text.default .hd h3:before, .area-editor.default .hd h3:before, .base-content .list-text.link .hd h3:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.album > .in > .hd h3:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.album > .in > .hd h3:before, .list-pic.album .hd h3:before, .area-figure.album .hd h3:before, .area-customize.calender .hd h3:before, .area-customize.calender-detail .hd h3:before, .area-customize.chart .hd h3:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .list-text.file-download .hd h3:before, .list-pic.pic-download .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .area-editor.error-info .hd h3:before, .area-essay.page-caption-label .hd h3:before, .area-essay.page-caption-label-p .hd h3:before, .area-essay.page-caption-p .hd h3:before, .area-essay.page-essay .hd h3:before, .area-essay.page-img-caption-label .hd h3:before, .area-essay.page-img-caption-p .hd h3:before, .area-figure.page-figure .hd h3:before, .area-figure.page-img-figcaption .hd h3:before, .area-figure.page-img-figcaption-label .hd h3:before, .area-figure.page-img-figcaption-p .hd h3:before, .area-figure.page-img-label .hd h3:before, .area-figure.page-img-label-p .hd h3:before, .area-figure.page-img-p .hd h3:before, .area-form.page-form .hd h3:before, .area-form.submit .hd h3:before, .simple-text.weather .hd h3:before, .list-text.anchor .hd h3:before, .list-text.slider .hd h3:before, .area-form.epaper .hd h3:before, .area-form.link .hd h3:before, .area-customize.news-card .hd h3:before, .area-customize.icons-g2 .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.link > .in > .hd h3:before, .list-pic.link .hd h3:before, .base-module-area .area-essay.link .hd h3:before, .base-page-area .area-essay.link .hd h3:before, .area-customize.map .hd h3:before, .area-customize.audio .hd h3:before, .area-customize.iframe .hd h3:before, .area-customize.video .hd h3:before, .simple-text.message .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .list-text.message .hd h3:before, .area-essay.message .hd h3:before, .area-form.page-search .hd h3:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.classify-multiple > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-pic.page-list .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .group-list.query > .bg-drop-layout > .in > .hd h3:before, .group-list.query > .in > .hd h3:before, .list-text.rss .hd h3:before, .area-form.sign-in .hd h3:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap .hd h3:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.slider > .in > .hd h3:before, .area-table.page-table .hd h3:before, .area-table.rwd-table .hd h3:before, .list-text.page-list .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .area-form.vote .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
+.group-list.default > .bg-drop-layout > .in > .hd h4:before, .group-list.default > .in > .hd h4:before, .simple-text.default .hd h4:before, .area-editor.default .hd h4:before, .base-content .list-text.link .hd h4:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.album > .in > .hd h4:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.album > .in > .hd h4:before, .list-pic.album .hd h4:before, .area-figure.album .hd h4:before, .area-customize.calender .hd h4:before, .area-customize.calender-detail .hd h4:before, .area-customize.chart .hd h4:before, .group-list.content > .bg-drop-layout > .in > .hd h4:before, .group-list.content > .in > .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.file-download-multiple > .in > .hd h4:before, .area-editor.error-info .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-form.page-form .hd h4:before, .area-form.submit .hd h4:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h4:before, .group-list.major-slider > .in > .hd h4:before, .simple-text.weather .hd h4:before, .list-text.anchor .hd h4:before, .list-text.slider .hd h4:before, .area-form.epaper .hd h4:before, .area-form.link .hd h4:before, .area-customize.news-card .hd h4:before, .area-customize.icons-g2 .hd h4:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.link > .in > .hd h4:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.link > .in > .hd h4:before, .list-pic.link .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-page-area .area-essay.link .hd h4:before, .area-customize.map .hd h4:before, .area-customize.audio .hd h4:before, .area-customize.iframe .hd h4:before, .area-customize.video .hd h4:before, .simple-text.message .hd h4:before, .group-list.message > .bg-drop-layout > .in > .hd h4:before, .group-list.message > .in > .hd h4:before, .list-text.message .hd h4:before, .area-essay.message .hd h4:before, .area-form.page-search .hd h4:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.classify-multiple > .in > .hd h4:before, .group-list.page-block > .bg-drop-layout > .in > .hd h4:before, .group-list.page-block > .in > .hd h4:before, .group-list.page-list > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list > .in > .hd h4:before, .list-pic.page-list .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-pic > .in > .hd h4:before, .group-list.query > .bg-drop-layout > .in > .hd h4:before, .group-list.query > .in > .hd h4:before, .list-text.rss .hd h4:before, .area-form.sign-in .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:before, .group-list.sitemap > .in > .hd h4:before, .list-text.sitemap .hd h4:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.slider > .in > .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-text > .in > .hd h4:before, .area-form.vote .hd h4:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:before, .group-list.vote-result > .in > .hd h4:before, .group-list.default > .bg-drop-layout > .in > .hd h3:before, .group-list.default > .in > .hd h3:before, .simple-text.default .hd h3:before, .area-editor.default .hd h3:before, .base-content .list-text.link .hd h3:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.album > .in > .hd h3:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.album > .in > .hd h3:before, .list-pic.album .hd h3:before, .area-figure.album .hd h3:before, .area-customize.calender .hd h3:before, .area-customize.calender-detail .hd h3:before, .area-customize.chart .hd h3:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .list-text.file-download .hd h3:before, .list-pic.pic-download .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .area-editor.error-info .hd h3:before, .area-essay.page-caption-label .hd h3:before, .area-essay.page-caption-label-p .hd h3:before, .area-essay.page-caption-p .hd h3:before, .area-essay.page-essay .hd h3:before, .area-essay.page-img-caption-label .hd h3:before, .area-essay.page-img-caption-p .hd h3:before, .area-figure.page-figure .hd h3:before, .area-figure.page-img-figcaption .hd h3:before, .area-figure.page-img-figcaption-label .hd h3:before, .area-figure.page-img-figcaption-p .hd h3:before, .area-figure.page-img-label .hd h3:before, .area-figure.page-img-label-p .hd h3:before, .area-figure.page-img-p .hd h3:before, .area-form.page-form .hd h3:before, .area-form.submit .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .simple-text.weather .hd h3:before, .list-text.anchor .hd h3:before, .list-text.slider .hd h3:before, .area-form.epaper .hd h3:before, .area-form.link .hd h3:before, .area-customize.news-card .hd h3:before, .area-customize.icons-g2 .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.link > .in > .hd h3:before, .list-pic.link .hd h3:before, .base-module-area .area-essay.link .hd h3:before, .base-page-area .area-essay.link .hd h3:before, .area-customize.map .hd h3:before, .area-customize.audio .hd h3:before, .area-customize.iframe .hd h3:before, .area-customize.video .hd h3:before, .simple-text.message .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .list-text.message .hd h3:before, .area-essay.message .hd h3:before, .area-form.page-search .hd h3:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.classify-multiple > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-pic.page-list .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .group-list.query > .bg-drop-layout > .in > .hd h3:before, .group-list.query > .in > .hd h3:before, .list-text.rss .hd h3:before, .area-form.sign-in .hd h3:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap .hd h3:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.slider > .in > .hd h3:before, .area-table.page-table .hd h3:before, .area-table.rwd-table .hd h3:before, .list-text.page-list .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .area-form.vote .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
   margin-right: 3px;
 }
 /* line 749, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4:after, .group-list.default > .in > .hd h4:after, .simple-text.default .hd h4:after, .area-editor.default .hd h4:after, .base-content .list-text.link .hd h4:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.album > .in > .hd h4:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.album > .in > .hd h4:after, .list-pic.album .hd h4:after, .area-figure.album .hd h4:after, .area-customize.calender .hd h4:after, .area-customize.calender-detail .hd h4:after, .area-customize.chart .hd h4:after, .group-list.content > .bg-drop-layout > .in > .hd h4:after, .group-list.content > .in > .hd h4:after, .list-text.file-download .hd h4:after, .list-pic.pic-download .hd h4:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.file-download-multiple > .in > .hd h4:after, .area-editor.error-info .hd h4:after, .area-essay.page-caption-label .hd h4:after, .area-essay.page-caption-label-p .hd h4:after, .area-essay.page-caption-p .hd h4:after, .area-essay.page-essay .hd h4:after, .area-essay.page-img-caption-label .hd h4:after, .area-essay.page-img-caption-p .hd h4:after, .area-figure.page-figure .hd h4:after, .area-figure.page-img-figcaption .hd h4:after, .area-figure.page-img-figcaption-label .hd h4:after, .area-figure.page-img-figcaption-p .hd h4:after, .area-figure.page-img-label .hd h4:after, .area-figure.page-img-label-p .hd h4:after, .area-figure.page-img-p .hd h4:after, .area-form.page-form .hd h4:after, .area-form.submit .hd h4:after, .simple-text.weather .hd h4:after, .list-text.anchor .hd h4:after, .list-text.slider .hd h4:after, .area-form.epaper .hd h4:after, .area-form.link .hd h4:after, .area-customize.news-card .hd h4:after, .area-customize.icons-g2 .hd h4:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.link > .in > .hd h4:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.link > .in > .hd h4:after, .list-pic.link .hd h4:after, .base-module-area .area-essay.link .hd h4:after, .base-page-area .area-essay.link .hd h4:after, .area-customize.map .hd h4:after, .area-customize.audio .hd h4:after, .area-customize.iframe .hd h4:after, .area-customize.video .hd h4:after, .simple-text.message .hd h4:after, .group-list.message > .bg-drop-layout > .in > .hd h4:after, .group-list.message > .in > .hd h4:after, .list-text.message .hd h4:after, .area-essay.message .hd h4:after, .area-form.page-search .hd h4:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.classify-multiple > .in > .hd h4:after, .group-list.page-block > .bg-drop-layout > .in > .hd h4:after, .group-list.page-block > .in > .hd h4:after, .group-list.page-list > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list > .in > .hd h4:after, .list-pic.page-list .hd h4:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-pic > .in > .hd h4:after, .group-list.query > .bg-drop-layout > .in > .hd h4:after, .group-list.query > .in > .hd h4:after, .list-text.rss .hd h4:after, .area-form.sign-in .hd h4:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:after, .group-list.sitemap > .in > .hd h4:after, .list-text.sitemap .hd h4:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.slider > .in > .hd h4:after, .area-table.page-table .hd h4:after, .area-table.rwd-table .hd h4:after, .list-text.page-list .hd h4:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-text > .in > .hd h4:after, .area-form.vote .hd h4:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:after, .group-list.vote-result > .in > .hd h4:after, .group-list.default > .bg-drop-layout > .in > .hd h3:after, .group-list.default > .in > .hd h3:after, .simple-text.default .hd h3:after, .area-editor.default .hd h3:after, .base-content .list-text.link .hd h3:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.album > .in > .hd h3:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.album > .in > .hd h3:after, .list-pic.album .hd h3:after, .area-figure.album .hd h3:after, .area-customize.calender .hd h3:after, .area-customize.calender-detail .hd h3:after, .area-customize.chart .hd h3:after, .group-list.content > .bg-drop-layout > .in > .hd h3:after, .group-list.content > .in > .hd h3:after, .list-text.file-download .hd h3:after, .list-pic.pic-download .hd h3:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.file-download-multiple > .in > .hd h3:after, .area-editor.error-info .hd h3:after, .area-essay.page-caption-label .hd h3:after, .area-essay.page-caption-label-p .hd h3:after, .area-essay.page-caption-p .hd h3:after, .area-essay.page-essay .hd h3:after, .area-essay.page-img-caption-label .hd h3:after, .area-essay.page-img-caption-p .hd h3:after, .area-figure.page-figure .hd h3:after, .area-figure.page-img-figcaption .hd h3:after, .area-figure.page-img-figcaption-label .hd h3:after, .area-figure.page-img-figcaption-p .hd h3:after, .area-figure.page-img-label .hd h3:after, .area-figure.page-img-label-p .hd h3:after, .area-figure.page-img-p .hd h3:after, .area-form.page-form .hd h3:after, .area-form.submit .hd h3:after, .simple-text.weather .hd h3:after, .list-text.anchor .hd h3:after, .list-text.slider .hd h3:after, .area-form.epaper .hd h3:after, .area-form.link .hd h3:after, .area-customize.news-card .hd h3:after, .area-customize.icons-g2 .hd h3:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.link > .in > .hd h3:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.link > .in > .hd h3:after, .list-pic.link .hd h3:after, .base-module-area .area-essay.link .hd h3:after, .base-page-area .area-essay.link .hd h3:after, .area-customize.map .hd h3:after, .area-customize.audio .hd h3:after, .area-customize.iframe .hd h3:after, .area-customize.video .hd h3:after, .simple-text.message .hd h3:after, .group-list.message > .bg-drop-layout > .in > .hd h3:after, .group-list.message > .in > .hd h3:after, .list-text.message .hd h3:after, .area-essay.message .hd h3:after, .area-form.page-search .hd h3:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.classify-multiple > .in > .hd h3:after, .group-list.page-block > .bg-drop-layout > .in > .hd h3:after, .group-list.page-block > .in > .hd h3:after, .group-list.page-list > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list > .in > .hd h3:after, .list-pic.page-list .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-pic > .in > .hd h3:after, .group-list.query > .bg-drop-layout > .in > .hd h3:after, .group-list.query > .in > .hd h3:after, .list-text.rss .hd h3:after, .area-form.sign-in .hd h3:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:after, .group-list.sitemap > .in > .hd h3:after, .list-text.sitemap .hd h3:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.slider > .in > .hd h3:after, .area-table.page-table .hd h3:after, .area-table.rwd-table .hd h3:after, .list-text.page-list .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-text > .in > .hd h3:after, .area-form.vote .hd h3:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:after, .group-list.vote-result > .in > .hd h3:after {
+.group-list.default > .bg-drop-layout > .in > .hd h4:after, .group-list.default > .in > .hd h4:after, .simple-text.default .hd h4:after, .area-editor.default .hd h4:after, .base-content .list-text.link .hd h4:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.album > .in > .hd h4:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.album > .in > .hd h4:after, .list-pic.album .hd h4:after, .area-figure.album .hd h4:after, .area-customize.calender .hd h4:after, .area-customize.calender-detail .hd h4:after, .area-customize.chart .hd h4:after, .group-list.content > .bg-drop-layout > .in > .hd h4:after, .group-list.content > .in > .hd h4:after, .list-text.file-download .hd h4:after, .list-pic.pic-download .hd h4:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.file-download-multiple > .in > .hd h4:after, .area-editor.error-info .hd h4:after, .area-essay.page-caption-label .hd h4:after, .area-essay.page-caption-label-p .hd h4:after, .area-essay.page-caption-p .hd h4:after, .area-essay.page-essay .hd h4:after, .area-essay.page-img-caption-label .hd h4:after, .area-essay.page-img-caption-p .hd h4:after, .area-figure.page-figure .hd h4:after, .area-figure.page-img-figcaption .hd h4:after, .area-figure.page-img-figcaption-label .hd h4:after, .area-figure.page-img-figcaption-p .hd h4:after, .area-figure.page-img-label .hd h4:after, .area-figure.page-img-label-p .hd h4:after, .area-figure.page-img-p .hd h4:after, .area-form.page-form .hd h4:after, .area-form.submit .hd h4:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h4:after, .group-list.major-slider > .in > .hd h4:after, .simple-text.weather .hd h4:after, .list-text.anchor .hd h4:after, .list-text.slider .hd h4:after, .area-form.epaper .hd h4:after, .area-form.link .hd h4:after, .area-customize.news-card .hd h4:after, .area-customize.icons-g2 .hd h4:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.link > .in > .hd h4:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.link > .in > .hd h4:after, .list-pic.link .hd h4:after, .base-module-area .area-essay.link .hd h4:after, .base-page-area .area-essay.link .hd h4:after, .area-customize.map .hd h4:after, .area-customize.audio .hd h4:after, .area-customize.iframe .hd h4:after, .area-customize.video .hd h4:after, .simple-text.message .hd h4:after, .group-list.message > .bg-drop-layout > .in > .hd h4:after, .group-list.message > .in > .hd h4:after, .list-text.message .hd h4:after, .area-essay.message .hd h4:after, .area-form.page-search .hd h4:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.classify-multiple > .in > .hd h4:after, .group-list.page-block > .bg-drop-layout > .in > .hd h4:after, .group-list.page-block > .in > .hd h4:after, .group-list.page-list > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list > .in > .hd h4:after, .list-pic.page-list .hd h4:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-pic > .in > .hd h4:after, .group-list.query > .bg-drop-layout > .in > .hd h4:after, .group-list.query > .in > .hd h4:after, .list-text.rss .hd h4:after, .area-form.sign-in .hd h4:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:after, .group-list.sitemap > .in > .hd h4:after, .list-text.sitemap .hd h4:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.slider > .in > .hd h4:after, .area-table.page-table .hd h4:after, .area-table.rwd-table .hd h4:after, .list-text.page-list .hd h4:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-text > .in > .hd h4:after, .area-form.vote .hd h4:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:after, .group-list.vote-result > .in > .hd h4:after, .group-list.default > .bg-drop-layout > .in > .hd h3:after, .group-list.default > .in > .hd h3:after, .simple-text.default .hd h3:after, .area-editor.default .hd h3:after, .base-content .list-text.link .hd h3:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.album > .in > .hd h3:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.album > .in > .hd h3:after, .list-pic.album .hd h3:after, .area-figure.album .hd h3:after, .area-customize.calender .hd h3:after, .area-customize.calender-detail .hd h3:after, .area-customize.chart .hd h3:after, .group-list.content > .bg-drop-layout > .in > .hd h3:after, .group-list.content > .in > .hd h3:after, .list-text.file-download .hd h3:after, .list-pic.pic-download .hd h3:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.file-download-multiple > .in > .hd h3:after, .area-editor.error-info .hd h3:after, .area-essay.page-caption-label .hd h3:after, .area-essay.page-caption-label-p .hd h3:after, .area-essay.page-caption-p .hd h3:after, .area-essay.page-essay .hd h3:after, .area-essay.page-img-caption-label .hd h3:after, .area-essay.page-img-caption-p .hd h3:after, .area-figure.page-figure .hd h3:after, .area-figure.page-img-figcaption .hd h3:after, .area-figure.page-img-figcaption-label .hd h3:after, .area-figure.page-img-figcaption-p .hd h3:after, .area-figure.page-img-label .hd h3:after, .area-figure.page-img-label-p .hd h3:after, .area-figure.page-img-p .hd h3:after, .area-form.page-form .hd h3:after, .area-form.submit .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.major-slider > .in > .hd h3:after, .simple-text.weather .hd h3:after, .list-text.anchor .hd h3:after, .list-text.slider .hd h3:after, .area-form.epaper .hd h3:after, .area-form.link .hd h3:after, .area-customize.news-card .hd h3:after, .area-customize.icons-g2 .hd h3:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.link > .in > .hd h3:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.link > .in > .hd h3:after, .list-pic.link .hd h3:after, .base-module-area .area-essay.link .hd h3:after, .base-page-area .area-essay.link .hd h3:after, .area-customize.map .hd h3:after, .area-customize.audio .hd h3:after, .area-customize.iframe .hd h3:after, .area-customize.video .hd h3:after, .simple-text.message .hd h3:after, .group-list.message > .bg-drop-layout > .in > .hd h3:after, .group-list.message > .in > .hd h3:after, .list-text.message .hd h3:after, .area-essay.message .hd h3:after, .area-form.page-search .hd h3:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.classify-multiple > .in > .hd h3:after, .group-list.page-block > .bg-drop-layout > .in > .hd h3:after, .group-list.page-block > .in > .hd h3:after, .group-list.page-list > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list > .in > .hd h3:after, .list-pic.page-list .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-pic > .in > .hd h3:after, .group-list.query > .bg-drop-layout > .in > .hd h3:after, .group-list.query > .in > .hd h3:after, .list-text.rss .hd h3:after, .area-form.sign-in .hd h3:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:after, .group-list.sitemap > .in > .hd h3:after, .list-text.sitemap .hd h3:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.slider > .in > .hd h3:after, .area-table.page-table .hd h3:after, .area-table.rwd-table .hd h3:after, .list-text.page-list .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-text > .in > .hd h3:after, .area-form.vote .hd h3:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:after, .group-list.vote-result > .in > .hd h3:after {
   margin-left: 3px;
 }
 
@@ -289,12 +289,12 @@
 }
 
 /* line 948, ../sass/_base-function.scss */
-.list-pic.album .ct a, .list-pic.link .ct a {
+.list-pic.album .ct a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .list-pic.link .ct a {
   position: relative;
   display: block;
 }
 /* line 952, ../sass/_base-function.scss */
-.list-pic.album .ct a:before, .list-pic.link .ct a:before {
+.list-pic.album .ct a:before, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a:before, .group-list.major-slider > .in > .ft li.is-img a:before, .list-pic.link .ct a:before {
   content: "​";
   display: block;
   position: absolute;
@@ -307,12 +307,22 @@
   transition: 150ms;
 }
 /* line 967, ../sass/_base-function.scss */
-.list-pic.album .ct a:hover:before, .list-pic.link .ct a:hover:before {
+.list-pic.album .ct a:hover:before, .group-list.major-slider > .in > .ft li.is-img a:hover:before, .list-pic.link .ct a:hover:before {
   opacity: 0;
 }
 
+/* line 973, ../sass/_base-function.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 /* line 984, ../sass/_base-function.scss */
-.list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .area-customize.news-card .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-essay.message .ct .img span, .list-pic.page-list .ct span, .list-pic.marquee .ct span {
+.list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .area-customize.news-card .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-essay.message .ct .img span, .list-pic.page-list .ct span, .list-pic.marquee .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4198,8 +4208,9 @@ th {
 /* line 172, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct {
   display: inline-block;
+  vertical-align: middle;
 }
-/* line 179, ../sass/_area-form_search.scss */
+/* line 180, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset {
   position: relative;
 }
@@ -4207,22 +4218,22 @@ th {
 [data-js="false"] .base-wrapper .area-form.search .ct .fieldset {
   display: none;
 }
-/* line 186, ../sass/_area-form_search.scss */
+/* line 187, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset span {
   display: block;
 }
-/* line 191, ../sass/_area-form_search.scss */
+/* line 192, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset span.search {
   display: block;
   padding-right: 36px;
   width: 200px;
 }
-/* line 196, ../sass/_area-form_search.scss */
+/* line 197, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset span.search input {
   display: block;
   width: 100%;
 }
-/* line 204, ../sass/_area-form_search.scss */
+/* line 205, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset span.submit a {
   position: absolute;
   top: 0;
@@ -4235,11 +4246,11 @@ th {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 215, ../sass/_area-form_search.scss */
+/* line 216, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .fieldset span.submit a:hover {
   background-color: #343434;
 }
-/* line 223, ../sass/_area-form_search.scss */
+/* line 224, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .list {
   position: absolute;
   top: 100%;
@@ -4247,40 +4258,41 @@ th {
   right: 0;
   display: none;
 }
-/* line 230, ../sass/_area-form_search.scss */
+/* line 231, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .list ul {
   margin-top: 8px;
 }
-/* line 236, ../sass/_area-form_search.scss */
+/* line 237, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .list li + li {
   margin-top: 5px;
 }
-/* line 241, ../sass/_area-form_search.scss */
+/* line 242, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .list span {
   display: block;
 }
-/* line 245, ../sass/_area-form_search.scss */
+/* line 246, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ct .list a {
   box-shadow: 0 0 8px #b6b6b6;
 }
-/* line 253, ../sass/_area-form_search.scss */
+/* line 254, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ft {
   display: inline-block;
+  vertical-align: middle;
   padding-left: 5px;
 }
-/* line 261, ../sass/_area-form_search.scss */
+/* line 263, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ft ul {
   display: inline;
 }
-/* line 265, ../sass/_area-form_search.scss */
+/* line 267, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ft li {
   display: inline;
 }
-/* line 273, ../sass/_area-form_search.scss */
+/* line 275, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ft span {
   color: #ffffff;
 }
-/* line 277, ../sass/_area-form_search.scss */
+/* line 279, ../sass/_area-form_search.scss */
 .base-wrapper .area-form.search .ft a {
   color: inherit;
 }
@@ -7556,6 +7568,130 @@ th {
   margin: 0;
 }
 
+/* line 38, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li + li, .group-list.major-slider > .in > .ct > .in > ul > li + li {
+  display: none;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li + li, [data-js="false"] .group-list.major-slider > .in > .ct > .in > ul > li + li {
+  display: block;
+  margin-top: 8px;
+}
+/* line 52, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .hd {
+  display: none;
+}
+/* line 56, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft, .group-list.major-slider > .in > .ct > .in > ul > li > [data-index][data-type] > .in > .ft {
+  display: none;
+}
+/* line 72, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft ul, .group-list.major-slider > .in > .ft ul {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  padding: 0 8px;
+  text-align: center;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .group-list.major-slider > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .group-list.major-slider > .in > .ft li.next, [data-js="false"] .group-list.major-slider > .in > .ft li.prev {
+  display: none;
+}
+/* line 87, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  display: block;
+  width: 40px;
+  transition: 150ms;
+  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+/* line 98, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.next a:hover, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a:hover, .group-list.major-slider > .in > .ft li.next a:hover, .group-list.major-slider > .in > .ft li.prev a:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+/* line 106, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.prev a {
+  left: 0;
+  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 114, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.next a {
+  right: 0;
+  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 120, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.more, .group-list.major-slider > .in > .ft li.more {
+  display: none;
+}
+/* line 124, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img, .group-list.major-slider > .in > .ft li.is-img {
+  display: inline-block;
+  margin: 5px 3px;
+  vertical-align: middle;
+  border: 1px solid #e4e4e4;
+  border-width: 3px;
+}
+@media (max-width: 768px) {
+  /* line 124, ../sass/_group-list_major-slider.scss */
+  .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img, .group-list.major-slider > .in > .ft li.is-img {
+    display: none;
+  }
+}
+/* line 135, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img.is-active, .group-list.major-slider > .in > .ft li.is-img.is-active {
+  border-color: #fa7076;
+}
+/* line 140, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img.is-active a:before, .group-list.major-slider > .in > .ft li.is-img.is-active a:before {
+  opacity: 0;
+}
+/* line 146, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+/* line 161, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot, .group-list.major-slider > .in > .ft li.is-dot {
+  display: inline-block;
+  margin: 8px 3px;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  /* line 161, ../sass/_group-list_major-slider.scss */
+  .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot, .group-list.major-slider > .in > .ft li.is-dot {
+    display: none;
+  }
+}
+/* line 172, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot.is-active a, .group-list.major-slider > .in > .ft li.is-dot.is-active a {
+  background-color: #fa7076;
+}
+/* line 177, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot span, .group-list.major-slider > .in > .ft li.is-dot span {
+  display: block;
+}
+/* line 181, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #b6b6b6;
+  transition: 150ms;
+  border-radius: 50%;
+}
+/* line 190, ../sass/_group-list_major-slider.scss */
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a:hover, .group-list.major-slider > .in > .ft li.is-dot a:hover {
+  opacity: 0.7;
+}
+
 /* line 50, ../sass/_base-function.scss */
 [data-js="false"] .simple-text.weather {
   display: none;
@@ -7804,52 +7940,54 @@ th {
   text-decoration: underline;
 }
 /* line 151, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct .label {
+  padding: 5px;
+}
+/* line 159, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .mark {
-  margin: 8px;
+  float: left;
 }
-@media (max-width: 560px) {
-  /* line 151, ../sass/_area-customize_news-card.scss */
-  .area-customize.news-card .ct .mark {
-    display: none;
-  }
+/* line 163, ../sass/_area-customize_news-card.scss */
+.area-customize.news-card .ct .unit {
+  float: right;
 }
-/* line 160, ../sass/_area-customize_news-card.scss */
+/* line 167, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img {
-  margin: 8px 0;
+  margin-bottom: 8px;
 }
 @media (max-width: 560px) {
-  /* line 160, ../sass/_area-customize_news-card.scss */
+  /* line 167, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .img {
     display: none;
   }
 }
-/* line 167, ../sass/_area-customize_news-card.scss */
+/* line 174, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img span {
   display: block;
   height: 210px;
   background-color: #f0f0f0;
 }
-/* line 174, ../sass/_area-customize_news-card.scss */
+/* line 181, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img img {
   display: none;
 }
-/* line 179, ../sass/_area-customize_news-card.scss */
+/* line 186, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .caption {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 179, ../sass/_area-customize_news-card.scss */
+  /* line 186, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .caption {
     margin: 0;
     font-size: 1.4em;
   }
 }
-/* line 189, ../sass/_area-customize_news-card.scss */
+/* line 196, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .p {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 189, ../sass/_area-customize_news-card.scss */
+  /* line 196, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .p {
     display: none;
   }

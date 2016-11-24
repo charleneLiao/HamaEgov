@@ -171,6 +171,7 @@
 
 		.ct {
 			display: inline-block;
+			vertical-align: middle;
 
 			> .in {
 
@@ -252,6 +253,7 @@
 
 		.ft {
 			display: inline-block;
+			vertical-align: middle;
 			padding-left: $interval-s;
 
 			> .in {

@@ -148,17 +148,24 @@
 			}
 		}
 
-		.mark {
-			@extend %ellipsis;
-			margin: $interval-m;
+		.label {
+			padding: $interval-s;
 
-			@include media('phone') {
-				display: none;
+			&:after {
+				@extend %clear;
 			}
 		}
 
+		.mark {
+			float: left;
+		}
+
+		.unit {
+			float: right;
+		}
+
 		.img {
-			margin: $interval-m 0;
+			margin-bottom: $interval-m;
 
 			@include media('phone') {
 				display: none;

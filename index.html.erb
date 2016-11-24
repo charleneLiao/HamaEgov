@@ -6,9 +6,8 @@
 	</div></div>
 	<div class="ct"><div class="in">
 
-		<%
-			li_length = (2..5).to_a.sample
-		%>
+
+		<% li_length = (2..5).to_a.sample %>
 
 		<div class="group-list slider" data-index="1" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}"><div class="in">
 			<div class="ct"><div class="in">
@@ -33,13 +32,16 @@
 			</div></div>
 		</div></div>
 
+
 	<!-- slider 輪播 -->
 		<%= render partial: "/erb/list-text_slider", locals: set({ index: 2, func_set: "{'marqueeStraight':{'auto':false,'delay':5000,'speed':300}}", header_text: "跑馬燈" }) %>
 	<!-- slider 結束 -->
 
+
 	<!-- news-card 消息卡片(台中市府 - hyc) -->
 		<%= render partial: "/erb/area-customize_news-card", locals: set({ index: 8, header_text: "最新消息卡片" }) %>
 	<!-- news-card 結束 -->
+
 
 	</div></div>
 </div></div>
@@ -53,9 +55,8 @@
 	</div></div>
 	<div class="ct"><div class="in">
 
-		<%
-			li_length = (2..5).to_a.sample
-		%>
+
+		<% li_length = (2..5).to_a.sample %>
 
 		<div class="group-list slider" data-index="1" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}"><div class="in">
 			<div class="ct"><div class="in">
@@ -68,7 +69,6 @@
 							<%= render partial: "/erb/group-list_album", locals: set({ header_text: "一般輪播", inner: "/erb/area-figure_album" }) %>
 						<!-- album 結束 -->
 
-						
 						</li>
 					<% end %>
 				</ul>
@@ -80,7 +80,6 @@
 			</div></div>
 		</div></div>
 
-	
 
 	</div></div>
 </div></div>
@@ -94,9 +93,8 @@
 	</div></div>
 	<div class="ct"><div class="in">
 
-		<%
-			li_length = (2..5).to_a.sample
-		%>
+
+		<% li_length = (2..5).to_a.sample %>
 
 		<div class="group-list slider" data-index="1" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}"><div class="in">
 			<div class="ct"><div class="in">
@@ -108,7 +106,6 @@
 						<!-- link 連結 -->
 							<%= render partial: "/erb/group-list_link", locals: set({ header_text: "圖片文字列表", inner: "/erb/area-essay_link" }) %>
 						<!-- link 結束 -->
-
 						
 						</li>
 					<% end %>
@@ -121,25 +118,68 @@
 			</div></div>
 		</div></div>
 
-		<!-- link 連結 -->
-			<%= render partial: "/erb/list-text_link", locals: set({ index: 2, header_text: "文字列表" }) %>
-		<!-- link 結束 -->
 
-		<!-- link 連結 -->
-			<%= render partial: "/erb/list-pic_link", locals: set({ index: 3, header_text: "圖片列表" }) %>
-		<!-- link 結束 -->
+		<% li_length = (2..5).to_a.sample %>
 
-		<!-- link 連結 -->
-			<%= render partial: "/erb/area-form_link", locals: set({ index: 4, func_set: "{'selectLink':{}}", header_text: "文字下拉" }) %>
-		<!-- link 結束 -->
+		<div class="group-list slider" data-index="2" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}"><div class="in">
+			<div class="ct"><div class="in">
+				<ul data-index="1" data-child="<%= li_length %>">
 
-		<!--marquee 跑馬燈 -->
-			<%= render partial: "/erb/list-pic_marquee", locals: set({ index: 5, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(圖片)" }) %>
-		<!-- marquee 結束 -->
+					<% li_length.times do |i| %>
+						<li data-index="<%= i + 1 %>">
 
-		<!-- icons-g2 圖示群組(台中市府 - hyc) -->
-			<%= render partial: "/erb/area-customize_icons-g2", locals: set({ index: 6, header_text: "圖示群組" }) %>
-		<!-- icons-g2 結束 -->
+						<!-- link 連結 -->
+							<%= render partial: "/erb/list-text_link", locals: set({ header_text: "文字列表" }) %>
+						<!-- link 結束 -->
+						
+						</li>
+					<% end %>
+				</ul>
+			</div></div>
+			<div class="ft"><div class="in">
+				<ul data-index="1" data-child="1">
+					<li data-index="2" class="more"><span><a href="#">更多</a></span></li>
+				</ul>
+			</div></div>
+		</div></div>
+
+
+		<% li_length = (2..5).to_a.sample %>
+
+		<div class="group-list slider" data-index="3" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'fadeSlider':{'auto':false,'delay':5000,'speed':300}}"><div class="in">
+			<div class="ct"><div class="in">
+				<ul data-index="1" data-child="<%= li_length %>">
+
+					<% li_length.times do |i| %>
+						<li data-index="<%= i + 1 %>">
+
+						<!-- link 連結 -->
+							<%= render partial: "/erb/list-pic_link", locals: set({ index: 3, header_text: "圖片列表" }) %>
+						<!-- link 結束 -->
+						
+						</li>
+					<% end %>
+				</ul>
+			</div></div>
+			<div class="ft"><div class="in">
+				<ul data-index="1" data-child="1">
+					<li data-index="2" class="more"><span><a href="#">更多</a></span></li>
+				</ul>
+			</div></div>
+		</div></div>
+
+
+	<!-- link 連結 -->
+		<%= render partial: "/erb/area-form_link", locals: set({ index: 4, func_set: "{'selectLink':{}}", header_text: "文字下拉" }) %>
+	<!-- link 結束 -->
+
+	<!--marquee 跑馬燈 -->
+		<%= render partial: "/erb/list-pic_marquee", locals: set({ index: 5, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(圖片)" }) %>
+	<!-- marquee 結束 -->
+
+	<!-- icons-g2 圖示群組(台中市府 - hyc) -->
+		<%= render partial: "/erb/area-customize_icons-g2", locals: set({ index: 6, header_text: "圖示群組" }) %>
+	<!-- icons-g2 結束 -->
 
 	</div></div>
 </div></div>
@@ -147,7 +187,7 @@
 
 
 
-<div class="group" data-index="4" data-type="<%= $cell %>" data-child="2"><div class="in">
+<div class="group" data-index="4" data-type="<%= $cell %>" data-child="1"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">線上投票</a></span></h3>
 	</div></div>
@@ -161,7 +201,7 @@
 
 
 
-<div class="group" data-index="5" data-type="<%= $row %>" data-child="2"><div class="in">
+<div class="group" data-index="5" data-type="<%= $row %>" data-child="1"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">行事曆</a></span></h3>
 	</div></div>
@@ -177,7 +217,7 @@
 
 
 
-<div class="group" data-index="6" data-type="<%= $row %>" data-child="2"><div class="in">
+<div class="group" data-index="6" data-type="<%= $row %>" data-child="1"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">錨點區塊</a></span></h3>
 	</div></div>
@@ -193,7 +233,7 @@
 
 
 
-<div class="group" data-index="7" data-type="<%= $cell %>" data-child="2"><div class="in">
+<div class="group" data-index="7" data-type="<%= $row %>" data-child="1"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">圖表</a></span></h3>
 	</div></div>
@@ -209,7 +249,7 @@
 
 
 
-<div class="group" data-index="8" data-type="<%= $cell %>" data-child="2"><div class="in">
+<div class="group" data-index="8" data-type="<%= $row %>" data-child="2"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">rss 訂閱</a></span></h3>
 	</div></div>
@@ -225,7 +265,7 @@
 
 
 
-<div class="group" data-index="9" data-type="<%= $cell %>" data-child="2"><div class="in">
+<div class="group" data-index="9" data-type="<%= $row %>" data-child="2"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">影音</a></span></h3>
 	</div></div>
@@ -295,7 +335,9 @@
 	</div></div>
 	<div class="ct"><div class="in">
 
-	
+	<!-- major-slider 主輪播 -->
+		<%= render partial: "/erb/group-list_major-slider", locals: set({ index: 1, func_set: "{'picSlider':{'auto':false,'delay':5000,'speed':300,'sliderType':4}}", header_text: "主輪播" }) %>
+	<!-- slider 結束 -->
 
 	</div></div>
 </div></div>
@@ -318,25 +360,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- major-slider 主輪播 -->
-	<%= render partial: "/erb/group-list_major-slider", locals: set({ index: 1, func_set: "{'fadeSlider':{'auto':false,'delay':5000,'speed':300,'sliderType':2}}", header_text: "主輪播" }) %>
-<!-- slider 結束 -->
 
 <!-- tab 頁籤 -->
 	<%= render partial: "/erb/group-tab_default", locals: set({ index: 7, func_set: "{'tab':{}}", header_text: "頁籤", :inner =>  "/erb/group-list_message" }) %>
