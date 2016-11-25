@@ -6,14 +6,14 @@
 	display: inline-block;
 
 	@include js(false) {
-		display: block;
+		display: none;
 	}
 
 	@include media('mobile') {
 		display: none;
 	}
 
-	&.is-active {
+	&:hover, &.is-active {
 
 		> .bg-drop-layout > .in, > .in {
 

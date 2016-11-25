@@ -13,8 +13,11 @@
 
 @import 'base-layout'; //框架
 
+@import 'sys_module-set'; //模組-框架
+
 @import 'sys_template'; //模組-框架
 
+@import 'page_index'; //index
 
 @import 'page_album'; //album
 
@@ -37,8 +40,6 @@
 @import 'page_figure'; //figure
 
 @import 'page_form'; //form
-
-@import 'page_index'; //index
 
 @import 'page_link'; //link
 
