@@ -137,6 +137,10 @@
 				li {
 					width: 100% / $len;
 					float: left;
+
+					&:nth-child(#{$len}n+1) {
+						clear: left;
+					}
 				}
 			}
 
@@ -147,6 +151,10 @@
 				> [data-index][data-type] {
 					width: 100% / $len;
 					float: left;
+
+					&:nth-child(#{$len}n+1) {
+						clear: left;
+					}
 				}
 			}
 
@@ -159,6 +167,10 @@
 					> li {
 						width: 100% / $len;
 						float: left;
+
+						&:nth-child(#{$len}n+1) {
+							clear: left;
+						}
 					}
 				}
 			}

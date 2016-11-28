@@ -64,10 +64,6 @@
 						width: 100%;
 					}
 
-					&:after {
-						@extend %clear;
-					}
-
 					> li {
 						width: 100% / $max-li-len;
 						float: left;

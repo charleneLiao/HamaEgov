@@ -3,6 +3,7 @@
 //內頁區塊群組================================================================
 
 .group-list.page-block {
+	@include default-len(4, 3);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -32,41 +33,12 @@
 
 				> ul {
 
-					&:after {
-						@extend %clear;
-					}
-
 					> li {
-						$len: 3;
-
-						float: left;
-						width: ( 100% / $len );
 						box-sizing: border-box;
 						padding: 0 $interval-xs $interval-s;
 
-						&:nth-child(#{$len}n+1) {
-							clear: left;
-						}
-
-						@include media('pad') {
-							$len: 2;
-
-							width: 100% / $len;
-
-							&:nth-child(#{$len}n+1) {
-								clear: left;
-							}
-						}
-
-						@include media('phone') {
-							$len: 1;
-
-							width: 100% / $len;
-
-							&:nth-child(#{$len}n+1) {
-								clear: left;
-							}
-						}
+						@include len-rwd('pad', 2);
+						@include len-rwd('phone', 1);
 					}
 				}
 			}

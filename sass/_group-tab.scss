@@ -42,6 +42,10 @@
 
 							+ li {
 								display: none;
+
+								@include js(false) {
+									display: block;
+								}
 							}
 						}
 

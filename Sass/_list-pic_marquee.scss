@@ -53,10 +53,6 @@
 			@include js(false) {
 				width: 100%;
 			}
-
-			&:after {
-				@extend %clear;
-			}
 		}
 
 		li {

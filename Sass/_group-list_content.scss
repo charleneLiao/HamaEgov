@@ -3,10 +3,8 @@
 //內頁階層================================================================
 
 .group-list.content {
-	$max-len: 3;
-
 	@include default-len(4, 1);
-	@include set-len(4, $max-len);
+	@include set-len(4, 3);
 
 	> .bg-drop-layout > .in, > .in {
 
