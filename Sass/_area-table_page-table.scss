@@ -35,8 +35,11 @@
 		}
 
 		table {
-			table-layout: fixed;
 			width: 100%;
+
+			@include media('mobile') {
+				table-layout: fixed;
+			}
 		}
 
 		thead {

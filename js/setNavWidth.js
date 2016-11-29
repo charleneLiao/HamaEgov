@@ -9,47 +9,85 @@ define(['getNode'], function(getNode){
 		$.extend($set, opt);
 		
 		var $ul = getNode.getCtList(env),
-			$ul_w = parseInt($ul.css('width'), 10),
+			$ul_l = $ul.offset().left,
+			$ul_w = $ul.outerWidth(),
 			$li = $ul.children('li'), //取 li
 			$li_w = $li.outerWidth(),
-			_base_len = Math.round($ul_w / $li_w), //預設選單數量
-			_width_uni = 100 / _base_len;
+			$li_display = $li.css('display'),
+			_base_len = Math.round($ul_w / $li_w); //預設選單數量
 
-		$li.each(function(i, d){
-			var $this = $(this),
-				// _index = $this.data('index'), //等同於 i + 1
-				_width = $this.data('width');
+		if( $li_display === 'list-item' || $li_display === 'block' ) {  //如果選單寬度固定平均分割
 
-			var $module = $this.children('[data-index][data-type]'),
-				$ct = getNode.getCt($module);
+			$li.each(function(i, d){
+				var $this = $(this),
+					// _index = $this.data('index'), //等同於 i + 1
+					_width = parseFloat($this.attr('data-width'));
 
-			if( _width >= _base_len ) { //如果 data-width 大於可分割數值
+				var $module = $this.children('[data-index][data-type]'),
+					$ct = getNode.getCt($module);
 
-				$ct.css({ 
-					'width': _base_len + '00%',
-					'left': ( -1 * ( i % _base_len )) + '00%'
-				});
+				if( _width >= _base_len ) { //如果 data-width 大於可分割數值
 
-			}else if( i % _base_len + _width > _base_len ) { //如果超出邊界就往回推
+					$ct.css({ 
+						'width': ( _base_len * 100 ) + '%',
+						'left': ( -100 * ( i % _base_len )) + '%'
+					});
 
-				var _index = i;
+				}else if( i % _base_len + _width > _base_len ) { //如果超出邊界就往回推
 
-				if( _index > _base_len ) { // 因為 7 % 7 會等於 0
-					_index = _index % _base_len;
+					var _index = i;
+
+					if( _index > _base_len ) { // 因為 7 % 7 會等於 0
+						_index = _index % _base_len;
+					}
+
+					$ct.css({ 
+						'width': ( _width * 100 ) + '%',
+						'left': ( -100 * (( _index % _base_len + _width ) - _base_len )) + '%'
+					});
+
+				}else {
+
+					$ct.css({ 
+						'width': ( _width * 100 ) + '%'
+					});
 				}
+			});
 
-				$ct.css({ 
-					'width': _width + '00%',
-					'left': -1 * (( _index % _base_len + _width ) - _base_len ) + '00%'
-				});
+		}else if( $li_display === 'inline-block' ) { //如果選單寬度隨文字變化
 
-			}else {
+			$li.each(function(i, d){
+				var $this = $(this),
+					$this_l = ( $this.offset().left ) - $ul_l,
+					$this_w = $this.outerWidth(),
+					_width = parseFloat($this.attr('data-width'));
 
-				$ct.css({ 
-					'width': _width + '00%'
-				});
-			}
-		});
+				var $module = $this.children('[data-index][data-type]'),
+					$ct = getNode.getCt($module),
+					$ct_w = $this_w * _width;
+
+				if( $ct_w >= $ul_w ) { //如果寬度大於父層
+
+					$ct.css({ 
+						'width': $ul_w + 'px',
+						'left': -1 * $this_l + 'px'
+					});
+
+				}else if( $ct_w + $this_l > $ul_w ) { //如果超出邊界就往回推
+
+					$ct.css({ 
+						'width': $ct_w,
+						'left': -1 * ( ( $ct_w + $this_l ) - $ul_w ) + 'px'
+					});
+
+				}else {
+
+					$ct.css({ 
+						'width': $ct_w + 'px'
+					});
+				}
+			});
+		}
 
 		if($set.debug) {
 			console.log('預設值:', $set);
