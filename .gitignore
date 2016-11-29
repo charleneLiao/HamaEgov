@@ -1,4 +1,3 @@
 /gitignore
 /.sass-cache
-/index_files
-/todo.txt
+/Css/*.map
