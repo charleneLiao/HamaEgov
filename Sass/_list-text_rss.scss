@@ -29,6 +29,9 @@
 	}
 
 	.ct {
+		$rss: map-get($file-type-map, 'rss');
+		$pic: map-get($rss, 'pic');
+		$color: map-get($rss, 'color');
 
 		> .in {
 			
@@ -39,14 +42,11 @@
 		}
 
 		li {
-			$rss: map-get($file-type-map, 'rss');
-			$pic: map-get($rss, 'pic');
-			$color: map-get($rss, 'color');
 
 			a {
 				border-left-color: $color;
 
-				&:before {
+				&:after {
 					@include icon-pic($pic);
 				}
 			}
@@ -66,8 +66,8 @@
 			border-left-width: $interval-xs;
 			border-left-style: solid;
 
-			&:before {
-				margin-right: $interval-xs;
+			&:after {
+				margin-left: $interval-xs;
 			}
 
 			&:hover {
@@ -76,7 +76,8 @@
 		}
 
 		/*i*/.mark {
-			
+			@extend %mark;
+			background-color: $color;
 		}
 	}
 
