@@ -29,6 +29,18 @@
 						"GroupType": "FixedModuleString",
 						"Name": "Menu",
 						"func": "{'majorNavMobile':{}}"
+					},
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "HotKeyWord"
+					},
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "TopLink"
+					},
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "FooterLink"
 					}
 				]
 			}

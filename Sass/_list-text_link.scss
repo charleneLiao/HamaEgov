@@ -6,24 +6,6 @@
 
 	.base-mobile & {
 
-		&.is-open {
-
-			.hd {
-				$icon: 'icon-pic/away-b-bottom.png';
-
-				a {
-
-					&:after {
-						@include bg-to-pic($icon, false);
-					}
-				}
-			}
-
-			.ct {
-				display: block;
-			}
-		}
-
 		> .bg-drop-layout > .in, > .in {
 
 		}
@@ -49,14 +31,13 @@
 		}
 
 		.ct {
-			display: none;
 
 			> .in {
 				
 			}
 
 			ul {
-				padding-left: $interval-l;
+
 			}
 
 			li {
