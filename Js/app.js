@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: 'js'
+	baseUrl: '/js'
 });
 
 requirejs(['fix'], function(func){ //幫 IE8 補東補西

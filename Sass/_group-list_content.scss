@@ -3,8 +3,6 @@
 //內頁階層================================================================
 
 .group-list.content {
-	@include default-len(4, 1);
-	@include set-len(4, 3);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -35,7 +33,6 @@
 				> ul {
 
 					> li {
-						@include len-rwd('mobile', 1);
 
 						+ li {
 							margin-top: $interval-s;
