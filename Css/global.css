@@ -33,7 +33,7 @@
 }
 
 /* line 540, ../sass/_base-function.scss */
-[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .base-page-area > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .area-essay.message .ct .div:after, .area-customize.calendar .ct .heading:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .area-customize.news-card .ct .label:after, .list-text.step .ct ul:after, .area-customize.calendar-detail03 .ct .heading:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after {
+[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .base-page-area > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .area-essay.message .ct .div:after, .area-customize.calendar .ct .heading:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .area-customize.news-card .ct .label:after, .list-text.step .ct ul:after, .area-customize.calendar-detail03 .ct .heading:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after {
   content: "​";
   display: block;
   height: 0;
@@ -54,7 +54,7 @@
 }
 
 /* line 625, ../sass/_base-function.scss */
-.base-header .info > .bg-drop-layout > .in, .base-header .info > .in, .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in, .base-content > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-footer .simple-text.btn .ct, .base-extend .simple-text.btn > .bg-drop-layout > .in, .base-extend .simple-text.btn > .in, .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
+.base-content > .in, .base-header .info > .bg-drop-layout > .in, .base-header .info > .in, .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-footer .simple-text.btn .ct, .base-extend .simple-text.btn > .bg-drop-layout > .in, .base-extend .simple-text.btn > .in, .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -128,32 +128,24 @@
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 8px;
 }
-/* line 751, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4:before, .group-list.default > .in > .hd h4:before, .simple-text.default .hd h4:before, .area-editor.default .hd h4:before, .base-content .list-text.link .hd h4:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h4:before, .group-list.major-slider > .in > .hd h4:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.slider > .in > .hd h4:before, .list-text.slider .hd h4:before, .simple-text.message .hd h4:before, .group-list.message > .bg-drop-layout > .in > .hd h4:before, .group-list.message > .in > .hd h4:before, .area-essay.message .hd h4:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.album > .in > .hd h4:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.album > .in > .hd h4:before, .area-figure.album .hd h4:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-module-area .group-list.link > .in > .hd h4:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:before, .base-page-area .group-list.link > .in > .hd h4:before, .list-pic.link .hd h4:before, .area-form.link .hd h4:before, .base-module-area .area-essay.link .hd h4:before, .base-page-area .area-essay.link .hd h4:before, .area-form.vote .hd h4:before, .list-text.rss .hd h4:before, .area-customize.calendar .hd h4:before, .simple-text.weather .hd h4:before, .list-text.anchor .hd h4:before, .area-form.epaper .hd h4:before, .area-customize.video .hd h4:before, .area-customize.news-card .hd h4:before, .area-customize.icons-g2 .hd h4:before, .area-form.page-search .hd h4:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.classify-multiple > .in > .hd h4:before, .group-list.page-block > .bg-drop-layout > .in > .hd h4:before, .group-list.page-block > .in > .hd h4:before, .group-list.page-list > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list > .in > .hd h4:before, .list-pic.album .hd h4:before, .area-customize.calendar-detail03 .hd h4:before, .area-customize.chart .hd h4:before, .group-list.content > .bg-drop-layout > .in > .hd h4:before, .group-list.content > .in > .hd h4:before, .list-text.file-download .hd h4:before, .list-pic.pic-download .hd h4:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:before, .group-list.file-download-multiple > .in > .hd h4:before, .area-editor.error-info .hd h4:before, .area-essay.page-caption-label .hd h4:before, .area-essay.page-caption-label-p .hd h4:before, .area-essay.page-caption-p .hd h4:before, .area-essay.page-essay .hd h4:before, .area-essay.page-img-caption-label .hd h4:before, .area-essay.page-img-caption-p .hd h4:before, .area-figure.page-figure .hd h4:before, .area-figure.page-img-figcaption .hd h4:before, .area-figure.page-img-figcaption-label .hd h4:before, .area-figure.page-img-figcaption-p .hd h4:before, .area-figure.page-img-label .hd h4:before, .area-figure.page-img-label-p .hd h4:before, .area-figure.page-img-p .hd h4:before, .area-form.page-form .hd h4:before, .area-form.submit .hd h4:before, .area-customize.map .hd h4:before, .area-customize.audio .hd h4:before, .area-customize.iframe .hd h4:before, .list-text.message .hd h4:before, .list-pic.page-list .hd h4:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-pic > .in > .hd h4:before, .group-list.query > .bg-drop-layout > .in > .hd h4:before, .group-list.query > .in > .hd h4:before, .area-form.sign-in .hd h4:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:before, .group-list.sitemap > .in > .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.page-table .hd h4:before, .area-table.rwd-table .hd h4:before, .list-text.page-list .hd h4:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:before, .group-list.page-list-text > .in > .hd h4:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:before, .group-list.vote-result > .in > .hd h4:before, .group-list.default > .bg-drop-layout > .in > .hd h3:before, .group-list.default > .in > .hd h3:before, .simple-text.default .hd h3:before, .area-editor.default .hd h3:before, .base-content .list-text.link .hd h3:before, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:before, .group-list.major-slider > .in > .hd h3:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.slider > .in > .hd h3:before, .list-text.slider .hd h3:before, .simple-text.message .hd h3:before, .group-list.message > .bg-drop-layout > .in > .hd h3:before, .group-list.message > .in > .hd h3:before, .area-essay.message .hd h3:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.album > .in > .hd h3:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.album > .in > .hd h3:before, .area-figure.album .hd h3:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-module-area .group-list.link > .in > .hd h3:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:before, .base-page-area .group-list.link > .in > .hd h3:before, .list-pic.link .hd h3:before, .area-form.link .hd h3:before, .base-module-area .area-essay.link .hd h3:before, .base-page-area .area-essay.link .hd h3:before, .area-form.vote .hd h3:before, .list-text.rss .hd h3:before, .area-customize.calendar .hd h3:before, .simple-text.weather .hd h3:before, .list-text.anchor .hd h3:before, .area-form.epaper .hd h3:before, .area-customize.video .hd h3:before, .area-customize.news-card .hd h3:before, .area-customize.icons-g2 .hd h3:before, .area-form.page-search .hd h3:before, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.classify-multiple > .in > .hd h3:before, .group-list.page-block > .bg-drop-layout > .in > .hd h3:before, .group-list.page-block > .in > .hd h3:before, .group-list.page-list > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list > .in > .hd h3:before, .list-pic.album .hd h3:before, .area-customize.calendar-detail03 .hd h3:before, .area-customize.chart .hd h3:before, .group-list.content > .bg-drop-layout > .in > .hd h3:before, .group-list.content > .in > .hd h3:before, .list-text.file-download .hd h3:before, .list-pic.pic-download .hd h3:before, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:before, .group-list.file-download-multiple > .in > .hd h3:before, .area-editor.error-info .hd h3:before, .area-essay.page-caption-label .hd h3:before, .area-essay.page-caption-label-p .hd h3:before, .area-essay.page-caption-p .hd h3:before, .area-essay.page-essay .hd h3:before, .area-essay.page-img-caption-label .hd h3:before, .area-essay.page-img-caption-p .hd h3:before, .area-figure.page-figure .hd h3:before, .area-figure.page-img-figcaption .hd h3:before, .area-figure.page-img-figcaption-label .hd h3:before, .area-figure.page-img-figcaption-p .hd h3:before, .area-figure.page-img-label .hd h3:before, .area-figure.page-img-label-p .hd h3:before, .area-figure.page-img-p .hd h3:before, .area-form.page-form .hd h3:before, .area-form.submit .hd h3:before, .area-customize.map .hd h3:before, .area-customize.audio .hd h3:before, .area-customize.iframe .hd h3:before, .list-text.message .hd h3:before, .list-pic.page-list .hd h3:before, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-pic > .in > .hd h3:before, .group-list.query > .bg-drop-layout > .in > .hd h3:before, .group-list.query > .in > .hd h3:before, .area-form.sign-in .hd h3:before, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:before, .group-list.sitemap > .in > .hd h3:before, .list-text.sitemap .hd h3:before, .area-table.page-table .hd h3:before, .area-table.rwd-table .hd h3:before, .list-text.page-list .hd h3:before, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:before, .group-list.page-list-text > .in > .hd h3:before, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:before, .group-list.vote-result > .in > .hd h3:before {
-  margin-right: 3px;
-}
-/* line 755, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4:after, .group-list.default > .in > .hd h4:after, .simple-text.default .hd h4:after, .area-editor.default .hd h4:after, .base-content .list-text.link .hd h4:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h4:after, .group-list.major-slider > .in > .hd h4:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.slider > .in > .hd h4:after, .list-text.slider .hd h4:after, .simple-text.message .hd h4:after, .group-list.message > .bg-drop-layout > .in > .hd h4:after, .group-list.message > .in > .hd h4:after, .area-essay.message .hd h4:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.album > .in > .hd h4:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.album > .in > .hd h4:after, .area-figure.album .hd h4:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-module-area .group-list.link > .in > .hd h4:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4:after, .base-page-area .group-list.link > .in > .hd h4:after, .list-pic.link .hd h4:after, .area-form.link .hd h4:after, .base-module-area .area-essay.link .hd h4:after, .base-page-area .area-essay.link .hd h4:after, .area-form.vote .hd h4:after, .list-text.rss .hd h4:after, .area-customize.calendar .hd h4:after, .simple-text.weather .hd h4:after, .list-text.anchor .hd h4:after, .area-form.epaper .hd h4:after, .area-customize.video .hd h4:after, .area-customize.news-card .hd h4:after, .area-customize.icons-g2 .hd h4:after, .area-form.page-search .hd h4:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.classify-multiple > .in > .hd h4:after, .group-list.page-block > .bg-drop-layout > .in > .hd h4:after, .group-list.page-block > .in > .hd h4:after, .group-list.page-list > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list > .in > .hd h4:after, .list-pic.album .hd h4:after, .area-customize.calendar-detail03 .hd h4:after, .area-customize.chart .hd h4:after, .group-list.content > .bg-drop-layout > .in > .hd h4:after, .group-list.content > .in > .hd h4:after, .list-text.file-download .hd h4:after, .list-pic.pic-download .hd h4:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4:after, .group-list.file-download-multiple > .in > .hd h4:after, .area-editor.error-info .hd h4:after, .area-essay.page-caption-label .hd h4:after, .area-essay.page-caption-label-p .hd h4:after, .area-essay.page-caption-p .hd h4:after, .area-essay.page-essay .hd h4:after, .area-essay.page-img-caption-label .hd h4:after, .area-essay.page-img-caption-p .hd h4:after, .area-figure.page-figure .hd h4:after, .area-figure.page-img-figcaption .hd h4:after, .area-figure.page-img-figcaption-label .hd h4:after, .area-figure.page-img-figcaption-p .hd h4:after, .area-figure.page-img-label .hd h4:after, .area-figure.page-img-label-p .hd h4:after, .area-figure.page-img-p .hd h4:after, .area-form.page-form .hd h4:after, .area-form.submit .hd h4:after, .area-customize.map .hd h4:after, .area-customize.audio .hd h4:after, .area-customize.iframe .hd h4:after, .list-text.message .hd h4:after, .list-pic.page-list .hd h4:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-pic > .in > .hd h4:after, .group-list.query > .bg-drop-layout > .in > .hd h4:after, .group-list.query > .in > .hd h4:after, .area-form.sign-in .hd h4:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h4:after, .group-list.sitemap > .in > .hd h4:after, .list-text.sitemap .hd h4:after, .area-table.page-table .hd h4:after, .area-table.rwd-table .hd h4:after, .list-text.page-list .hd h4:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4:after, .group-list.page-list-text > .in > .hd h4:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h4:after, .group-list.vote-result > .in > .hd h4:after, .group-list.default > .bg-drop-layout > .in > .hd h3:after, .group-list.default > .in > .hd h3:after, .simple-text.default .hd h3:after, .area-editor.default .hd h3:after, .base-content .list-text.link .hd h3:after, .group-list.major-slider > .bg-drop-layout > .in > .hd h3:after, .group-list.major-slider > .in > .hd h3:after, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.slider > .in > .hd h3:after, .list-text.slider .hd h3:after, .simple-text.message .hd h3:after, .group-list.message > .bg-drop-layout > .in > .hd h3:after, .group-list.message > .in > .hd h3:after, .area-essay.message .hd h3:after, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.album > .in > .hd h3:after, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.album > .in > .hd h3:after, .area-figure.album .hd h3:after, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-module-area .group-list.link > .in > .hd h3:after, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3:after, .base-page-area .group-list.link > .in > .hd h3:after, .list-pic.link .hd h3:after, .area-form.link .hd h3:after, .base-module-area .area-essay.link .hd h3:after, .base-page-area .area-essay.link .hd h3:after, .area-form.vote .hd h3:after, .list-text.rss .hd h3:after, .area-customize.calendar .hd h3:after, .simple-text.weather .hd h3:after, .list-text.anchor .hd h3:after, .area-form.epaper .hd h3:after, .area-customize.video .hd h3:after, .area-customize.news-card .hd h3:after, .area-customize.icons-g2 .hd h3:after, .area-form.page-search .hd h3:after, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.classify-multiple > .in > .hd h3:after, .group-list.page-block > .bg-drop-layout > .in > .hd h3:after, .group-list.page-block > .in > .hd h3:after, .group-list.page-list > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list > .in > .hd h3:after, .list-pic.album .hd h3:after, .area-customize.calendar-detail03 .hd h3:after, .area-customize.chart .hd h3:after, .group-list.content > .bg-drop-layout > .in > .hd h3:after, .group-list.content > .in > .hd h3:after, .list-text.file-download .hd h3:after, .list-pic.pic-download .hd h3:after, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3:after, .group-list.file-download-multiple > .in > .hd h3:after, .area-editor.error-info .hd h3:after, .area-essay.page-caption-label .hd h3:after, .area-essay.page-caption-label-p .hd h3:after, .area-essay.page-caption-p .hd h3:after, .area-essay.page-essay .hd h3:after, .area-essay.page-img-caption-label .hd h3:after, .area-essay.page-img-caption-p .hd h3:after, .area-figure.page-figure .hd h3:after, .area-figure.page-img-figcaption .hd h3:after, .area-figure.page-img-figcaption-label .hd h3:after, .area-figure.page-img-figcaption-p .hd h3:after, .area-figure.page-img-label .hd h3:after, .area-figure.page-img-label-p .hd h3:after, .area-figure.page-img-p .hd h3:after, .area-form.page-form .hd h3:after, .area-form.submit .hd h3:after, .area-customize.map .hd h3:after, .area-customize.audio .hd h3:after, .area-customize.iframe .hd h3:after, .list-text.message .hd h3:after, .list-pic.page-list .hd h3:after, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-pic > .in > .hd h3:after, .group-list.query > .bg-drop-layout > .in > .hd h3:after, .group-list.query > .in > .hd h3:after, .area-form.sign-in .hd h3:after, .group-list.sitemap > .bg-drop-layout > .in > .hd h3:after, .group-list.sitemap > .in > .hd h3:after, .list-text.sitemap .hd h3:after, .area-table.page-table .hd h3:after, .area-table.rwd-table .hd h3:after, .list-text.page-list .hd h3:after, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3:after, .group-list.page-list-text > .in > .hd h3:after, .group-list.vote-result > .bg-drop-layout > .in > .hd h3:after, .group-list.vote-result > .in > .hd h3:after {
-  margin-left: 3px;
-}
 
-/* line 769, ../sass/_base-function.scss */
+/* line 761, ../sass/_base-function.scss */
 .area-essay.message .ct .caption, .area-figure.album .ct .figcaption, .base-module-area .area-essay.link .ct .caption, .base-page-area .area-essay.link .ct .caption, .area-form.vote .ct .caption, .area-customize.video .ct .caption, .area-customize.news-card .ct .caption, .area-essay.page-caption-label .ct .caption, .area-essay.page-caption-label-p .ct .caption, .area-essay.page-caption-p .ct .caption, .area-essay.page-essay .ct .caption, .area-essay.page-img-caption-label .ct .caption, .area-essay.page-img-caption-p .ct .caption, .area-figure.page-figure .ct .figcaption, .area-figure.page-img-figcaption-p .ct .figcaption, .area-customize.map .ct .caption, .area-customize.audio .ct .caption, .area-customize.iframe .ct .caption {
   margin-bottom: 5px;
   font-size: 1.1em;
   color: #79561b;
 }
-/* line 778, ../sass/_base-function.scss */
+/* line 770, ../sass/_base-function.scss */
 .area-essay.message .ct .caption a, .area-figure.album .ct .figcaption a, .base-module-area .area-essay.link .ct .caption a, .base-page-area .area-essay.link .ct .caption a, .area-form.vote .ct .caption a, .area-customize.video .ct .caption a, .area-customize.news-card .ct .caption a, .area-essay.page-caption-label .ct .caption a, .area-essay.page-caption-label-p .ct .caption a, .area-essay.page-caption-p .ct .caption a, .area-essay.page-essay .ct .caption a, .area-essay.page-img-caption-label .ct .caption a, .area-essay.page-img-caption-p .ct .caption a, .area-figure.page-figure .ct .figcaption a, .area-figure.page-img-figcaption-p .ct .figcaption a, .area-customize.map .ct .caption a, .area-customize.audio .ct .caption a, .area-customize.iframe .ct .caption a {
   font-size: 1em;
 }
 
-/* line 783, ../sass/_base-function.scss */
+/* line 775, ../sass/_base-function.scss */
 .area-essay.message .ct .label, .area-figure.album .ct .label, .base-module-area .area-essay.link .ct .label, .base-page-area .area-essay.link .ct .label, .area-form.vote .ct .label, .area-customize.video .ct .label, .area-essay.page-caption-label .ct .label, .area-essay.page-caption-label-p .ct .label, .area-essay.page-essay .ct .label, .area-essay.page-img-caption-label .ct .label, .area-customize.map .ct .label, .area-customize.audio .ct .label, .area-customize.iframe .ct .label {
   margin: 5px 0;
 }
 
-/* line 799, ../sass/_base-function.scss */
+/* line 791, ../sass/_base-function.scss */
 .list-pic.marquee .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark, .simple-text.default .ct .mark, .base-header .list-text.link .ct .mark, .base-content .list-text.link .ct .mark, .list-text.slider .ct .mark, .simple-text.message .ct .mark, .area-essay.message .ct .mark, .area-figure.album .ct .mark, .base-module-area .area-essay.link .ct .mark, .base-page-area .area-essay.link .ct .mark, .area-form.vote .ct .mark, .list-text.rss .ct .mark, .area-customize.calendar .ct .mark, .simple-text.weather .ct .mark, .area-customize.video .ct .mark, .list-text.label .ct a, .area-customize.calendar-detail03 .ct .mark, .area-essay.page-caption-label .ct .mark, .area-essay.page-caption-label-p .ct .mark, .area-essay.page-essay .ct .mark, .area-essay.page-img-caption-label .ct .mark, .area-figure.page-figure .ct .mark, .area-figure.page-img-figcaption-label .ct .mark, .area-figure.page-img-label .ct .mark, .area-figure.page-img-label-p .ct .mark, .area-customize.map .ct .mark, .area-customize.audio .ct .mark, .area-customize.iframe .ct .mark, .list-text.message .ct .mark, .list-text.page-list .ct .mark {
   display: inline-block;
   font-size: 0.9em;
@@ -163,19 +155,19 @@
   background-color: #1b6d79;
 }
 
-/* line 808, ../sass/_base-function.scss */
+/* line 800, ../sass/_base-function.scss */
 .list-pic.marquee .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark {
   position: absolute;
   top: 8px;
   left: 8px;
 }
 
-/* line 815, ../sass/_base-function.scss */
+/* line 807, ../sass/_base-function.scss */
 .area-essay.message .ct .p, .area-figure.album .ct .p, .base-module-area .area-essay.link .ct .p, .base-page-area .area-essay.link .ct .p, .area-form.vote .ct .p, .area-essay.page-caption-label-p .ct .p, .area-essay.page-caption-p .ct .p, .area-essay.page-essay .ct .p, .area-essay.page-img-caption-p .ct .p, .area-figure.page-figure .ct .p, .area-figure.page-img-figcaption-p .ct .p, .area-figure.page-img-label-p .ct .p, .area-figure.page-img-p .ct .p {
   margin: 5px 0;
 }
 
-/* line 831, ../sass/_base-function.scss */
+/* line 823, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail03 .ct .label a, .sys-root a.btn, .sys-root input[type="submit"], .sys-root input[type="reset"], .sys-root input[type="button"], .sys-root button, .list-text.open-data .ct a, .list-text.user-tool .ct a, .base-footer .simple-text.btn .ct a, .list-text.jump-tool .ct a, .list-multiple.page-click .ct a, .list-multiple.page-select .ct ul[data-index="1"] a, .list-multiple.page-select .ct ul[data-index="2"] a, .base-mobile .area-form.search .ft li, [data-js="false"] .base-wrapper .area-form.search .ft a, .list-text.btn .ct a, .area-figure.page-figure .ft a, .base-wrapper .simple-text.query .ft a, .base-extend .simple-text.query .ft a {
   display: inline-block;
   padding: 5px 8px;
@@ -191,39 +183,39 @@
   background-color: #646464;
   transition: 150ms;
 }
-/* line 846, ../sass/_base-function.scss */
+/* line 838, ../sass/_base-function.scss */
 .group-list.default > .in > .ft a:link, .base-content .list-text.link .ft a:link, .base-module-area .group-list.slider > .in > .ft a:link, .list-text.slider .ft a:link, .group-list.message > .in > .ft a:link, .area-essay.message .ft a:link, .base-module-area .group-list.album > .in > .ft a:link, .base-page-area .group-list.album > .in > .ft a:link, .area-figure.album .ft a:link, .base-module-area .group-list.link > .in > .ft a:link, .base-page-area .group-list.link > .in > .ft a:link, .list-pic.link .ft a:link, .area-form.link .ft a:link, .base-module-area .area-essay.link .ft a:link, .base-page-area .area-essay.link .ft a:link, .list-text.rss .ft a:link, .area-customize.calendar .ft a:link, .area-form.epaper .ft a:link, .area-customize.video .ft a:link, .area-customize.news-card .ft a:link, .area-customize.icons-g2 .ft a:link, .area-form.page-search .ft a:link, .group-list.page-block > .in > .ft a:link, .group-list.page-list > .in > .ft a:link, .list-pic.album .ft a:link, .area-customize.calendar-detail03 .ft a:link, .area-customize.chart .ft a:link, .area-essay.page-caption-label .ft a:link, .area-essay.page-caption-label-p .ft a:link, .area-essay.page-caption-p .ft a:link, .area-essay.page-essay .ft a:link, .area-essay.page-img-caption-label .ft a:link, .area-essay.page-img-caption-p .ft a:link, .area-figure.page-img-figcaption .ft a:link, .area-figure.page-img-figcaption-label .ft a:link, .area-figure.page-img-figcaption-p .ft a:link, .area-figure.page-img-label .ft a:link, .area-figure.page-img-label-p .ft a:link, .area-figure.page-img-p .ft a:link, .area-form.page-form .ft a:link, .area-form.submit .ft a:link, .area-customize.map .ft a:link, .area-customize.audio .ft a:link, .area-customize.iframe .ft a:link, .list-text.message .ft a:link, .group-list.page-list-pic > .in > .ft a:link, .area-form.sign-in .ft a:link, .group-list.sitemap > .in > .ft a:link, .list-text.sitemap .ft a:link, .area-table.page-table .ft a:link, .area-table.rwd-table .ft a:link, .list-text.page-list .ft a:link, .group-list.page-list-text > .in > .ft a:link, .area-customize.calendar .ct .label a:link, .area-customize.calendar-detail03 .ct .label a:link, .sys-root a.btn:link, .sys-root input[type="submit"]:link, .sys-root input[type="reset"]:link, .sys-root input[type="button"]:link, .sys-root button:link, .list-text.open-data .ct a:link, .list-text.user-tool .ct a:link, .base-footer .simple-text.btn .ct a:link, .list-text.jump-tool .ct a:link, .list-multiple.page-click .ct a:link, .list-multiple.page-select .ct ul[data-index="1"] a:link, .list-multiple.page-select .ct ul[data-index="2"] a:link, .base-mobile .area-form.search .ft li:link, [data-js="false"] .base-wrapper .area-form.search .ft a:link, .list-text.btn .ct a:link, .area-figure.page-figure .ft a:link, .base-wrapper .simple-text.query .ft a:link, .base-extend .simple-text.query .ft a:link {
   color: #ffffff;
 }
-/* line 850, ../sass/_base-function.scss */
+/* line 842, ../sass/_base-function.scss */
 .group-list.default > .in > .ft a:visited, .base-content .list-text.link .ft a:visited, .base-module-area .group-list.slider > .in > .ft a:visited, .list-text.slider .ft a:visited, .group-list.message > .in > .ft a:visited, .area-essay.message .ft a:visited, .base-module-area .group-list.album > .in > .ft a:visited, .base-page-area .group-list.album > .in > .ft a:visited, .area-figure.album .ft a:visited, .base-module-area .group-list.link > .in > .ft a:visited, .base-page-area .group-list.link > .in > .ft a:visited, .list-pic.link .ft a:visited, .area-form.link .ft a:visited, .base-module-area .area-essay.link .ft a:visited, .base-page-area .area-essay.link .ft a:visited, .list-text.rss .ft a:visited, .area-customize.calendar .ft a:visited, .area-form.epaper .ft a:visited, .area-customize.video .ft a:visited, .area-customize.news-card .ft a:visited, .area-customize.icons-g2 .ft a:visited, .area-form.page-search .ft a:visited, .group-list.page-block > .in > .ft a:visited, .group-list.page-list > .in > .ft a:visited, .list-pic.album .ft a:visited, .area-customize.calendar-detail03 .ft a:visited, .area-customize.chart .ft a:visited, .area-essay.page-caption-label .ft a:visited, .area-essay.page-caption-label-p .ft a:visited, .area-essay.page-caption-p .ft a:visited, .area-essay.page-essay .ft a:visited, .area-essay.page-img-caption-label .ft a:visited, .area-essay.page-img-caption-p .ft a:visited, .area-figure.page-img-figcaption .ft a:visited, .area-figure.page-img-figcaption-label .ft a:visited, .area-figure.page-img-figcaption-p .ft a:visited, .area-figure.page-img-label .ft a:visited, .area-figure.page-img-label-p .ft a:visited, .area-figure.page-img-p .ft a:visited, .area-form.page-form .ft a:visited, .area-form.submit .ft a:visited, .area-customize.map .ft a:visited, .area-customize.audio .ft a:visited, .area-customize.iframe .ft a:visited, .list-text.message .ft a:visited, .group-list.page-list-pic > .in > .ft a:visited, .area-form.sign-in .ft a:visited, .group-list.sitemap > .in > .ft a:visited, .list-text.sitemap .ft a:visited, .area-table.page-table .ft a:visited, .area-table.rwd-table .ft a:visited, .list-text.page-list .ft a:visited, .group-list.page-list-text > .in > .ft a:visited, .area-customize.calendar .ct .label a:visited, .area-customize.calendar-detail03 .ct .label a:visited, .sys-root a.btn:visited, .sys-root input[type="submit"]:visited, .sys-root input[type="reset"]:visited, .sys-root input[type="button"]:visited, .sys-root button:visited, .list-text.open-data .ct a:visited, .list-text.user-tool .ct a:visited, .base-footer .simple-text.btn .ct a:visited, .list-text.jump-tool .ct a:visited, .list-multiple.page-click .ct a:visited, .list-multiple.page-select .ct ul[data-index="1"] a:visited, .list-multiple.page-select .ct ul[data-index="2"] a:visited, .base-mobile .area-form.search .ft li:visited, [data-js="false"] .base-wrapper .area-form.search .ft a:visited, .list-text.btn .ct a:visited, .area-figure.page-figure .ft a:visited, .base-wrapper .simple-text.query .ft a:visited, .base-extend .simple-text.query .ft a:visited {
   color: #ffffff;
 }
-/* line 854, ../sass/_base-function.scss */
+/* line 846, ../sass/_base-function.scss */
 .group-list.default > .in > .ft a:hover, .base-content .list-text.link .ft a:hover, .base-module-area .group-list.slider > .in > .ft a:hover, .list-text.slider .ft a:hover, .group-list.message > .in > .ft a:hover, .area-essay.message .ft a:hover, .base-module-area .group-list.album > .in > .ft a:hover, .base-page-area .group-list.album > .in > .ft a:hover, .area-figure.album .ft a:hover, .base-module-area .group-list.link > .in > .ft a:hover, .base-page-area .group-list.link > .in > .ft a:hover, .list-pic.link .ft a:hover, .area-form.link .ft a:hover, .base-module-area .area-essay.link .ft a:hover, .base-page-area .area-essay.link .ft a:hover, .list-text.rss .ft a:hover, .area-customize.calendar .ft a:hover, .area-form.epaper .ft a:hover, .area-customize.video .ft a:hover, .area-customize.news-card .ft a:hover, .area-customize.icons-g2 .ft a:hover, .area-form.page-search .ft a:hover, .group-list.page-block > .in > .ft a:hover, .group-list.page-list > .in > .ft a:hover, .list-pic.album .ft a:hover, .area-customize.calendar-detail03 .ft a:hover, .area-customize.chart .ft a:hover, .area-essay.page-caption-label .ft a:hover, .area-essay.page-caption-label-p .ft a:hover, .area-essay.page-caption-p .ft a:hover, .area-essay.page-essay .ft a:hover, .area-essay.page-img-caption-label .ft a:hover, .area-essay.page-img-caption-p .ft a:hover, .area-figure.page-img-figcaption .ft a:hover, .area-figure.page-img-figcaption-label .ft a:hover, .area-figure.page-img-figcaption-p .ft a:hover, .area-figure.page-img-label .ft a:hover, .area-figure.page-img-label-p .ft a:hover, .area-figure.page-img-p .ft a:hover, .area-form.page-form .ft a:hover, .area-form.submit .ft a:hover, .area-customize.map .ft a:hover, .area-customize.audio .ft a:hover, .area-customize.iframe .ft a:hover, .list-text.message .ft a:hover, .group-list.page-list-pic > .in > .ft a:hover, .area-form.sign-in .ft a:hover, .group-list.sitemap > .in > .ft a:hover, .list-text.sitemap .ft a:hover, .area-table.page-table .ft a:hover, .area-table.rwd-table .ft a:hover, .list-text.page-list .ft a:hover, .group-list.page-list-text > .in > .ft a:hover, .area-customize.calendar .ct .label a:hover, .area-customize.calendar-detail03 .ct .label a:hover, .sys-root a.btn:hover, .sys-root input[type="submit"]:hover, .sys-root input[type="reset"]:hover, .sys-root input[type="button"]:hover, .sys-root button:hover, .list-text.open-data .ct a:hover, .list-text.user-tool .ct a:hover, .base-footer .simple-text.btn .ct a:hover, .list-text.jump-tool .ct a:hover, .list-multiple.page-click .ct a:hover, .list-multiple.page-select .ct ul[data-index="1"] a:hover, .list-multiple.page-select .ct ul[data-index="2"] a:hover, .base-mobile .area-form.search .ft li:hover, [data-js="false"] .base-wrapper .area-form.search .ft a:hover, .list-text.btn .ct a:hover, .area-figure.page-figure .ft a:hover, .base-wrapper .simple-text.query .ft a:hover, .base-extend .simple-text.query .ft a:hover {
   background-color: #343434;
 }
-/* line 858, ../sass/_base-function.scss */
+/* line 850, ../sass/_base-function.scss */
 .group-list.default > .in > .ft a:active, .base-content .list-text.link .ft a:active, .base-module-area .group-list.slider > .in > .ft a:active, .list-text.slider .ft a:active, .group-list.message > .in > .ft a:active, .area-essay.message .ft a:active, .base-module-area .group-list.album > .in > .ft a:active, .base-page-area .group-list.album > .in > .ft a:active, .area-figure.album .ft a:active, .base-module-area .group-list.link > .in > .ft a:active, .base-page-area .group-list.link > .in > .ft a:active, .list-pic.link .ft a:active, .area-form.link .ft a:active, .base-module-area .area-essay.link .ft a:active, .base-page-area .area-essay.link .ft a:active, .list-text.rss .ft a:active, .area-customize.calendar .ft a:active, .area-form.epaper .ft a:active, .area-customize.video .ft a:active, .area-customize.news-card .ft a:active, .area-customize.icons-g2 .ft a:active, .area-form.page-search .ft a:active, .group-list.page-block > .in > .ft a:active, .group-list.page-list > .in > .ft a:active, .list-pic.album .ft a:active, .area-customize.calendar-detail03 .ft a:active, .area-customize.chart .ft a:active, .area-essay.page-caption-label .ft a:active, .area-essay.page-caption-label-p .ft a:active, .area-essay.page-caption-p .ft a:active, .area-essay.page-essay .ft a:active, .area-essay.page-img-caption-label .ft a:active, .area-essay.page-img-caption-p .ft a:active, .area-figure.page-img-figcaption .ft a:active, .area-figure.page-img-figcaption-label .ft a:active, .area-figure.page-img-figcaption-p .ft a:active, .area-figure.page-img-label .ft a:active, .area-figure.page-img-label-p .ft a:active, .area-figure.page-img-p .ft a:active, .area-form.page-form .ft a:active, .area-form.submit .ft a:active, .area-customize.map .ft a:active, .area-customize.audio .ft a:active, .area-customize.iframe .ft a:active, .list-text.message .ft a:active, .group-list.page-list-pic > .in > .ft a:active, .area-form.sign-in .ft a:active, .group-list.sitemap > .in > .ft a:active, .list-text.sitemap .ft a:active, .area-table.page-table .ft a:active, .area-table.rwd-table .ft a:active, .list-text.page-list .ft a:active, .group-list.page-list-text > .in > .ft a:active, .area-customize.calendar .ct .label a:active, .area-customize.calendar-detail03 .ct .label a:active, .sys-root a.btn:active, .sys-root input[type="submit"]:active, .sys-root input[type="reset"]:active, .sys-root input[type="button"]:active, .sys-root button:active, .list-text.open-data .ct a:active, .list-text.user-tool .ct a:active, .base-footer .simple-text.btn .ct a:active, .list-text.jump-tool .ct a:active, .list-multiple.page-click .ct a:active, .list-multiple.page-select .ct ul[data-index="1"] a:active, .list-multiple.page-select .ct ul[data-index="2"] a:active, .base-mobile .area-form.search .ft li:active, [data-js="false"] .base-wrapper .area-form.search .ft a:active, .list-text.btn .ct a:active, .area-figure.page-figure .ft a:active, .base-wrapper .simple-text.query .ft a:active, .base-extend .simple-text.query .ft a:active {
   color: #ffffff;
 }
 
-/* line 863, ../sass/_base-function.scss */
+/* line 855, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail03 .ct .label a {
   padding: 3px 5px;
   font-size: 0.9em;
 }
 
-/* line 869, ../sass/_base-function.scss */
+/* line 861, ../sass/_base-function.scss */
 .area-form.vote .ct .fieldset input[type="submit"], .area-form.epaper .ct .fieldset input[type="submit"], .area-form.page-search .ct .fieldset input[type="submit"], .area-form.page-form .ct .fieldset input[type="submit"], .area-form.submit .ct .fieldset input[type="submit"], .base-wrapper .simple-text.query .ft li.deny a, .base-extend .simple-text.query .ft li.deny a, .area-form.sign-in .ct .fieldset input[type="submit"] {
   background-color: #fa7076;
 }
-/* line 872, ../sass/_base-function.scss */
+/* line 864, ../sass/_base-function.scss */
 .area-form.vote .ct .fieldset input[type="submit"]:hover, .area-form.epaper .ct .fieldset input[type="submit"]:hover, .area-form.page-search .ct .fieldset input[type="submit"]:hover, .area-form.page-form .ct .fieldset input[type="submit"]:hover, .area-form.submit .ct .fieldset input[type="submit"]:hover, .base-wrapper .simple-text.query .ft li.deny a:hover, .base-extend .simple-text.query .ft li.deny a:hover, .area-form.sign-in .ct .fieldset input[type="submit"]:hover {
   background-color: #f83f47;
 }
 
-/* line 877, ../sass/_base-function.scss */
+/* line 869, ../sass/_base-function.scss */
 .sys-root input[type="text"], .sys-root input[type="password"], .sys-root input[type="date"], .sys-root input[type="email"], .sys-root input[type="number"], .sys-root input[type="search"], .sys-root select, .sys-root textarea {
   padding: 5px 8px;
   border: 1px solid #e4e4e4;
@@ -234,47 +226,47 @@
   outline: none;
 }
 
-/* line 887, ../sass/_base-function.scss */
+/* line 879, ../sass/_base-function.scss */
 .area-form.vote .ct .form, .area-customize.video .ct .p, .area-editor.user-edit .ct, .area-editor.error-info .ct, .area-form.page-form .ct, .area-form.submit .ct, .area-customize.map .ct .p, .area-customize.audio .ct .p, .area-customize.iframe .ct .p, .base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-form.sign-in .ct, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span, .area-editor.address .ct, .area-editor.system-info .ct {
   line-height: 1.7;
 }
-/* line 894, ../sass/_base-function.scss */
+/* line 886, ../sass/_base-function.scss */
 .area-form.vote .ct .form img, .area-customize.video .ct .p img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .area-form.page-form .ct img, .area-form.submit .ct img, .area-customize.map .ct .p img, .area-customize.audio .ct .p img, .area-customize.iframe .ct .p img, .base-wrapper .simple-text.query > .bg-drop-layout > .in img, .base-wrapper .simple-text.query > .in img, .area-form.sign-in .ct img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .area-editor.address .ct img, .area-editor.system-info .ct img {
   max-width: 100%;
   margin: 8px;
 }
 
-/* line 900, ../sass/_base-function.scss */
+/* line 892, ../sass/_base-function.scss */
 .area-form.vote .ct .form, .area-customize.video .ct .p, .area-editor.user-edit .ct, .area-editor.error-info .ct, .area-form.page-form .ct, .area-form.submit .ct, .area-customize.map .ct .p, .area-customize.audio .ct .p, .area-customize.iframe .ct .p, .base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-form.sign-in .ct, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span {
   padding: 8px 15px;
   background-color: #f0f0f0;
 }
 
-/* line 906, ../sass/_base-function.scss */
+/* line 898, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft, .group-list.default > .in > .ft, .base-content .list-text.link .ft, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft, .base-module-area .group-list.slider > .in > .ft, .list-text.slider .ft, .group-list.message > .bg-drop-layout > .in > .ft, .group-list.message > .in > .ft, .area-essay.message .ft, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft, .base-module-area .group-list.album > .in > .ft, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft, .base-page-area .group-list.album > .in > .ft, .area-figure.album .ft, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft, .base-module-area .group-list.link > .in > .ft, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft, .base-page-area .group-list.link > .in > .ft, .list-pic.link .ft, .area-form.link .ft, .base-module-area .area-essay.link .ft, .base-page-area .area-essay.link .ft, .list-text.rss .ft, .area-customize.calendar .ft, .area-form.epaper .ft, .area-customize.video .ft, .area-customize.news-card .ft, .area-customize.icons-g2 .ft, .area-form.page-search .ft, .group-list.page-block > .bg-drop-layout > .in > .ft, .group-list.page-block > .in > .ft, .group-list.page-list > .bg-drop-layout > .in > .ft, .group-list.page-list > .in > .ft, .list-pic.album .ft, .area-customize.calendar-detail03 .ft, .area-customize.chart .ft, .area-essay.page-caption-label .ft, .area-essay.page-caption-label-p .ft, .area-essay.page-caption-p .ft, .area-essay.page-essay .ft, .area-essay.page-img-caption-label .ft, .area-essay.page-img-caption-p .ft, .area-figure.page-img-figcaption .ft, .area-figure.page-img-figcaption-label .ft, .area-figure.page-img-figcaption-p .ft, .area-figure.page-img-label .ft, .area-figure.page-img-label-p .ft, .area-figure.page-img-p .ft, .area-form.page-form .ft, .area-form.submit .ft, .area-customize.map .ft, .area-customize.audio .ft, .area-customize.iframe .ft, .list-text.message .ft, .group-list.page-list-pic > .bg-drop-layout > .in > .ft, .group-list.page-list-pic > .in > .ft, .area-form.sign-in .ft, .group-list.sitemap > .bg-drop-layout > .in > .ft, .group-list.sitemap > .in > .ft, .list-text.sitemap .ft, .area-table.page-table .ft, .area-table.rwd-table .ft, .list-text.page-list .ft, .group-list.page-list-text > .bg-drop-layout > .in > .ft, .group-list.page-list-text > .in > .ft {
   position: absolute;
   top: 15px;
   right: 0;
 }
-/* line 915, ../sass/_base-function.scss */
+/* line 907, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft ul, .group-list.default > .in > .ft ul, .base-content .list-text.link .ft ul, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.slider > .in > .ft ul, .list-text.slider .ft ul, .group-list.message > .bg-drop-layout > .in > .ft ul, .group-list.message > .in > .ft ul, .area-essay.message .ft ul, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.album > .in > .ft ul, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.album > .in > .ft ul, .area-figure.album .ft ul, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.link > .in > .ft ul, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.link > .in > .ft ul, .list-pic.link .ft ul, .area-form.link .ft ul, .base-module-area .area-essay.link .ft ul, .base-page-area .area-essay.link .ft ul, .list-text.rss .ft ul, .area-customize.calendar .ft ul, .area-form.epaper .ft ul, .area-customize.video .ft ul, .area-customize.news-card .ft ul, .area-customize.icons-g2 .ft ul, .area-form.page-search .ft ul, .group-list.page-block > .bg-drop-layout > .in > .ft ul, .group-list.page-block > .in > .ft ul, .group-list.page-list > .bg-drop-layout > .in > .ft ul, .group-list.page-list > .in > .ft ul, .list-pic.album .ft ul, .area-customize.calendar-detail03 .ft ul, .area-customize.chart .ft ul, .area-essay.page-caption-label .ft ul, .area-essay.page-caption-label-p .ft ul, .area-essay.page-caption-p .ft ul, .area-essay.page-essay .ft ul, .area-essay.page-img-caption-label .ft ul, .area-essay.page-img-caption-p .ft ul, .area-figure.page-img-figcaption .ft ul, .area-figure.page-img-figcaption-label .ft ul, .area-figure.page-img-figcaption-p .ft ul, .area-figure.page-img-label .ft ul, .area-figure.page-img-label-p .ft ul, .area-figure.page-img-p .ft ul, .area-form.page-form .ft ul, .area-form.submit .ft ul, .area-customize.map .ft ul, .area-customize.audio .ft ul, .area-customize.iframe .ft ul, .list-text.message .ft ul, .group-list.page-list-pic > .bg-drop-layout > .in > .ft ul, .group-list.page-list-pic > .in > .ft ul, .area-form.sign-in .ft ul, .group-list.sitemap > .bg-drop-layout > .in > .ft ul, .group-list.sitemap > .in > .ft ul, .list-text.sitemap .ft ul, .area-table.page-table .ft ul, .area-table.rwd-table .ft ul, .list-text.page-list .ft ul, .group-list.page-list-text > .bg-drop-layout > .in > .ft ul, .group-list.page-list-text > .in > .ft ul {
   text-align: right;
 }
-/* line 919, ../sass/_base-function.scss */
+/* line 911, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft li, .group-list.default > .in > .ft li, .base-content .list-text.link .ft li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.slider > .in > .ft li, .list-text.slider .ft li, .group-list.message > .bg-drop-layout > .in > .ft li, .group-list.message > .in > .ft li, .area-essay.message .ft li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.album > .in > .ft li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.album > .in > .ft li, .area-figure.album .ft li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.link > .in > .ft li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.link > .in > .ft li, .list-pic.link .ft li, .area-form.link .ft li, .base-module-area .area-essay.link .ft li, .base-page-area .area-essay.link .ft li, .list-text.rss .ft li, .area-customize.calendar .ft li, .area-form.epaper .ft li, .area-customize.video .ft li, .area-customize.news-card .ft li, .area-customize.icons-g2 .ft li, .area-form.page-search .ft li, .group-list.page-block > .bg-drop-layout > .in > .ft li, .group-list.page-block > .in > .ft li, .group-list.page-list > .bg-drop-layout > .in > .ft li, .group-list.page-list > .in > .ft li, .list-pic.album .ft li, .area-customize.calendar-detail03 .ft li, .area-customize.chart .ft li, .area-essay.page-caption-label .ft li, .area-essay.page-caption-label-p .ft li, .area-essay.page-caption-p .ft li, .area-essay.page-essay .ft li, .area-essay.page-img-caption-label .ft li, .area-essay.page-img-caption-p .ft li, .area-figure.page-img-figcaption .ft li, .area-figure.page-img-figcaption-label .ft li, .area-figure.page-img-figcaption-p .ft li, .area-figure.page-img-label .ft li, .area-figure.page-img-label-p .ft li, .area-figure.page-img-p .ft li, .area-form.page-form .ft li, .area-form.submit .ft li, .area-customize.map .ft li, .area-customize.audio .ft li, .area-customize.iframe .ft li, .list-text.message .ft li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li, .group-list.page-list-pic > .in > .ft li, .area-form.sign-in .ft li, .group-list.sitemap > .bg-drop-layout > .in > .ft li, .group-list.sitemap > .in > .ft li, .list-text.sitemap .ft li, .area-table.page-table .ft li, .area-table.rwd-table .ft li, .list-text.page-list .ft li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li, .group-list.page-list-text > .in > .ft li {
   display: inline-block;
 }
-/* line 922, ../sass/_base-function.scss */
+/* line 914, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft li + li, .group-list.default > .in > .ft li + li, .base-content .list-text.link .ft li + li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.slider > .in > .ft li + li, .list-text.slider .ft li + li, .group-list.message > .bg-drop-layout > .in > .ft li + li, .group-list.message > .in > .ft li + li, .area-essay.message .ft li + li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.album > .in > .ft li + li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.album > .in > .ft li + li, .area-figure.album .ft li + li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.link > .in > .ft li + li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.link > .in > .ft li + li, .list-pic.link .ft li + li, .area-form.link .ft li + li, .base-module-area .area-essay.link .ft li + li, .base-page-area .area-essay.link .ft li + li, .list-text.rss .ft li + li, .area-customize.calendar .ft li + li, .area-form.epaper .ft li + li, .area-customize.video .ft li + li, .area-customize.news-card .ft li + li, .area-customize.icons-g2 .ft li + li, .area-form.page-search .ft li + li, .group-list.page-block > .bg-drop-layout > .in > .ft li + li, .group-list.page-block > .in > .ft li + li, .group-list.page-list > .bg-drop-layout > .in > .ft li + li, .group-list.page-list > .in > .ft li + li, .list-pic.album .ft li + li, .area-customize.calendar-detail03 .ft li + li, .area-customize.chart .ft li + li, .area-essay.page-caption-label .ft li + li, .area-essay.page-caption-label-p .ft li + li, .area-essay.page-caption-p .ft li + li, .area-essay.page-essay .ft li + li, .area-essay.page-img-caption-label .ft li + li, .area-essay.page-img-caption-p .ft li + li, .area-figure.page-img-figcaption .ft li + li, .area-figure.page-img-figcaption-label .ft li + li, .area-figure.page-img-figcaption-p .ft li + li, .area-figure.page-img-label .ft li + li, .area-figure.page-img-label-p .ft li + li, .area-figure.page-img-p .ft li + li, .area-form.page-form .ft li + li, .area-form.submit .ft li + li, .area-customize.map .ft li + li, .area-customize.audio .ft li + li, .area-customize.iframe .ft li + li, .list-text.message .ft li + li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-pic > .in > .ft li + li, .area-form.sign-in .ft li + li, .group-list.sitemap > .bg-drop-layout > .in > .ft li + li, .group-list.sitemap > .in > .ft li + li, .list-text.sitemap .ft li + li, .area-table.page-table .ft li + li, .area-table.rwd-table .ft li + li, .list-text.page-list .ft li + li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-text > .in > .ft li + li {
   margin-left: 3px;
 }
-/* line 927, ../sass/_base-function.scss */
+/* line 919, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft span, .group-list.default > .in > .ft span, .base-content .list-text.link .ft span, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.slider > .in > .ft span, .list-text.slider .ft span, .group-list.message > .bg-drop-layout > .in > .ft span, .group-list.message > .in > .ft span, .area-essay.message .ft span, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.album > .in > .ft span, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.album > .in > .ft span, .area-figure.album .ft span, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.link > .in > .ft span, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.link > .in > .ft span, .list-pic.link .ft span, .area-form.link .ft span, .base-module-area .area-essay.link .ft span, .base-page-area .area-essay.link .ft span, .list-text.rss .ft span, .area-customize.calendar .ft span, .area-form.epaper .ft span, .area-customize.video .ft span, .area-customize.news-card .ft span, .area-customize.icons-g2 .ft span, .area-form.page-search .ft span, .group-list.page-block > .bg-drop-layout > .in > .ft span, .group-list.page-block > .in > .ft span, .group-list.page-list > .bg-drop-layout > .in > .ft span, .group-list.page-list > .in > .ft span, .list-pic.album .ft span, .area-customize.calendar-detail03 .ft span, .area-customize.chart .ft span, .area-essay.page-caption-label .ft span, .area-essay.page-caption-label-p .ft span, .area-essay.page-caption-p .ft span, .area-essay.page-essay .ft span, .area-essay.page-img-caption-label .ft span, .area-essay.page-img-caption-p .ft span, .area-figure.page-img-figcaption .ft span, .area-figure.page-img-figcaption-label .ft span, .area-figure.page-img-figcaption-p .ft span, .area-figure.page-img-label .ft span, .area-figure.page-img-label-p .ft span, .area-figure.page-img-p .ft span, .area-form.page-form .ft span, .area-form.submit .ft span, .area-customize.map .ft span, .area-customize.audio .ft span, .area-customize.iframe .ft span, .list-text.message .ft span, .group-list.page-list-pic > .bg-drop-layout > .in > .ft span, .group-list.page-list-pic > .in > .ft span, .area-form.sign-in .ft span, .group-list.sitemap > .bg-drop-layout > .in > .ft span, .group-list.sitemap > .in > .ft span, .list-text.sitemap .ft span, .area-table.page-table .ft span, .area-table.rwd-table .ft span, .list-text.page-list .ft span, .group-list.page-list-text > .bg-drop-layout > .in > .ft span, .group-list.page-list-text > .in > .ft span {
   display: block;
   background-image: none !important;
 }
 
-/* line 937, ../sass/_base-function.scss */
+/* line 929, ../sass/_base-function.scss */
 .simple-text.default .ct a, .base-content .list-text.link .ct a, .base-content .list-text.nav .ct a, .base-wrapper .area-form.search .ct .list a, .list-text.slider .ct a, .simple-text.message .ct a, .list-text.rss .ct a, .area-customize.calendar .ct .list a, .simple-text.weather .ct a, .list-text.content-file, .list-text.content-list .hd a, .list-text.content-list .ct a, .list-text.file-download .ct a, .list-text.file-download-multiple, .list-text.message .ct a, .list-text.sitemap .ct a, .list-text.page-list .ct a {
   display: block;
   padding: 8px;
@@ -282,18 +274,18 @@
   transition: 150ms;
 }
 
-/* line 946, ../sass/_base-function.scss */
+/* line 938, ../sass/_base-function.scss */
 .simple-text.default .ct a:hover, .base-content .list-text.link .ct a:hover, .base-content .list-text.nav .ct a:hover, .base-wrapper .area-form.search .ct .list a:hover, .list-text.slider .ct a:hover, .simple-text.message .ct a:hover, .list-text.rss .ct a:hover, .area-customize.calendar .ct .list a:hover, .simple-text.weather .ct a:hover, .list-text.content-file:hover, .list-text.content-list .hd a:hover, .list-text.content-list .ct a:hover, .list-text.file-download .ct a:hover, .list-text.file-download-multiple:hover, .list-text.message .ct a:hover, .list-text.sitemap .ct a:hover, .list-text.page-list .ct a:hover {
   color: currentColor;
   background-color: #e4e4e4;
 }
 
-/* line 954, ../sass/_base-function.scss */
+/* line 946, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .list-pic.link .ct a, .list-pic.album .ct a {
   position: relative;
   display: block;
 }
-/* line 958, ../sass/_base-function.scss */
+/* line 950, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a:before, .group-list.major-slider > .in > .ft li.is-img a:before, .list-pic.link .ct a:before, .list-pic.album .ct a:before {
   content: "​";
   display: block;
@@ -306,12 +298,12 @@
   background-color: rgba(26, 26, 26, 0.5);
   transition: 150ms;
 }
-/* line 973, ../sass/_base-function.scss */
+/* line 965, ../sass/_base-function.scss */
 .group-list.major-slider > .in > .ft li.is-img a:hover:before, .list-pic.link .ct a:hover:before, .list-pic.album .ct a:hover:before {
   opacity: 0;
 }
 
-/* line 979, ../sass/_base-function.scss */
+/* line 971, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a {
   position: absolute;
   display: block;
@@ -321,28 +313,28 @@
   left: 0;
 }
 
-/* line 990, ../sass/_base-function.scss */
+/* line 982, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.news-card .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 996, ../sass/_base-function.scss */
+/* line 988, ../sass/_base-function.scss */
 .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .area-customize.icons-g2 .ct .img span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-/* line 1008, ../sass/_base-function.scss */
+/* line 1000, ../sass/_base-function.scss */
 .base-section a.ai:after, .base-section a.avi:after, .base-section a.bmp:after, .base-section a.cdr:after, .base-section a.css:after, .base-section a.csv:after, .base-section a.dmg:after, .base-section a.doc:after, .base-section a.docx:after, .base-section a.exe:after, .base-section a.gif:after, .base-section a.html:after, .base-section a.ico:after, .base-section a.jpeg:after, .base-section a.jpg:after, .base-section a.js:after, .base-section a.link:after, .base-section a.md:after, .base-section a.mov:after, .base-section a.mp3:after, .base-section a.mp4:after, .base-section a.odf:after, .base-section a.odp:after, .base-section a.ods:after, .base-section a.odt:after, .base-section a.ogg:after, .base-section a.ogv:after, .base-section a.other:after, .base-section a.pdf:after, .base-section a.png:after, .base-section a.ppt:after, .base-section a.pptx:after, .base-section a.psd:after, .base-section a.rar:after, .base-section a.rss:after, .base-section a.sass:after, .base-section a.svg:after, .base-section a.swf:after, .base-section a.tar:after, .base-section a.tif:after, .base-section a.txt:after, .base-section a.wav:after, .base-section a.webm:after, .base-section a.xls:after, .base-section a.xlsx:after, .base-section a.xml:after, .base-section a.zip:after, .base-extend .list-text.share .ct li.facebook a, .base-extend .list-text.share .ct li.google a, .base-extend .list-text.share .ct li.twitter a, .base-extend .list-text.share .ct li.plurk a, .base-extend .list-text.share .ct li.line a, .base-extend .list-text.share .ct li.email a, .base-mobile .list-text.share .ct li.facebook a, .base-mobile .list-text.share .ct li.google a, .base-mobile .list-text.share .ct li.twitter a, .base-mobile .list-text.share .ct li.plurk a, .base-mobile .list-text.share .ct li.line a, .base-mobile .list-text.share .ct li.email a, .list-text.rss .ct li a:after, .list-text.content-file .ct li.ai a:before, .list-text.content-file .ct li.avi a:before, .list-text.content-file .ct li.bmp a:before, .list-text.content-file .ct li.cdr a:before, .list-text.content-file .ct li.css a:before, .list-text.content-file .ct li.csv a:before, .list-text.content-file .ct li.dmg a:before, .list-text.content-file .ct li.doc a:before, .list-text.content-file .ct li.docx a:before, .list-text.content-file .ct li.exe a:before, .list-text.content-file .ct li.gif a:before, .list-text.content-file .ct li.html a:before, .list-text.content-file .ct li.ico a:before, .list-text.content-file .ct li.jpeg a:before, .list-text.content-file .ct li.jpg a:before, .list-text.content-file .ct li.js a:before, .list-text.content-file .ct li.link a:before, .list-text.content-file .ct li.md a:before, .list-text.content-file .ct li.mov a:before, .list-text.content-file .ct li.mp3 a:before, .list-text.content-file .ct li.mp4 a:before, .list-text.content-file .ct li.odf a:before, .list-text.content-file .ct li.odp a:before, .list-text.content-file .ct li.ods a:before, .list-text.content-file .ct li.odt a:before, .list-text.content-file .ct li.ogg a:before, .list-text.content-file .ct li.ogv a:before, .list-text.content-file .ct li.other a:before, .list-text.content-file .ct li.pdf a:before, .list-text.content-file .ct li.png a:before, .list-text.content-file .ct li.ppt a:before, .list-text.content-file .ct li.pptx a:before, .list-text.content-file .ct li.psd a:before, .list-text.content-file .ct li.rar a:before, .list-text.content-file .ct li.rss a:before, .list-text.content-file .ct li.sass a:before, .list-text.content-file .ct li.svg a:before, .list-text.content-file .ct li.swf a:before, .list-text.content-file .ct li.tar a:before, .list-text.content-file .ct li.tif a:before, .list-text.content-file .ct li.txt a:before, .list-text.content-file .ct li.wav a:before, .list-text.content-file .ct li.webm a:before, .list-text.content-file .ct li.xls a:before, .list-text.content-file .ct li.xlsx a:before, .list-text.content-file .ct li.xml a:before, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download .ct li.cdr a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download .ct li.dmg a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download .ct li.exe a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.ai a:before, .list-text.file-download-multiple .ct li.avi a:before, .list-text.file-download-multiple .ct li.bmp a:before, .list-text.file-download-multiple .ct li.cdr a:before, .list-text.file-download-multiple .ct li.css a:before, .list-text.file-download-multiple .ct li.csv a:before, .list-text.file-download-multiple .ct li.dmg a:before, .list-text.file-download-multiple .ct li.doc a:before, .list-text.file-download-multiple .ct li.docx a:before, .list-text.file-download-multiple .ct li.exe a:before, .list-text.file-download-multiple .ct li.gif a:before, .list-text.file-download-multiple .ct li.html a:before, .list-text.file-download-multiple .ct li.ico a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .list-text.file-download-multiple .ct li.js a:before, .list-text.file-download-multiple .ct li.link a:before, .list-text.file-download-multiple .ct li.md a:before, .list-text.file-download-multiple .ct li.mov a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.odf a:before, .list-text.file-download-multiple .ct li.odp a:before, .list-text.file-download-multiple .ct li.ods a:before, .list-text.file-download-multiple .ct li.odt a:before, .list-text.file-download-multiple .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogv a:before, .list-text.file-download-multiple .ct li.other a:before, .list-text.file-download-multiple .ct li.pdf a:before, .list-text.file-download-multiple .ct li.png a:before, .list-text.file-download-multiple .ct li.ppt a:before, .list-text.file-download-multiple .ct li.pptx a:before, .list-text.file-download-multiple .ct li.psd a:before, .list-text.file-download-multiple .ct li.rar a:before, .list-text.file-download-multiple .ct li.rss a:before, .list-text.file-download-multiple .ct li.sass a:before, .list-text.file-download-multiple .ct li.svg a:before, .list-text.file-download-multiple .ct li.swf a:before, .list-text.file-download-multiple .ct li.tar a:before, .list-text.file-download-multiple .ct li.tif a:before, .list-text.file-download-multiple .ct li.txt a:before, .list-text.file-download-multiple .ct li.wav a:before, .list-text.file-download-multiple .ct li.webm a:before, .list-text.file-download-multiple .ct li.xls a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xml a:before, .list-text.file-download-multiple .ct li.zip a:before, .area-form.sign-in .ct .list li.facebook a:before, .area-form.sign-in .ct .list li.google a:before, .area-form.sign-in .ct .list li.twitter a:before, .area-form.sign-in .ct .list li.plurk a:before, .area-form.sign-in .ct .list li.line a:before, .area-form.sign-in .ct .list li.email a:before {
   content: "​";
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 1014, ../sass/_base-function.scss */
+/* line 1006, ../sass/_base-function.scss */
 .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-content .group.nav > .bg-drop-layout > .in > .hd a:before, .base-content .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.nav > .in > .hd h3:before, .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data:hover > .bg-drop-layout > .in .hd a:before, .list-text.open-data:hover > .in .hd a:before, .list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool:hover > .bg-drop-layout > .in .hd a:before, .list-text.user-tool:hover > .in .hd a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-mobile .simple-text.btn.is-active .ct a:before, .base-mobile .simple-text.btn .ct a:before, .base-footer .simple-text.btn.is-active .ct a:before, .base-footer .simple-text.btn .ct a:before, .area-editor.address .ct a.is-map:after, .area-form.page-search.is-active .hd h4:before, .area-form.page-search .hd h4:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before {
   font-family: 'icomoon';
   speak: none;
@@ -450,682 +442,682 @@
   background-repeat: no-repeat;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-b-bottom {
   background-position: 0 0;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-b-left {
   background-position: 0 -16px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-b-right {
   background-position: 0 -32px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-b-top {
   background-position: 0 -48px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-double-b-left {
   background-position: 0 -64px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-double-b-right {
   background-position: 0 -88px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-w-bottom {
   background-position: 0 -112px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-w-left {
   background-position: 0 -128px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-w-right {
   background-position: 0 -144px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-away-w-top {
   background-position: 0 -160px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-ctrl-b-close {
   background-position: 0 -176px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ai, .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before {
   background-position: 0 -192px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-avi, .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before {
   background-position: 0 -208px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-bmp, .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before {
   background-position: 0 -224px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-cdr, .base-section a.cdr:after, .list-text.content-file .ct li.cdr a:before, .list-text.file-download .ct li.cdr a:before, .list-text.file-download-multiple .ct li.cdr a:before {
   background-position: 0 -240px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-css, .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before {
   background-position: 0 -256px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-csv, .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before {
   background-position: 0 -272px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-dmg, .base-section a.dmg:after, .list-text.content-file .ct li.dmg a:before, .list-text.file-download .ct li.dmg a:before, .list-text.file-download-multiple .ct li.dmg a:before {
   background-position: 0 -288px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-doc, .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before {
   background-position: 0 -304px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-docx, .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before {
   background-position: 0 -320px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-exe, .base-section a.exe:after, .list-text.content-file .ct li.exe a:before, .list-text.file-download .ct li.exe a:before, .list-text.file-download-multiple .ct li.exe a:before {
   background-position: 0 -336px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-gif, .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before {
   background-position: 0 -352px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-html, .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before {
   background-position: 0 -368px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ico, .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before {
   background-position: 0 -384px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-jpeg, .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before {
   background-position: 0 -400px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-jpg, .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before {
   background-position: 0 -416px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-js, .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before {
   background-position: 0 -432px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-json {
   background-position: 0 -448px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-link, .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before {
   background-position: 0 -464px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-md, .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before {
   background-position: 0 -480px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-mov, .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before {
   background-position: 0 -496px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-mp3, .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before {
   background-position: 0 -512px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-mp4, .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before {
   background-position: 0 -528px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-odf, .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before {
   background-position: 0 -544px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-odp, .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before {
   background-position: 0 -560px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ods, .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before {
   background-position: 0 -576px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-odt, .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before {
   background-position: 0 -592px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ogg, .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before {
   background-position: 0 -608px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ogv, .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before {
   background-position: 0 -624px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-other, .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before {
   background-position: 0 -640px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-pdf, .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before {
   background-position: 0 -656px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-png, .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before {
   background-position: 0 -672px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-ppt, .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before {
   background-position: 0 -688px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-pptx, .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before {
   background-position: 0 -704px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-psd, .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before {
   background-position: 0 -720px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-rar, .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before {
   background-position: 0 -736px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-rss, .base-section a.rss:after, .list-text.rss .ct li a:after, .list-text.content-file .ct li.rss a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before {
   background-position: 0 -752px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-sass, .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before {
   background-position: 0 -768px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-svg, .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before {
   background-position: 0 -784px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-swf, .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before {
   background-position: 0 -800px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-tar, .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before {
   background-position: 0 -816px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-tif, .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before {
   background-position: 0 -832px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-txt, .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before {
   background-position: 0 -848px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-wav, .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before {
   background-position: 0 -864px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-webm, .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before {
   background-position: 0 -880px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-xls, .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before {
   background-position: 0 -896px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-xlsx, .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before {
   background-position: 0 -912px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-xml, .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before {
   background-position: 0 -928px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-file-type-zip, .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before {
   background-position: 0 -944px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-font-large {
   background-position: 0 -960px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-font-medium {
   background-position: 0 -977px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-font-smail {
   background-position: 0 -994px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-w-img {
   background-position: 0 -1011px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-w-search {
   background-position: 0 -1037px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-w-video {
   background-position: 0 -1053px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before {
   background-position: 0 -1079px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before {
   background-position: 0 -1115px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before {
   background-position: 0 -1151px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before {
   background-position: 0 -1187px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-plurk, .base-extend .list-text.share .ct li.plurk a, .area-form.sign-in .ct .list li.plurk a:before {
   background-position: 0 -1223px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-share-w-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before {
   background-position: 0 -1259px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-01 {
   background-position: 0 -1295px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-02 {
   background-position: 0 -1340px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-03 {
   background-position: 0 -1385px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-04 {
   background-position: 0 -1430px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-05 {
   background-position: 0 -1475px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-06 {
   background-position: 0 -1520px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-07 {
   background-position: 0 -1565px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-08 {
   background-position: 0 -1610px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-09 {
   background-position: 0 -1655px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-10 {
   background-position: 0 -1700px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-11 {
   background-position: 0 -1745px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-12 {
   background-position: 0 -1790px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-13 {
   background-position: 0 -1835px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-14 {
   background-position: 0 -1880px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-15 {
   background-position: 0 -1925px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-16 {
   background-position: 0 -1970px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-17 {
   background-position: 0 -2015px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-18 {
   background-position: 0 -2060px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-19 {
   background-position: 0 -2105px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-20 {
   background-position: 0 -2150px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-21 {
   background-position: 0 -2195px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-22 {
   background-position: 0 -2240px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-23 {
   background-position: 0 -2285px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-24 {
   background-position: 0 -2330px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-25 {
   background-position: 0 -2375px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-26 {
   background-position: 0 -2420px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-27 {
   background-position: 0 -2465px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-28 {
   background-position: 0 -2510px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-29 {
   background-position: 0 -2555px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-30 {
   background-position: 0 -2600px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-31 {
   background-position: 0 -2645px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-32 {
   background-position: 0 -2690px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-33 {
   background-position: 0 -2735px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-34 {
   background-position: 0 -2780px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-35 {
   background-position: 0 -2825px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-36 {
   background-position: 0 -2870px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-37 {
   background-position: 0 -2915px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-38 {
   background-position: 0 -2960px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-39 {
   background-position: 0 -3005px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-40 {
   background-position: 0 -3050px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-41 {
   background-position: 0 -3095px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-42 {
   background-position: 0 -3140px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-43 {
   background-position: 0 -3185px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-44 {
   background-position: 0 -3230px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-45 {
   background-position: 0 -3275px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-46 {
   background-position: 0 -3320px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-47 {
   background-position: 0 -3365px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-48 {
   background-position: 0 -3410px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-49 {
   background-position: 0 -3455px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-50 {
   background-position: 0 -3500px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-51 {
   background-position: 0 -3545px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-52 {
   background-position: 0 -3590px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-53 {
   background-position: 0 -3635px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-54 {
   background-position: 0 -3680px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-55 {
   background-position: 0 -3725px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-56 {
   background-position: 0 -3770px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-57 {
   background-position: 0 -3815px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-58 {
   background-position: 0 -3860px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-59 {
   background-position: 0 -3905px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-60 {
   background-position: 0 -3950px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-61 {
   background-position: 0 -3995px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-62 {
   background-position: 0 -4040px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-63 {
   background-position: 0 -4085px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-64 {
   background-position: 0 -4130px;
 }
 
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-65 {
   background-position: 0 -4175px;
 }
@@ -1711,29 +1703,27 @@ th {
   color: #343434;
   position: relative;
 }
-@media (max-width: 1000px) and (min-width: 769px) {
-  /* line 13, ../sass/_sys-root.scss */
-  .sys-root .is-pc-hide {
-    display: none !important;
-  }
+/* line 13, ../sass/_sys-root.scss */
+.sys-root .is-pc-hide {
+  display: none !important;
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 20, ../sass/_sys-root.scss */
+  /* line 17, ../sass/_sys-root.scss */
   .sys-root .is-pad-hide {
     display: none !important;
   }
 }
 @media (max-width: 560px) {
-  /* line 27, ../sass/_sys-root.scss */
+  /* line 24, ../sass/_sys-root.scss */
   .sys-root .is-phone-hide {
     display: none !important;
   }
 }
-/* line 38, ../sass/_sys-root.scss */
+/* line 35, ../sass/_sys-root.scss */
 .sys-root .is-hide-header > .in > .hd {
   display: none !important;
 }
-/* line 46, ../sass/_sys-root.scss */
+/* line 43, ../sass/_sys-root.scss */
 [data-js="false"] .sys-root:before {
   display: block;
   content: '您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。';
@@ -1748,55 +1738,55 @@ th {
     min-width: 1000px;
   }
 }
-/* line 60, ../sass/_sys-root.scss */
+/* line 57, ../sass/_sys-root.scss */
 .sys-root.font-size-large {
   font-size: 1.1em;
 }
-/* line 64, ../sass/_sys-root.scss */
+/* line 61, ../sass/_sys-root.scss */
 .sys-root.font-size-medium {
   font-size: 1em;
 }
-/* line 68, ../sass/_sys-root.scss */
+/* line 65, ../sass/_sys-root.scss */
 .sys-root.font-size-small {
   font-size: 0.9em;
 }
-/* line 72, ../sass/_sys-root.scss */
+/* line 69, ../sass/_sys-root.scss */
 .sys-root a {
   color: inherit;
   text-decoration: none;
 }
-/* line 76, ../sass/_sys-root.scss */
+/* line 73, ../sass/_sys-root.scss */
 .sys-root a:link {
   color: inherit;
 }
-/* line 80, ../sass/_sys-root.scss */
+/* line 77, ../sass/_sys-root.scss */
 .sys-root a:visited {
   color: inherit;
 }
-/* line 84, ../sass/_sys-root.scss */
+/* line 81, ../sass/_sys-root.scss */
 .sys-root a:hover {
   color: #b6b6b6;
 }
-/* line 88, ../sass/_sys-root.scss */
+/* line 85, ../sass/_sys-root.scss */
 .sys-root a:active {
   color: inherit;
 }
-/* line 92, ../sass/_sys-root.scss */
+/* line 89, ../sass/_sys-root.scss */
 .sys-root a.div {
   display: block;
   color: #343434;
 }
-/* line 104, ../sass/_sys-root.scss */
+/* line 101, ../sass/_sys-root.scss */
 .sys-root i.mark {
   font-style: normal;
 }
-/* line 109, ../sass/_sys-root.scss */
+/* line 106, ../sass/_sys-root.scss */
 .sys-root fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-/* line 132, ../sass/_sys-root.scss */
+/* line 129, ../sass/_sys-root.scss */
 .sys-root input[type="radio"], .sys-root input[yupe="checkbox"] {
   cursor: pointer;
 }
@@ -1804,69 +1794,17 @@ th {
 [data-js="false"] .sys-root button {
   display: none;
 }
-/* line 154, ../sass/_sys-root.scss */
+/* line 151, ../sass/_sys-root.scss */
 .sys-root label {
   cursor: pointer;
 }
-/* line 162, ../sass/_sys-root.scss */
+/* line 159, ../sass/_sys-root.scss */
 .sys-root [href] {
   cursor: pointer;
 }
-/* line 166, ../sass/_sys-root.scss */
+/* line 163, ../sass/_sys-root.scss */
 .sys-root [disabled] {
   cursor: not-allowed;
-}
-
-/* line 205, ../sass/_sys-root.scss */
-.base-mobile .info > .bg-drop-layout > .in > .hd, .base-mobile .info > .in > .hd {
-  display: none;
-}
-/* line 227, ../sass/_sys-root.scss */
-.base-mobile .info > .bg-drop-layout > .in > .ct > .in, .base-mobile .info > .in > .ct > .in {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  overflow-y: auto;
-  background-color: #f0f0f0;
-}
-/* line 240, ../sass/_sys-root.scss */
-.base-header .info {
-  background-color: #058f89;
-}
-/* line 246, ../sass/_sys-root.scss */
-.base-header .info > .bg-drop-layout > .in > .hd, .base-header .info > .in > .hd {
-  display: none;
-}
-/* line 282, ../sass/_sys-root.scss */
-.base-content .info > .bg-drop-layout > .in > .hd, .base-content .info > .in > .hd {
-  display: none;
-}
-/* line 304, ../sass/_sys-root.scss */
-.base-content .info > .bg-drop-layout > .in > .ct > .in, .base-content .info > .in > .ct > .in {
-  text-align: right;
-}
-/* line 50, ../sass/_base-function.scss */
-[data-js="false"] .base-content .info > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .base-content .info > .in > .ct > .in {
-  text-align: left;
-}
-/* line 317, ../sass/_sys-root.scss */
-.base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in {
-  padding: 15px 0;
-}
-/* line 321, ../sass/_sys-root.scss */
-.base-footer .info > .bg-drop-layout > .in > .hd, .base-footer .info > .in > .hd {
-  display: none;
-}
-
-/* line 356, ../sass/_sys-root.scss */
-.base-header .msg-tool {
-  position: relative;
-}
-/* line 389, ../sass/_sys-root.scss */
-.base-footer .msg-tool {
-  overflow: hidden;
 }
 
 /* line 5, ../sass/_base-mobile.scss */
@@ -2826,7 +2764,7 @@ th {
 }
 /* line 58, ../sass/_simple-text_major-logo.scss */
 .simple-text.major-logo .ct a {
-  background-image: url('../images/major_logo.png?1474887733');
+  background-image: url('../images/major_logo.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -2866,7 +2804,7 @@ th {
 }
 /* line 46, ../sass/_simple-text_minor-logo.scss */
 .simple-text.minor-logo .ct a {
-  background-image: url('../images/minor_logo.png?1474887733');
+  background-image: url('../images/minor_logo.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -3250,7 +3188,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.facebook a {
-  background-image: url('../images/icon-pic/share-w-facebook.png?1474887733');
+  background-image: url('../images/icon-pic/share-w-facebook.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3262,7 +3200,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.google a {
-  background-image: url('../images/icon-pic/share-w-google.png?1474887733');
+  background-image: url('../images/icon-pic/share-w-google.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3274,7 +3212,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.twitter a {
-  background-image: url('../images/icon-pic/share-w-twitter.png?1474887733');
+  background-image: url('../images/icon-pic/share-w-twitter.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3286,7 +3224,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.plurk a {
-  background-image: url('../images/icon-pic/share-w-plurk.png?1480581440');
+  background-image: url('../images/icon-pic/share-w-plurk.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3298,7 +3236,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.line a {
-  background-image: url('../images/icon-pic/share-w-line.png?1474887733');
+  background-image: url('../images/icon-pic/share-w-line.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3310,7 +3248,7 @@ th {
 }
 /* line 167, ../sass/_list-text_share.scss */
 .base-mobile .list-text.share .ct li.email a {
-  background-image: url('../images/icon-pic/share-w-email.png?1474887733');
+  background-image: url('../images/icon-pic/share-w-email.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -3357,7 +3295,7 @@ th {
 }
 /* line 61, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct li.small span a {
-  background-image: url('../images/icon-pic/font-smail.png?1480400965');
+  background-image: url('../images/icon-pic/font-smail.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   width: 17px;
@@ -3365,7 +3303,7 @@ th {
 }
 /* line 71, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct li.medium span a {
-  background-image: url('../images/icon-pic/font-medium.png?1480400943');
+  background-image: url('../images/icon-pic/font-medium.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   width: 17px;
@@ -3373,7 +3311,7 @@ th {
 }
 /* line 81, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct li.large span a {
-  background-image: url('../images/icon-pic/font-large.png?1480400885');
+  background-image: url('../images/icon-pic/font-large.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   width: 17px;
@@ -3482,7 +3420,7 @@ th {
 
 /* line 16, ../sass/_list-text_nav.scss */
 .base-mobile .list-text.nav.is-open .hd a:after {
-  background-image: url('../images/icon-pic/away-b-bottom.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-bottom.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4059,7 +3997,7 @@ th {
 }
 /* line 275, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .ct a {
-  background-image: url('../images/icon-pic/away-w-top.png?1474887733');
+  background-image: url('../images/icon-pic/away-w-top.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -4227,7 +4165,7 @@ th {
   bottom: 0;
   width: 36px;
   background-color: #646464;
-  background-image: url('../images/icon-pic/icon-w-search.png?1474887733');
+  background-image: url('../images/icon-pic/icon-w-search.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4310,7 +4248,7 @@ th {
   width: 36px;
   background-color: #646464;
   transition: 150ms;
-  background-image: url('../images/icon-pic/icon-w-search.png?1474887733');
+  background-image: url('../images/icon-pic/icon-w-search.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4478,14 +4416,14 @@ th {
 /* line 106, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 114, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4673,14 +4611,14 @@ th {
 /* line 145, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 153, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4740,14 +4678,14 @@ th {
 /* line 165, ../sass/_group-list_slider.scss */
 .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .base-page-area .group-list.slider > .in > .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 173, ../sass/_group-list_slider.scss */
 .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .base-page-area .group-list.slider > .in > .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -5608,7 +5546,7 @@ th {
 .area-customize.video .ct .video {
   margin-bottom: 5px;
   background-color: #e4e4e4;
-  background-image: url('../images/icon-pic/icon-w-video.png?1474887734');
+  background-image: url('../images/icon-pic/icon-w-video.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -8168,14 +8106,14 @@ th {
 }
 /* line 48, ../sass/_list-pic_pic-download.scss */
 .list-pic.pic-download .ct li.is-img a {
-  background-image: url('../images/icon-pic/icon-w-img.png?1474887733');
+  background-image: url('../images/icon-pic/icon-w-img.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   background-position: top 5px left 5px;
 }
 /* line 56, ../sass/_list-pic_pic-download.scss */
 .list-pic.pic-download .ct li.is-video a {
-  background-image: url('../images/icon-pic/icon-w-video.png?1474887734');
+  background-image: url('../images/icon-pic/icon-w-video.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
   background-position: top 5px left 5px;
@@ -9294,14 +9232,14 @@ th {
 /* line 108, ../sass/_list-pic_page-block.scss */
 .list-pic.page-block .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 116, ../sass/_list-pic_page-block.scss */
 .list-pic.page-block .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -9849,14 +9787,14 @@ th {
 /* line 119, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 127, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .in > .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -9924,14 +9862,14 @@ th {
 /* line 108, ../sass/_list-pic_slider.scss */
 .list-pic.slider .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 116, ../sass/_list-pic_slider.scss */
 .list-pic.slider .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1480642051');
   background-repeat: no-repeat;
   background-position: center;
 }

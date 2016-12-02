@@ -747,14 +747,6 @@
 			padding-bottom: $interval-m;
 			border-bottom: $border;
 			margin-bottom: $interval-m;
-
-			&:before {
-				margin-right: $interval-xs;
-			}
-
-			&:after {
-				margin-left: $interval-xs;
-			}
 		}
 
 		span {
