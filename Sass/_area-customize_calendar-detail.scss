@@ -95,7 +95,7 @@
 		}
 
 		.table {
-			margin: $interval-s 0;
+			margin-top: $interval-s;
 			background-color: $light;
 
 			table {
@@ -131,7 +131,7 @@
 				}
 
 				> div {
-
+					min-height: 120px;
 				}
 
 				&:hover {
@@ -266,68 +266,68 @@
 					}
 				}
 			}
-		}
 
-		.div {
-
-		}
-
-		.list {
-			margin-top: $interval-xs;
-
-			@include media('phone') {
-				display: none;
-			}
-
-			ul {
+			.div {
 
 			}
 
-			li {
+			.list {
+				margin-top: $interval-xs;
 
+				@include media('phone') {
+					display: none;
+				}
+
+				ul {
+
+				}
+
+				li {
+
+				}
+
+				span {
+					display: block;
+				}
+
+				a {
+					position: relative;
+					display: block;
+					padding: $interval-xs;
+					padding-left: $interval-l;
+
+					&:hover {
+						background-color: $white;
+					}
+
+					&:before {
+						content: $content;
+						display: block;
+						position: absolute;
+						top: 12px;
+						left: 6px;
+						width: $interval-xs;
+						height: $interval-xs;
+						background-color: $gray;
+					}
+				}
 			}
 
-			span {
-				display: block;
-			}
+			/*a*/.mark {
+				@extend %mark;
 
-			a {
-				position: relative;
-				display: block;
-				padding: $interval-xs;
-				padding-left: $interval-l;
+				@include media('phone') {
+					display: block;
+					font-size: $font-size-m;
+					color: $body-font-color;
+					margin-right: 0;
+					padding: 0;
+					background-color: transparent;
+				}
 
 				&:hover {
-					background-color: $white;
+					text-decoration: underline;
 				}
-
-				&:before {
-					content: $content;
-					display: block;
-					position: absolute;
-					top: 12px;
-					left: 6px;
-					width: $interval-xs;
-					height: $interval-xs;
-					background-color: $gray;
-				}
-			}
-		}
-
-		/*a*/.mark {
-			@extend %mark;
-
-			@include media('phone') {
-				display: block;
-				font-size: $font-size-m;
-				color: $body-font-color;
-				margin-right: 0;
-				padding: 0;
-				background-color: transparent;
-			}
-
-			&:hover {
-				text-decoration: underline;
 			}
 		}
 	}

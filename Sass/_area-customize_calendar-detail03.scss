@@ -41,47 +41,14 @@
 			}
 		}
 
-		.label {
-			float: right;
-
-			@include js(false) {
-				display: none;
-			}
-
-			@include media('phone') {
-				float: none;
-			}
-
-			ul {
-				
-				@include media('phone') {
-					text-align: center;
-				}
-			}
-
-			li {
-				display: inline-block;
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %btn-s;
-			}
-		}
-
 		.caption {
-			@extend %ellipsis;
-			overflow: hidden;
-			font-size: $font-size-l;
+			float: left;
+			font-size: $font-size-xl;
 			color: $title-color;
 
 			@include media('phone') {
+				float: none;
 				text-align: center;
-				margin-bottom: 0;
-				margin-top: $interval-s;
 			}
 
 			span {
@@ -91,12 +58,78 @@
 			a {
 				color: inherit;
 				font-size: 1em;
+				font-weight: $font-weight-b;
+			}
+
+			/*i*/.mark {
+				font-weight: $font-weight-n;
+			}
+		}
+
+		.label {
+			$border: 1px solid $major-color;
+
+			overflow: hidden;
+			text-align: center;
+
+			@include media('phone') {
+				margin-top: $interval-m;
+			}
+
+			ul {
+				display: inline-block;
+				vertical-align: middle;
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				float: left;
+
+				+ li {
+
+					a {
+						border-left: 0;
+					}
+				}
+
+				&:nth-child(1) {
+ 
+					a {
+						border-radius: $border-radius 0 0 $border-radius;
+					}
+				}
+
+				&:nth-last-child(1) {
+
+					a {
+						border-radius: 0 $border-radius $border-radius 0;
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $interval-s $interval-l;
+				color: $major-color;
+				border: $border;
+				transition: $transition;
+
+				&:hover {
+					background-color: $major-color;
+					color: $white;
+				}
 			}
 		}
 
 		.table {
-			margin: $interval-s 0;
-			background-color: $light;
+			margin-top: $interval-m;
 
 			table {
 				table-layout: fixed;
@@ -113,37 +146,47 @@
 
 			th {
 
+				&.weekend {
+
+					span {
+						color: $gray;
+					}
+				}
+
 				span {
-					padding: $interval-s 0;
-					background-color: $major-color;
-					color: $white;
+					padding: $interval-s $interval-m;
+					color: $deep-gray;
+					text-align: right;
+
+					@include media('phone') {
+						text-align: center;
+					}
 				}
 			}
 
 			td {
 				transition: $transition;
 				border: $border;
-				padding: $interval-xs;
+				padding: $interval-s;
 				vertical-align: top;
 
-				@include media('phone') {
-					border: 0;
+				&.weekend {
+					background-color: $light;
 				}
 
 				> div {
+					min-height: 120px;
+					text-align: right;
 
-				}
-
-				&:hover {
-					background-color: $light-gray;
+					@include media('phone') {
+						min-height: 0;
+						text-align: center;
+					}
 				}
 			}
 
 			th ,& td {
-
-				@include media('phone') {
-					text-align: center;
-				}
+				
 			}
 
 			th {
@@ -174,160 +217,82 @@
 
 			.prev-mounth { //上個月的日期
 
-				/*a*/.mark {
-					background-color: $gray;
-
-					@include media('phone') {
-						background-color: transparent;
-						color: $gray;
-					}
-				}
 			}
 
 			.next-mounth { //下個月的日期
 
-				/*a*/.mark {
-					background-color: $gray;
-
-					@include media('phone') {
-						background-color: transparent;
-						color: $gray;
-					}
-				}
 			}
 
 			.weekend { //假日
 
 				/*a*/.mark {
-
-					@include media('phone') {
-						color: $title-color;
-					}
-				}
-
-				&.prev-mounth, &.next-mounth {
-
-					/*a*/.mark {
-
-						@include media('phone') {
-							color: mix( $deep-gray, $title-color );
-						}
-					}
+					color: $gray;
 				}
 			}
 
 			.today { //今天
 				color: $major-color;
 
-				@include media('phone') {
-					background-color: $major-color;
-				}
-
-				.list {
-
-					a {
-
-						&:before {
-							background-color: $major-color;
-						}
-					}
-				}
-
 				/*a*/.mark {
-
-					@include media('phone') {
-						color: $white;
-					}
+					background-color: $minor-color;
+					color: $white;
 				}
 			}
 
 			.is-active { //被選擇
 
+			}
+
+			.div {
+				
+			}
+
+			.list {
+				margin-top: $interval-xs;
+
 				@include media('phone') {
-					background-color: $minor-color;
+					display: none;
 				}
 
-				.list {
+				ul {
 
-					a {
+				}
 
-						&:before {
-							background-color: $minor-color;
-						}
+				li {
+
+					+ li {
+						margin-top: $interval-xs;
 					}
 				}
 
-				/*a*/.mark {
-					background-color: $minor-color;
-
-					@include media('phone') {
-						background-color: transparent;
-						color: $white;
-					}
-				}
-			}
-		}
-
-		.div {
-
-		}
-
-		.list {
-			margin-top: $interval-xs;
-
-			@include media('phone') {
-				display: none;
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				position: relative;
-				display: block;
-				padding: $interval-xs;
-				padding-left: $interval-l;
-
-				&:hover {
-					background-color: $white;
-				}
-
-				&:before {
-					content: $content;
+				span {
 					display: block;
-					position: absolute;
-					top: 12px;
-					left: 6px;
-					width: $interval-xs;
-					height: $interval-xs;
-					background-color: $gray;
+				}
+
+				a {
+					position: relative;
+					display: block;
+					text-align: left;
+					padding: $interval-xs;
+					background-color: $major-color;
+					border-radius: $border-radius;
+					background-color: $major-color;
+					color: $white;
+
+					&:hover {
+						background-color: deeper($major-color);
+					}
 				}
 			}
-		}
 
-		/*a*/.mark {
-			@extend %mark;
-
-			@include media('phone') {
-				display: block;
-				font-size: $font-size-m;
-				color: $body-font-color;
-				margin-right: 0;
-				padding: 0;
-				background-color: transparent;
-			}
-
-			&:hover {
-				text-decoration: underline;
+			/*a*/.mark {
+				display: inline-block;
+				width: 25px;
+				text-align: center;
+				font-size: $font-size-s;
+				line-height: 25px;
+				font-weight: $font-weight-b;
+				border-radius: 50%;
 			}
 		}
 	}
