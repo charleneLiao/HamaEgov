@@ -231,10 +231,9 @@
 			}
 
 			.today { //今天
-				color: $major-color;
 
 				/*a*/.mark {
-					background-color: $minor-color;
+					background-color: $major-color;
 					color: $white;
 				}
 			}
@@ -274,13 +273,12 @@
 					display: block;
 					text-align: left;
 					padding: $interval-xs;
-					background-color: $major-color;
 					border-radius: $border-radius;
-					background-color: $major-color;
-					color: $white;
+					background-color: hsl( hue($minor-color), saturation($minor-color),  lightness($light));
 
 					&:hover {
-						background-color: deeper($major-color);
+						background-color: hsl( hue($minor-color), saturation($minor-color), lightness($light-gray));
+						color: inherit;
 					}
 				}
 			}
