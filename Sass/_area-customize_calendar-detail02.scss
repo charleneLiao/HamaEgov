@@ -64,6 +64,22 @@
 
 			li {
 				display: inline-block;
+
+				&.is-active {
+
+					a {
+						color: $white;
+						background-color: $minor-color;
+
+						&:hover {
+							background-color: deeper($minor-color);
+						}
+
+						&:before {
+							background-color: $white;
+						}
+					}
+				}
 			}
 
 			span {

@@ -68,9 +68,7 @@
 
 		span {
 			@extend %bg-cover;
-			position: relative;
 			display: block;
-			height: 80px;
 
 			@include media('phone') {
 				height: 160px;
@@ -78,26 +76,13 @@
 		}
 
 		a {
-			position: absolute;
 			display: block;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($black, $opacity-m);
-			transition: $transition;
-
-			&:hover {
-				opacity: 0;
-			}
-
-			@include media('mobile') {
-				background-color: transparent;
-			}
+			position: relative;
 		}
 
 		img {
-			display: none;
+			display: block;
+			width: 100%;
 		}
 
 		/*i*/.mark {

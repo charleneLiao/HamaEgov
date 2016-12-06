@@ -54,7 +54,7 @@
 }
 
 /* line 625, ../sass/_base-function.scss */
-.base-content > .in, .base-header .info > .bg-drop-layout > .in, .base-header .info > .in, .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-footer .simple-text.btn .ct, .base-extend .simple-text.btn > .bg-drop-layout > .in, .base-extend .simple-text.btn > .in, .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
+.base-header .info > .bg-drop-layout > .in, .base-header .info > .in, .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in, .base-header .group-list.nav > .bg-drop-layout > .in > .ct, .base-header .group-list.nav > .in > .ct, .base-footer .group-list.nav > .bg-drop-layout > .in, .base-footer .group-list.nav > .in, .base-footer .simple-text.btn .ct, .base-extend .simple-text.btn > .bg-drop-layout > .in, .base-extend .simple-text.btn > .in, .group.center > .bg-drop-layout > .in > .ct, .group.center > .in > .ct, .base-extend .simple-text.query > .bg-drop-layout > .in, .base-extend .simple-text.query > .in {
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -314,7 +314,7 @@
 }
 
 /* line 982, ../sass/_base-function.scss */
-.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.news-card .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2210,11 +2210,16 @@ th {
   }
 }
 
-/* line 10, ../sass/_base-layout.scss */
+/* line 3, ../sass/_base-layout.scss */
+.red {
+  background-color: red;
+}
+
+/* line 14, ../sass/_base-layout.scss */
 .base-mobile .info > .bg-drop-layout > .in > .hd, .base-mobile .info > .in > .hd {
   display: none;
 }
-/* line 32, ../sass/_base-layout.scss */
+/* line 36, ../sass/_base-layout.scss */
 .base-mobile .info > .bg-drop-layout > .in > .ct > .in, .base-mobile .info > .in > .ct > .in {
   position: absolute;
   top: 0;
@@ -2224,19 +2229,19 @@ th {
   overflow-y: auto;
   background-color: #f0f0f0;
 }
-/* line 45, ../sass/_base-layout.scss */
+/* line 49, ../sass/_base-layout.scss */
 .base-header .info {
   background-color: #058f89;
 }
-/* line 51, ../sass/_base-layout.scss */
+/* line 55, ../sass/_base-layout.scss */
 .base-header .info > .bg-drop-layout > .in > .hd, .base-header .info > .in > .hd {
   display: none;
 }
-/* line 87, ../sass/_base-layout.scss */
+/* line 91, ../sass/_base-layout.scss */
 .base-content .info > .bg-drop-layout > .in > .hd, .base-content .info > .in > .hd {
   display: none;
 }
-/* line 109, ../sass/_base-layout.scss */
+/* line 113, ../sass/_base-layout.scss */
 .base-content .info > .bg-drop-layout > .in > .ct > .in, .base-content .info > .in > .ct > .in {
   text-align: right;
 }
@@ -2244,20 +2249,20 @@ th {
 [data-js="false"] .base-content .info > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .base-content .info > .in > .ct > .in {
   text-align: left;
 }
-/* line 122, ../sass/_base-layout.scss */
+/* line 126, ../sass/_base-layout.scss */
 .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in {
   padding: 15px 0;
 }
-/* line 126, ../sass/_base-layout.scss */
+/* line 130, ../sass/_base-layout.scss */
 .base-footer .info > .bg-drop-layout > .in > .hd, .base-footer .info > .in > .hd {
   display: none;
 }
 
-/* line 161, ../sass/_base-layout.scss */
+/* line 165, ../sass/_base-layout.scss */
 .base-header .msg-tool {
   position: relative;
 }
-/* line 194, ../sass/_base-layout.scss */
+/* line 198, ../sass/_base-layout.scss */
 .base-footer .msg-tool {
   overflow: hidden;
 }
@@ -4554,9 +4559,7 @@ th {
 }
 /* line 69, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct span {
-  position: relative;
   display: block;
-  height: 80px;
 }
 @media (max-width: 560px) {
   /* line 69, ../sass/_list-pic_marquee.scss */
@@ -4564,36 +4567,21 @@ th {
     height: 160px;
   }
 }
-/* line 80, ../sass/_list-pic_marquee.scss */
+/* line 78, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct a {
-  position: absolute;
   display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(26, 26, 26, 0.5);
-  transition: 150ms;
+  position: relative;
 }
-/* line 90, ../sass/_list-pic_marquee.scss */
-.list-pic.marquee .ct a:hover {
-  opacity: 0;
-}
-@media (max-width: 768px) {
-  /* line 80, ../sass/_list-pic_marquee.scss */
-  .list-pic.marquee .ct a {
-    background-color: transparent;
-  }
-}
-/* line 99, ../sass/_list-pic_marquee.scss */
+/* line 83, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct img {
-  display: none;
+  display: block;
+  width: 100%;
 }
 /* line 50, ../sass/_base-function.scss */
 [data-js="false"] .list-pic.marquee .ft li.next, [data-js="false"] .list-pic.marquee .ft li.prev {
   display: none;
 }
-/* line 126, ../sass/_list-pic_marquee.scss */
+/* line 111, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
   position: absolute;
   top: 0;
@@ -4604,25 +4592,25 @@ th {
   background-color: #f0f0f0;
   background-color: rgba(240, 240, 240, 0.7);
 }
-/* line 137, ../sass/_list-pic_marquee.scss */
+/* line 122, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a:hover, .list-pic.marquee .ft li.prev a:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* line 145, ../sass/_list-pic_marquee.scss */
+/* line 130, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.prev a {
   left: 0;
   background-image: url('../images/icon-pic/away-b-left.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 153, ../sass/_list-pic_marquee.scss */
+/* line 138, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a {
   right: 0;
   background-image: url('../images/icon-pic/away-b-right.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 159, ../sass/_list-pic_marquee.scss */
+/* line 144, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.more {
   display: none;
 }
@@ -5687,30 +5675,29 @@ th {
 /* line 174, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img span {
   display: block;
-  height: 210px;
-  background-color: #f0f0f0;
 }
-/* line 181, ../sass/_area-customize_news-card.scss */
+/* line 178, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .img img {
-  display: none;
+  display: block;
+  width: 100%;
 }
-/* line 186, ../sass/_area-customize_news-card.scss */
+/* line 184, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .caption {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 186, ../sass/_area-customize_news-card.scss */
+  /* line 184, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .caption {
     margin: 0;
     font-size: 1.4em;
   }
 }
-/* line 196, ../sass/_area-customize_news-card.scss */
+/* line 194, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .p {
   margin: 8px;
 }
 @media (max-width: 560px) {
-  /* line 196, ../sass/_area-customize_news-card.scss */
+  /* line 194, ../sass/_area-customize_news-card.scss */
   .area-customize.news-card .ct .p {
     display: none;
   }
@@ -6591,11 +6578,24 @@ th {
 .area-customize.calendar-detail02 .ct .list li {
   display: inline-block;
 }
-/* line 69, ../sass/_area-customize_calendar-detail02.scss */
+/* line 70, ../sass/_area-customize_calendar-detail02.scss */
+.area-customize.calendar-detail02 .ct .list li.is-active a {
+  color: #ffffff;
+  background-color: #fa7076;
+}
+/* line 74, ../sass/_area-customize_calendar-detail02.scss */
+.area-customize.calendar-detail02 .ct .list li.is-active a:hover {
+  background-color: #f83f47;
+}
+/* line 78, ../sass/_area-customize_calendar-detail02.scss */
+.area-customize.calendar-detail02 .ct .list li.is-active a:before {
+  background-color: #ffffff;
+}
+/* line 85, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list span {
   display: block;
 }
-/* line 73, ../sass/_area-customize_calendar-detail02.scss */
+/* line 89, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list a {
   position: relative;
   display: block;
@@ -6607,12 +6607,12 @@ th {
   background-color: #cbfdfb;
   transition: 150ms;
 }
-/* line 84, ../sass/_area-customize_calendar-detail02.scss */
+/* line 100, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list a:hover {
   background-color: #72faf4;
   color: inherit;
 }
-/* line 89, ../sass/_area-customize_calendar-detail02.scss */
+/* line 105, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list a:before {
   content: "​";
   position: absolute;
@@ -6622,7 +6622,7 @@ th {
   height: 1px;
   background-color: #b6b6b6;
 }
-/* line 100, ../sass/_area-customize_calendar-detail02.scss */
+/* line 116, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list .mark {
   position: absolute;
   top: 30px;
@@ -6630,17 +6630,17 @@ th {
   bottom: 0;
   left: 0;
 }
-/* line 119, ../sass/_area-customize_calendar-detail02.scss */
+/* line 135, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .label li.prev a {
   left: 0;
   background-image: url('../images/icon-pic/away-b-left.png?1474887733');
 }
-/* line 127, ../sass/_area-customize_calendar-detail02.scss */
+/* line 143, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .label li.next a {
   right: 0;
   background-image: url('../images/icon-pic/away-b-right.png?1474887733');
 }
-/* line 138, ../sass/_area-customize_calendar-detail02.scss */
+/* line 154, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .label a {
   position: absolute;
   top: 0;
@@ -6650,85 +6650,85 @@ th {
   background-repeat: no-repeat;
   transition: 150ms;
 }
-/* line 148, ../sass/_area-customize_calendar-detail02.scss */
+/* line 164, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .label a:hover {
   transform: scale(1.2);
 }
-/* line 154, ../sass/_area-customize_calendar-detail02.scss */
+/* line 170, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table {
   margin: 5px 0;
 }
 @media (max-width: 560px) {
-  /* line 154, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 170, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table {
     display: block;
   }
 }
-/* line 161, ../sass/_area-customize_calendar-detail02.scss */
+/* line 177, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table table {
   width: 100%;
 }
 @media (max-width: 560px) {
-  /* line 165, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 181, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table tbody {
     display: block;
   }
 }
 @media (max-width: 560px) {
-  /* line 174, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 190, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table tr + tr {
     margin-top: 8px;
   }
 }
 @media (max-width: 560px) {
-  /* line 172, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 188, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table tr {
     display: block;
     border: 1px solid #e4e4e4;
   }
 }
-/* line 186, ../sass/_area-customize_calendar-detail02.scss */
+/* line 202, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr:nth-child(odd) {
   background-color: #e2fefd;
 }
-/* line 190, ../sass/_area-customize_calendar-detail02.scss */
+/* line 206, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr:hover {
   background-color: #72faf4;
 }
-/* line 196, ../sass/_area-customize_calendar-detail02.scss */
+/* line 212, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr a:hover {
   color: inherit;
 }
-/* line 202, ../sass/_area-customize_calendar-detail02.scss */
+/* line 218, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table th {
   border-top: 3px solid #b6b6b6;
   border-bottom: 1px solid #b6b6b6;
   background-color: #e4e4e4;
 }
 @media (max-width: 560px) {
-  /* line 202, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 218, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table th {
     display: none;
   }
 }
-/* line 216, ../sass/_area-customize_calendar-detail02.scss */
+/* line 232, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table td {
   /*i*/
 }
 @media (max-width: 560px) {
-  /* line 218, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 234, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table td + td {
     border-top: 1px solid #e4e4e4;
     border-top-style: dotted;
   }
 }
 @media (max-width: 560px) {
-  /* line 216, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 232, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table td {
     display: block;
   }
 }
-/* line 230, ../sass/_area-customize_calendar-detail02.scss */
+/* line 246, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table td .mark {
   display: inline-block;
   background-color: #fa7076;
@@ -6737,28 +6737,28 @@ th {
   color: #ffffff;
   font-size: 0.9em;
 }
-/* line 240, ../sass/_area-customize_calendar-detail02.scss */
+/* line 256, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table th, .area-customize.calendar-detail02 .ct .table td {
   padding: 8px 5px;
   text-align: center;
 }
-/* line 244, ../sass/_area-customize_calendar-detail02.scss */
+/* line 260, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table th:before, .area-customize.calendar-detail02 .ct .table td:before {
   display: inline-block;
   color: #b6b6b6;
 }
 @media (max-width: 560px) {
-  /* line 244, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 260, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table th:before, .area-customize.calendar-detail02 .ct .table td:before {
     content: attr(title) "：";
   }
 }
-/* line 253, ../sass/_area-customize_calendar-detail02.scss */
+/* line 269, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table th:last-child, .area-customize.calendar-detail02 .ct .table td:last-child {
   text-align: left;
 }
 @media (max-width: 560px) {
-  /* line 240, ../sass/_area-customize_calendar-detail02.scss */
+  /* line 256, ../sass/_area-customize_calendar-detail02.scss */
   .area-customize.calendar-detail02 .ct .table th, .area-customize.calendar-detail02 .ct .table td {
     text-align: left;
   }
@@ -6969,7 +6969,6 @@ th {
   display: inline-block;
   width: 25px;
   text-align: center;
-  font-size: 0.9em;
   line-height: 25px;
   font-weight: 700;
   border-radius: 50%;
@@ -7127,11 +7126,11 @@ th {
 }
 /* line 250, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .list li.is-this-week a:before {
-  background-color: #fa7076;
+  background-color: #b6b6b6;
 }
 /* line 260, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .list li.is-this-month a:before {
-  background-color: #b6b6b6;
+  background-color: #1a1a1a;
 }
 /* line 266, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .list li + li {

@@ -172,14 +172,12 @@
 			}
 
 			span {
-				@extend %bg-cover;
 				display: block;
-				height: 210px;
-				background-color: $light;
 			}
 
 			img {
-				display: none;
+				display: block;
+				width: 100%;
 			}
 		}
 
