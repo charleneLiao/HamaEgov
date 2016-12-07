@@ -1,0 +1,119 @@
+//文章區塊
+
+//訊息(台中市民政局 - hyc)================================================================
+
+.area-essay.message02 {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		@extend %header;
+
+		> .in {
+
+		}
+
+		h4 {
+			
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		/*a*/.div {
+			display: block;
+			background-color: $white;
+
+			&:hover {
+
+				.caption {
+					background-color: $black;
+				}
+
+				.p {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.img {
+			position: relative;
+
+			span {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.caption {
+			@extend %ellipsis;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: $interval-m;
+			background-color: $black;
+			background-color: rgba($black, $opacity-m);
+			color: $white;
+			text-align: center;
+
+			span {
+				
+			}
+		}
+
+		.p {
+			padding: $interval-m;
+			min-height: 160px;
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

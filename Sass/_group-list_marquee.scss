@@ -44,11 +44,11 @@
 		}
 
 		> .ct {
-			background-color: $light;
+			background-color: $major-color;
 
 			> .in {
 				overflow: hidden;
-				// margin: 0 $btn-width; //如果要與圖不重疊
+				margin: 0 $btn-width; //如果要與圖不重疊
 
 				@include js(false) {
 					margin: 0;
@@ -105,11 +105,10 @@
 						display: block;
 						width: $btn-width;
 						transition: $transition;
-						background-color: $light;
-						background-color: rgba($light, $opacity-h);
+						opacity: $opacity-h;
 
 						&:hover {
-							background-color: rgba($light, $opacity-vh);
+							opacity: 1;
 						}
 					}
 				}
@@ -118,7 +117,7 @@
 
 					a {
 						left: 0;
-						@include bg-to-pic('icon-pic/away-b-left.png', false);
+						@include bg-to-pic('icon-pic/away-w-left.png', false);
 					}
 				}
 
@@ -126,7 +125,7 @@
 
 					a {
 						right: 0;
-						@include bg-to-pic('icon-pic/away-b-right.png', false);
+						@include bg-to-pic('icon-pic/away-w-right.png', false);
 					}
 				}
 

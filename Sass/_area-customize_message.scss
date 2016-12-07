@@ -1,0 +1,188 @@
+//客製區塊
+
+//訊息(accupass - hyc)================================================================
+
+.area-customize.message {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		@extend %header;
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+		background-color: $light;
+
+		> .in {
+
+			&:after {
+				@extend %clear;
+			}
+
+			> ul {
+				@extend %reset;
+				float: left;
+				width: 50%;
+
+				@include media('mobile') {
+					float: none;
+					width: auto;
+				}
+
+				+ ul {
+
+					li {
+
+						&:after {
+							@extend %clear;
+						}
+
+						/*a*/.div {
+							float: left;
+							width: 50%;
+
+							@include media('mobile') {
+								float: none;
+								width: auto;
+							}
+						}
+
+						.img {
+
+							span {
+								height: 118px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/*a*/.div {
+			padding: $interval-m;
+			box-sizing: border-box;
+
+			&:hover {
+
+				span {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.img {
+
+			span {
+				@extend %bg-cover;
+				display: block;
+				height: 380px;
+
+				@include media('mobile') {
+					height: auto !important;
+				}
+			}
+
+			img {
+				display: none;
+				width: 100%;
+
+				@include media('mobile') {
+					display: block;
+				}
+			}
+		}
+
+		.essay {
+			background-color: $white;
+			padding: $interval-m;
+			transition: $transition;
+		}
+
+		.caption {
+			@extend %ellipsis;
+			@extend %caption;
+
+			span {
+
+			}
+		}
+
+		.label {
+			margin: $interval-s 0;
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+		}
+
+		/*i*/.mark {
+			font-size: $font-size-s;
+			color: $deep-gray;
+		}
+
+		.p {
+
+			p {
+				@include multi-ellipsis(3);
+
+				@include media('mobile') {
+					@include re-multi-ellipsis();
+				}
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.ft {
+		@extend %footer;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}
