@@ -69,10 +69,6 @@
 		span {
 			@extend %bg-cover;
 			display: block;
-
-			@include media('phone') {
-				height: 160px;
-			}
 		}
 
 		a {

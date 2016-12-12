@@ -4585,18 +4585,12 @@ th {
 .list-pic.marquee .ct span {
   display: block;
 }
-@media (max-width: 560px) {
-  /* line 69, ../sass/_list-pic_marquee.scss */
-  .list-pic.marquee .ct span {
-    height: 160px;
-  }
-}
-/* line 78, ../sass/_list-pic_marquee.scss */
+/* line 74, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct a {
   display: block;
   position: relative;
 }
-/* line 83, ../sass/_list-pic_marquee.scss */
+/* line 79, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct img {
   display: block;
   width: 100%;
@@ -4605,7 +4599,7 @@ th {
 [data-js="false"] .list-pic.marquee .ft li.next, [data-js="false"] .list-pic.marquee .ft li.prev {
   display: none;
 }
-/* line 111, ../sass/_list-pic_marquee.scss */
+/* line 107, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
   position: absolute;
   top: 0;
@@ -4616,25 +4610,25 @@ th {
   background-color: #f0f0f0;
   background-color: rgba(240, 240, 240, 0.7);
 }
-/* line 122, ../sass/_list-pic_marquee.scss */
+/* line 118, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a:hover, .list-pic.marquee .ft li.prev a:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* line 130, ../sass/_list-pic_marquee.scss */
+/* line 126, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.prev a {
   left: 0;
   background-image: url('../images/icon-pic/away-b-left.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 138, ../sass/_list-pic_marquee.scss */
+/* line 134, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a {
   right: 0;
   background-image: url('../images/icon-pic/away-b-right.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 144, ../sass/_list-pic_marquee.scss */
+/* line 140, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.more {
   display: none;
 }

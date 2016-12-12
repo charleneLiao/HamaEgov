@@ -1,17 +1,5 @@
 <%= render partial: "/erb/sys_variable" %>
 
-<!-- message02 訊息(彥專) -->
-	<%= render partial: "/erb/area-customize_message02", locals: set({ header_text: "訊息" }) %>
-<!-- message02 結束 -->
-
-<!-- message 訊息(accupass - hyc) -->
-	<%= render partial: "/erb/area-customize_message", locals: set({ header_text: "訊息" }) %>
-<!-- message 結束 -->
-
-<!-- marquee-slider 跑馬燈 -->
-	<%= render partial: "/erb/group-list_marquee", locals: set({ func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈(物件)", inner: "/erb/area-essay_message02" }) %>
-<!-- marquee-slider 結束 -->
-
 <div class="group center" data-index="1" data-type="<%= $row %>" data-child="3"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">訊息發布</a></span></h3>
@@ -53,6 +41,18 @@
 	<!-- news-card 消息卡片(台中市府 - hyc) -->
 		<%= render partial: "/erb/area-customize_news-card", locals: set({ index: 8, header_text: "最新消息卡片" }) %>
 	<!-- news-card 結束 -->
+
+	<!-- marquee-slider 跑馬燈 -->
+		<%= render partial: "/erb/group-list_marquee", locals: set({ func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈(物件)", inner: "/erb/area-essay_message02" }) %>
+	<!-- marquee-slider 結束 -->
+
+	<!-- message02 訊息(彥專) -->
+		<%= render partial: "/erb/area-customize_message02", locals: set({ header_text: "訊息" }) %>
+	<!-- message02 結束 -->
+
+	<!-- message 訊息(accupass - hyc) -->
+		<%= render partial: "/erb/area-customize_message", locals: set({ header_text: "訊息" }) %>
+	<!-- message 結束 -->
 
 
 	</div></div>
