@@ -262,40 +262,39 @@
 /* line 890, ../sass/_base-function.scss */
 .area-form.vote .ct .form img, .area-customize.video .ct .p img, .area-editor.user-edit .ct img, .area-editor.error-info .ct img, .area-form.page-form .ct img, .area-form.submit .ct img, .area-customize.map .ct .p img, .area-customize.audio .ct .p img, .area-customize.iframe .ct .p img, .base-wrapper .simple-text.query > .bg-drop-layout > .in img, .base-wrapper .simple-text.query > .in img, .area-form.sign-in .ct img, .area-table.page-table .ct tfoot span img, .area-table.rwd-table .ct tfoot span img, .area-editor.address .ct img, .area-editor.system-info .ct img {
   max-width: 100%;
-  margin: 8px;
 }
 
-/* line 896, ../sass/_base-function.scss */
+/* line 895, ../sass/_base-function.scss */
 .area-form.vote .ct .form, .area-customize.video .ct .p, .area-editor.user-edit .ct, .area-editor.error-info .ct, .area-form.page-form .ct, .area-form.submit .ct, .area-customize.map .ct .p, .area-customize.audio .ct .p, .area-customize.iframe .ct .p, .base-wrapper .simple-text.query > .bg-drop-layout > .in, .base-wrapper .simple-text.query > .in, .area-form.sign-in .ct, .area-table.page-table .ct tfoot span, .area-table.rwd-table .ct tfoot span {
   padding: 8px 15px;
   background-color: #f0f0f0;
 }
 
-/* line 902, ../sass/_base-function.scss */
+/* line 901, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft, .group-list.default > .in > .ft, .base-content .list-text.link .ft, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft, .base-module-area .group-list.slider > .in > .ft, .list-text.slider .ft, .group-list.message > .bg-drop-layout > .in > .ft, .group-list.message > .in > .ft, .area-essay.message .ft, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft, .base-module-area .group-list.album > .in > .ft, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft, .base-page-area .group-list.album > .in > .ft, .area-figure.album .ft, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft, .base-module-area .group-list.link > .in > .ft, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft, .base-page-area .group-list.link > .in > .ft, .list-pic.link .ft, .area-form.link .ft, .base-module-area .area-essay.link .ft, .base-page-area .area-essay.link .ft, .list-text.rss .ft, .area-customize.calendar .ft, .area-form.epaper .ft, .area-customize.video .ft, .area-customize.news-card .ft, .area-customize.icons-g2 .ft, .area-customize.message .ft, .area-customize.message02 .ft, .area-form.page-search .ft, .group-list.page-block > .bg-drop-layout > .in > .ft, .group-list.page-block > .in > .ft, .group-list.page-list > .bg-drop-layout > .in > .ft, .group-list.page-list > .in > .ft, .list-pic.album .ft, .area-customize.calendar-detail .ft, .area-customize.calendar-detail02 .ft, .area-customize.calendar-detail03 .ft, .area-customize.calendar-schedule .ft, .area-customize.chart .ft, .area-essay.page-caption-label .ft, .area-essay.page-caption-label-p .ft, .area-essay.page-caption-p .ft, .area-essay.page-essay .ft, .area-essay.page-img-caption-label .ft, .area-essay.page-img-caption-p .ft, .area-figure.page-img-figcaption .ft, .area-figure.page-img-figcaption-label .ft, .area-figure.page-img-figcaption-p .ft, .area-figure.page-img-label .ft, .area-figure.page-img-label-p .ft, .area-figure.page-img-p .ft, .area-form.page-form .ft, .area-form.submit .ft, .area-customize.map .ft, .area-customize.audio .ft, .area-customize.iframe .ft, .list-text.message .ft, .group-list.page-list-pic > .bg-drop-layout > .in > .ft, .group-list.page-list-pic > .in > .ft, .area-form.sign-in .ft, .group-list.sitemap > .bg-drop-layout > .in > .ft, .group-list.sitemap > .in > .ft, .list-text.sitemap .ft, .area-table.page-table .ft, .area-table.rwd-table .ft, .list-text.page-list .ft, .group-list.page-list-text > .bg-drop-layout > .in > .ft, .group-list.page-list-text > .in > .ft {
   position: absolute;
   top: 15px;
   right: 0;
 }
-/* line 911, ../sass/_base-function.scss */
+/* line 910, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft ul, .group-list.default > .in > .ft ul, .base-content .list-text.link .ft ul, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.slider > .in > .ft ul, .list-text.slider .ft ul, .group-list.message > .bg-drop-layout > .in > .ft ul, .group-list.message > .in > .ft ul, .area-essay.message .ft ul, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.album > .in > .ft ul, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.album > .in > .ft ul, .area-figure.album .ft ul, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.link > .in > .ft ul, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.link > .in > .ft ul, .list-pic.link .ft ul, .area-form.link .ft ul, .base-module-area .area-essay.link .ft ul, .base-page-area .area-essay.link .ft ul, .list-text.rss .ft ul, .area-customize.calendar .ft ul, .area-form.epaper .ft ul, .area-customize.video .ft ul, .area-customize.news-card .ft ul, .area-customize.icons-g2 .ft ul, .area-customize.message .ft ul, .area-customize.message02 .ft ul, .area-form.page-search .ft ul, .group-list.page-block > .bg-drop-layout > .in > .ft ul, .group-list.page-block > .in > .ft ul, .group-list.page-list > .bg-drop-layout > .in > .ft ul, .group-list.page-list > .in > .ft ul, .list-pic.album .ft ul, .area-customize.calendar-detail .ft ul, .area-customize.calendar-detail02 .ft ul, .area-customize.calendar-detail03 .ft ul, .area-customize.calendar-schedule .ft ul, .area-customize.chart .ft ul, .area-essay.page-caption-label .ft ul, .area-essay.page-caption-label-p .ft ul, .area-essay.page-caption-p .ft ul, .area-essay.page-essay .ft ul, .area-essay.page-img-caption-label .ft ul, .area-essay.page-img-caption-p .ft ul, .area-figure.page-img-figcaption .ft ul, .area-figure.page-img-figcaption-label .ft ul, .area-figure.page-img-figcaption-p .ft ul, .area-figure.page-img-label .ft ul, .area-figure.page-img-label-p .ft ul, .area-figure.page-img-p .ft ul, .area-form.page-form .ft ul, .area-form.submit .ft ul, .area-customize.map .ft ul, .area-customize.audio .ft ul, .area-customize.iframe .ft ul, .list-text.message .ft ul, .group-list.page-list-pic > .bg-drop-layout > .in > .ft ul, .group-list.page-list-pic > .in > .ft ul, .area-form.sign-in .ft ul, .group-list.sitemap > .bg-drop-layout > .in > .ft ul, .group-list.sitemap > .in > .ft ul, .list-text.sitemap .ft ul, .area-table.page-table .ft ul, .area-table.rwd-table .ft ul, .list-text.page-list .ft ul, .group-list.page-list-text > .bg-drop-layout > .in > .ft ul, .group-list.page-list-text > .in > .ft ul {
   text-align: right;
 }
-/* line 915, ../sass/_base-function.scss */
+/* line 914, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft li, .group-list.default > .in > .ft li, .base-content .list-text.link .ft li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.slider > .in > .ft li, .list-text.slider .ft li, .group-list.message > .bg-drop-layout > .in > .ft li, .group-list.message > .in > .ft li, .area-essay.message .ft li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.album > .in > .ft li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.album > .in > .ft li, .area-figure.album .ft li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.link > .in > .ft li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.link > .in > .ft li, .list-pic.link .ft li, .area-form.link .ft li, .base-module-area .area-essay.link .ft li, .base-page-area .area-essay.link .ft li, .list-text.rss .ft li, .area-customize.calendar .ft li, .area-form.epaper .ft li, .area-customize.video .ft li, .area-customize.news-card .ft li, .area-customize.icons-g2 .ft li, .area-customize.message .ft li, .area-customize.message02 .ft li, .area-form.page-search .ft li, .group-list.page-block > .bg-drop-layout > .in > .ft li, .group-list.page-block > .in > .ft li, .group-list.page-list > .bg-drop-layout > .in > .ft li, .group-list.page-list > .in > .ft li, .list-pic.album .ft li, .area-customize.calendar-detail .ft li, .area-customize.calendar-detail02 .ft li, .area-customize.calendar-detail03 .ft li, .area-customize.calendar-schedule .ft li, .area-customize.chart .ft li, .area-essay.page-caption-label .ft li, .area-essay.page-caption-label-p .ft li, .area-essay.page-caption-p .ft li, .area-essay.page-essay .ft li, .area-essay.page-img-caption-label .ft li, .area-essay.page-img-caption-p .ft li, .area-figure.page-img-figcaption .ft li, .area-figure.page-img-figcaption-label .ft li, .area-figure.page-img-figcaption-p .ft li, .area-figure.page-img-label .ft li, .area-figure.page-img-label-p .ft li, .area-figure.page-img-p .ft li, .area-form.page-form .ft li, .area-form.submit .ft li, .area-customize.map .ft li, .area-customize.audio .ft li, .area-customize.iframe .ft li, .list-text.message .ft li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li, .group-list.page-list-pic > .in > .ft li, .area-form.sign-in .ft li, .group-list.sitemap > .bg-drop-layout > .in > .ft li, .group-list.sitemap > .in > .ft li, .list-text.sitemap .ft li, .area-table.page-table .ft li, .area-table.rwd-table .ft li, .list-text.page-list .ft li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li, .group-list.page-list-text > .in > .ft li {
   display: inline-block;
 }
-/* line 918, ../sass/_base-function.scss */
+/* line 917, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft li + li, .group-list.default > .in > .ft li + li, .base-content .list-text.link .ft li + li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.slider > .in > .ft li + li, .list-text.slider .ft li + li, .group-list.message > .bg-drop-layout > .in > .ft li + li, .group-list.message > .in > .ft li + li, .area-essay.message .ft li + li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.album > .in > .ft li + li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.album > .in > .ft li + li, .area-figure.album .ft li + li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.link > .in > .ft li + li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.link > .in > .ft li + li, .list-pic.link .ft li + li, .area-form.link .ft li + li, .base-module-area .area-essay.link .ft li + li, .base-page-area .area-essay.link .ft li + li, .list-text.rss .ft li + li, .area-customize.calendar .ft li + li, .area-form.epaper .ft li + li, .area-customize.video .ft li + li, .area-customize.news-card .ft li + li, .area-customize.icons-g2 .ft li + li, .area-customize.message .ft li + li, .area-customize.message02 .ft li + li, .area-form.page-search .ft li + li, .group-list.page-block > .bg-drop-layout > .in > .ft li + li, .group-list.page-block > .in > .ft li + li, .group-list.page-list > .bg-drop-layout > .in > .ft li + li, .group-list.page-list > .in > .ft li + li, .list-pic.album .ft li + li, .area-customize.calendar-detail .ft li + li, .area-customize.calendar-detail02 .ft li + li, .area-customize.calendar-detail03 .ft li + li, .area-customize.calendar-schedule .ft li + li, .area-customize.chart .ft li + li, .area-essay.page-caption-label .ft li + li, .area-essay.page-caption-label-p .ft li + li, .area-essay.page-caption-p .ft li + li, .area-essay.page-essay .ft li + li, .area-essay.page-img-caption-label .ft li + li, .area-essay.page-img-caption-p .ft li + li, .area-figure.page-img-figcaption .ft li + li, .area-figure.page-img-figcaption-label .ft li + li, .area-figure.page-img-figcaption-p .ft li + li, .area-figure.page-img-label .ft li + li, .area-figure.page-img-label-p .ft li + li, .area-figure.page-img-p .ft li + li, .area-form.page-form .ft li + li, .area-form.submit .ft li + li, .area-customize.map .ft li + li, .area-customize.audio .ft li + li, .area-customize.iframe .ft li + li, .list-text.message .ft li + li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-pic > .in > .ft li + li, .area-form.sign-in .ft li + li, .group-list.sitemap > .bg-drop-layout > .in > .ft li + li, .group-list.sitemap > .in > .ft li + li, .list-text.sitemap .ft li + li, .area-table.page-table .ft li + li, .area-table.rwd-table .ft li + li, .list-text.page-list .ft li + li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-text > .in > .ft li + li {
   margin-left: 3px;
 }
-/* line 923, ../sass/_base-function.scss */
+/* line 922, ../sass/_base-function.scss */
 .group-list.default > .bg-drop-layout > .in > .ft span, .group-list.default > .in > .ft span, .base-content .list-text.link .ft span, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.slider > .in > .ft span, .list-text.slider .ft span, .group-list.message > .bg-drop-layout > .in > .ft span, .group-list.message > .in > .ft span, .area-essay.message .ft span, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.album > .in > .ft span, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.album > .in > .ft span, .area-figure.album .ft span, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.link > .in > .ft span, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.link > .in > .ft span, .list-pic.link .ft span, .area-form.link .ft span, .base-module-area .area-essay.link .ft span, .base-page-area .area-essay.link .ft span, .list-text.rss .ft span, .area-customize.calendar .ft span, .area-form.epaper .ft span, .area-customize.video .ft span, .area-customize.news-card .ft span, .area-customize.icons-g2 .ft span, .area-customize.message .ft span, .area-customize.message02 .ft span, .area-form.page-search .ft span, .group-list.page-block > .bg-drop-layout > .in > .ft span, .group-list.page-block > .in > .ft span, .group-list.page-list > .bg-drop-layout > .in > .ft span, .group-list.page-list > .in > .ft span, .list-pic.album .ft span, .area-customize.calendar-detail .ft span, .area-customize.calendar-detail02 .ft span, .area-customize.calendar-detail03 .ft span, .area-customize.calendar-schedule .ft span, .area-customize.chart .ft span, .area-essay.page-caption-label .ft span, .area-essay.page-caption-label-p .ft span, .area-essay.page-caption-p .ft span, .area-essay.page-essay .ft span, .area-essay.page-img-caption-label .ft span, .area-essay.page-img-caption-p .ft span, .area-figure.page-img-figcaption .ft span, .area-figure.page-img-figcaption-label .ft span, .area-figure.page-img-figcaption-p .ft span, .area-figure.page-img-label .ft span, .area-figure.page-img-label-p .ft span, .area-figure.page-img-p .ft span, .area-form.page-form .ft span, .area-form.submit .ft span, .area-customize.map .ft span, .area-customize.audio .ft span, .area-customize.iframe .ft span, .list-text.message .ft span, .group-list.page-list-pic > .bg-drop-layout > .in > .ft span, .group-list.page-list-pic > .in > .ft span, .area-form.sign-in .ft span, .group-list.sitemap > .bg-drop-layout > .in > .ft span, .group-list.sitemap > .in > .ft span, .list-text.sitemap .ft span, .area-table.page-table .ft span, .area-table.rwd-table .ft span, .list-text.page-list .ft span, .group-list.page-list-text > .bg-drop-layout > .in > .ft span, .group-list.page-list-text > .in > .ft span {
   display: block;
   background-image: none !important;
 }
 
-/* line 933, ../sass/_base-function.scss */
+/* line 932, ../sass/_base-function.scss */
 .simple-text.default .ct a, .base-content .list-text.link .ct a, .base-content .list-text.nav .ct a, .base-wrapper .area-form.search .ct .list a, .list-text.slider .ct a, .simple-text.message .ct a, .list-text.rss .ct a, .area-customize.calendar .ct .list a, .simple-text.weather .ct a, .list-text.content-file, .list-text.content-list .hd a, .list-text.content-list .ct a, .list-text.file-download .ct a, .list-text.file-download-multiple, .list-text.message .ct a, .list-text.sitemap .ct a, .list-text.page-list .ct a {
   display: block;
   padding: 8px;
@@ -303,18 +302,18 @@
   transition: 150ms;
 }
 
-/* line 942, ../sass/_base-function.scss */
+/* line 941, ../sass/_base-function.scss */
 .simple-text.default .ct a:hover, .base-content .list-text.link .ct a:hover, .base-content .list-text.nav .ct a:hover, .base-wrapper .area-form.search .ct .list a:hover, .list-text.slider .ct a:hover, .simple-text.message .ct a:hover, .list-text.rss .ct a:hover, .area-customize.calendar .ct .list a:hover, .simple-text.weather .ct a:hover, .list-text.content-file:hover, .list-text.content-list .hd a:hover, .list-text.content-list .ct a:hover, .list-text.file-download .ct a:hover, .list-text.file-download-multiple:hover, .list-text.message .ct a:hover, .list-text.sitemap .ct a:hover, .list-text.page-list .ct a:hover {
   color: currentColor;
   background-color: #e4e4e4;
 }
 
-/* line 950, ../sass/_base-function.scss */
+/* line 949, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .list-pic.link .ct a, .list-pic.album .ct a {
   position: relative;
   display: block;
 }
-/* line 954, ../sass/_base-function.scss */
+/* line 953, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a:before, .group-list.major-slider > .in > .ft li.is-img a:before, .list-pic.link .ct a:before, .list-pic.album .ct a:before {
   content: "​";
   display: block;
@@ -327,12 +326,12 @@
   background-color: rgba(26, 26, 26, 0.5);
   transition: 150ms;
 }
-/* line 969, ../sass/_base-function.scss */
+/* line 968, ../sass/_base-function.scss */
 .group-list.major-slider > .in > .ft li.is-img a:hover:before, .list-pic.link .ct a:hover:before, .list-pic.album .ct a:hover:before {
   opacity: 0;
 }
 
-/* line 975, ../sass/_base-function.scss */
+/* line 974, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a {
   position: absolute;
   display: block;
@@ -342,28 +341,28 @@
   left: 0;
 }
 
-/* line 986, ../sass/_base-function.scss */
+/* line 985, ../sass/_base-function.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 992, ../sass/_base-function.scss */
+/* line 991, ../sass/_base-function.scss */
 .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .area-customize.icons-g2 .ct .img span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-/* line 1004, ../sass/_base-function.scss */
+/* line 1003, ../sass/_base-function.scss */
 .base-section a.ai:after, .base-section a.avi:after, .base-section a.bmp:after, .base-section a.cdr:after, .base-section a.css:after, .base-section a.csv:after, .base-section a.dmg:after, .base-section a.doc:after, .base-section a.docx:after, .base-section a.exe:after, .base-section a.gif:after, .base-section a.html:after, .base-section a.ico:after, .base-section a.jpeg:after, .base-section a.jpg:after, .base-section a.js:after, .base-section a.link:after, .base-section a.md:after, .base-section a.mov:after, .base-section a.mp3:after, .base-section a.mp4:after, .base-section a.odf:after, .base-section a.odp:after, .base-section a.ods:after, .base-section a.odt:after, .base-section a.ogg:after, .base-section a.ogv:after, .base-section a.other:after, .base-section a.pdf:after, .base-section a.png:after, .base-section a.ppt:after, .base-section a.pptx:after, .base-section a.psd:after, .base-section a.rar:after, .base-section a.rss:after, .base-section a.sass:after, .base-section a.svg:after, .base-section a.swf:after, .base-section a.tar:after, .base-section a.tif:after, .base-section a.txt:after, .base-section a.wav:after, .base-section a.webm:after, .base-section a.xls:after, .base-section a.xlsx:after, .base-section a.xml:after, .base-section a.zip:after, .base-extend .list-text.share .ct li.facebook a, .base-extend .list-text.share .ct li.google a, .base-extend .list-text.share .ct li.twitter a, .base-extend .list-text.share .ct li.plurk a, .base-extend .list-text.share .ct li.line a, .base-extend .list-text.share .ct li.email a, .base-mobile .list-text.share .ct li.facebook a, .base-mobile .list-text.share .ct li.google a, .base-mobile .list-text.share .ct li.twitter a, .base-mobile .list-text.share .ct li.plurk a, .base-mobile .list-text.share .ct li.line a, .base-mobile .list-text.share .ct li.email a, .list-text.rss .ct li a:after, .list-text.content-file .ct li.ai a:before, .list-text.content-file .ct li.avi a:before, .list-text.content-file .ct li.bmp a:before, .list-text.content-file .ct li.cdr a:before, .list-text.content-file .ct li.css a:before, .list-text.content-file .ct li.csv a:before, .list-text.content-file .ct li.dmg a:before, .list-text.content-file .ct li.doc a:before, .list-text.content-file .ct li.docx a:before, .list-text.content-file .ct li.exe a:before, .list-text.content-file .ct li.gif a:before, .list-text.content-file .ct li.html a:before, .list-text.content-file .ct li.ico a:before, .list-text.content-file .ct li.jpeg a:before, .list-text.content-file .ct li.jpg a:before, .list-text.content-file .ct li.js a:before, .list-text.content-file .ct li.link a:before, .list-text.content-file .ct li.md a:before, .list-text.content-file .ct li.mov a:before, .list-text.content-file .ct li.mp3 a:before, .list-text.content-file .ct li.mp4 a:before, .list-text.content-file .ct li.odf a:before, .list-text.content-file .ct li.odp a:before, .list-text.content-file .ct li.ods a:before, .list-text.content-file .ct li.odt a:before, .list-text.content-file .ct li.ogg a:before, .list-text.content-file .ct li.ogv a:before, .list-text.content-file .ct li.other a:before, .list-text.content-file .ct li.pdf a:before, .list-text.content-file .ct li.png a:before, .list-text.content-file .ct li.ppt a:before, .list-text.content-file .ct li.pptx a:before, .list-text.content-file .ct li.psd a:before, .list-text.content-file .ct li.rar a:before, .list-text.content-file .ct li.rss a:before, .list-text.content-file .ct li.sass a:before, .list-text.content-file .ct li.svg a:before, .list-text.content-file .ct li.swf a:before, .list-text.content-file .ct li.tar a:before, .list-text.content-file .ct li.tif a:before, .list-text.content-file .ct li.txt a:before, .list-text.content-file .ct li.wav a:before, .list-text.content-file .ct li.webm a:before, .list-text.content-file .ct li.xls a:before, .list-text.content-file .ct li.xlsx a:before, .list-text.content-file .ct li.xml a:before, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download .ct li.cdr a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download .ct li.dmg a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download .ct li.exe a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.ai a:before, .list-text.file-download-multiple .ct li.avi a:before, .list-text.file-download-multiple .ct li.bmp a:before, .list-text.file-download-multiple .ct li.cdr a:before, .list-text.file-download-multiple .ct li.css a:before, .list-text.file-download-multiple .ct li.csv a:before, .list-text.file-download-multiple .ct li.dmg a:before, .list-text.file-download-multiple .ct li.doc a:before, .list-text.file-download-multiple .ct li.docx a:before, .list-text.file-download-multiple .ct li.exe a:before, .list-text.file-download-multiple .ct li.gif a:before, .list-text.file-download-multiple .ct li.html a:before, .list-text.file-download-multiple .ct li.ico a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .list-text.file-download-multiple .ct li.js a:before, .list-text.file-download-multiple .ct li.link a:before, .list-text.file-download-multiple .ct li.md a:before, .list-text.file-download-multiple .ct li.mov a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.odf a:before, .list-text.file-download-multiple .ct li.odp a:before, .list-text.file-download-multiple .ct li.ods a:before, .list-text.file-download-multiple .ct li.odt a:before, .list-text.file-download-multiple .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogv a:before, .list-text.file-download-multiple .ct li.other a:before, .list-text.file-download-multiple .ct li.pdf a:before, .list-text.file-download-multiple .ct li.png a:before, .list-text.file-download-multiple .ct li.ppt a:before, .list-text.file-download-multiple .ct li.pptx a:before, .list-text.file-download-multiple .ct li.psd a:before, .list-text.file-download-multiple .ct li.rar a:before, .list-text.file-download-multiple .ct li.rss a:before, .list-text.file-download-multiple .ct li.sass a:before, .list-text.file-download-multiple .ct li.svg a:before, .list-text.file-download-multiple .ct li.swf a:before, .list-text.file-download-multiple .ct li.tar a:before, .list-text.file-download-multiple .ct li.tif a:before, .list-text.file-download-multiple .ct li.txt a:before, .list-text.file-download-multiple .ct li.wav a:before, .list-text.file-download-multiple .ct li.webm a:before, .list-text.file-download-multiple .ct li.xls a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xml a:before, .list-text.file-download-multiple .ct li.zip a:before, .area-form.sign-in .ct .list li.facebook a:before, .area-form.sign-in .ct .list li.google a:before, .area-form.sign-in .ct .list li.twitter a:before, .area-form.sign-in .ct .list li.plurk a:before, .area-form.sign-in .ct .list li.line a:before, .area-form.sign-in .ct .list li.email a:before {
   content: "​";
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 1010, ../sass/_base-function.scss */
+/* line 1009, ../sass/_base-function.scss */
 .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-content .group.nav > .bg-drop-layout > .in > .hd a:before, .base-content .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3:before, .base-content .group-list.nav > .in > .hd h3:before, .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a:before, .list-text.minor-nav .hd h4:before, .list-text.minor-nav .ct a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data:hover > .bg-drop-layout > .in .hd a:before, .list-text.open-data:hover > .in .hd a:before, .list-text.open-data.is-active > .bg-drop-layout > .in .hd a:before, .list-text.open-data.is-active > .in .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool:hover > .bg-drop-layout > .in .hd a:before, .list-text.user-tool:hover > .in .hd a:before, .list-text.user-tool.is-active > .bg-drop-layout > .in .hd a:before, .list-text.user-tool.is-active > .in .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-mobile .simple-text.btn.is-active .ct a:before, .base-mobile .simple-text.btn .ct a:before, .base-footer .simple-text.btn.is-active .ct a:before, .base-footer .simple-text.btn .ct a:before, .area-editor.address .ct a.is-map:after, .area-form.page-search.is-active .hd h4:before, .area-form.page-search .hd h4:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before {
   font-family: 'icomoon';
   speak: none;
@@ -2239,33 +2238,37 @@ th {
   }
 }
 
-/* line 10, ../sass/_base-layout.scss */
+/* line 11, ../sass/_base-layout.scss */
+.base-mobile.is-open .info > .bg-drop-layout > .in > .ct > .in, .base-mobile.is-open .info > .in > .ct > .in {
+  overflow-y: auto;
+}
+/* line 23, ../sass/_base-layout.scss */
 .base-mobile .info > .bg-drop-layout > .in > .hd, .base-mobile .info > .in > .hd {
   display: none;
 }
-/* line 32, ../sass/_base-layout.scss */
+/* line 45, ../sass/_base-layout.scss */
 .base-mobile .info > .bg-drop-layout > .in > .ct > .in, .base-mobile .info > .in > .ct > .in {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #f0f0f0;
 }
-/* line 45, ../sass/_base-layout.scss */
+/* line 58, ../sass/_base-layout.scss */
 .base-header .info {
   background-color: #058f89;
 }
-/* line 51, ../sass/_base-layout.scss */
+/* line 64, ../sass/_base-layout.scss */
 .base-header .info > .bg-drop-layout > .in > .hd, .base-header .info > .in > .hd {
   display: none;
 }
-/* line 87, ../sass/_base-layout.scss */
+/* line 100, ../sass/_base-layout.scss */
 .base-content .info > .bg-drop-layout > .in > .hd, .base-content .info > .in > .hd {
   display: none;
 }
-/* line 109, ../sass/_base-layout.scss */
+/* line 122, ../sass/_base-layout.scss */
 .base-content .info > .bg-drop-layout > .in > .ct > .in, .base-content .info > .in > .ct > .in {
   text-align: right;
 }
@@ -2273,20 +2276,20 @@ th {
 [data-js="false"] .base-content .info > .bg-drop-layout > .in > .ct > .in, [data-js="false"] .base-content .info > .in > .ct > .in {
   text-align: left;
 }
-/* line 122, ../sass/_base-layout.scss */
+/* line 135, ../sass/_base-layout.scss */
 .base-footer .info > .bg-drop-layout > .in, .base-footer .info > .in {
   padding: 15px 0;
 }
-/* line 126, ../sass/_base-layout.scss */
+/* line 139, ../sass/_base-layout.scss */
 .base-footer .info > .bg-drop-layout > .in > .hd, .base-footer .info > .in > .hd {
   display: none;
 }
 
-/* line 161, ../sass/_base-layout.scss */
+/* line 174, ../sass/_base-layout.scss */
 .base-header .msg-tool {
   position: relative;
 }
-/* line 194, ../sass/_base-layout.scss */
+/* line 207, ../sass/_base-layout.scss */
 .base-footer .msg-tool {
   overflow: hidden;
 }
@@ -4162,6 +4165,10 @@ th {
   .list-multiple.page-select .ct span.number {
     display: none;
   }
+}
+/* line 139, ../sass/_list-multiple_page-select.scss */
+.list-multiple.page-select .ct span input {
+  max-width: 60px;
 }
 
 /* line 13, ../sass/_area-form_search.scss */

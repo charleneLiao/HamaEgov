@@ -2,6 +2,19 @@
 
 .info {
 
+	.base-mobile.is-open & {
+
+		> .bg-drop-layout > .in, > .in {
+
+			> .ct {
+
+				> .in {
+					overflow-y: auto;
+				}
+			}
+		}
+	}
+
 	.base-mobile & {
 		@extend %area-mobile;
 
@@ -35,7 +48,7 @@
 					right: 0;
 					left: 0;
 					height: 100vh;
-					overflow-y: auto;
+					overflow-y: hidden;
 					background-color: $light;
 				}
 			}
