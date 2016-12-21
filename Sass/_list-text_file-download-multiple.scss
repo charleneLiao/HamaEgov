@@ -126,6 +126,10 @@
 				background-color: $white;
 				color: currentColor;
 			}
+
+			&:after {
+				content: none;
+			}
 		}
 
 		/*i*/.mark {

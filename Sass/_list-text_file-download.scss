@@ -78,6 +78,10 @@
 			&:hover {
 				border-left-width: $interval-m;
 			}
+
+			&:after {
+				content: none;
+			}
 		}
 
 		/*i*/.mark {

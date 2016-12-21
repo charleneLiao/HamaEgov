@@ -1,12 +1,12 @@
 //圖片列表
 
-//跑馬燈================================================================
+//跑馬燈(太平洋家居網 - 彥專)================================================================
 
-.list-pic.marquee {
+.list-pic.marquee03 {
 	$btn-width: 30px; //設定按鈕寬度
 	$max-li-len: 50; //設定 li 的最大數量
 	$show-li-len: 4; //設定一次要秀的數量
-	$max-show-li-len: 10; //設定一次要秀的範圍數量，給 data-setLen 用
+	$max-show-li-len: 10; //設定一次要秀的範圍數量，給 alinelwngth 用
 
 	@for $i from 1 through $max-show-li-len { //使數量可以被控制 1 ~ $max-show-li-len
 	

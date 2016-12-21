@@ -10,12 +10,17 @@
 	<% end %>
 	<div class="ct"><div class="in">
 		<a href="#" class="div">
-			<div class="img">
-				<span style="background-image: url('<%= img %>')"><img src="<%= img %>" alt=""></span>
-				<div class="caption"><span><%= lorem_word %></span></div>
-			</div>
-			<div class="p">
-				<p><span><%= zh_lorem_paragraph %></span></p>
+			<div class="img"><span style="background-image: url('<%= img %>')"><img src="<%= img %>" alt=""></span></div>
+			<div class="essay">
+				<div class="caption"><span><%= zh_lorem_sentence %></span></div>
+				<div class="label">
+					<ul>
+						<li><span><i class="mark"><%= lorem_word %></i></span></li>
+					</ul>
+				</div>
+				<div class="p">
+					<p><span><%= zh_lorem_paragraph %></span></p>
+				</div>
 			</div>
 		</a>
 	</div></div>

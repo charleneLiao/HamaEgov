@@ -41,13 +41,13 @@
 }
 
 /* line 549, ../sass/_base-function.scss */
-.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .base-page-area .group-list.slider > .in > .ft li.next a, .base-page-area .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .area-customize.calendar-detail02 .ct .label a, .area-customize.calendar-schedule .ct .label a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a {
+.simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-extend .list-text.share .ct a, .base-mobile .list-text.share .ct a, .list-text.font-size .ct a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a, .list-pic.marquee02 .ft li.next a, .list-pic.marquee02 .ft li.prev a, .list-pic.marquee03 .ft li.next a, .list-pic.marquee03 .ft li.prev a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.next a, .base-page-area .group-list.slider > .bg-drop-layout > .in > .ft li.prev a, .base-page-area .group-list.slider > .in > .ft li.next a, .base-page-area .group-list.slider > .in > .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .area-customize.calendar-detail02 .ct .label a, .area-customize.calendar-schedule .ct .label a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a {
   font: 0/0 a;
   color: transparent;
 }
 
 /* line 554, ../sass/_base-function.scss */
-.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
+.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption span, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -175,7 +175,7 @@
 }
 
 /* line 795, ../sass/_base-function.scss */
-.list-pic.marquee .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark, .simple-text.default .ct .mark, .base-header .list-text.link .ct .mark, .base-content .list-text.link .ct .mark, .list-text.slider .ct .mark, .simple-text.message .ct .mark, .area-essay.message .ct .mark, .area-figure.album .ct .mark, .base-module-area .area-essay.link .ct .mark, .base-page-area .area-essay.link .ct .mark, .area-form.vote .ct .mark, .list-text.rss .ct .mark, .area-customize.calendar .ct .mark, .simple-text.weather .ct .mark, .area-customize.video .ct .mark, .list-text.label .ct a, .area-customize.calendar-detail .ct .table .mark, .area-essay.page-caption-label .ct .mark, .area-essay.page-caption-label-p .ct .mark, .area-essay.page-essay .ct .mark, .area-essay.page-img-caption-label .ct .mark, .area-figure.page-figure .ct .mark, .area-figure.page-img-figcaption-label .ct .mark, .area-figure.page-img-label .ct .mark, .area-figure.page-img-label-p .ct .mark, .area-customize.map .ct .mark, .area-customize.audio .ct .mark, .area-customize.iframe .ct .mark, .list-text.message .ct .mark, .list-text.page-list .ct .mark {
+.list-pic.marquee .ct .mark, .list-pic.marquee02 .ct .mark, .list-pic.marquee03 .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark, .simple-text.default .ct .mark, .base-header .list-text.link .ct .mark, .base-content .list-text.link .ct .mark, .list-text.slider .ct .mark, .simple-text.message .ct .mark, .area-essay.message .ct .mark, .area-figure.album .ct .mark, .base-module-area .area-essay.link .ct .mark, .base-page-area .area-essay.link .ct .mark, .area-form.vote .ct .mark, .list-text.rss .ct .mark, .area-customize.calendar .ct .mark, .simple-text.weather .ct .mark, .area-customize.video .ct .mark, .area-essay.message02 .ct .mark, .list-text.label .ct a, .area-customize.calendar-detail .ct .table .mark, .area-essay.page-caption-label .ct .mark, .area-essay.page-caption-label-p .ct .mark, .area-essay.page-essay .ct .mark, .area-essay.page-img-caption-label .ct .mark, .area-figure.page-figure .ct .mark, .area-figure.page-img-figcaption-label .ct .mark, .area-figure.page-img-label .ct .mark, .area-figure.page-img-label-p .ct .mark, .area-customize.map .ct .mark, .area-customize.audio .ct .mark, .area-customize.iframe .ct .mark, .list-text.message .ct .mark, .list-text.page-list .ct .mark {
   display: inline-block;
   font-size: 0.9em;
   padding: 3px 5px;
@@ -185,7 +185,7 @@
 }
 
 /* line 804, ../sass/_base-function.scss */
-.list-pic.marquee .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark {
+.list-pic.marquee .ct .mark, .list-pic.marquee02 .ct .mark, .list-pic.marquee03 .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -342,7 +342,7 @@
 }
 
 /* line 985, ../sass/_base-function.scss */
-.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .list-pic.marquee02 .ct span, .list-pic.marquee03 .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4531,15 +4531,55 @@ th {
 }
 
 /* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="1"] .ct ul {
+  width: 5000%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="2"] .ct ul {
+  width: 2500%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="3"] .ct ul {
+  width: 1666.6666666667%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="4"] .ct ul {
+  width: 1250%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="5"] .ct ul {
+  width: 1000%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="6"] .ct ul {
+  width: 833.3333333333%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="7"] .ct ul {
+  width: 714.2857142857%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="8"] .ct ul {
+  width: 625%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="9"] .ct ul {
+  width: 555.5555555556%;
+}
+/* line 15, ../sass/_list-pic_marquee.scss */
+.list-pic.marquee[data-setLen="10"] .ct ul {
+  width: 500%;
+}
+/* line 25, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .hd {
   display: none;
 }
-/* line 35, ../sass/_list-pic_marquee.scss */
+/* line 45, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct {
   background-color: #f0f0f0;
   /*i*/
 }
-/* line 38, ../sass/_list-pic_marquee.scss */
+/* line 48, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct > .in {
   overflow: hidden;
 }
@@ -4547,12 +4587,12 @@ th {
 [data-js="false"] .list-pic.marquee .ct > .in {
   margin: 0;
 }
-/* line 47, ../sass/_list-pic_marquee.scss */
+/* line 57, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct ul {
   width: 1250%;
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 47, ../sass/_list-pic_marquee.scss */
+  /* line 57, ../sass/_list-pic_marquee.scss */
   .list-pic.marquee .ct ul {
     width: 2500% !important;
     clear: none;
@@ -4563,7 +4603,7 @@ th {
   }
 }
 @media (max-width: 560px) {
-  /* line 47, ../sass/_list-pic_marquee.scss */
+  /* line 57, ../sass/_list-pic_marquee.scss */
   .list-pic.marquee .ct ul {
     width: 5000% !important;
     clear: none;
@@ -4577,7 +4617,7 @@ th {
 [data-js="false"] .list-pic.marquee .ct ul {
   width: 100%;
 }
-/* line 58, ../sass/_list-pic_marquee.scss */
+/* line 68, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct li {
   width: 2%;
   float: left;
@@ -4588,16 +4628,16 @@ th {
 [data-js="false"] .list-pic.marquee .ct li {
   width: 25%;
 }
-/* line 69, ../sass/_list-pic_marquee.scss */
+/* line 79, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct span {
   display: block;
 }
-/* line 74, ../sass/_list-pic_marquee.scss */
+/* line 84, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct a {
   display: block;
   position: relative;
 }
-/* line 79, ../sass/_list-pic_marquee.scss */
+/* line 89, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ct img {
   display: block;
   width: 100%;
@@ -4606,7 +4646,7 @@ th {
 [data-js="false"] .list-pic.marquee .ft li.next, [data-js="false"] .list-pic.marquee .ft li.prev {
   display: none;
 }
-/* line 107, ../sass/_list-pic_marquee.scss */
+/* line 117, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a {
   position: absolute;
   top: 0;
@@ -4617,26 +4657,326 @@ th {
   background-color: #f0f0f0;
   background-color: rgba(240, 240, 240, 0.7);
 }
-/* line 118, ../sass/_list-pic_marquee.scss */
+/* line 128, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a:hover, .list-pic.marquee .ft li.prev a:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* line 126, ../sass/_list-pic_marquee.scss */
+/* line 136, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.prev a {
   left: 0;
   background-image: url('../images/icon-pic/away-b-left.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 134, ../sass/_list-pic_marquee.scss */
+/* line 144, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.next a {
   right: 0;
   background-image: url('../images/icon-pic/away-b-right.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 140, ../sass/_list-pic_marquee.scss */
+/* line 150, ../sass/_list-pic_marquee.scss */
 .list-pic.marquee .ft li.more {
+  display: none;
+}
+
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="1"] .ct ul {
+  width: 5000%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="2"] .ct ul {
+  width: 2500%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="3"] .ct ul {
+  width: 1666.6666666667%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="4"] .ct ul {
+  width: 1250%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="5"] .ct ul {
+  width: 1000%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="6"] .ct ul {
+  width: 833.3333333333%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="7"] .ct ul {
+  width: 714.2857142857%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="8"] .ct ul {
+  width: 625%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="9"] .ct ul {
+  width: 555.5555555556%;
+}
+/* line 15, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02[data-setLen="10"] .ct ul {
+  width: 500%;
+}
+/* line 25, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .hd {
+  display: none;
+}
+/* line 45, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct {
+  background-color: #f0f0f0;
+  /*i*/
+}
+/* line 48, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct > .in {
+  overflow: hidden;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee02 .ct > .in {
+  margin: 0;
+}
+/* line 57, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct ul {
+  width: 1250%;
+}
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 57, ../sass/_list-pic_marquee02.scss */
+  .list-pic.marquee02 .ct ul {
+    width: 2500% !important;
+    clear: none;
+  }
+  /* line 496, ../sass/_base-function.scss */
+  .list-pic.marquee02 .ct ul:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media (max-width: 560px) {
+  /* line 57, ../sass/_list-pic_marquee02.scss */
+  .list-pic.marquee02 .ct ul {
+    width: 5000% !important;
+    clear: none;
+  }
+  /* line 496, ../sass/_base-function.scss */
+  .list-pic.marquee02 .ct ul:nth-child(1n+1) {
+    clear: left;
+  }
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee02 .ct ul {
+  width: 100%;
+}
+/* line 68, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct li {
+  width: 2%;
+  float: left;
+  box-sizing: border-box;
+  padding: 8px;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee02 .ct li {
+  width: 25%;
+}
+/* line 79, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct span {
+  display: block;
+}
+/* line 84, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct a {
+  display: block;
+  position: relative;
+}
+/* line 89, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ct img {
+  display: block;
+  width: 100%;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee02 .ft li.next, [data-js="false"] .list-pic.marquee02 .ft li.prev {
+  display: none;
+}
+/* line 117, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ft li.next a, .list-pic.marquee02 .ft li.prev a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 30px;
+  transition: 150ms;
+  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+/* line 128, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ft li.next a:hover, .list-pic.marquee02 .ft li.prev a:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+/* line 136, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ft li.prev a {
+  left: 0;
+  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 144, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ft li.next a {
+  right: 0;
+  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 150, ../sass/_list-pic_marquee02.scss */
+.list-pic.marquee02 .ft li.more {
+  display: none;
+}
+
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="1"] .ct ul {
+  width: 5000%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="2"] .ct ul {
+  width: 2500%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="3"] .ct ul {
+  width: 1666.6666666667%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="4"] .ct ul {
+  width: 1250%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="5"] .ct ul {
+  width: 1000%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="6"] .ct ul {
+  width: 833.3333333333%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="7"] .ct ul {
+  width: 714.2857142857%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="8"] .ct ul {
+  width: 625%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="9"] .ct ul {
+  width: 555.5555555556%;
+}
+/* line 15, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03[data-setLen="10"] .ct ul {
+  width: 500%;
+}
+/* line 25, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .hd {
+  display: none;
+}
+/* line 45, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct {
+  background-color: #f0f0f0;
+  /*i*/
+}
+/* line 48, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct > .in {
+  overflow: hidden;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee03 .ct > .in {
+  margin: 0;
+}
+/* line 57, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct ul {
+  width: 1250%;
+}
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 57, ../sass/_list-pic_marquee03.scss */
+  .list-pic.marquee03 .ct ul {
+    width: 2500% !important;
+    clear: none;
+  }
+  /* line 496, ../sass/_base-function.scss */
+  .list-pic.marquee03 .ct ul:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media (max-width: 560px) {
+  /* line 57, ../sass/_list-pic_marquee03.scss */
+  .list-pic.marquee03 .ct ul {
+    width: 5000% !important;
+    clear: none;
+  }
+  /* line 496, ../sass/_base-function.scss */
+  .list-pic.marquee03 .ct ul:nth-child(1n+1) {
+    clear: left;
+  }
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee03 .ct ul {
+  width: 100%;
+}
+/* line 68, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct li {
+  width: 2%;
+  float: left;
+  box-sizing: border-box;
+  padding: 8px;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee03 .ct li {
+  width: 25%;
+}
+/* line 79, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct span {
+  display: block;
+}
+/* line 84, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct a {
+  display: block;
+  position: relative;
+}
+/* line 89, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ct img {
+  display: block;
+  width: 100%;
+}
+/* line 50, ../sass/_base-function.scss */
+[data-js="false"] .list-pic.marquee03 .ft li.next, [data-js="false"] .list-pic.marquee03 .ft li.prev {
+  display: none;
+}
+/* line 117, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ft li.next a, .list-pic.marquee03 .ft li.prev a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 30px;
+  transition: 150ms;
+  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+/* line 128, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ft li.next a:hover, .list-pic.marquee03 .ft li.prev a:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+/* line 136, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ft li.prev a {
+  left: 0;
+  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 144, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ft li.next a {
+  right: 0;
+  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 150, ../sass/_list-pic_marquee03.scss */
+.list-pic.marquee03 .ft li.more {
   display: none;
 }
 
@@ -5915,6 +6255,7 @@ th {
 /* line 31, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct {
   /*a*/
+  /*i*/
 }
 /* line 37, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .div {
@@ -5943,18 +6284,31 @@ th {
   width: 100%;
 }
 /* line 66, ../sass/_area-essay_message02.scss */
+.area-essay.message02 .ct .essay {
+  position: relative;
+}
+/* line 70, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .caption {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  padding: 8px;
+  bottom: 100%;
+  padding: 0 8px;
   background-color: #1a1a1a;
   background-color: rgba(26, 26, 26, 0.5);
+}
+/* line 79, ../sass/_area-essay_message02.scss */
+.area-essay.message02 .ct .caption span {
+  display: block;
+  line-height: 36px;
   color: #ffffff;
   text-align: center;
 }
-/* line 83, ../sass/_area-essay_message02.scss */
+/* line 90, ../sass/_area-essay_message02.scss */
+.area-essay.message02 .ct .label ul {
+  padding: 8px;
+}
+/* line 107, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .p {
   padding: 8px;
   min-height: 160px;
@@ -8091,6 +8445,10 @@ th {
   background-color: #ffffff;
   color: currentColor;
 }
+/* line 130, ../sass/_list-text_content-file.scss */
+.list-text.content-file .ct a:after {
+  content: none;
+}
 
 /* line 21, ../sass/_list-text_content-list.scss */
 .list-text.content-list .hd span {
@@ -8568,6 +8926,10 @@ th {
 /* line 78, ../sass/_list-text_file-download.scss */
 .list-text.file-download .ct a:hover {
   border-left-width: 8px;
+}
+/* line 82, ../sass/_list-text_file-download.scss */
+.list-text.file-download .ct a:after {
+  content: none;
 }
 
 /* line 5, ../sass/_list-text_file-download-multiple.scss */
@@ -9080,6 +9442,10 @@ th {
   border-left-width: 8px;
   background-color: #ffffff;
   color: currentColor;
+}
+/* line 130, ../sass/_list-text_file-download-multiple.scss */
+.list-text.file-download-multiple .ct a:after {
+  content: none;
 }
 
 /* line 167, ../sass/_base-function.scss */

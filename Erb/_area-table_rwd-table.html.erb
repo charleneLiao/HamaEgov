@@ -3,8 +3,6 @@
 	max_cell = 6 #最多的欄數量
 	min_row = 3 #最少的行數量
 	max_row = 12 #最多的行數量
-	min_text = 3 #最少的字元
-	max_text = 8 #最多的字元
 
 	cell_length = (min_cell..max_cell).to_a.sample
 	row_length = (min_row..max_row).to_a.sample
@@ -23,7 +21,7 @@
 
 					<% cell_length.times do |i| %>
 
-						<th><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
+						<th><span><%= lorem_word %></span></th>
 					<% end %>
 				</tr>
 			</thead>
@@ -31,10 +29,10 @@
 
 				<% row_length.times do |i| %>
 					<tr data-index="<%= i + 1 %>" data-child="<%= cell_length %>">
-						<th><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
+						<th><span><%= lorem_word %></span></th>
 
 						<% (cell_length - 1).times do |i| %>
-							<td><div class="caption"><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></div><span><%= zh_lorem_sentence %></span></td>
+							<td data-title="<%= lorem_word %>"></div><span><%= lorem_sentence %></span></td>
 						<% end %>
 					</tr>
 				<% end %>

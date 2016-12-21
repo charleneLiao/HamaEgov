@@ -63,21 +63,45 @@
 			}
 		}
 
+		.essay {
+			position: relative;
+		}
+
 		.caption {
-			@extend %ellipsis;
 			position: absolute;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			padding: $interval-m;
+			bottom: 100%;
+			padding: 0 $interval-m;
 			background-color: $black;
 			background-color: rgba($black, $opacity-m);
-			color: $white;
-			text-align: center;
 
 			span {
-				
+				display: block;
+				@extend %ellipsis;
+				line-height: 36px;
+				color: $white;
+				text-align: center;
 			}
+		}
+
+		.label {
+
+			ul {
+				padding: $interval-m;
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+		}
+
+		/*i*/.mark {
+			@extend %mark;
 		}
 
 		.p {
