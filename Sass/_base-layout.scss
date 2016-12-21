@@ -56,7 +56,7 @@
 	}
 
 	.base-header & {
-		background-color: $major-color;
+		background-color: $white;
 
 		> .bg-drop-layout > .in, > .in {
 			@extend %center;

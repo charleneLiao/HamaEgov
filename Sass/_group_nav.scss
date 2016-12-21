@@ -109,6 +109,7 @@
 					padding: $interval-s;
 					text-align: center;
 					transition: $transition;
+					color: $white;
 
 					@include js(false) {
 						text-align: left;

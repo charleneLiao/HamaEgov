@@ -138,7 +138,7 @@
 		}
 
 		> .bg-drop-layout > .in, > .in {
-			background-color: $light;
+			background-color: $major-color;
 
 			> .hd {
 				display: none;
@@ -215,8 +215,7 @@
 										> .hd {
 
 											a {
-												background-color: $minor-color;
-												color: $white;
+												background-color: deeper($major-color);
 											}
 										}
 

@@ -108,7 +108,6 @@
 			}
 
 			h4 {
-				color: $white;
 
 				&:after {
 					content: ' : ';
@@ -139,7 +138,6 @@
 			li {
 				display: inline-block;
 				vertical-align: middle;
-				color: $white;
 				
 				+ li {
 
