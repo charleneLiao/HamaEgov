@@ -48,7 +48,7 @@ define(function() {
 			return this.getIn(this.getHd(env));
 		},
 
-		getHdLink: function(env, add) { //取得 ft li btn 節點
+		getHdLink: function(env, add) { //取得 hd li btn 節點
 			var $hdIn = this.getHdIn(env),
 				_type = this.getType(env),
 				$link = null;

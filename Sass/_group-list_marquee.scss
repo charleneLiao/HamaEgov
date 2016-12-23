@@ -5,7 +5,7 @@
 .group-list.marquee {
 	$btn-width: 30px; //設定按鈕寬度
 	$max-li-len: 50; //設定 li 的最大數量
-	$show-li-len: 5; //設定一次要秀的數量
+	$show-li-len: 4; //設定一次要秀的數量
 	$max-show-li-len: 10; //設定一次要秀的範圍數量，給 data-setLen 用
 
 	@for $i from 1 through $max-show-li-len { //使數量可以被控制 1 ~ $max-show-li-len
@@ -44,7 +44,7 @@
 		}
 
 		> .ct {
-			background-color: $major-color;
+			background-color: $light;
 
 			> .in {
 				overflow: hidden;
@@ -117,7 +117,7 @@
 
 					a {
 						left: 0;
-						@include bg-to-pic('icon-pic/away-w-left.png', false);
+						@include bg-to-pic('icon-pic/away-b-left.png', false);
 					}
 				}
 
@@ -125,7 +125,7 @@
 
 					a {
 						right: 0;
-						@include bg-to-pic('icon-pic/away-w-right.png', false);
+						@include bg-to-pic('icon-pic/away-b-right.png', false);
 					}
 				}
 

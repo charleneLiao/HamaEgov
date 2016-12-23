@@ -1,5 +1,17 @@
 <%= render partial: "/erb/sys_variable" %>
 
+	<!-- korea-pic-slider 相簿(korea - 彥專) -->
+		<%= render partial: "/erb/area-customize_korea-pic-slider", locals: set({ index: 1, header_text: '韓式輪播', func_set: "{'koreaPicSlider':{}}" }) %>
+	<!-- korea-pic-slider 結束 -->
+
+	<!-- ktnp-album 相簿(ktnp - hyc) -->
+		<%= render partial: "/erb/area-customize_ktnp-album", locals: set({ index: 1, header_text: '墾丁相簿' }) %>
+	<!-- ktnp-album 結束 -->
+
+	<!-- marquee-slider 跑馬燈 -->
+		<%= render partial: "/erb/group-list_marquee", locals: set({ func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈(物件)", inner: "/erb/area-customize_pchouse-album" }) %>
+	<!-- marquee-slider 結束 -->
+
 <div class="group center" data-index="1" data-type="<%= $row %>" data-child="3"><div class="in">
 	<div class="hd"><div class="in">
 		<h3><span><a href="#">訊息發布</a></span></h3>

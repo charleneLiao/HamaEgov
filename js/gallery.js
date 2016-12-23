@@ -13,6 +13,8 @@ define(['getNode'], function(getNode){
 
 		$gallery_box.lightGallery($set);
 
+		console.log($gallery_box)
+
 		if($set.debug) {
 			console.log('預設值:', $set);
 			console.log('檔案 '+ file +'.js 已順利執行。');

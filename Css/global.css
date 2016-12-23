@@ -33,7 +33,7 @@
 }
 
 /* line 540, ../sass/_base-function.scss */
-[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .base-page-area > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .area-essay.message .ct .div:after, .area-customize.calendar .ct .heading:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .area-customize.news-card .ct .label:after, .area-customize.message .ct > .in:after, .area-customize.message .ct > .in > ul + ul li:after, .area-customize.message02 .ct .essay:after, .list-text.step .ct ul:after, .area-customize.calendar-detail .ct .heading:after, .area-customize.calendar-detail03 .ct .heading:after, .area-customize.calendar-detail03 .ct .label ul:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after {
+[data-type="1"][data-child] > .bg-drop-layout > .in > .ct > .in:after, [data-type="1"][data-child] > .in > .ct > .in:after, .base-page-area > .in:after, .base-header .info > .bg-drop-layout > .in > .ct > .in:after, .base-header .info > .in > .ct > .in:after, .base-footer .info > .bg-drop-layout > .in > .ct > .in:after, .base-footer .info > .in > .ct > .in:after, .group > .bg-drop-layout > .in > .ct > .in:after, .group > .in > .ct > .in:after, .group-list > .bg-drop-layout > .in > .ct > .in > ul:after, .group-list > .in > .ct > .in > ul:after, .list-text .ct ul:after, .list-pic .ct ul:after, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-header .group-list.nav > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul:after, .base-footer .group-list.nav > .in > .ct > .in > ul:after, .base-mobile .list-text.share .ct ul:after, .base-header .list-text.nav .ct ul:after, .list-multiple.page-click .ct > .in:after, .list-multiple.page-select .ct > .in:after, .area-essay.message .ct .div:after, .area-customize.calendar .ct .heading:after, .list-text.anchor .ct ul:after, .area-customize.news-card .ct ul:after, .area-customize.news-card .ct .label:after, .area-customize.message .ct > .in:after, .area-customize.message .ct > .in > ul + ul li:after, .area-customize.message02 .ct .essay:after, .area-customize.korea-pic-slider .ct .list-area ul:after, .list-text.step .ct ul:after, .area-customize.calendar-detail .ct .heading:after, .area-customize.calendar-detail03 .ct .heading:after, .area-customize.calendar-detail03 .ct .label ul:after, .area-essay.page-caption-label .ct .div:after, .area-essay.page-caption-label-p .ct .div:after, .area-essay.page-caption-p .ct .div:after, .area-essay.page-essay .ct .div:after, .area-essay.page-img-caption-label .ct .div:after, .area-essay.page-img-caption-p .ct .div:after, .area-figure.page-figure .ct .essay:after {
   content: "​";
   display: block;
   height: 0;
@@ -47,7 +47,7 @@
 }
 
 /* line 554, ../sass/_base-function.scss */
-.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption span, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
+.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption span, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .area-customize.korea-pic-slider .ct .pic-are .figcaption span, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -151,7 +151,7 @@
 }
 
 /* line 749, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .hd h4, .group-list.default > .in > .hd h4, .simple-text.default .hd h4, .area-editor.default .hd h4, .base-content .list-text.link .hd h4, .group-list.major-slider > .bg-drop-layout > .in > .hd h4, .group-list.major-slider > .in > .hd h4, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.slider > .in > .hd h4, .list-text.slider .hd h4, .simple-text.message .hd h4, .group-list.message > .bg-drop-layout > .in > .hd h4, .group-list.message > .in > .hd h4, .area-essay.message .hd h4, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.album > .in > .hd h4, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.album > .in > .hd h4, .area-figure.album .hd h4, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.link > .in > .hd h4, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.link > .in > .hd h4, .list-pic.link .hd h4, .area-form.link .hd h4, .base-module-area .area-essay.link .hd h4, .base-page-area .area-essay.link .hd h4, .area-form.vote .hd h4, .list-text.rss .hd h4, .area-customize.calendar .hd h4, .simple-text.weather .hd h4, .list-text.anchor .hd h4, .area-form.epaper .hd h4, .area-customize.video .hd h4, .area-customize.news-card .hd h4, .area-customize.icons-g2 .hd h4, .area-essay.message02 .hd h4, .area-customize.message .hd h4, .area-customize.message02 .hd h4, .area-form.page-search .hd h4, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4, .group-list.classify-multiple > .in > .hd h4, .group-list.page-block > .bg-drop-layout > .in > .hd h4, .group-list.page-block > .in > .hd h4, .group-list.page-list > .bg-drop-layout > .in > .hd h4, .group-list.page-list > .in > .hd h4, .list-pic.album .hd h4, .area-customize.calendar-detail .hd h4, .area-customize.calendar-detail02 .hd h4, .area-customize.calendar-detail03 .hd h4, .area-customize.calendar-schedule .hd h4, .area-customize.chart .hd h4, .group-list.content > .bg-drop-layout > .in > .hd h4, .group-list.content > .in > .hd h4, .list-text.file-download .hd h4, .list-pic.pic-download .hd h4, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4, .group-list.file-download-multiple > .in > .hd h4, .area-editor.error-info .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-p .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-form.page-form .hd h4, .area-form.submit .hd h4, .area-customize.map .hd h4, .area-customize.audio .hd h4, .area-customize.iframe .hd h4, .list-text.message .hd h4, .list-pic.page-list .hd h4, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4, .group-list.page-list-pic > .in > .hd h4, .group-list.query > .bg-drop-layout > .in > .hd h4, .group-list.query > .in > .hd h4, .area-form.sign-in .hd h4, .group-list.sitemap > .bg-drop-layout > .in > .hd h4, .group-list.sitemap > .in > .hd h4, .list-text.sitemap .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .list-text.page-list .hd h4, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4, .group-list.page-list-text > .in > .hd h4, .group-list.vote-result > .bg-drop-layout > .in > .hd h4, .group-list.vote-result > .in > .hd h4, .group-list.default > .bg-drop-layout > .in > .hd h3, .group-list.default > .in > .hd h3, .simple-text.default .hd h3, .area-editor.default .hd h3, .base-content .list-text.link .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .hd h3, .group-list.major-slider > .in > .hd h3, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.slider > .in > .hd h3, .list-text.slider .hd h3, .simple-text.message .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .area-essay.message .hd h3, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.album > .in > .hd h3, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.album > .in > .hd h3, .area-figure.album .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.link > .in > .hd h3, .list-pic.link .hd h3, .area-form.link .hd h3, .base-module-area .area-essay.link .hd h3, .base-page-area .area-essay.link .hd h3, .area-form.vote .hd h3, .list-text.rss .hd h3, .area-customize.calendar .hd h3, .simple-text.weather .hd h3, .list-text.anchor .hd h3, .area-form.epaper .hd h3, .area-customize.video .hd h3, .area-customize.news-card .hd h3, .area-customize.icons-g2 .hd h3, .area-essay.message02 .hd h3, .area-customize.message .hd h3, .area-customize.message02 .hd h3, .area-form.page-search .hd h3, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3, .group-list.classify-multiple > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .list-pic.album .hd h3, .area-customize.calendar-detail .hd h3, .area-customize.calendar-detail02 .hd h3, .area-customize.calendar-detail03 .hd h3, .area-customize.calendar-schedule .hd h3, .area-customize.chart .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .list-text.file-download .hd h3, .list-pic.pic-download .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .area-editor.error-info .hd h3, .area-essay.page-caption-label .hd h3, .area-essay.page-caption-label-p .hd h3, .area-essay.page-caption-p .hd h3, .area-essay.page-essay .hd h3, .area-essay.page-img-caption-label .hd h3, .area-essay.page-img-caption-p .hd h3, .area-figure.page-figure .hd h3, .area-figure.page-img-figcaption .hd h3, .area-figure.page-img-figcaption-label .hd h3, .area-figure.page-img-figcaption-p .hd h3, .area-figure.page-img-label .hd h3, .area-figure.page-img-label-p .hd h3, .area-figure.page-img-p .hd h3, .area-form.page-form .hd h3, .area-form.submit .hd h3, .area-customize.map .hd h3, .area-customize.audio .hd h3, .area-customize.iframe .hd h3, .list-text.message .hd h3, .list-pic.page-list .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.query > .bg-drop-layout > .in > .hd h3, .group-list.query > .in > .hd h3, .area-form.sign-in .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .list-text.sitemap .hd h3, .area-table.page-table .hd h3, .area-table.rwd-table .hd h3, .list-text.page-list .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3 {
+.group-list.default > .bg-drop-layout > .in > .hd h4, .group-list.default > .in > .hd h4, .simple-text.default .hd h4, .area-editor.default .hd h4, .base-content .list-text.link .hd h4, .group-list.major-slider > .bg-drop-layout > .in > .hd h4, .group-list.major-slider > .in > .hd h4, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.slider > .in > .hd h4, .list-text.slider .hd h4, .simple-text.message .hd h4, .group-list.message > .bg-drop-layout > .in > .hd h4, .group-list.message > .in > .hd h4, .area-essay.message .hd h4, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.album > .in > .hd h4, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.album > .in > .hd h4, .area-figure.album .hd h4, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-module-area .group-list.link > .in > .hd h4, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h4, .base-page-area .group-list.link > .in > .hd h4, .list-pic.link .hd h4, .area-form.link .hd h4, .base-module-area .area-essay.link .hd h4, .base-page-area .area-essay.link .hd h4, .area-form.vote .hd h4, .list-text.rss .hd h4, .area-customize.calendar .hd h4, .simple-text.weather .hd h4, .list-text.anchor .hd h4, .area-form.epaper .hd h4, .area-customize.video .hd h4, .area-customize.news-card .hd h4, .area-customize.icons-g2 .hd h4, .area-essay.message02 .hd h4, .area-customize.message .hd h4, .area-customize.message02 .hd h4, .area-customize.ktnp-album .hd h4, .area-customize.pchouse-album .hd h4, .area-customize.korea-pic-slider .hd h4, .area-form.page-search .hd h4, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h4, .group-list.classify-multiple > .in > .hd h4, .group-list.page-block > .bg-drop-layout > .in > .hd h4, .group-list.page-block > .in > .hd h4, .group-list.page-list > .bg-drop-layout > .in > .hd h4, .group-list.page-list > .in > .hd h4, .list-pic.album .hd h4, .area-customize.calendar-detail .hd h4, .area-customize.calendar-detail02 .hd h4, .area-customize.calendar-detail03 .hd h4, .area-customize.calendar-schedule .hd h4, .area-customize.chart .hd h4, .group-list.content > .bg-drop-layout > .in > .hd h4, .group-list.content > .in > .hd h4, .list-text.file-download .hd h4, .list-pic.pic-download .hd h4, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h4, .group-list.file-download-multiple > .in > .hd h4, .area-editor.error-info .hd h4, .area-essay.page-caption-label .hd h4, .area-essay.page-caption-label-p .hd h4, .area-essay.page-caption-p .hd h4, .area-essay.page-essay .hd h4, .area-essay.page-img-caption-label .hd h4, .area-essay.page-img-caption-p .hd h4, .area-figure.page-figure .hd h4, .area-figure.page-img-figcaption .hd h4, .area-figure.page-img-figcaption-label .hd h4, .area-figure.page-img-figcaption-p .hd h4, .area-figure.page-img-label .hd h4, .area-figure.page-img-label-p .hd h4, .area-figure.page-img-p .hd h4, .area-form.page-form .hd h4, .area-form.submit .hd h4, .area-customize.map .hd h4, .area-customize.audio .hd h4, .area-customize.iframe .hd h4, .list-text.message .hd h4, .list-pic.page-list .hd h4, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h4, .group-list.page-list-pic > .in > .hd h4, .group-list.query > .bg-drop-layout > .in > .hd h4, .group-list.query > .in > .hd h4, .area-form.sign-in .hd h4, .group-list.sitemap > .bg-drop-layout > .in > .hd h4, .group-list.sitemap > .in > .hd h4, .list-text.sitemap .hd h4, .area-table.page-table .hd h4, .area-table.rwd-table .hd h4, .list-text.page-list .hd h4, .group-list.page-list-text > .bg-drop-layout > .in > .hd h4, .group-list.page-list-text > .in > .hd h4, .group-list.vote-result > .bg-drop-layout > .in > .hd h4, .group-list.vote-result > .in > .hd h4, .group-list.default > .bg-drop-layout > .in > .hd h3, .group-list.default > .in > .hd h3, .simple-text.default .hd h3, .area-editor.default .hd h3, .base-content .list-text.link .hd h3, .group-list.major-slider > .bg-drop-layout > .in > .hd h3, .group-list.major-slider > .in > .hd h3, .base-module-area .group-list.slider > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.slider > .in > .hd h3, .list-text.slider .hd h3, .simple-text.message .hd h3, .group-list.message > .bg-drop-layout > .in > .hd h3, .group-list.message > .in > .hd h3, .area-essay.message .hd h3, .base-module-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.album > .in > .hd h3, .base-page-area .group-list.album > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.album > .in > .hd h3, .area-figure.album .hd h3, .base-module-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-module-area .group-list.link > .in > .hd h3, .base-page-area .group-list.link > .bg-drop-layout > .in > .hd h3, .base-page-area .group-list.link > .in > .hd h3, .list-pic.link .hd h3, .area-form.link .hd h3, .base-module-area .area-essay.link .hd h3, .base-page-area .area-essay.link .hd h3, .area-form.vote .hd h3, .list-text.rss .hd h3, .area-customize.calendar .hd h3, .simple-text.weather .hd h3, .list-text.anchor .hd h3, .area-form.epaper .hd h3, .area-customize.video .hd h3, .area-customize.news-card .hd h3, .area-customize.icons-g2 .hd h3, .area-essay.message02 .hd h3, .area-customize.message .hd h3, .area-customize.message02 .hd h3, .area-customize.ktnp-album .hd h3, .area-customize.pchouse-album .hd h3, .area-customize.korea-pic-slider .hd h3, .area-form.page-search .hd h3, .group-list.classify-multiple > .bg-drop-layout > .in > .hd h3, .group-list.classify-multiple > .in > .hd h3, .group-list.page-block > .bg-drop-layout > .in > .hd h3, .group-list.page-block > .in > .hd h3, .group-list.page-list > .bg-drop-layout > .in > .hd h3, .group-list.page-list > .in > .hd h3, .list-pic.album .hd h3, .area-customize.calendar-detail .hd h3, .area-customize.calendar-detail02 .hd h3, .area-customize.calendar-detail03 .hd h3, .area-customize.calendar-schedule .hd h3, .area-customize.chart .hd h3, .group-list.content > .bg-drop-layout > .in > .hd h3, .group-list.content > .in > .hd h3, .list-text.file-download .hd h3, .list-pic.pic-download .hd h3, .group-list.file-download-multiple > .bg-drop-layout > .in > .hd h3, .group-list.file-download-multiple > .in > .hd h3, .area-editor.error-info .hd h3, .area-essay.page-caption-label .hd h3, .area-essay.page-caption-label-p .hd h3, .area-essay.page-caption-p .hd h3, .area-essay.page-essay .hd h3, .area-essay.page-img-caption-label .hd h3, .area-essay.page-img-caption-p .hd h3, .area-figure.page-figure .hd h3, .area-figure.page-img-figcaption .hd h3, .area-figure.page-img-figcaption-label .hd h3, .area-figure.page-img-figcaption-p .hd h3, .area-figure.page-img-label .hd h3, .area-figure.page-img-label-p .hd h3, .area-figure.page-img-p .hd h3, .area-form.page-form .hd h3, .area-form.submit .hd h3, .area-customize.map .hd h3, .area-customize.audio .hd h3, .area-customize.iframe .hd h3, .list-text.message .hd h3, .list-pic.page-list .hd h3, .group-list.page-list-pic > .bg-drop-layout > .in > .hd h3, .group-list.page-list-pic > .in > .hd h3, .group-list.query > .bg-drop-layout > .in > .hd h3, .group-list.query > .in > .hd h3, .area-form.sign-in .hd h3, .group-list.sitemap > .bg-drop-layout > .in > .hd h3, .group-list.sitemap > .in > .hd h3, .list-text.sitemap .hd h3, .area-table.page-table .hd h3, .area-table.rwd-table .hd h3, .list-text.page-list .hd h3, .group-list.page-list-text > .bg-drop-layout > .in > .hd h3, .group-list.page-list-text > .in > .hd h3, .group-list.vote-result > .bg-drop-layout > .in > .hd h3, .group-list.vote-result > .in > .hd h3 {
   font-size: 1.75em;
   padding-bottom: 8px;
   border-bottom: 1px solid #e4e4e4;
@@ -162,7 +162,7 @@
 .area-essay.message .ct .caption, .area-figure.album .ct .figcaption, .base-module-area .area-essay.link .ct .caption, .base-page-area .area-essay.link .ct .caption, .area-form.vote .ct .caption, .area-customize.video .ct .caption, .area-customize.news-card .ct .caption, .area-customize.message .ct .caption, .area-essay.page-caption-label .ct .caption, .area-essay.page-caption-label-p .ct .caption, .area-essay.page-caption-p .ct .caption, .area-essay.page-essay .ct .caption, .area-essay.page-img-caption-label .ct .caption, .area-essay.page-img-caption-p .ct .caption, .area-figure.page-figure .ct .figcaption, .area-figure.page-img-figcaption-p .ct .figcaption, .area-customize.map .ct .caption, .area-customize.audio .ct .caption, .area-customize.iframe .ct .caption {
   margin-bottom: 5px;
   font-size: 1.1em;
-  color: #da552f;
+  color: #79561b;
 }
 /* line 774, ../sass/_base-function.scss */
 .area-essay.message .ct .caption a, .area-figure.album .ct .figcaption a, .base-module-area .area-essay.link .ct .caption a, .base-page-area .area-essay.link .ct .caption a, .area-form.vote .ct .caption a, .area-customize.video .ct .caption a, .area-customize.news-card .ct .caption a, .area-customize.message .ct .caption a, .area-essay.page-caption-label .ct .caption a, .area-essay.page-caption-label-p .ct .caption a, .area-essay.page-caption-p .ct .caption a, .area-essay.page-essay .ct .caption a, .area-essay.page-img-caption-label .ct .caption a, .area-essay.page-img-caption-p .ct .caption a, .area-figure.page-figure .ct .figcaption a, .area-figure.page-img-figcaption-p .ct .figcaption a, .area-customize.map .ct .caption a, .area-customize.audio .ct .caption a, .area-customize.iframe .ct .caption a {
@@ -181,7 +181,7 @@
   padding: 3px 5px;
   margin-right: 5px;
   color: #ffffff;
-  background-color: #00b27f;
+  background-color: #1b6d79;
 }
 
 /* line 804, ../sass/_base-function.scss */
@@ -197,7 +197,7 @@
 }
 
 /* line 827, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-customize.message .ft a, .area-customize.message02 .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail .ft a, .area-customize.calendar-detail02 .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.calendar-schedule .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail .ct .label a, .sys-root a.btn, .sys-root input[type="submit"], .sys-root input[type="reset"], .sys-root input[type="button"], .sys-root button, .list-text.open-data .ct a, .list-text.user-tool .ct a, .base-footer .simple-text.btn .ct a, .list-text.jump-tool .ct a, .list-multiple.page-click .ct a, .list-multiple.page-select .ct ul[data-index="1"] a, .list-multiple.page-select .ct ul[data-index="2"] a, .base-mobile .area-form.search .ft li, [data-js="false"] .base-wrapper .area-form.search .ft a, .list-text.btn .ct a, .area-figure.page-figure .ft a, .base-wrapper .simple-text.query .ft a, .base-extend .simple-text.query .ft a {
+.group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-customize.message .ft a, .area-customize.message02 .ft a, .area-customize.ktnp-album .ft a, .area-customize.pchouse-album .ft a, .area-customize.korea-pic-slider .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail .ft a, .area-customize.calendar-detail02 .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.calendar-schedule .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail .ct .label a, .sys-root a.btn, .sys-root input[type="submit"], .sys-root input[type="reset"], .sys-root input[type="button"], .sys-root button, .list-text.open-data .ct a, .list-text.user-tool .ct a, .base-footer .simple-text.btn .ct a, .list-text.jump-tool .ct a, .list-multiple.page-click .ct a, .list-multiple.page-select .ct ul[data-index="1"] a, .list-multiple.page-select .ct ul[data-index="2"] a, .base-mobile .area-form.search .ft li, [data-js="false"] .base-wrapper .area-form.search .ft a, .list-text.btn .ct a, .area-figure.page-figure .ft a, .base-wrapper .simple-text.query .ft a, .base-extend .simple-text.query .ft a {
   display: inline-block;
   padding: 5px 8px;
   border: 0;
@@ -213,35 +213,35 @@
   transition: 150ms;
 }
 /* line 842, ../sass/_base-function.scss */
-.group-list.default > .in > .ft a:link, .base-content .list-text.link .ft a:link, .base-module-area .group-list.slider > .in > .ft a:link, .list-text.slider .ft a:link, .group-list.message > .in > .ft a:link, .area-essay.message .ft a:link, .base-module-area .group-list.album > .in > .ft a:link, .base-page-area .group-list.album > .in > .ft a:link, .area-figure.album .ft a:link, .base-module-area .group-list.link > .in > .ft a:link, .base-page-area .group-list.link > .in > .ft a:link, .list-pic.link .ft a:link, .area-form.link .ft a:link, .base-module-area .area-essay.link .ft a:link, .base-page-area .area-essay.link .ft a:link, .list-text.rss .ft a:link, .area-customize.calendar .ft a:link, .area-form.epaper .ft a:link, .area-customize.video .ft a:link, .area-customize.news-card .ft a:link, .area-customize.icons-g2 .ft a:link, .area-customize.message .ft a:link, .area-customize.message02 .ft a:link, .area-form.page-search .ft a:link, .group-list.page-block > .in > .ft a:link, .group-list.page-list > .in > .ft a:link, .list-pic.album .ft a:link, .area-customize.calendar-detail .ft a:link, .area-customize.calendar-detail02 .ft a:link, .area-customize.calendar-detail03 .ft a:link, .area-customize.calendar-schedule .ft a:link, .area-customize.chart .ft a:link, .area-essay.page-caption-label .ft a:link, .area-essay.page-caption-label-p .ft a:link, .area-essay.page-caption-p .ft a:link, .area-essay.page-essay .ft a:link, .area-essay.page-img-caption-label .ft a:link, .area-essay.page-img-caption-p .ft a:link, .area-figure.page-img-figcaption .ft a:link, .area-figure.page-img-figcaption-label .ft a:link, .area-figure.page-img-figcaption-p .ft a:link, .area-figure.page-img-label .ft a:link, .area-figure.page-img-label-p .ft a:link, .area-figure.page-img-p .ft a:link, .area-form.page-form .ft a:link, .area-form.submit .ft a:link, .area-customize.map .ft a:link, .area-customize.audio .ft a:link, .area-customize.iframe .ft a:link, .list-text.message .ft a:link, .group-list.page-list-pic > .in > .ft a:link, .area-form.sign-in .ft a:link, .group-list.sitemap > .in > .ft a:link, .list-text.sitemap .ft a:link, .area-table.page-table .ft a:link, .area-table.rwd-table .ft a:link, .list-text.page-list .ft a:link, .group-list.page-list-text > .in > .ft a:link, .area-customize.calendar .ct .label a:link, .area-customize.calendar-detail .ct .label a:link, .sys-root a.btn:link, .sys-root input[type="submit"]:link, .sys-root input[type="reset"]:link, .sys-root input[type="button"]:link, .sys-root button:link, .list-text.open-data .ct a:link, .list-text.user-tool .ct a:link, .base-footer .simple-text.btn .ct a:link, .list-text.jump-tool .ct a:link, .list-multiple.page-click .ct a:link, .list-multiple.page-select .ct ul[data-index="1"] a:link, .list-multiple.page-select .ct ul[data-index="2"] a:link, .base-mobile .area-form.search .ft li:link, [data-js="false"] .base-wrapper .area-form.search .ft a:link, .list-text.btn .ct a:link, .area-figure.page-figure .ft a:link, .base-wrapper .simple-text.query .ft a:link, .base-extend .simple-text.query .ft a:link {
+.group-list.default > .in > .ft a:link, .base-content .list-text.link .ft a:link, .base-module-area .group-list.slider > .in > .ft a:link, .list-text.slider .ft a:link, .group-list.message > .in > .ft a:link, .area-essay.message .ft a:link, .base-module-area .group-list.album > .in > .ft a:link, .base-page-area .group-list.album > .in > .ft a:link, .area-figure.album .ft a:link, .base-module-area .group-list.link > .in > .ft a:link, .base-page-area .group-list.link > .in > .ft a:link, .list-pic.link .ft a:link, .area-form.link .ft a:link, .base-module-area .area-essay.link .ft a:link, .base-page-area .area-essay.link .ft a:link, .list-text.rss .ft a:link, .area-customize.calendar .ft a:link, .area-form.epaper .ft a:link, .area-customize.video .ft a:link, .area-customize.news-card .ft a:link, .area-customize.icons-g2 .ft a:link, .area-customize.message .ft a:link, .area-customize.message02 .ft a:link, .area-customize.ktnp-album .ft a:link, .area-customize.pchouse-album .ft a:link, .area-customize.korea-pic-slider .ft a:link, .area-form.page-search .ft a:link, .group-list.page-block > .in > .ft a:link, .group-list.page-list > .in > .ft a:link, .list-pic.album .ft a:link, .area-customize.calendar-detail .ft a:link, .area-customize.calendar-detail02 .ft a:link, .area-customize.calendar-detail03 .ft a:link, .area-customize.calendar-schedule .ft a:link, .area-customize.chart .ft a:link, .area-essay.page-caption-label .ft a:link, .area-essay.page-caption-label-p .ft a:link, .area-essay.page-caption-p .ft a:link, .area-essay.page-essay .ft a:link, .area-essay.page-img-caption-label .ft a:link, .area-essay.page-img-caption-p .ft a:link, .area-figure.page-img-figcaption .ft a:link, .area-figure.page-img-figcaption-label .ft a:link, .area-figure.page-img-figcaption-p .ft a:link, .area-figure.page-img-label .ft a:link, .area-figure.page-img-label-p .ft a:link, .area-figure.page-img-p .ft a:link, .area-form.page-form .ft a:link, .area-form.submit .ft a:link, .area-customize.map .ft a:link, .area-customize.audio .ft a:link, .area-customize.iframe .ft a:link, .list-text.message .ft a:link, .group-list.page-list-pic > .in > .ft a:link, .area-form.sign-in .ft a:link, .group-list.sitemap > .in > .ft a:link, .list-text.sitemap .ft a:link, .area-table.page-table .ft a:link, .area-table.rwd-table .ft a:link, .list-text.page-list .ft a:link, .group-list.page-list-text > .in > .ft a:link, .area-customize.calendar .ct .label a:link, .area-customize.calendar-detail .ct .label a:link, .sys-root a.btn:link, .sys-root input[type="submit"]:link, .sys-root input[type="reset"]:link, .sys-root input[type="button"]:link, .sys-root button:link, .list-text.open-data .ct a:link, .list-text.user-tool .ct a:link, .base-footer .simple-text.btn .ct a:link, .list-text.jump-tool .ct a:link, .list-multiple.page-click .ct a:link, .list-multiple.page-select .ct ul[data-index="1"] a:link, .list-multiple.page-select .ct ul[data-index="2"] a:link, .base-mobile .area-form.search .ft li:link, [data-js="false"] .base-wrapper .area-form.search .ft a:link, .list-text.btn .ct a:link, .area-figure.page-figure .ft a:link, .base-wrapper .simple-text.query .ft a:link, .base-extend .simple-text.query .ft a:link {
   color: #ffffff;
 }
 /* line 846, ../sass/_base-function.scss */
-.group-list.default > .in > .ft a:visited, .base-content .list-text.link .ft a:visited, .base-module-area .group-list.slider > .in > .ft a:visited, .list-text.slider .ft a:visited, .group-list.message > .in > .ft a:visited, .area-essay.message .ft a:visited, .base-module-area .group-list.album > .in > .ft a:visited, .base-page-area .group-list.album > .in > .ft a:visited, .area-figure.album .ft a:visited, .base-module-area .group-list.link > .in > .ft a:visited, .base-page-area .group-list.link > .in > .ft a:visited, .list-pic.link .ft a:visited, .area-form.link .ft a:visited, .base-module-area .area-essay.link .ft a:visited, .base-page-area .area-essay.link .ft a:visited, .list-text.rss .ft a:visited, .area-customize.calendar .ft a:visited, .area-form.epaper .ft a:visited, .area-customize.video .ft a:visited, .area-customize.news-card .ft a:visited, .area-customize.icons-g2 .ft a:visited, .area-customize.message .ft a:visited, .area-customize.message02 .ft a:visited, .area-form.page-search .ft a:visited, .group-list.page-block > .in > .ft a:visited, .group-list.page-list > .in > .ft a:visited, .list-pic.album .ft a:visited, .area-customize.calendar-detail .ft a:visited, .area-customize.calendar-detail02 .ft a:visited, .area-customize.calendar-detail03 .ft a:visited, .area-customize.calendar-schedule .ft a:visited, .area-customize.chart .ft a:visited, .area-essay.page-caption-label .ft a:visited, .area-essay.page-caption-label-p .ft a:visited, .area-essay.page-caption-p .ft a:visited, .area-essay.page-essay .ft a:visited, .area-essay.page-img-caption-label .ft a:visited, .area-essay.page-img-caption-p .ft a:visited, .area-figure.page-img-figcaption .ft a:visited, .area-figure.page-img-figcaption-label .ft a:visited, .area-figure.page-img-figcaption-p .ft a:visited, .area-figure.page-img-label .ft a:visited, .area-figure.page-img-label-p .ft a:visited, .area-figure.page-img-p .ft a:visited, .area-form.page-form .ft a:visited, .area-form.submit .ft a:visited, .area-customize.map .ft a:visited, .area-customize.audio .ft a:visited, .area-customize.iframe .ft a:visited, .list-text.message .ft a:visited, .group-list.page-list-pic > .in > .ft a:visited, .area-form.sign-in .ft a:visited, .group-list.sitemap > .in > .ft a:visited, .list-text.sitemap .ft a:visited, .area-table.page-table .ft a:visited, .area-table.rwd-table .ft a:visited, .list-text.page-list .ft a:visited, .group-list.page-list-text > .in > .ft a:visited, .area-customize.calendar .ct .label a:visited, .area-customize.calendar-detail .ct .label a:visited, .sys-root a.btn:visited, .sys-root input[type="submit"]:visited, .sys-root input[type="reset"]:visited, .sys-root input[type="button"]:visited, .sys-root button:visited, .list-text.open-data .ct a:visited, .list-text.user-tool .ct a:visited, .base-footer .simple-text.btn .ct a:visited, .list-text.jump-tool .ct a:visited, .list-multiple.page-click .ct a:visited, .list-multiple.page-select .ct ul[data-index="1"] a:visited, .list-multiple.page-select .ct ul[data-index="2"] a:visited, .base-mobile .area-form.search .ft li:visited, [data-js="false"] .base-wrapper .area-form.search .ft a:visited, .list-text.btn .ct a:visited, .area-figure.page-figure .ft a:visited, .base-wrapper .simple-text.query .ft a:visited, .base-extend .simple-text.query .ft a:visited {
+.group-list.default > .in > .ft a:visited, .base-content .list-text.link .ft a:visited, .base-module-area .group-list.slider > .in > .ft a:visited, .list-text.slider .ft a:visited, .group-list.message > .in > .ft a:visited, .area-essay.message .ft a:visited, .base-module-area .group-list.album > .in > .ft a:visited, .base-page-area .group-list.album > .in > .ft a:visited, .area-figure.album .ft a:visited, .base-module-area .group-list.link > .in > .ft a:visited, .base-page-area .group-list.link > .in > .ft a:visited, .list-pic.link .ft a:visited, .area-form.link .ft a:visited, .base-module-area .area-essay.link .ft a:visited, .base-page-area .area-essay.link .ft a:visited, .list-text.rss .ft a:visited, .area-customize.calendar .ft a:visited, .area-form.epaper .ft a:visited, .area-customize.video .ft a:visited, .area-customize.news-card .ft a:visited, .area-customize.icons-g2 .ft a:visited, .area-customize.message .ft a:visited, .area-customize.message02 .ft a:visited, .area-customize.ktnp-album .ft a:visited, .area-customize.pchouse-album .ft a:visited, .area-customize.korea-pic-slider .ft a:visited, .area-form.page-search .ft a:visited, .group-list.page-block > .in > .ft a:visited, .group-list.page-list > .in > .ft a:visited, .list-pic.album .ft a:visited, .area-customize.calendar-detail .ft a:visited, .area-customize.calendar-detail02 .ft a:visited, .area-customize.calendar-detail03 .ft a:visited, .area-customize.calendar-schedule .ft a:visited, .area-customize.chart .ft a:visited, .area-essay.page-caption-label .ft a:visited, .area-essay.page-caption-label-p .ft a:visited, .area-essay.page-caption-p .ft a:visited, .area-essay.page-essay .ft a:visited, .area-essay.page-img-caption-label .ft a:visited, .area-essay.page-img-caption-p .ft a:visited, .area-figure.page-img-figcaption .ft a:visited, .area-figure.page-img-figcaption-label .ft a:visited, .area-figure.page-img-figcaption-p .ft a:visited, .area-figure.page-img-label .ft a:visited, .area-figure.page-img-label-p .ft a:visited, .area-figure.page-img-p .ft a:visited, .area-form.page-form .ft a:visited, .area-form.submit .ft a:visited, .area-customize.map .ft a:visited, .area-customize.audio .ft a:visited, .area-customize.iframe .ft a:visited, .list-text.message .ft a:visited, .group-list.page-list-pic > .in > .ft a:visited, .area-form.sign-in .ft a:visited, .group-list.sitemap > .in > .ft a:visited, .list-text.sitemap .ft a:visited, .area-table.page-table .ft a:visited, .area-table.rwd-table .ft a:visited, .list-text.page-list .ft a:visited, .group-list.page-list-text > .in > .ft a:visited, .area-customize.calendar .ct .label a:visited, .area-customize.calendar-detail .ct .label a:visited, .sys-root a.btn:visited, .sys-root input[type="submit"]:visited, .sys-root input[type="reset"]:visited, .sys-root input[type="button"]:visited, .sys-root button:visited, .list-text.open-data .ct a:visited, .list-text.user-tool .ct a:visited, .base-footer .simple-text.btn .ct a:visited, .list-text.jump-tool .ct a:visited, .list-multiple.page-click .ct a:visited, .list-multiple.page-select .ct ul[data-index="1"] a:visited, .list-multiple.page-select .ct ul[data-index="2"] a:visited, .base-mobile .area-form.search .ft li:visited, [data-js="false"] .base-wrapper .area-form.search .ft a:visited, .list-text.btn .ct a:visited, .area-figure.page-figure .ft a:visited, .base-wrapper .simple-text.query .ft a:visited, .base-extend .simple-text.query .ft a:visited {
   color: #ffffff;
 }
 /* line 850, ../sass/_base-function.scss */
-.group-list.default > .in > .ft a:hover, .base-content .list-text.link .ft a:hover, .base-module-area .group-list.slider > .in > .ft a:hover, .list-text.slider .ft a:hover, .group-list.message > .in > .ft a:hover, .area-essay.message .ft a:hover, .base-module-area .group-list.album > .in > .ft a:hover, .base-page-area .group-list.album > .in > .ft a:hover, .area-figure.album .ft a:hover, .base-module-area .group-list.link > .in > .ft a:hover, .base-page-area .group-list.link > .in > .ft a:hover, .list-pic.link .ft a:hover, .area-form.link .ft a:hover, .base-module-area .area-essay.link .ft a:hover, .base-page-area .area-essay.link .ft a:hover, .list-text.rss .ft a:hover, .area-customize.calendar .ft a:hover, .area-form.epaper .ft a:hover, .area-customize.video .ft a:hover, .area-customize.news-card .ft a:hover, .area-customize.icons-g2 .ft a:hover, .area-customize.message .ft a:hover, .area-customize.message02 .ft a:hover, .area-form.page-search .ft a:hover, .group-list.page-block > .in > .ft a:hover, .group-list.page-list > .in > .ft a:hover, .list-pic.album .ft a:hover, .area-customize.calendar-detail .ft a:hover, .area-customize.calendar-detail02 .ft a:hover, .area-customize.calendar-detail03 .ft a:hover, .area-customize.calendar-schedule .ft a:hover, .area-customize.chart .ft a:hover, .area-essay.page-caption-label .ft a:hover, .area-essay.page-caption-label-p .ft a:hover, .area-essay.page-caption-p .ft a:hover, .area-essay.page-essay .ft a:hover, .area-essay.page-img-caption-label .ft a:hover, .area-essay.page-img-caption-p .ft a:hover, .area-figure.page-img-figcaption .ft a:hover, .area-figure.page-img-figcaption-label .ft a:hover, .area-figure.page-img-figcaption-p .ft a:hover, .area-figure.page-img-label .ft a:hover, .area-figure.page-img-label-p .ft a:hover, .area-figure.page-img-p .ft a:hover, .area-form.page-form .ft a:hover, .area-form.submit .ft a:hover, .area-customize.map .ft a:hover, .area-customize.audio .ft a:hover, .area-customize.iframe .ft a:hover, .list-text.message .ft a:hover, .group-list.page-list-pic > .in > .ft a:hover, .area-form.sign-in .ft a:hover, .group-list.sitemap > .in > .ft a:hover, .list-text.sitemap .ft a:hover, .area-table.page-table .ft a:hover, .area-table.rwd-table .ft a:hover, .list-text.page-list .ft a:hover, .group-list.page-list-text > .in > .ft a:hover, .area-customize.calendar .ct .label a:hover, .area-customize.calendar-detail .ct .label a:hover, .sys-root a.btn:hover, .sys-root input[type="submit"]:hover, .sys-root input[type="reset"]:hover, .sys-root input[type="button"]:hover, .sys-root button:hover, .list-text.open-data .ct a:hover, .list-text.user-tool .ct a:hover, .base-footer .simple-text.btn .ct a:hover, .list-text.jump-tool .ct a:hover, .list-multiple.page-click .ct a:hover, .list-multiple.page-select .ct ul[data-index="1"] a:hover, .list-multiple.page-select .ct ul[data-index="2"] a:hover, .base-mobile .area-form.search .ft li:hover, [data-js="false"] .base-wrapper .area-form.search .ft a:hover, .list-text.btn .ct a:hover, .area-figure.page-figure .ft a:hover, .base-wrapper .simple-text.query .ft a:hover, .base-extend .simple-text.query .ft a:hover {
+.group-list.default > .in > .ft a:hover, .base-content .list-text.link .ft a:hover, .base-module-area .group-list.slider > .in > .ft a:hover, .list-text.slider .ft a:hover, .group-list.message > .in > .ft a:hover, .area-essay.message .ft a:hover, .base-module-area .group-list.album > .in > .ft a:hover, .base-page-area .group-list.album > .in > .ft a:hover, .area-figure.album .ft a:hover, .base-module-area .group-list.link > .in > .ft a:hover, .base-page-area .group-list.link > .in > .ft a:hover, .list-pic.link .ft a:hover, .area-form.link .ft a:hover, .base-module-area .area-essay.link .ft a:hover, .base-page-area .area-essay.link .ft a:hover, .list-text.rss .ft a:hover, .area-customize.calendar .ft a:hover, .area-form.epaper .ft a:hover, .area-customize.video .ft a:hover, .area-customize.news-card .ft a:hover, .area-customize.icons-g2 .ft a:hover, .area-customize.message .ft a:hover, .area-customize.message02 .ft a:hover, .area-customize.ktnp-album .ft a:hover, .area-customize.pchouse-album .ft a:hover, .area-customize.korea-pic-slider .ft a:hover, .area-form.page-search .ft a:hover, .group-list.page-block > .in > .ft a:hover, .group-list.page-list > .in > .ft a:hover, .list-pic.album .ft a:hover, .area-customize.calendar-detail .ft a:hover, .area-customize.calendar-detail02 .ft a:hover, .area-customize.calendar-detail03 .ft a:hover, .area-customize.calendar-schedule .ft a:hover, .area-customize.chart .ft a:hover, .area-essay.page-caption-label .ft a:hover, .area-essay.page-caption-label-p .ft a:hover, .area-essay.page-caption-p .ft a:hover, .area-essay.page-essay .ft a:hover, .area-essay.page-img-caption-label .ft a:hover, .area-essay.page-img-caption-p .ft a:hover, .area-figure.page-img-figcaption .ft a:hover, .area-figure.page-img-figcaption-label .ft a:hover, .area-figure.page-img-figcaption-p .ft a:hover, .area-figure.page-img-label .ft a:hover, .area-figure.page-img-label-p .ft a:hover, .area-figure.page-img-p .ft a:hover, .area-form.page-form .ft a:hover, .area-form.submit .ft a:hover, .area-customize.map .ft a:hover, .area-customize.audio .ft a:hover, .area-customize.iframe .ft a:hover, .list-text.message .ft a:hover, .group-list.page-list-pic > .in > .ft a:hover, .area-form.sign-in .ft a:hover, .group-list.sitemap > .in > .ft a:hover, .list-text.sitemap .ft a:hover, .area-table.page-table .ft a:hover, .area-table.rwd-table .ft a:hover, .list-text.page-list .ft a:hover, .group-list.page-list-text > .in > .ft a:hover, .area-customize.calendar .ct .label a:hover, .area-customize.calendar-detail .ct .label a:hover, .sys-root a.btn:hover, .sys-root input[type="submit"]:hover, .sys-root input[type="reset"]:hover, .sys-root input[type="button"]:hover, .sys-root button:hover, .list-text.open-data .ct a:hover, .list-text.user-tool .ct a:hover, .base-footer .simple-text.btn .ct a:hover, .list-text.jump-tool .ct a:hover, .list-multiple.page-click .ct a:hover, .list-multiple.page-select .ct ul[data-index="1"] a:hover, .list-multiple.page-select .ct ul[data-index="2"] a:hover, .base-mobile .area-form.search .ft li:hover, [data-js="false"] .base-wrapper .area-form.search .ft a:hover, .list-text.btn .ct a:hover, .area-figure.page-figure .ft a:hover, .base-wrapper .simple-text.query .ft a:hover, .base-extend .simple-text.query .ft a:hover {
   background-color: #343434;
 }
 /* line 854, ../sass/_base-function.scss */
-.group-list.default > .in > .ft a:active, .base-content .list-text.link .ft a:active, .base-module-area .group-list.slider > .in > .ft a:active, .list-text.slider .ft a:active, .group-list.message > .in > .ft a:active, .area-essay.message .ft a:active, .base-module-area .group-list.album > .in > .ft a:active, .base-page-area .group-list.album > .in > .ft a:active, .area-figure.album .ft a:active, .base-module-area .group-list.link > .in > .ft a:active, .base-page-area .group-list.link > .in > .ft a:active, .list-pic.link .ft a:active, .area-form.link .ft a:active, .base-module-area .area-essay.link .ft a:active, .base-page-area .area-essay.link .ft a:active, .list-text.rss .ft a:active, .area-customize.calendar .ft a:active, .area-form.epaper .ft a:active, .area-customize.video .ft a:active, .area-customize.news-card .ft a:active, .area-customize.icons-g2 .ft a:active, .area-customize.message .ft a:active, .area-customize.message02 .ft a:active, .area-form.page-search .ft a:active, .group-list.page-block > .in > .ft a:active, .group-list.page-list > .in > .ft a:active, .list-pic.album .ft a:active, .area-customize.calendar-detail .ft a:active, .area-customize.calendar-detail02 .ft a:active, .area-customize.calendar-detail03 .ft a:active, .area-customize.calendar-schedule .ft a:active, .area-customize.chart .ft a:active, .area-essay.page-caption-label .ft a:active, .area-essay.page-caption-label-p .ft a:active, .area-essay.page-caption-p .ft a:active, .area-essay.page-essay .ft a:active, .area-essay.page-img-caption-label .ft a:active, .area-essay.page-img-caption-p .ft a:active, .area-figure.page-img-figcaption .ft a:active, .area-figure.page-img-figcaption-label .ft a:active, .area-figure.page-img-figcaption-p .ft a:active, .area-figure.page-img-label .ft a:active, .area-figure.page-img-label-p .ft a:active, .area-figure.page-img-p .ft a:active, .area-form.page-form .ft a:active, .area-form.submit .ft a:active, .area-customize.map .ft a:active, .area-customize.audio .ft a:active, .area-customize.iframe .ft a:active, .list-text.message .ft a:active, .group-list.page-list-pic > .in > .ft a:active, .area-form.sign-in .ft a:active, .group-list.sitemap > .in > .ft a:active, .list-text.sitemap .ft a:active, .area-table.page-table .ft a:active, .area-table.rwd-table .ft a:active, .list-text.page-list .ft a:active, .group-list.page-list-text > .in > .ft a:active, .area-customize.calendar .ct .label a:active, .area-customize.calendar-detail .ct .label a:active, .sys-root a.btn:active, .sys-root input[type="submit"]:active, .sys-root input[type="reset"]:active, .sys-root input[type="button"]:active, .sys-root button:active, .list-text.open-data .ct a:active, .list-text.user-tool .ct a:active, .base-footer .simple-text.btn .ct a:active, .list-text.jump-tool .ct a:active, .list-multiple.page-click .ct a:active, .list-multiple.page-select .ct ul[data-index="1"] a:active, .list-multiple.page-select .ct ul[data-index="2"] a:active, .base-mobile .area-form.search .ft li:active, [data-js="false"] .base-wrapper .area-form.search .ft a:active, .list-text.btn .ct a:active, .area-figure.page-figure .ft a:active, .base-wrapper .simple-text.query .ft a:active, .base-extend .simple-text.query .ft a:active {
+.group-list.default > .in > .ft a:active, .base-content .list-text.link .ft a:active, .base-module-area .group-list.slider > .in > .ft a:active, .list-text.slider .ft a:active, .group-list.message > .in > .ft a:active, .area-essay.message .ft a:active, .base-module-area .group-list.album > .in > .ft a:active, .base-page-area .group-list.album > .in > .ft a:active, .area-figure.album .ft a:active, .base-module-area .group-list.link > .in > .ft a:active, .base-page-area .group-list.link > .in > .ft a:active, .list-pic.link .ft a:active, .area-form.link .ft a:active, .base-module-area .area-essay.link .ft a:active, .base-page-area .area-essay.link .ft a:active, .list-text.rss .ft a:active, .area-customize.calendar .ft a:active, .area-form.epaper .ft a:active, .area-customize.video .ft a:active, .area-customize.news-card .ft a:active, .area-customize.icons-g2 .ft a:active, .area-customize.message .ft a:active, .area-customize.message02 .ft a:active, .area-customize.ktnp-album .ft a:active, .area-customize.pchouse-album .ft a:active, .area-customize.korea-pic-slider .ft a:active, .area-form.page-search .ft a:active, .group-list.page-block > .in > .ft a:active, .group-list.page-list > .in > .ft a:active, .list-pic.album .ft a:active, .area-customize.calendar-detail .ft a:active, .area-customize.calendar-detail02 .ft a:active, .area-customize.calendar-detail03 .ft a:active, .area-customize.calendar-schedule .ft a:active, .area-customize.chart .ft a:active, .area-essay.page-caption-label .ft a:active, .area-essay.page-caption-label-p .ft a:active, .area-essay.page-caption-p .ft a:active, .area-essay.page-essay .ft a:active, .area-essay.page-img-caption-label .ft a:active, .area-essay.page-img-caption-p .ft a:active, .area-figure.page-img-figcaption .ft a:active, .area-figure.page-img-figcaption-label .ft a:active, .area-figure.page-img-figcaption-p .ft a:active, .area-figure.page-img-label .ft a:active, .area-figure.page-img-label-p .ft a:active, .area-figure.page-img-p .ft a:active, .area-form.page-form .ft a:active, .area-form.submit .ft a:active, .area-customize.map .ft a:active, .area-customize.audio .ft a:active, .area-customize.iframe .ft a:active, .list-text.message .ft a:active, .group-list.page-list-pic > .in > .ft a:active, .area-form.sign-in .ft a:active, .group-list.sitemap > .in > .ft a:active, .list-text.sitemap .ft a:active, .area-table.page-table .ft a:active, .area-table.rwd-table .ft a:active, .list-text.page-list .ft a:active, .group-list.page-list-text > .in > .ft a:active, .area-customize.calendar .ct .label a:active, .area-customize.calendar-detail .ct .label a:active, .sys-root a.btn:active, .sys-root input[type="submit"]:active, .sys-root input[type="reset"]:active, .sys-root input[type="button"]:active, .sys-root button:active, .list-text.open-data .ct a:active, .list-text.user-tool .ct a:active, .base-footer .simple-text.btn .ct a:active, .list-text.jump-tool .ct a:active, .list-multiple.page-click .ct a:active, .list-multiple.page-select .ct ul[data-index="1"] a:active, .list-multiple.page-select .ct ul[data-index="2"] a:active, .base-mobile .area-form.search .ft li:active, [data-js="false"] .base-wrapper .area-form.search .ft a:active, .list-text.btn .ct a:active, .area-figure.page-figure .ft a:active, .base-wrapper .simple-text.query .ft a:active, .base-extend .simple-text.query .ft a:active {
   color: #ffffff;
 }
 
 /* line 859, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-customize.message .ft a, .area-customize.message02 .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail .ft a, .area-customize.calendar-detail02 .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.calendar-schedule .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail .ct .label a {
+.group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a, .group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-customize.message .ft a, .area-customize.message02 .ft a, .area-customize.ktnp-album .ft a, .area-customize.pchouse-album .ft a, .area-customize.korea-pic-slider .ft a, .area-form.page-search .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-customize.calendar-detail .ft a, .area-customize.calendar-detail02 .ft a, .area-customize.calendar-detail03 .ft a, .area-customize.calendar-schedule .ft a, .area-customize.chart .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.map .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .area-form.sign-in .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .area-customize.calendar-detail .ct .label a {
   padding: 3px 5px;
   font-size: 0.9em;
 }
 
 /* line 865, ../sass/_base-function.scss */
 .area-form.vote .ct .fieldset input[type="submit"], .area-form.epaper .ct .fieldset input[type="submit"], .area-form.page-search .ct .fieldset input[type="submit"], .area-form.page-form .ct .fieldset input[type="submit"], .area-form.submit .ct .fieldset input[type="submit"], .base-wrapper .simple-text.query .ft li.deny a, .base-extend .simple-text.query .ft li.deny a, .area-form.sign-in .ct .fieldset input[type="submit"] {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 868, ../sass/_base-function.scss */
 .area-form.vote .ct .fieldset input[type="submit"]:hover, .area-form.epaper .ct .fieldset input[type="submit"]:hover, .area-form.page-search .ct .fieldset input[type="submit"]:hover, .area-form.page-form .ct .fieldset input[type="submit"]:hover, .area-form.submit .ct .fieldset input[type="submit"]:hover, .base-wrapper .simple-text.query .ft li.deny a:hover, .base-extend .simple-text.query .ft li.deny a:hover, .area-form.sign-in .ct .fieldset input[type="submit"]:hover {
-  background-color: #362d2a;
+  background-color: #2f656d;
 }
 
 /* line 873, ../sass/_base-function.scss */
@@ -271,25 +271,25 @@
 }
 
 /* line 901, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft, .group-list.default > .in > .ft, .base-content .list-text.link .ft, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft, .base-module-area .group-list.slider > .in > .ft, .list-text.slider .ft, .group-list.message > .bg-drop-layout > .in > .ft, .group-list.message > .in > .ft, .area-essay.message .ft, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft, .base-module-area .group-list.album > .in > .ft, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft, .base-page-area .group-list.album > .in > .ft, .area-figure.album .ft, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft, .base-module-area .group-list.link > .in > .ft, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft, .base-page-area .group-list.link > .in > .ft, .list-pic.link .ft, .area-form.link .ft, .base-module-area .area-essay.link .ft, .base-page-area .area-essay.link .ft, .list-text.rss .ft, .area-customize.calendar .ft, .area-form.epaper .ft, .area-customize.video .ft, .area-customize.news-card .ft, .area-customize.icons-g2 .ft, .area-customize.message .ft, .area-customize.message02 .ft, .area-form.page-search .ft, .group-list.page-block > .bg-drop-layout > .in > .ft, .group-list.page-block > .in > .ft, .group-list.page-list > .bg-drop-layout > .in > .ft, .group-list.page-list > .in > .ft, .list-pic.album .ft, .area-customize.calendar-detail .ft, .area-customize.calendar-detail02 .ft, .area-customize.calendar-detail03 .ft, .area-customize.calendar-schedule .ft, .area-customize.chart .ft, .area-essay.page-caption-label .ft, .area-essay.page-caption-label-p .ft, .area-essay.page-caption-p .ft, .area-essay.page-essay .ft, .area-essay.page-img-caption-label .ft, .area-essay.page-img-caption-p .ft, .area-figure.page-img-figcaption .ft, .area-figure.page-img-figcaption-label .ft, .area-figure.page-img-figcaption-p .ft, .area-figure.page-img-label .ft, .area-figure.page-img-label-p .ft, .area-figure.page-img-p .ft, .area-form.page-form .ft, .area-form.submit .ft, .area-customize.map .ft, .area-customize.audio .ft, .area-customize.iframe .ft, .list-text.message .ft, .group-list.page-list-pic > .bg-drop-layout > .in > .ft, .group-list.page-list-pic > .in > .ft, .area-form.sign-in .ft, .group-list.sitemap > .bg-drop-layout > .in > .ft, .group-list.sitemap > .in > .ft, .list-text.sitemap .ft, .area-table.page-table .ft, .area-table.rwd-table .ft, .list-text.page-list .ft, .group-list.page-list-text > .bg-drop-layout > .in > .ft, .group-list.page-list-text > .in > .ft {
+.group-list.default > .bg-drop-layout > .in > .ft, .group-list.default > .in > .ft, .base-content .list-text.link .ft, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft, .base-module-area .group-list.slider > .in > .ft, .list-text.slider .ft, .group-list.message > .bg-drop-layout > .in > .ft, .group-list.message > .in > .ft, .area-essay.message .ft, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft, .base-module-area .group-list.album > .in > .ft, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft, .base-page-area .group-list.album > .in > .ft, .area-figure.album .ft, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft, .base-module-area .group-list.link > .in > .ft, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft, .base-page-area .group-list.link > .in > .ft, .list-pic.link .ft, .area-form.link .ft, .base-module-area .area-essay.link .ft, .base-page-area .area-essay.link .ft, .list-text.rss .ft, .area-customize.calendar .ft, .area-form.epaper .ft, .area-customize.video .ft, .area-customize.news-card .ft, .area-customize.icons-g2 .ft, .area-customize.message .ft, .area-customize.message02 .ft, .area-customize.ktnp-album .ft, .area-customize.pchouse-album .ft, .area-customize.korea-pic-slider .ft, .area-form.page-search .ft, .group-list.page-block > .bg-drop-layout > .in > .ft, .group-list.page-block > .in > .ft, .group-list.page-list > .bg-drop-layout > .in > .ft, .group-list.page-list > .in > .ft, .list-pic.album .ft, .area-customize.calendar-detail .ft, .area-customize.calendar-detail02 .ft, .area-customize.calendar-detail03 .ft, .area-customize.calendar-schedule .ft, .area-customize.chart .ft, .area-essay.page-caption-label .ft, .area-essay.page-caption-label-p .ft, .area-essay.page-caption-p .ft, .area-essay.page-essay .ft, .area-essay.page-img-caption-label .ft, .area-essay.page-img-caption-p .ft, .area-figure.page-img-figcaption .ft, .area-figure.page-img-figcaption-label .ft, .area-figure.page-img-figcaption-p .ft, .area-figure.page-img-label .ft, .area-figure.page-img-label-p .ft, .area-figure.page-img-p .ft, .area-form.page-form .ft, .area-form.submit .ft, .area-customize.map .ft, .area-customize.audio .ft, .area-customize.iframe .ft, .list-text.message .ft, .group-list.page-list-pic > .bg-drop-layout > .in > .ft, .group-list.page-list-pic > .in > .ft, .area-form.sign-in .ft, .group-list.sitemap > .bg-drop-layout > .in > .ft, .group-list.sitemap > .in > .ft, .list-text.sitemap .ft, .area-table.page-table .ft, .area-table.rwd-table .ft, .list-text.page-list .ft, .group-list.page-list-text > .bg-drop-layout > .in > .ft, .group-list.page-list-text > .in > .ft {
   position: absolute;
   top: 15px;
   right: 0;
 }
 /* line 910, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft ul, .group-list.default > .in > .ft ul, .base-content .list-text.link .ft ul, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.slider > .in > .ft ul, .list-text.slider .ft ul, .group-list.message > .bg-drop-layout > .in > .ft ul, .group-list.message > .in > .ft ul, .area-essay.message .ft ul, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.album > .in > .ft ul, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.album > .in > .ft ul, .area-figure.album .ft ul, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.link > .in > .ft ul, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.link > .in > .ft ul, .list-pic.link .ft ul, .area-form.link .ft ul, .base-module-area .area-essay.link .ft ul, .base-page-area .area-essay.link .ft ul, .list-text.rss .ft ul, .area-customize.calendar .ft ul, .area-form.epaper .ft ul, .area-customize.video .ft ul, .area-customize.news-card .ft ul, .area-customize.icons-g2 .ft ul, .area-customize.message .ft ul, .area-customize.message02 .ft ul, .area-form.page-search .ft ul, .group-list.page-block > .bg-drop-layout > .in > .ft ul, .group-list.page-block > .in > .ft ul, .group-list.page-list > .bg-drop-layout > .in > .ft ul, .group-list.page-list > .in > .ft ul, .list-pic.album .ft ul, .area-customize.calendar-detail .ft ul, .area-customize.calendar-detail02 .ft ul, .area-customize.calendar-detail03 .ft ul, .area-customize.calendar-schedule .ft ul, .area-customize.chart .ft ul, .area-essay.page-caption-label .ft ul, .area-essay.page-caption-label-p .ft ul, .area-essay.page-caption-p .ft ul, .area-essay.page-essay .ft ul, .area-essay.page-img-caption-label .ft ul, .area-essay.page-img-caption-p .ft ul, .area-figure.page-img-figcaption .ft ul, .area-figure.page-img-figcaption-label .ft ul, .area-figure.page-img-figcaption-p .ft ul, .area-figure.page-img-label .ft ul, .area-figure.page-img-label-p .ft ul, .area-figure.page-img-p .ft ul, .area-form.page-form .ft ul, .area-form.submit .ft ul, .area-customize.map .ft ul, .area-customize.audio .ft ul, .area-customize.iframe .ft ul, .list-text.message .ft ul, .group-list.page-list-pic > .bg-drop-layout > .in > .ft ul, .group-list.page-list-pic > .in > .ft ul, .area-form.sign-in .ft ul, .group-list.sitemap > .bg-drop-layout > .in > .ft ul, .group-list.sitemap > .in > .ft ul, .list-text.sitemap .ft ul, .area-table.page-table .ft ul, .area-table.rwd-table .ft ul, .list-text.page-list .ft ul, .group-list.page-list-text > .bg-drop-layout > .in > .ft ul, .group-list.page-list-text > .in > .ft ul {
+.group-list.default > .bg-drop-layout > .in > .ft ul, .group-list.default > .in > .ft ul, .base-content .list-text.link .ft ul, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.slider > .in > .ft ul, .list-text.slider .ft ul, .group-list.message > .bg-drop-layout > .in > .ft ul, .group-list.message > .in > .ft ul, .area-essay.message .ft ul, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.album > .in > .ft ul, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.album > .in > .ft ul, .area-figure.album .ft ul, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-module-area .group-list.link > .in > .ft ul, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft ul, .base-page-area .group-list.link > .in > .ft ul, .list-pic.link .ft ul, .area-form.link .ft ul, .base-module-area .area-essay.link .ft ul, .base-page-area .area-essay.link .ft ul, .list-text.rss .ft ul, .area-customize.calendar .ft ul, .area-form.epaper .ft ul, .area-customize.video .ft ul, .area-customize.news-card .ft ul, .area-customize.icons-g2 .ft ul, .area-customize.message .ft ul, .area-customize.message02 .ft ul, .area-customize.ktnp-album .ft ul, .area-customize.pchouse-album .ft ul, .area-customize.korea-pic-slider .ft ul, .area-form.page-search .ft ul, .group-list.page-block > .bg-drop-layout > .in > .ft ul, .group-list.page-block > .in > .ft ul, .group-list.page-list > .bg-drop-layout > .in > .ft ul, .group-list.page-list > .in > .ft ul, .list-pic.album .ft ul, .area-customize.calendar-detail .ft ul, .area-customize.calendar-detail02 .ft ul, .area-customize.calendar-detail03 .ft ul, .area-customize.calendar-schedule .ft ul, .area-customize.chart .ft ul, .area-essay.page-caption-label .ft ul, .area-essay.page-caption-label-p .ft ul, .area-essay.page-caption-p .ft ul, .area-essay.page-essay .ft ul, .area-essay.page-img-caption-label .ft ul, .area-essay.page-img-caption-p .ft ul, .area-figure.page-img-figcaption .ft ul, .area-figure.page-img-figcaption-label .ft ul, .area-figure.page-img-figcaption-p .ft ul, .area-figure.page-img-label .ft ul, .area-figure.page-img-label-p .ft ul, .area-figure.page-img-p .ft ul, .area-form.page-form .ft ul, .area-form.submit .ft ul, .area-customize.map .ft ul, .area-customize.audio .ft ul, .area-customize.iframe .ft ul, .list-text.message .ft ul, .group-list.page-list-pic > .bg-drop-layout > .in > .ft ul, .group-list.page-list-pic > .in > .ft ul, .area-form.sign-in .ft ul, .group-list.sitemap > .bg-drop-layout > .in > .ft ul, .group-list.sitemap > .in > .ft ul, .list-text.sitemap .ft ul, .area-table.page-table .ft ul, .area-table.rwd-table .ft ul, .list-text.page-list .ft ul, .group-list.page-list-text > .bg-drop-layout > .in > .ft ul, .group-list.page-list-text > .in > .ft ul {
   text-align: right;
 }
 /* line 914, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft li, .group-list.default > .in > .ft li, .base-content .list-text.link .ft li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.slider > .in > .ft li, .list-text.slider .ft li, .group-list.message > .bg-drop-layout > .in > .ft li, .group-list.message > .in > .ft li, .area-essay.message .ft li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.album > .in > .ft li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.album > .in > .ft li, .area-figure.album .ft li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.link > .in > .ft li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.link > .in > .ft li, .list-pic.link .ft li, .area-form.link .ft li, .base-module-area .area-essay.link .ft li, .base-page-area .area-essay.link .ft li, .list-text.rss .ft li, .area-customize.calendar .ft li, .area-form.epaper .ft li, .area-customize.video .ft li, .area-customize.news-card .ft li, .area-customize.icons-g2 .ft li, .area-customize.message .ft li, .area-customize.message02 .ft li, .area-form.page-search .ft li, .group-list.page-block > .bg-drop-layout > .in > .ft li, .group-list.page-block > .in > .ft li, .group-list.page-list > .bg-drop-layout > .in > .ft li, .group-list.page-list > .in > .ft li, .list-pic.album .ft li, .area-customize.calendar-detail .ft li, .area-customize.calendar-detail02 .ft li, .area-customize.calendar-detail03 .ft li, .area-customize.calendar-schedule .ft li, .area-customize.chart .ft li, .area-essay.page-caption-label .ft li, .area-essay.page-caption-label-p .ft li, .area-essay.page-caption-p .ft li, .area-essay.page-essay .ft li, .area-essay.page-img-caption-label .ft li, .area-essay.page-img-caption-p .ft li, .area-figure.page-img-figcaption .ft li, .area-figure.page-img-figcaption-label .ft li, .area-figure.page-img-figcaption-p .ft li, .area-figure.page-img-label .ft li, .area-figure.page-img-label-p .ft li, .area-figure.page-img-p .ft li, .area-form.page-form .ft li, .area-form.submit .ft li, .area-customize.map .ft li, .area-customize.audio .ft li, .area-customize.iframe .ft li, .list-text.message .ft li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li, .group-list.page-list-pic > .in > .ft li, .area-form.sign-in .ft li, .group-list.sitemap > .bg-drop-layout > .in > .ft li, .group-list.sitemap > .in > .ft li, .list-text.sitemap .ft li, .area-table.page-table .ft li, .area-table.rwd-table .ft li, .list-text.page-list .ft li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li, .group-list.page-list-text > .in > .ft li {
+.group-list.default > .bg-drop-layout > .in > .ft li, .group-list.default > .in > .ft li, .base-content .list-text.link .ft li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.slider > .in > .ft li, .list-text.slider .ft li, .group-list.message > .bg-drop-layout > .in > .ft li, .group-list.message > .in > .ft li, .area-essay.message .ft li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.album > .in > .ft li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.album > .in > .ft li, .area-figure.album .ft li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-module-area .group-list.link > .in > .ft li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li, .base-page-area .group-list.link > .in > .ft li, .list-pic.link .ft li, .area-form.link .ft li, .base-module-area .area-essay.link .ft li, .base-page-area .area-essay.link .ft li, .list-text.rss .ft li, .area-customize.calendar .ft li, .area-form.epaper .ft li, .area-customize.video .ft li, .area-customize.news-card .ft li, .area-customize.icons-g2 .ft li, .area-customize.message .ft li, .area-customize.message02 .ft li, .area-customize.ktnp-album .ft li, .area-customize.pchouse-album .ft li, .area-customize.korea-pic-slider .ft li, .area-form.page-search .ft li, .group-list.page-block > .bg-drop-layout > .in > .ft li, .group-list.page-block > .in > .ft li, .group-list.page-list > .bg-drop-layout > .in > .ft li, .group-list.page-list > .in > .ft li, .list-pic.album .ft li, .area-customize.calendar-detail .ft li, .area-customize.calendar-detail02 .ft li, .area-customize.calendar-detail03 .ft li, .area-customize.calendar-schedule .ft li, .area-customize.chart .ft li, .area-essay.page-caption-label .ft li, .area-essay.page-caption-label-p .ft li, .area-essay.page-caption-p .ft li, .area-essay.page-essay .ft li, .area-essay.page-img-caption-label .ft li, .area-essay.page-img-caption-p .ft li, .area-figure.page-img-figcaption .ft li, .area-figure.page-img-figcaption-label .ft li, .area-figure.page-img-figcaption-p .ft li, .area-figure.page-img-label .ft li, .area-figure.page-img-label-p .ft li, .area-figure.page-img-p .ft li, .area-form.page-form .ft li, .area-form.submit .ft li, .area-customize.map .ft li, .area-customize.audio .ft li, .area-customize.iframe .ft li, .list-text.message .ft li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li, .group-list.page-list-pic > .in > .ft li, .area-form.sign-in .ft li, .group-list.sitemap > .bg-drop-layout > .in > .ft li, .group-list.sitemap > .in > .ft li, .list-text.sitemap .ft li, .area-table.page-table .ft li, .area-table.rwd-table .ft li, .list-text.page-list .ft li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li, .group-list.page-list-text > .in > .ft li {
   display: inline-block;
 }
 /* line 917, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft li + li, .group-list.default > .in > .ft li + li, .base-content .list-text.link .ft li + li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.slider > .in > .ft li + li, .list-text.slider .ft li + li, .group-list.message > .bg-drop-layout > .in > .ft li + li, .group-list.message > .in > .ft li + li, .area-essay.message .ft li + li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.album > .in > .ft li + li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.album > .in > .ft li + li, .area-figure.album .ft li + li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.link > .in > .ft li + li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.link > .in > .ft li + li, .list-pic.link .ft li + li, .area-form.link .ft li + li, .base-module-area .area-essay.link .ft li + li, .base-page-area .area-essay.link .ft li + li, .list-text.rss .ft li + li, .area-customize.calendar .ft li + li, .area-form.epaper .ft li + li, .area-customize.video .ft li + li, .area-customize.news-card .ft li + li, .area-customize.icons-g2 .ft li + li, .area-customize.message .ft li + li, .area-customize.message02 .ft li + li, .area-form.page-search .ft li + li, .group-list.page-block > .bg-drop-layout > .in > .ft li + li, .group-list.page-block > .in > .ft li + li, .group-list.page-list > .bg-drop-layout > .in > .ft li + li, .group-list.page-list > .in > .ft li + li, .list-pic.album .ft li + li, .area-customize.calendar-detail .ft li + li, .area-customize.calendar-detail02 .ft li + li, .area-customize.calendar-detail03 .ft li + li, .area-customize.calendar-schedule .ft li + li, .area-customize.chart .ft li + li, .area-essay.page-caption-label .ft li + li, .area-essay.page-caption-label-p .ft li + li, .area-essay.page-caption-p .ft li + li, .area-essay.page-essay .ft li + li, .area-essay.page-img-caption-label .ft li + li, .area-essay.page-img-caption-p .ft li + li, .area-figure.page-img-figcaption .ft li + li, .area-figure.page-img-figcaption-label .ft li + li, .area-figure.page-img-figcaption-p .ft li + li, .area-figure.page-img-label .ft li + li, .area-figure.page-img-label-p .ft li + li, .area-figure.page-img-p .ft li + li, .area-form.page-form .ft li + li, .area-form.submit .ft li + li, .area-customize.map .ft li + li, .area-customize.audio .ft li + li, .area-customize.iframe .ft li + li, .list-text.message .ft li + li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-pic > .in > .ft li + li, .area-form.sign-in .ft li + li, .group-list.sitemap > .bg-drop-layout > .in > .ft li + li, .group-list.sitemap > .in > .ft li + li, .list-text.sitemap .ft li + li, .area-table.page-table .ft li + li, .area-table.rwd-table .ft li + li, .list-text.page-list .ft li + li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-text > .in > .ft li + li {
+.group-list.default > .bg-drop-layout > .in > .ft li + li, .group-list.default > .in > .ft li + li, .base-content .list-text.link .ft li + li, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.slider > .in > .ft li + li, .list-text.slider .ft li + li, .group-list.message > .bg-drop-layout > .in > .ft li + li, .group-list.message > .in > .ft li + li, .area-essay.message .ft li + li, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.album > .in > .ft li + li, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.album > .in > .ft li + li, .area-figure.album .ft li + li, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-module-area .group-list.link > .in > .ft li + li, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft li + li, .base-page-area .group-list.link > .in > .ft li + li, .list-pic.link .ft li + li, .area-form.link .ft li + li, .base-module-area .area-essay.link .ft li + li, .base-page-area .area-essay.link .ft li + li, .list-text.rss .ft li + li, .area-customize.calendar .ft li + li, .area-form.epaper .ft li + li, .area-customize.video .ft li + li, .area-customize.news-card .ft li + li, .area-customize.icons-g2 .ft li + li, .area-customize.message .ft li + li, .area-customize.message02 .ft li + li, .area-customize.ktnp-album .ft li + li, .area-customize.pchouse-album .ft li + li, .area-customize.korea-pic-slider .ft li + li, .area-form.page-search .ft li + li, .group-list.page-block > .bg-drop-layout > .in > .ft li + li, .group-list.page-block > .in > .ft li + li, .group-list.page-list > .bg-drop-layout > .in > .ft li + li, .group-list.page-list > .in > .ft li + li, .list-pic.album .ft li + li, .area-customize.calendar-detail .ft li + li, .area-customize.calendar-detail02 .ft li + li, .area-customize.calendar-detail03 .ft li + li, .area-customize.calendar-schedule .ft li + li, .area-customize.chart .ft li + li, .area-essay.page-caption-label .ft li + li, .area-essay.page-caption-label-p .ft li + li, .area-essay.page-caption-p .ft li + li, .area-essay.page-essay .ft li + li, .area-essay.page-img-caption-label .ft li + li, .area-essay.page-img-caption-p .ft li + li, .area-figure.page-img-figcaption .ft li + li, .area-figure.page-img-figcaption-label .ft li + li, .area-figure.page-img-figcaption-p .ft li + li, .area-figure.page-img-label .ft li + li, .area-figure.page-img-label-p .ft li + li, .area-figure.page-img-p .ft li + li, .area-form.page-form .ft li + li, .area-form.submit .ft li + li, .area-customize.map .ft li + li, .area-customize.audio .ft li + li, .area-customize.iframe .ft li + li, .list-text.message .ft li + li, .group-list.page-list-pic > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-pic > .in > .ft li + li, .area-form.sign-in .ft li + li, .group-list.sitemap > .bg-drop-layout > .in > .ft li + li, .group-list.sitemap > .in > .ft li + li, .list-text.sitemap .ft li + li, .area-table.page-table .ft li + li, .area-table.rwd-table .ft li + li, .list-text.page-list .ft li + li, .group-list.page-list-text > .bg-drop-layout > .in > .ft li + li, .group-list.page-list-text > .in > .ft li + li {
   margin-left: 3px;
 }
 /* line 922, ../sass/_base-function.scss */
-.group-list.default > .bg-drop-layout > .in > .ft span, .group-list.default > .in > .ft span, .base-content .list-text.link .ft span, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.slider > .in > .ft span, .list-text.slider .ft span, .group-list.message > .bg-drop-layout > .in > .ft span, .group-list.message > .in > .ft span, .area-essay.message .ft span, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.album > .in > .ft span, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.album > .in > .ft span, .area-figure.album .ft span, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.link > .in > .ft span, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.link > .in > .ft span, .list-pic.link .ft span, .area-form.link .ft span, .base-module-area .area-essay.link .ft span, .base-page-area .area-essay.link .ft span, .list-text.rss .ft span, .area-customize.calendar .ft span, .area-form.epaper .ft span, .area-customize.video .ft span, .area-customize.news-card .ft span, .area-customize.icons-g2 .ft span, .area-customize.message .ft span, .area-customize.message02 .ft span, .area-form.page-search .ft span, .group-list.page-block > .bg-drop-layout > .in > .ft span, .group-list.page-block > .in > .ft span, .group-list.page-list > .bg-drop-layout > .in > .ft span, .group-list.page-list > .in > .ft span, .list-pic.album .ft span, .area-customize.calendar-detail .ft span, .area-customize.calendar-detail02 .ft span, .area-customize.calendar-detail03 .ft span, .area-customize.calendar-schedule .ft span, .area-customize.chart .ft span, .area-essay.page-caption-label .ft span, .area-essay.page-caption-label-p .ft span, .area-essay.page-caption-p .ft span, .area-essay.page-essay .ft span, .area-essay.page-img-caption-label .ft span, .area-essay.page-img-caption-p .ft span, .area-figure.page-img-figcaption .ft span, .area-figure.page-img-figcaption-label .ft span, .area-figure.page-img-figcaption-p .ft span, .area-figure.page-img-label .ft span, .area-figure.page-img-label-p .ft span, .area-figure.page-img-p .ft span, .area-form.page-form .ft span, .area-form.submit .ft span, .area-customize.map .ft span, .area-customize.audio .ft span, .area-customize.iframe .ft span, .list-text.message .ft span, .group-list.page-list-pic > .bg-drop-layout > .in > .ft span, .group-list.page-list-pic > .in > .ft span, .area-form.sign-in .ft span, .group-list.sitemap > .bg-drop-layout > .in > .ft span, .group-list.sitemap > .in > .ft span, .list-text.sitemap .ft span, .area-table.page-table .ft span, .area-table.rwd-table .ft span, .list-text.page-list .ft span, .group-list.page-list-text > .bg-drop-layout > .in > .ft span, .group-list.page-list-text > .in > .ft span {
+.group-list.default > .bg-drop-layout > .in > .ft span, .group-list.default > .in > .ft span, .base-content .list-text.link .ft span, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.slider > .in > .ft span, .list-text.slider .ft span, .group-list.message > .bg-drop-layout > .in > .ft span, .group-list.message > .in > .ft span, .area-essay.message .ft span, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.album > .in > .ft span, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.album > .in > .ft span, .area-figure.album .ft span, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-module-area .group-list.link > .in > .ft span, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft span, .base-page-area .group-list.link > .in > .ft span, .list-pic.link .ft span, .area-form.link .ft span, .base-module-area .area-essay.link .ft span, .base-page-area .area-essay.link .ft span, .list-text.rss .ft span, .area-customize.calendar .ft span, .area-form.epaper .ft span, .area-customize.video .ft span, .area-customize.news-card .ft span, .area-customize.icons-g2 .ft span, .area-customize.message .ft span, .area-customize.message02 .ft span, .area-customize.ktnp-album .ft span, .area-customize.pchouse-album .ft span, .area-customize.korea-pic-slider .ft span, .area-form.page-search .ft span, .group-list.page-block > .bg-drop-layout > .in > .ft span, .group-list.page-block > .in > .ft span, .group-list.page-list > .bg-drop-layout > .in > .ft span, .group-list.page-list > .in > .ft span, .list-pic.album .ft span, .area-customize.calendar-detail .ft span, .area-customize.calendar-detail02 .ft span, .area-customize.calendar-detail03 .ft span, .area-customize.calendar-schedule .ft span, .area-customize.chart .ft span, .area-essay.page-caption-label .ft span, .area-essay.page-caption-label-p .ft span, .area-essay.page-caption-p .ft span, .area-essay.page-essay .ft span, .area-essay.page-img-caption-label .ft span, .area-essay.page-img-caption-p .ft span, .area-figure.page-img-figcaption .ft span, .area-figure.page-img-figcaption-label .ft span, .area-figure.page-img-figcaption-p .ft span, .area-figure.page-img-label .ft span, .area-figure.page-img-label-p .ft span, .area-figure.page-img-p .ft span, .area-form.page-form .ft span, .area-form.submit .ft span, .area-customize.map .ft span, .area-customize.audio .ft span, .area-customize.iframe .ft span, .list-text.message .ft span, .group-list.page-list-pic > .bg-drop-layout > .in > .ft span, .group-list.page-list-pic > .in > .ft span, .area-form.sign-in .ft span, .group-list.sitemap > .bg-drop-layout > .in > .ft span, .group-list.sitemap > .in > .ft span, .list-text.sitemap .ft span, .area-table.page-table .ft span, .area-table.rwd-table .ft span, .list-text.page-list .ft span, .group-list.page-list-text > .bg-drop-layout > .in > .ft span, .group-list.page-list-text > .in > .ft span {
   display: block;
   background-image: none !important;
 }
@@ -342,7 +342,7 @@
 }
 
 /* line 985, ../sass/_base-function.scss */
-.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .list-pic.marquee02 .ct span, .list-pic.marquee03 .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .list-pic.marquee02 .ct span, .list-pic.marquee03 .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .area-customize.ktnp-album .ct .img span, .area-customize.pchouse-album .ct .img span, .area-customize.korea-pic-slider .ct .list-area span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-figure .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2558,7 +2558,7 @@ th {
 }
 /* line 51, ../sass/_group-list_nav.scss */
 .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in .hd a, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in .hd a {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 57, ../sass/_group-list_nav.scss */
@@ -2609,7 +2609,7 @@ th {
 }
 /* line 140, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in, .base-header .group-list.nav > .in {
-  background-color: #da552f;
+  background-color: #74144f;
 }
 /* line 143, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .hd, .base-header .group-list.nav > .in > .hd {
@@ -2650,7 +2650,7 @@ th {
 }
 /* line 217, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-header .group-list.nav > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a {
-  background-color: #b64220;
+  background-color: #490c31;
 }
 /* line 222, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover > .group.nav > .in > .ct, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct, .base-header .group-list.nav > .in > .ct > .in > ul > li:hover > .group.nav > .in > .ct {
@@ -2658,7 +2658,7 @@ th {
 }
 /* line 260, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in, .base-content .group-list.nav > .in {
-  background-color: #da552f;
+  background-color: #74144f;
 }
 /* line 269, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-content .group-list.nav > .in > .hd h3 {
@@ -2686,7 +2686,7 @@ th {
 }
 /* line 311, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a {
-  background-color: #534540 !important;
+  background-color: #3e8691 !important;
   color: #ffffff !important;
 }
 /* line 315, ../sass/_group-list_nav.scss */
@@ -2780,7 +2780,7 @@ th {
     right: 0;
     left: 0;
     z-index: 2;
-    background-color: #da552f;
+    background-color: #74144f;
   }
 }
 /* line 24, ../sass/_simple-text_major-logo.scss */
@@ -3351,8 +3351,8 @@ th {
 }
 /* line 91, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct li.is-active span a {
-  border-color: #534540;
-  background-color: #534540;
+  border-color: #3e8691;
+  background-color: #3e8691;
 }
 /* line 99, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct span {
@@ -3529,7 +3529,7 @@ th {
 }
 /* line 177, ../sass/_list-text_nav.scss */
 .base-header .list-text.nav .ct a:hover {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 214, ../sass/_list-text_nav.scss */
@@ -3543,7 +3543,7 @@ th {
 /* line 251, ../sass/_list-text_nav.scss */
 .base-content .list-text.nav .ct li.is-active a {
   background-color: #ffffff;
-  color: #534540;
+  color: #3e8691;
 }
 /* line 258, ../sass/_list-text_nav.scss */
 .base-content .list-text.nav .ct span {
@@ -3574,13 +3574,13 @@ th {
 }
 /* line 345, ../sass/_list-text_nav.scss */
 .base-footer .list-text.nav .ct a:hover {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 
 /* line 7, ../sass/_list-text_minor-nav.scss */
 .list-text.minor-nav > .bg-drop-layout > .in, .list-text.minor-nav > .in {
-  background-color: #da552f;
+  background-color: #74144f;
 }
 /* line 17, ../sass/_list-text_minor-nav.scss */
 .list-text.minor-nav .hd h4 {
@@ -3606,7 +3606,7 @@ th {
 }
 /* line 53, ../sass/_list-text_minor-nav.scss */
 .list-text.minor-nav .ct li.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 59, ../sass/_list-text_minor-nav.scss */
@@ -3925,7 +3925,7 @@ th {
   display: block;
   width: 40px;
   font-size: 1.4em;
-  background-color: #b64220;
+  background-color: #490c31;
 }
 /* line 76, ../sass/_simple-text_btn.scss */
 .base-mobile .simple-text.btn .ct a:before {
@@ -4099,11 +4099,11 @@ th {
 }
 /* line 83, ../sass/_list-multiple_page-click.scss */
 .list-multiple.page-click .ct li.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 86, ../sass/_list-multiple_page-click.scss */
 .list-multiple.page-click .ct li.is-active a:hover {
-  background-color: #362d2a;
+  background-color: #2f656d;
 }
 /* line 100, ../sass/_list-multiple_page-click.scss */
 .list-multiple.page-click .ct span {
@@ -4369,7 +4369,7 @@ th {
 .list-text.tab .ct ul {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #534540;
+  border-bottom-color: #3e8691;
 }
 /* line 43, ../sass/_list-text_tab.scss */
 .list-text.tab .ct li {
@@ -4377,7 +4377,7 @@ th {
 }
 /* line 52, ../sass/_list-text_tab.scss */
 .list-text.tab .ct li.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 59, ../sass/_list-text_tab.scss */
@@ -4474,7 +4474,7 @@ th {
 }
 /* line 135, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img.is-active, .group-list.major-slider > .in > .ft li.is-img.is-active {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 140, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img.is-active a:before, .group-list.major-slider > .in > .ft li.is-img.is-active a:before {
@@ -4501,7 +4501,7 @@ th {
 }
 /* line 172, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot.is-active a, .group-list.major-slider > .in > .ft li.is-dot.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 177, ../sass/_group-list_major-slider.scss */
 .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot span, .group-list.major-slider > .in > .ft li.is-dot span {
@@ -5084,7 +5084,7 @@ th {
 }
 /* line 46, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ct, .group-list.marquee > .in > .ct {
-  background-color: #da552f;
+  background-color: #f0f0f0;
 }
 /* line 49, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ct > .in, .group-list.marquee > .in > .ct > .in {
@@ -5097,7 +5097,7 @@ th {
 }
 /* line 57, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ct > .in > ul, .group-list.marquee > .in > .ct > .in > ul {
-  width: 1000%;
+  width: 1250%;
 }
 @media (max-width: 768px) and (min-width: 561px) {
   /* line 57, ../sass/_group-list_marquee.scss */
@@ -5135,7 +5135,7 @@ th {
 /* line 50, ../sass/_base-function.scss */
 [data-js="false"] .group-list.marquee > .bg-drop-layout > .in > .ct > .in > ul > li, [data-js="false"] .group-list.marquee > .in > .ct > .in > ul > li {
   display: block;
-  width: 20%;
+  width: 25%;
 }
 /* line 50, ../sass/_base-function.scss */
 [data-js="false"] .group-list.marquee > .bg-drop-layout > .in > .ft li.next, [data-js="false"] .group-list.marquee > .bg-drop-layout > .in > .ft li.prev, [data-js="false"] .group-list.marquee > .in > .ft li.next, [data-js="false"] .group-list.marquee > .in > .ft li.prev {
@@ -5158,14 +5158,14 @@ th {
 /* line 118, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.prev a {
   left: 0;
-  background-image: url('../images/icon-pic/away-w-left.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-left.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
 /* line 126, ../sass/_group-list_marquee.scss */
 .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .in > .ft li.next a {
   right: 0;
-  background-image: url('../images/icon-pic/away-w-right.png?1474887733');
+  background-image: url('../images/icon-pic/away-b-right.png?1474887733');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -5787,7 +5787,7 @@ th {
 .area-customize.calendar .ct .caption {
   overflow: hidden;
   font-size: 1.1em;
-  color: #da552f;
+  color: #79561b;
 }
 @media (max-width: 560px) {
   /* line 75, ../sass/_area-customize_calendar.scss */
@@ -5819,7 +5819,7 @@ th {
 /* line 116, ../sass/_area-customize_calendar.scss */
 .area-customize.calendar .ct .table th span {
   padding: 5px 0;
-  background-color: #da552f;
+  background-color: #74144f;
   color: #ffffff;
 }
 /* line 123, ../sass/_area-customize_calendar.scss */
@@ -5864,20 +5864,20 @@ th {
 }
 /* line 170, ../sass/_area-customize_calendar.scss */
 .area-customize.calendar .ct .table .weekend {
-  color: #da552f;
+  color: #79561b;
 }
 /* line 173, ../sass/_area-customize_calendar.scss */
 .area-customize.calendar .ct .table .weekend.prev-mounth, .area-customize.calendar .ct .table .weekend.next-mounth {
-  color: #9f5c49;
+  color: #6e5d3f;
 }
 /* line 178, ../sass/_area-customize_calendar.scss */
 .area-customize.calendar .ct .table .today {
-  background-color: #da552f;
+  background-color: #74144f;
   color: #ffffff;
 }
 /* line 183, ../sass/_area-customize_calendar.scss */
 .area-customize.calendar .ct .table .is-active {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 189, ../sass/_area-customize_calendar.scss */
@@ -5987,7 +5987,7 @@ th {
 }
 /* line 86, ../sass/_list-text_anchor.scss */
 .list-text.anchor .ct a:hover {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 
@@ -6131,7 +6131,7 @@ th {
 /* line 133, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:before {
   top: 0;
-  background-color: #da552f;
+  background-color: #74144f;
 }
 /* line 138, ../sass/_area-customize_news-card.scss */
 .area-customize.news-card .ct .div:after {
@@ -6217,7 +6217,7 @@ th {
 }
 /* line 57, ../sass/_area-customize_icons-g2.scss */
 .area-customize.icons-g2 .ct .div:hover .img span {
-  box-shadow: 0 0 0 3px #da552f;
+  box-shadow: 0 0 0 3px #74144f;
 }
 /* line 64, ../sass/_area-customize_icons-g2.scss */
 .area-customize.icons-g2 .ct .img {
@@ -6507,6 +6507,372 @@ th {
   padding: 0 15px;
 }
 
+/* line 31, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct {
+  /*a*/
+}
+/* line 37, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 43, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct li {
+  width: 33.333%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 43, ../sass/_area-customize_ktnp-album.scss */
+  .area-customize.ktnp-album .ct li {
+    width: 50%;
+  }
+}
+@media (max-width: 560px) {
+  /* line 43, ../sass/_area-customize_ktnp-album.scss */
+  .area-customize.ktnp-album .ct li {
+    display: block;
+    width: auto;
+  }
+}
+/* line 58, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .div {
+  display: block;
+  position: relative;
+}
+/* line 64, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .div:hover .essay {
+  top: 0;
+  background-color: rgba(26, 26, 26, 0.7);
+}
+/* line 69, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .div:hover .p {
+  display: block;
+}
+/* line 77, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .img span {
+  display: block;
+  height: 240px;
+}
+/* line 83, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .img img {
+  display: none;
+}
+/* line 88, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .essay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.5);
+  transition: 150ms;
+}
+/* line 102, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .figcaption span {
+  color: #ffffff;
+}
+/* line 107, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .p {
+  display: none;
+  margin-top: 8px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 8px;
+}
+/* line 113, ../sass/_area-customize_ktnp-album.scss */
+.area-customize.ktnp-album .ct .p p {
+  color: #ffffff;
+}
+
+/* line 31, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct {
+  /*a*/
+  /*i*/
+}
+/* line 35, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct > .in > ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 40, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct > .in > ul > li {
+  display: block;
+}
+/* line 43, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct > .in > ul > li + li {
+  margin-top: 8px;
+}
+/* line 50, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div {
+  display: block;
+  position: relative;
+}
+/* line 56, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div:hover .essay {
+  top: 0;
+  background-color: rgba(26, 26, 26, 0.7);
+}
+/* line 61, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div:hover .figcaption {
+  text-align: left;
+}
+/* line 65, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div:hover .label {
+  text-align: left;
+}
+/* line 68, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div:hover .label span {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #3e8691;
+}
+/* line 74, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .div:hover .p {
+  display: block;
+}
+/* line 82, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .img span {
+  display: block;
+  height: 240px;
+}
+/* line 88, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .img img {
+  display: none;
+}
+/* line 93, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .essay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 15px;
+  padding-bottom: 0;
+  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.5);
+  transition: 150ms;
+}
+/* line 106, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .figcaption {
+  text-align: center;
+}
+/* line 109, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .figcaption span {
+  color: #ffffff;
+  font-weight: 700;
+}
+/* line 115, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .label {
+  text-align: center;
+  margin: 8px 0;
+}
+/* line 127, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .label span {
+  color: #ffffff;
+  display: inline-block;
+}
+/* line 137, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .p {
+  display: none;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+/* line 142, ../sass/_area-customize_pchouse-album.scss */
+.area-customize.pchouse-album .ct .p p {
+  color: #ffffff;
+}
+
+/* line 38, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .slider-box {
+  position: relative;
+  background-color: #1a1a1a;
+}
+/* line 43, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are {
+  margin-right: 120px;
+  overflow: hidden;
+  /*a*/
+}
+@media (max-width: 768px) {
+  /* line 43, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .pic-are {
+    margin-right: 0;
+  }
+}
+/* line 51, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .div {
+  position: relative;
+  padding: 8px;
+  min-height: 460px;
+}
+/* line 60, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .div:hover .figcaption span {
+  color: #f0f0f0;
+}
+/* line 69, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .div:hover .p p span {
+  color: #f0f0f0;
+}
+/* line 79, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .img span {
+  display: block;
+  background-image: none !important;
+}
+/* line 84, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .img img {
+  display: block;
+  width: 100%;
+}
+/* line 90, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .essay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.7);
+}
+/* line 100, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .figcaption {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+/* line 104, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .figcaption span {
+  display: block;
+  color: #ffffff;
+}
+/* line 111, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .p {
+  margin-top: 8px;
+}
+/* line 118, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-are .p span {
+  color: #ffffff;
+}
+/* line 124, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  width: 112px;
+}
+@media (max-width: 768px) {
+  /* line 124, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .list-area {
+    position: static;
+    top: auto;
+    width: auto;
+    height: auto;
+    bottom: auto;
+  }
+}
+/* line 139, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  /* line 139, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .list-area ul {
+    padding: 3px;
+  }
+}
+/* line 153, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0;
+}
+@media (max-width: 768px) {
+  /* line 153, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .list-area li {
+    position: static;
+    top: auto !important;
+    width: 20%;
+    float: left;
+    height: auto;
+  }
+}
+/* line 171, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li.is-active a span {
+  border-color: #3e8691;
+}
+/* line 177, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li + li {
+  top: 20%;
+}
+/* line 180, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li + li + li {
+  top: 40%;
+}
+/* line 183, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li + li + li + li {
+  top: 60%;
+}
+/* line 186, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li + li + li + li + li {
+  top: 80%;
+}
+/* line 189, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area li + li + li + li + li + li {
+  display: none;
+}
+/* line 198, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area a {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  bottom: 3px;
+  left: 5px;
+}
+@media (max-width: 768px) {
+  /* line 198, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .list-area a {
+    padding: 10px 5px;
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+/* line 217, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area a:hover span {
+  border-color: #74144f;
+}
+/* line 223, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area span {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+@media (max-width: 768px) {
+  /* line 223, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .list-area span {
+    position: static;
+    display: block;
+    height: 80px;
+  }
+}
+/* line 241, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .list-area img {
+  display: none;
+}
+
 /* line 5, ../sass/_group_page.scss */
 .group.page {
   border: 1px solid #e4e4e4;
@@ -6537,7 +6903,7 @@ th {
 }
 /* line 58, ../sass/_list-text_step.scss */
 .list-text.step .ct li.is-active span:before, .list-text.step .ct li.is-active span:after {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 65, ../sass/_list-text_step.scss */
 .list-text.step .ct span {
@@ -6662,7 +7028,7 @@ th {
 }
 /* line 50, ../sass/_list-text_classify.scss */
 .list-text.classify .ct li.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 57, ../sass/_list-text_classify.scss */
@@ -6694,7 +7060,7 @@ th {
 }
 /* line 11, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple.is-active {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 16, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple.is-active .hd a {
@@ -6702,12 +7068,12 @@ th {
 }
 /* line 23, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple.is-active .ct a {
-  background-color: #362d2a;
+  background-color: #2f656d;
   color: #ffffff;
 }
 /* line 27, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple.is-active .ct a:hover {
-  background-color: #191514;
+  background-color: #1f444a;
 }
 /* line 38, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple .hd {
@@ -6728,7 +7094,7 @@ th {
 }
 /* line 78, ../sass/_list-text_classify-multiple.scss */
 .list-text.classify-multiple .ct li.is-active a {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 85, ../sass/_list-text_classify-multiple.scss */
@@ -6974,7 +7340,7 @@ th {
   border-bottom-width: 3px;
   border-bottom-style: double;
   margin-bottom: 5px;
-  color: #da552f;
+  color: #79561b;
 }
 /* line 53, ../sass/_simple-text_title.scss */
 .simple-text.title .ct a:hover {
@@ -7065,7 +7431,7 @@ th {
 .area-customize.calendar-detail .ct .caption {
   overflow: hidden;
   font-size: 1.1em;
-  color: #da552f;
+  color: #79561b;
 }
 @media (max-width: 560px) {
   /* line 75, ../sass/_area-customize_calendar-detail.scss */
@@ -7098,7 +7464,7 @@ th {
 /* line 116, ../sass/_area-customize_calendar-detail.scss */
 .area-customize.calendar-detail .ct .table th span {
   padding: 5px 0;
-  background-color: #da552f;
+  background-color: #74144f;
   color: #ffffff;
 }
 /* line 123, ../sass/_area-customize_calendar-detail.scss */
@@ -7190,7 +7556,7 @@ th {
 @media (max-width: 560px) {
   /* line 201, ../sass/_area-customize_calendar-detail.scss */
   .area-customize.calendar-detail .ct .table .weekend .mark {
-    color: #da552f;
+    color: #79561b;
   }
 }
 /* line 208, ../sass/_area-customize_calendar-detail.scss */
@@ -7200,23 +7566,23 @@ th {
 @media (max-width: 560px) {
   /* line 210, ../sass/_area-customize_calendar-detail.scss */
   .area-customize.calendar-detail .ct .table .weekend.prev-mounth .mark, .area-customize.calendar-detail .ct .table .weekend.next-mounth .mark {
-    color: #9f5c49;
+    color: #6e5d3f;
   }
 }
 /* line 219, ../sass/_area-customize_calendar-detail.scss */
 .area-customize.calendar-detail .ct .table .today {
-  color: #da552f;
+  color: #74144f;
   /*a*/
 }
 @media (max-width: 560px) {
   /* line 219, ../sass/_area-customize_calendar-detail.scss */
   .area-customize.calendar-detail .ct .table .today {
-    background-color: #da552f;
+    background-color: #74144f;
   }
 }
 /* line 230, ../sass/_area-customize_calendar-detail.scss */
 .area-customize.calendar-detail .ct .table .today .list a:before {
-  background-color: #da552f;
+  background-color: #74144f;
 }
 @media (max-width: 560px) {
   /* line 236, ../sass/_area-customize_calendar-detail.scss */
@@ -7231,16 +7597,16 @@ th {
 @media (max-width: 560px) {
   /* line 244, ../sass/_area-customize_calendar-detail.scss */
   .area-customize.calendar-detail .ct .table .is-active {
-    background-color: #534540;
+    background-color: #3e8691;
   }
 }
 /* line 254, ../sass/_area-customize_calendar-detail.scss */
 .area-customize.calendar-detail .ct .table .is-active .list a:before {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 260, ../sass/_area-customize_calendar-detail.scss */
 .area-customize.calendar-detail .ct .table .is-active .mark {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 @media (max-width: 560px) {
   /* line 260, ../sass/_area-customize_calendar-detail.scss */
@@ -7304,7 +7670,7 @@ th {
 /* line 37, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .caption {
   font-size: 1.1em;
-  color: #da552f;
+  color: #79561b;
   text-align: center;
 }
 /* line 42, ../sass/_area-customize_calendar-detail02.scss */
@@ -7337,11 +7703,11 @@ th {
 /* line 70, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list li.is-active a {
   color: #ffffff;
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 74, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list li.is-active a:hover {
-  background-color: #362d2a;
+  background-color: #2f656d;
 }
 /* line 78, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list li.is-active a:before {
@@ -7360,12 +7726,12 @@ th {
   line-height: 30px;
   text-align: center;
   border-radius: 3px;
-  background-color: #f7dad1;
+  background-color: #f7d1e8;
   transition: 150ms;
 }
 /* line 100, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .list a:hover {
-  background-color: #e99a83;
+  background-color: #ea82c2;
   color: inherit;
 }
 /* line 105, ../sass/_area-customize_calendar-detail02.scss */
@@ -7445,11 +7811,11 @@ th {
 }
 /* line 202, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr:nth-child(odd) {
-  background-color: #faeae6;
+  background-color: #fbe5f2;
 }
 /* line 206, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr:hover {
-  background-color: #e99a83;
+  background-color: #ea82c2;
 }
 /* line 212, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table tr a:hover {
@@ -7487,7 +7853,7 @@ th {
 /* line 246, ../sass/_area-customize_calendar-detail02.scss */
 .area-customize.calendar-detail02 .ct .table td .mark {
   display: inline-block;
-  background-color: #534540;
+  background-color: #3e8691;
   padding: 3px 8px;
   border-radius: 30px;
   color: #ffffff;
@@ -7524,7 +7890,7 @@ th {
 .area-customize.calendar-detail03 .ct .caption {
   float: left;
   font-size: 1.4em;
-  color: #da552f;
+  color: #79561b;
   /*i*/
 }
 @media (max-width: 560px) {
@@ -7588,13 +7954,13 @@ th {
 .area-customize.calendar-detail03 .ct .label a {
   display: block;
   padding: 5px 15px;
-  color: #da552f;
-  border: 1px solid #da552f;
+  color: #74144f;
+  border: 1px solid #74144f;
   transition: 150ms;
 }
 /* line 124, ../sass/_area-customize_calendar-detail03.scss */
 .area-customize.calendar-detail03 .ct .label a:hover {
-  background-color: #da552f;
+  background-color: #74144f;
   color: #ffffff;
 }
 /* line 131, ../sass/_area-customize_calendar-detail03.scss */
@@ -7685,7 +8051,7 @@ th {
 }
 /* line 235, ../sass/_area-customize_calendar-detail03.scss */
 .area-customize.calendar-detail03 .ct .table .today .mark {
-  background-color: #da552f;
+  background-color: #74144f;
   color: #ffffff;
 }
 /* line 249, ../sass/_area-customize_calendar-detail03.scss */
@@ -7713,11 +8079,11 @@ th {
   text-align: left;
   padding: 3px;
   border-radius: 3px;
-  background-color: #f2efee;
+  background-color: #eaf4f6;
 }
 /* line 279, ../sass/_area-customize_calendar-detail03.scss */
 .area-customize.calendar-detail03 .ct .table .list a:hover {
-  background-color: #e7e2e1;
+  background-color: #d9ecef;
   color: inherit;
 }
 /* line 286, ../sass/_area-customize_calendar-detail03.scss */
@@ -7773,7 +8139,7 @@ th {
   margin: 0 30px;
   font-size: 1.1em;
   font-weight: 700;
-  color: #da552f;
+  color: #79561b;
   text-align: center;
 }
 /* line 100, ../sass/_area-customize_calendar-schedule.scss */
@@ -7846,7 +8212,7 @@ th {
 }
 /* line 193, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .table .weekend {
-  color: #534540;
+  color: #3e8691;
 }
 /* line 196, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .table .weekend.prev-mounth, .area-customize.calendar-schedule .ct .table .weekend.next-mounth {
@@ -7860,7 +8226,7 @@ th {
 /* line 207, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .table .today span:after {
   content: "​";
-  background-color: #da552f;
+  background-color: #74144f;
 }
 /* line 213, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .table .today a {
@@ -7877,7 +8243,7 @@ th {
 }
 /* line 239, ../sass/_area-customize_calendar-schedule.scss */
 .area-customize.calendar-schedule .ct .list li.is-event a:before {
-  background-color: #da552f;
+  background-color: #74144f;
   border-radius: 50%;
 }
 /* line 250, ../sass/_area-customize_calendar-schedule.scss */
@@ -10080,28 +10446,28 @@ th {
 .area-form.page-form .ct .fieldset span[data-message]:after {
   content: attr(data-message);
   margin-left: 3px;
-  color: #534540;
+  color: #3e8691;
 }
 /* line 64, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.is-required label:before {
   content: '* ';
-  color: #534540;
+  color: #3e8691;
 }
 /* line 73, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.is-error label {
-  color: #534540;
+  color: #3e8691;
 }
 /* line 77, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.is-error input {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 81, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.is-error select {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 85, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.is-error textarea {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 90, ../sass/_area-form_page-form.scss */
 .area-form.page-form .ct .fieldset span.select {
@@ -10279,28 +10645,28 @@ th {
 .area-form.submit .ct .fieldset span[data-message]:after {
   content: attr(data-message);
   margin-left: 3px;
-  color: #534540;
+  color: #3e8691;
 }
 /* line 65, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span.is-required label:before {
   content: '* ';
-  color: #534540;
+  color: #3e8691;
 }
 /* line 74, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span.is-error label {
-  color: #534540;
+  color: #3e8691;
 }
 /* line 78, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span.is-error input {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 82, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span.is-error select {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 86, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span.is-error textarea {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 91, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset span label {
@@ -10804,20 +11170,20 @@ th {
 .area-form.sign-in .ct .fieldset span[data-message]:after {
   content: attr(data-message);
   margin-left: 3px;
-  color: #534540;
+  color: #3e8691;
 }
 /* line 64, ../sass/_area-form_sign-in.scss */
 .area-form.sign-in .ct .fieldset span.is-required label:before {
   content: '* ';
-  color: #534540;
+  color: #3e8691;
 }
 /* line 73, ../sass/_area-form_sign-in.scss */
 .area-form.sign-in .ct .fieldset span.is-error label {
-  color: #534540;
+  color: #3e8691;
 }
 /* line 77, ../sass/_area-form_sign-in.scss */
 .area-form.sign-in .ct .fieldset span.is-error input {
-  border-color: #534540;
+  border-color: #3e8691;
 }
 /* line 82, ../sass/_area-form_sign-in.scss */
 .area-form.sign-in .ct .fieldset span label {
@@ -11145,7 +11511,7 @@ th {
 }
 /* line 90, ../sass/_area-table_page-table.scss */
 .area-table.page-table .ct th {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 99, ../sass/_area-table_page-table.scss */
@@ -11249,7 +11615,7 @@ th {
   padding-bottom: 3px;
   border-bottom: 1px solid #e4e4e4;
   margin: 0 8px;
-  color: #da552f;
+  color: #79561b;
 }
 @media (max-width: 560px) {
   /* line 139, ../sass/_area-table_rwd-table.scss */
@@ -11276,7 +11642,7 @@ th {
 }
 /* line 177, ../sass/_area-table_rwd-table.scss */
 .area-table.rwd-table .ct th {
-  background-color: #534540;
+  background-color: #3e8691;
   color: #ffffff;
 }
 /* line 186, ../sass/_area-table_rwd-table.scss */
@@ -11334,7 +11700,7 @@ th {
 
 /* line 11, ../sass/_simple-text_vote-result.scss */
 .is-special .simple-text.vote-result .ct span {
-  background-color: #534540;
+  background-color: #3e8691;
 }
 /* line 27, ../sass/_simple-text_vote-result.scss */
 .simple-text.vote-result .hd h4 {
