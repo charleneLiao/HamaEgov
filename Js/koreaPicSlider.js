@@ -3,54 +3,39 @@ define(['getNode'], function(getNode){
 	function main(env, opt, file){
 
 		var $set = {
-				auto: false, //是否自動撥放
+				auto: true, //是否自動撥放
 				delay: 5000, //停留時間
 				speed: 300, //輪播速度
-				event: 'click', //jQuery 事件名稱
+				event: 'focus', //jQuery 事件名稱
 				activeClass: 'is-active', //啟動的 class
 				debug: false
 			}
 
 		$.extend($set, opt);
 
-		var $this = $(env),
-			$list = $this.find('.list-area'),
+		var $env = $(env),
+			$list = $env.find('.list-area'),
 			$item = $list.find('li'),
-			$a = $item.find('a');
+			$a = $item.find('a'),
+			$a_l = $a.length;
 
-		var $pic_area = $this.find('.slider-box'),
+		var $pic_area = $env.find('.pic-area'),
 			$pic_area_a = $pic_area.find('a'),
 			$pic_area_img = $pic_area_a.find('img'),
 			$pic_area_span = $pic_area_img.closest('span'),
-			$pic_area_caption = $pic_area_a.find('.caption span'),
+			$pic_area_caption = $pic_area_a.find('.figcaption span'),
 			$pic_area_p = $pic_area_a.find('.p span');
 
-		var _eventNmae = file, //事件名稱
+		var _index = 0,
+			_eventNmae = file, //事件名稱
 			_active = $set.activeClass; //被選擇的 class name
 
 		$a.on(_eventNmae, function(){
-			var $this = $(this),
-				$img = $this.find('img'),
-				$li = $this.closest('li'),
-				_href = $this.attr('href'),
-				_src = $img.attr('src'),
-				_alt = $img.attr('alt'),
-				_title = $img.attr('title');
+			var $this = $(this);
 
-			$item.removeClass($set.activeClass);
-			$li.addClass($set.activeClass);
+			_index = $this.closest('li').index();
 
-			$pic_area_a.fadeOut($set.speed, function() {
-				$pic_area_a.attr('href', _href);
-				$pic_area_img.attr('src', _src);
-				$pic_area_span.css({
-					'background-image': _src
-				});
-				$pic_area_caption.text(_title);
-				$pic_area_p.text(_alt);
-			});
-
-			$pic_area_a.fadeIn();
+			slider(_index);
 		});
 
 		$a.on( $set.event, function(evt){ //觸發事件
@@ -59,116 +44,53 @@ define(['getNode'], function(getNode){
 			$(this).trigger(_eventNmae);
 		});
 
+		slider(0);
 
+		function slider(_index) {
+			var $this = $a.eq(_index),
+				$img = $this.find('img'),
+				$li = $this.closest('li'),
+				_href = $this.attr('href'),
+				_src = $img.attr('src'),
+				_alt = $img.attr('alt'),
+				_title = $img.attr('title');
 
-		// var $env = $(env),
-		// 	$all_item = getNode.getCtItem(env),
-		// 	$items = $all_item.filter(function(i) { //過濾第一個 jquery 物件，也就是 tab
-		// 		return !!i;
-		// 	}),
-		// 	$items_l = $items.length,
-		// 	$tabs = $all_item.eq(0),
-		// 	$tabs_li = $tabs.find('li'),
-		// 	$tab_a = $tabs_li.find('a'),
-		// 	$tab_a_length = $tab_a.length - 1;
+			$pic_area_a.stop().fadeOut($set.speed, function() {
 
-		// var _tab_key = 9,
-		// 	_index = 0;
+				$item.removeClass($set.activeClass);
+				$li.addClass($set.activeClass);
 
-		// $items.each(function(i, n){
-		// 	var $this = $(this),
-		// 		$hd = $this.find('.hd'),
-		// 		$hd_a = $hd.find('a');
+				$pic_area_a.attr('href', _href);
+				$pic_area_img.attr('src', _src);
+				$pic_area_span.css({
+					'background-image': _src
+				});
+				$pic_area_caption.text(_title);
+				$pic_area_p.text(_alt);
+			}).fadeIn($set.speed);
+		}
 
-		// 	$hd_a.each(function(i, n){
-		// 		var $this = $(this),
-		// 			_href = $this.attr('href');
+		if ($set.auto) { //如果要輪播
+			var timer; //設定計時器
 
-		// 		if( !_href || _href === '#' ) {
-		// 			$this.removeAttr('href');
-		// 		}
-		// 	});
+			function auto() { //設定自動撥放涵式
 
-		// 	if( $hd.css('display') === 'none' ) {
-		// 		$hd.find('a').removeAttr('href');
-		// 	}
-		// });
+				_index = (_index + 1 + $a_l) % $a_l; //算出第幾個要被撥放
 
-		// for( var i = 0; i < $tab_a_length; i++ ) { //註冊無障礙 tab 事件
-
-		// 	(function(i){
-		// 		var $a = $items.eq(i).find('a[href]');
-
-		// 		if($a.length) {
-
-		// 			$tab_a.eq(i).on('keydown', function(evt){ //觸發事件
-
-		// 				if( evt.which === _tab_key ) {
-		// 					evt.preventDefault();
-
-		// 					$a.eq(0).focus();
-		// 				}
-		// 			});
-
-		// 			$a.eq(-1).on('keydown', function(evt){ //觸發事件
-
-		// 				if( evt.which === _tab_key ) {
-		// 					evt.preventDefault();
-
-		// 					$tab_a.eq(i + 1).focus();
-		// 				}
-		// 			});
-		// 		}
-		// 	})(i)
-		// }
-
-		// var _eventNmae = file, //事件名稱
-		// 	_active = $set.activeClass; //被選擇的 class name
-
-		// $tab_a.on(_eventNmae, function(){
-		// 	var $this = $(this);
-
-		// 	_index = $this.closest('li').index();
-
-		// 	slider(_index);
-		// });
-
-		// $tab_a.on( $set.event, function(evt){ //觸發事件
-		// 	evt.preventDefault();
-
-		// 	$(this).trigger(_eventNmae);
-		// });
-
-		// slider(0);
-
-		// function slider(_index) {
-		// 	$tabs_li.removeClass(_active);
-		// 	$tabs_li.eq(_index).addClass(_active);
-		// 	$items.hide();
-		// 	$items.eq(_index).show();
-		// }
-
-		// if ($set.auto) { //如果要輪播
-		// 	var timer; //設定計時器
-
-		// 	function auto() { //設定自動撥放涵式
-
-		// 		_index = (_index + 1 + $items_l) % $items_l; //算出第幾個要被撥放
-
-		// 		slider(_index); //預設向右撥放
-		// 		timer = setTimeout(auto, $set.delay);
-		// 	}
+				slider(_index); //預設向右撥放
+				timer = setTimeout(auto, $set.delay);
+			}
 			
-		// 	$env.on('mouseenter', function(){ //設定滑進滑出項目
-		// 		clearTimeout(timer);
-		// 	});
+			$env.on('mouseenter', function(){ //設定滑進滑出項目
+				clearTimeout(timer);
+			});
 
-		// 	$env.on('mouseleave', function(){
-		// 		timer = setTimeout(auto, $set.delay);
-		// 	});
+			$env.on('mouseleave', function(){
+				timer = setTimeout(auto, $set.delay);
+			});
 
-		// 	timer = setTimeout(auto, $set.delay); //輪播開始
-		// }
+			timer = setTimeout(auto, $set.delay); //輪播開始
+		}
 
 		if($set.debug) {
 			console.log('預設值:', $set);

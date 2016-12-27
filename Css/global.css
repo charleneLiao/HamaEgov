@@ -47,7 +47,7 @@
 }
 
 /* line 554, ../sass/_base-function.scss */
-.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption span, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .area-customize.korea-pic-slider .ct .pic-are .figcaption span, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
+.base-header .group.nav > .bg-drop-layout > .in > .hd a, .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a, .base-footer .group.nav > .in > .hd a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .area-essay.message02 .ct .caption span, .area-customize.message .ct .caption, .area-customize.message02 .ct .caption, .area-customize.korea-pic-slider .ct .pic-area .figcaption span, .list-text.step .ct a, .area-customize.calendar-detail .ct .caption, .list-text.message .ct a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1827,10 +1827,25 @@ th {
   cursor: pointer;
 }
 /* line 159, ../sass/_sys-root.scss */
+.sys-root img {
+  position: relative;
+}
+/* line 162, ../sass/_sys-root.scss */
+.sys-root img:after {
+  content: "​";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+/* line 174, ../sass/_sys-root.scss */
 .sys-root [href] {
   cursor: pointer;
 }
-/* line 163, ../sass/_sys-root.scss */
+/* line 178, ../sass/_sys-root.scss */
 .sys-root [disabled] {
   cursor: not-allowed;
 }
@@ -6261,24 +6276,25 @@ th {
 .area-essay.message02 .ct .div:hover .p {
   text-decoration: underline;
 }
-/* line 53, ../sass/_area-essay_message02.scss */
+/* line 55, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .img {
   position: relative;
 }
-/* line 56, ../sass/_area-essay_message02.scss */
+/* line 58, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .img span {
   display: block;
 }
-/* line 60, ../sass/_area-essay_message02.scss */
+/* line 62, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .img img {
   display: block;
   width: 100%;
+  min-height: 36px;
 }
-/* line 66, ../sass/_area-essay_message02.scss */
+/* line 69, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .essay {
   position: relative;
 }
-/* line 70, ../sass/_area-essay_message02.scss */
+/* line 73, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .caption {
   position: absolute;
   left: 0;
@@ -6288,18 +6304,18 @@ th {
   background-color: #1a1a1a;
   background-color: rgba(26, 26, 26, 0.5);
 }
-/* line 79, ../sass/_area-essay_message02.scss */
+/* line 82, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .caption span {
   display: block;
   line-height: 36px;
   color: #ffffff;
   text-align: center;
 }
-/* line 90, ../sass/_area-essay_message02.scss */
+/* line 93, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .label ul {
   padding: 8px;
 }
-/* line 107, ../sass/_area-essay_message02.scss */
+/* line 110, ../sass/_area-essay_message02.scss */
 .area-essay.message02 .ct .p {
   padding: 8px;
   min-height: 160px;
@@ -6691,43 +6707,48 @@ th {
   background-color: #1a1a1a;
 }
 /* line 43, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are {
+.area-customize.korea-pic-slider .ct .pic-area {
   margin-right: 120px;
   overflow: hidden;
   /*a*/
 }
 @media (max-width: 768px) {
   /* line 43, ../sass/_area-customize_korea-pic-slider.scss */
-  .area-customize.korea-pic-slider .ct .pic-are {
+  .area-customize.korea-pic-slider .ct .pic-area {
     margin-right: 0;
   }
 }
 /* line 51, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .div {
+.area-customize.korea-pic-slider .ct .pic-area .div {
   position: relative;
-  padding: 8px;
-  min-height: 460px;
+  margin: 8px;
 }
-/* line 60, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .div:hover .figcaption span {
+@media (max-width: 768px) {
+  /* line 51, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .pic-area .div {
+    margin-bottom: 0;
+  }
+}
+/* line 63, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .div:hover .figcaption span {
   color: #f0f0f0;
 }
-/* line 69, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .div:hover .p p span {
+/* line 72, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .div:hover .p p span {
   color: #f0f0f0;
 }
-/* line 79, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .img span {
+/* line 82, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .img span {
   display: block;
   background-image: none !important;
 }
-/* line 84, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .img img {
+/* line 87, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .img img {
   display: block;
   width: 100%;
 }
-/* line 90, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .essay {
+/* line 93, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .essay {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -6736,25 +6757,44 @@ th {
   background-color: #1a1a1a;
   background-color: rgba(26, 26, 26, 0.7);
 }
-/* line 100, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .figcaption {
+@media (max-width: 560px) {
+  /* line 93, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .pic-area .essay {
+    padding: 8px;
+  }
+}
+/* line 107, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .figcaption {
   font-weight: 700;
   font-size: 1.1em;
 }
-/* line 104, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .figcaption span {
+@media (max-width: 560px) {
+  /* line 107, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .pic-area .figcaption {
+    font-weight: 400;
+    font-size: 1em;
+  }
+}
+/* line 116, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .figcaption span {
   display: block;
   color: #ffffff;
 }
-/* line 111, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .p {
+/* line 123, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .p {
   margin-top: 8px;
 }
-/* line 118, ../sass/_area-customize_korea-pic-slider.scss */
-.area-customize.korea-pic-slider .ct .pic-are .p span {
+@media (max-width: 560px) {
+  /* line 123, ../sass/_area-customize_korea-pic-slider.scss */
+  .area-customize.korea-pic-slider .ct .pic-area .p {
+    display: none;
+  }
+}
+/* line 134, ../sass/_area-customize_korea-pic-slider.scss */
+.area-customize.korea-pic-slider .ct .pic-area .p span {
   color: #ffffff;
 }
-/* line 124, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 140, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area {
   position: absolute;
   top: 8px;
@@ -6763,7 +6803,7 @@ th {
   width: 112px;
 }
 @media (max-width: 768px) {
-  /* line 124, ../sass/_area-customize_korea-pic-slider.scss */
+  /* line 140, ../sass/_area-customize_korea-pic-slider.scss */
   .area-customize.korea-pic-slider .ct .list-area {
     position: static;
     top: auto;
@@ -6772,27 +6812,27 @@ th {
     bottom: auto;
   }
 }
-/* line 139, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 155, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 @media (max-width: 768px) {
-  /* line 139, ../sass/_area-customize_korea-pic-slider.scss */
+  /* line 155, ../sass/_area-customize_korea-pic-slider.scss */
   .area-customize.korea-pic-slider .ct .list-area ul {
     padding: 3px;
   }
 }
-/* line 153, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 169, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li {
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 19%;
   top: 0;
 }
 @media (max-width: 768px) {
-  /* line 153, ../sass/_area-customize_korea-pic-slider.scss */
+  /* line 169, ../sass/_area-customize_korea-pic-slider.scss */
   .area-customize.korea-pic-slider .ct .list-area li {
     position: static;
     top: auto !important;
@@ -6801,41 +6841,41 @@ th {
     height: auto;
   }
 }
-/* line 171, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 187, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li.is-active a span {
-  border-color: #3e8691;
+  border: 3px solid #74144f;
 }
-/* line 177, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 193, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li + li {
-  top: 20%;
+  top: 20.25%;
 }
-/* line 180, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 196, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li + li + li {
-  top: 40%;
+  top: 40.5%;
 }
-/* line 183, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 199, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li + li + li + li {
-  top: 60%;
+  top: 60.75%;
 }
-/* line 186, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 202, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li + li + li + li + li {
-  top: 80%;
+  top: 81%;
 }
-/* line 189, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 205, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area li + li + li + li + li + li {
   display: none;
 }
-/* line 198, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 214, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area a {
   display: block;
   position: absolute;
-  top: 3px;
-  right: 5px;
-  bottom: 3px;
-  left: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
-  /* line 198, ../sass/_area-customize_korea-pic-slider.scss */
+  /* line 214, ../sass/_area-customize_korea-pic-slider.scss */
   .area-customize.korea-pic-slider .ct .list-area a {
     padding: 10px 5px;
     position: static;
@@ -6845,11 +6885,11 @@ th {
     left: auto;
   }
 }
-/* line 217, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 233, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area a:hover span {
-  border-color: #74144f;
+  border: 3px solid #74144f;
 }
-/* line 223, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 239, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area span {
   position: absolute;
   display: block;
@@ -6858,17 +6898,16 @@ th {
   bottom: 0;
   left: 0;
   box-sizing: border-box;
-  border: 3px solid transparent;
 }
 @media (max-width: 768px) {
-  /* line 223, ../sass/_area-customize_korea-pic-slider.scss */
+  /* line 239, ../sass/_area-customize_korea-pic-slider.scss */
   .area-customize.korea-pic-slider .ct .list-area span {
     position: static;
     display: block;
     height: 80px;
   }
 }
-/* line 241, ../sass/_area-customize_korea-pic-slider.scss */
+/* line 256, ../sass/_area-customize_korea-pic-slider.scss */
 .area-customize.korea-pic-slider .ct .list-area img {
   display: none;
 }

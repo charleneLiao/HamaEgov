@@ -40,7 +40,7 @@
 			background-color: $black;
 		}
 
-		.pic-are {
+		.pic-area {
 			margin-right: $list-are_w;
 			overflow: hidden;
 
@@ -50,8 +50,11 @@
 			
 			/*a*/.div {
 				position: relative;
-				padding: $interval-m;
-				min-height: 460px;
+				margin: $interval-m;
+
+				@include media('mobile') {
+					margin-bottom: 0;
+				}
 
 				&:hover {
 
@@ -95,11 +98,20 @@
 				padding: $interval-xl;
 				background-color: $black;
 				background-color: rgba($black, $opacity-h);
+
+				@include media('phone') {
+					padding: $interval-m;
+				}
 			}
 
 			.figcaption {
 				font-weight: $font-weight-b;
 				font-size: $font-size-l;
+
+				@include media('phone') {
+					font-weight: $font-weight-n;
+					font-size: $font-size-m;
+				}
 
 				span {
 					display: block;
@@ -110,6 +122,10 @@
 
 			.p {
 				margin-top: $interval-m;
+
+				@include media('phone') {
+					display: none;
+				}
 
 				p {
 
@@ -153,7 +169,7 @@
 			li { //1
 				position: absolute;
 				width: 100%;
-				height: 20%;
+				height: 19%;
 				top: 0;
 
 				@include media('mobile') {
@@ -169,22 +185,22 @@
 					a {
 
 						span {
-							border-color: $minor-color;
+							border: $interval-xs solid $major-color;
 						}
 					}
 				}
 
 				+ li { //2
-					top: 20%;
+					top: 20.25%;
 
 					+ li { //3
-						top: 40%;
+						top: 40.5%;
 
 						+ li { //4
-							top: 60%;
+							top: 60.75%;
 
 							+ li { //5
-								top: 80%;
+								top: 81%;
 								
 								+ li {
 									display: none;
@@ -198,10 +214,10 @@
 			a {
 				display: block;
 				position: absolute;
-				top: $interval-xs;
-				right: $interval-s;
-				bottom: $interval-xs;
-				left: $interval-s;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
 
 				@include media('mobile') {
 					padding: 10px 5px;
@@ -215,7 +231,7 @@
 				&:hover {
 
 					span {
-						border-color: $major-color;
+						border: $interval-xs solid $major-color;
 					}
 				}
 			}
@@ -228,7 +244,6 @@
 				bottom: 0;
 				left: 0;
 				box-sizing: border-box;
-				border: $interval-xs solid transparent;
 				@extend %bg-cover;
 
 				@include media('mobile') {

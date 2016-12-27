@@ -50,6 +50,8 @@
 			}
 		}
 
+		$caption_h: 36px;
+
 		.img {
 			position: relative;
 
@@ -60,6 +62,7 @@
 			img {
 				display: block;
 				width: 100%;
+				min-height: $caption_h;
 			}
 		}
 
@@ -79,7 +82,7 @@
 			span {
 				display: block;
 				@extend %ellipsis;
-				line-height: 36px;
+				line-height: $caption_h;
 				color: $white;
 				text-align: center;
 			}
