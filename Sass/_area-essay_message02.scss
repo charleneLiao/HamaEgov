@@ -109,14 +109,20 @@
 
 		.p {
 			padding: $interval-m;
-			min-height: 160px;
+			padding-bottom: $interval-l;
 
 			p {
-
+				display: block;
 			}
 
 			span {
+				$lh: 26px;
+				$ll: 5;
 
+				display: block;
+				height: $ll * $lh;
+				line-height: $lh;
+				overflow: hidden;
 			}
 		}
 	}

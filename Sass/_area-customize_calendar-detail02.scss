@@ -69,10 +69,10 @@
 
 					a {
 						color: $white;
-						background-color: $minor-color;
+						background-color: $major-color;
 
 						&:hover {
-							background-color: deeper($minor-color);
+							background-color: deeper($major-color);
 						}
 
 						&:before {
@@ -94,11 +94,11 @@
 				line-height: $size;
 				text-align: center;
 				border-radius: $border-radius;
-				background-color: hsl( hue($major-color), saturation($major-color),  lightness($light-gray));
+				background-color: $light;
 				transition: $transition;
 
 				&:hover {
-					background-color: hsl( hue($major-color), saturation($major-color), lightness($gray));
+					background-color: hsl( hue($major-color), saturation($major-color), lightness($light));
 					color: inherit;
 				}
 
@@ -200,11 +200,11 @@
 				}
 
 				&:nth-child(odd) {
-					background-color: hsl( hue($major-color), saturation($major-color),  lightness($light));
+					background-color: $light;
 				}
 
 				&:hover {
-					background-color: hsl( hue($major-color), saturation($major-color), lightness($gray));
+					background-color: hsl( hue($major-color), saturation($major-color), lightness($light));
 				}
 
 				a {

@@ -63,7 +63,7 @@
 					}
 
 					+ li { //2+
-						margin-top: $interval-s;
+						margin-top: $interval-m;
 					}
 				}
 			}
@@ -100,9 +100,10 @@
 
 		.label {
 			float: left;
+			min-width: $size - 2px + $interval-l;
+			width: 12%;
 
 			ul {
-				width: $size - 2px;
 				height: $size - 2px;
 				border: $border;
 			}
