@@ -31,7 +31,8 @@
 	.ct {
 
 		> .in {
-			
+			border-top: 2px solid $deep-gray;
+			border-bottom: 1px solid $deep-gray;
 		}
 
 		table {
@@ -45,37 +46,45 @@
 		thead {
 
 			tr {
-				border-bottom: 3px double $border-color;
-				background-color: $light;
+
 			}
 
-			th, td {
-				border: $border;
+			th {
+				border-bottom: 1px solid $deep-gray;
+			}
+
+			td {
+				border-bottom: 1px solid $light-gray;
 			}
 		}
 
 		tbody {
 
 			tr {
-				
-				&:nth-child(even) {
+
+				&:hover {
 					background-color: $light;
+					color: $major-color;
 				}
 			}
 
-			th, td {
-				border: $border;
+			th {
+				border-bottom: 1px solid $deep-gray;
+			}
+
+			td {
+				border-bottom: 1px solid $light-gray;
 			}
 		}
 
 		tfoot {
 
 			th, td {
-				padding-top: $interval-m;
+
 			}
 
 			span {
-				@extend %article-extend;
+
 			}
 		}
 
@@ -88,8 +97,8 @@
 		}
 
 		th {
-			background-color: $minor-color;
-			color: $white;
+			font-weight: $font-weight-b;
+			text-align: center;
 		}
 
 		td {

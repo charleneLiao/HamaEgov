@@ -3,7 +3,7 @@
 //內頁圖片列表================================================================
 
 .list-pic.page-list {
-	@include default-len(4, 5);
+	@include default-len(4, 3);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -40,17 +40,31 @@
 		}
 
 		li {
-			@include len-rwd('pad', 3);
-			@include len-rwd('phone', 1);
+			@include len-rwd('phone', 2);
+
+			&.is-img {
+				
+				a {
+					@include bg-to-pic('icon-pic/icon-w-img.png', false);
+					background-position: bottom $interval-s left $interval-s;
+				}
+			}
+
+			&.is-video {
+				
+				a {
+					@include bg-to-pic('icon-pic/icon-w-video.png', false);
+					background-position: bottom $interval-s left $interval-s;
+				}
+			}
 		}
 
 		span {
 			@extend %bg-cover;
 			position: relative;
 			display: block;
-			margin: $interval-xs;
-			border: $interval-xs solid $light-gray;
-			height: 100px;
+			margin: $interval-s;
+			height: 140px;
 
 			@include media('phone') {
 				height: 180px;
@@ -64,11 +78,11 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-color: rgba($black, $opacity-m);
+			background-color: transparent;
 			transition: $transition;
 
 			&:hover {
-				opacity: 0;
+				background-color: rgba($black, $opacity-m);
 			}
 
 			@include media('mobile') {

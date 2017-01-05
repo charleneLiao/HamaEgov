@@ -4,7 +4,7 @@
 
 .base-aside {
 	@extend %area-module;
-	width: 190px;
+	width: 220px;
 	float: left;
 
 	@include media('mobile') {

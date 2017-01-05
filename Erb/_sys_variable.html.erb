@@ -37,4 +37,12 @@
 
 		return @set
 	end
+
+#隨機圖片的方法================================================================
+
+	def lorem_image(opt = "200x200")
+
+		#return "https://dummyimage.com/#{opt}"
+		return "http://placekitten.com/g/#{opt.sub("x", "/")}"
+	end
 %>

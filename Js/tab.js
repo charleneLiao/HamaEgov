@@ -1,4 +1,4 @@
-define(['getNode'], function(getNode){
+		define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -20,7 +20,7 @@ define(['getNode'], function(getNode){
 			$items_l = $items.length,
 			$tabs = $all_item.eq(0),
 			$tabs_li = $tabs.find('li'),
-			$tab_a = $tabs_li.find('a'),
+			$tab_a = $tabs_li.find('a, input'),
 			$tab_a_length = $tab_a.length - 1;
 
 		var _tab_key = 9,
@@ -48,7 +48,7 @@ define(['getNode'], function(getNode){
 		for( var i = 0; i < $tab_a_length; i++ ) { //註冊無障礙 tab 事件
 
 			(function(i){
-				var $a = $items.eq(i).find('a[href]');
+				var $a = $items.eq(i).find('a[href], input');
 
 				if($a.length) {
 

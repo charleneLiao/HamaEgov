@@ -178,7 +178,7 @@
 
 					$pic: map-get($map, 'pic');
 					$color: map-get($map, 'color');
-					$deep-color: deeper($color);;
+					$deep-color: deeper($color);
 
 					&.#{$key}{
 

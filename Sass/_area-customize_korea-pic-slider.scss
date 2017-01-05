@@ -4,6 +4,10 @@
 
 .area-customize.korea-pic-slider {
 
+	@include js(false) {
+		display: none;
+	}
+
 	> .bg-drop-layout > .in, > .in {
 
 	}
@@ -29,7 +33,7 @@
 	}
 
 	.ct {
-		$list-are_w: 120px;
+		$list-are_w: 160px;
 
 		> .in {
 
@@ -173,7 +177,7 @@
 				top: 0;
 
 				@include media('mobile') {
-					position: static;
+					position: relative;
 					top: auto !important;
 					width: 20%;
 					float: left;
@@ -182,11 +186,8 @@
 
 				&.is-active {
 
-					a {
-
-						span {
-							border: $interval-xs solid $major-color;
-						}
+					span {
+						border-color: $major-color;
 					}
 				}
 
@@ -211,6 +212,27 @@
 				}
 			}
 
+			span {
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				box-sizing: border-box;
+				border: $interval-xs solid transparent;
+				@extend %bg-cover;
+
+				@include media('mobile') {
+					margin: 10px 5px;
+					position: relative;
+					top: auto;
+					right: auto;
+					left: auto;
+					bottom: auto;
+				}
+			}
+
 			a {
 				display: block;
 				position: absolute;
@@ -220,8 +242,8 @@
 				left: 0;
 
 				@include media('mobile') {
-					padding: 10px 5px;
 					position: static;
+					height: 80px;
 					top: auto;
 					right: auto;
 					bottom: auto;
@@ -233,23 +255,6 @@
 					span {
 						border: $interval-xs solid $major-color;
 					}
-				}
-			}
-
-			span {
-				position: absolute;
-				display: block;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				box-sizing: border-box;
-				@extend %bg-cover;
-
-				@include media('mobile') {
-					position: static;
-					display: block;
-					height: 80px;
 				}
 			}
 

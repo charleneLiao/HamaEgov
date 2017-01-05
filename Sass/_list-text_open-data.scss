@@ -3,7 +3,10 @@
 //開放資料================================================================
 
 .list-text.open-data {
+	position: relative;
 	display: inline-block;
+	vertical-align: middle;
+	z-index: 2;
 
 	@include js(false) {
 		display: none;
@@ -15,22 +18,20 @@
 
 	&:hover, &.is-active {
 
-		> .bg-drop-layout > .in, > .in {
+		.hd {
+			background-color: $white;
 
-			.hd {
+			a {
+				color: $major-color;
 
-				a {
-					background-color: $light;
-
-					&:before {
-						@include icon-font('arrow_drop_up');
-					}
+				&:before {
+					@include icon-font('arrow_drop_up');
 				}
 			}
+		}
 
-			.ct {
-				display: block;
-			}
+		.ct {
+			display: block;
 		}
 	}
 
@@ -39,6 +40,9 @@
 	}
 
 	.hd {
+		background-color: $light;
+		border: $border;
+		border-bottom-width: 0;
 
 		> .in {
 
@@ -55,6 +59,7 @@
 		a {
 			display: block;
 			padding: $interval-s;
+			font-size: $font-size-s;
 
 			&:before {
 				@include icon-font('arrow_drop_down');
@@ -67,31 +72,25 @@
 		display: none;
 		position: absolute;
 		top: 100%;
+		top: calc(100% - 1px);
 		right: 0;
 		min-width: 120px;
-		z-index: 2;
-
-		@include js(false) {
-			display: block;
-			position: static;
-			top: auto;
-			right: auto;
-			min-width: 0;
-		}
+		z-index: -1;
 
 		> .in {
 
 		}
 
 		ul {
-			background-color: $light;
-			padding: $interval-s;
+			background-color: $white;
+			border: $border;
+			padding: $interval-m;
 		}
 
 		li {
 
 			+ li {
-				margin-top: $interval-xs;
+				margin-top: $interval-s;
 			}
 
 			&.json {
@@ -127,16 +126,18 @@
 
 		span {
 			display: block;
+			text-align: left;
 		}
 
 		a {
-			@extend %btn;
-			display: block;
-			text-align: left;
 
 			&:before {
 				@include icon-font('cloud_download');
 				margin-right: $interval-xs;
+			}
+
+			&:hover {
+				color: $major-color;
 			}
 		}
 

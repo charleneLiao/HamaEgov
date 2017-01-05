@@ -69,7 +69,8 @@
 
 				li {
 					width: 100% / $default-len;
-					float: left;
+					display: inline-block;
+					vertical-align: top;
 				}
 
 				@for $i from ( $default-len + 1 ) through $max-len { //group list 的 child
@@ -111,7 +112,8 @@
 
 					> li {
 						width: 100% / $default-len;
-						float: left;
+						display: inline-block;
+						vertical-align: top;
 					}
 
 					@for $i from ( $default-len + 1 ) through $max-len { //group list 的 child
@@ -136,11 +138,8 @@
 
 				li {
 					width: 100% / $len;
-					float: left;
-
-					&:nth-child(#{$len}n+1) {
-						clear: left;
-					}
+					display: inline-block;
+					vertical-align: top;
 				}
 			}
 
@@ -166,11 +165,8 @@
 
 					> li {
 						width: 100% / $len;
-						float: left;
-
-						&:nth-child(#{$len}n+1) {
-							clear: left;
-						}
+						display: inline-block;
+						vertical-align: top;
 					}
 				}
 			}
@@ -261,19 +257,23 @@
 			.ct {
 
 				li {
-					width: 100% / $default-len;
-					float: left;
+					max-width: 100% / $default-len;
+					display: inline-block;
+					vertical-align: top;
 				}
 			}
 
-			@for $i from 1 through $max-child {
+			.ct {
 
-				&[data-child="#{$i}"] { //自然分割
+				ul {
 
-					.ct {
+					@for $i from 1 through $max-child {
 
-						li {
-							width: 100% / $i;
+						&[data-child="#{$i}"] { //自然分割
+
+							li {
+								width: ( 100% / $i );
+							}
 						}
 					}
 				}
@@ -284,7 +284,7 @@
 			> .in > .ct > .in {
 
 				> [data-index][data-type] {
-					width: 100% / $default-len;
+					max-width: 100% / $default-len;
 					float: left;
 				}
 			}
@@ -307,19 +307,20 @@
 			> .in > .ct > .in > ul {
 
 				> li {
-					width: 100% / $default-len;
-					float: left;
+					max-width: 100% / $default-len;
+					display: inline-block;
+					vertical-align: top;
 				}
 			}
 
-			@for $i from 1 through $max-child {
+			> .in > .ct > .in > ul {
 
-				&[data-child="#{$i}"] { //自然分割
+				@for $i from 1 through $max-child {
 
-					> .in > .ct > .in > ul {
+					&[data-child="#{$i}"] { //自然分割
 
 						> li {
-							width: 100% / $i;
+							width: ( 100% / $i );
 						}
 					}
 				}
@@ -339,11 +340,8 @@
 
 						li {
 							width: 100% / $i;
-							clear: none;
-
-							&:nth-child(#{$i}n+1) {
-								clear: left;
-							}
+							display: inline-block;
+							vertical-align: top;
 						}
 					}
 				}
@@ -381,11 +379,8 @@
 
 							> li {
 								width: 100% / $i;
-								clear: none;
-
-								&:nth-child(#{$i}n+1) {
-									clear: left;
-								}
+								display: inline-block;
+								vertical-align: top;
 							}
 						}
 					}
@@ -406,7 +401,6 @@
 					.ct {
 
 						li {
-							display: block;
 
 							&:nth-child(n+#{$i + 1}) {
 								display: none;
@@ -462,7 +456,6 @@
 					> ul {
 
 						> li {
-							display: block;
 
 							&:nth-child(n+#{$i + 1}) {
 								display: none;
@@ -490,6 +483,7 @@
 		@if( $rwd == true ) {
 
 			@media #{map-get( $media, $key )} {
+				max-width: none !important;
 				width: $int / $len !important;
 				clear: none;
 
@@ -563,52 +557,58 @@
 		white-space: normal;
 	}
 
-	%multi-ellipsis {
+	// %multi-ellipsis {
+	// 	overflow: hidden;
+
+	// 	&:before {
+	// 		content: '\200B';
+	// 		float: left;
+	// 		width: 1px;
+	// 	}
+
+	// 	> * {
+	// 		float: right;
+	// 		width: 100%;
+	// 		box-sizing: border-box;
+	// 		margin-left: -1px;
+	// 	}
+
+	// 	&:after {
+	// 		content: '...';
+	// 		position: relative;
+	// 		float: right;
+	// 		left: 100%;
+	// 		width: 50px;
+	// 		margin-left: -50px;
+	// 		margin-right: 1px;
+	// 		text-indent: 30px;
+	// 	}
+	// }
+
+	// @mixin multi-ellipsis($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
+
+	// 	@extend %multi-ellipsis;
+	// 	height: $line-height * $line;
+
+	// 	&:before {
+	// 		height: $line-height * $line;
+	// 	}
+
+	// 	> * {
+	// 		line-height: $line-height;
+	// 	}
+
+	// 	&:after {
+	// 		top: -1 * $line-height;
+	// 		line-height: $line-height;
+	// 		background-image: linear-gradient(to right, transparent 0, $background-color $position);
+	// 	}
+	// }
+
+	@mixin multi-ellipsis($line: 4, $line-height: 25px ){ //多行超過範圍文字變成'...'的方法
 		overflow: hidden;
-
-		&:before {
-			content: '\200B';
-			float: left;
-			width: 1px;
-		}
-
-		> * {
-			float: right;
-			width: 100%;
-			box-sizing: border-box;
-			margin-left: -1px;
-		}
-
-		&:after {
-			content: '...';
-			position: relative;
-			float: right;
-			left: 100%;
-			width: 50px;
-			margin-left: -50px;
-			margin-right: 1px;
-			text-indent: 30px;
-		}
-	}
-
-	@mixin multi-ellipsis($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
-
-		@extend %multi-ellipsis;
+		line-height: $line-height;
 		height: $line-height * $line;
-
-		&:before {
-			height: $line-height * $line;
-		}
-
-		> * {
-			line-height: $line-height;
-		}
-
-		&:after {
-			top: -1 * $line-height;
-			line-height: $line-height;
-			background-image: linear-gradient(to right, transparent 0, $background-color $position);
-		}
 	}
 
 	@mixin re-multi-ellipsis() { //reset %multi-ellipsis 的方法
@@ -747,10 +747,12 @@
 		}
 
 		h4, h3 {
+			@extend %ellipsis;
 			font-size: $font-size-xxxl;
 			padding-bottom: $interval-m;
 			border-bottom: $border;
 			margin-bottom: $interval-m;
+			line-height: 40px;
 		}
 
 		span {
@@ -763,8 +765,10 @@
 	}
 
 	%caption { //標題組件
+		@extend %ellipsis;
 		margin-bottom: $interval-s;
 		font-size: $font-size-l;
+		font-weight: $font-weight-b;
 		color: $title-color;
 
 		span {
@@ -794,18 +798,22 @@
 
 	%mark { //標籤組件
 		display: inline-block;
+		padding: $btn-padding;
+		border: $btn-border;
+		vertical-align: middle;
+		color: $btn-text-color;
 		font-size: $font-size-s;
-		padding: $interval-xs $interval-s;
+		background-color: $btn-bg-color;
+		border-radius: $border-radius;
 		margin-right: $interval-s;
-		color: $white;
-		background-color: $span-color;
 	}
 
 	%mark-absolute { //延伸的標籤組件
 		@extend %mark;
 		position: absolute;
-		top: $interval-m;
+		bottom: $interval-m;
 		left: $interval-m;
+		z-index: 1;
 	}
 
 	%paragraph { //文章段落組件
@@ -838,6 +846,7 @@
 		text-decoration: none;
 		background-color: $btn-bg-color;
 		transition: $transition;
+		border-radius: $border-radius;
 
 		&:link {
 			color: $btn-text-color;
@@ -894,8 +903,6 @@
 
 	%article-extend { //延伸的文章區塊組件
 		@extend %article;
-		padding: $interval-m $interval-l;
-		background-color: $light;
 	}
 
 	%footer { //footer 按鈕
@@ -950,7 +957,7 @@
 		position: relative;
 		display: block;
 
-		&:before {
+		&:after {
 			content: $content;
 			display: block;
 			position: absolute;
@@ -958,15 +965,15 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-color: $black;
-			background-color: rgba($black, $opacity-m);
+			background-color: transparent;
 			transition: $transition;
 		}
 
 		&:hover {
 
-			&:before {
-				opacity: 0;
+			&:after {
+				background-color: $black;
+				background-color: rgba($black, $opacity-l);
 			}
 		}
 	}

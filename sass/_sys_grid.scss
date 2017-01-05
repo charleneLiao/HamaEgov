@@ -90,7 +90,8 @@
 	.hd {
 
 		h3, h4 {
-			@extend %reset;
+			@extend %reset-outer;
+			@extend %reset-inner;
 		}
 
 		span {
@@ -107,21 +108,24 @@
 		.list {
 
 			ul {
-				@extend %reset;
+				@extend %reset-outer;
+				@extend %reset-inner;
 			}
 		}
 
 		.label {
 
 			ul {
-				@extend %reset;
+				@extend %reset-outer;
+				@extend %reset-inner;
 			}
 		}
 
 		.p {
 
 			p {
-				@extend %reset;
+				@extend %reset-outer;
+				@extend %reset-inner;
 			}
 		}
 	}
@@ -129,7 +133,8 @@
 	.ft {
 
 		ul {
-			@extend %reset;
+			@extend %reset-outer;
+			@extend %reset-inner;
 		}
 	}
 }

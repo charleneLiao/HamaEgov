@@ -8,10 +8,10 @@
 
 		.hd {
 
-			h4 {
+			a {
 
-				&:before {
-					@include icon-font('arrow_drop_up');
+				&:after {
+					background-image: image-url('icon-pic/away-b-top.png');
 				}
 			}
 		}
@@ -26,7 +26,6 @@
 	}
 
 	.hd {
-		@extend %header;
 
 		> .in {
 
@@ -34,17 +33,52 @@
 
 		h4 {
 
-			&:before {
-				@include icon-font('arrow_drop_down');
-			}
 		}
 
 		span {
-				
+			display: block;	
 		}
 
 		a {
+			$icon_w: 30px;
 
+			position: relative;
+			display: block;
+			padding: $interval-m;
+			padding-right: $icon_w + $interval-m;
+			color: $major-color;
+			transition: $transition;
+
+			&:before {
+				content: $content;
+				display: inline-block;
+				width: $icon_w;
+				height: $icon_w;
+				border-radius: 50%;
+				background-image: image-url('icon-pic/search.png');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-color: $major-color;
+				vertical-align: middle;
+				margin-right: $interval-s;
+			}
+
+			&:after {
+				content: $content;
+				position: absolute;
+				display: block;
+				width: $icon_w;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background-image: image-url('icon-pic/away-b-bottom.png');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&:hover {
+				background-color: $light;
+			}
 		}
 	}
 
@@ -54,6 +88,7 @@
 		display: none;
 		background-color: $light;
 		padding: $interval-s;
+		margin-top: $interval-s;
 
 		> .in {
 

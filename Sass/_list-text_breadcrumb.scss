@@ -3,7 +3,8 @@
 //麵包屑================================================================
 
 .list-text.breadcrumb {
-	margin: $interval-s 0;
+	display: inline-block;
+	vertical-align: middle;
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -37,11 +38,12 @@
 
 		ul {
 			padding: $interval-s;
-			background-color: $light;
+			padding-right: $interval-m;
+			text-align: right;
 		}
 
 		li {
-			display: inline;
+			display: inline-block;
 			font-size: $font-size-s;
 
 			&:before {
@@ -54,6 +56,14 @@
 				&:before {
 					@include icon-font('navigate_next');
 					vertical-align: middle;
+					margin-left: $interval-s;
+				}
+			}
+
+			&:last-child {
+
+				a {
+					color: $major-color;
 				}
 			}
 		}

@@ -49,7 +49,7 @@
 
 				+ ul {
 
-					li {
+					> li {
 
 						&:after {
 							@extend %clear;
@@ -83,6 +83,25 @@
 		/*a*/.div {
 			padding: $interval-m;
 			box-sizing: border-box;
+
+			&.is-location {
+
+				.label {
+					margin: $interval-s 0;
+
+					ul {
+						position: relative;
+						padding-right: $interval-xl;
+
+						&:before {
+							@include icon-font('place');
+							position: absolute;
+							top: 1px;
+							right: 6px;
+						}
+					}
+				}
+			}
 
 			&:hover {
 
@@ -165,15 +184,6 @@
 		}
 
 		.p {
-			position: relative;
-			padding-left: $interval-xl;
-
-			&:before {
-				@include icon-font('place');
-				position: absolute;
-				top: 1px;
-				left: 6px;
-			}
 
 			p {
 				@include multi-ellipsis(3);

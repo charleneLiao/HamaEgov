@@ -23,7 +23,7 @@
 	}
 
 	.hd {
-		display: none;
+		@extend %header;
 
 		> .in {
 
@@ -39,6 +39,22 @@
 
 		a {
 
+		}
+
+		+ .ct {
+
+			+ .ft {
+
+				li {
+
+					&.next, &.prev {
+
+						a {
+							top: 57px;
+						}
+					}
+				}
+			}
 		}
 	}
 

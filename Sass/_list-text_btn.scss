@@ -81,9 +81,14 @@
 
 		li {
 			display: inline-block;
+			vertical-align: middle;
 
 			@include media('mobile') {
 				margin-top: $interval-xs;
+			}
+
+			+ li {
+				margin-left: $interval-xs;
 			}
 		}
 

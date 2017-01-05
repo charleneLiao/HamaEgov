@@ -17,11 +17,7 @@
 		</div></div>
 	<% end %>
 
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
-
-			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %><li data-index="<%= i + 1 %>" data-width="<%= rand( li_length ) + 1 %>">
 
 					<div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in">
 						<div class="hd"><div class="in">
@@ -36,8 +32,5 @@
 						</div></div>
 					</div></div>
 				
-				</li>
-			<% end %>
-		</ul>
-	</div></div>
+				</li><% end %></ul></div></div>
 </div></div>

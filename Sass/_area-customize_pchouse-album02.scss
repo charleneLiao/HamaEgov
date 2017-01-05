@@ -143,6 +143,7 @@
 				}
 
 				.caption {
+					@extend %ellipsis;
 					font-size: $font-size-l;
 					font-weight: $font-weight-b;
 
@@ -189,6 +190,7 @@
 			}
 
 			a {
+				@extend %ellipsis;
 				display: block;
 
 				@include media('mobile') {
@@ -199,6 +201,7 @@
 
 			/*i*/.mark {
 				@extend %ellipsis;
+				max-width: 25%;
 				display: inline-block;
 				color: $gray;
 				vertical-align: middle;

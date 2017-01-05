@@ -10,28 +10,21 @@
 			<h3><span><a href="#"><%= header_text %></a></span></h3>
 		</div></div>
 	<% end %>
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>">
 
-			<% essay_length.times do |i| %>
-				<li data-index="<%= i + 1 %>">
+			<% essay_length.times do |i| %><li data-index="<%= i + 1 %>">
 
 				<!-- message 訊息 -->
 					<%= render partial: "/erb/area-essay_message", locals: set({ }) %>
 				<!-- message 結束 -->
 				
-				</li>
-			<% end %>
+				</li><% end %>
 
-			<% text_length.times do |i| %>
-				<li data-index="<%= i + essay_length + 1 %>">
+			<% text_length.times do |i| %><li data-index="<%= i + essay_length + 1 %>">
 
 				<!-- message 訊息 -->
 					<%= render partial: "/erb/simple-text_message", locals: set({ }) %>
 				<!-- message 結束 -->
 				
-				</li>
-			<% end %>
-		</ul>
-	</div></div>
+				</li><% end %></ul></div></div>
 </div></div>

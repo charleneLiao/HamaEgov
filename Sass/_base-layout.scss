@@ -120,11 +120,9 @@
 			> .ct {
 
 				> .in {
+					border-bottom: $border;
 					text-align: right;
-
-					@include js(false) {
-						text-align: left;
-					}
+					margin-bottom: $interval-m;
 				}
 			}
 		}

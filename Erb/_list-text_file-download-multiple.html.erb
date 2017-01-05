@@ -12,16 +12,11 @@
 		</div></div>
 	<% end %>
 	<div class="ct"><div class="in">
-		<% if ( li_length > 0 ) %>
-			<ul data-index="1" data-child="<%= li_length %>">
-
-				<% li_length.times do |i| %>
+		<% if ( li_length > 0 ) %><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %>
 
 					<% file_type = $file_types.sample %>
 
-					<li class="<%= file_type %>" data-index="<%= i + 1 %>"><span><a href="#" title="<%= file_type %> 格式"><%= file_type %></a></span></li>
-				<% end %>
-			</ul>
+					<li class="<%= file_type %>" data-index="<%= i + 1 %>"><span><a href="#" title="<%= file_type %> 格式"><%= file_type %></a></span></li><% end %></ul>
 		<% end %>
 	</div></div>
 </div></div>

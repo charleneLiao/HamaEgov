@@ -12,13 +12,6 @@
 		</div></div>
 	<% end %>
 	<% if ( li_length > 0 ) %>
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="<%= li_length %>">
-
-				<% li_length.times do |i| %>
-					<li data-index="<%= i + 1 %>"><span><a href="#"><%= lorem_word %></a></span></li>
-				<% end %>
-			</ul>
-		</div></div>
+		<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %><li data-index="<%= i + 1 %>"><span><a href="#"><%= lorem_word %></a></span></li><% end %></ul></div></div>
 	<% end %>
 </div></div>

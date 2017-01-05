@@ -3,6 +3,7 @@
 //頁籤================================================================
 
 .list-text.tab {
+	@include average(0, 3);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -35,40 +36,64 @@
 		}
 
 		ul {
-			border-bottom-style: $border-style;
-			border-bottom-width: $border-width;
-			border-bottom-color: $minor-color;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: $major-color;
 		}
 
 		li {
-			display: inline-block;
+			position: relative;
+			vertical-align: bottom;
+
+			@include len-rwd('pad', 4);
+			@include len-rwd('phone', 2);
 
 			&.is-active {
+				top: 2px;
+
+				@include media('mobile') {
+					top: auto;
+				}
 
 				span {
-
+					border-color: $major-color;
 				}
 
 				a {
-					background-color: $minor-color;
-					color: $white;
+					border-color: $major-color;
+					color: $major-color;
 				}
 			}
 		}
 
 		span {
 			display: block;
+			border: 1px solid transparent;
+			border-bottom-width: 0;
+
+			@include media('mobile') {
+				border-bottom-width: 1px;
+				margin: $interval-xs;
+			}
 		}
 
 		a {
+			@extend %ellipsis;
 			display: block;
-			padding: $btn-padding;
-			background-color: $light;
+			padding: $interval-l;
+			background-color: $white;
 			color: $body-font-color;
 			transition: $transition;
+			border: 1px solid $border-color;
+			border-bottom-width: 0;
+			text-align: center;
+
+			@include media('mobile') {
+				border-bottom-width: 1px;
+			}
 
 			&:hover {
-				background-color: $light-gray;
+				color: $major-color;
 			}
 		}
 

@@ -39,8 +39,8 @@
 
 			&:hover {
 
-				.essay {
-					background-color: $light-gray;
+				p {
+					text-decoration: underline;
 				}
 			}
 		}
@@ -57,10 +57,13 @@
 			}
 		}
 
+		$mark_lineHeight: 30px;
+
 		.essay {
-			padding: $interval-m;
-			background-color: $light;
-			transition: $transition;
+			position: relative;
+			padding: $interval-m 0;
+			padding-bottom: $mark_lineHeight + $interval-s;
+			background-color: $white;
 		}
 
 		.figcaption {
@@ -72,7 +75,10 @@
 		}
 
 		.label {
-			@extend %label;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: $interval-s;
 
 			ul {
 
@@ -83,19 +89,21 @@
 			}
 
 			span {
-
+				display: block;
+				@extend %ellipsis;
 			}
 		}
 
 		/*i*/.mark {
-			@extend %mark;
+			color: $gray;
+			line-height: $mark_lineHeight;
 		}
 
 		.p {
 			@extend %paragraph;
 
 			p {
-
+				@include multi-ellipsis();
 			}
 
 			span {

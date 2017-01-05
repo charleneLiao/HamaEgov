@@ -29,53 +29,59 @@
 	}
 
 	.ct {
-		background-color: $light;
 
 		> .in {
-			position: relative;
+
 		}
 
 		/*a*/.div {
-			transition: $transition;
+			display: block;
 
 			&:hover {
-				background-color: $light-gray;
+
+				p {
+					text-decoration: underline;
+				}
 			}
 		}
 
 		.img {
 
 			span {
-				@extend %bg-cover;
 				display: block;
-				height: 240px;
 			}
 
 			img {
-				display: none;
+				display: block;
+				width: 100%;
 			}
 		}
 
+		$mark_lineHeight: 30px;
+
 		.essay {
-			padding: $interval-l;
-			
-			&:after {
-				@extend %clear;
-			}
+			position: relative;
+			padding: $interval-m 0;
+			padding-bottom: $mark_lineHeight + $interval-s;
+			background-color: $white;
 		}
 
 		.figcaption {
 			@extend %caption;
 
 			span {
-
+				
 			}
 		}
 
 		.label {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: $interval-s;
 
 			ul {
-				
+
 			}
 
 			li {
@@ -83,19 +89,21 @@
 			}
 
 			span {
-
+				display: block;
+				@extend %ellipsis;
 			}
 		}
 
 		/*i*/.mark {
-			@extend %mark;
+			color: $gray;
+			line-height: $mark_lineHeight;
 		}
 
 		.p {
 			@extend %paragraph;
 
 			p {
-
+				@include multi-ellipsis(2);
 			}
 
 			span {
@@ -105,8 +113,7 @@
 	}
 
 	.ft {
-		padding: $interval-s;
-		background-color: $light;
+		@extend %footer;
 
 		> .in {
 
@@ -117,10 +124,7 @@
 		}
 
 		li {
-			
-			+ li {
-				margin-top: $interval-xs;
-			}
+
 		}
 
 		span {
@@ -128,8 +132,7 @@
 		}
 
 		a {
-			@extend %btn;
-			display: block;
+
 		}
 	}
 }

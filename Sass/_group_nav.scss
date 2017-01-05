@@ -185,14 +185,9 @@
 
 				a {
 					display: block;
-					padding: $interval-m;
+					padding: 12px;
 					transition: $transition;
 					font-size: $font-size-l;
-
-					&:before {
-						@include icon-font('keyboard_arrow_right');
-						margin-right: $interval-xs;
-					}
 
 					&:hover {
 						background-color: $light;
@@ -210,7 +205,7 @@
 
 				> .in {
 					overflow: hidden;
-					background-color: $light;
+					background-color: deeper($major-color);
 				}
 
 				> .nav {

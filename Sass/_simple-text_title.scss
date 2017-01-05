@@ -37,11 +37,6 @@
 			@extend %reset;
 			font-size: $font-size-xl;
 			padding: $interval-s 0;
-			border-bottom-color: $border-color;
-			border-bottom-width: $interval-xs;
-			border-bottom-style: double;
-			margin-bottom: $interval-s;
-			color: $title-color;
 		}
 
 		span {

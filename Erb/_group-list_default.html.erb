@@ -11,23 +11,12 @@
 			<h3><span><a href="#"><%= header_text %></a></span></h3>
 		</div></div>
 	<% end %>
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
-
-			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>">
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %><li data-index="<%= i + 1 %>">
 
 				<!-- <%= inner %> -->
 					<%= render partial:  inner, locals: set({ index: 4, header_text: (zh_lorem_words rand(5)+1) }) %>
 				<!-- <%= inner %> -->
 				
-				</li>
-			<% end %>
-		</ul>
-	</div></div>
-	<div class="ft"><div class="in">
-		<ul data-index="1" data-child="3">
-			<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
-		</ul>
-	</div></div>
+				</li><% end %></ul></div></div>
+	<div class="ft"><div class="in"><ul data-index="1" data-child="3"><li data-index="1" class="more"><span><a href="#">更多</a></span></li></ul></div></div>
 </div></div>

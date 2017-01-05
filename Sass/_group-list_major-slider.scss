@@ -25,6 +25,22 @@
 			a {
 
 			}
+
+			+ .ct {
+
+				+ .ft {
+
+					li {
+
+						&.next, &.prev {
+
+							a {
+								top: 57px;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		> .ct {
@@ -87,8 +103,8 @@
 					a {
 						@extend %hide-text;
 						position: absolute;
-						top: 20%;
-						bottom: 20%;
+						top: 0;
+						bottom: 0;
 						display: block;
 						width: $btn-width;
 						transition: $transition;

@@ -180,31 +180,6 @@
 								width: 100%;
 							}
 
-							+ li {
-
-								&:before {
-									content: $content;
-									display: block;
-									position: absolute;
-									top: $interval-s;
-									bottom: $interval-s;
-									left: 0;
-									width: $border-width;
-									background-color: $border-color;
-
-									@include js(false) {
-										content: none;
-									}
-								}
-							}
-
-							&:nth-child(#{$default-len}n+1) { //多數排的首項目
-
-								&:before {
-									content: none;
-								}
-							}
-
 							&.is-active, &:hover {
 								z-index: 1; //避免雙層選單覆蓋問題
 
@@ -258,22 +233,25 @@
 	.base-content & {
 
 		> .bg-drop-layout > .in, > .in {
-			background-color: $major-color;
+			border: $border;
+			border-bottom-width: $interval-xs;
+			border-radius: 0 0 $interval-xs $interval-xs;
+			background-color: $white;
 
 			> .hd {
+				background-color: $major-color;
+				background-image: repeating-linear-gradient(-45deg, rgba($white, $opacity-vl) 3px, rgba($white, $opacity-vl) 6px, transparent 0, transparent 9px );
 
 				> .in {
 
 				}
 
-				h3 { 
-					padding: $interval-m;
+				h3 {
+					padding: 25px;
+					padding-top: 30px;
 					color: $white;
-
-					&:before {
-						@include icon-font('menu');
-						margin-right: $interval-xs;
-					}
+					font-size: $font-size-xl;
+					line-height: 25px;
 				}
 
 				span {
@@ -286,13 +264,10 @@
 			}
 
 			> .ct {
-				overflow: hidden;
 
 				> .in {
 
 					> ul {
-						margin: 0 $interval-xs $interval-xs;
-						background-color: $white;
 
 						> li {
 
@@ -304,17 +279,42 @@
 
 								> .group.nav {
 
+									&.is-parent {
+
+										> .in {
+
+											> .hd {
+
+												a {
+													$icon_w: 30px;
+
+													position: relative;
+													padding-right: $icon_w + $interval-m;
+
+													&:before {
+														content: $content;
+														position: absolute;
+														display: block;
+														width: $icon_w;
+														right: 0;
+														top: 0;
+														bottom: 0;
+														background-image: image-url('icon-pic/away-w-bottom.png');
+														background-repeat: no-repeat;
+														background-position: center;
+													}
+												}
+											}
+										}
+									}
+
 									> .in {
 
 										> .hd {
 
 											a {
-												background-color: $minor-color !important;
+												background-color: $major-color !important;
 												color: $white !important;
-
-												&:before {
-													@include icon-font('keyboard_arrow_down');
-												}
 											}
 										}
 

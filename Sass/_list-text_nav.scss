@@ -250,7 +250,7 @@
 
 					a {
 						background-color: $white;
-						color: $minor-color;
+						color: deeper($major-color);
 					}
 				}
 			}
@@ -260,8 +260,14 @@
 			}
 
 			a {
-				@extend %list;
-				@extend %list-hover;
+				display: block;
+				padding: $interval-s $interval-m;
+				color: $white;
+
+				&:hover {
+					background-color: $white;
+					color: deeper($minor-color);
+				}
 			}
 
 			/*i*/.mark {

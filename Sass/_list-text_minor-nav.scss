@@ -5,24 +5,26 @@
 .list-text.minor-nav {
 
 	> .bg-drop-layout > .in, > .in {
-		background-color: $major-color;
+		border: $border;
+		border-bottom-width: $interval-xs;
+		border-radius: 0 0 $interval-xs $interval-xs;
+		background-color: $white;
 	}
 
 	.hd {
+		background-color: $major-color;
+		background-image: repeating-linear-gradient(-45deg, rgba($white, $opacity-vl) 3px, rgba($white, $opacity-vl) 6px, transparent 0, transparent 9px );
 
 		> .in {
 
-		}
+				}
 
 		h4 {
-			padding: $interval-m;
+			padding: 25px;
+			padding-top: 30px;
 			color: $white;
-			font-size: $font-size-l;
-
-			&:before {
-				@include icon-font('menu');
-				margin-right: $interval-xs;
-			}
+			font-size: $font-size-xl;
+			line-height: 25px;
 		}
 
 		span {
@@ -35,29 +37,27 @@
 	}
 
 	.ct {
-		overflow: hidden;
 
 		> .in {
 			
 		}
 
 		ul {
-			margin: 0 $interval-xs $interval-xs;
-			background-color: $white;
+			
 		}
 
 		li {
 
+			+ li {
+				border-top: $border;
+			}
+
 			&.is-active {
 
 				a {
-					background-color: $minor-color;
+					background-color: $major-color;
 					color: $white;
 				}
-			}
-
-			+ li {
-				border-top: $border;
 			}
 		}
 
@@ -67,13 +67,9 @@
 
 		a {
 			display: block;
-			padding: $interval-m;
+			padding: 12px;
 			transition: $transition;
-
-			&:before {
-				@include icon-font('keyboard_arrow_right');
-				margin-right: $interval-xs;
-			}
+			font-size: $font-size-l;
 
 			&:hover {
 				background-color: $light;

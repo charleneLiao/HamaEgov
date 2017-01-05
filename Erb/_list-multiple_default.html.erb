@@ -21,13 +21,7 @@
 			ul_length = (min_ul..max_ul).to_a.sample
 			
 			ul_length.times do |i|
-		%>
-			<ul data-index="#{i + 1}" <% li_length = (min_li..max_li).to_a.sample %> data-child="<%= li_length %>">
-
-				<% li_length.times do |j| %>
-					<li data-index="<%= j + 1 %>"><span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
-				<% end %>
-			</ul>
+		%><ul data-index="#{i + 1}" <% li_length = (min_li..max_li).to_a.sample %> data-child="<%= li_length %>"><% li_length.times do |j| %><li data-index="<%= j + 1 %>"><span><a href="#"><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li><% end %></ul>
 		<% end %>
 	</div></div>
 </div></div>

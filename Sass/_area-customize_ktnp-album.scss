@@ -58,6 +58,7 @@
 		/*a*/.div {
 			display: block;
 			position: relative;
+		    margin: $interval-xs;
 
 			&:hover {
 
@@ -91,16 +92,18 @@
 			left: 0;
 			bottom: 0;
 			overflow: hidden;
-			padding: $interval-l;
+			padding: 20px;
 			background-color: $black;
 			background-color: rgba($black, $opacity-m);
 			transition: $transition;
 		}
 
 		.figcaption {
+			@extend %ellipsis;
+			color: $white;
 
 			span {
-				color: $white;
+
 			}
 		}
 

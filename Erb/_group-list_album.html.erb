@@ -11,18 +11,5 @@
 			<h3><span><a href="#"><%= header_text %></a></span></h3>
 		</div></div>
 	<% end %>
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
-
-			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>">
-
-				<!-- <%= inner %> -->
-					<%= render partial:  inner, locals: set({ index: 1, inner: "/erb/area-figure_album", inner_len: 2 }) %>
-				<!-- <%= inner %> -->
-				
-				</li>
-			<% end %>
-		</ul>
-	</div></div>
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %><li data-index="<%= i + 1 %>"><%= render partial:  inner, locals: set({ index: 1, inner: "/erb/area-figure_album", inner_len: 2 }) %></li><% end %></ul></div></div>
 </div></div>
