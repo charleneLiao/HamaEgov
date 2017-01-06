@@ -218,20 +218,18 @@
 
 		ul {
 			text-align: right;
+			margin-top: $interval-xs;
 		}
 
 		li {
 			display: inline-block;
+			margin: $interval-xs;
 
 			&.submit {
 
 				a {
 					@extend %btn-imp;
 				}
-			}
-
-			+ li {
-				margin-left: $interval-xs;
 			}
 		}
 
