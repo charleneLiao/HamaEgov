@@ -1,5 +1,13 @@
 <%= render partial: "/erb/sys_variable" %>
 
+	<!-- album02(小圖橫式- 彥專) 相簿 -->
+		<%= render partial: "/erb/group-list_album02", locals: set({ header_text: "相簿(相簿列表)", inner: "/erb/area-figure_album02", func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" }) %>
+	<!-- album 結束 -->
+
+	<!-- pchouse-album03 相簿(pchouse - 彥專) -->
+		<%= render partial: "/erb/area-customize_pchouse-album03", locals: set({ index: 1, header_text: 'pchouse相簿', func_set: "{'koreaPicSlider':{}}" }) %>
+	<!-- pchouse-album02 結束 -->
+
 	<!-- pchouse-album02 相簿(pchouse - 彥專) -->
 		<%= render partial: "/erb/area-customize_pchouse-album02", locals: set({ index: 1, header_text: 'pchouse相簿' }) %>
 	<!-- pchouse-album02 結束 -->
