@@ -145,6 +145,10 @@
 					label {
 						@extend %labels;
 						line-height: 31px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
 					}
 				}
 
@@ -160,6 +164,10 @@
 					label {
 						@extend %labels;
 						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
 					}
 				}
 
@@ -175,6 +183,10 @@
 					label {
 						@extend %labels;
 						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
 					}
 				}
 
@@ -183,6 +195,12 @@
 					position: relative;
 					padding-left: $left;
 
+					input {
+						background-image: image-url('icon-pic/calendar.png');
+						background-position: center right;
+						background-repeat: no-repeat;
+					}
+
 					@include media('phone') {
 						padding-left: 0;
 					}
@@ -190,6 +208,14 @@
 					label:first-child {
 						@extend %labels;
 						line-height: 38px;
+					}
+
+					label {
+
+						@include media('mobile') {
+							display: block;
+							margin: $interval-m 0;
+						}
 					}
 				}
 				
@@ -205,6 +231,10 @@
 					label {
 						@extend %labels;
 						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
 					}
 				}
 				
@@ -220,6 +250,10 @@
 					label {
 						@extend %labels;
 						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
 					}
 				}
 
@@ -232,9 +266,17 @@
 						padding-left: 0;
 					}
 
-					label {
+					label:first-child {
 						@extend %labels;
 						line-height: 38px;
+					}
+
+					label {
+
+						@include media('mobile') {
+							display: block;
+							margin: $interval-m 0;
+						}
 					}
 				}
 
@@ -296,13 +338,13 @@
 			input {
 				max-width: 100%;
 
-				@include media('center') {
-					display: block;
-					width: auto;
-				}
-
 				&[type="text"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;
@@ -313,6 +355,11 @@
 				&[type="password"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -321,6 +368,11 @@
 
 				&[type="date"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;
@@ -331,6 +383,11 @@
 				&[type="number"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -340,6 +397,11 @@
 				&[type="search"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -348,6 +410,11 @@
 
 				&[type="email"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;

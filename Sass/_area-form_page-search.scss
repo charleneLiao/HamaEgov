@@ -116,6 +116,11 @@
 
 				&.date {
 
+					input {
+						background-image: image-url('icon-pic/calendar.png');
+						background-position: center right;
+						background-repeat: no-repeat;
+					}
 				}
 
 				&.search {

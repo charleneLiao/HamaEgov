@@ -1,5 +1,13 @@
 <%= render partial: "/erb/sys_variable" %>
 
+	<!-- video 視訊 -->
+		<%= render partial: "/erb/area-customize_video-list02", locals: set({ header_text: "視訊列表" }) %>
+	<!-- video 結束 -->
+
+	<!-- album03(小圖橫式- 彥專) 相簿 -->
+		<%= render partial: "/erb/group-list_album03", locals: set({ header_text: "相簿(相簿列表)", inner: "/erb/area-figure_album03", func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" }) %>
+	<!-- album 結束 -->
+
 	<!-- album02(小圖橫式- 彥專) 相簿 -->
 		<%= render partial: "/erb/group-list_album02", locals: set({ header_text: "相簿(相簿列表)", inner: "/erb/area-figure_album02", func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" }) %>
 	<!-- album 結束 -->

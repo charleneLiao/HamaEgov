@@ -100,9 +100,18 @@
 
 					a {
 						background-color: $major-color;
+						border-color: $major-color;
+
+						&:after {
+							content: $content;
+						}
 
 						&:hover {
 							background-color: deeper($major-color);
+
+							&:after {
+								border-left-color: deeper($major-color);
+							}
 						}
 					}
 
@@ -167,6 +176,20 @@
 					@include media('phone') {
 						content: none;
 					}
+				}
+
+				&:after {
+					$size: 15px;
+
+					position: absolute;
+					top: 50%;
+					left: 100%;
+					margin-top: -1 * $size;
+					width: 0;
+					height: 0;
+					border: $size solid transparent;
+					border-left-color: $major-color;
+					transition: $transition;
 				}
 
 				&:hover {
