@@ -65,6 +65,10 @@
 			li {
 				display: inline-block;
 
+				+ li {
+					margin-left: $interval-xs;
+				}
+
 				&.is-active {
 
 					a {
