@@ -45,8 +45,11 @@ define(function(){
 		for( var i = 0; i < $nodes_length; i++ ) { //雖然想用 Array.prototype.map.call(dom.querySelectorAll('[data-func]'), function(node){})，但 IE8 不支持
 
 			var $env = $nodes[i], //存節點
-				_func = $env.getAttribute(_attrName),
-				$func = JSON.parse(_func.replace(/\'/g,'"')); //轉成物件
+				_func = $env.getAttribute(_attrName);
+
+			if( !_func ) { continue; } //如果是空就跳出
+
+			var $func = JSON.parse(_func.replace(/\'/g,'"')); //轉成物件
 
 			$env.removeAttribute(_attrName);
 			$env.setAttribute(new_attrName, _func);

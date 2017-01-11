@@ -1,5 +1,17 @@
 <%= render partial: "/erb/sys_variable" %>
 
+	<!-- nmth-link 連結(臺灣歷史博物館 - hyc) -->
+		<%= render partial: "/erb/list-pic_nmth-link", locals: set({ index: 2, header_text: "連結(臺灣歷史博物館 - hyc)" }) %>
+	<!-- nmth-link 結束 -->
+
+	<!--marquee03 跑馬燈(太平洋家居網 - 彥專) -->
+		<%= render partial: "/erb/list-pic_marquee03", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(太平洋家居網 - 彥專)" }) %>
+	<!-- marquee03 結束 -->
+
+	<!--marquee04 跑馬燈(羅渣士體育網 - 彥專) -->
+		<%= render partial: "/erb/list-pic_marquee04", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(羅渣士體育網 - 彥專)" }) %>
+	<!-- marquee03 結束 -->
+
 	<!-- video 視訊 -->
 		<%= render partial: "/erb/area-customize_video-list02", locals: set({ header_text: "視訊列表" }) %>
 	<!-- video 結束 -->
@@ -212,7 +224,6 @@
 			</div></div>
 		</div></div>
 
-
 	<!-- link 連結 -->
 		<%= render partial: "/erb/area-form_link", locals: set({ index: 4, func_set: "{'selectLink':{}}", header_text: "文字下拉" }) %>
 	<!-- link 結束 -->
@@ -227,6 +238,10 @@
 
 	<!--marquee03 跑馬燈(太平洋家居網 - 彥專) -->
 		<%= render partial: "/erb/list-pic_marquee03", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(太平洋家居網 - 彥專)" }) %>
+	<!-- marquee03 結束 -->
+
+	<!--marquee04 跑馬燈(羅渣士體育網 - 彥專) -->
+		<%= render partial: "/erb/list-pic_marquee04", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(羅渣士體育網 - 彥專)" }) %>
 	<!-- marquee03 結束 -->
 
 	<!-- icons-g2 圖示群組(台中市府 - hyc) -->

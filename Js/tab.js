@@ -1,4 +1,4 @@
-		define(['getNode'], function(getNode){
+define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -28,7 +28,7 @@
 
 		$items.each(function(i, n){
 			var $this = $(this),
-				$hd = $this.find('.hd'),
+				$hd = getNode.getHd($this),
 				$hd_a = $hd.find('a');
 
 			$hd_a.each(function(i, n){

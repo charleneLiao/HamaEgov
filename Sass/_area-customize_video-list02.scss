@@ -141,10 +141,10 @@
 
 			> .list {
 				overflow: hidden;
-				margin-top: $interval-l;
 				padding-left: $interval-l;
 
 				@include media('mobile') {
+					margin-top: $interval-l;
 					padding-left: 0;
 				}
 
