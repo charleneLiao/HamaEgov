@@ -137,6 +137,10 @@
 				"Name": "Menu"
 			},
 			{
+				"GroupType": "FixedModuleString",
+				"Name": "Customer_Nav"
+			},
+			{
 				"GroupType": "Group",
 				"Type": 3,
 				"Class": "info",
@@ -183,19 +187,15 @@
 		"BaseName": "page-header",
 		"Sub": [
 			{
-				"GroupType": "FixedModuleString",
-				"Name": "WebArchive_Breadcrumb"
-			},
-			{
-				"GroupType": "FixedModuleString",
-				"Name": "WebArchive_Header"
-			},
-			{
 				"GroupType": "Group",
 				"Type": 3,
 				"Class": "info",
 				"func": "",
 				"Sub": [
+					{
+						"GroupType": "FixedModuleString",
+						"Name": "WebArchive_Breadcrumb"
+					},
 					{
 						"GroupType": "FixedModuleString",
 						"Name": "Tools",
@@ -207,6 +207,10 @@
 						"func": "{'toggleBtn':{}}"
 					}
 				]
+			},
+			{
+				"GroupType": "FixedModuleString",
+				"Name": "WebArchive_Header"
 			},
 			{
 				"GroupType": "FixedModuleString",

@@ -906,9 +906,7 @@
 	}
 
 	%footer { //footer 按鈕
-		position: absolute;
-		top: $interval-l;
-		right: 0;
+		margin-top: $interval-s;
 
 		> .in {
 

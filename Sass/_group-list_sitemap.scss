@@ -7,14 +7,16 @@
 	> .bg-drop-layout > .in, > .in {
 
 		> .hd {
-			@extend %header;
 
 			> .in {
 
 			}
 
 			h3 {
-				
+				@extend %ellipsis;
+				padding-bottom: $interval-m;
+				border-bottom: $border;
+				margin-bottom: $interval-m;
 			}
 
 			span {

@@ -65,8 +65,6 @@ define(['getNode'], function(getNode){
 				$.cookie(_uuid, '0');
 			}
 
-			console.log($btn.text(), $set.btnOrangeText );
-
 			if( $btn.text() === $set.btnOrangeText && !!$set.btnActiveText ) { //更改文字
 				$btn.text($set.btnActiveText);
 			}else if( $btn.text() === $set.btnActiveText && !!$set.btnOrangeText ) {

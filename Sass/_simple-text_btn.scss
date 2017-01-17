@@ -122,7 +122,7 @@
 		}
 	}
 
-	.base-footer & {
+	.base-wrapper & {
 		border-bottom: $interval-xs solid $deep-gray;
 
 		@include js(false) {
@@ -188,6 +188,7 @@
 
 			a {
 				@extend %btn;
+				border-radius: $border-radius $border-radius 0 0;
 
 				&:before {
 					@include icon-font('arrow_drop_down');
