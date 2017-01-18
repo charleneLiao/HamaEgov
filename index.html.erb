@@ -1,5 +1,13 @@
 <%= render partial: "/erb/sys_variable" %>
 
+	<!-- message03 訊息(nccst - hyc) -->
+		<%= render partial: "/erb/group-list_message03", locals: set({ header_text: "訊息(nccst - hyc)", inner: "/erb/area-essay_message03", func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}" }) %>
+	<!-- message03 結束 -->
+
+	<!--marquee02 跑馬燈(accupass - hyc) -->
+		<%= render partial: "/erb/list-pic_marquee02", locals: set({ index: 6, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500,'startItem':2}}", header_text: "跑馬燈(accupass - hyc)" }) %>
+	<!-- marquee02 結束 -->
+
 	<!-- nmth-link 連結(臺灣歷史博物館 - hyc) -->
 		<%= render partial: "/erb/list-pic_nmth-link", locals: set({ index: 2, header_text: "連結(臺灣歷史博物館 - hyc)" }) %>
 	<!-- nmth-link 結束 -->
@@ -231,10 +239,6 @@
 	<!--marquee 跑馬燈 -->
 		<%= render partial: "/erb/list-pic_marquee", locals: set({ index: 5, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(圖片)" }) %>
 	<!-- marquee 結束 -->
-
-	<!--marquee02 跑馬燈(路跑協會 - hyc) -->
-		<%= render partial: "/erb/list-pic_marquee02", locals: set({ index: 6, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(路跑協會 - hyc)" }) %>
-	<!-- marquee02 結束 -->
 
 	<!--marquee03 跑馬燈(太平洋家居網 - 彥專) -->
 		<%= render partial: "/erb/list-pic_marquee03", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500},'gallery':{}}", header_text: "跑馬燈(太平洋家居網 - 彥專)" }) %>
