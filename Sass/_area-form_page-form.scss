@@ -38,7 +38,7 @@
 
 		.fieldset {
 			$height: 26px;
-			$left: 120px;
+			$left: 140px;
 			padding: $interval-xl $interval-xl * 2;
 			background-color: $light;
 
@@ -275,6 +275,25 @@
 
 						@include media('mobile') {
 							display: block;
+							margin: $interval-m 0;
+						}
+					}
+				}
+
+				&.file {
+					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
 							margin: $interval-m 0;
 						}
 					}

@@ -122,7 +122,8 @@
 		&[type="date"],
 		&[type="email"],
 		&[type="number"],
-		&[type="search"] {
+		&[type="search"],
+		&[type="file"] {
 			@extend %input;
 		}
 

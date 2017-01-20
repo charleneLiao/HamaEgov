@@ -10,6 +10,7 @@ define(['getNode'], function(getNode){
 				btnOrangeText: null,
 				btnActiveText: null,
 				event: 'click', //jQuery 事件名稱
+				focusActive: true, //是否可用滑鼠啟用功能( 只限於 bindNode 是 .hd )
 				cookie: false,
 				debug: false
 			}
@@ -23,7 +24,8 @@ define(['getNode'], function(getNode){
 			$target = $($set.targetNode);
 
 		var _uuid = $env.attr('class').replace($set.toggleClass, ''), //!!!!----要想一個 UUID 方法
-			_flag = null; //0 未執行 / 1  執行中 / null 沒有
+			_flag = null, //0 未執行 / 1  執行中 / null 沒有
+			_tab_key = 9;
 
 		if( !$set.cookie ) {
 			$.cookie(_uuid, null);
@@ -47,6 +49,22 @@ define(['getNode'], function(getNode){
 			$btn = getNode.getFtItemBtn(env).find('a');
 		}else {
 			$btn = $env.find($set.bindNode);
+		}
+
+		if( $set.focusActive && $set.bindNode === '.hd' ) { //focus 到 hd 時會啟用程式，且離開時會關閉
+
+			var $last_btn = getNode.getCtIn(env).find('a, input, select').eq(-1);
+
+			$last_btn.on('keydown', function(evt){ //最後一個 a 按下 tab 時，關閉所有子選單
+
+				if( evt.which === _tab_key ) {
+					$btn.trigger(_eventNmae);
+				}
+			});
+
+			$btn.on('focusin', function(){ //觸發事件
+				$btn.trigger(_eventNmae);
+			});
 		}
 
 		if( !!$set.btnOrangeText && _flag && !!$set.btnActiveText ) { //如果有設定文字
