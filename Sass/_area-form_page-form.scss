@@ -441,6 +441,20 @@
 					}
 				}
 
+				&[type="file"] {
+					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
 				&[type="radio"] {
 					line-height: $height;
 				}

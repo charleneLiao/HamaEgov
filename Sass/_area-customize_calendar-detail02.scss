@@ -73,11 +73,19 @@
 
 					a {
 						color: $white;
-						background-color: $major-color;
+						background-color: lighter($major-color);
 
-						&:hover {
-							background-color: deeper($major-color);
+						&:before {
+							background-color: $white;
 						}
+					}
+				}
+
+				&.is-today {
+
+					a {
+						color: $white;
+						background-color: $major-color;
 
 						&:before {
 							background-color: $white;
