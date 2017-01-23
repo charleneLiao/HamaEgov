@@ -10,7 +10,7 @@ define(['getNode'], function(getNode){
 				btnOrangeText: null,
 				btnActiveText: null,
 				event: 'click', //jQuery 事件名稱
-				focusActive: true, //是否可用滑鼠啟用功能( 只限於 bindNode 是 .hd )
+				focusActive: true, //是否可用 focus 啟用功能( 只限於 bindNode 是 .hd )
 				cookie: false,
 				debug: false
 			}
