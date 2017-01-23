@@ -81,13 +81,14 @@
 			display: block;
 
 			span {
+				@extend %bg-cover;
 				display: block;
+				min-height: 80px;
 			}
 
 			img {
 				display: block;
 				width: 100%;
-				min-height: 80px;
 			}
 		}
 

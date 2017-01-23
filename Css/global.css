@@ -312,7 +312,7 @@
 }
 
 /* line 990, ../sass/_base-function.scss */
-.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .list-pic.marquee02 .ct span, .list-pic.marquee03 .ct span, .list-pic.marquee04 .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .area-customize.ktnp-album .ct .img span, .area-customize.pchouse-album .ct .img span, .area-customize.korea-pic-slider .ct .list-area span, .area-customize.pchouse-album02 .ct .div .img span, .area-figure.album02 .ct .img span, .area-figure.album03 .ct .img span, .area-customize.video-list02 .ct > .in > .list .img span, .area-essay.slider .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .area-customize.video-list .ct > .in > .list .img span, .list-pic.page-list .ct span {
+.group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img span, .group-list.major-slider > .in > .ft li.is-img span, .list-pic.marquee .ct span, .list-pic.marquee02 .ct span, .list-pic.marquee03 .ct span, .list-pic.marquee04 .ct span, .area-essay.message .ct .img span, .base-page-area .area-essay.link .ct .img span, .area-customize.message .ct .img span, .area-customize.message02 .ct .img span, .area-customize.ktnp-album .ct .img span, .area-customize.pchouse-album .ct .img span, .area-customize.korea-pic-slider .ct .list-area span, .area-customize.pchouse-album02 .ct .div .img span, .area-figure.album02 .ct .img span, .area-figure.album03 .ct .img span, .area-customize.video-list02 .ct > .in > .list .img span, .area-essay.slider .ct .img span, .list-pic.pic-download .ct span, .area-essay.page-essay .ct .img span, .area-essay.page-img-caption-label .ct .img span, .area-essay.page-img-caption-p .ct .img span, .area-figure.page-img-figcaption .ct .img span, .area-figure.page-img-figcaption-label .ct .img span, .area-figure.page-img-figcaption-p .ct .img span, .area-figure.page-img-label .ct .img span, .area-figure.page-img-label-p .ct .img span, .area-figure.page-img-p .ct .img span, .area-customize.video-list .ct > .in > .list .img span, .list-pic.page-list .ct span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6944,23 +6944,22 @@ th {
 /* line 74, ../sass/_area-customize_message.scss */
 .area-customize.message .ct > .in > ul + ul > li .img span {
   height: 118px;
-  background-image: url('../images/default.png?1484117837');
 }
-/* line 84, ../sass/_area-customize_message.scss */
+/* line 83, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .div {
   padding: 8px;
   box-sizing: border-box;
 }
-/* line 90, ../sass/_area-customize_message.scss */
+/* line 89, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .div.is-location .label {
   margin: 5px 0;
 }
-/* line 93, ../sass/_area-customize_message.scss */
+/* line 92, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .div.is-location .label ul {
   position: relative;
   padding-right: 30px;
 }
-/* line 97, ../sass/_area-customize_message.scss */
+/* line 96, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .div.is-location .label ul:before {
   font-size: inherit;
   color: inherit;
@@ -6968,33 +6967,33 @@ th {
   top: 1px;
   right: 6px;
 }
-/* line 109, ../sass/_area-customize_message.scss */
+/* line 108, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .div:hover span {
   text-decoration: underline;
 }
-/* line 117, ../sass/_area-customize_message.scss */
+/* line 116, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .img span {
   display: block;
   height: 280px;
 }
 @media (max-width: 768px) {
-  /* line 117, ../sass/_area-customize_message.scss */
+  /* line 116, ../sass/_area-customize_message.scss */
   .area-customize.message .ct .img span {
     height: auto !important;
   }
 }
-/* line 127, ../sass/_area-customize_message.scss */
+/* line 126, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .img img {
   display: none;
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 127, ../sass/_area-customize_message.scss */
+  /* line 126, ../sass/_area-customize_message.scss */
   .area-customize.message .ct .img img {
     display: block;
   }
 }
-/* line 137, ../sass/_area-customize_message.scss */
+/* line 136, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .essay {
   background-color: #ffffff;
   padding: 8px;
@@ -7002,23 +7001,23 @@ th {
   transition: 150ms;
 }
 @media (max-width: 768px) {
-  /* line 137, ../sass/_area-customize_message.scss */
+  /* line 136, ../sass/_area-customize_message.scss */
   .area-customize.message .ct .essay {
     padding-bottom: 8px;
   }
 }
-/* line 157, ../sass/_area-customize_message.scss */
+/* line 156, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .label {
   margin: 5px 0;
 }
-/* line 173, ../sass/_area-customize_message.scss */
+/* line 172, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .mark {
   display: block;
   position: relative;
   padding-left: 30px;
   color: #646464;
 }
-/* line 179, ../sass/_area-customize_message.scss */
+/* line 178, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .mark:before {
   font-size: inherit;
   color: inherit;
@@ -7026,14 +7025,14 @@ th {
   top: 1px;
   left: 6px;
 }
-/* line 189, ../sass/_area-customize_message.scss */
+/* line 188, ../sass/_area-customize_message.scss */
 .area-customize.message .ct .p p {
   overflow: hidden;
   line-height: 25px;
   height: 75px;
 }
 @media (max-width: 768px) {
-  /* line 189, ../sass/_area-customize_message.scss */
+  /* line 188, ../sass/_area-customize_message.scss */
   .area-customize.message .ct .p p {
     height: auto;
     overflow: visible;
@@ -7089,45 +7088,46 @@ th {
 /* line 83, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .img span {
   display: block;
+  background-image: url('../images/default.png?1484117837');
+  min-height: 80px;
 }
-/* line 87, ../sass/_area-customize_message02.scss */
+/* line 90, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .img img {
   display: block;
   width: 100%;
-  min-height: 80px;
 }
-/* line 102, ../sass/_area-customize_message02.scss */
+/* line 104, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label {
   float: left;
   min-width: 73px;
   width: 12%;
 }
-/* line 107, ../sass/_area-customize_message02.scss */
+/* line 109, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label ul {
   height: 58px;
   border: 1px solid #e4e4e4;
 }
-/* line 116, ../sass/_area-customize_message02.scss */
+/* line 118, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label span {
   display: block;
   text-align: center;
 }
-/* line 121, ../sass/_area-customize_message02.scss */
+/* line 123, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label i {
   display: block;
   text-align: center;
   font-style: normal;
 }
-/* line 126, ../sass/_area-customize_message02.scss */
+/* line 128, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label i.y-m {
   margin: 8px 0 3px;
   font-size: 0.8em;
 }
-/* line 131, ../sass/_area-customize_message02.scss */
+/* line 133, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .label i.d {
   font-size: 1.4em;
 }
-/* line 137, ../sass/_area-customize_message02.scss */
+/* line 139, ../sass/_area-customize_message02.scss */
 .area-customize.message02 .ct .caption {
   overflow: hidden;
   line-height: 60px;
