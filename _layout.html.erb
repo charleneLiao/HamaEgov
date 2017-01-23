@@ -53,7 +53,16 @@
 	<!-- sys-root 結束 -->
 
 		<% if( $js ) %>
-			<script data-main="/js/app" src="/js/require.js"></script>
+			<script src="/js/require.js"></script>
+			<script >
+				requirejs.config({
+					baseUrl: 'http://127.0.0.1:24681/js'
+				});
+
+				requirejs(['main'], function(func){ //執行主程式
+					func();
+				});
+			</script>
 		<% end %>
 
 		<%= livereload_js %>

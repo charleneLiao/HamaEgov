@@ -24,13 +24,13 @@
 	}
 
 	.hd {
-		display: none;
+		@extend %header;
 
 		> .in {
 
 		}
 
-		h4 {
+		h3 {
 
 		}
 
@@ -40,6 +40,22 @@
 
 		a {
 
+		}
+
+		+ .ct {
+
+			+ .ft {
+
+				li {
+
+					&.next, &.prev {
+
+						span {
+							margin-top: -0.5 * $btn-h + 28px;
+						}
+					}
+				}
+			}
 		}
 	}
 
