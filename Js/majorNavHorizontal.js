@@ -24,6 +24,9 @@ define(['getNode'], function(getNode){
 
 			if( !_this.find('a').length ) {
 				_this.parent().remove(); //就刪除 .content
+			}else {
+				_this.closest('li').addClass('is-parent');
+				console.log(_this.closest('li'))
 			}
 		}
 
