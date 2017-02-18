@@ -61,12 +61,12 @@ define(function() {
 
 			if( !$link.length && !_type && add !== false ) {
 
-				$link = $('<h4><a href="#"></a></h4>');
+				$link = $('<h4><span><a href="#"></span></a></h4>');
 				$hdIn.append($link);
 
 			}else if( !$link.length && add !== false ) {
 
-				$link = $('<h3><a href="#"></a></h3>');
+				$link = $('<h3><span><a href="#"></span></a></h3>');
 				$hdIn.append($link);
 			}
 

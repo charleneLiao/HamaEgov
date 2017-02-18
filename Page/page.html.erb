@@ -1,16 +1,16 @@
 <%= render partial: "/erb/sys_variable" %>
 
-<!-- //步驟================================================================ -->
-
-	<!-- step 步驟 -->
-		<%= render partial: "/erb/list-text_step", locals: set({}) %>
-	<!-- step 結束 -->
-
 <!-- //搜尋================================================================ -->
 
 	<!-- page-search 內頁搜尋 -->
 		<%= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
 	<!-- page-search 結束 -->
+
+<!-- //步驟================================================================ -->
+
+	<!-- step 步驟 -->
+		<%= render partial: "/erb/list-text_step", locals: set({}) %>
+	<!-- step 結束 -->
 
 <!-- //分類區塊================================================================ -->
 

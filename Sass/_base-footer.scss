@@ -5,20 +5,63 @@
 .base-footer {
 	background-color: $white;
 
+	&.is-active {
+
+		> .in {
+
+			> .hd {
+
+				a {
+
+					&:before {
+						@include icon-font('arrow_drop_up');
+					}
+				}
+			}
+		}
+	}
+
 	> .in {
 
 		> .hd {
+			border-bottom: $interval-xs solid $major-color;
+
+			@include js(false) {
+				display: none;
+			}
+
+			@include media('mobile') {
+				display: none;
+			}
 
 			> .in {
-
+				@extend %center;
+				position: relative;
 			}
 
 			h3 {
-
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -1px;
+				text-align: right;
 			}
 
 			span {
+				display: inline-block;
+			}
 
+			a {
+				display: block;
+				padding: $btn-padding;
+				background-color: $major-color;
+				color: $white;
+				font-size: $font-size-s;
+
+				&:before {
+					@include icon-font('arrow_drop_down');
+					margin-right: $interval-xs;
+				}
 			}
 		}
 

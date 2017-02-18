@@ -62,7 +62,7 @@
 							right: 0;
 							bottom: 0;
 							width: $icon-width;
-							background-color: $btn-bg-color;
+							background-color: $major-color;
 							@extend %hide-text;
 							@include bg-to-pic('icon-pic/icon-w-search.png' ,false)
 						}
@@ -102,9 +102,7 @@
 			}
 
 			li {
-				@extend %btn;
 				display: block;
-				text-align: center;
 
 				&.advanced {
 
@@ -112,24 +110,25 @@
 			}
 
 			span {
-
+				display: block;
 			}
 
 			a {
-
+				display: block;
+				padding: $btn-padding;
+				background-color: $major-color;
+				color: $white;
+				font-size: $font-size-s;
+				text-align: center;
 			}
 		}
 	}
 
 	.base-wrapper & {
 		position: absolute;
-		top: 36px;
+		top: 40px;
 		right: 10px;
-		z-index: 3;
-
-		@include js(false) {
-			top: 40px;
-		}
+		z-index: 4;
 
 		@include media('mobile') {
 			display: none;
@@ -244,9 +243,15 @@
 				}
 
 				a {
-					@extend %list;
-					@extend %list-hover;
+					display: block;
+					padding: $btn-padding;
 					box-shadow: $box-shadow;
+					background-color: $white;
+					transition: $transition;
+
+					&:hover {
+						background-color: $light;
+					}
 				}
 			}
 		}
@@ -261,11 +266,9 @@
 			}
 
 			ul {
-				display: inline;
 			}
 
 			li {
-				display: inline;
 
 				&.advanced {
 					
@@ -277,7 +280,7 @@
 			}
 
 			a {
-				color: inherit;
+				font-size: $font-size-s;
 
 				@include js(false) {
 					@extend %btn;

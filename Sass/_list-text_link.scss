@@ -88,8 +88,9 @@
 
 	.base-header & {
 		position: absolute;
-		top: 7px;
+		top: 10px;
 		right: 90px;
+		font-size: $font-size-s;
 
 		@include js(false) {
 			right: 10px;
@@ -138,26 +139,25 @@
 				vertical-align: middle;
 				
 				+ li {
+					border-left: $border;
 
-					&:before {
-						content: ' | ';
-						vertical-align: middle;
+					a {
+						padding-left: $interval-m;
 					}
 				}
 			}
 
 			span {
-				display: inline-block;
-				vertical-align: middle;
+				display: block;
 			}
 
 			a {
 				display: block;
-				font-size: $font-size-xs;
+				padding-right: $interval-m;
 			}
 
 			/*i*/.mark {
-				@extend %mark;
+				display: none;
 			}
 		}
 
@@ -270,6 +270,7 @@
 	}
 
 	.base-footer & {
+		margin-bottom: $interval-s;
 
 		@include media('mobile') {
 			display: none;
@@ -314,25 +315,25 @@
 				vertical-align: middle;
 				
 				+ li {
+					border-left: $border;
 
-					&:before {
-						content: ' | ';
-						vertical-align: middle;
+					a {
+						padding-left: $interval-m;
 					}
 				}
 			}
 
 			span {
-				display: inline-block;
-				vertical-align: middle;
+				display: block;
 			}
 
 			a {
 				display: block;
+				padding-right: $interval-m;
 			}
 
 			/*i*/.mark {
-				
+				display: none;
 			}
 		}
 

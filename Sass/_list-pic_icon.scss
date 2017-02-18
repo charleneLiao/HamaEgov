@@ -140,6 +140,10 @@
 				display: inline-block;
 				vertical-align: top;
 
+				+ li {
+					margin-left: $interval-s;
+				}
+
 				&.wcag {
 
 				}

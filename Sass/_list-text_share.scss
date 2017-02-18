@@ -4,6 +4,106 @@
 
 .list-text.share {
 
+	.base-mobile & {
+
+		> .in {
+
+		}
+
+		.hd {
+			display: none;
+
+			> .in {
+
+			}
+
+			h4 {
+
+			}
+
+			span {
+					
+			}
+
+			a {
+
+			}
+		}
+
+		.ct {
+
+			> .in {
+				
+			}
+
+			ul {
+
+				&:after {
+					@extend %clear;
+				}
+			}
+
+			li {
+				width: 100% / length($share-map);
+				float: left;
+
+				@each $key, $map in $share-map {
+
+					$pic: map-get($map, 'pic');
+					$color: map-get($map, 'color');
+
+					&.#{$key}{
+
+						a {
+							background-image: image-url('icon-pic/#{$pic}');
+							background-color: $color;
+						}
+					}
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				@extend %hide-text;
+				height: 40px;
+				display: block;
+				transition: $transition;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			/*i*/.mark {
+				
+			}
+		}
+
+		.ft {
+
+			> .in {
+
+			}
+
+			ul {
+
+			}
+
+			li {
+
+			}
+
+			span {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
 	.base-extend & {
 		position: fixed;
 		top: 200px;
@@ -66,108 +166,6 @@
 							&:hover {
 								background-color: deeper($color);
 							}
-						}
-					}
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %hide-text;
-				display: block !important;
-				transition: $transition;
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-	.base-mobile & {
-
-		> .in {
-
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-
-			ul {
-
-				&:after {
-					@extend %clear;
-				}
-			}
-
-			li {
-				width: 100% / length($share-map);
-				float: left;
-
-				@each $key, $map in $share-map {
-
-					$pic: map-get($map, 'pic');
-					$color: map-get($map, 'color');
-
-					&.#{$key}{
-
-						span {
-							display: block;
-						}
-
-						a {
-							@include icon-pic('#{$pic}', false);
-							height: 40px;
-							background-color: $color;
 						}
 					}
 				}

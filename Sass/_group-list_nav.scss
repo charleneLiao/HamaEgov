@@ -181,7 +181,6 @@
 							}
 
 							&.is-active, &:hover {
-								z-index: 1; //避免雙層選單覆蓋問題
 
 								> .group.nav {
 
@@ -193,9 +192,22 @@
 												background-color: deeper($major-color);
 											}
 										}
+									}
+								}
+							}
 
-										> .ct {
-											display: block;
+							&.is-parent {
+
+								&.is-active, &:hover {
+									z-index: 1; //避免雙層選單覆蓋問題
+
+									> .group.nav {
+
+										> .in {
+
+											> .ct {
+												display: block;
+											}
 										}
 									}
 								}
@@ -288,22 +300,9 @@
 											> .hd {
 
 												a {
-													$icon_w: 30px;
-
-													position: relative;
-													padding-right: $icon_w + $interval-m;
 
 													&:before {
-														content: $content;
-														position: absolute;
-														display: block;
-														width: $icon_w;
-														right: 0;
-														top: 0;
-														bottom: 0;
 														background-image: image-url('icon-pic/away-w-bottom.png');
-														background-repeat: no-repeat;
-														background-position: center;
 													}
 												}
 											}
@@ -325,6 +324,39 @@
 										}
 									}
 								}
+							}
+
+							> .group.nav {
+
+								&.is-parent {
+
+									> .in {
+
+										> .hd {
+
+											a {
+												$icon_w: 30px;
+
+												position: relative;
+												padding-right: $icon_w + $interval-m;
+
+												&:before {
+													content: $content;
+													position: absolute;
+													display: block;
+													width: $icon_w;
+													right: 0;
+													top: 0;
+													bottom: 0;
+													background-image: image-url('icon-pic/away-b-bottom.png');
+													background-repeat: no-repeat;
+													background-position: center;
+												}
+											}
+										}
+									}
+								}
+
 							}
 						}
 					}

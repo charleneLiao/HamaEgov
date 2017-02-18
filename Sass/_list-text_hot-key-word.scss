@@ -84,8 +84,9 @@
 
 	.base-wrapper & {
 		position: absolute;
-		top: 43px;
+		top: 45px;
 		right: 325px;
+		font-size: $font-size-s;
 
 		@include js(false) {
 			right: 100px;
@@ -153,7 +154,6 @@
 
 			a {
 				display: block;
-				font-size: $font-size-xs;
 			}
 
 			/*i*/.mark {
