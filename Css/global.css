@@ -333,7 +333,7 @@
 }
 
 /* line 1014, ../sass/_base-function.scss */
-.base-footer.is-active > .in > .hd a:before, .base-footer > .in > .hd a:before, .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data:hover .hd a:before, .list-text.open-data.is-active .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool:hover .hd a:before, .list-text.user-tool.is-active .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-content .area-editor.address .ct a.is-map:after, .base-footer .area-editor.address .ct a.is-map:after, .area-customize.message .ct .div.is-location .label ul:before, .area-customize.message .ct .mark:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.vote-table .ct a.submit:before, .area-table.vote-table .ct a.result:before {
+.base-footer.is-active > .in > .hd a:before, .base-footer > .in > .hd a:before, .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .list-text.open-data:hover .hd a:before, .list-text.open-data.is-active .hd a:before, .list-text.open-data .hd a:before, .list-text.open-data .ct a:before, .list-text.user-tool:hover .hd a:before, .list-text.user-tool.is-active .hd a:before, .list-text.user-tool .hd a:before, .list-text.user-tool .ct li.login a:before, .list-text.user-tool .ct li.logout a:before, .list-text.user-tool .ct li.bopomofo a:before, .list-text.user-tool .ct li.edit a:before, .list-text.user-tool .ct li.print a:before, .list-text.user-tool .ct li.data a:before, .list-text.user-tool .ct li.nav-edit a:before, .list-text.user-tool .ct li.index-edit a:before, .list-text.user-tool .ct li.article-edit a:before, .base-content .area-editor.address .ct a.is-map:after, .base-footer .area-editor.address .ct a.is-map:after, .area-customize.message .ct .div.is-location .label ul:before, .area-customize.message .ct .mark:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.vote-table .ct a.submit:before, .area-table.vote-table .ct a.result:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -375,13 +375,8 @@
 }
 
 /* line 249, ../sass/_base-icon-font.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before {
+.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before {
   content: "\e10f";
-}
-
-/* line 255, ../sass/_base-icon-font.scss */
-.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before {
-  content: "\e111";
 }
 
 /* line 336, ../sass/_base-icon-font.scss */
@@ -2715,16 +2710,23 @@ th {
   background-color: #f2703c;
   color: #ffffff;
 }
-/* line 57, ../sass/_group-list_nav.scss */
-.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in .ct, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in .ct {
+/* line 68, ../sass/_group-list_nav.scss */
+.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in .ct, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in .ct {
   display: block;
 }
-/* line 74, ../sass/_group-list_nav.scss */
-.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before {
+/* line 81, ../sass/_group-list_nav.scss */
+.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a {
+  padding-right: 40px;
+}
+/* line 84, ../sass/_group-list_nav.scss */
+.base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before {
   font-size: inherit;
   color: inherit;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-/* line 112, ../sass/_group-list_nav.scss */
+/* line 125, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav {
   position: relative;
   z-index: 3;
@@ -2748,12 +2750,12 @@ th {
   padding-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 112, ../sass/_group-list_nav.scss */
+  /* line 125, ../sass/_group-list_nav.scss */
   .base-header .group-list.nav {
     display: none;
   }
 }
-/* line 130, ../sass/_group-list_nav.scss */
+/* line 143, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav.is-fixed > .in {
   position: fixed;
   top: 0;
@@ -2762,15 +2764,15 @@ th {
   max-width: 100%;
   box-shadow: 0 0 8px #b6b6b6;
 }
-/* line 140, ../sass/_group-list_nav.scss */
+/* line 153, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in, .base-header .group-list.nav > .in {
   background-color: #0aa59b;
 }
-/* line 143, ../sass/_group-list_nav.scss */
+/* line 156, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .hd, .base-header .group-list.nav > .in > .hd {
   display: none;
 }
-/* line 174, ../sass/_group-list_nav.scss */
+/* line 187, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li, .base-header .group-list.nav > .in > .ct > .in > ul > li {
   position: relative;
   box-sizing: border-box;
@@ -2780,31 +2782,31 @@ th {
 [data-js="false"] .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li, [data-js="false"] .base-header .group-list.nav > .in > .ct > .in > ul > li {
   width: 100%;
 }
-/* line 191, ../sass/_group-list_nav.scss */
+/* line 204, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-header .group-list.nav > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a {
   background-color: #07756e;
 }
-/* line 201, ../sass/_group-list_nav.scss */
+/* line 214, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent.is-active, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent:hover, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-parent.is-active, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-parent:hover {
   z-index: 1;
 }
-/* line 208, ../sass/_group-list_nav.scss */
+/* line 221, ../sass/_group-list_nav.scss */
 .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in > .ct, .base-header .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent:hover > .group.nav > .in > .ct, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in > .ct, .base-header .group-list.nav > .in > .ct > .in > ul > li.is-parent:hover > .group.nav > .in > .ct {
   display: block;
 }
-/* line 247, ../sass/_group-list_nav.scss */
+/* line 260, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in, .base-content .group-list.nav > .in {
   border: 1px solid #e4e4e4;
   border-bottom-width: 3px;
   border-radius: 0 0 3px 3px;
   background-color: #ffffff;
 }
-/* line 253, ../sass/_group-list_nav.scss */
+/* line 266, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .hd, .base-content .group-list.nav > .in > .hd {
   background-color: #0aa59b;
   background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 3px, rgba(255, 255, 255, 0.1) 6px, transparent 0, transparent 9px);
 }
-/* line 261, ../sass/_group-list_nav.scss */
+/* line 274, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .hd h3, .base-content .group-list.nav > .in > .hd h3 {
   padding: 25px;
   padding-top: 30px;
@@ -2812,35 +2814,35 @@ th {
   font-size: 1.4em;
   line-height: 25px;
 }
-/* line 278, ../sass/_group-list_nav.scss */
+/* line 291, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .ct, .base-content .group-list.nav > .in > .ct {
   border-top: 1px solid #e4e4e4;
   border-top-color: #ffffff;
 }
-/* line 288, ../sass/_group-list_nav.scss */
+/* line 301, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li + li, .base-content .group-list.nav > .in > .ct > .in > ul > li + li {
   border-top: 1px solid #e4e4e4;
 }
-/* line 304, ../sass/_group-list_nav.scss */
-.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav.is-parent > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav.is-parent > .in > .hd a:before {
-  background-image: url('../images/icon-pic/away-w-bottom.png?1474887733');
-}
-/* line 316, ../sass/_group-list_nav.scss */
+/* line 313, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a {
   background-color: #0aa59b !important;
   color: #ffffff !important;
 }
-/* line 322, ../sass/_group-list_nav.scss */
+/* line 319, ../sass/_group-list_nav.scss */
 .base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct {
   display: block;
 }
-/* line 337, ../sass/_group-list_nav.scss */
-.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > .group.nav.is-parent > .in > .hd a, .base-content .group-list.nav > .in > .ct > .in > ul > li > .group.nav.is-parent > .in > .hd a {
+/* line 338, ../sass/_group-list_nav.scss */
+.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-parent.is-active > .group.nav > .in > .hd a:before {
+  background-image: url('../images/icon-pic/away-w-bottom.png?1474887733');
+}
+/* line 353, ../sass/_group-list_nav.scss */
+.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a {
   position: relative;
   padding-right: 38px;
 }
-/* line 343, ../sass/_group-list_nav.scss */
-.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > .group.nav.is-parent > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li > .group.nav.is-parent > .in > .hd a:before {
+/* line 359, ../sass/_group-list_nav.scss */
+.base-content .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-content .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before {
   content: "​";
   position: absolute;
   display: block;
@@ -2875,25 +2877,25 @@ th {
   width: 10%;
 }
 @media (max-width: 768px) {
-  /* line 391, ../sass/_group-list_nav.scss */
+  /* line 406, ../sass/_group-list_nav.scss */
   .base-footer .group-list.nav {
     display: none;
   }
 }
-/* line 401, ../sass/_group-list_nav.scss */
+/* line 416, ../sass/_group-list_nav.scss */
 .base-footer .group-list.nav.is-close {
   display: none;
 }
-/* line 408, ../sass/_group-list_nav.scss */
+/* line 423, ../sass/_group-list_nav.scss */
 .base-footer .group-list.nav > .bg-drop-layout > .in > .hd, .base-footer .group-list.nav > .in > .hd {
   display: none;
 }
-/* line 428, ../sass/_group-list_nav.scss */
+/* line 443, ../sass/_group-list_nav.scss */
 .base-footer .group-list.nav > .bg-drop-layout > .in > .ct, .base-footer .group-list.nav > .in > .ct {
   padding: 5px 0;
   border-bottom: 1px solid #e4e4e4;
 }
-/* line 442, ../sass/_group-list_nav.scss */
+/* line 457, ../sass/_group-list_nav.scss */
 .base-footer .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(9n+1), .base-footer .group-list.nav > .in > .ct > .in > ul > li:nth-child(9n+1) {
   clear: left;
 }

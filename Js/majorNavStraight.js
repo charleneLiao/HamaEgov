@@ -13,7 +13,7 @@ define(['getNode'], function(getNode){
 			$child_node_in = getNode.getIn($li.children('[data-type]')).filter(function(i) { //過濾 .content 裡沒有 a 的物件
 
 				var $this = $(this),
-					$parent = $this.parent('[data-type]'),
+					$parent = $this.closest('li'),
 					$a = $this.children('.ct').find('a');
 
 				if( $a.length ) {
