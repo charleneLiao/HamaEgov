@@ -891,6 +891,13 @@
 
 	%article { //文章區塊組件
 		line-height: $line-height-m;
+
+		p {
+
+			+ p {
+				margin-top: $interval-l;
+			}
+		}
 		
 		a {
 			@extend %a;

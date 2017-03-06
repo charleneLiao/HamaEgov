@@ -103,7 +103,7 @@
 			@extend %paragraph;
 
 			p {
-				@include multi-ellipsis();
+				@include multi-ellipsis(2);
 			}
 
 			span {

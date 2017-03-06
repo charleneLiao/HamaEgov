@@ -41,6 +41,7 @@
 		a {
 			@extend %list;
 			@extend %list-hover;
+			@extend %ellipsis;
 		}
 
 		/*i*/.mark {

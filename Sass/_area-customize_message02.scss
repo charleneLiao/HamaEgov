@@ -30,6 +30,8 @@
 	}
 
 	.ct {
+		background-color: $light;
+		padding: $interval-m;
 
 		> .in {
 
@@ -37,6 +39,7 @@
 				@extend %reset;
 
 				> li {
+					background-color: $white;
 
 					&:first-child { //1
 
