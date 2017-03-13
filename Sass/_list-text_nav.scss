@@ -151,9 +151,6 @@
 
 			ul {
 
-				&:after {
-					@extend %clear;
-				}
 			}
 
 			li {
@@ -171,11 +168,11 @@
 				@extend %ellipsis;
 				display: block;
 				padding: $interval-s;
-				transition: $transition;
+				color: $white;
 
 				&:hover {
-					background-color: $minor-color;
-					color: $white;
+					background-color: $white;
+					color: $minor-color;
 				}
 			}
 
@@ -344,7 +341,6 @@
 			a {
 				display: block;
 				padding: $interval-xs;
-				transition: $transition;
 				font-size: $font-size-s;
 
 				&:hover {

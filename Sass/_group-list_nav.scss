@@ -259,24 +259,19 @@
 
 		> .bg-drop-layout > .in, > .in {
 			border: $border;
-			border-bottom-width: $interval-xs;
-			border-radius: 0 0 $interval-xs $interval-xs;
 			background-color: $white;
 
 			> .hd {
 				background-color: $major-color;
-				background-image: repeating-linear-gradient(-45deg, rgba($white, $opacity-vl) 3px, rgba($white, $opacity-vl) 6px, transparent 0, transparent 9px );
 
 				> .in {
 
 				}
 
 				h3 {
-					padding: 25px;
-					padding-top: 30px;
+					padding: $interval-l;
 					color: $white;
-					font-size: $font-size-xl;
-					line-height: 25px;
+					font-size: $font-size-l;
 				}
 
 				span {

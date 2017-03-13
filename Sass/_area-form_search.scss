@@ -208,7 +208,6 @@
 							bottom: 0;
 							width: $icon-width;
 							background-color: $btn-bg-color;
-							transition: $transition;
 							@extend %hide-text;
 							@include bg-to-pic('icon-pic/icon-w-search.png' ,false);
 
@@ -247,7 +246,6 @@
 					padding: $btn-padding;
 					box-shadow: $box-shadow;
 					background-color: $white;
-					transition: $transition;
 
 					&:hover {
 						background-color: $light;

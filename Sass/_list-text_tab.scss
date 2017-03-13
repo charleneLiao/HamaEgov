@@ -36,9 +36,7 @@
 		}
 
 		ul {
-			border-bottom-style: solid;
-			border-bottom-width: 2px;
-			border-bottom-color: $major-color;
+
 		}
 
 		li {
@@ -49,48 +47,26 @@
 			@include len-rwd('phone', 2);
 
 			&.is-active {
-				top: 2px;
-
-				@include media('mobile') {
-					top: auto;
-				}
-
-				span {
-					border-color: $major-color;
-				}
 
 				a {
-					border-color: $major-color;
-					color: $major-color;
+					background-color: $minor-color;
+					color: $white;
 				}
 			}
 		}
 
 		span {
 			display: block;
-			border: 1px solid transparent;
-			border-bottom-width: 0;
-
-			@include media('mobile') {
-				border-bottom-width: 1px;
-				margin: $interval-xs;
-			}
+			margin: $interval-xs;
 		}
 
 		a {
 			@extend %ellipsis;
 			display: block;
 			padding: $interval-l;
-			background-color: $white;
+			background-color: $light;
 			color: $body-font-color;
-			transition: $transition;
-			border: 1px solid $border-color;
-			border-bottom-width: 0;
 			text-align: center;
-
-			@include media('mobile') {
-				border-bottom-width: 1px;
-			}
 
 			&:hover {
 				color: $major-color;

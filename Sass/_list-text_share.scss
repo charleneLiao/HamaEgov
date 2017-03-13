@@ -70,7 +70,6 @@
 				@extend %hide-text;
 				height: 40px;
 				display: block;
-				transition: $transition;
 				background-repeat: no-repeat;
 				background-position: center;
 			}
@@ -178,7 +177,6 @@
 			a {
 				@extend %hide-text;
 				display: block !important;
-				transition: $transition;
 			}
 
 			/*i*/.mark {

@@ -26,7 +26,6 @@
 				a {
 					display: block;
 					padding: $interval-m;
-					transition: $transition;
 					padding-right: 40px;
 
 					&:before {
@@ -108,7 +107,6 @@
 					display: block;
 					padding: $interval-s;
 					text-align: center;
-					transition: $transition;
 					color: $white;
 					font-size: $font-size-l;
 
@@ -134,8 +132,7 @@
 
 				> .in {
 					padding: $interval-xs;
-					background-color: $white;
-					border: $border;
+					background-color: deeper($major-color);
 				}
 			}
 
@@ -186,7 +183,6 @@
 				a {
 					display: block;
 					padding: 12px;
-					transition: $transition;
 					font-size: $font-size-l;
 
 					&:hover {

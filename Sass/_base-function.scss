@@ -748,7 +748,7 @@
 
 		h4, h3 {
 			@extend %ellipsis;
-			font-size: $font-size-xxxl;
+			font-size: $font-size-xl;
 			padding-bottom: $interval-m;
 			border-bottom: $border;
 			margin-bottom: $interval-m;
@@ -845,8 +845,6 @@
 		font-size: $font-size-s;
 		text-decoration: none;
 		background-color: $btn-bg-color;
-		transition: $transition;
-		border-radius: $border-radius;
 
 		&:link {
 			color: $btn-text-color;
@@ -868,7 +866,6 @@
 	%btn-s { //小按鈕組件
 		@extend %btn;
 		padding: $btn-padding-xs;
-		font-size: $font-size-s;
 	}
 
 	%btn-imp { // important 重要的按鈕組件
