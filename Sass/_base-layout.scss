@@ -68,7 +68,6 @@
 
 				> .in {
 					border-bottom: $border;
-					text-align: right;
 					margin-bottom: $interval-m;
 				}
 			}
@@ -118,6 +117,49 @@
 
 	.base-header & {
 		position: relative;
+
+		> .bg-drop-layout > .in, > .in {
+
+			> .hd {
+
+				> .in {
+
+				}
+
+				h3 {
+
+				}
+
+				span {
+						
+				}
+
+				a {
+
+				}
+			}
+
+			> .ct {
+
+				> .in {
+
+				}
+			}
+		}
+	}
+
+	.base-content & {
+		position: absolute;
+		right: 0;
+		top: $interval-s;
+
+		@include js(false) {
+			display: none;
+		}
+
+		@include media('mobile') {
+			display: none;
+		}
 
 		> .bg-drop-layout > .in, > .in {
 

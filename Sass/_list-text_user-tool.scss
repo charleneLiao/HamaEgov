@@ -3,46 +3,15 @@
 //使用者工具================================================================
 
 .list-text.user-tool {
-	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	z-index: 2;
-
-	@include js(false) {
-		display: none;
-	}
-
-	@include media('mobile') {
-		display: none;
-	}
-
-	&:hover, &.is-active {
-
-		.hd {
-			background-color: $white;
-
-			a {
-				color: $major-color;
-
-				&:before {
-					@include icon-font('arrow_drop_up');
-				}
-			}
-		}
-
-		.ct {
-			display: block;
-		}
-	}
 
 	> .bg-drop-layout > .in, > .in {
 
 	}
 
 	.hd {
-		background-color: $light;
-		border: $border;
-		border-bottom-width: 0;
+		display: none;
 
 		> .in {
 
@@ -53,151 +22,107 @@
 		}
 
 		span {
-			display: block;
+
 		}
 
 		a {
-			display: block;
-			padding: $interval-s;
-			font-size: $font-size-s;
 
-			&:before {
-				@include icon-font('arrow_drop_down');
-				margin-right: $interval-xs;
-			}
 		}
 	}
 
 	.ct {
-		display: none;
-		position: absolute;
-		top: 100%;
-		top: calc(100% - 1px);
-		right: 0;
-		min-width: 120px;
-		z-index: -1;
 
 		> .in {
 
 		}
 
 		ul {
-			background-color: $white;
-			border: $border;
-			padding: $interval-m;
+
 		}
 
 		li {
+			vertical-align: middle;
+			display: inline-block;
 
 			+ li {
-				margin-top: $interval-s;
+				margin-left: $interval-xs;
 			}
 
-			&.login {
+			// &.login {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('person');
-					}
-				}
-			}
+			// 	}
+			// }
 
-			&.logout {
+			// &.logout {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('person_outline');
-					}
-				}
-			}
+			// 	}
+			// }
 
 			&.bopomofo {
 
 				a {
-
-					&:before {
-						@include icon-font('font_download');
-					}
+					background-image: image-url('icon-pic/user-tool-bopomofo.png');
 				}
 			}
 
-			&.edit {
+			// &.edit {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
+			// 	}
+			// }
 
 			&.print {
 
 				a {
-
-					&:before {
-						@include icon-font('print');
-					}
+					background-image: image-url('icon-pic/user-tool-print.png');
 				}
 			}
 
 			&.data {
 
 				a {
-
-					&:before {
-						@include icon-font('data_usage');
-					}
+					background-image: image-url('icon-pic/user-tool-metadata.png');
 				}
 			}
 
-			&.nav-edit {
+			// &.nav-edit {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
+			// 	}
+			// }
 
-			&.index-edit {
+			// &.index-edit {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
+			// 	}
+			// }
 
-			&.article-edit {
+			// &.article-edit {
 
-				a {
+			// 	a {
 
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
+			// 	}
+			// }
 		}
 
 		span {
 			display: block;
-			text-align: left;
 		}
 
 		a {
-
-			&:before {
-				margin-right: $interval-xs;
-			}
-
-			&:hover {
-				color: $major-color;
-			}
+			@extend %hide-text;
+			display: block;
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 
 		/*i*/.mark {
