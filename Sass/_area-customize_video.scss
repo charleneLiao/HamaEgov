@@ -72,6 +72,14 @@
 			}
 		}
 
+		/*a*/.div {
+			display: block;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		.essay {
 			
 		}

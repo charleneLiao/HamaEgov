@@ -38,9 +38,14 @@
 				@extend %clear;
 			}
 
-			> .div {
+			> /*a*/.div {
+				display: block;
 				width: 50%;
 				float: left;
+
+				&:hover {
+					text-decoration: underline;
+				}
 
 				@include media('mobile') {
 					width: auto;
@@ -76,17 +81,16 @@
 						background-color: $light;
 					}
 
-					a {
-						text-decoration: underline;
-
-						&:hover {
-							text-decoration: none;
-						}
-					}
-
 					iframe {
 						display: block;
 						width: 100%;
+					}
+				}
+
+				/*a*/.div {
+
+					&:hover {
+						text-decoration: underline;
 					}
 				}
 
@@ -97,7 +101,6 @@
 				.caption {
 					font-size: $font-size-l;
 					color: $major-color;
-					text-decoration: underline;
 					margin-bottom: $interval-l;
 
 					span {

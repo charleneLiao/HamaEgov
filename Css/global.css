@@ -41,7 +41,7 @@
 }
 
 /* line 543, ../sass/_base-function.scss */
-.base-mobile > .in > .hd a, .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-mobile .list-text.share .ct a, .base-extend .list-text.share .ct a, .list-text.font-size .ct a, .list-text.open-data .ct a, .list-text.user-tool .ct a, .area-form.page-search .hd a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a, .list-pic.marquee02 .ft li.next a, .list-pic.marquee02 .ft li.prev a, .list-pic.marquee03 .ft li.next a, .list-pic.marquee03 .ft li.prev a, .list-pic.marquee04 .ft li.next a, .list-pic.marquee04 .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .group-list.message03 > .bg-drop-layout > .in > .ft li.next a, .group-list.message03 > .bg-drop-layout > .in > .ft li.prev a, .group-list.message03 > .in > .ft li.next a, .group-list.message03 > .in > .ft li.prev a, .group-list.album02 > .bg-drop-layout > .in > .ft li.next a, .group-list.album02 > .bg-drop-layout > .in > .ft li.prev a, .group-list.album02 > .in > .ft li.next a, .group-list.album02 > .in > .ft li.prev a, .group-list.album03 > .bg-drop-layout > .in > .ft li.next a, .group-list.album03 > .bg-drop-layout > .in > .ft li.prev a, .group-list.album03 > .in > .ft li.next a, .group-list.album03 > .in > .ft li.prev a, .area-customize.calendar-detail02 .ct .label a, .area-customize.calendar-schedule .ct .label a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a {
+.base-mobile > .in > .hd a, .simple-text.major-logo .ct a, .simple-text.minor-logo .ct a, .base-mobile .list-text.share .ct a, .base-extend .list-text.share .ct a, .list-text.open-data .ct a, .list-text.user-tool .ct a, .area-form.page-search .hd a, .base-mobile .area-form.search .ct .fieldset span.submit a, .base-wrapper .area-form.search .ct .fieldset span.submit a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.next a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.prev a, .group-list.major-slider > .in > .ft li.next a, .group-list.major-slider > .in > .ft li.prev a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-img a, .group-list.major-slider > .in > .ft li.is-img a, .group-list.major-slider > .bg-drop-layout > .in > .ft li.is-dot a, .group-list.major-slider > .in > .ft li.is-dot a, .list-pic.marquee .ft li.next a, .list-pic.marquee .ft li.prev a, .list-pic.marquee02 .ft li.next a, .list-pic.marquee02 .ft li.prev a, .list-pic.marquee03 .ft li.next a, .list-pic.marquee03 .ft li.prev a, .list-pic.marquee04 .ft li.next a, .list-pic.marquee04 .ft li.prev a, .group-list.marquee > .bg-drop-layout > .in > .ft li.next a, .group-list.marquee > .bg-drop-layout > .in > .ft li.prev a, .group-list.marquee > .in > .ft li.next a, .group-list.marquee > .in > .ft li.prev a, .group-list.message03 > .bg-drop-layout > .in > .ft li.next a, .group-list.message03 > .bg-drop-layout > .in > .ft li.prev a, .group-list.message03 > .in > .ft li.next a, .group-list.message03 > .in > .ft li.prev a, .group-list.album02 > .bg-drop-layout > .in > .ft li.next a, .group-list.album02 > .bg-drop-layout > .in > .ft li.prev a, .group-list.album02 > .in > .ft li.next a, .group-list.album02 > .in > .ft li.prev a, .group-list.album03 > .bg-drop-layout > .in > .ft li.next a, .group-list.album03 > .bg-drop-layout > .in > .ft li.prev a, .group-list.album03 > .in > .ft li.next a, .group-list.album03 > .in > .ft li.prev a, .area-customize.calendar-detail02 .ct .label a, .area-customize.calendar-schedule .ct .label a, .list-pic.page-block .ft li.next a, .list-pic.page-block .ft li.prev a, .list-pic.slider .ft li.next a, .list-pic.slider .ft li.prev a {
   font: 0/0 a;
   color: transparent;
 }
@@ -148,7 +148,7 @@
 }
 
 /* line 799, ../sass/_base-function.scss */
-.list-pic.marquee .ct .mark, .list-pic.marquee02 .ct .mark, .list-pic.marquee03 .ct .mark, .list-pic.marquee04 .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark, .simple-text.default .ct .mark, .base-content .list-text.link .ct .mark, .list-text.slider .ct .mark, .simple-text.message .ct .mark, .area-essay.message .ct .mark, .base-module-area .area-essay.link .ct .mark, .base-page-area .area-essay.link .ct .mark, .area-form.vote .ct .mark, .list-text.rss .ct .mark, .area-customize.calendar .ct .mark, .simple-text.weather .ct .mark, .area-customize.video .ct .mark, .area-essay.message02 .ct .mark, .list-text.label .ct a, .area-customize.calendar-detail .ct .table .mark, .area-customize.calendar-detail04 .ct .table .mark, .area-essay.page-caption-label .ct .mark, .area-essay.page-caption-label-p .ct .mark, .area-essay.page-essay .ct .mark, .area-essay.page-img-caption-label .ct .mark, .area-figure.page-img-figcaption-label .ct .mark, .area-figure.page-img-label .ct .mark, .area-figure.page-img-label-p .ct .mark, .area-customize.map .ct .mark, .area-customize.audio .ct .mark, .area-customize.iframe .ct .mark, .list-text.message .ct .mark, .list-text.page-list .ct .mark {
+.list-pic.marquee .ct .mark, .list-pic.marquee02 .ct .mark, .list-pic.marquee03 .ct .mark, .list-pic.marquee04 .ct .mark, .list-pic.link .ct .mark, .list-pic.album .ct .mark, .list-pic.pic-download .ct .mark, .list-pic.page-list .ct .mark, .list-pic.page-block .ct .mark, .list-pic.slider .ct .mark, .simple-text.default .ct .mark, .base-content .list-text.link .ct .mark, .list-text.slider .ct .mark, .simple-text.message .ct .mark, .area-essay.message .ct .mark, .base-module-area .area-essay.link .ct .mark, .base-page-area .area-essay.link .ct .mark, .area-form.vote .ct .mark, .list-text.rss .ct .mark, .area-customize.calendar .ct .mark, .area-customize.video .ct .mark, .area-essay.message02 .ct .mark, .list-text.label .ct a, .area-customize.calendar-detail .ct .table .mark, .area-customize.calendar-detail04 .ct .table .mark, .area-essay.page-caption-label .ct .mark, .area-essay.page-caption-label-p .ct .mark, .area-essay.page-essay .ct .mark, .area-essay.page-img-caption-label .ct .mark, .area-figure.page-img-figcaption-label .ct .mark, .area-figure.page-img-label .ct .mark, .area-figure.page-img-label-p .ct .mark, .area-customize.map .ct .mark, .area-customize.audio .ct .mark, .area-customize.iframe .ct .mark, .list-text.message .ct .mark, .list-text.page-list .ct .mark {
   display: inline-block;
   padding: 5px 8px;
   border: 0;
@@ -266,7 +266,7 @@
 }
 
 /* line 941, ../sass/_base-function.scss */
-.simple-text.default .ct a, .base-content .list-text.link .ct a, .list-text.slider .ct a, .simple-text.message .ct a, .list-text.rss .ct a, .area-customize.calendar .ct .list a, .simple-text.weather .ct a, .list-text.content-file, .list-text.content-list .hd a, .list-text.content-list .ct a, .list-text.file-download .ct a, .list-text.file-download-multiple, .list-text.message .ct a, .list-text.sitemap .ct a, .list-text.page-list .ct a {
+.simple-text.default .ct a, .base-content .list-text.link .ct a, .list-text.slider .ct a, .simple-text.message .ct a, .list-text.rss .ct a, .area-customize.calendar .ct .list a, .list-text.content-file, .list-text.content-list .hd a, .list-text.content-list .ct a, .list-text.file-download .ct a, .list-text.file-download-multiple, .list-text.message .ct a, .list-text.sitemap .ct a, .list-text.page-list .ct a {
   display: block;
   padding: 8px;
   background-color: #f0f0f0;
@@ -274,7 +274,7 @@
 }
 
 /* line 950, ../sass/_base-function.scss */
-.simple-text.default .ct a:hover, .base-content .list-text.link .ct a:hover, .list-text.slider .ct a:hover, .simple-text.message .ct a:hover, .list-text.rss .ct a:hover, .area-customize.calendar .ct .list a:hover, .simple-text.weather .ct a:hover, .list-text.content-file:hover, .list-text.content-list .hd a:hover, .list-text.content-list .ct a:hover, .list-text.file-download .ct a:hover, .list-text.file-download-multiple:hover, .list-text.message .ct a:hover, .list-text.sitemap .ct a:hover, .list-text.page-list .ct a:hover {
+.simple-text.default .ct a:hover, .base-content .list-text.link .ct a:hover, .list-text.slider .ct a:hover, .simple-text.message .ct a:hover, .list-text.rss .ct a:hover, .area-customize.calendar .ct .list a:hover, .list-text.content-file:hover, .list-text.content-list .hd a:hover, .list-text.content-list .ct a:hover, .list-text.file-download .ct a:hover, .list-text.file-download-multiple:hover, .list-text.message .ct a:hover, .list-text.sitemap .ct a:hover, .list-text.page-list .ct a:hover {
   color: currentColor;
   background-color: #e4e4e4;
 }
@@ -334,7 +334,7 @@
 }
 
 /* line 1018, ../sass/_base-function.scss */
-.base-footer.is-active > .in > .hd a:before, .base-footer > .in > .hd a:before, .base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .base-content .area-editor.address .ct a.is-map:after, .base-footer .area-editor.address .ct a.is-map:after, .area-customize.message .ct .div.is-location .label ul:before, .area-customize.message .ct .mark:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.vote-table .ct a.submit:before, .area-table.vote-table .ct a.result:before {
+.base-footer.is-active > .in > .hd a:before, .base-footer > .in > .hd a:before, .base-mobile .group.nav > .bg-drop-layout > .in > .hd a:before, .base-mobile .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .list-text.breadcrumb .ct li:before, .list-text.breadcrumb .ct li + li:before, .base-content .area-editor.address .ct a.is-map:after, .base-footer .area-editor.address .ct a.is-map:after, .area-customize.message .ct .div.is-location .label ul:before, .area-customize.message .ct .mark:before, .list-text.sitemap.is-active > .bg-drop-layout > .in .hd h4:before, .list-text.sitemap.is-active > .in .hd h4:before, .list-text.sitemap .hd h4:before, .area-table.vote-table .ct a.submit:before, .area-table.vote-table .ct a.result:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -361,7 +361,7 @@
 }
 
 /* line 249, ../sass/_base-icon-font.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before {
+.base-mobile .group.nav > .bg-drop-layout > .in > .hd a:before, .base-mobile .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before, .base-mobile .group-list.nav > .in > .ct > .in > ul > li.is-parent > .group.nav > .in > .hd a:before {
   content: "\e10f";
 }
 
@@ -406,8 +406,8 @@
 }
 
 /* line 1328, icon-pic/*.png */
-.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-double-b-left, .icon-pic-away-double-b-right, .icon-pic-away-gr-left, .icon-pic-away-gr-right, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-left02, .icon-pic-away-w-left03, .icon-pic-away-w-left04, .icon-pic-away-w-right, .icon-pic-away-w-right02, .icon-pic-away-w-right03, .icon-pic-away-w-right04, .icon-pic-away-w-top, .icon-pic-block, .icon-pic-calendar, .icon-pic-clock, .icon-pic-ctrl-b-close, .icon-pic-eyes, .icon-pic-file-type-ai, .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-cdr, .base-section a.cdr:after, .list-text.content-file .ct li.cdr a:before, .list-text.file-download .ct li.cdr a:before, .list-text.file-download-multiple .ct li.cdr a:before, .icon-pic-file-type-css, .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-dmg, .base-section a.dmg:after, .list-text.content-file .ct li.dmg a:before, .list-text.file-download .ct li.dmg a:before, .list-text.file-download-multiple .ct li.dmg a:before, .icon-pic-file-type-doc, .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-exe, .base-section a.exe:after, .list-text.content-file .ct li.exe a:before, .list-text.file-download .ct li.exe a:before, .list-text.file-download-multiple .ct li.exe a:before, .icon-pic-file-type-gif, .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .base-section a.rss:after, .list-text.rss .ct li a:after, .list-text.content-file .ct li.rss a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .icon-pic-font-medium, .icon-pic-font-smail, .icon-pic-icon-mobile_btn_close, .icon-pic-icon-mobile_btn_menu, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-video, .icon-pic-info, .icon-pic-list, .icon-pic-opn-data-csv, .icon-pic-opn-data-json, .icon-pic-opn-data-rss, .icon-pic-opn-data-xml, .icon-pic-search, .icon-pic-share-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .area-customize.sign-in .ct .email a:before, .icon-pic-share-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .area-customize.sign-in .ct .facebook a:before, .icon-pic-share-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .area-customize.sign-in .ct .google a:before, .icon-pic-share-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .area-customize.sign-in .ct .line a:before, .icon-pic-share-plurk, .base-extend .list-text.share .ct li.plurk a, .area-form.sign-in .ct .list li.plurk a:before, .area-customize.sign-in .ct .plurk a:before, .icon-pic-share-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .area-customize.sign-in .ct .twitter a:before, .icon-pic-share, .icon-pic-user-tool-bopomofo, .icon-pic-user-tool-metadata, .icon-pic-user-tool-print, .icon-pic-weather-type-01, .icon-pic-weather-type-02, .icon-pic-weather-type-03, .icon-pic-weather-type-04, .icon-pic-weather-type-05, .icon-pic-weather-type-06, .icon-pic-weather-type-07, .icon-pic-weather-type-08, .icon-pic-weather-type-09, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65 {
-  background-image: url('../images/icon-pic-sd4e2fa3110.png');
+.icon-pic-sprite, .icon-pic-away-b-bottom, .icon-pic-away-b-left, .icon-pic-away-b-right, .icon-pic-away-b-top, .icon-pic-away-double-b-left, .icon-pic-away-double-b-right, .icon-pic-away-gr-left, .icon-pic-away-gr-right, .icon-pic-away-w-bottom, .icon-pic-away-w-left, .icon-pic-away-w-left02, .icon-pic-away-w-left03, .icon-pic-away-w-left04, .icon-pic-away-w-right, .icon-pic-away-w-right02, .icon-pic-away-w-right03, .icon-pic-away-w-right04, .icon-pic-away-w-top, .icon-pic-block, .icon-pic-calendar, .icon-pic-clock, .icon-pic-ctrl-b-close, .icon-pic-eyes, .icon-pic-file-type-ai, .base-section a.ai:after, .list-text.content-file .ct li.ai a:before, .list-text.file-download .ct li.ai a:before, .list-text.file-download-multiple .ct li.ai a:before, .icon-pic-file-type-avi, .base-section a.avi:after, .list-text.content-file .ct li.avi a:before, .list-text.file-download .ct li.avi a:before, .list-text.file-download-multiple .ct li.avi a:before, .icon-pic-file-type-bmp, .base-section a.bmp:after, .list-text.content-file .ct li.bmp a:before, .list-text.file-download .ct li.bmp a:before, .list-text.file-download-multiple .ct li.bmp a:before, .icon-pic-file-type-cdr, .base-section a.cdr:after, .list-text.content-file .ct li.cdr a:before, .list-text.file-download .ct li.cdr a:before, .list-text.file-download-multiple .ct li.cdr a:before, .icon-pic-file-type-css, .base-section a.css:after, .list-text.content-file .ct li.css a:before, .list-text.file-download .ct li.css a:before, .list-text.file-download-multiple .ct li.css a:before, .icon-pic-file-type-csv, .base-section a.csv:after, .list-text.content-file .ct li.csv a:before, .list-text.file-download .ct li.csv a:before, .list-text.file-download-multiple .ct li.csv a:before, .icon-pic-file-type-dmg, .base-section a.dmg:after, .list-text.content-file .ct li.dmg a:before, .list-text.file-download .ct li.dmg a:before, .list-text.file-download-multiple .ct li.dmg a:before, .icon-pic-file-type-doc, .base-section a.doc:after, .list-text.content-file .ct li.doc a:before, .list-text.file-download .ct li.doc a:before, .list-text.file-download-multiple .ct li.doc a:before, .icon-pic-file-type-docx, .base-section a.docx:after, .list-text.content-file .ct li.docx a:before, .list-text.file-download .ct li.docx a:before, .list-text.file-download-multiple .ct li.docx a:before, .icon-pic-file-type-exe, .base-section a.exe:after, .list-text.content-file .ct li.exe a:before, .list-text.file-download .ct li.exe a:before, .list-text.file-download-multiple .ct li.exe a:before, .icon-pic-file-type-gif, .base-section a.gif:after, .list-text.content-file .ct li.gif a:before, .list-text.file-download .ct li.gif a:before, .list-text.file-download-multiple .ct li.gif a:before, .icon-pic-file-type-html, .base-section a.html:after, .list-text.content-file .ct li.html a:before, .list-text.file-download .ct li.html a:before, .list-text.file-download-multiple .ct li.html a:before, .icon-pic-file-type-ico, .base-section a.ico:after, .list-text.content-file .ct li.ico a:before, .list-text.file-download .ct li.ico a:before, .list-text.file-download-multiple .ct li.ico a:before, .icon-pic-file-type-jpeg, .base-section a.jpeg:after, .list-text.content-file .ct li.jpeg a:before, .list-text.file-download .ct li.jpeg a:before, .list-text.file-download-multiple .ct li.jpeg a:before, .icon-pic-file-type-jpg, .base-section a.jpg:after, .list-text.content-file .ct li.jpg a:before, .list-text.file-download .ct li.jpg a:before, .list-text.file-download-multiple .ct li.jpg a:before, .icon-pic-file-type-js, .base-section a.js:after, .list-text.content-file .ct li.js a:before, .list-text.file-download .ct li.js a:before, .list-text.file-download-multiple .ct li.js a:before, .icon-pic-file-type-json, .icon-pic-file-type-link, .base-section a.link:after, .list-text.content-file .ct li.link a:before, .list-text.file-download .ct li.link a:before, .list-text.file-download-multiple .ct li.link a:before, .icon-pic-file-type-md, .base-section a.md:after, .list-text.content-file .ct li.md a:before, .list-text.file-download .ct li.md a:before, .list-text.file-download-multiple .ct li.md a:before, .icon-pic-file-type-mov, .base-section a.mov:after, .list-text.content-file .ct li.mov a:before, .list-text.file-download .ct li.mov a:before, .list-text.file-download-multiple .ct li.mov a:before, .icon-pic-file-type-mp3, .base-section a.mp3:after, .list-text.content-file .ct li.mp3 a:before, .list-text.file-download .ct li.mp3 a:before, .list-text.file-download-multiple .ct li.mp3 a:before, .icon-pic-file-type-mp4, .base-section a.mp4:after, .list-text.content-file .ct li.mp4 a:before, .list-text.file-download .ct li.mp4 a:before, .list-text.file-download-multiple .ct li.mp4 a:before, .icon-pic-file-type-odf, .base-section a.odf:after, .list-text.content-file .ct li.odf a:before, .list-text.file-download .ct li.odf a:before, .list-text.file-download-multiple .ct li.odf a:before, .icon-pic-file-type-odp, .base-section a.odp:after, .list-text.content-file .ct li.odp a:before, .list-text.file-download .ct li.odp a:before, .list-text.file-download-multiple .ct li.odp a:before, .icon-pic-file-type-ods, .base-section a.ods:after, .list-text.content-file .ct li.ods a:before, .list-text.file-download .ct li.ods a:before, .list-text.file-download-multiple .ct li.ods a:before, .icon-pic-file-type-odt, .base-section a.odt:after, .list-text.content-file .ct li.odt a:before, .list-text.file-download .ct li.odt a:before, .list-text.file-download-multiple .ct li.odt a:before, .icon-pic-file-type-ogg, .base-section a.ogg:after, .list-text.content-file .ct li.ogg a:before, .list-text.file-download .ct li.ogg a:before, .list-text.file-download-multiple .ct li.ogg a:before, .icon-pic-file-type-ogv, .base-section a.ogv:after, .list-text.content-file .ct li.ogv a:before, .list-text.file-download .ct li.ogv a:before, .list-text.file-download-multiple .ct li.ogv a:before, .icon-pic-file-type-other, .base-section a.other:after, .list-text.content-file .ct li.other a:before, .list-text.file-download .ct li.other a:before, .list-text.file-download-multiple .ct li.other a:before, .icon-pic-file-type-pdf, .base-section a.pdf:after, .list-text.content-file .ct li.pdf a:before, .list-text.file-download .ct li.pdf a:before, .list-text.file-download-multiple .ct li.pdf a:before, .icon-pic-file-type-png, .base-section a.png:after, .list-text.content-file .ct li.png a:before, .list-text.file-download .ct li.png a:before, .list-text.file-download-multiple .ct li.png a:before, .icon-pic-file-type-ppt, .base-section a.ppt:after, .list-text.content-file .ct li.ppt a:before, .list-text.file-download .ct li.ppt a:before, .list-text.file-download-multiple .ct li.ppt a:before, .icon-pic-file-type-pptx, .base-section a.pptx:after, .list-text.content-file .ct li.pptx a:before, .list-text.file-download .ct li.pptx a:before, .list-text.file-download-multiple .ct li.pptx a:before, .icon-pic-file-type-psd, .base-section a.psd:after, .list-text.content-file .ct li.psd a:before, .list-text.file-download .ct li.psd a:before, .list-text.file-download-multiple .ct li.psd a:before, .icon-pic-file-type-rar, .base-section a.rar:after, .list-text.content-file .ct li.rar a:before, .list-text.file-download .ct li.rar a:before, .list-text.file-download-multiple .ct li.rar a:before, .icon-pic-file-type-rss, .base-section a.rss:after, .list-text.rss .ct li a:after, .list-text.content-file .ct li.rss a:before, .list-text.file-download .ct li.rss a:before, .list-text.file-download-multiple .ct li.rss a:before, .icon-pic-file-type-sass, .base-section a.sass:after, .list-text.content-file .ct li.sass a:before, .list-text.file-download .ct li.sass a:before, .list-text.file-download-multiple .ct li.sass a:before, .icon-pic-file-type-svg, .base-section a.svg:after, .list-text.content-file .ct li.svg a:before, .list-text.file-download .ct li.svg a:before, .list-text.file-download-multiple .ct li.svg a:before, .icon-pic-file-type-swf, .base-section a.swf:after, .list-text.content-file .ct li.swf a:before, .list-text.file-download .ct li.swf a:before, .list-text.file-download-multiple .ct li.swf a:before, .icon-pic-file-type-tar, .base-section a.tar:after, .list-text.content-file .ct li.tar a:before, .list-text.file-download .ct li.tar a:before, .list-text.file-download-multiple .ct li.tar a:before, .icon-pic-file-type-tif, .base-section a.tif:after, .list-text.content-file .ct li.tif a:before, .list-text.file-download .ct li.tif a:before, .list-text.file-download-multiple .ct li.tif a:before, .icon-pic-file-type-txt, .base-section a.txt:after, .list-text.content-file .ct li.txt a:before, .list-text.file-download .ct li.txt a:before, .list-text.file-download-multiple .ct li.txt a:before, .icon-pic-file-type-wav, .base-section a.wav:after, .list-text.content-file .ct li.wav a:before, .list-text.file-download .ct li.wav a:before, .list-text.file-download-multiple .ct li.wav a:before, .icon-pic-file-type-webm, .base-section a.webm:after, .list-text.content-file .ct li.webm a:before, .list-text.file-download .ct li.webm a:before, .list-text.file-download-multiple .ct li.webm a:before, .icon-pic-file-type-xls, .base-section a.xls:after, .list-text.content-file .ct li.xls a:before, .list-text.file-download .ct li.xls a:before, .list-text.file-download-multiple .ct li.xls a:before, .icon-pic-file-type-xlsx, .base-section a.xlsx:after, .list-text.content-file .ct li.xlsx a:before, .list-text.file-download .ct li.xlsx a:before, .list-text.file-download-multiple .ct li.xlsx a:before, .icon-pic-file-type-xml, .base-section a.xml:after, .list-text.content-file .ct li.xml a:before, .list-text.file-download .ct li.xml a:before, .list-text.file-download-multiple .ct li.xml a:before, .icon-pic-file-type-zip, .base-section a.zip:after, .list-text.content-file .ct li.zip a:before, .list-text.file-download .ct li.zip a:before, .list-text.file-download-multiple .ct li.zip a:before, .icon-pic-font-large, .icon-pic-font-medium, .icon-pic-font-smail, .icon-pic-icon-mobile_btn_close, .icon-pic-icon-mobile_btn_menu, .icon-pic-icon-w-img, .icon-pic-icon-w-search, .icon-pic-icon-w-video, .icon-pic-info, .icon-pic-list, .icon-pic-opn-data-csv, .icon-pic-opn-data-json, .icon-pic-opn-data-rss, .icon-pic-opn-data-xml, .icon-pic-search, .icon-pic-share-email, .base-extend .list-text.share .ct li.email a, .area-form.sign-in .ct .list li.email a:before, .area-customize.sign-in .ct .email a:before, .icon-pic-share-facebook, .base-extend .list-text.share .ct li.facebook a, .area-form.sign-in .ct .list li.facebook a:before, .area-customize.sign-in .ct .facebook a:before, .icon-pic-share-google, .base-extend .list-text.share .ct li.google a, .area-form.sign-in .ct .list li.google a:before, .area-customize.sign-in .ct .google a:before, .icon-pic-share-line, .base-extend .list-text.share .ct li.line a, .area-form.sign-in .ct .list li.line a:before, .area-customize.sign-in .ct .line a:before, .icon-pic-share-plurk, .base-extend .list-text.share .ct li.plurk a, .area-form.sign-in .ct .list li.plurk a:before, .area-customize.sign-in .ct .plurk a:before, .icon-pic-share-twitter, .base-extend .list-text.share .ct li.twitter a, .area-form.sign-in .ct .list li.twitter a:before, .area-customize.sign-in .ct .twitter a:before, .icon-pic-share, .icon-pic-user-tool-bopomofo, .icon-pic-user-tool-metadata, .icon-pic-user-tool-print, .icon-pic-weather-type-1, .icon-pic-weather-type-10, .icon-pic-weather-type-11, .icon-pic-weather-type-12, .icon-pic-weather-type-13, .icon-pic-weather-type-14, .icon-pic-weather-type-15, .icon-pic-weather-type-16, .icon-pic-weather-type-17, .icon-pic-weather-type-18, .icon-pic-weather-type-19, .icon-pic-weather-type-2, .icon-pic-weather-type-20, .icon-pic-weather-type-21, .icon-pic-weather-type-22, .icon-pic-weather-type-23, .icon-pic-weather-type-24, .icon-pic-weather-type-25, .icon-pic-weather-type-26, .icon-pic-weather-type-27, .icon-pic-weather-type-28, .icon-pic-weather-type-29, .icon-pic-weather-type-3, .icon-pic-weather-type-30, .icon-pic-weather-type-31, .icon-pic-weather-type-32, .icon-pic-weather-type-33, .icon-pic-weather-type-34, .icon-pic-weather-type-35, .icon-pic-weather-type-36, .icon-pic-weather-type-37, .icon-pic-weather-type-38, .icon-pic-weather-type-39, .icon-pic-weather-type-4, .icon-pic-weather-type-40, .icon-pic-weather-type-41, .icon-pic-weather-type-42, .icon-pic-weather-type-43, .icon-pic-weather-type-44, .icon-pic-weather-type-45, .icon-pic-weather-type-46, .icon-pic-weather-type-47, .icon-pic-weather-type-48, .icon-pic-weather-type-49, .icon-pic-weather-type-5, .icon-pic-weather-type-50, .icon-pic-weather-type-51, .icon-pic-weather-type-52, .icon-pic-weather-type-53, .icon-pic-weather-type-54, .icon-pic-weather-type-55, .icon-pic-weather-type-56, .icon-pic-weather-type-57, .icon-pic-weather-type-58, .icon-pic-weather-type-59, .icon-pic-weather-type-6, .icon-pic-weather-type-60, .icon-pic-weather-type-61, .icon-pic-weather-type-62, .icon-pic-weather-type-63, .icon-pic-weather-type-64, .icon-pic-weather-type-65, .icon-pic-weather-type-7, .icon-pic-weather-type-8, .icon-pic-weather-type-9 {
+  background-image: url('../images/icon-pic-sc0d81fed52.png');
   background-repeat: no-repeat;
 }
 
@@ -892,83 +892,43 @@
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-01 {
+.icon-pic-weather-type-1 {
   background-position: 0 -1948px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-02 {
-  background-position: 0 -1993px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-03 {
+.icon-pic-weather-type-10 {
   background-position: 0 -2038px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-04 {
-  background-position: 0 -2083px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-05 {
+.icon-pic-weather-type-11 {
   background-position: 0 -2128px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-06 {
-  background-position: 0 -2173px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-07 {
+.icon-pic-weather-type-12 {
   background-position: 0 -2218px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-08 {
-  background-position: 0 -2263px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-09 {
+.icon-pic-weather-type-13 {
   background-position: 0 -2308px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-10 {
-  background-position: 0 -2353px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-11 {
+.icon-pic-weather-type-14 {
   background-position: 0 -2398px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-12 {
-  background-position: 0 -2443px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-13 {
+.icon-pic-weather-type-15 {
   background-position: 0 -2488px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-14 {
-  background-position: 0 -2533px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-15 {
-  background-position: 0 -2578px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-16 {
-  background-position: 0 -2623px;
+  background-position: 0 -2578px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
@@ -978,242 +938,282 @@
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-18 {
-  background-position: 0 -2713px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-19 {
   background-position: 0 -2758px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-20 {
-  background-position: 0 -2803px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-21 {
+.icon-pic-weather-type-19 {
   background-position: 0 -2848px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-22 {
-  background-position: 0 -2893px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-23 {
+.icon-pic-weather-type-2 {
   background-position: 0 -2938px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-24 {
-  background-position: 0 -2983px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-25 {
+.icon-pic-weather-type-20 {
   background-position: 0 -3028px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-26 {
-  background-position: 0 -3073px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-27 {
+.icon-pic-weather-type-21 {
   background-position: 0 -3118px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-28 {
-  background-position: 0 -3163px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-29 {
+.icon-pic-weather-type-22 {
   background-position: 0 -3208px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-30 {
-  background-position: 0 -3253px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-31 {
+.icon-pic-weather-type-23 {
   background-position: 0 -3298px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-32 {
-  background-position: 0 -3343px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-33 {
+.icon-pic-weather-type-24 {
   background-position: 0 -3388px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-34 {
-  background-position: 0 -3433px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-35 {
+.icon-pic-weather-type-25 {
   background-position: 0 -3478px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-36 {
-  background-position: 0 -3523px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-37 {
+.icon-pic-weather-type-26 {
   background-position: 0 -3568px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-38 {
-  background-position: 0 -3613px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-39 {
+.icon-pic-weather-type-27 {
   background-position: 0 -3658px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-40 {
-  background-position: 0 -3703px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-41 {
+.icon-pic-weather-type-28 {
   background-position: 0 -3748px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-42 {
-  background-position: 0 -3793px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-43 {
+.icon-pic-weather-type-29 {
   background-position: 0 -3838px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-44 {
-  background-position: 0 -3883px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-45 {
+.icon-pic-weather-type-3 {
   background-position: 0 -3928px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-46 {
-  background-position: 0 -3973px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-47 {
+.icon-pic-weather-type-30 {
   background-position: 0 -4018px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-48 {
-  background-position: 0 -4063px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-49 {
+.icon-pic-weather-type-31 {
   background-position: 0 -4108px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-50 {
-  background-position: 0 -4153px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-51 {
+.icon-pic-weather-type-32 {
   background-position: 0 -4198px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-52 {
-  background-position: 0 -4243px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-53 {
+.icon-pic-weather-type-33 {
   background-position: 0 -4288px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-54 {
-  background-position: 0 -4333px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-55 {
+.icon-pic-weather-type-34 {
   background-position: 0 -4378px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-56 {
-  background-position: 0 -4423px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-57 {
+.icon-pic-weather-type-35 {
   background-position: 0 -4468px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-58 {
-  background-position: 0 -4513px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-59 {
+.icon-pic-weather-type-36 {
   background-position: 0 -4558px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-60 {
-  background-position: 0 -4603px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-61 {
+.icon-pic-weather-type-37 {
   background-position: 0 -4648px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-62 {
-  background-position: 0 -4693px;
-}
-
-/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pic-weather-type-63 {
+.icon-pic-weather-type-38 {
   background-position: 0 -4738px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-39 {
+  background-position: 0 -4828px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-4 {
+  background-position: 0 -4918px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-40 {
+  background-position: 0 -5008px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-41 {
+  background-position: 0 -5098px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-42 {
+  background-position: 0 -5188px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-43 {
+  background-position: 0 -5278px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-44 {
+  background-position: 0 -5368px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-45 {
+  background-position: 0 -5458px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-46 {
+  background-position: 0 -5548px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-47 {
+  background-position: 0 -5638px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-48 {
+  background-position: 0 -5728px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-49 {
+  background-position: 0 -5818px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-5 {
+  background-position: 0 -5908px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-50 {
+  background-position: 0 -5998px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-51 {
+  background-position: 0 -6088px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-52 {
+  background-position: 0 -6178px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-53 {
+  background-position: 0 -6268px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-54 {
+  background-position: 0 -6358px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-55 {
+  background-position: 0 -6448px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-56 {
+  background-position: 0 -6538px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-57 {
+  background-position: 0 -6628px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-58 {
+  background-position: 0 -6718px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-59 {
+  background-position: 0 -6808px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-6 {
+  background-position: 0 -6898px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-60 {
+  background-position: 0 -6988px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-61 {
+  background-position: 0 -7078px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-62 {
+  background-position: 0 -7168px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-63 {
+  background-position: 0 -7258px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-64 {
-  background-position: 0 -4783px;
+  background-position: 0 -7348px;
 }
 
 /* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-weather-type-65 {
-  background-position: 0 -4828px;
+  background-position: 0 -7438px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-7 {
+  background-position: 0 -7528px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-8 {
+  background-position: 0 -7618px;
+}
+
+/* line 84, C:/Program Files/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pic-weather-type-9 {
+  background-position: 0 -7708px;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -2586,22 +2586,27 @@ th {
   /*i*/
 }
 
+/* line 36, ../sass/_area-editor.scss */
+.area-editor .ct img {
+  max-width: 100% !important;
+}
+
 /* line 7, ../sass/_group_nav.scss */
 .base-mobile .group.nav {
   position: relative;
 }
 /* line 22, ../sass/_group_nav.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd span, .base-mobile .group.nav > .in .hd span {
+.base-mobile .group.nav > .bg-drop-layout > .in > .hd span, .base-mobile .group.nav > .in > .hd span {
   display: block;
 }
 /* line 26, ../sass/_group_nav.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a, .base-mobile .group.nav > .in .hd a {
+.base-mobile .group.nav > .bg-drop-layout > .in > .hd a, .base-mobile .group.nav > .in > .hd a {
   display: block;
   padding: 8px;
   padding-right: 40px;
 }
 /* line 31, ../sass/_group_nav.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a:before, .base-mobile .group.nav > .in .hd a:before {
+.base-mobile .group.nav > .bg-drop-layout > .in > .hd a:before, .base-mobile .group.nav > .in > .hd a:before {
   font-size: inherit;
   color: inherit;
   position: absolute;
@@ -2609,7 +2614,7 @@ th {
   right: 10px;
 }
 /* line 38, ../sass/_group_nav.scss */
-.base-mobile .group.nav > .bg-drop-layout > .in .hd a:hover, .base-mobile .group.nav > .in .hd a:hover {
+.base-mobile .group.nav > .bg-drop-layout > .in > .hd a:hover, .base-mobile .group.nav > .in > .hd a:hover {
   background-color: #f0f0f0;
   color: currentColor;
 }
@@ -3482,18 +3487,6 @@ th {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 59, ../sass/_list-text_font-size.scss */
-.list-text.font-size .ct li.small a {
-  background-image: url('../images/icon-pic/font-smail.png?1485250389');
-}
-/* line 66, ../sass/_list-text_font-size.scss */
-.list-text.font-size .ct li.medium a {
-  background-image: url('../images/icon-pic/font-medium.png?1485250442');
-}
-/* line 73, ../sass/_list-text_font-size.scss */
-.list-text.font-size .ct li.large a {
-  background-image: url('../images/icon-pic/font-large.png?1485250476');
-}
 /* line 80, ../sass/_list-text_font-size.scss */
 .list-text.font-size .ct li.is-active a {
   background-color: #f0f0f0;
@@ -3506,9 +3499,8 @@ th {
 .list-text.font-size .ct a {
   display: block;
   width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
+  line-height: 24px;
+  text-align: center;
 }
 
 /* line 13, ../sass/_list-text_hot-key-word.scss */
@@ -6164,13 +6156,571 @@ th {
 [data-js="false"] .simple-text.weather {
   display: none;
 }
-/* line 35, ../sass/_simple-text_weather.scss */
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-1 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-1 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-1.png?1489659418');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-2 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-2 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-2.png?1489659412');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-3 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-3 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-3.png?1489659555');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-4 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-4 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-4.png?1489659554');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-5 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-5 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-5.png?1489659552');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-6 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-6 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-6.png?1489659551');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-7 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-7 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-7.png?1489659549');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-8 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-8 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-8.png?1489659547');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-9 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-9 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-9.png?1489659545');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-10 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-10 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-10.png?1489659543');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-11 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-11 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-11.png?1489659542');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-12 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-12 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-12.png?1489659540');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-13 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-13 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-13.png?1489659536');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-14 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-14 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-14.png?1489659533');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-15 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-15 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-15.png?1489659531');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-16 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-16 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-16.png?1489659529');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-17 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-17 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-17.png?1489659527');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-18 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-18 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-18.png?1489659525');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-19 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-19 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-19.png?1489659523');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-20 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-20 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-20.png?1489659521');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-21 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-21 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-21.png?1489659519');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-22 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-22 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-22.png?1489659518');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-23 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-23 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-23.png?1489659516');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-24 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-24 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-24.png?1489659513');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-25 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-25 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-25.png?1489659511');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-26 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-26 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-26.png?1489659510');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-27 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-27 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-27.png?1489659506');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-28 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-28 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-28.png?1489659503');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-29 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-29 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-29.png?1489659501');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-30 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-30 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-30.png?1489659498');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-31 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-31 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-31.png?1489659496');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-32 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-32 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-32.png?1489659494');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-33 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-33 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-33.png?1489659492');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-34 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-34 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-34.png?1489659491');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-35 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-35 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-35.png?1489659490');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-36 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-36 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-36.png?1489659488');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-37 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-37 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-37.png?1489659486');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-38 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-38 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-38.png?1489659485');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-39 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-39 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-39.png?1489659482');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-40 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-40 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-40.png?1489659480');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-41 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-41 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-41.png?1489659478');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-42 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-42 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-42.png?1489659474');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-43 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-43 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-43.png?1489659469');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-44 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-44 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-44.png?1489659468');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-45 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-45 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-45.png?1489659466');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-46 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-46 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-46.png?1489659462');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-47 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-47 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-47.png?1489659459');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-48 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-48 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-48.png?1489659457');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-49 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-49 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-49.png?1489659454');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-50 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-50 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-50.png?1489659450');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-51 .ct a {
+  background-image: url('../images/weather_sunny.jpg?1489733752');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-51 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-51.png?1489659448');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-52 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-52 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-52.png?1489659446');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-53 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-53 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-53.png?1489659444');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-54 .ct a {
+  background-image: url('../images/weather_cloudy.jpg?1489733775');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-54 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-54.png?1489659442');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-55 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-55 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-55.png?1489659441');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-56 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-56 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-56.png?1489659439');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-57 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-57 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-57.png?1489659436');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-58 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-58 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-58.png?1489659434');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-59 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-59 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-59.png?1489659430');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-60 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-60 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-60.png?1489659428');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-61 .ct a {
+  background-image: url('../images/weather_snow.jpg?1489733723');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-61 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-61.png?1489659427');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-62 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-62 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-62.png?1489659425');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-63 .ct a {
+  background-image: url('../images/weather_rain.jpg?1489733710');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-63 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-63.png?1489659423');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-64 .ct a {
+  background-image: url('../images/weather_snow.jpg?1489733723');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-64 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-64.png?1489659421');
+}
+/* line 25, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-65 .ct a {
+  background-image: url('../images/weather_snow.jpg?1489733723');
+}
+/* line 43, ../sass/_simple-text_weather.scss */
+.simple-text.weather.is-type-65 .ct a:before {
+  background-image: url('../images/icon-pic/weather-type-65.png?1489659419');
+}
+/* line 71, ../sass/_simple-text_weather.scss */
 .simple-text.weather .ct {
   /*i*/
 }
-/* line 42, ../sass/_simple-text_weather.scss */
+/* line 77, ../sass/_simple-text_weather.scss */
 .simple-text.weather .ct span {
   display: block;
+}
+/* line 81, ../sass/_simple-text_weather.scss */
+.simple-text.weather .ct a {
+  display: block;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #00b4ff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.1em;
+  color: #ffffff;
+  text-shadow: 0 0 8px #646464;
+  transition: 150ms;
+  box-shadow: 0 0 0 inset;
+}
+/* line 95, ../sass/_simple-text_weather.scss */
+.simple-text.weather .ct a:hover {
+  box-shadow: 0 0 15px #646464 inset;
+}
+/* line 99, ../sass/_simple-text_weather.scss */
+.simple-text.weather .ct a:before {
+  content: "​";
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+/* line 110, ../sass/_simple-text_weather.scss */
+.simple-text.weather .ct .mark {
+  margin: 0 5px;
+  display: inline-block;
+  padding: 5px 8px;
+  border: 2px solid #ffffff;
+  vertical-align: middle;
+  border-radius: 3px;
 }
 
 /* line 31, ../sass/_list-text_anchor.scss */
@@ -6287,6 +6837,7 @@ th {
 
 /* line 31, ../sass/_area-customize_video.scss */
 .area-customize.video .ct {
+  /*a*/
   /*i*/
 }
 /* line 37, ../sass/_area-customize_video.scss */
@@ -6324,6 +6875,14 @@ th {
 /* line 69, ../sass/_area-customize_video.scss */
 .area-customize.video .ct .video a:hover {
   text-decoration: none;
+}
+/* line 75, ../sass/_area-customize_video.scss */
+.area-customize.video .ct .div {
+  display: block;
+}
+/* line 78, ../sass/_area-customize_video.scss */
+.area-customize.video .ct .div:hover {
+  text-decoration: underline;
 }
 
 /* line 31, ../sass/_area-customize_news-card.scss */
@@ -6735,7 +7294,7 @@ th {
   display: block;
   width: 36px;
   height: 28px;
-  background-color: #646464;
+  background-color: #0aa59b;
   transition: 150ms;
   opacity: 0.7;
 }
@@ -8300,9 +8859,15 @@ th {
 }
 /* line 41, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div {
+  display: block;
   width: 50%;
   float: left;
+  /*a*/
   /*i*/
+}
+/* line 46, ../sass/_area-customize_video-list02.scss */
+.area-customize.video-list02 .ct > .in > .div:hover {
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   /* line 41, ../sass/_area-customize_video-list02.scss */
@@ -8311,7 +8876,7 @@ th {
     float: none;
   }
 }
-/* line 50, ../sass/_area-customize_video-list02.scss */
+/* line 55, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .video {
   background-image: url('../images/icon-pic/icon-w-video.png?1474887734');
   background-repeat: no-repeat;
@@ -8319,61 +8884,56 @@ th {
   margin-bottom: 8px;
 }
 @media (max-width: 1000px) {
-  /* line 50, ../sass/_area-customize_video-list02.scss */
+  /* line 55, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .div .video {
     width: auto;
     float: none;
   }
 }
-/* line 59, ../sass/_area-customize_video-list02.scss */
+/* line 64, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .video video {
   width: 100%;
 }
-/* line 67, ../sass/_area-customize_video-list02.scss */
+/* line 72, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .video object {
   min-height: 45px;
   width: 100%;
   margin-bottom: 5px;
 }
-/* line 73, ../sass/_area-customize_video-list02.scss */
+/* line 78, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .video span {
   display: block;
   padding: 5px;
   background-color: #f0f0f0;
 }
-/* line 79, ../sass/_area-customize_video-list02.scss */
-.area-customize.video-list02 .ct > .in > .div .video a {
-  text-decoration: underline;
-}
-/* line 82, ../sass/_area-customize_video-list02.scss */
-.area-customize.video-list02 .ct > .in > .div .video a:hover {
-  text-decoration: none;
-}
-/* line 87, ../sass/_area-customize_video-list02.scss */
+/* line 84, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .video iframe {
   display: block;
   width: 100%;
 }
-/* line 93, ../sass/_area-customize_video-list02.scss */
+/* line 92, ../sass/_area-customize_video-list02.scss */
+.area-customize.video-list02 .ct > .in > .div .div:hover {
+  text-decoration: underline;
+}
+/* line 97, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .essay {
   margin-top: 15px;
 }
-/* line 97, ../sass/_area-customize_video-list02.scss */
+/* line 101, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .caption {
   font-size: 1.1em;
   color: #0aa59b;
-  text-decoration: underline;
   margin-bottom: 15px;
 }
-/* line 108, ../sass/_area-customize_video-list02.scss */
+/* line 111, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .p {
   margin-top: 8px;
 }
-/* line 121, ../sass/_area-customize_video-list02.scss */
+/* line 124, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .div .label {
   margin-top: 8px;
 }
-/* line 142, ../sass/_area-customize_video-list02.scss */
+/* line 145, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list {
   overflow: hidden;
   padding-left: 15px;
@@ -8381,45 +8941,45 @@ th {
   /*i*/
 }
 @media (max-width: 768px) {
-  /* line 142, ../sass/_area-customize_video-list02.scss */
+  /* line 145, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list {
     margin-top: 15px;
     padding-left: 0;
   }
 }
-/* line 157, ../sass/_area-customize_video-list02.scss */
+/* line 160, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list li + li {
   margin-top: 15px;
 }
 @media (max-width: 560px) {
-  /* line 157, ../sass/_area-customize_video-list02.scss */
+  /* line 160, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list li + li {
     border-top: 1px solid #e4e4e4;
     margin-top: 0;
   }
 }
-/* line 167, ../sass/_area-customize_video-list02.scss */
+/* line 170, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .div {
   display: block;
   position: relative;
   background-color: #ffffff;
   transition: 150ms;
 }
-/* line 173, ../sass/_area-customize_video-list02.scss */
+/* line 176, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .div:hover {
   background-color: #e3fdfc;
 }
-/* line 176, ../sass/_area-customize_video-list02.scss */
+/* line 179, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .div:hover .figcaption {
   color: #0aa59b;
 }
 @media (max-width: 560px) {
-  /* line 184, ../sass/_area-customize_video-list02.scss */
+  /* line 187, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list .img {
     display: none;
   }
 }
-/* line 190, ../sass/_area-customize_video-list02.scss */
+/* line 193, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .img span {
   position: absolute;
   display: block;
@@ -8428,22 +8988,22 @@ th {
   bottom: 0;
   width: 150px;
 }
-/* line 200, ../sass/_area-customize_video-list02.scss */
+/* line 203, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .img img {
   display: none;
 }
-/* line 205, ../sass/_area-customize_video-list02.scss */
+/* line 208, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .essay {
   margin-left: 150px;
   padding: 8px;
 }
 @media (max-width: 560px) {
-  /* line 205, ../sass/_area-customize_video-list02.scss */
+  /* line 208, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list .essay {
     margin-left: 0;
   }
 }
-/* line 214, ../sass/_area-customize_video-list02.scss */
+/* line 217, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .figcaption {
   line-height: 28px;
   height: 56px;
@@ -8452,22 +9012,22 @@ th {
   transition: 150ms;
 }
 @media (max-width: 560px) {
-  /* line 214, ../sass/_area-customize_video-list02.scss */
+  /* line 217, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list .figcaption {
     height: auto;
   }
 }
 @media (max-width: 560px) {
-  /* line 232, ../sass/_area-customize_video-list02.scss */
+  /* line 235, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ct > .in > .list .label {
     display: none;
   }
 }
-/* line 247, ../sass/_area-customize_video-list02.scss */
+/* line 250, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .label span {
   display: block;
 }
-/* line 250, ../sass/_area-customize_video-list02.scss */
+/* line 253, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .label span:before {
   content: "​";
   display: inline-block;
@@ -8477,41 +9037,41 @@ th {
   margin-right: 5px;
   background-image: url('../images/icon-pic/clock.png?1483944842');
 }
-/* line 262, ../sass/_area-customize_video-list02.scss */
+/* line 265, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ct > .in > .list .mark {
   font-size: 0.9em;
 }
-/* line 271, ../sass/_area-customize_video-list02.scss */
+/* line 274, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft > .in {
   background-color: #f0f0f0;
   padding: 15px;
   padding-top: 0;
 }
-/* line 277, ../sass/_area-customize_video-list02.scss */
+/* line 280, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft ul {
   margin-left: 50%;
 }
 @media (max-width: 768px) {
-  /* line 277, ../sass/_area-customize_video-list02.scss */
+  /* line 280, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ft ul {
     margin-left: 0;
   }
 }
-/* line 285, ../sass/_area-customize_video-list02.scss */
+/* line 288, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft li {
   padding-left: 15px;
 }
 @media (max-width: 768px) {
-  /* line 285, ../sass/_area-customize_video-list02.scss */
+  /* line 288, ../sass/_area-customize_video-list02.scss */
   .area-customize.video-list02 .ft li {
     padding-left: 0;
   }
 }
-/* line 293, ../sass/_area-customize_video-list02.scss */
+/* line 296, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft span {
   display: block;
 }
-/* line 297, ../sass/_area-customize_video-list02.scss */
+/* line 300, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft a {
   display: block;
   background-color: #ffffff;
@@ -8520,7 +9080,7 @@ th {
   color: #0aa59b;
   transition: 150ms;
 }
-/* line 305, ../sass/_area-customize_video-list02.scss */
+/* line 308, ../sass/_area-customize_video-list02.scss */
 .area-customize.video-list02 .ft a:hover {
   background-color: #e3fdfc;
 }
@@ -13014,25 +13574,30 @@ th {
   width: 100%;
   line-height: 26px;
 }
-/* line 158, ../sass/_area-form_submit.scss */
+/* line 150, ../sass/_area-form_submit.scss */
+.area-form.submit .ct .fieldset input[type="file"] {
+  width: 100%;
+  line-height: 26px;
+}
+/* line 163, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset input[type="button"] {
   background-color: transparent;
   color: #343434;
 }
-/* line 164, ../sass/_area-form_submit.scss */
+/* line 169, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset textarea {
   width: 100%;
 }
-/* line 168, ../sass/_area-form_submit.scss */
+/* line 173, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset .img {
   display: inline-block;
   vertical-align: top;
 }
-/* line 172, ../sass/_area-form_submit.scss */
+/* line 177, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset .img span {
   display: block;
 }
-/* line 176, ../sass/_area-form_submit.scss */
+/* line 181, ../sass/_area-form_submit.scss */
 .area-form.submit .ct .fieldset .img img {
   display: block;
   border: 1px solid #e4e4e4;

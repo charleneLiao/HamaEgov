@@ -3,6 +3,10 @@
 //天氣================================================================
 
 .simple-text.weather {
+	$cloudy: 02, 03, 05, 06, 07, 10, 42, 44, 45, 53, 54;
+	$rain: 04, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 48, 49, 50, 52, 55, 56, 57, 58, 59, 60, 62, 63;
+	$snow: 61, 64, 65;
+	$sunny: 01, 08, 09, 22, 23, 24, 39, 40, 41, 43, 46, 47, 51;
 
 	@include js(false) {
 		display: none;
@@ -10,6 +14,38 @@
 
 	> .bg-drop-layout > .in, > .in {
 
+	}
+
+	@for $i from 1 through 65 {
+
+		&.is-type-#{$i} {
+
+			.ct {
+
+				a {
+
+					@if( index($cloudy, $i) ) {
+						background-image: image-url('weather_cloudy.jpg');
+					}
+
+					@if( index($rain, $i) ) {
+						background-image: image-url('weather_rain.jpg');
+					}
+
+					@if( index($snow, $i) ) {
+						background-image: image-url('weather_snow.jpg');
+					}
+
+					@if( index($sunny, $i) ) {
+						background-image: image-url('weather_sunny.jpg');
+					}
+
+					&:before {
+						background-image: image-url('icon-pic/weather-type-#{$i}.png');
+					}
+				}
+			}
+		}
 	}
 
 	.hd {
@@ -34,7 +70,6 @@
 
 	.ct {
 
-
 		> .in {
 			
 		}
@@ -44,12 +79,41 @@
 		}
 
 		a {
-			@extend %list;
-			@extend %list-hover;
+			display: block;
+			padding: $interval-l;
+			border-radius: $border-radius;
+			background-color: #00b4ff;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-size: $font-size-l;
+			color: $white;
+			text-shadow: $text-shadow;
+			transition: $transition;
+			box-shadow: 0 0 0 inset;
+
+			&:hover {
+				box-shadow: 0 0 15px $deep-gray inset;
+			}
+
+			&:before {
+				content: $content;
+				display: inline-block;
+				width: 90px;
+				height: 90px;
+				background-repeat: no-repeat;
+				background-position: center;
+				vertical-align: middle;
+			}
 		}
 
 		/*i*/.mark {
-			@extend %mark;
+			margin: 0 $interval-s;
+			display: inline-block;
+			padding: $interval-s $interval-m;
+			border: 2px solid $white;
+			vertical-align: middle;
+			border-radius: $border-radius;
 		}
 	}
 

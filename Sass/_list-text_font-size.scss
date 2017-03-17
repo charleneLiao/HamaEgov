@@ -57,21 +57,21 @@
 			&.small {
 
 				a {
-					background-image: image-url('icon-pic/font-smail.png');
+
 				}
 			}
 
 			&.medium {
 
 				a {
-					background-image: image-url('icon-pic/font-medium.png');
+
 				}
 			}
 
 			&.large {
 
 				a {
-					background-image: image-url('icon-pic/font-large.png');
+
 				}
 			}
 
@@ -88,12 +88,10 @@
 		}
 
 		a {
-			@extend %hide-text;
 			display: block;
 			width: 24px;
-			height: 24px;
-			background-repeat: no-repeat;
-			background-position: center;
+			line-height: 24px;
+			text-align: center;
 		}
 
 		/*i*/.mark {

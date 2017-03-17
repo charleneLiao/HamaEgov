@@ -8,6 +8,8 @@ define(function(){
 				debug: false
 			}
 
+		var $type = ['ai', 'avi', 'bmp', 'cdr', 'css', 'csv', 'dmg', 'doc', 'docx', 'exe', 'gif', 'html', 'ico', 'jpeg', 'jpg', 'js', 'json', 'link', 'md', 'mov', 'mp3', 'mp4', 'odf', 'odp', 'ods', 'odt', 'ogg', 'ogv', 'other', 'pdf', 'png', 'ppt', 'pptx', 'psd', 'rar', 'rss', 'sass', 'svg', 'swf', 'tar', 'tif', 'txt', 'wav', 'webm', 'xls', 'xlsx', 'xml', 'zip'];
+
 		$.extend($set, opt);
 
 		var $this = $(env),
@@ -42,7 +44,13 @@ define(function(){
 			if( _has_http && _is_local === -1 ) { //如果有 http(s) 又不是本地 就是外部連結
 				$this.addClass($set.externalClass); //加入外部連結 class
 			}else if( _dot_i > _slash ) { //最後是 .*
-				$this.addClass(_href.substr(_href.lastIndexOf('.') + 1, _href.length)); //加入副檔名 class
+				var _type = _href.substr(_href.lastIndexOf('.') + 1, _href.length);
+
+				if( $.inArray( _type, $type) >= 0 ) { //如果陣列中有這個附檔名
+					$this.addClass(_type); //加入副檔名 class
+				}else {
+					$this.addClass('other');
+				}
 			}
 		});
 

@@ -147,6 +147,11 @@
 					line-height: $height;
 				}
 
+				&[type="file"] {
+					width: 100%;
+					line-height: $height;
+				}
+
 				&[type="submit"] {
 					@extend %btn-imp;
 				}
