@@ -4,6 +4,16 @@
 
 .area-customize.ktnp-album {
 
+	@for $i from 1 through 10 { //使數量可以被控制 1 ~ $max-show-li-len
+	
+		&[data-setLen="#{$i}"] {
+
+			.ct li {
+				width: 100% / $i;
+			}
+		}
+	}
+
 	> .bg-drop-layout > .in, > .in {
 
 	}
