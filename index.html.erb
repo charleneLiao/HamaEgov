@@ -24,6 +24,10 @@
 		<%= render partial: "/erb/list-pic_marquee04", locals: set({ index: 7, func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈(羅渣士體育網 - 彥專)" }) %>
 	<!-- marquee03 結束 -->
 
+	<!-- marquee-slider 跑馬燈 -->
+		<%= render partial: "/erb/group-list_marquee", locals: set({ func_set: "{'marqueeHorizontal':{'auto':false,'delay':5000,'speed':500}}", header_text: "跑馬燈(物件)", inner: "/erb/area-essay_list" }) %>
+	<!-- marquee-slider 結束 -->
+
 	<!-- video 視訊 -->
 		<%= render partial: "/erb/area-customize_video-list02", locals: set({ header_text: "視訊列表" }) %>
 	<!-- video 結束 -->

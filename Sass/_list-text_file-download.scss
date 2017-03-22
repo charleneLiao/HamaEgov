@@ -54,7 +54,7 @@
 						border-left-color: $color;
 
 						&:before {
-							@include icon-pic($pic);
+							background-image: image-url('icon-pic/#{$pic}');
 						}
 					}
 				}
@@ -66,13 +66,24 @@
 		}
 
 		a {
+			$default_type: map-get($file-type-map, 'other');
+			$default_color: map-get($default_type, 'color');
+			$default_pic: map-get($default_type, 'pic');
+
 			@extend %list;
 			@extend %list-hover;
 			border-left-width: $interval-xs;
 			border-left-style: solid;
+			border-left-color: $default_color;
 
 			&:before {
+				content: $content;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
 				margin-right: $interval-xs;
+				background-repeat: no-repeat;
+				background-image: image-url('icon-pic/#{$default_pic}');
 			}
 
 			&:hover {
