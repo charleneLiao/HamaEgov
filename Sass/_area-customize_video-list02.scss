@@ -87,15 +87,16 @@
 					}
 				}
 
-				/*a*/.div {
+				.div {
+					
+				}
+
+				/*a*/.essay {
+					margin-top: $interval-l;
 
 					&:hover {
 						text-decoration: underline;
 					}
-				}
-
-				.essay {
-					margin-top: $interval-l;
 				}
 
 				.caption {
