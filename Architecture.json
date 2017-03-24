@@ -112,7 +112,8 @@
 			},
 			{
 				"GroupType": "FixedModuleString",
-				"Name": "Menu"
+				"Name": "Menu",
+				"func": "{'setNavLen':{}}"
 			},
 			{
 				"GroupType": "FixedModuleString",
