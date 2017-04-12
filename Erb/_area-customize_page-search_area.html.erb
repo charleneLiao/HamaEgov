@@ -1,0 +1,30 @@
+<div class="area-customize page-search-area <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><a href="#"><%= header_text %></a></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<div class="fieldset">
+		<img class="map_icon" src="../images/area-search-map.png" alt="機關導覽圖示">
+		<span data-area="1">高雄市</span>；
+		<span data-area="2">前鎮區</span>
+			<span class="select" data-before="">
+				<select>
+					<option data-href="" selected>高雄(91)</option>
+					<option data-href="http://www.google.com"><%= zh_lorem_sentence %></option>
+					<option data-href="http://tw.yahoo.com"><%= zh_lorem_sentence %></option>
+				</select>
+			</span>
+		</div>
+		<div class="fieldset">
+			<span class="select" data-before="">
+				<select>
+					<option data-href="" selected>前鎮區(11)</option>
+					<option data-href="http://www.google.com"><%= zh_lorem_sentence %></option>
+					<option data-href="http://tw.yahoo.com"><%= zh_lorem_sentence %></option>
+				</select>
+			</span>
+		</div>
+	</div></div>
+</div></div>

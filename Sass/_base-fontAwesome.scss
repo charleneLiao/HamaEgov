@@ -1,0 +1,2147 @@
+//文字圖示樣式
+
+// 本 sass 引入 icomoon 圖示字型，用以作為文字圖示。
+// 詳細資訊請參閱 https://icomoon.io/，教學請參閱 http://www.minwt.com/html/12931.html
+// 1 將 icon 包下載回來後，將包裡的 fonts 目錄檔案 .eot .svg .ttf .woff 檔案複製到 /images/icon-font
+// 2 修改 style.css 裡的項目，步驟如下：
+// 	1 將 @font-face 與 [class^="icon-"], [class*=" icon-"] 樣式刪除
+// 	2 將 "" 字串全數刪除
+// 	3 將 ".icon-" 取代成 "%icon-font-"
+// 	4 將修改的內容複製至 /Sass/bace/icon-font.scss
+
+%fontAwesome-glass {
+  content: "\f000";
+}
+%fontAwesome-music {
+  content: "\f001";
+}
+%fontAwesome-search {
+  content: "\f002";
+}
+%fontAwesome-envelope-o {
+  content: "\f003";
+}
+%fontAwesome-heart {
+  content: "\f004";
+}
+%fontAwesome-star {
+  content: "\f005";
+}
+%fontAwesome-star-o {
+  content: "\f006";
+}
+%fontAwesome-user {
+  content: "\f007";
+}
+%fontAwesome-film {
+  content: "\f008";
+}
+%fontAwesome-th-large {
+  content: "\f009";
+}
+%fontAwesome-th {
+  content: "\f00a";
+}
+%fontAwesome-th-list {
+  content: "\f00b";
+}
+%fontAwesome-check {
+  content: "\f00c";
+}
+%fontAwesome-remove,
+%fontAwesome-close,
+%fontAwesome-times {
+  content: "\f00d";
+}
+%fontAwesome-search-plus {
+  content: "\f00e";
+}
+%fontAwesome-search-minus {
+  content: "\f010";
+}
+%fontAwesome-power-off {
+  content: "\f011";
+}
+%fontAwesome-signal {
+  content: "\f012";
+}
+%fontAwesome-gear,
+%fontAwesome-cog {
+  content: "\f013";
+}
+%fontAwesome-trash-o {
+  content: "\f014";
+}
+%fontAwesome-home {
+  content: "\f015";
+}
+%fontAwesome-file-o {
+  content: "\f016";
+}
+%fontAwesome-clock-o {
+  content: "\f017";
+}
+%fontAwesome-road {
+  content: "\f018";
+}
+%fontAwesome-download {
+  content: "\f019";
+}
+%fontAwesome-arrow-circle-o-down {
+  content: "\f01a";
+}
+%fontAwesome-arrow-circle-o-up {
+  content: "\f01b";
+}
+%fontAwesome-inbox {
+  content: "\f01c";
+}
+%fontAwesome-play-circle-o {
+  content: "\f01d";
+}
+%fontAwesome-rotate-right,
+%fontAwesome-repeat {
+  content: "\f01e";
+}
+%fontAwesome-refresh {
+  content: "\f021";
+}
+%fontAwesome-list-alt {
+  content: "\f022";
+}
+%fontAwesome-lock {
+  content: "\f023";
+}
+%fontAwesome-flag {
+  content: "\f024";
+}
+%fontAwesome-headphones {
+  content: "\f025";
+}
+%fontAwesome-volume-off {
+  content: "\f026";
+}
+%fontAwesome-volume-down {
+  content: "\f027";
+}
+%fontAwesome-volume-up {
+  content: "\f028";
+}
+%fontAwesome-qrcode {
+  content: "\f029";
+}
+%fontAwesome-barcode {
+  content: "\f02a";
+}
+%fontAwesome-tag {
+  content: "\f02b";
+}
+%fontAwesome-tags {
+  content: "\f02c";
+}
+%fontAwesome-book {
+  content: "\f02d";
+}
+%fontAwesome-bookmark {
+  content: "\f02e";
+}
+%fontAwesome-print {
+  content: "\f02f";
+}
+%fontAwesome-camera {
+  content: "\f030";
+}
+%fontAwesome-font {
+  content: "\f031";
+}
+%fontAwesome-bold {
+  content: "\f032";
+}
+%fontAwesome-italic {
+  content: "\f033";
+}
+%fontAwesome-text-height {
+  content: "\f034";
+}
+%fontAwesome-text-width {
+  content: "\f035";
+}
+%fontAwesome-align-left {
+  content: "\f036";
+}
+%fontAwesome-align-center {
+  content: "\f037";
+}
+%fontAwesome-align-right {
+  content: "\f038";
+}
+%fontAwesome-align-justify {
+  content: "\f039";
+}
+%fontAwesome-list {
+  content: "\f03a";
+}
+%fontAwesome-dedent,
+%fontAwesome-outdent {
+  content: "\f03b";
+}
+%fontAwesome-indent {
+  content: "\f03c";
+}
+%fontAwesome-video-camera {
+  content: "\f03d";
+}
+%fontAwesome-photo,
+%fontAwesome-image,
+%fontAwesome-picture-o {
+  content: "\f03e";
+}
+%fontAwesome-pencil {
+  content: "\f040";
+}
+%fontAwesome-map-marker {
+  content: "\f041";
+}
+%fontAwesome-adjust {
+  content: "\f042";
+}
+%fontAwesome-tint {
+  content: "\f043";
+}
+%fontAwesome-edit,
+%fontAwesome-pencil-square-o {
+  content: "\f044";
+}
+%fontAwesome-share-square-o {
+  content: "\f045";
+}
+%fontAwesome-check-square-o {
+  content: "\f046";
+}
+%fontAwesome-arrows {
+  content: "\f047";
+}
+%fontAwesome-step-backward {
+  content: "\f048";
+}
+%fontAwesome-fast-backward {
+  content: "\f049";
+}
+%fontAwesome-backward {
+  content: "\f04a";
+}
+%fontAwesome-play {
+  content: "\f04b";
+}
+%fontAwesome-pause {
+  content: "\f04c";
+}
+%fontAwesome-stop {
+  content: "\f04d";
+}
+%fontAwesome-forward {
+  content: "\f04e";
+}
+%fontAwesome-fast-forward {
+  content: "\f050";
+}
+%fontAwesome-step-forward {
+  content: "\f051";
+}
+%fontAwesome-eject {
+  content: "\f052";
+}
+%fontAwesome-chevron-left {
+  content: "\f053";
+}
+%fontAwesome-chevron-right {
+  content: "\f054";
+}
+%fontAwesome-plus-circle {
+  content: "\f055";
+}
+%fontAwesome-minus-circle {
+  content: "\f056";
+}
+%fontAwesome-times-circle {
+  content: "\f057";
+}
+%fontAwesome-check-circle {
+  content: "\f058";
+}
+%fontAwesome-question-circle {
+  content: "\f059";
+}
+%fontAwesome-info-circle {
+  content: "\f05a";
+}
+%fontAwesome-crosshairs {
+  content: "\f05b";
+}
+%fontAwesome-times-circle-o {
+  content: "\f05c";
+}
+%fontAwesome-check-circle-o {
+  content: "\f05d";
+}
+%fontAwesome-ban {
+  content: "\f05e";
+}
+%fontAwesome-arrow-left {
+  content: "\f060";
+}
+%fontAwesome-arrow-right {
+  content: "\f061";
+}
+%fontAwesome-arrow-up {
+  content: "\f062";
+}
+%fontAwesome-arrow-down {
+  content: "\f063";
+}
+%fontAwesome-mail-forward,
+%fontAwesome-share {
+  content: "\f064";
+}
+%fontAwesome-expand {
+  content: "\f065";
+}
+%fontAwesome-compress {
+  content: "\f066";
+}
+%fontAwesome-plus {
+  content: "\f067";
+}
+%fontAwesome-minus {
+  content: "\f068";
+}
+%fontAwesome-asterisk {
+  content: "\f069";
+}
+%fontAwesome-exclamation-circle {
+  content: "\f06a";
+}
+%fontAwesome-gift {
+  content: "\f06b";
+}
+%fontAwesome-leaf {
+  content: "\f06c";
+}
+%fontAwesome-fire {
+  content: "\f06d";
+}
+%fontAwesome-eye {
+  content: "\f06e";
+}
+%fontAwesome-eye-slash {
+  content: "\f070";
+}
+%fontAwesome-warning,
+%fontAwesome-exclamation-triangle {
+  content: "\f071";
+}
+%fontAwesome-plane {
+  content: "\f072";
+}
+%fontAwesome-calendar {
+  content: "\f073";
+}
+%fontAwesome-random {
+  content: "\f074";
+}
+%fontAwesome-comment {
+  content: "\f075";
+}
+%fontAwesome-magnet {
+  content: "\f076";
+}
+%fontAwesome-chevron-up {
+  content: "\f077";
+}
+%fontAwesome-chevron-down {
+  content: "\f078";
+}
+%fontAwesome-retweet {
+  content: "\f079";
+}
+%fontAwesome-shopping-cart {
+  content: "\f07a";
+}
+%fontAwesome-folder {
+  content: "\f07b";
+}
+%fontAwesome-folder-open {
+  content: "\f07c";
+}
+%fontAwesome-arrows-v {
+  content: "\f07d";
+}
+%fontAwesome-arrows-h {
+  content: "\f07e";
+}
+%fontAwesome-bar-chart-o,
+%fontAwesome-bar-chart {
+  content: "\f080";
+}
+%fontAwesome-twitter-square {
+  content: "\f081";
+}
+%fontAwesome-facebook-square {
+  content: "\f082";
+}
+%fontAwesome-camera-retro {
+  content: "\f083";
+}
+%fontAwesome-key {
+  content: "\f084";
+}
+%fontAwesome-gears,
+%fontAwesome-cogs {
+  content: "\f085";
+}
+%fontAwesome-comments {
+  content: "\f086";
+}
+%fontAwesome-thumbs-o-up {
+  content: "\f087";
+}
+%fontAwesome-thumbs-o-down {
+  content: "\f088";
+}
+%fontAwesome-star-half {
+  content: "\f089";
+}
+%fontAwesome-heart-o {
+  content: "\f08a";
+}
+%fontAwesome-sign-out {
+  content: "\f08b";
+}
+%fontAwesome-linkedin-square {
+  content: "\f08c";
+}
+%fontAwesome-thumb-tack {
+  content: "\f08d";
+}
+%fontAwesome-external-link {
+  content: "\f08e";
+}
+%fontAwesome-sign-in {
+  content: "\f090";
+}
+%fontAwesome-trophy {
+  content: "\f091";
+}
+%fontAwesome-github-square {
+  content: "\f092";
+}
+%fontAwesome-upload {
+  content: "\f093";
+}
+%fontAwesome-lemon-o {
+  content: "\f094";
+}
+%fontAwesome-phone {
+  content: "\f095";
+}
+%fontAwesome-square-o {
+  content: "\f096";
+}
+%fontAwesome-bookmark-o {
+  content: "\f097";
+}
+%fontAwesome-phone-square {
+  content: "\f098";
+}
+%fontAwesome-twitter {
+  content: "\f099";
+}
+%fontAwesome-facebook-f,
+%fontAwesome-facebook {
+  content: "\f09a";
+}
+%fontAwesome-github {
+  content: "\f09b";
+}
+%fontAwesome-unlock {
+  content: "\f09c";
+}
+%fontAwesome-credit-card {
+  content: "\f09d";
+}
+%fontAwesome-feed,
+%fontAwesome-rss {
+  content: "\f09e";
+}
+%fontAwesome-hdd-o {
+  content: "\f0a0";
+}
+%fontAwesome-bullhorn {
+  content: "\f0a1";
+}
+%fontAwesome-bell {
+  content: "\f0f3";
+}
+%fontAwesome-certificate {
+  content: "\f0a3";
+}
+%fontAwesome-hand-o-right {
+  content: "\f0a4";
+}
+%fontAwesome-hand-o-left {
+  content: "\f0a5";
+}
+%fontAwesome-hand-o-up {
+  content: "\f0a6";
+}
+%fontAwesome-hand-o-down {
+  content: "\f0a7";
+}
+%fontAwesome-arrow-circle-left {
+  content: "\f0a8";
+}
+%fontAwesome-arrow-circle-right {
+  content: "\f0a9";
+}
+%fontAwesome-arrow-circle-up {
+  content: "\f0aa";
+}
+%fontAwesome-arrow-circle-down {
+  content: "\f0ab";
+}
+%fontAwesome-globe {
+  content: "\f0ac";
+}
+%fontAwesome-wrench {
+  content: "\f0ad";
+}
+%fontAwesome-tasks {
+  content: "\f0ae";
+}
+%fontAwesome-filter {
+  content: "\f0b0";
+}
+%fontAwesome-briefcase {
+  content: "\f0b1";
+}
+%fontAwesome-arrows-alt {
+  content: "\f0b2";
+}
+%fontAwesome-group,
+%fontAwesome-users {
+  content: "\f0c0";
+}
+%fontAwesome-chain,
+%fontAwesome-link {
+  content: "\f0c1";
+}
+%fontAwesome-cloud {
+  content: "\f0c2";
+}
+%fontAwesome-flask {
+  content: "\f0c3";
+}
+%fontAwesome-cut,
+%fontAwesome-scissors {
+  content: "\f0c4";
+}
+%fontAwesome-copy,
+%fontAwesome-files-o {
+  content: "\f0c5";
+}
+%fontAwesome-paperclip {
+  content: "\f0c6";
+}
+%fontAwesome-save,
+%fontAwesome-floppy-o {
+  content: "\f0c7";
+}
+%fontAwesome-square {
+  content: "\f0c8";
+}
+%fontAwesome-navicon,
+%fontAwesome-reorder,
+%fontAwesome-bars {
+  content: "\f0c9";
+}
+%fontAwesome-list-ul {
+  content: "\f0ca";
+}
+%fontAwesome-list-ol {
+  content: "\f0cb";
+}
+%fontAwesome-strikethrough {
+  content: "\f0cc";
+}
+%fontAwesome-underline {
+  content: "\f0cd";
+}
+%fontAwesome-table {
+  content: "\f0ce";
+}
+%fontAwesome-magic {
+  content: "\f0d0";
+}
+%fontAwesome-truck {
+  content: "\f0d1";
+}
+%fontAwesome-pinterest {
+  content: "\f0d2";
+}
+%fontAwesome-pinterest-square {
+  content: "\f0d3";
+}
+%fontAwesome-google-plus-square {
+  content: "\f0d4";
+}
+%fontAwesome-google-plus {
+  content: "\f0d5";
+}
+%fontAwesome-money {
+  content: "\f0d6";
+}
+%fontAwesome-caret-down {
+  content: "\f0d7";
+}
+%fontAwesome-caret-up {
+  content: "\f0d8";
+}
+%fontAwesome-caret-left {
+  content: "\f0d9";
+}
+%fontAwesome-caret-right {
+  content: "\f0da";
+}
+%fontAwesome-columns {
+  content: "\f0db";
+}
+%fontAwesome-unsorted,
+%fontAwesome-sort {
+  content: "\f0dc";
+}
+%fontAwesome-sort-down,
+%fontAwesome-sort-desc {
+  content: "\f0dd";
+}
+%fontAwesome-sort-up,
+%fontAwesome-sort-asc {
+  content: "\f0de";
+}
+%fontAwesome-envelope {
+  content: "\f0e0";
+}
+%fontAwesome-linkedin {
+  content: "\f0e1";
+}
+%fontAwesome-rotate-left,
+%fontAwesome-undo {
+  content: "\f0e2";
+}
+%fontAwesome-legal,
+%fontAwesome-gavel {
+  content: "\f0e3";
+}
+%fontAwesome-dashboard,
+%fontAwesome-tachometer {
+  content: "\f0e4";
+}
+%fontAwesome-comment-o {
+  content: "\f0e5";
+}
+%fontAwesome-comments-o {
+  content: "\f0e6";
+}
+%fontAwesome-flash,
+%fontAwesome-bolt {
+  content: "\f0e7";
+}
+%fontAwesome-sitemap {
+  content: "\f0e8";
+}
+%fontAwesome-umbrella {
+  content: "\f0e9";
+}
+%fontAwesome-paste,
+%fontAwesome-clipboard {
+  content: "\f0ea";
+}
+%fontAwesome-lightbulb-o {
+  content: "\f0eb";
+}
+%fontAwesome-exchange {
+  content: "\f0ec";
+}
+%fontAwesome-cloud-download {
+  content: "\f0ed";
+}
+%fontAwesome-cloud-upload {
+  content: "\f0ee";
+}
+%fontAwesome-user-md {
+  content: "\f0f0";
+}
+%fontAwesome-stethoscope {
+  content: "\f0f1";
+}
+%fontAwesome-suitcase {
+  content: "\f0f2";
+}
+%fontAwesome-bell-o {
+  content: "\f0a2";
+}
+%fontAwesome-coffee {
+  content: "\f0f4";
+}
+%fontAwesome-cutlery {
+  content: "\f0f5";
+}
+%fontAwesome-file-text-o {
+  content: "\f0f6";
+}
+%fontAwesome-building-o {
+  content: "\f0f7";
+}
+%fontAwesome-hospital-o {
+  content: "\f0f8";
+}
+%fontAwesome-ambulance {
+  content: "\f0f9";
+}
+%fontAwesome-medkit {
+  content: "\f0fa";
+}
+%fontAwesome-fighter-jet {
+  content: "\f0fb";
+}
+%fontAwesome-beer {
+  content: "\f0fc";
+}
+%fontAwesome-h-square {
+  content: "\f0fd";
+}
+%fontAwesome-plus-square {
+  content: "\f0fe";
+}
+%fontAwesome-angle-double-left {
+  content: "\f100";
+}
+%fontAwesome-angle-double-right {
+  content: "\f101";
+}
+%fontAwesome-angle-double-up {
+  content: "\f102";
+}
+%fontAwesome-angle-double-down {
+  content: "\f103";
+}
+%fontAwesome-angle-left {
+  content: "\f104";
+}
+%fontAwesome-angle-right {
+  content: "\f105";
+}
+%fontAwesome-angle-up {
+  content: "\f106";
+}
+%fontAwesome-angle-down {
+  content: "\f107";
+}
+%fontAwesome-desktop {
+  content: "\f108";
+}
+%fontAwesome-laptop {
+  content: "\f109";
+}
+%fontAwesome-tablet {
+  content: "\f10a";
+}
+%fontAwesome-mobile-phone,
+%fontAwesome-mobile {
+  content: "\f10b";
+}
+%fontAwesome-circle-o {
+  content: "\f10c";
+}
+%fontAwesome-quote-left {
+  content: "\f10d";
+}
+%fontAwesome-quote-right {
+  content: "\f10e";
+}
+%fontAwesome-spinner {
+  content: "\f110";
+}
+%fontAwesome-circle {
+  content: "\f111";
+}
+%fontAwesome-mail-reply,
+%fontAwesome-reply {
+  content: "\f112";
+}
+%fontAwesome-github-alt {
+  content: "\f113";
+}
+%fontAwesome-folder-o {
+  content: "\f114";
+}
+%fontAwesome-folder-open-o {
+  content: "\f115";
+}
+%fontAwesome-smile-o {
+  content: "\f118";
+}
+%fontAwesome-frown-o {
+  content: "\f119";
+}
+%fontAwesome-meh-o {
+  content: "\f11a";
+}
+%fontAwesome-gamepad {
+  content: "\f11b";
+}
+%fontAwesome-keyboard-o {
+  content: "\f11c";
+}
+%fontAwesome-flag-o {
+  content: "\f11d";
+}
+%fontAwesome-flag-checkered {
+  content: "\f11e";
+}
+%fontAwesome-terminal {
+  content: "\f120";
+}
+%fontAwesome-code {
+  content: "\f121";
+}
+%fontAwesome-mail-reply-all,
+%fontAwesome-reply-all {
+  content: "\f122";
+}
+%fontAwesome-star-half-empty,
+%fontAwesome-star-half-full,
+%fontAwesome-star-half-o {
+  content: "\f123";
+}
+%fontAwesome-location-arrow {
+  content: "\f124";
+}
+%fontAwesome-crop {
+  content: "\f125";
+}
+%fontAwesome-code-fork {
+  content: "\f126";
+}
+%fontAwesome-unlink,
+%fontAwesome-chain-broken {
+  content: "\f127";
+}
+%fontAwesome-question {
+  content: "\f128";
+}
+%fontAwesome-info {
+  content: "\f129";
+}
+%fontAwesome-exclamation {
+  content: "\f12a";
+}
+%fontAwesome-superscript {
+  content: "\f12b";
+}
+%fontAwesome-subscript {
+  content: "\f12c";
+}
+%fontAwesome-eraser {
+  content: "\f12d";
+}
+%fontAwesome-puzzle-piece {
+  content: "\f12e";
+}
+%fontAwesome-microphone {
+  content: "\f130";
+}
+%fontAwesome-microphone-slash {
+  content: "\f131";
+}
+%fontAwesome-shield {
+  content: "\f132";
+}
+%fontAwesome-calendar-o {
+  content: "\f133";
+}
+%fontAwesome-fire-extinguisher {
+  content: "\f134";
+}
+%fontAwesome-rocket {
+  content: "\f135";
+}
+%fontAwesome-maxcdn {
+  content: "\f136";
+}
+%fontAwesome-chevron-circle-left {
+  content: "\f137";
+}
+%fontAwesome-chevron-circle-right {
+  content: "\f138";
+}
+%fontAwesome-chevron-circle-up {
+  content: "\f139";
+}
+%fontAwesome-chevron-circle-down {
+  content: "\f13a";
+}
+%fontAwesome-html5 {
+  content: "\f13b";
+}
+%fontAwesome-css3 {
+  content: "\f13c";
+}
+%fontAwesome-anchor {
+  content: "\f13d";
+}
+%fontAwesome-unlock-alt {
+  content: "\f13e";
+}
+%fontAwesome-bullseye {
+  content: "\f140";
+}
+%fontAwesome-ellipsis-h {
+  content: "\f141";
+}
+%fontAwesome-ellipsis-v {
+  content: "\f142";
+}
+%fontAwesome-rss-square {
+  content: "\f143";
+}
+%fontAwesome-play-circle {
+  content: "\f144";
+}
+%fontAwesome-ticket {
+  content: "\f145";
+}
+%fontAwesome-minus-square {
+  content: "\f146";
+}
+%fontAwesome-minus-square-o {
+  content: "\f147";
+}
+%fontAwesome-level-up {
+  content: "\f148";
+}
+%fontAwesome-level-down {
+  content: "\f149";
+}
+%fontAwesome-check-square {
+  content: "\f14a";
+}
+%fontAwesome-pencil-square {
+  content: "\f14b";
+}
+%fontAwesome-external-link-square {
+  content: "\f14c";
+}
+%fontAwesome-share-square {
+  content: "\f14d";
+}
+%fontAwesome-compass {
+  content: "\f14e";
+}
+%fontAwesome-toggle-down,
+%fontAwesome-caret-square-o-down {
+  content: "\f150";
+}
+%fontAwesome-toggle-up,
+%fontAwesome-caret-square-o-up {
+  content: "\f151";
+}
+%fontAwesome-toggle-right,
+%fontAwesome-caret-square-o-right {
+  content: "\f152";
+}
+%fontAwesome-euro,
+%fontAwesome-eur {
+  content: "\f153";
+}
+%fontAwesome-gbp {
+  content: "\f154";
+}
+%fontAwesome-dollar,
+%fontAwesome-usd {
+  content: "\f155";
+}
+%fontAwesome-rupee,
+%fontAwesome-inr {
+  content: "\f156";
+}
+%fontAwesome-cny,
+%fontAwesome-rmb,
+%fontAwesome-yen,
+%fontAwesome-jpy {
+  content: "\f157";
+}
+%fontAwesome-ruble,
+%fontAwesome-rouble,
+%fontAwesome-rub {
+  content: "\f158";
+}
+%fontAwesome-won,
+%fontAwesome-krw {
+  content: "\f159";
+}
+%fontAwesome-bitcoin,
+%fontAwesome-btc {
+  content: "\f15a";
+}
+%fontAwesome-file {
+  content: "\f15b";
+}
+%fontAwesome-file-text {
+  content: "\f15c";
+}
+%fontAwesome-sort-alpha-asc {
+  content: "\f15d";
+}
+%fontAwesome-sort-alpha-desc {
+  content: "\f15e";
+}
+%fontAwesome-sort-amount-asc {
+  content: "\f160";
+}
+%fontAwesome-sort-amount-desc {
+  content: "\f161";
+}
+%fontAwesome-sort-numeric-asc {
+  content: "\f162";
+}
+%fontAwesome-sort-numeric-desc {
+  content: "\f163";
+}
+%fontAwesome-thumbs-up {
+  content: "\f164";
+}
+%fontAwesome-thumbs-down {
+  content: "\f165";
+}
+%fontAwesome-youtube-square {
+  content: "\f166";
+}
+%fontAwesome-youtube {
+  content: "\f167";
+}
+%fontAwesome-xing {
+  content: "\f168";
+}
+%fontAwesome-xing-square {
+  content: "\f169";
+}
+%fontAwesome-youtube-play {
+  content: "\f16a";
+}
+%fontAwesome-dropbox {
+  content: "\f16b";
+}
+%fontAwesome-stack-overflow {
+  content: "\f16c";
+}
+%fontAwesome-instagram {
+  content: "\f16d";
+}
+%fontAwesome-flickr {
+  content: "\f16e";
+}
+%fontAwesome-adn {
+  content: "\f170";
+}
+%fontAwesome-bitbucket {
+  content: "\f171";
+}
+%fontAwesome-bitbucket-square {
+  content: "\f172";
+}
+%fontAwesome-tumblr {
+  content: "\f173";
+}
+%fontAwesome-tumblr-square {
+  content: "\f174";
+}
+%fontAwesome-long-arrow-down {
+  content: "\f175";
+}
+%fontAwesome-long-arrow-up {
+  content: "\f176";
+}
+%fontAwesome-long-arrow-left {
+  content: "\f177";
+}
+%fontAwesome-long-arrow-right {
+  content: "\f178";
+}
+%fontAwesome-apple {
+  content: "\f179";
+}
+%fontAwesome-windows {
+  content: "\f17a";
+}
+%fontAwesome-android {
+  content: "\f17b";
+}
+%fontAwesome-linux {
+  content: "\f17c";
+}
+%fontAwesome-dribbble {
+  content: "\f17d";
+}
+%fontAwesome-skype {
+  content: "\f17e";
+}
+%fontAwesome-foursquare {
+  content: "\f180";
+}
+%fontAwesome-trello {
+  content: "\f181";
+}
+%fontAwesome-female {
+  content: "\f182";
+}
+%fontAwesome-male {
+  content: "\f183";
+}
+%fontAwesome-gittip,
+%fontAwesome-gratipay {
+  content: "\f184";
+}
+%fontAwesome-sun-o {
+  content: "\f185";
+}
+%fontAwesome-moon-o {
+  content: "\f186";
+}
+%fontAwesome-archive {
+  content: "\f187";
+}
+%fontAwesome-bug {
+  content: "\f188";
+}
+%fontAwesome-vk {
+  content: "\f189";
+}
+%fontAwesome-weibo {
+  content: "\f18a";
+}
+%fontAwesome-renren {
+  content: "\f18b";
+}
+%fontAwesome-pagelines {
+  content: "\f18c";
+}
+%fontAwesome-stack-exchange {
+  content: "\f18d";
+}
+%fontAwesome-arrow-circle-o-right {
+  content: "\f18e";
+}
+%fontAwesome-arrow-circle-o-left {
+  content: "\f190";
+}
+%fontAwesome-toggle-left,
+%fontAwesome-caret-square-o-left {
+  content: "\f191";
+}
+%fontAwesome-dot-circle-o {
+  content: "\f192";
+}
+%fontAwesome-wheelchair {
+  content: "\f193";
+}
+%fontAwesome-vimeo-square {
+  content: "\f194";
+}
+%fontAwesome-turkish-lira,
+%fontAwesome-try {
+  content: "\f195";
+}
+%fontAwesome-plus-square-o {
+  content: "\f196";
+}
+%fontAwesome-space-shuttle {
+  content: "\f197";
+}
+%fontAwesome-slack {
+  content: "\f198";
+}
+%fontAwesome-envelope-square {
+  content: "\f199";
+}
+%fontAwesome-wordpress {
+  content: "\f19a";
+}
+%fontAwesome-openid {
+  content: "\f19b";
+}
+%fontAwesome-institution,
+%fontAwesome-bank,
+%fontAwesome-university {
+  content: "\f19c";
+}
+%fontAwesome-mortar-board,
+%fontAwesome-graduation-cap {
+  content: "\f19d";
+}
+%fontAwesome-yahoo {
+  content: "\f19e";
+}
+%fontAwesome-google {
+  content: "\f1a0";
+}
+%fontAwesome-reddit {
+  content: "\f1a1";
+}
+%fontAwesome-reddit-square {
+  content: "\f1a2";
+}
+%fontAwesome-stumbleupon-circle {
+  content: "\f1a3";
+}
+%fontAwesome-stumbleupon {
+  content: "\f1a4";
+}
+%fontAwesome-delicious {
+  content: "\f1a5";
+}
+%fontAwesome-digg {
+  content: "\f1a6";
+}
+%fontAwesome-pied-piper-pp {
+  content: "\f1a7";
+}
+%fontAwesome-pied-piper-alt {
+  content: "\f1a8";
+}
+%fontAwesome-drupal {
+  content: "\f1a9";
+}
+%fontAwesome-joomla {
+  content: "\f1aa";
+}
+%fontAwesome-language {
+  content: "\f1ab";
+}
+%fontAwesome-fax {
+  content: "\f1ac";
+}
+%fontAwesome-building {
+  content: "\f1ad";
+}
+%fontAwesome-child {
+  content: "\f1ae";
+}
+%fontAwesome-paw {
+  content: "\f1b0";
+}
+%fontAwesome-spoon {
+  content: "\f1b1";
+}
+%fontAwesome-cube {
+  content: "\f1b2";
+}
+%fontAwesome-cubes {
+  content: "\f1b3";
+}
+%fontAwesome-behance {
+  content: "\f1b4";
+}
+%fontAwesome-behance-square {
+  content: "\f1b5";
+}
+%fontAwesome-steam {
+  content: "\f1b6";
+}
+%fontAwesome-steam-square {
+  content: "\f1b7";
+}
+%fontAwesome-recycle {
+  content: "\f1b8";
+}
+%fontAwesome-automobile,
+%fontAwesome-car {
+  content: "\f1b9";
+}
+%fontAwesome-cab,
+%fontAwesome-taxi {
+  content: "\f1ba";
+}
+%fontAwesome-tree {
+  content: "\f1bb";
+}
+%fontAwesome-spotify {
+  content: "\f1bc";
+}
+%fontAwesome-deviantart {
+  content: "\f1bd";
+}
+%fontAwesome-soundcloud {
+  content: "\f1be";
+}
+%fontAwesome-database {
+  content: "\f1c0";
+}
+%fontAwesome-file-pdf-o {
+  content: "\f1c1";
+}
+%fontAwesome-file-word-o {
+  content: "\f1c2";
+}
+%fontAwesome-file-excel-o {
+  content: "\f1c3";
+}
+%fontAwesome-file-powerpoint-o {
+  content: "\f1c4";
+}
+%fontAwesome-file-photo-o,
+%fontAwesome-file-picture-o,
+%fontAwesome-file-image-o {
+  content: "\f1c5";
+}
+%fontAwesome-file-zip-o,
+%fontAwesome-file-archive-o {
+  content: "\f1c6";
+}
+%fontAwesome-file-sound-o,
+%fontAwesome-file-audio-o {
+  content: "\f1c7";
+}
+%fontAwesome-file-movie-o,
+%fontAwesome-file-video-o {
+  content: "\f1c8";
+}
+%fontAwesome-file-code-o {
+  content: "\f1c9";
+}
+%fontAwesome-vine {
+  content: "\f1ca";
+}
+%fontAwesome-codepen {
+  content: "\f1cb";
+}
+%fontAwesome-jsfiddle {
+  content: "\f1cc";
+}
+%fontAwesome-life-bouy,
+%fontAwesome-life-buoy,
+%fontAwesome-life-saver,
+%fontAwesome-support,
+%fontAwesome-life-ring {
+  content: "\f1cd";
+}
+%fontAwesome-circle-o-notch {
+  content: "\f1ce";
+}
+%fontAwesome-ra,
+%fontAwesome-resistance,
+%fontAwesome-rebel {
+  content: "\f1d0";
+}
+%fontAwesome-ge,
+%fontAwesome-empire {
+  content: "\f1d1";
+}
+%fontAwesome-git-square {
+  content: "\f1d2";
+}
+%fontAwesome-git {
+  content: "\f1d3";
+}
+%fontAwesome-y-combinator-square,
+%fontAwesome-yc-square,
+%fontAwesome-hacker-news {
+  content: "\f1d4";
+}
+%fontAwesome-tencent-weibo {
+  content: "\f1d5";
+}
+%fontAwesome-qq {
+  content: "\f1d6";
+}
+%fontAwesome-wechat,
+%fontAwesome-weixin {
+  content: "\f1d7";
+}
+%fontAwesome-send,
+%fontAwesome-paper-plane {
+  content: "\f1d8";
+}
+%fontAwesome-send-o,
+%fontAwesome-paper-plane-o {
+  content: "\f1d9";
+}
+%fontAwesome-history {
+  content: "\f1da";
+}
+%fontAwesome-circle-thin {
+  content: "\f1db";
+}
+%fontAwesome-header {
+  content: "\f1dc";
+}
+%fontAwesome-paragraph {
+  content: "\f1dd";
+}
+%fontAwesome-sliders {
+  content: "\f1de";
+}
+%fontAwesome-share-alt {
+  content: "\f1e0";
+}
+%fontAwesome-share-alt-square {
+  content: "\f1e1";
+}
+%fontAwesome-bomb {
+  content: "\f1e2";
+}
+%fontAwesome-soccer-ball-o,
+%fontAwesome-futbol-o {
+  content: "\f1e3";
+}
+%fontAwesome-tty {
+  content: "\f1e4";
+}
+%fontAwesome-binoculars {
+  content: "\f1e5";
+}
+%fontAwesome-plug {
+  content: "\f1e6";
+}
+%fontAwesome-slideshare {
+  content: "\f1e7";
+}
+%fontAwesome-twitch {
+  content: "\f1e8";
+}
+%fontAwesome-yelp {
+  content: "\f1e9";
+}
+%fontAwesome-newspaper-o {
+  content: "\f1ea";
+}
+%fontAwesome-wifi {
+  content: "\f1eb";
+}
+%fontAwesome-calculator {
+  content: "\f1ec";
+}
+%fontAwesome-paypal {
+  content: "\f1ed";
+}
+%fontAwesome-google-wallet {
+  content: "\f1ee";
+}
+%fontAwesome-cc-visa {
+  content: "\f1f0";
+}
+%fontAwesome-cc-mastercard {
+  content: "\f1f1";
+}
+%fontAwesome-cc-discover {
+  content: "\f1f2";
+}
+%fontAwesome-cc-amex {
+  content: "\f1f3";
+}
+%fontAwesome-cc-paypal {
+  content: "\f1f4";
+}
+%fontAwesome-cc-stripe {
+  content: "\f1f5";
+}
+%fontAwesome-bell-slash {
+  content: "\f1f6";
+}
+%fontAwesome-bell-slash-o {
+  content: "\f1f7";
+}
+%fontAwesome-trash {
+  content: "\f1f8";
+}
+%fontAwesome-copyright {
+  content: "\f1f9";
+}
+%fontAwesome-at {
+  content: "\f1fa";
+}
+%fontAwesome-eyedropper {
+  content: "\f1fb";
+}
+%fontAwesome-paint-brush {
+  content: "\f1fc";
+}
+%fontAwesome-birthday-cake {
+  content: "\f1fd";
+}
+%fontAwesome-area-chart {
+  content: "\f1fe";
+}
+%fontAwesome-pie-chart {
+  content: "\f200";
+}
+%fontAwesome-line-chart {
+  content: "\f201";
+}
+%fontAwesome-lastfm {
+  content: "\f202";
+}
+%fontAwesome-lastfm-square {
+  content: "\f203";
+}
+%fontAwesome-toggle-off {
+  content: "\f204";
+}
+%fontAwesome-toggle-on {
+  content: "\f205";
+}
+%fontAwesome-bicycle {
+  content: "\f206";
+}
+%fontAwesome-bus {
+  content: "\f207";
+}
+%fontAwesome-ioxhost {
+  content: "\f208";
+}
+%fontAwesome-angellist {
+  content: "\f209";
+}
+%fontAwesome-cc {
+  content: "\f20a";
+}
+%fontAwesome-shekel,
+%fontAwesome-sheqel,
+%fontAwesome-ils {
+  content: "\f20b";
+}
+%fontAwesome-meanpath {
+  content: "\f20c";
+}
+%fontAwesome-buysellads {
+  content: "\f20d";
+}
+%fontAwesome-connectdevelop {
+  content: "\f20e";
+}
+%fontAwesome-dashcube {
+  content: "\f210";
+}
+%fontAwesome-forumbee {
+  content: "\f211";
+}
+%fontAwesome-leanpub {
+  content: "\f212";
+}
+%fontAwesome-sellsy {
+  content: "\f213";
+}
+%fontAwesome-shirtsinbulk {
+  content: "\f214";
+}
+%fontAwesome-simplybuilt {
+  content: "\f215";
+}
+%fontAwesome-skyatlas {
+  content: "\f216";
+}
+%fontAwesome-cart-plus {
+  content: "\f217";
+}
+%fontAwesome-cart-arrow-down {
+  content: "\f218";
+}
+%fontAwesome-diamond {
+  content: "\f219";
+}
+%fontAwesome-ship {
+  content: "\f21a";
+}
+%fontAwesome-user-secret {
+  content: "\f21b";
+}
+%fontAwesome-motorcycle {
+  content: "\f21c";
+}
+%fontAwesome-street-view {
+  content: "\f21d";
+}
+%fontAwesome-heartbeat {
+  content: "\f21e";
+}
+%fontAwesome-venus {
+  content: "\f221";
+}
+%fontAwesome-mars {
+  content: "\f222";
+}
+%fontAwesome-mercury {
+  content: "\f223";
+}
+%fontAwesome-intersex,
+%fontAwesome-transgender {
+  content: "\f224";
+}
+%fontAwesome-transgender-alt {
+  content: "\f225";
+}
+%fontAwesome-venus-double {
+  content: "\f226";
+}
+%fontAwesome-mars-double {
+  content: "\f227";
+}
+%fontAwesome-venus-mars {
+  content: "\f228";
+}
+%fontAwesome-mars-stroke {
+  content: "\f229";
+}
+%fontAwesome-mars-stroke-v {
+  content: "\f22a";
+}
+%fontAwesome-mars-stroke-h {
+  content: "\f22b";
+}
+%fontAwesome-neuter {
+  content: "\f22c";
+}
+%fontAwesome-genderless {
+  content: "\f22d";
+}
+%fontAwesome-facebook-official {
+  content: "\f230";
+}
+%fontAwesome-pinterest-p {
+  content: "\f231";
+}
+%fontAwesome-whatsapp {
+  content: "\f232";
+}
+%fontAwesome-server {
+  content: "\f233";
+}
+%fontAwesome-user-plus {
+  content: "\f234";
+}
+%fontAwesome-user-times {
+  content: "\f235";
+}
+%fontAwesome-hotel,
+%fontAwesome-bed {
+  content: "\f236";
+}
+%fontAwesome-viacoin {
+  content: "\f237";
+}
+%fontAwesome-train {
+  content: "\f238";
+}
+%fontAwesome-subway {
+  content: "\f239";
+}
+%fontAwesome-medium {
+  content: "\f23a";
+}
+%fontAwesome-yc,
+%fontAwesome-y-combinator {
+  content: "\f23b";
+}
+%fontAwesome-optin-monster {
+  content: "\f23c";
+}
+%fontAwesome-opencart {
+  content: "\f23d";
+}
+%fontAwesome-expeditedssl {
+  content: "\f23e";
+}
+%fontAwesome-battery-4,
+%fontAwesome-battery,
+%fontAwesome-battery-full {
+  content: "\f240";
+}
+%fontAwesome-battery-3,
+%fontAwesome-battery-three-quarters {
+  content: "\f241";
+}
+%fontAwesome-battery-2,
+%fontAwesome-battery-half {
+  content: "\f242";
+}
+%fontAwesome-battery-1,
+%fontAwesome-battery-quarter {
+  content: "\f243";
+}
+%fontAwesome-battery-0,
+%fontAwesome-battery-empty {
+  content: "\f244";
+}
+%fontAwesome-mouse-pointer {
+  content: "\f245";
+}
+%fontAwesome-i-cursor {
+  content: "\f246";
+}
+%fontAwesome-object-group {
+  content: "\f247";
+}
+%fontAwesome-object-ungroup {
+  content: "\f248";
+}
+%fontAwesome-sticky-note {
+  content: "\f249";
+}
+%fontAwesome-sticky-note-o {
+  content: "\f24a";
+}
+%fontAwesome-cc-jcb {
+  content: "\f24b";
+}
+%fontAwesome-cc-diners-club {
+  content: "\f24c";
+}
+%fontAwesome-clone {
+  content: "\f24d";
+}
+%fontAwesome-balance-scale {
+  content: "\f24e";
+}
+%fontAwesome-hourglass-o {
+  content: "\f250";
+}
+%fontAwesome-hourglass-1,
+%fontAwesome-hourglass-start {
+  content: "\f251";
+}
+%fontAwesome-hourglass-2,
+%fontAwesome-hourglass-half {
+  content: "\f252";
+}
+%fontAwesome-hourglass-3,
+%fontAwesome-hourglass-end {
+  content: "\f253";
+}
+%fontAwesome-hourglass {
+  content: "\f254";
+}
+%fontAwesome-hand-grab-o,
+%fontAwesome-hand-rock-o {
+  content: "\f255";
+}
+%fontAwesome-hand-stop-o,
+%fontAwesome-hand-paper-o {
+  content: "\f256";
+}
+%fontAwesome-hand-scissors-o {
+  content: "\f257";
+}
+%fontAwesome-hand-lizard-o {
+  content: "\f258";
+}
+%fontAwesome-hand-spock-o {
+  content: "\f259";
+}
+%fontAwesome-hand-pointer-o {
+  content: "\f25a";
+}
+%fontAwesome-hand-peace-o {
+  content: "\f25b";
+}
+%fontAwesome-trademark {
+  content: "\f25c";
+}
+%fontAwesome-registered {
+  content: "\f25d";
+}
+%fontAwesome-creative-commons {
+  content: "\f25e";
+}
+%fontAwesome-gg {
+  content: "\f260";
+}
+%fontAwesome-gg-circle {
+  content: "\f261";
+}
+%fontAwesome-tripadvisor {
+  content: "\f262";
+}
+%fontAwesome-odnoklassniki {
+  content: "\f263";
+}
+%fontAwesome-odnoklassniki-square {
+  content: "\f264";
+}
+%fontAwesome-get-pocket {
+  content: "\f265";
+}
+%fontAwesome-wikipedia-w {
+  content: "\f266";
+}
+%fontAwesome-safari {
+  content: "\f267";
+}
+%fontAwesome-chrome {
+  content: "\f268";
+}
+%fontAwesome-firefox {
+  content: "\f269";
+}
+%fontAwesome-opera {
+  content: "\f26a";
+}
+%fontAwesome-internet-explorer {
+  content: "\f26b";
+}
+%fontAwesome-tv,
+%fontAwesome-television {
+  content: "\f26c";
+}
+%fontAwesome-contao {
+  content: "\f26d";
+}
+%fontAwesome-500px {
+  content: "\f26e";
+}
+%fontAwesome-amazon {
+  content: "\f270";
+}
+%fontAwesome-calendar-plus-o {
+  content: "\f271";
+}
+%fontAwesome-calendar-minus-o {
+  content: "\f272";
+}
+%fontAwesome-calendar-times-o {
+  content: "\f273";
+}
+%fontAwesome-calendar-check-o {
+  content: "\f274";
+}
+%fontAwesome-industry {
+  content: "\f275";
+}
+%fontAwesome-map-pin {
+  content: "\f276";
+}
+%fontAwesome-map-signs {
+  content: "\f277";
+}
+%fontAwesome-map-o {
+  content: "\f278";
+}
+%fontAwesome-map {
+  content: "\f279";
+}
+%fontAwesome-commenting {
+  content: "\f27a";
+}
+%fontAwesome-commenting-o {
+  content: "\f27b";
+}
+%fontAwesome-houzz {
+  content: "\f27c";
+}
+%fontAwesome-vimeo {
+  content: "\f27d";
+}
+%fontAwesome-black-tie {
+  content: "\f27e";
+}
+%fontAwesome-fonticons {
+  content: "\f280";
+}
+%fontAwesome-reddit-alien {
+  content: "\f281";
+}
+%fontAwesome-edge {
+  content: "\f282";
+}
+%fontAwesome-credit-card-alt {
+  content: "\f283";
+}
+%fontAwesome-codiepie {
+  content: "\f284";
+}
+%fontAwesome-modx {
+  content: "\f285";
+}
+%fontAwesome-fort-awesome {
+  content: "\f286";
+}
+%fontAwesome-usb {
+  content: "\f287";
+}
+%fontAwesome-product-hunt {
+  content: "\f288";
+}
+%fontAwesome-mixcloud {
+  content: "\f289";
+}
+%fontAwesome-scribd {
+  content: "\f28a";
+}
+%fontAwesome-pause-circle {
+  content: "\f28b";
+}
+%fontAwesome-pause-circle-o {
+  content: "\f28c";
+}
+%fontAwesome-stop-circle {
+  content: "\f28d";
+}
+%fontAwesome-stop-circle-o {
+  content: "\f28e";
+}
+%fontAwesome-shopping-bag {
+  content: "\f290";
+}
+%fontAwesome-shopping-basket {
+  content: "\f291";
+}
+%fontAwesome-hashtag {
+  content: "\f292";
+}
+%fontAwesome-bluetooth {
+  content: "\f293";
+}
+%fontAwesome-bluetooth-b {
+  content: "\f294";
+}
+%fontAwesome-percent {
+  content: "\f295";
+}
+%fontAwesome-gitlab {
+  content: "\f296";
+}
+%fontAwesome-wpbeginner {
+  content: "\f297";
+}
+%fontAwesome-wpforms {
+  content: "\f298";
+}
+%fontAwesome-envira {
+  content: "\f299";
+}
+%fontAwesome-universal-access {
+  content: "\f29a";
+}
+%fontAwesome-wheelchair-alt {
+  content: "\f29b";
+}
+%fontAwesome-question-circle-o {
+  content: "\f29c";
+}
+%fontAwesome-blind {
+  content: "\f29d";
+}
+%fontAwesome-audio-description {
+  content: "\f29e";
+}
+%fontAwesome-volume-control-phone {
+  content: "\f2a0";
+}
+%fontAwesome-braille {
+  content: "\f2a1";
+}
+%fontAwesome-assistive-listening-systems {
+  content: "\f2a2";
+}
+%fontAwesome-asl-interpreting,
+%fontAwesome-american-sign-language-interpreting {
+  content: "\f2a3";
+}
+%fontAwesome-deafness,
+%fontAwesome-hard-of-hearing,
+%fontAwesome-deaf {
+  content: "\f2a4";
+}
+%fontAwesome-glide {
+  content: "\f2a5";
+}
+%fontAwesome-glide-g {
+  content: "\f2a6";
+}
+%fontAwesome-signing,
+%fontAwesome-sign-language {
+  content: "\f2a7";
+}
+%fontAwesome-low-vision {
+  content: "\f2a8";
+}
+%fontAwesome-viadeo {
+  content: "\f2a9";
+}
+%fontAwesome-viadeo-square {
+  content: "\f2aa";
+}
+%fontAwesome-snapchat {
+  content: "\f2ab";
+}
+%fontAwesome-snapchat-ghost {
+  content: "\f2ac";
+}
+%fontAwesome-snapchat-square {
+  content: "\f2ad";
+}
+%fontAwesome-pied-piper {
+  content: "\f2ae";
+}
+%fontAwesome-first-order {
+  content: "\f2b0";
+}
+%fontAwesome-yoast {
+  content: "\f2b1";
+}
+%fontAwesome-themeisle {
+  content: "\f2b2";
+}
+%fontAwesome-google-plus-circle,
+%fontAwesome-google-plus-official {
+  content: "\f2b3";
+}
+%fontAwesome-fa,
+%fontAwesome-font-awesome {
+  content: "\f2b4";
+}
+%fontAwesome-handshake-o {
+  content: "\f2b5";
+}
+%fontAwesome-envelope-open {
+  content: "\f2b6";
+}
+%fontAwesome-envelope-open-o {
+  content: "\f2b7";
+}
+%fontAwesome-linode {
+  content: "\f2b8";
+}
+%fontAwesome-address-book {
+  content: "\f2b9";
+}
+%fontAwesome-address-book-o {
+  content: "\f2ba";
+}
+%fontAwesome-vcard,
+%fontAwesome-address-card {
+  content: "\f2bb";
+}
+%fontAwesome-vcard-o,
+%fontAwesome-address-card-o {
+  content: "\f2bc";
+}
+%fontAwesome-user-circle {
+  content: "\f2bd";
+}
+%fontAwesome-user-circle-o {
+  content: "\f2be";
+}
+%fontAwesome-user-o {
+  content: "\f2c0";
+}
+%fontAwesome-id-badge {
+  content: "\f2c1";
+}
+%fontAwesome-drivers-license,
+%fontAwesome-id-card {
+  content: "\f2c2";
+}
+%fontAwesome-drivers-license-o,
+%fontAwesome-id-card-o {
+  content: "\f2c3";
+}
+%fontAwesome-quora {
+  content: "\f2c4";
+}
+%fontAwesome-free-code-camp {
+  content: "\f2c5";
+}
+%fontAwesome-telegram {
+  content: "\f2c6";
+}
+%fontAwesome-thermometer-4,
+%fontAwesome-thermometer,
+%fontAwesome-thermometer-full {
+  content: "\f2c7";
+}
+%fontAwesome-thermometer-3,
+%fontAwesome-thermometer-three-quarters {
+  content: "\f2c8";
+}
+%fontAwesome-thermometer-2,
+%fontAwesome-thermometer-half {
+  content: "\f2c9";
+}
+%fontAwesome-thermometer-1,
+%fontAwesome-thermometer-quarter {
+  content: "\f2ca";
+}
+%fontAwesome-thermometer-0,
+%fontAwesome-thermometer-empty {
+  content: "\f2cb";
+}
+%fontAwesome-shower {
+  content: "\f2cc";
+}
+%fontAwesome-bathtub,
+%fontAwesome-s15,
+%fontAwesome-bath {
+  content: "\f2cd";
+}
+%fontAwesome-podcast {
+  content: "\f2ce";
+}
+%fontAwesome-window-maximize {
+  content: "\f2d0";
+}
+%fontAwesome-window-minimize {
+  content: "\f2d1";
+}
+%fontAwesome-window-restore {
+  content: "\f2d2";
+}
+%fontAwesome-times-rectangle,
+%fontAwesome-window-close {
+  content: "\f2d3";
+}
+%fontAwesome-times-rectangle-o,
+%fontAwesome-window-close-o {
+  content: "\f2d4";
+}
+%fontAwesome-bandcamp {
+  content: "\f2d5";
+}
+%fontAwesome-grav {
+  content: "\f2d6";
+}
+%fontAwesome-etsy {
+  content: "\f2d7";
+}
+%fontAwesome-imdb {
+  content: "\f2d8";
+}
+%fontAwesome-ravelry {
+  content: "\f2d9";
+}
+%fontAwesome-eercast {
+  content: "\f2da";
+}
+%fontAwesome-microchip {
+  content: "\f2db";
+}
+%fontAwesome-snowflake-o {
+  content: "\f2dc";
+}
+%fontAwesome-superpowers {
+  content: "\f2dd";
+}
+%fontAwesome-wpexplorer {
+  content: "\f2de";
+}
+%fontAwesome-meetup {
+  content: "\f2e0";
+}

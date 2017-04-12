@@ -1,0 +1,28 @@
+			<%
+				min_li = 1 #最少的li數量
+				max_li = 10 #最多的li數量
+
+				li_length = (min_li..max_li).to_a.sample
+			%>
+
+<div class="area-customize list <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<ul data-index="1" data-child="<%= li_length %>">
+			<% li_length.times do |i| %>
+				<li data-index="<%= i + 1 %>"><div class="list-left"><a href="#"><i class="mark"><%= lorem_word %></i><%= zh_lorem_sentence %></a></div><div class="list-right"><a class="delete-btn" href="#">刪除</a><i class="date">2016-12-6</i><i class="department">苗栗縣政府</i></div></li>
+			<% end %>
+		</ul>
+	</div></div>
+	<div class="ft"><div class="in">
+		<ul data-index="1" data-child="1">
+			<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
+		</ul>
+	</div></div>
+	<div class="ft"><div class="in">
+		
+	</div></div>
+</div></div>

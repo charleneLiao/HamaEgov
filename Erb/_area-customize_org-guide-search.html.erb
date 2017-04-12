@@ -1,0 +1,72 @@
+<%
+	min_cell = 2 #最少的欄數量
+	max_cell = 6 #最多的欄數量
+	min_row = 3 #最少的行數量
+	max_row = 12 #最多的行數量
+	min_text = 3 #最少的字元
+	max_text = 8 #最多的字元
+
+	cell_length = (min_cell..max_cell).to_a.sample
+	row_length = (min_row..max_row).to_a.sample
+%>
+
+<div class="area-customize org-guide-search <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><%= header_text %></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<div class="org-guide-search-right">
+	    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6249425042483!2d120.30520481495991!3d22.593126785172206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e030d35113583%3A0x221626ecb7ddfdc9!2z6auY6ZuE5biC5pS_5bqc5raI6Ziy5bGA5bGA5pys6YOo!5e0!3m2!1szh-TW!2stw!4v1481682723117" width="450" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </div>
+		<div class="org-guide-search-left">
+			<table>
+				<thead data-index="1" data-child="1">
+				</thead>
+				<tbody data-index="2" data-child="<%= row_length %>">
+					<tr data-index="" data-child="">
+							<th><span>中文名稱</span></th>
+							<td><span>高雄市政府消防局</span></td>
+					</tr>
+					<tr data-index="" data-child="">
+							<th><span>英文名稱</span></th>
+							<td><span>FIRE BUREAU, KAOHSIUNG CITY </span></td>
+					</tr>
+					<tr data-index="" data-child="">
+							<th><span>機關網址</span></th>
+							<td><span><a href="http://www.fdkc.gov.tw/">http://www.fdkc.gov.tw/</a></span></td>
+					</tr>
+					<tr data-index="" data-child="">
+							<th><span>機關地址</span></th>
+							<td><span>高雄市前鎮區凱旋四路119號 </span></td>
+					</tr>
+					<tr data-index="" data-child="">
+							<th><span>上級機關</span></th>
+							<td><span>高雄市 \ 市政府 </span></td>
+					</tr>
+					<tr data-index="" data-child="">
+							<th><span>機關代號</span></th>
+							<td><span>397320000A</span></td>
+					</tr>
+				</tbody>
+				<tfoot data-index="3" data-child="1">
+					<tr data-index="1" data-child="1">
+						<th data-index="1" colspan="2">業務職掌</th>
+					</tr>
+					<tr data-index="2" data-child="1">
+						<td data-index="1" colspan="2"><%= zh_lorem_sentence %></td>
+					</tr>
+					<tr>
+						<td data-index="1" colspan="2">
+							<ul class="share-tool">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div></div>
+</div></div>

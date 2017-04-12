@@ -1,0 +1,63 @@
+<%
+	min_cell = 2 #最少的欄數量
+	max_cell = 6 #最多的欄數量
+	min_row = 3 #最少的行數量
+	max_row = 12 #最多的行數量
+	min_text = 3 #最少的字元
+	max_text = 8 #最多的字元
+
+	cell_length = (min_cell..max_cell).to_a.sample
+	row_length = (min_row..max_row).to_a.sample
+%>
+
+<div class="area-customize page-form <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><%= header_text %></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<table>
+			<thead data-index="1" data-child="1">
+				<tr data-index="1" data-child="">
+						<th colspan="2"><span>遺產繼承分割協議書</span><ul class="top-tool">
+							<li><a href="#">收藏</a></li>
+							<li><a href="#">回報問題</a></li>
+						</ul></th>
+				</tr>
+			</thead>
+			<tbody data-index="2" data-child="<%= row_length %>">
+				<tr data-index="1" data-child="">
+						<th><span>表單下載</span></th>
+						<td><img src="/images/icon-pic/file-type-docx.png" alt="文件"></td>
+				</tr>
+				<tr data-index="2" data-child="">
+						<th><span>申請流程</span></th>
+						<td><img src="/images/icon-pic/file-type-docx.png" alt="文件"></td>
+				</tr>
+				<tr data-index="3" data-child="">
+						<th><span>填寫範例</span></th>
+						<td><img src="/images/icon-pic/file-type-docx.png" alt="文件"></td>
+				</tr>
+				<tr data-index="4" data-child="">
+						<th><span>機關名稱</span></th>
+						<td><span>苗栗縣政府</span></td>
+				</tr>
+				<tr data-index="5" data-child="">
+						<th><span>機關網站</span></th>
+						<td><span><a href="#">http://www.maioli.gov.tw/</a></span></td>
+				</tr>
+				<tr data-index="6" data-child="">
+						<th><span>服務說明</span></th>
+						<td><span>遺產繼承分割協議書</span></td>
+				</tr>
+			</tbody>
+			<tfoot data-index="3" data-child="1">
+				<tr data-index="1" data-child="1">
+					<td data-index="1" colspan="2"><p><span>檔案格式說明</span><span><img src="/images/icon-pic/file-type-docx.png" alt="文件">Office Word</span><span><img src="/images/icon-pic/file-type-xls.png" alt="試算表">Office Excel</span><span><img src="/images/icon-pic/file-type-odt.png" alt="ODT">Office Writter</span><span><img src="/images/icon-pic/file-type-pdf.png" alt="PDF">PDF</span><span><img src="/images/icon-pic/file-type-zip.png" alt="壓縮檔
+">ZIP</span></p></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div></div>
+</div></div>

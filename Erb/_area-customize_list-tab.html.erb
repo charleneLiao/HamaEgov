@@ -1,0 +1,35 @@
+<div class="area-customize list-tab <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><a href="#"><%= header_text %></a></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<ul class="top-nav" data-index="1" data-child="<%= inner_len %>">
+
+			<% inner_len.times do |i| %>
+			
+				<% if( i == 0 ) %>
+					<li data-index="<%= i + 1 %>" class="is-active">
+				<% else %>
+					<li data-index="<%= i + 1 %>">
+				<% end %>
+				<span><a href="#"><%= lorem_word %></a></span></li>
+			<% end %>
+		</ul>
+		<div class="hor-nav">
+		    <a class="goleft" href="#"></a>
+		    <div class="matte-box">
+		    <ul data-index="2">
+				<li><a class="is-active" href="#">12日</a></li>
+				<li><a href="#">13日</a></li>
+				<li><a href="#">14日</a></li>
+				<li><a href="#">15日</a></li>
+				<li><a href="#">16日</a></li>
+				<li><a href=#"">17日</a></li>
+			</ul></div>
+			<a class="goright" href="#"></a>
+		</div>
+
+	</div></div>
+</div></div>

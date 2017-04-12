@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>佔滿剩餘寬度(absolute法)</title>
+  <style>
+    html,body { height: 100%; }
+    .container 
+    {
+      position: absolute;
+      height: 80%;
+      width: 80%;
+      padding: 0px;
+    }
+    .container>div
+    { 
+      /* 絕對定位，指定top/bottom為0可使其佔滿容器高度 */
+      position: absolute;
+      top: 0px; bottom: 0px;
+      background-color: white; 
+      border: 1px solid purple;
+      padding: 6px;
+    }
+    .col-one,.col-two { 
+      width: 100px; 
+    }
+    .col-two { 
+      left: 112px; /* 寬度100還需加上左右padding 6*2 */
+    }
+    .col-remaining { 
+      left: 224px;
+      /* 指定right使其向右擴展到容器右側 */
+      right: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div class='col-one'>
+        LEFT 100px Wide
+    </div>
+    <div class='col-two'>
+        LEFT 100px Wide
+    </div>
+    <div class='col-remaining'>
+        REMAINING
+    </div>
+  </div>
+</body>
+</html>

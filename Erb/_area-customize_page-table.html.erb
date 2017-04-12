@@ -1,0 +1,57 @@
+<%
+	min_cell = 2 #最少的欄數量
+	max_cell = 6 #最多的欄數量
+	min_row = 3 #最少的行數量
+	max_row = 12 #最多的行數量
+	min_text = 3 #最少的字元
+	max_text = 8 #最多的字元
+
+	cell_length = (min_cell..max_cell).to_a.sample
+	row_length = (min_row..max_row).to_a.sample
+%>
+
+<div class="area-customize page-table <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+		    <h3><img src="../images/pay-title-icon.png" alt="項目標題"><%= header_text %></h3>
+			<h4><span><%= header_text %></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<table>
+			<thead data-index="1" data-child="1">
+				<tr data-index="1" data-child="<%= cell_length %>">
+
+						<th><span>申請項目<span></th>
+						<th><span>線上查詢</span></th>
+						<th><span>繳費說明</span></th>
+						<th><span>前往繳費</span></th>
+				</tr>
+				<tr class="sub-th" data-index="1" data-child="<%= cell_length %>">
+
+                        <th colspan="4" ><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
+				</tr>
+			</thead>
+			<tbody data-index="2" data-child="<%= row_length %>">
+
+				<% row_length.times do |i| %>
+					<tr data-index="<%= i + 1 %>" data-child="<%= cell_length %>">
+
+							<td><span><%= zh_lorem_sentence %></span></td>
+							<td><a href="#"><img src="../images/pay-link-icon.png" alt="線上查詢"></a>
+							</td>
+							<td><a href="#"><img src="../images/pay-qa-icon.png"  alt="繳費說明"></a>
+							</td>
+							<td><a href="#"><img src="../images/pay-web-icon.png"  alt="前往繳費"></a>
+							</td>
+					</tr>
+				<% end %>
+			</tbody>
+			<tfoot data-index="3" data-child="1">
+				<tr data-index="1" data-child="1">
+					<td data-index="1" colspan="4"><span><h4><%= zh_lorem_words (min_text..max_text).to_a.sample %></h4><%= zh_lorem_sentence %></span></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div></div>
+</div></div>

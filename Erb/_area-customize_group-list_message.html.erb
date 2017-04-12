@@ -1,0 +1,159 @@
+<%
+    essay_length = (2..4).to_a.sample
+    text_length = (3..5).to_a.sample
+    li_length = essay_length + text_length
+%>
+    <div class="group-list message <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $list %>" data-child="<%= li_length %>" data-func="{'majorNavStraight':{}}">
+        <div class="in">
+            <% if header_text %>
+                <div class="hd">
+                    <div class="in">
+                        <h3><span><a href="#"><%= header_text %></a></span></h3>
+                    </div>
+                </div>
+                <% end %>
+                    <div class="ct">
+                        <div class="in">
+                            <ul data-index="1" data-child="<%= li_length %>">
+                                <li data-index="1">
+                                    <div class="group-list nav-01" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                        <div class="in">
+                                            <div class="hd">
+                                                <div class="in">
+                                                    <h3><span><a href="#">開創事業</a></span></h3>
+                                                </div>
+                                            </div>
+                                            <div class="ct">
+                                                <div class="in">
+                                                    <ul data-index="1" data-child="1">
+                                                        <li data-index="1">
+                                                            <div class="group-list nav-02" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                                                <div class="in">
+                                                                    <div class="hd">
+                                                                        <div class="in">
+                                                                            <h3><span><a href="#">創業準備</a></span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ct">
+                                                                        <div class="in">
+                                                                            <ul data-index="1" data-child="4">
+                                                                                <li data-index="1"><span><a onkeypress="this.click();" href="#" title="新生兒篩檢" target="_self">新生兒篩檢</a></span></li>
+                                                                                <li data-index="2"><span><a onkeypress="this.click();" href="#" title="母乳哺育" target="_self">母乳哺育</a></span></li>
+                                                                                <li data-index="3"><span><a onkeypress="this.click();" href="#" title="出生登記" target="_self">出生登記</a></span></li>
+                                                                                <li data-index="4"><span><a onkeypress="this.click();" href="#" title="其他" target="_self">其他</a></span></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- 第2 -->
+                                                        <li data-index="1">
+                                                            <div class="group-list nav-02" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                                                <div class="in">
+                                                                    <div class="hd">
+                                                                        <div class="in">
+                                                                            <h3><span><a href="#">創業準備</a></span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ct">
+                                                                        <div class="in">
+                                                                            <ul data-index="1" data-child="4">
+                                                                                <li data-index="1"><span><a onkeypress="this.click();" href="#" title="新生兒篩檢" target="_self">新生兒篩檢</a></span></li>
+                                                                                <li data-index="2"><span><a onkeypress="this.click();" href="#" title="母乳哺育" target="_self">母乳哺育</a></span></li>
+                                                                                <li data-index="3"><span><a onkeypress="this.click();" href="#" title="出生登記" target="_self">出生登記</a></span></li>
+                                                                                <li data-index="4"><span><a onkeypress="this.click();" href="#" title="其他" target="_self">其他</a></span></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 機關別範例 -->
+                                <li data-index="1">
+                                    <div class="group-list nav-01" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                        <div class="in">
+                                            <div class="hd">
+                                                <div class="in">
+                                                    <h3><span><a href="#">中央機關</a></span></h3>
+                                                </div>
+                                            </div>
+                                            <div class="ct">
+                                                <div class="in">
+                                                    <ul data-index="1" data-child="1">
+                                                        <li data-index="1">
+                                                            <div class="group-list nav-02 organ" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                                                <div class="in">
+                                                                    <div class="hd">
+                                                                        <div class="in">
+                                                                            <h3><span><a href="#">行政院</a></span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ct">
+                                                                        <div class="in">
+                                                                            <ul data-index="1" data-child="4">
+                                                                                <li data-index="1"><span><a href="#">內政部<span class="no">(405)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="2"><span><a href="#">國軍退除役官兵輔導委員會<span class="no">(56)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="3"><span><a href="#">內政部<span class="no">(336)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="4"><span><a href="#">內政部<span class="no">(336)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- 第二筆範例 -->
+                                                        <li data-index="1">
+                                                            <div class="group-list nav-02 organ" data-index="<%= index %>" data-type="<%= $list %>" data-child="" data-func="{'majorNavStraight':{}}">
+                                                                <div class="in">
+                                                                    <div class="hd">
+                                                                        <div class="in">
+                                                                            <h3><span><a href="#">行政院</a></span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ct">
+                                                                        <div class="in">
+                                                                            <ul data-index="1" data-child="4">
+                                                                                <li data-index="1"><span><a href="#">內政部<span class="no">(405)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="2"><span><a href="#">國軍退除役官兵輔導委員會<span class="no">(56)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="3"><span><a href="#">內政部<span class="no">(336)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                                <li data-index="4"><span><a href="#">內政部<span class="no">(336)</span></a>
+                                                                                    </span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+    </div>
