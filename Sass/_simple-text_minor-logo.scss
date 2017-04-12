@@ -4,6 +4,9 @@
 
 .simple-text.minor-logo {
 	float: left;
+	.base-footer &{
+		display: none;
+	}
 
 	@include media('mobile') {
 		display: none;

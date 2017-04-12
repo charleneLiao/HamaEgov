@@ -1,35 +1,18 @@
 //框架
-
 //主要內容================================================================
-
 .base-content {
-	margin-bottom: $interval-xl;
-
-	> .in {
-		@extend %center;
-		background-color: $white;
-		border: $border;
-
-		> .hd {
-
-			> .in {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-			}
-		}
-	}
+    margin-top: 216px;
+    @include media('mobile') {
+        margin-top: 239px;
+    }
+    > .in {
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+        }
+    }
 }

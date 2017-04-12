@@ -1,4 +1,4 @@
-define(['getNode'], function(getNode){
+﻿define(['getNode'], function(getNode){
 	
 	function main(env, opt, file){
 
@@ -7,7 +7,8 @@ define(['getNode'], function(getNode){
 				delay: 5000, //停留時間
 				event: 'click focusin', //jQuery 事件名稱
 				activeClass: 'is-active', //啟動的 class
-				debug: false
+				debug: false,
+				di:0 //this is customed by hem with LeftMenu_StartTab 2017/01/17 //用於更改起始tab
 			}
 
 		$.extend($set, opt);
@@ -41,7 +42,7 @@ define(['getNode'], function(getNode){
 			});
 
 			if( $hd.css('display') === 'none' ) {
-				$hd.find('a').removeAttr('href');
+				//$hd.find('a').removeAttr('href');
 			}
 		});
 
@@ -90,7 +91,8 @@ define(['getNode'], function(getNode){
 			$(this).trigger(_eventNmae);
 		});
 
-		slider(0);
+		//slider(0);
+		slider($set.di); //this is customed by hem with LeftMenu_StartTab 2017/01/17
 
 		function slider(_index) {
 			$tabs_li.removeClass(_active);

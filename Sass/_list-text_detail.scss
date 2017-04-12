@@ -1,95 +1,52 @@
 //文字列表
-
 //詳細資訊================================================================
-
 .list-text.detail {
-	@extend %area-page-no-header;
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-
-		}
-
-		ul {
-			text-align: right;
-
-			@include media('phone') {
-				text-align: left;
-			}
-		}
-
-		li {
-			display: inline-block;
-			font-size: $font-size-s;
-			color: $gray;
-			
-			+ li {
-
-				&:before {
-					content: ' | ';
-					vertical-align: middle;
-				}
-			}
-		}
-
-		span {
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		a {
-			display: block;
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+    @extend %area-page-no-header;
+    @include media('mobile') {
+        position: initial;
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        ul {
+            text-align: right;
+            @include media('mobile') {
+                text-align: left;
+            }
+        }
+        li {
+            display: inline-block;
+            font-size: $font-size-s;
+            color: $gray;
+            + li {
+                &:before {
+                    content: ' | ';
+                    vertical-align: middle;
+                }
+            }
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a {
+            display: block;
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

@@ -29,7 +29,8 @@
 	}
 
 	.ct {
-		background-color: $light;
+		// background-color: $light;
+		background-image: linear-gradient(to top, transparent 0, $light 23%);
 
 		> .in {
 			position: relative;
@@ -39,7 +40,7 @@
 			transition: $transition;
 
 			&:hover {
-				background-color: $light-gray;
+				// background-color: $light-gray;
 			}
 		}
 

@@ -1,79 +1,46 @@
 //簡單文字
-
 //頁面標題================================================================
-
 .simple-text.heading {
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		h3 {
-			@extend %reset;
-			padding-left: $interval-s;
-			padding-bottom: $interval-m;
-			border-bottom: $border;
-			font-size: $font-size-l;
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+    margin: 38px 0 0 0;
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        h3 {
+            @extend %reset;
+            padding-bottom: $interval-m;
+            border-bottom: 1px solid $gray;
+            font-size: $font-size-l;
+            &:before {
+                background: url(../Images/organ_list.png) no-repeat;
+                content: "";
+                width: 14px;
+                height: 25px;
+                float: left;
+                margin: 0 11px 0 -7px;
+            }
+        }
+        span {
+            display: block;
+            a {
+                color: $major-color;
+            }
+        }
+        a {}
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

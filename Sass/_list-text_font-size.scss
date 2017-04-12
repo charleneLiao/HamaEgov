@@ -1,138 +1,101 @@
 //文字列表
-
 //字級================================================================
-
 .list-text.font-size {
-	position: absolute;
-	top: 6px;
-	right: 10px;
-
-	@include js(false) {
-		display: none;
-	}
-
-	@include media('mobile') {
-		display: none;
-	}
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-		display: none;
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-			display: inline-block;
-			vertical-align: middle;
-
-			&.small {
-
-				span {
-
-					a {
-						@include bg-to-pic('icon-pic/font-smail.png');
-					}
-				}
-			}
-
-			&.medium {
-
-				span {
-
-					a {
-						@include bg-to-pic('icon-pic/font-medium.png');
-					}
-				}
-			}
-
-			&.large {
-
-				span {
-
-					a {
-						@include bg-to-pic('icon-pic/font-large.png');
-					}
-				}
-			}
-
-			&.is-active {
-
-				span {
-
-					a {
-						border-color: $minor-color;
-						background-color: $minor-color;
-					}
-				}
-			}
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-			@extend %hide-text;
-			display: block;
-			border-width: 2px;
-			border-style: solid;
-			border-color: transparent;
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+    position: absolute;
+    top: 11px;
+    right: 38px;
+    @include js(false) {
+        display: none;
+    }
+    @include media('mobile') {
+        display: none;
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        ul {}
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            &.small {
+                span {
+                    a {
+                        border-radius: 23px;
+                        background: #b1b1b1;
+                        width: 23px;
+                        height: 23px;
+                        color: $white;
+                        font-size: 12px;
+                        text-align: center;
+                        line-height: 23px;
+                    }
+                }
+            }
+            &.medium {
+                span {
+                    a {
+                        border-radius: 23px;
+                        background: #b1b1b1;
+                        width: 23px;
+                        height: 23px;
+                        color: $white;
+                        font-size: 15px;
+                        text-align: center;
+                        line-height: 23px;
+                    }
+                }
+            }
+            &.large {
+                span {
+                    a {
+                        border-radius: 23px;
+                        background: #b1b1b1;
+                        width: 23px;
+                        height: 23px;
+                        color: $white;
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 23px;
+                    }
+                }
+            }
+            &.is-active {
+                span {
+                    a {
+                        border-color: #f57d1f;
+                        background-color: #f57d1f;
+                    }
+                }
+            }
+        }
+        span {
+            display: block;
+        }
+        a {
+            @extend %hide-text;
+            display: block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: transparent;
+            margin: 0 3px;
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

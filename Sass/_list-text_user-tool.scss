@@ -1,228 +1,176 @@
 //文字列表
-
 //使用者工具================================================================
-
 .list-text.user-tool {
-	display: inline-block;
-
-	@include js(false) {
-		display: none;
-	}
-
-	@include media('mobile') {
-		display: none;
-	}
-
-	&:hover, &.is-active {
-
-		> .bg-drop-layout > .in, > .in {
-
-			.hd {
-
-				a {
-					background-color: $light;
-
-					&:before {
-						@include icon-font('arrow_drop_up');
-					}
-				}
-			}
-
-			.ct {
-				display: block;
-			}
-		}
-	}
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-
-		> .in {
-
-		}
-
-		h4 {
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-			display: block;
-			padding: $interval-s;
-
-			&:before {
-				@include icon-font('arrow_drop_down');
-				margin-right: $interval-xs;
-			}
-		}
-	}
-
-	.ct {
-		display: none;
-		position: absolute;
-		top: 100%;
-		right: 0;
-		min-width: 120px;
-		z-index: 2;
-
-		@include js(false) {
-			display: block;
-			position: static;
-			top: auto;
-			right: auto;
-			min-width: 0;
-		}
-
-		> .in {
-
-		}
-
-		ul {
-			background-color: $light;
-			padding: $interval-s;
-		}
-
-		li {
-
-			+ li {
-				margin-top: $interval-xs;
-			}
-
-			&.login {
-
-				a {
-
-					&:before {
-						@include icon-font('person');
-					}
-				}
-			}
-
-			&.logout {
-
-				a {
-
-					&:before {
-						@include icon-font('person_outline');
-					}
-				}
-			}
-
-			&.bopomofo {
-
-				a {
-
-					&:before {
-						@include icon-font('font_download');
-					}
-				}
-			}
-
-			&.edit {
-
-				a {
-
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
-
-			&.print {
-
-				a {
-
-					&:before {
-						@include icon-font('print');
-					}
-				}
-			}
-
-			&.data {
-
-				a {
-
-					&:before {
-						@include icon-font('data_usage');
-					}
-				}
-			}
-
-			&.nav-edit {
-
-				a {
-
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
-
-			&.index-edit {
-
-				a {
-
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
-
-			&.article-edit {
-
-				a {
-
-					&:before {
-						@include icon-font('edit');
-					}
-				}
-			}
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-			@extend %btn;
-			display: block;
-			text-align: left;
-
-			&:before {
-				margin-right: $interval-xs;
-			}
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 0 0 11px 0;
+    @include js(false) {
+        display: none;
+    }
+    @include media('mobile') {
+        display: none;
+    }
+    &:hover,
+    &.is-active {
+        > .bg-drop-layout > .in,
+        > .in {
+            .hd {
+                a {
+                    background-color: $light;
+                    &:before {
+                        @include icon-font('arrow_drop_up');
+                    }
+                }
+            }
+            .ct {
+                display: block;
+            }
+        }
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {
+            display: none;
+        }
+        a {
+            display: block;
+            padding: $interval-s;
+            &:before {
+                @include icon-font('arrow_drop_down');
+                margin-right: $interval-xs;
+            }
+        }
+    }
+    .ct {
+        @include js(false) {
+            display: block;
+            position: static;
+            top: auto;
+            right: auto;
+            min-width: 0;
+        }
+        > .in {}
+        ul {
+            margin: 15px -5px 3px 0px;
+        }
+        li {
+            display: inline-block;
+            margin-left: 7px;
+            font-size: 0.9em;
+            + li {
+                margin-top: $interval-xs;
+            }
+            &.login {
+                a {
+                    &:before {
+                        @include icon-font('person');
+                    }
+                }
+            }
+            &.logout {
+                a {
+                    &:before {
+                        @include icon-font('person_outline');
+                    }
+                }
+            }
+            &.bopomofo {
+                a {
+                    &:before {
+                        @include icon-font('font_download');
+                    }
+                }
+            }
+            &.edit {
+                a {
+                    &:before {
+                        @include icon-font('edit');
+                    }
+                }
+            }
+            &.print {
+                a {
+                    &:before {
+                        @include icon-font('print');
+                    }
+                }
+            }
+            &.data {
+                a {
+                    &:before {
+                        @include icon-font('data_usage');
+                    }
+                }
+            }
+            &.nav-edit {
+                a {
+                    &:before {
+                        @include icon-font('edit');
+                    }
+                }
+            }
+            &.index-edit {
+                a {
+                    &:before {
+                        @include icon-font('edit');
+                    }
+                }
+            }
+            &.article-edit {
+                a {
+                    &:before {
+                        @include icon-font('edit');
+                    }
+                }
+            }
+            &.share {
+                a {
+                    &:before {
+                        @include icon-font('share');
+                    }
+                }
+                .list-text.share.share-list .ct ul {
+                    top: 26px;
+                    border: 1px solid $font-list-a;
+                    background: $white;
+                    right: -8px;
+                }
+            }
+        }
+        span {
+            display: block;
+        }
+        a {
+            display: inline;
+            text-align: center;
+            padding: 5px 6px;
+            border-radius: 30px;
+            color: $deep-gray;
+            border: 1px solid $deep-gray;
+            &:before {
+                margin-right: $interval-xs;
+            }
+            &:hover {
+                background: $light-gray;
+                // color: $white;
+            }
+            &:active {
+                box-shadow: $btn-active;
+            }
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

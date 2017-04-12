@@ -1,102 +1,357 @@
 //文字列表
-
 //頁籤================================================================
-
 .list-text.tab {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        ul {
+            border-bottom: 2px solid $orange;
+            padding-bottom: 3px;
+            text-align: center;
+            $max_length: 12;
+            @for $i from 2 through $max_length {
+                &[data-child="#{$i}"] li {
+                    width: ( 100% / $i);
+                }
+            }
+            &:after {
+                @extend %clear;
+            }
+        }
+        li {
+            width: 20%;
+            display: inline-block;
+            float: left;
+            + li {
+                span {
+                    border-left: 1px solid $light-gray;
+                }
+            }
+            &.is-active {
+                span {}
+                a {
+                    background-color: $orange;
+                    color: $white;
+                }
+            }
+            &:last-child {
+                border-right: none;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+        span {
+            display: block;
+        }
+        a {
+            display: inline-block;
+            padding: $btn-padding;
+            color: $body-font-color;
+            transition: $transition;
+            width: 100%;
+            box-sizing: border-box;
+            &:hover {
+                background-color: $orange;
+                color: $white;
+            }
+            &:active {
+                box-shadow: $btn-active;
+            }
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	> .bg-drop-layout > .in, > .in {
+// 主選單
+.group.base-aside {
+    .list-text.tab {
+        ul {
+            li {
+                a {
+                    border: 2px solid $major-color;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $major-color;
+                        color: $white;
+                    }
+                    &:active {
+                        // box-shadow: $btn-active;
+                    }
+                }
+                &.is-active {
+                    span {}
+                    a {
+                        background-color: $major-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
 
-	}
+//生活情報_頁籤樣式_area-customize_list-tab
+.area-customize.list-tab {
+    @include default-min-len(0, 5);
+    // 生活情報_行事曆
+    &.calendar {
+        .ct {
+            .top-nav {
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 0 0 0;
+                li {
+                    text-align: center;
+                    float: none;
+                }
+            }
+            div.hor-nav {
+                width: 100%;
+                .matte-box {
+                    width: 96%;
+                    margin: 0 15px;
+                    ul {
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding-left: 0;
+                        li {
+                            border: none;
+                            width: 80px;
+                            float: none;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {
+            background-color: $light-gray;
+        }
+        .hor-nav {
+            position: relative;
+            .goleft,
+            .goright {
+                position: absolute;
+                background-color: transparent;
+                top: 13px;
+                color: $white;
+                width: 6px;
+                height: 11px;
+                padding: 0;
+            }
+            .goright {
+                right: 10px;
+                background: url('/images/date-right.png') no-repeat;
+            }
+            .goleft {
+                left: 10px;
+                background: url('/images/date-left.png') no-repeat;
+            }
+        }
+        ul.top-nav {
+            border-bottom-style: $border-style;
+            border-bottom-width: 2px; //$border-width;
+            border-bottom-color: $minor-color;
+            margin-bottom: 0px;
+            padding-top: 10px;
+            &:after {
+                @extend %clear;
+            }
+            li {
+                display: inline-block;
+                @include default-min-len();
+                @include media('phone') {
+                    width: 35%;
+                }
+                +li {
+                    // border-right: 1px solid #ccc;
+                    border: none;
+                }
+                &:last-child {
+                    border-right: 0px;
+                }
+                &.is-active {
+                    span {}
+                    a {
+                        background-color: $minor-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        span {
+            display: block;
+        }
+        a {
+            display: block;
+            border-radius: 3px 3px 0 0;
+            background-color: $white;
+            color: $body-font-color;
+            transition: $transition;
+            line-height: 200%;
+            margin-right: 5px;
+            text-align: center;
+            &:hover {
+                background-color: $light-gray;
+            }
+        }
+        div.hor-nav {
+            background-color: $minor-color;
+            width: 100%;
+            .matte-box {
+                overflow: hidden;
+                width: 80%;
+                margin: 0 15px;
+                ul {
+                    @extend %reset-inner;
+                    width: 1000px;
+                    padding-left: 35px;
+                    margin: 0 auto;
+                    margin-top: 0px;
+                    &:after {
+                        @extend %clear;
+                    }
+                    li {
+                        border: none;
+                        width: 80px;
+                        a {
+                            background-color: transparent;
+                            color: white;
+                            border-radius: 3px;
+                            margin: 3px;
+                            &:hover {
+                                background-color: $white;
+                                color: $minor-color;
+                            }
+                            &.is-active {
+                                background-color: $white;
+                                color: $minor-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	.hd {
-		display: none;
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		ul {
-			border-bottom-style: $border-style;
-			border-bottom-width: $border-width;
-			border-bottom-color: $minor-color;
-		}
-
-		li {
-			display: inline-block;
-
-			&.is-active {
-
-				span {
-
-				}
-
-				a {
-					background-color: $minor-color;
-					color: $white;
-				}
-			}
-		}
-
-		span {
-			display: block;
-		}
-
-		a {
-			display: block;
-			padding: $btn-padding;
-			background-color: $light;
-			color: $body-font-color;
-			transition: $transition;
-
-			&:hover {
-				background-color: $light-gray;
-			}
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+// 錨點
+.area-customize-tab-anchor {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        ul {
+            padding: 0px;
+            text-align: center;
+            list-style: none;
+            margin: 0 auto;
+            &:after {
+                @extend %clear;
+            }
+        }
+        li {
+            display: inline-block;
+            float: none;
+            margin: 0 auto;
+            + li {
+                span {
+                    border-left: 1px solid $minor-color;
+                    height: 18px;
+                    line-height: 0px;
+                }
+                + li {
+                    display: inline-block !important;
+                }
+            }
+            &.is-active {
+                span {}
+                a {
+                    text-decoration: underline;
+                    color: $minor-color;
+                    box-sizing: border-box;
+                }
+            }
+            &:last-child {
+                border-right: none;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+        span {
+            display: block;
+        }
+        a {
+            display: inline-block;
+            padding: 8px 40px;
+            color: $minor-color;
+            transition: $transition;
+            width: 100%;
+            box-sizing: border-box;
+            &:hover {
+                text-decoration: underline;
+                color: $minor-color;
+                box-sizing: border-box;
+            }
+            &:active {
+            }
+        }
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

@@ -1,6 +1,557 @@
-//內頁覆蓋
-
-// @import 'sys_global'; //sass 基礎設定
-
-	// 請注意！本 scss 所做設定皆只有內頁可見。
-	// 若需要覆蓋主要樣式設定，請直接撰寫在以下區塊。
+    //內頁覆蓋
+    @import 'sys_global'; //sass 基礎設定
+    // 請注意！本 scss 所做設定皆只有內頁可見。
+    // 若需要覆蓋主要樣式設定，請直接撰寫在以下區塊。
+    // 內頁頭部 banner
+    .base-wrapper {
+        background: none;
+        > .in {
+            &:after {
+                top: 66px;
+                background: url(../Images/banner_in.png) no-repeat;
+                background-size: initial;
+                background-position: center top;
+                z-index: -1;
+                @include media('mobile') {
+                    top: 0px !important;
+                }
+            }
+            > .hd {
+                > .in {}
+                h3 {}
+                span {}
+            }
+            > .ct {
+                > .in {
+                    .base-header {
+                        .msg-tool {
+                            @include media('mobile') {
+                                text-align: center;
+                                margin: 20px 0 0 0;
+                            }
+                            .area-customize.city {
+                                @include media('mobile') {
+                                    width: 100%;
+                                    position: absolute;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    left: 0;
+                                    top: 52px;
+                                    > .in {
+                                        background: none;
+                                    }
+                                }
+                            }
+                            // 我的專區
+                            .area-customize.member {
+                                a {
+                                    background: rgba(255, 255, 255, 0.3);
+                                    border: 1px solid $deep-gray;
+                                    color: $black;
+                                    &:hover {
+                                        color: $white;
+                                        background: rgba(253, 96, 0, 0.6);
+                                        border: 1px solid $minor-color;
+                                    }
+                                }
+                            }
+                        }
+                        // 內頁頭部搜尋
+                        .kidsSearch {
+                            >.in {
+                                >.ct {
+                                    >.in {
+                                        .area-form.search {
+                                            top: 18px;
+                                            .ct {
+                                                .fieldset {
+                                                    .search {
+                                                        input {
+                                                            border: 1px solid $deep-gray;
+                                                        }
+                                                    }
+                                                    .submit {
+                                                        a {
+                                                            background: url(../Images/icon-homeSearch-page.png) no-repeat center $minor-color;
+                                                            border-radius: 6px;
+                                                            margin: 4px;
+                                                            padding: 0 5px;
+                                                            &:hover {
+                                                                background-color: $major-light-hover;
+                                                            }
+                                                            &:active {
+                                                                box-shadow: $btn-active;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .ft {
+                                                position: initial;
+                                                margin: 0 0 0 10px;
+                                                ul {
+                                                    // 進階搜尋
+                                                    .advanced {
+                                                        a {
+                                                            background: $white;
+                                                            color: $minor-color;
+                                                            border: 1px solid $minor-color;
+                                                            padding: 10px;
+                                                            border-radius: 6px;
+                                                            &:hover {
+                                                                color: $white;
+                                                            }
+                                                            &:before {
+                                                                background: $minor-color;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        // 熱門關鍵字
+                                        .list-text.hot-key-word {
+                                            margin-top: 42px;
+                                            color: $black;
+                                            text-shadow: none;
+                                            .hd {
+                                                h4 {
+                                                    span a {
+                                                        color: $black;
+                                                        text-shadow: none;
+                                                        font-weight: bold;
+                                                    }
+                                                    &:after {
+                                                        color: $black;
+                                                        text-shadow: none;
+                                                    }
+                                                }
+                                            }
+                                            >.in {
+                                                margin-left: 162px;
+                                                width: 70%;
+                                                @include rwd(970, 768) {
+                                                    margin-left: 15%;
+                                                }
+                                            }
+                                            .ct ul li span a {
+                                                text-shadow: none;
+                                                color: $black;
+                                                font-weight: bold;
+                                                li {
+                                                    color: $black;
+                                                    text-shadow: none;
+                                                    + li {
+                                                        &:before {
+                                                            color: $black;
+                                                            text-shadow: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .base-content {
+                        margin-top: 145px;
+                        @include media('mobile') {
+                            margin-top: 186px;
+                        }
+                        .base-section {
+                            @include media('mobile') {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .base-page-area {
+        > .in {
+            @extend %center;
+        }
+    }
+    
+    .area-customize.page-btn {
+        text-align: right;
+        margin: 0 0 10px 0;
+        .btn-tool {
+            font-size: $font-size-s;
+            font-weight: normal;
+            display: inline-block;
+            background-color: $major-color;
+            color: $white !important;
+            padding: 5px 13px;
+            border-radius: 3px;
+            margin: 0 0 0 5px;
+            &:hover {
+                background-color: lighten($major-color, 5%);
+            }
+            &:first-child {
+                background-color: $minor-color;
+                &:hover {
+                    background-color: lighten($minor-color, 5%);
+                }
+                &:before {
+                    @include icon-font('favorite');
+                    margin-right: 4px;
+                }
+            }
+            a {
+                display: inline-block;
+                padding-left: 5px;
+                text-decoration: none;
+                color: $white;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    // fancy Box
+    .area-customize.page-fancyBox {
+        width: 664px;
+        height: auto;
+        display: block;
+        @include rwd(700) {
+            width: 100%;
+            height: auto;
+        }
+        >.in {
+            border-radius: 6px;
+            background: #f4f4f4;
+            padding: 20px;
+            .img,
+            .essay,
+            .qrCode {
+                margin: 0 10px;
+                display: inline-block;
+            }
+            .img {
+                margin: 0 15px 0 0;
+                float: left;
+                .img-topic {
+                    margin: 0 10px 10px 10px;
+                    text-align: center;
+                    width: 95px;
+                    height: 95px;
+                }
+                .img-app_android,
+                .img-app_ios {
+                    margin: 0 auto 5px auto;
+                    text-align: center;
+                    width: 125px;
+                    height: 37px;
+                }
+            }
+            .essay {
+                width: 314px;
+                text-align: justify;
+                @include rwd(700) {
+                    width: 100%;
+                    position: initial;
+                    display: block;
+                    margin: 10px 0;
+                }
+                .figcaption {
+                    color: $major-color;
+                    font-size: 1.2em;
+                }
+                .label {
+                    color: $deep-gray;
+                    border-bottom: 1px dotted $gray;
+                    padding-bottom: 5px;
+                    margin: 5px 0 10px 0;
+                }
+                .p {
+                    line-height: 1.5em;
+                    font-size: $font-size-m;
+                }
+            }
+            .qrCode {
+                float: right;
+                margin-top: 75px;
+            }
+        }
+    }
+    
+    // 內頁-生活情報
+    .area-essay.message.page-life {
+        .ct {
+            $pic_w: 150px;
+            $pic_h: 110px;
+            > .in {}
+            /*a*/
+            .div {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                box-sizing: border-box;
+                &:after {
+                    @extend %clear;
+                }
+                &:hover {
+                    background-color: $major-hover-light-color;
+                    .essay .caption:after,
+                    .essay .p:after {
+                        background-image: linear-gradient(to right, transparent 0, $major-hover-light-color 60%);
+                    }
+                }
+            }
+            a {}
+            .img {
+                display: inline-block;
+                float: left;
+                margin-top: 10px;
+                @include rwd(840, 768) {}
+                span {
+                    // @extend %bg-cover;
+                    display: block;
+                    width: $pic_w;
+                    height: $pic_h;
+                    float: left;
+                    border: 1px solid $light-gray;
+                    margin-right: 15px
+                }
+                img {
+                    // width: 160px;
+                    // height: 120px;
+                    width: $pic_w;
+                    height: $pic_h;
+                }
+            }
+            .essay {
+                overflow: hidden;
+                display: inline-block;
+                width: 51%;
+                @include rwd(900) {
+                    width: 70%;
+                }
+                @include rwd(864) {
+                    margin: 10px 0 0 0;
+                    width: 100%;
+                }
+            }
+            .caption,
+            .label,
+            .p {
+                margin-bottom: 10px;
+                &:after {
+                    -webkit-transition: 0.8s;
+                    -moz-transition: 0.8s;
+                    -ms-transition: 0.8s;
+                    -o-transition: 0.8s;
+                    transition: 0.8s;
+                }
+            }
+            .caption {
+                @extend %caption;
+                @extend %ellipsis;
+                font-weight: bold;
+                span {}
+                a {}
+                &:after {
+                    top: 0px !important;
+                    position: absolute !important;
+                }
+                @include media('mobile') {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            .label {
+                @extend %label;
+                margin-top: 10px;
+                ul {}
+                li {}
+                span {}
+                color: $font-gray;
+            }
+            /*i*/
+            .mark {
+                @extend %mark;
+                display: none;
+            }
+            .p {
+                @extend %paragraph;
+                @include multi-ellipsis($line: 2, $line-height: 20px, $background-color: $white, $position: 60%);
+                p {}
+                span {}
+                a {
+                    color: $font-list-a;
+                    text-decoration: none;
+                }
+            }
+            .box {
+                float: right;
+                display: inline-block;
+                width: 122px;
+                margin-top: 12px;
+                @include rwd(900) {
+                    width: 100%;
+                    margin: 0;
+                    text-align: right;
+                }
+                a,
+                .date {
+                    background: $orange;
+                    color: $white;
+                    border-radius: 6px;
+                    display: inline-block;
+                    width: 112px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin: 0px 0 12px 0;
+                    padding: 0;
+                    &:active {
+                        box-shadow: $btn-active;
+                    }
+                    i {
+                        width: 22px;
+                        height: 22px;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        float: left;
+                        margin: 9px -10px 0 10px;
+                    }
+                }
+                .collect {
+                    &:hover {
+                        background-color: $orange-hover;
+                    }
+                    i {
+                        background: url("../images/icon-collect.png");
+                    }
+                }
+                .date {
+                    background: $major-color;
+                    cursor: default;
+                    &:hover {
+                        background-color: $major-hover-deep-color;
+                    }
+                    &:active {
+                        box-shadow: none;
+                    }
+                    i {
+                        background: url("../images/icon-number.png");
+                    }
+                    .no {
+                        color: $yellow;
+                        width: 25px;
+                        text-align: center;
+                        display: inline-block;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    
+    // 台灣影像地圖
+    .area-customize.mapArea {
+        .hd {
+            h4 {
+                font-size: 1.3em;
+            }
+        }
+        .mapZone {
+            float: left;
+            @include rwd(1020) {
+                width: 100%;
+            }
+        }
+        .map {
+            float: left;
+            margin: 0 auto;
+            @include rwd(1020) {
+                    float: none;
+            }
+            img {
+                @include media("mobile") {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+            #Map {
+                area {
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+        }
+        .mapZone {
+            width: 280px;
+            @include rwd(1020) {
+                width: 100%;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    width: 50%;
+                    float: left;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    @include rwd(1020) {
+                        width: 33.33%;
+                    }
+                    @include media("phone") {
+                        width: 50%;
+                    }
+                    @include rwd(320) {
+                        width: 100%;
+                    }
+                    a {
+                        @extend %btn;
+                        border-radius: 2px;
+                        border: 2px solid $major-color;
+                        color: $black !important;
+                        background: none;
+                        width: 100%;
+                        padding: 12px;
+                        &:before {
+                            background: $minor-color;
+                            color: $white;
+                        }
+                        span {
+                            margin-right: 10px;
+                        }
+                        i {
+                            background: $map-number-btn;
+                            color: $white;
+                            border-radius: 30px;
+                            padding: 5px 10px;
+                            font-size: 0.9em;
+                        }
+                        &:hover {
+                            color: $white !important;
+                            border: 2px solid $minor-color;
+                            border-radius: 6px;
+                            i {
+                                background: $white;
+                                color: $minor-color;
+                            }
+                            &:before {
+                                color: $white;
+                            }
+                        }
+                    }
+                    +li {
+                        +li {
+                            a {}
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,56 +1,119 @@
 <%= render partial: "/erb/sys_variable" %>
 
-<!-- //步驟================================================================ -->
+<!-- Meta Deta -->
+<!-- 台灣影像地圖 -->
+<%= render partial: "/erb/area-customize_mapArea", locals: set({ index: 9, func_set: "{'imgMapRwd':{}}", header_text: "請選擇欲查詢機關縣市：" }) %>
 
-	<!-- step 步驟 -->
-		<%= render partial: "/erb/list-text_step", locals: set({}) %>
-	<!-- step 結束 -->
+ <%#= render partial: "/erb/area-customize_metaDeta", locals: set({ header_text: "MetaDeta檢測申請頁" }) %> 
+<%= render partial: "/erb/mobile", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤" }) %>
+<!-- tab 頁籤 -->
+<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤" }) %>
+<!-- 錨點 -->
+<%= render partial: "/erb/area-customize_group-tab-anchor", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "錨點" }) %>
+
+
+<!-- 機關導覽 -->
+<%= render partial: "/erb/area-customize_myZone", locals: set({ index: 9, header_text: "我的專區", inner: "" }) %>
+
+<!-- 行動服務FancyBox -->
+ <%= render partial: "/erb/area-customize_page-fancyBox", locals: set({ header_text: "行動服務FancyBox" }) %> 
+
+
+<!-- 收藏/回報問題 按鈕 -->
+ <%= render partial: "/erb/area-customize_page-btn", locals: set({ header_text: "收藏/回報問題 按鈕" }) %> 
+
+<!-- page-search 內頁搜尋-無分類 -->
+<%= render partial: "/erb/area-customize_page-search-area", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
+<!-- tab 頁籤 -->
+<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤" }) %>
+<!-- 錨點 -->
+<%= render partial: "/erb/area-customize_group-tab-anchor", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "錨點" }) %>
+<!-- 機關導覽 -->
+<%= render partial: "/erb/area-customize_page-area-link", locals: set({ index: 9, header_text: "機關導覽", inner: "" }) %>
+
+<!-- //機關導覽介紹================================================================ -->
+<%= render partial: "/erb/area-customize_org-guide-search", locals: set({ header_text: "表單申請" }) %>
+
+<!-- 生活情報 開始-->
+ <%= render partial: "/erb/area-customize_page-life", locals: set({ header_text: "生活情報" }) %> 
+
+<!-- 內頁框架：測選單　+  右欄 -->
+<%= render partial: "/erb/page-menu", locals: set({header_text: "內頁框架：測選單+右欄"}) %>
 
 <!-- //搜尋================================================================ -->
 
 	<!-- page-search 內頁搜尋 -->
-		<%= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
+		<%#= render partial: "/erb/area-form_page-search", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
 	<!-- page-search 結束 -->
+
+	<!-- page-search 內頁搜尋-無分類 -->
+		<%#= render partial: "/erb/area-customize_page-search-noclassify", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
+	<!-- page-search 結束 -->
+
+	<!-- page-search 內頁搜尋-無分類 -->
+		<%#= render partial: "/erb/area-customize_page-search-area", locals: set({ header_text: "頁面搜尋", func_set: "{'reset':{},'toggleBtn':{'cookie':'true'}}" }) %>
+	<!-- page-search 結束 -->
+
+<!-- //繳費專區表格================================================================ -->
+
+	<!-- tab 表格 -->
+		<%#= render partial: "/erb/area-customize_page-table", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "表格", inner: "/erb/area-customize_list" }) %>
+	<!-- tab 結束 -->
+
+<!-- //申辦表單================================================================ -->
+
+	<!-- classify 內頁列表群組 -->
+		<%#= render partial: "/erb/area-customize_page-form", locals: set({ header_text: "表單申請" }) %>
+	<!-- classify 結束 -->
+
+<!-- //申辦表單================================================================ -->
+
+	<!-- classify 內頁列表群組 -->
+		<%#= render partial: "/erb/area-customize_message", locals: set({ header_text: "表單申請" }) %>
+	<!-- classify 結束 -->
 
 <!-- //分類區塊================================================================ -->
 
 	<!-- classify 內頁列表群組 -->
-		<%= render partial: "/erb/list-text_classify", locals: set({ header_text: "分類" }) %>
-	<!-- classify 結束 -->
-
-	<!-- classify 內頁列表群組 -->
-		<%= render partial: "/erb/group-list_classify-multiple", locals: set({ header_text: "多重分類", inner: "/erb/list-text_classify-multiple" }) %>
+		<%#= render partial: "/erb/list-text_classify", locals: set({ header_text: "分類" }) %>
 	<!-- classify 結束 -->
 
 <!-- //頁籤================================================================ -->
-
-	<!-- tab 頁籤 -->
-		<%= render partial: "/erb/group-tab_default", locals: set({ index: 9, func_set: "{'tab':{}}", header_text: "頁籤", inner: "/erb/group-list_message" }) %>
+	<!-- tab 生活情報_頁籤 -->
+			<%#= render partial: "/erb/area-customize_list-tab", locals: set({}) %>
 	<!-- tab 結束 -->
 
 <!-- //按鈕================================================================ -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/erb/list-text_btn", locals: set({}) %>
+		<%#= render partial: "/erb/list-text_btn", locals: set({}) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-right" }) %>
+		<%#= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-right" }) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-center" }) %>
+		<%#= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-center" }) %>
 	<!-- btn 結束 -->
 
 	<!-- btn 按鈕 -->
-		<%= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-justify" }) %>
+		<%#= render partial: "/erb/list-text_btn", locals: set({ class_set: "is-justify" }) %>
 
 <!-- //內頁敘述群組================================================================ -->
 
+   <!-- album 相簿 -->
+	<%#= render partial: "/erb/group-list_album", locals: set({ header_text: "相簿(相簿列表)", inner: "/erb/area-figure_album" }) %>
+    <!-- album 結束 -->
+
 	<!-- page-block 內頁區塊群組 -->
-		<%= render partial: "/erb/group-list_page-block", locals: set({ header_text: "內頁區塊群組", inner: "/erb/area-figure_page-figure" }) %>
+		<%#= render partial: "/erb/group-list_page-block", locals: set({ header_text: "內頁區塊群組", inner: "/erb/area-figure_page-figure" }) %>
+	<!-- page-block 結束 -->
+
+	<!-- page-block 內頁區塊群組 -->
+		<%#= render partial: "/erb/base-aside", locals: set({ header_text: "內頁區塊群組", inner: "/erb/area-figure_page-figure" }) %>
 	<!-- page-block 結束 -->
 
 	<!-- page-list 內頁列表群組 -->
-		<%= render partial: "/erb/group-list_page-list", locals: set({ header_text: "內頁列表群組", inner: "/erb/area-figure_page-img-figcaption-p" }) %>
+		<%#= render partial: "/erb/group-list_page-list", locals: set({ header_text: "內頁列表群組", inner: "/erb/area-figure_page-img-figcaption-p" }) %>
 	<!-- page-list 結束 -->

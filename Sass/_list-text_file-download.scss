@@ -16,6 +16,8 @@
 		}
 
 		h4 {
+				background: url(../images/dowload_file.png) left center no-repeat;
+				padding-left: 50px;	
 			
 		}
 
@@ -40,6 +42,8 @@
 
 		li {
 
+			border-bottom: 1px dotted #ccc;
+
 			+ li {
 				margin-top: $interval-s;
 			}
@@ -52,8 +56,17 @@
 
 					a {
 						border-left-color: $color;
-
+                     	display: block;
 						&:before {
+							display: inline-block;
+							padding-right:10px; 
+							width: 10px;
+							height: 10px;
+							content:'';
+							background: url(../images/title-dot-icon.png) no-repeat center;
+						}
+
+						&:after {
 							@include icon-pic($pic);
 						}
 					}
@@ -68,15 +81,15 @@
 		a {
 			@extend %list;
 			@extend %list-hover;
-			border-left-width: $interval-xs;
-			border-left-style: solid;
+			//border-left-width: $interval-xs;
+			//border-left-style: solid;
 
-			&:before {
-				margin-right: $interval-xs;
+			&:after {
+				margin-left: $interval-xs;
 			}
 
 			&:hover {
-				border-left-width: $interval-m;
+				//border-left-width: $interval-m;
 			}
 		}
 

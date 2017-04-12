@@ -98,8 +98,23 @@
 
 	i {
 
-		&.mark {
+		&.mark,&.date,&.department {
 			font-style: normal;
+		}
+		&.date,&.department {
+			float: right;
+			padding-left: 10px;
+			padding-right: 10px;
+			@include media('phone') {
+              float: left;
+			}
+		}
+		&.date {
+			padding-top:3px; 
+		}
+
+		&.department {
+			color:$minor-color;
 		}
 	}
 
@@ -115,6 +130,7 @@
 		&[type="reset"],
 		&[type="button"] {
 			@extend %btn;
+			color:white !important;
 		}
 
 		&[type="text"],

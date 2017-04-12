@@ -5,9 +5,9 @@
 .list-text.file-download-multiple {
 	@extend %list;
 	@extend %list-hover;
-	border-left-width: $interval-xs;
-	border-left-style: solid;
-	border-left-color: $gray;
+	//border-left-width: $interval-xs;
+	//border-left-style: solid;
+	//border-left-color: $gray;
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -16,7 +16,6 @@
 	.hd {
 		display: inline-block;
 		vertical-align: middle;
-
 		@include media('phone') {
 			display: block;
 		}
@@ -24,6 +23,7 @@
 		> .in {
 
 		}
+
 
 		h4 {
 
@@ -34,6 +34,15 @@
 		}
 
 		a {
+
+			&:before {
+				display: inline-block;
+				padding-right:10px; 
+				width: 10px;
+				height: 10px;
+				content:'';
+				background: url(../images/title-dot-icon.png) no-repeat center;
+			}
 
 			&:hover {
 				color: currentColor;
@@ -57,6 +66,8 @@
 
 		ul {
 			padding: $interval-s;
+
+
 		}
 
 		li {

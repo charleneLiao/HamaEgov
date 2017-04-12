@@ -1,31 +1,19 @@
 //框架
-
 //頁首資訊================================================================
-
 .base-header {
-
-	> .in {
-
-		> .hd {
-
-			> .in {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-			}
-		}
-	}
+    > .in {
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+            .area-customize.member{
+                @include media('mobile'){
+                    display: none;
+                }
+            }
+        }
+    }
 }

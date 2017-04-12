@@ -46,7 +46,6 @@
 		}
 
 		span {
-			display: block;
 		}
 
 		a {
@@ -58,6 +57,8 @@
 		/*i*/.mark {
 			@extend %mark;
 		}
+
+
 	}
 
 	.ft {

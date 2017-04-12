@@ -1,49 +1,474 @@
-<div class="group base-header" id="base-header" data-index="<%= index %>" data-type="<%= $row %>" data-child="2"><div class="in">
-	<div class="ct"><div class="in">
+<div class="group base-header" data-index="1" data-type="3" data-child="2">
+    <div class="in">
+        <div class="ct">
+            <div class="in">
+                <div class="simple-text accesskey" data-type="0" data-child="1">
+                    <div class="in">
+                        <div class="ct">
+                            <div class="in"><span><a href="#" accesskey="U" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group default info" data-index="1" data-type="3" data-child="1">
+                    <div class="in">
+                        <div class="ct">
+                            <div class="in">
+                                <div class="group default msg-tool" data-index="1" data-type="3" data-child="3">
+                                    <div class="in">
+                                        <div class="ct">
+                                            <div class="in">
+                                                <div class="area-customize city" data-index="1" data-type="0" data-child="1">
+                                                    <div class="in">
+                                                        <div class="ct">
+                                                            <div class="in"><i class="mark"></i>
+                                                                <div class="fieldset">
+                                                                    <span class="select" data-before="縣市： ">
+		<select id="geo_city">
+			<option data-href="" selected="">請選擇</option>
+			<option data-href="">基隆市</option>
+			<option data-href="">臺北市</option>
+			<option data-href="">新北市</option>
+			<option data-href="">桃園市</option>
+			<option data-href="">新竹市</option>
+			<option data-href="">新竹縣</option>
+			<option data-href="">苗栗縣</option>
+			<option data-href="">臺中市</option>
+			<option data-href="">彰化縣</option>
+			<option data-href="">南投縣</option>
+			<option data-href="">雲林縣</option>
+			<option data-href="">嘉義市</option>
+			<option data-href="">嘉義縣</option>
+			<option data-href="">臺南市</option>
+			<option data-href="">高雄市</option>
+			<option data-href="">屏東縣</option>
+			<option data-href="">臺東縣</option>
+			<option data-href="">花蓮縣</option>
+			<option data-href="">宜蘭縣</option>
+			<option data-href="">澎湖縣</option>
+			<option data-href="">金門縣</option>
+			<option data-href="">連江縣</option>
+		</select>
+	</span>
+                                                                    <span class="select" data-before="區別： ">
+		<select id="geo_area">
+			<option data-href="" selected="">請選擇</option>
+		</select>
+	</span>
+                                                                </div>
+                                                                <script>
+                                                                $(function() {
+                                                                    var AllVars = window.location.search.substring(1);
+                                                                    var GeoCity = "";
+                                                                    var GeoArea = "";
+                                                                    if (AllVars.length > 0) {
+                                                                        var Vars = AllVars.split('&');
+                                                                        for (i = 0; i < Vars.length; i++) {
+                                                                            if (Vars[i].indexOf('GeoCity=') == 0) {
+                                                                                GeoCity = Vars[i].substring(8);
+                                                                            }
+                                                                            if (Vars[i].indexOf('GeoArea=') == 0) {
+                                                                                GeoArea = Vars[i].substring(8);
+                                                                            }
+                                                                        }
+                                                                        GeoCity = decodeURI(GeoCity);
+                                                                        GeoArea = decodeURI(GeoArea);
+                                                                    }
+                                                                    if (GeoCity.length > 0) {
+                                                                        $('#geo_city').val(GeoCity);
+                                                                    }
+                                                                    var areas = [];
+                                                                    switch (GeoCity) {
+                                                                        case '基隆市':
+                                                                            areas = ['仁愛區', '信義區', '中正區', '中山區', '安樂區', '暖暖區', '七堵區'];
+                                                                            break;
+                                                                        case '臺北市':
+                                                                            areas = ['中正區', '大同區', '中山區', '松山區', '大安區', '萬華區', '信義區', '士林區', '北投區', '內湖區', '南港區', '文山區'];
+                                                                            break;
+                                                                        case '新北市':
+                                                                            areas = ['萬里區', '金山區', '板橋區', '汐止區', '深坑區', '石碇區', '瑞芳區', '平溪區', '雙溪區', '貢寮區', '新店區', '坪林區', '烏來區', '永和區', '中和區', '土城區', '三峽區', '樹林區', '鶯歌區', '三重區', '新莊區', '泰山區', '林口區', '蘆洲區', '五股區', '八里區', '淡水區', '三芝區', '石門區'];
+                                                                            break;
+                                                                        case '桃園市':
+                                                                            areas = ['中壢區', '平鎮區', '龍潭區', '楊梅區', '新屋區', '觀音區', '桃園區', '龜山區', '八德區', '大溪區', '復興區', '大園區', '蘆竹區'];
+                                                                            break;
+                                                                        case '新竹市':
+                                                                            areas = ['東區', '北區', '香山區'];
+                                                                            break;
+                                                                        case '新竹縣':
+                                                                            areas = ['竹北市', '湖口鄉', '新豐鄉', '新埔鎮', '關西鎮', '芎林鄉', '寶山鄉', '竹東鎮', '五峰鄉', '橫山鄉', '尖石鄉', '北埔鄉', '峨眉鄉'];
+                                                                            break;
+                                                                        case '苗栗縣':
+                                                                            areas = ['竹南鎮', '頭份市', '三灣鄉', '南庄鄉', '獅潭鄉', '後龍鎮', '通霄鎮', '苑裡鎮', '苗栗市', '造橋鄉', '頭屋鄉', '公館鄉', '大湖鄉', '泰安鄉', '銅鑼鄉', '三義鄉', '西湖鄉', '卓蘭鎮'];
+                                                                            break;
+                                                                        case '臺中市':
+                                                                            areas = ['中區', '東區', '南區', '西區', '北區', '北屯區', '西屯區', '南屯區', '太平區', '大里區', '霧峰區', '烏日區', '豐原區', '后里區', '石岡區', '東勢區', '和平區', '新社區', '潭子區', '大雅區', '神岡區', '大肚區', '沙鹿區', '龍井區', '梧棲區', '清水區', '大甲區', '外埔區', '大安區'];
+                                                                            break;
+                                                                        case '彰化縣':
+                                                                            areas = ['彰化市', '芬園鄉', '花壇鄉', '秀水鄉', '鹿港鎮', '福興鄉', '線西鄉', '和美鎮', '伸港鄉', '員林市', '社頭鄉', '永靖鄉', '埔心鄉', '溪湖鎮', '大村鄉', '埔鹽鄉', '田中鎮', '北斗鎮', '田尾鄉', '埤頭鄉', '溪州鄉', '竹塘鄉', '二林鎮', '大城鄉', '芳苑鄉', '二水鄉'];
+                                                                            break;
+                                                                        case '南投縣':
+                                                                            areas = ['南投市', '中寮鄉', '草屯鎮', '國姓鄉', '埔里鎮', '仁愛鄉', '名間鄉', '集集鎮', '水里鄉', '魚池鄉', '信義鄉', '竹山鎮', '鹿谷鄉'];
+                                                                            break;
+                                                                        case '雲林縣':
+                                                                            areas = ['斗南鎮', '大埤鄉', '虎尾鎮', '土庫鎮', '褒忠鄉', '東勢鄉', '臺西鄉', '崙背鄉', '麥寮鄉', '斗六市', '林內鄉', '古坑鄉', '莿桐鄉', '西螺鎮', '二崙鄉', '北港鎮', '水林鄉', '口湖鄉', '四湖鄉', '元長鄉'];
+                                                                            break;
+                                                                        case '嘉義市':
+                                                                            areas = ['東區', '西區'];
+                                                                            break;
+                                                                        case '嘉義縣':
+                                                                            areas = ['番路鄉', '梅山鄉', '竹崎鄉', '阿里山鄉', '中埔鄉', '大埔鄉', '水上鄉', '鹿草鄉', '太保市', '朴子市', '東石鄉', '六腳鄉', '新港鄉', '民雄鄉', '大林鎮', '溪口鄉', '義竹鄉', '布袋鎮'];
+                                                                            break;
+                                                                        case '臺南市':
+                                                                            areas = ['中西區', '東區', '南區', '北區', '安平區', '安南區', '永康區', '歸仁區', '新化區', '左鎮區', '玉井區', '楠西區', '南化區', '仁德區', '關廟區', '龍崎區', '官田區', '麻豆區', '佳里區', '西港區', '七股區', '將軍區', '學甲區', '北門區', '新營區', '後壁區', '白河區', '東山區', '六甲區', '下營區', '柳營區', '鹽水區', '善化區', '大內區', '山上區', '新市區', '安定區'];
+                                                                            break;
+                                                                        case '高雄市':
+                                                                            areas = ['新興區', '前金區', '苓雅區', '鹽埕區', '鼓山區', '旗津區', '前鎮區', '三民區', '楠梓區', '小港區', '左營區', '仁武區', '大社區', '東沙群島', '南沙群島', '岡山區', '路竹區', '阿蓮區', '田寮區', '燕巢區', '橋頭區', '梓官區', '彌陀區', '永安區', '湖內區', '鳳山區', '大寮區', '林園區', '鳥松區', '大樹區', '旗山區', '美濃區', '六龜區', '內門區', '杉林區', '甲仙區', '桃源區', '那瑪夏區', '茂林區', '茄萣區'];
+                                                                            break;
+                                                                        case '屏東縣':
+                                                                            areas = ['屏東市', '三地門鄉', '霧臺鄉', '瑪家鄉', '九如鄉', '里港鄉', '高樹鄉', '鹽埔鄉', '長治鄉', '麟洛鄉', '竹田鄉', '內埔鄉', '萬丹鄉', '潮州鎮', '泰武鄉', '來義鄉', '萬巒鄉', '崁頂鄉', '新埤鄉', '南州鄉', '林邊鄉', '東港鎮', '琉球鄉', '佳冬鄉', '新園鄉', '枋寮鄉', '枋山鄉', '春日鄉', '獅子鄉', '車城鄉', '牡丹鄉', '恆春鎮', '滿州鄉'];
+                                                                            break;
+                                                                        case '臺東縣':
+                                                                            areas = ['臺東市', '綠島鄉', '蘭嶼鄉', '延平鄉', '卑南鄉', '鹿野鄉', '關山鎮', '海端鄉', '池上鄉', '東河鄉', '成功鎮', '長濱鄉', '太麻里鄉', '金峰鄉', '大武鄉', '達仁鄉'];
+                                                                            break;
+                                                                        case '花蓮縣':
+                                                                            areas = ['花蓮市', '新城鄉', '秀林鄉', '吉安鄉', '壽豐鄉', '鳳林鎮', '光復鄉', '豐濱鄉', '瑞穗鄉', '萬榮鄉', '玉里鎮', '卓溪鄉', '富里鄉'];
+                                                                            break;
+                                                                        case '宜蘭縣':
+                                                                            areas = ['宜蘭市', '頭城鎮', '礁溪鄉', '壯圍鄉', '員山鄉', '羅東鎮', '三星鄉', '大同鄉', '五結鄉', '冬山鄉', '蘇澳鎮', '南澳鄉', '釣魚臺'];
+                                                                            break;
+                                                                        case '澎湖縣':
+                                                                            areas = ['馬公市', '西嶼鄉', '望安鄉', '七美鄉', '白沙鄉', '湖西鄉'];
+                                                                            break;
+                                                                        case '金門縣':
+                                                                            areas = ['金沙鎮', '金湖鎮', '金寧鄉', '金城鎮', '烈嶼鄉', '烏坵鄉'];
+                                                                            break;
+                                                                        case '連江縣':
+                                                                            areas = ['南竿鄉', '北竿鄉', '莒光鄉', '東引鄉'];
+                                                                            break;
+                                                                    }
+                                                                    for (i = 0; i < areas.length; i++) {
+                                                                        $('#geo_area').append($('<option></option>').text(areas[i]));
+                                                                    }
+                                                                    if (GeoArea.length > 0) {
+                                                                        $('#geo_area').val(GeoArea);
+                                                                    }
+                                                                    $('#geo_city').change(function() {
+                                                                        var query = '?GeoCity=' + $('#geo_city').val();
+                                                                        window.location = window.location.pathname + query;
+                                                                    })
+                                                                    $('#geo_area').change(function() {
+                                                                        var query = '?GeoCity=' + $('#geo_city').val() + '&GeoArea=' + $('#geo_area').val();
+                                                                        window.location = window.location.pathname + query;
+                                                                    })
+                                                                    if (navigator.geolocation) {
+                                                                        if (document.cookie.indexOf('geolocation') == -1) {
+                                                                            document.cookie = 'geolocation=1';
+                                                                            navigator.geolocation.getCurrentPosition(parsePosition);
+                                                                        }
+                                                                    }
+                                                                })
 
-	<!-- accesskey 導盲磚 -->
-		<%= render partial: "/erb/simple-text_accesskey", locals: set({ access_key: "U", access_title: "上方選單連結區，此區塊列有本網站的主要連結", header_text: "導盲磚" }) %>
-	<!-- accesskey 結束 -->
+                                                                function parsePosition(position) {
+                                                                    var lat = position.coords.latitude;
+                                                                    var lng = position.coords.longitude;
+                                                                    var geocodeUrl = '/geocode.ashx?lat=' + lat + '&lng=' + lng;
+                                                                    $.getJSON(geocodeUrl, function(data) {
+                                                                        var query = '?GeoCity=' + data.city + '&GeoArea=' + data.area;
+                                                                        window.location = window.location.pathname + query;
+                                                                    });
+                                                                }
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--會員登入  -->
+                                                <div class="area-customize member" data-index="2" data-type="0" data-child="1">
+                                                    <div class="in">
+                                                        <div class="ct">
+                                                            <div class="in">
+                                                                <div>
+                                                                    <ul>
+                                                                        <li class="login"><a onkeypress="this.click();" href="https://www.cp.gov.tw/portal/Clogin.aspx?ReturnUrl=https://2016gov.hamastar.com.tw">會員登入</a></li>
+                                                                        <li class="join"><a onkeypress="this.click();" target="_blank" href="https://www.cp.gov.tw/portal/Personal/registerBoth.aspx">加入會員</a></li>
+                                                                        <li class="zone"><a onkeypress="this.click();" href="#">我的專區</a></li>
+                                                                        <li class="logout"><a onkeypress="this.click();" href="C_MyLogout.aspx">會員登出</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--會員登入  END-->
 
-	<!-- group-info 資訊群組 -->
-		<div class="group info" data-index="1" data-type="<%= $row %>" data-child="2"><div class="in">
-			<div class="ct"><div class="in">
+                                                <div class="list-text share" data-index="3" data-type="0" data-child="1">
+                                                    <div class="in">
+                                                        <div class="hd">
+                                                            <div class="in">
+                                                                <h4 data-index="0">		<span><a onkeypress="this.click();" title="分享">分享</a></span></h4></div>
+                                                        </div>
+                                                        <div class="ct">
+                                                            <div class="in">
+                                                                <ul data-index="1" data-child="6">
+                                                                    <li data-index="1" class="facebook"> <span><a onkeypress="this.click();" href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" title="[開啟新連結]Share to Facebook" target="_blank">Share to Facebook</a></span></li>
+                                                                    <li data-index="2" class="google"> <span><a onkeypress="this.click();" href="javascript: void(window.open('https://plus.google.com/share?url='.concat(encodeURIComponent(location.href)), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'));" title="[開啟新連結]Share to google+" target="_blank">Share to google+</a></span></li>
+                                                                    <li data-index="3" class="plurk"> <span><a onkeypress="this.click();" href="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&amp;status='.concat(encodeURIComponent(location.href)) ));" title="[開啟新連結]Plurk" target="_blank">Plurk</a></span></li>
+                                                                    <li data-index="4" class="twitter"> <span><a onkeypress="this.click();" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));" title="[開啟新連結]Share to twitter" target="_blank">Share to twitter</a></span></li>
+                                                                    <li data-index="5" class="line"> <span><a onkeypress="this.click();" href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?u='.concat(encodeURIComponent(location.href)) ));" title="[開啟新連結]Share to line" target="_blank">Share to line</a></span></li>
+                                                                    <li data-index="6" class="email"> <span><a onkeypress="this.click();" href="javascript: window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL));" title="[開啟新連結]Share to email" target="_blank">Share to email</a></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group default kidsHead" data-index="2" data-type="3" data-child="2">
+                    <div class="in">
+                        <div class="ct">
+                            <div class="in">
+                                <div class="group default kidsNav" data-index="1" data-type="3" data-child="3">
+                                    <div class="in">
+                                        <div class="ct">
+                                            <div class="in">
+                                                <div class="simple-text major-logo" data-index="1" data-type="0" data-child="1">
+                                                    <div class="in">
+                                                        <div class="ct">
+                                                            <div class="in"><span><a href="Default.aspx">政府入口網-前端</a></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list nav" data-index="2" data-type="4" data-child="7" data-funclog="{'hud':{},'majorNavHorizontal':{},'setNavWidth':{}}" style="height: auto;">
+                                                    <div class="in">
+                                                        <div class="ct">
+                                                            <div class="in">
+                                                                <ul data-index="1" data-child="7">
+                                                                    <li data-index="1">
+                                                                        <div id="Group_19_aD8TGMTjha" data-widthmobile="" data-index="1" data-type="1" data-anchor="" data-widthdesktop="" data-bgcolor="" class="group nav" data-groupsn="19" data-widthpad="" data-child="1" data-sort="" data-isgroup="true" data-groupname="" data-menuwidth="" data-bgclass="" data-tabtype="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <h3 data-index="0">		<span><a onkeypress="this.click();" href="Content_List.aspx?n=FB01D469347C76A7" title="申辦服務">申辦服務</a></span></h3></div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div id="Group_20_JKW4bkhtek" data-sitesmodulesn="75" data-sort="2" data-bgcolor="" data-groupsn="20" data-widthdesktop="" data-anchor="" data-tabtype="0" class="list-text nav" data-type="0" data-bgclass="" data-widthmobile="" data-widthpad="" data-groupname="" data-index="1" data-menuwidth="" data-isgroup="true" data-setlen="1" data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <ul data-index="1" data-child="2">
+                                                                                                            <li data-index="1"> <span><a onkeypress="this.click();" href="News.aspx?n=21595FA41A9EE70A&amp;sms=CE45CBF44B3CA591" title="申辦表單">申辦表單</a></span></li>
+                                                                                                            <li data-index="2"> <span><a onkeypress="this.click();" href="cp.aspx?n=AD6908DFDDB62656" title="繳費專區">繳費專區</a></span></li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-index="2">
+                                                                        <div id="Group_21_tgfkKumsLv" data-widthmobile="" data-index="2" data-type="1" data-anchor="" data-widthdesktop="" data-bgcolor="" class="group nav" data-groupsn="21" data-widthpad="" data-child="1" data-sort="" data-isgroup="true" data-groupname="" data-menuwidth="" data-bgclass="" data-tabtype="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <h3 data-index="0">		<span><a onkeypress="this.click();" href="Content_List.aspx?n=D33B55D537402BAA" title="資訊發布">資訊發布</a></span></h3></div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div id="Group_22_gDjmSH5bBj" data-sitesmodulesn="75" data-sort="2" data-bgcolor="" data-groupsn="22" data-widthdesktop="" data-anchor="" data-tabtype="0" class="list-text nav" data-type="0" data-bgclass="" data-widthmobile="" data-widthpad="" data-groupname="" data-index="1" data-menuwidth="" data-isgroup="true" data-setlen="1" data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <ul data-index="1" data-child="3">
+                                                                                                            <li data-index="1"> <span><a onkeypress="this.click();" href="News.aspx?n=872E51DB9B88306C&amp;sms=53E09032BF601A56" title="政府新聞">政府新聞</a></span></li>
+                                                                                                            <li data-index="2"> <span><a onkeypress="this.click();" href="News2.aspx?n=24474215983F6554&amp;sms=997A8098571EF49A" title="生活情報">生活情報</a></span></li>
+                                                                                                            <li data-index="3"> <span><a onkeypress="this.click();" href="News.aspx?n=8133A77AC99AE860&amp;sms=9DBAB9FE4BBD5E1E" title="臺灣看透透">臺灣看透透</a></span></li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-index="3">
+                                                                        <div id="Group_23_79X6GGBuLr" data-widthmobile="" data-index="3" data-type="1" data-anchor="" data-widthdesktop="" data-bgcolor="" class="group nav" data-groupsn="23" data-widthpad="" data-child="1" data-sort="" data-isgroup="true" data-groupname="" data-menuwidth="" data-bgclass="" data-tabtype="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <h3 data-index="0">		<span><a onkeypress="this.click();" href="Content_List.aspx?n=7F220D7E656BE749" title="機關導覽">機關導覽</a></span></h3></div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div id="Group_24_IHkwXGWMXh" data-sitesmodulesn="75" data-sort="2" data-bgcolor="" data-groupsn="24" data-widthdesktop="" data-anchor="" data-tabtype="0" class="list-text nav" data-type="0" data-bgclass="" data-widthmobile="" data-widthpad="" data-groupname="" data-index="1" data-menuwidth="" data-isgroup="true" data-setlen="1" data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <ul data-index="1" data-child="4">
+                                                                                                            <li data-index="1"> <span><a onkeypress="this.click();" href="News.aspx?n=E0588283EFAA02AD&amp;sms=27AA821231E6AD24" title="地區分類">地區分類</a></span></li>
+                                                                                                            <li data-index="2"> <span><a onkeypress="this.click();" href="News.aspx?n=882AC6F2C0F2D795&amp;sms=64B920AC3F264020" title="機關分類">機關分類</a></span></li>
+                                                                                                            <li data-index="3"> <span><a onkeypress="this.click();" href="News.aspx?n=367921C6BC7A934E&amp;sms=FD18B090842DFEBE" title="政府組織">政府組織</a></span></li>
+                                                                                                            <li data-index="4"> <span><a onkeypress="this.click();" href="News.aspx?n=8A33013523400F35&amp;sms=DCEB76891260236D" title="通用分類">通用分類</a></span></li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-index="4">
+                                                                        <div id="Group_1305_4rqQEGcrfT" data-widthmobile="" data-index="4" data-type="1" data-anchor="" data-widthdesktop="" data-bgcolor="" class="group nav" data-groupsn="1305" data-widthpad="" data-child="1" data-sort="" data-isgroup="true" data-groupname="" data-menuwidth="" data-bgclass="" data-tabtype="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <h3 data-index="0">		<span><a onkeypress="this.click();" href="Content_List.aspx?n=7DEC7150E6BAD606" title="分眾導覽">分眾導覽</a></span></h3></div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div id="Group_1306_E3f5kQVQtC" data-sitesmodulesn="75" data-sort="2" data-bgcolor="" data-groupsn="1306" data-widthdesktop="" data-anchor="" data-tabtype="0" class="list-text nav" data-type="0" data-bgclass="" data-widthmobile="" data-widthpad="" data-groupname="" data-index="1" data-menuwidth="" data-isgroup="true" data-setlen="1" data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <ul data-index="1" data-child="4">
+                                                                                                            <li data-index="1"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="親子館">親子館</a></span></li>
+                                                                                                            <li data-index="2"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="銀髮館">銀髮館</a></span></li>
+                                                                                                            <li data-index="3"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="女性館">女性館</a></span></li>
+                                                                                                            <li data-index="4"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="新住民館">新住民館</a></span></li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-index="5">
+                                                                        <div id="Group_1307_udFP5XI8oA" data-widthmobile="" data-index="5" data-type="1" data-anchor="" data-widthdesktop="" data-bgcolor="" class="group nav" data-groupsn="1307" data-widthpad="" data-child="1" data-sort="" data-isgroup="true" data-groupname="" data-menuwidth="" data-bgclass="" data-tabtype="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <h3 data-index="0">		<span><a onkeypress="this.click();" href="Content_List.aspx?n=0984A85A3A9A6677" title="焦點議題">焦點議題</a></span></h3></div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div id="Group_1308_nitwyPTNdT" data-sitesmodulesn="75" data-sort="2" data-bgcolor="" data-groupsn="1308" data-widthdesktop="" data-anchor="" data-tabtype="0" class="list-text nav" data-type="0" data-bgclass="" data-widthmobile="" data-widthpad="" data-groupname="" data-index="1" data-menuwidth="" data-isgroup="true" data-setlen="1" data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <ul data-index="1" data-child="4">
+                                                                                                            <li data-index="1"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="就業情報">就業情報</a></span></li>
+                                                                                                            <li data-index="2"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="福利專區">福利專區</a></span></li>
+                                                                                                            <li data-index="3"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="安全專題">安全專題</a></span></li>
+                                                                                                            <li data-index="4"> <span><a onkeypress="this.click();" href="http://2016gov.hamastar.com.tw/kids/Default.aspx?Create=1#" title="青年創業">青年創業</a></span></li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group default kidsSearch" data-index="2" data-type="0" data-child="2" data-funclog="{'toggleBtn':{}}">
+    <div class="in">
+        <div class="hd">
+            <div class="in">
+                <h4 data-index="0">   <span><a onkeypress="this.click();" title="搜尋">搜尋</a></span></h4></div>
+        </div>
+        <div class="ct">
+            <div class="in">
+                <div class="area-form search" data-index="1" data-type="0" data-child="1" data-funclog="{'showDataList':{}}">
+                    <div class="in">
+                        <div class="hd">
+                            <div class="in">
+                                <h4 data-index="0">   <span><a onkeypress="this.click();" title="search">search</a></span></h4></div>
+                        </div>
+                        <div class="ct">
+                            <div class="in">
+                                <div class="fieldset">
+                                    <span class="search"><input id="txt_Search" type="search" placeholder="Search"></span>
+                                    <span class="submit"><a href="#" class="CCMS_SearchBtn">搜尋</a></span>
+                                </div>
+                                <div class="list">
+                                    <ul data-index="1" data-child="3">
+                                        <li data-index="1"><span><a href="#">豪雨</a></span></li>
+                                        <li data-index="2"><span><a href="#">用電</a></span></li>
+                                        <li data-index="3"><span><a href="#">端午</a></span></li>
+                                    </ul>
+                                </div>
+                                <script type="text/javascript">
+                                $(function() {
+                                    $("#txt_Search").on("keydown", function(event) {
+                                        if (event.which == 13) {
+                                            doSearch();
+                                            return false;
+                                        }
+                                    });
+                                });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="ft">
+                            <div class="in">
+                                <ul data-index="1" data-child="1">
+                                    <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-TW&amp;as_sitesearch=https://2016gov.hamastar.com.tw">進階搜尋</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-text hot-key-word" data-index="2" data-type="0" data-child="1">
+                    <div class="in">
+                        <div class="hd">
+                            <div class="in">
+                                <h4 data-index="0">   <span><a onkeypress="this.click();" title="熱門關鍵字">熱門關鍵字</a></span></h4></div>
+                        </div>
+                        <div class="ct">
+                            <div class="in">
+                                <ul data-index="1" data-child="3">
+                                    <li data-index="1"> <span><a onkeypress="this.click();" href="Advanced_Search.aspx?q=豪雨" title="豪雨" target="_self">豪雨</a></span></li>
+                                    <li data-index="2"> <span><a onkeypress="this.click();" href="Advanced_Search.aspx?q=用電" title="用電" target="_self">用電</a></span></li>
+                                    <li data-index="3"> <span><a onkeypress="this.click();" href="Advanced_Search.aspx?q=端午" title="端午" target="_self">端午</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-			<!-- logo 主要標誌 -->
-				<%= render partial: "/erb/simple-text_major-logo", locals: set({ index: 1, header_text: "標誌" }) %>
-			<!-- logo 結束 -->
-
-			<!-- group-msg-tool 資訊與工具群組 -->
-				<div class="group msg-tool" data-index="2" data-type="<%= $row %>" data-child="4"><div class="in">
-					<div class="ct"><div class="in">
-
-					<!-- link 連結 -->
-						<%= render partial: "/erb/list-text_link", locals: set({ index: 1, header_text: "上方連結" }) %>
-					<!-- link 結束 -->
-
-					<!-- font-size 字級 -->
-						<%= render partial: "/erb/list-text_font-size", locals: set({ index: 2, func_set: "{'fontSize':{'defaultItem': 'medium'}}", header_text: "字級" }) %>
-					<!-- font-size 結束 -->
-
-					<!-- hot-key-word 熱門關鍵字 -->
-						<%= render partial: "/erb/list-text_hot-key-word", locals: set({ index: 3, header_text: "熱門關鍵字" }) %>
-					<!-- hot-key-word 結束 -->
-
-					<!-- search 搜尋 -->
-						<%= render partial: "/erb/area-form_search", locals: set({ index: 4, func_set: "{'showDataList':{}}", header_text: "搜尋" }) %>
-					<!-- search 結束 -->
-
-					</div></div>
-				</div></div>
-			<!-- group-msg-tool 結束 -->
-
-			</div></div>
-		</div></div>
-	<!-- group-info 結束 -->
-
-	<!-- nav 選單 -->
-		<%= render partial: "/erb/group-list_nav", locals: set({ index: 2, func_set: "{'hud':{},'majorNavHorizontal':{},'setNavWidth':{}}", header_text: "主選單", inner: "/erb/list-text_nav" }) %>
-	<!-- nav 結束 -->
-	
-	</div></div>
-</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

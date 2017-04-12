@@ -1,36 +1,39 @@
 //框架
-
 //固定佈局================================================================
-
 .base-wrapper {
-	background-color: $light;
-
-	@include media('mobile') {
-		margin-top: $rwd-btn-size;
-	}
-
-	> .in {
-
-		> .hd {
-
-			> .in {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-			}
-		}
-	}
+    background: url(../Images/banner.jpg) no-repeat #f4fbf1;
+    background-position: 50%;
+    background-size: cover;
+    height: 402px;
+    position: relative;
+    @include media('mobile') {
+        top: 0px !important;
+        height: 241px;
+        background-position: center;
+        width: 100%;
+    }
+    > .in {
+        &:after {
+            background: url(../Images/banner_in.png) no-repeat;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 239px;
+            position: absolute;
+            top: 205px;
+            background-position: 50%;
+            @include media('mobile') {
+                top: 0px;
+                height: 277px;
+            }
+        }
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+        }
+    }
 }

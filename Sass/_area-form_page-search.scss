@@ -1,155 +1,353 @@
 //表單區塊
-
 //內頁搜尋================================================================
-
 .area-form.page-search {
+    &.is-active {
+        .hd {
+            h4 {
+                &:before {
+                    @include icon-font('arrow_drop_up');
+                }
+            }
+        }
+        .ct {
+            display: block;
+        }
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {
+            display: none;
+            &:before {
+                @include icon-font('arrow_drop_down');
+            }
+        }
+        span {}
+        a {}
+    }
+    .ct {
+        $height: 30px;
+        background-color: $major-color;
+        padding: $interval-s;
+        > .in {}
+        .fieldset {
+            display: inline-block;
+            margin: $interval-s;
+            span {
+                display: inline-block;
+                //vertical-align: middle;
+                &:before {
+                    content: attr(data-before);
+                }
+                &:after {
+                    content: attr(data-after);
+                }
+                &.select {}
+                &.date {
+                    margin-bottom: 5px;
+                    > input {
+                        width: 145px;
+                    }
+                    &:nth-child(1) {
+                        &:before {
+                            @include media('phone') {
+                                // content: "開始日期 ";
+                                // color: $white;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:before {
+                            @include media('phone') {
+                                // content: "結束日期 ";
+                                // color: $white;
+                            }
+                        }
+                    }
+                }
+                &.search {}
+                &.submit {
+                    color: $white;
+                }
+                &.reset {}
+            }
+            select {
+                line-height: $height - 10px;
+                max-height: $height;
+                max-width: 150px;
+                &::-ms-expand {
+                    display: none;
+                    /*IE*/
+                }
+                -webkit-appearance: none;
+                /*Chrome*/
+                -moz-appearance: none;
+                /*FF*/
+                appearance: none;
+                /*CSS3*/
+                background: url("/images/search_arrow.jpg") no-repeat scroll right center #fff;
+                option {}
+            }
+            input {
+                &[type="search"] {
+                    line-height: $height;
+                    height: $height;
+                }
+                &[type="date"] {
+                    line-height: $height;
+                    height: $height;
+                }
+                &[type="submit"] {
+                    @extend %btn-imp;
+                    height: $height;
+                    padding: 0 20px;
+                    border-radius: 3px;
+                }
+                &[type="reset"] {}
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	&.is-active {
+//搜尋樣式二_area-customize_search-area
+.area-customize.page-search-area {
+    margin-bottom: 15px;
+    &.is-active {
+        .hd {
+            h4 {
+                &:before {
+                    @include icon-font('arrow_drop_up');
+                }
+            }
+        }
+        .ct {
+            display: block;
+        }
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {
+            display: none;
+            &:before {
+                @include icon-font('arrow_drop_down');
+            }
+        }
+        span {}
+        a {}
+    }
+    .ct {
+        $height: 30px;
+        background-color: $light-gray;
+        padding: $interval-s;
+        > .in {}
+        .fieldset {
+            display: inline-block;
+            margin: $interval-s;
+            .map_icon {
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 15px;
+            }
+            span {
+                display: inline-block;
+                //vertical-align: middle;
+                &[data-area] {
+                    color: $minor-color;
+                    padding: 0 10px 0 0;
+                    box-sizing: border-box;
+                    font-weight: bold;
+                }
+                &:before {
+                    content: attr(data-before);
+                }
+                &:after {
+                    content: attr(data-after);
+                }
+                &.select {}
+                &.date {}
+                &.search {}
+                &.submit {}
+                &.reset {}
+            }
+            select {
+                line-height: $height;
+                height: $height + 5px;
+                max-width: 150px;
+                @include media('phone') {
+                    max-width: 100%;
+                    width: 310px;
+                }
+                option {}
+            }
+            input {
+                &[type="search"] {
+                    line-height: $height;
+                    height: 30px;
+                }
+                &[type="date"] {
+                    line-height: $height;
+                    height: $height;
+                }
+                &[type="submit"] {
+                    @extend %btn-imp;
+                    height: $height;
+                    background: url("/images/page-search-icon.png") no-repeat 5px center $minor-color;
+                    padding: 0 20px 0 30px;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &:before {}
+                }
+                &[type="reset"] {}
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-		.hd {
-
-			h4 {
-
-				&:before {
-					@include icon-font('arrow_drop_up');
-				}
-			}
-		}
-
-		.ct {
-			display: block;
-		}
-	}
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-		@extend %header;
-
-		> .in {
-
-		}
-
-		h4 {
-
-			&:before {
-				@include icon-font('arrow_drop_down');
-			}
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-		$height: 30px;
-
-		display: none;
-		background-color: $light;
-		padding: $interval-s;
-
-		> .in {
-
-		}
-
-		.fieldset {
-			display: inline-block;
-			margin: $interval-s;
-
-			span {
-				display: inline-block;
-				vertical-align: middle;
-
-				&:before {
-					content: attr(data-before);
-				}
-
-				&:after {
-					content: attr(data-after);
-				}
-
-				&.select {
-
-				}
-
-				&.date {
-
-				}
-
-				&.search {
-
-				}
-
-				&.submit {
-
-				}
-
-				&.reset {
-
-				}
-			}
-
-			select {
-				line-height: $height;
-				height: $height;
-				max-width: 120px;
-
-				option {
-
-				}
-			}
-
-			input {
-
-				&[type="search"] {
-					line-height: $height;
-					height: $height;
-				}
-
-				&[type="date"] {
-					line-height: $height;
-					height: $height;
-				}
-
-				&[type="submit"] {
-					@extend %btn-imp;
-				}
-
-				&[type="reset"] {
-					
-				}
-			}
-		}
-	}
-
-	.ft {
-		@extend %footer;
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+//搜尋樣式一_area-customize_page-search-noclassify
+.area-customize.page-search-noclassify {
+    &.is-active {
+        .hd {
+            h4 {
+                &:before {
+                    @include icon-font('arrow_drop_up');
+                }
+            }
+        }
+        .ct {
+            display: block;
+        }
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {
+            display: none;
+            &:before {
+                @include icon-font('arrow_drop_down');
+            }
+        }
+        span {}
+        a {}
+    }
+    .ct {
+        $height: 30px;
+        background-color: $light;
+        padding: $interval-s;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        > .in {}
+        .fieldset {
+            display: inline-block;
+            margin: $interval-s;
+            span {
+                display: inline-block;
+                //vertical-align: middle;
+                &:before {
+                    content: attr(data-before);
+                }
+                &:after {
+                    content: attr(data-after);
+                }
+                &.select {}
+                &.date {
+                    > input {
+                        width: 145px;
+                    }
+                    margin-bottom: 5px;
+                    &:nth-child(1) {
+                        &:before {
+                            @include media('phone') {
+                                content: "開始日期 ";
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:before {
+                            @include media('phone') {
+                                content: "結束日期 ";
+                            }
+                        }
+                    }
+                }
+                &.search {}
+                &.submit {}
+                &.reset {}
+            }
+            select {
+                max-width: 150px;
+                option {}
+            }
+            input {
+                &[type="search"] {
+                    line-height: $height;
+                    height: 30px;
+                }
+                &[type="date"] {
+                    line-height: $height;
+                    height: $height;
+                }
+                &[type="submit"] {
+                    @extend %btn-imp;
+                    height: $height;
+                    background: url("/images/page-search-icon.png") no-repeat 5px center $minor-color;
+                    padding: 0 20px 0 30px;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &:before {}
+                }
+                &[type="reset"] {}
+            }
+        }
+        .helf {
+            width: 50%;
+            display: block;
+            box-sizing: border-box;
+            float: left;
+            text-align: left;
+            @include media('mobile') {
+                width: 100%;
+            }
+        }
+        .tr {
+            text-align: right;
+        }
+        .single {
+            width: 100%;
+        }
+        .btn-col {
+            width: 100%;
+            text-align: right;
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

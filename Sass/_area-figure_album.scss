@@ -1,130 +1,123 @@
 //圖片區塊
-
 //相簿================================================================
-
 .area-figure.album {
+    border: 1px solid $gray;
+    border-radius: 3px;
+    padding: 5px;
+    &:hover {
+        border: 1px solid $minor-color;
+    }
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        /*a*/
+        .div {
+            display: block;
+            &:hover {
+                .essay {}
+            }
+        }
+        .img {
+            span {
+                display: block;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .essay {
+            padding: $interval-m;
+            //background-color: $light;
+            transition: $transition;
+        }
+        .figcaption {
+            @extend %caption;
+            border-bottom: 1px dotted #ccc;
+            margin-bottom: 15px;
+            span {}
+        }
+        .label {
+            @extend %label;
+            ul {}
+            li {}
+            span {}
+        }
+        /*i*/
+        .mark {
+            @extend %mark;
+        }
+        .p {
+            @extend %paragraph;
+            @include multi-ellipsis($line: 3, $line-height: 20px, $background-color: $white, $position: 60%);
+            p {}
+            span {}
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-		@extend %header;
-
-		> .in {
-
-		}
-
-		h4 {
-			
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-
-		}
-
-		/*a*/.div {
-			display: block;
-
-			&:hover {
-
-				.essay {
-					background-color: $light-gray;
-				}
-			}
-		}
-
-		.img {
-
-			span {
-				display: block;
-			}
-
-			img {
-				display: block;
-				width: 100%;
-			}
-		}
-
-		.essay {
-			padding: $interval-m;
-			background-color: $light;
-			transition: $transition;
-		}
-
-		.figcaption {
-			@extend %caption;
-
-			span {
-				
-			}
-		}
-
-		.label {
-			@extend %label;
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-		}
-
-		/*i*/.mark {
-			@extend %mark;
-		}
-
-		.p {
-			@extend %paragraph;
-
-			p {
-
-			}
-
-			span {
-
-			}
-		}
-	}
-
-	.ft {
-		@extend %footer;
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+// 行動服務
+.group-list.album.app {
+    .ct {
+        > .in {
+            ul {
+                li {
+                    @include media('pad') {
+                        width: 50%;
+                        clear: none !important;
+                    }
+                }
+            }
+            .figcaption {
+                text-align: left;
+                margin-bottom: 0px;
+                p {
+                    @include multi-ellipsis($line: 2, $line-height: 20px, $background-color: $white, $position: 60%);
+                    margin: 8px 0;
+                }
+            }
+            .essay {
+                padding: 0;
+            }
+            .img {
+                span {
+                    display: block;
+                    float: left;
+                    background-image: none !important;
+                }
+                img {
+                    display: block;
+                    width: 83px;
+                    height: 83px;
+                    float: left;
+                    border-radius: 20px;
+                    margin: 0 10px 0 0px;
+                }
+            }
+            .p {
+                p {
+                    @extend %paragraph;
+                    @include multi-ellipsis($line: 2, $line-height: 20px, $background-color: $white, $position: 60%);
+                    color: $deep-gray;
+                }
+                span {}
+            }
+        }
+    }
 }

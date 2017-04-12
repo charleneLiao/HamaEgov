@@ -1,87 +1,100 @@
 //表格區塊
-
 //設定================================================================
-
 .area-table {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        thead {}
+        tbody {}
+        tfoot {}
+        tr {}
+        th {}
+        td {}
+        span {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		thead {
-
-		}
-
-		tbody {
-
-		}
-
-		tfoot {
-
-		}
-
-		tr {
-
-		}
-
-		th {
-
-		}
-
-		td {
-
-		}
-
-		span {
-
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+// 詮釋資料
+.data_midlle_data_box02 {
+    > span {
+        font-size: 1.1em;
+        color: $major-color;
+    }
+    table {
+        width: 100%;
+        @include media('mobile') {
+            table-layout: fixed;
+        }
+    }
+    thead {
+        tr {
+            //border-bottom: 3px double $border-color;
+            background-color: $light;
+        }
+        th,
+        td {
+            border-left: $border;
+            border-right: $border;
+            border-bottom: 1px solid $white;
+        }
+    }
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: $light;
+            }
+        }
+            th {
+        background-color: $tb-th-gray;
+        color: $white;
+    }
+        th,
+        td {
+            border-bottom: 1px solid #ccc;
+            padding: 5px 14px;
+        }
+    }
+    tfoot {
+        th,
+        td {
+            padding-top: 20px;
+        }
+        span {
+            h4 {
+                margin: 5px 0;
+                color: $minor-color;
+            }
+            @extend %article-extend;
+            background-color: #fdf7e6;
+        }
+    }
+    tr {}
+    th,
+    td {
+    }
+    td {}
+    span {
+        display: block;
+        padding: $interval-m;
+    }
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

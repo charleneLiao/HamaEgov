@@ -1,214 +1,151 @@
 //文字列表
-
 //分享================================================================
-
 .list-text.share {
-
-	.base-extend & {
-		position: fixed;
-		top: 200px;
-		left: $interval-l;
-
-		@include media('mobile') {
-			display: none;
-		}
-
-		> .bg-drop-layout > .in, > .in {
-
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				@each $key, $map in $share-map {
-
-					$pic: map-get($map, 'pic');
-					$color: map-get($map, 'color');
-
-					&.#{$key}{
-
-						span {
-						}
-
-						a {
-							@include icon-pic('#{$pic}');
-							background-color: $color;
-
-							&:hover {
-								background-color: deeper($color);
-							}
-						}
-					}
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %hide-text;
-				display: block !important;
-				transition: $transition;
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-	.base-mobile & {
-
-		> .in {
-
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-				
-			}
-
-			ul {
-
-				&:after {
-					@extend %clear;
-				}
-			}
-
-			li {
-				width: 100% / length($share-map);
-				float: left;
-
-				@each $key, $map in $share-map {
-
-					$pic: map-get($map, 'pic');
-					$color: map-get($map, 'color');
-
-					&.#{$key}{
-
-						span {
-							display: block;
-						}
-
-						a {
-							@include icon-pic('#{$pic}', false);
-							height: 40px;
-							background-color: $color;
-						}
-					}
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %hide-text;
-				display: block !important;
-				transition: $transition;
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
+    .base-wrapper & {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        &:before {
+            content: '';
+            display: block;
+            width: 23px;
+            height: 23px;
+            padding: 4px;
+            border-radius: 23px;
+            background: url(../images/icon_share.png) center center no-repeat $major-color;
+            transition: background 300ms;
+            margin-top: 9px;
+            &:hover {}
+        }
+        &:hover {
+            &:before {
+                background-color: #4E8B35;
+            }
+            .in {
+                .ct {
+                    .in {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        @include media('mobile') {
+            display: none;
+        }
+        > .bg-drop-layout > .in,
+        > .in {}
+        .hd {
+            display: none;
+            > .in {}
+            h4 {}
+            span {}
+            a {}
+        }
+        .ct {
+            > .in {}
+            ul {
+                display: none;
+                position: absolute;
+                top: -2px;
+                right: -15px;
+                background: $lesser1-color;
+                padding: 10px;
+                border: 1px solid $lesser1-color;
+                border-radius: 28px;
+                z-index: 10;
+            }
+            li {
+                @each $key,
+                $map in $share-map {
+                    $pic: map-get($map, 'pic');
+                    $color: map-get($map, 'color');
+                    &.#{$key} {
+                        span {}
+                        a {
+                            @include icon-pic('#{$pic}');
+                            background-color: $color;
+                            border-radius: 20px;
+                            margin: 5px 0;
+                            &:hover {
+                                background-color: deeper($color);
+                            }
+                        }
+                    }
+                }
+            }
+            span {
+                display: block;
+            }
+            a {
+                @extend %hide-text;
+                display: block !important;
+                transition: $transition;
+            }
+            /*i*/
+            .mark {}
+        }
+        .ft {
+            > .in {}
+            ul {}
+            li {}
+            span {}
+            a {}
+        }
+    }
+    .base-mobile & {
+        > .in {}
+        .hd {
+            display: none;
+            > .in {}
+            h4 {}
+            span {}
+            a {}
+        }
+        .ct {
+            > .in {}
+            ul {
+                &:after {
+                    @extend %clear;
+                }
+            }
+            li {
+                width: 100% / length($share-map);
+                float: left;
+                @each $key,
+                $map in $share-map {
+                    $pic: map-get($map, 'pic');
+                    $color: map-get($map, 'color');
+                    &.#{$key} {
+                        span {
+                            display: block;
+                        }
+                        a {
+                            @include icon-pic('#{$pic}', false);
+                            height: 40px;
+                            background-color: $color;
+                        }
+                    }
+                }
+            }
+            span {
+                display: block;
+            }
+            a {
+                @extend %hide-text;
+                display: block !important;
+                transition: $transition;
+            }
+            /*i*/
+            .mark {}
+        }
+        .ft {
+            > .in {}
+            ul {}
+            li {}
+            span {}
+            a {}
+        }
+    }
 }

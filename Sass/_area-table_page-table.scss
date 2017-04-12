@@ -1,136 +1,369 @@
 //表格區塊
-
 //內頁表格================================================================
-
 .area-table.page-table {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        table {
+            width: 100%;
+            @include media('mobile') {
+                table-layout: fixed;
+            }
+        }
+        thead {
+            tr {
+                //border-bottom: 3px double $border-color;
+                background-color: $light;
+            }
+            th,
+            td {
+                border-left: $border;
+                border-right: $border;
+                border-bottom: 1px solid $white;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: $light;
+                }
+            }
+            th,
+            td {
+                border-bottom: 1px dotted #ccc;
+            }
+        }
+        tfoot {
+            th,
+            td {
+                padding-top: 20px;
+            }
+            span {
+                h4 {
+                    margin: 5px 0;
+                    color: $minor-color;
+                }
+                @extend %article-extend;
+                background-color: #fdf7e6;
+            }
+        }
+        tr {}
+        th,
+        td {}
+        th {
+            background-color: $major-color;
+            color: $white;
+        }
+        td {}
+        span {
+            display: block;
+            padding: $interval-m;
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	> .bg-drop-layout > .in, > .in {
+// table：表單下載
+.area-table.page-table.normal {
+    margin: 10px 0 0 0 !important;
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        table {
+            width: 100%;
+            @include media('mobile') {
+                table-layout: fixed;
+            }
+        }
+        thead {
+            tr {
+                position: relative;
+                @include media('mobile') {
+                    width: 100%;
+                }
+                th {
+                    display: none;
+                    @include media('mobile') {
+                        width: 100%;
+                    }
+                }
+            }
+            th,
+            td {
+                border: 0px;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-child(3) {
+                    //background-color: $light;
+                    border-bottom: 1px dotted #ccc;
+                }
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    th {
+                        color: $minor-color;
+                    }
+                }
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    th {
+                        color: #cc4300;
+                    }
+                }
+                th {
+                    width: 10%;
+                    @include media('phone') {
+                        width: 80px;
+                    }
+                }
+            }
+            th,
+            td {
+                a {
+                    color: $font-list-a;
+                    text-decoration: none;
+                    word-break: break-all;
+                }
+            }
+            td {
+                &.td_title {}
+                &.td_organ {
+                    width: 128px;
+                }
+                &.td_date {
+                    width: 92px;
+                }
+                &:first-child {
+                    // width: 60%;
+                    &:before {
+                        content: "．";
+                        display: inline-block;
+                        float: left;
+                        font-size: 26px;
+                        color: $orange;
+                        font-weight: bolder;
+                    }
+                }
+                .place,
+                .update {
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    float: left;
+                    display: inline-block;
+                    width: 100%;
+                    ;
+                }
+                .place {
+                    margin: 0;
+                    color: $minor-color;
+                }
+                .update {
+                    color: #969696;
+                    text-align: center;
+                }
+                a {
+                    color: $font-list-a;
+                    &:hover {
+                        color: $minor-color;
+                    }
+                }
+            }
+        }
+        tfoot {
+            display: none;
+            th,
+            td {}
+        }
+        .btn-more {
+            width: 100%;
+            text-align: center;
+            margin: 25px 0 0 0;
+            a {
+                @extend %btn;
+                padding: 8px 16px;
+                border: 1px solid $major-hover-deep-color;
+                font-size: 1em;
+                color: $major-color !important;
+                background: none;
+                border-radius: 3px;
+                &:hover {
+                    color: $white;
+                }
+                &:active {
+                    box-shadow: $btn-active;
+                    background: none;
+                }
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        display: none;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
-	}
-
-	.hd {
-		@extend %header;
-
-		> .in {
-
-		}
-
-		h4 {
-			
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		table {
-			width: 100%;
-
-			@include media('mobile') {
-				table-layout: fixed;
-			}
-		}
-
-		thead {
-
-			tr {
-				border-bottom: 3px double $border-color;
-				background-color: $light;
-			}
-
-			th, td {
-				border: $border;
-			}
-		}
-
-		tbody {
-
-			tr {
-				
-				&:nth-child(even) {
-					background-color: $light;
-				}
-			}
-
-			th, td {
-				border: $border;
-			}
-		}
-
-		tfoot {
-
-			th, td {
-				padding-top: $interval-m;
-			}
-
-			span {
-				@extend %article-extend;
-			}
-		}
-
-		tr {
-
-		}
-
-		th, td {
-
-		}
-
-		th {
-			background-color: $minor-color;
-			color: $white;
-		}
-
-		td {
-
-		}
-
-		span {
-			display: block;
-			padding: $interval-m;
-		}
-
-		a {
-			text-decoration: underline;
-
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-
-	.ft {
-		@extend %footer;
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+//繳費專區_表格樣式_area-customize_page-table
+.area-customize.page-table {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h3 {
+            font-size: 1.05em;
+            font-weight: bold;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            background-image: none;
+            padding-left: 0;
+            img {
+                vertical-align: middle;
+                padding-right: 5px;
+            }
+        }
+        h4 {
+            font-size: 1.3em;
+            background: url(../images/organ_list.png) left center no-repeat;
+            border-bottom: none;
+        }
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        table {
+            width: 100%;
+            @include media('mobile') {
+                table-layout: fixed;
+            }
+        }
+        thead {
+            tr {
+                //border-bottom: 3px double $border-color;
+                background-color: $light;
+                &.sub-th {
+                    th {
+                        background-color: $major-hover-light-color;
+                        color: $major-color;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+            }
+            th,
+            td {
+                border-left: $border;
+                border-right: $border;
+                border-bottom: 0px;
+            }
+            th:nth-child(1) {
+                width: 70%;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: $light;
+                }
+            }
+            th,
+            td {
+                border-bottom: 1px dotted #ccc;
+            }
+            td {
+                h1 {
+                    color: $minor-color;
+                    font-size: 1em;
+                    padding: 8px 8px 0;
+                    margin: 0;
+                }
+                a {
+                    width: 26px;
+                    height: 26px;
+                    margin: 0 auto;
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        tfoot {
+            th,
+            td {
+            }
+            span {
+                h4 {
+                    margin: 5px 0;
+                    color: $minor-color;
+                }
+                @extend %article-extend;
+                background-color: #fdf7e6;
+            }
+        }
+        tr {}
+        th,
+        td {}
+        th {
+            background-color: $major-color;
+            color: $white;
+        }
+        td {}
+        span {
+            display: block;
+            padding: $interval-m;
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

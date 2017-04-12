@@ -1,96 +1,50 @@
 //文字列表
-
 //麵包屑================================================================
-
 .list-text.breadcrumb {
-	margin: $interval-s 0;
-
-	> .bg-drop-layout > .in, > .in {
-
-	}
-
-	.hd {
-		display: none;
-
-		> .in {
-
-		}
-
-		h4 {
-
-		}
-
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		ul {
-			padding: $interval-s;
-			background-color: $light;
-		}
-
-		li {
-			display: inline;
-			font-size: $font-size-s;
-
-			&:before {
-				@include icon-font('home');
-				margin-right: $interval-s;
-			}
-
-			+ li {
-
-				&:before {
-					@include icon-font('navigate_next');
-					vertical-align: middle;
-				}
-			}
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-
-		/*i*/.mark {
-			
-		}
-	}
-
-	.ft {
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+    margin: 40px 0 -38px 0;
+    z-index: 1;
+    position: relative;
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        display: none;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        ul {
+            padding: $interval-s;
+            float: right;
+        }
+        li {
+            display: inline;
+            font-size: $font-size-s;
+            color: $major-color;
+            &:before {
+                @include icon-font('home');
+                margin-right: $interval-s;
+                color: $minor-color;
+            }
+            + li {
+                &:before {
+                    @include icon-font('navigate_next');
+                    vertical-align: middle;
+                }
+            }
+        }
+        span {}
+        a {}
+        /*i*/
+        .mark {}
+    }
+    .ft {
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
 }

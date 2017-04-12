@@ -1,227 +1,1875 @@
-//自訂
-
-.info {
-
-	.base-mobile & {
-		@extend %area-mobile;
-
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-					position: absolute;
-					top: 0;
-					right: 0;
-					left: 0;
-					height: 100vh;
-					overflow-y: auto;
-					background-color: $light;
-				}
-			}
-		}
-	}
-
-	.base-header & {
-		background-color: $major-color;
-
-		> .bg-drop-layout > .in, > .in {
-			@extend %center;
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					&:after {
-						@extend %clear;
-					}
-				}
-			}
-		}
-	}
-
-	.base-content & {
-
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-					text-align: right;
-
-					@include js(false) {
-						text-align: left;
-					}
-				}
-			}
-		}
-	}
-
-	.base-footer & {
-
-		> .bg-drop-layout > .in, > .in {
-			@extend %center;
-			padding: $interval-l 0;
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					&:after {
-						@extend %clear;
-					}
-				}
-			}
-		}
-	}
-}
-
-.msg-tool {
-
-	.base-header & {
-		position: relative;
-
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-				}
-			}
-		}
-	}
-
-	.base-footer & {
-		overflow: hidden;
-
-		> .bg-drop-layout > .in, > .in {
-			@extend %area-mobile;
-			
-			> .hd {
-
-				> .in {
-
-				}
-
-				h3 {
-
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-				}
-			}
-		}
-	}
-}
+                //自訂
+                .info {
+                    .base-mobile & {
+                        @extend %area-mobile;
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    left: 0;
+                                    height: 100vh;
+                                    overflow-y: auto;
+                                    background-color: $light;
+                                }
+                            }
+                        }
+                    }
+                    .base-header & {
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            @extend %center;
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {
+                                    &:after {
+                                        @extend %clear;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .base-content & {
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {
+                                    text-align: right;
+                                    @include js(false) {
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .base-footer & {
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            @extend %center;
+                            padding: $interval-l 0;
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {
+                                    &:after {
+                                        @extend %clear;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .msg-tool {
+                    .base-header & {
+                        position: relative;
+                        z-index: 1;
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            > .hd {
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {}
+                            }
+                        }
+                    }
+                    .base-footer & {
+                        overflow: hidden;
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            @extend %area-mobile;
+                            > .hd {
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {}
+                            }
+                        }
+                    }
+                }
+                
+                //客製列表樣式_area-customize_list
+                .area-customize {
+                    &.list {
+                        .hd {
+                            @extend %header;
+                            > .in {}
+                            h4 {}
+                            span {}
+                            a {}
+                        }
+                        .ct {
+                            > .in {}
+                            ul {}
+                            li {
+                                border-bottom: 1px dotted #ccc;
+                                .list-left {
+                                    float: left;
+                                    width: 70%;
+                                    @include media('center') {
+                                        width: 50%;
+                                    }
+                                    @include media('phone') {
+                                        float: none;
+                                        width: 100%;
+                                    }
+                                    i.mark {
+                                        margin-right: 20px;
+                                        position: relative;
+                                        &:after {
+                                            content: "▪";
+                                            display: inline-block;
+                                            position: absolute;
+                                            right: -15px;
+                                            color: $black;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                }
+                                .list-right {
+                                    overflow: hidden;
+                                    padding: 8px;
+                                    box-sizing: border-box;
+                                }
+                                + li {
+                                    margin-top: $interval-s;
+                                }
+                                &:hover .delete-btn {
+                                    display: block;
+                                }
+                            }
+                            span {}
+                            a {
+                                @extend %ellipsis;
+                                @extend %list;
+                            }
+                            /*i*/
+                            .mark {
+                                @extend %mark;
+                                border-radius: 3px;
+                            }
+                            /*btn*/
+                            .delete-btn {
+                                @extend %delete-btn;
+                                display: none;
+                            }
+                        }
+                        .ft {
+                            @extend %footer;
+                            > .in {}
+                            ul {}
+                            li {}
+                            span {}
+                            a {}
+                        }
+                    }
+                }
+                
+                //機關導覽_搜尋樣式_area-customize_org-guide-search
+                .area-customize.org-guide-search {
+                    > .bg-drop-layout > .in,
+                    > .in {}
+                    .hd {
+                        @extend %header;
+                        > .in {}
+                        h4 {
+                            display: none;
+                        }
+                        span {}
+                        a {}
+                    }
+                    .ct {
+                        > .in {
+                            background-color: $light-gray;
+                            &:after {
+                                @extend %clear;
+                            }
+                        }
+                        .org-guide-search-left {
+                            overflow: hidden;
+                            padding: 20px 5px 20px 15px;
+                            @include media('mobile') {
+                                padding-right: 15px;
+                            }
+                            table {
+                                width: 100%;
+                            }
+                            thead {
+                                tr {
+                                    //border-bottom: 3px double $border-color;
+                                    //background-color: $light;
+                                    position: relative;
+                                    @include media('mobile') {
+                                        width: 100%;
+                                    }
+                                    th {
+                                        font-size: $font-size-l;
+                                        font-weight: bold;
+                                        color: $major-color;
+                                        @include media('mobile') {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                th,
+                                td {
+                                    border: 0px;
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    margin-bottom: 15px;
+                                    background-color: $white;
+                                    display: block;
+                                    th {
+                                        background-color: $major-color;
+                                        color: $white;
+                                        text-align: right;
+                                    }
+                                }
+                                th,
+                                td {
+                                    a {
+                                        color: blue;
+                                        word-break: break-all;
+                                    }
+                                }
+                                td {
+                                    span {
+                                        padding-left: 15px;
+                                    }
+                                }
+                            }
+                            tfoot {
+                                th,
+                                td {
+                                    padding: 8px;
+                                }
+                                p {
+                                    background-color: $light-gray;
+                                    span {
+                                        @extend %article-extend;
+                                        display: inline-block;
+                                        background-color: transparent;
+                                        &:first-child {
+                                            @include media('phone') {
+                                                display: block;
+                                            }
+                                        }
+                                        img {
+                                            margin: 0 5px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            tr {
+                                &:last-child {
+                                    td {
+                                        background-color: transparent;
+                                        padding: 0px;
+                                    }
+                                }
+                            }
+                            th {
+                                text-align: left;
+                                font-weight: bold;
+                                background-color: $major-color;
+                                color: $white;
+                            }
+                            td {
+                                background-color: $white;
+                                position: relative;
+                                .share-tool {
+                                    padding-left: 0px;
+                                    margin: 10px 0 0 0;
+                                    list-style-type: none;
+                                    &:after {
+                                        @extend %clear;
+                                    }
+                                    @include media('phone') {
+                                        position: static;
+                                        left: 0;
+                                    }
+                                    li {
+                                        font-size: $font-size-xs;
+                                        font-weight: normal;
+                                        display: inline-block;
+                                        padding-right: 5px;
+                                        border-radius: 3px;
+                                        &:nth-child(1) {
+                                            a {
+                                                background: url('../images/org-fb-btn.png') no-repeat center;
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                            a {
+                                                background: url('../images/org-mail-btn.png') no-repeat center;
+                                            }
+                                        }
+                                        a {
+                                            display: block;
+                                            text-decoration: none;
+                                            cursor: pointer;
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                            span {
+                                display: block;
+                                padding: $interval-m;
+                            }
+                            a {
+                                text-decoration: underline;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .org-guide-search-right {
+                            float: right;
+                            padding: 20px 15px;
+                            @include media('mobile') {
+                                float: none;
+                                #googlemap {
+                                    width: 100%
+                                }
+                            }
+                        }
+                    }
+                    .ft {
+                        @extend %footer;
+                        > .in {}
+                        ul {}
+                        li {}
+                        span {}
+                        a {}
+                    }
+                }
+                
+                //客製內頁列表樣式_area-customize_page-img-figcaption-p
+                .area-customize.page-img-figcaption-p {
+                    > .bg-drop-layout > .in,
+                    > .in {}
+                    .hd {
+                        @extend %header;
+                        > .in {}
+                        h4 {}
+                        span {}
+                        a {}
+                    }
+                    .ct {
+                        $pic_w: 150px;
+                        > .in {}
+                        /*a*/
+                        .div {
+                            position: relative;
+                            border-bottom: 1px dotted #ccc;
+                            //background-color: $light;
+                            transition: $transition;
+                            padding-right: 120px;
+                            @include media('phone') {
+                                padding-right: 0px;
+                            }
+                            &:hover {
+                                background-color: $light-gray;
+                            }
+                        }
+                        .img {
+                            span {
+                                @extend %bg-cover;
+                                position: absolute;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                width: $pic_w;
+                                margin: 10px 0;
+                                @include media('phone') {
+                                    position: static;
+                                    width: auto;
+                                }
+                            }
+                            img {
+                                display: none;
+                                @include media('phone') {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .essay {
+                            padding: $interval-l;
+                            padding-left: $pic_w + $interval-l;
+                            @include media('phone') {
+                                padding-left: $interval-l;
+                            }
+                            ul {
+                                @extend %reset-inner;
+                            }
+                        }
+                        .page-list-tool {
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                            @include media('phone') {
+                                position: static;
+                                margin: 10px 0px;
+                            }
+                            .collect-btn {
+                                background-color: $minor-color;
+                                padding: 3px 5px;
+                                min-width: 75px;
+                                display: inline-block;
+                                margin-bottom: 5px;
+                                border-radius: 3px;
+                                color: $white !important;
+                                text-align: center;
+                                @include media('phone') {
+                                    margin-bottom: 0px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    padding-left: 5px;
+                                    font-size: 0.8em;
+                                }
+                                &:hover {
+                                    background-color: lighten($minor-color, 5%);
+                                }
+                                &:before {
+                                    @include icon-font('favorite');
+                                }
+                            }
+                            .countdown {
+                                background: $major-color;
+                                padding: 3px 5px;
+                                border-radius: 3px;
+                                color: $white;
+                                display: block;
+                                min-width: 75px;
+                                @include media('phone') {
+                                    display: inline-block;
+                                }
+                                > span {
+                                    display: block;
+                                    font-size: 0.8em;
+                                    &:before {
+                                        content: "";
+                                        vertical-align: bottom;
+                                        width: 20px;
+                                        height: 18px;
+                                        display: inline-block;
+                                        background: url('../images/time-icon.png') no-repeat center;
+                                    }
+                                }
+                            }
+                        }
+                        .figcaption {
+                            @extend %caption;
+                            span {}
+                            a {}
+                        }
+                        .p {
+                            @extend %paragraph;
+                            p {}
+                            span {}
+                        }
+                    }
+                    .ft {
+                        @extend %footer;
+                        > .in {}
+                        ul {}
+                        li {}
+                        span {}
+                        a {}
+                    }
+                }
+                
+                //客製內頁列表樣式_area-customize_page-img-figcaption-p
+                .area-customize.message {
+                    > .bg-drop-layout > .in,
+                    > .in {}
+                    .hd {
+                        @extend %header;
+                        > .in {}
+                        h4 {
+                            display: none;
+                        }
+                        .message_title {
+                            margin-bottom: 15px;
+                            span {
+                                color: orange;
+                                &.hottag_delete {
+                                    padding: 0px 5px;
+                                    background-color: #fc4f4f;
+                                    border-radius: 3px;
+                                    color: $white !important;
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        a {}
+                    }
+                    .ct {
+                        > .in {}
+                        /*a*/
+                        .div {
+                            padding: $interval-m;
+                            transition: $transition;
+                            &:after {
+                                @extend %clear;
+                            }
+                            &:hover {
+                                background-color: $light-gray;
+                            }
+                        }
+                        .img {
+                            float: left;
+                            margin-right: $interval-m;
+                            span {
+                                @extend %bg-cover;
+                                display: block;
+                                width: 80px;
+                                height: 80px;
+                            }
+                            img {
+                                display: none;
+                            }
+                        }
+                        .essay {
+                            overflow: hidden;
+                        }
+                        .caption {
+                            @extend %caption;
+                            span {
+                                color: #8080e6;
+                            }
+                            a {}
+                        }
+                        .label {
+                            @extend %label;
+                            ul {}
+                            li {}
+                            span {}
+                        }
+                        /*i*/
+                        .mark {
+                            @extend %mark;
+                        }
+                        .p {
+                            @extend %paragraph;
+                            p {}
+                            span {}
+                        }
+                    }
+                    .ft {
+                        @extend %footer;
+                        > .in {}
+                        ul {}
+                        li {}
+                        span {}
+                        a {}
+                    }
+                }
+                
+                //列表群組
+                //選單================================================================
+                .area-customize-list.nav {
+                    .base-mobile & {
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {
+                                    display: none;
+                                }
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                > .in {
+                                    > ul {
+                                        > li {
+                                            + li {
+                                                border-top: $border;
+                                            }
+                                            &.is-active {
+                                                > .group.nav {
+                                                    > .in {
+                                                        .hd {
+                                                            a {
+                                                                background-color: $minor-color;
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        .ct {
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.is-single {
+                                                > .group.nav {
+                                                    > .in {
+                                                        > .hd {
+                                                            a {
+                                                                &:before {
+                                                                    @include icon-font('keyboard_arrow_right');
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > .ft {
+                                > .in {}
+                                ul {}
+                                li {}
+                                span {}
+                                a {}
+                            }
+                        }
+                    }
+                    .base-header & {
+                        $default-len: 6;
+                        $max-len: 8;
+                        @include default-min-len(4,
+                        $default-len,
+                        $max-len);
+                        position: relative;
+                        z-index: 3;
+                        @include js(false) {
+                            padding-bottom: $interval-l;
+                        }
+                        @include media('mobile') {
+                            display: none;
+                        }
+                        &.is-fixed {
+                            > .in {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                max-width: 100%;
+                                box-shadow: $box-shadow;
+                            }
+                        }
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            background-color: $light;
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                @extend %center;
+                                > .in {
+                                    > ul {
+                                        @extend %reset;
+                                        &:after {
+                                            @extend %clear;
+                                        }
+                                        > li {
+                                            position: relative;
+                                            box-sizing: border-box;
+                                            padding: $interval-s;
+                                            @include js(false) {
+                                                width: 100%;
+                                            }
+                                            + li {
+                                                &:before {
+                                                    content: $content;
+                                                    display: block;
+                                                    position: absolute;
+                                                    top: $interval-s;
+                                                    bottom: $interval-s;
+                                                    left: 0;
+                                                    width: $border-width;
+                                                    background-color: $border-color;
+                                                    @include js(false) {
+                                                        content: none;
+                                                    }
+                                                }
+                                            }
+                                            &:nth-child(#{$default-len}n+1) {
+                                                //多數排的首項目
+                                                &:before {
+                                                    content: none;
+                                                }
+                                            }
+                                            &.is-active,
+                                            &:hover {
+                                                z-index: 1; //避免雙層選單覆蓋問題
+                                                > .group.nav {
+                                                    > .in {
+                                                        > .hd {
+                                                            a {
+                                                                background-color: $minor-color;
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        > .ct {
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > .ft {
+                                > .in {}
+                                ul {}
+                                li {}
+                                span {}
+                                a {}
+                            }
+                        }
+                    }
+                    .base-content & {
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            background-color: $major-color;
+                            border-radius: 3px;
+                            padding: 15px 0;
+                            > .hd {
+                                > .in {}
+                                h3 {
+                                    display: none;
+                                }
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                overflow: hidden;
+                                margin: 0 8px;
+                                > .in {
+                                    > ul {
+                                        &.classify_option {
+                                            text-align: center;
+                                            li {
+                                                display: inline-block;
+                                                width: 60px;
+                                                border: 1px solid $major-color !important;
+                                                border-radius: 3px;
+                                                color: $major-color;
+                                                margin: 5px;
+                                                a {
+                                                    padding: 5px;
+                                                    display: block;
+                                                    &:hover {
+                                                        background-color: lighten($major-color, 5%);
+                                                        color: $white;
+                                                    }
+                                                    &.is-active {
+                                                        background-color: $major-color;
+                                                        color: $white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        @extend %reset-inner;
+                                        margin: 0px;
+                                        background-color: $white;
+                                        > li {
+                                            margin: 0 10px;
+                                            + li {
+                                                border-top: $border;
+                                                border-top: 1px dotted #ccc;
+                                            }
+                                            > [data-type] {
+                                                > .bg-drop-layout > .in,
+                                                > .in {
+                                                    margin: 0 !important;
+                                                }
+                                            }
+                                            &.is-active {
+                                                > .group.nav {
+                                                    > .in {
+                                                        > .hd {
+                                                            a {
+                                                                background-color: $major-color !important;
+                                                                color: $white !important;
+                                                            }
+                                                        }
+                                                        > .ct {
+                                                            display: block;
+                                                            .in {
+                                                                background-color: transparent !important;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > .ft {
+                                > .in {}
+                                ul {}
+                                li {}
+                                span {}
+                                a {}
+                            }
+                        }
+                    }
+                    .base-footer & {
+                        $default-len: 6;
+                        $max-len: 10;
+                        @include default-min-len(4,
+                        $default-len,
+                        $max-len);
+                        @include media('mobile') {
+                            display: none;
+                        }
+                        &.is-close {
+                            display: none;
+                        }
+                        > .bg-drop-layout > .in,
+                        > .in {
+                            @extend %center;
+                            > .hd {
+                                display: none;
+                                > .in {}
+                                h3 {}
+                                span {}
+                                a {}
+                            }
+                            > .ct {
+                                padding: $interval-s 0;
+                                border-bottom: $border;
+                                > .in {
+                                    > ul {
+                                        &:after {
+                                            @extend %clear;
+                                        }
+                                        > li {
+                                            &:nth-child(#{$max-len - 1}n+1) {
+                                                clear: left;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > .ft {
+                                > .in {}
+                                ul {}
+                                li {}
+                                span {}
+                                a {}
+                            }
+                        }
+                    }
+                    > .in {
+                        &:before {
+                            content: "";
+                            width: 100%;
+                            height: 21px;
+                            display: inline-block;
+                            background: url(../images/classify_topbg.png) no-repeat center;
+                            position: absolute;
+                            top: -12px;
+                        }
+                    }
+                }
+                
+                // 首頁
+                // 頭部縣市選擇
+                .area-customize.city {
+                    display: inline-block;
+                    margin: 2px 0 15px 0px;
+                    @include media('mobile') {
+                        position: absolute;
+                        top: 70px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    > .in {
+                        @extend %center;
+                        @include media('mobile') {
+                            width: 301px;
+                            background: $major-color;
+                            padding: 0 0 10px 0;
+                            border-radius: 6px;
+                            background: rgba(255, 255, 255, 0.6);
+                        }
+                        .mark {
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            background: url("../Images/icon-city.png") no-repeat;
+                            margin: 10px 4px -8px 0;
+                        }
+                        .fieldset {
+                            display: inline-block;
+                            .select {
+                                margin: 0 10px 0 0;
+                                select {
+                                    background-color: transparent;
+                                    color: $black;
+                                    width: 120px;
+                                    border: 1px solid $black;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .kidsHead {
+                    > .in {
+                        @extend %center;
+                    }
+                }
+                
+                // 我的專區
+                .area-customize.member {
+                    display: inline-block;
+                    position: absolute;
+                    right: 157px;
+                    top: -3px;
+                    @include media('mobile') {
+                        position: initial;
+                    }
+                    ul {
+                        li {
+                            list-style: none;
+                            display: inline-block;
+                            margin: 0 5px;
+                            @include media('mobile') {
+                                margin: 16px 0;
+                            }
+                        }
+                    }
+                    span {
+                        margin: 0 5px;
+                    }
+                    a {
+                        border-radius: 15px;
+                        background: rgba(255, 255, 255, 0.3);
+                        padding: 6px 10px;
+                        border: 1px solid $white;
+                        color: $black;
+                        @include media('mobile') {
+                            padding: 11px 16px;
+                            border-radius: 30px;
+                            color: $white;
+                            background: rgba(138, 138, 138, 0.6);
+                            border: 1px solid $deep-gray;
+                            margin: 0 5px;
+                        }
+                        &:hover {
+                            color: $white;
+                            background: rgba(253, 96, 0, 0.6);
+                            border: 1px solid $minor-color;
+                        }
+                        &:before {
+                            margin-right: 5px;
+                        }
+                        &:active {
+                            box-shadow: $btn-active;
+                        }
+                    }
+                    .login > a {
+                        &:before {
+                            @include fontAwesome('key');
+                        }
+                    }
+                    .logout > a {
+                        &:before {
+                            @include fontAwesome('lock');
+                        }
+                    }
+                    .zone > a {
+                        &:before {
+                            @include fontAwesome('user-circle-o');
+                        }
+                    }
+                    .join > a {
+                        &:before {
+                            @include fontAwesome('plus');
+                        }
+                    }
+                }
+                
+                // 訊息快遞
+                .newsBox {
+                    > .in {
+                        @extend %center;
+                        .group-list.slider {
+                            padding: 0 12px;
+                            box-sizing: border-box;
+                        }
+                        // 訊息快遞
+                        .news {
+                            @include rwd(1000) {
+                                width: 100% !important;
+                            }
+                            >.in {
+                                .hd {
+                                    @extend %headerHome;
+                                }
+                                .ct {
+                                    .group-list.message {
+                                        >.in {
+                                            > .ct {
+                                                > .in {
+                                                    > ul {
+                                                        > li {
+                                                            @extend %borderNews;
+                                                            .area-essay.message {
+                                                                .img {
+                                                                    display: none;
+                                                                }
+                                                                .essay {
+                                                                    .caption {
+                                                                        color: $deep-gray;
+                                                                        @extend %ellipsis;
+                                                                        margin: 0 0 0 94px;
+                                                                        position: absolute;
+                                                                        width: 79%;
+                                                                        @include rwd(450) {
+                                                                            width: 68%;
+                                                                        }
+                                                                    }
+                                                                    .label {
+                                                                        float: none;
+                                                                        width: 100%;
+                                                                        .mark {
+                                                                            background: none;
+                                                                            color: $minor-color;
+                                                                            display: inline-block;
+                                                                            line-height: 11px;
+                                                                        }
+                                                                        &:before {
+                                                                            content: "";
+                                                                            display: inline-block;
+                                                                            width: 10px;
+                                                                            height: 10px;
+                                                                            background: url(../images/title-dot-icon.png) no-repeat;
+                                                                            margin: 4px 0px 0 0px;
+                                                                            float: left;
+                                                                        }
+                                                                    }
+                                                                    .p {
+                                                                        display: none;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .ft {
+                                    ul {
+                                        .prev,
+                                        .next {
+                                            display: none;
+                                        }
+                                        .more {
+                                            a {
+                                                @extend %btn;
+                                                padding: 10px 26px;
+                                                margin: 10px auto;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // 生活情報
+                        .life {
+                            @include rwd(1000) {
+                                width: 100% !important;
+                            }
+                            >.in {
+                                .hd {
+                                    @extend %headerHome;
+                                    h3 {
+                                        &:after {
+                                            content: "Living Information";
+                                        }
+                                    }
+                                }
+                                .ct {
+                                    .essay {
+                                        @include rwd(1000) {
+                                            width: 82%;
+                                        }
+                                        @include media('mobile') {
+                                            width: 100%;
+                                        }
+                                    }
+                                    .caption {
+                                        &:after {
+                                            @include rwd(1000) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // 綜合服務
+                .serviceBox {
+                    > .in {
+                        @extend %center;
+                        > .hd {
+                            @extend %headerHome;
+                            h3 {
+                                background: url(../images/line_02.png) 31px center no-repeat;
+                                background-position: 50%;
+                                &:after {
+                                    content: "Would you need anything else ?";
+                                }
+                            }
+                        }
+                        > .ct {
+                            > .in {
+                                @include set-len(3);
+                                @include average(3);
+                                .group-list.slider {
+                                    @include rwd(960,
+                                    768) {
+                                        width: 33%;
+                                    }
+                                    @include rwd(872) {
+                                        width: 50%;
+                                    }
+                                    > .in {
+                                        border-radius: 6px;
+                                        background: $white;
+                                        border: 1px solid $deep-gray;
+                                        border-top-right-radius: 6px;
+                                        border-top-left-radius: 6px;
+                                        border-top: 6px solid $major-color;
+                                        margin: 10px;
+                                        padding: 0 10px 10px 10px;
+                                        height: 130px !important;
+                                        @include multi-ellipsis($line: 3, $line-height: 24px);
+                                        position: relative;
+                                        top: 0;
+                                        left: 0;
+                                        box-shadow: 0px 0px 0px 0px rgba($major-color, 0.8);
+                                        transition: all 150ms ease-in;
+                                        &:hover,
+                                        &:focus {
+                                            top: -8px;
+                                            left: -8px;
+                                            box-shadow: 8px 8px 0px 0px rgba($major-color, 0.2);
+                                        }
+                                        &:after {
+                                            content: none;
+                                        }
+                                        .list-text.link {
+                                            > .in {
+                                                ul {
+                                                    li {
+                                                        margin: 0;
+                                                        display: inline-block;
+                                                        border-bottom: none;
+                                                        span {
+                                                            a {
+                                                                padding: 0 8px;
+                                                                .mark {
+                                                                    display: none;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .hd {
+                                            h3 {
+                                                color: $major-color;
+                                                font-size: $font-size-l;
+                                                background: none;
+                                                padding: 5px 25px;
+                                                margin: 0 0 12px 0;
+                                                &:before {
+                                                    background: url("../Images/icon_samll.png") no-repeat;
+                                                    width: 50px;
+                                                    height: 37px;
+                                                    content: "";
+                                                    display: inline-block;
+                                                    background-position: 0px -53px;
+                                                    margin: 0px 8px -12px -22px;
+                                                }
+                                            }
+                                        }
+                                        .ft {
+                                            ul {
+                                                .more {
+                                                    a {
+                                                        font: 0/0 a;
+                                                        padding: 12px 14px;
+                                                        background: url(../images/icon_more.png) no-repeat $minor-color 9px;
+                                                        border-radius: 6px;
+                                                        position: absolute;
+                                                        top: 10px;
+                                                        right: 10px;
+                                                        &:hover {
+                                                            background: url(../images/icon_more.png) no-repeat $major-color 9px;
+                                                            border-radius: 6px;
+                                                        }
+                                                        &:before {
+                                                            display: none;
+                                                            // &:hover {
+                                                            //     display: none;
+                                                            // }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .born {
+                                    h3 {
+                                        &:before {
+                                            background-position: -60px -53px !important;
+                                        }
+                                    }
+                                }
+                                .learn {
+                                    h3 {
+                                        &:before {
+                                            background-position: -120px -53px !important;
+                                        }
+                                    }
+                                }
+                                .lifeSafe {
+                                    h3 {
+                                        &:before {
+                                            background-position: -177px -53px !important;
+                                        }
+                                    }
+                                }
+                                .live {
+                                    h3 {
+                                        &:before {
+                                            background-position: -238px -53px !important;
+                                        }
+                                    }
+                                }
+                                .rumor {
+                                    width: 99% !important;
+                                    h3 {
+                                        &:before {
+                                            background-position: -360px -169px !important;
+                                        }
+                                    }
+                                    .ct {
+                                        .list-text.link {
+                                            ul {
+                                                li {
+                                                    margin-right: 40px !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .traffic {
+                                    h3 {
+                                        &:before {
+                                            background-position: -299px -53px !important;
+                                        }
+                                    }
+                                }
+                                .tour {
+                                    h3 {
+                                        &:before {
+                                            background-position: -360px -53px !important;
+                                        }
+                                    }
+                                }
+                                .job {
+                                    h3 {
+                                        &:before {
+                                            background-position: -480px -53px !important;
+                                        }
+                                    }
+                                }
+                                .money {
+                                    h3 {
+                                        &:before {
+                                            background-position: 0px -111px !important;
+                                        }
+                                    }
+                                }
+                                .soldier {
+                                    h3 {
+                                        &:before {
+                                            background-position: -60px -111px !important;
+                                        }
+                                    }
+                                }
+                                .hospital {
+                                    h3 {
+                                        &:before {
+                                            background-position: - 120px -111px !important;
+                                        }
+                                    }
+                                }
+                                .old {
+                                    h3 {
+                                        &:before {
+                                            background-position: -177px -111px !important;
+                                        }
+                                    }
+                                }
+                                .marriage {
+                                    h3 {
+                                        &:before {
+                                            background-position: -238px -111px !important;
+                                        }
+                                    }
+                                }
+                                .vote {
+                                    h3 {
+                                        &:before {
+                                            background-position: -299px -111px !important;
+                                        }
+                                    }
+                                }
+                                .house {
+                                    h3 {
+                                        &:before {
+                                            background-position: -360px -111px !important;
+                                        }
+                                    }
+                                }
+                                // 收養
+                                .adopt {
+                                    h3 {
+                                        &:before {
+                                            background-position: -419px -114px !important;
+                                        }
+                                    }
+                                }
+                                // 開創
+                                .career {
+                                    h3 {
+                                        &:before {
+                                            background-position: -419px -53px !important;
+                                        }
+                                    }
+                                }
+                                // 安養
+                                .nursing {
+                                    h3 {
+                                        &:before {
+                                            background-position: -482px -110px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // 焦點議題
+                .focus {
+                    margin: 30px 0 0 0;
+                    padding-bottom: 30px;
+                    > .in {
+                        @extend %center;
+                        > .hd {
+                            @extend %headerHome;
+                            h3 {
+                                background: url(../images/line_03.png) 0px center no-repeat;
+                                background-position: 50%;
+                                color: $white;
+                                &:after {
+                                    content: "Focus Topics";
+                                }
+                            }
+                        }
+                        > .ct {
+                            > .in {
+                                .group-list.slider {
+                                    @include len-rwd('pad',
+                                    1);
+                                    .group-list.link {
+                                        > .in {
+                                            @include default-len(0,
+                                            2);
+                                            > .ct {
+                                                > .in {
+                                                    > ul {
+                                                        li {
+                                                            padding: 10px;
+                                                            .area-essay.link {
+                                                                .essay {
+                                                                    -webkit-border-bottom-right-radius: 6px;
+                                                                    -webkit-border-bottom-left-radius: 6px;
+                                                                    -moz-border-radius-bottomright: 6px;
+                                                                    -moz-border-radius-bottomleft: 6px;
+                                                                    border-bottom-right-radius: 6px;
+                                                                    border-bottom-left-radius: 6px;
+                                                                    background: $deep-gray-card;
+                                                                    padding: 12px 19px;
+                                                                    &:after {
+                                                                        content: "";
+                                                                        width: 90px;
+                                                                        height: 80px;
+                                                                        background: url("../Images/icon_samll.png") 13px -176px no-repeat $major-color;
+                                                                        border-radius: 6px;
+                                                                        position: absolute;
+                                                                        right: 25px;
+                                                                        bottom: 23px;
+                                                                    }
+                                                                }
+                                                                .label {
+                                                                    display: none;
+                                                                }
+                                                                .caption {
+                                                                    color: $white;
+                                                                    font-size: $font-size-xl;
+                                                                }
+                                                            }
+                                                            ~ li {
+                                                                .area-essay.link {
+                                                                    .essay {
+                                                                        &:after {
+                                                                            background-position: -63px -176px;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                ~ li {
+                                                                    .area-essay.link {
+                                                                        .essay {
+                                                                            &:after {
+                                                                                background-position: -136px -175px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    ~ li {
+                                                                        .area-essay.link {
+                                                                            .essay {
+                                                                                &:after {
+                                                                                    background-position: -212px -175px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .ft {
+                                        ul {
+                                            .prev,
+                                            .next {
+                                                display: none;
+                                            }
+                                            .more {
+                                                a {
+                                                    @extend %btn;
+                                                    padding: 10px 26px;
+                                                    margin: 10px auto;
+                                                    color: $white;
+                                                    &:hover {
+                                                        // background: $deep-gray-card;
+                                                        &:before {
+                                                            background: $deep-gray-card;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // 影音專區
+                .studioZone {
+                    background: url(../images/icon_floor.jpg) repeat;
+                    padding: 0 0 42px 0;
+                    > .in {
+                        @extend %center;
+                        > .hd {
+                            @extend %headerHome;
+                            h3 {
+                                background: url(../images/line_03.png) 50% no-repeat;
+                                background-position: 50%;
+                                color: $white;
+                                &:after {
+                                    content: "Focus Topics";
+                                }
+                            }
+                        }
+                        > .ct {
+                            > .in {
+                                // 福爾摩沙影城
+                                .studio {
+                                    > .in {
+                                        > .hd {
+                                            @extend %headerHome;
+                                            h3 {
+                                                background: url(../images/line_04.png) 50% no-repeat;
+                                                background-position: 50%;
+                                                color: $black;
+                                                &:after {
+                                                    content: "Formosa Studios";
+                                                }
+                                            }
+                                        }
+                                        >.ct {
+                                            .area-editor,
+                                            .area-customize.video {
+                                                @include media('mobile') {
+                                                    width: 100%;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            .area-editor {
+                                                @include media('mobile') {
+                                                    display: none;
+                                                }
+                                                img {
+                                                    @include media('mobile') {
+                                                        width: 100% !important;
+                                                        height: auto !important;
+                                                    }
+                                                }
+                                            }
+                                            .area-customize.video {
+                                                .video {
+                                                    width: 100%;
+                                                    background: transparent;
+                                                    height: 434px;
+                                                    iframe {
+                                                        width: 100%;
+                                                        border: 0;
+                                                    }
+                                                }
+                                                .essay {
+                                                    display: none;
+                                                }
+                                                .ft {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                // 廣告輪播
+                                .ad {
+                                    > .in {
+                                        > .hd {
+                                            @extend %headerHome;
+                                            h3 {
+                                                background: url(../images/line_04.png) 0px center no-repeat;
+                                                background-position: 50%;
+                                                color: $black;
+                                                &:after {
+                                                    content: "Advertising Carousel";
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .kidsSearch {
+                    position: relative;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                    z-index: 1;
+                    @include media('mobile') {
+                        display: none;
+                    }
+                    > .in {
+                        > .hd {
+                            display: none;
+                        }
+                        > .ct {
+                            width: 100%;
+                            margin: 0 auto;
+                            > .in {
+                                width: 100%;
+                                display: inline-block;
+                                .area-form.search {
+                                    position: absolute;
+                                    top: 36px;
+                                    right: 0;
+                                    z-index: 3;
+                                    width: 60%;
+                                    width: 100%;
+                                    display: inline-block;
+                                    .ct {
+                                        width: 58%;
+                                        .fieldset {
+                                            width: 100%;
+                                            display: inline-block;
+                                            .search {
+                                                width: auto;
+                                                padding: 0;
+                                                input {
+                                                    padding: 15px;
+                                                    border-radius: 4px;
+                                                    opacity: 0.7;
+                                                    &:active,
+                                                    &:focus {
+                                                        opacity: 0.9;
+                                                    }
+                                                }
+                                            }
+                                            .submit {
+                                                a {
+                                                    background-color: transparent;
+                                                    background: url(../Images/icon-homeSearch.png) no-repeat;
+                                                    margin: 10px 8px 0 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .ft {
+                                        position: absolute;
+                                        margin: 0 auto;
+                                        left: 45%;
+                                        top: 130px;
+                                        ul {
+                                            li {
+                                                span {
+                                                    a {
+                                                        @extend %btn;
+                                                        padding: 10px 30px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                // 熱門關鍵字
+                                .list-text.hot-key-word {
+                                    @extend %hotKey;
+                                    display: inline-block;
+                                    width: 100%;
+                                    text-align: left;
+                                    position: initial;
+                                    position: relative;
+                                    .hd {
+                                        h4 {
+                                            span {
+                                                a {
+                                                    @extend %hotKey;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .ct {
+                                        ul {
+                                            li {
+                                                @extend %hotKey;
+                                                span {
+                                                    a {
+                                                        font-size: $font-size-m;
+                                                        @extend %hotKey;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .metaDeta {
+                    > .in {
+                        .hd {
+                            h3 {
+                                padding-bottom: 8px;
+                                border-bottom: 1px solid #b6b6b6;
+                                font-size: 1.1em;
+                                color: #5aa03e;
+                                &:before {
+                                    background: url(../Images/organ_list.png) no-repeat;
+                                    content: "";
+                                    width: 14px;
+                                    height: 25px;
+                                    float: left;
+                                    margin: 0 11px 0 -7px;
+                                }
+                            }
+                        }
+                        .ct {
+                            .box01 {
+                                .hd {
+                                    background-color: #fdf7e6;
+                                    padding: 10px;
+                                    border-radius: 6px;
+                                    margin: 10px 0;
+                                    p {
+                                        line-height: 1em;
+                                        color: #865200;
+                                    }
+                                }
+                            }
+                            .box02 {
+                                margin-top: 20px;
+                                .hd {
+                                    width: 100%;
+                                    text-align: center;
+                                    padding: 10px;
+                                    font-size: 1.2em;
+                                    color: #5aa03e;
+                                    font-family: bold;
+                                }
+                                table {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    thead {
+                                        background-color: $light;
+                                        .th-number {
+                                            width: 52px;
+                                        }
+                                        .th-dark {
+                                            width: 18%;
+                                        }
+                                        .th-time {
+                                            width: 18%;
+                                        }
+                                        .th-status {
+                                            width: 18%;
+                                        }
+                                        .th-web {
+                                            width: auto;
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            &:nth-child(even) {
+                                                background-color: #f0f0f0;
+                                            }
+                                        }
+                                    }
+                                    th,
+                                    td {
+                                        text-align: left;
+                                        border-left: $border;
+                                        border-right: $border;
+                                        border-bottom: 1px solid $white;
+                                    }
+                                    th {
+                                        background-color: #5aa03e;
+                                        color: $white;
+                                    }
+                                    td {}
+                                    span {
+                                        display: block;
+                                        padding: $interval-m;
+                                    }
+                                    a {
+                                        text-decoration: underline;
+                                        color: #0a76d7;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .area-form.page-search {
+                                .ct {
+                                    background-color: #edf9e8;
+                                    padding: 6px;
+                                    border-radius: 6px;
+                                    border: 1px solid #b7cdad;
+                                    > .in {}
+                                    .fieldset {
+                                        display: inline-block;
+                                        margin: $interval-s;
+                                        span {
+                                            display: inline-block;
+                                            &.submit {
+                                                color: $white;
+                                            }
+                                        }
+                                        select {}
+                                        input {
+                                            &[type="search"] {}
+                                            &[type="submit"] {
+                                                padding: 0 20px;
+                                                border-radius: 3px;
+                                            }
+                                        }
+                                    }
+                                    .fieldset.input {
+                                        width: 69%;
+                                        .search,
+                                        input[type="search"] {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }

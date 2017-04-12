@@ -1,139 +1,457 @@
 //文章區塊
+//訊息================================================================
+.area-essay.message {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        $pic_w: 160px;
+        $pic_h: 110px;
+        > .in {}
+        /*a*/
+        .div {
+            padding: 10px $interval-m;
+            transition: $transition;
+            &:after {
+                @extend %clear;
+            }
+            &:hover {
+                background-color: $major-hover-light-color;
+            }
+        }
+        .img {
+            span {
+                // @extend %bg-cover;
+                display: block;
+                width: $pic_w;
+                height: $pic_h;
+                float: left;
+            }
+            img {
+                // width: 160px;
+                // height: 120px;
+                width: $pic_w;
+                height: $pic_h;
+            }
+        }
+        .essay {
+            overflow: hidden;
+        }
+        .caption {
+            @extend %caption;
+            span {}
+            a {}
+        }
+        .label {
+            @extend %label;
+            ul {}
+            li {}
+            span {}
+        }
+        /*i*/
+        .mark {
+            @extend %mark;
+            display: none;
+        }
+        .p {
+            @extend %paragraph;
+            p {}
+            span {}
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
 
 //訊息================================================================
+// .area-essay.message {
+//     > .bg-drop-layout > .in,
+//     > .in {}
+//     .hd {
+//         @extend %header;
+//         > .in {}
+//         h4 {}
+//         span {}
+//         a {}
+//     }
+//     .ct {
+//         > .in {}
+//         /*a*/
+//         .div {
+//             padding: $interval-m;
+//             transition: $transition;
+//             &:after {
+//                 @extend %clear;
+//             }
+//             &:hover {}
+//         }
+//         .img {
+//             float: left;
+//             margin-right: $interval-m;
+//             span {
+//                 @extend %bg-cover;
+//                 display: block;
+//                 // width: 80px;
+//                 // height: 80px;
+//             }
+//             img {
+//                 display: none;
+//             }
+//         }
+//         .essay {
+//             overflow: hidden;
+//         }
+//         .caption {
+//             @extend %caption;
+//             span {}
+//             a {}
+//         }
+//         .label {
+//             @extend %label;
+//             ul {}
+//             li {}
+//             span {}
+//         }
+//         /*i*/
+//         .mark {
+//             @extend %mark;
+//         }
+//         .p {
+//             @extend %paragraph;
+//             p {}
+//             span {}
+//         }
+//     }
+//     .ft {
+//         @extend %footer;
+//         > .in {}
+//         ul {}
+//         li {}
+//         span {}
+//         a {}
+//     }
+// }
+// 首頁：生活情報
+.group-list.message {
+    .area-essay.message.page-life {
+        .hd {
+            display: none;
+        }
+        .ct {
+            .div {
+                padding: 25px 5px;
+                padding: 22px 5px\9;
+                border-bottom: 1px dotted $gray;
+                &:after {
+                    @extend %clear;
+                }
+                > a {
+                    // @extend %clear;
+                    border: none;
+                    display: inline-block;
+                    float: left;
+                    width: 303px;
+                    padding: 0;
+                    @include rwd(1000) {
+                        width: 80%;
+                    }
+                    @include media("mobile") {
+                        position: initial;
+                        width: 100%;
+                    }
+                }
+                .img {
+                    display: none;
+                }
+                .essay {
+                    overflow: hidden;
+                    width: 100%;
+                    @include media('mobile') {
+                        position: initial;
+                    }
+                    .caption,
+                    .label,
+                    .p {
+                        margin-bottom: 10px;
+                        &:after {
+                            -webkit-transition: 0.8s;
+                            -moz-transition: 0.8s;
+                            -ms-transition: 0.8s;
+                            -o-transition: 0.8s;
+                            transition: 0.8s;
+                        }
+                    }
+                    .caption {
+                        @extend %caption;
+                        @include multi-ellipsis($line: 1, $line-height: 20px, $background-color: $white, $position: 60%);
+                        font-weight: bold;
+                        color: $minor-color;
+                        position: relative;
+                    }
+                    .label {
+                        @extend %label;
+                        color: $major-color;
+                        line-height: 24px;
+                        margin-top: 10px\9;
+                        ul {}
+                        li {}
+                        span {}
+                    }
+                    /*i*/
+                    .mark {
+                        @extend %mark;
+                        display: none;
+                    }
+                    .p {
+                        @extend %paragraph;
+                        @include multi-ellipsis($line: 2, $line-height: 24px, $background-color: $white, $position: 60%);
+                        p {
+                            line-height: 24px;
+                        }
+                        span {}
+                    }
+                }
+                .box {
+                    float: right;
+                    display: inline-block;
+                    width: 122px;
+                    margin-top: 10px;
+                    @include media('mobile') {
+                        width: 100%;
+                        margin: 0;
+                        text-align: right;
+                    }
+                    a,
+                    .date {
+                        background: $orange;
+                        color: $white;
+                        border-radius: 6px;
+                        display: inline-block;
+                        width: 112px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        margin: 0px 0 12px 0;
+                        border: 1px solid #414141;
+                        padding: 7px 0;
+                        &:active {
+                            box-shadow: $btn-active;
+                        }
+                        i {
+                            width: 22px;
+                            height: 22px;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            float: left;
+                            margin: 9px -10px 0 10px;
+                        }
+                    }
+                    .date {
+                        background: $major-color;
+                        cursor: default;
+                        &:active {
+                            box-shadow: none;
+                        }
+                        i {
+                            background: url("../images/icon-number.png");
+                        }
+                        .no {
+                            color: $yellow;
+                            width: 25px;
+                            text-align: center;
+                            display: inline-block;
+                            font-weight: bold;
+                        }
+                    }
+                    .collect {
+                        &:hover {
+                            background-color: $orange-hover;
+                        }
+                        i {
+                            background: url("../images/icon-collect.png");
+                        }
+                    }
+                }
+                display: block;
+                &:hover {
+                    .essay .caption:after,
+                    .essay .p:after {
+                        background-image: linear-gradient(to right, transparent 0, $major-hover-light-color 60%);
+                    }
+                }
+            }
+        }
+    }
+    .ft {
+        ul {
+            .prev,
+            .next {
+                display: none;
+            }
+            .more {
+                a {
+                    @extend %btn;
+                    padding: 10px 26px;
+                    margin: 10px auto;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
 
-.area-essay.message {
 
-	> .bg-drop-layout > .in, > .in {
-		
-	}
+/* Microsoft Edge Browser 12+ (All) - @supports method */
 
-	.hd {
-		@extend %header;
+@supports (-ms-ime-align:auto) {
+    .group-list.message .area-essay.message.page-life .ct .div {
+        padding: 25px 5px;
+    }
+}
 
-		> .in {
 
-		}
+/* IE 10+ */
 
-		h4 {
-			
-		}
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .group-list.message .area-essay.message.page-life .ct .div {
+        padding: 22px 5px;
+    }
+}
 
-		span {
-				
-		}
-
-		a {
-
-		}
-	}
-
-	.ct {
-
-		> .in {
-			
-		}
-
-		/*a*/.div {
-			padding: $interval-m;
-			background-color: $light;
-			transition: $transition;
-			
-			&:after {
-				@extend %clear;
-			}
-
-			&:hover {
-				background-color: $light-gray;
-			}
-		}
-
-		.img {
-			float: left;
-			margin-right: $interval-m;
-
-			span {
-				@extend %bg-cover;
-				display: block;
-				width: 80px;
-				height: 80px;
-			}
-
-			img {
-				display: none;
-			}
-		}
-
-		.essay {
-			overflow: hidden;
-		}
-
-		.caption {
-			@extend %caption;
-
-			span {
-				
-			}
-
-			a {
-
-			}
-		}
-
-		.label {
-			@extend %label;
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-		}
-
-		/*i*/.mark {
-			@extend %mark;
-		}
-
-		.p {
-			@extend %paragraph;
-
-			p {
-
-			}
-
-			span {
-
-			}
-		}
-	}
-
-	.ft {
-		@extend %footer;
-
-		> .in {
-
-		}
-
-		ul {
-
-		}
-
-		li {
-
-		}
-
-		span {
-
-		}
-
-		a {
-
-		}
-	}
+.group-list.slider.life {
+    .area-essay.message {
+        .hd {
+            display: none;
+        }
+        .ct {
+            /*a*/
+            .div {
+                &:after {
+                    clear: both;
+                }
+                > a {}
+                .img {
+                    display: none;
+                }
+                .essay {
+                    @include media('mobile') {}
+                    .caption,
+                    .label,
+                    .p {}
+                    .caption {
+                        @extend %caption;
+                        @include multi-ellipsis($line: 1, $line-height: 20px, $background-color: $white, $position: 60%);
+                        font-weight: bold;
+                        color: $minor-color;
+                        // position: relative;
+                    }
+                    .label {
+                        @extend %label;
+                        color: $major-color;
+                        line-height: 24px;
+                        margin-top: 36px\9;
+                        ul {}
+                        li {}
+                        span {}
+                    }
+                    /*i*/
+                    .mark {
+                        @extend %mark;
+                        display: none;
+                    }
+                    .p {
+                        @extend %paragraph;
+                        @include multi-ellipsis($line: 2, $line-height: 24px, $background-color: $white, $position: 60%);
+                        p {
+                            line-height: 24px;
+                        }
+                        span {}
+                    }
+                }
+                .box {
+                    @include media('mobile') {
+                        margin: 0;
+                    }
+                    a {
+                        padding: 7px 0;
+                        border: 1px solid #414141;
+                        i {
+                            margin-left: 15px;
+                        }
+                    }
+                    .collect {
+                        @include media('mobile') {
+                            position: initial;
+                            margin-right: 10px;
+                        }
+                        background: $major-color;
+                        i {
+                            background: url("../images/icon-collect01.png");
+                        }
+                    }
+                    .date {
+                        position: relative;
+                        background: $white;
+                        color: $minor2-color;
+                        @include media('mobile') {
+                            float: right;
+                        }
+                        i {
+                            background: url("../images/icon-number01.png");
+                        }
+                        .count01 {
+                            display: block;
+                            position: absolute;
+                            top: -3px;
+                            left: 51px;
+                        }
+                        .count02 {
+                            position: absolute;
+                            top: 20px;
+                            left: 75px;
+                        }
+                        .no {
+                            position: absolute;
+                            color: $major-light;
+                            font-size: 1.5em;
+                            top: 18px;
+                            left: 36px;
+                            width: 39px;
+                            text-align: right;
+                        }
+                    }
+                }
+                display: block;
+            }
+        }
+    }
+    .ft {
+        ul {
+            .prev,
+            .next {
+                display: none;
+            }
+            .more {
+                a {
+                    @extend %btn;
+                    padding: 10px 26px;
+                    margin: 10px auto;
+                    color: $white;
+                }
+            }
+        }
+    }
 }

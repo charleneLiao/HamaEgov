@@ -17,6 +17,14 @@
 		}
 
 		h4 {
+	    &.video-title {
+		 background: url(../images/dowload_video.png) left center no-repeat;	
+	    }
+	    &.pic-title {
+	     background: url(../images/dowload_pic.png) left center no-repeat;	
+	    }
+		
+		padding-left: 50px;
 			
 		}
 

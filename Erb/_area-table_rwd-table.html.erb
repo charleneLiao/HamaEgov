@@ -31,7 +31,7 @@
 
 				<% row_length.times do |i| %>
 					<tr data-index="<%= i + 1 %>" data-child="<%= cell_length %>">
-						<th><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
+						<th class="vertical-th"><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></th>
 
 						<% (cell_length - 1).times do |i| %>
 							<td><div class="caption"><span><%= zh_lorem_words (min_text..max_text).to_a.sample %></span></div><span><%= zh_lorem_sentence %></span></td>

@@ -1,32 +1,84 @@
 //框架
-
 //頁尾資訊================================================================
-
 .base-footer {
-	background-color: $white;
-
-	> .in {
-
-		> .hd {
-
-			> .in {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-			}
-		}
-	}
+    background-color: $white;
+    margin: 42px 0 0 0;
+    > .in {
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {
+                .simple-text.btn {
+                    .ct {
+                        .in {
+                            text-align: center;
+                            span {
+                                text-align: center;
+                                a {
+                                    padding: 2px 0px 9px 0;
+                                    color: #ffffff;
+                                    margin: -49px auto 0px -5%;
+                                    position: absolute;
+                                    background: url("../Images/icon-ft-open.png") no-repeat;
+                                    width: 100px;
+                                    &:before {
+                                        font-family: 'icomoon';
+                                        speak: none;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-variant: normal;
+                                        text-transform: none;
+                                        line-height: 1;
+                                        display: inline-block;
+                                        background: none;
+                                        margin-right: $interval-xs;
+                                        font-size: 2em;
+                                        height: 23px;
+                                        display: block;
+                                    }
+                                    &:hover {}
+                                }
+                            }
+                        }
+                    }
+                }
+                .area-customize.nav {
+                    @extend %center;
+                    > .in {
+                        background: url(../Images/footerPic.png) no-repeat 50% 19px;
+                        padding-top: 70px;
+                    }
+                    .group.nav {
+                        > .in {
+                            > .hd {
+                                a {
+                                    border-bottom: none;
+                                    color: $major-color;
+                                    font-size: $font-size-l;
+                                }
+                            }
+                            .list-text.nav {
+                                .ct {
+                                    a {
+                                        text-decoration: underline;
+                                        font-size: $font-size-m;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .group.info {
+                    background: $minor2-color;
+                    color: $white;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }

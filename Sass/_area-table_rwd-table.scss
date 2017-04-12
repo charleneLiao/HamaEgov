@@ -80,7 +80,7 @@
 			tr {
 
 				@include media('phone') {
-					border: $border;
+					border-bottom: 1px dotted #ccc;
 				}
 				
 				&:nth-child(even) {
@@ -100,7 +100,7 @@
 			}
 
 			th, td {
-				border: $border;
+				border-bottom: 1px dotted #ccc;
 
 				@include media('phone') {
 					border: 0;
@@ -108,7 +108,10 @@
 			}
 
 			th {
-
+              &.vertical-th {
+              	background-color: $lesser2-color;
+              	color:#006e6a;
+              }
 			}
 
 			td {
@@ -175,7 +178,7 @@
 		}
 
 		th {
-			background-color: $minor-color;
+			background-color: $major-color;
 			color: $white;
 		}
 

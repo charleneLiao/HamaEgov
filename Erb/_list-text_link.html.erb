@@ -1,5 +1,5 @@
 <%
-	min_li = 2 #最少的li數量
+	min_li = 3 #最少的li數量
 	max_li = 5 #最多的li數量
 
 	li_length = (min_li..max_li).to_a.sample
@@ -12,8 +12,7 @@
 		</div></div>
 	<% end %>
 	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
-			
+		<ul data-index="1" data-child="<%= li_length %>">		
 			<% li_length.times do |i| %>
 				<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark"><%= lorem_word %></i><%= lorem_word %></a></span></li>
 			<% end %>

@@ -1,194 +1,115 @@
 //列表群組
-
 //輪播================================================================
-
 .group-list.slider {
-
-	.base-module-area & {
-		
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-				@extend %header;
-
-				> .in {
-
-				}
-
-				h3 {
-					
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								display: none;
-
-								@include js(false) {
-									display: block;
-									margin-top: $interval-m;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .ft {
-				@extend %footer;
-
-				> .in {
-
-				}
-
-				ul {
-
-				}
-
-				li {
-
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
-
-	.base-page-area & {
-
-		$btn-width: 40px; //設定按鈕寬度
-
-		> .bg-drop-layout > .in, > .in {
-
-			> .hd {
-				display: none;
-
-				> .in {
-
-				}
-
-				h3 {
-					
-				}
-
-				span {
-						
-				}
-
-				a {
-
-				}
-			}
-
-			> .ct {
-
-				> .in {
-
-					> ul {
-
-						> li {
-
-							+ li {
-								display: none;
-
-								@include js(false) {
-									display: block;
-									margin-top: $interval-m;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			> .ft {
-
-				> .in {
-
-				}
-
-				ul {
-					background-color: $light;
-					overflow: hidden;
-					padding: 0 $interval-m;
-					text-align: center;
-				}
-
-				li {
-
-					&.next, &.prev {
-
-						@include js(false) {
-							display: none;
-						}
-
-						a {
-							@extend %hide-text;
-							position: absolute;
-							top: 20%;
-							bottom: 20%;
-							display: block;
-							width: $btn-width;
-							transition: $transition;
-							background-color: $light;
-							background-color: rgba($light, $opacity-h);
-
-							&:hover {
-								background-color: rgba($light, $opacity-vh);
-							}
-						}
-					}
-
-					&.prev {
-
-						a {
-							left: 0;
-							@include bg-to-pic('icon-pic/away-b-left.png', false);
-						}
-					}
-
-					&.next {
-
-						a {
-							right: 0;
-							@include bg-to-pic('icon-pic/away-b-right.png', false);
-						}
-					}
-
-					&.more {
-						display: none;
-					}
-				}
-
-				span {
-
-				}
-
-				a {
-
-				}
-			}
-		}
-	}
+    .base-module-area & {
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                @extend %header;
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {
+                    > ul {
+                        > li {
+                            + li {
+                                display: none;
+                                @include js(false) {
+                                    display: block;
+                                    margin-top: $interval-m;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > .ft {
+                @extend %footer;
+                > .in {}
+                ul {}
+                li {}
+                span {}
+                a {}
+            }
+        }
+    }
+    .base-page-area & {
+        $btn-width: 40px; //設定按鈕寬度
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                display: none;
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {
+                    > ul {
+                        > li {
+                            + li {
+                                display: none;
+                                @include js(false) {
+                                    display: block;
+                                    margin-top: $interval-m;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > .ft {
+                > .in {}
+                ul {
+                    background-color: $light;
+                    overflow: hidden;
+                    padding: 0 $interval-m;
+                    text-align: center;
+                }
+                li {
+                    &.next,
+                    &.prev {
+                        @include js(false) {
+                            display: none;
+                        }
+                        a {
+                            @extend %hide-text;
+                            position: absolute;
+                            top: 20%;
+                            bottom: 20%;
+                            display: block;
+                            width: $btn-width;
+                            transition: $transition;
+                            background-color: $light;
+                            background-color: rgba($light, $opacity-h);
+                            &:hover {
+                                background-color: rgba($light, $opacity-vh);
+                            }
+                        }
+                    }
+                    &.prev {
+                        a {
+                            left: 0;
+                            @include bg-to-pic('icon-pic/away-b-left.png', false);
+                        }
+                    }
+                    &.next {
+                        a {
+                            right: 0;
+                            @include bg-to-pic('icon-pic/away-b-right.png', false);
+                        }
+                    }
+                    &.more {
+                        display: none;
+                    }
+                }
+                span {}
+                a {}
+            }
+        }
+    }
 }

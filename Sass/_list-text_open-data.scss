@@ -4,6 +4,8 @@
 
 .list-text.open-data {
 	display: inline-block;
+	position: relative;
+    z-index: 10;
 
 	@include js(false) {
 		display: none;
@@ -39,7 +41,7 @@
 	}
 
 	.hd {
-
+		display: none;
 		> .in {
 
 		}
@@ -130,7 +132,6 @@
 		}
 
 		a {
-			@extend %btn;
 			display: block;
 			text-align: left;
 

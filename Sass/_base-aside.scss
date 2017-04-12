@@ -1,39 +1,284 @@
 //框架
-
-//內頁側欄區塊================================================================
-
-.base-aside {
-	@extend %area-module;
-	width: 190px;
-	float: left;
-
-	@include media('mobile') {
-		width: 100%;
-		float: none;
-	}
-
-	> .in {
-
-		> .hd {
-
-			> .in {
-
-			}
-
-			h3 {
-
-			}
-
-			span {
-
-			}
-		}
-
-		> .ct {
-
-			> .in {
-
-			}
-		}
-	}
+// 測選單
+.group.base-aside {
+    @extend %area-module;
+    width: 223px;
+    float: left;
+    margin-right: 18px;
+    @include media('mobile') {
+        width: 90%;
+        float: none;
+        margin: 1% auto;
+        ;
+    }
+    &.is-active {
+        > .in {
+            >.ct {
+                display: block;
+                margin: 0 0 15px 0;
+                .is-phone-hide,
+                .is-pad-hide {
+                    display: block !important;
+                }
+            }
+        }
+    }
+    > .in {
+        > .hd {
+            @extend %header;
+            > .in {}
+            h4 {
+                border: none;
+                padding: 0;
+                margin: 0;
+                background: none;
+            }
+            span {}
+            a {
+                display: block;
+                width: 61px;
+                height: 60px;
+                margin: 0px auto -35px auto;
+                background-color: $major-color;
+                border-radius: 30px;
+                cursor: default;
+                color: transparent;
+                &:before {
+                    @include icon-font('arrow_drop_down');
+                    display: block;
+                    width: $rwd-btn-size;
+                    text-align: center;
+                    line-height: 32px;
+                    color: $white;
+                    margin: 12px auto -16px auto;
+                    @include media('mobile') {
+                        font-size: 2em;
+                    }
+                }
+                @include media('mobile') {
+                    width: 100%;
+                    height: initial;
+                    vertical-align: baseline;
+                    cursor: pointer;
+                    font: initial;
+                    text-align: center;
+                    margin: 0 auto;
+                    color: transparent;
+                    border-radius: 6px;
+                }
+                @include rwd(560, 327) {
+                    background-position: 39% 14px;
+                }
+                @include media('phone') {
+                    background-position: 26% 14px;
+                }
+            }
+        }
+        > .ct {
+            background: $major-color;
+            border-radius: 6px;
+            margin: 0;
+            padding: 9px 11px;
+            @include media('mobile') {
+                display: none;
+                // 打開選單內容
+                .is-active {
+                    display: block;
+                }
+            }
+            > .in {
+                background: $white;
+                border-radius: 6px;
+                padding: 0 0 10px 0;
+                .group-tab {
+                    > .bg-drop-layout > .in,
+                    > .in {
+                        > .ct {
+                            > .in {
+                                > ul {
+                                    @extend %reset;
+                                    > li {
+                                        .list-text.tab {
+                                            .ct {
+                                                ul {
+                                                    border-bottom: none;
+                                                }
+                                            }
+                                        }
+                                        // 選單內容
+                                        .group-list.message {
+                                            ul {
+                                                li {
+                                                    // 第1層
+                                                    .group-list.nav-01 {
+                                                        .hd {
+                                                            h3 {
+                                                                border-bottom: none;
+                                                                font-size: 1em;
+                                                                padding: 0;
+                                                                margin: 0;
+                                                                span {
+                                                                    a {
+                                                                        display: inline-block;
+                                                                        cursor: pointer;
+                                                                        padding: 5px 10px;
+                                                                        width: 88%;
+                                                                        &:hover {
+                                                                            background: $major-color;
+                                                                            color: $white;
+                                                                            display: block;
+                                                                        }
+                                                                        &:before {
+                                                                            background: url("../Images/title-dot-icon.png");
+                                                                            content: "";
+                                                                            display: inline-block;
+                                                                            width: 10px;
+                                                                            height: 10px;
+                                                                            margin: 10px 7px 0 -6px;
+                                                                        }
+                                                                    }
+                                                                    .is-active {
+                                                                        text-decoration: underline;
+                                                                        color: $minor-color !important;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .ct {
+                                                            display: none;
+                                                            a {
+                                                                padding-left: 23px;
+                                                                &:hover {
+                                                                    // background: none;
+                                                                    color: $orange;
+                                                                    text-decoration: underline;
+                                                                }
+                                                            }
+                                                            // 打開第2層內容
+                                                            .is-active {
+                                                                .group-list.nav-02 {
+                                                                    .ct {
+                                                                        display: block;
+                                                                    }
+                                                                }
+                                                            }
+                                                            // 第2層
+                                                            .group-list.nav-02 {
+                                                                .hd {
+                                                                    h3 {
+                                                                        padding-left: 27px;
+                                                                        a {
+                                                                            &:before {
+                                                                                display: none;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                // 第二層內容
+                                                                .ct {
+                                                                    display: none;
+                                                                    padding-left: 16px;
+                                                                    .is-active {}
+                                                                    ul {
+                                                                        li {
+                                                                            span {
+                                                                                a {
+                                                                                    padding: 5px 10px;
+                                                                                    display: inline-block;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            // 第2層：機關別
+                                                            .group-list.nav-02.organ {
+                                                                .hd {
+                                                                    h3 {
+                                                                        padding-left: 23px;
+                                                                    }
+                                                                }
+                                                                .ct {
+                                                                    border-radius: 6px;
+                                                                    background: $major-hover-light-color;
+                                                                    ul {
+                                                                        li {
+                                                                            &:before {
+                                                                                content: "．";
+                                                                                display: inline-block;
+                                                                                float: left;
+                                                                                width: 6px;
+                                                                                height: 6px;
+                                                                                margin: -9px 0px 0 -17px;
+                                                                                position: absolute;
+                                                                                font-size: 34px;
+                                                                                color: $major-color;
+                                                                            }
+                                                                            .is-active {
+                                                                                text-decoration: underline;
+                                                                                color: $minor-color;
+                                                                            }
+                                                                            a {
+                                                                                .no {
+                                                                                    margin: 0 0 0 3px;
+                                                                                    font-size: $font-size-s;
+                                                                                }
+                                                                                &:hover {
+                                                                                    color: $major-color;
+                                                                                    text-decoration: underline;
+                                                                                    background: none;
+                                                                                }
+                                                                            }
+                                                                            .nav-03 {
+                                                                                .hd {
+                                                                                    h3 {
+                                                                                        padding-left: 0;
+                                                                                        a {
+                                                                                            &:hover {
+                                                                                                color: $major-color;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .mark {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                                // 次選單收合
+                                                .is-active {
+                                                    .group-list.nav-01 {
+                                                        .ct {
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        + li {
+                                            @include js(false) {
+                                                display: none;
+                                            }
+                                            + li {
+                                                display: none;
+                                                @include js(false) {
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
