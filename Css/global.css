@@ -75,7 +75,7 @@
 }
 
 /* line 462, ../sass/_base-function.scss */
-.area-customize.list .ct a, .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption, .base-header .group.nav > .bg-drop-layout > .in > .hd a,
+.area-customize.list .ct a, .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption, .newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption, .base-header .group.nav > .bg-drop-layout > .in > .hd a,
 .base-header .group.nav > .in > .hd a, .base-footer .group.nav > .bg-drop-layout > .in > .hd a,
 .base-footer .group.nav > .in > .hd a, .base-content .list-text.link.bg-blue .ct a, .base-content .list-text.link.bg-deep-blue .ct a, .base-content .list-text.link .ct a, .base-header .list-text.nav .ct a, .list-text.slider .ct a, .area-customize.page-area-link .ct li div, .area-customize.page-myZone .ct ul li a, .area-customize.calendar .ct .caption, .area-customize.calendar .ct .list a, .list-text.anchor .ct a, .list-text.step .ct a, .list-text.message .ct a {
   overflow: hidden;
@@ -84,24 +84,24 @@
 }
 
 /* line 476, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in, .group-list.message .area-essay.message.page-life .ct .div .essay .caption, .group-list.message .area-essay.message.page-life .ct .div .essay .p, .group-list.slider.life .area-essay.message .ct .div .essay .caption, .group-list.slider.life .area-essay.message .ct .div .essay .p, .area-figure.album .ct .p, .group-list.album.app .ct > .in .figcaption p, .group-list.album.app .ct > .in .p p {
+.group-list.message .area-essay.message.page-life .ct .div .essay .caption, .group-list.message .area-essay.message.page-life .ct .div .essay .p, .group-list.slider.life .area-essay.message .ct .div .essay .caption, .group-list.slider.life .area-essay.message .ct .div .essay .p, .area-figure.album .ct .p, .group-list.album.app .ct > .in .figcaption p, .group-list.album.app .ct > .in .p p {
   overflow: hidden;
 }
 /* line 478, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in:before, .group-list.message .area-essay.message.page-life .ct .div .essay .caption:before, .group-list.message .area-essay.message.page-life .ct .div .essay .p:before, .group-list.slider.life .area-essay.message .ct .div .essay .caption:before, .group-list.slider.life .area-essay.message .ct .div .essay .p:before, .area-figure.album .ct .p:before, .group-list.album.app .ct > .in .figcaption p:before, .group-list.album.app .ct > .in .p p:before {
+.group-list.message .area-essay.message.page-life .ct .div .essay .caption:before, .group-list.message .area-essay.message.page-life .ct .div .essay .p:before, .group-list.slider.life .area-essay.message .ct .div .essay .caption:before, .group-list.slider.life .area-essay.message .ct .div .essay .p:before, .area-figure.album .ct .p:before, .group-list.album.app .ct > .in .figcaption p:before, .group-list.album.app .ct > .in .p p:before {
   content: '\200B';
   float: left;
   width: 1px;
 }
 /* line 483, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in > *, .group-list.message .area-essay.message.page-life .ct .div .essay .caption > *, .group-list.message .area-essay.message.page-life .ct .div .essay .p > *, .group-list.slider.life .area-essay.message .ct .div .essay .caption > *, .group-list.slider.life .area-essay.message .ct .div .essay .p > *, .area-figure.album .ct .p > *, .group-list.album.app .ct > .in .figcaption p > *, .group-list.album.app .ct > .in .p p > * {
+.group-list.message .area-essay.message.page-life .ct .div .essay .caption > *, .group-list.message .area-essay.message.page-life .ct .div .essay .p > *, .group-list.slider.life .area-essay.message .ct .div .essay .caption > *, .group-list.slider.life .area-essay.message .ct .div .essay .p > *, .area-figure.album .ct .p > *, .group-list.album.app .ct > .in .figcaption p > *, .group-list.album.app .ct > .in .p p > * {
   float: right;
   width: 100%;
   box-sizing: border-box;
   margin-left: -1px !important;
 }
 /* line 489, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in:after, .group-list.message .area-essay.message.page-life .ct .div .essay .caption:after, .group-list.message .area-essay.message.page-life .ct .div .essay .p:after, .group-list.slider.life .area-essay.message .ct .div .essay .caption:after, .group-list.slider.life .area-essay.message .ct .div .essay .p:after, .area-figure.album .ct .p:after, .group-list.album.app .ct > .in .figcaption p:after, .group-list.album.app .ct > .in .p p:after {
+.group-list.message .area-essay.message.page-life .ct .div .essay .caption:after, .group-list.message .area-essay.message.page-life .ct .div .essay .p:after, .group-list.slider.life .area-essay.message .ct .div .essay .caption:after, .group-list.slider.life .area-essay.message .ct .div .essay .p:after, .area-figure.album .ct .p:after, .group-list.album.app .ct > .in .figcaption p:after, .group-list.album.app .ct > .in .p p:after {
   content: '...';
   position: relative;
   float: right;
@@ -294,9 +294,10 @@
 }
 
 /* line 657, ../sass/_base-function.scss */
-.newsBox > .in .news > .in .hd h4, .newsBox > .in .life > .in .hd h4, .serviceBox > .in > .hd h4, .focus > .in > .hd h4, .studioZone > .in > .hd h4, .studioZone > .in > .ct > .in .studio > .in > .hd h4, .studioZone > .in > .ct > .in .ad > .in > .hd h4,
+.newsBox > .in .news > .in .hd h4, .newsBox > .in .life > .in .hd h4, .newsBox > .in .rumor > .in .hd h4, .serviceBox > .in > .hd h4, .focus > .in > .hd h4, .studioZone > .in > .hd h4, .studioZone > .in > .ct > .in .studio > .in > .hd h4, .studioZone > .in > .ct > .in .ad > .in > .hd h4,
 .newsBox > .in .news > .in .hd h3,
 .newsBox > .in .life > .in .hd h3,
+.newsBox > .in .rumor > .in .hd h3,
 .serviceBox > .in > .hd h3,
 .focus > .in > .hd h3,
 .studioZone > .in > .hd h3,
@@ -313,9 +314,10 @@
   background-position: 50%;
 }
 /* line 668, ../sass/_base-function.scss */
-.newsBox > .in .news > .in .hd h4:after, .newsBox > .in .life > .in .hd h4:after, .serviceBox > .in > .hd h4:after, .focus > .in > .hd h4:after, .studioZone > .in > .hd h4:after, .studioZone > .in > .ct > .in .studio > .in > .hd h4:after, .studioZone > .in > .ct > .in .ad > .in > .hd h4:after,
+.newsBox > .in .news > .in .hd h4:after, .newsBox > .in .life > .in .hd h4:after, .newsBox > .in .rumor > .in .hd h4:after, .serviceBox > .in > .hd h4:after, .focus > .in > .hd h4:after, .studioZone > .in > .hd h4:after, .studioZone > .in > .ct > .in .studio > .in > .hd h4:after, .studioZone > .in > .ct > .in .ad > .in > .hd h4:after,
 .newsBox > .in .news > .in .hd h3:after,
 .newsBox > .in .life > .in .hd h3:after,
+.newsBox > .in .rumor > .in .hd h3:after,
 .serviceBox > .in > .hd h3:after,
 .focus > .in > .hd h3:after,
 .studioZone > .in > .hd h3:after,
@@ -327,7 +329,7 @@
   font-size: 0.5em;
 }
 /* line 675, ../sass/_base-function.scss */
-.newsBox > .in .news > .in .hd span, .newsBox > .in .life > .in .hd span, .serviceBox > .in > .hd span, .focus > .in > .hd span, .studioZone > .in > .hd span, .studioZone > .in > .ct > .in .studio > .in > .hd span, .studioZone > .in > .ct > .in .ad > .in > .hd span {
+.newsBox > .in .news > .in .hd span, .newsBox > .in .life > .in .hd span, .newsBox > .in .rumor > .in .hd span, .serviceBox > .in > .hd span, .focus > .in > .hd span, .studioZone > .in > .hd span, .studioZone > .in > .ct > .in .studio > .in > .hd span, .studioZone > .in > .ct > .in .ad > .in > .hd span {
   display: block;
 }
 
@@ -388,7 +390,7 @@
 /* line 743, ../sass/_base-function.scss */
 .area-customize.list .ft a, .area-customize.org-guide-search .ft a, .area-customize.page-img-figcaption-p .ft a, .area-customize.message .ft a, .group-list.default > .bg-drop-layout > .in > .ft a, .group-list.default > .in > .ft a, .base-content .list-text.link.bg-blue .ft a, .base-content .list-text.link.bg-deep-blue .ft a, .base-content .list-text.link .ft a, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a,
 .base-module-area .group-list.slider > .in > .ft a, .list-text.slider .ft a, .group-list.message > .bg-drop-layout > .in > .ft a,
-.group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .area-customize.page-area-link .ft a, .area-customize.page-myZone .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-form.page-search .ft a, .area-customize.page-search-area .ft a, .area-customize.page-search-noclassify .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.page-form .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.page-table.normal .ft a, .area-customize.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .sys-root a.btn, .sys-root input[type="submit"], .sys-root input[type="reset"], .sys-root input[type="button"], .sys-root button, .newsBox > .in .news > .in .ft ul .more a, .focus > .in > .ct > .in .group-list.slider .ft ul .more a, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a, .list-text.jump-tool .ct a, .list-multiple.page-click .ct a, .list-multiple.page-select .ct ul[data-index="1"] a, .list-multiple.page-select .ct ul[data-index="2"] a, .base-mobile .area-form.search .ft a, [data-js="false"] .base-mobile .area-form.search .ft a, [data-js="false"] .base-wrapper .area-form.search .ft a, .group-list.message .ft ul .more a, .group-list.slider.life .ft ul .more a, .area-customize.page-area-link .ct li div, .area-customize.page-area-link .ct .btn-more a, .area-customize.page-myZone .ct ul li a, .area-customize.page-myZone .ct .btn-more a, .list-text.btn .ct a, .area-figure.page-figure .ft a, .base-wrapper .simple-text.query .ft a, .base-extend .simple-text.query .ft a, .area-table.page-table.normal .ct .btn-more a {
+.group-list.message > .in > .ft a, .area-essay.message .ft a, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.album > .in > .ft a, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.album > .in > .ft a, .area-figure.album .ft a, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-module-area .group-list.link > .in > .ft a, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a, .base-page-area .group-list.link > .in > .ft a, .list-pic.link .ft a, .area-form.link .ft a, .base-module-area .area-essay.link .ft a, .base-page-area .area-essay.link .ft a, .area-customize.page-area-link .ft a, .area-customize.page-myZone .ft a, .list-text.rss .ft a, .area-customize.calendar .ft a, .area-form.epaper .ft a, .area-customize.video .ft a, .area-customize.news-card .ft a, .area-customize.icons-g2 .ft a, .area-form.page-search .ft a, .area-customize.page-search-area .ft a, .area-customize.page-search-noclassify .ft a, .group-list.page-block > .bg-drop-layout > .in > .ft a, .group-list.page-block > .in > .ft a, .group-list.page-list > .bg-drop-layout > .in > .ft a, .group-list.page-list > .in > .ft a, .list-pic.album .ft a, .area-essay.page-caption-label .ft a, .area-essay.page-caption-label-p .ft a, .area-essay.page-caption-p .ft a, .area-essay.page-essay .ft a, .area-essay.page-img-caption-label .ft a, .area-essay.page-img-caption-p .ft a, .area-figure.page-img-figcaption .ft a, .area-figure.page-img-figcaption-label .ft a, .area-figure.page-img-figcaption-p .ft a, .area-figure.page-img-label .ft a, .area-figure.page-img-label-p .ft a, .area-figure.page-img-p .ft a, .area-form.page-form .ft a, .area-form.submit .ft a, .area-customize.page-form .ft a, .area-customize.audio .ft a, .area-customize.iframe .ft a, .list-text.message .ft a, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a, .group-list.page-list-pic > .in > .ft a, .group-list.sitemap > .bg-drop-layout > .in > .ft a, .group-list.sitemap > .in > .ft a, .list-text.sitemap .ft a, .area-table.page-table .ft a, .area-table.page-table.normal .ft a, .area-customize.page-table .ft a, .area-table.rwd-table .ft a, .list-text.page-list .ft a, .group-list.page-list-text > .bg-drop-layout > .in > .ft a, .group-list.page-list-text > .in > .ft a, .area-customize.calendar .ct .label a, .sys-root a.btn, .sys-root input[type="submit"], .sys-root input[type="reset"], .sys-root input[type="button"], .sys-root button, .base-mobile .area-customize.backPC a, .newsBox > .in .news > .in .ft ul .more a, .focus > .in > .ct > .in .group-list.slider .ft ul .more a, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a, .list-text.jump-tool .ct a, .list-multiple.page-click .ct a, .list-multiple.page-select .ct ul[data-index="1"] a, .list-multiple.page-select .ct ul[data-index="2"] a, .base-mobile .area-form.search .ft a, [data-js="false"] .base-mobile .area-form.search .ft a, [data-js="false"] .base-wrapper .area-form.search .ft a, .group-list.message .ft ul .more a, .group-list.slider.life .ft ul .more a, .area-customize.page-area-link .ct li div, .area-customize.page-area-link .ct .btn-more a, .area-customize.page-myZone .ct ul li a, .area-customize.page-myZone .ct .btn-more a, .list-text.btn .ct a, .area-figure.page-figure .ft a, .base-wrapper .simple-text.query .ft a, .base-extend .simple-text.query .ft a, .area-table.page-table.normal .ct .btn-more a {
   display: inline-block;
   padding: 8px 16px;
   border: 0;
@@ -414,32 +416,32 @@
 /* line 766, ../sass/_base-function.scss */
 .area-customize.list .ft a:link, .area-customize.org-guide-search .ft a:link, .area-customize.page-img-figcaption-p .ft a:link, .area-customize.message .ft a:link, .group-list.default > .in > .ft a:link, .base-content .list-text.link .ft a:link,
 .base-module-area .group-list.slider > .in > .ft a:link, .list-text.slider .ft a:link,
-.group-list.message > .in > .ft a:link, .area-essay.message .ft a:link, .base-module-area .group-list.album > .in > .ft a:link, .base-page-area .group-list.album > .in > .ft a:link, .area-figure.album .ft a:link, .base-module-area .group-list.link > .in > .ft a:link, .base-page-area .group-list.link > .in > .ft a:link, .list-pic.link .ft a:link, .area-form.link .ft a:link, .base-module-area .area-essay.link .ft a:link, .base-page-area .area-essay.link .ft a:link, .area-customize.page-area-link .ft a:link, .area-customize.page-myZone .ft a:link, .list-text.rss .ft a:link, .area-customize.calendar .ft a:link, .area-form.epaper .ft a:link, .area-customize.video .ft a:link, .area-customize.news-card .ft a:link, .area-customize.icons-g2 .ft a:link, .area-form.page-search .ft a:link, .area-customize.page-search-area .ft a:link, .area-customize.page-search-noclassify .ft a:link, .group-list.page-block > .in > .ft a:link, .group-list.page-list > .in > .ft a:link, .list-pic.album .ft a:link, .area-essay.page-caption-label .ft a:link, .area-essay.page-caption-label-p .ft a:link, .area-essay.page-caption-p .ft a:link, .area-essay.page-essay .ft a:link, .area-essay.page-img-caption-label .ft a:link, .area-essay.page-img-caption-p .ft a:link, .area-figure.page-img-figcaption .ft a:link, .area-figure.page-img-figcaption-label .ft a:link, .area-figure.page-img-figcaption-p .ft a:link, .area-figure.page-img-label .ft a:link, .area-figure.page-img-label-p .ft a:link, .area-figure.page-img-p .ft a:link, .area-form.page-form .ft a:link, .area-form.submit .ft a:link, .area-customize.page-form .ft a:link, .area-customize.audio .ft a:link, .area-customize.iframe .ft a:link, .list-text.message .ft a:link, .group-list.page-list-pic > .in > .ft a:link, .group-list.sitemap > .in > .ft a:link, .list-text.sitemap .ft a:link, .area-table.page-table .ft a:link, .area-customize.page-table .ft a:link, .area-table.rwd-table .ft a:link, .list-text.page-list .ft a:link, .group-list.page-list-text > .in > .ft a:link, .area-customize.calendar .ct .label a:link, .sys-root a.btn:link, .sys-root input[type="submit"]:link, .sys-root input[type="reset"]:link, .sys-root input[type="button"]:link, .sys-root button:link, .newsBox > .in .news > .in .ft ul .more a:link, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:link, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:link, .list-text.jump-tool .ct a:link, .list-multiple.page-click .ct a:link, .list-multiple.page-select .ct ul[data-index="1"] a:link, .list-multiple.page-select .ct ul[data-index="2"] a:link, .base-mobile .area-form.search .ft a:link, [data-js="false"] .base-wrapper .area-form.search .ft a:link, .group-list.message .ft ul .more a:link, .group-list.slider.life .ft ul .more a:link, .area-customize.page-area-link .ct li div:link, .area-customize.page-area-link .ct .btn-more a:link, .area-customize.page-myZone .ct ul li a:link, .area-customize.page-myZone .ct .btn-more a:link, .list-text.btn .ct a:link, .area-figure.page-figure .ft a:link, .base-wrapper .simple-text.query .ft a:link, .base-extend .simple-text.query .ft a:link, .area-table.page-table.normal .ct .btn-more a:link {
+.group-list.message > .in > .ft a:link, .area-essay.message .ft a:link, .base-module-area .group-list.album > .in > .ft a:link, .base-page-area .group-list.album > .in > .ft a:link, .area-figure.album .ft a:link, .base-module-area .group-list.link > .in > .ft a:link, .base-page-area .group-list.link > .in > .ft a:link, .list-pic.link .ft a:link, .area-form.link .ft a:link, .base-module-area .area-essay.link .ft a:link, .base-page-area .area-essay.link .ft a:link, .area-customize.page-area-link .ft a:link, .area-customize.page-myZone .ft a:link, .list-text.rss .ft a:link, .area-customize.calendar .ft a:link, .area-form.epaper .ft a:link, .area-customize.video .ft a:link, .area-customize.news-card .ft a:link, .area-customize.icons-g2 .ft a:link, .area-form.page-search .ft a:link, .area-customize.page-search-area .ft a:link, .area-customize.page-search-noclassify .ft a:link, .group-list.page-block > .in > .ft a:link, .group-list.page-list > .in > .ft a:link, .list-pic.album .ft a:link, .area-essay.page-caption-label .ft a:link, .area-essay.page-caption-label-p .ft a:link, .area-essay.page-caption-p .ft a:link, .area-essay.page-essay .ft a:link, .area-essay.page-img-caption-label .ft a:link, .area-essay.page-img-caption-p .ft a:link, .area-figure.page-img-figcaption .ft a:link, .area-figure.page-img-figcaption-label .ft a:link, .area-figure.page-img-figcaption-p .ft a:link, .area-figure.page-img-label .ft a:link, .area-figure.page-img-label-p .ft a:link, .area-figure.page-img-p .ft a:link, .area-form.page-form .ft a:link, .area-form.submit .ft a:link, .area-customize.page-form .ft a:link, .area-customize.audio .ft a:link, .area-customize.iframe .ft a:link, .list-text.message .ft a:link, .group-list.page-list-pic > .in > .ft a:link, .group-list.sitemap > .in > .ft a:link, .list-text.sitemap .ft a:link, .area-table.page-table .ft a:link, .area-customize.page-table .ft a:link, .area-table.rwd-table .ft a:link, .list-text.page-list .ft a:link, .group-list.page-list-text > .in > .ft a:link, .area-customize.calendar .ct .label a:link, .sys-root a.btn:link, .sys-root input[type="submit"]:link, .sys-root input[type="reset"]:link, .sys-root input[type="button"]:link, .sys-root button:link, .base-mobile .area-customize.backPC a:link, .newsBox > .in .news > .in .ft ul .more a:link, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:link, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:link, .list-text.jump-tool .ct a:link, .list-multiple.page-click .ct a:link, .list-multiple.page-select .ct ul[data-index="1"] a:link, .list-multiple.page-select .ct ul[data-index="2"] a:link, .base-mobile .area-form.search .ft a:link, [data-js="false"] .base-wrapper .area-form.search .ft a:link, .group-list.message .ft ul .more a:link, .group-list.slider.life .ft ul .more a:link, .area-customize.page-area-link .ct li div:link, .area-customize.page-area-link .ct .btn-more a:link, .area-customize.page-myZone .ct ul li a:link, .area-customize.page-myZone .ct .btn-more a:link, .list-text.btn .ct a:link, .area-figure.page-figure .ft a:link, .base-wrapper .simple-text.query .ft a:link, .base-extend .simple-text.query .ft a:link, .area-table.page-table.normal .ct .btn-more a:link {
   color: #ffffff;
 }
 /* line 769, ../sass/_base-function.scss */
 .area-customize.list .ft a:visited, .area-customize.org-guide-search .ft a:visited, .area-customize.page-img-figcaption-p .ft a:visited, .area-customize.message .ft a:visited, .group-list.default > .in > .ft a:visited, .base-content .list-text.link .ft a:visited,
 .base-module-area .group-list.slider > .in > .ft a:visited, .list-text.slider .ft a:visited,
-.group-list.message > .in > .ft a:visited, .area-essay.message .ft a:visited, .base-module-area .group-list.album > .in > .ft a:visited, .base-page-area .group-list.album > .in > .ft a:visited, .area-figure.album .ft a:visited, .base-module-area .group-list.link > .in > .ft a:visited, .base-page-area .group-list.link > .in > .ft a:visited, .list-pic.link .ft a:visited, .area-form.link .ft a:visited, .base-module-area .area-essay.link .ft a:visited, .base-page-area .area-essay.link .ft a:visited, .area-customize.page-area-link .ft a:visited, .area-customize.page-myZone .ft a:visited, .list-text.rss .ft a:visited, .area-customize.calendar .ft a:visited, .area-form.epaper .ft a:visited, .area-customize.video .ft a:visited, .area-customize.news-card .ft a:visited, .area-customize.icons-g2 .ft a:visited, .area-form.page-search .ft a:visited, .area-customize.page-search-area .ft a:visited, .area-customize.page-search-noclassify .ft a:visited, .group-list.page-block > .in > .ft a:visited, .group-list.page-list > .in > .ft a:visited, .list-pic.album .ft a:visited, .area-essay.page-caption-label .ft a:visited, .area-essay.page-caption-label-p .ft a:visited, .area-essay.page-caption-p .ft a:visited, .area-essay.page-essay .ft a:visited, .area-essay.page-img-caption-label .ft a:visited, .area-essay.page-img-caption-p .ft a:visited, .area-figure.page-img-figcaption .ft a:visited, .area-figure.page-img-figcaption-label .ft a:visited, .area-figure.page-img-figcaption-p .ft a:visited, .area-figure.page-img-label .ft a:visited, .area-figure.page-img-label-p .ft a:visited, .area-figure.page-img-p .ft a:visited, .area-form.page-form .ft a:visited, .area-form.submit .ft a:visited, .area-customize.page-form .ft a:visited, .area-customize.audio .ft a:visited, .area-customize.iframe .ft a:visited, .list-text.message .ft a:visited, .group-list.page-list-pic > .in > .ft a:visited, .group-list.sitemap > .in > .ft a:visited, .list-text.sitemap .ft a:visited, .area-table.page-table .ft a:visited, .area-customize.page-table .ft a:visited, .area-table.rwd-table .ft a:visited, .list-text.page-list .ft a:visited, .group-list.page-list-text > .in > .ft a:visited, .area-customize.calendar .ct .label a:visited, .sys-root a.btn:visited, .sys-root input[type="submit"]:visited, .sys-root input[type="reset"]:visited, .sys-root input[type="button"]:visited, .sys-root button:visited, .newsBox > .in .news > .in .ft ul .more a:visited, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:visited, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:visited, .list-text.jump-tool .ct a:visited, .list-multiple.page-click .ct a:visited, .list-multiple.page-select .ct ul[data-index="1"] a:visited, .list-multiple.page-select .ct ul[data-index="2"] a:visited, .base-mobile .area-form.search .ft a:visited, [data-js="false"] .base-wrapper .area-form.search .ft a:visited, .group-list.message .ft ul .more a:visited, .group-list.slider.life .ft ul .more a:visited, .area-customize.page-area-link .ct li div:visited, .area-customize.page-area-link .ct .btn-more a:visited, .area-customize.page-myZone .ct ul li a:visited, .area-customize.page-myZone .ct .btn-more a:visited, .list-text.btn .ct a:visited, .area-figure.page-figure .ft a:visited, .base-wrapper .simple-text.query .ft a:visited, .base-extend .simple-text.query .ft a:visited, .area-table.page-table.normal .ct .btn-more a:visited {
+.group-list.message > .in > .ft a:visited, .area-essay.message .ft a:visited, .base-module-area .group-list.album > .in > .ft a:visited, .base-page-area .group-list.album > .in > .ft a:visited, .area-figure.album .ft a:visited, .base-module-area .group-list.link > .in > .ft a:visited, .base-page-area .group-list.link > .in > .ft a:visited, .list-pic.link .ft a:visited, .area-form.link .ft a:visited, .base-module-area .area-essay.link .ft a:visited, .base-page-area .area-essay.link .ft a:visited, .area-customize.page-area-link .ft a:visited, .area-customize.page-myZone .ft a:visited, .list-text.rss .ft a:visited, .area-customize.calendar .ft a:visited, .area-form.epaper .ft a:visited, .area-customize.video .ft a:visited, .area-customize.news-card .ft a:visited, .area-customize.icons-g2 .ft a:visited, .area-form.page-search .ft a:visited, .area-customize.page-search-area .ft a:visited, .area-customize.page-search-noclassify .ft a:visited, .group-list.page-block > .in > .ft a:visited, .group-list.page-list > .in > .ft a:visited, .list-pic.album .ft a:visited, .area-essay.page-caption-label .ft a:visited, .area-essay.page-caption-label-p .ft a:visited, .area-essay.page-caption-p .ft a:visited, .area-essay.page-essay .ft a:visited, .area-essay.page-img-caption-label .ft a:visited, .area-essay.page-img-caption-p .ft a:visited, .area-figure.page-img-figcaption .ft a:visited, .area-figure.page-img-figcaption-label .ft a:visited, .area-figure.page-img-figcaption-p .ft a:visited, .area-figure.page-img-label .ft a:visited, .area-figure.page-img-label-p .ft a:visited, .area-figure.page-img-p .ft a:visited, .area-form.page-form .ft a:visited, .area-form.submit .ft a:visited, .area-customize.page-form .ft a:visited, .area-customize.audio .ft a:visited, .area-customize.iframe .ft a:visited, .list-text.message .ft a:visited, .group-list.page-list-pic > .in > .ft a:visited, .group-list.sitemap > .in > .ft a:visited, .list-text.sitemap .ft a:visited, .area-table.page-table .ft a:visited, .area-customize.page-table .ft a:visited, .area-table.rwd-table .ft a:visited, .list-text.page-list .ft a:visited, .group-list.page-list-text > .in > .ft a:visited, .area-customize.calendar .ct .label a:visited, .sys-root a.btn:visited, .sys-root input[type="submit"]:visited, .sys-root input[type="reset"]:visited, .sys-root input[type="button"]:visited, .sys-root button:visited, .base-mobile .area-customize.backPC a:visited, .newsBox > .in .news > .in .ft ul .more a:visited, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:visited, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:visited, .list-text.jump-tool .ct a:visited, .list-multiple.page-click .ct a:visited, .list-multiple.page-select .ct ul[data-index="1"] a:visited, .list-multiple.page-select .ct ul[data-index="2"] a:visited, .base-mobile .area-form.search .ft a:visited, [data-js="false"] .base-wrapper .area-form.search .ft a:visited, .group-list.message .ft ul .more a:visited, .group-list.slider.life .ft ul .more a:visited, .area-customize.page-area-link .ct li div:visited, .area-customize.page-area-link .ct .btn-more a:visited, .area-customize.page-myZone .ct ul li a:visited, .area-customize.page-myZone .ct .btn-more a:visited, .list-text.btn .ct a:visited, .area-figure.page-figure .ft a:visited, .base-wrapper .simple-text.query .ft a:visited, .base-extend .simple-text.query .ft a:visited, .area-table.page-table.normal .ct .btn-more a:visited {
   color: #ffffff;
 }
 /* line 772, ../sass/_base-function.scss */
 .area-customize.list .ft a:hover, .area-customize.org-guide-search .ft a:hover, .area-customize.page-img-figcaption-p .ft a:hover, .area-customize.message .ft a:hover, .group-list.default > .in > .ft a:hover, .base-content .list-text.link .ft a:hover,
 .base-module-area .group-list.slider > .in > .ft a:hover, .list-text.slider .ft a:hover,
-.group-list.message > .in > .ft a:hover, .area-essay.message .ft a:hover, .base-module-area .group-list.album > .in > .ft a:hover, .base-page-area .group-list.album > .in > .ft a:hover, .area-figure.album .ft a:hover, .base-module-area .group-list.link > .in > .ft a:hover, .base-page-area .group-list.link > .in > .ft a:hover, .list-pic.link .ft a:hover, .area-form.link .ft a:hover, .base-module-area .area-essay.link .ft a:hover, .base-page-area .area-essay.link .ft a:hover, .area-customize.page-area-link .ft a:hover, .area-customize.page-myZone .ft a:hover, .list-text.rss .ft a:hover, .area-customize.calendar .ft a:hover, .area-form.epaper .ft a:hover, .area-customize.video .ft a:hover, .area-customize.news-card .ft a:hover, .area-customize.icons-g2 .ft a:hover, .area-form.page-search .ft a:hover, .area-customize.page-search-area .ft a:hover, .area-customize.page-search-noclassify .ft a:hover, .group-list.page-block > .in > .ft a:hover, .group-list.page-list > .in > .ft a:hover, .list-pic.album .ft a:hover, .area-essay.page-caption-label .ft a:hover, .area-essay.page-caption-label-p .ft a:hover, .area-essay.page-caption-p .ft a:hover, .area-essay.page-essay .ft a:hover, .area-essay.page-img-caption-label .ft a:hover, .area-essay.page-img-caption-p .ft a:hover, .area-figure.page-img-figcaption .ft a:hover, .area-figure.page-img-figcaption-label .ft a:hover, .area-figure.page-img-figcaption-p .ft a:hover, .area-figure.page-img-label .ft a:hover, .area-figure.page-img-label-p .ft a:hover, .area-figure.page-img-p .ft a:hover, .area-form.page-form .ft a:hover, .area-form.submit .ft a:hover, .area-customize.page-form .ft a:hover, .area-customize.audio .ft a:hover, .area-customize.iframe .ft a:hover, .list-text.message .ft a:hover, .group-list.page-list-pic > .in > .ft a:hover, .group-list.sitemap > .in > .ft a:hover, .list-text.sitemap .ft a:hover, .area-table.page-table .ft a:hover, .area-customize.page-table .ft a:hover, .area-table.rwd-table .ft a:hover, .list-text.page-list .ft a:hover, .group-list.page-list-text > .in > .ft a:hover, .area-customize.calendar .ct .label a:hover, .sys-root a.btn:hover, .sys-root input[type="submit"]:hover, .sys-root input[type="reset"]:hover, .sys-root input[type="button"]:hover, .sys-root button:hover, .newsBox > .in .news > .in .ft ul .more a:hover, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:hover, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:hover, .list-text.jump-tool .ct a:hover, .list-multiple.page-click .ct a:hover, .list-multiple.page-select .ct ul[data-index="1"] a:hover, .list-multiple.page-select .ct ul[data-index="2"] a:hover, .base-mobile .area-form.search .ft a:hover, [data-js="false"] .base-wrapper .area-form.search .ft a:hover, .group-list.message .ft ul .more a:hover, .group-list.slider.life .ft ul .more a:hover, .area-customize.page-area-link .ct li div:hover, .area-customize.page-area-link .ct .btn-more a:hover, .area-customize.page-myZone .ct ul li a:hover, .area-customize.page-myZone .ct .btn-more a:hover, .list-text.btn .ct a:hover, .area-figure.page-figure .ft a:hover, .base-wrapper .simple-text.query .ft a:hover, .base-extend .simple-text.query .ft a:hover, .area-table.page-table.normal .ct .btn-more a:hover {
+.group-list.message > .in > .ft a:hover, .area-essay.message .ft a:hover, .base-module-area .group-list.album > .in > .ft a:hover, .base-page-area .group-list.album > .in > .ft a:hover, .area-figure.album .ft a:hover, .base-module-area .group-list.link > .in > .ft a:hover, .base-page-area .group-list.link > .in > .ft a:hover, .list-pic.link .ft a:hover, .area-form.link .ft a:hover, .base-module-area .area-essay.link .ft a:hover, .base-page-area .area-essay.link .ft a:hover, .area-customize.page-area-link .ft a:hover, .area-customize.page-myZone .ft a:hover, .list-text.rss .ft a:hover, .area-customize.calendar .ft a:hover, .area-form.epaper .ft a:hover, .area-customize.video .ft a:hover, .area-customize.news-card .ft a:hover, .area-customize.icons-g2 .ft a:hover, .area-form.page-search .ft a:hover, .area-customize.page-search-area .ft a:hover, .area-customize.page-search-noclassify .ft a:hover, .group-list.page-block > .in > .ft a:hover, .group-list.page-list > .in > .ft a:hover, .list-pic.album .ft a:hover, .area-essay.page-caption-label .ft a:hover, .area-essay.page-caption-label-p .ft a:hover, .area-essay.page-caption-p .ft a:hover, .area-essay.page-essay .ft a:hover, .area-essay.page-img-caption-label .ft a:hover, .area-essay.page-img-caption-p .ft a:hover, .area-figure.page-img-figcaption .ft a:hover, .area-figure.page-img-figcaption-label .ft a:hover, .area-figure.page-img-figcaption-p .ft a:hover, .area-figure.page-img-label .ft a:hover, .area-figure.page-img-label-p .ft a:hover, .area-figure.page-img-p .ft a:hover, .area-form.page-form .ft a:hover, .area-form.submit .ft a:hover, .area-customize.page-form .ft a:hover, .area-customize.audio .ft a:hover, .area-customize.iframe .ft a:hover, .list-text.message .ft a:hover, .group-list.page-list-pic > .in > .ft a:hover, .group-list.sitemap > .in > .ft a:hover, .list-text.sitemap .ft a:hover, .area-table.page-table .ft a:hover, .area-customize.page-table .ft a:hover, .area-table.rwd-table .ft a:hover, .list-text.page-list .ft a:hover, .group-list.page-list-text > .in > .ft a:hover, .area-customize.calendar .ct .label a:hover, .sys-root a.btn:hover, .sys-root input[type="submit"]:hover, .sys-root input[type="reset"]:hover, .sys-root input[type="button"]:hover, .sys-root button:hover, .base-mobile .area-customize.backPC a:hover, .newsBox > .in .news > .in .ft ul .more a:hover, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:hover, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:hover, .list-text.jump-tool .ct a:hover, .list-multiple.page-click .ct a:hover, .list-multiple.page-select .ct ul[data-index="1"] a:hover, .list-multiple.page-select .ct ul[data-index="2"] a:hover, .base-mobile .area-form.search .ft a:hover, [data-js="false"] .base-wrapper .area-form.search .ft a:hover, .group-list.message .ft ul .more a:hover, .group-list.slider.life .ft ul .more a:hover, .area-customize.page-area-link .ct li div:hover, .area-customize.page-area-link .ct .btn-more a:hover, .area-customize.page-myZone .ct ul li a:hover, .area-customize.page-myZone .ct .btn-more a:hover, .list-text.btn .ct a:hover, .area-figure.page-figure .ft a:hover, .base-wrapper .simple-text.query .ft a:hover, .base-extend .simple-text.query .ft a:hover, .area-table.page-table.normal .ct .btn-more a:hover {
   color: #ffffff;
   border-radius: 3px;
 }
 /* line 776, ../sass/_base-function.scss */
 .area-customize.list .ft a:active, .area-customize.org-guide-search .ft a:active, .area-customize.page-img-figcaption-p .ft a:active, .area-customize.message .ft a:active, .group-list.default > .in > .ft a:active, .base-content .list-text.link .ft a:active,
 .base-module-area .group-list.slider > .in > .ft a:active, .list-text.slider .ft a:active,
-.group-list.message > .in > .ft a:active, .area-essay.message .ft a:active, .base-module-area .group-list.album > .in > .ft a:active, .base-page-area .group-list.album > .in > .ft a:active, .area-figure.album .ft a:active, .base-module-area .group-list.link > .in > .ft a:active, .base-page-area .group-list.link > .in > .ft a:active, .list-pic.link .ft a:active, .area-form.link .ft a:active, .base-module-area .area-essay.link .ft a:active, .base-page-area .area-essay.link .ft a:active, .area-customize.page-area-link .ft a:active, .area-customize.page-myZone .ft a:active, .list-text.rss .ft a:active, .area-customize.calendar .ft a:active, .area-form.epaper .ft a:active, .area-customize.video .ft a:active, .area-customize.news-card .ft a:active, .area-customize.icons-g2 .ft a:active, .area-form.page-search .ft a:active, .area-customize.page-search-area .ft a:active, .area-customize.page-search-noclassify .ft a:active, .group-list.page-block > .in > .ft a:active, .group-list.page-list > .in > .ft a:active, .list-pic.album .ft a:active, .area-essay.page-caption-label .ft a:active, .area-essay.page-caption-label-p .ft a:active, .area-essay.page-caption-p .ft a:active, .area-essay.page-essay .ft a:active, .area-essay.page-img-caption-label .ft a:active, .area-essay.page-img-caption-p .ft a:active, .area-figure.page-img-figcaption .ft a:active, .area-figure.page-img-figcaption-label .ft a:active, .area-figure.page-img-figcaption-p .ft a:active, .area-figure.page-img-label .ft a:active, .area-figure.page-img-label-p .ft a:active, .area-figure.page-img-p .ft a:active, .area-form.page-form .ft a:active, .area-form.submit .ft a:active, .area-customize.page-form .ft a:active, .area-customize.audio .ft a:active, .area-customize.iframe .ft a:active, .list-text.message .ft a:active, .group-list.page-list-pic > .in > .ft a:active, .group-list.sitemap > .in > .ft a:active, .list-text.sitemap .ft a:active, .area-table.page-table .ft a:active, .area-customize.page-table .ft a:active, .area-table.rwd-table .ft a:active, .list-text.page-list .ft a:active, .group-list.page-list-text > .in > .ft a:active, .area-customize.calendar .ct .label a:active, .sys-root a.btn:active, .sys-root input[type="submit"]:active, .sys-root input[type="reset"]:active, .sys-root input[type="button"]:active, .sys-root button:active, .newsBox > .in .news > .in .ft ul .more a:active, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active, .list-text.jump-tool .ct a:active, .list-multiple.page-click .ct a:active, .list-multiple.page-select .ct ul[data-index="1"] a:active, .list-multiple.page-select .ct ul[data-index="2"] a:active, .base-mobile .area-form.search .ft a:active, [data-js="false"] .base-wrapper .area-form.search .ft a:active, .group-list.message .ft ul .more a:active, .group-list.slider.life .ft ul .more a:active, .area-customize.page-area-link .ct li div:active, .area-customize.page-area-link .ct .btn-more a:active, .area-customize.page-myZone .ct ul li a:active, .area-customize.page-myZone .ct .btn-more a:active, .list-text.btn .ct a:active, .area-figure.page-figure .ft a:active, .base-wrapper .simple-text.query .ft a:active, .base-extend .simple-text.query .ft a:active, .area-table.page-table.normal .ct .btn-more a:active {
+.group-list.message > .in > .ft a:active, .area-essay.message .ft a:active, .base-module-area .group-list.album > .in > .ft a:active, .base-page-area .group-list.album > .in > .ft a:active, .area-figure.album .ft a:active, .base-module-area .group-list.link > .in > .ft a:active, .base-page-area .group-list.link > .in > .ft a:active, .list-pic.link .ft a:active, .area-form.link .ft a:active, .base-module-area .area-essay.link .ft a:active, .base-page-area .area-essay.link .ft a:active, .area-customize.page-area-link .ft a:active, .area-customize.page-myZone .ft a:active, .list-text.rss .ft a:active, .area-customize.calendar .ft a:active, .area-form.epaper .ft a:active, .area-customize.video .ft a:active, .area-customize.news-card .ft a:active, .area-customize.icons-g2 .ft a:active, .area-form.page-search .ft a:active, .area-customize.page-search-area .ft a:active, .area-customize.page-search-noclassify .ft a:active, .group-list.page-block > .in > .ft a:active, .group-list.page-list > .in > .ft a:active, .list-pic.album .ft a:active, .area-essay.page-caption-label .ft a:active, .area-essay.page-caption-label-p .ft a:active, .area-essay.page-caption-p .ft a:active, .area-essay.page-essay .ft a:active, .area-essay.page-img-caption-label .ft a:active, .area-essay.page-img-caption-p .ft a:active, .area-figure.page-img-figcaption .ft a:active, .area-figure.page-img-figcaption-label .ft a:active, .area-figure.page-img-figcaption-p .ft a:active, .area-figure.page-img-label .ft a:active, .area-figure.page-img-label-p .ft a:active, .area-figure.page-img-p .ft a:active, .area-form.page-form .ft a:active, .area-form.submit .ft a:active, .area-customize.page-form .ft a:active, .area-customize.audio .ft a:active, .area-customize.iframe .ft a:active, .list-text.message .ft a:active, .group-list.page-list-pic > .in > .ft a:active, .group-list.sitemap > .in > .ft a:active, .list-text.sitemap .ft a:active, .area-table.page-table .ft a:active, .area-customize.page-table .ft a:active, .area-table.rwd-table .ft a:active, .list-text.page-list .ft a:active, .group-list.page-list-text > .in > .ft a:active, .area-customize.calendar .ct .label a:active, .sys-root a.btn:active, .sys-root input[type="submit"]:active, .sys-root input[type="reset"]:active, .sys-root input[type="button"]:active, .sys-root button:active, .base-mobile .area-customize.backPC a:active, .newsBox > .in .news > .in .ft ul .more a:active, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active, .list-text.jump-tool .ct a:active, .list-multiple.page-click .ct a:active, .list-multiple.page-select .ct ul[data-index="1"] a:active, .list-multiple.page-select .ct ul[data-index="2"] a:active, .base-mobile .area-form.search .ft a:active, [data-js="false"] .base-wrapper .area-form.search .ft a:active, .group-list.message .ft ul .more a:active, .group-list.slider.life .ft ul .more a:active, .area-customize.page-area-link .ct li div:active, .area-customize.page-area-link .ct .btn-more a:active, .area-customize.page-myZone .ct ul li a:active, .area-customize.page-myZone .ct .btn-more a:active, .list-text.btn .ct a:active, .area-figure.page-figure .ft a:active, .base-wrapper .simple-text.query .ft a:active, .base-extend .simple-text.query .ft a:active, .area-table.page-table.normal .ct .btn-more a:active {
   box-shadow: 0px 5px 8px rgba(2, 2, 2, 0.3) inset;
 }
 /* line 779, ../sass/_base-function.scss */
 .area-customize.list .ft a:before, .area-customize.org-guide-search .ft a:before, .area-customize.page-img-figcaption-p .ft a:before, .area-customize.message .ft a:before, .group-list.default > .bg-drop-layout > .in > .ft a:before, .group-list.default > .in > .ft a:before, .base-content .list-text.link.bg-blue .ft a:before, .base-content .list-text.link.bg-deep-blue .ft a:before, .base-content .list-text.link .ft a:before, .base-module-area .group-list.slider > .bg-drop-layout > .in > .ft a:before,
 .base-module-area .group-list.slider > .in > .ft a:before, .list-text.slider .ft a:before, .group-list.message > .bg-drop-layout > .in > .ft a:before,
-.group-list.message > .in > .ft a:before, .area-essay.message .ft a:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a:before, .base-module-area .group-list.album > .in > .ft a:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a:before, .base-page-area .group-list.album > .in > .ft a:before, .area-figure.album .ft a:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a:before, .base-module-area .group-list.link > .in > .ft a:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a:before, .base-page-area .group-list.link > .in > .ft a:before, .list-pic.link .ft a:before, .area-form.link .ft a:before, .base-module-area .area-essay.link .ft a:before, .base-page-area .area-essay.link .ft a:before, .area-customize.page-area-link .ft a:before, .area-customize.page-myZone .ft a:before, .list-text.rss .ft a:before, .area-customize.calendar .ft a:before, .area-form.epaper .ft a:before, .area-customize.video .ft a:before, .area-customize.news-card .ft a:before, .area-customize.icons-g2 .ft a:before, .area-form.page-search .ft a:before, .area-customize.page-search-area .ft a:before, .area-customize.page-search-noclassify .ft a:before, .group-list.page-block > .bg-drop-layout > .in > .ft a:before, .group-list.page-block > .in > .ft a:before, .group-list.page-list > .bg-drop-layout > .in > .ft a:before, .group-list.page-list > .in > .ft a:before, .list-pic.album .ft a:before, .area-essay.page-caption-label .ft a:before, .area-essay.page-caption-label-p .ft a:before, .area-essay.page-caption-p .ft a:before, .area-essay.page-essay .ft a:before, .area-essay.page-img-caption-label .ft a:before, .area-essay.page-img-caption-p .ft a:before, .area-figure.page-img-figcaption .ft a:before, .area-figure.page-img-figcaption-label .ft a:before, .area-figure.page-img-figcaption-p .ft a:before, .area-figure.page-img-label .ft a:before, .area-figure.page-img-label-p .ft a:before, .area-figure.page-img-p .ft a:before, .area-form.page-form .ft a:before, .area-form.submit .ft a:before, .area-customize.page-form .ft a:before, .area-customize.audio .ft a:before, .area-customize.iframe .ft a:before, .list-text.message .ft a:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a:before, .group-list.page-list-pic > .in > .ft a:before, .group-list.sitemap > .bg-drop-layout > .in > .ft a:before, .group-list.sitemap > .in > .ft a:before, .list-text.sitemap .ft a:before, .area-table.page-table .ft a:before, .area-table.page-table.normal .ft a:before, .area-customize.page-table .ft a:before, .area-table.rwd-table .ft a:before, .list-text.page-list .ft a:before, .group-list.page-list-text > .bg-drop-layout > .in > .ft a:before, .group-list.page-list-text > .in > .ft a:before, .area-customize.calendar .ct .label a:before, .sys-root a.btn:before, .sys-root input[type="submit"]:before, .sys-root input[type="reset"]:before, .sys-root input[type="button"]:before, .sys-root button:before, .newsBox > .in .news > .in .ft ul .more a:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:before, .list-text.jump-tool .ct a:before, .list-multiple.page-click .ct a:before, .list-multiple.page-select .ct ul[data-index="1"] a:before, .list-multiple.page-select .ct ul[data-index="2"] a:before, .base-mobile .area-form.search .ft a:before, [data-js="false"] .base-mobile .area-form.search .ft a:before, [data-js="false"] .base-wrapper .area-form.search .ft a:before, .group-list.message .ft ul .more a:before, .group-list.slider.life .ft ul .more a:before, .area-customize.page-area-link .ct li div:before, .area-customize.page-area-link .ct .btn-more a:before, .area-customize.page-myZone .ct ul li a:before, .area-customize.page-myZone .ct .btn-more a:before, .list-text.btn .ct a:before, .area-figure.page-figure .ft a:before, .base-wrapper .simple-text.query .ft a:before, .base-extend .simple-text.query .ft a:before, .area-table.page-table.normal .ct .btn-more a:before {
+.group-list.message > .in > .ft a:before, .area-essay.message .ft a:before, .base-module-area .group-list.album > .bg-drop-layout > .in > .ft a:before, .base-module-area .group-list.album > .in > .ft a:before, .base-page-area .group-list.album > .bg-drop-layout > .in > .ft a:before, .base-page-area .group-list.album > .in > .ft a:before, .area-figure.album .ft a:before, .base-module-area .group-list.link > .bg-drop-layout > .in > .ft a:before, .base-module-area .group-list.link > .in > .ft a:before, .base-page-area .group-list.link > .bg-drop-layout > .in > .ft a:before, .base-page-area .group-list.link > .in > .ft a:before, .list-pic.link .ft a:before, .area-form.link .ft a:before, .base-module-area .area-essay.link .ft a:before, .base-page-area .area-essay.link .ft a:before, .area-customize.page-area-link .ft a:before, .area-customize.page-myZone .ft a:before, .list-text.rss .ft a:before, .area-customize.calendar .ft a:before, .area-form.epaper .ft a:before, .area-customize.video .ft a:before, .area-customize.news-card .ft a:before, .area-customize.icons-g2 .ft a:before, .area-form.page-search .ft a:before, .area-customize.page-search-area .ft a:before, .area-customize.page-search-noclassify .ft a:before, .group-list.page-block > .bg-drop-layout > .in > .ft a:before, .group-list.page-block > .in > .ft a:before, .group-list.page-list > .bg-drop-layout > .in > .ft a:before, .group-list.page-list > .in > .ft a:before, .list-pic.album .ft a:before, .area-essay.page-caption-label .ft a:before, .area-essay.page-caption-label-p .ft a:before, .area-essay.page-caption-p .ft a:before, .area-essay.page-essay .ft a:before, .area-essay.page-img-caption-label .ft a:before, .area-essay.page-img-caption-p .ft a:before, .area-figure.page-img-figcaption .ft a:before, .area-figure.page-img-figcaption-label .ft a:before, .area-figure.page-img-figcaption-p .ft a:before, .area-figure.page-img-label .ft a:before, .area-figure.page-img-label-p .ft a:before, .area-figure.page-img-p .ft a:before, .area-form.page-form .ft a:before, .area-form.submit .ft a:before, .area-customize.page-form .ft a:before, .area-customize.audio .ft a:before, .area-customize.iframe .ft a:before, .list-text.message .ft a:before, .group-list.page-list-pic > .bg-drop-layout > .in > .ft a:before, .group-list.page-list-pic > .in > .ft a:before, .group-list.sitemap > .bg-drop-layout > .in > .ft a:before, .group-list.sitemap > .in > .ft a:before, .list-text.sitemap .ft a:before, .area-table.page-table .ft a:before, .area-table.page-table.normal .ft a:before, .area-customize.page-table .ft a:before, .area-table.rwd-table .ft a:before, .list-text.page-list .ft a:before, .group-list.page-list-text > .bg-drop-layout > .in > .ft a:before, .group-list.page-list-text > .in > .ft a:before, .area-customize.calendar .ct .label a:before, .sys-root a.btn:before, .sys-root input[type="submit"]:before, .sys-root input[type="reset"]:before, .sys-root input[type="button"]:before, .sys-root button:before, .base-mobile .area-customize.backPC a:before, .newsBox > .in .news > .in .ft ul .more a:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:before, .list-text.jump-tool .ct a:before, .list-multiple.page-click .ct a:before, .list-multiple.page-select .ct ul[data-index="1"] a:before, .list-multiple.page-select .ct ul[data-index="2"] a:before, .base-mobile .area-form.search .ft a:before, [data-js="false"] .base-mobile .area-form.search .ft a:before, [data-js="false"] .base-wrapper .area-form.search .ft a:before, .group-list.message .ft ul .more a:before, .group-list.slider.life .ft ul .more a:before, .area-customize.page-area-link .ct li div:before, .area-customize.page-area-link .ct .btn-more a:before, .area-customize.page-myZone .ct ul li a:before, .area-customize.page-myZone .ct .btn-more a:before, .list-text.btn .ct a:before, .area-figure.page-figure .ft a:before, .base-wrapper .simple-text.query .ft a:before, .base-extend .simple-text.query .ft a:before, .area-table.page-table.normal .ct .btn-more a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -462,11 +464,11 @@
 /* line 800, ../sass/_base-function.scss */
 .area-customize.list .ft a:hover:before, .area-customize.org-guide-search .ft a:hover:before, .area-customize.page-img-figcaption-p .ft a:hover:before, .area-customize.message .ft a:hover:before, .group-list.default > .in > .ft a:hover:before, .base-content .list-text.link .ft a:hover:before,
 .base-module-area .group-list.slider > .in > .ft a:hover:before, .list-text.slider .ft a:hover:before,
-.group-list.message > .in > .ft a:hover:before, .area-essay.message .ft a:hover:before, .base-module-area .group-list.album > .in > .ft a:hover:before, .base-page-area .group-list.album > .in > .ft a:hover:before, .area-figure.album .ft a:hover:before, .base-module-area .group-list.link > .in > .ft a:hover:before, .base-page-area .group-list.link > .in > .ft a:hover:before, .list-pic.link .ft a:hover:before, .area-form.link .ft a:hover:before, .base-module-area .area-essay.link .ft a:hover:before, .base-page-area .area-essay.link .ft a:hover:before, .area-customize.page-area-link .ft a:hover:before, .area-customize.page-myZone .ft a:hover:before, .list-text.rss .ft a:hover:before, .area-customize.calendar .ft a:hover:before, .area-form.epaper .ft a:hover:before, .area-customize.video .ft a:hover:before, .area-customize.news-card .ft a:hover:before, .area-customize.icons-g2 .ft a:hover:before, .area-form.page-search .ft a:hover:before, .area-customize.page-search-area .ft a:hover:before, .area-customize.page-search-noclassify .ft a:hover:before, .group-list.page-block > .in > .ft a:hover:before, .group-list.page-list > .in > .ft a:hover:before, .list-pic.album .ft a:hover:before, .area-essay.page-caption-label .ft a:hover:before, .area-essay.page-caption-label-p .ft a:hover:before, .area-essay.page-caption-p .ft a:hover:before, .area-essay.page-essay .ft a:hover:before, .area-essay.page-img-caption-label .ft a:hover:before, .area-essay.page-img-caption-p .ft a:hover:before, .area-figure.page-img-figcaption .ft a:hover:before, .area-figure.page-img-figcaption-label .ft a:hover:before, .area-figure.page-img-figcaption-p .ft a:hover:before, .area-figure.page-img-label .ft a:hover:before, .area-figure.page-img-label-p .ft a:hover:before, .area-figure.page-img-p .ft a:hover:before, .area-form.page-form .ft a:hover:before, .area-form.submit .ft a:hover:before, .area-customize.page-form .ft a:hover:before, .area-customize.audio .ft a:hover:before, .area-customize.iframe .ft a:hover:before, .list-text.message .ft a:hover:before, .group-list.page-list-pic > .in > .ft a:hover:before, .group-list.sitemap > .in > .ft a:hover:before, .list-text.sitemap .ft a:hover:before, .area-table.page-table .ft a:hover:before, .area-customize.page-table .ft a:hover:before, .area-table.rwd-table .ft a:hover:before, .list-text.page-list .ft a:hover:before, .group-list.page-list-text > .in > .ft a:hover:before, .area-customize.calendar .ct .label a:hover:before, .sys-root a.btn:hover:before, .sys-root input[type="submit"]:hover:before, .sys-root input[type="reset"]:hover:before, .sys-root input[type="button"]:hover:before, .sys-root button:hover:before, .newsBox > .in .news > .in .ft ul .more a:hover:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:hover:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:hover:before, .list-text.jump-tool .ct a:hover:before, .list-multiple.page-click .ct a:hover:before, .list-multiple.page-select .ct ul[data-index="1"] a:hover:before, .list-multiple.page-select .ct ul[data-index="2"] a:hover:before, .base-mobile .area-form.search .ft a:hover:before, [data-js="false"] .base-wrapper .area-form.search .ft a:hover:before, .group-list.message .ft ul .more a:hover:before, .group-list.slider.life .ft ul .more a:hover:before, .area-customize.page-area-link .ct li div:hover:before, .area-customize.page-area-link .ct .btn-more a:hover:before, .area-customize.page-myZone .ct ul li a:hover:before, .area-customize.page-myZone .ct .btn-more a:hover:before, .list-text.btn .ct a:hover:before, .area-figure.page-figure .ft a:hover:before, .base-wrapper .simple-text.query .ft a:hover:before, .base-extend .simple-text.query .ft a:hover:before, .area-table.page-table.normal .ct .btn-more a:hover:before, .area-customize.list .ft a:focus:before, .area-customize.org-guide-search .ft a:focus:before, .area-customize.page-img-figcaption-p .ft a:focus:before, .area-customize.message .ft a:focus:before, .group-list.default > .in > .ft a:focus:before, .base-content .list-text.link .ft a:focus:before,
+.group-list.message > .in > .ft a:hover:before, .area-essay.message .ft a:hover:before, .base-module-area .group-list.album > .in > .ft a:hover:before, .base-page-area .group-list.album > .in > .ft a:hover:before, .area-figure.album .ft a:hover:before, .base-module-area .group-list.link > .in > .ft a:hover:before, .base-page-area .group-list.link > .in > .ft a:hover:before, .list-pic.link .ft a:hover:before, .area-form.link .ft a:hover:before, .base-module-area .area-essay.link .ft a:hover:before, .base-page-area .area-essay.link .ft a:hover:before, .area-customize.page-area-link .ft a:hover:before, .area-customize.page-myZone .ft a:hover:before, .list-text.rss .ft a:hover:before, .area-customize.calendar .ft a:hover:before, .area-form.epaper .ft a:hover:before, .area-customize.video .ft a:hover:before, .area-customize.news-card .ft a:hover:before, .area-customize.icons-g2 .ft a:hover:before, .area-form.page-search .ft a:hover:before, .area-customize.page-search-area .ft a:hover:before, .area-customize.page-search-noclassify .ft a:hover:before, .group-list.page-block > .in > .ft a:hover:before, .group-list.page-list > .in > .ft a:hover:before, .list-pic.album .ft a:hover:before, .area-essay.page-caption-label .ft a:hover:before, .area-essay.page-caption-label-p .ft a:hover:before, .area-essay.page-caption-p .ft a:hover:before, .area-essay.page-essay .ft a:hover:before, .area-essay.page-img-caption-label .ft a:hover:before, .area-essay.page-img-caption-p .ft a:hover:before, .area-figure.page-img-figcaption .ft a:hover:before, .area-figure.page-img-figcaption-label .ft a:hover:before, .area-figure.page-img-figcaption-p .ft a:hover:before, .area-figure.page-img-label .ft a:hover:before, .area-figure.page-img-label-p .ft a:hover:before, .area-figure.page-img-p .ft a:hover:before, .area-form.page-form .ft a:hover:before, .area-form.submit .ft a:hover:before, .area-customize.page-form .ft a:hover:before, .area-customize.audio .ft a:hover:before, .area-customize.iframe .ft a:hover:before, .list-text.message .ft a:hover:before, .group-list.page-list-pic > .in > .ft a:hover:before, .group-list.sitemap > .in > .ft a:hover:before, .list-text.sitemap .ft a:hover:before, .area-table.page-table .ft a:hover:before, .area-customize.page-table .ft a:hover:before, .area-table.rwd-table .ft a:hover:before, .list-text.page-list .ft a:hover:before, .group-list.page-list-text > .in > .ft a:hover:before, .area-customize.calendar .ct .label a:hover:before, .sys-root a.btn:hover:before, .sys-root input[type="submit"]:hover:before, .sys-root input[type="reset"]:hover:before, .sys-root input[type="button"]:hover:before, .sys-root button:hover:before, .base-mobile .area-customize.backPC a:hover:before, .newsBox > .in .news > .in .ft ul .more a:hover:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:hover:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:hover:before, .list-text.jump-tool .ct a:hover:before, .list-multiple.page-click .ct a:hover:before, .list-multiple.page-select .ct ul[data-index="1"] a:hover:before, .list-multiple.page-select .ct ul[data-index="2"] a:hover:before, .base-mobile .area-form.search .ft a:hover:before, [data-js="false"] .base-wrapper .area-form.search .ft a:hover:before, .group-list.message .ft ul .more a:hover:before, .group-list.slider.life .ft ul .more a:hover:before, .area-customize.page-area-link .ct li div:hover:before, .area-customize.page-area-link .ct .btn-more a:hover:before, .area-customize.page-myZone .ct ul li a:hover:before, .area-customize.page-myZone .ct .btn-more a:hover:before, .list-text.btn .ct a:hover:before, .area-figure.page-figure .ft a:hover:before, .base-wrapper .simple-text.query .ft a:hover:before, .base-extend .simple-text.query .ft a:hover:before, .area-table.page-table.normal .ct .btn-more a:hover:before, .area-customize.list .ft a:focus:before, .area-customize.org-guide-search .ft a:focus:before, .area-customize.page-img-figcaption-p .ft a:focus:before, .area-customize.message .ft a:focus:before, .group-list.default > .in > .ft a:focus:before, .base-content .list-text.link .ft a:focus:before,
 .base-module-area .group-list.slider > .in > .ft a:focus:before, .list-text.slider .ft a:focus:before,
-.group-list.message > .in > .ft a:focus:before, .area-essay.message .ft a:focus:before, .base-module-area .group-list.album > .in > .ft a:focus:before, .base-page-area .group-list.album > .in > .ft a:focus:before, .area-figure.album .ft a:focus:before, .base-module-area .group-list.link > .in > .ft a:focus:before, .base-page-area .group-list.link > .in > .ft a:focus:before, .list-pic.link .ft a:focus:before, .area-form.link .ft a:focus:before, .base-module-area .area-essay.link .ft a:focus:before, .base-page-area .area-essay.link .ft a:focus:before, .area-customize.page-area-link .ft a:focus:before, .area-customize.page-myZone .ft a:focus:before, .list-text.rss .ft a:focus:before, .area-customize.calendar .ft a:focus:before, .area-form.epaper .ft a:focus:before, .area-customize.video .ft a:focus:before, .area-customize.news-card .ft a:focus:before, .area-customize.icons-g2 .ft a:focus:before, .area-form.page-search .ft a:focus:before, .area-customize.page-search-area .ft a:focus:before, .area-customize.page-search-noclassify .ft a:focus:before, .group-list.page-block > .in > .ft a:focus:before, .group-list.page-list > .in > .ft a:focus:before, .list-pic.album .ft a:focus:before, .area-essay.page-caption-label .ft a:focus:before, .area-essay.page-caption-label-p .ft a:focus:before, .area-essay.page-caption-p .ft a:focus:before, .area-essay.page-essay .ft a:focus:before, .area-essay.page-img-caption-label .ft a:focus:before, .area-essay.page-img-caption-p .ft a:focus:before, .area-figure.page-img-figcaption .ft a:focus:before, .area-figure.page-img-figcaption-label .ft a:focus:before, .area-figure.page-img-figcaption-p .ft a:focus:before, .area-figure.page-img-label .ft a:focus:before, .area-figure.page-img-label-p .ft a:focus:before, .area-figure.page-img-p .ft a:focus:before, .area-form.page-form .ft a:focus:before, .area-form.submit .ft a:focus:before, .area-customize.page-form .ft a:focus:before, .area-customize.audio .ft a:focus:before, .area-customize.iframe .ft a:focus:before, .list-text.message .ft a:focus:before, .group-list.page-list-pic > .in > .ft a:focus:before, .group-list.sitemap > .in > .ft a:focus:before, .list-text.sitemap .ft a:focus:before, .area-table.page-table .ft a:focus:before, .area-customize.page-table .ft a:focus:before, .area-table.rwd-table .ft a:focus:before, .list-text.page-list .ft a:focus:before, .group-list.page-list-text > .in > .ft a:focus:before, .area-customize.calendar .ct .label a:focus:before, .sys-root a.btn:focus:before, .sys-root input[type="submit"]:focus:before, .sys-root input[type="reset"]:focus:before, .sys-root input[type="button"]:focus:before, .sys-root button:focus:before, .newsBox > .in .news > .in .ft ul .more a:focus:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:focus:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:focus:before, .list-text.jump-tool .ct a:focus:before, .list-multiple.page-click .ct a:focus:before, .list-multiple.page-select .ct ul[data-index="1"] a:focus:before, .list-multiple.page-select .ct ul[data-index="2"] a:focus:before, .base-mobile .area-form.search .ft a:focus:before, [data-js="false"] .base-wrapper .area-form.search .ft a:focus:before, .group-list.message .ft ul .more a:focus:before, .group-list.slider.life .ft ul .more a:focus:before, .area-customize.page-area-link .ct li div:focus:before, .area-customize.page-area-link .ct .btn-more a:focus:before, .area-customize.page-myZone .ct ul li a:focus:before, .area-customize.page-myZone .ct .btn-more a:focus:before, .list-text.btn .ct a:focus:before, .area-figure.page-figure .ft a:focus:before, .base-wrapper .simple-text.query .ft a:focus:before, .base-extend .simple-text.query .ft a:focus:before, .area-table.page-table.normal .ct .btn-more a:focus:before, .area-customize.list .ft a:active:before, .area-customize.org-guide-search .ft a:active:before, .area-customize.page-img-figcaption-p .ft a:active:before, .area-customize.message .ft a:active:before, .group-list.default > .in > .ft a:active:before, .base-content .list-text.link .ft a:active:before,
+.group-list.message > .in > .ft a:focus:before, .area-essay.message .ft a:focus:before, .base-module-area .group-list.album > .in > .ft a:focus:before, .base-page-area .group-list.album > .in > .ft a:focus:before, .area-figure.album .ft a:focus:before, .base-module-area .group-list.link > .in > .ft a:focus:before, .base-page-area .group-list.link > .in > .ft a:focus:before, .list-pic.link .ft a:focus:before, .area-form.link .ft a:focus:before, .base-module-area .area-essay.link .ft a:focus:before, .base-page-area .area-essay.link .ft a:focus:before, .area-customize.page-area-link .ft a:focus:before, .area-customize.page-myZone .ft a:focus:before, .list-text.rss .ft a:focus:before, .area-customize.calendar .ft a:focus:before, .area-form.epaper .ft a:focus:before, .area-customize.video .ft a:focus:before, .area-customize.news-card .ft a:focus:before, .area-customize.icons-g2 .ft a:focus:before, .area-form.page-search .ft a:focus:before, .area-customize.page-search-area .ft a:focus:before, .area-customize.page-search-noclassify .ft a:focus:before, .group-list.page-block > .in > .ft a:focus:before, .group-list.page-list > .in > .ft a:focus:before, .list-pic.album .ft a:focus:before, .area-essay.page-caption-label .ft a:focus:before, .area-essay.page-caption-label-p .ft a:focus:before, .area-essay.page-caption-p .ft a:focus:before, .area-essay.page-essay .ft a:focus:before, .area-essay.page-img-caption-label .ft a:focus:before, .area-essay.page-img-caption-p .ft a:focus:before, .area-figure.page-img-figcaption .ft a:focus:before, .area-figure.page-img-figcaption-label .ft a:focus:before, .area-figure.page-img-figcaption-p .ft a:focus:before, .area-figure.page-img-label .ft a:focus:before, .area-figure.page-img-label-p .ft a:focus:before, .area-figure.page-img-p .ft a:focus:before, .area-form.page-form .ft a:focus:before, .area-form.submit .ft a:focus:before, .area-customize.page-form .ft a:focus:before, .area-customize.audio .ft a:focus:before, .area-customize.iframe .ft a:focus:before, .list-text.message .ft a:focus:before, .group-list.page-list-pic > .in > .ft a:focus:before, .group-list.sitemap > .in > .ft a:focus:before, .list-text.sitemap .ft a:focus:before, .area-table.page-table .ft a:focus:before, .area-customize.page-table .ft a:focus:before, .area-table.rwd-table .ft a:focus:before, .list-text.page-list .ft a:focus:before, .group-list.page-list-text > .in > .ft a:focus:before, .area-customize.calendar .ct .label a:focus:before, .sys-root a.btn:focus:before, .sys-root input[type="submit"]:focus:before, .sys-root input[type="reset"]:focus:before, .sys-root input[type="button"]:focus:before, .sys-root button:focus:before, .base-mobile .area-customize.backPC a:focus:before, .newsBox > .in .news > .in .ft ul .more a:focus:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:focus:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:focus:before, .list-text.jump-tool .ct a:focus:before, .list-multiple.page-click .ct a:focus:before, .list-multiple.page-select .ct ul[data-index="1"] a:focus:before, .list-multiple.page-select .ct ul[data-index="2"] a:focus:before, .base-mobile .area-form.search .ft a:focus:before, [data-js="false"] .base-wrapper .area-form.search .ft a:focus:before, .group-list.message .ft ul .more a:focus:before, .group-list.slider.life .ft ul .more a:focus:before, .area-customize.page-area-link .ct li div:focus:before, .area-customize.page-area-link .ct .btn-more a:focus:before, .area-customize.page-myZone .ct ul li a:focus:before, .area-customize.page-myZone .ct .btn-more a:focus:before, .list-text.btn .ct a:focus:before, .area-figure.page-figure .ft a:focus:before, .base-wrapper .simple-text.query .ft a:focus:before, .base-extend .simple-text.query .ft a:focus:before, .area-table.page-table.normal .ct .btn-more a:focus:before, .area-customize.list .ft a:active:before, .area-customize.org-guide-search .ft a:active:before, .area-customize.page-img-figcaption-p .ft a:active:before, .area-customize.message .ft a:active:before, .group-list.default > .in > .ft a:active:before, .base-content .list-text.link .ft a:active:before,
 .base-module-area .group-list.slider > .in > .ft a:active:before, .list-text.slider .ft a:active:before,
-.group-list.message > .in > .ft a:active:before, .area-essay.message .ft a:active:before, .base-module-area .group-list.album > .in > .ft a:active:before, .base-page-area .group-list.album > .in > .ft a:active:before, .area-figure.album .ft a:active:before, .base-module-area .group-list.link > .in > .ft a:active:before, .base-page-area .group-list.link > .in > .ft a:active:before, .list-pic.link .ft a:active:before, .area-form.link .ft a:active:before, .base-module-area .area-essay.link .ft a:active:before, .base-page-area .area-essay.link .ft a:active:before, .area-customize.page-area-link .ft a:active:before, .area-customize.page-myZone .ft a:active:before, .list-text.rss .ft a:active:before, .area-customize.calendar .ft a:active:before, .area-form.epaper .ft a:active:before, .area-customize.video .ft a:active:before, .area-customize.news-card .ft a:active:before, .area-customize.icons-g2 .ft a:active:before, .area-form.page-search .ft a:active:before, .area-customize.page-search-area .ft a:active:before, .area-customize.page-search-noclassify .ft a:active:before, .group-list.page-block > .in > .ft a:active:before, .group-list.page-list > .in > .ft a:active:before, .list-pic.album .ft a:active:before, .area-essay.page-caption-label .ft a:active:before, .area-essay.page-caption-label-p .ft a:active:before, .area-essay.page-caption-p .ft a:active:before, .area-essay.page-essay .ft a:active:before, .area-essay.page-img-caption-label .ft a:active:before, .area-essay.page-img-caption-p .ft a:active:before, .area-figure.page-img-figcaption .ft a:active:before, .area-figure.page-img-figcaption-label .ft a:active:before, .area-figure.page-img-figcaption-p .ft a:active:before, .area-figure.page-img-label .ft a:active:before, .area-figure.page-img-label-p .ft a:active:before, .area-figure.page-img-p .ft a:active:before, .area-form.page-form .ft a:active:before, .area-form.submit .ft a:active:before, .area-customize.page-form .ft a:active:before, .area-customize.audio .ft a:active:before, .area-customize.iframe .ft a:active:before, .list-text.message .ft a:active:before, .group-list.page-list-pic > .in > .ft a:active:before, .group-list.sitemap > .in > .ft a:active:before, .list-text.sitemap .ft a:active:before, .area-table.page-table .ft a:active:before, .area-customize.page-table .ft a:active:before, .area-table.rwd-table .ft a:active:before, .list-text.page-list .ft a:active:before, .group-list.page-list-text > .in > .ft a:active:before, .area-customize.calendar .ct .label a:active:before, .sys-root a.btn:active:before, .sys-root input[type="submit"]:active:before, .sys-root input[type="reset"]:active:before, .sys-root input[type="button"]:active:before, .sys-root button:active:before, .newsBox > .in .news > .in .ft ul .more a:active:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active:before, .list-text.jump-tool .ct a:active:before, .list-multiple.page-click .ct a:active:before, .list-multiple.page-select .ct ul[data-index="1"] a:active:before, .list-multiple.page-select .ct ul[data-index="2"] a:active:before, .base-mobile .area-form.search .ft a:active:before, [data-js="false"] .base-wrapper .area-form.search .ft a:active:before, .group-list.message .ft ul .more a:active:before, .group-list.slider.life .ft ul .more a:active:before, .area-customize.page-area-link .ct li div:active:before, .area-customize.page-area-link .ct .btn-more a:active:before, .area-customize.page-myZone .ct ul li a:active:before, .area-customize.page-myZone .ct .btn-more a:active:before, .list-text.btn .ct a:active:before, .area-figure.page-figure .ft a:active:before, .base-wrapper .simple-text.query .ft a:active:before, .base-extend .simple-text.query .ft a:active:before, .area-table.page-table.normal .ct .btn-more a:active:before {
+.group-list.message > .in > .ft a:active:before, .area-essay.message .ft a:active:before, .base-module-area .group-list.album > .in > .ft a:active:before, .base-page-area .group-list.album > .in > .ft a:active:before, .area-figure.album .ft a:active:before, .base-module-area .group-list.link > .in > .ft a:active:before, .base-page-area .group-list.link > .in > .ft a:active:before, .list-pic.link .ft a:active:before, .area-form.link .ft a:active:before, .base-module-area .area-essay.link .ft a:active:before, .base-page-area .area-essay.link .ft a:active:before, .area-customize.page-area-link .ft a:active:before, .area-customize.page-myZone .ft a:active:before, .list-text.rss .ft a:active:before, .area-customize.calendar .ft a:active:before, .area-form.epaper .ft a:active:before, .area-customize.video .ft a:active:before, .area-customize.news-card .ft a:active:before, .area-customize.icons-g2 .ft a:active:before, .area-form.page-search .ft a:active:before, .area-customize.page-search-area .ft a:active:before, .area-customize.page-search-noclassify .ft a:active:before, .group-list.page-block > .in > .ft a:active:before, .group-list.page-list > .in > .ft a:active:before, .list-pic.album .ft a:active:before, .area-essay.page-caption-label .ft a:active:before, .area-essay.page-caption-label-p .ft a:active:before, .area-essay.page-caption-p .ft a:active:before, .area-essay.page-essay .ft a:active:before, .area-essay.page-img-caption-label .ft a:active:before, .area-essay.page-img-caption-p .ft a:active:before, .area-figure.page-img-figcaption .ft a:active:before, .area-figure.page-img-figcaption-label .ft a:active:before, .area-figure.page-img-figcaption-p .ft a:active:before, .area-figure.page-img-label .ft a:active:before, .area-figure.page-img-label-p .ft a:active:before, .area-figure.page-img-p .ft a:active:before, .area-form.page-form .ft a:active:before, .area-form.submit .ft a:active:before, .area-customize.page-form .ft a:active:before, .area-customize.audio .ft a:active:before, .area-customize.iframe .ft a:active:before, .list-text.message .ft a:active:before, .group-list.page-list-pic > .in > .ft a:active:before, .group-list.sitemap > .in > .ft a:active:before, .list-text.sitemap .ft a:active:before, .area-table.page-table .ft a:active:before, .area-customize.page-table .ft a:active:before, .area-table.rwd-table .ft a:active:before, .list-text.page-list .ft a:active:before, .group-list.page-list-text > .in > .ft a:active:before, .area-customize.calendar .ct .label a:active:before, .sys-root a.btn:active:before, .sys-root input[type="submit"]:active:before, .sys-root input[type="reset"]:active:before, .sys-root input[type="button"]:active:before, .sys-root button:active:before, .base-mobile .area-customize.backPC a:active:before, .newsBox > .in .news > .in .ft ul .more a:active:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active:before, .list-text.jump-tool .ct a:active:before, .list-multiple.page-click .ct a:active:before, .list-multiple.page-select .ct ul[data-index="1"] a:active:before, .list-multiple.page-select .ct ul[data-index="2"] a:active:before, .base-mobile .area-form.search .ft a:active:before, [data-js="false"] .base-wrapper .area-form.search .ft a:active:before, .group-list.message .ft ul .more a:active:before, .group-list.slider.life .ft ul .more a:active:before, .area-customize.page-area-link .ct li div:active:before, .area-customize.page-area-link .ct .btn-more a:active:before, .area-customize.page-myZone .ct ul li a:active:before, .area-customize.page-myZone .ct .btn-more a:active:before, .list-text.btn .ct a:active:before, .area-figure.page-figure .ft a:active:before, .base-wrapper .simple-text.query .ft a:active:before, .base-extend .simple-text.query .ft a:active:before, .area-table.page-table.normal .ct .btn-more a:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   border-radius: 3px;
@@ -474,7 +476,7 @@
 /* line 807, ../sass/_base-function.scss */
 .area-customize.list .ft a:active:before, .area-customize.org-guide-search .ft a:active:before, .area-customize.page-img-figcaption-p .ft a:active:before, .area-customize.message .ft a:active:before, .group-list.default > .in > .ft a:active:before, .base-content .list-text.link .ft a:active:before,
 .base-module-area .group-list.slider > .in > .ft a:active:before, .list-text.slider .ft a:active:before,
-.group-list.message > .in > .ft a:active:before, .area-essay.message .ft a:active:before, .base-module-area .group-list.album > .in > .ft a:active:before, .base-page-area .group-list.album > .in > .ft a:active:before, .area-figure.album .ft a:active:before, .base-module-area .group-list.link > .in > .ft a:active:before, .base-page-area .group-list.link > .in > .ft a:active:before, .list-pic.link .ft a:active:before, .area-form.link .ft a:active:before, .base-module-area .area-essay.link .ft a:active:before, .base-page-area .area-essay.link .ft a:active:before, .area-customize.page-area-link .ft a:active:before, .area-customize.page-myZone .ft a:active:before, .list-text.rss .ft a:active:before, .area-customize.calendar .ft a:active:before, .area-form.epaper .ft a:active:before, .area-customize.video .ft a:active:before, .area-customize.news-card .ft a:active:before, .area-customize.icons-g2 .ft a:active:before, .area-form.page-search .ft a:active:before, .area-customize.page-search-area .ft a:active:before, .area-customize.page-search-noclassify .ft a:active:before, .group-list.page-block > .in > .ft a:active:before, .group-list.page-list > .in > .ft a:active:before, .list-pic.album .ft a:active:before, .area-essay.page-caption-label .ft a:active:before, .area-essay.page-caption-label-p .ft a:active:before, .area-essay.page-caption-p .ft a:active:before, .area-essay.page-essay .ft a:active:before, .area-essay.page-img-caption-label .ft a:active:before, .area-essay.page-img-caption-p .ft a:active:before, .area-figure.page-img-figcaption .ft a:active:before, .area-figure.page-img-figcaption-label .ft a:active:before, .area-figure.page-img-figcaption-p .ft a:active:before, .area-figure.page-img-label .ft a:active:before, .area-figure.page-img-label-p .ft a:active:before, .area-figure.page-img-p .ft a:active:before, .area-form.page-form .ft a:active:before, .area-form.submit .ft a:active:before, .area-customize.page-form .ft a:active:before, .area-customize.audio .ft a:active:before, .area-customize.iframe .ft a:active:before, .list-text.message .ft a:active:before, .group-list.page-list-pic > .in > .ft a:active:before, .group-list.sitemap > .in > .ft a:active:before, .list-text.sitemap .ft a:active:before, .area-table.page-table .ft a:active:before, .area-customize.page-table .ft a:active:before, .area-table.rwd-table .ft a:active:before, .list-text.page-list .ft a:active:before, .group-list.page-list-text > .in > .ft a:active:before, .area-customize.calendar .ct .label a:active:before, .sys-root a.btn:active:before, .sys-root input[type="submit"]:active:before, .sys-root input[type="reset"]:active:before, .sys-root input[type="button"]:active:before, .sys-root button:active:before, .newsBox > .in .news > .in .ft ul .more a:active:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active:before, .list-text.jump-tool .ct a:active:before, .list-multiple.page-click .ct a:active:before, .list-multiple.page-select .ct ul[data-index="1"] a:active:before, .list-multiple.page-select .ct ul[data-index="2"] a:active:before, .base-mobile .area-form.search .ft a:active:before, [data-js="false"] .base-wrapper .area-form.search .ft a:active:before, .group-list.message .ft ul .more a:active:before, .group-list.slider.life .ft ul .more a:active:before, .area-customize.page-area-link .ct li div:active:before, .area-customize.page-area-link .ct .btn-more a:active:before, .area-customize.page-myZone .ct ul li a:active:before, .area-customize.page-myZone .ct .btn-more a:active:before, .list-text.btn .ct a:active:before, .area-figure.page-figure .ft a:active:before, .base-wrapper .simple-text.query .ft a:active:before, .base-extend .simple-text.query .ft a:active:before, .area-table.page-table.normal .ct .btn-more a:active:before {
+.group-list.message > .in > .ft a:active:before, .area-essay.message .ft a:active:before, .base-module-area .group-list.album > .in > .ft a:active:before, .base-page-area .group-list.album > .in > .ft a:active:before, .area-figure.album .ft a:active:before, .base-module-area .group-list.link > .in > .ft a:active:before, .base-page-area .group-list.link > .in > .ft a:active:before, .list-pic.link .ft a:active:before, .area-form.link .ft a:active:before, .base-module-area .area-essay.link .ft a:active:before, .base-page-area .area-essay.link .ft a:active:before, .area-customize.page-area-link .ft a:active:before, .area-customize.page-myZone .ft a:active:before, .list-text.rss .ft a:active:before, .area-customize.calendar .ft a:active:before, .area-form.epaper .ft a:active:before, .area-customize.video .ft a:active:before, .area-customize.news-card .ft a:active:before, .area-customize.icons-g2 .ft a:active:before, .area-form.page-search .ft a:active:before, .area-customize.page-search-area .ft a:active:before, .area-customize.page-search-noclassify .ft a:active:before, .group-list.page-block > .in > .ft a:active:before, .group-list.page-list > .in > .ft a:active:before, .list-pic.album .ft a:active:before, .area-essay.page-caption-label .ft a:active:before, .area-essay.page-caption-label-p .ft a:active:before, .area-essay.page-caption-p .ft a:active:before, .area-essay.page-essay .ft a:active:before, .area-essay.page-img-caption-label .ft a:active:before, .area-essay.page-img-caption-p .ft a:active:before, .area-figure.page-img-figcaption .ft a:active:before, .area-figure.page-img-figcaption-label .ft a:active:before, .area-figure.page-img-figcaption-p .ft a:active:before, .area-figure.page-img-label .ft a:active:before, .area-figure.page-img-label-p .ft a:active:before, .area-figure.page-img-p .ft a:active:before, .area-form.page-form .ft a:active:before, .area-form.submit .ft a:active:before, .area-customize.page-form .ft a:active:before, .area-customize.audio .ft a:active:before, .area-customize.iframe .ft a:active:before, .list-text.message .ft a:active:before, .group-list.page-list-pic > .in > .ft a:active:before, .group-list.sitemap > .in > .ft a:active:before, .list-text.sitemap .ft a:active:before, .area-table.page-table .ft a:active:before, .area-customize.page-table .ft a:active:before, .area-table.rwd-table .ft a:active:before, .list-text.page-list .ft a:active:before, .group-list.page-list-text > .in > .ft a:active:before, .area-customize.calendar .ct .label a:active:before, .sys-root a.btn:active:before, .sys-root input[type="submit"]:active:before, .sys-root input[type="reset"]:active:before, .sys-root input[type="button"]:active:before, .sys-root button:active:before, .base-mobile .area-customize.backPC a:active:before, .newsBox > .in .news > .in .ft ul .more a:active:before, .focus > .in > .ct > .in .group-list.slider .ft ul .more a:active:before, .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a:active:before, .list-text.jump-tool .ct a:active:before, .list-multiple.page-click .ct a:active:before, .list-multiple.page-select .ct ul[data-index="1"] a:active:before, .list-multiple.page-select .ct ul[data-index="2"] a:active:before, .base-mobile .area-form.search .ft a:active:before, [data-js="false"] .base-wrapper .area-form.search .ft a:active:before, .group-list.message .ft ul .more a:active:before, .group-list.slider.life .ft ul .more a:active:before, .area-customize.page-area-link .ct li div:active:before, .area-customize.page-area-link .ct .btn-more a:active:before, .area-customize.page-myZone .ct ul li a:active:before, .area-customize.page-myZone .ct .btn-more a:active:before, .list-text.btn .ct a:active:before, .area-figure.page-figure .ft a:active:before, .base-wrapper .simple-text.query .ft a:active:before, .base-extend .simple-text.query .ft a:active:before, .area-table.page-table.normal .ct .btn-more a:active:before {
   box-shadow: 0px 5px 8px rgba(2, 2, 2, 0.3) inset;
 }
 
@@ -2234,6 +2236,26 @@ th {
 .base-mobile > .in > .hd {
   display: none;
 }
+/* line 62, ../sass/_base-mobile.scss */
+.base-mobile .area-customize.member {
+  width: 100%;
+  text-align: center;
+}
+/* line 68, ../sass/_base-mobile.scss */
+.base-mobile .area-customize.member > .in > .ct > .in ul {
+  padding: 0;
+}
+/* line 76, ../sass/_base-mobile.scss */
+.base-mobile .area-customize.backPC {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* line 80, ../sass/_base-mobile.scss */
+.base-mobile .area-customize.backPC a {
+  padding: 10px 34px;
+  font-size: 1em;
+}
 
 /* line 5, ../sass/_base-extend.scss */
 .base-extend {
@@ -3001,39 +3023,39 @@ th {
   overflow: hidden;
 }
 
-/* line 135, ../sass/_base-layout.scss */
+/* line 133, ../sass/_base-layout.scss */
 .area-customize.list .ct {
   /*i*/
   /*btn*/
 }
-/* line 138, ../sass/_base-layout.scss */
+/* line 136, ../sass/_base-layout.scss */
 .area-customize.list .ct li {
   border-bottom: 1px dotted #ccc;
 }
-/* line 140, ../sass/_base-layout.scss */
+/* line 138, ../sass/_base-layout.scss */
 .area-customize.list .ct li .list-left {
   float: left;
   width: 70%;
 }
 @media (max-width: 1000px) {
-  /* line 140, ../sass/_base-layout.scss */
+  /* line 138, ../sass/_base-layout.scss */
   .area-customize.list .ct li .list-left {
     width: 50%;
   }
 }
 @media (max-width: 560px) {
-  /* line 140, ../sass/_base-layout.scss */
+  /* line 138, ../sass/_base-layout.scss */
   .area-customize.list .ct li .list-left {
     float: none;
     width: 100%;
   }
 }
-/* line 150, ../sass/_base-layout.scss */
+/* line 148, ../sass/_base-layout.scss */
 .area-customize.list .ct li .list-left i.mark {
   margin-right: 20px;
   position: relative;
 }
-/* line 153, ../sass/_base-layout.scss */
+/* line 151, ../sass/_base-layout.scss */
 .area-customize.list .ct li .list-left i.mark:after {
   content: "▪";
   display: inline-block;
@@ -3042,156 +3064,156 @@ th {
   color: #292929;
   vertical-align: middle;
 }
-/* line 163, ../sass/_base-layout.scss */
+/* line 161, ../sass/_base-layout.scss */
 .area-customize.list .ct li .list-right {
   overflow: hidden;
   padding: 8px;
   box-sizing: border-box;
 }
-/* line 168, ../sass/_base-layout.scss */
+/* line 166, ../sass/_base-layout.scss */
 .area-customize.list .ct li + li {
   margin-top: 5px;
 }
-/* line 171, ../sass/_base-layout.scss */
+/* line 169, ../sass/_base-layout.scss */
 .area-customize.list .ct li:hover .delete-btn {
   display: block;
 }
-/* line 181, ../sass/_base-layout.scss */
+/* line 179, ../sass/_base-layout.scss */
 .area-customize.list .ct .mark {
   border-radius: 3px;
 }
-/* line 186, ../sass/_base-layout.scss */
+/* line 184, ../sass/_base-layout.scss */
 .area-customize.list .ct .delete-btn {
   display: none;
 }
 
-/* line 209, ../sass/_base-layout.scss */
+/* line 205, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .hd h4 {
   display: none;
 }
-/* line 216, ../sass/_base-layout.scss */
+/* line 212, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct > .in {
   background-color: #e4e4e4;
 }
-/* line 222, ../sass/_base-layout.scss */
+/* line 218, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left {
   overflow: hidden;
   padding: 20px 5px 20px 15px;
 }
 @media (max-width: 768px) {
-  /* line 222, ../sass/_base-layout.scss */
+  /* line 218, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-left {
     padding-right: 15px;
   }
 }
-/* line 228, ../sass/_base-layout.scss */
+/* line 224, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left table {
   width: 100%;
 }
-/* line 232, ../sass/_base-layout.scss */
+/* line 228, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left thead tr {
   position: relative;
 }
 @media (max-width: 768px) {
-  /* line 232, ../sass/_base-layout.scss */
+  /* line 228, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-left thead tr {
     width: 100%;
   }
 }
-/* line 239, ../sass/_base-layout.scss */
+/* line 235, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left thead tr th {
   font-size: 1.1em;
   font-weight: bold;
   color: #5aa03e;
 }
 @media (max-width: 768px) {
-  /* line 239, ../sass/_base-layout.scss */
+  /* line 235, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-left thead tr th {
     width: 100%;
   }
 }
-/* line 248, ../sass/_base-layout.scss */
+/* line 244, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left thead th,
 .area-customize.org-guide-search .ct .org-guide-search-left thead td {
   border: 0px;
 }
-/* line 254, ../sass/_base-layout.scss */
+/* line 250, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tbody tr {
   margin-bottom: 15px;
   background-color: #ffffff;
   display: block;
 }
-/* line 258, ../sass/_base-layout.scss */
+/* line 254, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tbody tr th {
   background-color: #5aa03e;
   color: #ffffff;
   text-align: right;
 }
-/* line 266, ../sass/_base-layout.scss */
+/* line 262, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tbody th a,
 .area-customize.org-guide-search .ct .org-guide-search-left tbody td a {
   color: blue;
   word-break: break-all;
 }
-/* line 272, ../sass/_base-layout.scss */
+/* line 268, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tbody td span {
   padding-left: 15px;
 }
-/* line 278, ../sass/_base-layout.scss */
+/* line 274, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tfoot th,
 .area-customize.org-guide-search .ct .org-guide-search-left tfoot td {
   padding: 8px;
 }
-/* line 282, ../sass/_base-layout.scss */
+/* line 278, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tfoot p {
   background-color: #e4e4e4;
 }
-/* line 284, ../sass/_base-layout.scss */
+/* line 280, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tfoot p span {
   display: inline-block;
   background-color: transparent;
 }
 @media (max-width: 560px) {
-  /* line 288, ../sass/_base-layout.scss */
+  /* line 284, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-left tfoot p span:first-child {
     display: block;
   }
 }
-/* line 293, ../sass/_base-layout.scss */
+/* line 289, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tfoot p span img {
   margin: 0 5px 0 0;
 }
-/* line 301, ../sass/_base-layout.scss */
+/* line 297, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left tr:last-child td {
   background-color: transparent;
   padding: 0px;
 }
-/* line 307, ../sass/_base-layout.scss */
+/* line 303, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left th {
   text-align: left;
   font-weight: bold;
   background-color: #5aa03e;
   color: #ffffff;
 }
-/* line 313, ../sass/_base-layout.scss */
+/* line 309, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td {
   background-color: #ffffff;
   position: relative;
 }
-/* line 316, ../sass/_base-layout.scss */
+/* line 312, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool {
   padding-left: 0px;
   margin: 10px 0 0 0;
   list-style-type: none;
 }
 @media (max-width: 560px) {
-  /* line 316, ../sass/_base-layout.scss */
+  /* line 312, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool {
     position: static;
     left: 0;
   }
 }
-/* line 327, ../sass/_base-layout.scss */
+/* line 323, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool li {
   font-size: 0.8em;
   font-weight: normal;
@@ -3199,15 +3221,15 @@ th {
   padding-right: 5px;
   border-radius: 3px;
 }
-/* line 334, ../sass/_base-layout.scss */
+/* line 330, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool li:nth-child(1) a {
   background: url("../images/org-fb-btn.png") no-repeat center;
 }
-/* line 339, ../sass/_base-layout.scss */
+/* line 335, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool li:nth-child(2) a {
   background: url("../images/org-mail-btn.png") no-repeat center;
 }
-/* line 343, ../sass/_base-layout.scss */
+/* line 339, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left td .share-tool li a {
   display: block;
   text-decoration: none;
@@ -3215,40 +3237,40 @@ th {
   width: 24px;
   height: 24px;
 }
-/* line 353, ../sass/_base-layout.scss */
+/* line 349, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left span {
   display: block;
   padding: 8px;
 }
-/* line 357, ../sass/_base-layout.scss */
+/* line 353, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left a {
   text-decoration: underline;
 }
-/* line 359, ../sass/_base-layout.scss */
+/* line 355, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-left a:hover {
   text-decoration: none;
 }
-/* line 364, ../sass/_base-layout.scss */
+/* line 360, ../sass/_base-layout.scss */
 .area-customize.org-guide-search .ct .org-guide-search-right {
   float: right;
   padding: 20px 15px;
 }
 @media (max-width: 768px) {
-  /* line 364, ../sass/_base-layout.scss */
+  /* line 360, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-right {
     float: none;
   }
-  /* line 369, ../sass/_base-layout.scss */
+  /* line 365, ../sass/_base-layout.scss */
   .area-customize.org-guide-search .ct .org-guide-search-right #googlemap {
     width: 100%;
   }
 }
 
-/* line 396, ../sass/_base-layout.scss */
+/* line 390, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct {
   /*a*/
 }
-/* line 400, ../sass/_base-layout.scss */
+/* line 394, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .div {
   position: relative;
   border-bottom: 1px dotted #ccc;
@@ -3256,16 +3278,16 @@ th {
   padding-right: 120px;
 }
 @media (max-width: 560px) {
-  /* line 400, ../sass/_base-layout.scss */
+  /* line 394, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .div {
     padding-right: 0px;
   }
 }
-/* line 409, ../sass/_base-layout.scss */
+/* line 402, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .div:hover {
   background-color: #e4e4e4;
 }
-/* line 414, ../sass/_base-layout.scss */
+/* line 407, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .img span {
   position: absolute;
   display: block;
@@ -3276,48 +3298,48 @@ th {
   margin: 10px 0;
 }
 @media (max-width: 560px) {
-  /* line 414, ../sass/_base-layout.scss */
+  /* line 407, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .img span {
     position: static;
     width: auto;
   }
 }
-/* line 428, ../sass/_base-layout.scss */
+/* line 421, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .img img {
   display: none;
 }
 @media (max-width: 560px) {
-  /* line 428, ../sass/_base-layout.scss */
+  /* line 421, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .img img {
     display: block;
     width: 100%;
   }
 }
-/* line 436, ../sass/_base-layout.scss */
+/* line 429, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .essay {
   padding: 15px;
   padding-left: 165px;
 }
 @media (max-width: 560px) {
-  /* line 436, ../sass/_base-layout.scss */
+  /* line 429, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .essay {
     padding-left: 15px;
   }
 }
-/* line 446, ../sass/_base-layout.scss */
+/* line 439, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool {
   position: absolute;
   top: 10px;
   right: 20px;
 }
 @media (max-width: 560px) {
-  /* line 446, ../sass/_base-layout.scss */
+  /* line 439, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .page-list-tool {
     position: static;
     margin: 10px 0px;
   }
 }
-/* line 454, ../sass/_base-layout.scss */
+/* line 447, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .collect-btn {
   background-color: #ed7100;
   padding: 3px 5px;
@@ -3329,27 +3351,27 @@ th {
   text-align: center;
 }
 @media (max-width: 560px) {
-  /* line 454, ../sass/_base-layout.scss */
+  /* line 447, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .page-list-tool .collect-btn {
     margin-bottom: 0px;
   }
 }
-/* line 466, ../sass/_base-layout.scss */
+/* line 459, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .collect-btn span {
   display: inline-block;
   padding-left: 5px;
   font-size: 0.8em;
 }
-/* line 471, ../sass/_base-layout.scss */
+/* line 464, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .collect-btn:hover {
   background-color: #ff7e07;
 }
-/* line 474, ../sass/_base-layout.scss */
+/* line 467, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .collect-btn:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 478, ../sass/_base-layout.scss */
+/* line 471, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .countdown {
   background: #5aa03e;
   padding: 3px 5px;
@@ -3359,17 +3381,17 @@ th {
   min-width: 75px;
 }
 @media (max-width: 560px) {
-  /* line 478, ../sass/_base-layout.scss */
+  /* line 471, ../sass/_base-layout.scss */
   .area-customize.page-img-figcaption-p .ct .page-list-tool .countdown {
     display: inline-block;
   }
 }
-/* line 488, ../sass/_base-layout.scss */
+/* line 481, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .countdown > span {
   display: block;
   font-size: 0.8em;
 }
-/* line 491, ../sass/_base-layout.scss */
+/* line 484, ../sass/_base-layout.scss */
 .area-customize.page-img-figcaption-p .ct .page-list-tool .countdown > span:before {
   content: "";
   vertical-align: bottom;
@@ -3379,19 +3401,19 @@ th {
   background: url("../images/time-icon.png") no-repeat center;
 }
 
-/* line 530, ../sass/_base-layout.scss */
+/* line 521, ../sass/_base-layout.scss */
 .area-customize.message .hd h4 {
   display: none;
 }
-/* line 533, ../sass/_base-layout.scss */
+/* line 524, ../sass/_base-layout.scss */
 .area-customize.message .hd .message_title {
   margin-bottom: 15px;
 }
-/* line 535, ../sass/_base-layout.scss */
+/* line 526, ../sass/_base-layout.scss */
 .area-customize.message .hd .message_title span {
   color: orange;
 }
-/* line 537, ../sass/_base-layout.scss */
+/* line 528, ../sass/_base-layout.scss */
 .area-customize.message .hd .message_title span.hottag_delete {
   padding: 0px 5px;
   background-color: #fc4f4f;
@@ -3400,77 +3422,77 @@ th {
   position: absolute;
   right: 0;
 }
-/* line 549, ../sass/_base-layout.scss */
+/* line 540, ../sass/_base-layout.scss */
 .area-customize.message .ct {
   /*a*/
   /*i*/
 }
-/* line 552, ../sass/_base-layout.scss */
+/* line 543, ../sass/_base-layout.scss */
 .area-customize.message .ct .div {
   padding: 8px;
   transition: 150ms;
 }
-/* line 558, ../sass/_base-layout.scss */
+/* line 549, ../sass/_base-layout.scss */
 .area-customize.message .ct .div:hover {
   background-color: #e4e4e4;
 }
-/* line 562, ../sass/_base-layout.scss */
+/* line 553, ../sass/_base-layout.scss */
 .area-customize.message .ct .img {
   float: left;
   margin-right: 8px;
 }
-/* line 565, ../sass/_base-layout.scss */
+/* line 556, ../sass/_base-layout.scss */
 .area-customize.message .ct .img span {
   display: block;
   width: 80px;
   height: 80px;
 }
-/* line 571, ../sass/_base-layout.scss */
+/* line 562, ../sass/_base-layout.scss */
 .area-customize.message .ct .img img {
   display: none;
 }
-/* line 575, ../sass/_base-layout.scss */
+/* line 566, ../sass/_base-layout.scss */
 .area-customize.message .ct .essay {
   overflow: hidden;
 }
-/* line 580, ../sass/_base-layout.scss */
+/* line 571, ../sass/_base-layout.scss */
 .area-customize.message .ct .caption span {
   color: #8080e6;
 }
 
-/* line 617, ../sass/_base-layout.scss */
+/* line 606, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .hd,
 .base-mobile .area-customize-list.nav > .in > .hd {
   display: none;
 }
-/* line 620, ../sass/_base-layout.scss */
+/* line 609, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .hd h3,
 .base-mobile .area-customize-list.nav > .in > .hd h3 {
   display: none;
 }
-/* line 630, ../sass/_base-layout.scss */
+/* line 619, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li + li,
 .base-mobile .area-customize-list.nav > .in > .ct > .in > ul > li + li {
   border-top: 1px solid #e4e4e4;
 }
-/* line 637, ../sass/_base-layout.scss */
+/* line 626, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in .hd a,
 .base-mobile .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in .hd a {
   background-color: #ed7100;
   color: #ffffff;
 }
-/* line 642, ../sass/_base-layout.scss */
+/* line 631, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in .ct,
 .base-mobile .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in .ct {
   display: block;
 }
-/* line 653, ../sass/_base-layout.scss */
+/* line 642, ../sass/_base-layout.scss */
 .base-mobile .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before,
 .base-mobile .area-customize-list.nav > .in > .ct > .in > ul > li.is-single > .group.nav > .in > .hd a:before {
   font-size: inherit;
   color: inherit;
 }
-/* line 674, ../sass/_base-layout.scss */
+/* line 663, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav {
   position: relative;
   z-index: 3;
@@ -3493,12 +3515,12 @@ th {
   padding-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 674, ../sass/_base-layout.scss */
+  /* line 663, ../sass/_base-layout.scss */
   .base-header .area-customize-list.nav {
     display: none;
   }
 }
-/* line 689, ../sass/_base-layout.scss */
+/* line 678, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav.is-fixed > .in {
   position: fixed;
   top: 0;
@@ -3507,17 +3529,17 @@ th {
   max-width: 100%;
   box-shadow: 0 0 8px #b6b6b6;
 }
-/* line 698, ../sass/_base-layout.scss */
+/* line 687, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in,
 .base-header .area-customize-list.nav > .in {
   background-color: #f0f0f0;
 }
-/* line 701, ../sass/_base-layout.scss */
+/* line 690, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .hd,
 .base-header .area-customize-list.nav > .in > .hd {
   display: none;
 }
-/* line 716, ../sass/_base-layout.scss */
+/* line 705, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li {
   position: relative;
@@ -3529,7 +3551,7 @@ th {
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li {
   width: 100%;
 }
-/* line 724, ../sass/_base-layout.scss */
+/* line 713, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li + li:before,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li + li:before {
   content: "​";
@@ -3546,60 +3568,60 @@ th {
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li + li:before {
   content: none;
 }
-/* line 740, ../sass/_base-layout.scss */
+/* line 729, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(6n+1):before,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li:nth-child(6n+1):before {
   content: none;
 }
-/* line 744, ../sass/_base-layout.scss */
+/* line 733, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active, .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li.is-active,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li:hover {
   z-index: 1;
 }
-/* line 750, ../sass/_base-layout.scss */
+/* line 739, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a, .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li:hover > .group.nav > .in > .hd a {
   background-color: #ed7100;
   color: #ffffff;
 }
-/* line 755, ../sass/_base-layout.scss */
+/* line 744, ../sass/_base-layout.scss */
 .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct, .base-header .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:hover > .group.nav > .in > .ct,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct,
 .base-header .area-customize-list.nav > .in > .ct > .in > ul > li:hover > .group.nav > .in > .ct {
   display: block;
 }
-/* line 775, ../sass/_base-layout.scss */
+/* line 764, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in,
 .base-content .area-customize-list.nav > .in {
   background-color: #5aa03e;
   border-radius: 3px;
   padding: 15px 0;
 }
-/* line 782, ../sass/_base-layout.scss */
+/* line 771, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .hd h3,
 .base-content .area-customize-list.nav > .in > .hd h3 {
   display: none;
 }
-/* line 788, ../sass/_base-layout.scss */
+/* line 777, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct,
 .base-content .area-customize-list.nav > .in > .ct {
   overflow: hidden;
   margin: 0 8px;
 }
-/* line 792, ../sass/_base-layout.scss */
+/* line 781, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul {
   margin: 0px;
   background-color: #ffffff;
 }
-/* line 793, ../sass/_base-layout.scss */
+/* line 782, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul.classify_option,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul.classify_option {
   text-align: center;
 }
-/* line 795, ../sass/_base-layout.scss */
+/* line 784, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul.classify_option li,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul.classify_option li {
   display: inline-block;
@@ -3609,54 +3631,54 @@ th {
   color: #5aa03e;
   margin: 5px;
 }
-/* line 802, ../sass/_base-layout.scss */
+/* line 791, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul.classify_option li a,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul.classify_option li a {
   padding: 5px;
   display: block;
 }
-/* line 805, ../sass/_base-layout.scss */
+/* line 794, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul.classify_option li a:hover,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul.classify_option li a:hover {
   background-color: #64b245;
   color: #ffffff;
 }
-/* line 809, ../sass/_base-layout.scss */
+/* line 798, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul.classify_option li a.is-active,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul.classify_option li a.is-active {
   background-color: #5aa03e;
   color: #ffffff;
 }
-/* line 819, ../sass/_base-layout.scss */
+/* line 808, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li {
   margin: 0 10px;
 }
-/* line 821, ../sass/_base-layout.scss */
+/* line 810, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li + li,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li + li {
   border-top: 1px solid #e4e4e4;
   border-top: 1px dotted #ccc;
 }
-/* line 826, ../sass/_base-layout.scss */
+/* line 815, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-type] > .bg-drop-layout > .in,
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li > [data-type] > .in,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li > [data-type] > .bg-drop-layout > .in,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li > [data-type] > .in {
   margin: 0 !important;
 }
-/* line 835, ../sass/_base-layout.scss */
+/* line 824, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .hd a {
   background-color: #5aa03e !important;
   color: #ffffff !important;
 }
-/* line 840, ../sass/_base-layout.scss */
+/* line 829, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct {
   display: block;
 }
-/* line 842, ../sass/_base-layout.scss */
+/* line 831, ../sass/_base-layout.scss */
 .base-content .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct .in,
 .base-content .area-customize-list.nav > .in > .ct > .in > ul > li.is-active > .group.nav > .in > .ct .in {
   background-color: transparent !important;
@@ -3683,32 +3705,32 @@ th {
   width: 10%;
 }
 @media (max-width: 768px) {
-  /* line 862, ../sass/_base-layout.scss */
+  /* line 851, ../sass/_base-layout.scss */
   .base-footer .area-customize-list.nav {
     display: none;
   }
 }
-/* line 871, ../sass/_base-layout.scss */
+/* line 860, ../sass/_base-layout.scss */
 .base-footer .area-customize-list.nav.is-close {
   display: none;
 }
-/* line 877, ../sass/_base-layout.scss */
+/* line 866, ../sass/_base-layout.scss */
 .base-footer .area-customize-list.nav > .bg-drop-layout > .in > .hd,
 .base-footer .area-customize-list.nav > .in > .hd {
   display: none;
 }
-/* line 884, ../sass/_base-layout.scss */
+/* line 873, ../sass/_base-layout.scss */
 .base-footer .area-customize-list.nav > .bg-drop-layout > .in > .ct,
 .base-footer .area-customize-list.nav > .in > .ct {
   padding: 5px 0;
   border-bottom: 1px solid #e4e4e4;
 }
-/* line 893, ../sass/_base-layout.scss */
+/* line 882, ../sass/_base-layout.scss */
 .base-footer .area-customize-list.nav > .bg-drop-layout > .in > .ct > .in > ul > li:nth-child(9n+1),
 .base-footer .area-customize-list.nav > .in > .ct > .in > ul > li:nth-child(9n+1) {
   clear: left;
 }
-/* line 910, ../sass/_base-layout.scss */
+/* line 899, ../sass/_base-layout.scss */
 .area-customize-list.nav > .in:before {
   content: "";
   width: 100%;
@@ -3719,13 +3741,13 @@ th {
   top: -12px;
 }
 
-/* line 924, ../sass/_base-layout.scss */
+/* line 911, ../sass/_base-layout.scss */
 .area-customize.city {
   display: inline-block;
   margin: 2px 0 15px 0px;
 }
 @media (max-width: 768px) {
-  /* line 924, ../sass/_base-layout.scss */
+  /* line 911, ../sass/_base-layout.scss */
   .area-customize.city {
     position: absolute;
     top: 70px;
@@ -3734,7 +3756,7 @@ th {
   }
 }
 @media (max-width: 768px) {
-  /* line 933, ../sass/_base-layout.scss */
+  /* line 920, ../sass/_base-layout.scss */
   .area-customize.city > .in {
     width: 301px;
     background: #5aa03e;
@@ -3743,7 +3765,7 @@ th {
     background: rgba(255, 255, 255, 0.6);
   }
 }
-/* line 942, ../sass/_base-layout.scss */
+/* line 929, ../sass/_base-layout.scss */
 .area-customize.city > .in .mark {
   display: inline-block;
   width: 25px;
@@ -3751,15 +3773,15 @@ th {
   background: url("../Images/icon-city.png") no-repeat;
   margin: 10px 4px -8px 0;
 }
-/* line 949, ../sass/_base-layout.scss */
+/* line 936, ../sass/_base-layout.scss */
 .area-customize.city > .in .fieldset {
   display: inline-block;
 }
-/* line 951, ../sass/_base-layout.scss */
+/* line 938, ../sass/_base-layout.scss */
 .area-customize.city > .in .fieldset .select {
   margin: 0 10px 0 0;
 }
-/* line 953, ../sass/_base-layout.scss */
+/* line 940, ../sass/_base-layout.scss */
 .area-customize.city > .in .fieldset .select select {
   background-color: transparent;
   color: #292929;
@@ -3767,7 +3789,7 @@ th {
   border: 1px solid #292929;
 }
 
-/* line 971, ../sass/_base-layout.scss */
+/* line 956, ../sass/_base-layout.scss */
 .area-customize.member {
   display: inline-block;
   position: absolute;
@@ -3775,28 +3797,28 @@ th {
   top: -3px;
 }
 @media (max-width: 768px) {
-  /* line 971, ../sass/_base-layout.scss */
+  /* line 956, ../sass/_base-layout.scss */
   .area-customize.member {
     position: initial;
   }
 }
-/* line 980, ../sass/_base-layout.scss */
+/* line 965, ../sass/_base-layout.scss */
 .area-customize.member ul li {
   list-style: none;
   display: inline-block;
   margin: 0 5px;
 }
 @media (max-width: 768px) {
-  /* line 980, ../sass/_base-layout.scss */
+  /* line 965, ../sass/_base-layout.scss */
   .area-customize.member ul li {
     margin: 16px 0;
   }
 }
-/* line 989, ../sass/_base-layout.scss */
+/* line 974, ../sass/_base-layout.scss */
 .area-customize.member span {
   margin: 0 5px;
 }
-/* line 992, ../sass/_base-layout.scss */
+/* line 977, ../sass/_base-layout.scss */
 .area-customize.member a {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.3);
@@ -3805,7 +3827,7 @@ th {
   color: #292929;
 }
 @media (max-width: 768px) {
-  /* line 992, ../sass/_base-layout.scss */
+  /* line 977, ../sass/_base-layout.scss */
   .area-customize.member a {
     padding: 11px 16px;
     border-radius: 30px;
@@ -3815,37 +3837,37 @@ th {
     margin: 0 5px;
   }
 }
-/* line 1006, ../sass/_base-layout.scss */
+/* line 991, ../sass/_base-layout.scss */
 .area-customize.member a:hover {
   color: #ffffff;
   background: rgba(253, 96, 0, 0.6);
   border: 1px solid #ed7100;
 }
-/* line 1011, ../sass/_base-layout.scss */
+/* line 996, ../sass/_base-layout.scss */
 .area-customize.member a:before {
   margin-right: 5px;
 }
-/* line 1014, ../sass/_base-layout.scss */
+/* line 999, ../sass/_base-layout.scss */
 .area-customize.member a:active {
   box-shadow: 0px 5px 8px rgba(2, 2, 2, 0.3) inset;
 }
 
-/* line 1044, ../sass/_base-layout.scss */
+/* line 1027, ../sass/_base-layout.scss */
 .newsBox > .in .group-list.slider {
   padding: 0 12px;
   box-sizing: border-box;
 }
 @media (max-width: 1000px) and (min-width: 1px) {
-  /* line 1049, ../sass/_base-layout.scss */
+  /* line 1031, ../sass/_base-layout.scss */
   .newsBox > .in .news {
     width: 100% !important;
   }
 }
-/* line 1066, ../sass/_base-layout.scss */
+/* line 1048, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .img {
   display: none;
 }
-/* line 1070, ../sass/_base-layout.scss */
+/* line 1052, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption {
   color: #707070;
   margin: 0 0 0 94px;
@@ -3853,99 +3875,181 @@ th {
   width: 79%;
 }
 @media (max-width: 450px) and (min-width: 1px) {
-  /* line 1070, ../sass/_base-layout.scss */
+  /* line 1052, ../sass/_base-layout.scss */
   .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption {
     width: 68%;
   }
 }
-/* line 1080, ../sass/_base-layout.scss */
+/* line 1062, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .label {
   float: none;
   width: 100%;
 }
-/* line 1083, ../sass/_base-layout.scss */
+/* line 1065, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .label .mark {
   background: none;
   color: #ed7100;
   display: inline-block;
   line-height: 11px;
 }
-/* line 1089, ../sass/_base-layout.scss */
+/* line 1071, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .label:before {
   content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
   background: url(../images/title-dot-icon.png) no-repeat;
-  margin: 4px 0px 0 0px;
+  margin: 8px 0px 0 0px;
   float: left;
 }
-/* line 1099, ../sass/_base-layout.scss */
+/* line 1081, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .p {
   display: none;
 }
-/* line 1113, ../sass/_base-layout.scss */
+/* line 1095, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ft ul .prev,
 .newsBox > .in .news > .in .ft ul .next {
   display: none;
 }
-/* line 1118, ../sass/_base-layout.scss */
+/* line 1100, ../sass/_base-layout.scss */
 .newsBox > .in .news > .in .ft ul .more a {
   padding: 10px 26px;
   margin: 10px auto;
   color: #ffffff;
 }
 @media (max-width: 1000px) and (min-width: 1px) {
-  /* line 1130, ../sass/_base-layout.scss */
+  /* line 1111, ../sass/_base-layout.scss */
   .newsBox > .in .life {
     width: 100% !important;
   }
 }
-/* line 1138, ../sass/_base-layout.scss */
+/* line 1119, ../sass/_base-layout.scss */
 .newsBox > .in .life > .in .hd h3:after {
   content: "Living Information";
 }
 @media (max-width: 1000px) and (min-width: 1px) {
-  /* line 1144, ../sass/_base-layout.scss */
+  /* line 1125, ../sass/_base-layout.scss */
   .newsBox > .in .life > .in .ct .essay {
     width: 82%;
   }
 }
 @media (max-width: 768px) {
-  /* line 1144, ../sass/_base-layout.scss */
+  /* line 1125, ../sass/_base-layout.scss */
   .newsBox > .in .life > .in .ct .essay {
     width: 100%;
   }
 }
 @media (max-width: 1000px) and (min-width: 1px) {
-  /* line 1153, ../sass/_base-layout.scss */
+  /* line 1134, ../sass/_base-layout.scss */
   .newsBox > .in .life > .in .ct .caption:after {
     display: none;
   }
 }
+/* line 1148, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in .hd h3 {
+  background: url(../images/line_02.png) no-repeat 50%;
+}
+/* line 1150, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in .hd h3:after {
+  content: "";
+}
+/* line 1158, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct > .in ul li {
+  width: 48%;
+  display: inline-block !important;
+}
+@media (max-width: 560px) {
+  /* line 1158, ../sass/_base-layout.scss */
+  .newsBox > .in .rumor > .in > .ct > .in ul li {
+    width: 100%;
+  }
+}
+/* line 1164, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct > .in ul li:first-child {
+  margin-right: 2%;
+}
+/* line 1175, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul {
+  width: 100%;
+  display: inline-block;
+}
+@media (max-width: 560px) {
+  /* line 1175, ../sass/_base-layout.scss */
+  .newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul {
+    width: 100%;
+  }
+}
+/* line 1181, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul:first-child {
+  margin-right: 3%;
+}
+/* line 1184, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li {
+  display: inline-block;
+  width: 100%;
+  /*i*/
+}
+/* line 1187, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .unit {
+  font-style: inherit;
+  color: #949494;
+}
+/* line 1190, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .unit:before {
+  content: "|";
+  display: inline-block;
+  color: #bbbbbb;
+  margin-right: 10px;
+}
+/* line 1199, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .label:before {
+  display: none;
+}
+/* line 1203, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .label ul li {
+  display: inline-block;
+  width: auto;
+}
+/* line 1209, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption {
+  margin: 0;
+  position: inherit;
+  width: 100%;
+  color: #484848;
+}
+/* line 1215, ../sass/_base-layout.scss */
+.newsBox > .in .rumor > .in > .ct .group-list.message > .in > .ct > .in > ul > li .area-essay.message .essay .caption:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/title-dot-icon.png) no-repeat;
+  margin: 6px 3px 0 0px;
+  float: left;
+}
 
-/* line 1171, ../sass/_base-layout.scss */
+/* line 1243, ../sass/_base-layout.scss */
 .serviceBox > .in > .hd h3 {
   background: url(../images/line_02.png) 31px center no-repeat;
   background-position: 50%;
 }
-/* line 1174, ../sass/_base-layout.scss */
+/* line 1246, ../sass/_base-layout.scss */
 .serviceBox > .in > .hd h3:after {
   content: "Would you need anything else ?";
 }
 @media (max-width: 960px) and (min-width: 769px) {
-  /* line 1183, ../sass/_base-layout.scss */
+  /* line 1255, ../sass/_base-layout.scss */
   .serviceBox > .in > .ct > .in .group-list.slider {
     width: 33%;
   }
 }
 @media (max-width: 872px) and (min-width: 1px) {
-  /* line 1183, ../sass/_base-layout.scss */
+  /* line 1255, ../sass/_base-layout.scss */
   .serviceBox > .in > .ct > .in .group-list.slider {
     width: 50%;
   }
 }
-/* line 1191, ../sass/_base-layout.scss */
+/* line 1263, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in {
   border-radius: 6px;
   background: #ffffff;
@@ -3955,53 +4059,55 @@ th {
   border-top: 6px solid #5aa03e;
   margin: 10px;
   padding: 0 10px 10px 10px;
-  height: 130px !important;
-  height: 72px;
+  min-height: 130px !important;
   position: relative;
   top: 0;
   left: 0;
   box-shadow: 0px 0px 0px 0px rgba(90, 160, 62, 0.8);
   transition: all 150ms ease-in;
 }
-/* line 505, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in:before {
-  height: 72px;
-}
-/* line 508, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in > * {
-  line-height: 24px;
-}
-/* line 511, ../sass/_base-function.scss */
-.serviceBox > .in > .ct > .in .group-list.slider > .in:after {
-  top: -24px;
-  line-height: 24px;
-  background-image: linear-gradient(to right, transparent 0, #ffffff 60%);
-}
-/* line 1207, ../sass/_base-layout.scss */
+/* line 1278, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in:hover, .serviceBox > .in > .ct > .in .group-list.slider > .in:focus {
   top: -8px;
   left: -8px;
   box-shadow: 8px 8px 0px 0px rgba(90, 160, 62, 0.2);
 }
-/* line 1213, ../sass/_base-layout.scss */
+/* line 1284, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in:after {
   content: none;
 }
-/* line 1219, ../sass/_base-layout.scss */
+/* line 1289, ../sass/_base-layout.scss */
+.serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in .pilititle {
+  color: #00b104;
+  font-weight: bold;
+  margin: 7px 12px;
+  font-size: 1.1em;
+}
+/* line 1295, ../sass/_base-layout.scss */
+.serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in ul {
+  margin: 0 0 0 23px;
+}
+/* line 1297, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in ul li {
   margin: 0;
   display: inline-block;
   border-bottom: none;
 }
-/* line 1224, ../sass/_base-layout.scss */
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 1297, ../sass/_base-layout.scss */
+  .serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in ul li {
+    width: 48%;
+  }
+}
+/* line 1305, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in ul li span a {
   padding: 0 8px;
 }
-/* line 1226, ../sass/_base-layout.scss */
+/* line 1307, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .list-text.link > .in ul li span a .mark {
   display: none;
 }
-/* line 1236, ../sass/_base-layout.scss */
+/* line 1317, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .hd h3 {
   color: #5aa03e;
   font-size: 1.1em;
@@ -4009,7 +4115,7 @@ th {
   padding: 5px 25px;
   margin: 0 0 12px 0;
 }
-/* line 1242, ../sass/_base-layout.scss */
+/* line 1323, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .hd h3:before {
   background: url("../Images/icon_samll.png") no-repeat;
   width: 50px;
@@ -4019,7 +4125,7 @@ th {
   background-position: 0px -53px;
   margin: 0px 8px -12px -22px;
 }
-/* line 1256, ../sass/_base-layout.scss */
+/* line 1337, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .ft ul .more a {
   font: 0/0 a;
   padding: 12px 14px;
@@ -4029,113 +4135,126 @@ th {
   top: 10px;
   right: 10px;
 }
-/* line 1264, ../sass/_base-layout.scss */
+/* line 1345, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .ft ul .more a:hover {
   background: url(../images/icon_more.png) no-repeat #5aa03e 9px;
   border-radius: 6px;
 }
-/* line 1268, ../sass/_base-layout.scss */
+/* line 1349, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .group-list.slider > .in .ft ul .more a:before {
   display: none;
 }
-/* line 1282, ../sass/_base-layout.scss */
+/* line 1362, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .born h3:before {
   background-position: -60px -53px !important;
 }
-/* line 1289, ../sass/_base-layout.scss */
+/* line 1369, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .learn h3:before {
   background-position: -120px -53px !important;
 }
-/* line 1296, ../sass/_base-layout.scss */
+/* line 1376, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .lifeSafe h3:before {
   background-position: -177px -53px !important;
 }
-/* line 1303, ../sass/_base-layout.scss */
+/* line 1383, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .live h3:before {
   background-position: -238px -53px !important;
 }
-/* line 1308, ../sass/_base-layout.scss */
+/* line 1388, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .rumor {
   width: 99% !important;
 }
-/* line 1311, ../sass/_base-layout.scss */
+/* line 1391, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .rumor h3:before {
   background-position: -360px -169px !important;
 }
-/* line 1318, ../sass/_base-layout.scss */
+/* line 1398, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .rumor .ct .list-text.link ul li {
-  margin-right: 40px !important;
+  width: 32%;
+  padding-right: 1%;
 }
-/* line 1327, ../sass/_base-layout.scss */
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 1398, ../sass/_base-layout.scss */
+  .serviceBox > .in > .ct > .in .rumor .ct .list-text.link ul li {
+    width: 49%;
+  }
+}
+@media (max-width: 560px) {
+  /* line 1398, ../sass/_base-layout.scss */
+  .serviceBox > .in > .ct > .in .rumor .ct .list-text.link ul li {
+    width: 100%;
+  }
+}
+/* line 1415, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .traffic h3:before {
   background-position: -299px -53px !important;
 }
-/* line 1334, ../sass/_base-layout.scss */
+/* line 1422, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .tour h3:before {
   background-position: -360px -53px !important;
 }
-/* line 1341, ../sass/_base-layout.scss */
+/* line 1429, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .job h3:before {
   background-position: -480px -53px !important;
 }
-/* line 1348, ../sass/_base-layout.scss */
+/* line 1436, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .money h3:before {
   background-position: 0px -111px !important;
 }
-/* line 1355, ../sass/_base-layout.scss */
+/* line 1443, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .soldier h3:before {
   background-position: -60px -111px !important;
 }
-/* line 1362, ../sass/_base-layout.scss */
+/* line 1450, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .hospital h3:before {
   background-position: -120px -111px !important;
 }
-/* line 1369, ../sass/_base-layout.scss */
+/* line 1457, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .old h3:before {
   background-position: -177px -111px !important;
 }
-/* line 1376, ../sass/_base-layout.scss */
+/* line 1464, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .marriage h3:before {
   background-position: -238px -111px !important;
 }
-/* line 1383, ../sass/_base-layout.scss */
+/* line 1471, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .vote h3:before {
   background-position: -299px -111px !important;
 }
-/* line 1390, ../sass/_base-layout.scss */
+/* line 1478, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .house h3:before {
   background-position: -360px -111px !important;
 }
-/* line 1398, ../sass/_base-layout.scss */
+/* line 1485, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .adopt h3:before {
   background-position: -419px -114px !important;
 }
-/* line 1406, ../sass/_base-layout.scss */
+/* line 1492, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .career h3:before {
   background-position: -419px -53px !important;
 }
-/* line 1414, ../sass/_base-layout.scss */
+/* line 1499, ../sass/_base-layout.scss */
 .serviceBox > .in > .ct > .in .nursing h3:before {
   background-position: -482px -110px !important;
 }
 
-/* line 1425, ../sass/_base-layout.scss */
+/* line 1508, ../sass/_base-layout.scss */
 .focus {
   margin: 30px 0 0 0;
   padding-bottom: 30px;
 }
-/* line 1432, ../sass/_base-layout.scss */
+/* line 1515, ../sass/_base-layout.scss */
 .focus > .in > .hd h3 {
   background: url(../images/line_03.png) 0px center no-repeat;
   background-position: 50%;
   color: #ffffff;
 }
-/* line 1436, ../sass/_base-layout.scss */
+/* line 1519, ../sass/_base-layout.scss */
 .focus > .in > .hd h3:after {
   content: "Focus Topics";
 }
 @media (max-width: 768px) and (min-width: 561px) {
-  /* line 1443, ../sass/_base-layout.scss */
+  /* line 1526, ../sass/_base-layout.scss */
   .focus > .in > .ct > .in .group-list.slider {
     width: 100% !important;
     clear: none;
@@ -4154,11 +4273,11 @@ th {
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in .ct li:nth-child(2n+1) {
   clear: left;
 }
-/* line 1453, ../sass/_base-layout.scss */
+/* line 1536, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li {
   padding: 10px;
 }
-/* line 1456, ../sass/_base-layout.scss */
+/* line 1539, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li .area-essay.link .essay {
   -webkit-border-bottom-right-radius: 6px;
   -webkit-border-bottom-left-radius: 6px;
@@ -4169,7 +4288,7 @@ th {
   background: #414141;
   padding: 12px 19px;
 }
-/* line 1465, ../sass/_base-layout.scss */
+/* line 1548, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li .area-essay.link .essay:after {
   content: "";
   width: 90px;
@@ -4180,70 +4299,70 @@ th {
   right: 25px;
   bottom: 23px;
 }
-/* line 1476, ../sass/_base-layout.scss */
+/* line 1559, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li .area-essay.link .label {
   display: none;
 }
-/* line 1479, ../sass/_base-layout.scss */
+/* line 1562, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li .area-essay.link .caption {
   color: #ffffff;
   font-size: 1.5em;
 }
-/* line 1487, ../sass/_base-layout.scss */
+/* line 1570, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li ~ li .area-essay.link .essay:after {
   background-position: -63px -176px;
 }
-/* line 1495, ../sass/_base-layout.scss */
+/* line 1578, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li ~ li ~ li .area-essay.link .essay:after {
   background-position: -136px -175px;
 }
-/* line 1503, ../sass/_base-layout.scss */
+/* line 1586, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .group-list.link > .in > .ct > .in > ul li ~ li ~ li ~ li .area-essay.link .essay:after {
   background-position: -212px -175px;
 }
-/* line 1519, ../sass/_base-layout.scss */
+/* line 1602, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .ft ul .prev,
 .focus > .in > .ct > .in .group-list.slider .ft ul .next {
   display: none;
 }
-/* line 1524, ../sass/_base-layout.scss */
+/* line 1607, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .ft ul .more a {
   padding: 10px 26px;
   margin: 10px auto;
   color: #ffffff;
 }
-/* line 1531, ../sass/_base-layout.scss */
+/* line 1614, ../sass/_base-layout.scss */
 .focus > .in > .ct > .in .group-list.slider .ft ul .more a:hover:before {
   background: #414141;
 }
 
-/* line 1546, ../sass/_base-layout.scss */
+/* line 1627, ../sass/_base-layout.scss */
 .studioZone {
   background: url(../images/icon_floor.jpg) repeat;
   padding: 0 0 42px 0;
 }
-/* line 1553, ../sass/_base-layout.scss */
+/* line 1634, ../sass/_base-layout.scss */
 .studioZone > .in > .hd h3 {
   background: url(../images/line_03.png) 50% no-repeat;
   background-position: 50%;
   color: #ffffff;
 }
-/* line 1557, ../sass/_base-layout.scss */
+/* line 1638, ../sass/_base-layout.scss */
 .studioZone > .in > .hd h3:after {
   content: "Focus Topics";
 }
-/* line 1569, ../sass/_base-layout.scss */
+/* line 1650, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .hd h3 {
   background: url(../images/line_04.png) 50% no-repeat;
   background-position: 50%;
   color: #292929;
 }
-/* line 1573, ../sass/_base-layout.scss */
+/* line 1654, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .hd h3:after {
   content: "Formosa Studios";
 }
 @media (max-width: 768px) {
-  /* line 1579, ../sass/_base-layout.scss */
+  /* line 1660, ../sass/_base-layout.scss */
   .studioZone > .in > .ct > .in .studio > .in > .ct .area-editor,
   .studioZone > .in > .ct > .in .studio > .in > .ct .area-customize.video {
     width: 100%;
@@ -4251,77 +4370,77 @@ th {
   }
 }
 @media (max-width: 768px) {
-  /* line 1586, ../sass/_base-layout.scss */
+  /* line 1667, ../sass/_base-layout.scss */
   .studioZone > .in > .ct > .in .studio > .in > .ct .area-editor {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  /* line 1590, ../sass/_base-layout.scss */
+  /* line 1671, ../sass/_base-layout.scss */
   .studioZone > .in > .ct > .in .studio > .in > .ct .area-editor img {
     width: 100% !important;
     height: auto !important;
   }
 }
-/* line 1598, ../sass/_base-layout.scss */
+/* line 1679, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .ct .area-customize.video .video {
   width: 100%;
   background: transparent;
   height: 434px;
 }
-/* line 1602, ../sass/_base-layout.scss */
+/* line 1683, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .ct .area-customize.video .video iframe {
   width: 100%;
   border: 0;
 }
-/* line 1607, ../sass/_base-layout.scss */
+/* line 1688, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .ct .area-customize.video .essay {
   display: none;
 }
-/* line 1610, ../sass/_base-layout.scss */
+/* line 1691, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .studio > .in > .ct .area-customize.video .ft {
   display: none;
 }
-/* line 1622, ../sass/_base-layout.scss */
+/* line 1702, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .ad > .in > .hd h3 {
   background: url(../images/line_04.png) 0px center no-repeat;
   background-position: 50%;
   color: #292929;
 }
-/* line 1626, ../sass/_base-layout.scss */
+/* line 1706, ../sass/_base-layout.scss */
 .studioZone > .in > .ct > .in .ad > .in > .hd h3:after {
   content: "Advertising Carousel";
 }
 
-/* line 1638, ../sass/_base-layout.scss */
+/* line 1718, ../sass/_base-layout.scss */
 .kidsSearch {
   position: relative;
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 @media (max-width: 768px) {
-  /* line 1638, ../sass/_base-layout.scss */
+  /* line 1718, ../sass/_base-layout.scss */
   .kidsSearch {
     display: none;
   }
 }
-/* line 1648, ../sass/_base-layout.scss */
+/* line 1728, ../sass/_base-layout.scss */
 .kidsSearch > .in > .hd {
   display: none;
 }
-/* line 1651, ../sass/_base-layout.scss */
+/* line 1731, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct {
   width: 100%;
   margin: 0 auto;
 }
-/* line 1654, ../sass/_base-layout.scss */
+/* line 1734, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in {
   width: 100%;
   display: inline-block;
 }
-/* line 1657, ../sass/_base-layout.scss */
+/* line 1737, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search {
   position: absolute;
   top: 36px;
@@ -4331,48 +4450,48 @@ th {
   width: 100%;
   display: inline-block;
 }
-/* line 1665, ../sass/_base-layout.scss */
+/* line 1745, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct {
   width: 58%;
 }
-/* line 1667, ../sass/_base-layout.scss */
+/* line 1747, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset {
   width: 100%;
   display: inline-block;
 }
-/* line 1670, ../sass/_base-layout.scss */
+/* line 1750, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset .search {
   width: auto;
   padding: 0;
 }
-/* line 1673, ../sass/_base-layout.scss */
+/* line 1753, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset .search input {
   padding: 15px;
   border-radius: 4px;
   opacity: 0.7;
 }
-/* line 1677, ../sass/_base-layout.scss */
+/* line 1757, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset .search input:active, .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset .search input:focus {
   opacity: 0.9;
 }
-/* line 1684, ../sass/_base-layout.scss */
+/* line 1764, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ct .fieldset .submit a {
   background-color: transparent;
   background: url(../Images/icon-homeSearch.png) no-repeat;
   margin: 10px 8px 0 0;
 }
-/* line 1692, ../sass/_base-layout.scss */
+/* line 1772, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ft {
   position: absolute;
   margin: 0 auto;
   left: 45%;
   top: 130px;
 }
-/* line 1700, ../sass/_base-layout.scss */
+/* line 1780, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .area-form.search .ft ul li span a {
   padding: 10px 30px;
 }
-/* line 1710, ../sass/_base-layout.scss */
+/* line 1789, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .list-text.hot-key-word {
   display: inline-block;
   width: 100%;
@@ -4380,19 +4499,19 @@ th {
   position: initial;
   position: relative;
 }
-/* line 1731, ../sass/_base-layout.scss */
+/* line 1810, ../sass/_base-layout.scss */
 .kidsSearch > .in > .ct > .in .list-text.hot-key-word .ct ul li span a {
   font-size: 1em;
 }
 
-/* line 1748, ../sass/_base-layout.scss */
+/* line 1827, ../sass/_base-layout.scss */
 .metaDeta > .in .hd h3 {
   padding-bottom: 8px;
   border-bottom: 1px solid #b6b6b6;
   font-size: 1.1em;
   color: #5aa03e;
 }
-/* line 1753, ../sass/_base-layout.scss */
+/* line 1832, ../sass/_base-layout.scss */
 .metaDeta > .in .hd h3:before {
   background: url(../Images/organ_list.png) no-repeat;
   content: "";
@@ -4401,23 +4520,23 @@ th {
   float: left;
   margin: 0 11px 0 -7px;
 }
-/* line 1765, ../sass/_base-layout.scss */
+/* line 1844, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box01 .hd {
   background-color: #fdf7e6;
   padding: 10px;
   border-radius: 6px;
   margin: 10px 0;
 }
-/* line 1770, ../sass/_base-layout.scss */
+/* line 1849, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box01 .hd p {
   line-height: 1em;
   color: #865200;
 }
-/* line 1776, ../sass/_base-layout.scss */
+/* line 1855, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 {
   margin-top: 20px;
 }
-/* line 1778, ../sass/_base-layout.scss */
+/* line 1857, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 .hd {
   width: 100%;
   text-align: center;
@@ -4426,40 +4545,40 @@ th {
   color: #5aa03e;
   font-family: bold;
 }
-/* line 1786, ../sass/_base-layout.scss */
+/* line 1865, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 1789, ../sass/_base-layout.scss */
+/* line 1868, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead {
   background-color: #f0f0f0;
 }
-/* line 1791, ../sass/_base-layout.scss */
+/* line 1870, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead .th-number {
   width: 52px;
 }
-/* line 1794, ../sass/_base-layout.scss */
+/* line 1873, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead .th-dark {
   width: 18%;
 }
-/* line 1797, ../sass/_base-layout.scss */
+/* line 1876, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead .th-time {
   width: 18%;
 }
-/* line 1800, ../sass/_base-layout.scss */
+/* line 1879, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead .th-status {
   width: 18%;
 }
-/* line 1803, ../sass/_base-layout.scss */
+/* line 1882, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table thead .th-web {
   width: auto;
 }
-/* line 1809, ../sass/_base-layout.scss */
+/* line 1888, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table tbody tr:nth-child(even) {
   background-color: #f0f0f0;
 }
-/* line 1814, ../sass/_base-layout.scss */
+/* line 1893, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table th,
 .metaDeta > .in .ct .box02 table td {
   text-align: left;
@@ -4467,55 +4586,55 @@ th {
   border-right: 1px solid #e4e4e4;
   border-bottom: 1px solid #ffffff;
 }
-/* line 1821, ../sass/_base-layout.scss */
+/* line 1900, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table th {
   background-color: #5aa03e;
   color: #ffffff;
 }
-/* line 1826, ../sass/_base-layout.scss */
+/* line 1905, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table span {
   display: block;
   padding: 8px;
 }
-/* line 1830, ../sass/_base-layout.scss */
+/* line 1909, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table a {
   text-decoration: underline;
   color: #0a76d7;
 }
-/* line 1833, ../sass/_base-layout.scss */
+/* line 1912, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .box02 table a:hover {
   text-decoration: none;
 }
-/* line 1840, ../sass/_base-layout.scss */
+/* line 1919, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct {
   background-color: #edf9e8;
   padding: 6px;
   border-radius: 6px;
   border: 1px solid #b7cdad;
 }
-/* line 1846, ../sass/_base-layout.scss */
+/* line 1925, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset {
   display: inline-block;
   margin: 5px;
 }
-/* line 1849, ../sass/_base-layout.scss */
+/* line 1928, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset span {
   display: inline-block;
 }
-/* line 1851, ../sass/_base-layout.scss */
+/* line 1930, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset span.submit {
   color: #ffffff;
 }
-/* line 1858, ../sass/_base-layout.scss */
+/* line 1937, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset input[type="submit"] {
   padding: 0 20px;
   border-radius: 3px;
 }
-/* line 1864, ../sass/_base-layout.scss */
+/* line 1943, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset.input {
   width: 69%;
 }
-/* line 1866, ../sass/_base-layout.scss */
+/* line 1945, ../sass/_base-layout.scss */
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset.input .search,
 .metaDeta > .in .ct .area-form.page-search .ct .fieldset.input input[type="search"] {
   width: 100%;
@@ -5481,32 +5600,36 @@ th {
   display: block;
 }
 
-/* line 13, ../sass/_list-text_link.scss */
+/* line 3, ../sass/_list-text_link.scss */
+.list-text.link {
+  /*ul*/
+}
+/* line 10, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .hd {
   display: none;
 }
-/* line 33, ../sass/_list-text_link.scss */
+/* line 22, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .ct {
   /*i*/
 }
-/* line 45, ../sass/_list-text_link.scss */
+/* line 30, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .ct li + li {
   border-top: 1px solid #e4e4e4;
 }
-/* line 50, ../sass/_list-text_link.scss */
+/* line 35, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .ct span {
   display: block;
 }
-/* line 54, ../sass/_list-text_link.scss */
+/* line 39, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .ct a {
   display: block;
   padding: 8px;
 }
-/* line 64, ../sass/_list-text_link.scss */
+/* line 48, ../sass/_list-text_link.scss */
 .base-mobile .list-text.link .ft {
   display: none;
 }
-/* line 89, ../sass/_list-text_link.scss */
+/* line 63, ../sass/_list-text_link.scss */
 .base-header .list-text.link {
   position: absolute;
   top: 7px;
@@ -5517,169 +5640,189 @@ th {
   right: 10px;
 }
 @media (max-width: 768px) {
-  /* line 89, ../sass/_list-text_link.scss */
+  /* line 63, ../sass/_list-text_link.scss */
   .base-header .list-text.link {
     display: none;
   }
 }
-/* line 106, ../sass/_list-text_link.scss */
+/* line 79, ../sass/_list-text_link.scss */
 .base-header .list-text.link .hd {
   display: none;
 }
-/* line 126, ../sass/_list-text_link.scss */
+/* line 91, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ct {
   /*i*/
 }
-/* line 136, ../sass/_list-text_link.scss */
+/* line 97, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ct li {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
 }
-/* line 143, ../sass/_list-text_link.scss */
+/* line 104, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ct li + li:before {
   content: ' | ';
   vertical-align: middle;
 }
-/* line 150, ../sass/_list-text_link.scss */
+/* line 111, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ct span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 155, ../sass/_list-text_link.scss */
+/* line 116, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ct a {
   display: block;
   font-size: 0.8em;
 }
-/* line 165, ../sass/_list-text_link.scss */
+/* line 127, ../sass/_list-text_link.scss */
 .base-header .list-text.link .ft {
   display: none;
 }
-/* line 194, ../sass/_list-text_link.scss */
-.base-content .list-text.link.bg-blue > .bg-drop-layout > .in, .base-content .list-text.link.bg-blue > .in {
+/* line 146, ../sass/_list-text_link.scss */
+.base-content .list-text.link.bg-blue > .bg-drop-layout > .in,
+.base-content .list-text.link.bg-blue > .in {
   background-color: #5aa03e;
   background-image: url("../images/list-link-bg1.png");
   background-repeat: no-repeat;
   background-position: right 90px;
 }
-/* line 208, ../sass/_list-text_link.scss */
+/* line 159, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .hd h4 {
   padding: 10px 0 10px 30px;
   margin: 0 15px;
   border-bottom: #cedbd6 1px solid;
   background: url(../images/list-link-icon1.png) left center no-repeat;
 }
-/* line 219, ../sass/_list-text_link.scss */
+/* line 168, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .hd a {
   color: #ffffff;
 }
-/* line 224, ../sass/_list-text_link.scss */
+/* line 173, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .ct {
   /*i*/
 }
-/* line 226, ../sass/_list-text_link.scss */
+/* line 175, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .ct > .in {
   color: #ffffff;
 }
-/* line 238, ../sass/_list-text_link.scss */
+/* line 185, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .ct li + li {
   margin-top: 5px;
 }
-/* line 243, ../sass/_list-text_link.scss */
+/* line 190, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-blue .ct span {
   display: block;
 }
-/* line 285, ../sass/_list-text_link.scss */
-.base-content .list-text.link.bg-deep-blue > .bg-drop-layout > .in, .base-content .list-text.link.bg-deep-blue > .in {
+/* line 223, ../sass/_list-text_link.scss */
+.base-content .list-text.link.bg-deep-blue > .bg-drop-layout > .in,
+.base-content .list-text.link.bg-deep-blue > .in {
   background-color: #1ea3af;
   background-image: url("../images/list-link-bg2.png");
   background-repeat: no-repeat;
   background-position: right 90px;
 }
-/* line 299, ../sass/_list-text_link.scss */
+/* line 236, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .hd h4 {
   padding: 10px 0 10px 30px;
   margin: 0 15px;
   border-bottom: #cedbd6 1px solid;
   background: url(../images/list-link-icon2.png) left center no-repeat;
 }
-/* line 310, ../sass/_list-text_link.scss */
+/* line 245, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .hd a {
   color: #ffffff;
 }
-/* line 315, ../sass/_list-text_link.scss */
+/* line 250, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .ct {
   /*i*/
 }
-/* line 317, ../sass/_list-text_link.scss */
+/* line 252, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .ct > .in {
   color: #ffffff;
 }
-/* line 329, ../sass/_list-text_link.scss */
+/* line 262, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .ct li + li {
   margin-top: 5px;
 }
-/* line 334, ../sass/_list-text_link.scss */
+/* line 267, ../sass/_list-text_link.scss */
 .base-content .list-text.link.bg-deep-blue .ct span {
   display: block;
 }
-/* line 374, ../sass/_list-text_link.scss */
-.base-content .list-text.link > .bg-drop-layout > .in, .base-content .list-text.link > .in {
+/* line 298, ../sass/_list-text_link.scss */
+.base-content .list-text.link > .bg-drop-layout > .in,
+.base-content .list-text.link > .in {
   border-radius: 3px;
 }
-/* line 398, ../sass/_list-text_link.scss */
+/* line 315, ../sass/_list-text_link.scss */
 .base-content .list-text.link .ct {
   /*i*/
 }
-/* line 408, ../sass/_list-text_link.scss */
+/* line 321, ../sass/_list-text_link.scss */
 .base-content .list-text.link .ct li {
   border-bottom: 1px dotted #f0f0f0;
   margin: 0 15px;
 }
-/* line 413, ../sass/_list-text_link.scss */
+/* line 326, ../sass/_list-text_link.scss */
 .base-content .list-text.link .ct li + li {
   margin-top: 5px;
 }
-/* line 418, ../sass/_list-text_link.scss */
+/* line 331, ../sass/_list-text_link.scss */
 .base-content .list-text.link .ct span {
   display: block;
 }
 @media (max-width: 768px) {
-  /* line 458, ../sass/_list-text_link.scss */
+  /* line 362, ../sass/_list-text_link.scss */
   .base-footer .list-text.link {
     display: none;
   }
 }
-/* line 468, ../sass/_list-text_link.scss */
+/* line 371, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .hd {
   display: none;
 }
-/* line 488, ../sass/_list-text_link.scss */
+/* line 383, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ct {
   /*i*/
 }
-/* line 498, ../sass/_list-text_link.scss */
+/* line 389, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ct li {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 504, ../sass/_list-text_link.scss */
+/* line 395, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ct li + li:before {
   content: ' | ';
   vertical-align: middle;
 }
-/* line 511, ../sass/_list-text_link.scss */
+/* line 402, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ct span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 516, ../sass/_list-text_link.scss */
+/* line 407, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ct a {
   display: block;
 }
-/* line 525, ../sass/_list-text_link.scss */
+/* line 415, ../sass/_list-text_link.scss */
 .base-footer .list-text.link .ft {
   display: none;
+}
+/* line 430, ../sass/_list-text_link.scss */
+.list-text.link .col {
+  width: 33%;
+  display: inline-block;
+}
+@media (max-width: 768px) and (min-width: 561px) {
+  /* line 430, ../sass/_list-text_link.scss */
+  .list-text.link .col {
+    width: 49%;
+  }
+}
+@media (max-width: 560px) {
+  /* line 430, ../sass/_list-text_link.scss */
+  .list-text.link .col {
+    width: 100%;
+  }
 }
 
 /* line 4, ../sass/_list-text_share.scss */
@@ -5991,28 +6134,32 @@ th {
   margin: 0 3px;
 }
 
-/* line 7, ../sass/_list-text_hot-key-word.scss */
+/* line 4, ../sass/_list-text_hot-key-word.scss */
+.base-mobile .list-text.hot-key-word {
+  display: none;
+}
+/* line 8, ../sass/_list-text_hot-key-word.scss */
 .base-mobile .list-text.hot-key-word .hd {
   display: none;
 }
-/* line 14, ../sass/_list-text_hot-key-word.scss */
+/* line 15, ../sass/_list-text_hot-key-word.scss */
 .base-mobile .list-text.hot-key-word .ct {
   /*i*/
 }
-/* line 17, ../sass/_list-text_hot-key-word.scss */
+/* line 18, ../sass/_list-text_hot-key-word.scss */
 .base-mobile .list-text.hot-key-word .ct li {
   border-top: 1px solid #e4e4e4;
 }
-/* line 20, ../sass/_list-text_hot-key-word.scss */
+/* line 21, ../sass/_list-text_hot-key-word.scss */
 .base-mobile .list-text.hot-key-word .ct span {
   display: block;
 }
-/* line 23, ../sass/_list-text_hot-key-word.scss */
+/* line 24, ../sass/_list-text_hot-key-word.scss */
 .base-mobile .list-text.hot-key-word .ct a {
   display: block;
   padding: 8px;
 }
-/* line 38, ../sass/_list-text_hot-key-word.scss */
+/* line 39, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word {
   position: absolute;
   top: 43px;
@@ -6026,60 +6173,60 @@ th {
   right: 100px;
 }
 @media (max-width: 768px) {
-  /* line 38, ../sass/_list-text_hot-key-word.scss */
+  /* line 39, ../sass/_list-text_hot-key-word.scss */
   .base-wrapper .list-text.hot-key-word {
     display: none;
   }
 }
-/* line 51, ../sass/_list-text_hot-key-word.scss */
+/* line 52, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word > .bg-drop-layout > .in,
 .base-wrapper .list-text.hot-key-word > .in {
   margin: 0 auto;
   width: 58%;
   text-align: left;
 }
-/* line 57, ../sass/_list-text_hot-key-word.scss */
+/* line 58, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .hd {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 61, ../sass/_list-text_hot-key-word.scss */
+/* line 62, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .hd h4 {
   color: #ffffff;
 }
-/* line 63, ../sass/_list-text_hot-key-word.scss */
+/* line 64, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .hd h4:after {
   content: ' : ';
 }
-/* line 67, ../sass/_list-text_hot-key-word.scss */
+/* line 68, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .hd span {
   display: inline-block;
 }
-/* line 70, ../sass/_list-text_hot-key-word.scss */
+/* line 71, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .hd a {
   display: block;
 }
-/* line 74, ../sass/_list-text_hot-key-word.scss */
+/* line 75, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .ct {
   display: inline-block;
   vertical-align: middle;
   /*i*/
 }
-/* line 79, ../sass/_list-text_hot-key-word.scss */
+/* line 80, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .ct li {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
 }
-/* line 84, ../sass/_list-text_hot-key-word.scss */
+/* line 85, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .ct li + li:before {
   content: ' , ';
 }
-/* line 89, ../sass/_list-text_hot-key-word.scss */
+/* line 90, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .ct span {
   display: inline-block;
 }
-/* line 92, ../sass/_list-text_hot-key-word.scss */
+/* line 93, ../sass/_list-text_hot-key-word.scss */
 .base-wrapper .list-text.hot-key-word .ct a {
   display: block;
   font-size: 0.8em;
@@ -6683,41 +6830,40 @@ th {
   font-size: inherit;
   color: inherit;
 }
-/* line 122, ../sass/_simple-text_btn.scss */
+/* line 121, ../sass/_simple-text_btn.scss */
 .base-footer .simple-text.btn .ct span a:hover {
   background-color: none;
 }
-/* line 138, ../sass/_simple-text_btn.scss */
+/* line 137, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: 20px;
+  bottom: 60px;
 }
 @media (max-width: 768px) {
-  /* line 138, ../sass/_simple-text_btn.scss */
+  /* line 137, ../sass/_simple-text_btn.scss */
   .base-extend .simple-text.btn {
     display: block !important;
   }
 }
-/* line 146, ../sass/_simple-text_btn.scss */
+/* line 144, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn > .bg-drop-layout > .in,
 .base-extend .simple-text.btn > .in {
   position: relative;
 }
-/* line 151, ../sass/_simple-text_btn.scss */
+/* line 149, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .hd {
   display: none;
 }
-/* line 158, ../sass/_simple-text_btn.scss */
+/* line 156, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .ct {
   /*i*/
 }
-/* line 163, ../sass/_simple-text_btn.scss */
+/* line 161, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .ct span {
   display: block;
 }
-/* line 166, ../sass/_simple-text_btn.scss */
+/* line 164, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .ct a {
   background-image: url('../images/icon-pic/away-w-top.png?1480988922');
   background-repeat: no-repeat;
@@ -6733,7 +6879,7 @@ th {
   transition: 150ms;
   font-size: 0;
 }
-/* line 179, ../sass/_simple-text_btn.scss */
+/* line 177, ../sass/_simple-text_btn.scss */
 .base-extend .simple-text.btn .ct a:hover {
   background-color: #343434;
   opacity: 0.7;

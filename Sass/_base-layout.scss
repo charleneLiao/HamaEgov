@@ -2,17 +2,17 @@
                 .info {
                     .base-mobile & {
                         @extend %area-mobile;
-                        > .bg-drop-layout > .in,
-                        > .in {
-                            > .hd {
+                        >.bg-drop-layout>.in,
+                        >.in {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {
+                            >.ct {
+                                >.in {
                                     position: absolute;
                                     top: 0;
                                     right: 0;
@@ -25,18 +25,18 @@
                         }
                     }
                     .base-header & {
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             @extend %center;
-                            > .hd {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {
+                            >.ct {
+                                >.in {
                                     &:after {
                                         @extend %clear;
                                     }
@@ -45,17 +45,17 @@
                         }
                     }
                     .base-content & {
-                        > .bg-drop-layout > .in,
-                        > .in {
-                            > .hd {
+                        >.bg-drop-layout>.in,
+                        >.in {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {
+                            >.ct {
+                                >.in {
                                     text-align: right;
                                     @include js(false) {
                                         text-align: left;
@@ -65,19 +65,19 @@
                         }
                     }
                     .base-footer & {
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             @extend %center;
                             padding: $interval-l 0;
-                            > .hd {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {
+                            >.ct {
+                                >.in {
                                     &:after {
                                         @extend %clear;
                                     }
@@ -86,54 +86,52 @@
                         }
                     }
                 }
-                
+
                 .msg-tool {
                     .base-header & {
                         position: relative;
                         z-index: 1;
-                        > .bg-drop-layout > .in,
-                        > .in {
-                            > .hd {
-                                > .in {}
+                        >.bg-drop-layout>.in,
+                        >.in {
+                            >.hd {
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {}
+                            >.ct {
+                                >.in {}
                             }
                         }
                     }
                     .base-footer & {
                         overflow: hidden;
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             @extend %area-mobile;
-                            > .hd {
-                                > .in {}
+                            >.hd {
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {}
+                            >.ct {
+                                >.in {}
                             }
                         }
                     }
-                }
-                
-                //客製列表樣式_area-customize_list
+                } //客製列表樣式_area-customize_list
                 .area-customize {
                     &.list {
                         .hd {
                             @extend %header;
-                            > .in {}
+                            >.in {}
                             h4 {}
                             span {}
                             a {}
                         }
                         .ct {
-                            > .in {}
+                            >.in {}
                             ul {}
                             li {
                                 border-bottom: 1px dotted #ccc;
@@ -165,7 +163,7 @@
                                     padding: 8px;
                                     box-sizing: border-box;
                                 }
-                                + li {
+                                +li {
                                     margin-top: $interval-s;
                                 }
                                 &:hover .delete-btn {
@@ -190,22 +188,20 @@
                         }
                         .ft {
                             @extend %footer;
-                            > .in {}
+                            >.in {}
                             ul {}
                             li {}
                             span {}
                             a {}
                         }
                     }
-                }
-                
-                //機關導覽_搜尋樣式_area-customize_org-guide-search
+                } //機關導覽_搜尋樣式_area-customize_org-guide-search
                 .area-customize.org-guide-search {
-                    > .bg-drop-layout > .in,
-                    > .in {}
+                    >.bg-drop-layout>.in,
+                    >.in {}
                     .hd {
                         @extend %header;
-                        > .in {}
+                        >.in {}
                         h4 {
                             display: none;
                         }
@@ -213,7 +209,7 @@
                         a {}
                     }
                     .ct {
-                        > .in {
+                        >.in {
                             background-color: $light-gray;
                             &:after {
                                 @extend %clear;
@@ -374,33 +370,30 @@
                     }
                     .ft {
                         @extend %footer;
-                        > .in {}
+                        >.in {}
                         ul {}
                         li {}
                         span {}
                         a {}
                     }
-                }
-                
-                //客製內頁列表樣式_area-customize_page-img-figcaption-p
+                } //客製內頁列表樣式_area-customize_page-img-figcaption-p
                 .area-customize.page-img-figcaption-p {
-                    > .bg-drop-layout > .in,
-                    > .in {}
+                    >.bg-drop-layout>.in,
+                    >.in {}
                     .hd {
                         @extend %header;
-                        > .in {}
+                        >.in {}
                         h4 {}
                         span {}
                         a {}
                     }
                     .ct {
                         $pic_w: 150px;
-                        > .in {}
+                        >.in {}
                         /*a*/
                         .div {
                             position: relative;
-                            border-bottom: 1px dotted #ccc;
-                            //background-color: $light;
+                            border-bottom: 1px dotted #ccc; //background-color: $light;
                             transition: $transition;
                             padding-right: 120px;
                             @include media('phone') {
@@ -485,7 +478,7 @@
                                 @include media('phone') {
                                     display: inline-block;
                                 }
-                                > span {
+                                >span {
                                     display: block;
                                     font-size: 0.8em;
                                     &:before {
@@ -512,21 +505,19 @@
                     }
                     .ft {
                         @extend %footer;
-                        > .in {}
+                        >.in {}
                         ul {}
                         li {}
                         span {}
                         a {}
                     }
-                }
-                
-                //客製內頁列表樣式_area-customize_page-img-figcaption-p
+                } //客製內頁列表樣式_area-customize_page-img-figcaption-p
                 .area-customize.message {
-                    > .bg-drop-layout > .in,
-                    > .in {}
+                    >.bg-drop-layout>.in,
+                    >.in {}
                     .hd {
                         @extend %header;
-                        > .in {}
+                        >.in {}
                         h4 {
                             display: none;
                         }
@@ -547,7 +538,7 @@
                         a {}
                     }
                     .ct {
-                        > .in {}
+                        >.in {}
                         /*a*/
                         .div {
                             padding: $interval-m;
@@ -600,39 +591,37 @@
                     }
                     .ft {
                         @extend %footer;
-                        > .in {}
+                        >.in {}
                         ul {}
                         li {}
                         span {}
                         a {}
                     }
-                }
-                
-                //列表群組
+                } //列表群組
                 //選單================================================================
                 .area-customize-list.nav {
                     .base-mobile & {
-                        > .bg-drop-layout > .in,
-                        > .in {
-                            > .hd {
+                        >.bg-drop-layout>.in,
+                        >.in {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {
                                     display: none;
                                 }
                                 span {}
                                 a {}
                             }
-                            > .ct {
-                                > .in {
-                                    > ul {
-                                        > li {
-                                            + li {
+                            >.ct {
+                                >.in {
+                                    >ul {
+                                        >li {
+                                            +li {
                                                 border-top: $border;
                                             }
                                             &.is-active {
-                                                > .group.nav {
-                                                    > .in {
+                                                >.group.nav {
+                                                    >.in {
                                                         .hd {
                                                             a {
                                                                 background-color: $minor-color;
@@ -646,9 +635,9 @@
                                                 }
                                             }
                                             &.is-single {
-                                                > .group.nav {
-                                                    > .in {
-                                                        > .hd {
+                                                >.group.nav {
+                                                    >.in {
+                                                        >.hd {
                                                             a {
                                                                 &:before {
                                                                     @include icon-font('keyboard_arrow_right');
@@ -662,8 +651,8 @@
                                     }
                                 }
                             }
-                            > .ft {
-                                > .in {}
+                            >.ft {
+                                >.in {}
                                 ul {}
                                 li {}
                                 span {}
@@ -686,7 +675,7 @@
                             display: none;
                         }
                         &.is-fixed {
-                            > .in {
+                            >.in {
                                 position: fixed;
                                 top: 0;
                                 left: 0;
@@ -695,32 +684,32 @@
                                 box-shadow: $box-shadow;
                             }
                         }
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             background-color: $light;
-                            > .hd {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
+                            >.ct {
                                 @extend %center;
-                                > .in {
-                                    > ul {
+                                >.in {
+                                    >ul {
                                         @extend %reset;
                                         &:after {
                                             @extend %clear;
                                         }
-                                        > li {
+                                        >li {
                                             position: relative;
                                             box-sizing: border-box;
                                             padding: $interval-s;
                                             @include js(false) {
                                                 width: 100%;
                                             }
-                                            + li {
+                                            +li {
                                                 &:before {
                                                     content: $content;
                                                     display: block;
@@ -744,15 +733,15 @@
                                             &.is-active,
                                             &:hover {
                                                 z-index: 1; //避免雙層選單覆蓋問題
-                                                > .group.nav {
-                                                    > .in {
-                                                        > .hd {
+                                                >.group.nav {
+                                                    >.in {
+                                                        >.hd {
                                                             a {
                                                                 background-color: $minor-color;
                                                                 color: $white;
                                                             }
                                                         }
-                                                        > .ct {
+                                                        >.ct {
                                                             display: block;
                                                         }
                                                     }
@@ -762,8 +751,8 @@
                                     }
                                 }
                             }
-                            > .ft {
-                                > .in {}
+                            >.ft {
+                                >.in {}
                                 ul {}
                                 li {}
                                 span {}
@@ -772,24 +761,24 @@
                         }
                     }
                     .base-content & {
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             background-color: $major-color;
                             border-radius: 3px;
                             padding: 15px 0;
-                            > .hd {
-                                > .in {}
+                            >.hd {
+                                >.in {}
                                 h3 {
                                     display: none;
                                 }
                                 span {}
                                 a {}
                             }
-                            > .ct {
+                            >.ct {
                                 overflow: hidden;
                                 margin: 0 8px;
-                                > .in {
-                                    > ul {
+                                >.in {
+                                    >ul {
                                         &.classify_option {
                                             text-align: center;
                                             li {
@@ -816,28 +805,28 @@
                                         @extend %reset-inner;
                                         margin: 0px;
                                         background-color: $white;
-                                        > li {
+                                        >li {
                                             margin: 0 10px;
-                                            + li {
+                                            +li {
                                                 border-top: $border;
                                                 border-top: 1px dotted #ccc;
                                             }
-                                            > [data-type] {
-                                                > .bg-drop-layout > .in,
-                                                > .in {
+                                            >[data-type] {
+                                                >.bg-drop-layout>.in,
+                                                >.in {
                                                     margin: 0 !important;
                                                 }
                                             }
                                             &.is-active {
-                                                > .group.nav {
-                                                    > .in {
-                                                        > .hd {
+                                                >.group.nav {
+                                                    >.in {
+                                                        >.hd {
                                                             a {
                                                                 background-color: $major-color !important;
                                                                 color: $white !important;
                                                             }
                                                         }
-                                                        > .ct {
+                                                        >.ct {
                                                             display: block;
                                                             .in {
                                                                 background-color: transparent !important;
@@ -850,8 +839,8 @@
                                     }
                                 }
                             }
-                            > .ft {
-                                > .in {}
+                            >.ft {
+                                >.in {}
                                 ul {}
                                 li {}
                                 span {}
@@ -871,25 +860,25 @@
                         &.is-close {
                             display: none;
                         }
-                        > .bg-drop-layout > .in,
-                        > .in {
+                        >.bg-drop-layout>.in,
+                        >.in {
                             @extend %center;
-                            > .hd {
+                            >.hd {
                                 display: none;
-                                > .in {}
+                                >.in {}
                                 h3 {}
                                 span {}
                                 a {}
                             }
-                            > .ct {
+                            >.ct {
                                 padding: $interval-s 0;
                                 border-bottom: $border;
-                                > .in {
-                                    > ul {
+                                >.in {
+                                    >ul {
                                         &:after {
                                             @extend %clear;
                                         }
-                                        > li {
+                                        >li {
                                             &:nth-child(#{$max-len - 1}n+1) {
                                                 clear: left;
                                             }
@@ -897,8 +886,8 @@
                                     }
                                 }
                             }
-                            > .ft {
-                                > .in {}
+                            >.ft {
+                                >.in {}
                                 ul {}
                                 li {}
                                 span {}
@@ -906,7 +895,7 @@
                             }
                         }
                     }
-                    > .in {
+                    >.in {
                         &:before {
                             content: "";
                             width: 100%;
@@ -917,9 +906,7 @@
                             top: -12px;
                         }
                     }
-                }
-                
-                // 首頁
+                } // 首頁
                 // 頭部縣市選擇
                 .area-customize.city {
                     display: inline-block;
@@ -930,7 +917,7 @@
                         width: 100%;
                         text-align: center;
                     }
-                    > .in {
+                    >.in {
                         @extend %center;
                         @include media('mobile') {
                             width: 301px;
@@ -960,14 +947,12 @@
                         }
                     }
                 }
-                
+
                 .kidsHead {
-                    > .in {
+                    >.in {
                         @extend %center;
                     }
-                }
-                
-                // 我的專區
+                } // 我的專區
                 .area-customize.member {
                     display: inline-block;
                     position: absolute;
@@ -1015,37 +1000,34 @@
                             box-shadow: $btn-active;
                         }
                     }
-                    .login > a {
+                    .login>a {
                         &:before {
                             @include fontAwesome('key');
                         }
                     }
-                    .logout > a {
+                    .logout>a {
                         &:before {
                             @include fontAwesome('lock');
                         }
                     }
-                    .zone > a {
+                    .zone>a {
                         &:before {
                             @include fontAwesome('user-circle-o');
                         }
                     }
-                    .join > a {
+                    .join>a {
                         &:before {
                             @include fontAwesome('plus');
                         }
                     }
-                }
-                
-                // 訊息快遞
+                } // 訊息快遞
                 .newsBox {
-                    > .in {
+                    >.in {
                         @extend %center;
                         .group-list.slider {
                             padding: 0 12px;
                             box-sizing: border-box;
-                        }
-                        // 訊息快遞
+                        } // 訊息快遞
                         .news {
                             @include rwd(1000) {
                                 width: 100% !important;
@@ -1057,10 +1039,10 @@
                                 .ct {
                                     .group-list.message {
                                         >.in {
-                                            > .ct {
-                                                > .in {
-                                                    > ul {
-                                                        > li {
+                                            >.ct {
+                                                >.in {
+                                                    >ul {
+                                                        >li {
                                                             @extend %borderNews;
                                                             .area-essay.message {
                                                                 .img {
@@ -1092,7 +1074,7 @@
                                                                             width: 10px;
                                                                             height: 10px;
                                                                             background: url(../images/title-dot-icon.png) no-repeat;
-                                                                            margin: 4px 0px 0 0px;
+                                                                            margin: 8px 0px 0 0px;
                                                                             float: left;
                                                                         }
                                                                     }
@@ -1125,8 +1107,7 @@
                                     }
                                 }
                             }
-                        }
-                        // 生活情報
+                        } // 生活情報
                         .life {
                             @include rwd(1000) {
                                 width: 100% !important;
@@ -1159,14 +1140,105 @@
                                 }
                             }
                         }
+                        // 闢謠專區
+                        .rumor{
+                          >.in {
+                            .hd {
+                                @extend %headerHome;
+                                h3 {
+                                  background: url(../images/line_02.png) no-repeat 50%;
+                                    &:after {
+                                        content: "";
+                                    }
+                                }
+                            }
+                            >.ct{
+                              >.in{
+                                  ul{
+                                    li{
+                                      width: 48%;
+                                      display: inline-block !important;
+                                      @include media('phone') {
+                                          width: 100%;
+                                      }
+                                      &:first-child{
+                                        margin-right: 2%;
+                                      }
+                                    }
+                                  }
+
+                              }
+                              .group-list.message {
+                                  >.in {
+                                      >.ct {
+                                          >.in {
+                                              >ul {
+                                                width: 100%;
+                                                display: inline-block;
+                                                @include media('phone') {
+                                                    width: 100%;
+                                                }
+                                                &:first-child{
+                                                  margin-right: 3%;
+                                                }
+                                                >li{
+                                                  display: inline-block;
+                                                  width: 100%;
+                                                  /*i*/.unit{
+                                                  font-style: inherit;
+                                                  color: #949494;
+                                                  &:before{
+                                                    content: "|";
+                                                    display: inline-block;
+                                                    color: #bbbbbb;
+                                                    margin-right: 10px;
+                                                  }
+                                                  }
+                                                  .area-essay.message .essay {
+                                                    .label{
+                                                      &:before {
+                                                          display: none;
+                                                      }
+                                                      ul{
+                                                        li{
+                                                          display: inline-block;
+                                                          width: auto;
+                                                        }
+                                                      }
+                                                    }
+                                                    .caption{
+                                                      margin: 0;
+                                                      position: inherit;
+                                                      width: 100%;
+                                                      color: #484848;
+                                                      @extend %ellipsis;
+                                                      &:before{
+                                                        content: "";
+                                                        display: inline-block;
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        background: url(../images/title-dot-icon.png) no-repeat;
+                                                        margin: 6px 3px 0 0px;
+                                                        float: left;
+                                                      }
+                                                    }
+                                                  }
+
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                            }
+                          }
+                        }
                     }
-                }
-                
-                // 綜合服務
+                } // 綜合服務
                 .serviceBox {
-                    > .in {
+                    >.in {
                         @extend %center;
-                        > .hd {
+                        >.hd {
                             @extend %headerHome;
                             h3 {
                                 background: url(../images/line_02.png) 31px center no-repeat;
@@ -1176,8 +1248,8 @@
                                 }
                             }
                         }
-                        > .ct {
-                            > .in {
+                        >.ct {
+                            >.in {
                                 @include set-len(3);
                                 @include average(3);
                                 .group-list.slider {
@@ -1188,7 +1260,7 @@
                                     @include rwd(872) {
                                         width: 50%;
                                     }
-                                    > .in {
+                                    >.in {
                                         border-radius: 6px;
                                         background: $white;
                                         border: 1px solid $deep-gray;
@@ -1197,8 +1269,7 @@
                                         border-top: 6px solid $major-color;
                                         margin: 10px;
                                         padding: 0 10px 10px 10px;
-                                        height: 130px !important;
-                                        @include multi-ellipsis($line: 3, $line-height: 24px);
+                                        min-height: 130px !important; // @include multi-ellipsis($line: 3, $line-height: 24px);
                                         position: relative;
                                         top: 0;
                                         left: 0;
@@ -1214,12 +1285,22 @@
                                             content: none;
                                         }
                                         .list-text.link {
-                                            > .in {
+                                            >.in {
+                                                .pilititle {
+                                                    color: #00b104;
+                                                    font-weight: bold;
+                                                    margin: 7px 12px;
+                                                    font-size: 1.1em;
+                                                }
                                                 ul {
+                                                    margin: 0 0 0 23px;
                                                     li {
                                                         margin: 0;
                                                         display: inline-block;
                                                         border-bottom: none;
+                                                        @include media("pad") {
+                                                            width: 48%;
+                                                        }
                                                         span {
                                                             a {
                                                                 padding: 0 8px;
@@ -1266,8 +1347,7 @@
                                                             border-radius: 6px;
                                                         }
                                                         &:before {
-                                                            display: none;
-                                                            // &:hover {
+                                                            display: none; // &:hover {
                                                             //     display: none;
                                                             // }
                                                         }
@@ -1316,7 +1396,15 @@
                                         .list-text.link {
                                             ul {
                                                 li {
-                                                    margin-right: 40px !important;
+                                                    width: 32%;
+                                                    padding-right: 1%;
+                                                    @include media("pad") {
+                                                        width: 49%;
+                                                    }
+
+                                                    @include media("phone") {
+                                                        width: 100%;
+                                                    }
                                                 }
                                             }
                                         }
@@ -1391,24 +1479,21 @@
                                             background-position: -360px -111px !important;
                                         }
                                     }
-                                }
-                                // 收養
+                                } // 收養
                                 .adopt {
                                     h3 {
                                         &:before {
                                             background-position: -419px -114px !important;
                                         }
                                     }
-                                }
-                                // 開創
+                                } // 開創
                                 .career {
                                     h3 {
                                         &:before {
                                             background-position: -419px -53px !important;
                                         }
                                     }
-                                }
-                                // 安養
+                                } // 安養
                                 .nursing {
                                     h3 {
                                         &:before {
@@ -1419,15 +1504,13 @@
                             }
                         }
                     }
-                }
-                
-                // 焦點議題
+                } // 焦點議題
                 .focus {
                     margin: 30px 0 0 0;
                     padding-bottom: 30px;
-                    > .in {
+                    >.in {
                         @extend %center;
-                        > .hd {
+                        >.hd {
                             @extend %headerHome;
                             h3 {
                                 background: url(../images/line_03.png) 0px center no-repeat;
@@ -1438,18 +1521,18 @@
                                 }
                             }
                         }
-                        > .ct {
-                            > .in {
+                        >.ct {
+                            >.in {
                                 .group-list.slider {
                                     @include len-rwd('pad',
                                     1);
                                     .group-list.link {
-                                        > .in {
+                                        >.in {
                                             @include default-len(0,
                                             2);
-                                            > .ct {
-                                                > .in {
-                                                    > ul {
+                                            >.ct {
+                                                >.in {
+                                                    >ul {
                                                         li {
                                                             padding: 10px;
                                                             .area-essay.link {
@@ -1481,7 +1564,7 @@
                                                                     font-size: $font-size-xl;
                                                                 }
                                                             }
-                                                            ~ li {
+                                                            ~li {
                                                                 .area-essay.link {
                                                                     .essay {
                                                                         &:after {
@@ -1489,7 +1572,7 @@
                                                                         }
                                                                     }
                                                                 }
-                                                                ~ li {
+                                                                ~li {
                                                                     .area-essay.link {
                                                                         .essay {
                                                                             &:after {
@@ -1497,7 +1580,7 @@
                                                                             }
                                                                         }
                                                                     }
-                                                                    ~ li {
+                                                                    ~li {
                                                                         .area-essay.link {
                                                                             .essay {
                                                                                 &:after {
@@ -1540,15 +1623,13 @@
                             }
                         }
                     }
-                }
-                
-                // 影音專區
+                } // 影音專區
                 .studioZone {
                     background: url(../images/icon_floor.jpg) repeat;
                     padding: 0 0 42px 0;
-                    > .in {
+                    >.in {
                         @extend %center;
-                        > .hd {
+                        >.hd {
                             @extend %headerHome;
                             h3 {
                                 background: url(../images/line_03.png) 50% no-repeat;
@@ -1559,12 +1640,12 @@
                                 }
                             }
                         }
-                        > .ct {
-                            > .in {
+                        >.ct {
+                            >.in {
                                 // 福爾摩沙影城
                                 .studio {
-                                    > .in {
-                                        > .hd {
+                                    >.in {
+                                        >.hd {
                                             @extend %headerHome;
                                             h3 {
                                                 background: url(../images/line_04.png) 50% no-repeat;
@@ -1613,11 +1694,10 @@
                                             }
                                         }
                                     }
-                                }
-                                // 廣告輪播
+                                } // 廣告輪播
                                 .ad {
-                                    > .in {
-                                        > .hd {
+                                    >.in {
+                                        >.hd {
                                             @extend %headerHome;
                                             h3 {
                                                 background: url(../images/line_04.png) 0px center no-repeat;
@@ -1634,24 +1714,24 @@
                         }
                     }
                 }
-                
+
                 .kidsSearch {
                     position: relative;
                     margin: 0 auto;
                     text-align: center;
                     width: 100%;
-                    z-index: 1;
+                    z-index: 0;
                     @include media('mobile') {
                         display: none;
                     }
-                    > .in {
-                        > .hd {
+                    >.in {
+                        >.hd {
                             display: none;
                         }
-                        > .ct {
+                        >.ct {
                             width: 100%;
                             margin: 0 auto;
-                            > .in {
+                            >.in {
                                 width: 100%;
                                 display: inline-block;
                                 .area-form.search {
@@ -1705,8 +1785,7 @@
                                             }
                                         }
                                     }
-                                }
-                                // 熱門關鍵字
+                                } // 熱門關鍵字
                                 .list-text.hot-key-word {
                                     @extend %hotKey;
                                     display: inline-block;
@@ -1741,9 +1820,9 @@
                         }
                     }
                 }
-                
+
                 .metaDeta {
-                    > .in {
+                    >.in {
                         .hd {
                             h3 {
                                 padding-bottom: 8px;
@@ -1842,7 +1921,7 @@
                                     padding: 6px;
                                     border-radius: 6px;
                                     border: 1px solid #b7cdad;
-                                    > .in {}
+                                    >.in {}
                                     .fieldset {
                                         display: inline-block;
                                         margin: $interval-s;

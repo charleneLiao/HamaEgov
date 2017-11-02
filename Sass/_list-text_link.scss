@@ -1,549 +1,441 @@
 //文字列表
-
 //連結================================================================
-
 .list-text.link {
 
-	.base-mobile & {
+    .base-mobile & {
 
-		> .bg-drop-layout > .in, > .in {
+        >.bg-drop-layout>.in,
+        >.in {}
 
-		}
+        .hd {
+            display: none;
 
-		.hd {
-			display: none;
+            >.in {}
 
-			> .in {
+            h4 {}
 
-			}
+            span {}
 
-			h4 {
+            a {}
+        }
 
-			}
+        .ct {
 
-			span {
+            >.in {}
 
-			}
+            ul {}
 
-			a {
+            li {
 
-			}
-		}
+                +li {
+                    border-top: $border;
+                }
+            }
 
-		.ct {
+            span {
+                display: block;
+            }
 
-			> .in {
-				
-			}
+            a {
+                display: block;
+                padding: $interval-m;
+            }
 
-			ul {
+            /*i*/
+            .mark {}
+        }
 
-			}
+        .ft {
+            display: none;
 
-			li {
+            >.in {}
 
-				+ li {
-					border-top: $border;
-				}
-			}
+            ul {}
 
-			span {
-				display: block;
-			}
+            li {}
 
-			a {
-				display: block;
-				padding: $interval-m;
-			}
+            span {}
 
-			/*i*/.mark {
-				
-			}
-		}
+            a {}
+        }
+    }
 
-		.ft {
-			display: none;
+    .base-header & {
+        position: absolute;
+        top: 7px;
+        right: 90px;
 
-			> .in {
+        @include js(false) {
+            right: 10px;
+        }
 
-			}
+        @include media('mobile') {
+            display: none;
+        }
 
-			ul {
+        >.bg-drop-layout>.in,
+        >.in {}
 
-			}
+        .hd {
+            display: none;
 
-			li {
+            >.in {}
 
-			}
+            h4 {}
 
-			span {
+            span {}
 
-			}
+            a {}
+        }
 
-			a {
+        .ct {
 
-			}
-		}
-	}
+            >.in {}
 
-	.base-header & {
-		position: absolute;
-		top: 7px;
-		right: 90px;
+            ul {}
 
-		@include js(false) {
-			right: 10px;
-		}
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                color: $white;
 
-		@include media('mobile') {
-			display: none;
-		}
+                +li {
 
-		> .bg-drop-layout > .in, > .in {
-			
-		}
+                    &:before {
+                        content: ' | ';
+                        vertical-align: middle;
+                    }
+                }
+            }
 
-		.hd {
-			display: none;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
 
-			> .in {
+            a {
+                display: block;
+                font-size: $font-size-xs;
+            }
 
-			}
+            /*i*/
+            .mark {
+                @extend %mark;
+            }
+        }
 
-			h4 {
+        .ft {
+            display: none;
 
-			}
+            >.in {}
 
-			span {
+            ul {}
 
-			}
+            li {}
 
-			a {
+            span {}
 
-			}
-		}
+            a {}
+        }
+    }
 
-		.ct {
+    .base-content & {
 
-			> .in {
+        &.bg-blue {
 
-			}
+            >.bg-drop-layout>.in,
+            >.in {
+                background-color: $major-color;
+                background-image: url('../images/list-link-bg1.png');
+                background-repeat: no-repeat;
+                background-position: right 90px;
+            }
 
-			ul {
+            .hd {
 
-			}
 
-			li {
-				display: inline-block;
-				vertical-align: middle;
-				color: $white;
-				
-				+ li {
+                >.in {}
 
-					&:before {
-						content: ' | ';
-						vertical-align: middle;
-					}
-				}
-			}
+                h4 {
+                    padding: 10px 0 10px 30px;
+                    margin: 0 15px;
+                    border-bottom: #cedbd6 1px solid;
+                    background: url(../images/list-link-icon1.png) left center no-repeat;
+                }
 
-			span {
-				display: inline-block;
-				vertical-align: middle;
-			}
+                span {}
 
-			a {
-				display: block;
-				font-size: $font-size-xs;
-			}
+                a {
+                    color: $white;
+                }
+            }
 
-			/*i*/.mark {
-				@extend %mark;
-			}
-		}
+            .ct {
 
-		.ft {
-			display: none;
+                >.in {
+                    color: $white;
+                }
 
-			> .in {
+                ul {}
 
-			}
+                li {
 
-			ul {
 
-			}
 
-			li {
+                    +li {
+                        margin-top: $interval-s;
+                    }
+                }
 
-			}
+                span {
+                    display: block;
+                }
 
-			span {
+                a {
+                    @extend %ellipsis;
+                    @extend %list;
+                    @extend %list-hover;
+                }
 
-			}
+                /*i*/
+                .mark {
+                    @extend %mark;
+                }
+            }
 
-			a {
+            .ft {
+                @extend %footer;
 
-			}
-		}
-	}
+                >.in {}
 
-	.base-content & {
+                ul {}
 
-		&.bg-blue {
+                li {}
 
-			> .bg-drop-layout > .in, > .in {
-			   background-color: $major-color;
-			   background-image: url('../images/list-link-bg1.png');
-			   background-repeat:no-repeat;
-			   background-position:right 90px;
-			}
+                span {}
 
-			.hd {
-                
+                a {}
+            }
+        }
 
-				> .in {
+        &.bg-deep-blue {
 
-				}
+            >.bg-drop-layout>.in,
+            >.in {
+                background-color: #1ea3af;
+                background-image: url('../images/list-link-bg2.png');
+                background-repeat: no-repeat;
+                background-position: right 90px;
+            }
 
-				h4 {
-					padding: 10px 0 10px 30px;
-				    margin: 0 15px;
-				    border-bottom: #cedbd6 1px solid;
-				    background: url(../images/list-link-icon1.png) left center no-repeat;
-				}
+            .hd {
 
-				span {
 
-				}
+                >.in {}
 
-				a {
-                   color: $white;
-				}
-			}
+                h4 {
+                    padding: 10px 0 10px 30px;
+                    margin: 0 15px;
+                    border-bottom: #cedbd6 1px solid;
+                    background: url(../images/list-link-icon2.png) left center no-repeat;
+                }
 
-			.ct {
+                span {}
 
-				> .in {
-                  color: $white;
-				}
+                a {
+                    color: $white;
+                }
+            }
 
-				ul {
+            .ct {
 
-				}
+                >.in {
+                    color: $white;
+                }
 
-				li {
+                ul {}
 
+                li {
 
 
-					+ li {
-						margin-top: $interval-s;
-					}
-				}
 
-				span {
-					display: block;
-				}
+                    +li {
+                        margin-top: $interval-s;
+                    }
+                }
 
-				a {
-					@extend %ellipsis;
-					@extend %list;
-					@extend %list-hover;
-				}
+                span {
+                    display: block;
+                }
 
-				/*i*/.mark {
-					@extend %mark;
-				}
-			}
+                a {
+                    @extend %ellipsis;
+                    @extend %list;
+                    @extend %list-hover;
+                }
 
-			.ft {
-				@extend %footer;
+                /*i*/
+                .mark {
+                    @extend %mark;
+                }
+            }
 
-				> .in {
+            .ft {
+                @extend %footer;
 
-				}
+                >.in {}
 
-				ul {
+                ul {}
 
-				}
+                li {}
 
-				li {
+                span {}
 
-				}
+                a {}
+            }
+        }
 
-				span {
+        >.bg-drop-layout>.in,
+        >.in {
+            border-radius: 3px;
+        }
 
-				}
+        .hd {
+            @extend %header;
 
-				a {
+            >.in {}
 
-				}
-			}
-		}
+            h4 {}
 
-		&.bg-deep-blue {
+            span {}
 
-			> .bg-drop-layout > .in, > .in {
-			   background-color: #1ea3af;	
-			   background-image: url('../images/list-link-bg2.png');
-			   background-repeat:no-repeat;
-			   background-position:right 90px;
-			}
+            a {}
+        }
 
-			.hd {
-                
+        .ct {
 
-				> .in {
+            >.in {}
 
-				}
+            ul {}
 
-				h4 {
-					padding: 10px 0 10px 30px;
-				    margin: 0 15px;
-				    border-bottom: #cedbd6 1px solid;
-				    background: url(../images/list-link-icon2.png) left center no-repeat;
-				}
+            li {
 
-				span {
+                border-bottom: 1px dotted #f0f0f0;
+                margin: 0 15px;
 
-				}
+                +li {
+                    margin-top: $interval-s;
+                }
+            }
 
-				a {
-                   color: $white;
-				}
-			}
+            span {
+                display: block;
+            }
 
-			.ct {
+            a {
+                @extend %ellipsis;
+                @extend %list;
+                @extend %list-hover;
+            }
 
-				> .in {
-                  color: $white;
-				}
+            /*i*/
+            .mark {
+                @extend %mark;
+            }
+        }
 
-				ul {
+        .ft {
+            @extend %footer;
 
-				}
+            >.in {}
 
-				li {
+            ul {}
 
+            li {}
 
+            span {}
 
-					+ li {
-						margin-top: $interval-s;
-					}
-				}
+            a {}
+        }
+    }
 
-				span {
-					display: block;
-				}
+    .base-footer & {
 
-				a {
-					@extend %ellipsis;
-					@extend %list;
-					@extend %list-hover;
-				}
+        @include media('mobile') {
+            display: none;
+        }
 
-				/*i*/.mark {
-					@extend %mark;
-				}
-			}
+        >.bg-drop-layout>.in,
+        >.in {}
 
-			.ft {
-				@extend %footer;
+        .hd {
+            display: none;
 
-				> .in {
+            >.in {}
 
-				}
+            h4 {}
 
-				ul {
+            span {}
 
-				}
+            a {}
+        }
 
-				li {
+        .ct {
 
-				}
+            >.in {}
 
-				span {
+            ul {}
 
-				}
+            li {
+                display: inline-block;
+                vertical-align: middle;
 
-				a {
+                +li {
 
-				}
-			}
-		}
+                    &:before {
+                        content: ' | ';
+                        vertical-align: middle;
+                    }
+                }
+            }
 
-		> .bg-drop-layout > .in, > .in {
-           border-radius: 3px;
-		}
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
 
-		.hd {
-			@extend %header;
+            a {
+                display: block;
+            }
 
-			> .in {
+            /*i*/
+            .mark {}
+        }
 
-			}
+        .ft {
+            display: none;
 
-			h4 {
+            >.in {}
 
-			}
+            ul {}
 
-			span {
+            li {}
 
-			}
+            span {}
 
-			a {
+            a {}
+        }
+    }
+    /*ul*/
+    .col {
+        width: 33%;
+        display: inline-block;
+        @include media("pad") {
+            width: 49%;
+        }
 
-			}
-		}
-
-		.ct {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-				border-bottom: 1px dotted #f0f0f0;
-				margin: 0 15px;
-
-				+ li {
-					margin-top: $interval-s;
-				}
-			}
-
-			span {
-				display: block;
-			}
-
-			a {
-				@extend %ellipsis;
-				@extend %list;
-				@extend %list-hover;
-			}
-
-			/*i*/.mark {
-				@extend %mark;
-			}
-		}
-
-		.ft {
-			@extend %footer;
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
-
-	.base-footer & {
-
-		@include media('mobile') {
-			display: none;
-		}
-
-		> .bg-drop-layout > .in, > .in {
-
-		}
-
-		.hd {
-			display: none;
-
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-
-		.ct {
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-				display: inline-block;
-				vertical-align: middle;
-				
-				+ li {
-
-					&:before {
-						content: ' | ';
-						vertical-align: middle;
-					}
-				}
-			}
-
-			span {
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-			a {
-				display: block;
-			}
-
-			/*i*/.mark {
-				
-			}
-		}
-
-		.ft {
-			display: none;
-
-			> .in {
-
-			}
-
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
-		}
-	}
+        @include media("phone") {
+            width: 100%;
+        }
+    }
 }

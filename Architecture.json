@@ -36,7 +36,13 @@
         {
             "GroupType": "FixedModuleString",
             "Name": "Member"
-                } 
+        },
+        {
+            "GroupType": "Module",
+            "Type": 0,
+            "ct": "<span><a id=\"gotoComputerBtn\" href=\"#\">電腦版</a></span>",
+            "Class": "area-customize backPC",
+       }
 ]
     }]
 }, {
@@ -57,7 +63,7 @@
             "Sub": [{
                     "GroupType": "FixedModuleString",
                     "Name": "Geo"
-                }, 
+                },
                 {
                     "GroupType": "FixedModuleString",
                     "Name": "Member"
@@ -157,7 +163,7 @@
             }]
         }]
     }]
-}, 
+},
 {
     "BaseName": "page-header",
     "Sub": [{
@@ -202,7 +208,7 @@
                 "ft": "",
                 "Class": "simple-text btn",
                 "func": "{'anchor':{}}"
-               }
+           }
         ]
     }
 ]

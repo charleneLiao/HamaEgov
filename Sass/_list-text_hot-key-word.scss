@@ -2,6 +2,7 @@
 //熱門關鍵字================================================================
 .list-text.hot-key-word {
     .base-mobile & {
+        display: none;
         > .bg-drop-layout > .in,
         > .in {}
         .hd {

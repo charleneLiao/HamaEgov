@@ -59,4 +59,28 @@
 			}
 		}
 	}
+	.area-customize.member{
+		width: 100%;
+    text-align: center;
+		>.in{
+			>.ct{
+				>.in{
+					ul{
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	// 切回電腦版
+	.area-customize.backPC{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 50px;
+		a{
+			@extend %btn;
+			padding: 10px 34px;
+			font-size: 1em;
+		}
+	}
 }

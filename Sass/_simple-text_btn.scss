@@ -24,17 +24,17 @@
                 }
             }
         }
-        > .bg-drop-layout > .in,
-        > .in {}
+        >.bg-drop-layout>.in,
+        >.in {}
         .hd {
             display: none;
-            > .in {}
+            >.in {}
             h4 {}
             span {}
             a {}
         }
         .ct {
-            > .in {}
+            >.in {}
             span {
                 display: block;
             }
@@ -60,7 +60,7 @@
                     background-color: rgba($deep, $opacity-m);
                     z-index: -1;
                 }
-                p{
+                p {
                     display: none;
                 }
             }
@@ -68,7 +68,7 @@
             .mark {}
         }
         .ft {
-            > .in {}
+            >.in {}
             ul {}
             li {}
             span {}
@@ -92,11 +92,11 @@
                 }
             }
         }
-        > .bg-drop-layout > .in,
-        > .in {}
+        >.bg-drop-layout>.in,
+        >.in {}
         .hd {
             display: none;
-            > .in {}
+            >.in {}
             h4 {}
             span {}
             a {}
@@ -104,7 +104,7 @@
         .ct {
             @extend %center;
             position: relative;
-            > .in {
+            >.in {
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -114,10 +114,9 @@
             span {
                 display: inline-block;
                 a {
-                    
+
                     &:before {
                         @include icon-font('arrow_drop_down');
-                        
                     }
                     &:hover {
                         background-color: none;
@@ -128,7 +127,7 @@
             .mark {}
         }
         .ft {
-            > .in {}
+            >.in {}
             ul {}
             li {}
             span {}
@@ -137,20 +136,19 @@
     }
     .base-extend & {
         position: fixed;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        right: 20px;
+        bottom: 60px;
         @include media('mobile') {
             display: block !important;
         }
-        > .bg-drop-layout > .in,
-        > .in {
+        >.bg-drop-layout>.in,
+        >.in {
             @extend %center;
             position: relative;
         }
         .hd {
             display: none;
-            > .in {}
+            >.in {}
             h4 {}
             span {}
             a {}
@@ -159,7 +157,7 @@
             $pic: 'icon-pic/away-w-top.png'; //圖片
             $btn-w: 50px;
             $btn-h: 25px;
-            > .in {}
+            >.in {}
             span {
                 display: block;
             }
@@ -185,7 +183,7 @@
             .mark {}
         }
         .ft {
-            > .in {}
+            >.in {}
             ul {}
             li {}
             span {}
