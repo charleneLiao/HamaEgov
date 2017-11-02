@@ -61,6 +61,10 @@
 
 			li {
 				display: inline-block;
+
+				+ li {
+					margin-left: $interval-xs;
+				}
 			}
 
 			span {

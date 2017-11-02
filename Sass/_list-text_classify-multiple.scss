@@ -7,9 +7,10 @@
 
 	padding: $interval-xs;
 	border: $border;
+	border-radius: $border-radius;
 
 	&.is-active {
-		background-color: $minor-color;
+		background-color: $major-color;
 
 		.hd {
 
@@ -21,12 +22,7 @@
 		.ct {
 
 			a {
-				background-color: deeper($active-color);
-				color: $white;
-
-				&:hover {
-					background-color: deeper($active-color, 2);
-				}
+				
 			}
 		}
 	}
@@ -76,7 +72,8 @@
 			&.is-active {
 
 				a {
-					background-color: $active-color;
+					border-color: $major-color;
+					background-color: $major-color;
 					color: $white;
 				}
 			}
@@ -89,8 +86,11 @@
 		a {
 			display: block;
 			padding: $btn-padding;
-			background-color: $light;
+			border: $border;
+			background-color: $white;
 			color: $body-font-color;
+			border-radius: $border-radius;
+			text-align: center;
 
 			&:hover {
 				background-color: $light-gray;

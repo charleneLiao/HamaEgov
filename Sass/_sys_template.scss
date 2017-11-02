@@ -38,6 +38,8 @@
 
 @import 'list-text_user-tool'; //使用者工具
 
+@import 'area-customize_nav'; //客戶自訂選單
+
 
 //客製撰寫
 
@@ -45,6 +47,8 @@
 
 
 //不可變換位置
+
+@import 'area-form_page-search'; //內頁搜尋
 
 @import 'list-text_jump-tool'; //跳轉導航列
 
@@ -68,3 +72,5 @@
 //頁籤
 
 @import 'list-text_tab'; //頁籤
+
+@import 'group_center'; //置中

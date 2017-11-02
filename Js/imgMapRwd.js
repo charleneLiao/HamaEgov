@@ -8,14 +8,6 @@ define(function(){
 
 		$.extend($set, opt);
 
-		//先測試瀏覽器有沒有 naturalWidth，沒有就不執行這功能
-
-		var $img = new Image();
-
-		if( $img.naturalWidth === undefined ) {
-			return false;
-		}
-
 		var $window = $(window),
 			$this = $(env),
 			$map = $this.find('map');

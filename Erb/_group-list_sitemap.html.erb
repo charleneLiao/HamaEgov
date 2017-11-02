@@ -12,18 +12,11 @@
 		</div></div>
 	<% end %>
 	
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
-
-			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>">
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i| %><li data-index="<%= i + 1 %>">
 
 				<!-- <%= inner %> -->
 					<%= render partial:  inner, locals: set({ header_text: lorem_word ,func_set: "{'toggleBtn':{'bindNode':'.ft','btnOrangeText':'開啟','btnActiveText':'關閉'}}" }) %>
 				<!-- <%= inner %> -->
 				
-				</li>
-			<% end %>
-		</ul>
-	</div></div>
+				</li><% end %></ul></div></div>
 </div></div>

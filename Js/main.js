@@ -2,6 +2,23 @@ define(function(){
 
 	return function(){
 
+		//修補 IE8
+
+		if( !( window.console && console.log ) ) { //如果沒有 console.log，就用return
+
+			window.console = {
+				'log': function(msg) {
+					return 'log: ' + msg
+				},
+				'info': function(msg) {
+					return 'info: ' + msg
+				},
+				'error': function(msg) {
+					return 'error: ' + msg
+				}
+			}
+		}
+
 		function Func($env, _file, $opt){
 			this.env = $env;
 			this.file = _file;

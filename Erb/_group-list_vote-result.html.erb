@@ -13,27 +13,19 @@
 				<h3><span><a href="#"><%= header_text %></a></span></h3>
 			</div></div>
 		<% end %>
-		<div class="ct"><div class="in">
-			<ul data-index="1" data-child="<%= li_length %>">
-
-				<% li_length.times do |i|
+		<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>"><% li_length.times do |i|
 
 					text = "#{i + 1}. #{zh_lorem_word}"
 				%>
 			
-					<% if( i == random ) %>
-						<li data-index="<%= i + 1 %>" class="is-special">
-					<% else %>
-						<li data-index="<%= i + 1 %>">
+					<% if( i == random ) %><li data-index="<%= i + 1 %>" class="is-special">
+					<% else %><li data-index="<%= i + 1 %>">
 					<% end %>
 
 					<!-- <%= inner %> -->
 						<%= render partial:  inner, locals: set({ header_text: text }) %>
 					<!-- <%= inner %> -->
 					
-					</li>
-				<% end %>
-			</ul>
-		</div></div>
+					</li><% end %></ul></div></div>
 	</div></div>
 <% end %>

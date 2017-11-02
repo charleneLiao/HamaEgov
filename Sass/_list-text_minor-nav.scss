@@ -5,24 +5,21 @@
 .list-text.minor-nav {
 
 	> .bg-drop-layout > .in, > .in {
-		background-color: $major-color;
+		border: $border;
+		background-color: $white;
 	}
 
 	.hd {
+		background-color: $major-color;
 
 		> .in {
 
 		}
 
 		h4 {
-			padding: $interval-m;
+			padding: $interval-l;
 			color: $white;
 			font-size: $font-size-l;
-
-			&:before {
-				@include icon-font('menu');
-				margin-right: $interval-xs;
-			}
 		}
 
 		span {
@@ -35,29 +32,29 @@
 	}
 
 	.ct {
-		overflow: hidden;
+		border-top: $border;
+		border-top-color: $white;
 
 		> .in {
 			
 		}
 
 		ul {
-			margin: 0 $interval-xs $interval-xs;
-			background-color: $white;
+			
 		}
 
 		li {
 
+			+ li {
+				border-top: $border;
+			}
+
 			&.is-active {
 
 				a {
-					background-color: $minor-color;
+					background-color: $major-color;
 					color: $white;
 				}
-			}
-
-			+ li {
-				border-top: $border;
 			}
 		}
 
@@ -67,13 +64,7 @@
 
 		a {
 			display: block;
-			padding: $interval-m;
-			transition: $transition;
-
-			&:before {
-				@include icon-font('keyboard_arrow_right');
-				margin-right: $interval-xs;
-			}
+			padding: 12px;
 
 			&:hover {
 				background-color: $light;

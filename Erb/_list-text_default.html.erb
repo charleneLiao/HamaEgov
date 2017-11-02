@@ -13,17 +13,8 @@
 			<h4><span><a href="#"><%= header_text %></a></span></h4>
 		</div></div>
 	<% end %>
-	<div class="ct"><div class="in">
-		<ul data-index="1" data-child="<%= li_length %>">
+	<div class="ct"><div class="in"><ul data-index="1" data-child="<%= li_length %>">
 			
-			<% li_length.times do |i| %>
-				<li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark">2015-11-26</i><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li>
-			<% end %>
-		</ul>
-	</div></div>
-	<div class="ft"><div class="in">
-		<ul data-index="1" data-child="1">
-			<li data-index="1" class="more"><span><a href="#">更多</a></span></li>
-		</ul>
-	</div></div>
+			<% li_length.times do |i| %><li data-index="<%= i + 1 %>"><span><a href="#"><i class="mark">2015-11-26</i><%= zh_lorem_words (min_text..max_text).to_a.sample %></a></span></li><% end %></ul></div></div>
+	<div class="ft"><div class="in"><ul data-index="1" data-child="1"><li data-index="1" class="more"><span><a href="#">更多</a></span></li></ul></div></div>
 </div></div>

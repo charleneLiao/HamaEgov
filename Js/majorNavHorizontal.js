@@ -19,11 +19,11 @@ define(['getNode'], function(getNode){
 			$all_a = $env.find('a'),
 			$last_a = $all_a.eq(-1);
 
-		for( var i = 0; i < $child_node_ct_in_length; i++ ) { //如果 child .in 沒有任何內容
+		for( var i = 0; i < $child_node_ct_in_length; i++ ) { //如果 child .in 有 a, 就是 is-parent
 			var _this = $child_node_ct_in.eq(i) || $child_node_ct_in;
 
-			if( !_this.find('a').length ) {
-				_this.parent().remove(); //就刪除 .content
+			if( _this.find('a').length ) {
+				_this.closest('li').addClass('is-parent');
 			}
 		}
 

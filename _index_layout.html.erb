@@ -51,6 +51,19 @@
 		</div></div>
 	<!-- sys-root 結束 -->
 
-		<script data-main="/js/app" src="/js/require.js"></script>
+		<% if( $js ) %>
+			<script src="/js/require.js"></script>
+			<script >
+				requirejs.config({
+					baseUrl: window.location.origin + '/js'
+				});
+
+				requirejs(['main'], function(func){ //執行主程式
+					func();
+				});
+			</script>
+		<% end %>
+
+		<%= livereload_js %>
 	</form></body>
 </html>

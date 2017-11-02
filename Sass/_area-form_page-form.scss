@@ -9,7 +9,6 @@
 	}
 
 	.hd {
-		@extend %header;
 
 		> .in {
 
@@ -20,16 +19,18 @@
 		}
 
 		span {
-				
+			display: block;
+			padding: $interval-m $interval-l;
+			background-color: $major-color;
+			color: $white;
 		}
 
 		a {
-
+			color: inherit;
 		}
 	}
 
 	.ct {
-		@extend %article-extend;
 
 		> .in {
 
@@ -37,12 +38,56 @@
 
 		.fieldset {
 			$height: 26px;
+			$left: 140px;
+			padding: $interval-xl $interval-xl * 2;
+			background-color: $light;
+
+			@include media('phone') {
+				padding: $interval-xl
+			}
 
 			+ .fieldset {
-				margin-top: $interval-m;
-				border-top: $border;
-				padding-top: $interval-m;
+				margin-top: $interval-xs;
 				text-align: right;
+				padding: 0;
+				background-color: transparent;
+
+				input {
+
+					&[type="submit"], &[type="reset"], &[type="button"] {
+						padding: $interval-m $interval-xl;
+						font-size: $font-size-l;
+					}
+				}
+			}
+
+			%labels {
+				line-height: $height;
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: $left;
+				box-sizing: border-box;
+				padding: 0 $interval-l;
+				text-align: right;
+
+				@include media('phone') {
+					line-height: normal !important;
+					position: static;
+					top: auto;
+					left: auto;
+					width: auto;
+					padding: 0;
+					text-align: left;
+				}
+			}
+
+			.legend {
+
+				span {
+
+				}
 			}
 
 			span {
@@ -54,6 +99,7 @@
 						content: attr(data-message);
 						margin-left: $interval-xs;
 						color: $minor-color;
+						display: block;
 					}
 				}
 
@@ -89,42 +135,201 @@
 
 				&.select {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 31px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 
 				&.text {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 
 				&.password {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 
 				&.date {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					input {
+						background-image: image-url('icon-pic/calendar.png');
+						background-position: center right;
+						background-repeat: no-repeat;
+					}
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label:first-child {
+						@extend %labels;
+						line-height: 38px;
+					}
+
+					label {
+
+						@include media('mobile') {
+							display: block;
+							margin: $interval-m 0;
+						}
+					}
 				}
 				
 				&.number {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 				
 				&.search {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 
 				&.email {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label:first-child {
+						@extend %labels;
+						line-height: 38px;
+					}
+
+					label {
+
+						@include media('mobile') {
+							display: block;
+							margin: $interval-m 0;
+						}
+					}
+				}
+
+				&.file {
+					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+
+						@include media('mobile') {
+							margin: $interval-m 0;
+						}
+					}
 				}
 
 				&.radio {
 					margin-top: $interval-s;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
 				}
 
 				&.checkbox {
 					margin-top: $interval-s;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
 				}
 
 				&.textarea {
 					margin-top: $interval-s;
+					position: relative;
+					padding-left: $left;
+
+					@include media('phone') {
+						padding-left: 0;
+					}
+
+					label {
+						@extend %labels;
+						line-height: 38px;
+					}
 				}
 
 				&.submit {
@@ -155,6 +360,11 @@
 				&[type="text"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -163,6 +373,11 @@
 
 				&[type="password"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;
@@ -173,6 +388,11 @@
 				&[type="date"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -181,6 +401,11 @@
 				
 				&[type="number"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;
@@ -191,6 +416,11 @@
 				&[type="search"] {
 					line-height: $height;
 
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
 					@include media('phone') {
 						display: block;
 						width: 100%;
@@ -199,6 +429,25 @@
 
 				&[type="email"] {
 					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
+
+					@include media('phone') {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				&[type="file"] {
+					line-height: $height;
+
+					@include media('center') {
+						display: block;
+						width: auto;
+					}
 
 					@include media('phone') {
 						display: block;
@@ -215,15 +464,16 @@
 				}
 
 				&[type="submit"] {
+					margin: $interval-xs;
 					@extend %btn-imp;
 				}
 
 				&[type="reset"] {
-					
+					margin: $interval-xs;
 				}
 
 				&[type="button"] {
-
+					margin: $interval-xs;
 				}
 			}
 
@@ -232,7 +482,7 @@
 			}
 
 			label {
-				line-height: $height;
+
 			}
 
 			.img {

@@ -5,7 +5,7 @@
 .group-list.album {
 
 	.base-module-area & {
-		@include average(4);
+		@include average(4, 1); 
 
 		> .bg-drop-layout > .in, > .in {
 
@@ -37,7 +37,7 @@
 
 						> li {
 							box-sizing: border-box;
-							padding: $interval-xs;
+							padding: $interval-s;
 
 							@include len-rwd('pad', 2);
 							@include len-rwd('phone', 1);

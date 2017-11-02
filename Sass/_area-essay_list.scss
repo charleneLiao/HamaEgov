@@ -1,0 +1,140 @@
+//文章區塊
+
+//列表================================================================
+
+.area-essay.list {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		@extend %header;
+
+		> .in {
+
+		}
+
+		h4 {
+			
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		/*div*/.div {
+			display: block;
+			padding: $interval-m;
+			background-color: $white;
+		}
+
+		.img {
+
+			span {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.essay {
+			margin-top: $interval-m;
+			transition: $transition;
+			background-color: $white;
+			min-height: 220px;
+		}
+
+		.caption {
+			@extend %caption;
+			text-align: center;
+
+			span {
+				
+			}
+		}
+
+		.label {
+			margin-top: $interval-m;
+
+			ul {
+				padding: 0 $interval-m;
+			}
+
+			li {
+
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: $interval-xs 0;
+				position: relative;
+				padding-left: $interval-xl;
+				transition: $transition;
+
+				&:before {
+					content: $content;
+					display: block;
+					position: absolute;
+					top: 12px;
+					left: 14px;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background-color: $major-color;
+				}
+
+				&:hover {
+					background-color: $light;
+					color: inherit;
+				}
+			}
+		}
+
+		/*i*/.mark {
+			display: none;
+		}
+	}
+
+	.ft {
+		@extend %footer;
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

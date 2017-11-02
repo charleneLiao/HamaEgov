@@ -14,9 +14,24 @@ define(['getNode'], function(getNode){
 			$li = $ul.children('li'), //取 li
 			$li_w = $li.outerWidth(),
 			$li_display = $li.css('display'),
+			$li_float = $li.css('float'),
 			_base_len = Math.round($ul_w / $li_w); //預設選單數量
 
-		if( $li_display === 'list-item' || $li_display === 'block' ) {  //如果選單寬度固定平均分割
+		if( $li_float === 'none' && $li_display !== 'inline-block' && $li_display !== 'inline' ) {  //如果是直選單
+
+			$li.each(function(i, d){
+				var $this = $(this),
+					_width = parseFloat($this.attr('data-width'));
+
+				var $module = $this.children('[data-index][data-type]'),
+					$ct = getNode.getCt($module);
+
+				$ct.css({ 
+					'width': ( _width * 100 ) + '%'
+				});
+			});
+
+		}else if( ( $li_display === 'list-item' || $li_display === 'block' ) && $li_float !== 'none' ) {  //如果選單寬度固定平均分割
 
 			$li.each(function(i, d){
 				var $this = $(this),
