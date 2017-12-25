@@ -76,10 +76,6 @@
 		li {
 			display: inline-block;
 
-			+ li {
-				margin-left: $interval-xs;
-			}
-
 			&.first {
 				
 			}
@@ -141,7 +137,7 @@
 			}
 
 			input {
-				max-width: 60px;
+				
 			}
 
 			label {

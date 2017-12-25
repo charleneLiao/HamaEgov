@@ -48,8 +48,7 @@
 			&.is-active {
 
 				a {
-					border-color: $major-color;
-					background-color: $major-color;
+					background-color: $active-color;
 					color: $white;
 				}
 			}
@@ -62,11 +61,8 @@
 		a {
 			display: block;
 			padding: $btn-padding;
-			border: $border;
-			background-color: $white;
+			background-color: $light;
 			color: $body-font-color;
-			border-radius: $border-radius;
-			text-align: center;
 
 			&:hover {
 				background-color: $light-gray;

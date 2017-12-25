@@ -69,6 +69,8 @@
         }
         a {
             text-decoration: underline;
+            padding: 1px;
+            display: inline-block;
             &:hover {
                 text-decoration: none;
             }

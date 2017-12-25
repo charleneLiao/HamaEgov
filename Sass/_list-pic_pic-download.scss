@@ -3,7 +3,7 @@
 //圖片下載================================================================
 
 .list-pic.pic-download {
-	@include default-len(4, 3);
+	@include default-len(4, 5);
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -48,13 +48,14 @@
 		}
 
 		li {
-			@include len-rwd('phone', 2);
+			@include len-rwd('pad', 3);
+			@include len-rwd('phone', 1);
 
 			&.is-img {
 				
 				a {
 					@include bg-to-pic('icon-pic/icon-w-img.png', false);
-					background-position: bottom $interval-s left $interval-s;
+					background-position: top $interval-s left $interval-s;
 				}
 			}
 
@@ -62,7 +63,7 @@
 				
 				a {
 					@include bg-to-pic('icon-pic/icon-w-video.png', false);
-					background-position: bottom $interval-s left $interval-s;
+					background-position: top $interval-s left $interval-s;
 				}
 			}
 		}
@@ -71,8 +72,9 @@
 			@extend %bg-cover;
 			position: relative;
 			display: block;
-			margin: $interval-s;
-			height: 140px;
+			margin: $interval-xs;
+			border: $interval-xs solid $light-gray;
+			height: 100px;
 
 			@include media('phone') {
 				height: 180px;
@@ -86,11 +88,11 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-color: transparent;
+			background-color: rgba($black, $opacity-m);
 			transition: $transition;
 
 			&:hover {
-				background-color: rgba($black, $opacity-m);
+				opacity: 0;
 			}
 
 			@include media('mobile') {

@@ -11,18 +11,7 @@ define(['getNode'], function(getNode){
 		
 		var $li = getNode.getCtItem(env), //取 li
 			$child_node_in = getNode.getIn($li.children('[data-type]')).filter(function(i) { //過濾 .content 裡沒有 a 的物件
-
-				var $this = $(this),
-					$parent = $this.closest('li'),
-					$a = $this.children('.ct').find('a');
-
-				if( $a.length ) {
-					$parent.addClass('is-parent');
-
-					return true;
-				}else {
-					return false;
-				}
+				return $(this).children('.ct').find('a').length;
 			}),
 			$child_node_header = $child_node_in.children('.hd'),
 			$a = $child_node_header.find('a');

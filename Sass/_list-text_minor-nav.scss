@@ -5,21 +5,24 @@
 .list-text.minor-nav {
 
 	> .bg-drop-layout > .in, > .in {
-		border: $border;
-		background-color: $white;
+		background-color: $major-color;
 	}
 
 	.hd {
-		background-color: $major-color;
 
 		> .in {
 
 		}
 
 		h4 {
-			padding: $interval-l;
+			padding: $interval-m;
 			color: $white;
 			font-size: $font-size-l;
+
+			&:before {
+				@include icon-font('menu');
+				margin-right: $interval-xs;
+			}
 		}
 
 		span {
@@ -32,29 +35,29 @@
 	}
 
 	.ct {
-		border-top: $border;
-		border-top-color: $white;
+		overflow: hidden;
 
 		> .in {
 			
 		}
 
 		ul {
-			
+			margin: 0 $interval-xs $interval-xs;
+			background-color: $white;
 		}
 
 		li {
 
-			+ li {
-				border-top: $border;
-			}
-
 			&.is-active {
 
 				a {
-					background-color: $major-color;
+					background-color: $minor-color;
 					color: $white;
 				}
+			}
+
+			+ li {
+				border-top: $border;
 			}
 		}
 
@@ -64,7 +67,13 @@
 
 		a {
 			display: block;
-			padding: 12px;
+			padding: $interval-m;
+			transition: $transition;
+
+			&:before {
+				@include icon-font('keyboard_arrow_right');
+				margin-right: $interval-xs;
+			}
 
 			&:hover {
 				background-color: $light;

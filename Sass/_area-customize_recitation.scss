@@ -3,8 +3,6 @@
 //朗誦================================================================
 
 .area-customize.recitation {
-	vertical-align: middle;
-	display: inline-block;
 
 	> .bg-drop-layout > .in, > .in {
 
@@ -39,14 +37,9 @@
 		#media {
 
 			div {
-				padding: 1px;
-				cursor: pointer;
 
 				img {
-					display: block;
-					width: 22px !important;
-					height: 22px !important;
-					transition: $transition;
+					
 				}
 			}
 		}

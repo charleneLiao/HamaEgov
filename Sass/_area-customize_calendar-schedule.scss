@@ -29,7 +29,6 @@
 	}
 
 	.ct {
-		$awa_s: 30px;
 
 		> .in {
 
@@ -37,8 +36,6 @@
 
 		.heading {
 			position: relative;
-			width: 320px;
-			margin: 0 auto;
 		}
 
 		.label {
@@ -79,7 +76,7 @@
 				position: absolute;
 				top: 0;
 				bottom: 0;
-				width: $awa_s;
+				width: 30px;
 				background-position: center;
 				background-repeat: no-repeat;
 				transition: $transition;
@@ -91,7 +88,6 @@
 		}
 
 		.caption {
-			margin: 0 $awa_s;
 			font-size: $font-size-l;
 			font-weight: $font-weight-b;
 			color: $title-color;
@@ -175,7 +171,6 @@
 
 			.event { //有事件
 				text-decoration: underline;
-				font-weight: $font-weight-b;
 			}
 
 			.this-week { //這週
@@ -248,7 +243,7 @@
 					a {
 
 						&:before {
-							background-color: $gray;
+							background-color: $minor-color;
 						}
 					}
 				}
@@ -258,7 +253,7 @@
 					a {
 
 						&:before {
-							background-color: $black;
+							background-color: $gray;
 						}
 					}
 				}

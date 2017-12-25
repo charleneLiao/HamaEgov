@@ -44,12 +44,11 @@
 		}
 
 		li {
-			@include len-rwd('pad', 2);
-			@include len-rwd('phone', 1);
+			
 		}
 
 		span {
-			margin: $interval-s;
+			margin: $interval-xs;
 			display: block;
 		}
 

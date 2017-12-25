@@ -19,7 +19,7 @@
 		}
 
 		span {
-				
+
 		}
 
 		a {
@@ -30,10 +30,10 @@
 	.ct {
 
 		> .in {
-			
+
 		}
 
-		h1 {
+		h1, .title {
 			@extend %reset;
 			font-size: $font-size-xl;
 			padding: $interval-s 0;
@@ -46,18 +46,18 @@
 		}
 
 		span {
-			
+
 		}
 
 		a {
-			
+
 			&:hover {
 				color: currentColor;
 			}
 		}
 
 		/*i*/.mark {
-			
+
 		}
 	}
 

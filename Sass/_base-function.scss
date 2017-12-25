@@ -629,6 +629,10 @@
         color: deeper($color);
         text-decoration: none;
     }
+    &:focus{
+      box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+      outline: 1px solid rgb(31, 173, 233);
+    }
 }
 
 %header {
@@ -832,7 +836,7 @@
     background-color: $input-bg-color;
     vertical-align: middle;
     box-sizing: border-box;
-    outline: none;
+    // outline: none;
 }
 
 %article {

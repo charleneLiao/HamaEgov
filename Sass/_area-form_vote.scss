@@ -40,7 +40,6 @@
 
 		.caption {
 			@extend %caption;
-			@include re-ellipsis();
 
 			span {
 				

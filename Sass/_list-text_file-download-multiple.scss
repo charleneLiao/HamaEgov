@@ -99,7 +99,7 @@
 					a {
 
 						&:before {
-							background-image: image-url('icon-pic/#{$pic}');
+							@include icon-pic($pic);
 						}
 
 						&:hover {
@@ -115,10 +115,6 @@
 		}
 
 		a {
-			$default_type: map-get($file-type-map, 'other');
-			$default_color: map-get($default_type, 'color');
-			$default_pic: map-get($default_type, 'pic');
-
 			box-sizing: border-box;
 			padding: $interval-xs $interval-s;
 			border-width: $border-width;
@@ -133,24 +129,13 @@
 			}
 
 			&:before {
-				content: $content;
-				display: inline-block;
-				width: 16px;
-				height: 16px;
 				margin-right: $interval-xs;
-				background-repeat: no-repeat;
-				background-image: image-url('icon-pic/#{$default_pic}');
 			}
 
 			&:hover {
 				border-left-width: $interval-m;
 				background-color: $white;
 				color: currentColor;
-				border-color: $default_color;
-			}
-
-			&:after {
-				content: none;
 			}
 		}
 

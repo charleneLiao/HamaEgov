@@ -170,13 +170,13 @@
             }
         }
     }
-    
+
     .base-page-area {
         > .in {
             @extend %center;
         }
     }
-    
+
     .area-customize.page-btn {
         text-align: right;
         margin: 0 0 10px 0;
@@ -213,7 +213,7 @@
             }
         }
     }
-    
+
     // fancy Box
     .area-customize.page-fancyBox {
         width: 664px;
@@ -280,7 +280,7 @@
             }
         }
     }
-    
+
     // 內頁-生活情報
     .area-essay.message.page-life {
         .ct {
@@ -454,7 +454,7 @@
             }
         }
     }
-    
+
     // 台灣影像地圖
     .area-customize.mapArea {
         .hd {
@@ -484,7 +484,7 @@
             #Map {
                 area {
                     &:focus {
-                        outline: 0;
+                        // outline: 0;
                     }
                 }
             }
@@ -557,7 +557,7 @@
             }
         }
     }
-    
+
     // 行銷專頁
     .area-customize.page-eCoupon {
         .ct {

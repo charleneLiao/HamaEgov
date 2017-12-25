@@ -109,7 +109,6 @@
 			border: $border;
 			height: 400px;
 			overflow: hidden;
-			background-color: $white;
 
 			@include media('phone') {
 				margin: 0;
@@ -124,6 +123,7 @@
 				position: absolute;
 				left: 0;
 				right: 0;
+				height: $interval-m;
 
 				@include media('phone') {
 					content: none;
@@ -132,13 +132,11 @@
 
 			&:before {
 				top: 0;
-				height: 10px;
 				background-color: $major-color;
 			}
 
 			&:after {
 				bottom: 0;
-				height: 33px;
 				background-color: $white;
 			}
 
@@ -174,12 +172,14 @@
 			}
 
 			span {
+				@extend %bg-cover;
 				display: block;
+				height: 210px;
+				background-color: $light;
 			}
 
 			img {
-				display: block;
-				width: 100%;
+				display: none;
 			}
 		}
 

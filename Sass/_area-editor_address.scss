@@ -3,146 +3,72 @@
 //聯絡資訊================================================================
 
 .area-editor.address {
+	@extend %area-mobile-no-header;
 
-	.base-content & {
-		@extend %area-mobile-no-header;
+	> .bg-drop-layout > .in, > .in {
 
-		> .bg-drop-layout > .in, > .in {
+	}
+
+	.hd {
+
+		> .in {
 
 		}
 
-		.hd {
-			display: none;
+		h4 {
 
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
-			@extend %article;
-			font-size: $font-size-s;
-
-			> .in {
+		span {
 				
-			}
-
-			a {
-				@extend %a;
-
-				&.is-map {
-
-					&:after {
-						@include icon-font('map');
-						margin-left: $interval-s;
-					}
-				}
-			}
 		}
 
-		.ft {
+		a {
 
-			> .in {
+		}
+	}
 
-			}
+	.ct {
+		@extend %article;
+		font-size: $font-size-s;
 
-			ul {
+		> .in {
+			
+		}
 
-			}
+		a {
+			@extend %a;
 
-			li {
+			&.is-map {
 
-			}
-
-			span {
-
-			}
-
-			a {
-
+				&:after {
+					@include icon-font('map');
+					margin-left: $interval-s;
+				}
 			}
 		}
 	}
 
-	.base-footer & {
-		font-size: $font-size-s;
+	.ft {
 
-		> .bg-drop-layout > .in, > .in {
+		> .in {
 
 		}
 
-		.hd {
-			display: none;
+		ul {
 
-			> .in {
-
-			}
-
-			h4 {
-
-			}
-
-			span {
-					
-			}
-
-			a {
-
-			}
 		}
 
-		.ct {
+		li {
 
-			> .in {
-				
-			}
-
-			a {
-				@extend %a;
-
-				&.is-map {
-
-					&:after {
-						@include icon-font('map');
-						margin-left: $interval-s;
-					}
-				}
-			}
 		}
 
-		.ft {
+		span {
 
-			> .in {
+		}
 
-			}
+		a {
 
-			ul {
-
-			}
-
-			li {
-
-			}
-
-			span {
-
-			}
-
-			a {
-
-			}
 		}
 	}
 }

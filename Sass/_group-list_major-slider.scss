@@ -25,22 +25,6 @@
 			a {
 
 			}
-
-			+ .ct {
-
-				+ .ft {
-
-					li {
-
-						&.next, &.prev {
-
-							a {
-								top: 57px;
-							}
-						}
-					}
-				}
-			}
 		}
 
 		> .ct {
@@ -103,14 +87,13 @@
 					a {
 						@extend %hide-text;
 						position: absolute;
-						top: 0;
-						bottom: 0;
+						top: 20%;
+						bottom: 20%;
 						display: block;
 						width: $btn-width;
 						transition: $transition;
 						background-color: $light;
 						background-color: rgba($light, $opacity-h);
-						z-index: 1;
 
 						&:hover {
 							background-color: rgba($light, $opacity-vh);
@@ -203,7 +186,6 @@
 						background-color: $gray;
 						transition: $transition;
 						border-radius: 50%;
-						z-index: 1;
 
 						&:hover {
 							opacity: $opacity-h;

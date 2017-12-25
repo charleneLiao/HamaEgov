@@ -5,10 +5,14 @@
 .simple-text.query {
 
 	.base-wrapper & {
+		@extend %area-page-no-header;
+
+		@include media('mobile') {
+			margin-top: $rwd-btn-size;
+		}
 
 		> .bg-drop-layout > .in, > .in {
-			display: block;
-			padding: $interval-m $interval-s;
+			@extend %article-extend;
 		}
 
 		.hd {
@@ -86,10 +90,6 @@
 
 			li {
 				display: inline-block;
-
-				+ li {
-					margin-left: $interval-xs;
-				}
 				
 				&.deny {
 
@@ -214,10 +214,6 @@
 
 			li {
 				display: inline-block;
-
-				+ li {
-					margin-left: $interval-xs;
-				}
 				
 				&.deny {
 

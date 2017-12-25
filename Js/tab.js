@@ -21,7 +21,7 @@
 			$items_l = $items.length,
 			$tabs = $all_item.eq(0),
 			$tabs_li = $tabs.find('li'),
-			$tab_a = $tabs_li.find('a, input'),
+			$tab_a = $tabs_li.find('a'),
 			$tab_a_length = $tab_a.length - 1;
 
 		var _tab_key = 9,
@@ -29,7 +29,7 @@
 
 		$items.each(function(i, n){
 			var $this = $(this),
-				$hd = getNode.getHd($this),
+				$hd = $this.find('.hd'),
 				$hd_a = $hd.find('a');
 
 			$hd_a.each(function(i, n){
@@ -49,7 +49,7 @@
 		for( var i = 0; i < $tab_a_length; i++ ) { //註冊無障礙 tab 事件
 
 			(function(i){
-				var $a = $items.eq(i).find('a[href], input');
+				var $a = $items.eq(i).find('a[href]');
 
 				if($a.length) {
 

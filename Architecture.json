@@ -4,7 +4,7 @@
         "GroupType": "Module",
         "Type": 0,
         "ht": "",
-        "ct": "<span><a href=\"#\"><p>主選單</p></a></span>",
+        "ct": "<span><a href=\"#\" title=\"主選單\"><p>主選單</p></a></span>",
         "ft": "",
         "Class": "simple-text btn",
         "func": "{'toggleBtn':{'bindNode':'.ct','targetNode':'.base-mobile','targetClass':'is-open'}}"
@@ -40,7 +40,7 @@
         {
             "GroupType": "Module",
             "Type": 0,
-            "ct": "<span><a id=\"gotoComputerBtn\" href=\"#\">電腦版</a></span>",
+            "ct": "<span><a id=\"gotoComputerBtn\" href=\"#\" title=\"電腦版\">電腦版</a></span>",
             "Class": "area-customize backPC",
        }
 ]
@@ -204,7 +204,7 @@
                 "GroupType": "Module",
                 "Type": 0,
                 "hd": "",
-                "ct": "<span><a href=\"#\">回頂端</a></span>",
+                "ct": "<span><a href=\"#\" title=\"回頂端\">回頂端</a></span>",
                 "ft": "",
                 "Class": "simple-text btn",
                 "func": "{'anchor':{}}"
